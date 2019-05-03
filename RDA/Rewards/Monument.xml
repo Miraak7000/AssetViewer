@@ -1,0 +1,3423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Monument>
+  <Category>
+    <GUID>17003</GUID>
+    <Name>Architectural Wonders</Name>
+    <Text>A collection of the most elegant and refined architectural models throughout history.</Text>
+    <Icon>data/ui/2kimages/main/3dicons/icon_architecture.png</Icon>
+    <Events>
+      <Event>
+        <GUID>17006</GUID>
+        <Name>Modest Architectural Exhibition</Name>
+        <Text>These construction plans are now free for us! They will surely enrich our city!</Text>
+        <Icon>data/ui/2kimages/main/3dicons/icon_architecture.png</Icon>
+        <Thresholds>
+          <Threshold>
+            <GUID>17015</GUID>
+            <Name>1 City Signage</Name>
+            <Text>A bit of signage to cheaply embellish your city.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_1.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>102464</GUID>
+                <Name>culture_1x1_advertisingcolumn</Name>
+                <Text>It expands with every layer of posters.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_03.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102465</GUID>
+                <Name>culture_1x1_advertisingpanel</Name>
+                <Text>The best place to keep up with the latests theatrical productions.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_04.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102467</GUID>
+                <Name>culture_1x1_flag</Name>
+                <Text>Flaps gracefully in the coastal breeze.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_06.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17700</GUID>
+            <Name>2 City Furnitures</Name>
+            <Text>A few signs and paving variations.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_2.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>102466</GUID>
+                <Name>culture_1x1_secondground</Name>
+                <Text>Step on art.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_05.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102465</GUID>
+                <Name>culture_1x1_advertisingpanel</Name>
+                <Text>The best place to keep up with the latests theatrical productions.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_04.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102467</GUID>
+                <Name>culture_1x1_flag</Name>
+                <Text>Flaps gracefully in the coastal breeze.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_06.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102464</GUID>
+                <Name>culture_1x1_advertisingcolumn</Name>
+                <Text>It expands with every layer of posters.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_03.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17703</GUID>
+            <Name>3 Plaza Design</Name>
+            <Text>All you need to design a small plaza in your city.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_3.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>102466</GUID>
+                <Name>culture_1x1_secondground</Name>
+                <Text>Step on art.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_05.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102465</GUID>
+                <Name>culture_1x1_advertisingpanel</Name>
+                <Text>The best place to keep up with the latests theatrical productions.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_04.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102467</GUID>
+                <Name>culture_1x1_flag</Name>
+                <Text>Flaps gracefully in the coastal breeze.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_06.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102464</GUID>
+                <Name>culture_1x1_advertisingcolumn</Name>
+                <Text>It expands with every layer of posters.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_03.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17704</GUID>
+            <Name>4 Esplanade Design</Name>
+            <Text>A very elegant pack of mosaics and colonnades for a beautiful esplanade.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_4.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>102466</GUID>
+                <Name>culture_1x1_secondground</Name>
+                <Text>Step on art.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_05.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102461</GUID>
+                <Name>culture_1x1_columnsstraight</Name>
+                <Text>There's a sense of immensity that comes with them.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_01.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102463</GUID>
+                <Name>culture_1x1_columnsangle</Name>
+                <Text>There's a sense of immensity that comes with them.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_02.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17705</GUID>
+            <Name>5 Fountain Architecture</Name>
+            <Text>The latest creation to bring clean water to your city with a flourish.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_5.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>102472</GUID>
+                <Name>culture_1x1_basinstraight</Name>
+                <Text>Elegant and serene.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_11.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102470</GUID>
+                <Name>culture_1x1_basinend</Name>
+                <Text>Elegant and serene.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_09.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102471</GUID>
+                <Name>culture_1x1_basinangle</Name>
+                <Text>Elegant and serene.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_10.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+        </Thresholds>
+      </Event>
+      <Event>
+        <GUID>17007</GUID>
+        <Name>Large Architectural Exhibition</Name>
+        <Text>These construction plans are now free for us! They will surely enrich our city!</Text>
+        <Icon>data/ui/2kimages/main/3dicons/icon_architecture.png</Icon>
+        <Thresholds>
+          <Threshold>
+            <GUID>17703</GUID>
+            <Name>3 Plaza Design</Name>
+            <Text>All you need to design a small plaza in your city.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_3.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>102466</GUID>
+                <Name>culture_1x1_secondground</Name>
+                <Text>Step on art.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_05.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102465</GUID>
+                <Name>culture_1x1_advertisingpanel</Name>
+                <Text>The best place to keep up with the latests theatrical productions.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_04.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102467</GUID>
+                <Name>culture_1x1_flag</Name>
+                <Text>Flaps gracefully in the coastal breeze.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_06.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102464</GUID>
+                <Name>culture_1x1_advertisingcolumn</Name>
+                <Text>It expands with every layer of posters.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_03.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17704</GUID>
+            <Name>4 Esplanade Design</Name>
+            <Text>A very elegant pack of mosaics and colonnades for a beautiful esplanade.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_4.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>102466</GUID>
+                <Name>culture_1x1_secondground</Name>
+                <Text>Step on art.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_05.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102461</GUID>
+                <Name>culture_1x1_columnsstraight</Name>
+                <Text>There's a sense of immensity that comes with them.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_01.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102463</GUID>
+                <Name>culture_1x1_columnsangle</Name>
+                <Text>There's a sense of immensity that comes with them.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_02.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17705</GUID>
+            <Name>5 Fountain Architecture</Name>
+            <Text>The latest creation to bring clean water to your city with a flourish.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_5.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>102472</GUID>
+                <Name>culture_1x1_basinstraight</Name>
+                <Text>Elegant and serene.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_11.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102470</GUID>
+                <Name>culture_1x1_basinend</Name>
+                <Text>Elegant and serene.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_09.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102471</GUID>
+                <Name>culture_1x1_basinangle</Name>
+                <Text>Elegant and serene.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_10.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17706</GUID>
+            <Name>6 Antiquity Landscaping</Name>
+            <Text>Columns and channels to match the ancient style.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>102472</GUID>
+                <Name>culture_1x1_basinstraight</Name>
+                <Text>Elegant and serene.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_11.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102470</GUID>
+                <Name>culture_1x1_basinend</Name>
+                <Text>Elegant and serene.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_09.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102461</GUID>
+                <Name>culture_1x1_columnsstraight</Name>
+                <Text>There's a sense of immensity that comes with them.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_01.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17707</GUID>
+            <Name>7 Refined Architecture</Name>
+            <Text>A couple of unique buildings for the gates of your city.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_7.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>102461</GUID>
+                <Name>culture_1x1_columnsstraight</Name>
+                <Text>There's a sense of immensity that comes with them.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_01.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102475</GUID>
+                <Name>culture_2x2_tower</Name>
+                <Text>A modern architectural landmark to accompany the finest events.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_tower_01.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102473</GUID>
+                <Name>culture_1x3_buildinggate</Name>
+                <Text>The most impressive entrance to the World Fair.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_gate_01.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+        </Thresholds>
+      </Event>
+      <Event>
+        <GUID>17008</GUID>
+        <Name>Somptuous Architectural Exhibition</Name>
+        <Text>These construction plans are now free for us! They will surely enrich our city!</Text>
+        <Icon>data/ui/2kimages/main/3dicons/icon_architecture.png</Icon>
+        <Thresholds>
+          <Threshold>
+            <GUID>17705</GUID>
+            <Name>5 Fountain Architecture</Name>
+            <Text>The latest creation to bring clean water to your city with a flourish.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_5.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>102472</GUID>
+                <Name>culture_1x1_basinstraight</Name>
+                <Text>Elegant and serene.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_11.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102470</GUID>
+                <Name>culture_1x1_basinend</Name>
+                <Text>Elegant and serene.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_09.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102471</GUID>
+                <Name>culture_1x1_basinangle</Name>
+                <Text>Elegant and serene.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_10.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17706</GUID>
+            <Name>6 Antiquity Landscaping</Name>
+            <Text>Columns and channels to match the ancient style.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>102472</GUID>
+                <Name>culture_1x1_basinstraight</Name>
+                <Text>Elegant and serene.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_11.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102470</GUID>
+                <Name>culture_1x1_basinend</Name>
+                <Text>Elegant and serene.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_09.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102461</GUID>
+                <Name>culture_1x1_columnsstraight</Name>
+                <Text>There's a sense of immensity that comes with them.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_01.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17707</GUID>
+            <Name>7 Refined Architecture</Name>
+            <Text>A couple of unique buildings for the gates of your city.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_7.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>102461</GUID>
+                <Name>culture_1x1_columnsstraight</Name>
+                <Text>There's a sense of immensity that comes with them.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_01.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102475</GUID>
+                <Name>culture_2x2_tower</Name>
+                <Text>A modern architectural landmark to accompany the finest events.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_tower_01.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102473</GUID>
+                <Name>culture_1x3_buildinggate</Name>
+                <Text>The most impressive entrance to the World Fair.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_gate_01.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17708</GUID>
+            <Name>8 Aquatic Promenade</Name>
+            <Text>A few aesthetic additions for the water features of your city.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_8.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>102472</GUID>
+                <Name>culture_1x1_basinstraight</Name>
+                <Text>Elegant and serene.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_11.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102468</GUID>
+                <Name>culture_1x1_basinstraightfountain</Name>
+                <Text>There's no heart that can't be appeased by the gentle sounds of water.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_07.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102469</GUID>
+                <Name>culture_1x1_basinbridge</Name>
+                <Text>What could be more romantic than contemplating your reflections together?</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_08.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102470</GUID>
+                <Name>culture_1x1_basinend</Name>
+                <Text>Elegant and serene.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_09.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102471</GUID>
+                <Name>culture_1x1_basinangle</Name>
+                <Text>Elegant and serene.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_10.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17709</GUID>
+            <Name>9 World Fair Annexe</Name>
+            <Text>Buildings and pavillions to build a beautiful annexe for your World's Fair.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>102473</GUID>
+                <Name>culture_1x3_buildinggate</Name>
+                <Text>The most impressive entrance to the World Fair.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_gate_01.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102474</GUID>
+                <Name>culture_4x3_pavillion</Name>
+                <Text>A magnificent addendum to your monument,</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_module_01.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>102475</GUID>
+                <Name>culture_2x2_tower</Name>
+                <Text>A modern architectural landmark to accompany the finest events.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/ornaments/monument_01_tower_01.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+        </Thresholds>
+      </Event>
+    </Events>
+  </Category>
+  <Category>
+    <GUID>17004</GUID>
+    <Name>Science and Technics</Name>
+    <Text>A showcase of modern innovation through astonishing devices.</Text>
+    <Icon>data/ui/2kimages/main/3dicons/icon_science.png</Icon>
+    <Events>
+      <Event>
+        <GUID>17009</GUID>
+        <Name>Modest Science Exhibition</Name>
+        <Text>These new devices will forward our industry to a point never reached before!</Text>
+        <Icon>data/ui/2kimages/main/3dicons/icon_science.png</Icon>
+        <Thresholds>
+          <Threshold>
+            <GUID>17016</GUID>
+            <Name>1 Basic Tools</Name>
+            <Text>Mostly mechanical tools of little value.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_1.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190843</GUID>
+                <Name>Millstone</Name>
+                <Text>Lifts the one from around your neck...</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_millstone_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190850</GUID>
+                <Name>Bow Saw</Name>
+                <Text>A new standard in saws.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_dragsaw_.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190853</GUID>
+                <Name>Trap</Name>
+                <Text>Might catch the odd furry critter with this.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_trap_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190856</GUID>
+                <Name>Secateur</Name>
+                <Text>Sharpens up resource gathering.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_pruning_material_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190859</GUID>
+                <Name>Plough</Name>
+                <Text>Agricultural revolution!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_plough_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190879</GUID>
+                <Name>Churn Drill</Name>
+                <Text>A simple modern hand-drill.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_drill_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190883</GUID>
+                <Name>Mechanical Loom</Name>
+                <Text>They can work it in their sleep.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_loom_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190898</GUID>
+                <Name>Magnifier</Name>
+                <Text>Lose sight of tiny cogs and sparklers no more.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_precision_instruments_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190902</GUID>
+                <Name>Fishing Net</Name>
+                <Text>Nothing slips the net.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_fishernet_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190905</GUID>
+                <Name>Blowpipe</Name>
+                <Text>Now anyone can blow a perfect sphere.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_glass_working_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190908</GUID>
+                <Name>Circular Saw</Name>
+                <Text>Lend your carpenters a hand.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_circular_saw_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190911</GUID>
+                <Name>Steel Moulds</Name>
+                <Text>Encourages some uniformity.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_mould_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190824</GUID>
+                <Name>Old Bell</Name>
+                <Text>The old toll of toil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_factory_bell_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190827</GUID>
+                <Name>Dynamo</Name>
+                <Text>A volatile source of electric power.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_turbine_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190830</GUID>
+                <Name>Calciner</Name>
+                <Text>Smelts the candle at both ends.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_calciner_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190876</GUID>
+                <Name>Freight Elevator</Name>
+                <Text>Something to lift miner's spirits.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_elevator_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190891</GUID>
+                <Name>Oven</Name>
+                <Text>Hot plates.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_stove_1.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17040</GUID>
+            <Name>2 Basic Equipment</Name>
+            <Text>First hand equipment to reinforce your buildings and production.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_2.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190824</GUID>
+                <Name>Old Bell</Name>
+                <Text>The old toll of toil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_factory_bell_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190827</GUID>
+                <Name>Dynamo</Name>
+                <Text>A volatile source of electric power.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_turbine_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190830</GUID>
+                <Name>Calciner</Name>
+                <Text>Smelts the candle at both ends.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_calciner_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190876</GUID>
+                <Name>Freight Elevator</Name>
+                <Text>Something to lift miner's spirits.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_elevator_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190891</GUID>
+                <Name>Oven</Name>
+                <Text>Hot plates.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_stove_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190839</GUID>
+                <Name>Planer</Name>
+                <Text>A helping hand for cutting.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_metall_planer_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190887</GUID>
+                <Name>Steam Conveyor</Name>
+                <Text>Gets everything into line.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_conveyor_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190894</GUID>
+                <Name>Brew Kettle</Name>
+                <Text>Accelerates the brewing process.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_brewing_machine_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190818</GUID>
+                <Name>Iron-Framing</Name>
+                <Text>Reduces the risk of fire.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_steel_framing_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190869</GUID>
+                <Name>Stable</Name>
+                <Text>Cram animals into a small space.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_feedlots_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190873</GUID>
+                <Name>Covered Containment</Name>
+                <Text>Keep the stench to a minimum.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_waste_management_1.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17041</GUID>
+            <Name>3 Common Seeds</Name>
+            <Text>Low quality seeds that still ensure your crops to grow where you desire.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_3.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190915</GUID>
+                <Name>Mixed Grain Seeds</Name>
+                <Text>These seeds can help you sprout a few fields of Grain in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_grain.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190919</GUID>
+                <Name>Mixed Hop Seeds</Name>
+                <Text>These seeds can help you sprout a few fields of Hops in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_hops.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190922</GUID>
+                <Name>Mixed Potato Seeds</Name>
+                <Text>These sprouts can help you grow a few fields of Potato in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_potatoe.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190925</GUID>
+                <Name>Mixed Grape Seeds</Name>
+                <Text>These vines can help you grow a few fields of Grapes in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_grapes.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190928</GUID>
+                <Name>Mixed Bell Pepper Seeds</Name>
+                <Text>These seeds can help you grow a few fields of Peppers in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_pepper.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190931</GUID>
+                <Name>Mixed Sugar Cane Seeds</Name>
+                <Text>These saplings can help you grow a few fields of Sugar Cane in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_sugar.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190934</GUID>
+                <Name>Mixed Tobacco Seeds</Name>
+                <Text>These seeds can help you grow a few fields of Tobacco in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_tobacco.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190937</GUID>
+                <Name>Mixed Cotton Seeds</Name>
+                <Text>These cotton seeds can help you grow a few fields of Cotton in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_cotton.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190940</GUID>
+                <Name>Mixed Cocoa Seeds</Name>
+                <Text>These beans can help you grow a few groves of cocoa in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_cocoa.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190943</GUID>
+                <Name>Mixed Caoutchouc Seeds</Name>
+                <Text>These saplings can help you grow a few groves of Caoutchouc in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_rubber.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190946</GUID>
+                <Name>Mixed Coffee Seeds</Name>
+                <Text>These beans can help you grow a few groves of Coffee in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_coffee.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190949</GUID>
+                <Name>Mixed Corn Seeds</Name>
+                <Text>These seeds can help you sprout a few fields of Corn in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_corn.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190916</GUID>
+                <Name>Grain Seeds</Name>
+                <Text>These seeds can help you sprout plentiful fields of Grain in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_grain.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190920</GUID>
+                <Name>Hop Seeds</Name>
+                <Text>These seeds can help you sprout plentiful fields of Hops in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_hops.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190923</GUID>
+                <Name>Potato Seeds</Name>
+                <Text>These sprouts can help you grow plentiful fields of Potato in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_potatoe.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190926</GUID>
+                <Name>Grape Seeds</Name>
+                <Text>These vines can help you grow plentiful fields of Grapes in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_grapes.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190929</GUID>
+                <Name>Bell Pepper Seeds</Name>
+                <Text>These seeds can help you grow plentiful fields of Peppers in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_pepper.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17042</GUID>
+            <Name>4 Advanced Tools</Name>
+            <Text>Some advanced technology at the service of your production.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_4.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190879</GUID>
+                <Name>Churn Drill</Name>
+                <Text>A simple modern hand-drill.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_drill_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190883</GUID>
+                <Name>Mechanical Loom</Name>
+                <Text>They can work it in their sleep.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_loom_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190898</GUID>
+                <Name>Magnifier</Name>
+                <Text>Lose sight of tiny cogs and sparklers no more.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_precision_instruments_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190902</GUID>
+                <Name>Fishing Net</Name>
+                <Text>Nothing slips the net.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_fishernet_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190905</GUID>
+                <Name>Blowpipe</Name>
+                <Text>Now anyone can blow a perfect sphere.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_glass_working_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190908</GUID>
+                <Name>Circular Saw</Name>
+                <Text>Lend your carpenters a hand.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_circular_saw_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190911</GUID>
+                <Name>Steel Moulds</Name>
+                <Text>Encourages some uniformity.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_mould_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190844</GUID>
+                <Name>French Burrstone</Name>
+                <Text>Will pulverise your grinding issues to a fine mist.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_millstone_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190851</GUID>
+                <Name>Two-Man Saw</Name>
+                <Text>See-saw no more, with this speedy saw.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_dragsaw_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190854</GUID>
+                <Name>Leghold Trap</Name>
+                <Text>This certainly makes sure they won't get away.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/icon_bear_trap.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190857</GUID>
+                <Name>Lopper</Name>
+                <Text>Keeping pruning tradition alive.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_pruning_material_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190860</GUID>
+                <Name>Cast Steel Plough</Name>
+                <Text>An extremely balanced approach to agriculture!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_plough_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190880</GUID>
+                <Name>Drill Press</Name>
+                <Text>A mechanical drill to reduce operator effort.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_drill_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190899</GUID>
+                <Name>Precision Monocular</Name>
+                <Text>Allows your precision craftsman to examine the fine details.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_precision_instruments_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190903</GUID>
+                <Name>Drift Net</Name>
+                <Text>Originating on the so-named "crab coast," this whopper of a net is a treat for fishermen.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_fishernet_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190825</GUID>
+                <Name>Iron Factory Bell</Name>
+                <Text>Once heard, cannot be unheard.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_factory_bell_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190828</GUID>
+                <Name>Steam Turbine</Name>
+                <Text>A safe source of electric power.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_turbine_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190831</GUID>
+                <Name>Reverberatory Furnace</Name>
+                <Text>Saves time, but not the environment.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_calciner_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190844</GUID>
+                <Name>French Burrstone</Name>
+                <Text>Will pulverise your grinding issues to a fine mist.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_millstone_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190877</GUID>
+                <Name>Safety Steam-Powered Elevator</Name>
+                <Text>A steam-geared elevator that can lift ten tonnes in one go.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_elevator_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190892</GUID>
+                <Name>Cast Iron Stove</Name>
+                <Text>A way into fast food!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_stove_2.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17043</GUID>
+            <Name>5 Chemical Research</Name>
+            <Text>The product of the latest research in chemistry.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_5.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190848</GUID>
+                <Name>Melting Point Apparatus</Name>
+                <Text>Never ruin another batch, with precise control of temparatures!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_thermometer_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190863</GUID>
+                <Name>Artificial Fertilizer</Name>
+                <Text>An acrid-smelling fertiliser.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_fertilizer_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190867</GUID>
+                <Name>Antibiotics</Name>
+                <Text>Keeps livestock from the threat of disease.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_vitamin_supplement_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190916</GUID>
+                <Name>Grain Seeds</Name>
+                <Text>These seeds can help you sprout plentiful fields of Grain in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_grain.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190920</GUID>
+                <Name>Hop Seeds</Name>
+                <Text>These seeds can help you sprout plentiful fields of Hops in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_hops.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190923</GUID>
+                <Name>Potato Seeds</Name>
+                <Text>These sprouts can help you grow plentiful fields of Potato in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_potatoe.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190926</GUID>
+                <Name>Grape Seeds</Name>
+                <Text>These vines can help you grow plentiful fields of Grapes in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_grapes.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190929</GUID>
+                <Name>Bell Pepper Seeds</Name>
+                <Text>These seeds can help you grow plentiful fields of Peppers in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_pepper.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190932</GUID>
+                <Name>Sugar Cane Seeds</Name>
+                <Text>These saplings can help you grow plentiful fields of Sugar Cane in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_sugar.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190935</GUID>
+                <Name>Tobacco Seeds</Name>
+                <Text>These seeds can help you grow plentiful fields of Tobacco in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_tobacco.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190938</GUID>
+                <Name>Cotton Seeds</Name>
+                <Text>These cotton seeds can help you grow plentiful fields of Cotton in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_cotton.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190941</GUID>
+                <Name>Cocoa Seeds</Name>
+                <Text>These beans can help you grow plentiful groves of cocoa in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_cocoa.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190944</GUID>
+                <Name>Caoutchouc Seeds</Name>
+                <Text>These saplings can help you grow plentiful groves of Caoutchouc in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_rubber.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190947</GUID>
+                <Name>Coffee Seeds</Name>
+                <Text>These beans can help you grow plentiful groves of Coffee in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_coffee.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190950</GUID>
+                <Name>Corn Seeds</Name>
+                <Text>These seeds can help you sprout plentiful fields of Corn in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_corn.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>191898</GUID>
+                <Name>Banana Seeds</Name>
+                <Text>These saplings can help you grow plentiful groves of Plantain in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_fertility_banana.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>191901</GUID>
+                <Name>Pearls Seeds</Name>
+                <Text>This spawn can help you grow a large colony of oyster in unfamiliar waters.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_fertility_pearl.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190847</GUID>
+                <Name>Mercury Thermometer</Name>
+                <Text>Measures temperature precisely.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_thermometer_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190862</GUID>
+                <Name>Wood Ash</Name>
+                <Text>A foul-smelling fertiliser.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_fertilizer_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190866</GUID>
+                <Name>Vitamins</Name>
+                <Text>Peps-up haggard-looking livestock.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_vitamin_supplement_1.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+        </Thresholds>
+      </Event>
+      <Event>
+        <GUID>17010</GUID>
+        <Name>Large Science Exhibition</Name>
+        <Text>These new devices will forward our industry to a point never reached before!</Text>
+        <Icon>data/ui/2kimages/main/3dicons/icon_science.png</Icon>
+        <Thresholds>
+          <Threshold>
+            <GUID>17041</GUID>
+            <Name>3 Common Seeds</Name>
+            <Text>Low quality seeds that still ensure your crops to grow where you desire.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_3.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190915</GUID>
+                <Name>Mixed Grain Seeds</Name>
+                <Text>These seeds can help you sprout a few fields of Grain in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_grain.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190919</GUID>
+                <Name>Mixed Hop Seeds</Name>
+                <Text>These seeds can help you sprout a few fields of Hops in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_hops.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190922</GUID>
+                <Name>Mixed Potato Seeds</Name>
+                <Text>These sprouts can help you grow a few fields of Potato in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_potatoe.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190925</GUID>
+                <Name>Mixed Grape Seeds</Name>
+                <Text>These vines can help you grow a few fields of Grapes in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_grapes.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190928</GUID>
+                <Name>Mixed Bell Pepper Seeds</Name>
+                <Text>These seeds can help you grow a few fields of Peppers in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_pepper.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190931</GUID>
+                <Name>Mixed Sugar Cane Seeds</Name>
+                <Text>These saplings can help you grow a few fields of Sugar Cane in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_sugar.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190934</GUID>
+                <Name>Mixed Tobacco Seeds</Name>
+                <Text>These seeds can help you grow a few fields of Tobacco in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_tobacco.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190937</GUID>
+                <Name>Mixed Cotton Seeds</Name>
+                <Text>These cotton seeds can help you grow a few fields of Cotton in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_cotton.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190940</GUID>
+                <Name>Mixed Cocoa Seeds</Name>
+                <Text>These beans can help you grow a few groves of cocoa in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_cocoa.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190943</GUID>
+                <Name>Mixed Caoutchouc Seeds</Name>
+                <Text>These saplings can help you grow a few groves of Caoutchouc in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_rubber.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190946</GUID>
+                <Name>Mixed Coffee Seeds</Name>
+                <Text>These beans can help you grow a few groves of Coffee in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_coffee.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190949</GUID>
+                <Name>Mixed Corn Seeds</Name>
+                <Text>These seeds can help you sprout a few fields of Corn in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_corn.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190916</GUID>
+                <Name>Grain Seeds</Name>
+                <Text>These seeds can help you sprout plentiful fields of Grain in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_grain.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190920</GUID>
+                <Name>Hop Seeds</Name>
+                <Text>These seeds can help you sprout plentiful fields of Hops in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_hops.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190923</GUID>
+                <Name>Potato Seeds</Name>
+                <Text>These sprouts can help you grow plentiful fields of Potato in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_potatoe.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190926</GUID>
+                <Name>Grape Seeds</Name>
+                <Text>These vines can help you grow plentiful fields of Grapes in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_grapes.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190929</GUID>
+                <Name>Bell Pepper Seeds</Name>
+                <Text>These seeds can help you grow plentiful fields of Peppers in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_pepper.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17042</GUID>
+            <Name>4 Advanced Tools</Name>
+            <Text>Some advanced technology at the service of your production.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_4.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190879</GUID>
+                <Name>Churn Drill</Name>
+                <Text>A simple modern hand-drill.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_drill_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190883</GUID>
+                <Name>Mechanical Loom</Name>
+                <Text>They can work it in their sleep.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_loom_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190898</GUID>
+                <Name>Magnifier</Name>
+                <Text>Lose sight of tiny cogs and sparklers no more.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_precision_instruments_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190902</GUID>
+                <Name>Fishing Net</Name>
+                <Text>Nothing slips the net.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_fishernet_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190905</GUID>
+                <Name>Blowpipe</Name>
+                <Text>Now anyone can blow a perfect sphere.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_glass_working_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190908</GUID>
+                <Name>Circular Saw</Name>
+                <Text>Lend your carpenters a hand.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_circular_saw_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190911</GUID>
+                <Name>Steel Moulds</Name>
+                <Text>Encourages some uniformity.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_mould_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190844</GUID>
+                <Name>French Burrstone</Name>
+                <Text>Will pulverise your grinding issues to a fine mist.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_millstone_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190851</GUID>
+                <Name>Two-Man Saw</Name>
+                <Text>See-saw no more, with this speedy saw.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_dragsaw_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190854</GUID>
+                <Name>Leghold Trap</Name>
+                <Text>This certainly makes sure they won't get away.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/icon_bear_trap.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190857</GUID>
+                <Name>Lopper</Name>
+                <Text>Keeping pruning tradition alive.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_pruning_material_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190860</GUID>
+                <Name>Cast Steel Plough</Name>
+                <Text>An extremely balanced approach to agriculture!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_plough_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190880</GUID>
+                <Name>Drill Press</Name>
+                <Text>A mechanical drill to reduce operator effort.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_drill_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190899</GUID>
+                <Name>Precision Monocular</Name>
+                <Text>Allows your precision craftsman to examine the fine details.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_precision_instruments_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190903</GUID>
+                <Name>Drift Net</Name>
+                <Text>Originating on the so-named "crab coast," this whopper of a net is a treat for fishermen.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_fishernet_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190825</GUID>
+                <Name>Iron Factory Bell</Name>
+                <Text>Once heard, cannot be unheard.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_factory_bell_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190828</GUID>
+                <Name>Steam Turbine</Name>
+                <Text>A safe source of electric power.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_turbine_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190831</GUID>
+                <Name>Reverberatory Furnace</Name>
+                <Text>Saves time, but not the environment.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_calciner_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190844</GUID>
+                <Name>French Burrstone</Name>
+                <Text>Will pulverise your grinding issues to a fine mist.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_millstone_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190877</GUID>
+                <Name>Safety Steam-Powered Elevator</Name>
+                <Text>A steam-geared elevator that can lift ten tonnes in one go.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_elevator_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190892</GUID>
+                <Name>Cast Iron Stove</Name>
+                <Text>A way into fast food!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_stove_2.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17043</GUID>
+            <Name>5 Chemical Research</Name>
+            <Text>The product of the latest research in chemistry.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_5.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190848</GUID>
+                <Name>Melting Point Apparatus</Name>
+                <Text>Never ruin another batch, with precise control of temparatures!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_thermometer_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190863</GUID>
+                <Name>Artificial Fertilizer</Name>
+                <Text>An acrid-smelling fertiliser.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_fertilizer_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190867</GUID>
+                <Name>Antibiotics</Name>
+                <Text>Keeps livestock from the threat of disease.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_vitamin_supplement_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190916</GUID>
+                <Name>Grain Seeds</Name>
+                <Text>These seeds can help you sprout plentiful fields of Grain in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_grain.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190920</GUID>
+                <Name>Hop Seeds</Name>
+                <Text>These seeds can help you sprout plentiful fields of Hops in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_hops.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190923</GUID>
+                <Name>Potato Seeds</Name>
+                <Text>These sprouts can help you grow plentiful fields of Potato in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_potatoe.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190926</GUID>
+                <Name>Grape Seeds</Name>
+                <Text>These vines can help you grow plentiful fields of Grapes in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_grapes.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190929</GUID>
+                <Name>Bell Pepper Seeds</Name>
+                <Text>These seeds can help you grow plentiful fields of Peppers in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_pepper.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190932</GUID>
+                <Name>Sugar Cane Seeds</Name>
+                <Text>These saplings can help you grow plentiful fields of Sugar Cane in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_sugar.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190935</GUID>
+                <Name>Tobacco Seeds</Name>
+                <Text>These seeds can help you grow plentiful fields of Tobacco in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_tobacco.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190938</GUID>
+                <Name>Cotton Seeds</Name>
+                <Text>These cotton seeds can help you grow plentiful fields of Cotton in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_cotton.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190941</GUID>
+                <Name>Cocoa Seeds</Name>
+                <Text>These beans can help you grow plentiful groves of cocoa in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_cocoa.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190944</GUID>
+                <Name>Caoutchouc Seeds</Name>
+                <Text>These saplings can help you grow plentiful groves of Caoutchouc in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_rubber.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190947</GUID>
+                <Name>Coffee Seeds</Name>
+                <Text>These beans can help you grow plentiful groves of Coffee in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_coffee.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190950</GUID>
+                <Name>Corn Seeds</Name>
+                <Text>These seeds can help you sprout plentiful fields of Corn in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_corn.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>191898</GUID>
+                <Name>Banana Seeds</Name>
+                <Text>These saplings can help you grow plentiful groves of Plantain in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_fertility_banana.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>191901</GUID>
+                <Name>Pearls Seeds</Name>
+                <Text>This spawn can help you grow a large colony of oyster in unfamiliar waters.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_fertility_pearl.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190847</GUID>
+                <Name>Mercury Thermometer</Name>
+                <Text>Measures temperature precisely.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_thermometer_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190862</GUID>
+                <Name>Wood Ash</Name>
+                <Text>A foul-smelling fertiliser.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_fertilizer_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190866</GUID>
+                <Name>Vitamins</Name>
+                <Text>Peps-up haggard-looking livestock.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_vitamin_supplement_1.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17044</GUID>
+            <Name>6 High End Equipment</Name>
+            <Text>The best tools and structures to reinforce your production.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190819</GUID>
+                <Name>Cast-Iron Doric Columns</Name>
+                <Text>Reduces the risk of fire, and looks nice.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_steel_framing_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190870</GUID>
+                <Name>Equiped Barn</Name>
+                <Text>Encourage animals to spend more time together.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_feedlots_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190874</GUID>
+                <Name>Covered Lagoon</Name>
+                <Text>Manage your livestock waste in a clean, sustainable way.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_waste_management_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190820</GUID>
+                <Name>Iron-And-Glass Structure</Name>
+                <Text>Reduces the risk of fire and looks divine.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_steel_framing_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190844</GUID>
+                <Name>French Burrstone</Name>
+                <Text>Will pulverise your grinding issues to a fine mist.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_millstone_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190851</GUID>
+                <Name>Two-Man Saw</Name>
+                <Text>See-saw no more, with this speedy saw.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_dragsaw_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190854</GUID>
+                <Name>Leghold Trap</Name>
+                <Text>This certainly makes sure they won't get away.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/icon_bear_trap.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190857</GUID>
+                <Name>Lopper</Name>
+                <Text>Keeping pruning tradition alive.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_pruning_material_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190860</GUID>
+                <Name>Cast Steel Plough</Name>
+                <Text>An extremely balanced approach to agriculture!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_plough_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190880</GUID>
+                <Name>Drill Press</Name>
+                <Text>A mechanical drill to reduce operator effort.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_drill_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190899</GUID>
+                <Name>Precision Monocular</Name>
+                <Text>Allows your precision craftsman to examine the fine details.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_precision_instruments_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190903</GUID>
+                <Name>Drift Net</Name>
+                <Text>Originating on the so-named "crab coast," this whopper of a net is a treat for fishermen.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_fishernet_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190825</GUID>
+                <Name>Iron Factory Bell</Name>
+                <Text>Once heard, cannot be unheard.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_factory_bell_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190828</GUID>
+                <Name>Steam Turbine</Name>
+                <Text>A safe source of electric power.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_turbine_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190831</GUID>
+                <Name>Reverberatory Furnace</Name>
+                <Text>Saves time, but not the environment.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_calciner_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190844</GUID>
+                <Name>French Burrstone</Name>
+                <Text>Will pulverise your grinding issues to a fine mist.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_millstone_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190877</GUID>
+                <Name>Safety Steam-Powered Elevator</Name>
+                <Text>A steam-geared elevator that can lift ten tonnes in one go.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_elevator_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190892</GUID>
+                <Name>Cast Iron Stove</Name>
+                <Text>A way into fast food!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_stove_2.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17045</GUID>
+            <Name>7 Powered Machines</Name>
+            <Text>A selection of newly designed machines that use electricity to achieve miracles.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_7.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190840</GUID>
+                <Name>Helical Planner</Name>
+                <Text>Helical design creates less cutting waste.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_metall_planer_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190895</GUID>
+                <Name>Steam-Powered Brewing Machine</Name>
+                <Text>Rapidly accelerates the brewing process.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_brewing_machine_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190884</GUID>
+                <Name>Power Loom</Name>
+                <Text>A semi-automatic loom with bells and whistles</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_loom_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190906</GUID>
+                <Name>Glass Mechanical Press</Name>
+                <Text>Blow glass bubbles with modern speed and efficiency.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_glass_working_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190909</GUID>
+                <Name>Electric Circular Rip Saw</Name>
+                <Text>They can't wait to get its teeth stuck into it.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_circular_saw_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190912</GUID>
+                <Name>Hydraulic Press</Name>
+                <Text>Encourages rigid uniformity.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_mould_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190888</GUID>
+                <Name>Electric Assembly Line</Name>
+                <Text>Gets everything nicely into line.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_conveyor_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190896</GUID>
+                <Name>Electric Powered Pumps</Name>
+                <Text>Make your beverages speak the language of tradition with this extraordinarily capacious distiller.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_brewing_machine_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190910</GUID>
+                <Name>Electric Treadle Lathe</Name>
+                <Text>Harker's lathe cuts through wood and metal like dough. Just make sure your fingers are well clear!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_circular_saw_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190913</GUID>
+                <Name>Compacting Machine</Name>
+                <Text>Neither human nor machine has yet produced faster, more uniform masonry than Mickleton's compactor.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_mould_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190881</GUID>
+                <Name>Fein Electric Drill</Name>
+                <Text>Bores holes in the earth's crust, using the frightening power of electricity!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_drill_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190852</GUID>
+                <Name>Vaughan Drag Saw</Name>
+                <Text>Vincent's flabbergasting creation will chop it all for you!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_dragsaw_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190855</GUID>
+                <Name>Fur Stretcher</Name>
+                <Text>A particularly clean and efficient dispatcher of mink.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_trap_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190858</GUID>
+                <Name>Original LÖWE</Name>
+                <Text>A springy yet safe clipper of clippables from the near-future!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_pruning_material_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190861</GUID>
+                <Name>Steel Seed Drill</Name>
+                <Text>Precisely contoured modern materials make this seed drill a farmer's fantasy.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_plough_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190900</GUID>
+                <Name>Kruder Loupe</Name>
+                <Text>Designed by the very artisans who use them, this magnifier guaranteees quality.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_precision_instruments_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190904</GUID>
+                <Name>Brixham Bottom Trawl</Name>
+                <Text>Drifts about looking for extra fish.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_fishernet_3.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+        </Thresholds>
+      </Event>
+      <Event>
+        <GUID>17011</GUID>
+        <Name>Somptuous Science Exhibition</Name>
+        <Text>These new devices will forward our industry to a point never reached before!</Text>
+        <Icon>data/ui/2kimages/main/3dicons/icon_science.png</Icon>
+        <Thresholds>
+          <Threshold>
+            <GUID>17043</GUID>
+            <Name>5 Chemical Research</Name>
+            <Text>The product of the latest research in chemistry.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_5.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190848</GUID>
+                <Name>Melting Point Apparatus</Name>
+                <Text>Never ruin another batch, with precise control of temparatures!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_thermometer_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190863</GUID>
+                <Name>Artificial Fertilizer</Name>
+                <Text>An acrid-smelling fertiliser.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_fertilizer_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190867</GUID>
+                <Name>Antibiotics</Name>
+                <Text>Keeps livestock from the threat of disease.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_vitamin_supplement_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190916</GUID>
+                <Name>Grain Seeds</Name>
+                <Text>These seeds can help you sprout plentiful fields of Grain in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_grain.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190920</GUID>
+                <Name>Hop Seeds</Name>
+                <Text>These seeds can help you sprout plentiful fields of Hops in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_hops.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190923</GUID>
+                <Name>Potato Seeds</Name>
+                <Text>These sprouts can help you grow plentiful fields of Potato in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_potatoe.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190926</GUID>
+                <Name>Grape Seeds</Name>
+                <Text>These vines can help you grow plentiful fields of Grapes in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_grapes.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190929</GUID>
+                <Name>Bell Pepper Seeds</Name>
+                <Text>These seeds can help you grow plentiful fields of Peppers in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_pepper.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190932</GUID>
+                <Name>Sugar Cane Seeds</Name>
+                <Text>These saplings can help you grow plentiful fields of Sugar Cane in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_sugar.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190935</GUID>
+                <Name>Tobacco Seeds</Name>
+                <Text>These seeds can help you grow plentiful fields of Tobacco in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_tobacco.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190938</GUID>
+                <Name>Cotton Seeds</Name>
+                <Text>These cotton seeds can help you grow plentiful fields of Cotton in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_cotton.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190941</GUID>
+                <Name>Cocoa Seeds</Name>
+                <Text>These beans can help you grow plentiful groves of cocoa in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_cocoa.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190944</GUID>
+                <Name>Caoutchouc Seeds</Name>
+                <Text>These saplings can help you grow plentiful groves of Caoutchouc in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_rubber.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190947</GUID>
+                <Name>Coffee Seeds</Name>
+                <Text>These beans can help you grow plentiful groves of Coffee in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_coffee.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190950</GUID>
+                <Name>Corn Seeds</Name>
+                <Text>These seeds can help you sprout plentiful fields of Corn in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_corn.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>191898</GUID>
+                <Name>Banana Seeds</Name>
+                <Text>These saplings can help you grow plentiful groves of Plantain in alien soil.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_fertility_banana.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>191901</GUID>
+                <Name>Pearls Seeds</Name>
+                <Text>This spawn can help you grow a large colony of oyster in unfamiliar waters.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_fertility_pearl.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190847</GUID>
+                <Name>Mercury Thermometer</Name>
+                <Text>Measures temperature precisely.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_thermometer_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190862</GUID>
+                <Name>Wood Ash</Name>
+                <Text>A foul-smelling fertiliser.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_fertilizer_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190866</GUID>
+                <Name>Vitamins</Name>
+                <Text>Peps-up haggard-looking livestock.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_vitamin_supplement_1.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17044</GUID>
+            <Name>6 High End Equipment</Name>
+            <Text>The best tools and structures to reinforce your production.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190819</GUID>
+                <Name>Cast-Iron Doric Columns</Name>
+                <Text>Reduces the risk of fire, and looks nice.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_steel_framing_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190870</GUID>
+                <Name>Equiped Barn</Name>
+                <Text>Encourage animals to spend more time together.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_feedlots_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190874</GUID>
+                <Name>Covered Lagoon</Name>
+                <Text>Manage your livestock waste in a clean, sustainable way.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_waste_management_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190820</GUID>
+                <Name>Iron-And-Glass Structure</Name>
+                <Text>Reduces the risk of fire and looks divine.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_steel_framing_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190844</GUID>
+                <Name>French Burrstone</Name>
+                <Text>Will pulverise your grinding issues to a fine mist.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_millstone_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190851</GUID>
+                <Name>Two-Man Saw</Name>
+                <Text>See-saw no more, with this speedy saw.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_dragsaw_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190854</GUID>
+                <Name>Leghold Trap</Name>
+                <Text>This certainly makes sure they won't get away.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/icon_bear_trap.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190857</GUID>
+                <Name>Lopper</Name>
+                <Text>Keeping pruning tradition alive.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_pruning_material_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190860</GUID>
+                <Name>Cast Steel Plough</Name>
+                <Text>An extremely balanced approach to agriculture!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_plough_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190880</GUID>
+                <Name>Drill Press</Name>
+                <Text>A mechanical drill to reduce operator effort.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_drill_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190899</GUID>
+                <Name>Precision Monocular</Name>
+                <Text>Allows your precision craftsman to examine the fine details.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_precision_instruments_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190903</GUID>
+                <Name>Drift Net</Name>
+                <Text>Originating on the so-named "crab coast," this whopper of a net is a treat for fishermen.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_fishernet_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190825</GUID>
+                <Name>Iron Factory Bell</Name>
+                <Text>Once heard, cannot be unheard.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_factory_bell_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190828</GUID>
+                <Name>Steam Turbine</Name>
+                <Text>A safe source of electric power.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_turbine_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190831</GUID>
+                <Name>Reverberatory Furnace</Name>
+                <Text>Saves time, but not the environment.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_calciner_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190844</GUID>
+                <Name>French Burrstone</Name>
+                <Text>Will pulverise your grinding issues to a fine mist.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_millstone_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190877</GUID>
+                <Name>Safety Steam-Powered Elevator</Name>
+                <Text>A steam-geared elevator that can lift ten tonnes in one go.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_elevator_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190892</GUID>
+                <Name>Cast Iron Stove</Name>
+                <Text>A way into fast food!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_stove_2.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17045</GUID>
+            <Name>7 Powered Machines</Name>
+            <Text>A selection of newly designed machines that use electricity to achieve miracles.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_7.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190840</GUID>
+                <Name>Helical Planner</Name>
+                <Text>Helical design creates less cutting waste.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_metall_planer_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190895</GUID>
+                <Name>Steam-Powered Brewing Machine</Name>
+                <Text>Rapidly accelerates the brewing process.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_brewing_machine_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190884</GUID>
+                <Name>Power Loom</Name>
+                <Text>A semi-automatic loom with bells and whistles</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_loom_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190906</GUID>
+                <Name>Glass Mechanical Press</Name>
+                <Text>Blow glass bubbles with modern speed and efficiency.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_glass_working_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190909</GUID>
+                <Name>Electric Circular Rip Saw</Name>
+                <Text>They can't wait to get its teeth stuck into it.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_circular_saw_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190912</GUID>
+                <Name>Hydraulic Press</Name>
+                <Text>Encourages rigid uniformity.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_mould_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190888</GUID>
+                <Name>Electric Assembly Line</Name>
+                <Text>Gets everything nicely into line.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_conveyor_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190896</GUID>
+                <Name>Electric Powered Pumps</Name>
+                <Text>Make your beverages speak the language of tradition with this extraordinarily capacious distiller.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_brewing_machine_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190910</GUID>
+                <Name>Electric Treadle Lathe</Name>
+                <Text>Harker's lathe cuts through wood and metal like dough. Just make sure your fingers are well clear!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_circular_saw_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190913</GUID>
+                <Name>Compacting Machine</Name>
+                <Text>Neither human nor machine has yet produced faster, more uniform masonry than Mickleton's compactor.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_mould_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190881</GUID>
+                <Name>Fein Electric Drill</Name>
+                <Text>Bores holes in the earth's crust, using the frightening power of electricity!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_drill_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190852</GUID>
+                <Name>Vaughan Drag Saw</Name>
+                <Text>Vincent's flabbergasting creation will chop it all for you!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_dragsaw_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190855</GUID>
+                <Name>Fur Stretcher</Name>
+                <Text>A particularly clean and efficient dispatcher of mink.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_trap_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190858</GUID>
+                <Name>Original LÖWE</Name>
+                <Text>A springy yet safe clipper of clippables from the near-future!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_pruning_material_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190861</GUID>
+                <Name>Steel Seed Drill</Name>
+                <Text>Precisely contoured modern materials make this seed drill a farmer's fantasy.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_plough_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190900</GUID>
+                <Name>Kruder Loupe</Name>
+                <Text>Designed by the very artisans who use them, this magnifier guaranteees quality.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_precision_instruments_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190904</GUID>
+                <Name>Brixham Bottom Trawl</Name>
+                <Text>Drifts about looking for extra fish.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_fishernet_3.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17046</GUID>
+            <Name>8 Agricultural Revolution</Name>
+            <Text>All you need for a very efficient and modern farming industry.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_8.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190917</GUID>
+                <Name>Selected Grain Seeds</Name>
+                <Text>These seeds have been adapted to grow in a very wide range of soils, and with increased Grain yield!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_grain.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190921</GUID>
+                <Name>Selected Hop Seeds</Name>
+                <Text>These seeds have been adapted to grow in a very wide range of soils, and with increased Hops yield!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_hops.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190924</GUID>
+                <Name>Selected Potato Seeds</Name>
+                <Text>These sprouts have been adapted to grow in a very wide range of soils, and with increased Potato yield!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_potatoe.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190927</GUID>
+                <Name>Selected Grape Seeds</Name>
+                <Text>These vines have been adapted to grow in a very wide range of soils, and with increased Grape yield!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_grapes.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190930</GUID>
+                <Name>Selected Bell Pepper Seeds</Name>
+                <Text>These seeds have been adapted to grow in a very wide range of soils, and with increased Pepper yield!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_pepper.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190933</GUID>
+                <Name>Selected Sugar Cane Seeds</Name>
+                <Text>These saplings have been adapted to grow in a very wide range of soils, and with increased Sugar yield!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_sugar.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190936</GUID>
+                <Name>Selected Tobacco Seeds</Name>
+                <Text>These seeds have been adapted to grow in a very wide range of soils, and with increased Tobacco yield!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_tobacco.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190939</GUID>
+                <Name>Selected Cotton Seeds</Name>
+                <Text>These seeds have been adapted to grow in a very wide range of soils, and with increased Cotton yield!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_cotton.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190942</GUID>
+                <Name>Selected Cocoa Seeds</Name>
+                <Text>These beans have been adapted to grow in a very wide range of soils, and with increased Cocoa yield!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_cocoa.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190945</GUID>
+                <Name>Selected Caoutchouc Seeds</Name>
+                <Text>These saplings have been adapted to grow in a very wide range of soils, and with increased Caoutchouc yield!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_rubber.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190948</GUID>
+                <Name>Selected Coffee Seeds</Name>
+                <Text>These beans have been adapted to grow in a very wide range of soils, and with increased Coffee yield!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_coffee.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190951</GUID>
+                <Name>Selected Corn Seeds</Name>
+                <Text>These seeds have been adapted to grow in a very wide range of soils, and with increased Corn yield!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_seeds_corn.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>191899</GUID>
+                <Name>Selected Banana Seeds</Name>
+                <Text>These saplings have been adapted to grow in a very wide range of soils, and with increased Plantain yield!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_fertility_banana.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>191902</GUID>
+                <Name>Selected Pearls Seeds</Name>
+                <Text>These oysters have been adapted to grow in a very wide range of seas, and with increased yield!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/fertilities/icon_fertility_pearl.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190871</GUID>
+                <Name>Feedlots</Name>
+                <Text>If the little critters can't have free range, let them at least have comfort.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_feedlots_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190875</GUID>
+                <Name>Straw Mixed Compost Shed</Name>
+                <Text>As glamurous as waste management gets, and a rich source of natural fertiliser.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_waste_management_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190864</GUID>
+                <Name>SuperPhosphate Fertilizers</Name>
+                <Text>A synthetic fertiliser of remarkable fecundity, and ah..potency!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_fertilizer_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190868</GUID>
+                <Name>Anthrax Vaccine</Name>
+                <Text>Lost count of anthrax deaths on your farm? This vaccine can set your worries aside!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_vitamin_supplement_3.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17047</GUID>
+            <Name>9 Unique Inventions</Name>
+            <Text>The latest inventions of the most talented engineers of the era.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190829</GUID>
+                <Name>Parsons Turbo Generator</Name>
+                <Text>A highly-efficient and safe source of electrical power!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_turbine_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190832</GUID>
+                <Name>Bessemer Converter</Name>
+                <Text>An smelting innovation that saves both time and effort!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_calciner_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190845</GUID>
+                <Name>Grinding Machine Lieberman</Name>
+                <Text>A very lovely grinder that even has its own cooling system.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_millstone_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190878</GUID>
+                <Name>Siemens Electric Elevator</Name>
+                <Text>Performing solely on electricity, the Simmons has no rival in ferrying things up and down at break-neck speed!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_elevator_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190893</GUID>
+                <Name>Smith Electric Stove</Name>
+                <Text>Elmer's thermo-electric miracle will help chef patrons at even the busiest lunch service.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_stove_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190841</GUID>
+                <Name>The Cutting Edge</Name>
+                <Text>A radical redesign that makes cutting efficient and effortless!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_metall_planer_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190885</GUID>
+                <Name>Roberts Loom</Name>
+                <Text>The shuttle of the mighty Hopedale Loom even replenishes when empty!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_loom_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190907</GUID>
+                <Name>Owens Bottle Blowing Machine</Name>
+                <Text>Oriel's ingenious machine sometimes gets carried away blowing bubbles on its own!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_glass_working_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190845</GUID>
+                <Name>Grinding Machine Lieberman</Name>
+                <Text>A very lovely grinder that even has its own cooling system.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_millstone_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190849</GUID>
+                <Name>Thiele Tube</Name>
+                <Text>The most accurate of all melting point measurement systems known in this century!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_thermometer_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190889</GUID>
+                <Name>Portsmouth Block Mills</Name>
+                <Text>An all-metal assembly line that permits your employees to simply stand back and watch!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_conveyor_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190826</GUID>
+                <Name>Oxford Electric Bell</Name>
+                <Text>Shirkers begone! The shrill cry of a new day has sounded!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_factory_bell_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>191890</GUID>
+                <Name>Dynamic Loudspeaker</Name>
+                <Text>You only have to clear your throat and they obey.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/military_items/icon_loudspeaker.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>192177</GUID>
+                <Name>Loudspeaker harbour network</Name>
+                <Text>Extremely clear communication means a lightning-quick response!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/consumables/icon_loudspeaker_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>191896</GUID>
+                <Name>Railroad Construction Crane</Name>
+                <Text>An extremely large and powerful crane for shipbuilding.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/consumables/icon_repair_crane_2.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>191894</GUID>
+                <Name>Wooden Tower Construction Crane</Name>
+                <Text>Lift a burden off your shipwrights.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/consumables/icon_repair_crane_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>191885</GUID>
+                <Name>Railroad Repair Crane</Name>
+                <Text>A crane with a very broad range of massage techniques.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/consumables/icon_construction_crane_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>191886</GUID>
+                <Name>Hydraulic Repair Crane</Name>
+                <Text>You have to crane your neck to see the top of this giant of construction.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/consumables/icon_construction_crane_4.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>191831</GUID>
+                <Name>Controllable-Pitch Propeller</Name>
+                <Text>A powerful propeller, that is also rather versatile.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_screw_propeller_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>191834</GUID>
+                <Name>Multiple Expansion Steam Engine</Name>
+                <Text>An exceptional design that gives your steamships a bit of oomph at the crucial moment.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/machine_items/icon_generator_1.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>191840</GUID>
+                <Name>First Radar, the Telemobiloscope</Name>
+                <Text>A surveyor of the sea, it detects the presence of metallic bodies all around.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/consumables/icon_telescope_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>191850</GUID>
+                <Name>Bulkheads</Name>
+                <Text>A heavy armour for vessels expecting to be peppered with ammunition.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/consumables/icon_hull_3.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>191851</GUID>
+                <Name>Steel Double-Hull</Name>
+                <Text>Shipwright Singh's hulls are designed specifically to combat a misfortune of modern projectiles.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/consumables/icon_hull_4.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+        </Thresholds>
+      </Event>
+    </Events>
+  </Category>
+  <Category>
+    <GUID>17005</GUID>
+    <Name>Archaeological Discoveries</Name>
+    <Text>A cabinet of curiosities bursting with antique sculptures, writings and art pieces.</Text>
+    <Icon>data/ui/2kimages/main/3dicons/icon_archeology.png</Icon>
+    <Events>
+      <Event>
+        <GUID>17012</GUID>
+        <Name>Modest Archaeological Exhibition</Name>
+        <Text>These splendid artifacts from the past will make our curator happy!</Text>
+        <Icon>data/ui/2kimages/main/3dicons/icon_archeology.png</Icon>
+        <Thresholds>
+          <Threshold>
+            <GUID>17017</GUID>
+            <Name>1 Curiosities</Name>
+            <Text>A few old possessions and statues of little value.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_1.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190521</GUID>
+                <Name>copper coins</Name>
+                <Text>Of historical value only.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_coin_common.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190492</GUID>
+                <Name>tarnished necklace</Name>
+                <Text>Seems a humble necklace now, but back then...</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_necklace_common.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190494</GUID>
+                <Name>wooden ring</Name>
+                <Text>The bright pigment of its life has faded.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_wooden_ring.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190534</GUID>
+                <Name>stone statue</Name>
+                <Text>An elegant statue that has sadly at some point been defaced.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_statue_broken.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190525</GUID>
+                <Name>broken statue</Name>
+                <Text>Believed to represent an ancient female deity.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_statue_stone.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190522</GUID>
+                <Name>quartz</Name>
+                <Text>A semi-precious mineral of transparent beauty.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_gem_quartz.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190487</GUID>
+                <Name>pyrite crystals</Name>
+                <Text>Pyrite is a mineral of uncannily geometric geology.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_gem_pyrite.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17022</GUID>
+            <Name>2 Everyday Material</Name>
+            <Text>The spartan possessions of an ancient warrior.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_2.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190521</GUID>
+                <Name>copper coins</Name>
+                <Text>Of historical value only.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_coin_common.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190492</GUID>
+                <Name>tarnished necklace</Name>
+                <Text>Seems a humble necklace now, but back then...</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_necklace_common.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190494</GUID>
+                <Name>wooden ring</Name>
+                <Text>The bright pigment of its life has faded.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_wooden_ring.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190527</GUID>
+                <Name>silver coins</Name>
+                <Text>Pocket money to a prince.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_coin_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190530</GUID>
+                <Name>silver necklace</Name>
+                <Text>The sliver of a pendant has done well to survive this long.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_necklace_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190553</GUID>
+                <Name>copper ring</Name>
+                <Text>The corroded ring of a notable wool merchant, perhaps?</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_ring_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190523</GUID>
+                <Name>bronze helmet</Name>
+                <Text>A dent hints at the fate of its original owner.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_helmet_common.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190524</GUID>
+                <Name>wooden shield</Name>
+                <Text>All a poor soldier had to defend themselves.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_shield_common.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190526</GUID>
+                <Name>bronze sword</Name>
+                <Text>Rust has consumed nearly all of the blade.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_sword_common.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17023</GUID>
+            <Name>3 Handcrafting</Name>
+            <Text>The remains of a modest tomb.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_3.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190527</GUID>
+                <Name>silver coins</Name>
+                <Text>Pocket money to a prince.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_coin_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190530</GUID>
+                <Name>silver necklace</Name>
+                <Text>The sliver of a pendant has done well to survive this long.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_necklace_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190553</GUID>
+                <Name>copper ring</Name>
+                <Text>The corroded ring of a notable wool merchant, perhaps?</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_ring_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190471</GUID>
+                <Name>mummy bandages</Name>
+                <Text>The mummy itself is gone, do you think...? No, surely not!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_mummy_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190528</GUID>
+                <Name>colored fabric</Name>
+                <Text>Sealed in glass to preserve the vivid colour of the fabric.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_fabric_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190529</GUID>
+                <Name>iron helmet</Name>
+                <Text>Intact. Maybe this warrior died of natural causes?</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_helmet_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190533</GUID>
+                <Name>iron shield</Name>
+                <Text>A protective iron disc found in a warrior's grave.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_shield_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190535</GUID>
+                <Name>iron sword</Name>
+                <Text>This sword was among the belongings of a fallen warrior.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_sword_uncommon.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17024</GUID>
+            <Name>4 Ancient Writings</Name>
+            <Text>Old writings, some of which are now of great value.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_4.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190520</GUID>
+                <Name>ancient tales</Name>
+                <Text>Wise old tales of folk.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_book_comon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190482</GUID>
+                <Name>ancient accounts</Name>
+                <Text>Antique book-keeping was much as it is now.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_scroll_common.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190478</GUID>
+                <Name>ancient novel</Name>
+                <Text>A profound work of fiction rather novel for its time.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_book_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190532</GUID>
+                <Name>past deeds</Name>
+                <Text>Some monk's tireless work of divine calligraphy.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_scroll_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190481</GUID>
+                <Name>lined stone</Name>
+                <Text>Illustrations spanning hundreds of metres over pebble.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_lined_stone.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190468</GUID>
+                <Name>old medicine treaty</Name>
+                <Text>An ancient treatise on medical practices anatomical and physiological.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_book_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190540</GUID>
+                <Name>ragnarsdrápa</Name>
+                <Text>Sagas that regale the life and feats of the old Northen kings.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_ragnarsdrapa.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17025</GUID>
+            <Name>5 Rich Furnitures</Name>
+            <Text>Some remains that once belonged to a wealthy person.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_5.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190536</GUID>
+                <Name>gold coins</Name>
+                <Text>Some went their whole lives without ever seeing one.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_coin_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190539</GUID>
+                <Name>celtic jewellery</Name>
+                <Text>The acme of early Goidelic metalwork in its gilt silver filigree.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_necklace_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190541</GUID>
+                <Name>silver ring</Name>
+                <Text>An old silver ring inscribed a script of indiscernible origin.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_ring_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190282</GUID>
+                <Name>monkey-tooth amulet</Name>
+                <Text>This nazcan monkey god grins away your envy.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_monkey_amulet.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190489</GUID>
+                <Name>jade pearl</Name>
+                <Text>The soft green radiance of this polished gem conjures up the imperial east.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_gem_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190543</GUID>
+                <Name>poseidon statue</Name>
+                <Text>A classical statue of the god of the sea, sculpted in Aegean marble.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_statue_marble_statue.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190471</GUID>
+                <Name>mummy bandages</Name>
+                <Text>The mummy itself is gone, do you think...? No, surely not!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_mummy_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190528</GUID>
+                <Name>colored fabric</Name>
+                <Text>Sealed in glass to preserve the vivid colour of the fabric.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_fabric_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190529</GUID>
+                <Name>iron helmet</Name>
+                <Text>Intact. Maybe this warrior died of natural causes?</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_helmet_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190533</GUID>
+                <Name>iron shield</Name>
+                <Text>A protective iron disc found in a warrior's grave.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_shield_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190535</GUID>
+                <Name>iron sword</Name>
+                <Text>This sword was among the belongings of a fallen warrior.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_sword_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190527</GUID>
+                <Name>silver coins</Name>
+                <Text>Pocket money to a prince.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_coin_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190530</GUID>
+                <Name>silver necklace</Name>
+                <Text>The sliver of a pendant has done well to survive this long.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_necklace_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190553</GUID>
+                <Name>copper ring</Name>
+                <Text>The corroded ring of a notable wool merchant, perhaps?</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_ring_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190534</GUID>
+                <Name>stone statue</Name>
+                <Text>An elegant statue that has sadly at some point been defaced.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_statue_broken.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190487</GUID>
+                <Name>pyrite crystals</Name>
+                <Text>Pyrite is a mineral of uncannily geometric geology.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_gem_pyrite.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+        </Thresholds>
+      </Event>
+      <Event>
+        <GUID>17013</GUID>
+        <Name>Large Archaeological Exhibition</Name>
+        <Text>These splendid artifacts from the past will make our curator happy!</Text>
+        <Icon>data/ui/2kimages/main/3dicons/icon_archeology.png</Icon>
+        <Thresholds>
+          <Threshold>
+            <GUID>17023</GUID>
+            <Name>3 Handcrafting</Name>
+            <Text>The remains of a modest tomb.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_3.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190527</GUID>
+                <Name>silver coins</Name>
+                <Text>Pocket money to a prince.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_coin_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190530</GUID>
+                <Name>silver necklace</Name>
+                <Text>The sliver of a pendant has done well to survive this long.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_necklace_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190553</GUID>
+                <Name>copper ring</Name>
+                <Text>The corroded ring of a notable wool merchant, perhaps?</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_ring_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190471</GUID>
+                <Name>mummy bandages</Name>
+                <Text>The mummy itself is gone, do you think...? No, surely not!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_mummy_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190528</GUID>
+                <Name>colored fabric</Name>
+                <Text>Sealed in glass to preserve the vivid colour of the fabric.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_fabric_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190529</GUID>
+                <Name>iron helmet</Name>
+                <Text>Intact. Maybe this warrior died of natural causes?</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_helmet_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190533</GUID>
+                <Name>iron shield</Name>
+                <Text>A protective iron disc found in a warrior's grave.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_shield_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190535</GUID>
+                <Name>iron sword</Name>
+                <Text>This sword was among the belongings of a fallen warrior.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_sword_uncommon.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17024</GUID>
+            <Name>4 Ancient Writings</Name>
+            <Text>Old writings, some of which are now of great value.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_4.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190520</GUID>
+                <Name>ancient tales</Name>
+                <Text>Wise old tales of folk.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_book_comon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190482</GUID>
+                <Name>ancient accounts</Name>
+                <Text>Antique book-keeping was much as it is now.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_scroll_common.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190478</GUID>
+                <Name>ancient novel</Name>
+                <Text>A profound work of fiction rather novel for its time.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_book_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190532</GUID>
+                <Name>past deeds</Name>
+                <Text>Some monk's tireless work of divine calligraphy.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_scroll_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190481</GUID>
+                <Name>lined stone</Name>
+                <Text>Illustrations spanning hundreds of metres over pebble.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_lined_stone.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190468</GUID>
+                <Name>old medicine treaty</Name>
+                <Text>An ancient treatise on medical practices anatomical and physiological.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_book_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190540</GUID>
+                <Name>ragnarsdrápa</Name>
+                <Text>Sagas that regale the life and feats of the old Northen kings.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_ragnarsdrapa.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17025</GUID>
+            <Name>5 Rich Furnitures</Name>
+            <Text>Some remains that once belonged to a wealthy person.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_5.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190536</GUID>
+                <Name>gold coins</Name>
+                <Text>Some went their whole lives without ever seeing one.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_coin_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190539</GUID>
+                <Name>celtic jewellery</Name>
+                <Text>The acme of early Goidelic metalwork in its gilt silver filigree.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_necklace_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190541</GUID>
+                <Name>silver ring</Name>
+                <Text>An old silver ring inscribed a script of indiscernible origin.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_ring_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190282</GUID>
+                <Name>monkey-tooth amulet</Name>
+                <Text>This nazcan monkey god grins away your envy.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_monkey_amulet.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190489</GUID>
+                <Name>jade pearl</Name>
+                <Text>The soft green radiance of this polished gem conjures up the imperial east.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_gem_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190543</GUID>
+                <Name>poseidon statue</Name>
+                <Text>A classical statue of the god of the sea, sculpted in Aegean marble.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_statue_marble_statue.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190471</GUID>
+                <Name>mummy bandages</Name>
+                <Text>The mummy itself is gone, do you think...? No, surely not!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_mummy_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190528</GUID>
+                <Name>colored fabric</Name>
+                <Text>Sealed in glass to preserve the vivid colour of the fabric.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_fabric_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190529</GUID>
+                <Name>iron helmet</Name>
+                <Text>Intact. Maybe this warrior died of natural causes?</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_helmet_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190533</GUID>
+                <Name>iron shield</Name>
+                <Text>A protective iron disc found in a warrior's grave.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_shield_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190535</GUID>
+                <Name>iron sword</Name>
+                <Text>This sword was among the belongings of a fallen warrior.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_sword_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190527</GUID>
+                <Name>silver coins</Name>
+                <Text>Pocket money to a prince.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_coin_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190530</GUID>
+                <Name>silver necklace</Name>
+                <Text>The sliver of a pendant has done well to survive this long.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_necklace_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190553</GUID>
+                <Name>copper ring</Name>
+                <Text>The corroded ring of a notable wool merchant, perhaps?</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_ring_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190534</GUID>
+                <Name>stone statue</Name>
+                <Text>An elegant statue that has sadly at some point been defaced.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_statue_broken.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190487</GUID>
+                <Name>pyrite crystals</Name>
+                <Text>Pyrite is a mineral of uncannily geometric geology.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_gem_pyrite.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17026</GUID>
+            <Name>6 Noble Funerary Material</Name>
+            <Text>Funerary textiles buried with a noble in her tomb.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190537</GUID>
+                <Name>ornate fabric</Name>
+                <Text>Intricate patterns were woven into this fragile musky fabric.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_fabric_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190472</GUID>
+                <Name>decayed mummy</Name>
+                <Text>An as yet unidentified king or queen of the upper delta.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_mummy_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190536</GUID>
+                <Name>gold coins</Name>
+                <Text>Some went their whole lives without ever seeing one.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_coin_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190539</GUID>
+                <Name>celtic jewellery</Name>
+                <Text>The acme of early Goidelic metalwork in its gilt silver filigree.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_necklace_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190541</GUID>
+                <Name>silver ring</Name>
+                <Text>An old silver ring inscribed a script of indiscernible origin.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_ring_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190282</GUID>
+                <Name>monkey-tooth amulet</Name>
+                <Text>This nazcan monkey god grins away your envy.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_monkey_amulet.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190538</GUID>
+                <Name>silver helmet</Name>
+                <Text>A ceremonial silver headpiece of beauty, but unknown provenance.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_helmet_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190542</GUID>
+                <Name>silver shield</Name>
+                <Text>A ceremonial shield you can see your face in— just don't fight with it.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_shield_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190544</GUID>
+                <Name>silver sword</Name>
+                <Text>A ceremonial silver sword that clearly only ever served a decorative purpose.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_sword_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190548</GUID>
+                <Name>golden helmet</Name>
+                <Text>A lavish gilt headpiece engraved with war scenes its wearer had perhaps witnessed.&lt;br/&gt;</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_helmet_epic.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190551</GUID>
+                <Name>ornate broadsword</Name>
+                <Text>A fearsome sword no doubt wielded by the most dreaded old cove of old coves.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_sword_pirate_epic.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190468</GUID>
+                <Name>old medicine treaty</Name>
+                <Text>An ancient treatise on medical practices anatomical and physiological.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_book_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190540</GUID>
+                <Name>ragnarsdrápa</Name>
+                <Text>Sagas that regale the life and feats of the old Northen kings.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_ragnarsdrapa.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17027</GUID>
+            <Name>7 Natural History</Name>
+            <Text>A pack of bones from creatures long gone.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_7.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190502</GUID>
+                <Name>t-rex</Name>
+                <Text>&lt;b&gt;Tyrannosaurus Rex.&lt;/b&gt; The mere sight of its skeleton is enough to leave the bravest schoolchild cowering.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_t_rex.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190504</GUID>
+                <Name>sauropoda</Name>
+                <Text>&lt;b&gt;Apatosaurus Ajax.&lt;/b&gt; One of the largest creatures to ever wander the Earth, how did it hold up its own weight?</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_sauropodon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190505</GUID>
+                <Name>mosasaurus</Name>
+                <Text>&lt;b&gt;Mosasaurus Hoffmanni.&lt;/b&gt; Who'd have thought such a vast creature once roamed the oceans, casually snacking on sharks.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_mosasaurus.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190503</GUID>
+                <Name>stegosaurus</Name>
+                <Text>&lt;b&gt;Stegosaurus Armatus.&lt;/b&gt; Characterised by the triangular plates that it wore on its back.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_stegosaurus.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190475</GUID>
+                <Name>neanderthal skeleton</Name>
+                <Text>&lt;b&gt;Homo neanderthalensis.&lt;/b&gt; Found in embedded in mud-clay, it is a revelation as to the place of humans in nature.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_neanderthaler.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190476</GUID>
+                <Name>redbeard's skeleton</Name>
+                <Text>Skeleton of a king among corsairs, who shall be saluted with cannons before we sail to sea.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_readbeard_skeletton.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190473</GUID>
+                <Name>nazcan mummy</Name>
+                <Text>The body of an nazcan girl wrapped in a bundle of clothes, found frozen in ice.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_mummy_nazcan.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190483</GUID>
+                <Name>fossils</Name>
+                <Text>The fossilised spiral shells of long-lost species of marine molluscs.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_fossils.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190549</GUID>
+                <Name>dinosaur eggs</Name>
+                <Text>Those who stumbled upon these fossilised eggs at first mistook them for those of a giant bird.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_dinosaur_egg.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+        </Thresholds>
+      </Event>
+      <Event>
+        <GUID>17014</GUID>
+        <Name>Somptuous Archaeological Exhibition</Name>
+        <Text>These splendid artifacts from the past will make our curator happy!</Text>
+        <Icon>data/ui/2kimages/main/3dicons/icon_archeology.png</Icon>
+        <Thresholds>
+          <Threshold>
+            <GUID>17025</GUID>
+            <Name>5 Rich Furnitures</Name>
+            <Text>Some remains that once belonged to a wealthy person.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_5.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190536</GUID>
+                <Name>gold coins</Name>
+                <Text>Some went their whole lives without ever seeing one.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_coin_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190539</GUID>
+                <Name>celtic jewellery</Name>
+                <Text>The acme of early Goidelic metalwork in its gilt silver filigree.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_necklace_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190541</GUID>
+                <Name>silver ring</Name>
+                <Text>An old silver ring inscribed a script of indiscernible origin.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_ring_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190282</GUID>
+                <Name>monkey-tooth amulet</Name>
+                <Text>This nazcan monkey god grins away your envy.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_monkey_amulet.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190489</GUID>
+                <Name>jade pearl</Name>
+                <Text>The soft green radiance of this polished gem conjures up the imperial east.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_gem_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190543</GUID>
+                <Name>poseidon statue</Name>
+                <Text>A classical statue of the god of the sea, sculpted in Aegean marble.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_statue_marble_statue.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190471</GUID>
+                <Name>mummy bandages</Name>
+                <Text>The mummy itself is gone, do you think...? No, surely not!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_mummy_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190528</GUID>
+                <Name>colored fabric</Name>
+                <Text>Sealed in glass to preserve the vivid colour of the fabric.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_fabric_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190529</GUID>
+                <Name>iron helmet</Name>
+                <Text>Intact. Maybe this warrior died of natural causes?</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_helmet_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190533</GUID>
+                <Name>iron shield</Name>
+                <Text>A protective iron disc found in a warrior's grave.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_shield_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190535</GUID>
+                <Name>iron sword</Name>
+                <Text>This sword was among the belongings of a fallen warrior.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_sword_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190527</GUID>
+                <Name>silver coins</Name>
+                <Text>Pocket money to a prince.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_coin_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190530</GUID>
+                <Name>silver necklace</Name>
+                <Text>The sliver of a pendant has done well to survive this long.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_necklace_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190553</GUID>
+                <Name>copper ring</Name>
+                <Text>The corroded ring of a notable wool merchant, perhaps?</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_ring_uncommon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190534</GUID>
+                <Name>stone statue</Name>
+                <Text>An elegant statue that has sadly at some point been defaced.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_statue_broken.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190487</GUID>
+                <Name>pyrite crystals</Name>
+                <Text>Pyrite is a mineral of uncannily geometric geology.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_gem_pyrite.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17026</GUID>
+            <Name>6 Noble Funerary Material</Name>
+            <Text>Funerary textiles buried with a noble in her tomb.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190537</GUID>
+                <Name>ornate fabric</Name>
+                <Text>Intricate patterns were woven into this fragile musky fabric.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_fabric_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190472</GUID>
+                <Name>decayed mummy</Name>
+                <Text>An as yet unidentified king or queen of the upper delta.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_mummy_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190536</GUID>
+                <Name>gold coins</Name>
+                <Text>Some went their whole lives without ever seeing one.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_coin_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190539</GUID>
+                <Name>celtic jewellery</Name>
+                <Text>The acme of early Goidelic metalwork in its gilt silver filigree.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_necklace_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190541</GUID>
+                <Name>silver ring</Name>
+                <Text>An old silver ring inscribed a script of indiscernible origin.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_ring_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190282</GUID>
+                <Name>monkey-tooth amulet</Name>
+                <Text>This nazcan monkey god grins away your envy.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_monkey_amulet.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190538</GUID>
+                <Name>silver helmet</Name>
+                <Text>A ceremonial silver headpiece of beauty, but unknown provenance.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_helmet_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190542</GUID>
+                <Name>silver shield</Name>
+                <Text>A ceremonial shield you can see your face in— just don't fight with it.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_shield_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190544</GUID>
+                <Name>silver sword</Name>
+                <Text>A ceremonial silver sword that clearly only ever served a decorative purpose.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_sword_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190548</GUID>
+                <Name>golden helmet</Name>
+                <Text>A lavish gilt headpiece engraved with war scenes its wearer had perhaps witnessed.&lt;br/&gt;</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_helmet_epic.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190551</GUID>
+                <Name>ornate broadsword</Name>
+                <Text>A fearsome sword no doubt wielded by the most dreaded old cove of old coves.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_sword_pirate_epic.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190468</GUID>
+                <Name>old medicine treaty</Name>
+                <Text>An ancient treatise on medical practices anatomical and physiological.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_book_rare.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190540</GUID>
+                <Name>ragnarsdrápa</Name>
+                <Text>Sagas that regale the life and feats of the old Northen kings.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_ragnarsdrapa.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17027</GUID>
+            <Name>7 Natural History</Name>
+            <Text>A pack of bones from creatures long gone.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_7.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190502</GUID>
+                <Name>t-rex</Name>
+                <Text>&lt;b&gt;Tyrannosaurus Rex.&lt;/b&gt; The mere sight of its skeleton is enough to leave the bravest schoolchild cowering.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_t_rex.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190504</GUID>
+                <Name>sauropoda</Name>
+                <Text>&lt;b&gt;Apatosaurus Ajax.&lt;/b&gt; One of the largest creatures to ever wander the Earth, how did it hold up its own weight?</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_sauropodon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190505</GUID>
+                <Name>mosasaurus</Name>
+                <Text>&lt;b&gt;Mosasaurus Hoffmanni.&lt;/b&gt; Who'd have thought such a vast creature once roamed the oceans, casually snacking on sharks.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_mosasaurus.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190503</GUID>
+                <Name>stegosaurus</Name>
+                <Text>&lt;b&gt;Stegosaurus Armatus.&lt;/b&gt; Characterised by the triangular plates that it wore on its back.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_stegosaurus.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190475</GUID>
+                <Name>neanderthal skeleton</Name>
+                <Text>&lt;b&gt;Homo neanderthalensis.&lt;/b&gt; Found in embedded in mud-clay, it is a revelation as to the place of humans in nature.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_neanderthaler.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190476</GUID>
+                <Name>redbeard's skeleton</Name>
+                <Text>Skeleton of a king among corsairs, who shall be saluted with cannons before we sail to sea.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_readbeard_skeletton.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190473</GUID>
+                <Name>nazcan mummy</Name>
+                <Text>The body of an nazcan girl wrapped in a bundle of clothes, found frozen in ice.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_mummy_nazcan.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190483</GUID>
+                <Name>fossils</Name>
+                <Text>The fossilised spiral shells of long-lost species of marine molluscs.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_fossils.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190549</GUID>
+                <Name>dinosaur eggs</Name>
+                <Text>Those who stumbled upon these fossilised eggs at first mistook them for those of a giant bird.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_dinosaur_egg.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17028</GUID>
+            <Name>8 Mythical Artifacts</Name>
+            <Text>Legendary artifacts that no one thought could be real.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_8.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190470</GUID>
+                <Name>valkyrie helmet</Name>
+                <Text>Its plated wings are reminiscent of the mythological Nordic riders who lived and died on the battlefield.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_viking_valkyrie_helmet.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190493</GUID>
+                <Name>nibelungen ring</Name>
+                <Text>Ring of Nordic legend said to grant its bearer the power to rule the earth, and set the Old Gods in disarray.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_viking_nibelungen_ring.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190552</GUID>
+                <Name>dyrnwyn</Name>
+                <Text>Legendary blade of a generous Goidelic ruler, it is said when drawn by one worthy, the blade shall blaze with fire.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_celts_dyrnwyn.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190480</GUID>
+                <Name>edda</Name>
+                <Text>A fabled collection of epic poems that gives us a window into the life and mythology of Nordic peoples.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_viking_edda.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190484</GUID>
+                <Name>the iliad</Name>
+                <Text>Truly an epic! This poem passed to us from oral tradition, recounts the siege of Troy.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_scroll_anthology_myths.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190485</GUID>
+                <Name>the odyssey</Name>
+                <Text>The man of many ways, finds many ways to get home to his disbelieving wife and son.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_scroll_odyssey.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190545</GUID>
+                <Name>ben sahid treasure</Name>
+                <Text>The many and varied treasures of Ben Sahid, greatest pirate of all time.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_coin_epic.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190546</GUID>
+                <Name>ancient king shroud</Name>
+                <Text>Claims about its authenticity are suitably flimsy, but if it is what it is said to be...</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_fabric_epic.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190547</GUID>
+                <Name>diamond</Name>
+                <Text>A particularly large and lustrous specimen of the world's most desirable rock.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_gem_diamond.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190474</GUID>
+                <Name>pakal's necklaces</Name>
+                <Text>Belonged to Takal of the Sun, the deified monarch that reigned for fifty years.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_necklace_epic.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190550</GUID>
+                <Name>golden ring</Name>
+                <Text>Fits only the slender finger of the rightful heir to a forgotten kingdom.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_ring_epic.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+          <Threshold>
+            <GUID>17029</GUID>
+            <Name>9 Ancient Architecture</Name>
+            <Text>The remains of the greatest constructions from the past.</Text>
+            <Icon>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Icon>
+            <Rewards>
+              <Reward>
+                <GUID>190516</GUID>
+                <Name>uppsala altar</Name>
+                <Text>Sacrificial altar of a Nordic temple, where nine males of every sort of living creature were offered to the gods.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_viking_uppsala_altar.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190514</GUID>
+                <Name>stonehenge</Name>
+                <Text>Celestial energy resonates between these awesome stones, so go ahead, grab a chisel and take some home!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_museum_celts_stonehenge.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190509</GUID>
+                <Name>temple of poseidon</Name>
+                <Text>A remarkably well-preserved monument of the Aegean Golden Age that smacks of dolphins and fish.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_corinthian_temple_of_posseidon.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190499</GUID>
+                <Name>mayan temple</Name>
+                <Text>The temple of the Great Jaguar. Once an important place of ritual, and gateway to the underworld.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_mayan_temple.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190517</GUID>
+                <Name>menhirs</Name>
+                <Text>These towering standing stones are the gatekeepers to a bygone era.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_celtic_menhirs.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190508</GUID>
+                <Name>olympieion remains</Name>
+                <Text>Walking among the reliefs of lapiths and centaurs transports one to the Aegean age.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_corinthian_olympean_remain.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190510</GUID>
+                <Name>roman sanctuary</Name>
+                <Text>Part of a gentle sanctuary built to honour a goddess of strategy and warfare.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_roman_sanctuary.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190515</GUID>
+                <Name>dolmen</Name>
+                <Text>A T-shaped megalithic tomb where it is thought purifying funeral rites were held.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_celtic_dolmen.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190496</GUID>
+                <Name>nazcan tombs</Name>
+                <Text>The final resting place of the ancient dwellers of the black desert.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_nascan_tomb.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190498</GUID>
+                <Name>mayan sea port</Name>
+                <Text>The harbour of an ancient port that may have traded with the distant Old world in turquoise and jade.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_mayan_seaport.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190511</GUID>
+                <Name>forum remains</Name>
+                <Text>TA last vestige of the beating heart of the Empire of the Eagle, senators and emperors wandered these halls.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_roman_forum_remains.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190497</GUID>
+                <Name>mayan house</Name>
+                <Text>A simple house can be a treasure vault of intriguing detail as to how we used to live.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_mayan_house.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190501</GUID>
+                <Name>mayan calendar</Name>
+                <Text>Ingenious cyclical calendar system of stone, that predicts the world will end in about two-hundred years!</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_mayan_calendar.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190507</GUID>
+                <Name>lascaux paintings</Name>
+                <Text>Perfectly preserved cave paintings depicting the many animal companions of our great ancestors.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_lascaux_painting.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190519</GUID>
+                <Name>celtic carving</Name>
+                <Text>Intricately interlaced stone carvings, a hallmark of Goidelic ritual and belief.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_celtic_carving.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190506</GUID>
+                <Name>prehistorical painting</Name>
+                <Text>Early paintings of bisons in charcoal and ochre so exquisite, they have been called a fraud.&lt;br/&gt;</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_prehistorical_painting.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190518</GUID>
+                <Name>drakkar carving</Name>
+                <Text>A fine carving of the old vessels led by dragon prows which once sailed Northern seas.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_viking_drakkar_carving.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190513</GUID>
+                <Name>corinthian mosaic</Name>
+                <Text>Concentric patterns of ivy or vine make one feel as dizzy as a guest of the deity.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_corinthian_mosaik.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190500</GUID>
+                <Name>mayan glyphs</Name>
+                <Text>The stone tiles of a lost city, adorned with scarcely decipherable hieroglyphs.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_mayan_glyphs.png</Icon>
+              </Reward>
+              <Reward>
+                <GUID>190512</GUID>
+                <Name>roman mosaic</Name>
+                <Text>An epic depiction of east and west meeting in battle comprised of miniature stone tiles.</Text>
+                <Icon>data/ui/2kimages/main/3dicons/museum/icon_corinthian_mosaik_1.png</Icon>
+              </Reward>
+            </Rewards>
+          </Threshold>
+        </Thresholds>
+      </Event>
+    </Events>
+  </Category>
+</Monument>

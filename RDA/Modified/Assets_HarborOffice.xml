@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HarborOffice>
+  <Asset>
+    <Template>HarborOffice</Template>
+    <Values>
+      <Standard>
+        <GUID>100586</GUID>
+        <Name>harbor_office</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_harbour_kontor.png</IconFilename>
+        <InfoDescription>11422</InfoDescription>
+      </Standard>
+      <Building>
+        <BuildingCategoryName>11152</BuildingCategoryName>
+        <BuildModeRandomRotation>90</BuildModeRandomRotation>
+        <AssociatedRegions>Moderate</AssociatedRegions>
+      </Building>
+      <Blocking>
+        <GroundDecalAsset>100446</GroundDecalAsset>
+        <GroundDecalInvisible>101008</GroundDecalInvisible>
+        <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
+      </Blocking>
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+            <Amount>2500</Amount>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+            <Amount>20</Amount>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+            <Amount>10</Amount>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+      </Cost>
+      <Object>
+        <Variations>
+          <Item>
+            <Filename>data/graphics/buildings/special/harbor_office/harbor_office.cfg</Filename>
+          </Item>
+        </Variations>
+      </Object>
+      <Mesh />
+      <Selection>
+        <Colors>
+          <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+        </Colors>
+      </Selection>
+      <Text>
+        <LocaText>
+          <English>
+            <Text>Harbourmaster's Office</Text>
+            <Status>Exported</Status>
+            <ExportCount>2</ExportCount>
+          </English>
+        </LocaText>
+        <LineID>7008</LineID>
+      </Text>
+      <Constructable />
+      <Locked />
+      <SoundEmitter>
+        <ConstructionSounds>
+          <BuildSuccessful>
+            <Item>
+              <Sound>206544</Sound>
+            </Item>
+          </BuildSuccessful>
+        </ConstructionSounds>
+        <BuildingRuined>
+          <Item />
+        </BuildingRuined>
+        <BuildingRepaired>
+          <Item>
+            <Sound>203866</Sound>
+          </Item>
+        </BuildingRepaired>
+      </SoundEmitter>
+      <FeedbackController />
+      <Infolayer />
+      <RandomDummySpawner />
+      <ItemContainer />
+      <UpgradeList />
+      <Attackable>
+        <MaximumHitPoints>5000</MaximumHitPoints>
+        <PausedTimeIfAttacked>0</PausedTimeIfAttacked>
+        <SelfHealPerHealTick>5</SelfHealPerHealTick>
+        <DefenseByAIFactor>333</DefenseByAIFactor>
+        <TakeOverEffect>OnDeath</TakeOverEffect>
+        <MoralePower>100</MoralePower>
+        <IslandWarFlag>102303</IslandWarFlag>
+        <RuinSmokeParticles>
+          <Item>
+            <SmokeParticleFilePath>data/graphics/effects/military/explosions/harbor_generic_xpl_02.cfg</SmokeParticleFilePath>
+          </Item>
+          <Item>
+            <SmokeParticleFilePath>data/graphics/effects/military/explosions/harbor_generic_xpl_03.cfg</SmokeParticleFilePath>
+          </Item>
+        </RuinSmokeParticles>
+        <RuinSmokeParticlesMin>1</RuinSmokeParticlesMin>
+        <RuinSmokeParticlesMax>4</RuinSmokeParticlesMax>
+        <RuinSmokeParticleRectBorderPercent>0.2</RuinSmokeParticleRectBorderPercent>
+        <ExplosionEffects>
+          <Item>
+            <VectorElement>
+              <InheritedIndex>0</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>HarborOffice</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
+            <ExplosionEffectFilePath>data/graphics/effects/military/explosions/harbor_generic_xpl_03.cfg</ExplosionEffectFilePath>
+          </Item>
+        </ExplosionEffects>
+        <ExplosionEffectsMin>2</ExplosionEffectsMin>
+        <ExplosionEffectsMax>2</ExplosionEffectsMax>
+      </Attackable>
+      <Pausable />
+      <Maintenance>
+        <Maintenances>
+          <Item>
+            <Product>1010017</Product>
+            <Amount>50</Amount>
+            <InactiveAmount>25</InactiveAmount>
+          </Item>
+        </Maintenances>
+      </Maintenance>
+      <Culture />
+    </Values>
+  </Asset>
+</HarborOffice>

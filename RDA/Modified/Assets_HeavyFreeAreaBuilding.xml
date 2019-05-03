@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HeavyFreeAreaBuilding>
+  <Asset>
+    <Template>HeavyFreeAreaBuilding</Template>
+    <Values>
+      <Standard>
+        <GUID>1010298</GUID>
+        <Name>heavy_03 (Coal Heavy Industry)</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_coal_burn.png</IconFilename>
+        <ID>CharcoalBurner</ID>
+      </Standard>
+      <Building>
+        <BuildModeRandomRotation>90</BuildModeRandomRotation>
+        <AssociatedRegions>Moderate</AssociatedRegions>
+      </Building>
+      <Blocking>
+        <DeletePropsRadius>1</DeletePropsRadius>
+      </Blocking>
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+            <Amount>500</Amount>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+            <Amount>4</Amount>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+            <Amount>5</Amount>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+      </Cost>
+      <Object>
+        <Variations>
+          <Item>
+            <Filename>data/graphics/buildings/production/heavy_03/heavy_03.cfg</Filename>
+          </Item>
+        </Variations>
+      </Object>
+      <Mesh />
+      <Selection>
+        <ParticipantMessageArcheType>Resident_tier02_atWork</ParticipantMessageArcheType>
+        <Colors>
+          <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+        </Colors>
+      </Selection>
+      <Text>
+        <LocaText>
+          <English>
+            <Text>Charcoal Kiln</Text>
+            <Status>Exported</Status>
+            <ExportCount>1</ExportCount>
+          </English>
+        </LocaText>
+        <LineID>5266</LineID>
+      </Text>
+      <Constructable />
+      <Locked />
+      <SoundEmitter>
+        <ActiveSounds>
+          <Item>
+            <Sound>214813</Sound>
+          </Item>
+          <Item>
+            <Sound>206294</Sound>
+          </Item>
+        </ActiveSounds>
+        <ConstructionSounds>
+          <BuildSuccessful>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>FarmBuilding</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>HeavyFreeAreaBuilding</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Sound>203830</Sound>
+            </Item>
+          </BuildSuccessful>
+        </ConstructionSounds>
+        <BuildingRepaired>
+          <Item>
+            <Sound>203866</Sound>
+          </Item>
+        </BuildingRepaired>
+        <MaterialType>Soil</MaterialType>
+      </SoundEmitter>
+      <FeedbackController />
+      <Infolayer />
+      <UpgradeList />
+      <RandomDummySpawner />
+      <Factory7 />
+      <FactoryBase>
+        <FactoryOutputs>
+          <Item>
+            <Product>1010226</Product>
+            <Amount>1</Amount>
+            <StorageAmount>4</StorageAmount>
+          </Item>
+        </FactoryOutputs>
+      </FactoryBase>
+      <LogisticNode />
+      <AmbientMoodProvider>
+        <Murmur>Factory</Murmur>
+      </AmbientMoodProvider>
+      <Maintenance>
+        <Maintenances>
+          <Item>
+            <Product>1010017</Product>
+            <Amount>20</Amount>
+            <InactiveAmount>10</InactiveAmount>
+          </Item>
+          <Item>
+            <Product>1010115</Product>
+            <Amount>10</Amount>
+            <ShutdownThreshold>0.2</ShutdownThreshold>
+          </Item>
+        </Maintenances>
+      </Maintenance>
+      <Attackable>
+        <MaximumHitPoints>1750</MaximumHitPoints>
+        <SelfHealPerHealTick>6</SelfHealPerHealTick>
+      </Attackable>
+      <Pausable />
+      <IncidentInfectable>
+        <Infectable>
+          <Illness>
+            <Escalated>0</Escalated>
+          </Illness>
+        </Infectable>
+        <Explosion>
+          <ExplosionCoreDamage>2000</ExplosionCoreDamage>
+          <DamageExplosionChance>40</DamageExplosionChance>
+        </Explosion>
+        <IncidentInfectionChanceFactors>
+          <Fire>
+            <BaseChance>10</BaseChance>
+            <DensityDistance>20</DensityDistance>
+            <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
+            <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
+          </Fire>
+          <Explosion>
+            <BaseChance>5</BaseChance>
+            <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
+            <FactoryOvertimeFactor>0.1</FactoryOvertimeFactor>
+            <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
+          </Explosion>
+          <Riot>
+            <FactoryOvertimeFactor>0.4</FactoryOvertimeFactor>
+            <FactoryUndertimeFactor>0.2</FactoryUndertimeFactor>
+            <FactoryHappinessFactor>0.2</FactoryHappinessFactor>
+            <HappinessThreshold>20</HappinessThreshold>
+          </Riot>
+        </IncidentInfectionChanceFactors>
+      </IncidentInfectable>
+      <Culture>
+        <HasPollution>1</HasPollution>
+      </Culture>
+      <IncidentInfluencer>
+        <Influence>
+          <Illness>
+            <Distance>10</Distance>
+          </Illness>
+        </Influence>
+      </IncidentInfluencer>
+      <FreeAreaProductivity>
+        <InfluenceRadius>11</InfluenceRadius>
+        <WorkerUnit>102433</WorkerUnit>
+        <MaxWorkerAmount>3</MaxWorkerAmount>
+        <WorkerPause>10000</WorkerPause>
+      </FreeAreaProductivity>
+      <Electric />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>HeavyFreeAreaBuilding</Template>
+    <Values>
+      <Standard>
+        <GUID>100807</GUID>
+        <Name>CQO_UnclesIsland_CoalHeavyIndustry</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_coal_burn.png</IconFilename>
+      </Standard>
+      <Building />
+      <Blocking>
+        <HidePropsRadius>0</HidePropsRadius>
+        <RemovePropsRadius>1</RemovePropsRadius>
+      </Blocking>
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+            <Amount>500</Amount>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+            <Amount>3</Amount>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+            <Amount>2</Amount>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+      </Cost>
+      <Object>
+        <Variations>
+          <Item>
+            <Filename>data/graphics/buildings/production/heavy_03/heavy_03.cfg</Filename>
+          </Item>
+        </Variations>
+      </Object>
+      <Mesh />
+      <Selection />
+      <Text>
+        <LocaText>
+          <English>
+            <Text>Edvard's Charcoal Burner</Text>
+            <Status>Exported</Status>
+            <ExportCount>1</ExportCount>
+          </English>
+        </LocaText>
+        <LineID>13070</LineID>
+      </Text>
+      <Constructable />
+      <Locked />
+      <SoundEmitter>
+        <ActiveSounds>
+          <Item>
+            <Sound>206294</Sound>
+          </Item>
+        </ActiveSounds>
+      </SoundEmitter>
+      <FeedbackController />
+      <Infolayer />
+      <UpgradeList />
+      <RandomDummySpawner />
+      <Factory7 />
+      <FactoryBase>
+        <FactoryOutputs>
+          <Item>
+            <Product>1010226</Product>
+            <Amount>1</Amount>
+            <StorageAmount>3</StorageAmount>
+          </Item>
+        </FactoryOutputs>
+      </FactoryBase>
+      <LogisticNode />
+      <AmbientMoodProvider>
+        <AmbientMood>IndustryHeavy</AmbientMood>
+      </AmbientMoodProvider>
+      <Maintenance>
+        <Maintenances>
+          <Item>
+            <Product>1010017</Product>
+            <Amount>30</Amount>
+            <InactiveAmount>12</InactiveAmount>
+          </Item>
+          <Item>
+            <Product>1010115</Product>
+            <Amount>25</Amount>
+            <ShutdownThreshold>0.2</ShutdownThreshold>
+          </Item>
+        </Maintenances>
+      </Maintenance>
+      <Attackable>
+        <MaximumHitPoints>500</MaximumHitPoints>
+      </Attackable>
+      <Pausable />
+      <IncidentInfectable />
+      <Culture>
+        <Attractiveness>-2</Attractiveness>
+      </Culture>
+      <IncidentInfluencer>
+        <Influence>
+          <Illness>
+            <Influence>1.2</Influence>
+            <Distance>25</Distance>
+          </Illness>
+        </Influence>
+      </IncidentInfluencer>
+      <FreeAreaProductivity>
+        <WorkerUnit>102433</WorkerUnit>
+        <MaxWorkerAmount>3</MaxWorkerAmount>
+        <WorkerPause>10000</WorkerPause>
+      </FreeAreaProductivity>
+      <Electric />
+    </Values>
+  </Asset>
+</HeavyFreeAreaBuilding>

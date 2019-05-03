@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PowerplantBuilding>
+  <Asset>
+    <Template>PowerplantBuilding</Template>
+    <Values>
+      <Standard>
+        <GUID>100779</GUID>
+        <Name>electricity_01 (Coal Power Plant)</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_electric_works_coal.png</IconFilename>
+        <ID>CoalPowerPlant</ID>
+        <InfoDescription>10945</InfoDescription>
+      </Standard>
+      <Building>
+        <BuildingCategoryName>11169</BuildingCategoryName>
+        <BuildModeRandomRotation>90</BuildModeRandomRotation>
+        <AssociatedRegions>Moderate</AssociatedRegions>
+      </Building>
+      <Blocking />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+            <Amount>25000</Amount>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+            <Amount>30</Amount>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+            <Amount>50</Amount>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+            <Amount>40</Amount>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+            <Amount>30</Amount>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+            <Amount>25</Amount>
+          </Item>
+        </Costs>
+      </Cost>
+      <Object>
+        <Variations>
+          <Item>
+            <Filename>data/graphics/buildings/public/electricity_01/electricity_01.cfg</Filename>
+          </Item>
+        </Variations>
+      </Object>
+      <Mesh />
+      <Selection>
+        <ParticipantMessageArcheType>Resident_tier04_atWork</ParticipantMessageArcheType>
+      </Selection>
+      <Text>
+        <LocaText>
+          <English>
+            <Text>Coal Power Plant</Text>
+            <Status>Exported</Status>
+            <ExportCount>1</ExportCount>
+          </English>
+        </LocaText>
+        <LineID>6999</LineID>
+      </Text>
+      <Constructable />
+      <Locked />
+      <SoundEmitter>
+        <ActiveSounds>
+          <Item>
+            <Sound>200832</Sound>
+          </Item>
+        </ActiveSounds>
+        <BuildingRepaired>
+          <Item>
+            <Sound>203866</Sound>
+          </Item>
+        </BuildingRepaired>
+      </SoundEmitter>
+      <FeedbackController />
+      <Infolayer />
+      <UpgradeList />
+      <RandomDummySpawner />
+      <LogisticNode />
+      <AmbientMoodProvider />
+      <Maintenance>
+        <Maintenances>
+          <Item>
+            <Product>1010017</Product>
+            <Amount>150</Amount>
+            <InactiveAmount>75</InactiveAmount>
+          </Item>
+          <Item>
+            <Product>1010117</Product>
+            <Amount>150</Amount>
+            <ShutdownThreshold>1</ShutdownThreshold>
+          </Item>
+        </Maintenances>
+      </Maintenance>
+      <Attackable>
+        <MaximumHitPoints>3500</MaximumHitPoints>
+        <SelfHealPerHealTick>4</SelfHealPerHealTick>
+      </Attackable>
+      <Pausable />
+      <IncidentInfectable>
+        <Infectable>
+          <Fire>
+            <Base>1</Base>
+          </Fire>
+        </Infectable>
+        <Explosion>
+          <DamageExplosionChance>40</DamageExplosionChance>
+        </Explosion>
+        <IncidentInfectionChanceFactors>
+          <Fire>
+            <DensityDistance>15</DensityDistance>
+            <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
+            <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
+          </Fire>
+          <Explosion>
+            <BaseChance>5</BaseChance>
+          </Explosion>
+        </IncidentInfectionChanceFactors>
+      </IncidentInfectable>
+      <Powerplant>
+        <ElectricityDistance>30</ElectricityDistance>
+      </Powerplant>
+      <FactoryBase>
+        <FactoryInputs>
+          <Item>
+            <Product>120021</Product>
+            <Amount>1</Amount>
+            <StorageAmount>100</StorageAmount>
+          </Item>
+        </FactoryInputs>
+        <CycleTime>5</CycleTime>
+        <ProductivityTimeMultiplier>30</ProductivityTimeMultiplier>
+        <ProductivityPoints>1</ProductivityPoints>
+        <WarehouseTransporterAsset>120025</WarehouseTransporterAsset>
+      </FactoryBase>
+      <Culture>
+        <Attractiveness>-10</Attractiveness>
+        <HasPollution>1</HasPollution>
+      </Culture>
+      <PublicService>
+        <FullSatisfactionDistance>30</FullSatisfactionDistance>
+        <NoSatisfactionDistance>30</NoSatisfactionDistance>
+      </PublicService>
+      <ItemGenerator />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>PowerplantBuilding</Template>
+    <Values>
+      <Standard>
+        <GUID>100780</GUID>
+        <Name>electricity_02 (Oil Power Plant)</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_electric_works_oil.png</IconFilename>
+        <ID>OilPowerPlant</ID>
+        <InfoDescription>10946</InfoDescription>
+      </Standard>
+      <Building>
+        <BuildingCategoryName>11169</BuildingCategoryName>
+        <BuildModeRandomRotation>90</BuildModeRandomRotation>
+        <AssociatedRegions>Moderate</AssociatedRegions>
+      </Building>
+      <Blocking>
+        <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
+      </Blocking>
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+            <Amount>25000</Amount>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+            <Amount>30</Amount>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+            <Amount>50</Amount>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+            <Amount>40</Amount>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+            <Amount>30</Amount>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+            <Amount>25</Amount>
+          </Item>
+        </Costs>
+      </Cost>
+      <Object>
+        <Variations>
+          <Item>
+            <Filename>data/graphics/buildings/public/electricity_01/electricity_01.cfg</Filename>
+          </Item>
+        </Variations>
+      </Object>
+      <Mesh />
+      <Selection>
+        <ParticipantMessageArcheType>Resident_tier04_atWork</ParticipantMessageArcheType>
+      </Selection>
+      <Text>
+        <LocaText>
+          <English>
+            <Text>Oil Power Plant</Text>
+            <Status>Exported</Status>
+            <ExportCount>1</ExportCount>
+          </English>
+        </LocaText>
+        <LineID>7000</LineID>
+      </Text>
+      <Constructable />
+      <Locked />
+      <SoundEmitter>
+        <BuildingRepaired>
+          <Item>
+            <Sound>203866</Sound>
+          </Item>
+        </BuildingRepaired>
+      </SoundEmitter>
+      <FeedbackController />
+      <Infolayer />
+      <UpgradeList />
+      <RandomDummySpawner />
+      <LogisticNode />
+      <AmbientMoodProvider />
+      <Maintenance>
+        <Maintenances>
+          <Item>
+            <Product>1010017</Product>
+            <Amount>400</Amount>
+            <InactiveAmount>200</InactiveAmount>
+          </Item>
+          <Item>
+            <Product>1010117</Product>
+            <Amount>150</Amount>
+            <ShutdownThreshold>1</ShutdownThreshold>
+          </Item>
+        </Maintenances>
+      </Maintenance>
+      <Attackable>
+        <MaximumHitPoints>3500</MaximumHitPoints>
+        <SelfHealPerHealTick>4</SelfHealPerHealTick>
+      </Attackable>
+      <Pausable />
+      <IncidentInfectable>
+        <Infectable>
+          <Fire>
+            <Base>1</Base>
+          </Fire>
+        </Infectable>
+        <Explosion>
+          <DamageExplosionChance>40</DamageExplosionChance>
+        </Explosion>
+        <IncidentInfectionChanceFactors>
+          <Fire>
+            <DensityDistance>15</DensityDistance>
+            <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
+            <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
+          </Fire>
+          <Explosion>
+            <BaseChance>5</BaseChance>
+          </Explosion>
+        </IncidentInfectionChanceFactors>
+      </IncidentInfectable>
+      <Powerplant>
+        <ElectricityDistance>35</ElectricityDistance>
+      </Powerplant>
+      <FactoryBase>
+        <FactoryInputs>
+          <Item>
+            <Product>1010566</Product>
+            <Amount>1</Amount>
+            <StorageAmount>100</StorageAmount>
+          </Item>
+        </FactoryInputs>
+        <CycleTime>5</CycleTime>
+        <ProductivityTimeMultiplier>30</ProductivityTimeMultiplier>
+        <ProductivityPoints>1</ProductivityPoints>
+        <WarehouseTransporterAsset>120025</WarehouseTransporterAsset>
+      </FactoryBase>
+      <Culture>
+        <Attractiveness>-15</Attractiveness>
+        <HasPollution>1</HasPollution>
+      </Culture>
+      <PublicService />
+      <ItemGenerator />
+    </Values>
+  </Asset>
+</PowerplantBuilding>

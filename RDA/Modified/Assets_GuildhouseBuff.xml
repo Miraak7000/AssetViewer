@@ -1,0 +1,629 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GuildhouseBuff>
+  <Asset>
+    <Template>GuildhouseBuff</Template>
+    <Values>
+      <Standard>
+        <GUID>190093</GUID>
+        <Name>item action fertility potato</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_potatoes.png</IconFilename>
+      </Standard>
+      <ItemEffect>
+        <EffectTargets>
+          <Item>
+            <GUID>190785</GUID>
+          </Item>
+        </EffectTargets>
+      </ItemEffect>
+      <Text>
+        <LocaText>
+          <English>
+            <Text>Handful of Potato Seeds</Text>
+            <Status>Exported</Status>
+            <ExportCount>1</ExportCount>
+          </English>
+        </LocaText>
+        <LineID>26353</LineID>
+      </Text>
+      <FactoryUpgrade>
+        <AddedFertility>1010569</AddedFertility>
+      </FactoryUpgrade>
+      <BuildingUpgrade />
+      <Buff />
+      <CultureUpgrade />
+      <ModuleOwnerUpgrade />
+      <IncidentInfectableUpgrade />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>GuildhouseBuff</Template>
+    <Values>
+      <Standard>
+        <GUID>190094</GUID>
+        <Name>item action fertility grain</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_cereals_2.png</IconFilename>
+      </Standard>
+      <ItemEffect>
+        <EffectTargets>
+          <Item>
+            <GUID>1010262</GUID>
+          </Item>
+        </EffectTargets>
+      </ItemEffect>
+      <Text>
+        <LocaText>
+          <English>
+            <Text>Handful of Grain Seeds</Text>
+            <Status>Exported</Status>
+            <ExportCount>1</ExportCount>
+          </English>
+        </LocaText>
+        <LineID>26354</LineID>
+      </Text>
+      <FactoryUpgrade>
+        <AddedFertility>1010571</AddedFertility>
+      </FactoryUpgrade>
+      <BuildingUpgrade />
+      <Buff />
+      <CultureUpgrade />
+      <ModuleOwnerUpgrade />
+      <IncidentInfectableUpgrade />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>GuildhouseBuff</Template>
+    <Values>
+      <Standard>
+        <GUID>190095</GUID>
+        <Name>item action fertility hops</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_hops.png</IconFilename>
+      </Standard>
+      <ItemEffect>
+        <EffectTargets>
+          <Item>
+            <GUID>1010264</GUID>
+          </Item>
+        </EffectTargets>
+      </ItemEffect>
+      <Text>
+        <LocaText>
+          <English>
+            <Text>Handful of Hops Seeds</Text>
+            <Status>Exported</Status>
+            <ExportCount>1</ExportCount>
+          </English>
+        </LocaText>
+        <LineID>26355</LineID>
+      </Text>
+      <FactoryUpgrade>
+        <AddedFertility>1010572</AddedFertility>
+      </FactoryUpgrade>
+      <BuildingUpgrade />
+      <Buff />
+      <CultureUpgrade />
+      <ModuleOwnerUpgrade />
+      <IncidentInfectableUpgrade />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>GuildhouseBuff</Template>
+    <Values>
+      <Standard>
+        <GUID>190096</GUID>
+        <Name>item action fertility sugar cane</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png</IconFilename>
+      </Standard>
+      <ItemEffect>
+        <EffectTargets>
+          <Item>
+            <GUID>1010329</GUID>
+          </Item>
+        </EffectTargets>
+      </ItemEffect>
+      <Text>
+        <LocaText>
+          <English>
+            <Text>Handful of Sugar Cane Seeds</Text>
+            <Status>Exported</Status>
+            <ExportCount>1</ExportCount>
+          </English>
+        </LocaText>
+        <LineID>26356</LineID>
+      </Text>
+      <FactoryUpgrade>
+        <AddedFertility>1010573</AddedFertility>
+      </FactoryUpgrade>
+      <BuildingUpgrade />
+      <Buff />
+      <CultureUpgrade />
+      <ModuleOwnerUpgrade />
+      <IncidentInfectableUpgrade />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>GuildhouseBuff</Template>
+    <Values>
+      <Standard>
+        <GUID>190097</GUID>
+        <Name>item action fertility caoutchouc</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_caoutchouc.png</IconFilename>
+      </Standard>
+      <ItemEffect>
+        <EffectTargets>
+          <Item>
+            <GUID>1010333</GUID>
+          </Item>
+        </EffectTargets>
+      </ItemEffect>
+      <Text>
+        <LocaText>
+          <English>
+            <Text>Handful of Caoutchouc Seeds</Text>
+            <Status>Exported</Status>
+            <ExportCount>1</ExportCount>
+          </English>
+        </LocaText>
+        <LineID>26357</LineID>
+      </Text>
+      <FactoryUpgrade>
+        <AddedFertility>1010574</AddedFertility>
+      </FactoryUpgrade>
+      <BuildingUpgrade />
+      <Buff />
+      <CultureUpgrade />
+      <ModuleOwnerUpgrade />
+      <IncidentInfectableUpgrade />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>GuildhouseBuff</Template>
+    <Values>
+      <Standard>
+        <GUID>190098</GUID>
+        <Name>item action fertility cocoa</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_cocoa.png</IconFilename>
+      </Standard>
+      <ItemEffect>
+        <EffectTargets>
+          <Item>
+            <GUID>1010332</GUID>
+          </Item>
+        </EffectTargets>
+      </ItemEffect>
+      <Text>
+        <LocaText>
+          <English>
+            <Text>Handful of Cocoa Seeds</Text>
+            <Status>Exported</Status>
+            <ExportCount>1</ExportCount>
+          </English>
+        </LocaText>
+        <LineID>26358</LineID>
+      </Text>
+      <FactoryUpgrade>
+        <AddedFertility>1010575</AddedFertility>
+      </FactoryUpgrade>
+      <BuildingUpgrade />
+      <Buff />
+      <CultureUpgrade />
+      <ModuleOwnerUpgrade />
+      <IncidentInfectableUpgrade />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>GuildhouseBuff</Template>
+    <Values>
+      <Standard>
+        <GUID>190099</GUID>
+        <Name>item action fertility cotton</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_cotton.png</IconFilename>
+      </Standard>
+      <ItemEffect>
+        <EffectTargets>
+          <Item>
+            <GUID>1010331</GUID>
+          </Item>
+        </EffectTargets>
+      </ItemEffect>
+      <Text>
+        <LocaText>
+          <English>
+            <Text>Handful of Cotton Seeds</Text>
+            <Status>Exported</Status>
+            <ExportCount>1</ExportCount>
+          </English>
+        </LocaText>
+        <LineID>26359</LineID>
+      </Text>
+      <FactoryUpgrade>
+        <AddedFertility>1010576</AddedFertility>
+      </FactoryUpgrade>
+      <BuildingUpgrade />
+      <Buff />
+      <CultureUpgrade />
+      <ModuleOwnerUpgrade />
+      <IncidentInfectableUpgrade />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>GuildhouseBuff</Template>
+    <Values>
+      <Standard>
+        <GUID>190100</GUID>
+        <Name>item action fertility tobacco</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_tobacco.png</IconFilename>
+      </Standard>
+      <ItemEffect>
+        <EffectTargets>
+          <Item>
+            <GUID>1010330</GUID>
+          </Item>
+        </EffectTargets>
+      </ItemEffect>
+      <Text>
+        <LocaText>
+          <English>
+            <Text>Handful of Tobacco Seeds</Text>
+            <Status>Exported</Status>
+            <ExportCount>1</ExportCount>
+          </English>
+        </LocaText>
+        <LineID>26360</LineID>
+      </Text>
+      <FactoryUpgrade>
+        <AddedFertility>1010577</AddedFertility>
+      </FactoryUpgrade>
+      <BuildingUpgrade />
+      <Buff />
+      <CultureUpgrade />
+      <ModuleOwnerUpgrade />
+      <IncidentInfectableUpgrade />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>GuildhouseBuff</Template>
+    <Values>
+      <Standard>
+        <GUID>190101</GUID>
+        <Name>item action fertility animals</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_fur.png</IconFilename>
+      </Standard>
+      <ItemEffect>
+        <EffectTargets>
+          <Item>
+            <GUID>1010558</GUID>
+          </Item>
+        </EffectTargets>
+      </ItemEffect>
+      <Text>
+        <LocaText>
+          <English>
+            <Text>Handful of Animal Seeds</Text>
+            <Status>Exported</Status>
+            <ExportCount>1</ExportCount>
+          </English>
+        </LocaText>
+        <LineID>26361</LineID>
+      </Text>
+      <FactoryUpgrade>
+        <AddedFertility>1010581</AddedFertility>
+      </FactoryUpgrade>
+      <BuildingUpgrade />
+      <Buff />
+      <CultureUpgrade />
+      <ModuleOwnerUpgrade />
+      <IncidentInfectableUpgrade />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>GuildhouseBuff</Template>
+    <Values>
+      <Standard>
+        <GUID>192014</GUID>
+        <Name>Bag of Dynamite</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_dynamite.png</IconFilename>
+      </Standard>
+      <ItemEffect>
+        <EffectTargets>
+          <Item>
+            <GUID>190882</GUID>
+          </Item>
+        </EffectTargets>
+      </ItemEffect>
+      <Text>
+        <LocaText>
+          <English>
+            <Text>Dynamite</Text>
+            <Status>Exported</Status>
+            <ExportCount>2</ExportCount>
+          </English>
+        </LocaText>
+        <LineID>26362</LineID>
+      </Text>
+      <FactoryUpgrade>
+        <ProductivityUpgrade>
+          <Value>100</Value>
+          <Percental>1</Percental>
+        </ProductivityUpgrade>
+      </FactoryUpgrade>
+      <BuildingUpgrade />
+      <Buff />
+      <CultureUpgrade />
+      <ModuleOwnerUpgrade />
+      <IncidentInfectableUpgrade>
+        <IncidentExplosionIncreaseUpgrade>
+          <Value>5</Value>
+        </IncidentExplosionIncreaseUpgrade>
+      </IncidentInfectableUpgrade>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>GuildhouseBuff</Template>
+    <Values>
+      <Standard>
+        <GUID>192015</GUID>
+        <Name>Big Bag of Dynamite</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_dynamite.png</IconFilename>
+      </Standard>
+      <ItemEffect>
+        <EffectTargets>
+          <Item>
+            <GUID>190882</GUID>
+          </Item>
+        </EffectTargets>
+      </ItemEffect>
+      <Text>
+        <LocaText>
+          <English>
+            <Text>Big Box of Dynamite</Text>
+            <Status>Exported</Status>
+            <ExportCount>2</ExportCount>
+          </English>
+        </LocaText>
+        <LineID>26363</LineID>
+      </Text>
+      <FactoryUpgrade>
+        <ProductivityUpgrade>
+          <Value>200</Value>
+          <Percental>1</Percental>
+        </ProductivityUpgrade>
+      </FactoryUpgrade>
+      <BuildingUpgrade />
+      <Buff />
+      <CultureUpgrade />
+      <ModuleOwnerUpgrade />
+      <IncidentInfectableUpgrade>
+        <IncidentExplosionIncreaseUpgrade>
+          <Value>10</Value>
+        </IncidentExplosionIncreaseUpgrade>
+      </IncidentInfectableUpgrade>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>GuildhouseBuff</Template>
+    <Values>
+      <Standard>
+        <GUID>191140</GUID>
+        <Name>marine predators</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/animals/icon_swordfish.png</IconFilename>
+        <InfoDescription>15760</InfoDescription>
+      </Standard>
+      <ItemEffect>
+        <EffectTargets>
+          <Item>
+            <GUID>190779</GUID>
+          </Item>
+          <Item>
+            <GUID>1010339</GUID>
+          </Item>
+          <Item>
+            <GUID>101262</GUID>
+          </Item>
+        </EffectTargets>
+      </ItemEffect>
+      <Text>
+        <LocaText>
+          <English>
+            <Text>Ocean Predators Park</Text>
+            <Status>Exported</Status>
+            <ExportCount>1</ExportCount>
+          </English>
+        </LocaText>
+        <LineID>21920</LineID>
+      </Text>
+      <FactoryUpgrade>
+        <ProductivityUpgrade>
+          <Value>5</Value>
+          <Percental>1</Percental>
+        </ProductivityUpgrade>
+      </FactoryUpgrade>
+      <BuildingUpgrade>
+        <MaintenanceUpgrade>
+          <Value>-10</Value>
+          <Percental>1</Percental>
+        </MaintenanceUpgrade>
+        <WorkforceAmountUpgrade>
+          <Value>-10</Value>
+          <Percental>1</Percental>
+        </WorkforceAmountUpgrade>
+      </BuildingUpgrade>
+      <Buff />
+      <CultureUpgrade />
+      <ModuleOwnerUpgrade />
+      <IncidentInfectableUpgrade />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>GuildhouseBuff</Template>
+    <Values>
+      <Standard>
+        <GUID>191139</GUID>
+        <Name>farm</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/animals/icon_sheep.png</IconFilename>
+        <InfoDescription>15764</InfoDescription>
+      </Standard>
+      <ItemEffect>
+        <EffectTargets>
+          <Item>
+            <GUID>190872</GUID>
+          </Item>
+        </EffectTargets>
+      </ItemEffect>
+      <Text>
+        <LocaText>
+          <English>
+            <Text>Farm Animal Park</Text>
+            <Status>Exported</Status>
+            <ExportCount>1</ExportCount>
+          </English>
+        </LocaText>
+        <LineID>21924</LineID>
+      </Text>
+      <FactoryUpgrade>
+        <ProductivityUpgrade>
+          <Value>5</Value>
+          <Percental>1</Percental>
+        </ProductivityUpgrade>
+      </FactoryUpgrade>
+      <BuildingUpgrade>
+        <MaintenanceUpgrade>
+          <Value>-10</Value>
+          <Percental>1</Percental>
+        </MaintenanceUpgrade>
+      </BuildingUpgrade>
+      <Buff />
+      <CultureUpgrade />
+      <ModuleOwnerUpgrade />
+      <IncidentInfectableUpgrade />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>GuildhouseBuff</Template>
+    <Values>
+      <Standard>
+        <GUID>191147</GUID>
+        <Name>prehistorical</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/museum/icon_museum_neanderthaler.png</IconFilename>
+        <InfoDescription>15768</InfoDescription>
+      </Standard>
+      <ItemEffect>
+        <EffectTargets>
+          <Item>
+            <GUID>190779</GUID>
+          </Item>
+          <Item>
+            <GUID>190865</GUID>
+          </Item>
+          <Item>
+            <GUID>190872</GUID>
+          </Item>
+          <Item>
+            <GUID>1010558</GUID>
+          </Item>
+        </EffectTargets>
+      </ItemEffect>
+      <Text>
+        <LocaText>
+          <English>
+            <Text>Origin of Mankind Exhibition</Text>
+            <Status>Exported</Status>
+            <ExportCount>1</ExportCount>
+          </English>
+        </LocaText>
+        <LineID>21929</LineID>
+      </Text>
+      <FactoryUpgrade>
+        <ProductivityUpgrade>
+          <Value>5</Value>
+          <Percental>1</Percental>
+        </ProductivityUpgrade>
+      </FactoryUpgrade>
+      <BuildingUpgrade>
+        <WorkforceAmountUpgrade>
+          <Value>-5</Value>
+          <Percental>1</Percental>
+        </WorkforceAmountUpgrade>
+      </BuildingUpgrade>
+      <Buff />
+      <CultureUpgrade />
+      <ModuleOwnerUpgrade />
+      <IncidentInfectableUpgrade />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>GuildhouseBuff</Template>
+    <Values>
+      <Standard>
+        <GUID>191141</GUID>
+        <Name>celts</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/museum/icon_museum_celts_stonehenge.png</IconFilename>
+        <InfoDescription>15774</InfoDescription>
+      </Standard>
+      <ItemEffect>
+        <EffectTargets>
+          <Item>
+            <GUID>190778</GUID>
+          </Item>
+          <Item>
+            <GUID>1010558</GUID>
+          </Item>
+          <Item>
+            <GUID>190886</GUID>
+          </Item>
+        </EffectTargets>
+      </ItemEffect>
+      <Text>
+        <LocaText>
+          <English>
+            <Text>Bronze Age Exhibition</Text>
+            <Status>Exported</Status>
+            <ExportCount>1</ExportCount>
+          </English>
+        </LocaText>
+        <LineID>21934</LineID>
+      </Text>
+      <FactoryUpgrade />
+      <BuildingUpgrade />
+      <Buff />
+      <CultureUpgrade>
+        <AttractivenessUpgrade>
+          <Value>2</Value>
+        </AttractivenessUpgrade>
+      </CultureUpgrade>
+      <ModuleOwnerUpgrade />
+      <IncidentInfectableUpgrade />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>GuildhouseBuff</Template>
+    <Values>
+      <Standard>
+        <GUID>190044</GUID>
+        <Name>Short Time Grain Fertility</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_happy.png</IconFilename>
+      </Standard>
+      <ItemEffect>
+        <EffectTargets>
+          <Item>
+            <GUID>1010262</GUID>
+          </Item>
+        </EffectTargets>
+      </ItemEffect>
+      <Text>
+        <LocaText>
+          <English>
+            <Text>Short Time Grain Fertility</Text>
+          </English>
+        </LocaText>
+      </Text>
+      <FactoryUpgrade>
+        <AddedFertility>1010571</AddedFertility>
+      </FactoryUpgrade>
+      <BuildingUpgrade />
+      <Buff />
+      <CultureUpgrade />
+      <ModuleOwnerUpgrade />
+      <IncidentInfectableUpgrade />
+    </Values>
+  </Asset>
+</GuildhouseBuff>

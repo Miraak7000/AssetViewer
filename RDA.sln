@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RDA", "RDA\RDA.csproj", "{4567E64C-D7FE-4873-8424-C5F6461D9463}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetViewer", "AssetViewer\AssetViewer.csproj", "{CC0D32CD-53FF-4C57-95B8-4E0E6DF56590}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4567E64C-D7FE-4873-8424-C5F6461D9463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4567E64C-D7FE-4873-8424-C5F6461D9463}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4567E64C-D7FE-4873-8424-C5F6461D9463}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4567E64C-D7FE-4873-8424-C5F6461D9463}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC0D32CD-53FF-4C57-95B8-4E0E6DF56590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC0D32CD-53FF-4C57-95B8-4E0E6DF56590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC0D32CD-53FF-4C57-95B8-4E0E6DF56590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC0D32CD-53FF-4C57-95B8-4E0E6DF56590}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {359C680D-CCEC-46F4-B082-4FF661559DB2}
+	EndGlobalSection
+EndGlobal
