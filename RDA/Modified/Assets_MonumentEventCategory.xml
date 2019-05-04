@@ -8,16 +8,14 @@
         <Name>Architectural Wonders</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_architecture.png</IconFilename>
       </Standard>
-      <Text>
-        <LocaText>
-          <English>
-            <Text>Architectural Marvels</Text>
-            <Status>Exported</Status>
-            <ExportCount>1</ExportCount>
-          </English>
-        </LocaText>
-        <LineID>27223</LineID>
-      </Text>
+      <Description>
+        <EN>
+          <Short>Architectural Marvels</Short>
+        </EN>
+        <DE>
+          <Short>Wunder der Architektur</Short>
+        </DE>
+      </Description>
       <Locked />
       <MonumentEventCategory>
         <Events>
@@ -31,7 +29,16 @@
             <Event>17008</Event>
           </Item>
         </Events>
-        <PotentialCategoryReward>14428</PotentialCategoryReward>
+        <PotentialCategoryReward>
+          <Description>
+            <EN>
+              <Short>Unique Ornaments</Short>
+            </EN>
+            <DE>
+              <Short>Einzigartige Ornamente</Short>
+            </DE>
+          </Description>
+        </PotentialCategoryReward>
         <CategoryDescriptionFluff>6761</CategoryDescriptionFluff>
         <CategoryBackground>data/ui/2kimages/main/assets/monument_event/bg_monument_event_architecture.png</CategoryBackground>
         <SizeSelectionBackground>data/ui/2kimages/main/assets/monument_event/monument_event_architecture.png</SizeSelectionBackground>
@@ -46,16 +53,14 @@
         <Name>Science and Technics</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_science.png</IconFilename>
       </Standard>
-      <Text>
-        <LocaText>
-          <English>
-            <Text>Science and Innovation</Text>
-            <Status>Exported</Status>
-            <ExportCount>1</ExportCount>
-          </English>
-        </LocaText>
-        <LineID>27224</LineID>
-      </Text>
+      <Description>
+        <EN>
+          <Short>Science and Innovation</Short>
+        </EN>
+        <DE>
+          <Short>Wissenschaft und Innovation</Short>
+        </DE>
+      </Description>
       <Locked />
       <MonumentEventCategory>
         <Events>
@@ -69,7 +74,16 @@
             <Event>17011</Event>
           </Item>
         </Events>
-        <PotentialCategoryReward>14429</PotentialCategoryReward>
+        <PotentialCategoryReward>
+          <Description>
+            <EN>
+              <Short>Unique Ornaments</Short>
+            </EN>
+            <DE>
+              <Short>Maschinen und Erfindungen</Short>
+            </DE>
+          </Description>
+        </PotentialCategoryReward>
         <CategoryDescriptionFluff>6794</CategoryDescriptionFluff>
         <CategoryBackground>data/ui/2kimages/main/assets/monument_event/bg_monument_event_science.png</CategoryBackground>
         <SizeSelectionBackground>data/ui/2kimages/main/assets/monument_event/monument_event_science.png</SizeSelectionBackground>
@@ -85,16 +99,14 @@
         <Name>Archaeological Discoveries</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_archeology.png</IconFilename>
       </Standard>
-      <Text>
-        <LocaText>
-          <English>
-            <Text>Archaeology and Ethnography</Text>
-            <Status>Exported</Status>
-            <ExportCount>1</ExportCount>
-          </English>
-        </LocaText>
-        <LineID>27225</LineID>
-      </Text>
+      <Description>
+        <EN>
+          <Short>Archaeology and Ethnography</Short>
+        </EN>
+        <DE>
+          <Short>Archäologie und Ethnografie</Short>
+        </DE>
+      </Description>
       <Locked />
       <MonumentEventCategory>
         <Events>
@@ -108,7 +120,16 @@
             <Event>17014</Event>
           </Item>
         </Events>
-        <PotentialCategoryReward>14492</PotentialCategoryReward>
+        <PotentialCategoryReward>
+          <Description>
+            <EN>
+              <Short>Unique Ornaments</Short>
+            </EN>
+            <DE>
+              <Short>Relikte und Antiquitäten</Short>
+            </DE>
+          </Description>
+        </PotentialCategoryReward>
         <CategoryDescriptionFluff>6795</CategoryDescriptionFluff>
         <CategoryBackground>data/ui/2kimages/main/assets/monument_event/bg_monument_event_archeological.png</CategoryBackground>
         <SizeSelectionBackground>data/ui/2kimages/main/assets/monument_event/monument_event_archeology.png</SizeSelectionBackground>

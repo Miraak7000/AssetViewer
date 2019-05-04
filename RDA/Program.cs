@@ -1,17 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Xml.Linq;
+using System.Xml.XPath;
+using DmitryBrant.ImageFormats;
 using RDA.Data;
 
 namespace RDA {
 
   [SuppressMessage("ReSharper", "PossibleNullReferenceException")]
+  [SuppressMessage("ReSharper", "AssignNullToNotNullAttribute")]
   internal static class Program {
 
     #region Fields
@@ -30,9 +35,13 @@ namespace RDA {
       Program.PathRoot = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase).Replace(@"file:\", String.Empty)).Parent.Parent.FullName;
       Program.Original = XDocument.Load(Program.PathRoot + @"\Original\assets.xml");
       Program.TextDE = XDocument.Load(Program.PathRoot + @"\Original\texts_german.xml");
+      // DecodeImage
+      //Program.DecodeImage("data/ui/2kimages/main/3dicons/icon_architecture.png");
+      // World Fair
+      Program.MonumentEventCategory();
       // 
-      Program.GetDescriptions(Program.Original.Root);
-      Program.CleanupGuildhouseItems();
+      //Program.GetDescriptions(Program.Original.Root);
+      //Program.CleanupGuildhouseItems();
       //Program.WriteHtml();
       //
       //Program.GetGuildhouseItems(Program.Original.Root);
@@ -121,8 +130,63 @@ namespace RDA {
         Program.Cleanup(element);
       }
     }
-    //
+    // Images
+    private static String DecodeImage(String icon) {
+      icon = icon.Substring(icon.LastIndexOf('/') + 1).Replace(".png", String.Empty);
+      var pathImageExe = Program.PathRoot + @"\Library\nvdecompress.exe";
+      var pathImageSource = Directory.GetFiles($@"{Program.PathRoot}\Resources\DDS", $"{icon}*.dds", SearchOption.AllDirectories).FirstOrDefault();
+      if (pathImageSource != null) {
+        var pathImageTemp = $@"{Program.PathRoot}\Resources\temp.tga";
+        Process.Start(pathImageExe, $"\"{pathImageSource}\" \"{pathImageTemp}\"");
+        if (File.Exists(pathImageTemp)) {
+          var img = TgaReader.Load(pathImageTemp);
+          File.Delete(pathImageTemp);
+          String pathImageTarget;
+          if (pathImageSource.Contains("3d")) {
+            pathImageTarget = $@"{Program.PathRoot}\Resources\PNG\3dicons\{icon}.png";
+          } else {
+            pathImageTarget = $@"{Program.PathRoot}\Resources\PNG\icons\{icon}.png";
+          }
+          img.Save(pathImageTarget, ImageFormat.Png);
+          return Convert.ToBase64String(File.ReadAllBytes(pathImageTarget));
+        }
+      }
+      return null;
+    }
+    // World Fair
     private static void MonumentEventCategory() {
+      var assets = Program.Original.Root.XPathSelectElements("//Asset[Template='MonumentEventCategory']").ToArray();
+      foreach (var asset in assets) {
+        var assetGuid = asset.XPathSelectElement("Values/Standard/GUID").Value;
+        var textEN = asset.XPathSelectElement("Values/Text/LocaText/English/Text").Value;
+        var textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={assetGuid}]/Text").Value;
+        // modify description
+        asset.XPathSelectElement("Values/Standard").AddAfterSelf(new XElement("Description"));
+        asset.XPathSelectElement("Values/Description").Add(new XElement("EN"));
+        asset.XPathSelectElement("Values/Description").Add(new XElement("DE"));
+        asset.XPathSelectElement("Values/Description/EN").Add(new XElement("Short", textEN));
+        asset.XPathSelectElement("Values/Description/DE").Add(new XElement("Short", textDE));
+        asset.XPathSelectElement("Values/Text").Remove();
+        // modify reward
+        var rewardGuid = asset.XPathSelectElement("Values/MonumentEventCategory/PotentialCategoryReward").Value;
+        textEN = Program.Original.Root.XPathSelectElement("//Asset[Template='Text']/Values/Standard[GUID=14428]/../Text/LocaText/English/Text").Value;
+        textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={rewardGuid}]/Text").Value;
+        asset.XPathSelectElement("Values/MonumentEventCategory/PotentialCategoryReward").Value = String.Empty;
+        asset.XPathSelectElement("Values/MonumentEventCategory/PotentialCategoryReward").Add(new XElement("Description"));
+        asset.XPathSelectElement("Values/MonumentEventCategory/PotentialCategoryReward/Description").Add(new XElement("EN"));
+        asset.XPathSelectElement("Values/MonumentEventCategory/PotentialCategoryReward/Description").Add(new XElement("DE"));
+        asset.XPathSelectElement("Values/MonumentEventCategory/PotentialCategoryReward/Description/EN").Add(new XElement("Short", textEN));
+        asset.XPathSelectElement("Values/MonumentEventCategory/PotentialCategoryReward/Description/DE").Add(new XElement("Short", textDE));
+        // image
+        //var img = Program.DecodeImage(asset.XPathSelectElement("Values/Standard/IconFilename").Value);
+        //asset.XPathSelectElement("Values/Standard").Add(new XElement("Icon", img));
+        //asset.XPathSelectElement("Values/Standard/IconFilename").Remove();
+      }
+      var document = new XDocument();
+      document.Add(new XElement("MonumentEventCategory", assets));
+      document.Save(Program.PathRoot + "/Modified/Assets_MonumentEventCategory.xml");
+    }
+    private static void MonumentEventCategoryOld() {
       foreach (var element in Program.Original.Root.Elements()) {
         Program.MonumentEventCategory(element);
       }
