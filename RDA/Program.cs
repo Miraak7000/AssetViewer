@@ -8,6 +8,7 @@ using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading;
 using System.Xml.Linq;
 using System.Xml.XPath;
 using DmitryBrant.ImageFormats;
@@ -38,7 +39,9 @@ namespace RDA {
       // DecodeImage
       //Program.DecodeImage("data/ui/2kimages/main/3dicons/icon_architecture.png");
       // World Fair
-      Program.MonumentEventCategory();
+      //Program.MonumentEventCategory();
+      //Program.MonumentEvent();
+      Program.MonumentEventReward();
       // 
       //Program.GetDescriptions(Program.Original.Root);
       //Program.CleanupGuildhouseItems();
@@ -138,6 +141,7 @@ namespace RDA {
       if (pathImageSource != null) {
         var pathImageTemp = $@"{Program.PathRoot}\Resources\temp.tga";
         Process.Start(pathImageExe, $"\"{pathImageSource}\" \"{pathImageTemp}\"");
+        Thread.Sleep(1000);
         if (File.Exists(pathImageTemp)) {
           var img = TgaReader.Load(pathImageTemp);
           File.Delete(pathImageTemp);
@@ -169,7 +173,7 @@ namespace RDA {
         asset.XPathSelectElement("Values/Text").Remove();
         // modify reward
         var rewardGuid = asset.XPathSelectElement("Values/MonumentEventCategory/PotentialCategoryReward").Value;
-        textEN = Program.Original.Root.XPathSelectElement("//Asset[Template='Text']/Values/Standard[GUID=14428]/../Text/LocaText/English/Text").Value;
+        textEN = Program.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={rewardGuid}]/../Text/LocaText/English/Text").Value;
         textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={rewardGuid}]/Text").Value;
         asset.XPathSelectElement("Values/MonumentEventCategory/PotentialCategoryReward").Value = String.Empty;
         asset.XPathSelectElement("Values/MonumentEventCategory/PotentialCategoryReward").Add(new XElement("Description"));
@@ -186,6 +190,168 @@ namespace RDA {
       document.Add(new XElement("MonumentEventCategory", assets));
       document.Save(Program.PathRoot + "/Modified/Assets_MonumentEventCategory.xml");
     }
+    private static void MonumentEvent() {
+      var assets = Program.Original.Root.XPathSelectElements("//Asset[Template='MonumentEvent']").ToArray();
+      foreach (var asset in assets) {
+        var assetGuid = asset.XPathSelectElement("Values/Standard/GUID").Value;
+        var textEN = asset.XPathSelectElement("Values/Text/LocaText/English/Text").Value;
+        var textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={assetGuid}]/Text").Value;
+        // modify description
+        asset.XPathSelectElement("Values/Standard").AddAfterSelf(new XElement("Description"));
+        asset.XPathSelectElement("Values/Description").Add(new XElement("EN"));
+        asset.XPathSelectElement("Values/Description").Add(new XElement("DE"));
+        asset.XPathSelectElement("Values/Description/EN").Add(new XElement("Short", textEN));
+        asset.XPathSelectElement("Values/Description/DE").Add(new XElement("Short", textDE));
+        asset.XPathSelectElement("Values/Text").Remove();
+        // modify selection text
+        var selectionGuid = asset.XPathSelectElement("Values/MonumentEvent/SelectionText").Value;
+        textEN = Program.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={selectionGuid}]/../Text/LocaText/English/Text").Value;
+        textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={selectionGuid}]/Text").Value;
+        asset.XPathSelectElement("Values/MonumentEvent/SelectionText").Value = String.Empty;
+        asset.XPathSelectElement("Values/MonumentEvent/SelectionText").Add(new XElement("Description"));
+        asset.XPathSelectElement("Values/MonumentEvent/SelectionText/Description").Add(new XElement("EN"));
+        asset.XPathSelectElement("Values/MonumentEvent/SelectionText/Description").Add(new XElement("DE"));
+        asset.XPathSelectElement("Values/MonumentEvent/SelectionText/Description/EN").Add(new XElement("Short", textEN));
+        asset.XPathSelectElement("Values/MonumentEvent/SelectionText/Description/DE").Add(new XElement("Short", textDE));
+        // modify running text
+        var runningGuid = asset.XPathSelectElement("Values/MonumentEvent/RunningText").Value;
+        textEN = Program.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={runningGuid}]/../Text/LocaText/English/Text").Value;
+        textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={runningGuid}]/Text").Value;
+        asset.XPathSelectElement("Values/MonumentEvent/RunningText").Value = String.Empty;
+        asset.XPathSelectElement("Values/MonumentEvent/RunningText").Add(new XElement("Description"));
+        asset.XPathSelectElement("Values/MonumentEvent/RunningText/Description").Add(new XElement("EN"));
+        asset.XPathSelectElement("Values/MonumentEvent/RunningText/Description").Add(new XElement("DE"));
+        asset.XPathSelectElement("Values/MonumentEvent/RunningText/Description/EN").Add(new XElement("Short", textEN));
+        asset.XPathSelectElement("Values/MonumentEvent/RunningText/Description/DE").Add(new XElement("Short", textDE));
+        // modify reward text
+        var rewardGuid = asset.XPathSelectElement("Values/MonumentEvent/RewardText").Value;
+        textEN = Program.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={rewardGuid}]/../Text/LocaText/English/Text").Value;
+        textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={rewardGuid}]/Text").Value;
+        asset.XPathSelectElement("Values/MonumentEvent/RewardText").Value = String.Empty;
+        asset.XPathSelectElement("Values/MonumentEvent/RewardText").Add(new XElement("Description"));
+        asset.XPathSelectElement("Values/MonumentEvent/RewardText/Description").Add(new XElement("EN"));
+        asset.XPathSelectElement("Values/MonumentEvent/RewardText/Description").Add(new XElement("DE"));
+        asset.XPathSelectElement("Values/MonumentEvent/RewardText/Description/EN").Add(new XElement("Short", textEN));
+        asset.XPathSelectElement("Values/MonumentEvent/RewardText/Description/DE").Add(new XElement("Short", textDE));
+        // modify event text
+        var eventGuid = asset.XPathSelectElement("Values/MonumentEvent/PotentialEventReward").Value;
+        textEN = Program.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={eventGuid}]/../Text/LocaText/English/Text").Value;
+        textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={eventGuid}]/Text").Value;
+        asset.XPathSelectElement("Values/MonumentEvent/PotentialEventReward").Value = String.Empty;
+        asset.XPathSelectElement("Values/MonumentEvent/PotentialEventReward").Add(new XElement("Description"));
+        asset.XPathSelectElement("Values/MonumentEvent/PotentialEventReward/Description").Add(new XElement("EN"));
+        asset.XPathSelectElement("Values/MonumentEvent/PotentialEventReward/Description").Add(new XElement("DE"));
+        asset.XPathSelectElement("Values/MonumentEvent/PotentialEventReward/Description/EN").Add(new XElement("Short", textEN));
+        asset.XPathSelectElement("Values/MonumentEvent/PotentialEventReward/Description/DE").Add(new XElement("Short", textDE));
+      }
+      var document = new XDocument();
+      document.Add(new XElement("MonumentEvent", assets));
+      document.Save(Program.PathRoot + "/Modified/Assets_MonumentEvent.xml");
+    }
+    private static void MonumentEventReward() {
+      var assets = Program.Original.Root.XPathSelectElements("//Asset[Template='MonumentEventReward']").ToArray();
+      foreach (var asset in assets.Skip(9).Take(1)) {
+        var assetGuid = asset.XPathSelectElement("Values/Standard/GUID").Value;
+        var textEN = asset.XPathSelectElement("Values/Text/LocaText/English/Text").Value;
+        var textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={assetGuid}]/Text").Value;
+        // modify description
+        asset.XPathSelectElement("Values/Standard").AddAfterSelf(new XElement("Description"));
+        asset.XPathSelectElement("Values/Description").Add(new XElement("EN"));
+        asset.XPathSelectElement("Values/Description").Add(new XElement("DE"));
+        asset.XPathSelectElement("Values/Description/EN").Add(new XElement("Short", textEN));
+        asset.XPathSelectElement("Values/Description/DE").Add(new XElement("Short", textDE));
+        asset.XPathSelectElement("Values/Text").Remove();
+        // find rewards
+        foreach (var item in asset.XPathSelectElements("Values/Reward/RewardAssets/Item")) {
+          var rewardGuid = item.XPathSelectElement("Reward").Value;
+          var reward = Program.Original.Root.XPathSelectElement($"//Asset/Values/Standard[GUID={rewardGuid}]/../..");
+          if (reward.XPathSelectElement("Template").Value == "RewardPool") {
+            var poolGuids1 = reward.XPathSelectElements("Values/RewardPool/ItemsPool/Item/ItemLink").Select(s => s.Value).ToArray();
+            foreach (var poolGuid1 in poolGuids1) {
+              reward = Program.Original.Root.XPathSelectElement($"//Asset/Values/Standard[GUID={poolGuid1}]/../..");
+              if (reward.XPathSelectElement("Template").Value == "RewardPool") {
+                var poolGuids2 = reward.XPathSelectElements("Values/RewardPool/ItemsPool/Item/ItemLink").Select(s => s.Value).ToArray();
+                foreach (var poolGuid2 in poolGuids2) {
+                  reward = Program.Original.Root.XPathSelectElement($"//Asset/Values/Standard[GUID={poolGuid2}]/../..");
+                  item.XPathSelectElement("Reward").Value = String.Empty;
+                  item.XPathSelectElement("Reward").Add(reward);
+                }
+              } else {
+                item.XPathSelectElement("Reward").Value = String.Empty;
+                item.XPathSelectElement("Reward").Add(reward);
+              }
+            }
+          } else {
+            item.XPathSelectElement("Reward").Value = String.Empty;
+            item.XPathSelectElement("Reward").Add(reward);
+          }
+        }
+        // modify rewards
+        foreach (var item in asset.XPathSelectElements("Values/Reward/RewardAssets/Item/Reward/Asset")) {
+          switch (item.XPathSelectElement("Template").Value) {
+            case "BuildPermitBuilding":
+              Program.TemplateBuildPermitBuilding(item);
+              break;
+            case "GuildhouseItem":
+              Program.TemplateGuildhouseItem(item);
+              break;
+            default:
+              throw new NotImplementedException();
+          }
+        }
+      }
+      var document = new XDocument();
+      document.Add(new XElement("MonumentEventReward", assets));
+      document.Save(Program.PathRoot + "/Modified/Assets_MonumentEventReward.xml");
+    }
+    //
+    private static void TemplateBuildPermitBuilding(XElement item) {
+      // text
+      var itemGuid = item.XPathSelectElement("Values/Standard/GUID").Value;
+      var textEN = item.XPathSelectElement("Values/Text/LocaText/English/Text").Value;
+      var textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={itemGuid}]/Text").Value;
+      item.XPathSelectElement("Values/Standard").AddAfterSelf(new XElement("Description"));
+      item.XPathSelectElement("Values/Description").Add(new XElement("EN"));
+      item.XPathSelectElement("Values/Description").Add(new XElement("DE"));
+      item.XPathSelectElement("Values/Description/EN").Add(new XElement("Short", textEN));
+      item.XPathSelectElement("Values/Description/DE").Add(new XElement("Short", textDE));
+      item.XPathSelectElement("Values/Text").Remove();
+      // ornament
+      var ornamentGuid = item.XPathSelectElement("Values/Ornament/OrnamentDescritpion").Value;
+      textEN = Program.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={ornamentGuid}]/../Text/LocaText/English/Text").Value;
+      textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={ornamentGuid}]/Text").Value;
+      item.XPathSelectElement("Values/Ornament").Add(new XElement("Description"));
+      item.XPathSelectElement("Values/Ornament/Description").Add(new XElement("EN"));
+      item.XPathSelectElement("Values/Ornament/Description").Add(new XElement("DE"));
+      item.XPathSelectElement("Values/Ornament/Description/EN").Add(new XElement("Short", textEN));
+      item.XPathSelectElement("Values/Ornament/Description/DE").Add(new XElement("Short", textDE));
+      item.XPathSelectElement("Values/Ornament/OrnamentDescritpion").Remove();
+      // image
+      var img = Program.DecodeImage(item.XPathSelectElement("Values/Standard/IconFilename").Value);
+      item.XPathSelectElement("Values/Standard").Add(new XElement("Icon", img));
+    }
+    private static void TemplateGuildhouseItem(XElement item) {
+      // text
+      var itemGuid = item.XPathSelectElement("Values/Standard/GUID").Value;
+      var textEN = item.XPathSelectElement("Values/Text/LocaText/English/Text").Value;
+      var textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={itemGuid}]/Text").Value;
+      item.XPathSelectElement("Values/Standard").AddAfterSelf(new XElement("Description"));
+      item.XPathSelectElement("Values/Description").Add(new XElement("EN"));
+      item.XPathSelectElement("Values/Description").Add(new XElement("DE"));
+      item.XPathSelectElement("Values/Description/EN").Add(new XElement("Short", textEN));
+      item.XPathSelectElement("Values/Description/DE").Add(new XElement("Short", textDE));
+      item.XPathSelectElement("Values/Text").Remove();
+      // info
+      var infoGuid = item.XPathSelectElement("Values/Standard/InfoDescription").Value;
+      textEN = Program.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={infoGuid}]/../Text/LocaText/English/Text").Value;
+      textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={itemGuid}]/Text").Value;
+      item.XPathSelectElement("Values/Description/EN").Add(new XElement("Long", textEN));
+      item.XPathSelectElement("Values/Description/DE").Add(new XElement("Long", textDE));
+      // image
+      var img = Program.DecodeImage(item.XPathSelectElement("Values/Standard/IconFilename").Value);
+      item.XPathSelectElement("Values/Standard").Add(new XElement("Icon", img));
+    }
+    //
     private static void MonumentEventCategoryOld() {
       foreach (var element in Program.Original.Root.Elements()) {
         Program.MonumentEventCategory(element);
