@@ -12,7 +12,7 @@
 
   <UserControl.Resources>
     <BooleanToVisibilityConverter x:Key="BooleanToVisibility"></BooleanToVisibilityConverter>
-    <converter:DescriptionConverter x:Key="Description"></converter:DescriptionConverter>
+    <converter:GlobalDescriptionConverter x:Key="Description"></converter:GlobalDescriptionConverter>
   </UserControl.Resources>
 
   <Grid Grid.Row="2">

@@ -5,8 +5,7 @@
     <Values>
       <Standard>
         <GUID>17006</GUID>
-        <Name>Modest Architectural Exhibition</Name>
-        <IconFilename>data/ui/2kimages/main/3dicons/icon_architecture.png</IconFilename>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_architecture_0.png</IconFilename>
       </Standard>
       <Description>
         <EN>
@@ -16,15 +15,7 @@
           <Short>Bescheidene Architekturausstellung</Short>
         </DE>
       </Description>
-      <Locked />
       <MonumentEvent>
-        <PreparationTime>1200000</PreparationTime>
-        <EventDuration>600000</EventDuration>
-        <NeededWorkforceAmount>5000</NeededWorkforceAmount>
-        <MaxUsableWorkforceAmount>10000</MaxUsableWorkforceAmount>
-        <DescriptionFluff>6761</DescriptionFluff>
-        <BackgroundPreparation>data/ui/2kimages/main/assets/monument_event/monument_event_preparation.png</BackgroundPreparation>
-        <BackgroundRunning>data/ui/2kimages/main/assets/monument_event/monument_event_architecture.png</BackgroundRunning>
         <SelectionText>
           <Description>
             <EN>
@@ -56,6 +47,7 @@
           </Description>
         </RewardText>
         <PotentialEventReward>
+          <Reward>6790</Reward>
           <Description>
             <EN>
               <Short>3 unique ornaments and buildings</Short>
@@ -64,72 +56,26 @@
               <Short>3 einzigartige Ornamente und Gebäude</Short>
             </DE>
           </Description>
+          <IconFilename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_5_0.png</IconFilename>
         </PotentialEventReward>
-        <MaxPreparationAttractiveness>400</MaxPreparationAttractiveness>
-        <MinPreparationAttractiveness>100</MinPreparationAttractiveness>
-        <PreparationGoods>
-          <Item>
-            <MinAmount>25</MinAmount>
-            <MaxAmount>50</MaxAmount>
-            <GoodsOrPool>17030</GoodsOrPool>
-          </Item>
-          <Item>
-            <MinAmount>50</MinAmount>
-            <MaxAmount>100</MaxAmount>
-            <GoodsOrPool>17031</GoodsOrPool>
-          </Item>
-          <Item>
-            <MinAmount>25</MinAmount>
-            <MaxAmount>50</MaxAmount>
-            <GoodsOrPool>17048</GoodsOrPool>
-          </Item>
-        </PreparationGoods>
-        <ShortSizeName>6796</ShortSizeName>
         <RewardThresholds>
           <Item>
             <Reward>17015</Reward>
           </Item>
           <Item>
             <Reward>17700</Reward>
-            <NeededAttractiveness>100</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17703</Reward>
-            <NeededAttractiveness>200</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17704</Reward>
-            <NeededAttractiveness>300</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17705</Reward>
-            <NeededAttractiveness>400</NeededAttractiveness>
           </Item>
         </RewardThresholds>
-        <ReduceAttractivenessPerMinute>30</ReduceAttractivenessPerMinute>
-        <RequirementText>
-          <Item>
-            <Requirement>14711</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14715</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14727</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14724</Requirement>
-          </Item>
-        </RequirementText>
       </MonumentEvent>
-      <Cost>
-        <Costs>
-          <Item>
-            <Ingredient>1010017</Ingredient>
-            <Amount>25000</Amount>
-          </Item>
-        </Costs>
-      </Cost>
     </Values>
   </Asset>
   <Asset>
@@ -137,8 +83,7 @@
     <Values>
       <Standard>
         <GUID>17007</GUID>
-        <Name>Large Architectural Exhibition</Name>
-        <IconFilename>data/ui/2kimages/main/3dicons/icon_architecture.png</IconFilename>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_architecture_0.png</IconFilename>
       </Standard>
       <Description>
         <EN>
@@ -148,15 +93,7 @@
           <Short>Große Architekturausstellung</Short>
         </DE>
       </Description>
-      <Locked />
       <MonumentEvent>
-        <PreparationTime>1800000</PreparationTime>
-        <EventDuration>600000</EventDuration>
-        <NeededWorkforceAmount>7500</NeededWorkforceAmount>
-        <MaxUsableWorkforceAmount>15000</MaxUsableWorkforceAmount>
-        <DescriptionFluff>6761</DescriptionFluff>
-        <BackgroundPreparation>data/ui/2kimages/main/assets/monument_event/monument_event_preparation.png</BackgroundPreparation>
-        <BackgroundRunning>data/ui/2kimages/main/assets/monument_event/monument_event_architecture.png</BackgroundRunning>
         <SelectionText>
           <Description>
             <EN>
@@ -188,6 +125,7 @@
           </Description>
         </RewardText>
         <PotentialEventReward>
+          <Reward>6790</Reward>
           <Description>
             <EN>
               <Short>3 unique ornaments and buildings</Short>
@@ -196,73 +134,26 @@
               <Short>3 einzigartige Ornamente und Gebäude</Short>
             </DE>
           </Description>
+          <IconFilename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_7_0.png</IconFilename>
         </PotentialEventReward>
-        <MaxPreparationAttractiveness>600</MaxPreparationAttractiveness>
-        <MinPreparationAttractiveness>300</MinPreparationAttractiveness>
-        <PreparationGoods>
-          <Item>
-            <MinAmount>50</MinAmount>
-            <MaxAmount>100</MaxAmount>
-            <GoodsOrPool>17033</GoodsOrPool>
-          </Item>
-          <Item>
-            <MinAmount>100</MinAmount>
-            <MaxAmount>200</MaxAmount>
-            <GoodsOrPool>17032</GoodsOrPool>
-          </Item>
-          <Item>
-            <MinAmount>50</MinAmount>
-            <MaxAmount>100</MaxAmount>
-            <GoodsOrPool>17049</GoodsOrPool>
-          </Item>
-          <Item>
-            <MinAmount>25</MinAmount>
-            <MaxAmount>50</MaxAmount>
-            <GoodsOrPool>17034</GoodsOrPool>
-          </Item>
-        </PreparationGoods>
-        <ShortSizeName>6797</ShortSizeName>
         <RewardThresholds>
           <Item>
             <Reward>17703</Reward>
-            <NeededAttractiveness>200</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17704</Reward>
-            <NeededAttractiveness>300</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17705</Reward>
-            <NeededAttractiveness>400</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17706</Reward>
-            <NeededAttractiveness>500</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17707</Reward>
-            <NeededAttractiveness>600</NeededAttractiveness>
           </Item>
         </RewardThresholds>
         <MinAttractiveness>200</MinAttractiveness>
-        <ReduceAttractivenessPerMinute>30</ReduceAttractivenessPerMinute>
-        <RequirementText>
-          <Item>
-            <Requirement>14712</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14716</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14717</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14728</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14724</Requirement>
-          </Item>
-        </RequirementText>
         <FeedbackTexts>
           <TextThresholds>
             <Item>
@@ -465,14 +356,6 @@
           </TextThresholds>
         </FeedbackTexts>
       </MonumentEvent>
-      <Cost>
-        <Costs>
-          <Item>
-            <Ingredient>1010017</Ingredient>
-            <Amount>50000</Amount>
-          </Item>
-        </Costs>
-      </Cost>
     </Values>
   </Asset>
   <Asset>
@@ -480,8 +363,7 @@
     <Values>
       <Standard>
         <GUID>17008</GUID>
-        <Name>Somptuous Architectural Exhibition</Name>
-        <IconFilename>data/ui/2kimages/main/3dicons/icon_architecture.png</IconFilename>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_architecture_0.png</IconFilename>
       </Standard>
       <Description>
         <EN>
@@ -491,15 +373,7 @@
           <Short>Prächtige Architekturausstellung</Short>
         </DE>
       </Description>
-      <Locked />
       <MonumentEvent>
-        <PreparationTime>2400000</PreparationTime>
-        <EventDuration>600000</EventDuration>
-        <NeededWorkforceAmount>10000</NeededWorkforceAmount>
-        <MaxUsableWorkforceAmount>20000</MaxUsableWorkforceAmount>
-        <DescriptionFluff>6761</DescriptionFluff>
-        <BackgroundPreparation>data/ui/2kimages/main/assets/monument_event/monument_event_preparation.png</BackgroundPreparation>
-        <BackgroundRunning>data/ui/2kimages/main/assets/monument_event/monument_event_architecture.png</BackgroundRunning>
         <SelectionText>
           <Description>
             <EN>
@@ -531,6 +405,7 @@
           </Description>
         </RewardText>
         <PotentialEventReward>
+          <Reward>6790</Reward>
           <Description>
             <EN>
               <Short>3 unique ornaments and buildings</Short>
@@ -539,81 +414,26 @@
               <Short>3 einzigartige Ornamente und Gebäude</Short>
             </DE>
           </Description>
+          <IconFilename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9_0.png</IconFilename>
         </PotentialEventReward>
-        <MaxPreparationAttractiveness>800</MaxPreparationAttractiveness>
-        <MinPreparationAttractiveness>500</MinPreparationAttractiveness>
-        <PreparationGoods>
-          <Item>
-            <MinAmount>100</MinAmount>
-            <MaxAmount>200</MaxAmount>
-            <GoodsOrPool>17036</GoodsOrPool>
-          </Item>
-          <Item>
-            <MinAmount>100</MinAmount>
-            <MaxAmount>200</MaxAmount>
-            <GoodsOrPool>17035</GoodsOrPool>
-          </Item>
-          <Item>
-            <MinAmount>50</MinAmount>
-            <MaxAmount>100</MaxAmount>
-            <GoodsOrPool>17050</GoodsOrPool>
-          </Item>
-          <Item>
-            <MinAmount>50</MinAmount>
-            <MaxAmount>100</MaxAmount>
-            <GoodsOrPool>17039</GoodsOrPool>
-          </Item>
-          <Item>
-            <MinAmount>25</MinAmount>
-            <MaxAmount>50</MaxAmount>
-            <GoodsOrPool>17038</GoodsOrPool>
-          </Item>
-        </PreparationGoods>
-        <ShortSizeName>6798</ShortSizeName>
         <RewardThresholds>
           <Item>
             <Reward>17705</Reward>
-            <NeededAttractiveness>400</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17706</Reward>
-            <NeededAttractiveness>500</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17707</Reward>
-            <NeededAttractiveness>600</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17708</Reward>
-            <NeededAttractiveness>700</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17709</Reward>
-            <NeededAttractiveness>800</NeededAttractiveness>
           </Item>
         </RewardThresholds>
         <MinAttractiveness>400</MinAttractiveness>
-        <ReduceAttractivenessPerMinute>30</ReduceAttractivenessPerMinute>
-        <RequirementText>
-          <Item>
-            <Requirement>14713</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14718</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14719</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14720</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14729</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14724</Requirement>
-          </Item>
-        </RequirementText>
         <FeedbackTexts>
           <TextThresholds>
             <Item>
@@ -816,14 +636,6 @@
           </TextThresholds>
         </FeedbackTexts>
       </MonumentEvent>
-      <Cost>
-        <Costs>
-          <Item>
-            <Ingredient>1010017</Ingredient>
-            <Amount>100000</Amount>
-          </Item>
-        </Costs>
-      </Cost>
     </Values>
   </Asset>
   <Asset>
@@ -831,8 +643,7 @@
     <Values>
       <Standard>
         <GUID>17009</GUID>
-        <Name>Modest Science Exhibition</Name>
-        <IconFilename>data/ui/2kimages/main/3dicons/icon_science.png</IconFilename>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_science_0.png</IconFilename>
       </Standard>
       <Description>
         <EN>
@@ -842,15 +653,7 @@
           <Short>Bescheidene Wissenschaftsausstellung</Short>
         </DE>
       </Description>
-      <Locked />
       <MonumentEvent>
-        <PreparationTime>1200000</PreparationTime>
-        <EventDuration>600000</EventDuration>
-        <NeededWorkforceAmount>5000</NeededWorkforceAmount>
-        <MaxUsableWorkforceAmount>10000</MaxUsableWorkforceAmount>
-        <DescriptionFluff>6794</DescriptionFluff>
-        <BackgroundPreparation>data/ui/2kimages/main/assets/monument_event/monument_event_preparation.png</BackgroundPreparation>
-        <BackgroundRunning>data/ui/2kimages/main/assets/monument_event/monument_event_science.png</BackgroundRunning>
         <SelectionText>
           <Description>
             <EN>
@@ -882,6 +685,7 @@
           </Description>
         </RewardText>
         <PotentialEventReward>
+          <Reward>6791</Reward>
           <Description>
             <EN>
               <Short>3 rare and uncommon machines and inventions</Short>
@@ -890,63 +694,25 @@
               <Short>3 seltene und ungewöhnliche Maschinen und Erfindungen</Short>
             </DE>
           </Description>
+          <IconFilename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_5_0.png</IconFilename>
         </PotentialEventReward>
-        <MaxPreparationAttractiveness>400</MaxPreparationAttractiveness>
-        <MinPreparationAttractiveness>100</MinPreparationAttractiveness>
-        <PreparationGoods>
-          <Item>
-            <MinAmount>25</MinAmount>
-            <MaxAmount>50</MaxAmount>
-            <GoodsOrPool>17030</GoodsOrPool>
-          </Item>
-          <Item>
-            <MinAmount>50</MinAmount>
-            <MaxAmount>100</MaxAmount>
-            <GoodsOrPool>17031</GoodsOrPool>
-          </Item>
-          <Item>
-            <MinAmount>25</MinAmount>
-            <MaxAmount>50</MaxAmount>
-            <GoodsOrPool>17048</GoodsOrPool>
-          </Item>
-        </PreparationGoods>
-        <ShortSizeName>6796</ShortSizeName>
         <RewardThresholds>
           <Item>
             <Reward>17016</Reward>
           </Item>
           <Item>
             <Reward>17040</Reward>
-            <NeededAttractiveness>100</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17041</Reward>
-            <NeededAttractiveness>200</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17042</Reward>
-            <NeededAttractiveness>300</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17043</Reward>
-            <NeededAttractiveness>400</NeededAttractiveness>
           </Item>
         </RewardThresholds>
-        <ReduceAttractivenessPerMinute>30</ReduceAttractivenessPerMinute>
-        <RequirementText>
-          <Item>
-            <Requirement>14711</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14715</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14727</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14724</Requirement>
-          </Item>
-        </RequirementText>
         <FeedbackTexts>
           <TextThresholds>
             <Item>
@@ -1122,14 +888,6 @@
           </TextThresholds>
         </FeedbackTexts>
       </MonumentEvent>
-      <Cost>
-        <Costs>
-          <Item>
-            <Ingredient>1010017</Ingredient>
-            <Amount>25000</Amount>
-          </Item>
-        </Costs>
-      </Cost>
     </Values>
   </Asset>
   <Asset>
@@ -1137,8 +895,7 @@
     <Values>
       <Standard>
         <GUID>17010</GUID>
-        <Name>Large Science Exhibition</Name>
-        <IconFilename>data/ui/2kimages/main/3dicons/icon_science.png</IconFilename>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_science_0.png</IconFilename>
       </Standard>
       <Description>
         <EN>
@@ -1148,15 +905,7 @@
           <Short>Große Wissenschaftsausstellung</Short>
         </DE>
       </Description>
-      <Locked />
       <MonumentEvent>
-        <PreparationTime>1800000</PreparationTime>
-        <EventDuration>600000</EventDuration>
-        <NeededWorkforceAmount>7500</NeededWorkforceAmount>
-        <MaxUsableWorkforceAmount>15000</MaxUsableWorkforceAmount>
-        <DescriptionFluff>6794</DescriptionFluff>
-        <BackgroundPreparation>data/ui/2kimages/main/assets/monument_event/monument_event_preparation.png</BackgroundPreparation>
-        <BackgroundRunning>data/ui/2kimages/main/assets/monument_event/monument_event_science.png</BackgroundRunning>
         <SelectionText>
           <Description>
             <EN>
@@ -1188,6 +937,7 @@
           </Description>
         </RewardText>
         <PotentialEventReward>
+          <Reward>6791</Reward>
           <Description>
             <EN>
               <Short>3 rare and epic machines and inventions</Short>
@@ -1196,73 +946,26 @@
               <Short>3 seltene und epische Maschinen und Erfindungen</Short>
             </DE>
           </Description>
+          <IconFilename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_7_0.png</IconFilename>
         </PotentialEventReward>
-        <MaxPreparationAttractiveness>600</MaxPreparationAttractiveness>
-        <MinPreparationAttractiveness>300</MinPreparationAttractiveness>
-        <PreparationGoods>
-          <Item>
-            <MinAmount>50</MinAmount>
-            <MaxAmount>100</MaxAmount>
-            <GoodsOrPool>17033</GoodsOrPool>
-          </Item>
-          <Item>
-            <MinAmount>100</MinAmount>
-            <MaxAmount>200</MaxAmount>
-            <GoodsOrPool>17032</GoodsOrPool>
-          </Item>
-          <Item>
-            <MinAmount>50</MinAmount>
-            <MaxAmount>100</MaxAmount>
-            <GoodsOrPool>17049</GoodsOrPool>
-          </Item>
-          <Item>
-            <MinAmount>25</MinAmount>
-            <MaxAmount>50</MaxAmount>
-            <GoodsOrPool>17034</GoodsOrPool>
-          </Item>
-        </PreparationGoods>
-        <ShortSizeName>6797</ShortSizeName>
         <RewardThresholds>
           <Item>
             <Reward>17041</Reward>
-            <NeededAttractiveness>200</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17042</Reward>
-            <NeededAttractiveness>300</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17043</Reward>
-            <NeededAttractiveness>400</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17044</Reward>
-            <NeededAttractiveness>500</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17045</Reward>
-            <NeededAttractiveness>600</NeededAttractiveness>
           </Item>
         </RewardThresholds>
         <MinAttractiveness>200</MinAttractiveness>
-        <ReduceAttractivenessPerMinute>30</ReduceAttractivenessPerMinute>
-        <RequirementText>
-          <Item>
-            <Requirement>14712</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14716</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14717</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14728</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14724</Requirement>
-          </Item>
-        </RequirementText>
         <FeedbackTexts>
           <TextThresholds>
             <Item>
@@ -1470,14 +1173,6 @@
           </TextThresholds>
         </FeedbackTexts>
       </MonumentEvent>
-      <Cost>
-        <Costs>
-          <Item>
-            <Ingredient>1010017</Ingredient>
-            <Amount>50000</Amount>
-          </Item>
-        </Costs>
-      </Cost>
     </Values>
   </Asset>
   <Asset>
@@ -1485,8 +1180,7 @@
     <Values>
       <Standard>
         <GUID>17011</GUID>
-        <Name>Somptuous Science Exhibition</Name>
-        <IconFilename>data/ui/2kimages/main/3dicons/icon_science.png</IconFilename>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_science_0.png</IconFilename>
       </Standard>
       <Description>
         <EN>
@@ -1496,15 +1190,7 @@
           <Short>Prächtige Wissenschaftsausstellung</Short>
         </DE>
       </Description>
-      <Locked />
       <MonumentEvent>
-        <PreparationTime>2400000</PreparationTime>
-        <EventDuration>600000</EventDuration>
-        <NeededWorkforceAmount>10000</NeededWorkforceAmount>
-        <MaxUsableWorkforceAmount>20000</MaxUsableWorkforceAmount>
-        <DescriptionFluff>6794</DescriptionFluff>
-        <BackgroundPreparation>data/ui/2kimages/main/assets/monument_event/monument_event_preparation.png</BackgroundPreparation>
-        <BackgroundRunning>data/ui/2kimages/main/assets/monument_event/monument_event_science.png</BackgroundRunning>
         <SelectionText>
           <Description>
             <EN>
@@ -1536,6 +1222,7 @@
           </Description>
         </RewardText>
         <PotentialEventReward>
+          <Reward>6791</Reward>
           <Description>
             <EN>
               <Short>3 epic machines and inventions</Short>
@@ -1544,81 +1231,26 @@
               <Short>3 epische Maschinen und Erfindungen</Short>
             </DE>
           </Description>
+          <IconFilename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9_0.png</IconFilename>
         </PotentialEventReward>
-        <MaxPreparationAttractiveness>800</MaxPreparationAttractiveness>
-        <MinPreparationAttractiveness>500</MinPreparationAttractiveness>
-        <PreparationGoods>
-          <Item>
-            <MinAmount>100</MinAmount>
-            <MaxAmount>200</MaxAmount>
-            <GoodsOrPool>17036</GoodsOrPool>
-          </Item>
-          <Item>
-            <MinAmount>100</MinAmount>
-            <MaxAmount>200</MaxAmount>
-            <GoodsOrPool>17035</GoodsOrPool>
-          </Item>
-          <Item>
-            <MinAmount>50</MinAmount>
-            <MaxAmount>100</MaxAmount>
-            <GoodsOrPool>17050</GoodsOrPool>
-          </Item>
-          <Item>
-            <MinAmount>50</MinAmount>
-            <MaxAmount>100</MaxAmount>
-            <GoodsOrPool>17039</GoodsOrPool>
-          </Item>
-          <Item>
-            <MinAmount>25</MinAmount>
-            <MaxAmount>50</MaxAmount>
-            <GoodsOrPool>17038</GoodsOrPool>
-          </Item>
-        </PreparationGoods>
-        <ShortSizeName>6798</ShortSizeName>
         <RewardThresholds>
           <Item>
             <Reward>17043</Reward>
-            <NeededAttractiveness>400</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17044</Reward>
-            <NeededAttractiveness>500</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17045</Reward>
-            <NeededAttractiveness>600</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17046</Reward>
-            <NeededAttractiveness>700</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17047</Reward>
-            <NeededAttractiveness>800</NeededAttractiveness>
           </Item>
         </RewardThresholds>
         <MinAttractiveness>400</MinAttractiveness>
-        <ReduceAttractivenessPerMinute>30</ReduceAttractivenessPerMinute>
-        <RequirementText>
-          <Item>
-            <Requirement>14713</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14718</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14719</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14720</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14729</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14724</Requirement>
-          </Item>
-        </RequirementText>
         <FeedbackTexts>
           <TextThresholds>
             <Item>
@@ -1826,14 +1458,6 @@
           </TextThresholds>
         </FeedbackTexts>
       </MonumentEvent>
-      <Cost>
-        <Costs>
-          <Item>
-            <Ingredient>1010017</Ingredient>
-            <Amount>100000</Amount>
-          </Item>
-        </Costs>
-      </Cost>
     </Values>
   </Asset>
   <Asset>
@@ -1841,8 +1465,7 @@
     <Values>
       <Standard>
         <GUID>17012</GUID>
-        <Name>Modest Archaeological Exhibition</Name>
-        <IconFilename>data/ui/2kimages/main/3dicons/icon_archeology.png</IconFilename>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_archeology_0.png</IconFilename>
       </Standard>
       <Description>
         <EN>
@@ -1852,15 +1475,7 @@
           <Short>Bescheidene archäologische Ausstellung</Short>
         </DE>
       </Description>
-      <Locked />
       <MonumentEvent>
-        <PreparationTime>1200000</PreparationTime>
-        <EventDuration>600000</EventDuration>
-        <NeededWorkforceAmount>5000</NeededWorkforceAmount>
-        <MaxUsableWorkforceAmount>10000</MaxUsableWorkforceAmount>
-        <DescriptionFluff>6795</DescriptionFluff>
-        <BackgroundPreparation>data/ui/2kimages/main/assets/monument_event/monument_event_preparation.png</BackgroundPreparation>
-        <BackgroundRunning>data/ui/2kimages/main/assets/monument_event/monument_event_archeology.png</BackgroundRunning>
         <SelectionText>
           <Description>
             <EN>
@@ -1892,6 +1507,7 @@
           </Description>
         </RewardText>
         <PotentialEventReward>
+          <Reward>6792</Reward>
           <Description>
             <EN>
               <Short>3 rare and uncommon artifacts for your museum</Short>
@@ -1900,63 +1516,25 @@
               <Short>3 seltene und ungewöhnliche Artefakte für Ihr Museum</Short>
             </DE>
           </Description>
+          <IconFilename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_5_0.png</IconFilename>
         </PotentialEventReward>
-        <MaxPreparationAttractiveness>400</MaxPreparationAttractiveness>
-        <MinPreparationAttractiveness>100</MinPreparationAttractiveness>
-        <PreparationGoods>
-          <Item>
-            <MinAmount>25</MinAmount>
-            <MaxAmount>50</MaxAmount>
-            <GoodsOrPool>17030</GoodsOrPool>
-          </Item>
-          <Item>
-            <MinAmount>50</MinAmount>
-            <MaxAmount>100</MaxAmount>
-            <GoodsOrPool>17031</GoodsOrPool>
-          </Item>
-          <Item>
-            <MinAmount>25</MinAmount>
-            <MaxAmount>50</MaxAmount>
-            <GoodsOrPool>17048</GoodsOrPool>
-          </Item>
-        </PreparationGoods>
-        <ShortSizeName>6796</ShortSizeName>
         <RewardThresholds>
           <Item>
             <Reward>17017</Reward>
           </Item>
           <Item>
             <Reward>17022</Reward>
-            <NeededAttractiveness>100</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17023</Reward>
-            <NeededAttractiveness>200</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17024</Reward>
-            <NeededAttractiveness>300</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17025</Reward>
-            <NeededAttractiveness>400</NeededAttractiveness>
           </Item>
         </RewardThresholds>
-        <ReduceAttractivenessPerMinute>30</ReduceAttractivenessPerMinute>
-        <RequirementText>
-          <Item>
-            <Requirement>14711</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14715</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14727</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14724</Requirement>
-          </Item>
-        </RequirementText>
         <FeedbackTexts>
           <TextThresholds>
             <Item>
@@ -2132,14 +1710,6 @@
           </TextThresholds>
         </FeedbackTexts>
       </MonumentEvent>
-      <Cost>
-        <Costs>
-          <Item>
-            <Ingredient>1010017</Ingredient>
-            <Amount>25000</Amount>
-          </Item>
-        </Costs>
-      </Cost>
     </Values>
   </Asset>
   <Asset>
@@ -2147,8 +1717,7 @@
     <Values>
       <Standard>
         <GUID>17013</GUID>
-        <Name>Large Archaeological Exhibition</Name>
-        <IconFilename>data/ui/2kimages/main/3dicons/icon_archeology.png</IconFilename>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_archeology_0.png</IconFilename>
       </Standard>
       <Description>
         <EN>
@@ -2158,15 +1727,7 @@
           <Short>Große archäologische Ausstellung</Short>
         </DE>
       </Description>
-      <Locked />
       <MonumentEvent>
-        <PreparationTime>1800000</PreparationTime>
-        <EventDuration>600000</EventDuration>
-        <NeededWorkforceAmount>7500</NeededWorkforceAmount>
-        <MaxUsableWorkforceAmount>15000</MaxUsableWorkforceAmount>
-        <DescriptionFluff>6795</DescriptionFluff>
-        <BackgroundPreparation>data/ui/2kimages/main/assets/monument_event/monument_event_preparation.png</BackgroundPreparation>
-        <BackgroundRunning>data/ui/2kimages/main/assets/monument_event/monument_event_archeology.png</BackgroundRunning>
         <SelectionText>
           <Description>
             <EN>
@@ -2198,6 +1759,7 @@
           </Description>
         </RewardText>
         <PotentialEventReward>
+          <Reward>6792</Reward>
           <Description>
             <EN>
               <Short>3 rare, epic and legendary artifacts for your museum</Short>
@@ -2206,73 +1768,26 @@
               <Short>3 seltene, epische und legendäre Artefakte für Ihr Museum</Short>
             </DE>
           </Description>
+          <IconFilename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_7_0.png</IconFilename>
         </PotentialEventReward>
-        <MaxPreparationAttractiveness>600</MaxPreparationAttractiveness>
-        <MinPreparationAttractiveness>300</MinPreparationAttractiveness>
-        <PreparationGoods>
-          <Item>
-            <MinAmount>50</MinAmount>
-            <MaxAmount>100</MaxAmount>
-            <GoodsOrPool>17033</GoodsOrPool>
-          </Item>
-          <Item>
-            <MinAmount>100</MinAmount>
-            <MaxAmount>200</MaxAmount>
-            <GoodsOrPool>17032</GoodsOrPool>
-          </Item>
-          <Item>
-            <MinAmount>50</MinAmount>
-            <MaxAmount>100</MaxAmount>
-            <GoodsOrPool>17049</GoodsOrPool>
-          </Item>
-          <Item>
-            <MinAmount>25</MinAmount>
-            <MaxAmount>50</MaxAmount>
-            <GoodsOrPool>17034</GoodsOrPool>
-          </Item>
-        </PreparationGoods>
-        <ShortSizeName>6797</ShortSizeName>
         <RewardThresholds>
           <Item>
             <Reward>17023</Reward>
-            <NeededAttractiveness>200</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17024</Reward>
-            <NeededAttractiveness>300</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17025</Reward>
-            <NeededAttractiveness>400</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17026</Reward>
-            <NeededAttractiveness>500</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17027</Reward>
-            <NeededAttractiveness>600</NeededAttractiveness>
           </Item>
         </RewardThresholds>
         <MinAttractiveness>200</MinAttractiveness>
-        <ReduceAttractivenessPerMinute>30</ReduceAttractivenessPerMinute>
-        <RequirementText>
-          <Item>
-            <Requirement>14712</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14716</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14717</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14728</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14724</Requirement>
-          </Item>
-        </RequirementText>
         <FeedbackTexts>
           <TextThresholds>
             <Item>
@@ -2480,14 +1995,6 @@
           </TextThresholds>
         </FeedbackTexts>
       </MonumentEvent>
-      <Cost>
-        <Costs>
-          <Item>
-            <Ingredient>1010017</Ingredient>
-            <Amount>50000</Amount>
-          </Item>
-        </Costs>
-      </Cost>
     </Values>
   </Asset>
   <Asset>
@@ -2495,8 +2002,7 @@
     <Values>
       <Standard>
         <GUID>17014</GUID>
-        <Name>Somptuous Archaeological Exhibition</Name>
-        <IconFilename>data/ui/2kimages/main/3dicons/icon_archeology.png</IconFilename>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_archeology_0.png</IconFilename>
       </Standard>
       <Description>
         <EN>
@@ -2506,15 +2012,7 @@
           <Short>Prächtige archäologische Ausstellung</Short>
         </DE>
       </Description>
-      <Locked />
       <MonumentEvent>
-        <PreparationTime>2400000</PreparationTime>
-        <EventDuration>600000</EventDuration>
-        <NeededWorkforceAmount>10000</NeededWorkforceAmount>
-        <MaxUsableWorkforceAmount>20000</MaxUsableWorkforceAmount>
-        <DescriptionFluff>6795</DescriptionFluff>
-        <BackgroundPreparation>data/ui/2kimages/main/assets/monument_event/monument_event_preparation.png</BackgroundPreparation>
-        <BackgroundRunning>data/ui/2kimages/main/assets/monument_event/monument_event_archeology.png</BackgroundRunning>
         <SelectionText>
           <Description>
             <EN>
@@ -2546,6 +2044,7 @@
           </Description>
         </RewardText>
         <PotentialEventReward>
+          <Reward>6792</Reward>
           <Description>
             <EN>
               <Short>3 epic and legendary artifacts for your museum</Short>
@@ -2554,81 +2053,26 @@
               <Short>3 epische und legendäre Artefakte für Ihr Museum</Short>
             </DE>
           </Description>
+          <IconFilename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9_0.png</IconFilename>
         </PotentialEventReward>
-        <MaxPreparationAttractiveness>800</MaxPreparationAttractiveness>
-        <MinPreparationAttractiveness>500</MinPreparationAttractiveness>
-        <PreparationGoods>
-          <Item>
-            <MinAmount>100</MinAmount>
-            <MaxAmount>200</MaxAmount>
-            <GoodsOrPool>17036</GoodsOrPool>
-          </Item>
-          <Item>
-            <MinAmount>100</MinAmount>
-            <MaxAmount>200</MaxAmount>
-            <GoodsOrPool>17035</GoodsOrPool>
-          </Item>
-          <Item>
-            <MinAmount>50</MinAmount>
-            <MaxAmount>100</MaxAmount>
-            <GoodsOrPool>17050</GoodsOrPool>
-          </Item>
-          <Item>
-            <MinAmount>50</MinAmount>
-            <MaxAmount>100</MaxAmount>
-            <GoodsOrPool>17039</GoodsOrPool>
-          </Item>
-          <Item>
-            <MinAmount>25</MinAmount>
-            <MaxAmount>50</MaxAmount>
-            <GoodsOrPool>17038</GoodsOrPool>
-          </Item>
-        </PreparationGoods>
-        <ShortSizeName>6798</ShortSizeName>
         <RewardThresholds>
           <Item>
             <Reward>17025</Reward>
-            <NeededAttractiveness>400</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17026</Reward>
-            <NeededAttractiveness>500</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17027</Reward>
-            <NeededAttractiveness>600</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17028</Reward>
-            <NeededAttractiveness>700</NeededAttractiveness>
           </Item>
           <Item>
             <Reward>17029</Reward>
-            <NeededAttractiveness>800</NeededAttractiveness>
           </Item>
         </RewardThresholds>
         <MinAttractiveness>400</MinAttractiveness>
-        <ReduceAttractivenessPerMinute>30</ReduceAttractivenessPerMinute>
-        <RequirementText>
-          <Item>
-            <Requirement>14713</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14718</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14719</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14720</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14729</Requirement>
-          </Item>
-          <Item>
-            <Requirement>14724</Requirement>
-          </Item>
-        </RequirementText>
         <FeedbackTexts>
           <TextThresholds>
             <Item>
@@ -2836,14 +2280,6 @@
           </TextThresholds>
         </FeedbackTexts>
       </MonumentEvent>
-      <Cost>
-        <Costs>
-          <Item>
-            <Ingredient>1010017</Ingredient>
-            <Amount>100000</Amount>
-          </Item>
-        </Costs>
-      </Cost>
     </Values>
   </Asset>
 </MonumentEvent>

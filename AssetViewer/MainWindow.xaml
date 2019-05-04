@@ -10,7 +10,7 @@
 
   <Window.Resources>
     <BooleanToVisibilityConverter x:Key="BooleanToVisibility"></BooleanToVisibilityConverter>
-    <converter:DescriptionConverter x:Key="Description"></converter:DescriptionConverter>
+    <converter:GlobalDescriptionConverter x:Key="Description"></converter:GlobalDescriptionConverter>
   </Window.Resources>
 
   <Grid Margin="10">
@@ -30,6 +30,7 @@
       <TextBlock Grid.Column="0" VerticalAlignment="Center" Text="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=101}"></TextBlock>
       <ComboBox x:Name="ComboBoxAsset" Grid.Column="2" SelectionChanged="ComboBoxAsset_OnSelectionChanged">
         <TextBlock Text="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=102}"></TextBlock>
+        <TextBlock Text="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=103}"></TextBlock>
       </ComboBox>
       <ComboBox x:Name="ComboBoxLanguage" SelectedIndex="0" Grid.Column="4" SelectionChanged="ComboBoxLanguage_OnSelectionChanged">
         <TextBlock Text="English"></TextBlock>

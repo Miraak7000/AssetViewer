@@ -1,20 +1,27 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
+using System.Linq;
 using System.Windows.Data;
+using System.Xml.Linq;
+using System.Xml.XPath;
 using AssetViewer.Library;
 
 namespace AssetViewer.Converter {
 
+  [SuppressMessage("ReSharper", "AssignNullToNotNullAttribute"), SuppressMessage("ReSharper", "PossibleNullReferenceException")]
   public class DescriptionConverter : IValueConverter {
 
     #region Public Methods
     public Object Convert(Object value, Type targetType, Object parameter, CultureInfo culture) {
-      var key = Int32.Parse(parameter.ToString());
+      if (value == null) return null;
+      if (parameter == null) parameter = "Short";
       switch (App.Language) {
         case Languages.English:
-          return App.Descriptions[key].ShortEN;
+          return ((XElement)value).XPathSelectElement($"EN/{parameter}").Value;
         case Languages.German:
-          return App.Descriptions[key].ShortDE;
+          return ((XElement)value).XPathSelectElement($"DE/{parameter}").Value;
         default:
           throw new NotImplementedException();
       }

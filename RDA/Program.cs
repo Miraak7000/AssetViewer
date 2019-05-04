@@ -21,6 +21,7 @@ namespace RDA {
   internal static class Program {
 
     #region Fields
+    private static String PathViewer;
     private static String PathRoot;
     private static XDocument Original;
     private static XDocument Modified;
@@ -33,6 +34,7 @@ namespace RDA {
 
     #region Private Methods
     private static void Main(String[] args) {
+      Program.PathViewer = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase).Replace(@"file:\", String.Empty)).Parent.Parent.Parent.FullName + @"\AssetViewer";
       Program.PathRoot = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase).Replace(@"file:\", String.Empty)).Parent.Parent.FullName;
       Program.Original = XDocument.Load(Program.PathRoot + @"\Original\assets.xml");
       Program.TextDE = XDocument.Load(Program.PathRoot + @"\Original\texts_german.xml");
@@ -134,28 +136,17 @@ namespace RDA {
       }
     }
     // Images
-    private static String DecodeImage(String icon) {
-      icon = icon.Substring(icon.LastIndexOf('/') + 1).Replace(".png", String.Empty);
-      var pathImageExe = Program.PathRoot + @"\Library\nvdecompress.exe";
-      var pathImageSource = Directory.GetFiles($@"{Program.PathRoot}\Resources\DDS", $"{icon}*.dds", SearchOption.AllDirectories).FirstOrDefault();
-      if (pathImageSource != null) {
-        var pathImageTemp = $@"{Program.PathRoot}\Resources\temp.tga";
-        Process.Start(pathImageExe, $"\"{pathImageSource}\" \"{pathImageTemp}\"");
-        Thread.Sleep(1000);
-        if (File.Exists(pathImageTemp)) {
-          var img = TgaReader.Load(pathImageTemp);
-          File.Delete(pathImageTemp);
-          String pathImageTarget;
-          if (pathImageSource.Contains("3d")) {
-            pathImageTarget = $@"{Program.PathRoot}\Resources\PNG\3dicons\{icon}.png";
-          } else {
-            pathImageTarget = $@"{Program.PathRoot}\Resources\PNG\icons\{icon}.png";
-          }
-          img.Save(pathImageTarget, ImageFormat.Png);
-          return Convert.ToBase64String(File.ReadAllBytes(pathImageTarget));
-        }
+    private static void SetImage(XElement element) {
+      var name = element.Value.Replace(".png", "_0.png");
+      var source = Path.GetFullPath(Path.Combine(Program.PathRoot, "Resources", name));
+      if (File.Exists(source)) {
+        var destination = Path.GetFullPath(Path.Combine(Program.PathViewer, "Resources", name));
+        if (!Directory.Exists(Path.GetDirectoryName(destination))) Directory.CreateDirectory(Path.GetDirectoryName(destination));
+        File.Copy(source, destination, true);
+        element.Value = name;
+      } else {
+        element.Value = String.Empty;
       }
-      return null;
     }
     // World Fair
     private static void MonumentEventCategory() {
@@ -164,6 +155,12 @@ namespace RDA {
         var assetGuid = asset.XPathSelectElement("Values/Standard/GUID").Value;
         var textEN = asset.XPathSelectElement("Values/Text/LocaText/English/Text").Value;
         var textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={assetGuid}]/Text").Value;
+        asset.XPathSelectElement("Values/Standard/Name").Remove();
+        asset.XPathSelectElement("Values/Locked").Remove();
+        asset.XPathSelectElement("Values/MonumentEventCategory/CategoryDescriptionFluff").Remove();
+        asset.XPathSelectElement("Values/MonumentEventCategory/EventAudioState")?.Remove();
+        asset.XPathSelectElement("Values/MonumentEventCategory/PotentialCategoryReward").Remove();
+        asset.XPathSelectElement("Values/MonumentEventCategory/SizeSelectionBackground").Remove();
         // modify description
         asset.XPathSelectElement("Values/Standard").AddAfterSelf(new XElement("Description"));
         asset.XPathSelectElement("Values/Description").Add(new XElement("EN"));
@@ -176,15 +173,17 @@ namespace RDA {
         textEN = Program.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={rewardGuid}]/../Text/LocaText/English/Text").Value;
         textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={rewardGuid}]/Text").Value;
         asset.XPathSelectElement("Values/MonumentEventCategory/PotentialCategoryReward").Value = String.Empty;
+        asset.XPathSelectElement("Values/MonumentEventCategory/PotentialCategoryReward").Add(new XElement("Reward", rewardGuid));
         asset.XPathSelectElement("Values/MonumentEventCategory/PotentialCategoryReward").Add(new XElement("Description"));
         asset.XPathSelectElement("Values/MonumentEventCategory/PotentialCategoryReward/Description").Add(new XElement("EN"));
         asset.XPathSelectElement("Values/MonumentEventCategory/PotentialCategoryReward/Description").Add(new XElement("DE"));
         asset.XPathSelectElement("Values/MonumentEventCategory/PotentialCategoryReward/Description/EN").Add(new XElement("Short", textEN));
         asset.XPathSelectElement("Values/MonumentEventCategory/PotentialCategoryReward/Description/DE").Add(new XElement("Short", textDE));
-        // image
-        //var img = Program.DecodeImage(asset.XPathSelectElement("Values/Standard/IconFilename").Value);
-        //asset.XPathSelectElement("Values/Standard").Add(new XElement("Icon", img));
-        //asset.XPathSelectElement("Values/Standard/IconFilename").Remove();
+        var iconFilename = Program.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={rewardGuid}]/IconFilename").Value;
+        asset.XPathSelectElement("Values/MonumentEventCategory/PotentialCategoryReward").Add(new XElement("IconFilename", iconFilename));
+        // images
+        Program.SetImage(asset.XPathSelectElement("Values/Standard/IconFilename"));
+        Program.SetImage(asset.XPathSelectElement("Values/MonumentEventCategory/PotentialCategoryReward/IconFilename"));
       }
       var document = new XDocument();
       document.Add(new XElement("MonumentEventCategory", assets));
@@ -196,6 +195,22 @@ namespace RDA {
         var assetGuid = asset.XPathSelectElement("Values/Standard/GUID").Value;
         var textEN = asset.XPathSelectElement("Values/Text/LocaText/English/Text").Value;
         var textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={assetGuid}]/Text").Value;
+        asset.XPathSelectElement("Values/Standard/Name").Remove();
+        asset.XPathSelectElement("Values/Locked").Remove();
+        asset.XPathSelectElement("Values/Cost").Remove();
+        asset.XPathSelectElement("Values/MonumentEvent/PreparationTime").Remove();
+        asset.XPathSelectElement("Values/MonumentEvent/EventDuration").Remove();
+        asset.XPathSelectElement("Values/MonumentEvent/NeededWorkforceAmount").Remove();
+        asset.XPathSelectElement("Values/MonumentEvent/MaxUsableWorkforceAmount").Remove();
+        asset.XPathSelectElement("Values/MonumentEvent/DescriptionFluff").Remove();
+        asset.XPathSelectElement("Values/MonumentEvent/MaxPreparationAttractiveness").Remove();
+        asset.XPathSelectElement("Values/MonumentEvent/MinPreparationAttractiveness").Remove();
+        asset.XPathSelectElement("Values/MonumentEvent/ShortSizeName").Remove();
+        asset.XPathSelectElement("Values/MonumentEvent/PreparationGoods").Remove();
+        asset.XPathSelectElement("Values/MonumentEvent/ReduceAttractivenessPerMinute").Remove();
+        asset.XPathSelectElement("Values/MonumentEvent/RequirementText").Remove();
+        asset.XPathSelectElement("Values/MonumentEvent/BackgroundPreparation").Remove();
+        asset.XPathSelectElement("Values/MonumentEvent/BackgroundRunning").Remove();
         // modify description
         asset.XPathSelectElement("Values/Standard").AddAfterSelf(new XElement("Description"));
         asset.XPathSelectElement("Values/Description").Add(new XElement("EN"));
@@ -238,11 +253,21 @@ namespace RDA {
         textEN = Program.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={eventGuid}]/../Text/LocaText/English/Text").Value;
         textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={eventGuid}]/Text").Value;
         asset.XPathSelectElement("Values/MonumentEvent/PotentialEventReward").Value = String.Empty;
+        asset.XPathSelectElement("Values/MonumentEvent/PotentialEventReward").Add(new XElement("Reward", rewardGuid));
         asset.XPathSelectElement("Values/MonumentEvent/PotentialEventReward").Add(new XElement("Description"));
         asset.XPathSelectElement("Values/MonumentEvent/PotentialEventReward/Description").Add(new XElement("EN"));
         asset.XPathSelectElement("Values/MonumentEvent/PotentialEventReward/Description").Add(new XElement("DE"));
         asset.XPathSelectElement("Values/MonumentEvent/PotentialEventReward/Description/EN").Add(new XElement("Short", textEN));
         asset.XPathSelectElement("Values/MonumentEvent/PotentialEventReward/Description/DE").Add(new XElement("Short", textDE));
+        var iconFilename = Program.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={eventGuid}]/IconFilename").Value;
+        asset.XPathSelectElement("Values/MonumentEvent/PotentialEventReward").Add(new XElement("IconFilename", iconFilename));
+        // images
+        Program.SetImage(asset.XPathSelectElement("Values/Standard/IconFilename"));
+        Program.SetImage(asset.XPathSelectElement("Values/MonumentEvent/PotentialEventReward/IconFilename"));
+        // tresholds
+        foreach (var item in asset.XPathSelectElements("Values/MonumentEvent/RewardThresholds/Item")) {
+          item.Element("NeededAttractiveness")?.Remove();
+        }
       }
       var document = new XDocument();
       document.Add(new XElement("MonumentEvent", assets));
@@ -250,10 +275,11 @@ namespace RDA {
     }
     private static void MonumentEventReward() {
       var assets = Program.Original.Root.XPathSelectElements("//Asset[Template='MonumentEventReward']").ToArray();
-      foreach (var asset in assets.Skip(9).Take(1)) {
+      foreach (var asset in assets) {
         var assetGuid = asset.XPathSelectElement("Values/Standard/GUID").Value;
         var textEN = asset.XPathSelectElement("Values/Text/LocaText/English/Text").Value;
         var textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={assetGuid}]/Text").Value;
+        asset.XPathSelectElement("Values/Standard/Name").Remove();
         // modify description
         asset.XPathSelectElement("Values/Standard").AddAfterSelf(new XElement("Description"));
         asset.XPathSelectElement("Values/Description").Add(new XElement("EN"));
@@ -261,9 +287,18 @@ namespace RDA {
         asset.XPathSelectElement("Values/Description/EN").Add(new XElement("Short", textEN));
         asset.XPathSelectElement("Values/Description/DE").Add(new XElement("Short", textDE));
         asset.XPathSelectElement("Values/Text").Remove();
+        // info
+        var infoGuid = asset.XPathSelectElement("Values/Standard/InfoDescription").Value;
+        textEN = Program.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={infoGuid}]/../Text/LocaText/English/Text").Value;
+        textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={infoGuid}]/Text").Value;
+        asset.XPathSelectElement("Values/Description/EN").Add(new XElement("Long", textEN));
+        asset.XPathSelectElement("Values/Description/DE").Add(new XElement("Long", textDE));
+        asset.XPathSelectElement("Values/Standard/InfoDescription").Remove();
         // find rewards
-        foreach (var item in asset.XPathSelectElements("Values/Reward/RewardAssets/Item")) {
-          var rewardGuid = item.XPathSelectElement("Reward").Value;
+        var rewardGuids = asset.XPathSelectElements("Values/Reward/RewardAssets/Item/Reward").Select(s => s.Value).ToArray();
+        var rewardNode = asset.XPathSelectElement("Values/Reward");
+        rewardNode.Element("RewardAssets").Remove();
+        foreach (var rewardGuid in rewardGuids) {
           var reward = Program.Original.Root.XPathSelectElement($"//Asset/Values/Standard[GUID={rewardGuid}]/../..");
           if (reward.XPathSelectElement("Template").Value == "RewardPool") {
             var poolGuids1 = reward.XPathSelectElements("Values/RewardPool/ItemsPool/Item/ItemLink").Select(s => s.Value).ToArray();
@@ -273,21 +308,18 @@ namespace RDA {
                 var poolGuids2 = reward.XPathSelectElements("Values/RewardPool/ItemsPool/Item/ItemLink").Select(s => s.Value).ToArray();
                 foreach (var poolGuid2 in poolGuids2) {
                   reward = Program.Original.Root.XPathSelectElement($"//Asset/Values/Standard[GUID={poolGuid2}]/../..");
-                  item.XPathSelectElement("Reward").Value = String.Empty;
-                  item.XPathSelectElement("Reward").Add(reward);
+                  rewardNode.Add(reward);
                 }
               } else {
-                item.XPathSelectElement("Reward").Value = String.Empty;
-                item.XPathSelectElement("Reward").Add(reward);
+                rewardNode.Add(reward);
               }
             }
           } else {
-            item.XPathSelectElement("Reward").Value = String.Empty;
-            item.XPathSelectElement("Reward").Add(reward);
+            rewardNode.Add(reward);
           }
         }
         // modify rewards
-        foreach (var item in asset.XPathSelectElements("Values/Reward/RewardAssets/Item/Reward/Asset")) {
+        foreach (var item in asset.XPathSelectElements("Values/Reward/Asset")) {
           switch (item.XPathSelectElement("Template").Value) {
             case "BuildPermitBuilding":
               Program.TemplateBuildPermitBuilding(item);
@@ -295,10 +327,24 @@ namespace RDA {
             case "GuildhouseItem":
               Program.TemplateGuildhouseItem(item);
               break;
+            case "CultureItem":
+              Program.TemplateCultureItem(item);
+              break;
+            case "HarborOfficeItem":
+              Program.TemplateHarborOfficeItem(item);
+              break;
+            case "VehicleItem":
+              Program.TemplateVehicleItem(item);
+              break;
+            case "ActiveItem":
+              Program.TemplateActiveItem(item);
+              break;
             default:
               throw new NotImplementedException();
           }
         }
+        // image
+        Program.SetImage(asset.XPathSelectElement("Values/Standard/IconFilename"));
       }
       var document = new XDocument();
       document.Add(new XElement("MonumentEventReward", assets));
@@ -306,6 +352,20 @@ namespace RDA {
     }
     //
     private static void TemplateBuildPermitBuilding(XElement item) {
+      item.XPathSelectElement("Values/Standard/Name").Remove();
+      item.XPathSelectElement("Values/Blocking").Remove();
+      item.XPathSelectElement("Values/Building").Remove();
+      item.XPathSelectElement("Values/Cost").Remove();
+      item.XPathSelectElement("Values/Selection").Remove();
+      item.XPathSelectElement("Values/Object").Remove();
+      item.XPathSelectElement("Values/Constructable").Remove();
+      item.XPathSelectElement("Values/Mesh").Remove();
+      item.XPathSelectElement("Values/SoundEmitter").Remove();
+      item.XPathSelectElement("Values/Locked").Remove();
+      item.XPathSelectElement("Values/FeedbackController").Remove();
+      item.XPathSelectElement("Values/AmbientMoodProvider").Remove();
+      item.XPathSelectElement("Values/Pausable").Remove();
+      item.XPathSelectElement("Values/BuildPermit").Remove();
       // text
       var itemGuid = item.XPathSelectElement("Values/Standard/GUID").Value;
       var textEN = item.XPathSelectElement("Values/Text/LocaText/English/Text").Value;
@@ -320,17 +380,19 @@ namespace RDA {
       var ornamentGuid = item.XPathSelectElement("Values/Ornament/OrnamentDescritpion").Value;
       textEN = Program.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={ornamentGuid}]/../Text/LocaText/English/Text").Value;
       textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={ornamentGuid}]/Text").Value;
-      item.XPathSelectElement("Values/Ornament").Add(new XElement("Description"));
-      item.XPathSelectElement("Values/Ornament/Description").Add(new XElement("EN"));
-      item.XPathSelectElement("Values/Ornament/Description").Add(new XElement("DE"));
-      item.XPathSelectElement("Values/Ornament/Description/EN").Add(new XElement("Short", textEN));
-      item.XPathSelectElement("Values/Ornament/Description/DE").Add(new XElement("Short", textDE));
-      item.XPathSelectElement("Values/Ornament/OrnamentDescritpion").Remove();
+      item.XPathSelectElement("Values/Description/EN").Add(new XElement("Long", textEN));
+      item.XPathSelectElement("Values/Description/DE").Add(new XElement("Long", textDE));
+      item.XPathSelectElement("Values/Ornament").Remove();
       // image
-      var img = Program.DecodeImage(item.XPathSelectElement("Values/Standard/IconFilename").Value);
-      item.XPathSelectElement("Values/Standard").Add(new XElement("Icon", img));
+      Program.SetImage(item.XPathSelectElement("Values/Standard/IconFilename"));
     }
     private static void TemplateGuildhouseItem(XElement item) {
+      item.XPathSelectElement("Values/Standard/Name").Remove();
+      item.XPathSelectElement("Values/Item/MaxStackSize").Remove();
+      item.XPathSelectElement("Values/Item/TradePrice").Remove();
+      item.XPathSelectElement("Values/Locked").Remove();
+      item.XPathSelectElement("Values/Buff").Remove();
+      item.XPathSelectElement("Values/ExpeditionAttribute/FluffText")?.Remove();
       // text
       var itemGuid = item.XPathSelectElement("Values/Standard/GUID").Value;
       var textEN = item.XPathSelectElement("Values/Text/LocaText/English/Text").Value;
@@ -347,9 +409,141 @@ namespace RDA {
       textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={itemGuid}]/Text").Value;
       item.XPathSelectElement("Values/Description/EN").Add(new XElement("Long", textEN));
       item.XPathSelectElement("Values/Description/DE").Add(new XElement("Long", textDE));
+      item.XPathSelectElement("Values/Standard/InfoDescription").Remove();
+      // EffectTargets
+      foreach (var effectTarget in item.XPathSelectElements("Values/ItemEffect/EffectTargets/Item")) {
+        var effectTargetGuid = effectTarget.Element("GUID").Value;
+        textEN = Program.Original.Root.XPathSelectElement($"//Asset/Values/Standard[GUID={effectTargetGuid}]/../Text/LocaText/English/Text").Value;
+        textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={effectTargetGuid}]/Text").Value;
+        effectTarget.Add(new XElement("Description"));
+        effectTarget.XPathSelectElement("Description").Add(new XElement("EN"));
+        effectTarget.XPathSelectElement("Description").Add(new XElement("DE"));
+        effectTarget.XPathSelectElement("Description/EN").Add(new XElement("Short", textEN));
+        effectTarget.XPathSelectElement("Description/DE").Add(new XElement("Short", textDE));
+      }
       // image
-      var img = Program.DecodeImage(item.XPathSelectElement("Values/Standard/IconFilename").Value);
-      item.XPathSelectElement("Values/Standard").Add(new XElement("Icon", img));
+      Program.SetImage(item.XPathSelectElement("Values/Standard/IconFilename"));
+    }
+    private static void TemplateCultureItem(XElement item) {
+      item.XPathSelectElement("Values/Standard/Name").Remove();
+      item.XPathSelectElement("Values/Item/TradePrice").Remove();
+      item.XPathSelectElement("Values/Cost").Remove();
+      item.XPathSelectElement("Values/Locked").Remove();
+      item.XPathSelectElement("Values/ExpeditionAttribute/FluffText")?.Remove();
+      item.XPathSelectElement("Values/CultureUpgrade/ChangeModule")?.Remove();
+      // text
+      var itemGuid = item.XPathSelectElement("Values/Standard/GUID").Value;
+      var textEN = item.XPathSelectElement("Values/Text/LocaText/English/Text").Value;
+      var textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={itemGuid}]/Text").Value;
+      item.XPathSelectElement("Values/Standard").AddAfterSelf(new XElement("Description"));
+      item.XPathSelectElement("Values/Description").Add(new XElement("EN"));
+      item.XPathSelectElement("Values/Description").Add(new XElement("DE"));
+      item.XPathSelectElement("Values/Description/EN").Add(new XElement("Short", textEN));
+      item.XPathSelectElement("Values/Description/DE").Add(new XElement("Short", textDE));
+      item.XPathSelectElement("Values/Text").Remove();
+      // info
+      var infoGuid = item.XPathSelectElement("Values/Standard/InfoDescription").Value;
+      textEN = Program.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={infoGuid}]/../Text/LocaText/English/Text").Value;
+      textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={infoGuid}]/Text").Value;
+      item.XPathSelectElement("Values/Description/EN").Add(new XElement("Long", textEN));
+      item.XPathSelectElement("Values/Description/DE").Add(new XElement("Long", textDE));
+      item.XPathSelectElement("Values/Standard/InfoDescription").Remove();
+      // image
+      Program.SetImage(item.XPathSelectElement("Values/Standard/IconFilename"));
+    }
+    private static void TemplateHarborOfficeItem(XElement item) {
+      item.XPathSelectElement("Values/Standard/Name").Remove();
+      item.XPathSelectElement("Values/Item/MaxStackSize").Remove();
+      item.XPathSelectElement("Values/Item/HasAction")?.Remove();
+      item.XPathSelectElement("Values/Item/TradePrice").Remove();
+      item.XPathSelectElement("Values/Locked").Remove();
+      item.XPathSelectElement("Values/ExpeditionAttribute/FluffText")?.Remove();
+      // text
+      var itemGuid = item.XPathSelectElement("Values/Standard/GUID").Value;
+      var textEN = item.XPathSelectElement("Values/Text/LocaText/English/Text").Value;
+      var textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={itemGuid}]/Text").Value;
+      item.XPathSelectElement("Values/Standard").AddAfterSelf(new XElement("Description"));
+      item.XPathSelectElement("Values/Description").Add(new XElement("EN"));
+      item.XPathSelectElement("Values/Description").Add(new XElement("DE"));
+      item.XPathSelectElement("Values/Description/EN").Add(new XElement("Short", textEN));
+      item.XPathSelectElement("Values/Description/DE").Add(new XElement("Short", textDE));
+      item.XPathSelectElement("Values/Text").Remove();
+      // info
+      var infoGuid = item.XPathSelectElement("Values/Standard/InfoDescription").Value;
+      textEN = Program.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={infoGuid}]/../Text/LocaText/English/Text").Value;
+      textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={infoGuid}]/Text").Value;
+      item.XPathSelectElement("Values/Description/EN").Add(new XElement("Long", textEN));
+      item.XPathSelectElement("Values/Description/DE").Add(new XElement("Long", textDE));
+      item.XPathSelectElement("Values/Standard/InfoDescription").Remove();
+      // EffectTargets
+      foreach (var effectTarget in item.XPathSelectElements("Values/ItemEffect/EffectTargets/Item")) {
+        var effectTargetGuid = effectTarget.Element("GUID").Value;
+        textEN = Program.Original.Root.XPathSelectElement($"//Asset/Values/Standard[GUID={effectTargetGuid}]/../Text/LocaText/English/Text").Value;
+        textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={effectTargetGuid}]/Text").Value;
+        effectTarget.Add(new XElement("Description"));
+        effectTarget.XPathSelectElement("Description").Add(new XElement("EN"));
+        effectTarget.XPathSelectElement("Description").Add(new XElement("DE"));
+        effectTarget.XPathSelectElement("Description/EN").Add(new XElement("Short", textEN));
+        effectTarget.XPathSelectElement("Description/DE").Add(new XElement("Short", textDE));
+      }
+      // image
+      Program.SetImage(item.XPathSelectElement("Values/Standard/IconFilename"));
+    }
+    private static void TemplateVehicleItem(XElement item) {
+      item.XPathSelectElement("Values/Standard/Name").Remove();
+      item.XPathSelectElement("Values/Item/MaxStackSize").Remove();
+      item.XPathSelectElement("Values/Item/HasAction")?.Remove();
+      item.XPathSelectElement("Values/Item/TradePrice").Remove();
+      item.XPathSelectElement("Values/Locked").Remove();
+      item.XPathSelectElement("Values/ExpeditionAttribute/FluffText")?.Remove();
+      item.XPathSelectElement("Values/Cost")?.Remove();
+      // text
+      var itemGuid = item.XPathSelectElement("Values/Standard/GUID").Value;
+      var textEN = item.XPathSelectElement("Values/Text/LocaText/English/Text").Value;
+      var textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={itemGuid}]/Text").Value;
+      item.XPathSelectElement("Values/Standard").AddAfterSelf(new XElement("Description"));
+      item.XPathSelectElement("Values/Description").Add(new XElement("EN"));
+      item.XPathSelectElement("Values/Description").Add(new XElement("DE"));
+      item.XPathSelectElement("Values/Description/EN").Add(new XElement("Short", textEN));
+      item.XPathSelectElement("Values/Description/DE").Add(new XElement("Short", textDE));
+      item.XPathSelectElement("Values/Text").Remove();
+      // info
+      var infoGuid = item.XPathSelectElement("Values/Standard/InfoDescription").Value;
+      textEN = Program.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={infoGuid}]/../Text/LocaText/English/Text").Value;
+      textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={infoGuid}]/Text").Value;
+      item.XPathSelectElement("Values/Description/EN").Add(new XElement("Long", textEN));
+      item.XPathSelectElement("Values/Description/DE").Add(new XElement("Long", textDE));
+      item.XPathSelectElement("Values/Standard/InfoDescription").Remove();
+      // image
+      Program.SetImage(item.XPathSelectElement("Values/Standard/IconFilename"));
+    }
+    private static void TemplateActiveItem(XElement item) {
+      item.XPathSelectElement("Values/Standard/Name").Remove();
+      item.XPathSelectElement("Values/Item/MaxStackSize").Remove();
+      item.XPathSelectElement("Values/Item/HasAction")?.Remove();
+      item.XPathSelectElement("Values/Item/TradePrice").Remove();
+      item.XPathSelectElement("Values/Locked").Remove();
+      item.XPathSelectElement("Values/ExpeditionAttribute/FluffText")?.Remove();
+      item.XPathSelectElement("Values/Cost")?.Remove();
+      // text
+      var itemGuid = item.XPathSelectElement("Values/Standard/GUID").Value;
+      var textEN = item.XPathSelectElement("Values/Text/LocaText/English/Text").Value;
+      var textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={itemGuid}]/Text").Value;
+      item.XPathSelectElement("Values/Standard").AddAfterSelf(new XElement("Description"));
+      item.XPathSelectElement("Values/Description").Add(new XElement("EN"));
+      item.XPathSelectElement("Values/Description").Add(new XElement("DE"));
+      item.XPathSelectElement("Values/Description/EN").Add(new XElement("Short", textEN));
+      item.XPathSelectElement("Values/Description/DE").Add(new XElement("Short", textDE));
+      item.XPathSelectElement("Values/Text").Remove();
+      // info
+      var infoGuid = item.XPathSelectElement("Values/Standard/InfoDescription").Value;
+      textEN = Program.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={infoGuid}]/../Text/LocaText/English/Text").Value;
+      textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={infoGuid}]/Text").Value;
+      item.XPathSelectElement("Values/Description/EN").Add(new XElement("Long", textEN));
+      item.XPathSelectElement("Values/Description/DE").Add(new XElement("Long", textDE));
+      item.XPathSelectElement("Values/Standard/InfoDescription").Remove();
+      // image
+      Program.SetImage(item.XPathSelectElement("Values/Standard/IconFilename"));
     }
     //
     private static void MonumentEventCategoryOld() {

@@ -33,6 +33,9 @@ namespace AssetViewer {
           case 0:
             this.Presenter.Content = new GuildhouseItem();
             break;
+          case 1:
+            this.Presenter.Content = new Monument();
+            break;
         }
       }
     }

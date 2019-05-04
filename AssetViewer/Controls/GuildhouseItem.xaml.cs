@@ -12,8 +12,6 @@ namespace AssetViewer.Controls {
 
   public partial class GuildhouseItem : UserControl, INotifyPropertyChanged {
 
-    public event PropertyChangedEventHandler PropertyChanged;
-
     #region Properties
     public Dictionary<Int32, Description> Descriptions {
       get { return App.Descriptions; }
@@ -130,6 +128,7 @@ namespace AssetViewer.Controls {
     }
     #endregion
 
+    public event PropertyChangedEventHandler PropertyChanged;
   }
 
 }

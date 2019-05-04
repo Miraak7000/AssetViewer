@@ -19,6 +19,7 @@ namespace AssetViewer {
         var result = new Dictionary<Int32, Description>();
         result.Add(101, new Description("Asset:", "Gegenstand:"));
         result.Add(102, new Description("Guild house items", "Gildenhaus Gegenstände"));
+        result.Add(103, new Description("World Fair", "Weltausstellung"));
         result.Add(1001, new Description("Allocation:", "Zuweisung:"));
         result.Add(1002, new Description("Type:", "Typ:"));
         result.Add(1003, new Description("Target:", "Gebäude:"));
@@ -112,7 +113,7 @@ namespace AssetViewer {
     #region Constructor
     public App() {
       // GuildhouseItems
-      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets_GuildhouseItemCleanedUp.xml")) {
+      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.Assets_GuildhouseItemCleanedUp.xml")) {
         using (var reader = new StreamReader(stream)) {
           var document = XDocument.Parse(reader.ReadToEnd());
           foreach (var item in document.Root.Elements()) {
