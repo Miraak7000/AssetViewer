@@ -1,0 +1,72 @@
+﻿<UserControl x:Class="AssetViewer.Templates.TemplateGuildhouseItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AssetViewer.Templates"
+             xmlns:converter="clr-namespace:AssetViewer.Converter"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="300"
+             Foreground="#FFFFE4AD" FontSize="13" Width="350">
+
+  <UserControl.Resources>
+    <converter:DescriptionConverter x:Key="DescriptionConverter"></converter:DescriptionConverter>
+    <converter:VisibilityConverter x:Key="VisibilityConverter"></converter:VisibilityConverter>
+  </UserControl.Resources>
+
+  <Border BorderBrush="#FFFFE4AD" BorderThickness="1" CornerRadius="5" Background="{Binding Path=RarityBrush}">
+    <StackPanel Margin="10">
+      <!--Name-->
+      <StackPanel Orientation="Horizontal">
+        <Image Source="{Binding Path=Icon}" Width="75" Height="75" Margin="0,0,10,1"></Image>
+        <StackPanel>
+          <TextBlock Text="{Binding Path=Description, Converter={StaticResource DescriptionConverter}}" FontWeight="Bold" FontSize="16" TextWrapping="Wrap"></TextBlock>
+          <TextBlock Text="{Binding Path=Rarity.Text}" Foreground="#FFA49370"></TextBlock>
+        </StackPanel>
+      </StackPanel>
+      <Border BorderBrush="#FFA49370" BorderThickness="1" Height="0.5" Margin="0,5"></Border>
+      <!--Allocation-->
+      <StackPanel Orientation="Horizontal">
+        <Image Source="{Binding Path=Allocation.Icon}" Height="25" Width="25" Margin="0,0,10,0"></Image>
+        <TextBlock VerticalAlignment="Center" Text="{Binding Path=Allocation.Text1}" Margin="0,0,10,0"></TextBlock>
+        <TextBlock VerticalAlignment="Center" Text="{Binding Path=Allocation.Text2}" Foreground="#FFDEAF04" FontWeight="Bold"></TextBlock>
+      </StackPanel>
+      <Border BorderBrush="#FFA49370" BorderThickness="1" Height="0.5" Margin="0,5"></Border>
+      <TextBlock VerticalAlignment="Center" Text="{Binding Path=ItemEffect.Text}" Margin="0,0,14,10" Foreground="#FFA49370" TextWrapping="Wrap"></TextBlock>
+      <!--FactoryUpgrade-->
+      <Grid Height="22" Margin="0,2" Visibility="{Binding Path=ProductivityUpgrade, Converter={StaticResource VisibilityConverter}}">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="30"></ColumnDefinition>
+          <ColumnDefinition Width="*"></ColumnDefinition>
+          <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="0" Source="../Resources/data/ui/2kimages/main/icons/icon_options_0.png" Height="22" Width="22" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+        <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Path=ProductivityUpgrade.Text}"></TextBlock>
+        <TextBlock Grid.Column="2" VerticalAlignment="Center" Text="{Binding Path=ProductivityUpgrade.Value}"></TextBlock>
+      </Grid>
+      <Grid Height="22" Margin="0,2" Visibility="{Binding Path=IncidentFireIncreaseUpgrade, Converter={StaticResource VisibilityConverter}}">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="30"></ColumnDefinition>
+          <ColumnDefinition Width="*"></ColumnDefinition>
+          <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="0" Source="../Resources/data/ui/2kimages/main/icons/icon_incident_fire_0.png" Height="22" Width="22" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+        <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Path=IncidentFireIncreaseUpgrade.Text}"></TextBlock>
+        <TextBlock Grid.Column="2" VerticalAlignment="Center" Text="{Binding Path=IncidentFireIncreaseUpgrade.Value}"></TextBlock>
+      </Grid>
+      <Grid Height="22" Margin="0,2" Visibility="{Binding Path=AttractivenessUpgrade, Converter={StaticResource VisibilityConverter}}">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="30"></ColumnDefinition>
+          <ColumnDefinition Width="*"></ColumnDefinition>
+          <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="0" Source="../Resources/data/ui/2kimages/main/icons/icon_attractiveness_0.png" Height="22" Width="22" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+        <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Path=AttractivenessUpgrade.Text}"></TextBlock>
+        <TextBlock Grid.Column="2" VerticalAlignment="Center" Text="{Binding Path=AttractivenessUpgrade.Value}"></TextBlock>
+      </Grid>
+      <Border BorderBrush="#FFA49370" BorderThickness="1" Height="0.5" Margin="0,5"></Border>
+      <TextBlock Text="{Binding Path=Description, Converter={StaticResource DescriptionConverter}, ConverterParameter=Long}" Foreground="#FFA49370" FontStyle="Italic" TextWrapping="Wrap"></TextBlock>
+    </StackPanel>
+  </Border>
+
+</UserControl>

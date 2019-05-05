@@ -6,6 +6,7 @@
         xmlns:converter="clr-namespace:AssetViewer.Converter"
         mc:Ignorable="d"
         Title="Anno 1800 - Asset Viewer" Height="600" Width="850" WindowStartupLocation="CenterScreen"
+        MinHeight="600" MinWidth="850" Icon="Resources/AssetViewer.ico" ResizeMode="CanMinimize"
         Loaded="MainWindow_OnLoaded">
 
   <Window.Resources>

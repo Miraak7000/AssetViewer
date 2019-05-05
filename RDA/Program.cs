@@ -406,7 +406,7 @@ namespace RDA {
       // info
       var infoGuid = item.XPathSelectElement("Values/Standard/InfoDescription").Value;
       textEN = Program.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={infoGuid}]/../Text/LocaText/English/Text").Value;
-      textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={itemGuid}]/Text").Value;
+      textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={infoGuid}]/Text").Value;
       item.XPathSelectElement("Values/Description/EN").Add(new XElement("Long", textEN));
       item.XPathSelectElement("Values/Description/DE").Add(new XElement("Long", textDE));
       item.XPathSelectElement("Values/Standard/InfoDescription").Remove();

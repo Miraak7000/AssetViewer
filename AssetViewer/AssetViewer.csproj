@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\AssetViewer.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -55,6 +58,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Converter\VisibilityConverter.cs" />
+    <Compile Include="Data\DataAttractivenessUpgrade.cs" />
+    <Compile Include="Data\DataIncidentFireIncreaseUpgrade.cs" />
+    <Compile Include="Data\DataProductivityUpgrade.cs" />
+    <Compile Include="Data\DataEffectTargets.cs" />
+    <Compile Include="Data\DataRarity.cs" />
+    <Compile Include="Data\DataAllocation.cs" />
+    <Compile Include="Templates\TemplateGuildhouseItem.xaml.cs">
+      <DependentUpon>TemplateGuildhouseItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\TemplateBuildPermitBuilding.xaml.cs">
+      <DependentUpon>TemplateBuildPermitBuilding.xaml</DependentUpon>
+    </Compile>
     <Page Include="Controls\GuildhouseItem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -100,6 +116,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Templates\TemplateGuildhouseItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Templates\TemplateBuildPermitBuilding.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -333,6 +357,24 @@
     <EmbeddedResource Include="..\RDA\Modified\Assets_GuildhouseItemCleanedUp.xml">
       <Link>Resources\Assets\Assets_GuildhouseItemCleanedUp.xml</Link>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\AssetViewer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_harbour_kontor_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_guildhouse_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_options_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_incident_fire_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_attractiveness_0.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
