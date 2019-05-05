@@ -1,45 +1,46 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
-using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading;
 using System.Xml.Linq;
-using System.Xml.XPath;
-using DmitryBrant.ImageFormats;
 using RDA.Data;
 
 namespace RDA {
 
-  [SuppressMessage("ReSharper", "PossibleNullReferenceException")]
-  [SuppressMessage("ReSharper", "AssignNullToNotNullAttribute")]
+  [SuppressMessage("ReSharper", "PossibleNullReferenceException"), SuppressMessage("ReSharper", "AssignNullToNotNullAttribute")]
   internal static class Program {
 
     #region Fields
-    internal static String PathViewer;
-    internal static String PathRoot;
-    internal static XDocument Original;
+    private static readonly Dictionary<Int32, String> Descriptions = new Dictionary<Int32, String>();
+    private static readonly List<GuildhouseItem> GuildhouseItems = new List<GuildhouseItem>();
     internal static XDocument Modified;
-    internal static XDocument TextDE;
-    private static readonly List<XElement> RewardPoolList = new List<XElement>();
     private static readonly List<Asset> MonumentEventCategories = new List<Asset>();
-    private static List<GuildhouseItem> GuildhouseItems = new List<GuildhouseItem>();
-    private static Dictionary<Int32, String> Descriptions = new Dictionary<Int32, String>();
+    internal static XDocument Original;
+    internal static String PathRoot;
+    internal static String PathViewer;
+    private static readonly List<XElement> RewardPoolList = new List<XElement>();
+    internal static XDocument TextDE;
+    internal static Dictionary<String, String> DescriptionEN;
+    internal static Dictionary<String, String> DescriptionDE;
     #endregion
 
     #region Private Methods
     private static void Main(String[] args) {
       Program.PathViewer = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase).Replace(@"file:\", String.Empty)).Parent.Parent.Parent.FullName + @"\AssetViewer";
       Program.PathRoot = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase).Replace(@"file:\", String.Empty)).Parent.Parent.FullName;
-      Program.Original = XDocument.Load(Program.PathRoot + @"\Original\assets.xml");
-      Program.TextDE = XDocument.Load(Program.PathRoot + @"\Original\texts_german.xml");
+      //Program.Original = XDocument.Load(Program.PathRoot + @"\Original\assets.xml");
+      //Program.TextDE = XDocument.Load(Program.PathRoot + @"\Original\texts_german.xml");
+      // Helper
+      //Helper.ExtractTextEnglish(Program.PathRoot + @"\Original\assets.xml");
+      //Helper.ExtractTextGerman(Program.PathRoot + @"\Original\texts_german.xml");
+      //Helper.ExtractTemplateNames(Program.PathRoot + @"\Original\assets.xml");
+      // Descriptions
+      Program.DescriptionEN = XDocument.Load(Program.PathRoot + @"\Modified\Texts_English.xml").Root.Elements().ToDictionary(k => k.Attribute("ID").Value, e => e.Value);
+      Program.DescriptionDE = XDocument.Load(Program.PathRoot + @"\Modified\Texts_German.xml").Root.Elements().ToDictionary(k => k.Attribute("ID").Value, e => e.Value);
       // World Fair
-      Monument.Create();
+      //Monument.Create();
       // 
       //Program.GetDescriptions(Program.Original.Root);
       //Program.CleanupGuildhouseItems();
@@ -93,14 +94,98 @@ namespace RDA {
           Program.Find(next, text);
         }
       } else {
-        if (element.Name == "Assets" || element.Name == "Group" || element.Name == "Groups") {
-          element.Remove();
-        }
+        if (element.Name == "Assets" || element.Name == "Group" || element.Name == "Groups") element.Remove();
       }
     }
     private static void Blacklist(XElement root) {
       var parent = root.Parent;
-      var blacklist = new String[] { "AssetPool", "NotificationConfiguration", "GlobalSoundBankConfiguration", "GameParameter", "TownhallBuff", "SessionModerateRandom", "SessionSouthAmerica", "TriggerCampaign", "PopulationLevel7", "Transporter", "PlayerCounterContextPool", "LockableNotification", "NonCriticalError", "UplayProduct", "Achievement", "MapTemplate", "SoundBank", "SessionModerate", "MainQuest", "PaMSy_Base", "TrafficFeedbackUnit", "PopulationGroup7", "Product", "QuestObjectAttractiveness", "WorldMapShip", "TestData_Prop", "FeedbackVehicle", "Projectile", "MetaGameObjectReference", "FishShoal", "Inhabitant", "Bird", "AudioText", "TextPool", "Notification", "CriticalError", "UplayReward", "UplayAction", "Video", "RFX", "Audio", "BridgeBuilding", "HarborPropObject", "BuildPermitBuilding", "OrnamentalBuilding", "WorkforceConnector", "HarborWarehouseStrategic", "VisitorPier", "HarborLandingStage7", "RepairCrane", "HarborBuildingAttacker", "Shipyard", "HarborDepot", "HarborWarehouse7", "StreetBuilding", "Street", "Monument", "CultureModule", "CultureBuilding", "Warehouse", "Market", "CityInstitutionBuilding", "PublicServiceBuilding", "OilPumpBuilding", "WorkArea", "Slot", "Farmfield", "TextSourceFormatting", "NoLocaText", "TrackingValue", "ResidenceBuilding7", "Fish", "VisualSoundEmitter", "VisualObjectEditor", "VisualObject", "Herd", "Camera", "AudioSpots", "CameraSequenceMeta", "SimpleVehicle", "Collectable", "Portrait", "Dying", "ExplodingProjectile", "WorldMapGlobe" };
+      var blacklist = new[] {
+        "AssetPool",
+        "NotificationConfiguration",
+        "GlobalSoundBankConfiguration",
+        "GameParameter",
+        "TownhallBuff",
+        "SessionModerateRandom",
+        "SessionSouthAmerica",
+        "TriggerCampaign",
+        "PopulationLevel7",
+        "Transporter",
+        "PlayerCounterContextPool",
+        "LockableNotification",
+        "NonCriticalError",
+        "UplayProduct",
+        "Achievement",
+        "MapTemplate",
+        "SoundBank",
+        "SessionModerate",
+        "MainQuest",
+        "PaMSy_Base",
+        "TrafficFeedbackUnit",
+        "PopulationGroup7",
+        "Product",
+        "QuestObjectAttractiveness",
+        "WorldMapShip",
+        "TestData_Prop",
+        "FeedbackVehicle",
+        "Projectile",
+        "MetaGameObjectReference",
+        "FishShoal",
+        "Inhabitant",
+        "Bird",
+        "AudioText",
+        "TextPool",
+        "Notification",
+        "CriticalError",
+        "UplayReward",
+        "UplayAction",
+        "Video",
+        "RFX",
+        "Audio",
+        "BridgeBuilding",
+        "HarborPropObject",
+        "BuildPermitBuilding",
+        "OrnamentalBuilding",
+        "WorkforceConnector",
+        "HarborWarehouseStrategic",
+        "VisitorPier",
+        "HarborLandingStage7",
+        "RepairCrane",
+        "HarborBuildingAttacker",
+        "Shipyard",
+        "HarborDepot",
+        "HarborWarehouse7",
+        "StreetBuilding",
+        "Street",
+        "Monument",
+        "CultureModule",
+        "CultureBuilding",
+        "Warehouse",
+        "Market",
+        "CityInstitutionBuilding",
+        "PublicServiceBuilding",
+        "OilPumpBuilding",
+        "WorkArea",
+        "Slot",
+        "Farmfield",
+        "TextSourceFormatting",
+        "NoLocaText",
+        "TrackingValue",
+        "ResidenceBuilding7",
+        "Fish",
+        "VisualSoundEmitter",
+        "VisualObjectEditor",
+        "VisualObject",
+        "Herd",
+        "Camera",
+        "AudioSpots",
+        "CameraSequenceMeta",
+        "SimpleVehicle",
+        "Collectable",
+        "Portrait",
+        "Dying",
+        "ExplodingProjectile",
+        "WorldMapGlobe"
+      };
       if (root.Name == "Asset" && blacklist.Contains(root.Element("Template")?.Value)) {
         root.Remove();
         while (!parent.HasElements) {
@@ -115,27 +200,17 @@ namespace RDA {
       }
     }
     private static void Cleanup(XElement root) {
-      if (root.Name == "Assets" && !root.HasElements) {
-        root.Remove();
-      }
-      if (root.Name == "Group" && !root.HasElements) {
-        root.Remove();
-      }
-      if (root.Name == "Group" && root.Elements().Count() == 1 && root.Elements().Single().Name == "GUID") {
-        root.Remove();
-      }
-      if (root.Name == "Groups" && !root.HasElements) {
-        root.Remove();
-      }
+      if (root.Name == "Assets" && !root.HasElements) root.Remove();
+      if (root.Name == "Group" && !root.HasElements) root.Remove();
+      if (root.Name == "Group" && root.Elements().Count() == 1 && root.Elements().Single().Name == "GUID") root.Remove();
+      if (root.Name == "Groups" && !root.HasElements) root.Remove();
       foreach (var element in root.Elements().ToArray()) {
         Program.Cleanup(element);
       }
     }
     //
     private static XElement FindElement(XElement element, String guid) {
-      if (element.Name == "GUID" && element.Value == guid && element.Parent.Name == "Standard") {
-        return element.Parent.Parent.Parent;
-      }
+      if (element.Name == "GUID" && element.Value == guid && element.Parent.Name == "Standard") return element.Parent.Parent.Parent;
       foreach (var next in element.Elements()) {
         var result = Program.FindElement(next, guid);
         if (result != null) return result;
@@ -151,7 +226,7 @@ namespace RDA {
             GUID = element.Element("Values").Element("Standard").Element("GUID").Value,
             Name = element.Element("Values").Element("Standard").Element("Name").Value,
             Description = textID == null ? String.Empty : Program.FindElement(Program.Original.Root, textID).Element("Values").Element("Text").Element("LocaText").Element("English").Element("Text").Value,
-            IconFilename = element.Element("Values").Element("Standard").Element("IconFilename").Value,
+            IconFilename = element.Element("Values").Element("Standard").Element("IconFilename").Value
           };
           return asset;
       }
@@ -204,14 +279,13 @@ namespace RDA {
     }
     private static void GetGuildhouseItems(XElement element) {
       if (element.Name == "Asset" && element.Element("Template")?.Value == "GuildhouseItem") {
-        if (element.Element("Values").Element("ItemAction").HasElements)
-          return;
+        if (element.Element("Values").Element("ItemAction").HasElements) return;
         var item = new GuildhouseItem {
           GUID = element.Element("Values").Element("Standard").Element("GUID").Value,
           Name = element.Element("Values").Element("Standard").Element("Name").Value,
           IconFilename = element.Element("Values").Element("Standard").Element("IconFilename").Value,
           Description = Program.GetDescription(element.Element("Values").Element("Standard").Element("InfoDescription")?.Value),
-          Rarity = element.Element("Values").Element("Item").Element("Rarity")?.Value,
+          Rarity = element.Element("Values").Element("Item").Element("Rarity")?.Value
           //ProductivityUpgrade = element.Element("Values").Element("FactoryUpgrade") == null || !element.Element("Values").Element("FactoryUpgrade").HasElements ? null : new ProductivityUpgrade {
           //  Value = element.Element("Values").Element("FactoryUpgrade").Element("ProductivityUpgrade").Element("Value").Value,
           //  Percental = element.Element("Values").Element("FactoryUpgrade").Element("ProductivityUpgrade").Element("Percental").Value
@@ -221,9 +295,7 @@ namespace RDA {
           var effectTarget = Program.FindElement(Program.Original.Root, node.Element("GUID").Value);
           item.EffectTargets.Add(effectTarget.Element("Values").Element("Standard").Element("Name").Value);
         }
-        if (Program.GuildhouseItems.Count(c => c.GUID == item.GUID) == 0) {
-          Program.GuildhouseItems.Add(item);
-        }
+        if (Program.GuildhouseItems.Count(c => c.GUID == item.GUID) == 0) Program.GuildhouseItems.Add(item);
       } else {
         foreach (var next in element.Elements()) {
           Program.GetGuildhouseItems(next);
@@ -274,9 +346,7 @@ namespace RDA {
         // modify targets
         foreach (var item in asset.Element("Values").Element("ItemEffect").Element("EffectTargets").Elements()) {
           var target = Program.FindElement(Program.Original.Root, item.Element("GUID").Value);
-          if (target.Element("BaseAssetGUID") != null) {
-            target = Program.FindElement(Program.Original.Root, target.Element("BaseAssetGUID").Value);
-          }
+          if (target.Element("BaseAssetGUID") != null) target = Program.FindElement(Program.Original.Root, target.Element("BaseAssetGUID").Value);
           textEN = target.Element("Values").Element("Text").Element("LocaText").Element("English").Element("Text").Value;
           item.Add(new XElement("Description"));
           item.Element("Description").Add(new XElement("EN"));

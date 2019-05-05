@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Xml;
 using System.Xml.Linq;
 using System.Xml.XPath;
 
@@ -12,6 +15,76 @@ namespace RDA {
   public static class Helper {
 
     #region Internal Methods
+    // Extraction
+    internal static void ExtractTextEnglish(String path) {
+      var element = XDocument.Load(path).Root;
+      var result = new Dictionary<String, String>();
+      // assets
+      var values = element.XPathSelectElements("//Asset/Template/../Values/Text/..");
+      foreach (var value in values) {
+        var id = value.XPathSelectElement("Standard/GUID").Value;
+        if (!result.ContainsKey(id)) {
+          var text = value.XPathSelectElement("Text/LocaText/English/Text")?.Value;
+          if (text != null) result.Add(id, text);
+        }
+      }
+      // text
+      values = element.XPathSelectElements("//Asset[Template='Text']/Values");
+      foreach (var value in values) {
+        var id = value.XPathSelectElement("Standard/GUID").Value;
+        if (!result.ContainsKey(id)) {
+          var text = value.XPathSelectElement("Text/LocaText/English/Text")?.Value;
+          if (text != null) result.Add(id, text);
+        }
+      }
+      // finish
+      using (var xmlWriter = XmlWriter.Create($@"{Program.PathRoot}\Modified\Texts_English.xml", new XmlWriterSettings() { Indent = true })) {
+        xmlWriter.WriteStartElement("Texts");
+        foreach (var item in result) {
+          xmlWriter.WriteStartElement("Text");
+          xmlWriter.WriteAttributeString("ID", item.Key);
+          xmlWriter.WriteValue(item.Value);
+          xmlWriter.WriteEndElement();
+        }
+      }
+    }
+    internal static void ExtractTextGerman(String path) {
+      var element = XDocument.Load(path).Root;
+      var result = new Dictionary<String, String>();
+      // assets
+      var values = element.XPathSelectElements("//Texts/Text");
+      foreach (var value in values) {
+        var id = value.XPathSelectElement("GUID").Value;
+        if (!result.ContainsKey(id)) {
+          var text = value.XPathSelectElement("Text")?.Value;
+          if (text != null) result.Add(id, text);
+        }
+      }
+      // finish
+      using (var xmlWriter = XmlWriter.Create($@"{Program.PathRoot}\Modified\Texts_German.xml", new XmlWriterSettings() { Indent = true })) {
+        xmlWriter.WriteStartElement("Texts");
+        foreach (var item in result) {
+          xmlWriter.WriteStartElement("Text");
+          xmlWriter.WriteAttributeString("ID", item.Key);
+          xmlWriter.WriteValue(item.Value);
+          xmlWriter.WriteEndElement();
+        }
+      }
+    }
+    internal static void ExtractTemplateNames(String path) {
+      var element = XDocument.Load(path).Root;
+      var result = element.XPathSelectElements("//Asset/Template").Select(s => s.Value).Distinct().OrderBy(o => o);
+      // finish
+      using (var xmlWriter = XmlWriter.Create($@"{Program.PathRoot}\Modified\TemplateNames.xml", new XmlWriterSettings() { Indent = true })) {
+        xmlWriter.WriteStartElement("Templates");
+        foreach (var item in result) {
+          xmlWriter.WriteStartElement("Template");
+          xmlWriter.WriteValue(item);
+          xmlWriter.WriteEndElement();
+        }
+      }
+    }
+    // Processing
     internal static void SetImage(XElement element) {
       var name = element.Value.Replace(".png", "_0.png");
       var source = Path.GetFullPath(Path.Combine(Program.PathRoot, "Resources", name));
@@ -98,7 +171,7 @@ namespace RDA {
     }
     internal static void TemplateCultureItem(XElement item) {
       item.XPathSelectElement("Values/Standard/Name").Remove();
-      item.XPathSelectElement("Values/Item/TradePrice").Remove();
+      item.XPathSelectElement("Values/Item/ItemType").Remove();
       item.XPathSelectElement("Values/Cost").Remove();
       item.XPathSelectElement("Values/Locked").Remove();
       item.XPathSelectElement("Values/ExpeditionAttribute/FluffText")?.Remove();
@@ -120,6 +193,8 @@ namespace RDA {
       item.XPathSelectElement("Values/Description/EN").Add(new XElement("Long", textEN));
       item.XPathSelectElement("Values/Description/DE").Add(new XElement("Long", textDE));
       item.XPathSelectElement("Values/Standard/InfoDescription").Remove();
+      // ItemSet
+
       // image
       Helper.SetImage(item.XPathSelectElement("Values/Standard/IconFilename"));
     }
