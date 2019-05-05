@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:AssetViewer.Templates"
              xmlns:converter="clr-namespace:AssetViewer.Converter"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="300"
+             d:DesignHeight="650" d:DesignWidth="300"
              Foreground="#FFFFE4AD" FontSize="13" Width="350">
 
   <UserControl.Resources>
@@ -17,13 +17,21 @@
   <Border BorderBrush="#FFFFE4AD" BorderThickness="1" CornerRadius="5" Background="{Binding Path=RarityBrush}">
     <StackPanel Margin="10">
       <!--Name-->
-      <StackPanel Orientation="Horizontal">
-        <Image Source="{Binding Path=Icon}" Width="75" Height="75" Margin="0,0,10,1"></Image>
-        <StackPanel>
-          <TextBlock Text="{Binding Path=Description, Converter={StaticResource DescriptionConverter}}" FontWeight="Bold" FontSize="16" TextWrapping="Wrap"></TextBlock>
-          <TextBlock Text="{Binding Path=Rarity.Text}" Foreground="#FFA49370"></TextBlock>
-        </StackPanel>
-      </StackPanel>
+      <Grid>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="90"></ColumnDefinition>
+          <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="0" Source="{Binding Path=Icon}" Width="75" Height="75" HorizontalAlignment="Left"></Image>
+        <Grid Grid.Column="1">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+          </Grid.RowDefinitions>
+          <TextBlock Grid.Row="0" Text="{Binding Path=Description, Converter={StaticResource DescriptionConverter}}" FontWeight="Bold" FontSize="16" TextWrapping="Wrap"></TextBlock>
+          <TextBlock Grid.Row="1" Text="{Binding Path=Rarity.Text}" Foreground="#FFA49370"></TextBlock>
+        </Grid>
+      </Grid>
       <Border BorderBrush="#FFA49370" BorderThickness="1" Height="0.5" Margin="0,5"></Border>
       <!--Allocation-->
       <StackPanel Orientation="Horizontal">
@@ -104,6 +112,79 @@
         <Image Grid.Column="0" Source="../Resources/data/ui/2kimages/main/icons/icon_attractiveness_0.png" Height="22" Width="22" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
         <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Path=AttractivenessUpgrade.Text}"></TextBlock>
         <TextBlock Grid.Column="2" VerticalAlignment="Center" Text="{Binding Path=AttractivenessUpgrade.Value}"></TextBlock>
+      </Grid>
+      <!--ProvideElectricity-->
+      <Grid Height="22" Margin="0,2" Visibility="{Binding Path=ProvideElectricity, Converter={StaticResource VisibilityConverter}}">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="30"></ColumnDefinition>
+          <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="0" Source="../Resources/data/ui/2kimages/main/icons/icon_electricity_0.png" Height="22" Width="22" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+        <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Path=ProvideElectricity.Text}"></TextBlock>
+      </Grid>
+      <!--IncidentInfectableUpgrade-->
+      <Grid Height="22" Margin="0,2" Visibility="{Binding Path=IncidentExplosionIncreaseUpgrade, Converter={StaticResource VisibilityConverter}}">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="30"></ColumnDefinition>
+          <ColumnDefinition Width="*"></ColumnDefinition>
+          <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="0" Source="../Resources/data/ui/2kimages/main/icons/icon_bomb_0.png" Height="22" Width="22" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+        <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Path=IncidentExplosionIncreaseUpgrade.Text}"></TextBlock>
+        <TextBlock Grid.Column="2" VerticalAlignment="Center" Text="{Binding Path=IncidentExplosionIncreaseUpgrade.Value}"></TextBlock>
+      </Grid>
+      <Border BorderBrush="#FFA49370" BorderThickness="1" Height="0.5" Margin="0,5" Visibility="{Binding Path=ExpeditionAttribute, Converter={StaticResource VisibilityConverter}}"></Border>
+      <!--IncidentInfectableUpgrade-->
+      <TextBlock VerticalAlignment="Center" Foreground="#FFA49370" Text="{Binding Path=ExpeditionAttribute.Text}" Visibility="{Binding Path=ExpeditionAttribute, Converter={StaticResource VisibilityConverter}}" Margin="0,2,0,10"></TextBlock>
+      <Grid Height="22" Margin="0,2" Visibility="{Binding Path=ExpeditionAttributeCrafting, Converter={StaticResource VisibilityConverter}}">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="30"></ColumnDefinition>
+          <ColumnDefinition Width="*"></ColumnDefinition>
+          <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="0" Opacity="0.75" Source="../Resources/data/ui/2kimages/main/icons/icon_build_menu_0.png" Height="22" Width="22" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+        <TextBlock Grid.Column="1" VerticalAlignment="Center" Foreground="#FFA49370" Text="{Binding Path=ExpeditionAttributeCrafting.Text}"></TextBlock>
+        <TextBlock Grid.Column="2" VerticalAlignment="Center" Foreground="#FFA49370" Text="{Binding Path=ExpeditionAttributeCrafting.Value}"></TextBlock>
+      </Grid>
+      <Grid Height="22" Margin="0,2" Visibility="{Binding Path=ExpeditionAttributeHunting, Converter={StaticResource VisibilityConverter}}">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="30"></ColumnDefinition>
+          <ColumnDefinition Width="*"></ColumnDefinition>
+          <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="0" Opacity="0.75" Source="../Resources/data/ui/2kimages/main/icons/ship_info/icon_damage_0.png" Height="22" Width="22" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+        <TextBlock Grid.Column="1" VerticalAlignment="Center" Foreground="#FFA49370" Text="{Binding Path=ExpeditionAttributeHunting.Text}"></TextBlock>
+        <TextBlock Grid.Column="2" VerticalAlignment="Center" Foreground="#FFA49370" Text="{Binding Path=ExpeditionAttributeHunting.Value}"></TextBlock>
+      </Grid>
+      <Grid Height="22" Margin="0,2" Visibility="{Binding Path=ExpeditionAttributeMedicine, Converter={StaticResource VisibilityConverter}}">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="30"></ColumnDefinition>
+          <ColumnDefinition Width="*"></ColumnDefinition>
+          <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="0" Opacity="0.75" Source="../Resources/data/ui/2kimages/main/icons/icon_threat_diseases_tint_0.png" Height="22" Width="22" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+        <TextBlock Grid.Column="1" VerticalAlignment="Center" Foreground="#FFA49370" Text="{Binding Path=ExpeditionAttributeMedicine.Text}"></TextBlock>
+        <TextBlock Grid.Column="2" VerticalAlignment="Center" Foreground="#FFA49370" Text="{Binding Path=ExpeditionAttributeMedicine.Value}"></TextBlock>
+      </Grid>
+      <Grid Height="22" Margin="0,2" Visibility="{Binding Path=ExpeditionAttributeNavigation, Converter={StaticResource VisibilityConverter}}">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="30"></ColumnDefinition>
+          <ColumnDefinition Width="*"></ColumnDefinition>
+          <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="0" Opacity="0.75" Source="../Resources/data/ui/2kimages/main/icons/icon_threat_navigation_tint_0.png" Height="22" Width="22" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+        <TextBlock Grid.Column="1" VerticalAlignment="Center" Foreground="#FFA49370" Text="{Binding Path=ExpeditionAttributeNavigation.Text}"></TextBlock>
+        <TextBlock Grid.Column="2" VerticalAlignment="Center" Foreground="#FFA49370" Text="{Binding Path=ExpeditionAttributeNavigation.Value}"></TextBlock>
+      </Grid>
+      <Grid Height="22" Margin="0,2" Visibility="{Binding Path=ExpeditionAttributeFaith, Converter={StaticResource VisibilityConverter}}">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="30"></ColumnDefinition>
+          <ColumnDefinition Width="*"></ColumnDefinition>
+          <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="0" Opacity="0.75" Source="../Resources/data/ui/2kimages/main/icons/icon_church_2d_0.png" Height="22" Width="22" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+        <TextBlock Grid.Column="1" VerticalAlignment="Center" Foreground="#FFA49370" Text="{Binding Path=ExpeditionAttributeFaith.Text}"></TextBlock>
+        <TextBlock Grid.Column="2" VerticalAlignment="Center" Foreground="#FFA49370" Text="{Binding Path=ExpeditionAttributeFaith.Value}"></TextBlock>
       </Grid>
       <Border BorderBrush="#FFA49370" BorderThickness="1" Height="0.5" Margin="0,5"></Border>
       <TextBlock Text="{Binding Path=Description, Converter={StaticResource DescriptionConverter}, ConverterParameter=Long}" Foreground="#FFA49370" FontStyle="Italic" TextWrapping="Wrap"></TextBlock>

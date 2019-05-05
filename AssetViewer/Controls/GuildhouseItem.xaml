@@ -8,7 +8,7 @@
              xmlns:converter="clr-namespace:AssetViewer.Converter"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
-             Background="White" Loaded="GuildhouseItem_OnLoaded">
+             Background="#FFECD5A9" Loaded="GuildhouseItem_OnLoaded">
 
   <UserControl.Resources>
     <BooleanToVisibilityConverter x:Key="BooleanToVisibility"></BooleanToVisibilityConverter>
@@ -21,7 +21,7 @@
       <RowDefinition Height="10"></RowDefinition>
       <RowDefinition Height="*"></RowDefinition>
     </Grid.RowDefinitions>
-    <GroupBox Grid.Row="0" Header="Filter">
+    <GroupBox Grid.Row="0" Header="Filter" BorderBrush="#FF6D5B4B">
       <StackPanel Orientation="Horizontal" Margin="5">
         <Grid Margin="0,0,50,0">
           <Grid.ColumnDefinitions>
@@ -76,9 +76,9 @@
         <ColumnDefinition Width="*"></ColumnDefinition>
       </Grid.ColumnDefinitions>
       <Grid Grid.Column="0">
-        <ListBox x:Name="ListBoxItems" ItemsSource="{Binding Path=Items, Mode=OneWay}" SelectedItem="{Binding Path=SelectedItem}" SelectionChanged="ListBoxItems_OnSelectionChanged"></ListBox>
+        <ListBox x:Name="ListBoxItems" ItemsSource="{Binding Path=Items, Mode=OneWay}" SelectedItem="{Binding Path=SelectedItem}" SelectionChanged="ListBoxItems_OnSelectionChanged" Background="Transparent" BorderBrush="#FF6D5B4B"></ListBox>
       </Grid>
-      <Border Grid.Column="2" BorderThickness="1" BorderBrush="#FFABADB3">
+      <Border Grid.Column="2" BorderThickness="1" BorderBrush="#FF6D5B4B">
         <StackPanel Margin="5" Visibility="{Binding Path=HasResult, Converter={StaticResource BooleanToVisibility}}">
           <!--Rarity-->
           <StackPanel Margin="0,2" Orientation="Horizontal">

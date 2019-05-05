@@ -7,10 +7,9 @@
              xmlns:converter="clr-namespace:AssetViewer.Converter"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
-             Background="White" Loaded="Monument_OnLoaded">
+             Background="#FFECD5A9" Loaded="Monument_OnLoaded">
 
   <UserControl.Resources>
-    <!--<BooleanToVisibilityConverter x:Key="BooleanToVisibility"></BooleanToVisibilityConverter>-->
     <converter:DescriptionConverter x:Key="DescriptionConverter"></converter:DescriptionConverter>
     <DataTemplate x:Key="SelectableTemplate">
       <Grid MaxHeight="30">
@@ -30,7 +29,7 @@
       <RowDefinition Height="10"></RowDefinition>
       <RowDefinition Height="*"></RowDefinition>
     </Grid.RowDefinitions>
-    <GroupBox Grid.Row="0" Header="Filter">
+    <GroupBox Grid.Row="0" Header="Filter" BorderBrush="#FF6D5B4B" BorderThickness="1">
       <StackPanel Orientation="Horizontal" Margin="5">
         <Grid Margin="0,0,50,0">
           <Grid.ColumnDefinitions>
@@ -54,7 +53,7 @@
         <ColumnDefinition Width="350"></ColumnDefinition>
       </Grid.ColumnDefinitions>
       <Grid Grid.Column="0">
-        <ListBox x:Name="ListBoxItems" ItemsSource="{Binding Path=Rewards}" SelectionChanged="ListBoxItems_OnSelectionChanged">
+        <ListBox x:Name="ListBoxItems" Background="Transparent" ItemsSource="{Binding Path=Rewards}" SelectionChanged="ListBoxItems_OnSelectionChanged" BorderBrush="#FF6D5B4B">
           <ListBox.ItemTemplate>
             <DataTemplate>
               <Grid MaxHeight="24">

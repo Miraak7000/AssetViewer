@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -112,6 +113,57 @@ namespace AssetViewer.Templates {
       get {
         if (this.Asset.XPathSelectElement("Values/CultureUpgrade/AttractivenessUpgrade") == null) return null;
         return new DataAttractivenessUpgrade(this.Asset);
+      }
+    }
+    // ProvideElectricity
+    public DataProvideElectricity ProvideElectricity {
+      get {
+        if (this.Asset.XPathSelectElement("Values/ElectricUpgrade/ProvideElectricity") == null) return null;
+        return new DataProvideElectricity(this.Asset);
+      }
+    }
+    // IncidentInfectableUpgrade
+    public DataIncidentExplosionIncreaseUpgrade IncidentExplosionIncreaseUpgrade {
+      get {
+        if (this.Asset.XPathSelectElement("Values/IncidentInfectableUpgrade/IncidentExplosionIncreaseUpgrade") == null) return null;
+        return new DataIncidentExplosionIncreaseUpgrade(this.Asset);
+      }
+    }
+    // ExpeditionAttribute
+    public DataExpeditionAttribute ExpeditionAttribute {
+      get {
+        if (this.Asset.XPathSelectElement("Values/ExpeditionAttribute/ExpeditionAttributes") == null) return null;
+        return new DataExpeditionAttribute(this.Asset);
+      }
+    }
+    public DataExpeditionAttributeCrafting ExpeditionAttributeCrafting {
+      get {
+        if (this.Asset.XPathSelectElement("Values/ExpeditionAttribute/ExpeditionAttributes/Item[Attribute='Crafting']") == null) return null;
+        return new DataExpeditionAttributeCrafting(this.Asset);
+      }
+    }
+    public DataExpeditionAttributeHunting ExpeditionAttributeHunting {
+      get {
+        if (this.Asset.XPathSelectElement("Values/ExpeditionAttribute/ExpeditionAttributes/Item[Attribute='Hunting']") == null) return null;
+        return new DataExpeditionAttributeHunting(this.Asset);
+      }
+    }
+    public DataExpeditionAttributeMedicine ExpeditionAttributeMedicine {
+      get {
+        if (this.Asset.XPathSelectElement("Values/ExpeditionAttribute/ExpeditionAttributes/Item[Attribute='Medicine']") == null) return null;
+        return new DataExpeditionAttributeMedicine(this.Asset);
+      }
+    }
+    public DataExpeditionAttributeNavigation ExpeditionAttributeNavigation {
+      get {
+        if (this.Asset.XPathSelectElement("Values/ExpeditionAttribute/ExpeditionAttributes/Item[Attribute='Navigation']") == null) return null;
+        return new DataExpeditionAttributeNavigation(this.Asset);
+      }
+    }
+    public DataExpeditionAttributeFaith ExpeditionAttributeFaith {
+      get {
+        if (this.Asset.XPathSelectElement("Values/ExpeditionAttribute/ExpeditionAttributes/Item[Attribute='Faith']") == null) return null;
+        return new DataExpeditionAttributeFaith(this.Asset);
       }
     }
     #endregion

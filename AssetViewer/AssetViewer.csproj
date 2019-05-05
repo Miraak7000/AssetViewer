@@ -60,10 +60,18 @@
     </ApplicationDefinition>
     <Compile Include="Converter\VisibilityConverter.cs" />
     <Compile Include="Data\DataAttractivenessUpgrade.cs" />
+    <Compile Include="Data\DataExpeditionAttributeFaith.cs" />
+    <Compile Include="Data\DataExpeditionAttributeNavigation.cs" />
+    <Compile Include="Data\DataExpeditionAttributeMedicine.cs" />
+    <Compile Include="Data\DataExpeditionAttributeHunting.cs" />
+    <Compile Include="Data\DataExpeditionAttributeCrafting.cs" />
     <Compile Include="Data\DataIncidentFireIncreaseUpgrade.cs" />
     <Compile Include="Data\DataAddedFertility.cs" />
     <Compile Include="Data\DataModuleLimitUpgrade.cs" />
     <Compile Include="Data\DataMaintenanceUpgrade.cs" />
+    <Compile Include="Data\DataProvideElectricity.cs" />
+    <Compile Include="Data\DataIncidentExplosionIncreaseUpgrade.cs" />
+    <Compile Include="Data\DataExpeditionAttribute.cs" />
     <Compile Include="Data\DataWorkforceAmountUpgrade.cs" />
     <Compile Include="Data\DataProductivityUpgrade.cs" />
     <Compile Include="Data\DataEffectTargets.cs" />
@@ -391,6 +399,24 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_museum_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_bomb_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_build_menu_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\icons\ship_info\icon_damage_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_threat_diseases_tint_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_threat_navigation_tint_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_church_2d_0.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
