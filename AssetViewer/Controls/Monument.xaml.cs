@@ -137,7 +137,8 @@ namespace AssetViewer.Controls {
           this.Presenter.Content = new TemplateGuildhouseItem(reward);
           break;
         default:
-          this.Presenter.Content = null;
+          this.Presenter.Content = new TemplateGuildhouseItem(reward);
+          //this.Presenter.Content = null;
           break;
       }
     }

@@ -21,10 +21,12 @@ namespace AssetViewer.Data {
                 return "Episch";
               case "Legendary":
                 return "Legendär";
+              default:
+                return "Gewöhnlich";
             }
             break;
         }
-        return this.Element.XPathSelectElement("Values/Item/Rarity")?.Value;
+        return this.Element.XPathSelectElement("Values/Item/Rarity")?.Value ?? "Common";
       }
     }
     #endregion

@@ -44,6 +44,46 @@
         <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Path=ProductivityUpgrade.Text}"></TextBlock>
         <TextBlock Grid.Column="2" VerticalAlignment="Center" Text="{Binding Path=ProductivityUpgrade.Value}"></TextBlock>
       </Grid>
+      <Grid Height="22" Margin="0,2" Visibility="{Binding Path=AddedFertility, Converter={StaticResource VisibilityConverter}}">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="30"></ColumnDefinition>
+          <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Path=AddedFertility.Text}"></TextBlock>
+      </Grid>
+      <!--BuildingUpgrade-->
+      <Grid Height="22" Margin="0,2" Visibility="{Binding Path=WorkforceAmountUpgrade, Converter={StaticResource VisibilityConverter}}">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="30"></ColumnDefinition>
+          <ColumnDefinition Width="*"></ColumnDefinition>
+          <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="0" Source="../Resources/data/ui/2kimages/main/icons/icon_options_0.png" Height="22" Width="22" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+        <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Path=WorkforceAmountUpgrade.Text}"></TextBlock>
+        <TextBlock Grid.Column="2" VerticalAlignment="Center" Text="{Binding Path=WorkforceAmountUpgrade.Value}"></TextBlock>
+      </Grid>
+      <Grid Height="22" Margin="0,2" Visibility="{Binding Path=MaintenanceUpgrade, Converter={StaticResource VisibilityConverter}}">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="30"></ColumnDefinition>
+          <ColumnDefinition Width="*"></ColumnDefinition>
+          <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="0" Source="../Resources/data/ui/2kimages/main/icons/icon_credits_0.png" Height="22" Width="22" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+        <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Path=MaintenanceUpgrade.Text}"></TextBlock>
+        <TextBlock Grid.Column="2" VerticalAlignment="Center" Text="{Binding Path=MaintenanceUpgrade.Value}"></TextBlock>
+      </Grid>
+      <!--ModuleOwnerUpgrade-->
+      <Grid Height="22" Margin="0,2" Visibility="{Binding Path=ModuleLimitUpgrade, Converter={StaticResource VisibilityConverter}}">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="30"></ColumnDefinition>
+          <ColumnDefinition Width="*"></ColumnDefinition>
+          <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="0" Source="../Resources/data/ui/2kimages/main/3dicons/icon_general_module_01_0.png" Height="22" Width="22" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+        <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Path=ModuleLimitUpgrade.Text}"></TextBlock>
+        <TextBlock Grid.Column="2" VerticalAlignment="Center" Text="{Binding Path=ModuleLimitUpgrade.Value}"></TextBlock>
+      </Grid>
+      <!--IncidentInfectableUpgrade-->
       <Grid Height="22" Margin="0,2" Visibility="{Binding Path=IncidentFireIncreaseUpgrade, Converter={StaticResource VisibilityConverter}}">
         <Grid.ColumnDefinitions>
           <ColumnDefinition Width="30"></ColumnDefinition>
@@ -54,6 +94,7 @@
         <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Path=IncidentFireIncreaseUpgrade.Text}"></TextBlock>
         <TextBlock Grid.Column="2" VerticalAlignment="Center" Text="{Binding Path=IncidentFireIncreaseUpgrade.Value}"></TextBlock>
       </Grid>
+      <!--CultureUpgrade-->
       <Grid Height="22" Margin="0,2" Visibility="{Binding Path=AttractivenessUpgrade, Converter={StaticResource VisibilityConverter}}">
         <Grid.ColumnDefinitions>
           <ColumnDefinition Width="30"></ColumnDefinition>

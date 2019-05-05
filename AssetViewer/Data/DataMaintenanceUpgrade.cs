@@ -6,22 +6,22 @@ using AssetViewer.Library;
 
 namespace AssetViewer.Data {
 
-  public class DataAttractivenessUpgrade {
+  public class DataMaintenanceUpgrade {
 
     #region Properties
     public String Text {
       get {
         switch (App.Language) {
           case Languages.German:
-            return "Attraktivität";
+            return "Unterhaltskosten";
           default:
-            return "Attractiveness";
+            return "Maintenance costs";
         }
       }
     }
     public String Value {
       get {
-        var upgrade = this.Element.XPathSelectElement("Values/CultureUpgrade/AttractivenessUpgrade");
+        var upgrade = this.Element.XPathSelectElement("Values/BuildingUpgrade/MaintenanceUpgrade");
         var value = Int32.Parse(upgrade.Element("Value").Value);
         if (upgrade.Element("Percental")?.Value == "1") {
           return value > 0 ? $"+{value}%" : $"{value}%";
@@ -37,7 +37,7 @@ namespace AssetViewer.Data {
     #endregion
 
     #region Constructor
-    public DataAttractivenessUpgrade(XElement element) {
+    public DataMaintenanceUpgrade(XElement element) {
       this.Element = element;
     }
     #endregion

@@ -61,6 +61,10 @@
     <Compile Include="Converter\VisibilityConverter.cs" />
     <Compile Include="Data\DataAttractivenessUpgrade.cs" />
     <Compile Include="Data\DataIncidentFireIncreaseUpgrade.cs" />
+    <Compile Include="Data\DataAddedFertility.cs" />
+    <Compile Include="Data\DataModuleLimitUpgrade.cs" />
+    <Compile Include="Data\DataMaintenanceUpgrade.cs" />
+    <Compile Include="Data\DataWorkforceAmountUpgrade.cs" />
     <Compile Include="Data\DataProductivityUpgrade.cs" />
     <Compile Include="Data\DataEffectTargets.cs" />
     <Compile Include="Data\DataRarity.cs" />
@@ -375,6 +379,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_attractiveness_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_electricity_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_general_module_01_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_credits_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_museum_0.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

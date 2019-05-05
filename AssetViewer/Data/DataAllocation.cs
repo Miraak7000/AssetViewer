@@ -17,6 +17,8 @@ namespace AssetViewer.Data {
         switch (allocation) {
           case "HarborOffice":
             return "/AssetViewer;component/Resources/data/ui/2kimages/main/3dicons/icon_harbour_kontor_0.png";
+          case "Museum":
+            return "/AssetViewer;component/Resources/data/ui/2kimages/main/3dicons/icon_museum_0.png";
           default:
             return null;
         }
@@ -37,9 +39,23 @@ namespace AssetViewer.Data {
         var allocation = this.Element.XPathSelectElement("Values/Item/Allocation")?.Value;
         switch (App.Language) {
           case Languages.German:
-            return allocation == null ? "Handelskammer" : allocation == "HarborOffice" ? "Hafenmeisterei" : "Rathaus";
+            switch (allocation) {
+              case "HarborOffice":
+                return "Hafenmeisterei";
+              case "Museum":
+                return "Museum";
+              default:
+                return "Handelskammer";
+            }
           default:
-            return allocation == null ? "Guild house" : allocation == "HarborOffice" ? "Harbor office" : "Town hall";
+            switch (allocation) {
+              case "HarborOffice":
+                return "Harbor office";
+              case "Museum":
+                return "Museum";
+              default:
+                return "Guild house";
+            }
         }
       }
     }

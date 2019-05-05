@@ -39,7 +39,11 @@ namespace AssetViewer.Templates {
               new GradientStop(Color.FromRgb(42, 44, 39), 1)
             }, 90);
           default:
-            return null;
+            return new LinearGradientBrush(new GradientStopCollection() {
+              new GradientStop(Color.FromRgb(126, 128, 125), 0),
+              new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
+              new GradientStop(Color.FromRgb(42, 44, 39), 1)
+            }, 90);
         }
       }
     }
@@ -63,18 +67,47 @@ namespace AssetViewer.Templates {
         return new DataEffectTargets(this.Asset);
       }
     }
+    // FactoryUpgrade
     public DataProductivityUpgrade ProductivityUpgrade {
       get {
         if (this.Asset.XPathSelectElement("Values/FactoryUpgrade/ProductivityUpgrade") == null) return null;
         return new DataProductivityUpgrade(this.Asset);
       }
     }
+    public DataAddedFertility AddedFertility {
+      get {
+        if (this.Asset.XPathSelectElement("Values/FactoryUpgrade/AddedFertility") == null) return null;
+        return new DataAddedFertility(this.Asset);
+      }
+    }
+    // BuildingUpgrade
+    public DataWorkforceAmountUpgrade WorkforceAmountUpgrade {
+      get {
+        if (this.Asset.XPathSelectElement("Values/BuildingUpgrade/WorkforceAmountUpgrade") == null) return null;
+        return new DataWorkforceAmountUpgrade(this.Asset);
+      }
+    }
+    public DataMaintenanceUpgrade MaintenanceUpgrade {
+      get {
+        if (this.Asset.XPathSelectElement("Values/BuildingUpgrade/MaintenanceUpgrade") == null) return null;
+        return new DataMaintenanceUpgrade(this.Asset);
+      }
+    }
+    // ModuleOwnerUpgrade
+    public DataModuleLimitUpgrade ModuleLimitUpgrade {
+      get {
+        if (this.Asset.XPathSelectElement("Values/ModuleOwnerUpgrade/ModuleLimitUpgrade") == null) return null;
+        return new DataModuleLimitUpgrade(this.Asset);
+      }
+    }
+    // IncidentInfectableUpgrade
     public DataIncidentFireIncreaseUpgrade IncidentFireIncreaseUpgrade {
       get {
         if (this.Asset.XPathSelectElement("Values/IncidentInfectableUpgrade/IncidentFireIncreaseUpgrade") == null) return null;
         return new DataIncidentFireIncreaseUpgrade(this.Asset);
       }
     }
+    // CultureUpgrade
     public DataAttractivenessUpgrade AttractivenessUpgrade {
       get {
         if (this.Asset.XPathSelectElement("Values/CultureUpgrade/AttractivenessUpgrade") == null) return null;
