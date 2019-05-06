@@ -50,15 +50,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\Asset.cs" />
+    <Compile Include="Data\AdditionalOutput.cs" />
+    <Compile Include="Data\Allocation.cs" />
     <Compile Include="Data\CultureUpgrade.cs" />
     <Compile Include="Data\Description.cs" />
-    <Compile Include="Data\GuildhouseItem.cs" />
     <Compile Include="Data\Icon.cs" />
+    <Compile Include="Data\InputAmountUpgrade.cs" />
+    <Compile Include="Data\ReplaceInput.cs" />
+    <Compile Include="Data\Upgrade.cs" />
     <Compile Include="Helper.cs" />
     <Compile Include="Monument.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Templates\Asset.cs" />
     <Compile Include="Templates\CultureItem.cs" />
     <Compile Include="Templates\ItemSet.cs" />
   </ItemGroup>

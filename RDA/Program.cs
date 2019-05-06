@@ -5,7 +5,9 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Xml.Linq;
+using System.Xml.XPath;
 using RDA.Data;
+using RDA.Templates;
 
 namespace RDA {
 
@@ -14,9 +16,7 @@ namespace RDA {
 
     #region Fields
     private static readonly Dictionary<Int32, String> Descriptions = new Dictionary<Int32, String>();
-    private static readonly List<GuildhouseItem> GuildhouseItems = new List<GuildhouseItem>();
     internal static XDocument Modified;
-    private static readonly List<Asset> MonumentEventCategories = new List<Asset>();
     internal static XDocument Original;
     internal static String PathRoot;
     internal static String PathViewer;
@@ -30,7 +30,7 @@ namespace RDA {
     private static void Main(String[] args) {
       Program.PathViewer = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase).Replace(@"file:\", String.Empty)).Parent.Parent.Parent.FullName + @"\AssetViewer";
       Program.PathRoot = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase).Replace(@"file:\", String.Empty)).Parent.Parent.FullName;
-      //Program.Original = XDocument.Load(Program.PathRoot + @"\Original\assets.xml");
+      Program.Original = XDocument.Load(Program.PathRoot + @"\Original\assets.xml");
       //Program.TextDE = XDocument.Load(Program.PathRoot + @"\Original\texts_german.xml");
       // Helper
       //Helper.ExtractTextEnglish(Program.PathRoot + @"\Original\assets.xml");
@@ -41,6 +41,8 @@ namespace RDA {
       Program.DescriptionDE = XDocument.Load(Program.PathRoot + @"\Modified\Texts_German.xml").Root.Elements().ToDictionary(k => k.Attribute("ID").Value, e => e.Value);
       // World Fair
       //Monument.Create();
+      // Create Assets
+      Program.Processing("GuildhouseItem");
       // 
       //Program.GetDescriptions(Program.Original.Root);
       //Program.CleanupGuildhouseItems();
@@ -64,13 +66,15 @@ namespace RDA {
       //}
       //Program.Original.Save(pathRoot + @"\Modified\Assets.xml");
     }
-    private static void Processing(String pathRoot, String template) {
-      Program.Modified = new XDocument();
-      Program.Modified.Add(new XElement(template));
-      foreach (var element in Program.Original.Root.Elements().ToArray()) {
-        Program.Find(element, template);
+    private static void Processing(String template) {
+      var result = new List<Asset>();
+      var assets = Program.Original.XPathSelectElements($"//Asset[Template='{template}']");
+      foreach (var asset in assets) {
+        if (asset.XPathSelectElement("Values/Item/HasAction")?.Value == "1") continue;
+        var item = new Asset(asset);
+        var o1 = item.ToString();
+        result.Add(item);
       }
-      Program.Modified.Save(pathRoot + $@"\Modified\Assets_{template}.xml");
     }
     private static void ProcessExpedition(String pathRoot) {
       Program.Modified = new XDocument();
@@ -217,20 +221,6 @@ namespace RDA {
       }
       return null;
     }
-    private static Asset CreateAsset(XElement element, String textID) {
-      switch (element.Element("Template").Value) {
-        case "GuildhouseItem":
-          return Program.GuildhouseItems.Single(w => w.GUID == element.Element("Values").Element("Standard").Element("GUID").Value);
-        default:
-          var asset = new Asset {
-            GUID = element.Element("Values").Element("Standard").Element("GUID").Value,
-            Name = element.Element("Values").Element("Standard").Element("Name").Value,
-            Description = textID == null ? String.Empty : Program.FindElement(Program.Original.Root, textID).Element("Values").Element("Text").Element("LocaText").Element("English").Element("Text").Value,
-            IconFilename = element.Element("Values").Element("Standard").Element("IconFilename").Value
-          };
-          return asset;
-      }
-    }
     private static String GetDescriptionID(XElement element) {
       String textID = null;
       switch (element.Element("Template").Value) {
@@ -274,31 +264,6 @@ namespace RDA {
       } else {
         foreach (var next in element.Elements()) {
           Program.GetDescriptions(next);
-        }
-      }
-    }
-    private static void GetGuildhouseItems(XElement element) {
-      if (element.Name == "Asset" && element.Element("Template")?.Value == "GuildhouseItem") {
-        if (element.Element("Values").Element("ItemAction").HasElements) return;
-        var item = new GuildhouseItem {
-          GUID = element.Element("Values").Element("Standard").Element("GUID").Value,
-          Name = element.Element("Values").Element("Standard").Element("Name").Value,
-          IconFilename = element.Element("Values").Element("Standard").Element("IconFilename").Value,
-          Description = Program.GetDescription(element.Element("Values").Element("Standard").Element("InfoDescription")?.Value),
-          Rarity = element.Element("Values").Element("Item").Element("Rarity")?.Value
-          //ProductivityUpgrade = element.Element("Values").Element("FactoryUpgrade") == null || !element.Element("Values").Element("FactoryUpgrade").HasElements ? null : new ProductivityUpgrade {
-          //  Value = element.Element("Values").Element("FactoryUpgrade").Element("ProductivityUpgrade").Element("Value").Value,
-          //  Percental = element.Element("Values").Element("FactoryUpgrade").Element("ProductivityUpgrade").Element("Percental").Value
-          //}
-        };
-        foreach (var node in element.Element("Values").Element("ItemEffect").Element("EffectTargets").Elements()) {
-          var effectTarget = Program.FindElement(Program.Original.Root, node.Element("GUID").Value);
-          item.EffectTargets.Add(effectTarget.Element("Values").Element("Standard").Element("Name").Value);
-        }
-        if (Program.GuildhouseItems.Count(c => c.GUID == item.GUID) == 0) Program.GuildhouseItems.Add(item);
-      } else {
-        foreach (var next in element.Elements()) {
-          Program.GetGuildhouseItems(next);
         }
       }
     }

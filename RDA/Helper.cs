@@ -28,6 +28,16 @@ namespace RDA {
           if (text != null) result.Add(id, text);
         }
       }
+      // base assets
+      values = element.XPathSelectElements("//Asset/BaseAssetGUID/..").ToArray();
+      foreach (var value in values) {
+        var item = element.XPathSelectElement($"//Asset/Values/Standard[GUID={value.Element("BaseAssetGUID").Value}]/..");
+        var id = value.XPathSelectElement("Values/Standard/GUID").Value;
+        if (!result.ContainsKey(id)) {
+          var text = item.XPathSelectElement("Text/LocaText/English/Text")?.Value;
+          if (text != null) result.Add(id, text);
+        }
+      }
       // text
       values = element.XPathSelectElements("//Asset[Template='Text']/Values");
       foreach (var value in values) {
@@ -82,6 +92,73 @@ namespace RDA {
           xmlWriter.WriteValue(item);
           xmlWriter.WriteEndElement();
         }
+      }
+    }
+    // Description
+    internal static String GetDescriptionID(String pattern) {
+      switch (pattern) {
+        case "HarborOffice":
+          return "4065";
+        case "Uncommon":
+          return "118003";
+        case "Rare":
+          return "118004";
+        case "Epic":
+          return "118005";
+        case "Legendary":
+          return "118006";
+        case "ProductivityUpgrade":
+          return "14130";
+        case "AdditionalOutput":
+          return "20074";
+        case "ReplaceInputs":
+          return "20081";
+        case "InputAmountUpgrade":
+          return "100369";
+        case "OutputAmountFactorUpgrade":
+          return "100371";
+        case "TownHall":
+          return "2347";
+        case "NeededAreaPercentUpgrade":
+          return "3030";
+        case "NeedsElectricity":
+          return "12508";
+        case "Hunting":
+          return "3927";
+        case "PerkFormerPirate":
+          return "191598";
+        case "PerkFemale":
+          return "15798";
+        case "PerkMale":
+          return "15797";
+        case "PerkDiver":
+          return "3931";
+        case "Navigation":
+          return "3923";
+        case "Crafting":
+          return "3926";
+        case "PerkZoologist":
+          return "9998";
+        case "Might":
+          return "3922";
+        case "Diplomacy":
+          return "3920";
+        case "Faith":
+          return "3925";
+        case "Melee":
+          return "3921";
+        case "Medicine":
+          return "3924";
+        case "PerkMilitaryShip":
+          return "3932";
+        case "PerkHypnotist":
+          return "3929";
+        case "PerkAnthropologist":
+          return "3928";
+        case "PerkPolyglot":
+          return "12266";
+        default:
+          throw new KeyNotFoundException();
       }
     }
     // Processing
