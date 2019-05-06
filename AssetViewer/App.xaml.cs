@@ -5,7 +5,6 @@ using System.IO;
 using System.Reflection;
 using System.Windows;
 using System.Xml.Linq;
-using AssetViewer.Data;
 using AssetViewer.Library;
 
 namespace AssetViewer {

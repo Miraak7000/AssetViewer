@@ -15,7 +15,7 @@ namespace RDA.Data {
     public List<AdditionalOutput> AdditionalOutputs { get; set; }
     public List<ReplaceInput> ReplaceInputs { get; set; }
     public List<InputAmountUpgrade> InputAmountUpgrades { get; set; }
-    public Description ReplacingWorkforce { get; set; }
+    public ReplacingWorkforce ReplacingWorkforce { get; set; }
     #endregion
 
     #region Constructor
@@ -85,9 +85,7 @@ namespace RDA.Data {
         case "ReplacingWorkforce":
           this.Icon = new Icon("data/ui/2kimages/main/icons/icon_build_menu.png");
           this.Text = new Description(Helper.GetDescriptionID(element.Name.LocalName));
-          var en = "Instead of its usual workforce, the building employs";
-          var de = "Statt der üblichen Arbeitskräfte beschäftigt das Gebäude";
-          this.ReplacingWorkforce = new Description($"{en} {Program.DescriptionEN[element.Value]}", $"{de} {Program.DescriptionDE[element.Value]}");
+          this.ReplacingWorkforce = new ReplacingWorkforce(element.Value);
           break;
         case "ModuleLimitUpgrade":
           this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_general_module_01.png");
@@ -218,7 +216,7 @@ namespace RDA.Data {
       if (this.AdditionalOutputs != null) result.Add(new XElement("AdditionalOutputs", this.AdditionalOutputs.Select(s => s.ToXml())));
       if (this.ReplaceInputs != null) result.Add(new XElement("ReplaceInputs", this.ReplaceInputs.Select(s => s.ToXml())));
       if (this.InputAmountUpgrades != null) result.Add(new XElement("InputAmountUpgrades", this.InputAmountUpgrades.Select(s => s.ToXml())));
-      if (this.ReplacingWorkforce != null) result.Add(this.ReplacingWorkforce.ToXml("ReplacingWorkforce"));
+      if (this.ReplacingWorkforce != null) result.Add(new XElement("ReplacingWorkforce", this.ReplacingWorkforce.ToXml()));
       return result;
     }
     #endregion

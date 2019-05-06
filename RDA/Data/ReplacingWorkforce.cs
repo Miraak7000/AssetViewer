@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Xml.Linq;
+using System.Xml.XPath;
 
 namespace RDA.Data {
 
-  public class ReplaceInput {
+  public class ReplacingWorkforce {
 
     #region Properties
     public Icon Icon { get; set; }
@@ -12,17 +13,17 @@ namespace RDA.Data {
     #endregion
 
     #region Constructor
-    public ReplaceInput(XElement element) {
-      var oldInput = new Description(element.Element("OldInput").Value);
-      var newInput = new Description(element.Element("NewInput").Value);
-      this.Text = new Description($"{oldInput.EN} => {newInput.EN}", $"{oldInput.DE} => {newInput.DE}");
+    public ReplacingWorkforce(String id) {
+      var en = "Instead of its usual workforce, the building employs";
+      var de = "Statt der üblichen Arbeitskräfte beschäftigt das Gebäude";
+      this.Text = new Description($"{en} {Program.DescriptionEN[id]}", $"{de} {Program.DescriptionDE[id]}");
       this.Value = String.Empty;
     }
     #endregion
 
     #region Public Methods
     public XElement ToXml() {
-      var result = new XElement("Item");
+      var result = new XElement("Workforce");
       result.Add(this.Text.ToXml("Text"));
       result.Add(new XElement("Value", this.Value));
       return result;

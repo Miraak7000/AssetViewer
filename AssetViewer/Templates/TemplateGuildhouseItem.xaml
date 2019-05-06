@@ -10,7 +10,7 @@
              Foreground="#FFFFE4AD" FontSize="13" Width="350">
 
   <UserControl.Resources>
-    <converter:DescriptionConverter x:Key="DescriptionConverter"></converter:DescriptionConverter>
+    <converter:DescriptionConverterOld x:Key="DescriptionConverter"></converter:DescriptionConverterOld>
     <converter:VisibilityConverter x:Key="VisibilityConverter"></converter:VisibilityConverter>
   </UserControl.Resources>
 

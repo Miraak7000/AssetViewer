@@ -10,7 +10,7 @@
              Background="#FFECD5A9" Loaded="Monument_OnLoaded">
 
   <UserControl.Resources>
-    <converter:DescriptionConverter x:Key="DescriptionConverter"></converter:DescriptionConverter>
+    <converter:DescriptionConverterOld x:Key="DescriptionConverter"></converter:DescriptionConverterOld>
     <DataTemplate x:Key="SelectableTemplate">
       <Grid MaxHeight="30">
         <Grid.ColumnDefinitions>

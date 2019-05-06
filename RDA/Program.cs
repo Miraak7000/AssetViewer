@@ -69,7 +69,7 @@ namespace RDA {
     private static void Processing(String template) {
       var result = new List<Asset>();
       var assets = Program.Original.XPathSelectElements($"//Asset[Template='{template}']");
-      foreach (var asset in assets.Take(10)) {
+      foreach (var asset in assets) {
         if (asset.XPathSelectElement("Values/Item/HasAction")?.Value == "1") continue;
         var item = new Asset(asset);
         result.Add(item);

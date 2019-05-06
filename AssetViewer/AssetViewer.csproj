@@ -58,7 +58,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Converter\DescriptionConverter.cs" />
     <Compile Include="Converter\VisibilityConverter.cs" />
+    <Compile Include="Data\Allocation.cs" />
     <Compile Include="Data\DataAttractivenessUpgrade.cs" />
     <Compile Include="Data\DataExpeditionAttributeFaith.cs" />
     <Compile Include="Data\DataExpeditionAttributeNavigation.cs" />
@@ -77,6 +79,10 @@
     <Compile Include="Data\DataEffectTargets.cs" />
     <Compile Include="Data\DataRarity.cs" />
     <Compile Include="Data\DataAllocation.cs" />
+    <Compile Include="Data\Description.cs" />
+    <Compile Include="Data\Icon.cs" />
+    <Compile Include="Data\Upgrade.cs" />
+    <Compile Include="Templates\Asset.cs" />
     <Compile Include="Templates\TemplateGuildhouseItem.xaml.cs">
       <DependentUpon>TemplateGuildhouseItem.xaml</DependentUpon>
     </Compile>
@@ -105,7 +111,7 @@
     <Compile Include="Controls\Monument.xaml.cs">
       <DependentUpon>Monument.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Converter\DescriptionConverter.cs" />
+    <Compile Include="Converter\DescriptionConverterOld.cs" />
     <Compile Include="Converter\GlobalDescriptionConverter.cs" />
     <Compile Include="Library\Description.cs" />
     <Compile Include="Library\Languages.cs" />
@@ -722,8 +728,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\Assets\GuildhouseItem.xml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Data\GuildhouseItem\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

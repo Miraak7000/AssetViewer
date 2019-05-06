@@ -10,7 +10,7 @@
              Foreground="#FFFFE4AD" FontSize="13" Width="350">
 
   <UserControl.Resources>
-    <converter:DescriptionConverter x:Key="DescriptionConverter"></converter:DescriptionConverter>
+    <converter:DescriptionConverterOld x:Key="DescriptionConverter"></converter:DescriptionConverterOld>
   </UserControl.Resources>
 
   <Border BorderBrush="#FFFFE4AD" BorderThickness="1" CornerRadius="5" Background="#FF2A2C27">

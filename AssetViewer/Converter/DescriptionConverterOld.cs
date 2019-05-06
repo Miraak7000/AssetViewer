@@ -6,22 +6,24 @@ using System.Linq;
 using System.Windows.Data;
 using System.Xml.Linq;
 using System.Xml.XPath;
-using AssetViewer.Data;
+using AssetViewer.Library;
 
 namespace AssetViewer.Converter {
 
   [SuppressMessage("ReSharper", "AssignNullToNotNullAttribute"), SuppressMessage("ReSharper", "PossibleNullReferenceException")]
-  public class DescriptionConverter : IValueConverter {
+  public class DescriptionConverterOld : IValueConverter {
 
     #region Public Methods
     public Object Convert(Object value, Type targetType, Object parameter, CultureInfo culture) {
-      var description = value as Description;
-      if (description == null) return String.Empty;
+      if (value == null) return null;
+      if (parameter == null) parameter = "Short";
       switch (App.Language) {
-        case AssetViewer.Library.Languages.German:
-          return description.DE;
+        case Languages.English:
+          return ((XElement)value).XPathSelectElement($"EN/{parameter}").Value;
+        case Languages.German:
+          return ((XElement)value).XPathSelectElement($"DE/{parameter}").Value;
         default:
-          return description.EN;
+          throw new NotImplementedException();
       }
     }
     public Object ConvertBack(Object value, Type targetType, Object parameter, CultureInfo culture) {
