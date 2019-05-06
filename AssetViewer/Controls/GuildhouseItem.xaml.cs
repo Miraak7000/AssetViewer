@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Windows;
 using System.Windows.Controls;
+using System.Xml.Linq;
 using AssetViewer.Data;
-using AssetViewer.Data.GuildhouseItem;
 using AssetViewer.Library;
 
 namespace AssetViewer.Controls {
@@ -13,56 +15,24 @@ namespace AssetViewer.Controls {
   public partial class GuildhouseItem : UserControl, INotifyPropertyChanged {
 
     #region Properties
-    public Dictionary<Int32, Description> Descriptions {
-      get { return App.Descriptions; }
-    }
-    public IEnumerable<Allocation> Allocations {
-      get {
-        var result = App.AssetGuildhouseItems.Select(s => s.Allocation).GroupBy(k => k.GUID).Select(s => s.First()).OrderBy(o => o.ToString()).ToList();
-        return result;
-      }
-    }
-    public IEnumerable<EffectTarget> Targets {
-      get {
-        var result = App.AssetGuildhouseItems.SelectMany(s => s.EffectTargets).GroupBy(k => k.GUID).Select(s => s.First()).OrderBy(o => o.ToString()).ToList();
-        result.Insert(0, new EffectTarget());
-        return result;
-      }
-    }
-    public IEnumerable<AssetGuildhouseItem> Items {
-      get {
-        if (!this.IsLoaded || this.ComboBoxAllocations.SelectedItem == null) return null;
-        var selectedAllocation = (Allocation)this.ComboBoxAllocations.SelectedItem;
-        var selectedType = this.ComboBoxTypes.SelectedIndex;
-        var selectedTarget = (EffectTarget)this.ComboBoxTargets.SelectedItem;
-        var result = App.AssetGuildhouseItems.AsEnumerable();
-        result = result.Where(w => w.Allocation.GUID == selectedAllocation.GUID);
-        result = result.Where(w => w.IsSpecialist == (selectedType == 1));
-        if (this.CheckBoxFactoryUpgrades.IsChecked.HasValue && this.CheckBoxFactoryUpgrades.IsChecked.Value) result = result.Where(w => w.HasFactoryUpgrade);
-        if (this.CheckBoxBuildingUpgrades.IsChecked.HasValue && this.CheckBoxBuildingUpgrades.IsChecked.Value) result = result.Where(w => w.HasBuildingUpgrade);
-        if (this.CheckBoxPopulationUpgrade.IsChecked.HasValue && this.CheckBoxPopulationUpgrade.IsChecked.Value) result = result.Where(w => w.HasPopulationUpgrade);
-        if (this.CheckBoxResidenceUpgrade.IsChecked.HasValue && this.CheckBoxResidenceUpgrade.IsChecked.Value) result = result.Where(w => w.HasResidenceUpgrade);
-        if (selectedTarget != null && selectedTarget.GUID != 0) result = result.Where(w => w.EffectTargets.Select(s => s.GUID).Contains(selectedTarget.GUID));
-        return result.OrderBy(o => o.ToString());
-      }
-    }
-    public AssetGuildhouseItem SelectedItem { get; set; }
-    public Boolean HasResult {
-      get { return this.ListBoxItems.Items.Count > 0; }
-    }
     #endregion
 
     #region Constructor
     public GuildhouseItem() {
       this.InitializeComponent();
-      this.DataContext = this;
       ((MainWindow)Application.Current.MainWindow).ComboBoxLanguage.SelectionChanged += this.ComboBoxLanguage_SelectionChanged;
+      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.GuildhouseItem.xml")) {
+        using (var reader = new StreamReader(stream)) {
+          //this.AssetCategory = XDocument.Parse(reader.ReadToEnd()).Root;
+        }
+      }
+      this.DataContext = this;
     }
     #endregion
 
     #region Private Methods
     private void GuildhouseItem_OnLoaded(Object sender, RoutedEventArgs e) {
-      this.ComboBoxAllocations.SelectedItem = this.ComboBoxAllocations.Items.OfType<Allocation>().Single(w => w.GUID == 0);
+      //this.ComboBoxAllocations.SelectedItem = this.ComboBoxAllocations.Items.OfType<Allocation>().Single(w => w.GUID == 0);
       this.ComboBoxTypes.SelectedIndex = 0;
       this.ComboBoxTargets.SelectedIndex = 0;
       this.ListBoxItems.SelectedIndex = 0;

@@ -157,6 +157,24 @@ namespace RDA {
           return "3928";
         case "PerkPolyglot":
           return "12266";
+        case "AttractivenessUpgrade":
+          return "145011";
+        case "MaintenanceUpgrade":
+          return "2320";
+        case "WorkforceAmountUpgrade":
+          return "12337";
+        case "ReplacingWorkforce":
+          return "12480";
+        case "ModuleLimitUpgrade":
+          return "12075";
+        case "AdditionalHappiness":
+          return "12314";
+        case "ResidentsUpgrade":
+          return "12676";
+        case "StressUpgrade":
+          return "12227";
+        case "ProvideElectricity":
+          return "12485";
         default:
           throw new KeyNotFoundException();
       }

@@ -69,12 +69,16 @@ namespace RDA {
     private static void Processing(String template) {
       var result = new List<Asset>();
       var assets = Program.Original.XPathSelectElements($"//Asset[Template='{template}']");
-      foreach (var asset in assets) {
+      foreach (var asset in assets.Take(10)) {
         if (asset.XPathSelectElement("Values/Item/HasAction")?.Value == "1") continue;
         var item = new Asset(asset);
-        var o1 = item.ToString();
         result.Add(item);
       }
+      var document = new XDocument();
+      document.Add(new XElement("GuildhouseItem"));
+      document.Root.Add(result.Select(s => s.ToXml()));
+      document.Save($@"{Program.PathRoot}\Modified\Assets_GuildhouseItem.xml");
+      document.Save($@"{Program.PathViewer}\Resources\Assets\GuildhouseItem.xml");
     }
     private static void ProcessExpedition(String pathRoot) {
       Program.Modified = new XDocument();

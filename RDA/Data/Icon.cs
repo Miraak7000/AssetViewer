@@ -8,7 +8,6 @@ namespace RDA.Data {
 
     #region Properties
     public String Filename { get; set; }
-    public Byte[] Value { get; set; }
     #endregion
 
     #region Constructor
@@ -18,7 +17,12 @@ namespace RDA.Data {
       var fileNames = Directory.GetFiles(searchPath, $"{searchPattern}??.png", SearchOption.TopDirectoryOnly);
       if (fileNames.Length != 1) throw new FileNotFoundException();
       this.Filename = filename;
-      this.Value = File.ReadAllBytes(fileNames[0]);
+      var file = File.ReadAllBytes(fileNames[0]);
+      // publish icon
+      var targetPath = Path.GetDirectoryName($@"{Program.PathViewer}\Resources\{filename}");
+      var targetFile = Path.GetFullPath($@"{Program.PathViewer}\Resources\{filename}");
+      if (!Directory.Exists(targetPath)) Directory.CreateDirectory(targetPath);
+      File.WriteAllBytes(targetFile, file);
     }
     #endregion
 

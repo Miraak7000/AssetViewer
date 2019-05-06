@@ -71,78 +71,28 @@
     </GroupBox>
     <Grid Grid.Row="2">
       <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="300"></ColumnDefinition>
-        <ColumnDefinition Width="10"></ColumnDefinition>
         <ColumnDefinition Width="*"></ColumnDefinition>
+        <ColumnDefinition Width="10"></ColumnDefinition>
+        <ColumnDefinition Width="350"></ColumnDefinition>
       </Grid.ColumnDefinitions>
       <Grid Grid.Column="0">
-        <ListBox x:Name="ListBoxItems" ItemsSource="{Binding Path=Items, Mode=OneWay}" SelectedItem="{Binding Path=SelectedItem}" SelectionChanged="ListBoxItems_OnSelectionChanged" Background="Transparent" BorderBrush="#FF6D5B4B"></ListBox>
+        <ListBox x:Name="ListBoxItems" Background="Transparent" ItemsSource="{Binding Path=Rewards}" SelectionChanged="ListBoxItems_OnSelectionChanged" BorderBrush="#FF6D5B4B">
+          <ListBox.ItemTemplate>
+            <DataTemplate>
+              <Grid MaxHeight="24">
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="30"></ColumnDefinition>
+                  <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="0" Source="{Binding Path=Icon}" HorizontalAlignment="Left"></Image>
+                <TextBlock Grid.Column="1" Text="{Binding Path=Value, Converter={StaticResource DescriptionConverter}}" VerticalAlignment="Center"></TextBlock>
+              </Grid>
+            </DataTemplate>
+          </ListBox.ItemTemplate>
+        </ListBox>
       </Grid>
-      <Border Grid.Column="2" BorderThickness="1" BorderBrush="#FF6D5B4B">
-        <StackPanel Margin="5" Visibility="{Binding Path=HasResult, Converter={StaticResource BooleanToVisibility}}">
-          <!--Rarity-->
-          <StackPanel Margin="0,2" Orientation="Horizontal">
-            <TextBlock Margin="0,0,5,0" FontWeight="Bold" Text="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=1023}"></TextBlock>
-            <TextBlock Text="{Binding Path=SelectedItem.Rarity}"></TextBlock>
-          </StackPanel>
-          <!--Effect Targets-->
-          <StackPanel Margin="0,2" Orientation="Horizontal">
-            <TextBlock Margin="0,0,5,0" FontWeight="Bold" Text="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=1024}"></TextBlock>
-            <TextBlock Text="{Binding Path=SelectedItem.EffectTarget}"></TextBlock>
-          </StackPanel>
-          <!--Factory Upgrades-->
-          <StackPanel Margin="0,2,0,2" Visibility="{Binding Path=SelectedItem.HasFactoryUpgrade, Converter={StaticResource BooleanToVisibility}}">
-            <TextBlock Text="{Binding Path=SelectedItem.FactoryUpgrade.Name}" Margin="0,0,5,0" FontWeight="Bold"></TextBlock>
-            <TextBlock Text="{Binding Path=SelectedItem.FactoryUpgrade.Content}"></TextBlock>
-          </StackPanel>
-          <!--BuildingUpgrade-->
-          <StackPanel Margin="0,2,0,2" Visibility="{Binding Path=SelectedItem.HasBuildingUpgrade, Converter={StaticResource BooleanToVisibility}}">
-            <TextBlock Text="{Binding Path=SelectedItem.BuildingUpgrade.Name}" Margin="0,0,5,0" FontWeight="Bold"></TextBlock>
-            <TextBlock Text="{Binding Path=SelectedItem.BuildingUpgrade.Content}"></TextBlock>
-          </StackPanel>
-          <!--IncidentInfectableUpgrade-->
-          <StackPanel Margin="0,2,0,2" Visibility="{Binding Path=SelectedItem.HasIncidentInfectableUpgrade, Converter={StaticResource BooleanToVisibility}}">
-            <TextBlock Text="{Binding Path=SelectedItem.IncidentInfectableUpgrade.Name}" Margin="0,0,5,0" FontWeight="Bold"></TextBlock>
-            <TextBlock Text="{Binding Path=SelectedItem.IncidentInfectableUpgrade.Content}"></TextBlock>
-          </StackPanel>
-          <!--ElectricUpgrade-->
-          <StackPanel Margin="0,2,0,2" Visibility="{Binding Path=SelectedItem.HasElectricUpgrade, Converter={StaticResource BooleanToVisibility}}">
-            <TextBlock Text="{Binding Path=SelectedItem.ElectricUpgrade.Name}" Margin="0,0,5,0" FontWeight="Bold"></TextBlock>
-            <TextBlock Text="{Binding Path=SelectedItem.ElectricUpgrade.Content}"></TextBlock>
-          </StackPanel>
-          <!--CultureUpgrade-->
-          <StackPanel Margin="0,2,0,2" Visibility="{Binding Path=SelectedItem.HasCultureUpgrade, Converter={StaticResource BooleanToVisibility}}">
-            <TextBlock Text="{Binding Path=SelectedItem.CultureUpgrade.Name}" Margin="0,0,5,0" FontWeight="Bold"></TextBlock>
-            <TextBlock Text="{Binding Path=SelectedItem.CultureUpgrade.Content}"></TextBlock>
-          </StackPanel>
-          <!--ModuleOwnerUpgrade-->
-          <StackPanel Margin="0,2,0,2" Visibility="{Binding Path=SelectedItem.HasModuleOwnerUpgrade, Converter={StaticResource BooleanToVisibility}}">
-            <TextBlock Text="{Binding Path=SelectedItem.ModuleOwnerUpgrade.Name}" Margin="0,0,5,0" FontWeight="Bold"></TextBlock>
-            <TextBlock Text="{Binding Path=SelectedItem.ModuleOwnerUpgrade.Content}"></TextBlock>
-          </StackPanel>
-          <!--IncidentInfluencerUpgrade-->
-          <StackPanel Margin="0,2,0,2" Visibility="{Binding Path=SelectedItem.HasIncidentInfluencerUpgrade, Converter={StaticResource BooleanToVisibility}}">
-            <TextBlock Text="{Binding Path=SelectedItem.IncidentInfluencerUpgrade.Name}" Margin="0,0,5,0" FontWeight="Bold"></TextBlock>
-            <TextBlock Text="{Binding Path=SelectedItem.IncidentInfluencerUpgrade.Content}"></TextBlock>
-          </StackPanel>
-          <!--ResidenceUpgrade-->
-          <StackPanel Margin="0,2,0,2" Visibility="{Binding Path=SelectedItem.HasResidenceUpgrade, Converter={StaticResource BooleanToVisibility}}">
-            <TextBlock Text="{Binding Path=SelectedItem.ResidenceUpgrade.Name}" Margin="0,0,5,0" FontWeight="Bold"></TextBlock>
-            <TextBlock Text="{Binding Path=SelectedItem.ResidenceUpgrade.Content}"></TextBlock>
-          </StackPanel>
-          <!--PopulationUpgrade-->
-          <StackPanel Margin="0,2,0,2" Visibility="{Binding Path=SelectedItem.HasPopulationUpgrade, Converter={StaticResource BooleanToVisibility}}">
-            <TextBlock Text="{Binding Path=SelectedItem.PopulationUpgrade.Name}" Margin="0,0,5,0" FontWeight="Bold"></TextBlock>
-            <TextBlock Text="{Binding Path=SelectedItem.PopulationUpgrade.Content}"></TextBlock>
-          </StackPanel>
-          <!--ExpeditionAttribute-->
-          <StackPanel Margin="0,2,0,2" Visibility="{Binding Path=SelectedItem.HasExpeditionAttribute, Converter={StaticResource BooleanToVisibility}}">
-            <TextBlock Text="{Binding Path=SelectedItem.ExpeditionAttribute.Name}" Margin="0,0,5,0" FontWeight="Bold"></TextBlock>
-            <TextBlock Text="{Binding Path=SelectedItem.ExpeditionAttribute.Content}"></TextBlock>
-          </StackPanel>
-          <!--Description-->
-          <TextBlock Margin="0,10,0,2" Text="{Binding Path=SelectedItem.Description.Long}" TextWrapping="Wrap"></TextBlock>
-        </StackPanel>
+      <Border Grid.Column="2" BorderThickness="0" BorderBrush="#FFABADB3">
+        <ContentPresenter x:Name="Presenter" HorizontalAlignment="Left"/>
       </Border>
     </Grid>
   </Grid>

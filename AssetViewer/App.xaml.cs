@@ -106,22 +106,7 @@ namespace AssetViewer {
     #endregion
 
     #region Fields
-    public static readonly List<AssetGuildhouseItem> AssetGuildhouseItems = new List<AssetGuildhouseItem>();
     public static Languages Language = Languages.English;
-    #endregion
-
-    #region Constructor
-    public App() {
-      // GuildhouseItems
-      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.Assets_GuildhouseItemCleanedUp.xml")) {
-        using (var reader = new StreamReader(stream)) {
-          var document = XDocument.Parse(reader.ReadToEnd());
-          foreach (var item in document.Root.Elements()) {
-            App.AssetGuildhouseItems.Add(new AssetGuildhouseItem(item));
-          }
-        }
-      }
-    }
     #endregion
 
     #region Public Methods

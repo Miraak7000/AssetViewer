@@ -15,6 +15,7 @@ namespace RDA.Data {
     public List<AdditionalOutput> AdditionalOutputs { get; set; }
     public List<ReplaceInput> ReplaceInputs { get; set; }
     public List<InputAmountUpgrade> InputAmountUpgrades { get; set; }
+    public Description ReplacingWorkforce { get; set; }
     #endregion
 
     #region Constructor
@@ -69,8 +70,43 @@ namespace RDA.Data {
           this.Icon = new Icon("data/ui/2kimages/main/icons/icon_electricity.png");
           this.Text = new Description(Helper.GetDescriptionID(element.Name.LocalName));
           break;
-        case "Hunting":
-          this.Icon = new Icon("data/ui/2kimages/main/icons/ship_info/icon_damage.png");
+        case "AttractivenessUpgrade":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_attractiveness.png");
+          this.Text = new Description(Helper.GetDescriptionID(element.Name.LocalName));
+          break;
+        case "MaintenanceUpgrade":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_credits.png");
+          this.Text = new Description(Helper.GetDescriptionID(element.Name.LocalName));
+          break;
+        case "WorkforceAmountUpgrade":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_options.png");
+          this.Text = new Description(Helper.GetDescriptionID(element.Name.LocalName));
+          break;
+        case "ReplacingWorkforce":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_build_menu.png");
+          this.Text = new Description(Helper.GetDescriptionID(element.Name.LocalName));
+          var en = "Instead of its usual workforce, the building employs";
+          var de = "Statt der üblichen Arbeitskräfte beschäftigt das Gebäude";
+          this.ReplacingWorkforce = new Description($"{en} {Program.DescriptionEN[element.Value]}", $"{de} {Program.DescriptionDE[element.Value]}");
+          break;
+        case "ModuleLimitUpgrade":
+          this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_general_module_01.png");
+          this.Text = new Description(Helper.GetDescriptionID(element.Name.LocalName));
+          break;
+        case "AdditionalHappiness":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_happy.png");
+          this.Text = new Description(Helper.GetDescriptionID(element.Name.LocalName));
+          break;
+        case "ResidentsUpgrade":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_kontor_2d.png");
+          this.Text = new Description(Helper.GetDescriptionID(element.Name.LocalName));
+          break;
+        case "StressUpgrade":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_incident_riot.png");
+          this.Text = new Description(Helper.GetDescriptionID(element.Name.LocalName));
+          break;
+        case "ProvideElectricity":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_electricity.png");
           this.Text = new Description(Helper.GetDescriptionID(element.Name.LocalName));
           break;
         default:
@@ -182,6 +218,7 @@ namespace RDA.Data {
       if (this.AdditionalOutputs != null) result.Add(new XElement("AdditionalOutputs", this.AdditionalOutputs.Select(s => s.ToXml())));
       if (this.ReplaceInputs != null) result.Add(new XElement("ReplaceInputs", this.ReplaceInputs.Select(s => s.ToXml())));
       if (this.InputAmountUpgrades != null) result.Add(new XElement("InputAmountUpgrades", this.InputAmountUpgrades.Select(s => s.ToXml())));
+      if (this.ReplacingWorkforce != null) result.Add(this.ReplacingWorkforce.ToXml("ReplacingWorkforce"));
       return result;
     }
     #endregion

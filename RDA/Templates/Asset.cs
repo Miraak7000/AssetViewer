@@ -23,6 +23,12 @@ namespace RDA.Templates {
     public List<Description> EffectTargets { get; set; }
     //
     public List<Upgrade> FactoryUpgrades { get; set; }
+    public List<Upgrade> BuildingUpgrades { get; set; }
+    public List<Upgrade> CultureUpgrades { get; set; }
+    public List<Upgrade> ModuleOwnerUpgrades { get; set; }
+    public List<Upgrade> ResidenceUpgrades { get; set; }
+    public List<Upgrade> PopulationUpgrades { get; set; }
+    public List<Upgrade> ElectricUpgrades { get; set; }
     public List<Upgrade> ExpeditionAttributes { get; set; }
     //
     public String TradePrice { get; set; }
@@ -60,6 +66,50 @@ namespace RDA.Templates {
           this.FactoryUpgrades.Add(new Upgrade(item));
         }
       }
+      if (asset.XPathSelectElement("Values/BuildingUpgrade").HasElements) {
+        this.BuildingUpgrades = new List<Upgrade>();
+        foreach (var item in asset.XPathSelectElements("Values/BuildingUpgrade").Elements()) {
+          // TODO: this needs to be implemented
+          if (item.Name.LocalName == "ResolverUnitCountUpgrade") continue;
+          if (item.Name.LocalName == "PublicServiceFullSatisfactionDistance") continue;
+          if (item.Name.LocalName == "PublicServiceNoSatisfactionDistance") continue;
+          if (item.Name.LocalName == "ResolverUnitMovementSpeedUpgrade") continue;
+          if (item.Name.LocalName == "ResolverUnitDecreaseUpgrade") continue;
+          this.BuildingUpgrades.Add(new Upgrade(item));
+        }
+      }
+      if (asset.XPathSelectElement("Values/CultureUpgrade").HasElements) {
+        this.CultureUpgrades = new List<Upgrade>();
+        foreach (var item in asset.XPathSelectElements("Values/CultureUpgrade").Elements()) {
+          this.CultureUpgrades.Add(new Upgrade(item));
+        }
+      }
+      if (asset.XPathSelectElement("Values/ModuleOwnerUpgrade").HasElements) {
+        this.ModuleOwnerUpgrades = new List<Upgrade>();
+        foreach (var item in asset.XPathSelectElements("Values/ModuleOwnerUpgrade").Elements()) {
+          this.ModuleOwnerUpgrades.Add(new Upgrade(item));
+        }
+      }
+      if (asset.XPathSelectElement("Values/ResidenceUpgrade").HasElements) {
+        this.ResidenceUpgrades = new List<Upgrade>();
+        foreach (var item in asset.XPathSelectElements("Values/ResidenceUpgrade").Elements()) {
+          // TODO: this needs to be implemented
+          if (item.Name.LocalName == "NeedProvideNeedUpgrade") continue;
+          this.ResidenceUpgrades.Add(new Upgrade(item));
+        }
+      }
+      if (asset.XPathSelectElement("Values/PopulationUpgrade").HasElements) {
+        this.PopulationUpgrades = new List<Upgrade>();
+        foreach (var item in asset.XPathSelectElements("Values/PopulationUpgrade").Elements()) {
+          this.PopulationUpgrades.Add(new Upgrade(item));
+        }
+      }
+      if (asset.XPathSelectElement("Values/ElectricUpgrade").HasElements) {
+        this.ElectricUpgrades = new List<Upgrade>();
+        foreach (var item in asset.XPathSelectElements("Values/ElectricUpgrade").Elements()) {
+          this.ElectricUpgrades.Add(new Upgrade(item));
+        }
+      }
       if (asset.XPathSelectElement("Values/ExpeditionAttribute").HasElements) {
         var attributes = asset.XPathSelectElements("Values/ExpeditionAttribute/ExpeditionAttributes/Item").Where(w => w.HasElements).ToArray();
         if (attributes.Length > 0) {
@@ -78,7 +128,7 @@ namespace RDA.Templates {
     #endregion
 
     #region Public Methods
-    public override String ToString() {
+    public XElement ToXml() {
       var result = new XElement(this.GetType().Name);
       result.Add(new XAttribute("ID", this.ID));
       result.Add(new XElement("Name", this.Name));
@@ -92,12 +142,18 @@ namespace RDA.Templates {
       result.Add(new XElement("EffectTargets", this.EffectTargets == null ? null : this.EffectTargets.Select(s => s.ToXml("Target"))));
       //
       result.Add(new XElement("FactoryUpgrades", this.FactoryUpgrades == null ? null : this.FactoryUpgrades.Select(s => s.ToXml())));
+      result.Add(new XElement("BuildingUpgrades", this.BuildingUpgrades == null ? null : this.BuildingUpgrades.Select(s => s.ToXml())));
+      result.Add(new XElement("CultureUpgrades", this.CultureUpgrades == null ? null : this.CultureUpgrades.Select(s => s.ToXml())));
+      result.Add(new XElement("ModuleOwnerUpgrades", this.ModuleOwnerUpgrades == null ? null : this.ModuleOwnerUpgrades.Select(s => s.ToXml())));
+      result.Add(new XElement("ResidenceUpgrades", this.ResidenceUpgrades == null ? null : this.ResidenceUpgrades.Select(s => s.ToXml())));
+      result.Add(new XElement("PopulationUpgrades", this.PopulationUpgrades == null ? null : this.PopulationUpgrades.Select(s => s.ToXml())));
+      result.Add(new XElement("ElectricUpgrades", this.ElectricUpgrades == null ? null : this.ElectricUpgrades.Select(s => s.ToXml())));
       result.Add(new XElement("ExpeditionAttributes", this.ExpeditionAttributes == null ? null : this.ExpeditionAttributes.Select(s => s.ToXml())));
       //
       result.Add(new XElement("TradePrice", this.TradePrice));
       //
       if (this.Info != null) result.Add(this.Info.ToXml("Info"));
-      return result.ToString(SaveOptions.None);
+      return result;
     }
     #endregion
 
