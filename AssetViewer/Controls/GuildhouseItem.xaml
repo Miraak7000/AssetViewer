@@ -57,41 +57,34 @@
     </Grid.RowDefinitions>
     <GroupBox Grid.Row="0" Header="Filter" BorderBrush="#FF6D5B4B">
       <StackPanel Orientation="Horizontal" Margin="5">
-        <Grid Margin="0,0,50,0">
-          <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"></ColumnDefinition>
-            <ColumnDefinition Width="250"></ColumnDefinition>
-          </Grid.ColumnDefinitions>
+        <Grid Width="200" Margin="0,0,5,0">
           <Grid.RowDefinitions>
-            <RowDefinition Height="24"></RowDefinition>
-            <RowDefinition Height="24"></RowDefinition>
-            <RowDefinition Height="24"></RowDefinition>
+            <RowDefinition Height="18"></RowDefinition>
+            <RowDefinition Height="22"></RowDefinition>
+            <RowDefinition Height="18"></RowDefinition>
+            <RowDefinition Height="22"></RowDefinition>
           </Grid.RowDefinitions>
-
-          <TextBlock Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" Text="{Binding Path=Rarities, Converter={StaticResource Description}, ConverterParameter=1001}" Margin="0,0,5,0"></TextBlock>
-          <ComboBox x:Name="ComboBoxRarities" Grid.Column="1" Grid.Row="0" Height="22" ItemsSource="{Binding Path=Rarities}" SelectionChanged="ComboBoxRarities_OnSelectionChanged"></ComboBox>
-
-          <TextBlock Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" Text="{Binding Path=ItemTypes, Converter={StaticResource Description}, ConverterParameter=1002}" Margin="0,0,5,0"></TextBlock>
-          <ComboBox x:Name="ComboBoxTypes" Grid.Column="1" Grid.Row="1" Height="22" ItemsSource="{Binding Path=ItemTypes}" SelectionChanged="ComboBoxTypes_OnSelectionChanged"></ComboBox>
-
-          <TextBlock Grid.Column="0" Grid.Row="2" VerticalAlignment="Center" Text="{Binding Path=Targets, Converter={StaticResource Description}, ConverterParameter=1003}" Margin="0,0,5,0"></TextBlock>
-          <ComboBox x:Name="ComboBoxTargets" Grid.Column="1" Grid.Row="2" Height="22" ItemsSource="{Binding Path=Targets}" SelectionChanged="ComboBoxTargets_OnSelectionChanged"></ComboBox>
+          <TextBlock Grid.Row="0" VerticalAlignment="Center" Text="{Binding Path=Rarities, Converter={StaticResource Description}, ConverterParameter=1001}" Margin="0,0,5,0"></TextBlock>
+          <ComboBox x:Name="ComboBoxRarities" Grid.Row="1" Height="22" ItemsSource="{Binding Path=Rarities}" SelectionChanged="ComboBoxRarities_OnSelectionChanged"></ComboBox>
+          <TextBlock Grid.Row="2" VerticalAlignment="Center" Text="{Binding Path=Rarities, Converter={StaticResource Description}, ConverterParameter=1004}" Margin="0,0,5,0"></TextBlock>
+          <TextBox Grid.Row="3" Text="{Binding Path=SearchText, UpdateSourceTrigger=PropertyChanged}"></TextBox>
         </Grid>
-        <!--<Grid Grid.Column="2">
+        <Grid Width="200" Margin="5,0">
           <Grid.RowDefinitions>
-            <RowDefinition Height="22"></RowDefinition>
-            <RowDefinition Height="22"></RowDefinition>
-            <RowDefinition Height="22"></RowDefinition>
+            <RowDefinition Height="18"></RowDefinition>
             <RowDefinition Height="22"></RowDefinition>
           </Grid.RowDefinitions>
-          <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-          </Grid.ColumnDefinitions>
-          <CheckBox x:Name="CheckBoxFactoryUpgrades" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Content="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=1011}" Checked="CheckBoxFactoryUpgrades_OnChanged" Unchecked="CheckBoxFactoryUpgrades_OnChanged"></CheckBox>
-          <CheckBox x:Name="CheckBoxBuildingUpgrades" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Content="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=1012}" Checked="CheckBoxBuildingUpgrades_OnChanged" Unchecked="CheckBoxBuildingUpgrades_OnChanged"></CheckBox>
-          <CheckBox x:Name="CheckBoxPopulationUpgrade" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Content="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=1046}" Checked="CheckBoxPopulationUpgrade_OnChanged" Unchecked="CheckBoxPopulationUpgrade_OnChanged"></CheckBox>
-          <CheckBox x:Name="CheckBoxResidenceUpgrade" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Content="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=1047}" Checked="CheckBoxResidenceUpgrade_OnChanged" Unchecked="CheckBoxResidenceUpgrade_OnChanged"></CheckBox>
-        </Grid>-->
+          <TextBlock Grid.Row="0" VerticalAlignment="Center" Text="{Binding Path=ItemTypes, Converter={StaticResource Description}, ConverterParameter=1002}" Margin="0,0,5,0"></TextBlock>
+          <ComboBox x:Name="ComboBoxTypes" Grid.Row="1" Height="22" ItemsSource="{Binding Path=ItemTypes}" SelectionChanged="ComboBoxTypes_OnSelectionChanged" Margin="0"></ComboBox>
+        </Grid>
+        <Grid Width="300" Margin="5,0">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="18"></RowDefinition>
+            <RowDefinition Height="22"></RowDefinition>
+          </Grid.RowDefinitions>
+          <TextBlock Grid.Row="0" VerticalAlignment="Center" Text="{Binding Path=Targets, Converter={StaticResource Description}, ConverterParameter=1003}" Margin="0,0,5,0"></TextBlock>
+          <ComboBox x:Name="ComboBoxTargets" Grid.Row="1" Height="22" ItemsSource="{Binding Path=Targets}" SelectionChanged="ComboBoxTargets_OnSelectionChanged"></ComboBox>
+        </Grid>
       </StackPanel>
     </GroupBox>
     <Grid Grid.Row="2">
@@ -122,29 +115,31 @@
       <Border Grid.Column="2" BorderBrush="#FFFFE4AD" BorderThickness="1" CornerRadius="5" Background="{Binding Path=RarityBrush}">
         <StackPanel Margin="10">
           <!--Name-->
-          <Grid>
-            <Grid.ColumnDefinitions>
-              <ColumnDefinition Width="90"></ColumnDefinition>
-              <ColumnDefinition Width="*"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <Image Grid.Column="0" Source="{Binding Path=SelectedAsset.Icon.Filename}" Width="75" Height="75" HorizontalAlignment="Left"></Image>
-            <Grid Grid.Column="1">
-              <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"></RowDefinition>
-                <RowDefinition Height="*"></RowDefinition>
-              </Grid.RowDefinitions>
-              <TextBlock Grid.Row="0" Text="{Binding Path=SelectedAsset.Text, Converter={StaticResource DescriptionConverter}}" FontWeight="Bold" FontSize="16" Foreground="#FFFFE4AD" TextWrapping="Wrap"></TextBlock>
-              <TextBlock Grid.Row="1" Text="{Binding Path=SelectedAsset.Rarity, Converter={StaticResource DescriptionConverter}}" Foreground="#FFA49370"></TextBlock>
+          <StackPanel Visibility="{Binding Path=HasResult, Converter={StaticResource BooleanToVisibility}}">
+            <Grid>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="90"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+              </Grid.ColumnDefinitions>
+              <Image Grid.Column="0" Source="{Binding Path=SelectedAsset.Icon.Filename}" Width="75" Height="75" HorizontalAlignment="Left"></Image>
+              <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="Auto"></RowDefinition>
+                  <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="{Binding Path=SelectedAsset.Text, Converter={StaticResource DescriptionConverter}}" FontWeight="Bold" FontSize="16" Foreground="#FFFFE4AD" TextWrapping="Wrap"></TextBlock>
+                <TextBlock Grid.Row="1" Text="{Binding Path=SelectedAsset.Rarity, Converter={StaticResource DescriptionConverter}}" Foreground="#FFA49370"></TextBlock>
+              </Grid>
             </Grid>
-          </Grid>
-          <Border BorderBrush="#FFA49370" BorderThickness="1" Height="0.5" Margin="0,5"></Border>
+            <Border BorderBrush="#FFA49370" BorderThickness="1" Height="0.5" Margin="0,5" Visibility="{Binding Path=HasResult, Converter={StaticResource BooleanToVisibility}}"></Border>
+          </StackPanel>
           <!--Allocation-->
-          <StackPanel Orientation="Horizontal">
+          <StackPanel Orientation="Horizontal" Visibility="{Binding Path=HasResult, Converter={StaticResource BooleanToVisibility}}">
             <Image Source="{Binding Path=SelectedAsset.Allocation.Icon.Filename}" Height="25" Width="25" Margin="0,0,10,0"></Image>
             <TextBlock VerticalAlignment="Center" Text="{Binding Path=AllocationText}" Foreground="#FFFFE4AD" Margin="0,0,10,0"></TextBlock>
             <TextBlock VerticalAlignment="Center" Text="{Binding Path=SelectedAsset.Allocation.Text, Converter={StaticResource DescriptionConverter}}" Foreground="#FFDEAF04" FontWeight="Bold"></TextBlock>
           </StackPanel>
-          <Border BorderBrush="#FFA49370" BorderThickness="1" Height="0.5" Margin="0,5"></Border>
+          <Border BorderBrush="#FFA49370" BorderThickness="1" Height="0.5" Margin="0,5" Visibility="{Binding Path=HasResult, Converter={StaticResource BooleanToVisibility}}"></Border>
           <TextBlock VerticalAlignment="Center" Text="{Binding Path=SelectedAsset.EffectTargetInfo, Converter={StaticResource DescriptionConverter}}" Margin="0,0,14,10" Foreground="#FFA49370" TextWrapping="Wrap"></TextBlock>
           <!--FactoryUpgrade-->
           <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.FactoryUpgrades, Converter={StaticResource VisibilityConverter}}">
@@ -179,26 +174,32 @@
             <ItemsControl ItemsSource="{Binding Path=SelectedAsset.AttackableUpgrades}" ItemTemplate="{StaticResource UpgradeTemplate}"/>
           </Grid>
           <!--Expedition-->
-          <Border BorderBrush="#FFA49370" BorderThickness="1" Height="0.5" Margin="0,5" Visibility="{Binding Path=SelectedAsset.ExpeditionAttributes, Converter={StaticResource VisibilityConverter}}"></Border>
-          <TextBlock VerticalAlignment="Center" Foreground="#FFA49370" Text="{Binding Path=ExpeditionText}" Visibility="{Binding Path=SelectedAsset.ExpeditionAttributes, Converter={StaticResource VisibilityConverter}}" Margin="0,2,0,10"></TextBlock>
-          <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.ExpeditionAttributes, Converter={StaticResource VisibilityConverter}}">
-            <ItemsControl ItemsSource="{Binding Path=SelectedAsset.ExpeditionAttributes}" ItemTemplate="{StaticResource UpgradeTemplate}"/>
-          </Grid>
+          <StackPanel Visibility="{Binding Path=HasResult, Converter={StaticResource BooleanToVisibility}}">
+            <Border BorderBrush="#FFA49370" BorderThickness="1" Height="0.5" Margin="0,5" Visibility="{Binding Path=SelectedAsset.ExpeditionAttributes, Converter={StaticResource VisibilityConverter}}"></Border>
+            <TextBlock VerticalAlignment="Center" Foreground="#FFA49370" Text="{Binding Path=ExpeditionText}" Visibility="{Binding Path=SelectedAsset.ExpeditionAttributes, Converter={StaticResource VisibilityConverter}}" Margin="0,2,0,10"></TextBlock>
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.ExpeditionAttributes, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl ItemsSource="{Binding Path=SelectedAsset.ExpeditionAttributes}" ItemTemplate="{StaticResource UpgradeTemplate}"/>
+            </Grid>
+          </StackPanel>
           <!--Trade-->
-          <Border BorderBrush="#FFA49370" BorderThickness="1" Height="0.5" Margin="0,5" Visibility="{Binding Path=SelectedAsset.TradePrice, Converter={StaticResource VisibilityConverter}}"></Border>
-          <Grid Visibility="{Binding Path=SelectedAsset.TradePrice, Converter={StaticResource VisibilityConverter}}">
-            <Grid.ColumnDefinitions>
-              <ColumnDefinition Width="30"></ColumnDefinition>
-              <ColumnDefinition Width="*"></ColumnDefinition>
-              <ColumnDefinition Width="Auto"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <Image Grid.Column="0" Source="../Resources/data/ui/2kimages/main/icons/icon_credits.png" Height="22" Width="22" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
-            <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Path=TradeText}" Foreground="#FFFFE4AD"></TextBlock>
-            <TextBlock Grid.Column="2" VerticalAlignment="Center" Text="{Binding Path=SelectedAsset.TradePrice}" Foreground="#FFFFE4AD"></TextBlock>
-          </Grid>
+          <StackPanel Visibility="{Binding Path=HasResult, Converter={StaticResource BooleanToVisibility}}">
+            <Border BorderBrush="#FFA49370" BorderThickness="1" Height="0.5" Margin="0,5" Visibility="{Binding Path=SelectedAsset.TradePrice, Converter={StaticResource VisibilityConverter}}"></Border>
+            <Grid Visibility="{Binding Path=SelectedAsset.TradePrice, Converter={StaticResource VisibilityConverter}}">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+              </Grid.ColumnDefinitions>
+              <Image Grid.Column="0" Source="../Resources/data/ui/2kimages/main/icons/icon_credits.png" Height="22" Width="22" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+              <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Path=TradeText}" Foreground="#FFFFE4AD"></TextBlock>
+              <TextBlock Grid.Column="2" VerticalAlignment="Center" Text="{Binding Path=SelectedAsset.TradePrice}" Foreground="#FFFFE4AD"></TextBlock>
+            </Grid>
+          </StackPanel>
           <!--Info-->
-          <Border BorderBrush="#FFA49370" BorderThickness="1" Height="0.5" Margin="0,5"></Border>
-          <TextBlock Text="{Binding Path=SelectedAsset.Info, Converter={StaticResource DescriptionConverter}, ConverterParameter=Long}" Foreground="#FFA49370" FontStyle="Italic" TextWrapping="Wrap"></TextBlock>
+          <StackPanel Visibility="{Binding Path=HasResult, Converter={StaticResource BooleanToVisibility}}">
+            <Border BorderBrush="#FFA49370" BorderThickness="1" Height="0.5" Margin="0,5"></Border>
+            <TextBlock Text="{Binding Path=SelectedAsset.Info, Converter={StaticResource DescriptionConverter}, ConverterParameter=Long}" Foreground="#FFA49370" FontStyle="Italic" TextWrapping="Wrap"></TextBlock>
+          </StackPanel>
         </StackPanel>
       </Border>
 

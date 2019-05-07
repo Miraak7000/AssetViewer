@@ -35,14 +35,17 @@ namespace AssetViewer.Controls {
             result = result.OrderBy(o => o.Text.EN);
             break;
         }
+        if (!String.IsNullOrEmpty(this._SearchText)) {
+          result = result.Where(w => w.ID.StartsWith(this._SearchText, StringComparison.InvariantCultureIgnoreCase) || w.Text.EN.StartsWith(this._SearchText, StringComparison.InvariantCultureIgnoreCase) || w.Text.DE.StartsWith(this._SearchText, StringComparison.InvariantCultureIgnoreCase));
+        }
         return result;
       }
     }
     public Asset SelectedAsset { get; set; }
     public LinearGradientBrush RarityBrush {
       get {
-        if (this.SelectedAsset == null) return null;
-        switch (this.SelectedAsset.Rarity.EN) {
+        var selection = this.SelectedAsset?.Rarity?.EN ?? "Common";
+        switch (selection) {
           case "Uncommon":
             return new LinearGradientBrush(new GradientStopCollection() {
               new GradientStop(Color.FromRgb(65, 89, 41), 0),
@@ -158,9 +161,18 @@ namespace AssetViewer.Controls {
     public Boolean HasResult {
       get { return this.Items.Any(); }
     }
+    public String SearchText {
+      get { return this._SearchText; }
+      set {
+        this._SearchText = value;
+        this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
+        this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
+      }
+    }
     #endregion
 
     private readonly IEnumerable<Asset> Assets;
+    private String _SearchText = String.Empty;
 
     #region Constructor
     public HarborOfficeItem() {
