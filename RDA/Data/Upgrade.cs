@@ -219,7 +219,7 @@ namespace RDA.Data {
       if (value == null) {
         this.Value = String.Empty;
       } else {
-        this.Value = value > 0 ? $"+{value}" : $"{value}";
+        this.Value = value.ToString();
       }
     }
     #endregion

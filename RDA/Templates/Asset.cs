@@ -165,7 +165,7 @@ namespace RDA.Templates {
       this.Rarity = element.Element("Rarity") == null ? new Description("118002") : new Description(Helper.GetDescriptionID(element.Element("Rarity").Value));
       this.ItemType = element.Element("ItemType")?.Value ?? "Common";
       this.Allocation = new Allocation(element.Parent.Parent.Element("Template").Value, element.Element("Allocation")?.Value);
-      this.TradePrice = element.Element("TradePrice")?.Value;
+      this.TradePrice = element.Element("TradePrice") == null ? null : (Int32.Parse(element.Element("TradePrice").Value) / 4).ToString();
       if (this.ItemType == "None") this.ItemType = "Common";
       if (this.ItemType != "Specialist" && this.ItemType != "Common") throw new NotImplementedException();
     }
