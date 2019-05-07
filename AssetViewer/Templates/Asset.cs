@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Xml.Linq;
 using AssetViewer.Data;
 
@@ -34,6 +35,8 @@ namespace AssetViewer.Templates {
     public String TradePrice { get; set; }
     //
     public Description Info { get; set; }
+    //
+    public String Toolip { get; set; }
     #endregion
 
     #region Constructor
@@ -85,6 +88,13 @@ namespace AssetViewer.Templates {
       this.TradePrice = asset.Element("TradePrice")?.Value;
       if (asset.Element("Info") != null) {
         this.Info = new Description(asset.Element("Info"));
+      }
+      if (asset.Element("Sources") != null) {
+        var sb = new StringBuilder();
+        foreach (var item in asset.Element("Sources")?.Elements()) {
+          sb.AppendFormat("{0}{1}", item.Element("Name")?.Value, Environment.NewLine);
+        }
+        this.Toolip = sb.ToString();
       }
     }
     #endregion

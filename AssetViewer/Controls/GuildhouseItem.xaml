@@ -98,7 +98,7 @@
                  SelectionChanged="ListBoxItems_OnSelectionChanged" BorderBrush="#FF6D5B4B" HorizontalContentAlignment="Stretch">
           <ListBox.ItemTemplate>
             <DataTemplate>
-              <Grid MaxHeight="24">
+              <Grid MaxHeight="24" ToolTip="{Binding Path=Toolip}">
                 <Grid.ColumnDefinitions>
                   <ColumnDefinition Width="30"></ColumnDefinition>
                   <ColumnDefinition Width="*"></ColumnDefinition>

@@ -34,6 +34,8 @@ namespace RDA.Templates {
     public String TradePrice { get; set; }
     //
     public Description Info { get; set; }
+    //
+    public List<TempSource> Sources { get; set; }
     #endregion
 
     #region Constructor
@@ -113,6 +115,8 @@ namespace RDA.Templates {
             throw new NotImplementedException(element.Name.LocalName);
         }
       }
+      var sources = this.FindSources(this.ID).GroupBy(k => k.XPathSelectElement("Values/Standard/GUID").Value).Select(s => s.First());
+      this.Sources = sources.Select(s => new TempSource(s)).ToList();
     }
     #endregion
 
@@ -143,6 +147,8 @@ namespace RDA.Templates {
       result.Add(new XElement("TradePrice", this.TradePrice));
       //
       if (this.Info != null) result.Add(this.Info.ToXml("Info"));
+      //
+      result.Add(new XElement("Sources", this.Sources.Select(s => s.ToXml())));
       return result;
     }
     #endregion
@@ -299,6 +305,28 @@ namespace RDA.Templates {
       if (element.HasElements) {
         // TODO: needs to be implemented
       }
+    }
+    private IEnumerable<XElement> FindSources(String id) {
+      var result = new List<XElement>();
+      var links = Program.Original.Root.XPathSelectElements($"//Item[ItemLink={id} or Reward={id} or Pool={id}]").ToArray();
+      if (links.Length > 0) {
+        for (int i = 0; i < links.Length; i++) {
+          var element = links[i];
+          while (element.Name.LocalName != "Asset") {
+            element = element.Parent;
+          }
+          if (element.Element("Template").Value == "RewardPool") {
+            var nextID = element.XPathSelectElement("Values/Standard/GUID").Value;
+            var items = this.FindSources(nextID);
+            //if (!items.Any()) throw new IndexOutOfRangeException();
+            // some IDs are never linked somewhere
+            result.AddRange(items);
+          } else {
+            result.Add(element);
+          }
+        }
+      }
+      return result;
     }
     #endregion
 

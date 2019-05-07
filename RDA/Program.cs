@@ -46,8 +46,8 @@ namespace RDA {
 
       // Create Assets
       Program.Processing("GuildhouseItem");
-      Program.Processing("TownhallItem");
-      Program.Processing("HarborOfficeItem");
+      //Program.Processing("TownhallItem");
+      //Program.Processing("HarborOfficeItem");
     }
     private static void Processing(String template) {
       var result = new List<Asset>();
