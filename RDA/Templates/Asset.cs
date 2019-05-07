@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Xml.Linq;
 using System.Xml.XPath;
 using RDA.Data;
@@ -30,6 +29,7 @@ namespace RDA.Templates {
     public List<Upgrade> PopulationUpgrades { get; set; }
     public List<Upgrade> ElectricUpgrades { get; set; }
     public List<Upgrade> ExpeditionAttributes { get; set; }
+    public List<Upgrade> AttackableUpgrades { get; set; }
     //
     public String TradePrice { get; set; }
     //
@@ -38,92 +38,81 @@ namespace RDA.Templates {
 
     #region Constructor
     public Asset(XElement asset) {
-      this.ID = asset.XPathSelectElement("Values/Standard/GUID").Value;
-      this.Name = asset.XPathSelectElement("Values/Standard/Name").Value;
-      this.Icon = new Icon(asset.XPathSelectElement("Values/Standard/IconFilename").Value);
-      this.Text = new Description(asset.XPathSelectElement("Values/Standard/GUID").Value);
-      if (asset.XPathSelectElement("Values/Item/Rarity") == null) {
-        this.Rarity = new Description("118002");
-      } else {
-        this.Rarity = new Description(Helper.GetDescriptionID(asset.XPathSelectElement("Values/Item/Rarity").Value));
-      }
-      this.ItemType = asset.XPathSelectElement("Values/Item/ItemType")?.Value ?? "Common";
-      if (this.ItemType != "Specialist" && this.ItemType != "Common") throw new NotImplementedException();
-      //
-      this.Allocation = new Allocation(asset.XPathSelectElement("Values/Item/Allocation")?.Value);
-      //
-      if (asset.XPathSelectElement("Values/ItemEffect").HasElements && asset.XPathSelectElement("Values/ItemEffect/EffectTargets") == null) throw new NotImplementedException();
-      if (asset.XPathSelectElement("Values/ItemEffect").HasElements && asset.XPathSelectElement("Values/ItemEffect/EffectTargets").HasElements) {
-        this.EffectTargets = new List<Description>();
-        foreach (var item in asset.XPathSelectElements("Values/ItemEffect/EffectTargets/Item")) {
-          this.EffectTargets.Add(new Description(Program.DescriptionEN[item.Value], Program.DescriptionDE[item.Value]));
+      foreach (var element in asset.Element("Values").Elements()) {
+        switch (element.Name.LocalName) {
+          case "Text":
+          case "Locked":
+          case "Buff":
+            // ignore this nodes
+            break;
+          case "ItemAction":
+          case "IncidentInfluencerUpgrade":
+          case "IncidentInfectableUpgrade":
+          case "ItemGeneratorUpgrade":
+          case "PassiveTradeGoodGenUpgrade":
+            // TODO: should be implemented one day
+            break;
+          case "Standard":
+            this.ProcessElement_Standard(element);
+            break;
+          case "Item":
+            this.ProcessElement_Item(element);
+            break;
+          case "ItemEffect":
+            this.ProcessElement_ItemEffect(element);
+            break;
+          case "FactoryUpgrade":
+            this.ProcessElement_FactoryUpgrade(element);
+            break;
+          case "BuildingUpgrade":
+            this.ProcessElement_BuildingUpgrade(element);
+            break;
+          case "CultureUpgrade":
+            this.ProcessElement_CultureUpgrade(element);
+            break;
+          case "ModuleOwnerUpgrade":
+            this.ProcessElement_ModuleOwnerUpgrade(element);
+            break;
+          case "ResidenceUpgrade":
+            this.ProcessElement_ResidenceUpgrade(element);
+            break;
+          case "PopulationUpgrade":
+            this.ProcessElement_PopulationUpgrade(element);
+            break;
+          case "ElectricUpgrade":
+            this.ProcessElement_ElectricUpgrade(element);
+            break;
+          case "ExpeditionAttribute":
+            this.ProcessElement_ExpeditionAttribute(element);
+            break;
+          case "VisitorHarborUpgrade":
+            this.ProcessElement_VisitorHarborUpgrade(element);
+            break;
+          case "AttackerUpgrade":
+            this.ProcessElement_AttackerUpgrade(element);
+            break;
+          case "ShipyardUpgrade":
+            this.ProcessElement_ShipyardUpgrade(element);
+            break;
+          case "AttackableUpgrade":
+            this.ProcessElement_AttackableUpgrade(element);
+            break;
+          case "ProjectileUpgrade":
+            this.ProcessElement_ProjectileUpgrade(element);
+            break;
+          case "VehicleUpgrade":
+            this.ProcessElement_VehicleUpgrade(element);
+            break;
+          case "RepairCraneUpgrade":
+            this.ProcessElement_RepairCraneUpgrade(element);
+            break;
+          case "KontorUpgrade":
+            this.ProcessElement_KontorUpgrade(element);
+            break;
+          default:
+            throw new NotImplementedException(element.Name.LocalName);
         }
       }
-      //
-      if (asset.XPathSelectElement("Values/FactoryUpgrade").HasElements) {
-        this.FactoryUpgrades = new List<Upgrade>();
-        foreach (var item in asset.XPathSelectElements("Values/FactoryUpgrade").Elements()) {
-          this.FactoryUpgrades.Add(new Upgrade(item));
-        }
-      }
-      if (asset.XPathSelectElement("Values/BuildingUpgrade").HasElements) {
-        this.BuildingUpgrades = new List<Upgrade>();
-        foreach (var item in asset.XPathSelectElements("Values/BuildingUpgrade").Elements()) {
-          // TODO: this needs to be implemented
-          if (item.Name.LocalName == "ResolverUnitCountUpgrade") continue;
-          if (item.Name.LocalName == "PublicServiceFullSatisfactionDistance") continue;
-          if (item.Name.LocalName == "PublicServiceNoSatisfactionDistance") continue;
-          if (item.Name.LocalName == "ResolverUnitMovementSpeedUpgrade") continue;
-          if (item.Name.LocalName == "ResolverUnitDecreaseUpgrade") continue;
-          this.BuildingUpgrades.Add(new Upgrade(item));
-        }
-      }
-      if (asset.XPathSelectElement("Values/CultureUpgrade").HasElements) {
-        this.CultureUpgrades = new List<Upgrade>();
-        foreach (var item in asset.XPathSelectElements("Values/CultureUpgrade").Elements()) {
-          this.CultureUpgrades.Add(new Upgrade(item));
-        }
-      }
-      if (asset.XPathSelectElement("Values/ModuleOwnerUpgrade").HasElements) {
-        this.ModuleOwnerUpgrades = new List<Upgrade>();
-        foreach (var item in asset.XPathSelectElements("Values/ModuleOwnerUpgrade").Elements()) {
-          this.ModuleOwnerUpgrades.Add(new Upgrade(item));
-        }
-      }
-      if (asset.XPathSelectElement("Values/ResidenceUpgrade").HasElements) {
-        this.ResidenceUpgrades = new List<Upgrade>();
-        foreach (var item in asset.XPathSelectElements("Values/ResidenceUpgrade").Elements()) {
-          // TODO: this needs to be implemented
-          if (item.Name.LocalName == "NeedProvideNeedUpgrade") continue;
-          this.ResidenceUpgrades.Add(new Upgrade(item));
-        }
-      }
-      if (asset.XPathSelectElement("Values/PopulationUpgrade").HasElements) {
-        this.PopulationUpgrades = new List<Upgrade>();
-        foreach (var item in asset.XPathSelectElements("Values/PopulationUpgrade").Elements()) {
-          this.PopulationUpgrades.Add(new Upgrade(item));
-        }
-      }
-      if (asset.XPathSelectElement("Values/ElectricUpgrade").HasElements) {
-        this.ElectricUpgrades = new List<Upgrade>();
-        foreach (var item in asset.XPathSelectElements("Values/ElectricUpgrade").Elements()) {
-          this.ElectricUpgrades.Add(new Upgrade(item));
-        }
-      }
-      if (asset.XPathSelectElement("Values/ExpeditionAttribute").HasElements) {
-        var attributes = asset.XPathSelectElements("Values/ExpeditionAttribute/ExpeditionAttributes/Item").Where(w => w.HasElements).ToArray();
-        if (attributes.Length > 0) {
-          this.ExpeditionAttributes = new List<Upgrade>();
-          foreach (var attribute in attributes) {
-            if (attribute.Element("Attribute") == null) continue;
-            this.ExpeditionAttributes.Add(new Upgrade(attribute.Element("Attribute").Value, attribute.Element("Amount")?.Value));
-          }
-        }
-      }
-      //
-      this.TradePrice = asset.XPathSelectElement("Values/Item/TradePrice")?.Value;
-      //
-      this.Info = asset.XPathSelectElement("Values/Standard/InfoDescription") == null ? null : new Description(asset.XPathSelectElement("Values/Standard/InfoDescription").Value);
     }
     #endregion
 
@@ -149,11 +138,167 @@ namespace RDA.Templates {
       result.Add(new XElement("PopulationUpgrades", this.PopulationUpgrades == null ? null : this.PopulationUpgrades.Select(s => s.ToXml())));
       result.Add(new XElement("ElectricUpgrades", this.ElectricUpgrades == null ? null : this.ElectricUpgrades.Select(s => s.ToXml())));
       result.Add(new XElement("ExpeditionAttributes", this.ExpeditionAttributes == null ? null : this.ExpeditionAttributes.Select(s => s.ToXml())));
+      result.Add(new XElement("AttackableUpgrades", this.AttackableUpgrades == null ? null : this.AttackableUpgrades.Select(s => s.ToXml())));
       //
       result.Add(new XElement("TradePrice", this.TradePrice));
       //
       if (this.Info != null) result.Add(this.Info.ToXml("Info"));
       return result;
+    }
+    #endregion
+
+    #region Private Methods
+    private void ProcessElement_Standard(XElement element) {
+      this.ID = element.Element("GUID").Value;
+      this.Name = element.Element("Name").Value;
+      this.Icon = new Icon(element.Element("IconFilename").Value);
+      this.Text = new Description(element.Element("GUID").Value);
+      this.Info = element.Element("InfoDescription") == null ? null : new Description(element.Element("InfoDescription").Value);
+    }
+    private void ProcessElement_Item(XElement element) {
+      this.Rarity = element.Element("Rarity") == null ? new Description("118002") : new Description(Helper.GetDescriptionID(element.Element("Rarity").Value));
+      this.ItemType = element.Element("ItemType")?.Value ?? "Common";
+      this.Allocation = new Allocation(element.Parent.Parent.Element("Template").Value, element.Element("Allocation")?.Value);
+      this.TradePrice = element.Element("TradePrice")?.Value;
+      if (this.ItemType == "None") this.ItemType = "Common";
+      if (this.ItemType != "Specialist" && this.ItemType != "Common") throw new NotImplementedException();
+    }
+    private void ProcessElement_ItemEffect(XElement element) {
+      if (element.HasElements && element.Element("EffectTargets") == null) throw new NotImplementedException();
+      if (element.HasElements && element.Element("EffectTargets").HasElements) {
+        this.EffectTargets = new List<Description>();
+        foreach (var item in element.Element("EffectTargets").Elements()) {
+          this.EffectTargets.Add(new Description(Program.DescriptionEN[item.Value], Program.DescriptionDE[item.Value]));
+        }
+      }
+    }
+    private void ProcessElement_FactoryUpgrade(XElement element) {
+      if (element.HasElements) {
+        this.FactoryUpgrades = new List<Upgrade>();
+        foreach (var item in element.Elements()) {
+          this.FactoryUpgrades.Add(new Upgrade(item));
+        }
+      }
+    }
+    private void ProcessElement_BuildingUpgrade(XElement element) {
+      if (element.HasElements) {
+        this.BuildingUpgrades = new List<Upgrade>();
+        foreach (var item in element.Elements()) {
+          // TODO: this needs to be implemented
+          if (item.Name.LocalName == "ResolverUnitCountUpgrade") continue;
+          if (item.Name.LocalName == "PublicServiceFullSatisfactionDistance") continue;
+          if (item.Name.LocalName == "PublicServiceNoSatisfactionDistance") continue;
+          if (item.Name.LocalName == "ResolverUnitMovementSpeedUpgrade") continue;
+          if (item.Name.LocalName == "ResolverUnitDecreaseUpgrade") continue;
+          this.BuildingUpgrades.Add(new Upgrade(item));
+        }
+      }
+    }
+    private void ProcessElement_CultureUpgrade(XElement element) {
+      if (element.HasElements) {
+        this.CultureUpgrades = new List<Upgrade>();
+        foreach (var item in element.Elements()) {
+          this.CultureUpgrades.Add(new Upgrade(item));
+        }
+      }
+    }
+    private void ProcessElement_ModuleOwnerUpgrade(XElement element) {
+      if (element.HasElements) {
+        this.ModuleOwnerUpgrades = new List<Upgrade>();
+        foreach (var item in element.Elements()) {
+          this.ModuleOwnerUpgrades.Add(new Upgrade(item));
+        }
+      }
+    }
+    private void ProcessElement_ResidenceUpgrade(XElement element) {
+      if (element.HasElements) {
+        this.ResidenceUpgrades = new List<Upgrade>();
+        foreach (var item in element.Elements()) {
+          // TODO: this needs to be implemented
+          if (item.Name.LocalName == "NeedProvideNeedUpgrade") continue;
+          if (item.Name.LocalName == "GoodConsumptionUpgrade") continue;
+          if (item.Name.LocalName == "ChangedSupplyValueUpgrade") continue;
+          this.ResidenceUpgrades.Add(new Upgrade(item));
+        }
+      }
+    }
+    private void ProcessElement_PopulationUpgrade(XElement element) {
+      if (element.HasElements) {
+        this.PopulationUpgrades = new List<Upgrade>();
+        foreach (var item in element.Elements()) {
+          this.PopulationUpgrades.Add(new Upgrade(item));
+        }
+      }
+    }
+    private void ProcessElement_ElectricUpgrade(XElement element) {
+      if (element.HasElements) {
+        this.ElectricUpgrades = new List<Upgrade>();
+        foreach (var item in element.Elements()) {
+          this.ElectricUpgrades.Add(new Upgrade(item));
+        }
+      }
+    }
+    private void ProcessElement_ExpeditionAttribute(XElement element) {
+      if (element.HasElements) {
+        var attributes = element.XPathSelectElements("ExpeditionAttributes/Item").Where(w => w.HasElements).ToArray();
+        if (attributes.Length > 0) {
+          this.ExpeditionAttributes = new List<Upgrade>();
+          foreach (var attribute in attributes) {
+            if (attribute.Element("Attribute") == null) continue;
+            if (attribute.Element("Attribute").Value == "PerkFemale") continue;
+            if (attribute.Element("Attribute").Value == "PerkMale") continue;
+            this.ExpeditionAttributes.Add(new Upgrade(attribute.Element("Attribute").Value, attribute.Element("Amount")?.Value));
+          }
+        }
+      }
+    }
+    private void ProcessElement_VisitorHarborUpgrade(XElement element) {
+      if (element.HasElements) {
+        // TODO: needs to be implemented
+      }
+    }
+    private void ProcessElement_AttackerUpgrade(XElement element) {
+      if (element.HasElements) {
+        // TODO: this needs to be implemented
+      }
+    }
+    private void ProcessElement_ShipyardUpgrade(XElement element) {
+      if (element.HasElements) {
+        // TODO: needs to be implemented
+      }
+    }
+    private void ProcessElement_AttackableUpgrade(XElement element) {
+      if (element.HasElements) {
+        this.AttackableUpgrades = new List<Upgrade>();
+        foreach (var item in element.Elements()) {
+          // TODO: this needs to be implemented
+          if (item.Name.LocalName == "SelfHealUpgrade") continue;
+          if (item.Name.LocalName == "SelfHealPausedTimeIfAttackedUpgrade") continue;
+          if (item.Name.LocalName == "DamageReceiveFactor") continue;
+          if (item.Name.LocalName == "MoralePowerUpgrade") continue;
+          this.AttackableUpgrades.Add(new Upgrade(item));
+        }
+      }
+    }
+    private void ProcessElement_ProjectileUpgrade(XElement element) {
+      if (element.HasElements) {
+        throw new NotImplementedException();
+      }
+    }
+    private void ProcessElement_VehicleUpgrade(XElement element) {
+      if (element.HasElements) {
+        throw new NotImplementedException();
+      }
+    }
+    private void ProcessElement_RepairCraneUpgrade(XElement element) {
+      if (element.HasElements) {
+        // TODO: this needs to be implemented
+      }
+    }
+    private void ProcessElement_KontorUpgrade(XElement element) {
+      if (element.HasElements) {
+        // TODO: needs to be implemented
+      }
     }
     #endregion
 

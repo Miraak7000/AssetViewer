@@ -175,8 +175,18 @@ namespace RDA {
           return "12227";
         case "ProvideElectricity":
           return "12485";
+        case "InputBenefitModifier":
+          return "12690";
+        case "TaxModifierInPercent":
+          return "15198";
+        case "WorkforceModifierInPercent":
+          return "12676";
+        case "PerkArcheologist":
+          return "12262";
+        case "MaxHitpointsUpgrade":
+          return "1154";
         default:
-          throw new KeyNotFoundException();
+          throw new KeyNotFoundException(pattern);
       }
     }
     // Processing

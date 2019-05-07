@@ -107,8 +107,26 @@ namespace RDA.Data {
           this.Icon = new Icon("data/ui/2kimages/main/icons/icon_electricity.png");
           this.Text = new Description(Helper.GetDescriptionID(element.Name.LocalName));
           break;
+        case "InputBenefitModifier":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_credits.png");
+          this.Text = new Description(Helper.GetDescriptionID(element.Name.LocalName));
+          break;
+        case "TaxModifierInPercent":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_credits.png");
+          this.Text = new Description(Helper.GetDescriptionID(element.Name.LocalName));
+          isPercent = true;
+          break;
+        case "WorkforceModifierInPercent":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_kontor_2d.png");
+          this.Text = new Description(Helper.GetDescriptionID(element.Name.LocalName));
+          isPercent = true;
+          break;
+        case "MaxHitpointsUpgrade":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_plus.png");
+          this.Text = new Description(Helper.GetDescriptionID(element.Name.LocalName));
+          break;
         default:
-          throw new NotImplementedException();
+          throw new NotImplementedException(element.Name.LocalName);
       }
       if (value == null) {
         this.Value = String.Empty;
@@ -155,12 +173,6 @@ namespace RDA.Data {
           this.Icon = new Icon("data/ui/2kimages/main/icons/icon_threat_diseases_tint.png");
           this.Text = new Description(Helper.GetDescriptionID(key));
           break;
-        case "PerkFemale":
-        case "PerkMale":
-          value = null;
-          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_expedition_anthropologist.png");
-          this.Text = new Description(Helper.GetDescriptionID(key)).InsertBefore("Trait: ", "Merkmal: ");
-          break;
         case "PerkFormerPirate":
           value = null;
           this.Icon = new Icon("data/ui/2kimages/main/icons/icon_expedition_pirate.png");
@@ -192,6 +204,11 @@ namespace RDA.Data {
           this.Text = new Description(Helper.GetDescriptionID(key)).InsertBefore("Trait: ", "Merkmal: ");
           break;
         case "PerkPolyglot":
+          value = null;
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_generic_expedition.png");
+          this.Text = new Description(Helper.GetDescriptionID(key)).InsertBefore("Trait: ", "Merkmal: ");
+          break;
+        case "PerkArcheologist":
           value = null;
           this.Icon = new Icon("data/ui/2kimages/main/icons/icon_generic_expedition.png");
           this.Text = new Description(Helper.GetDescriptionID(key)).InsertBefore("Trait: ", "Merkmal: ");

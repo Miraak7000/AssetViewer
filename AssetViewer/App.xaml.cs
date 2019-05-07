@@ -18,7 +18,9 @@ namespace AssetViewer {
         var result = new Dictionary<Int32, Description>();
         result.Add(101, new Description("Asset:", "Gegenstand:"));
         result.Add(102, new Description("Guild house items", "Gildenhaus Gegenstände"));
-        result.Add(103, new Description("World Fair", "Weltausstellung"));
+        result.Add(103, new Description("Harbor office items", "Hafenmeisterei Gegenstände"));
+        result.Add(104, new Description("Town hall items", "Rathaus Gegenstände"));
+        result.Add(105, new Description("World Fair", "Weltausstellung"));
         result.Add(1001, new Description("Allocation:", "Zuweisung:"));
         result.Add(1002, new Description("Type:", "Typ:"));
         result.Add(1003, new Description("Target:", "Gebäude:"));

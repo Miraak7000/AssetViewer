@@ -12,30 +12,56 @@ namespace RDA.Data {
     #endregion
 
     #region Constructor
-    public Allocation(String value) {
-      switch (value) {
-        case "HarborOffice":
-          this.ID = value;
-          this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_harbour_kontor.png");
-          this.Text = new Description(Helper.GetDescriptionID(value));
+    public Allocation(String template, String value) {
+      switch (template) {
+        case "GuildhouseItem":
+          switch (value) {
+            case "HarborOffice":
+              this.ID = value;
+              this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_harbour_kontor.png");
+              this.Text = new Description(Helper.GetDescriptionID("HarborOffice"));
+              break;
+            case "TownHall":
+              this.ID = value;
+              this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_townhall.png");
+              this.Text = new Description(Helper.GetDescriptionID("TownHall"));
+              break;
+            case "RadiusBuilding":
+              // seems not being implemented, so simply use the TradeUnion
+              this.ID = "TradeUnion";
+              this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_guildhouse.png");
+              this.Text = new Description("2346");
+              break;
+            default:
+              if (value != null) throw new NotImplementedException();
+              this.ID = "TradeUnion";
+              this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_guildhouse.png");
+              this.Text = new Description("2346");
+              break;
+          }
           break;
-        case "TownHall":
-          this.ID = value;
-          this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_townhall.png");
-          this.Text = new Description(Helper.GetDescriptionID(value));
+        case "TownhallItem":
+          switch (value) {
+            default:
+              if (value != null && value != "None") throw new NotImplementedException();
+              this.ID = "TownHall";
+              this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_townhall.png");
+              this.Text = new Description("2346");
+              break;
+          }
           break;
-        case "RadiusBuilding":
-          // seems not being implemented, so simply use the TradeUnion
-          this.ID = "TradeUnion";
-          this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_guildhouse.png");
-          this.Text = new Description("2346");
+        case "HarborOfficeItem":
+          switch (value) {
+            default:
+              if (value != null && value != "None") throw new NotImplementedException();
+              this.ID = "HarborOffice";
+              this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_harbour_kontor.png");
+              this.Text = new Description(Helper.GetDescriptionID("HarborOffice"));
+              break;
+          }
           break;
         default:
-          if (value != null) throw new NotImplementedException();
-          this.ID = "TradeUnion";
-          this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_guildhouse.png");
-          this.Text = new Description("2346");
-          break;
+          throw new NotImplementedException(template);
       }
     }
     #endregion

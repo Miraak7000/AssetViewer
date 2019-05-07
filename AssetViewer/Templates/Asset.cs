@@ -29,6 +29,7 @@ namespace AssetViewer.Templates {
     public List<Upgrade> PopulationUpgrades { get; set; }
     public List<Upgrade> ElectricUpgrades { get; set; }
     public List<Upgrade> ExpeditionAttributes { get; set; }
+    public List<Upgrade> AttackableUpgrades { get; set; }
     //
     public String TradePrice { get; set; }
     //
@@ -77,6 +78,9 @@ namespace AssetViewer.Templates {
       }
       if (asset.Element("ExpeditionAttributes").HasElements) {
         this.ExpeditionAttributes = asset.Element("ExpeditionAttributes").Elements().Select(s => new Upgrade(s)).ToList();
+      }
+      if (asset.Element("AttackableUpgrades").HasElements) {
+        this.AttackableUpgrades = asset.Element("AttackableUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
       }
       this.TradePrice = asset.Element("TradePrice")?.Value;
       if (asset.Element("Info") != null) {

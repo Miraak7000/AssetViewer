@@ -102,16 +102,18 @@
       </Grid.ColumnDefinitions>
       <Grid Grid.Column="0">
         <ListBox x:Name="ListBoxItems" Background="Transparent" ItemsSource="{Binding Path=Items}" SelectedItem="{Binding Path=SelectedAsset}" 
-                 SelectionChanged="ListBoxItems_OnSelectionChanged" BorderBrush="#FF6D5B4B">
+                 SelectionChanged="ListBoxItems_OnSelectionChanged" BorderBrush="#FF6D5B4B" HorizontalContentAlignment="Stretch">
           <ListBox.ItemTemplate>
             <DataTemplate>
               <Grid MaxHeight="24">
                 <Grid.ColumnDefinitions>
                   <ColumnDefinition Width="30"></ColumnDefinition>
                   <ColumnDefinition Width="*"></ColumnDefinition>
+                  <ColumnDefinition Width="Auto"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <Image Grid.Column="0" Source="{Binding Path=Icon.Filename}" HorizontalAlignment="Left"></Image>
-                <TextBlock Grid.Column="1" Text="{Binding Path=Text, Converter={StaticResource DescriptionConverter}}" VerticalAlignment="Center"></TextBlock>
+                <TextBlock Grid.Column="1" Text="{Binding Path=Text, Converter={StaticResource DescriptionConverter}}" VerticalAlignment="Center" TextTrimming="CharacterEllipsis"></TextBlock>
+                <TextBlock Grid.Column="2" Text="{Binding Path=Text.ID}" VerticalAlignment="Center" FontSize="11" HorizontalAlignment="Right"></TextBlock>
               </Grid>
             </DataTemplate>
           </ListBox.ItemTemplate>
@@ -171,6 +173,10 @@
           <!--ElectricUpgrades-->
           <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.ElectricUpgrades, Converter={StaticResource VisibilityConverter}}">
             <ItemsControl ItemsSource="{Binding Path=SelectedAsset.ElectricUpgrades}" ItemTemplate="{StaticResource UpgradeTemplate}"/>
+          </Grid>
+          <!--AttackableUpgrades-->
+          <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.AttackableUpgrades, Converter={StaticResource VisibilityConverter}}">
+            <ItemsControl ItemsSource="{Binding Path=SelectedAsset.AttackableUpgrades}" ItemTemplate="{StaticResource UpgradeTemplate}"/>
           </Grid>
           <!--Expedition-->
           <Border BorderBrush="#FFA49370" BorderThickness="1" Height="0.5" Margin="0,5" Visibility="{Binding Path=SelectedAsset.ExpeditionAttributes, Converter={StaticResource VisibilityConverter}}"></Border>
