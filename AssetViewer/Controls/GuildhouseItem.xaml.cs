@@ -191,8 +191,6 @@ namespace AssetViewer.Controls {
 
     private readonly List<Asset> Assets;
     private String _SearchText = String.Empty;
-    private readonly IEnumerable<Asset> Assets;
-    #endregion
 
     #region Constructor
     public GuildhouseItem() {
