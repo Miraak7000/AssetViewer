@@ -7,12 +7,16 @@
         mc:Ignorable="d"
         Title="Anno 1800 - Asset Viewer" Height="650" Width="850" WindowStartupLocation="CenterScreen"
         MinHeight="650" MinWidth="850" Icon="Resources/AssetViewer.ico"
-        Loaded="MainWindow_OnLoaded" Background="#FFECD5A9">
+        Loaded="MainWindow_OnLoaded"  SnapsToDevicePixels="True">
 
   <Window.Resources>
     <BooleanToVisibilityConverter x:Key="BooleanToVisibility"></BooleanToVisibilityConverter>
     <converter:GlobalDescriptionConverter x:Key="Description"></converter:GlobalDescriptionConverter>
   </Window.Resources>
+
+  <Window.Background>
+    <ImageBrush ImageSource="Resources/data/ui/2kimages/main/assets16/bgr_playercreation_0.png" Stretch="UniformToFill"/>
+  </Window.Background>
 
   <Grid Margin="10">
     <Grid.RowDefinitions>
@@ -31,8 +35,6 @@
       <TextBlock Grid.Column="0" VerticalAlignment="Center" Text="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=101}"></TextBlock>
       <ComboBox x:Name="ComboBoxAsset" Grid.Column="2" SelectionChanged="ComboBoxAsset_OnSelectionChanged">
         <TextBlock Text="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=102}"></TextBlock>
-        <TextBlock Text="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=103}"></TextBlock>
-        <TextBlock Text="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=104}"></TextBlock>
         <TextBlock Text="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=105}"></TextBlock>
       </ComboBox>
       <ComboBox x:Name="ComboBoxLanguage" SelectedIndex="0" Grid.Column="4" SelectionChanged="ComboBoxLanguage_OnSelectionChanged">

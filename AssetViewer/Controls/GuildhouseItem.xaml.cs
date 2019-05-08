@@ -21,22 +21,25 @@ namespace AssetViewer.Controls {
         var rarity = this.ComboBoxRarities.SelectedItem as String;
         var type = this.ComboBoxTypes.SelectedItem as String;
         var target = this.ComboBoxTargets.SelectedItem as String;
-        var result = this.Assets;
+        var equipped = this.ComboBoxEquipped.SelectedItem as String;
+        var result = this.Assets.AsQueryable();
         if (!String.IsNullOrEmpty(type)) result = result.Where(w => w.ItemType == type);
         switch (App.Language) {
           case Languages.German:
             if (!String.IsNullOrEmpty(rarity)) result = result.Where(w => w.Rarity.DE == rarity);
             if (!String.IsNullOrEmpty(target)) result = result.Where(w => w.EffectTargets.Select(s => s.DE).Contains(target));
+            if (!String.IsNullOrEmpty(equipped)) result = result.Where(w => w.Allocation.Text.DE == equipped);
             result = result.OrderBy(o => o.Text.DE);
             break;
           default:
             if (!String.IsNullOrEmpty(rarity)) result = result.Where(w => w.Rarity.EN == rarity);
             if (!String.IsNullOrEmpty(target)) result = result.Where(w => w.EffectTargets.Select(s => s.EN).Contains(target));
+            if (!String.IsNullOrEmpty(equipped)) result = result.Where(w => w.Allocation.Text.EN == equipped);
             result = result.OrderBy(o => o.Text.EN);
             break;
         }
         if (!String.IsNullOrEmpty(this._SearchText)) {
-          result = result.Where(w => w.ID.StartsWith(this._SearchText, StringComparison.InvariantCultureIgnoreCase) || w.Text.EN.StartsWith(this._SearchText, StringComparison.InvariantCultureIgnoreCase) || w.Text.DE.StartsWith(this._SearchText, StringComparison.InvariantCultureIgnoreCase));
+          result = result.Where(w => w.ID.StartsWith(this._SearchText, StringComparison.InvariantCultureIgnoreCase) || w.Text.EN.Contains(this._SearchText) || w.Text.DE.Contains(this._SearchText));
         }
         return result;
       }
@@ -158,6 +161,21 @@ namespace AssetViewer.Controls {
         return result;
       }
     }
+    public IEnumerable<String> Equipped {
+      get {
+        List<String> result;
+        switch (App.Language) {
+          case Languages.German:
+            result = this.Assets.Select(s => s.Allocation.Text.DE).Distinct().OrderBy(o => o).ToList();
+            break;
+          default:
+            result = this.Assets.Select(s => s.Allocation.Text.EN).Distinct().OrderBy(o => o).ToList();
+            break;
+        }
+        result.Insert(0, String.Empty);
+        return result;
+      }
+    }
     public Boolean HasResult {
       get { return this.Items.Any(); }
     }
@@ -171,17 +189,30 @@ namespace AssetViewer.Controls {
     }
     #endregion
 
-    private readonly IEnumerable<Asset> Assets;
+    private readonly List<Asset> Assets;
     private String _SearchText = String.Empty;
 
     #region Constructor
     public GuildhouseItem() {
       this.InitializeComponent();
+      this.Assets = new List<Asset>();
       ((MainWindow)Application.Current.MainWindow).ComboBoxLanguage.SelectionChanged += this.ComboBoxLanguage_SelectionChanged;
       using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.GuildhouseItem.xml")) {
         using (var reader = new StreamReader(stream)) {
           var document = XDocument.Parse(reader.ReadToEnd()).Root;
-          this.Assets = document.Elements().Select(s => new Asset(s)).ToArray();
+          this.Assets.AddRange(document.Elements().Select(s => new Asset(s)));
+        }
+      }
+      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.HarborOfficeItem.xml")) {
+        using (var reader = new StreamReader(stream)) {
+          var document = XDocument.Parse(reader.ReadToEnd()).Root;
+          this.Assets.AddRange(document.Elements().Select(s => new Asset(s)));
+        }
+      }
+      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.TownhallItem.xml")) {
+        using (var reader = new StreamReader(stream)) {
+          var document = XDocument.Parse(reader.ReadToEnd()).Root;
+          this.Assets.AddRange(document.Elements().Select(s => new Asset(s)));
         }
       }
       this.DataContext = this;
@@ -193,9 +224,8 @@ namespace AssetViewer.Controls {
       this.ComboBoxRarities.SelectedIndex = 0;
       this.ComboBoxTypes.SelectedIndex = 0;
       this.ComboBoxTargets.SelectedIndex = 0;
+      this.ComboBoxEquipped.SelectedIndex = 0;
       this.ListBoxItems.SelectedIndex = 0;
-      //this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
-      //this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
     }
     private void ComboBoxRarities_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
@@ -209,16 +239,10 @@ namespace AssetViewer.Controls {
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
     }
-    //private void CheckBoxFactoryUpgrades_OnChanged(Object sender, RoutedEventArgs e) {
-    //  this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
-    //  this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
-    //  this.ListBoxItems.SelectedIndex = 0;
-    //}
-    //private void CheckBoxBuildingUpgrades_OnChanged(Object sender, RoutedEventArgs e) {
-    //  this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
-    //  this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
-    //  this.ListBoxItems.SelectedIndex = 0;
-    //}
+    private void ComboBoxEquipped_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
+      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
+      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
+    }
     private void ListBoxItems_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
       if (e.AddedItems.Count == 0) this.ListBoxItems.SelectedIndex = 0;
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SelectedAsset"));
@@ -233,13 +257,10 @@ namespace AssetViewer.Controls {
           App.Language = Languages.German;
           break;
       }
-      //this.ComboBoxAllocations.SelectedItem = null;
-      //this.ComboBoxTypes.SelectedItem = null;
-      //this.ComboBoxTargets.SelectedItem = null;
-      //this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Descriptions"));
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Rarities"));
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("ItemTypes"));
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Targets"));
+      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Equipped"));
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SelectedAsset"));
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("RarityBrush"));
@@ -247,21 +268,6 @@ namespace AssetViewer.Controls {
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("ExpeditionText"));
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("TradeText"));
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
-      //this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Allocations"));
-      //this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Targets"));
-      //this.ComboBoxAllocations.SelectedIndex = 0;
-      //this.ComboBoxTypes.SelectedIndex = 0;
-      //this.ComboBoxTargets.SelectedIndex = 0;
-    }
-    private void CheckBoxPopulationUpgrade_OnChanged(Object sender, RoutedEventArgs e) {
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
-      this.ListBoxItems.SelectedIndex = 0;
-    }
-    private void CheckBoxResidenceUpgrade_OnChanged(Object sender, RoutedEventArgs e) {
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
-      this.ListBoxItems.SelectedIndex = 0;
     }
     #endregion
 

@@ -58,12 +58,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Controls\HarborOfficeItem.xaml.cs">
-      <DependentUpon>HarborOfficeItem.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\TownhallItem.xaml.cs">
-      <DependentUpon>TownhallItem.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Converter\DescriptionConverter.cs" />
     <Compile Include="Converter\VisibilityConverter.cs" />
     <Compile Include="Data\Allocation.cs" />
@@ -95,14 +89,6 @@
     <Compile Include="Templates\TemplateBuildPermitBuilding.xaml.cs">
       <DependentUpon>TemplateBuildPermitBuilding.xaml</DependentUpon>
     </Compile>
-    <Page Include="Controls\HarborOfficeItem.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Controls\TownhallItem.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Controls\GuildhouseItem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -767,7 +753,6 @@
     <EmbeddedResource Include="Resources\Assets\HarborOfficeItem.xml" />
     <EmbeddedResource Include="Resources\Assets\TownhallItem.xml" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\consumables\icon_building_repair_1.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\consumables\icon_building_repair_2.png" />
@@ -838,6 +823,9 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_worker_408.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_worker_804.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_attractiveness_house_big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\assets16\bgr_playercreation_0.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
