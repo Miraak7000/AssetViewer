@@ -4,6 +4,7 @@ using System.Linq;
 using System.Xml.Linq;
 using System.Xml.XPath;
 using RDA.Data;
+using RDA.Library;
 
 namespace RDA.Templates {
 
@@ -115,10 +116,12 @@ namespace RDA.Templates {
             throw new NotImplementedException(element.Name.LocalName);
         }
       }
-      var sources = this.FindSources(this.ID).GroupBy(k => k.XPathSelectElement("Values/Standard/GUID").Value).Select(s => s.First());
-      this.Sources = sources.Select(s => new TempSource(s)).ToList();
+      var sources = this.FindSources(this.ID, new List<String>()).ToArray();
+      //this.Sources = sources.Select(s => new TempSource(s)).ToList();
     }
+    public String Path = String.Empty;
     #endregion
+
 
     #region Public Methods
     public XElement ToXml() {
@@ -150,6 +153,9 @@ namespace RDA.Templates {
       //
       result.Add(new XElement("Sources", this.Sources.Select(s => s.ToXml())));
       return result;
+    }
+    public override String ToString() {
+      return $"{this.ID} - {this.Name}";
     }
     #endregion
 
@@ -306,23 +312,39 @@ namespace RDA.Templates {
         // TODO: needs to be implemented
       }
     }
-    private IEnumerable<XElement> FindSources(String id) {
+    private List<XElement> FindSources(String id, List<String> previousIDs) {
+      previousIDs.Add(id);
       var result = new List<XElement>();
-      var links = Program.Original.Root.XPathSelectElements($"//Item[ItemLink={id} or Reward={id} or Pool={id}]").ToArray();
+      var links = Program.Original.Root.XPathSelectElements($"//*[text()={id} and not(self::GUID) and not(self::InsertEvent)]").ToArray();
       if (links.Length > 0) {
         for (int i = 0; i < links.Length; i++) {
           var element = links[i];
-          while (element.Name.LocalName != "Asset") {
+          while (true) {
+            if (element.Name.LocalName == "Asset" && element.HasElements) break;
             element = element.Parent;
           }
-          if (element.Element("Template").Value == "RewardPool") {
-            var nextID = element.XPathSelectElement("Values/Standard/GUID").Value;
-            var items = this.FindSources(nextID);
-            //if (!items.Any()) throw new IndexOutOfRangeException();
-            // some IDs are never linked somewhere
-            result.AddRange(items);
-          } else {
-            result.Add(element);
+          if (element.Element("Template") == null) continue;
+          switch (element.Element("Template").Value) {
+            case "AssetPool":
+            case "Expedition":
+            case "Profile_3rdParty":
+            case "Profile_3rdParty_Pirate":
+              if (!element.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) result.AddSourceAsset(element);
+              break;
+            case "RewardPool":
+            case "ExpeditionDecision":
+            case "ExpeditionOption":
+            case "ExpeditionEvent":
+            case "ExpeditionEventPool":
+            case "RewardItemPool":
+              if (previousIDs.Contains(element.XPathSelectElement("Values/Standard/GUID").Value)) continue;
+              var items = this.FindSources(element.XPathSelectElement("Values/Standard/GUID").Value, previousIDs);
+              foreach (var item in items) {
+                result.AddSourceAsset(item);
+              }
+              break;
+            default:
+              throw new NotImplementedException();
           }
         }
       }

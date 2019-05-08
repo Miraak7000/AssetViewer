@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography;
 using System.Xml.Linq;
 using System.Xml.XPath;
 
@@ -9,7 +10,7 @@ namespace RDA.Data {
     #region Properties
     public String ID { get; set; }
     public String Name { get; set; }
-    public String Text { get; set; }
+    public Description Text { get; set; }
     public String IconFilename { get; set; }
     #endregion
 
@@ -17,7 +18,20 @@ namespace RDA.Data {
     public TempSource(XElement element) {
       this.ID = element.XPathSelectElement("Values/Standard/GUID").Value;
       this.Name = element.XPathSelectElement("Values/Standard/Name").Value;
-      this.Text = element.XPathSelectElement("Values/Text/LocaText/English/Text")?.Value;
+      switch (element.Element("Template").Value) {
+        case "AssetPool":
+          // no text available
+          break;
+        case "Expedition":
+          this.Text = new Description(element.XPathSelectElement("Values/Expedition/ExpeditionName").Value);
+          break;
+        default:
+          throw new NotImplementedException();
+      }
+      //var textID =
+      //this.Text = element.XPathSelectElement("Values/Text/LocaText/English/Text")?.Value;
+      //if (String.IsNullOrEmpty(this.Text)) this.Text = element.XPathSelectElement("Values/Expedition/ExpeditionName")?.Value;
+
       this.IconFilename = element.XPathSelectElement("Values/Standard/IconFilename")?.Value;
     }
     #endregion

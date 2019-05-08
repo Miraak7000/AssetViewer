@@ -59,8 +59,10 @@
     <Compile Include="Data\InputAmountUpgrade.cs" />
     <Compile Include="Data\ReplaceInput.cs" />
     <Compile Include="Data\TempSource.cs" />
+    <Compile Include="Data\ThirdParty.cs" />
     <Compile Include="Data\Upgrade.cs" />
     <Compile Include="Helper.cs" />
+    <Compile Include="Library\Extensions.cs" />
     <Compile Include="Monument.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -97,6 +99,7 @@
     <Content Include="Modified\Assets_PowerplantBuilding.xml" />
     <Content Include="Modified\Assets_RewardPool.xml" />
     <Content Include="Modified\Assets_SlotFactoryBuilding7.xml" />
+    <Content Include="Modified\Assets_Sources.xml" />
     <Content Include="Modified\Assets_Text.xml" />
     <Content Include="Modified\Assets_TownhallItem.xml" />
     <Content Include="Modified\TemplateNames.xml" />

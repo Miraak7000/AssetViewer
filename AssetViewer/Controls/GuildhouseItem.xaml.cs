@@ -50,31 +50,31 @@ namespace AssetViewer.Controls {
         var selection = this.SelectedAsset?.Rarity?.EN ?? "Common";
         switch (selection) {
           case "Uncommon":
-            return new LinearGradientBrush(new GradientStopCollection() {
+            return new LinearGradientBrush(new GradientStopCollection {
               new GradientStop(Color.FromRgb(65, 89, 41), 0),
               new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
               new GradientStop(Color.FromRgb(42, 44, 39), 1)
             }, 90);
           case "Rare":
-            return new LinearGradientBrush(new GradientStopCollection() {
+            return new LinearGradientBrush(new GradientStopCollection {
               new GradientStop(Color.FromRgb(50, 60, 83), 0),
               new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
               new GradientStop(Color.FromRgb(42, 44, 39), 1)
             }, 90);
           case "Epic":
-            return new LinearGradientBrush(new GradientStopCollection() {
+            return new LinearGradientBrush(new GradientStopCollection {
               new GradientStop(Color.FromRgb(90, 65, 89), 0),
               new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
               new GradientStop(Color.FromRgb(42, 44, 39), 1)
             }, 90);
           case "Legendary":
-            return new LinearGradientBrush(new GradientStopCollection() {
+            return new LinearGradientBrush(new GradientStopCollection {
               new GradientStop(Color.FromRgb(98, 66, 46), 0),
               new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
               new GradientStop(Color.FromRgb(42, 44, 39), 1)
             }, 90);
           default:
-            return new LinearGradientBrush(new GradientStopCollection() {
+            return new LinearGradientBrush(new GradientStopCollection {
               new GradientStop(Color.FromRgb(126, 128, 125), 0),
               new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
               new GradientStop(Color.FromRgb(42, 44, 39), 1)
@@ -119,7 +119,7 @@ namespace AssetViewer.Controls {
       get {
         switch (App.Language) {
           case Languages.German:
-            return new String[] {
+            return new[] {
               String.Empty,
               "Gewöhnlich",
               "Ungewöhnlich",
@@ -128,7 +128,7 @@ namespace AssetViewer.Controls {
               "Legendär"
             };
           default:
-            return new String[] {
+            return new[] {
               String.Empty,
               "Common",
               "Uncommon",
@@ -191,6 +191,8 @@ namespace AssetViewer.Controls {
 
     private readonly List<Asset> Assets;
     private String _SearchText = String.Empty;
+    private readonly IEnumerable<Asset> Assets;
+    #endregion
 
     #region Constructor
     public GuildhouseItem() {
@@ -215,6 +217,7 @@ namespace AssetViewer.Controls {
           this.Assets.AddRange(document.Elements().Select(s => new Asset(s)));
         }
       }
+      var o1 = this.Assets.SelectMany(s => s.Sources).GroupBy(k => k.Item1).Select(s => new { s.Key, s.First().Item2 }).OrderBy(o => o.Item2).ToArray();
       this.DataContext = this;
     }
     #endregion

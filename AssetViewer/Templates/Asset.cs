@@ -36,6 +36,7 @@ namespace AssetViewer.Templates {
     //
     public Description Info { get; set; }
     //
+    public List<Tuple<String, String>> Sources { get; set; }
     public String Toolip { get; set; }
     #endregion
 
@@ -90,8 +91,10 @@ namespace AssetViewer.Templates {
         this.Info = new Description(asset.Element("Info"));
       }
       if (asset.Element("Sources") != null) {
+        this.Sources = new List<Tuple<String, String>>();
         var sb = new StringBuilder();
         foreach (var item in asset.Element("Sources")?.Elements()) {
+          this.Sources.Add(new Tuple<String, String>(item.Attribute("ID")?.Value, item.Element("Name")?.Value));
           sb.AppendFormat("{0}{1}", item.Element("Name")?.Value, Environment.NewLine);
         }
         this.Toolip = sb.ToString();
