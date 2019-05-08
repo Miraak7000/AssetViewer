@@ -47,31 +47,31 @@ namespace AssetViewer.Controls {
         var selection = this.SelectedAsset?.Rarity?.EN ?? "Common";
         switch (selection) {
           case "Uncommon":
-            return new LinearGradientBrush(new GradientStopCollection() {
+            return new LinearGradientBrush(new GradientStopCollection {
               new GradientStop(Color.FromRgb(65, 89, 41), 0),
               new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
               new GradientStop(Color.FromRgb(42, 44, 39), 1)
             }, 90);
           case "Rare":
-            return new LinearGradientBrush(new GradientStopCollection() {
+            return new LinearGradientBrush(new GradientStopCollection {
               new GradientStop(Color.FromRgb(50, 60, 83), 0),
               new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
               new GradientStop(Color.FromRgb(42, 44, 39), 1)
             }, 90);
           case "Epic":
-            return new LinearGradientBrush(new GradientStopCollection() {
+            return new LinearGradientBrush(new GradientStopCollection {
               new GradientStop(Color.FromRgb(90, 65, 89), 0),
               new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
               new GradientStop(Color.FromRgb(42, 44, 39), 1)
             }, 90);
           case "Legendary":
-            return new LinearGradientBrush(new GradientStopCollection() {
+            return new LinearGradientBrush(new GradientStopCollection {
               new GradientStop(Color.FromRgb(98, 66, 46), 0),
               new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
               new GradientStop(Color.FromRgb(42, 44, 39), 1)
             }, 90);
           default:
-            return new LinearGradientBrush(new GradientStopCollection() {
+            return new LinearGradientBrush(new GradientStopCollection {
               new GradientStop(Color.FromRgb(126, 128, 125), 0),
               new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
               new GradientStop(Color.FromRgb(42, 44, 39), 1)
@@ -116,7 +116,7 @@ namespace AssetViewer.Controls {
       get {
         switch (App.Language) {
           case Languages.German:
-            return new String[] {
+            return new[] {
               String.Empty,
               "Gewöhnlich",
               "Ungewöhnlich",
@@ -125,7 +125,7 @@ namespace AssetViewer.Controls {
               "Legendär"
             };
           default:
-            return new String[] {
+            return new[] {
               String.Empty,
               "Common",
               "Uncommon",
@@ -171,8 +171,10 @@ namespace AssetViewer.Controls {
     }
     #endregion
 
-    private readonly IEnumerable<Asset> Assets;
+    #region Fields
     private String _SearchText = String.Empty;
+    private readonly IEnumerable<Asset> Assets;
+    #endregion
 
     #region Constructor
     public GuildhouseItem() {
@@ -184,6 +186,7 @@ namespace AssetViewer.Controls {
           this.Assets = document.Elements().Select(s => new Asset(s)).ToArray();
         }
       }
+      var o1 = this.Assets.SelectMany(s => s.Sources).GroupBy(k => k.Item1).Select(s => new { s.Key, s.First().Item2 }).OrderBy(o => o.Item2).ToArray();
       this.DataContext = this;
     }
     #endregion
@@ -194,8 +197,6 @@ namespace AssetViewer.Controls {
       this.ComboBoxTypes.SelectedIndex = 0;
       this.ComboBoxTargets.SelectedIndex = 0;
       this.ListBoxItems.SelectedIndex = 0;
-      //this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
-      //this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
     }
     private void ComboBoxRarities_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
@@ -209,16 +210,6 @@ namespace AssetViewer.Controls {
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
     }
-    //private void CheckBoxFactoryUpgrades_OnChanged(Object sender, RoutedEventArgs e) {
-    //  this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
-    //  this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
-    //  this.ListBoxItems.SelectedIndex = 0;
-    //}
-    //private void CheckBoxBuildingUpgrades_OnChanged(Object sender, RoutedEventArgs e) {
-    //  this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
-    //  this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
-    //  this.ListBoxItems.SelectedIndex = 0;
-    //}
     private void ListBoxItems_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
       if (e.AddedItems.Count == 0) this.ListBoxItems.SelectedIndex = 0;
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SelectedAsset"));
@@ -252,16 +243,6 @@ namespace AssetViewer.Controls {
       //this.ComboBoxAllocations.SelectedIndex = 0;
       //this.ComboBoxTypes.SelectedIndex = 0;
       //this.ComboBoxTargets.SelectedIndex = 0;
-    }
-    private void CheckBoxPopulationUpgrade_OnChanged(Object sender, RoutedEventArgs e) {
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
-      this.ListBoxItems.SelectedIndex = 0;
-    }
-    private void CheckBoxResidenceUpgrade_OnChanged(Object sender, RoutedEventArgs e) {
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
-      this.ListBoxItems.SelectedIndex = 0;
     }
     #endregion
 
