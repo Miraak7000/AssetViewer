@@ -1,5 +1,1201 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <VehicleItem>
+  <Asset ID="192113">
+    <Name>Steam Ship Annihilator</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/ship_military/icon_pucklegun.png</Filename>
+    </Icon>
+    <Text ID="192113">
+      <EN>Steam Ship Annihilator</EN>
+      <DE>Dampfschiff-Vernichter</DE>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="SailShip">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades />
+    <TradePrice>10000</TradePrice>
+    <Sources />
+  </Asset>
+  <Asset ID="192089">
+    <Name>State-of-the-Art Cannons</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/icon_advanced_weaponry.png</Filename>
+    </Icon>
+    <Text ID="192089">
+      <EN>State-of-the-Art Cannons</EN>
+      <DE>Hochmoderne Kanonen</DE>
+    </Text>
+    <Rarity ID="118006">
+      <EN>Legendary</EN>
+      <DE>Legendär</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="SailShip">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades />
+    <TradePrice>100000</TradePrice>
+    <Sources />
+  </Asset>
+  <Asset ID="190138">
+    <Name>ship speed</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/icons/icon_shipsymbol.png</Filename>
+    </Icon>
+    <Text ID="190138">
+      <EN>one time equip Sails</EN>
+      <DE>one time equip Sails</DE>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="SailShip">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades />
+    <TradePrice>250</TradePrice>
+    <Sources />
+  </Asset>
+  <Asset ID="190025">
+    <Name>common steamsip speed boost</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
+    </Icon>
+    <Text ID="190025">
+      <EN>Crappy Steam Motor</EN>
+      <DE>Miese Dampfmaschine</DE>
+    </Text>
+    <Rarity ID="118002">
+      <EN>Common</EN>
+      <DE>Gewöhnlich</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="SteamShip">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png</Filename>
+      </Icon>
+      <Text ID="2344">
+        <EN>Steamships</EN>
+        <DE>Dampfschiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradePrice>1250</TradePrice>
+    <Sources />
+  </Asset>
+  <Asset ID="192087">
+    <Name>Cannon Upgrade</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/icon_weapons.png</Filename>
+    </Icon>
+    <Text ID="192087">
+      <EN>Cannon Upgrade</EN>
+      <DE>Kanonen-Ausbau</DE>
+    </Text>
+    <Rarity ID="118004">
+      <EN>Rare</EN>
+      <DE>Selten</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="SailShip">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades />
+    <TradePrice>12500</TradePrice>
+    <Sources />
+  </Asset>
+  <Asset ID="190592">
+    <Name>ShipAccuracyItem</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
+    </Icon>
+    <Text ID="190592">
+      <EN>Spyglass</EN>
+      <DE>Spyglass</DE>
+    </Text>
+    <Rarity ID="118006">
+      <EN>Legendary</EN>
+      <DE>Legendär</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="SailShip">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades />
+    <TradePrice>250</TradePrice>
+    <Sources />
+  </Asset>
+  <Asset ID="190161">
+    <Name>Test Quest Item</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+    </Icon>
+    <Text ID="190161">
+      <EN>Test Quest Item</EN>
+      <DE>Test Quest Item</DE>
+    </Text>
+    <Rarity ID="118002">
+      <EN>Common</EN>
+      <DE>Gewöhnlich</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="SailShip">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades />
+    <TradePrice />
+    <Sources />
+  </Asset>
+  <Asset ID="192114">
+    <Name>Building Annihilator</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/ship_military/icon_pucklegun.png</Filename>
+    </Icon>
+    <Text ID="192114">
+      <EN>Building Annihilator</EN>
+      <DE>Gebäude-Vernichter</DE>
+    </Text>
+    <Rarity ID="118006">
+      <EN>Legendary</EN>
+      <DE>Legendär</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="SailShip">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades />
+    <TradePrice>18750</TradePrice>
+    <Sources />
+  </Asset>
+  <Asset ID="6000004">
+    <Name>VehicleTestItem</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+    </Icon>
+    <Text ID="6000004">
+      <EN>SimpleTestItem</EN>
+      <DE>SimpleTestItem</DE>
+    </Text>
+    <Rarity ID="118002">
+      <EN>Common</EN>
+      <DE>Gewöhnlich</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="SailShip">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades />
+    <TradePrice />
+    <Sources />
+  </Asset>
+  <Asset ID="192088">
+    <Name>Advanced Cannons</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/icon_advanced_weaponry.png</Filename>
+    </Icon>
+    <Text ID="192088">
+      <EN>Advanced Cannons</EN>
+      <DE>Fortgeschrittene Kanonen</DE>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="SailShip">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades />
+    <TradePrice>50000</TradePrice>
+    <Sources />
+  </Asset>
+  <Asset ID="192112">
+    <Name>Sail Ship Annihilator</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/ship_military/icon_pucklegun.png</Filename>
+    </Icon>
+    <Text ID="192112">
+      <EN>Sailing Ship Annihilator</EN>
+      <DE>Segelschiff-Vernichter</DE>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="SailShip">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades />
+    <TradePrice>10000</TradePrice>
+    <Sources />
+  </Asset>
+  <Asset ID="190591">
+    <Name>ShipMaintainanceItem</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/icons/icon_repair_crane_2d.png</Filename>
+    </Icon>
+    <Text ID="190591">
+      <EN>Ship Mechanic</EN>
+      <DE>Ship Mechanic</DE>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="SailShip">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades />
+    <TradePrice>250</TradePrice>
+    <Sources />
+  </Asset>
+  <Asset ID="192086">
+    <Name>Basic Cannon Upgrade</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/icon_weapons.png</Filename>
+    </Icon>
+    <Text ID="192086">
+      <EN>Basic Cannon Upgrade</EN>
+      <DE>Einfacher Kanonen-Ausbau</DE>
+    </Text>
+    <Rarity ID="118003">
+      <EN>Uncommon</EN>
+      <DE>Ungewöhnlich</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="SailShip">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades />
+    <TradePrice>3750</TradePrice>
+    <Sources />
+  </Asset>
+  <Asset ID="190024">
+    <Name>common sailship speed boost</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/icon_sail.png</Filename>
+    </Icon>
+    <Text ID="190024">
+      <EN>Crappy Sails</EN>
+      <DE>Miese Segel</DE>
+    </Text>
+    <Rarity ID="118002">
+      <EN>Common</EN>
+      <DE>Gewöhnlich</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="SailShip">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradePrice>250</TradePrice>
+    <Sources>
+      <Source ID="152560">
+        <Name>Use Item/Smuggle Sunken Poetry 3 - Submarine Archaeology - Pincess Qing DISABLED</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="79">
+          <EN>Quest - Princess Qing</EN>
+          <DE>Quest - Prinzessin Qing</DE>
+        </Text>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="191878">
+    <Name>White Flag</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/icon_white_flag.png</Filename>
+    </Icon>
+    <Text ID="191878">
+      <EN>White Flag</EN>
+      <DE>Weiße Flagge</DE>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="SailShip">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+        </Icon>
+        <Text ID="3920">
+          <EN>Diplomacy</EN>
+          <DE>Redegabe</DE>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradePrice>65625</TradePrice>
+    <Info ID="19724">
+      <EN>Wave it if you don't want a fight.</EN>
+      <DE>Hissen, wenn Sie keinen Kampf wollen.</DE>
+    </Info>
+    <Sources>
+      <Source ID="800103">
+        <Name>Archeological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
+        </Icon>
+        <Text ID="11629">
+          <EN>Archaeological Expedition</EN>
+          <DE>Archäologische Expedition</DE>
+        </Text>
+      </Source>
+      <Source ID="800214">
+        <Name>Zoological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
+        </Icon>
+        <Text ID="11630">
+          <EN>Zoological Expedition</EN>
+          <DE>Zoologische Expedition</DE>
+        </Text>
+      </Source>
+      <Source ID="800399">
+        <Name>Rescue Mission Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
+        </Icon>
+        <Text ID="11631">
+          <EN>Rescue Mission</EN>
+          <DE>Rettungseinsatz</DE>
+        </Text>
+      </Source>
+      <Source ID="800403">
+        <Name>Pirate Hunt Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
+        </Icon>
+        <Text ID="11632">
+          <EN>Pirate Hunt</EN>
+          <DE>Piratenjagd</DE>
+        </Text>
+      </Source>
+      <Source ID="800777">
+        <Name>Discovery South America Sandbox</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
+        </Icon>
+        <Text ID="11634">
+          <EN>Discovery Expedition</EN>
+          <DE>Entdeckungsreise</DE>
+        </Text>
+      </Source>
+      <Source ID="29">
+        <Name>Third_party_05 (Isabel Sarmento)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+        </Icon>
+        <Text ID="29">
+          <EN>Harbour - Isabel Sarmento</EN>
+          <DE>Hafen - Isabel Sarmento</DE>
+        </Text>
+      </Source>
+      <Source ID="150292">
+        <Name>Keeping Up - Sarmento</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="29">
+          <EN>Quest - Isabel Sarmento</EN>
+          <DE>Quest - Isabel Sarmento</DE>
+        </Text>
+      </Source>
+      <Source ID="150399">
+        <Name>Comeback King - Willie</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="80">
+          <EN>Quest - Willie Wibblesock</EN>
+          <DE>Quest - Willie Wibblesock</DE>
+        </Text>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="191851">
+    <Name>Steel Double-Hull</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_hull_4.png</Filename>
+    </Icon>
+    <Text ID="191851">
+      <EN>Singh's Steel Double-Hull</EN>
+      <DE>Singhs stählerne Doppelhülle</DE>
+    </Text>
+    <Rarity ID="118006">
+      <EN>Legendary</EN>
+      <DE>Legendär</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="SailShip">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>50</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_plus.png</Filename>
+        </Icon>
+        <Text ID="1154">
+          <EN>Hitpoints</EN>
+          <DE>Trefferpunkte</DE>
+        </Text>
+        <Value>+50%</Value>
+      </Upgrade>
+    </AttackableUpgrades>
+    <TradePrice>175000</TradePrice>
+    <Info ID="19701">
+      <EN>Shipwright Singh's hulls are specifically designed to combat a misfortune of modern projectiles.</EN>
+      <DE>Schiffsbauer Singhs Rümpfe sind speziell darauf ausgelegt, dem Ungemach moderner Projektile zu widerstehen.</DE>
+    </Info>
+    <Sources>
+      <Source ID="800399">
+        <Name>Rescue Mission Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
+        </Icon>
+        <Text ID="11631">
+          <EN>Rescue Mission</EN>
+          <DE>Rettungseinsatz</DE>
+        </Text>
+      </Source>
+      <Source ID="45">
+        <Name>Third_party_02 (Archibald Blake)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
+        </Icon>
+        <Text ID="45">
+          <EN>Harbour - Sir Archibald Blake</EN>
+          <DE>Hafen - Sir Archibald Blake</DE>
+        </Text>
+      </Source>
+      <Source ID="29">
+        <Name>Third_party_05 (Isabel Sarmento)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+        </Icon>
+        <Text ID="29">
+          <EN>Harbour - Isabel Sarmento</EN>
+          <DE>Hafen - Isabel Sarmento</DE>
+        </Text>
+      </Source>
+      <Source ID="800103">
+        <Name>Archeological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
+        </Icon>
+        <Text ID="11629">
+          <EN>Archaeological Expedition</EN>
+          <DE>Archäologische Expedition</DE>
+        </Text>
+      </Source>
+      <Source ID="800214">
+        <Name>Zoological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
+        </Icon>
+        <Text ID="11630">
+          <EN>Zoological Expedition</EN>
+          <DE>Zoologische Expedition</DE>
+        </Text>
+      </Source>
+      <Source ID="800403">
+        <Name>Pirate Hunt Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
+        </Icon>
+        <Text ID="11632">
+          <EN>Pirate Hunt</EN>
+          <DE>Piratenjagd</DE>
+        </Text>
+      </Source>
+      <Source ID="800777">
+        <Name>Discovery South America Sandbox</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
+        </Icon>
+        <Text ID="11634">
+          <EN>Discovery Expedition</EN>
+          <DE>Entdeckungsreise</DE>
+        </Text>
+      </Source>
+      <Source ID="150075">
+        <Name>Deliver Potatoes - Jorgensen</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="47">
+          <EN>Quest - Bente Jorgensen</EN>
+          <DE>Quest - Bente Jorgensen</DE>
+        </Text>
+      </Source>
+      <Source ID="151138">
+        <Name>Deliver Bread - Vicente</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="84">
+          <EN>Quest - Admiral Vicente Silva</EN>
+          <DE>Quest - Admiral Vicente Silva</DE>
+        </Text>
+      </Source>
+      <Source ID="150115">
+        <Name>Close But No Cigar - Archibald Blake</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="45">
+          <EN>Quest - Sir Archibald Blake</EN>
+          <DE>Quest - Sir Archibald Blake</DE>
+        </Text>
+      </Source>
+      <Source ID="150292">
+        <Name>Keeping Up - Sarmento</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="29">
+          <EN>Quest - Isabel Sarmento</EN>
+          <DE>Quest - Isabel Sarmento</DE>
+        </Text>
+      </Source>
+      <Source ID="17047">
+        <Name>9 Unique Inventions</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
+        </Icon>
+        <Text ID="17047">
+          <EN>Unique Inventions</EN>
+          <DE>Einzigartige Erfindungen</DE>
+        </Text>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="191855">
+    <Name>Armstrong Gun</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_cannon_4.png</Filename>
+    </Icon>
+    <Text ID="191855">
+      <EN>Strongarm's Disappearing Gun</EN>
+      <DE>Strongarms Verschwindlafette</DE>
+    </Text>
+    <Rarity ID="118006">
+      <EN>Legendary</EN>
+      <DE>Legendär</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Warship">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
+      </Icon>
+      <Text ID="12812">
+        <EN>Military Ships</EN>
+        <DE>Kriegsschiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>50</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradePrice>164500</TradePrice>
+    <Info ID="19706">
+      <EN>Mr. Strongarm's gun is as potent as it sounds, sneakily disappearing from view when not in use.</EN>
+      <DE>Mr. Strongarms Geschütz ist so durchschlagskräftig wie es klingt und verschwindet verstohlen außer Sicht, wenn es nicht benutzt wird.</DE>
+    </Info>
+    <Sources>
+      <Source ID="800399">
+        <Name>Rescue Mission Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
+        </Icon>
+        <Text ID="11631">
+          <EN>Rescue Mission</EN>
+          <DE>Rettungseinsatz</DE>
+        </Text>
+      </Source>
+      <Source ID="73">
+        <Name>Third_party_03 (Anne Harlow)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
+        </Icon>
+        <Text ID="73">
+          <EN>Harbour - Anne Harlow</EN>
+          <DE>Hafen - Anne Harlow</DE>
+        </Text>
+      </Source>
+      <Source ID="76">
+        <Name>Third_party_04 (La Fortune)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
+        </Icon>
+        <Text ID="76">
+          <EN>Harbour - Jean La Fortune</EN>
+          <DE>Hafen - Jean La Fortune</DE>
+        </Text>
+      </Source>
+      <Source ID="800103">
+        <Name>Archeological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
+        </Icon>
+        <Text ID="11629">
+          <EN>Archaeological Expedition</EN>
+          <DE>Archäologische Expedition</DE>
+        </Text>
+      </Source>
+      <Source ID="800214">
+        <Name>Zoological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
+        </Icon>
+        <Text ID="11630">
+          <EN>Zoological Expedition</EN>
+          <DE>Zoologische Expedition</DE>
+        </Text>
+      </Source>
+      <Source ID="800403">
+        <Name>Pirate Hunt Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
+        </Icon>
+        <Text ID="11632">
+          <EN>Pirate Hunt</EN>
+          <DE>Piratenjagd</DE>
+        </Text>
+      </Source>
+      <Source ID="800777">
+        <Name>Discovery South America Sandbox</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
+        </Icon>
+        <Text ID="11634">
+          <EN>Discovery Expedition</EN>
+          <DE>Entdeckungsreise</DE>
+        </Text>
+      </Source>
+      <Source ID="150525">
+        <Name>Deliver Champagne - Beryl</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="82">
+          <EN>Quest - Beryl O'Mara</EN>
+          <DE>Quest - Beryl O'Mara</DE>
+        </Text>
+      </Source>
+      <Source ID="150087">
+        <Name>Walls Closing In - Alonso Graves</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="48">
+          <EN>Quest - Alonso Graves</EN>
+          <DE>Quest - Alonso Graves</DE>
+        </Text>
+      </Source>
+      <Source ID="151138">
+        <Name>Deliver Bread - Vicente</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="84">
+          <EN>Quest - Admiral Vicente Silva</EN>
+          <DE>Quest - Admiral Vicente Silva</DE>
+        </Text>
+      </Source>
+      <Source ID="150622">
+        <Name>Farewell Drinks - Anne Harlow</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="73">
+          <EN>Quest - Anne Harlow</EN>
+          <DE>Quest - Anne Harlow</DE>
+        </Text>
+      </Source>
+      <Source ID="151920">
+        <Name>Deliver Weapons - Jean LaFortune</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="76">
+          <EN>Quest - Jean La Fortune</EN>
+          <DE>Quest - Jean La Fortune</DE>
+        </Text>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="191829">
+    <Name>Two-Turns Screw Propeller</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_screw_propeller_1.png</Filename>
+    </Icon>
+    <Text ID="191829">
+      <EN>Two-Turn Screw Propeller</EN>
+      <DE>Langer Schraubenpropeller</DE>
+    </Text>
+    <Rarity ID="118003">
+      <EN>Uncommon</EN>
+      <DE>Ungewöhnlich</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="SteamShip">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png</Filename>
+      </Icon>
+      <Text ID="2344">
+        <EN>Steamships</EN>
+        <DE>Dampfschiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradePrice>5000</TradePrice>
+    <Info ID="19687">
+      <EN>Propels you faster.</EN>
+      <DE>Treibt Sie schneller voran.</DE>
+    </Info>
+    <Sources>
+      <Source ID="800103">
+        <Name>Archeological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
+        </Icon>
+        <Text ID="11629">
+          <EN>Archaeological Expedition</EN>
+          <DE>Archäologische Expedition</DE>
+        </Text>
+      </Source>
+      <Source ID="800214">
+        <Name>Zoological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
+        </Icon>
+        <Text ID="11630">
+          <EN>Zoological Expedition</EN>
+          <DE>Zoologische Expedition</DE>
+        </Text>
+      </Source>
+      <Source ID="800399">
+        <Name>Rescue Mission Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
+        </Icon>
+        <Text ID="11631">
+          <EN>Rescue Mission</EN>
+          <DE>Rettungseinsatz</DE>
+        </Text>
+      </Source>
+      <Source ID="800403">
+        <Name>Pirate Hunt Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
+        </Icon>
+        <Text ID="11632">
+          <EN>Pirate Hunt</EN>
+          <DE>Piratenjagd</DE>
+        </Text>
+      </Source>
+      <Source ID="800777">
+        <Name>Discovery South America Sandbox</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
+        </Icon>
+        <Text ID="11634">
+          <EN>Discovery Expedition</EN>
+          <DE>Entdeckungsreise</DE>
+        </Text>
+      </Source>
+      <Source ID="45">
+        <Name>Third_party_02 (Archibald Blake)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
+        </Icon>
+        <Text ID="45">
+          <EN>Harbour - Sir Archibald Blake</EN>
+          <DE>Hafen - Sir Archibald Blake</DE>
+        </Text>
+      </Source>
+      <Source ID="29">
+        <Name>Third_party_05 (Isabel Sarmento)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+        </Icon>
+        <Text ID="29">
+          <EN>Harbour - Isabel Sarmento</EN>
+          <DE>Hafen - Isabel Sarmento</DE>
+        </Text>
+      </Source>
+      <Source ID="150075">
+        <Name>Deliver Potatoes - Jorgensen</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="47">
+          <EN>Quest - Bente Jorgensen</EN>
+          <DE>Quest - Bente Jorgensen</DE>
+        </Text>
+      </Source>
+      <Source ID="151138">
+        <Name>Deliver Bread - Vicente</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="84">
+          <EN>Quest - Admiral Vicente Silva</EN>
+          <DE>Quest - Admiral Vicente Silva</DE>
+        </Text>
+      </Source>
+      <Source ID="150115">
+        <Name>Close But No Cigar - Archibald Blake</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="45">
+          <EN>Quest - Sir Archibald Blake</EN>
+          <DE>Quest - Sir Archibald Blake</DE>
+        </Text>
+      </Source>
+      <Source ID="150292">
+        <Name>Keeping Up - Sarmento</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="29">
+          <EN>Quest - Isabel Sarmento</EN>
+          <DE>Quest - Isabel Sarmento</DE>
+        </Text>
+      </Source>
+      <Source ID="151521">
+        <Name>RQ_Engineers_AnimalKingdom</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="88">
+          <EN>Quest - Engineer</EN>
+          <DE>Quest - Ingenieur</DE>
+        </Text>
+      </Source>
+    </Sources>
+  </Asset>
   <Asset ID="191824">
     <Name>Square Rig</Name>
     <Icon>
@@ -182,27 +1378,210 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="191013">
-    <Name>Lateen Sails</Name>
+  <Asset ID="191848">
+    <Name>Wooden Plating</Name>
     <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/icon_lateen_sails.png</Filename>
+      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_hull_1.png</Filename>
     </Icon>
-    <Text ID="191013">
-      <EN>Lateen Style Sails</EN>
-      <DE>Lateinersegel</DE>
+    <Text ID="191848">
+      <EN>Fine Wooden Hull</EN>
+      <DE>Guter hölzerner Rumpf</DE>
+    </Text>
+    <Rarity ID="118003">
+      <EN>Uncommon</EN>
+      <DE>Ungewöhnlich</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="SailShip">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_plus.png</Filename>
+        </Icon>
+        <Text ID="1154">
+          <EN>Hitpoints</EN>
+          <DE>Trefferpunkte</DE>
+        </Text>
+        <Value>+20%</Value>
+      </Upgrade>
+    </AttackableUpgrades>
+    <TradePrice>6562</TradePrice>
+    <Info ID="19698">
+      <EN>A very high quality wooden hull.</EN>
+      <DE>Ein hölzerner Rumpf von hoher Qualität.</DE>
+    </Info>
+    <Sources>
+      <Source ID="800103">
+        <Name>Archeological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
+        </Icon>
+        <Text ID="11629">
+          <EN>Archaeological Expedition</EN>
+          <DE>Archäologische Expedition</DE>
+        </Text>
+      </Source>
+      <Source ID="800214">
+        <Name>Zoological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
+        </Icon>
+        <Text ID="11630">
+          <EN>Zoological Expedition</EN>
+          <DE>Zoologische Expedition</DE>
+        </Text>
+      </Source>
+      <Source ID="800399">
+        <Name>Rescue Mission Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
+        </Icon>
+        <Text ID="11631">
+          <EN>Rescue Mission</EN>
+          <DE>Rettungseinsatz</DE>
+        </Text>
+      </Source>
+      <Source ID="800403">
+        <Name>Pirate Hunt Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
+        </Icon>
+        <Text ID="11632">
+          <EN>Pirate Hunt</EN>
+          <DE>Piratenjagd</DE>
+        </Text>
+      </Source>
+      <Source ID="800777">
+        <Name>Discovery South America Sandbox</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
+        </Icon>
+        <Text ID="11634">
+          <EN>Discovery Expedition</EN>
+          <DE>Entdeckungsreise</DE>
+        </Text>
+      </Source>
+      <Source ID="45">
+        <Name>Third_party_02 (Archibald Blake)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
+        </Icon>
+        <Text ID="45">
+          <EN>Harbour - Sir Archibald Blake</EN>
+          <DE>Hafen - Sir Archibald Blake</DE>
+        </Text>
+      </Source>
+      <Source ID="29">
+        <Name>Third_party_05 (Isabel Sarmento)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+        </Icon>
+        <Text ID="29">
+          <EN>Harbour - Isabel Sarmento</EN>
+          <DE>Hafen - Isabel Sarmento</DE>
+        </Text>
+      </Source>
+      <Source ID="150075">
+        <Name>Deliver Potatoes - Jorgensen</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="47">
+          <EN>Quest - Bente Jorgensen</EN>
+          <DE>Quest - Bente Jorgensen</DE>
+        </Text>
+      </Source>
+      <Source ID="151138">
+        <Name>Deliver Bread - Vicente</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="84">
+          <EN>Quest - Admiral Vicente Silva</EN>
+          <DE>Quest - Admiral Vicente Silva</DE>
+        </Text>
+      </Source>
+      <Source ID="150115">
+        <Name>Close But No Cigar - Archibald Blake</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="45">
+          <EN>Quest - Sir Archibald Blake</EN>
+          <DE>Quest - Sir Archibald Blake</DE>
+        </Text>
+      </Source>
+      <Source ID="150292">
+        <Name>Keeping Up - Sarmento</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="29">
+          <EN>Quest - Isabel Sarmento</EN>
+          <DE>Quest - Isabel Sarmento</DE>
+        </Text>
+      </Source>
+      <Source ID="150969">
+        <Name>RQ_Artisans_PeerGynt</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="87">
+          <EN>Quest - Artisan</EN>
+          <DE>Quest - Handwerker</DE>
+        </Text>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="191857">
+    <Name>Heat Exchanger</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_heatexchanger_2.png</Filename>
+    </Icon>
+    <Text ID="191857">
+      <EN>Heat Exchanger</EN>
+      <DE>Wärmetauscher</DE>
     </Text>
     <Rarity ID="118004">
       <EN>Rare</EN>
       <DE>Selten</DE>
     </Rarity>
     <ItemType>Common</ItemType>
-    <Allocation ID="SailShip">
+    <Allocation ID="SteamShip">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png</Filename>
       </Icon>
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
+      <Text ID="2344">
+        <EN>Steamships</EN>
+        <DE>Dampfschiffe</DE>
       </Text>
     </Allocation>
     <EffectTargets />
@@ -213,35 +1592,25 @@
     <ResidenceUpgrades />
     <PopulationUpgrades />
     <ElectricUpgrades />
-    <ExpeditionAttributes>
+    <ExpeditionAttributes />
+    <AttackableUpgrades>
       <Upgrade>
         <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+          <Filename>data/ui/2kimages/main/icons/icon_plus.png</Filename>
         </Icon>
-        <Text ID="3923">
-          <EN>Navigation</EN>
-          <DE>Navigation</DE>
+        <Text ID="1154">
+          <EN>Hitpoints</EN>
+          <DE>Trefferpunkte</DE>
         </Text>
-        <Value>30</Value>
+        <Value>+15%</Value>
       </Upgrade>
-    </ExpeditionAttributes>
-    <AttackableUpgrades />
-    <TradePrice>18750</TradePrice>
-    <Info ID="19685">
-      <EN>Tack a zig-zag like an islander.</EN>
-      <DE>Kreuzen Sie wie ein Insulaner.</DE>
+    </AttackableUpgrades>
+    <TradePrice>18250</TradePrice>
+    <Info ID="19708">
+      <EN>Makes good use of excess furnace energy.</EN>
+      <DE>Macht guten Gebrauch von überschüssiger Hitze.</DE>
     </Info>
     <Sources>
-      <Source ID="101647">
-        <Name>CQO_RewardCrate_Kahina</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/narative_item/icon_crates.png</Filename>
-        </Icon>
-        <Text ID="101647">
-          <EN>Residents Gift</EN>
-          <DE>Einwohnergeschenk</DE>
-        </Text>
-      </Source>
       <Source ID="800103">
         <Name>Archeological Expedition Easy</Name>
         <Icon>
@@ -352,40 +1721,30 @@
           <DE>Quest - Isabel Sarmento</DE>
         </Text>
       </Source>
-      <Source ID="150969">
-        <Name>RQ_Artisans_PeerGynt</Name>
+      <Source ID="151521">
+        <Name>RQ_Engineers_AnimalKingdom</Name>
         <Icon>
           <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
         </Icon>
-        <Text ID="87">
-          <EN>Quest - Artisan</EN>
-          <DE>Quest - Handwerker</DE>
-        </Text>
-      </Source>
-      <Source ID="151632">
-        <Name>RQ_Obreros_JungleBook</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="187">
-          <EN>Quest - Obrera</EN>
-          <DE>Quest - Obrera</DE>
+        <Text ID="88">
+          <EN>Quest - Engineer</EN>
+          <DE>Quest - Ingenieur</DE>
         </Text>
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="191825">
-    <Name>Fore-and-aft Rig</Name>
+  <Asset ID="191838">
+    <Name>Spyglass</Name>
     <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/icon_sail.png</Filename>
+      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_telescope_1.png</Filename>
     </Icon>
-    <Text ID="191825">
-      <EN>Fore-and-Aft Rig Sails</EN>
-      <DE>Schratsegel</DE>
+    <Text ID="191838">
+      <EN>Fine Spyglass</EN>
+      <DE>Gutes Fernglas</DE>
     </Text>
-    <Rarity ID="118005">
-      <EN>Epic</EN>
-      <DE>Episch</DE>
+    <Rarity ID="118003">
+      <EN>Uncommon</EN>
+      <DE>Ungewöhnlich</DE>
     </Rarity>
     <ItemType>Common</ItemType>
     <Allocation ID="SailShip">
@@ -414,14 +1773,24 @@
           <EN>Navigation</EN>
           <DE>Navigation</DE>
         </Text>
-        <Value>40</Value>
+        <Value>20</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
+        </Icon>
+        <Text ID="3927">
+          <EN>Hunting</EN>
+          <DE>Jagdglück</DE>
+        </Text>
+        <Value>10</Value>
       </Upgrade>
     </ExpeditionAttributes>
     <AttackableUpgrades />
-    <TradePrice>52500</TradePrice>
-    <Info ID="19686">
-      <EN>An extremely clever arrangement of sails.</EN>
-      <DE>Eine extrem kluge Anordnung von Segeln.</DE>
+    <TradePrice>6000</TradePrice>
+    <Info ID="19695">
+      <EN>Worth looking into.</EN>
+      <DE>Lohnt das Hindurchsehen.</DE>
     </Info>
     <Sources>
       <Source ID="800103">
@@ -544,26 +1913,492 @@
           <DE>Quest - Handwerker</DE>
         </Text>
       </Source>
-      <Source ID="151632">
-        <Name>RQ_Obreros_JungleBook</Name>
+    </Sources>
+  </Asset>
+  <Asset ID="191853">
+    <Name>18-Pounder Long Gun</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_cannon_1.png</Filename>
+    </Icon>
+    <Text ID="191853">
+      <EN>18-Pounder Long Gun</EN>
+      <DE>18-Pfünder</DE>
+    </Text>
+    <Rarity ID="118004">
+      <EN>Rare</EN>
+      <DE>Selten</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Warship">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
+      </Icon>
+      <Text ID="12812">
+        <EN>Military Ships</EN>
+        <DE>Kriegsschiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradePrice>19750</TradePrice>
+    <Info ID="19704">
+      <EN>A reliable powdered dame, or so the old sailors say.</EN>
+      <DE>Eine zuverlässige Kanone, bekunden alle alten Matrosen.</DE>
+    </Info>
+    <Sources>
+      <Source ID="800103">
+        <Name>Archeological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
+        </Icon>
+        <Text ID="11629">
+          <EN>Archaeological Expedition</EN>
+          <DE>Archäologische Expedition</DE>
+        </Text>
+      </Source>
+      <Source ID="800214">
+        <Name>Zoological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
+        </Icon>
+        <Text ID="11630">
+          <EN>Zoological Expedition</EN>
+          <DE>Zoologische Expedition</DE>
+        </Text>
+      </Source>
+      <Source ID="800399">
+        <Name>Rescue Mission Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
+        </Icon>
+        <Text ID="11631">
+          <EN>Rescue Mission</EN>
+          <DE>Rettungseinsatz</DE>
+        </Text>
+      </Source>
+      <Source ID="800403">
+        <Name>Pirate Hunt Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
+        </Icon>
+        <Text ID="11632">
+          <EN>Pirate Hunt</EN>
+          <DE>Piratenjagd</DE>
+        </Text>
+      </Source>
+      <Source ID="800777">
+        <Name>Discovery South America Sandbox</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
+        </Icon>
+        <Text ID="11634">
+          <EN>Discovery Expedition</EN>
+          <DE>Entdeckungsreise</DE>
+        </Text>
+      </Source>
+      <Source ID="73">
+        <Name>Third_party_03 (Anne Harlow)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
+        </Icon>
+        <Text ID="73">
+          <EN>Harbour - Anne Harlow</EN>
+          <DE>Hafen - Anne Harlow</DE>
+        </Text>
+      </Source>
+      <Source ID="76">
+        <Name>Third_party_04 (La Fortune)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
+        </Icon>
+        <Text ID="76">
+          <EN>Harbour - Jean La Fortune</EN>
+          <DE>Hafen - Jean La Fortune</DE>
+        </Text>
+      </Source>
+      <Source ID="152515">
+        <Name>Part of the group - Beryl</Name>
         <Icon>
           <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
         </Icon>
-        <Text ID="187">
-          <EN>Quest - Obrera</EN>
-          <DE>Quest - Obrera</DE>
+        <Text ID="82">
+          <EN>Quest - Beryl O'Mara</EN>
+          <DE>Quest - Beryl O'Mara</DE>
+        </Text>
+      </Source>
+      <Source ID="150087">
+        <Name>Walls Closing In - Alonso Graves</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="48">
+          <EN>Quest - Alonso Graves</EN>
+          <DE>Quest - Alonso Graves</DE>
+        </Text>
+      </Source>
+      <Source ID="151138">
+        <Name>Deliver Bread - Vicente</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="84">
+          <EN>Quest - Admiral Vicente Silva</EN>
+          <DE>Quest - Admiral Vicente Silva</DE>
+        </Text>
+      </Source>
+      <Source ID="150622">
+        <Name>Farewell Drinks - Anne Harlow</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="73">
+          <EN>Quest - Anne Harlow</EN>
+          <DE>Quest - Anne Harlow</DE>
+        </Text>
+      </Source>
+      <Source ID="151920">
+        <Name>Deliver Weapons - Jean LaFortune</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="76">
+          <EN>Quest - Jean La Fortune</EN>
+          <DE>Quest - Jean La Fortune</DE>
         </Text>
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="191829">
-    <Name>Two-Turns Screw Propeller</Name>
+  <Asset ID="191991">
+    <Name>Royal White Flag</Name>
     <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_screw_propeller_1.png</Filename>
+      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_white_flag_2.png</Filename>
     </Icon>
-    <Text ID="191829">
-      <EN>Two-Turn Screw Propeller</EN>
-      <DE>Langer Schraubenpropeller</DE>
+    <Text ID="191991">
+      <EN>Great White Flag</EN>
+      <DE>Große weiße Flagge</DE>
+    </Text>
+    <Rarity ID="118006">
+      <EN>Legendary</EN>
+      <DE>Legendär</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="SailShip">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+        </Icon>
+        <Text ID="3920">
+          <EN>Diplomacy</EN>
+          <DE>Redegabe</DE>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradePrice>175000</TradePrice>
+    <Info ID="19725">
+      <EN>Wave it if you don't want a fight, and you like good deals.</EN>
+      <DE>Hissen, wenn Sie keinen Kampf wollen und gute Geschäfte mögen.</DE>
+    </Info>
+    <Sources>
+      <Source ID="800399">
+        <Name>Rescue Mission Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
+        </Icon>
+        <Text ID="11631">
+          <EN>Rescue Mission</EN>
+          <DE>Rettungseinsatz</DE>
+        </Text>
+      </Source>
+      <Source ID="29">
+        <Name>Third_party_05 (Isabel Sarmento)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+        </Icon>
+        <Text ID="29">
+          <EN>Harbour - Isabel Sarmento</EN>
+          <DE>Hafen - Isabel Sarmento</DE>
+        </Text>
+      </Source>
+      <Source ID="800103">
+        <Name>Archeological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
+        </Icon>
+        <Text ID="11629">
+          <EN>Archaeological Expedition</EN>
+          <DE>Archäologische Expedition</DE>
+        </Text>
+      </Source>
+      <Source ID="800214">
+        <Name>Zoological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
+        </Icon>
+        <Text ID="11630">
+          <EN>Zoological Expedition</EN>
+          <DE>Zoologische Expedition</DE>
+        </Text>
+      </Source>
+      <Source ID="800403">
+        <Name>Pirate Hunt Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
+        </Icon>
+        <Text ID="11632">
+          <EN>Pirate Hunt</EN>
+          <DE>Piratenjagd</DE>
+        </Text>
+      </Source>
+      <Source ID="800777">
+        <Name>Discovery South America Sandbox</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
+        </Icon>
+        <Text ID="11634">
+          <EN>Discovery Expedition</EN>
+          <DE>Entdeckungsreise</DE>
+        </Text>
+      </Source>
+      <Source ID="150292">
+        <Name>Keeping Up - Sarmento</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="29">
+          <EN>Quest - Isabel Sarmento</EN>
+          <DE>Quest - Isabel Sarmento</DE>
+        </Text>
+      </Source>
+      <Source ID="150399">
+        <Name>Comeback King - Willie</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="80">
+          <EN>Quest - Willie Wibblesock</EN>
+          <DE>Quest - Willie Wibblesock</DE>
+        </Text>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="191852">
+    <Name>Congreve Rocket</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_cannon_0.png</Filename>
+    </Icon>
+    <Text ID="191852">
+      <EN>Congrave Rocket</EN>
+      <DE>Congravesche Rakete</DE>
+    </Text>
+    <Rarity ID="118003">
+      <EN>Uncommon</EN>
+      <DE>Ungewöhnlich</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Warship">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
+      </Icon>
+      <Text ID="12812">
+        <EN>Military Ships</EN>
+        <DE>Kriegsschiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradePrice>5750</TradePrice>
+    <Info ID="19702">
+      <EN>Put a rocket up 'em.</EN>
+      <DE>Verpasst ihnen eine Rakete.</DE>
+    </Info>
+    <Sources>
+      <Source ID="800103">
+        <Name>Archeological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
+        </Icon>
+        <Text ID="11629">
+          <EN>Archaeological Expedition</EN>
+          <DE>Archäologische Expedition</DE>
+        </Text>
+      </Source>
+      <Source ID="800214">
+        <Name>Zoological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
+        </Icon>
+        <Text ID="11630">
+          <EN>Zoological Expedition</EN>
+          <DE>Zoologische Expedition</DE>
+        </Text>
+      </Source>
+      <Source ID="800399">
+        <Name>Rescue Mission Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
+        </Icon>
+        <Text ID="11631">
+          <EN>Rescue Mission</EN>
+          <DE>Rettungseinsatz</DE>
+        </Text>
+      </Source>
+      <Source ID="800403">
+        <Name>Pirate Hunt Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
+        </Icon>
+        <Text ID="11632">
+          <EN>Pirate Hunt</EN>
+          <DE>Piratenjagd</DE>
+        </Text>
+      </Source>
+      <Source ID="800777">
+        <Name>Discovery South America Sandbox</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
+        </Icon>
+        <Text ID="11634">
+          <EN>Discovery Expedition</EN>
+          <DE>Entdeckungsreise</DE>
+        </Text>
+      </Source>
+      <Source ID="73">
+        <Name>Third_party_03 (Anne Harlow)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
+        </Icon>
+        <Text ID="73">
+          <EN>Harbour - Anne Harlow</EN>
+          <DE>Hafen - Anne Harlow</DE>
+        </Text>
+      </Source>
+      <Source ID="76">
+        <Name>Third_party_04 (La Fortune)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
+        </Icon>
+        <Text ID="76">
+          <EN>Harbour - Jean La Fortune</EN>
+          <DE>Hafen - Jean La Fortune</DE>
+        </Text>
+      </Source>
+      <Source ID="150525">
+        <Name>Deliver Champagne - Beryl</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="82">
+          <EN>Quest - Beryl O'Mara</EN>
+          <DE>Quest - Beryl O'Mara</DE>
+        </Text>
+      </Source>
+      <Source ID="150087">
+        <Name>Walls Closing In - Alonso Graves</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="48">
+          <EN>Quest - Alonso Graves</EN>
+          <DE>Quest - Alonso Graves</DE>
+        </Text>
+      </Source>
+      <Source ID="151138">
+        <Name>Deliver Bread - Vicente</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="84">
+          <EN>Quest - Admiral Vicente Silva</EN>
+          <DE>Quest - Admiral Vicente Silva</DE>
+        </Text>
+      </Source>
+      <Source ID="150622">
+        <Name>Farewell Drinks - Anne Harlow</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="73">
+          <EN>Quest - Anne Harlow</EN>
+          <DE>Quest - Anne Harlow</DE>
+        </Text>
+      </Source>
+      <Source ID="151920">
+        <Name>Deliver Weapons - Jean LaFortune</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="76">
+          <EN>Quest - Jean La Fortune</EN>
+          <DE>Quest - Jean La Fortune</DE>
+        </Text>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="191856">
+    <Name>Exhaust Blower</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_heatexchanger_1.png</Filename>
+    </Icon>
+    <Text ID="191856">
+      <EN>Exhaust Blower</EN>
+      <DE>Lüfter</DE>
     </Text>
     <Rarity ID="118003">
       <EN>Uncommon</EN>
@@ -587,23 +2422,12 @@
     <ResidenceUpgrades />
     <PopulationUpgrades />
     <ElectricUpgrades />
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-        </Icon>
-        <Text ID="3923">
-          <EN>Navigation</EN>
-          <DE>Navigation</DE>
-        </Text>
-        <Value>10</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
+    <ExpeditionAttributes />
     <AttackableUpgrades />
-    <TradePrice>5000</TradePrice>
-    <Info ID="19687">
-      <EN>Propels you faster.</EN>
-      <DE>Treibt Sie schneller voran.</DE>
+    <TradePrice>4375</TradePrice>
+    <Info ID="19707">
+      <EN>Improves engine efficiency.</EN>
+      <DE>Steigert die Maschineneffizienz.</DE>
     </Info>
     <Sources>
       <Source ID="800103">
@@ -900,27 +2724,200 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="191831">
-    <Name>Controllable-Pitch Propeller</Name>
+  <Asset ID="191849">
+    <Name>Steel Plating</Name>
     <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_screw_propeller_3.png</Filename>
+      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_hull_2.png</Filename>
     </Icon>
-    <Text ID="191831">
-      <EN>Controllable-Pitch Propeller</EN>
-      <DE>Verstellbarer Propeller</DE>
+    <Text ID="191849">
+      <EN>Fine Steel Hull</EN>
+      <DE>Guter stählerner Rumpf</DE>
     </Text>
-    <Rarity ID="118005">
-      <EN>Epic</EN>
-      <DE>Episch</DE>
+    <Rarity ID="118004">
+      <EN>Rare</EN>
+      <DE>Selten</DE>
     </Rarity>
     <ItemType>Common</ItemType>
-    <Allocation ID="SteamShip">
+    <Allocation ID="SailShip">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
       </Icon>
-      <Text ID="2344">
-        <EN>Steamships</EN>
-        <DE>Dampfschiffe</DE>
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>25</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_plus.png</Filename>
+        </Icon>
+        <Text ID="1154">
+          <EN>Hitpoints</EN>
+          <DE>Trefferpunkte</DE>
+        </Text>
+        <Value>+30%</Value>
+      </Upgrade>
+    </AttackableUpgrades>
+    <TradePrice>21875</TradePrice>
+    <Info ID="19699">
+      <EN>A very high quality steel hull.</EN>
+      <DE>Ein stählerner Rumpf von hoher Qualität.</DE>
+    </Info>
+    <Sources>
+      <Source ID="800103">
+        <Name>Archeological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
+        </Icon>
+        <Text ID="11629">
+          <EN>Archaeological Expedition</EN>
+          <DE>Archäologische Expedition</DE>
+        </Text>
+      </Source>
+      <Source ID="800214">
+        <Name>Zoological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
+        </Icon>
+        <Text ID="11630">
+          <EN>Zoological Expedition</EN>
+          <DE>Zoologische Expedition</DE>
+        </Text>
+      </Source>
+      <Source ID="800399">
+        <Name>Rescue Mission Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
+        </Icon>
+        <Text ID="11631">
+          <EN>Rescue Mission</EN>
+          <DE>Rettungseinsatz</DE>
+        </Text>
+      </Source>
+      <Source ID="800403">
+        <Name>Pirate Hunt Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
+        </Icon>
+        <Text ID="11632">
+          <EN>Pirate Hunt</EN>
+          <DE>Piratenjagd</DE>
+        </Text>
+      </Source>
+      <Source ID="800777">
+        <Name>Discovery South America Sandbox</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
+        </Icon>
+        <Text ID="11634">
+          <EN>Discovery Expedition</EN>
+          <DE>Entdeckungsreise</DE>
+        </Text>
+      </Source>
+      <Source ID="45">
+        <Name>Third_party_02 (Archibald Blake)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
+        </Icon>
+        <Text ID="45">
+          <EN>Harbour - Sir Archibald Blake</EN>
+          <DE>Hafen - Sir Archibald Blake</DE>
+        </Text>
+      </Source>
+      <Source ID="29">
+        <Name>Third_party_05 (Isabel Sarmento)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+        </Icon>
+        <Text ID="29">
+          <EN>Harbour - Isabel Sarmento</EN>
+          <DE>Hafen - Isabel Sarmento</DE>
+        </Text>
+      </Source>
+      <Source ID="150075">
+        <Name>Deliver Potatoes - Jorgensen</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="47">
+          <EN>Quest - Bente Jorgensen</EN>
+          <DE>Quest - Bente Jorgensen</DE>
+        </Text>
+      </Source>
+      <Source ID="151138">
+        <Name>Deliver Bread - Vicente</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="84">
+          <EN>Quest - Admiral Vicente Silva</EN>
+          <DE>Quest - Admiral Vicente Silva</DE>
+        </Text>
+      </Source>
+      <Source ID="150115">
+        <Name>Close But No Cigar - Archibald Blake</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="45">
+          <EN>Quest - Sir Archibald Blake</EN>
+          <DE>Quest - Sir Archibald Blake</DE>
+        </Text>
+      </Source>
+      <Source ID="150292">
+        <Name>Keeping Up - Sarmento</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="29">
+          <EN>Quest - Isabel Sarmento</EN>
+          <DE>Quest - Isabel Sarmento</DE>
+        </Text>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="191013">
+    <Name>Lateen Sails</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/icon_lateen_sails.png</Filename>
+    </Icon>
+    <Text ID="191013">
+      <EN>Lateen Style Sails</EN>
+      <DE>Lateinersegel</DE>
+    </Text>
+    <Rarity ID="118004">
+      <EN>Rare</EN>
+      <DE>Selten</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="SailShip">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
       </Text>
     </Allocation>
     <EffectTargets />
@@ -944,10 +2941,202 @@
       </Upgrade>
     </ExpeditionAttributes>
     <AttackableUpgrades />
-    <TradePrice>60000</TradePrice>
-    <Info ID="19689">
-      <EN>A powerful propeller, that is also rather versatile.</EN>
-      <DE>Ein starker Propeller, der außerdem sehr variabel ist.</DE>
+    <TradePrice>18750</TradePrice>
+    <Info ID="19685">
+      <EN>Tack a zig-zag like an islander.</EN>
+      <DE>Kreuzen Sie wie ein Insulaner.</DE>
+    </Info>
+    <Sources>
+      <Source ID="101647">
+        <Name>CQO_RewardCrate_Kahina</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/narative_item/icon_crates.png</Filename>
+        </Icon>
+        <Text ID="101647">
+          <EN>Residents Gift</EN>
+          <DE>Einwohnergeschenk</DE>
+        </Text>
+      </Source>
+      <Source ID="800103">
+        <Name>Archeological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
+        </Icon>
+        <Text ID="11629">
+          <EN>Archaeological Expedition</EN>
+          <DE>Archäologische Expedition</DE>
+        </Text>
+      </Source>
+      <Source ID="800214">
+        <Name>Zoological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
+        </Icon>
+        <Text ID="11630">
+          <EN>Zoological Expedition</EN>
+          <DE>Zoologische Expedition</DE>
+        </Text>
+      </Source>
+      <Source ID="800399">
+        <Name>Rescue Mission Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
+        </Icon>
+        <Text ID="11631">
+          <EN>Rescue Mission</EN>
+          <DE>Rettungseinsatz</DE>
+        </Text>
+      </Source>
+      <Source ID="800403">
+        <Name>Pirate Hunt Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
+        </Icon>
+        <Text ID="11632">
+          <EN>Pirate Hunt</EN>
+          <DE>Piratenjagd</DE>
+        </Text>
+      </Source>
+      <Source ID="800777">
+        <Name>Discovery South America Sandbox</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
+        </Icon>
+        <Text ID="11634">
+          <EN>Discovery Expedition</EN>
+          <DE>Entdeckungsreise</DE>
+        </Text>
+      </Source>
+      <Source ID="45">
+        <Name>Third_party_02 (Archibald Blake)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
+        </Icon>
+        <Text ID="45">
+          <EN>Harbour - Sir Archibald Blake</EN>
+          <DE>Hafen - Sir Archibald Blake</DE>
+        </Text>
+      </Source>
+      <Source ID="29">
+        <Name>Third_party_05 (Isabel Sarmento)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+        </Icon>
+        <Text ID="29">
+          <EN>Harbour - Isabel Sarmento</EN>
+          <DE>Hafen - Isabel Sarmento</DE>
+        </Text>
+      </Source>
+      <Source ID="150075">
+        <Name>Deliver Potatoes - Jorgensen</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="47">
+          <EN>Quest - Bente Jorgensen</EN>
+          <DE>Quest - Bente Jorgensen</DE>
+        </Text>
+      </Source>
+      <Source ID="151138">
+        <Name>Deliver Bread - Vicente</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="84">
+          <EN>Quest - Admiral Vicente Silva</EN>
+          <DE>Quest - Admiral Vicente Silva</DE>
+        </Text>
+      </Source>
+      <Source ID="150115">
+        <Name>Close But No Cigar - Archibald Blake</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="45">
+          <EN>Quest - Sir Archibald Blake</EN>
+          <DE>Quest - Sir Archibald Blake</DE>
+        </Text>
+      </Source>
+      <Source ID="150292">
+        <Name>Keeping Up - Sarmento</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="29">
+          <EN>Quest - Isabel Sarmento</EN>
+          <DE>Quest - Isabel Sarmento</DE>
+        </Text>
+      </Source>
+      <Source ID="150969">
+        <Name>RQ_Artisans_PeerGynt</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="87">
+          <EN>Quest - Artisan</EN>
+          <DE>Quest - Handwerker</DE>
+        </Text>
+      </Source>
+      <Source ID="151632">
+        <Name>RQ_Obreros_JungleBook</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="187">
+          <EN>Quest - Obrera</EN>
+          <DE>Quest - Obrera</DE>
+        </Text>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="191858">
+    <Name>Plate Heat Exchanger</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_heatexchanger_3.png</Filename>
+    </Icon>
+    <Text ID="191858">
+      <EN>Plate Heat Exchanger</EN>
+      <DE>Plattenwärmetauscher</DE>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="SteamShip">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png</Filename>
+      </Icon>
+      <Text ID="2344">
+        <EN>Steamships</EN>
+        <DE>Dampfschiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_plus.png</Filename>
+        </Icon>
+        <Text ID="1154">
+          <EN>Hitpoints</EN>
+          <DE>Trefferpunkte</DE>
+        </Text>
+        <Value>+30%</Value>
+      </Upgrade>
+    </AttackableUpgrades>
+    <TradePrice>50250</TradePrice>
+    <Info ID="19709">
+      <EN>Makes excellent use of excess furnace energy.</EN>
+      <DE>Macht ausgezeichneten Gebrauch von überschüssiger Hitze.</DE>
     </Info>
     <Sources>
       <Source ID="800103">
@@ -1068,198 +3257,6 @@
         <Text ID="88">
           <EN>Quest - Engineer</EN>
           <DE>Quest - Ingenieur</DE>
-        </Text>
-      </Source>
-      <Source ID="17047">
-        <Name>9 Unique Inventions</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
-        </Icon>
-        <Text ID="17047">
-          <EN>Unique Inventions</EN>
-          <DE>Einzigartige Erfindungen</DE>
-        </Text>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="191838">
-    <Name>Spyglass</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_telescope_1.png</Filename>
-    </Icon>
-    <Text ID="191838">
-      <EN>Fine Spyglass</EN>
-      <DE>Gutes Fernglas</DE>
-    </Text>
-    <Rarity ID="118003">
-      <EN>Uncommon</EN>
-      <DE>Ungewöhnlich</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="SailShip">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-      </Icon>
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-        </Icon>
-        <Text ID="3923">
-          <EN>Navigation</EN>
-          <DE>Navigation</DE>
-        </Text>
-        <Value>20</Value>
-      </Upgrade>
-      <Upgrade>
-        <Icon>
-          <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
-        </Icon>
-        <Text ID="3927">
-          <EN>Hunting</EN>
-          <DE>Jagdglück</DE>
-        </Text>
-        <Value>10</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
-    <AttackableUpgrades />
-    <TradePrice>6000</TradePrice>
-    <Info ID="19695">
-      <EN>Worth looking into.</EN>
-      <DE>Lohnt das Hindurchsehen.</DE>
-    </Info>
-    <Sources>
-      <Source ID="800103">
-        <Name>Archeological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
-        </Icon>
-        <Text ID="11629">
-          <EN>Archaeological Expedition</EN>
-          <DE>Archäologische Expedition</DE>
-        </Text>
-      </Source>
-      <Source ID="800214">
-        <Name>Zoological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
-        </Icon>
-        <Text ID="11630">
-          <EN>Zoological Expedition</EN>
-          <DE>Zoologische Expedition</DE>
-        </Text>
-      </Source>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
-        </Icon>
-        <Text ID="11631">
-          <EN>Rescue Mission</EN>
-          <DE>Rettungseinsatz</DE>
-        </Text>
-      </Source>
-      <Source ID="800403">
-        <Name>Pirate Hunt Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
-        </Icon>
-        <Text ID="11632">
-          <EN>Pirate Hunt</EN>
-          <DE>Piratenjagd</DE>
-        </Text>
-      </Source>
-      <Source ID="800777">
-        <Name>Discovery South America Sandbox</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
-        </Icon>
-        <Text ID="11634">
-          <EN>Discovery Expedition</EN>
-          <DE>Entdeckungsreise</DE>
-        </Text>
-      </Source>
-      <Source ID="45">
-        <Name>Third_party_02 (Archibald Blake)</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
-        </Icon>
-        <Text ID="45">
-          <EN>Harbour - Sir Archibald Blake</EN>
-          <DE>Hafen - Sir Archibald Blake</DE>
-        </Text>
-      </Source>
-      <Source ID="29">
-        <Name>Third_party_05 (Isabel Sarmento)</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
-        </Icon>
-        <Text ID="29">
-          <EN>Harbour - Isabel Sarmento</EN>
-          <DE>Hafen - Isabel Sarmento</DE>
-        </Text>
-      </Source>
-      <Source ID="150075">
-        <Name>Deliver Potatoes - Jorgensen</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="47">
-          <EN>Quest - Bente Jorgensen</EN>
-          <DE>Quest - Bente Jorgensen</DE>
-        </Text>
-      </Source>
-      <Source ID="151138">
-        <Name>Deliver Bread - Vicente</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="84">
-          <EN>Quest - Admiral Vicente Silva</EN>
-          <DE>Quest - Admiral Vicente Silva</DE>
-        </Text>
-      </Source>
-      <Source ID="150115">
-        <Name>Close But No Cigar - Archibald Blake</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="45">
-          <EN>Quest - Sir Archibald Blake</EN>
-          <DE>Quest - Sir Archibald Blake</DE>
-        </Text>
-      </Source>
-      <Source ID="150292">
-        <Name>Keeping Up - Sarmento</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="29">
-          <EN>Quest - Isabel Sarmento</EN>
-          <DE>Quest - Isabel Sarmento</DE>
-        </Text>
-      </Source>
-      <Source ID="150969">
-        <Name>RQ_Artisans_PeerGynt</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="87">
-          <EN>Quest - Artisan</EN>
-          <DE>Quest - Handwerker</DE>
         </Text>
       </Source>
     </Sources>
@@ -1442,6 +3439,725 @@
         <Text ID="88">
           <EN>Quest - Engineer</EN>
           <DE>Quest - Ingenieur</DE>
+        </Text>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="191854">
+    <Name>Paixhans Gun</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_cannon_2.png</Filename>
+    </Icon>
+    <Text ID="191854">
+      <EN>Hans Gun</EN>
+      <DE>Bombenkanone</DE>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Warship">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
+      </Icon>
+      <Text ID="12812">
+        <EN>Military Ships</EN>
+        <DE>Kriegsschiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>40</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradePrice>60750</TradePrice>
+    <Info ID="19705">
+      <EN>A modern gun, it is said, that has been particularly lucky in its aim.</EN>
+      <DE>Ein modernes Geschütz, so heißt es, das genauer zielt.</DE>
+    </Info>
+    <Sources>
+      <Source ID="800103">
+        <Name>Archeological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
+        </Icon>
+        <Text ID="11629">
+          <EN>Archaeological Expedition</EN>
+          <DE>Archäologische Expedition</DE>
+        </Text>
+      </Source>
+      <Source ID="800214">
+        <Name>Zoological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
+        </Icon>
+        <Text ID="11630">
+          <EN>Zoological Expedition</EN>
+          <DE>Zoologische Expedition</DE>
+        </Text>
+      </Source>
+      <Source ID="800399">
+        <Name>Rescue Mission Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
+        </Icon>
+        <Text ID="11631">
+          <EN>Rescue Mission</EN>
+          <DE>Rettungseinsatz</DE>
+        </Text>
+      </Source>
+      <Source ID="800403">
+        <Name>Pirate Hunt Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
+        </Icon>
+        <Text ID="11632">
+          <EN>Pirate Hunt</EN>
+          <DE>Piratenjagd</DE>
+        </Text>
+      </Source>
+      <Source ID="800777">
+        <Name>Discovery South America Sandbox</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
+        </Icon>
+        <Text ID="11634">
+          <EN>Discovery Expedition</EN>
+          <DE>Entdeckungsreise</DE>
+        </Text>
+      </Source>
+      <Source ID="73">
+        <Name>Third_party_03 (Anne Harlow)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
+        </Icon>
+        <Text ID="73">
+          <EN>Harbour - Anne Harlow</EN>
+          <DE>Hafen - Anne Harlow</DE>
+        </Text>
+      </Source>
+      <Source ID="76">
+        <Name>Third_party_04 (La Fortune)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
+        </Icon>
+        <Text ID="76">
+          <EN>Harbour - Jean La Fortune</EN>
+          <DE>Hafen - Jean La Fortune</DE>
+        </Text>
+      </Source>
+      <Source ID="150525">
+        <Name>Deliver Champagne - Beryl</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="82">
+          <EN>Quest - Beryl O'Mara</EN>
+          <DE>Quest - Beryl O'Mara</DE>
+        </Text>
+      </Source>
+      <Source ID="150087">
+        <Name>Walls Closing In - Alonso Graves</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="48">
+          <EN>Quest - Alonso Graves</EN>
+          <DE>Quest - Alonso Graves</DE>
+        </Text>
+      </Source>
+      <Source ID="151138">
+        <Name>Deliver Bread - Vicente</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="84">
+          <EN>Quest - Admiral Vicente Silva</EN>
+          <DE>Quest - Admiral Vicente Silva</DE>
+        </Text>
+      </Source>
+      <Source ID="150622">
+        <Name>Farewell Drinks - Anne Harlow</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="73">
+          <EN>Quest - Anne Harlow</EN>
+          <DE>Quest - Anne Harlow</DE>
+        </Text>
+      </Source>
+      <Source ID="151920">
+        <Name>Deliver Weapons - Jean LaFortune</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="76">
+          <EN>Quest - Jean La Fortune</EN>
+          <DE>Quest - Jean La Fortune</DE>
+        </Text>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="191850">
+    <Name>Bulkheads</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_hull_3.png</Filename>
+    </Icon>
+    <Text ID="191850">
+      <EN>Reinforced Bulkhead</EN>
+      <DE>Verstärkte Schotten</DE>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="SailShip">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>35</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_plus.png</Filename>
+        </Icon>
+        <Text ID="1154">
+          <EN>Hitpoints</EN>
+          <DE>Trefferpunkte</DE>
+        </Text>
+        <Value>+40%</Value>
+      </Upgrade>
+    </AttackableUpgrades>
+    <TradePrice>65625</TradePrice>
+    <Info ID="19700">
+      <EN>Heavy armour, for vessels expecting to be peppered with shot.</EN>
+      <DE>Eine schwere Panzerung für Schiffe, die mit Beschuss rechnen.</DE>
+    </Info>
+    <Sources>
+      <Source ID="800103">
+        <Name>Archeological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
+        </Icon>
+        <Text ID="11629">
+          <EN>Archaeological Expedition</EN>
+          <DE>Archäologische Expedition</DE>
+        </Text>
+      </Source>
+      <Source ID="800214">
+        <Name>Zoological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
+        </Icon>
+        <Text ID="11630">
+          <EN>Zoological Expedition</EN>
+          <DE>Zoologische Expedition</DE>
+        </Text>
+      </Source>
+      <Source ID="800399">
+        <Name>Rescue Mission Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
+        </Icon>
+        <Text ID="11631">
+          <EN>Rescue Mission</EN>
+          <DE>Rettungseinsatz</DE>
+        </Text>
+      </Source>
+      <Source ID="800403">
+        <Name>Pirate Hunt Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
+        </Icon>
+        <Text ID="11632">
+          <EN>Pirate Hunt</EN>
+          <DE>Piratenjagd</DE>
+        </Text>
+      </Source>
+      <Source ID="800777">
+        <Name>Discovery South America Sandbox</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
+        </Icon>
+        <Text ID="11634">
+          <EN>Discovery Expedition</EN>
+          <DE>Entdeckungsreise</DE>
+        </Text>
+      </Source>
+      <Source ID="45">
+        <Name>Third_party_02 (Archibald Blake)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
+        </Icon>
+        <Text ID="45">
+          <EN>Harbour - Sir Archibald Blake</EN>
+          <DE>Hafen - Sir Archibald Blake</DE>
+        </Text>
+      </Source>
+      <Source ID="29">
+        <Name>Third_party_05 (Isabel Sarmento)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+        </Icon>
+        <Text ID="29">
+          <EN>Harbour - Isabel Sarmento</EN>
+          <DE>Hafen - Isabel Sarmento</DE>
+        </Text>
+      </Source>
+      <Source ID="150075">
+        <Name>Deliver Potatoes - Jorgensen</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="47">
+          <EN>Quest - Bente Jorgensen</EN>
+          <DE>Quest - Bente Jorgensen</DE>
+        </Text>
+      </Source>
+      <Source ID="151138">
+        <Name>Deliver Bread - Vicente</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="84">
+          <EN>Quest - Admiral Vicente Silva</EN>
+          <DE>Quest - Admiral Vicente Silva</DE>
+        </Text>
+      </Source>
+      <Source ID="150115">
+        <Name>Close But No Cigar - Archibald Blake</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="45">
+          <EN>Quest - Sir Archibald Blake</EN>
+          <DE>Quest - Sir Archibald Blake</DE>
+        </Text>
+      </Source>
+      <Source ID="150292">
+        <Name>Keeping Up - Sarmento</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="29">
+          <EN>Quest - Isabel Sarmento</EN>
+          <DE>Quest - Isabel Sarmento</DE>
+        </Text>
+      </Source>
+      <Source ID="17047">
+        <Name>9 Unique Inventions</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
+        </Icon>
+        <Text ID="17047">
+          <EN>Unique Inventions</EN>
+          <DE>Einzigartige Erfindungen</DE>
+        </Text>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="191831">
+    <Name>Controllable-Pitch Propeller</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_screw_propeller_3.png</Filename>
+    </Icon>
+    <Text ID="191831">
+      <EN>Controllable-Pitch Propeller</EN>
+      <DE>Verstellbarer Propeller</DE>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="SteamShip">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png</Filename>
+      </Icon>
+      <Text ID="2344">
+        <EN>Steamships</EN>
+        <DE>Dampfschiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradePrice>60000</TradePrice>
+    <Info ID="19689">
+      <EN>A powerful propeller, that is also rather versatile.</EN>
+      <DE>Ein starker Propeller, der außerdem sehr variabel ist.</DE>
+    </Info>
+    <Sources>
+      <Source ID="800103">
+        <Name>Archeological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
+        </Icon>
+        <Text ID="11629">
+          <EN>Archaeological Expedition</EN>
+          <DE>Archäologische Expedition</DE>
+        </Text>
+      </Source>
+      <Source ID="800214">
+        <Name>Zoological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
+        </Icon>
+        <Text ID="11630">
+          <EN>Zoological Expedition</EN>
+          <DE>Zoologische Expedition</DE>
+        </Text>
+      </Source>
+      <Source ID="800399">
+        <Name>Rescue Mission Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
+        </Icon>
+        <Text ID="11631">
+          <EN>Rescue Mission</EN>
+          <DE>Rettungseinsatz</DE>
+        </Text>
+      </Source>
+      <Source ID="800403">
+        <Name>Pirate Hunt Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
+        </Icon>
+        <Text ID="11632">
+          <EN>Pirate Hunt</EN>
+          <DE>Piratenjagd</DE>
+        </Text>
+      </Source>
+      <Source ID="800777">
+        <Name>Discovery South America Sandbox</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
+        </Icon>
+        <Text ID="11634">
+          <EN>Discovery Expedition</EN>
+          <DE>Entdeckungsreise</DE>
+        </Text>
+      </Source>
+      <Source ID="45">
+        <Name>Third_party_02 (Archibald Blake)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
+        </Icon>
+        <Text ID="45">
+          <EN>Harbour - Sir Archibald Blake</EN>
+          <DE>Hafen - Sir Archibald Blake</DE>
+        </Text>
+      </Source>
+      <Source ID="29">
+        <Name>Third_party_05 (Isabel Sarmento)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+        </Icon>
+        <Text ID="29">
+          <EN>Harbour - Isabel Sarmento</EN>
+          <DE>Hafen - Isabel Sarmento</DE>
+        </Text>
+      </Source>
+      <Source ID="150075">
+        <Name>Deliver Potatoes - Jorgensen</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="47">
+          <EN>Quest - Bente Jorgensen</EN>
+          <DE>Quest - Bente Jorgensen</DE>
+        </Text>
+      </Source>
+      <Source ID="151138">
+        <Name>Deliver Bread - Vicente</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="84">
+          <EN>Quest - Admiral Vicente Silva</EN>
+          <DE>Quest - Admiral Vicente Silva</DE>
+        </Text>
+      </Source>
+      <Source ID="150115">
+        <Name>Close But No Cigar - Archibald Blake</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="45">
+          <EN>Quest - Sir Archibald Blake</EN>
+          <DE>Quest - Sir Archibald Blake</DE>
+        </Text>
+      </Source>
+      <Source ID="150292">
+        <Name>Keeping Up - Sarmento</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="29">
+          <EN>Quest - Isabel Sarmento</EN>
+          <DE>Quest - Isabel Sarmento</DE>
+        </Text>
+      </Source>
+      <Source ID="151521">
+        <Name>RQ_Engineers_AnimalKingdom</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="88">
+          <EN>Quest - Engineer</EN>
+          <DE>Quest - Ingenieur</DE>
+        </Text>
+      </Source>
+      <Source ID="17047">
+        <Name>9 Unique Inventions</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
+        </Icon>
+        <Text ID="17047">
+          <EN>Unique Inventions</EN>
+          <DE>Einzigartige Erfindungen</DE>
+        </Text>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="191825">
+    <Name>Fore-and-aft Rig</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/icon_sail.png</Filename>
+    </Icon>
+    <Text ID="191825">
+      <EN>Fore-and-Aft Rig Sails</EN>
+      <DE>Schratsegel</DE>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="SailShip">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>40</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradePrice>52500</TradePrice>
+    <Info ID="19686">
+      <EN>An extremely clever arrangement of sails.</EN>
+      <DE>Eine extrem kluge Anordnung von Segeln.</DE>
+    </Info>
+    <Sources>
+      <Source ID="800103">
+        <Name>Archeological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
+        </Icon>
+        <Text ID="11629">
+          <EN>Archaeological Expedition</EN>
+          <DE>Archäologische Expedition</DE>
+        </Text>
+      </Source>
+      <Source ID="800214">
+        <Name>Zoological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
+        </Icon>
+        <Text ID="11630">
+          <EN>Zoological Expedition</EN>
+          <DE>Zoologische Expedition</DE>
+        </Text>
+      </Source>
+      <Source ID="800399">
+        <Name>Rescue Mission Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
+        </Icon>
+        <Text ID="11631">
+          <EN>Rescue Mission</EN>
+          <DE>Rettungseinsatz</DE>
+        </Text>
+      </Source>
+      <Source ID="800403">
+        <Name>Pirate Hunt Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
+        </Icon>
+        <Text ID="11632">
+          <EN>Pirate Hunt</EN>
+          <DE>Piratenjagd</DE>
+        </Text>
+      </Source>
+      <Source ID="800777">
+        <Name>Discovery South America Sandbox</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
+        </Icon>
+        <Text ID="11634">
+          <EN>Discovery Expedition</EN>
+          <DE>Entdeckungsreise</DE>
+        </Text>
+      </Source>
+      <Source ID="45">
+        <Name>Third_party_02 (Archibald Blake)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
+        </Icon>
+        <Text ID="45">
+          <EN>Harbour - Sir Archibald Blake</EN>
+          <DE>Hafen - Sir Archibald Blake</DE>
+        </Text>
+      </Source>
+      <Source ID="29">
+        <Name>Third_party_05 (Isabel Sarmento)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+        </Icon>
+        <Text ID="29">
+          <EN>Harbour - Isabel Sarmento</EN>
+          <DE>Hafen - Isabel Sarmento</DE>
+        </Text>
+      </Source>
+      <Source ID="150075">
+        <Name>Deliver Potatoes - Jorgensen</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="47">
+          <EN>Quest - Bente Jorgensen</EN>
+          <DE>Quest - Bente Jorgensen</DE>
+        </Text>
+      </Source>
+      <Source ID="151138">
+        <Name>Deliver Bread - Vicente</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="84">
+          <EN>Quest - Admiral Vicente Silva</EN>
+          <DE>Quest - Admiral Vicente Silva</DE>
+        </Text>
+      </Source>
+      <Source ID="150115">
+        <Name>Close But No Cigar - Archibald Blake</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="45">
+          <EN>Quest - Sir Archibald Blake</EN>
+          <DE>Quest - Sir Archibald Blake</DE>
+        </Text>
+      </Source>
+      <Source ID="150292">
+        <Name>Keeping Up - Sarmento</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="29">
+          <EN>Quest - Isabel Sarmento</EN>
+          <DE>Quest - Isabel Sarmento</DE>
+        </Text>
+      </Source>
+      <Source ID="150969">
+        <Name>RQ_Artisans_PeerGynt</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="87">
+          <EN>Quest - Artisan</EN>
+          <DE>Quest - Handwerker</DE>
+        </Text>
+      </Source>
+      <Source ID="151632">
+        <Name>RQ_Obreros_JungleBook</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="187">
+          <EN>Quest - Obrera</EN>
+          <DE>Quest - Obrera</DE>
         </Text>
       </Source>
     </Sources>
@@ -1637,2721 +4353,5 @@
         </Text>
       </Source>
     </Sources>
-  </Asset>
-  <Asset ID="191848">
-    <Name>Wooden Plating</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_hull_1.png</Filename>
-    </Icon>
-    <Text ID="191848">
-      <EN>Fine Wooden Hull</EN>
-      <DE>Guter hölzerner Rumpf</DE>
-    </Text>
-    <Rarity ID="118003">
-      <EN>Uncommon</EN>
-      <DE>Ungewöhnlich</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="SailShip">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-      </Icon>
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-        </Icon>
-        <Text ID="3922">
-          <EN>Naval Power</EN>
-          <DE>Gefechtskunde</DE>
-        </Text>
-        <Value>10</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
-    <AttackableUpgrades>
-      <Upgrade>
-        <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_plus.png</Filename>
-        </Icon>
-        <Text ID="1154">
-          <EN>Hitpoints</EN>
-          <DE>Trefferpunkte</DE>
-        </Text>
-        <Value>+20%</Value>
-      </Upgrade>
-    </AttackableUpgrades>
-    <TradePrice>6562</TradePrice>
-    <Info ID="19698">
-      <EN>A very high quality wooden hull.</EN>
-      <DE>Ein hölzerner Rumpf von hoher Qualität.</DE>
-    </Info>
-    <Sources>
-      <Source ID="800103">
-        <Name>Archeological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
-        </Icon>
-        <Text ID="11629">
-          <EN>Archaeological Expedition</EN>
-          <DE>Archäologische Expedition</DE>
-        </Text>
-      </Source>
-      <Source ID="800214">
-        <Name>Zoological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
-        </Icon>
-        <Text ID="11630">
-          <EN>Zoological Expedition</EN>
-          <DE>Zoologische Expedition</DE>
-        </Text>
-      </Source>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
-        </Icon>
-        <Text ID="11631">
-          <EN>Rescue Mission</EN>
-          <DE>Rettungseinsatz</DE>
-        </Text>
-      </Source>
-      <Source ID="800403">
-        <Name>Pirate Hunt Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
-        </Icon>
-        <Text ID="11632">
-          <EN>Pirate Hunt</EN>
-          <DE>Piratenjagd</DE>
-        </Text>
-      </Source>
-      <Source ID="800777">
-        <Name>Discovery South America Sandbox</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
-        </Icon>
-        <Text ID="11634">
-          <EN>Discovery Expedition</EN>
-          <DE>Entdeckungsreise</DE>
-        </Text>
-      </Source>
-      <Source ID="45">
-        <Name>Third_party_02 (Archibald Blake)</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
-        </Icon>
-        <Text ID="45">
-          <EN>Harbour - Sir Archibald Blake</EN>
-          <DE>Hafen - Sir Archibald Blake</DE>
-        </Text>
-      </Source>
-      <Source ID="29">
-        <Name>Third_party_05 (Isabel Sarmento)</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
-        </Icon>
-        <Text ID="29">
-          <EN>Harbour - Isabel Sarmento</EN>
-          <DE>Hafen - Isabel Sarmento</DE>
-        </Text>
-      </Source>
-      <Source ID="150075">
-        <Name>Deliver Potatoes - Jorgensen</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="47">
-          <EN>Quest - Bente Jorgensen</EN>
-          <DE>Quest - Bente Jorgensen</DE>
-        </Text>
-      </Source>
-      <Source ID="151138">
-        <Name>Deliver Bread - Vicente</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="84">
-          <EN>Quest - Admiral Vicente Silva</EN>
-          <DE>Quest - Admiral Vicente Silva</DE>
-        </Text>
-      </Source>
-      <Source ID="150115">
-        <Name>Close But No Cigar - Archibald Blake</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="45">
-          <EN>Quest - Sir Archibald Blake</EN>
-          <DE>Quest - Sir Archibald Blake</DE>
-        </Text>
-      </Source>
-      <Source ID="150292">
-        <Name>Keeping Up - Sarmento</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="29">
-          <EN>Quest - Isabel Sarmento</EN>
-          <DE>Quest - Isabel Sarmento</DE>
-        </Text>
-      </Source>
-      <Source ID="150969">
-        <Name>RQ_Artisans_PeerGynt</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="87">
-          <EN>Quest - Artisan</EN>
-          <DE>Quest - Handwerker</DE>
-        </Text>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="191849">
-    <Name>Steel Plating</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_hull_2.png</Filename>
-    </Icon>
-    <Text ID="191849">
-      <EN>Fine Steel Hull</EN>
-      <DE>Guter stählerner Rumpf</DE>
-    </Text>
-    <Rarity ID="118004">
-      <EN>Rare</EN>
-      <DE>Selten</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="SailShip">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-      </Icon>
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-        </Icon>
-        <Text ID="3922">
-          <EN>Naval Power</EN>
-          <DE>Gefechtskunde</DE>
-        </Text>
-        <Value>25</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
-    <AttackableUpgrades>
-      <Upgrade>
-        <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_plus.png</Filename>
-        </Icon>
-        <Text ID="1154">
-          <EN>Hitpoints</EN>
-          <DE>Trefferpunkte</DE>
-        </Text>
-        <Value>+30%</Value>
-      </Upgrade>
-    </AttackableUpgrades>
-    <TradePrice>21875</TradePrice>
-    <Info ID="19699">
-      <EN>A very high quality steel hull.</EN>
-      <DE>Ein stählerner Rumpf von hoher Qualität.</DE>
-    </Info>
-    <Sources>
-      <Source ID="800103">
-        <Name>Archeological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
-        </Icon>
-        <Text ID="11629">
-          <EN>Archaeological Expedition</EN>
-          <DE>Archäologische Expedition</DE>
-        </Text>
-      </Source>
-      <Source ID="800214">
-        <Name>Zoological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
-        </Icon>
-        <Text ID="11630">
-          <EN>Zoological Expedition</EN>
-          <DE>Zoologische Expedition</DE>
-        </Text>
-      </Source>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
-        </Icon>
-        <Text ID="11631">
-          <EN>Rescue Mission</EN>
-          <DE>Rettungseinsatz</DE>
-        </Text>
-      </Source>
-      <Source ID="800403">
-        <Name>Pirate Hunt Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
-        </Icon>
-        <Text ID="11632">
-          <EN>Pirate Hunt</EN>
-          <DE>Piratenjagd</DE>
-        </Text>
-      </Source>
-      <Source ID="800777">
-        <Name>Discovery South America Sandbox</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
-        </Icon>
-        <Text ID="11634">
-          <EN>Discovery Expedition</EN>
-          <DE>Entdeckungsreise</DE>
-        </Text>
-      </Source>
-      <Source ID="45">
-        <Name>Third_party_02 (Archibald Blake)</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
-        </Icon>
-        <Text ID="45">
-          <EN>Harbour - Sir Archibald Blake</EN>
-          <DE>Hafen - Sir Archibald Blake</DE>
-        </Text>
-      </Source>
-      <Source ID="29">
-        <Name>Third_party_05 (Isabel Sarmento)</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
-        </Icon>
-        <Text ID="29">
-          <EN>Harbour - Isabel Sarmento</EN>
-          <DE>Hafen - Isabel Sarmento</DE>
-        </Text>
-      </Source>
-      <Source ID="150075">
-        <Name>Deliver Potatoes - Jorgensen</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="47">
-          <EN>Quest - Bente Jorgensen</EN>
-          <DE>Quest - Bente Jorgensen</DE>
-        </Text>
-      </Source>
-      <Source ID="151138">
-        <Name>Deliver Bread - Vicente</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="84">
-          <EN>Quest - Admiral Vicente Silva</EN>
-          <DE>Quest - Admiral Vicente Silva</DE>
-        </Text>
-      </Source>
-      <Source ID="150115">
-        <Name>Close But No Cigar - Archibald Blake</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="45">
-          <EN>Quest - Sir Archibald Blake</EN>
-          <DE>Quest - Sir Archibald Blake</DE>
-        </Text>
-      </Source>
-      <Source ID="150292">
-        <Name>Keeping Up - Sarmento</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="29">
-          <EN>Quest - Isabel Sarmento</EN>
-          <DE>Quest - Isabel Sarmento</DE>
-        </Text>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="191850">
-    <Name>Bulkheads</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_hull_3.png</Filename>
-    </Icon>
-    <Text ID="191850">
-      <EN>Reinforced Bulkhead</EN>
-      <DE>Verstärkte Schotten</DE>
-    </Text>
-    <Rarity ID="118005">
-      <EN>Epic</EN>
-      <DE>Episch</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="SailShip">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-      </Icon>
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-        </Icon>
-        <Text ID="3922">
-          <EN>Naval Power</EN>
-          <DE>Gefechtskunde</DE>
-        </Text>
-        <Value>35</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
-    <AttackableUpgrades>
-      <Upgrade>
-        <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_plus.png</Filename>
-        </Icon>
-        <Text ID="1154">
-          <EN>Hitpoints</EN>
-          <DE>Trefferpunkte</DE>
-        </Text>
-        <Value>+40%</Value>
-      </Upgrade>
-    </AttackableUpgrades>
-    <TradePrice>65625</TradePrice>
-    <Info ID="19700">
-      <EN>Heavy armour, for vessels expecting to be peppered with shot.</EN>
-      <DE>Eine schwere Panzerung für Schiffe, die mit Beschuss rechnen.</DE>
-    </Info>
-    <Sources>
-      <Source ID="800103">
-        <Name>Archeological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
-        </Icon>
-        <Text ID="11629">
-          <EN>Archaeological Expedition</EN>
-          <DE>Archäologische Expedition</DE>
-        </Text>
-      </Source>
-      <Source ID="800214">
-        <Name>Zoological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
-        </Icon>
-        <Text ID="11630">
-          <EN>Zoological Expedition</EN>
-          <DE>Zoologische Expedition</DE>
-        </Text>
-      </Source>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
-        </Icon>
-        <Text ID="11631">
-          <EN>Rescue Mission</EN>
-          <DE>Rettungseinsatz</DE>
-        </Text>
-      </Source>
-      <Source ID="800403">
-        <Name>Pirate Hunt Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
-        </Icon>
-        <Text ID="11632">
-          <EN>Pirate Hunt</EN>
-          <DE>Piratenjagd</DE>
-        </Text>
-      </Source>
-      <Source ID="800777">
-        <Name>Discovery South America Sandbox</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
-        </Icon>
-        <Text ID="11634">
-          <EN>Discovery Expedition</EN>
-          <DE>Entdeckungsreise</DE>
-        </Text>
-      </Source>
-      <Source ID="45">
-        <Name>Third_party_02 (Archibald Blake)</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
-        </Icon>
-        <Text ID="45">
-          <EN>Harbour - Sir Archibald Blake</EN>
-          <DE>Hafen - Sir Archibald Blake</DE>
-        </Text>
-      </Source>
-      <Source ID="29">
-        <Name>Third_party_05 (Isabel Sarmento)</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
-        </Icon>
-        <Text ID="29">
-          <EN>Harbour - Isabel Sarmento</EN>
-          <DE>Hafen - Isabel Sarmento</DE>
-        </Text>
-      </Source>
-      <Source ID="150075">
-        <Name>Deliver Potatoes - Jorgensen</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="47">
-          <EN>Quest - Bente Jorgensen</EN>
-          <DE>Quest - Bente Jorgensen</DE>
-        </Text>
-      </Source>
-      <Source ID="151138">
-        <Name>Deliver Bread - Vicente</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="84">
-          <EN>Quest - Admiral Vicente Silva</EN>
-          <DE>Quest - Admiral Vicente Silva</DE>
-        </Text>
-      </Source>
-      <Source ID="150115">
-        <Name>Close But No Cigar - Archibald Blake</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="45">
-          <EN>Quest - Sir Archibald Blake</EN>
-          <DE>Quest - Sir Archibald Blake</DE>
-        </Text>
-      </Source>
-      <Source ID="150292">
-        <Name>Keeping Up - Sarmento</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="29">
-          <EN>Quest - Isabel Sarmento</EN>
-          <DE>Quest - Isabel Sarmento</DE>
-        </Text>
-      </Source>
-      <Source ID="17047">
-        <Name>9 Unique Inventions</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
-        </Icon>
-        <Text ID="17047">
-          <EN>Unique Inventions</EN>
-          <DE>Einzigartige Erfindungen</DE>
-        </Text>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="191851">
-    <Name>Steel Double-Hull</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_hull_4.png</Filename>
-    </Icon>
-    <Text ID="191851">
-      <EN>Singh's Steel Double-Hull</EN>
-      <DE>Singhs stählerne Doppelhülle</DE>
-    </Text>
-    <Rarity ID="118006">
-      <EN>Legendary</EN>
-      <DE>Legendär</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="SailShip">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-      </Icon>
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-        </Icon>
-        <Text ID="3922">
-          <EN>Naval Power</EN>
-          <DE>Gefechtskunde</DE>
-        </Text>
-        <Value>50</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
-    <AttackableUpgrades>
-      <Upgrade>
-        <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_plus.png</Filename>
-        </Icon>
-        <Text ID="1154">
-          <EN>Hitpoints</EN>
-          <DE>Trefferpunkte</DE>
-        </Text>
-        <Value>+50%</Value>
-      </Upgrade>
-    </AttackableUpgrades>
-    <TradePrice>175000</TradePrice>
-    <Info ID="19701">
-      <EN>Shipwright Singh's hulls are specifically designed to combat a misfortune of modern projectiles.</EN>
-      <DE>Schiffsbauer Singhs Rümpfe sind speziell darauf ausgelegt, dem Ungemach moderner Projektile zu widerstehen.</DE>
-    </Info>
-    <Sources>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
-        </Icon>
-        <Text ID="11631">
-          <EN>Rescue Mission</EN>
-          <DE>Rettungseinsatz</DE>
-        </Text>
-      </Source>
-      <Source ID="45">
-        <Name>Third_party_02 (Archibald Blake)</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
-        </Icon>
-        <Text ID="45">
-          <EN>Harbour - Sir Archibald Blake</EN>
-          <DE>Hafen - Sir Archibald Blake</DE>
-        </Text>
-      </Source>
-      <Source ID="29">
-        <Name>Third_party_05 (Isabel Sarmento)</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
-        </Icon>
-        <Text ID="29">
-          <EN>Harbour - Isabel Sarmento</EN>
-          <DE>Hafen - Isabel Sarmento</DE>
-        </Text>
-      </Source>
-      <Source ID="800103">
-        <Name>Archeological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
-        </Icon>
-        <Text ID="11629">
-          <EN>Archaeological Expedition</EN>
-          <DE>Archäologische Expedition</DE>
-        </Text>
-      </Source>
-      <Source ID="800214">
-        <Name>Zoological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
-        </Icon>
-        <Text ID="11630">
-          <EN>Zoological Expedition</EN>
-          <DE>Zoologische Expedition</DE>
-        </Text>
-      </Source>
-      <Source ID="800403">
-        <Name>Pirate Hunt Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
-        </Icon>
-        <Text ID="11632">
-          <EN>Pirate Hunt</EN>
-          <DE>Piratenjagd</DE>
-        </Text>
-      </Source>
-      <Source ID="800777">
-        <Name>Discovery South America Sandbox</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
-        </Icon>
-        <Text ID="11634">
-          <EN>Discovery Expedition</EN>
-          <DE>Entdeckungsreise</DE>
-        </Text>
-      </Source>
-      <Source ID="150075">
-        <Name>Deliver Potatoes - Jorgensen</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="47">
-          <EN>Quest - Bente Jorgensen</EN>
-          <DE>Quest - Bente Jorgensen</DE>
-        </Text>
-      </Source>
-      <Source ID="151138">
-        <Name>Deliver Bread - Vicente</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="84">
-          <EN>Quest - Admiral Vicente Silva</EN>
-          <DE>Quest - Admiral Vicente Silva</DE>
-        </Text>
-      </Source>
-      <Source ID="150115">
-        <Name>Close But No Cigar - Archibald Blake</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="45">
-          <EN>Quest - Sir Archibald Blake</EN>
-          <DE>Quest - Sir Archibald Blake</DE>
-        </Text>
-      </Source>
-      <Source ID="150292">
-        <Name>Keeping Up - Sarmento</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="29">
-          <EN>Quest - Isabel Sarmento</EN>
-          <DE>Quest - Isabel Sarmento</DE>
-        </Text>
-      </Source>
-      <Source ID="17047">
-        <Name>9 Unique Inventions</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
-        </Icon>
-        <Text ID="17047">
-          <EN>Unique Inventions</EN>
-          <DE>Einzigartige Erfindungen</DE>
-        </Text>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="191852">
-    <Name>Congreve Rocket</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_cannon_0.png</Filename>
-    </Icon>
-    <Text ID="191852">
-      <EN>Congrave Rocket</EN>
-      <DE>Congravesche Rakete</DE>
-    </Text>
-    <Rarity ID="118003">
-      <EN>Uncommon</EN>
-      <DE>Ungewöhnlich</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="Warship">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
-      </Icon>
-      <Text ID="12812">
-        <EN>Military Ships</EN>
-        <DE>Kriegsschiffe</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-        </Icon>
-        <Text ID="3922">
-          <EN>Naval Power</EN>
-          <DE>Gefechtskunde</DE>
-        </Text>
-        <Value>20</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
-    <AttackableUpgrades />
-    <TradePrice>5750</TradePrice>
-    <Info ID="19702">
-      <EN>Put a rocket up 'em.</EN>
-      <DE>Verpasst ihnen eine Rakete.</DE>
-    </Info>
-    <Sources>
-      <Source ID="800103">
-        <Name>Archeological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
-        </Icon>
-        <Text ID="11629">
-          <EN>Archaeological Expedition</EN>
-          <DE>Archäologische Expedition</DE>
-        </Text>
-      </Source>
-      <Source ID="800214">
-        <Name>Zoological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
-        </Icon>
-        <Text ID="11630">
-          <EN>Zoological Expedition</EN>
-          <DE>Zoologische Expedition</DE>
-        </Text>
-      </Source>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
-        </Icon>
-        <Text ID="11631">
-          <EN>Rescue Mission</EN>
-          <DE>Rettungseinsatz</DE>
-        </Text>
-      </Source>
-      <Source ID="800403">
-        <Name>Pirate Hunt Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
-        </Icon>
-        <Text ID="11632">
-          <EN>Pirate Hunt</EN>
-          <DE>Piratenjagd</DE>
-        </Text>
-      </Source>
-      <Source ID="800777">
-        <Name>Discovery South America Sandbox</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
-        </Icon>
-        <Text ID="11634">
-          <EN>Discovery Expedition</EN>
-          <DE>Entdeckungsreise</DE>
-        </Text>
-      </Source>
-      <Source ID="73">
-        <Name>Third_party_03 (Anne Harlow)</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
-        </Icon>
-        <Text ID="73">
-          <EN>Harbour - Anne Harlow</EN>
-          <DE>Hafen - Anne Harlow</DE>
-        </Text>
-      </Source>
-      <Source ID="76">
-        <Name>Third_party_04 (La Fortune)</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
-        </Icon>
-        <Text ID="76">
-          <EN>Harbour - Jean La Fortune</EN>
-          <DE>Hafen - Jean La Fortune</DE>
-        </Text>
-      </Source>
-      <Source ID="150525">
-        <Name>Deliver Champagne - Beryl</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="82">
-          <EN>Quest - Beryl O'Mara</EN>
-          <DE>Quest - Beryl O'Mara</DE>
-        </Text>
-      </Source>
-      <Source ID="150087">
-        <Name>Walls Closing In - Alonso Graves</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="48">
-          <EN>Quest - Alonso Graves</EN>
-          <DE>Quest - Alonso Graves</DE>
-        </Text>
-      </Source>
-      <Source ID="151138">
-        <Name>Deliver Bread - Vicente</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="84">
-          <EN>Quest - Admiral Vicente Silva</EN>
-          <DE>Quest - Admiral Vicente Silva</DE>
-        </Text>
-      </Source>
-      <Source ID="150622">
-        <Name>Farewell Drinks - Anne Harlow</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="73">
-          <EN>Quest - Anne Harlow</EN>
-          <DE>Quest - Anne Harlow</DE>
-        </Text>
-      </Source>
-      <Source ID="151920">
-        <Name>Deliver Weapons - Jean LaFortune</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="76">
-          <EN>Quest - Jean La Fortune</EN>
-          <DE>Quest - Jean La Fortune</DE>
-        </Text>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="191853">
-    <Name>18-Pounder Long Gun</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_cannon_1.png</Filename>
-    </Icon>
-    <Text ID="191853">
-      <EN>18-Pounder Long Gun</EN>
-      <DE>18-Pfünder</DE>
-    </Text>
-    <Rarity ID="118004">
-      <EN>Rare</EN>
-      <DE>Selten</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="Warship">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
-      </Icon>
-      <Text ID="12812">
-        <EN>Military Ships</EN>
-        <DE>Kriegsschiffe</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-        </Icon>
-        <Text ID="3922">
-          <EN>Naval Power</EN>
-          <DE>Gefechtskunde</DE>
-        </Text>
-        <Value>30</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
-    <AttackableUpgrades />
-    <TradePrice>19750</TradePrice>
-    <Info ID="19704">
-      <EN>A reliable powdered dame, or so the old sailors say.</EN>
-      <DE>Eine zuverlässige Kanone, bekunden alle alten Matrosen.</DE>
-    </Info>
-    <Sources>
-      <Source ID="800103">
-        <Name>Archeological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
-        </Icon>
-        <Text ID="11629">
-          <EN>Archaeological Expedition</EN>
-          <DE>Archäologische Expedition</DE>
-        </Text>
-      </Source>
-      <Source ID="800214">
-        <Name>Zoological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
-        </Icon>
-        <Text ID="11630">
-          <EN>Zoological Expedition</EN>
-          <DE>Zoologische Expedition</DE>
-        </Text>
-      </Source>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
-        </Icon>
-        <Text ID="11631">
-          <EN>Rescue Mission</EN>
-          <DE>Rettungseinsatz</DE>
-        </Text>
-      </Source>
-      <Source ID="800403">
-        <Name>Pirate Hunt Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
-        </Icon>
-        <Text ID="11632">
-          <EN>Pirate Hunt</EN>
-          <DE>Piratenjagd</DE>
-        </Text>
-      </Source>
-      <Source ID="800777">
-        <Name>Discovery South America Sandbox</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
-        </Icon>
-        <Text ID="11634">
-          <EN>Discovery Expedition</EN>
-          <DE>Entdeckungsreise</DE>
-        </Text>
-      </Source>
-      <Source ID="73">
-        <Name>Third_party_03 (Anne Harlow)</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
-        </Icon>
-        <Text ID="73">
-          <EN>Harbour - Anne Harlow</EN>
-          <DE>Hafen - Anne Harlow</DE>
-        </Text>
-      </Source>
-      <Source ID="76">
-        <Name>Third_party_04 (La Fortune)</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
-        </Icon>
-        <Text ID="76">
-          <EN>Harbour - Jean La Fortune</EN>
-          <DE>Hafen - Jean La Fortune</DE>
-        </Text>
-      </Source>
-      <Source ID="152515">
-        <Name>Part of the group - Beryl</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="82">
-          <EN>Quest - Beryl O'Mara</EN>
-          <DE>Quest - Beryl O'Mara</DE>
-        </Text>
-      </Source>
-      <Source ID="150087">
-        <Name>Walls Closing In - Alonso Graves</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="48">
-          <EN>Quest - Alonso Graves</EN>
-          <DE>Quest - Alonso Graves</DE>
-        </Text>
-      </Source>
-      <Source ID="151138">
-        <Name>Deliver Bread - Vicente</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="84">
-          <EN>Quest - Admiral Vicente Silva</EN>
-          <DE>Quest - Admiral Vicente Silva</DE>
-        </Text>
-      </Source>
-      <Source ID="150622">
-        <Name>Farewell Drinks - Anne Harlow</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="73">
-          <EN>Quest - Anne Harlow</EN>
-          <DE>Quest - Anne Harlow</DE>
-        </Text>
-      </Source>
-      <Source ID="151920">
-        <Name>Deliver Weapons - Jean LaFortune</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="76">
-          <EN>Quest - Jean La Fortune</EN>
-          <DE>Quest - Jean La Fortune</DE>
-        </Text>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="191854">
-    <Name>Paixhans Gun</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_cannon_2.png</Filename>
-    </Icon>
-    <Text ID="191854">
-      <EN>Hans Gun</EN>
-      <DE>Bombenkanone</DE>
-    </Text>
-    <Rarity ID="118005">
-      <EN>Epic</EN>
-      <DE>Episch</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="Warship">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
-      </Icon>
-      <Text ID="12812">
-        <EN>Military Ships</EN>
-        <DE>Kriegsschiffe</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-        </Icon>
-        <Text ID="3922">
-          <EN>Naval Power</EN>
-          <DE>Gefechtskunde</DE>
-        </Text>
-        <Value>40</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
-    <AttackableUpgrades />
-    <TradePrice>60750</TradePrice>
-    <Info ID="19705">
-      <EN>A modern gun, it is said, that has been particularly lucky in its aim.</EN>
-      <DE>Ein modernes Geschütz, so heißt es, das genauer zielt.</DE>
-    </Info>
-    <Sources>
-      <Source ID="800103">
-        <Name>Archeological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
-        </Icon>
-        <Text ID="11629">
-          <EN>Archaeological Expedition</EN>
-          <DE>Archäologische Expedition</DE>
-        </Text>
-      </Source>
-      <Source ID="800214">
-        <Name>Zoological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
-        </Icon>
-        <Text ID="11630">
-          <EN>Zoological Expedition</EN>
-          <DE>Zoologische Expedition</DE>
-        </Text>
-      </Source>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
-        </Icon>
-        <Text ID="11631">
-          <EN>Rescue Mission</EN>
-          <DE>Rettungseinsatz</DE>
-        </Text>
-      </Source>
-      <Source ID="800403">
-        <Name>Pirate Hunt Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
-        </Icon>
-        <Text ID="11632">
-          <EN>Pirate Hunt</EN>
-          <DE>Piratenjagd</DE>
-        </Text>
-      </Source>
-      <Source ID="800777">
-        <Name>Discovery South America Sandbox</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
-        </Icon>
-        <Text ID="11634">
-          <EN>Discovery Expedition</EN>
-          <DE>Entdeckungsreise</DE>
-        </Text>
-      </Source>
-      <Source ID="73">
-        <Name>Third_party_03 (Anne Harlow)</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
-        </Icon>
-        <Text ID="73">
-          <EN>Harbour - Anne Harlow</EN>
-          <DE>Hafen - Anne Harlow</DE>
-        </Text>
-      </Source>
-      <Source ID="76">
-        <Name>Third_party_04 (La Fortune)</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
-        </Icon>
-        <Text ID="76">
-          <EN>Harbour - Jean La Fortune</EN>
-          <DE>Hafen - Jean La Fortune</DE>
-        </Text>
-      </Source>
-      <Source ID="150525">
-        <Name>Deliver Champagne - Beryl</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="82">
-          <EN>Quest - Beryl O'Mara</EN>
-          <DE>Quest - Beryl O'Mara</DE>
-        </Text>
-      </Source>
-      <Source ID="150087">
-        <Name>Walls Closing In - Alonso Graves</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="48">
-          <EN>Quest - Alonso Graves</EN>
-          <DE>Quest - Alonso Graves</DE>
-        </Text>
-      </Source>
-      <Source ID="151138">
-        <Name>Deliver Bread - Vicente</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="84">
-          <EN>Quest - Admiral Vicente Silva</EN>
-          <DE>Quest - Admiral Vicente Silva</DE>
-        </Text>
-      </Source>
-      <Source ID="150622">
-        <Name>Farewell Drinks - Anne Harlow</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="73">
-          <EN>Quest - Anne Harlow</EN>
-          <DE>Quest - Anne Harlow</DE>
-        </Text>
-      </Source>
-      <Source ID="151920">
-        <Name>Deliver Weapons - Jean LaFortune</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="76">
-          <EN>Quest - Jean La Fortune</EN>
-          <DE>Quest - Jean La Fortune</DE>
-        </Text>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="191855">
-    <Name>Armstrong Gun</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_cannon_4.png</Filename>
-    </Icon>
-    <Text ID="191855">
-      <EN>Strongarm's Disappearing Gun</EN>
-      <DE>Strongarms Verschwindlafette</DE>
-    </Text>
-    <Rarity ID="118006">
-      <EN>Legendary</EN>
-      <DE>Legendär</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="Warship">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
-      </Icon>
-      <Text ID="12812">
-        <EN>Military Ships</EN>
-        <DE>Kriegsschiffe</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-        </Icon>
-        <Text ID="3922">
-          <EN>Naval Power</EN>
-          <DE>Gefechtskunde</DE>
-        </Text>
-        <Value>50</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
-    <AttackableUpgrades />
-    <TradePrice>164500</TradePrice>
-    <Info ID="19706">
-      <EN>Mr. Strongarm's gun is as potent as it sounds, sneakily disappearing from view when not in use.</EN>
-      <DE>Mr. Strongarms Geschütz ist so durchschlagskräftig wie es klingt und verschwindet verstohlen außer Sicht, wenn es nicht benutzt wird.</DE>
-    </Info>
-    <Sources>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
-        </Icon>
-        <Text ID="11631">
-          <EN>Rescue Mission</EN>
-          <DE>Rettungseinsatz</DE>
-        </Text>
-      </Source>
-      <Source ID="73">
-        <Name>Third_party_03 (Anne Harlow)</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
-        </Icon>
-        <Text ID="73">
-          <EN>Harbour - Anne Harlow</EN>
-          <DE>Hafen - Anne Harlow</DE>
-        </Text>
-      </Source>
-      <Source ID="76">
-        <Name>Third_party_04 (La Fortune)</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
-        </Icon>
-        <Text ID="76">
-          <EN>Harbour - Jean La Fortune</EN>
-          <DE>Hafen - Jean La Fortune</DE>
-        </Text>
-      </Source>
-      <Source ID="800103">
-        <Name>Archeological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
-        </Icon>
-        <Text ID="11629">
-          <EN>Archaeological Expedition</EN>
-          <DE>Archäologische Expedition</DE>
-        </Text>
-      </Source>
-      <Source ID="800214">
-        <Name>Zoological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
-        </Icon>
-        <Text ID="11630">
-          <EN>Zoological Expedition</EN>
-          <DE>Zoologische Expedition</DE>
-        </Text>
-      </Source>
-      <Source ID="800403">
-        <Name>Pirate Hunt Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
-        </Icon>
-        <Text ID="11632">
-          <EN>Pirate Hunt</EN>
-          <DE>Piratenjagd</DE>
-        </Text>
-      </Source>
-      <Source ID="800777">
-        <Name>Discovery South America Sandbox</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
-        </Icon>
-        <Text ID="11634">
-          <EN>Discovery Expedition</EN>
-          <DE>Entdeckungsreise</DE>
-        </Text>
-      </Source>
-      <Source ID="150525">
-        <Name>Deliver Champagne - Beryl</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="82">
-          <EN>Quest - Beryl O'Mara</EN>
-          <DE>Quest - Beryl O'Mara</DE>
-        </Text>
-      </Source>
-      <Source ID="150087">
-        <Name>Walls Closing In - Alonso Graves</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="48">
-          <EN>Quest - Alonso Graves</EN>
-          <DE>Quest - Alonso Graves</DE>
-        </Text>
-      </Source>
-      <Source ID="151138">
-        <Name>Deliver Bread - Vicente</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="84">
-          <EN>Quest - Admiral Vicente Silva</EN>
-          <DE>Quest - Admiral Vicente Silva</DE>
-        </Text>
-      </Source>
-      <Source ID="150622">
-        <Name>Farewell Drinks - Anne Harlow</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="73">
-          <EN>Quest - Anne Harlow</EN>
-          <DE>Quest - Anne Harlow</DE>
-        </Text>
-      </Source>
-      <Source ID="151920">
-        <Name>Deliver Weapons - Jean LaFortune</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="76">
-          <EN>Quest - Jean La Fortune</EN>
-          <DE>Quest - Jean La Fortune</DE>
-        </Text>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="191856">
-    <Name>Exhaust Blower</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_heatexchanger_1.png</Filename>
-    </Icon>
-    <Text ID="191856">
-      <EN>Exhaust Blower</EN>
-      <DE>Lüfter</DE>
-    </Text>
-    <Rarity ID="118003">
-      <EN>Uncommon</EN>
-      <DE>Ungewöhnlich</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="SteamShip">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png</Filename>
-      </Icon>
-      <Text ID="2344">
-        <EN>Steamships</EN>
-        <DE>Dampfschiffe</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes />
-    <AttackableUpgrades />
-    <TradePrice>4375</TradePrice>
-    <Info ID="19707">
-      <EN>Improves engine efficiency.</EN>
-      <DE>Steigert die Maschineneffizienz.</DE>
-    </Info>
-    <Sources>
-      <Source ID="800103">
-        <Name>Archeological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
-        </Icon>
-        <Text ID="11629">
-          <EN>Archaeological Expedition</EN>
-          <DE>Archäologische Expedition</DE>
-        </Text>
-      </Source>
-      <Source ID="800214">
-        <Name>Zoological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
-        </Icon>
-        <Text ID="11630">
-          <EN>Zoological Expedition</EN>
-          <DE>Zoologische Expedition</DE>
-        </Text>
-      </Source>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
-        </Icon>
-        <Text ID="11631">
-          <EN>Rescue Mission</EN>
-          <DE>Rettungseinsatz</DE>
-        </Text>
-      </Source>
-      <Source ID="800403">
-        <Name>Pirate Hunt Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
-        </Icon>
-        <Text ID="11632">
-          <EN>Pirate Hunt</EN>
-          <DE>Piratenjagd</DE>
-        </Text>
-      </Source>
-      <Source ID="800777">
-        <Name>Discovery South America Sandbox</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
-        </Icon>
-        <Text ID="11634">
-          <EN>Discovery Expedition</EN>
-          <DE>Entdeckungsreise</DE>
-        </Text>
-      </Source>
-      <Source ID="45">
-        <Name>Third_party_02 (Archibald Blake)</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
-        </Icon>
-        <Text ID="45">
-          <EN>Harbour - Sir Archibald Blake</EN>
-          <DE>Hafen - Sir Archibald Blake</DE>
-        </Text>
-      </Source>
-      <Source ID="29">
-        <Name>Third_party_05 (Isabel Sarmento)</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
-        </Icon>
-        <Text ID="29">
-          <EN>Harbour - Isabel Sarmento</EN>
-          <DE>Hafen - Isabel Sarmento</DE>
-        </Text>
-      </Source>
-      <Source ID="150075">
-        <Name>Deliver Potatoes - Jorgensen</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="47">
-          <EN>Quest - Bente Jorgensen</EN>
-          <DE>Quest - Bente Jorgensen</DE>
-        </Text>
-      </Source>
-      <Source ID="151138">
-        <Name>Deliver Bread - Vicente</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="84">
-          <EN>Quest - Admiral Vicente Silva</EN>
-          <DE>Quest - Admiral Vicente Silva</DE>
-        </Text>
-      </Source>
-      <Source ID="150115">
-        <Name>Close But No Cigar - Archibald Blake</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="45">
-          <EN>Quest - Sir Archibald Blake</EN>
-          <DE>Quest - Sir Archibald Blake</DE>
-        </Text>
-      </Source>
-      <Source ID="150292">
-        <Name>Keeping Up - Sarmento</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="29">
-          <EN>Quest - Isabel Sarmento</EN>
-          <DE>Quest - Isabel Sarmento</DE>
-        </Text>
-      </Source>
-      <Source ID="151521">
-        <Name>RQ_Engineers_AnimalKingdom</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="88">
-          <EN>Quest - Engineer</EN>
-          <DE>Quest - Ingenieur</DE>
-        </Text>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="191857">
-    <Name>Heat Exchanger</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_heatexchanger_2.png</Filename>
-    </Icon>
-    <Text ID="191857">
-      <EN>Heat Exchanger</EN>
-      <DE>Wärmetauscher</DE>
-    </Text>
-    <Rarity ID="118004">
-      <EN>Rare</EN>
-      <DE>Selten</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="SteamShip">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png</Filename>
-      </Icon>
-      <Text ID="2344">
-        <EN>Steamships</EN>
-        <DE>Dampfschiffe</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes />
-    <AttackableUpgrades>
-      <Upgrade>
-        <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_plus.png</Filename>
-        </Icon>
-        <Text ID="1154">
-          <EN>Hitpoints</EN>
-          <DE>Trefferpunkte</DE>
-        </Text>
-        <Value>+15%</Value>
-      </Upgrade>
-    </AttackableUpgrades>
-    <TradePrice>18250</TradePrice>
-    <Info ID="19708">
-      <EN>Makes good use of excess furnace energy.</EN>
-      <DE>Macht guten Gebrauch von überschüssiger Hitze.</DE>
-    </Info>
-    <Sources>
-      <Source ID="800103">
-        <Name>Archeological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
-        </Icon>
-        <Text ID="11629">
-          <EN>Archaeological Expedition</EN>
-          <DE>Archäologische Expedition</DE>
-        </Text>
-      </Source>
-      <Source ID="800214">
-        <Name>Zoological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
-        </Icon>
-        <Text ID="11630">
-          <EN>Zoological Expedition</EN>
-          <DE>Zoologische Expedition</DE>
-        </Text>
-      </Source>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
-        </Icon>
-        <Text ID="11631">
-          <EN>Rescue Mission</EN>
-          <DE>Rettungseinsatz</DE>
-        </Text>
-      </Source>
-      <Source ID="800403">
-        <Name>Pirate Hunt Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
-        </Icon>
-        <Text ID="11632">
-          <EN>Pirate Hunt</EN>
-          <DE>Piratenjagd</DE>
-        </Text>
-      </Source>
-      <Source ID="800777">
-        <Name>Discovery South America Sandbox</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
-        </Icon>
-        <Text ID="11634">
-          <EN>Discovery Expedition</EN>
-          <DE>Entdeckungsreise</DE>
-        </Text>
-      </Source>
-      <Source ID="45">
-        <Name>Third_party_02 (Archibald Blake)</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
-        </Icon>
-        <Text ID="45">
-          <EN>Harbour - Sir Archibald Blake</EN>
-          <DE>Hafen - Sir Archibald Blake</DE>
-        </Text>
-      </Source>
-      <Source ID="29">
-        <Name>Third_party_05 (Isabel Sarmento)</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
-        </Icon>
-        <Text ID="29">
-          <EN>Harbour - Isabel Sarmento</EN>
-          <DE>Hafen - Isabel Sarmento</DE>
-        </Text>
-      </Source>
-      <Source ID="150075">
-        <Name>Deliver Potatoes - Jorgensen</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="47">
-          <EN>Quest - Bente Jorgensen</EN>
-          <DE>Quest - Bente Jorgensen</DE>
-        </Text>
-      </Source>
-      <Source ID="151138">
-        <Name>Deliver Bread - Vicente</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="84">
-          <EN>Quest - Admiral Vicente Silva</EN>
-          <DE>Quest - Admiral Vicente Silva</DE>
-        </Text>
-      </Source>
-      <Source ID="150115">
-        <Name>Close But No Cigar - Archibald Blake</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="45">
-          <EN>Quest - Sir Archibald Blake</EN>
-          <DE>Quest - Sir Archibald Blake</DE>
-        </Text>
-      </Source>
-      <Source ID="150292">
-        <Name>Keeping Up - Sarmento</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="29">
-          <EN>Quest - Isabel Sarmento</EN>
-          <DE>Quest - Isabel Sarmento</DE>
-        </Text>
-      </Source>
-      <Source ID="151521">
-        <Name>RQ_Engineers_AnimalKingdom</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="88">
-          <EN>Quest - Engineer</EN>
-          <DE>Quest - Ingenieur</DE>
-        </Text>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="191858">
-    <Name>Plate Heat Exchanger</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_heatexchanger_3.png</Filename>
-    </Icon>
-    <Text ID="191858">
-      <EN>Plate Heat Exchanger</EN>
-      <DE>Plattenwärmetauscher</DE>
-    </Text>
-    <Rarity ID="118005">
-      <EN>Epic</EN>
-      <DE>Episch</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="SteamShip">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png</Filename>
-      </Icon>
-      <Text ID="2344">
-        <EN>Steamships</EN>
-        <DE>Dampfschiffe</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes />
-    <AttackableUpgrades>
-      <Upgrade>
-        <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_plus.png</Filename>
-        </Icon>
-        <Text ID="1154">
-          <EN>Hitpoints</EN>
-          <DE>Trefferpunkte</DE>
-        </Text>
-        <Value>+30%</Value>
-      </Upgrade>
-    </AttackableUpgrades>
-    <TradePrice>50250</TradePrice>
-    <Info ID="19709">
-      <EN>Makes excellent use of excess furnace energy.</EN>
-      <DE>Macht ausgezeichneten Gebrauch von überschüssiger Hitze.</DE>
-    </Info>
-    <Sources>
-      <Source ID="800103">
-        <Name>Archeological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
-        </Icon>
-        <Text ID="11629">
-          <EN>Archaeological Expedition</EN>
-          <DE>Archäologische Expedition</DE>
-        </Text>
-      </Source>
-      <Source ID="800214">
-        <Name>Zoological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
-        </Icon>
-        <Text ID="11630">
-          <EN>Zoological Expedition</EN>
-          <DE>Zoologische Expedition</DE>
-        </Text>
-      </Source>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
-        </Icon>
-        <Text ID="11631">
-          <EN>Rescue Mission</EN>
-          <DE>Rettungseinsatz</DE>
-        </Text>
-      </Source>
-      <Source ID="800403">
-        <Name>Pirate Hunt Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
-        </Icon>
-        <Text ID="11632">
-          <EN>Pirate Hunt</EN>
-          <DE>Piratenjagd</DE>
-        </Text>
-      </Source>
-      <Source ID="800777">
-        <Name>Discovery South America Sandbox</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
-        </Icon>
-        <Text ID="11634">
-          <EN>Discovery Expedition</EN>
-          <DE>Entdeckungsreise</DE>
-        </Text>
-      </Source>
-      <Source ID="45">
-        <Name>Third_party_02 (Archibald Blake)</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
-        </Icon>
-        <Text ID="45">
-          <EN>Harbour - Sir Archibald Blake</EN>
-          <DE>Hafen - Sir Archibald Blake</DE>
-        </Text>
-      </Source>
-      <Source ID="29">
-        <Name>Third_party_05 (Isabel Sarmento)</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
-        </Icon>
-        <Text ID="29">
-          <EN>Harbour - Isabel Sarmento</EN>
-          <DE>Hafen - Isabel Sarmento</DE>
-        </Text>
-      </Source>
-      <Source ID="150075">
-        <Name>Deliver Potatoes - Jorgensen</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="47">
-          <EN>Quest - Bente Jorgensen</EN>
-          <DE>Quest - Bente Jorgensen</DE>
-        </Text>
-      </Source>
-      <Source ID="151138">
-        <Name>Deliver Bread - Vicente</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="84">
-          <EN>Quest - Admiral Vicente Silva</EN>
-          <DE>Quest - Admiral Vicente Silva</DE>
-        </Text>
-      </Source>
-      <Source ID="150115">
-        <Name>Close But No Cigar - Archibald Blake</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="45">
-          <EN>Quest - Sir Archibald Blake</EN>
-          <DE>Quest - Sir Archibald Blake</DE>
-        </Text>
-      </Source>
-      <Source ID="150292">
-        <Name>Keeping Up - Sarmento</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="29">
-          <EN>Quest - Isabel Sarmento</EN>
-          <DE>Quest - Isabel Sarmento</DE>
-        </Text>
-      </Source>
-      <Source ID="151521">
-        <Name>RQ_Engineers_AnimalKingdom</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="88">
-          <EN>Quest - Engineer</EN>
-          <DE>Quest - Ingenieur</DE>
-        </Text>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="191878">
-    <Name>White Flag</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/icon_white_flag.png</Filename>
-    </Icon>
-    <Text ID="191878">
-      <EN>White Flag</EN>
-      <DE>Weiße Flagge</DE>
-    </Text>
-    <Rarity ID="118005">
-      <EN>Epic</EN>
-      <DE>Episch</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="SailShip">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-      </Icon>
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
-        </Icon>
-        <Text ID="3920">
-          <EN>Diplomacy</EN>
-          <DE>Redegabe</DE>
-        </Text>
-        <Value>10</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
-    <AttackableUpgrades />
-    <TradePrice>65625</TradePrice>
-    <Info ID="19724">
-      <EN>Wave it if you don't want a fight.</EN>
-      <DE>Hissen, wenn Sie keinen Kampf wollen.</DE>
-    </Info>
-    <Sources>
-      <Source ID="800103">
-        <Name>Archeological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
-        </Icon>
-        <Text ID="11629">
-          <EN>Archaeological Expedition</EN>
-          <DE>Archäologische Expedition</DE>
-        </Text>
-      </Source>
-      <Source ID="800214">
-        <Name>Zoological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
-        </Icon>
-        <Text ID="11630">
-          <EN>Zoological Expedition</EN>
-          <DE>Zoologische Expedition</DE>
-        </Text>
-      </Source>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
-        </Icon>
-        <Text ID="11631">
-          <EN>Rescue Mission</EN>
-          <DE>Rettungseinsatz</DE>
-        </Text>
-      </Source>
-      <Source ID="800403">
-        <Name>Pirate Hunt Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
-        </Icon>
-        <Text ID="11632">
-          <EN>Pirate Hunt</EN>
-          <DE>Piratenjagd</DE>
-        </Text>
-      </Source>
-      <Source ID="800777">
-        <Name>Discovery South America Sandbox</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
-        </Icon>
-        <Text ID="11634">
-          <EN>Discovery Expedition</EN>
-          <DE>Entdeckungsreise</DE>
-        </Text>
-      </Source>
-      <Source ID="29">
-        <Name>Third_party_05 (Isabel Sarmento)</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
-        </Icon>
-        <Text ID="29">
-          <EN>Harbour - Isabel Sarmento</EN>
-          <DE>Hafen - Isabel Sarmento</DE>
-        </Text>
-      </Source>
-      <Source ID="150292">
-        <Name>Keeping Up - Sarmento</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="29">
-          <EN>Quest - Isabel Sarmento</EN>
-          <DE>Quest - Isabel Sarmento</DE>
-        </Text>
-      </Source>
-      <Source ID="150399">
-        <Name>Comeback King - Willie</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="80">
-          <EN>Quest - Willie Wibblesock</EN>
-          <DE>Quest - Willie Wibblesock</DE>
-        </Text>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="191991">
-    <Name>Royal White Flag</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_white_flag_2.png</Filename>
-    </Icon>
-    <Text ID="191991">
-      <EN>Great White Flag</EN>
-      <DE>Große weiße Flagge</DE>
-    </Text>
-    <Rarity ID="118006">
-      <EN>Legendary</EN>
-      <DE>Legendär</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="SailShip">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-      </Icon>
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
-        </Icon>
-        <Text ID="3920">
-          <EN>Diplomacy</EN>
-          <DE>Redegabe</DE>
-        </Text>
-        <Value>20</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
-    <AttackableUpgrades />
-    <TradePrice>175000</TradePrice>
-    <Info ID="19725">
-      <EN>Wave it if you don't want a fight, and you like good deals.</EN>
-      <DE>Hissen, wenn Sie keinen Kampf wollen und gute Geschäfte mögen.</DE>
-    </Info>
-    <Sources>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
-        </Icon>
-        <Text ID="11631">
-          <EN>Rescue Mission</EN>
-          <DE>Rettungseinsatz</DE>
-        </Text>
-      </Source>
-      <Source ID="29">
-        <Name>Third_party_05 (Isabel Sarmento)</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
-        </Icon>
-        <Text ID="29">
-          <EN>Harbour - Isabel Sarmento</EN>
-          <DE>Hafen - Isabel Sarmento</DE>
-        </Text>
-      </Source>
-      <Source ID="800103">
-        <Name>Archeological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
-        </Icon>
-        <Text ID="11629">
-          <EN>Archaeological Expedition</EN>
-          <DE>Archäologische Expedition</DE>
-        </Text>
-      </Source>
-      <Source ID="800214">
-        <Name>Zoological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
-        </Icon>
-        <Text ID="11630">
-          <EN>Zoological Expedition</EN>
-          <DE>Zoologische Expedition</DE>
-        </Text>
-      </Source>
-      <Source ID="800403">
-        <Name>Pirate Hunt Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
-        </Icon>
-        <Text ID="11632">
-          <EN>Pirate Hunt</EN>
-          <DE>Piratenjagd</DE>
-        </Text>
-      </Source>
-      <Source ID="800777">
-        <Name>Discovery South America Sandbox</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
-        </Icon>
-        <Text ID="11634">
-          <EN>Discovery Expedition</EN>
-          <DE>Entdeckungsreise</DE>
-        </Text>
-      </Source>
-      <Source ID="150292">
-        <Name>Keeping Up - Sarmento</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="29">
-          <EN>Quest - Isabel Sarmento</EN>
-          <DE>Quest - Isabel Sarmento</DE>
-        </Text>
-      </Source>
-      <Source ID="150399">
-        <Name>Comeback King - Willie</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="80">
-          <EN>Quest - Willie Wibblesock</EN>
-          <DE>Quest - Willie Wibblesock</DE>
-        </Text>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="190161">
-    <Name>Test Quest Item</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-    </Icon>
-    <Text ID="190161">
-      <EN>Test Quest Item</EN>
-      <DE>Test Quest Item</DE>
-    </Text>
-    <Rarity ID="118002">
-      <EN>Common</EN>
-      <DE>Gewöhnlich</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="SailShip">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-      </Icon>
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes />
-    <AttackableUpgrades />
-    <TradePrice />
-    <Sources />
-  </Asset>
-  <Asset ID="190024">
-    <Name>common sailship speed boost</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/icon_sail.png</Filename>
-    </Icon>
-    <Text ID="190024">
-      <EN>Crappy Sails</EN>
-      <DE>Miese Segel</DE>
-    </Text>
-    <Rarity ID="118002">
-      <EN>Common</EN>
-      <DE>Gewöhnlich</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="SailShip">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-      </Icon>
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-        </Icon>
-        <Text ID="3923">
-          <EN>Navigation</EN>
-          <DE>Navigation</DE>
-        </Text>
-        <Value>10</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
-    <AttackableUpgrades />
-    <TradePrice>250</TradePrice>
-    <Sources>
-      <Source ID="152560">
-        <Name>Use Item/Smuggle Sunken Poetry 3 - Submarine Archaeology - Pincess Qing DISABLED</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="79">
-          <EN>Quest - Princess Qing</EN>
-          <DE>Quest - Prinzessin Qing</DE>
-        </Text>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="190025">
-    <Name>common steamsip speed boost</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
-    </Icon>
-    <Text ID="190025">
-      <EN>Crappy Steam Motor</EN>
-      <DE>Miese Dampfmaschine</DE>
-    </Text>
-    <Rarity ID="118002">
-      <EN>Common</EN>
-      <DE>Gewöhnlich</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="SteamShip">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png</Filename>
-      </Icon>
-      <Text ID="2344">
-        <EN>Steamships</EN>
-        <DE>Dampfschiffe</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-        </Icon>
-        <Text ID="3923">
-          <EN>Navigation</EN>
-          <DE>Navigation</DE>
-        </Text>
-        <Value>10</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
-    <AttackableUpgrades />
-    <TradePrice>1250</TradePrice>
-    <Sources />
-  </Asset>
-  <Asset ID="6000004">
-    <Name>VehicleTestItem</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-    </Icon>
-    <Text ID="6000004">
-      <EN>SimpleTestItem</EN>
-      <DE>SimpleTestItem</DE>
-    </Text>
-    <Rarity ID="118002">
-      <EN>Common</EN>
-      <DE>Gewöhnlich</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="SailShip">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-      </Icon>
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes />
-    <AttackableUpgrades />
-    <TradePrice />
-    <Sources />
-  </Asset>
-  <Asset ID="190138">
-    <Name>ship speed</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/icons/icon_shipsymbol.png</Filename>
-    </Icon>
-    <Text ID="190138">
-      <EN>one time equip Sails</EN>
-      <DE>one time equip Sails</DE>
-    </Text>
-    <Rarity ID="118005">
-      <EN>Epic</EN>
-      <DE>Episch</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="SailShip">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-      </Icon>
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes />
-    <AttackableUpgrades />
-    <TradePrice>250</TradePrice>
-    <Sources />
-  </Asset>
-  <Asset ID="190591">
-    <Name>ShipMaintainanceItem</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/icons/icon_repair_crane_2d.png</Filename>
-    </Icon>
-    <Text ID="190591">
-      <EN>Ship Mechanic</EN>
-      <DE>Ship Mechanic</DE>
-    </Text>
-    <Rarity ID="118005">
-      <EN>Epic</EN>
-      <DE>Episch</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="SailShip">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-      </Icon>
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes />
-    <AttackableUpgrades />
-    <TradePrice>250</TradePrice>
-    <Sources />
-  </Asset>
-  <Asset ID="190592">
-    <Name>ShipAccuracyItem</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
-    </Icon>
-    <Text ID="190592">
-      <EN>Spyglass</EN>
-      <DE>Spyglass</DE>
-    </Text>
-    <Rarity ID="118006">
-      <EN>Legendary</EN>
-      <DE>Legendär</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="SailShip">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-      </Icon>
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes />
-    <AttackableUpgrades />
-    <TradePrice>250</TradePrice>
-    <Sources />
-  </Asset>
-  <Asset ID="192086">
-    <Name>Basic Cannon Upgrade</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/icon_weapons.png</Filename>
-    </Icon>
-    <Text ID="192086">
-      <EN>Basic Cannon Upgrade</EN>
-      <DE>Einfacher Kanonen-Ausbau</DE>
-    </Text>
-    <Rarity ID="118003">
-      <EN>Uncommon</EN>
-      <DE>Ungewöhnlich</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="SailShip">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-      </Icon>
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes />
-    <AttackableUpgrades />
-    <TradePrice>3750</TradePrice>
-    <Sources />
-  </Asset>
-  <Asset ID="192087">
-    <Name>Cannon Upgrade</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/icon_weapons.png</Filename>
-    </Icon>
-    <Text ID="192087">
-      <EN>Cannon Upgrade</EN>
-      <DE>Kanonen-Ausbau</DE>
-    </Text>
-    <Rarity ID="118004">
-      <EN>Rare</EN>
-      <DE>Selten</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="SailShip">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-      </Icon>
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes />
-    <AttackableUpgrades />
-    <TradePrice>12500</TradePrice>
-    <Sources />
-  </Asset>
-  <Asset ID="192088">
-    <Name>Advanced Cannons</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/icon_advanced_weaponry.png</Filename>
-    </Icon>
-    <Text ID="192088">
-      <EN>Advanced Cannons</EN>
-      <DE>Fortgeschrittene Kanonen</DE>
-    </Text>
-    <Rarity ID="118005">
-      <EN>Epic</EN>
-      <DE>Episch</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="SailShip">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-      </Icon>
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes />
-    <AttackableUpgrades />
-    <TradePrice>50000</TradePrice>
-    <Sources />
-  </Asset>
-  <Asset ID="192089">
-    <Name>State-of-the-Art Cannons</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/icon_advanced_weaponry.png</Filename>
-    </Icon>
-    <Text ID="192089">
-      <EN>State-of-the-Art Cannons</EN>
-      <DE>Hochmoderne Kanonen</DE>
-    </Text>
-    <Rarity ID="118006">
-      <EN>Legendary</EN>
-      <DE>Legendär</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="SailShip">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-      </Icon>
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes />
-    <AttackableUpgrades />
-    <TradePrice>100000</TradePrice>
-    <Sources />
-  </Asset>
-  <Asset ID="192112">
-    <Name>Sail Ship Annihilator</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/ship_military/icon_pucklegun.png</Filename>
-    </Icon>
-    <Text ID="192112">
-      <EN>Sailing Ship Annihilator</EN>
-      <DE>Segelschiff-Vernichter</DE>
-    </Text>
-    <Rarity ID="118005">
-      <EN>Epic</EN>
-      <DE>Episch</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="SailShip">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-      </Icon>
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes />
-    <AttackableUpgrades />
-    <TradePrice>10000</TradePrice>
-    <Sources />
-  </Asset>
-  <Asset ID="192113">
-    <Name>Steam Ship Annihilator</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/ship_military/icon_pucklegun.png</Filename>
-    </Icon>
-    <Text ID="192113">
-      <EN>Steam Ship Annihilator</EN>
-      <DE>Dampfschiff-Vernichter</DE>
-    </Text>
-    <Rarity ID="118005">
-      <EN>Epic</EN>
-      <DE>Episch</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="SailShip">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-      </Icon>
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes />
-    <AttackableUpgrades />
-    <TradePrice>10000</TradePrice>
-    <Sources />
-  </Asset>
-  <Asset ID="192114">
-    <Name>Building Annihilator</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/ship_military/icon_pucklegun.png</Filename>
-    </Icon>
-    <Text ID="192114">
-      <EN>Building Annihilator</EN>
-      <DE>Gebäude-Vernichter</DE>
-    </Text>
-    <Rarity ID="118006">
-      <EN>Legendary</EN>
-      <DE>Legendär</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="SailShip">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-      </Icon>
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes />
-    <AttackableUpgrades />
-    <TradePrice>18750</TradePrice>
-    <Sources />
   </Asset>
 </VehicleItem>

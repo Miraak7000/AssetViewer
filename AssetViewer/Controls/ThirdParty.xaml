@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="AssetViewer.Controls.Monument"
+﻿<UserControl x:Class="AssetViewer.Controls.ThirdParty"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -7,11 +7,10 @@
              xmlns:converter="clr-namespace:AssetViewer.Converter"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800" SnapsToDevicePixels="True"
-             FontSize="13" Loaded="Monument_OnLoaded">
+             FontSize="13" Loaded="ThirdParty_OnLoaded">
 
   <UserControl.Resources>
     <converter:DescriptionConverterOld x:Key="DescriptionConverter"></converter:DescriptionConverterOld>
-    <converter:GlobalDescriptionConverter x:Key="Description"></converter:GlobalDescriptionConverter>
     <DataTemplate x:Key="SelectableTemplate">
       <Grid MaxHeight="30">
         <Grid.ColumnDefinitions>
@@ -23,9 +22,9 @@
       </Grid>
     </DataTemplate>
   </UserControl.Resources>
-  <!--<UserControl.Background>
+  <UserControl.Background>
     <ImageBrush ImageSource="../Resources/data/ui/2kimages/main/assets16/bgr_playercreation_0.png" Stretch="UniformToFill"/>
-  </UserControl.Background>-->
+  </UserControl.Background>
 
   <Grid Grid.Row="2">
     <Grid.RowDefinitions>
@@ -34,29 +33,21 @@
       <RowDefinition Height="*"></RowDefinition>
     </Grid.RowDefinitions>
     <Border Grid.Row="0" BorderBrush="#FF554628" BorderThickness="1" CornerRadius="5">
-      <Grid Margin="5">
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="225"></ColumnDefinition>
-          <ColumnDefinition Width="5"></ColumnDefinition>
-          <ColumnDefinition Width="300"></ColumnDefinition>
-          <ColumnDefinition Width="5"></ColumnDefinition>
-          <ColumnDefinition Width="225"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-          <RowDefinition Height="18"></RowDefinition>
-          <RowDefinition Height="22"></RowDefinition>
-        </Grid.RowDefinitions>
-
-        <TextBlock Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" Text="{Binding Path=Categories, Converter={StaticResource Description}, ConverterParameter=107}" Margin="0,0,5,0"></TextBlock>
-        <ComboBox x:Name="ComboBoxCategories" Grid.Column="0" Grid.Row="1" Height="22" ItemsSource="{Binding Path=Categories}" ItemTemplate="{StaticResource SelectableTemplate}" SelectionChanged="ComboBoxCategories_OnSelectionChanged"></ComboBox>
-
-        <TextBlock Grid.Column="2" Grid.Row="0" VerticalAlignment="Center" Text="{Binding Path=Events, Converter={StaticResource Description}, ConverterParameter=108}" Margin="0,0,5,0"></TextBlock>
-        <ComboBox x:Name="ComboBoxEvents" Grid.Column="2" Grid.Row="1" Height="22" ItemsSource="{Binding Path=Events}" ItemTemplate="{StaticResource SelectableTemplate}" SelectionChanged="ComboBoxEvents_OnSelectionChanged"></ComboBox>
-
-        <TextBlock Grid.Column="4" Grid.Row="0" VerticalAlignment="Center" Text="{Binding Path=Thresholds, Converter={StaticResource Description}, ConverterParameter=109}" Margin="0,0,5,0"></TextBlock>
-        <ComboBox x:Name="ComboBoxThresholds" Grid.Column="4" Grid.Row="1" Height="22" ItemsSource="{Binding Path=Thresholds}" ItemTemplate="{StaticResource SelectableTemplate}" SelectionChanged="ComboBoxThresholds_OnSelectionChanged"></ComboBox>
-
-      </Grid>
+      <StackPanel Orientation="Horizontal" Margin="5">
+        <Grid Margin="0,0,50,0">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"></ColumnDefinition>
+          </Grid.ColumnDefinitions>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="24"></RowDefinition>
+            <RowDefinition Height="24"></RowDefinition>
+            <RowDefinition Height="24"></RowDefinition>
+          </Grid.RowDefinitions>
+          <ComboBox x:Name="ComboBoxCategories" Grid.Column="0" Grid.Row="0" Height="22" ItemsSource="{Binding Path=Categories}" ItemTemplate="{StaticResource SelectableTemplate}" SelectionChanged="ComboBoxCategories_OnSelectionChanged"></ComboBox>
+          <ComboBox x:Name="ComboBoxEvents" Grid.Column="0" Grid.Row="1" Height="22" ItemsSource="{Binding Path=Events}" ItemTemplate="{StaticResource SelectableTemplate}" SelectionChanged="ComboBoxEvents_OnSelectionChanged"></ComboBox>
+          <ComboBox x:Name="ComboBoxThresholds" Grid.Column="0" Grid.Row="2" Height="22" ItemsSource="{Binding Path=Thresholds}" ItemTemplate="{StaticResource SelectableTemplate}" SelectionChanged="ComboBoxThresholds_OnSelectionChanged"></ComboBox>
+        </Grid>
+      </StackPanel>
     </Border>
     <Grid Grid.Row="2">
       <Grid.ColumnDefinitions>
@@ -66,7 +57,7 @@
       </Grid.ColumnDefinitions>
       <Grid Grid.Column="0">
         <Border BorderBrush="#FF554628" BorderThickness="1" CornerRadius="5">
-          <ListBox x:Name="ListBoxItems" Background="Transparent" ItemsSource="{Binding Path=Rewards}" SelectionChanged="ListBoxItems_OnSelectionChanged" BorderBrush="Transparent">
+          <ListBox x:Name="ListBoxItems" Background="Transparent" ItemsSource="{Binding Path=Items}" SelectionChanged="ListBoxItems_OnSelectionChanged" BorderBrush="Transparent">
             <ListBox.ItemTemplate>
               <DataTemplate>
                 <Grid MaxHeight="24">

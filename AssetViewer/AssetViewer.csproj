@@ -58,6 +58,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controls\ThirdParty.xaml.cs">
+      <DependentUpon>ThirdParty.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Converter\DescriptionConverter.cs" />
     <Compile Include="Converter\VisibilityConverter.cs" />
     <Compile Include="Data\Allocation.cs" />
@@ -92,6 +95,10 @@
     <Page Include="Controls\GuildhouseItem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ThirdParty.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Controls\Monument.xaml">
       <SubType>Designer</SubType>
@@ -880,6 +887,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\Assets\VehicleItem.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Assets\ThirdParty.xml" />
+  </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\profiles\3rd_party_08.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

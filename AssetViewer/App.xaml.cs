@@ -17,11 +17,15 @@ namespace AssetViewer {
       get {
         var result = new Dictionary<Int32, Description>();
         result.Add(101, new Description("Asset:", "Gegenstand:"));
-        result.Add(102, new Description("Guild house items", "Gildenhaus Gegenstände"));
+        result.Add(102, new Description("Improvements", "Verbesserungen"));
         result.Add(103, new Description("Harbor office items", "Hafenmeisterei Gegenstände"));
         result.Add(104, new Description("Town hall items", "Rathaus Gegenstände"));
         result.Add(105, new Description("World Fair", "Weltausstellung"));
         result.Add(106, new Description("Equipped", "Ausgerüstet"));
+        result.Add(107, new Description("Topic", "Thema"));
+        result.Add(108, new Description("Size", "Grösse"));
+        result.Add(109, new Description("Level", "Stufe"));
+        result.Add(110, new Description("Third Party", "Gegenspieler"));
         result.Add(1001, new Description("Rarity", "Rarität"));
         result.Add(1002, new Description("Type", "Typ"));
         result.Add(1003, new Description("Allocation", "Zuweisung"));

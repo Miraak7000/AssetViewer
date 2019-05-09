@@ -36,6 +36,9 @@ namespace AssetViewer {
           case 1:
             this.Presenter.Content = new Monument();
             break;
+          case 2:
+            this.Presenter.Content = new ThirdParty();
+            break;
         }
       }
     }

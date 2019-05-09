@@ -207,18 +207,18 @@ namespace AssetViewer.Controls {
           this.Assets.AddRange(document.Elements().Select(s => new Asset(s)));
         }
       }
-      //using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.HarborOfficeItem.xml")) {
-      //  using (var reader = new StreamReader(stream)) {
-      //    var document = XDocument.Parse(reader.ReadToEnd()).Root;
-      //    this.Assets.AddRange(document.Elements().Select(s => new Asset(s)));
-      //  }
-      //}
-      //using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.TownhallItem.xml")) {
-      //  using (var reader = new StreamReader(stream)) {
-      //    var document = XDocument.Parse(reader.ReadToEnd()).Root;
-      //    this.Assets.AddRange(document.Elements().Select(s => new Asset(s)));
-      //  }
-      //}
+      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.HarborOfficeItem.xml")) {
+        using (var reader = new StreamReader(stream)) {
+          var document = XDocument.Parse(reader.ReadToEnd()).Root;
+          this.Assets.AddRange(document.Elements().Select(s => new Asset(s)));
+        }
+      }
+      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.TownhallItem.xml")) {
+        using (var reader = new StreamReader(stream)) {
+          var document = XDocument.Parse(reader.ReadToEnd()).Root;
+          this.Assets.AddRange(document.Elements().Select(s => new Asset(s)));
+        }
+      }
       using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.VehicleItem.xml")) {
         using (var reader = new StreamReader(stream)) {
           var document = XDocument.Parse(reader.ReadToEnd()).Root;

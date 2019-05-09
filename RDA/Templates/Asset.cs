@@ -40,7 +40,7 @@ namespace RDA.Templates {
     #endregion
 
     #region Constructor
-    public Asset(XElement asset) {
+    public Asset(XElement asset, Boolean findSources) {
       foreach (var element in asset.Element("Values").Elements()) {
         switch (element.Name.LocalName) {
           case "Text":
@@ -118,8 +118,10 @@ namespace RDA.Templates {
             throw new NotImplementedException(element.Name.LocalName);
         }
       }
-      var sources = this.FindSources(this.ID, new List<String>()).ToArray();
-      this.Sources = sources.Select(s => new TempSource(s)).ToList();
+      if (findSources) {
+        var sources = this.FindSources(this.ID, new List<String>()).ToArray();
+        this.Sources = sources.Select(s => new TempSource(s)).ToList();
+      }
     }
     public String Path = String.Empty;
     #endregion
@@ -153,7 +155,7 @@ namespace RDA.Templates {
       //
       if (this.Info != null) result.Add(this.Info.ToXml("Info"));
       //
-      result.Add(new XElement("Sources", this.Sources.Select(s => s.ToXml())));
+      result.Add(new XElement("Sources", this.Sources?.Select(s => s.ToXml())));
       return result;
     }
     public override String ToString() {

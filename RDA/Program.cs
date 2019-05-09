@@ -47,10 +47,10 @@ namespace RDA {
 
       // Create Assets
       //Program.ProcessingItems("GuildhouseItem");
-      Program.ProcessingItems("TownhallItem");
+      //Program.ProcessingItems("TownhallItem");
       //Program.ProcessingItems("HarborOfficeItem");
       //Program.ProcessingItems("VehicleItem");
-      //Program.ProcessingThirdParty();
+      Program.ProcessingThirdParty();
     }
     private static void ProcessingItems(String template) {
       var result = new List<Asset>();
@@ -59,7 +59,7 @@ namespace RDA {
       assets.ForAll((asset) => {
         if (asset.XPathSelectElement("Values/Item/HasAction")?.Value == "1") return;
         Console.WriteLine(asset.XPathSelectElement("Values/Standard/GUID").Value);
-        var item = new Asset(asset);
+        var item = new Asset(asset, true);
         result.Add(item);
       });
       var document = new XDocument();
@@ -70,12 +70,13 @@ namespace RDA {
     }
     private static void ProcessingThirdParty() {
       var result = new List<ThirdParty>();
-      var assets = Program.Original.XPathSelectElements($"//Asset[Template='Profile_3rdParty']").ToArray();
-      foreach (var asset in assets) {
-        if (!asset.XPathSelectElements("Values/Trader/Progression/*/OfferingItems").Any()) continue;
+      var assets = Program.Original.XPathSelectElements($"//Asset[Template='Profile_3rdParty']").ToArray().AsParallel();
+      assets.ForAll((asset) => {
+        if (!asset.XPathSelectElements("Values/Trader/Progression/*/OfferingItems").Any()) return;
+        Console.WriteLine(asset.XPathSelectElement("Values/Standard/GUID").Value);
         var item = new ThirdParty(asset);
         result.Add(item);
-      }
+      });
       var document = new XDocument();
       document.Add(new XElement("ThirdParties"));
       document.Root.Add(result.Select(s => s.ToXml()));
