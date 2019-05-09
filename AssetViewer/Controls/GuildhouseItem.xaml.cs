@@ -6,6 +6,8 @@ using System.Linq;
 using System.Reflection;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Documents;
+using System.Windows.Input;
 using System.Windows.Media;
 using System.Xml.Linq;
 using AssetViewer.Library;
@@ -38,8 +40,8 @@ namespace AssetViewer.Controls {
             result = result.OrderBy(o => o.Text.EN);
             break;
         }
-        if (!String.IsNullOrEmpty(this._SearchText)) {
-          result = result.Where(w => w.ID.StartsWith(this._SearchText, StringComparison.InvariantCultureIgnoreCase) || w.Text.EN.Contains(this._SearchText) || w.Text.DE.Contains(this._SearchText));
+        if (!String.IsNullOrEmpty(this.Search)) {
+          result = result.Where(w => w.ID.StartsWith(this.Search, StringComparison.InvariantCultureIgnoreCase) || (App.Language == Languages.English ? w.Text.EN.ToLower().Contains(this.Search.ToLower()) : w.Text.DE.ToLower().Contains(this.Search.ToLower())));
         }
         return result;
       }
@@ -180,17 +182,19 @@ namespace AssetViewer.Controls {
       get { return this.Items.Any(); }
     }
     public String SearchText {
-      get { return this._SearchText; }
+      get { return this.Search; }
       set {
-        this._SearchText = value;
+        this.Search = value;
         this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
         this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
       }
     }
     #endregion
 
+    #region Fields
     private readonly List<Asset> Assets;
-    private String _SearchText = String.Empty;
+    private String Search = String.Empty;
+    #endregion
 
     #region Constructor
     public GuildhouseItem() {
@@ -203,19 +207,24 @@ namespace AssetViewer.Controls {
           this.Assets.AddRange(document.Elements().Select(s => new Asset(s)));
         }
       }
-      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.HarborOfficeItem.xml")) {
+      //using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.HarborOfficeItem.xml")) {
+      //  using (var reader = new StreamReader(stream)) {
+      //    var document = XDocument.Parse(reader.ReadToEnd()).Root;
+      //    this.Assets.AddRange(document.Elements().Select(s => new Asset(s)));
+      //  }
+      //}
+      //using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.TownhallItem.xml")) {
+      //  using (var reader = new StreamReader(stream)) {
+      //    var document = XDocument.Parse(reader.ReadToEnd()).Root;
+      //    this.Assets.AddRange(document.Elements().Select(s => new Asset(s)));
+      //  }
+      //}
+      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.VehicleItem.xml")) {
         using (var reader = new StreamReader(stream)) {
           var document = XDocument.Parse(reader.ReadToEnd()).Root;
           this.Assets.AddRange(document.Elements().Select(s => new Asset(s)));
         }
       }
-      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.TownhallItem.xml")) {
-        using (var reader = new StreamReader(stream)) {
-          var document = XDocument.Parse(reader.ReadToEnd()).Root;
-          this.Assets.AddRange(document.Elements().Select(s => new Asset(s)));
-        }
-      }
-      var o1 = this.Assets.SelectMany(s => s.Sources).GroupBy(k => k.Item1).Select(s => new { s.Key, s.First().Item2 }).OrderBy(o => o.Item2).ToArray();
       this.DataContext = this;
     }
     #endregion
@@ -269,6 +278,15 @@ namespace AssetViewer.Controls {
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("ExpeditionText"));
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("TradeText"));
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
+    }
+    private void ButtonSwitch_Click(Object sender, RoutedEventArgs e) {
+      if (this.ItemFront.Visibility == Visibility.Visible) {
+        this.ItemFront.Visibility = Visibility.Collapsed;
+        this.ItemBack.Visibility = Visibility.Visible;
+      } else {
+        this.ItemBack.Visibility = Visibility.Collapsed;
+        this.ItemFront.Visibility = Visibility.Visible;
+      }
     }
     #endregion
 

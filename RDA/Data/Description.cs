@@ -43,6 +43,9 @@ namespace RDA.Data {
       result.Add(new XElement("DE", this.DE));
       return result;
     }
+    public override String ToString() {
+      return this.EN;
+    }
     #endregion
 
   }

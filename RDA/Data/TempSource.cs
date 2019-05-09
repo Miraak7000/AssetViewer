@@ -10,8 +10,8 @@ namespace RDA.Data {
     #region Properties
     public String ID { get; set; }
     public String Name { get; set; }
+    public Icon Icon { get; set; }
     public Description Text { get; set; }
-    public String IconFilename { get; set; }
     #endregion
 
     #region Constructor
@@ -19,20 +19,41 @@ namespace RDA.Data {
       this.ID = element.XPathSelectElement("Values/Standard/GUID").Value;
       this.Name = element.XPathSelectElement("Values/Standard/Name").Value;
       switch (element.Element("Template").Value) {
-        case "AssetPool":
-          // no text available
+        case "TourismFeature":
+          this.Text = new Description("Tourism", "Tourismus");
+          break;
+        case "MonumentEventReward":
+        case "CollectablePicturePuzzle":
+          this.Text = new Description(element.XPathSelectElement("Values/Standard/GUID").Value);
           break;
         case "Expedition":
           this.Text = new Description(element.XPathSelectElement("Values/Expedition/ExpeditionName").Value);
           break;
+        case "Profile_3rdParty":
+        case "Profile_3rdParty_Pirate":
+          this.Text = new Description(element.XPathSelectElement("Values/Standard/GUID").Value);
+          this.Text.EN = $"Harbour - {this.Text.EN}";
+          this.Text.DE = $"Hafen - {this.Text.DE}";
+          break;
+        case "Quest":
+        case "A7_QuestEscortObject":
+        case "A7_QuestDeliveryObject":
+        case "A7_QuestDestroyObjects":
+        case "A7_QuestPickupObject":
+        case "A7_QuestFollowShip":
+        case "A7_QuestItemUsage":
+          this.Text = new Description(element.XPathSelectElement("Values/Quest/QuestGiver").Value);
+          this.Text.EN = $"Quest - {this.Text.EN}";
+          this.Text.DE = $"Quest - {this.Text.DE}";
+          break;
         default:
           throw new NotImplementedException();
       }
-      //var textID =
-      //this.Text = element.XPathSelectElement("Values/Text/LocaText/English/Text")?.Value;
-      //if (String.IsNullOrEmpty(this.Text)) this.Text = element.XPathSelectElement("Values/Expedition/ExpeditionName")?.Value;
-
-      this.IconFilename = element.XPathSelectElement("Values/Standard/IconFilename")?.Value;
+      if (element.XPathSelectElement("Values/Standard/IconFilename") != null) {
+        this.Icon = new Icon(element.XPathSelectElement("Values/Standard/IconFilename").Value);
+      } else {
+        this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_skull.png");
+      }
     }
     #endregion
 
@@ -41,8 +62,8 @@ namespace RDA.Data {
       var result = new XElement("Source");
       result.Add(new XAttribute("ID", this.ID));
       result.Add(new XElement("Name", this.Name));
-      result.Add(new XElement("Text", this.Text));
-      result.Add(new XElement("IconFilename", this.IconFilename));
+      result.Add(this.Icon == null ? new XElement("Icon") : this.Icon.ToXml());
+      result.Add(this.Text.ToXml("Text"));
       return result;
     }
     #endregion

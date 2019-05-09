@@ -60,6 +60,31 @@ namespace RDA.Data {
               break;
           }
           break;
+        case "VehicleItem":
+          switch (value) {
+            case "SailShip":
+              this.ID = "SailShip";
+              this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_ship.png");
+              this.Text = new Description(Helper.GetDescriptionID("SailShip"));
+              break;
+            case "SteamShip":
+              this.ID = "SteamShip";
+              this.Icon = new Icon("data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png");
+              this.Text = new Description(Helper.GetDescriptionID("SteamShip"));
+              break;
+            case "Warship":
+              this.ID = "Warship";
+              this.Icon = new Icon("data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png");
+              this.Text = new Description(Helper.GetDescriptionID("Warship"));
+              break;
+            default:
+              if (value != null) throw new NotImplementedException();
+              this.ID = "SailShip";
+              this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_ship.png");
+              this.Text = new Description(Helper.GetDescriptionID("SailShip"));
+              break;
+          }
+          break;
         default:
           throw new NotImplementedException(template);
       }

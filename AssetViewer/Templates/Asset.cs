@@ -21,6 +21,7 @@ namespace AssetViewer.Templates {
     //
     public List<Description> EffectTargets { get; set; }
     public Description EffectTargetInfo { get; set; }
+    public Boolean HasEffectTargetInfo { get; set; }
     //
     public List<Upgrade> FactoryUpgrades { get; set; }
     public List<Upgrade> BuildingUpgrades { get; set; }
@@ -36,8 +37,7 @@ namespace AssetViewer.Templates {
     //
     public Description Info { get; set; }
     //
-    public List<Tuple<String, String>> Sources { get; set; }
-    public String Toolip { get; set; }
+    public List<Upgrade> Sources { get; set; }
     #endregion
 
     #region Constructor
@@ -59,6 +59,7 @@ namespace AssetViewer.Templates {
         this.EffectTargetInfo.EN += this.EffectTargets[i].EN;
         this.EffectTargetInfo.DE += this.EffectTargets[i].DE;
       }
+      this.HasEffectTargetInfo = this.EffectTargets.Count > 0;
       if (asset.Element("FactoryUpgrades").HasElements) {
         this.FactoryUpgrades = asset.Element("FactoryUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
       }
@@ -91,13 +92,7 @@ namespace AssetViewer.Templates {
         this.Info = new Description(asset.Element("Info"));
       }
       if (asset.Element("Sources") != null) {
-        this.Sources = new List<Tuple<String, String>>();
-        var sb = new StringBuilder();
-        foreach (var item in asset.Element("Sources")?.Elements()) {
-          this.Sources.Add(new Tuple<String, String>(item.Attribute("ID")?.Value, item.Element("Name")?.Value));
-          sb.AppendFormat("{0}{1}", item.Element("Name")?.Value, Environment.NewLine);
-        }
-        this.Toolip = sb.ToString();
+        this.Sources = asset.Element("Sources").Elements().Select(s => new Upgrade(s)).ToList();
       }
     }
     #endregion

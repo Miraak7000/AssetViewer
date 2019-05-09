@@ -22,7 +22,7 @@ namespace RDA.Data {
       var targetPath = Path.GetDirectoryName($@"{Program.PathViewer}\Resources\{filename}");
       var targetFile = Path.GetFullPath($@"{Program.PathViewer}\Resources\{filename}");
       if (!Directory.Exists(targetPath)) Directory.CreateDirectory(targetPath);
-      File.WriteAllBytes(targetFile, file);
+      if (!File.Exists(targetFile)) File.WriteAllBytes(targetFile, file);
     }
     #endregion
 

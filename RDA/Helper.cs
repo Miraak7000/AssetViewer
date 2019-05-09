@@ -20,30 +20,11 @@ namespace RDA {
       var element = XDocument.Load(path).Root;
       var result = new Dictionary<String, String>();
       // assets
-      var values = element.XPathSelectElements("//Asset/Template/../Values/Text/..");
+      var values = element.XPathSelectElements("//Texts/Text");
       foreach (var value in values) {
-        var id = value.XPathSelectElement("Standard/GUID").Value;
+        var id = value.XPathSelectElement("GUID").Value;
         if (!result.ContainsKey(id)) {
-          var text = value.XPathSelectElement("Text/LocaText/English/Text")?.Value;
-          if (text != null) result.Add(id, text);
-        }
-      }
-      // base assets
-      values = element.XPathSelectElements("//Asset/BaseAssetGUID/..").ToArray();
-      foreach (var value in values) {
-        var item = element.XPathSelectElement($"//Asset/Values/Standard[GUID={value.Element("BaseAssetGUID").Value}]/..");
-        var id = value.XPathSelectElement("Values/Standard/GUID").Value;
-        if (!result.ContainsKey(id)) {
-          var text = item.XPathSelectElement("Text/LocaText/English/Text")?.Value;
-          if (text != null) result.Add(id, text);
-        }
-      }
-      // text
-      values = element.XPathSelectElements("//Asset[Template='Text']/Values");
-      foreach (var value in values) {
-        var id = value.XPathSelectElement("Standard/GUID").Value;
-        if (!result.ContainsKey(id)) {
-          var text = value.XPathSelectElement("Text/LocaText/English/Text")?.Value;
+          var text = value.XPathSelectElement("Text")?.Value;
           if (text != null) result.Add(id, text);
         }
       }
@@ -97,6 +78,9 @@ namespace RDA {
     // Description
     internal static String GetDescriptionID(String pattern) {
       switch (pattern) {
+        case "Common":
+        case "Quest":
+          return "118002";
         case "HarborOffice":
           return "4065";
         case "Uncommon":
@@ -185,6 +169,12 @@ namespace RDA {
           return "12262";
         case "MaxHitpointsUpgrade":
           return "1154";
+        case "SailShip":
+          return "2342";
+        case "SteamShip":
+          return "2344";
+        case "Warship":
+          return "12812";
         default:
           throw new KeyNotFoundException(pattern);
       }

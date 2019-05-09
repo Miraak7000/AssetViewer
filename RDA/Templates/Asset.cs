@@ -53,6 +53,8 @@ namespace RDA.Templates {
           case "IncidentInfectableUpgrade":
           case "ItemGeneratorUpgrade":
           case "PassiveTradeGoodGenUpgrade":
+          case "Cost":
+          case "TradeShipUpgrade":
             // TODO: should be implemented one day
             break;
           case "Standard":
@@ -117,7 +119,7 @@ namespace RDA.Templates {
         }
       }
       var sources = this.FindSources(this.ID, new List<String>()).ToArray();
-      //this.Sources = sources.Select(s => new TempSource(s)).ToList();
+      this.Sources = sources.Select(s => new TempSource(s)).ToList();
     }
     public String Path = String.Empty;
     #endregion
@@ -299,7 +301,7 @@ namespace RDA.Templates {
     }
     private void ProcessElement_VehicleUpgrade(XElement element) {
       if (element.HasElements) {
-        throw new NotImplementedException();
+        // TODO: this needs to be implemented
       }
     }
     private void ProcessElement_RepairCraneUpgrade(XElement element) {
@@ -326,9 +328,28 @@ namespace RDA.Templates {
           if (element.Element("Template") == null) continue;
           switch (element.Element("Template").Value) {
             case "AssetPool":
+            case "ExpeditionTrade":
+            case "TutorialQuest":
+            case "SettlementRightsFeature":
+              // ignore
+              break;
             case "Expedition":
             case "Profile_3rdParty":
             case "Profile_3rdParty_Pirate":
+            case "A7_QuestEscortObject":
+            case "A7_QuestDeliveryObject":
+            case "A7_QuestDestroyObjects":
+            case "A7_QuestPickupObject":
+            case "A7_QuestFollowShip":
+            case "A7_QuestPhotography":
+            case "A7_QuestStatusQuo":
+            case "A7_QuestItemUsage":
+            case "A7_QuestSustain":
+            case "A7_QuestPicturePuzzleObject":
+            case "Quest":
+            case "CollectablePicturePuzzle":
+            case "MonumentEventReward":
+            case "TourismFeature":
               if (!element.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) result.AddSourceAsset(element);
               break;
             case "RewardPool":
@@ -344,7 +365,7 @@ namespace RDA.Templates {
               }
               break;
             default:
-              throw new NotImplementedException();
+              throw new NotImplementedException(element.Element("Template").Value);
           }
         }
       }

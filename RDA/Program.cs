@@ -34,7 +34,7 @@ namespace RDA {
       Program.Sources = XDocument.Load(Program.PathRoot + @"\Modified\Assets_Sources.xml");
 
       // Helper
-      //Helper.ExtractTextEnglish(Program.PathRoot + @"\Original\assets.xml");
+      //Helper.ExtractTextEnglish(Program.PathRoot + @"\Original\texts_english.xml");
       //Helper.ExtractTextGerman(Program.PathRoot + @"\Original\texts_german.xml");
       //Helper.ExtractTemplateNames(Program.PathRoot + @"\Original\assets.xml");
 
@@ -47,20 +47,21 @@ namespace RDA {
 
       // Create Assets
       //Program.ProcessingItems("GuildhouseItem");
-      //Program.ProcessingItems("TownhallItem");
-      Program.ProcessingItems("HarborOfficeItem");
-      Program.ProcessingThirdParty();
+      Program.ProcessingItems("TownhallItem");
+      //Program.ProcessingItems("HarborOfficeItem");
+      //Program.ProcessingItems("VehicleItem");
+      //Program.ProcessingThirdParty();
     }
     private static void ProcessingItems(String template) {
       var result = new List<Asset>();
-      //var assets = Program.Original.XPathSelectElements($"//Asset[Template='{template}']").ToArray();
-      var assets = Program.Original.XPathSelectElements($"//Asset[Template='{template}' and Values/Standard/GUID=191886]").Take(20).ToArray();
-      foreach (var asset in assets) {
-        if (asset.XPathSelectElement("Values/Item/HasAction")?.Value == "1") continue;
+      var assets = Program.Original.XPathSelectElements($"//Asset[Template='{template}']").ToArray().AsParallel();
+      //var assets = Program.Original.XPathSelectElements($"//Asset[Template='{template}' and Values/Standard/GUID=191886]").Take(20).ToArray();
+      assets.ForAll((asset) => {
+        if (asset.XPathSelectElement("Values/Item/HasAction")?.Value == "1") return;
         Console.WriteLine(asset.XPathSelectElement("Values/Standard/GUID").Value);
         var item = new Asset(asset);
         result.Add(item);
-      }
+      });
       var document = new XDocument();
       document.Add(new XElement(template));
       document.Root.Add(result.Select(s => s.ToXml()));
@@ -80,33 +81,6 @@ namespace RDA {
       document.Root.Add(result.Select(s => s.ToXml()));
       document.Save($@"{Program.PathRoot}\Modified\Assets_ThirdParty.xml");
       document.Save($@"{Program.PathViewer}\Resources\Assets\ThirdParty.xml");
-    }
-    private static IEnumerable<Asset> GetItems(String id) {
-      var result = new List<Asset>();
-      var asset = Program.Original.XPathSelectElement($"//Asset[Values/Standard/GUID={id}]");
-      var template = asset.Element("Template").Value;
-      switch (template) {
-        case "RewardItemPool":
-        case "RewardPool":
-          var links = asset.XPathSelectElements("Values/RewardPool/ItemsPool/Item/ItemLink").ToArray();
-          foreach (var link in links) {
-            result.AddRange(Program.GetItems(link.Value));
-          }
-          break;
-        case "ActiveItem":
-        case "ItemSpecialAction":
-        case "VehicleItem":
-          // TODO: needs to be implemented first
-          break;
-        case "GuildhouseItem":
-        case "HarborOfficeItem":
-          var item = new Asset(asset);
-          if (result.All(w => w.ID != item.ID)) result.Add(item);
-          break;
-        default:
-          throw new NotImplementedException(template);
-      }
-      return result;
     }
     #endregion
 

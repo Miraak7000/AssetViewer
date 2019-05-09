@@ -11,7 +11,9 @@ namespace AssetViewer.Data {
 
     #region Constructor
     public Icon(XElement item) {
-      this.Filename = $"/AssetViewer;component/Resources/{item.Element("Filename").Value}";
+      if (!String.IsNullOrEmpty(item.Element("Filename")?.Value)) {
+        this.Filename = $"/AssetViewer;component/Resources/{item.Element("Filename").Value}";
+      }
     }
     #endregion
 

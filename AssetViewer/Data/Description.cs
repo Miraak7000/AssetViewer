@@ -13,9 +13,9 @@ namespace AssetViewer.Data {
 
     #region Constructor
     public Description(XElement item) {
-      this.ID = item.Attribute("ID").Value;
-      this.EN = item.Element("EN").Value;
-      this.DE = item.Element("DE").Value;
+      this.ID = item.Attribute("ID")?.Value;
+      this.EN = item.Element("EN")?.Value;
+      this.DE = item.Element("DE")?.Value;
     }
     public Description(String en, String de) {
       this.ID = String.Empty;

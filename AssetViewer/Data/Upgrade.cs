@@ -18,7 +18,7 @@ namespace AssetViewer.Data {
     public Upgrade(XElement item) {
       this.Icon = item.Element("Icon") == null ? null : new Icon(item.Element("Icon"));
       this.Text = new Description(item.Element("Text"));
-      this.Value = item.Element("Value").Value;
+      this.Value = item.Element("Value")?.Value;
       if (item.Element("AdditionalOutputs") != null) {
         this.Additionals = item.Element("AdditionalOutputs").Elements().Select(s => new Upgrade(s)).ToList();
       }
