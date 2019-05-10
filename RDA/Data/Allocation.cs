@@ -65,7 +65,7 @@ namespace RDA.Data {
             case "SailShip":
               this.ID = "SailShip";
               this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_ship.png");
-              this.Text = new Description(Helper.GetDescriptionID("SailShip"));
+              this.Text = new Description("191455");
               break;
             case "SteamShip":
               this.ID = "SteamShip";
@@ -81,7 +81,7 @@ namespace RDA.Data {
               if (value != null) throw new NotImplementedException();
               this.ID = "SailShip";
               this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_ship.png");
-              this.Text = new Description(Helper.GetDescriptionID("SailShip"));
+              this.Text = new Description("191454");
               break;
           }
           break;

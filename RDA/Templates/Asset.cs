@@ -31,12 +31,19 @@ namespace RDA.Templates {
     public List<Upgrade> ElectricUpgrades { get; set; }
     public List<Upgrade> ExpeditionAttributes { get; set; }
     public List<Upgrade> AttackableUpgrades { get; set; }
+    public List<Upgrade> TradeShipUpgrades { get; set; }
+    public List<Upgrade> VehicleUpgrades { get; set; }
+    public List<Upgrade> AttackerUpgrades { get; set; }
     //
     public String TradePrice { get; set; }
     //
     public Description Info { get; set; }
     //
     public List<TempSource> Sources { get; set; }
+    #endregion
+
+    #region Fields
+    public String Path = String.Empty;
     #endregion
 
     #region Constructor
@@ -46,17 +53,17 @@ namespace RDA.Templates {
           case "Text":
           case "Locked":
           case "Buff":
+          case "Cost":
             // ignore this nodes
             break;
-          case "ItemAction":
-          case "IncidentInfluencerUpgrade":
-          case "IncidentInfectableUpgrade":
-          case "ItemGeneratorUpgrade":
-          case "PassiveTradeGoodGenUpgrade":
-          case "Cost":
-          case "TradeShipUpgrade":
-            // TODO: should be implemented one day
-            break;
+          //case "ItemAction":
+          //case "IncidentInfluencerUpgrade":
+          //case "IncidentInfectableUpgrade":
+          //case "ItemGeneratorUpgrade":
+          //case "PassiveTradeGoodGenUpgrade":
+          //case "Cost":
+          //  // TODO: should be implemented one day
+          //  break;
           case "Standard":
             this.ProcessElement_Standard(element);
             break;
@@ -114,6 +121,9 @@ namespace RDA.Templates {
           case "KontorUpgrade":
             this.ProcessElement_KontorUpgrade(element);
             break;
+          case "TradeShipUpgrade":
+            this.ProcessElement_TradeShipUpgrade(element);
+            break;
           default:
             throw new NotImplementedException(element.Name.LocalName);
         }
@@ -123,9 +133,7 @@ namespace RDA.Templates {
         this.Sources = sources.Select(s => new TempSource(s)).ToList();
       }
     }
-    public String Path = String.Empty;
     #endregion
-
 
     #region Public Methods
     public XElement ToXml() {
@@ -150,6 +158,9 @@ namespace RDA.Templates {
       result.Add(new XElement("ElectricUpgrades", this.ElectricUpgrades == null ? null : this.ElectricUpgrades.Select(s => s.ToXml())));
       result.Add(new XElement("ExpeditionAttributes", this.ExpeditionAttributes == null ? null : this.ExpeditionAttributes.Select(s => s.ToXml())));
       result.Add(new XElement("AttackableUpgrades", this.AttackableUpgrades == null ? null : this.AttackableUpgrades.Select(s => s.ToXml())));
+      result.Add(new XElement("TradeShipUpgrades", this.TradeShipUpgrades == null ? null : this.TradeShipUpgrades.Select(s => s.ToXml())));
+      result.Add(new XElement("VehicleUpgrades", this.VehicleUpgrades == null ? null : this.VehicleUpgrades.Select(s => s.ToXml())));
+      result.Add(new XElement("AttackerUpgrades", this.AttackerUpgrades == null ? null : this.AttackerUpgrades.Select(s => s.ToXml())));
       //
       result.Add(new XElement("TradePrice", this.TradePrice));
       //
@@ -200,12 +211,12 @@ namespace RDA.Templates {
       if (element.HasElements) {
         this.BuildingUpgrades = new List<Upgrade>();
         foreach (var item in element.Elements()) {
-          // TODO: this needs to be implemented
-          if (item.Name.LocalName == "ResolverUnitCountUpgrade") continue;
-          if (item.Name.LocalName == "PublicServiceFullSatisfactionDistance") continue;
-          if (item.Name.LocalName == "PublicServiceNoSatisfactionDistance") continue;
-          if (item.Name.LocalName == "ResolverUnitMovementSpeedUpgrade") continue;
-          if (item.Name.LocalName == "ResolverUnitDecreaseUpgrade") continue;
+          //// TODO: this needs to be implemented
+          //if (item.Name.LocalName == "ResolverUnitCountUpgrade") continue;
+          //if (item.Name.LocalName == "PublicServiceFullSatisfactionDistance") continue;
+          //if (item.Name.LocalName == "PublicServiceNoSatisfactionDistance") continue;
+          //if (item.Name.LocalName == "ResolverUnitMovementSpeedUpgrade") continue;
+          //if (item.Name.LocalName == "ResolverUnitDecreaseUpgrade") continue;
           this.BuildingUpgrades.Add(new Upgrade(item));
         }
       }
@@ -230,10 +241,10 @@ namespace RDA.Templates {
       if (element.HasElements) {
         this.ResidenceUpgrades = new List<Upgrade>();
         foreach (var item in element.Elements()) {
-          // TODO: this needs to be implemented
-          if (item.Name.LocalName == "NeedProvideNeedUpgrade") continue;
-          if (item.Name.LocalName == "GoodConsumptionUpgrade") continue;
-          if (item.Name.LocalName == "ChangedSupplyValueUpgrade") continue;
+          //// TODO: this needs to be implemented
+          //if (item.Name.LocalName == "NeedProvideNeedUpgrade") continue;
+          //if (item.Name.LocalName == "GoodConsumptionUpgrade") continue;
+          //if (item.Name.LocalName == "ChangedSupplyValueUpgrade") continue;
           this.ResidenceUpgrades.Add(new Upgrade(item));
         }
       }
@@ -270,29 +281,43 @@ namespace RDA.Templates {
     }
     private void ProcessElement_VisitorHarborUpgrade(XElement element) {
       if (element.HasElements) {
-        // TODO: needs to be implemented
+        throw new NotImplementedException();
       }
     }
     private void ProcessElement_AttackerUpgrade(XElement element) {
       if (element.HasElements) {
-        // TODO: this needs to be implemented
+        this.AttackerUpgrades = new List<Upgrade>();
+        foreach (var item in element.Elements()) {
+          // TODO: this needs to be implemented
+          if (item.Name.LocalName == "LineOfSightRangeUpgrade") continue;
+          if (item.Name.LocalName == "BaseDamageUpgrade") continue;
+          if (item.Name.LocalName == "AccuracyUpgrade") continue;
+          if (item.Name.LocalName == "HitpointDamage") continue;
+          if (item.Name.LocalName == "DamageFactor") continue;
+          if (item.Name.LocalName == "ReloadTimeUpgrade") continue;
+          this.AttackerUpgrades.Add(new Upgrade(item));
+        }
       }
     }
     private void ProcessElement_ShipyardUpgrade(XElement element) {
       if (element.HasElements) {
-        // TODO: needs to be implemented
+        throw new NotImplementedException();
       }
     }
     private void ProcessElement_AttackableUpgrade(XElement element) {
       if (element.HasElements) {
         this.AttackableUpgrades = new List<Upgrade>();
         foreach (var item in element.Elements()) {
-          // TODO: this needs to be implemented
-          if (item.Name.LocalName == "SelfHealUpgrade") continue;
-          if (item.Name.LocalName == "SelfHealPausedTimeIfAttackedUpgrade") continue;
-          if (item.Name.LocalName == "DamageReceiveFactor") continue;
-          if (item.Name.LocalName == "MoralePowerUpgrade") continue;
-          this.AttackableUpgrades.Add(new Upgrade(item));
+          switch (item.Name.LocalName) {
+            case "DamageReceiveFactor":
+              foreach (var subItem in item.Elements()) {
+                this.AttackableUpgrades.Add(new Upgrade(subItem));
+              }
+              break;
+            default:
+              this.AttackableUpgrades.Add(new Upgrade(item));
+              break;
+          }
         }
       }
     }
@@ -303,17 +328,30 @@ namespace RDA.Templates {
     }
     private void ProcessElement_VehicleUpgrade(XElement element) {
       if (element.HasElements) {
-        // TODO: this needs to be implemented
+        this.VehicleUpgrades = new List<Upgrade>();
+        foreach (var item in element.Elements()) {
+          // TODO: this needs to be implemented
+          if (item.Name.LocalName == "MaintainanceUpgrade") continue;
+          this.VehicleUpgrades.Add(new Upgrade(item));
+        }
       }
     }
     private void ProcessElement_RepairCraneUpgrade(XElement element) {
       if (element.HasElements) {
-        // TODO: this needs to be implemented
+        throw new NotImplementedException();
       }
     }
     private void ProcessElement_KontorUpgrade(XElement element) {
       if (element.HasElements) {
-        // TODO: needs to be implemented
+        throw new NotImplementedException();
+      }
+    }
+    private void ProcessElement_TradeShipUpgrade(XElement element) {
+      if (element.HasElements) {
+        this.TradeShipUpgrades = new List<Upgrade>();
+        foreach (var item in element.Elements()) {
+          this.TradeShipUpgrades.Add(new Upgrade(item));
+        }
       }
     }
     private List<XElement> FindSources(String id, List<String> previousIDs) {
@@ -321,7 +359,7 @@ namespace RDA.Templates {
       var result = new List<XElement>();
       var links = Program.Original.Root.XPathSelectElements($"//*[text()={id} and not(self::GUID) and not(self::InsertEvent)]").ToArray();
       if (links.Length > 0) {
-        for (int i = 0; i < links.Length; i++) {
+        for (var i = 0; i < links.Length; i++) {
           var element = links[i];
           while (true) {
             if (element.Name.LocalName == "Asset" && element.HasElements) break;

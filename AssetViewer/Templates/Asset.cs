@@ -32,6 +32,9 @@ namespace AssetViewer.Templates {
     public List<Upgrade> ElectricUpgrades { get; set; }
     public List<Upgrade> ExpeditionAttributes { get; set; }
     public List<Upgrade> AttackableUpgrades { get; set; }
+    public List<Upgrade> TradeShipUpgrades { get; set; }
+    public List<Upgrade> VehicleUpgrades { get; set; }
+    public List<Upgrade> AttackerUpgrades { get; set; }
     //
     public String TradePrice { get; set; }
     //
@@ -86,6 +89,15 @@ namespace AssetViewer.Templates {
       }
       if (asset.Element("AttackableUpgrades").HasElements) {
         this.AttackableUpgrades = asset.Element("AttackableUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
+      }
+      if (asset.Element("TradeShipUpgrades").HasElements) {
+        this.TradeShipUpgrades = asset.Element("TradeShipUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
+      }
+      if (asset.Element("VehicleUpgrades").HasElements) {
+        this.VehicleUpgrades = asset.Element("VehicleUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
+      }
+      if (asset.Element("AttackerUpgrades").HasElements) {
+        this.AttackerUpgrades = asset.Element("AttackerUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
       }
       this.TradePrice = asset.Element("TradePrice")?.Value;
       if (asset.Element("Info") != null) {

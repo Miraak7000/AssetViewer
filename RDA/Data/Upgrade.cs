@@ -125,6 +125,60 @@ namespace RDA.Data {
           this.Icon = new Icon("data/ui/2kimages/main/icons/icon_plus.png");
           this.Text = new Description(Helper.GetDescriptionID(element.Name.LocalName));
           break;
+        case "ActiveTradePriceInPercent":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_credits.png");
+          this.Text = new Description("15198");
+          isPercent = true;
+          break;
+        case "ForwardSpeedUpgrade":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_forward.png");
+          this.Text = new Description("2339");
+          break;
+        case "IgnoreWeightFactorUpgrade":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png");
+          this.Text = new Description("15261");
+          value = -value;
+          break;
+        case "IgnoreDamageFactorUpgrade":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png");
+          this.Text = new Description("15262");
+          value = -value;
+          break;
+        case "AttackRangeUpgrade":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_threat_melee_tint.png");
+          this.Text = new Description("12021");
+          break;
+        case "ActivateWhiteFlag":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_claim_island.png");
+          this.Text = new Description("19538");
+          break;
+        case "ActivatePirateFlag":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_threat_melee_tint.png");
+          this.Text = new Description("500937");
+          break;
+        case "Cannon":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_stance_attack.png");
+          this.Text = new Description("19138");
+          value = -Convert.ToInt32((100M - (100M * Decimal.Parse(element.Element("Factor").Value))));
+          isPercent = true;
+          break;
+        case "BigBertha":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_stance_attack.png");
+          this.Text = new Description("19139");
+          value = -Convert.ToInt32((100M - (100M * Decimal.Parse(element.Element("Factor").Value))));
+          isPercent = true;
+          break;
+        case "Torpedo":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_stance_attack.png");
+          this.Text = new Description("19137");
+          value = -Convert.ToInt32((100M - (100M * Decimal.Parse(element.Element("Factor").Value))));
+          isPercent = true;
+          break;
+        case "AttackSpeedUpgrade":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_go_to.png");
+          this.Text = new Description("17230");
+          isPercent = true;
+          break;
         default:
           throw new NotImplementedException(element.Name.LocalName);
       }
@@ -154,7 +208,7 @@ namespace RDA.Data {
           this.Text = new Description(Helper.GetDescriptionID(key));
           break;
         case "Might":
-          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_threat_navigation_tint.png");
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png");
           this.Text = new Description(Helper.GetDescriptionID("Might"));
           break;
         case "Melee":

@@ -890,9 +890,17 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\Assets\ThirdParty.xml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_claim_island.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_diplomacy_options_support_fleet.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_go_to.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_stance_attack.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\data\ui\2kimages\main\profiles\3rd_party_08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_threat_navalbattle_tint.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
