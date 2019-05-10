@@ -16,6 +16,7 @@ namespace RDA.Data {
     public List<ReplaceInput> ReplaceInputs { get; set; }
     public List<InputAmountUpgrade> InputAmountUpgrades { get; set; }
     public ReplacingWorkforce ReplacingWorkforce { get; set; }
+    public List<Upgrade> Additionals { get; set; }
     #endregion
 
     #region Constructor
@@ -94,6 +95,7 @@ namespace RDA.Data {
         case "AdditionalHappiness":
           this.Icon = new Icon("data/ui/2kimages/main/icons/icon_happy.png");
           this.Text = new Description(Helper.GetDescriptionID(element.Name.LocalName));
+          value = Int32.Parse(element.Value);
           break;
         case "ResidentsUpgrade":
           this.Icon = new Icon("data/ui/2kimages/main/icons/icon_kontor_2d.png");
@@ -107,10 +109,6 @@ namespace RDA.Data {
           this.Icon = new Icon("data/ui/2kimages/main/icons/icon_electricity.png");
           this.Text = new Description(Helper.GetDescriptionID(element.Name.LocalName));
           break;
-        case "InputBenefitModifier":
-          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_credits.png");
-          this.Text = new Description(Helper.GetDescriptionID(element.Name.LocalName));
-          break;
         case "TaxModifierInPercent":
           this.Icon = new Icon("data/ui/2kimages/main/icons/icon_credits.png");
           this.Text = new Description(Helper.GetDescriptionID(element.Name.LocalName));
@@ -119,6 +117,7 @@ namespace RDA.Data {
         case "WorkforceModifierInPercent":
           this.Icon = new Icon("data/ui/2kimages/main/icons/icon_kontor_2d.png");
           this.Text = new Description(Helper.GetDescriptionID(element.Name.LocalName));
+          value = Int32.Parse(element.Value);
           isPercent = true;
           break;
         case "MaxHitpointsUpgrade":
@@ -179,6 +178,79 @@ namespace RDA.Data {
           this.Text = new Description("17230");
           isPercent = true;
           break;
+        case "SpawnProbabilityFactor":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_add_slot_guild.png");
+          this.Text = new Description("20603");
+          break;
+        case "SelfHealUpgrade":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_plus.png");
+          this.Text = new Description("15195");
+          break;
+        case "SelfHealPausedTimeIfAttackedUpgrade":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_morale.png");
+          this.Text = new Description("15196");
+          if (value == -100) {
+            value = null;
+          } else {
+            throw new NotImplementedException();
+          }
+          break;
+        case "HealRadiusUpgrade":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_build_menu.png");
+          this.Text = new Description("15264");
+          break;
+        case "HealPerMinuteUpgrade":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_build_menu.png");
+          this.Text = new Description("15265");
+          break;
+        case "IncidentRiotIncreaseUpgrade":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_incident_riot.png");
+          this.Text = new Description("12227");
+          factor = 10;
+          isPercent = true;
+          break;
+        case "PublicServiceFullSatisfactionDistance":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_church_2d.png");
+          this.Text = new Description("2321");
+          break;
+        case "NeedProvideNeedUpgrade":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_plus.png");
+          this.Text = new Description("12315");
+          this.Additionals = new List<Upgrade>();
+          foreach (var item in element.XPathSelectElements("Item/ProvidedNeed")) {
+            this.Additionals.Add(new Upgrade(item));
+          }
+          break;
+        case "ProvidedNeed":
+          var providedNeed = Program.Original.Root.XPathSelectElement($"//Asset/Values/Standard[GUID={element.Value}]");
+          this.Icon = new Icon(providedNeed.Element("IconFilename").Value);
+          this.Text = new Description(element.Value);
+          break;
+        case "AdditionalMoney":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_credits.png");
+          this.Text = new Description("12690");
+          value = Int32.Parse(element.Value);
+          break;
+        case "IncidentFireIncreaseUpgrade":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_incident_fire.png");
+          this.Text = new Description("12225");
+          factor = 10;
+          isPercent = true;
+          break;
+        case "IncidentExplosionIncreaseUpgrade":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_bomb.png");
+          this.Text = new Description("14292");
+          factor = 10;
+          isPercent = true;
+          break;
+        case "GoodConsumptionUpgrade":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_marketplace_2d.png");
+          this.Text = new Description("21386");
+          this.Additionals = new List<Upgrade>();
+          foreach (var item in element.XPathSelectElements("Item/ProvidedNeed")) {
+            this.Additionals.Add(new Upgrade(item));
+          }
+          break;
         default:
           throw new NotImplementedException(element.Name.LocalName);
       }
@@ -213,7 +285,7 @@ namespace RDA.Data {
           break;
         case "Melee":
           this.Icon = new Icon("data/ui/2kimages/main/icons/icon_threat_melee_tint.png");
-          this.Text = new Description(Helper.GetDescriptionID("Might"));
+          this.Text = new Description("3921");
           break;
         case "Diplomacy":
           this.Icon = new Icon("data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png");
@@ -288,6 +360,7 @@ namespace RDA.Data {
       if (this.ReplaceInputs != null) result.Add(new XElement("ReplaceInputs", this.ReplaceInputs.Select(s => s.ToXml())));
       if (this.InputAmountUpgrades != null) result.Add(new XElement("InputAmountUpgrades", this.InputAmountUpgrades.Select(s => s.ToXml())));
       if (this.ReplacingWorkforce != null) result.Add(new XElement("ReplacingWorkforce", this.ReplacingWorkforce.ToXml()));
+      if (this.Additionals != null) result.Add(new XElement("Additionals", this.Additionals.Select(s => s.ToXml())));
       return result;
     }
     #endregion

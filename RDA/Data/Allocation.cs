@@ -46,7 +46,7 @@ namespace RDA.Data {
               if (value != null && value != "None") throw new NotImplementedException();
               this.ID = "TownHall";
               this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_townhall.png");
-              this.Text = new Description("2346");
+              this.Text = new Description("2347");
               break;
           }
           break;

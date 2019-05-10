@@ -31,6 +31,9 @@ namespace AssetViewer.Data {
       if (item.Element("ReplacingWorkforce") != null) {
         this.Additionals = item.Element("ReplacingWorkforce").Elements().Select(s => new Upgrade(s)).ToList();
       }
+      if (item.Element("Additionals") != null) {
+        this.Additionals = item.Element("Additionals").Elements().Select(s => new Upgrade(s)).ToList();
+      }
     }
     #endregion
 

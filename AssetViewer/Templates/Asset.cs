@@ -35,6 +35,10 @@ namespace AssetViewer.Templates {
     public List<Upgrade> TradeShipUpgrades { get; set; }
     public List<Upgrade> VehicleUpgrades { get; set; }
     public List<Upgrade> AttackerUpgrades { get; set; }
+    public List<Upgrade> VisitorHarborUpgrades { get; set; }
+    public List<Upgrade> RepairCraneUpgrades { get; set; }
+    public List<Upgrade> IncidentInfectableUpgrades { get; set; }
+    public List<Upgrade> IncidentInfluencerUpgrades { get; set; }
     //
     public String TradePrice { get; set; }
     //
@@ -98,6 +102,18 @@ namespace AssetViewer.Templates {
       }
       if (asset.Element("AttackerUpgrades").HasElements) {
         this.AttackerUpgrades = asset.Element("AttackerUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
+      }
+      if (asset.Element("VisitorHarborUpgrades").HasElements) {
+        this.VisitorHarborUpgrades = asset.Element("VisitorHarborUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
+      }
+      if (asset.Element("RepairCraneUpgrades").HasElements) {
+        this.RepairCraneUpgrades = asset.Element("RepairCraneUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
+      }
+      if (asset.Element("IncidentInfectableUpgrades").HasElements) {
+        this.IncidentInfectableUpgrades = asset.Element("IncidentInfectableUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
+      }
+      if (asset.Element("IncidentInfluencerUpgrades").HasElements) {
+        this.IncidentInfluencerUpgrades = asset.Element("IncidentInfluencerUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
       }
       this.TradePrice = asset.Element("TradePrice")?.Value;
       if (asset.Element("Info") != null) {

@@ -156,7 +156,7 @@
             </StackPanel>
             <!--Target-->
             <StackPanel Visibility="{Binding Path=SelectedAsset.HasEffectTargetInfo, Converter={StaticResource BooleanToVisibility}}">
-              <TextBlock VerticalAlignment="Center" Text="{Binding Path=SelectedAsset.EffectTargetInfo, Converter={StaticResource DescriptionConverter}}" Margin="0,0,14,10" Foreground="#FFA49370" TextWrapping="Wrap"></TextBlock>
+              <TextBlock VerticalAlignment="Center" Text="{Binding Path=SelectedAsset.EffectTargetInfo, Converter={StaticResource DescriptionConverter}}" Margin="0,0,14,5" Foreground="#FFA49370" TextWrapping="Wrap"></TextBlock>
             </StackPanel>
             <!--FactoryUpgrade-->
             <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.FactoryUpgrades, Converter={StaticResource VisibilityConverter}}">
@@ -174,13 +174,13 @@
             <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.ModuleOwnerUpgrades, Converter={StaticResource VisibilityConverter}}">
               <ItemsControl ItemsSource="{Binding Path=SelectedAsset.ModuleOwnerUpgrades}" ItemTemplate="{StaticResource UpgradeTemplate}" Foreground="#FFFFE4AD"/>
             </Grid>
-            <!--ResidenceUpgrades-->
-            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.ResidenceUpgrades, Converter={StaticResource VisibilityConverter}}">
-              <ItemsControl ItemsSource="{Binding Path=SelectedAsset.ResidenceUpgrades}" ItemTemplate="{StaticResource UpgradeTemplate}" Foreground="#FFFFE4AD"/>
-            </Grid>
             <!--PopulationUpgrades-->
             <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.PopulationUpgrades, Converter={StaticResource VisibilityConverter}}">
               <ItemsControl ItemsSource="{Binding Path=SelectedAsset.PopulationUpgrades}" ItemTemplate="{StaticResource UpgradeTemplate}" Foreground="#FFFFE4AD"/>
+            </Grid>
+            <!--ResidenceUpgrades-->
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.ResidenceUpgrades, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl ItemsSource="{Binding Path=SelectedAsset.ResidenceUpgrades}" ItemTemplate="{StaticResource UpgradeTemplate}" Foreground="#FFFFE4AD"/>
             </Grid>
             <!--ElectricUpgrades-->
             <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.ElectricUpgrades, Converter={StaticResource VisibilityConverter}}">
@@ -201,6 +201,22 @@
             <!--AttackerUpgrades-->
             <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.AttackerUpgrades, Converter={StaticResource VisibilityConverter}}">
               <ItemsControl ItemsSource="{Binding Path=SelectedAsset.AttackerUpgrades}" ItemTemplate="{StaticResource UpgradeTemplate}" Foreground="#FFFFE4AD"/>
+            </Grid>
+            <!--VisitorHarborUpgrades-->
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.VisitorHarborUpgrades, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl ItemsSource="{Binding Path=SelectedAsset.VisitorHarborUpgrades}" ItemTemplate="{StaticResource UpgradeTemplate}" Foreground="#FFFFE4AD"/>
+            </Grid>
+            <!--RepairCraneUpgrades-->
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.RepairCraneUpgrades, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl ItemsSource="{Binding Path=SelectedAsset.RepairCraneUpgrades}" ItemTemplate="{StaticResource UpgradeTemplate}" Foreground="#FFFFE4AD"/>
+            </Grid>
+            <!--IncidentInfectableUpgrades-->
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.IncidentInfectableUpgrades, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl ItemsSource="{Binding Path=SelectedAsset.IncidentInfectableUpgrades}" ItemTemplate="{StaticResource UpgradeTemplate}" Foreground="#FFFFE4AD"/>
+            </Grid>
+            <!--IncidentInfluencerUpgrades-->
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.IncidentInfluencerUpgrades, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl ItemsSource="{Binding Path=SelectedAsset.IncidentInfluencerUpgrades}" ItemTemplate="{StaticResource UpgradeTemplate}" Foreground="#FFFFE4AD"/>
             </Grid>
             <!--Expedition-->
             <StackPanel Visibility="{Binding Path=SelectedAsset.ExpeditionAttributes, Converter={StaticResource VisibilityConverter}}">
