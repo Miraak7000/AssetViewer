@@ -136,6 +136,9 @@ namespace RDA.Templates {
           case "ItemGeneratorUpgrade":
             this.ProcessElement_ItemGeneratorUpgrades(element);
             break;
+          case "SpecialAction":
+            this.ProcessElement_SpecialActions(element);
+            break;
           default:
             throw new NotImplementedException(element.Name.LocalName);
         }
@@ -310,6 +313,7 @@ namespace RDA.Templates {
             if (attribute.Element("Attribute") == null) continue;
             if (attribute.Element("Attribute").Value == "PerkFemale") continue;
             if (attribute.Element("Attribute").Value == "PerkMale") continue;
+            if (attribute.Element("Attribute").Value == "PerkEntertainer") continue;
             this.ExpeditionAttributes.Add(new Upgrade(attribute.Element("Attribute").Value, attribute.Element("Amount")?.Value));
           }
         }
@@ -353,9 +357,9 @@ namespace RDA.Templates {
           if (item.Name.LocalName == "BaseDamageUpgrade") continue;
           if (item.Name.LocalName == "AccuracyUpgrade") continue;
           if (item.Name.LocalName == "HitpointDamage") continue;
-          if (item.Name.LocalName == "DamageFactor") continue;
           if (item.Name.LocalName == "ReloadTimeUpgrade") continue;
           if (item.Name.LocalName == "MoraleDamage") continue;
+          if (item.Name.LocalName == "AddStatusEffects") continue;
           this.AttackerUpgrades.Add(new Upgrade(item));
         }
       }
@@ -433,6 +437,12 @@ namespace RDA.Templates {
     private void ProcessElement_ItemGeneratorUpgrades(XElement element) {
       if (element.HasElements) {
         // TODO: this needs to be implemented
+      }
+    }
+    private void ProcessElement_SpecialActions(XElement element) {
+      if (element.HasElements) {
+        // TODO: this needs to be implemented
+        throw new NotImplementedException();
       }
     }
     private List<XElement> FindSources(String id, List<String> previousIDs) {

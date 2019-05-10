@@ -46,16 +46,17 @@ namespace RDA {
       //Monument.Create();
 
       // Create Assets
-      Program.ProcessingItems("GuildhouseItem");
-      Program.ProcessingItems("TownhallItem");
-      Program.ProcessingItems("HarborOfficeItem");
-      Program.ProcessingItems("VehicleItem");
+      //Program.ProcessingItems("GuildhouseItem");
+      //Program.ProcessingItems("TownhallItem");
+      //Program.ProcessingItems("HarborOfficeItem");
+      //Program.ProcessingItems("VehicleItem");
+      Program.ProcessingItems("ShipSpecialist");
       //Program.ProcessingThirdParty();
     }
     private static void ProcessingItems(String template) {
       var result = new List<Asset>();
       var assets = Program.Original.XPathSelectElements($"//Asset[Template='{template}']").ToList(); //.AsParallel();
-      //var assets = Program.Original.XPathSelectElements($"//Asset[Template='{template}' and Values/Standard/GUID=190726]").ToList();
+      //var assets = Program.Original.XPathSelectElements($"//Asset[Template='{template}' and Values/Standard/GUID=191620]").ToList();
       assets.ForEach((asset) => {
         //if (asset.XPathSelectElement("Values/Item/HasAction")?.Value == "1") return;
         Console.WriteLine(asset.XPathSelectElement("Values/Standard/GUID").Value);

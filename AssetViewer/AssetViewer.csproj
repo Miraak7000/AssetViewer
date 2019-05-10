@@ -839,6 +839,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_attractiveness.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_attractiveness_0.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_attractiveness_house_big.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_bomb.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_bomb_0.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_build_menu.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_build_menu_0.png" />
@@ -863,9 +864,11 @@
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_go_to.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_happy.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_hospital_2d_0.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_incident_fire.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_incident_fire_0.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_incident_riot.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_kontor_2d.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_marketplace_2d.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_morale.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_museum_2d_0.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_options.png" />
@@ -909,13 +912,46 @@
     <EmbeddedResource Include="Resources\Assets\ThirdParty.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_incident_fire.png" />
+    <EmbeddedResource Include="Resources\Assets\ShipSpecialist.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_bomb.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_bank.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_club_house.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_electric_works_oil.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_marketplace.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_school.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_university.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_captain_common.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_captain_epic.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_captain_rare.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_doctor_pirate.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_navigator_pirate.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_police_officer_rare.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_specialist_captain_legendary_female.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_specialist_captain_legendary_pirate.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\influencer\icon_influencer_draegast.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\influencer\icon_influencer_drew_durnil_2.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\influencer\icon_influencer_lady_lu.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_admiral_513.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_admiral_701.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_admiral_708.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_captain_101.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_captain_102.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_captain_201.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_captain_401.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_captain_402.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_custom_officer_102.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_custom_officer_104.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_navigator_102_b.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_navigator_704.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_uniform_504.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_welldress_806.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_well_dressed_404.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_worker_412.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_resource_worker_2.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_marketplace_2d.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_load_ships.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

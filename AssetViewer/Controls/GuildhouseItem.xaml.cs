@@ -225,6 +225,12 @@ namespace AssetViewer.Controls {
           this.Assets.AddRange(document.Elements().Select(s => new Asset(s)));
         }
       }
+      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.ShipSpecialist.xml")) {
+        using (var reader = new StreamReader(stream)) {
+          var document = XDocument.Parse(reader.ReadToEnd()).Root;
+          this.Assets.AddRange(document.Elements().Select(s => new Asset(s)));
+        }
+      }
       this.DataContext = this;
     }
     #endregion

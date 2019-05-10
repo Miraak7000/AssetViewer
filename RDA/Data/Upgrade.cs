@@ -127,6 +127,14 @@ namespace RDA.Data {
         case "ActiveTradePriceInPercent":
           this.Icon = new Icon("data/ui/2kimages/main/icons/icon_credits.png");
           this.Text = new Description("15198");
+          if (value == null && !element.HasElements) {
+            value = Int32.Parse(element.Value);
+            if (value < 100) {
+              value = -(100 - value);
+            } else {
+              value = (value - 100);
+            }
+          }
           isPercent = true;
           break;
         case "ForwardSpeedUpgrade":
@@ -251,6 +259,35 @@ namespace RDA.Data {
             this.Additionals.Add(new Upgrade(item));
           }
           break;
+        case "DamageFactor":
+          var damageFactor = element.Elements().Single();
+          switch (damageFactor.Name.LocalName) {
+            case "Building":
+              this.Icon = new Icon("data/ui/2kimages/main/icons/ship_info/icon_damage.png");
+              this.Text = new Description("17394");
+              value = Convert.ToInt32((Decimal.Parse(damageFactor.Value) * 100) - 100);
+              isPercent = true;
+              break;
+            case "SailShip":
+              this.Icon = new Icon("data/ui/2kimages/main/icons/ship_info/icon_damage.png");
+              this.Text = new Description("17395");
+              value = Convert.ToInt32((Decimal.Parse(damageFactor.Value) * 100) - 100);
+              isPercent = true;
+              break;
+            case "SteamShip":
+              this.Icon = new Icon("data/ui/2kimages/main/icons/ship_info/icon_damage.png");
+              this.Text = new Description("17396");
+              value = Convert.ToInt32((Decimal.Parse(damageFactor.Value) * 100) - 100);
+              isPercent = true;
+              break;
+            default:
+              throw new NotImplementedException();
+          }
+          break;
+        case "LoadingSpeedUpgrade":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_load_ships.png");
+          this.Text = new Description("15197");
+          break;
         default:
           throw new NotImplementedException(element.Name.LocalName);
       }
@@ -340,7 +377,7 @@ namespace RDA.Data {
           this.Text = new Description(Helper.GetDescriptionID(key)).InsertBefore("Trait: ", "Merkmal: ");
           break;
         default:
-          throw new NotImplementedException();
+          throw new NotImplementedException(key);
       }
       if (value == null) {
         this.Value = String.Empty;

@@ -1,0 +1,4449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ShipSpecialist>
+  <Asset ID="191444">
+    <Name>Sailor</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_navigator_704.png</Filename>
+    </Icon>
+    <Text ID="191444">
+      <EN>Sailor</EN>
+      <DE>Matrose</DE>
+    </Text>
+    <Rarity ID="118002">
+      <EN>Common</EN>
+      <DE>Gewöhnlich</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>5</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
+        </Icon>
+        <Text ID="2339">
+          <EN>Movement Speed</EN>
+          <DE>Bewegungsgeschwindigkeit</DE>
+        </Text>
+        <Value>+5%</Value>
+      </Upgrade>
+    </VehicleUpgrades>
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>1625</TradePrice>
+    <Info ID="19815">
+      <EN>Sets sail.</EN>
+      <DE>Setzt Segel.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191445">
+    <Name>Cadet</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_worker_412.png</Filename>
+    </Icon>
+    <Text ID="191445">
+      <EN>Mate</EN>
+      <DE>Maat</DE>
+    </Text>
+    <Rarity ID="118002">
+      <EN>Common</EN>
+      <DE>Gewöhnlich</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>5</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_plus.png</Filename>
+        </Icon>
+        <Text ID="15195">
+          <EN>Self-Repair</EN>
+          <DE>Selbstreparatur</DE>
+        </Text>
+        <Value>+100%</Value>
+      </Upgrade>
+    </AttackableUpgrades>
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>1350</TradePrice>
+    <Info ID="19816">
+      <EN>A buddy at sea.</EN>
+      <DE>Ein Kamerad auf See.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191446">
+    <Name>Mate</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_worker_411.png</Filename>
+    </Icon>
+    <Text ID="191446">
+      <EN>Midshipman</EN>
+      <DE>Seekadett</DE>
+    </Text>
+    <Rarity ID="118003">
+      <EN>Uncommon</EN>
+      <DE>Ungewöhnlich</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>5</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
+        </Icon>
+        <Text ID="2339">
+          <EN>Movement Speed</EN>
+          <DE>Bewegungsgeschwindigkeit</DE>
+        </Text>
+        <Value>+10%</Value>
+      </Upgrade>
+    </VehicleUpgrades>
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>7450</TradePrice>
+    <Info ID="19817">
+      <EN>Has seen her fair share of the deep.</EN>
+      <DE>Hat oft genug die Tiefe gesehen.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191447">
+    <Name>Seafarer</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_worker_413.png</Filename>
+    </Icon>
+    <Text ID="191447">
+      <EN>Bosun</EN>
+      <DE>Bootsfrau</DE>
+    </Text>
+    <Rarity ID="118003">
+      <EN>Uncommon</EN>
+      <DE>Ungewöhnlich</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>5</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png</Filename>
+        </Icon>
+        <Text ID="15262">
+          <EN>Damage Slowdown</EN>
+          <DE>Schadens-Verlangsamung</DE>
+        </Text>
+        <Value>-40%</Value>
+      </Upgrade>
+    </VehicleUpgrades>
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>6425</TradePrice>
+    <Info ID="19818">
+      <EN>Master of marlinespike seamanship.</EN>
+      <DE>Meister des Marlspiekers.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191448">
+    <Name>Pilot</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/icon_captain_common.png</Filename>
+    </Icon>
+    <Text ID="191448">
+      <EN>Tugboatman</EN>
+      <DE>Schleppermatrose</DE>
+    </Text>
+    <Rarity ID="118004">
+      <EN>Rare</EN>
+      <DE>Selten</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>15</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>5</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_plus.png</Filename>
+        </Icon>
+        <Text ID="1154">
+          <EN>Hitpoints</EN>
+          <DE>Trefferpunkte</DE>
+        </Text>
+        <Value>+600</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_plus.png</Filename>
+        </Icon>
+        <Text ID="15195">
+          <EN>Self-Repair</EN>
+          <DE>Selbstreparatur</DE>
+        </Text>
+        <Value>+300%</Value>
+      </Upgrade>
+    </AttackableUpgrades>
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>19600</TradePrice>
+    <Info ID="19819">
+      <EN>Tugboatmen know the currents and eddies of the shallows.</EN>
+      <DE>Schleppermatrosen kennen die Wirbel und Strömungen der Untiefen.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191449">
+    <Name>First Lieutenant</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_captain_101.png</Filename>
+    </Icon>
+    <Text ID="191449">
+      <EN>Pilot</EN>
+      <DE>Lotse</DE>
+    </Text>
+    <Rarity ID="118004">
+      <EN>Rare</EN>
+      <DE>Selten</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>15</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>5</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
+        </Icon>
+        <Text ID="2339">
+          <EN>Movement Speed</EN>
+          <DE>Bewegungsgeschwindigkeit</DE>
+        </Text>
+        <Value>+15%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png</Filename>
+        </Icon>
+        <Text ID="15262">
+          <EN>Damage Slowdown</EN>
+          <DE>Schadens-Verlangsamung</DE>
+        </Text>
+        <Value>-60%</Value>
+      </Upgrade>
+    </VehicleUpgrades>
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>20575</TradePrice>
+    <Info ID="19820">
+      <EN>A steersman to be relied upon in all seas — a fighter.</EN>
+      <DE>Ein Steuermann, auf den man sich auf allen Meeren verlassen kann - ein Kämpfer.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="190766">
+    <Name>Ship Captain</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_captain_201.png</Filename>
+    </Icon>
+    <Text ID="190766">
+      <EN>Captain Ibrahim</EN>
+      <DE>Kapitän Ibrahim</DE>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>40</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_morale.png</Filename>
+        </Icon>
+        <Text ID="15196">
+          <EN>Active Healing</EN>
+          <DE>Aktive Heilung</DE>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </AttackableUpgrades>
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>90575</TradePrice>
+    <Info ID="19821">
+      <EN>The sea and shores provide natural cover, but you'll want a master to find it.</EN>
+      <DE>Meer und Küsten bieten natürliche Deckung, wollen aber, dass ein Meister sie findet.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191450">
+    <Name>Ship Master</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_captain_402.png</Filename>
+    </Icon>
+    <Text ID="191450">
+      <EN>Captain Kadijah</EN>
+      <DE>Kapitän Kadjah</DE>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>40</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_plus.png</Filename>
+        </Icon>
+        <Text ID="15195">
+          <EN>Self-Repair</EN>
+          <DE>Selbstreparatur</DE>
+        </Text>
+        <Value>+400%</Value>
+      </Upgrade>
+    </AttackableUpgrades>
+    <TradeShipUpgrades />
+    <VehicleUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
+        </Icon>
+        <Text ID="2339">
+          <EN>Movement Speed</EN>
+          <DE>Bewegungsgeschwindigkeit</DE>
+        </Text>
+        <Value>+20%</Value>
+      </Upgrade>
+    </VehicleUpgrades>
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>75350</TradePrice>
+    <Info ID="19822">
+      <EN>Under a dragon blood tree, she reads manuals of navigation until the sun sets red.</EN>
+      <DE>Unter einem Drachenbaum liest sie Navigationshandbücher, bis die Sonne Feuer speit.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191451">
+    <Name>Perry Winslow</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_captain_401.png</Filename>
+    </Icon>
+    <Text ID="191451">
+      <EN>Captain Felicity Phoenix, Back From the Grave</EN>
+      <DE>Kapitän Felicity Phoenix, aus der Asche</DE>
+    </Text>
+    <Rarity ID="118006">
+      <EN>Legendary</EN>
+      <DE>Legendär</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>50</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_plus.png</Filename>
+        </Icon>
+        <Text ID="1154">
+          <EN>Hitpoints</EN>
+          <DE>Trefferpunkte</DE>
+        </Text>
+        <Value>+1000</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_morale.png</Filename>
+        </Icon>
+        <Text ID="15196">
+          <EN>Active Healing</EN>
+          <DE>Aktive Heilung</DE>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </AttackableUpgrades>
+    <TradeShipUpgrades />
+    <VehicleUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png</Filename>
+        </Icon>
+        <Text ID="15262">
+          <EN>Damage Slowdown</EN>
+          <DE>Schadens-Verlangsamung</DE>
+        </Text>
+        <Value>-100%</Value>
+      </Upgrade>
+    </VehicleUpgrades>
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>230525</TradePrice>
+    <Info ID="19823">
+      <EN>Phoenix has lived a long time. Either unseen forces act as her guardian, or she has cunning enough to cheat death.</EN>
+      <DE>Phoenix hat schon viele Schlachten geschlagen. Entweder schützen sie unsichtbare Mächte oder sie ist so schlau, dass sie den Tod betrügen kann.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191452">
+    <Name>Richard Murphy</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/icon_captain_rare.png</Filename>
+    </Icon>
+    <Text ID="191452">
+      <EN>Captain Richard Moses, Skipper of Schooners</EN>
+      <DE>Kapitän Richard Moses, Skipper der Schoner</DE>
+    </Text>
+    <Rarity ID="118006">
+      <EN>Legendary</EN>
+      <DE>Legendär</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>50</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_expedition_pirate.png</Filename>
+        </Icon>
+        <Text ID="191598">
+          <EN>Trait:  Former Pirate</EN>
+          <DE>Merkmal:  Ehemaliger Pirat</DE>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_plus.png</Filename>
+        </Icon>
+        <Text ID="15195">
+          <EN>Self-Repair</EN>
+          <DE>Selbstreparatur</DE>
+        </Text>
+        <Value>+500%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_stance_attack.png</Filename>
+        </Icon>
+        <Text ID="19137">
+          <EN>Damage from Torpedoes</EN>
+          <DE>Schaden durch Torpedos</DE>
+        </Text>
+        <Value>-75%</Value>
+      </Upgrade>
+    </AttackableUpgrades>
+    <TradeShipUpgrades />
+    <VehicleUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
+        </Icon>
+        <Text ID="2339">
+          <EN>Movement Speed</EN>
+          <DE>Bewegungsgeschwindigkeit</DE>
+        </Text>
+        <Value>+25%</Value>
+      </Upgrade>
+    </VehicleUpgrades>
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>221675</TradePrice>
+    <Info ID="19824">
+      <EN>Moses began as a fisherman in the Northern Sounds, but he was always too versatile to settle for a career so ordinary.</EN>
+      <DE>In seiner Jugend ein Fischer, entdeckte Moses schnell seine Begabung für die Seefahrt.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191453">
+    <Name>Edward Smith - The Titanic Captain</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/icon_doctor_pirate.png</Filename>
+    </Icon>
+    <Text ID="191453">
+      <EN>Captain Smith, Titan of the Sea.</EN>
+      <DE>Kapitän Smith, Titan der Meere</DE>
+    </Text>
+    <Rarity ID="118006">
+      <EN>Legendary</EN>
+      <DE>Legendär</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>50</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_plus.png</Filename>
+        </Icon>
+        <Text ID="1154">
+          <EN>Hitpoints</EN>
+          <DE>Trefferpunkte</DE>
+        </Text>
+        <Value>+1000</Value>
+      </Upgrade>
+    </AttackableUpgrades>
+    <TradeShipUpgrades />
+    <VehicleUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
+        </Icon>
+        <Text ID="2339">
+          <EN>Movement Speed</EN>
+          <DE>Bewegungsgeschwindigkeit</DE>
+        </Text>
+        <Value>+25%</Value>
+      </Upgrade>
+    </VehicleUpgrades>
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>225350</TradePrice>
+    <Info ID="19825">
+      <EN>Smith commands ocean-bound fortresses; boats of magnitude, might and main. Or perhaps it is he who instills this in them.</EN>
+      <DE>Egal ob schwere Festungen oder imposante Schiffe, Smith befehligt alles, was auf dem offenen Meer beheimatet ist.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191596">
+    <Name>Ensign</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_custom_officer_101.png</Filename>
+    </Icon>
+    <Text ID="191596">
+      <EN>Ensign</EN>
+      <DE>Fähnrich</DE>
+    </Text>
+    <Rarity ID="118002">
+      <EN>Common</EN>
+      <DE>Gewöhnlich</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Warship">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
+      </Icon>
+      <Text ID="12812">
+        <EN>Military Ships</EN>
+        <DE>Kriegsschiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>15</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>5</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
+        </Icon>
+        <Text ID="17395">
+          <EN>Damage to Sailing Ships</EN>
+          <DE>Schaden an Segelschiffen</DE>
+        </Text>
+        <Value>+10%</Value>
+      </Upgrade>
+    </AttackerUpgrades>
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>2500</TradePrice>
+    <Info ID="19961">
+      <EN>Impatient to start causing fires.</EN>
+      <DE>Kann es kaum erwarten, Feuer zu befehlen.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191597">
+    <Name>Junior</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_custom_officer_102.png</Filename>
+    </Icon>
+    <Text ID="191597">
+      <EN>Gunsmith</EN>
+      <DE>Waffenschmied</DE>
+    </Text>
+    <Rarity ID="118002">
+      <EN>Common</EN>
+      <DE>Gewöhnlich</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Warship">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
+      </Icon>
+      <Text ID="12812">
+        <EN>Military Ships</EN>
+        <DE>Kriegsschiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>15</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>5</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
+        </Icon>
+        <Text ID="17396">
+          <EN>Damage to Steam Ships</EN>
+          <DE>Schaden an Dampfschiffen</DE>
+        </Text>
+        <Value>+10%</Value>
+      </Upgrade>
+    </AttackerUpgrades>
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>2800</TradePrice>
+    <Info ID="19962">
+      <EN>Fashions some interesting ordnance.</EN>
+      <DE>Gestaltet interessante Geschütze.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191598">
+    <Name>Lieutenant</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_navigator_102.png</Filename>
+    </Icon>
+    <Text ID="191598">
+      <EN>Former Pirate</EN>
+      <DE>Ehemaliger Pirat</DE>
+    </Text>
+    <Rarity ID="118003">
+      <EN>Uncommon</EN>
+      <DE>Ungewöhnlich</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Warship">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
+      </Icon>
+      <Text ID="12812">
+        <EN>Military Ships</EN>
+        <DE>Kriegsschiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>25</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_expedition_pirate.png</Filename>
+        </Icon>
+        <Text ID="191598">
+          <EN>Trait:  Former Pirate</EN>
+          <DE>Merkmal:  Ehemaliger Pirat</DE>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>8350</TradePrice>
+    <Info ID="19963">
+      <EN>Too risky being a privateer these days...</EN>
+      <DE>Heutzutage ist es zu riskant, Freibeuter zu sein ...</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191599">
+    <Name>Sergeant</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_custom_officer_104.png</Filename>
+    </Icon>
+    <Text ID="191599">
+      <EN>Sergeant</EN>
+      <DE>Wachtmeister</DE>
+    </Text>
+    <Rarity ID="118003">
+      <EN>Uncommon</EN>
+      <DE>Ungewöhnlich</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Warship">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
+      </Icon>
+      <Text ID="12812">
+        <EN>Military Ships</EN>
+        <DE>Kriegsschiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>25</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_go_to.png</Filename>
+        </Icon>
+        <Text ID="17230">
+          <EN>Attack Speed</EN>
+          <DE>Angriffsgeschwindigkeit</DE>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </AttackerUpgrades>
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>7950</TradePrice>
+    <Info ID="19964">
+      <EN>Stirs the loyalty of those on deck.</EN>
+      <DE>Weckt die Loyalität derjenigen an Deck.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191600">
+    <Name>Colonel</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_custom_officer_103.png</Filename>
+    </Icon>
+    <Text ID="191600">
+      <EN>Captain of Marines</EN>
+      <DE>Captain der Marines</DE>
+    </Text>
+    <Rarity ID="118004">
+      <EN>Rare</EN>
+      <DE>Selten</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>35</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>15</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
+        </Icon>
+        <Text ID="17394">
+          <EN>Damage to Buildings</EN>
+          <DE>Schaden an Gebäuden</DE>
+        </Text>
+        <Value>+30%</Value>
+      </Upgrade>
+    </AttackerUpgrades>
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>27125</TradePrice>
+    <Info ID="19965">
+      <EN>Walks the quarterdeck, examining the ropes and pulleys.</EN>
+      <DE>Marschiert über das Achterdeck und begutachtet die Taue und Flaschenzüge.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191601">
+    <Name>General</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_navigator_102_b.png</Filename>
+    </Icon>
+    <Text ID="191601">
+      <EN>Former Corsair</EN>
+      <DE>Ehemaliger Korsar</DE>
+    </Text>
+    <Rarity ID="118004">
+      <EN>Rare</EN>
+      <DE>Selten</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>35</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>15</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_expedition_pirate.png</Filename>
+        </Icon>
+        <Text ID="191598">
+          <EN>Trait:  Former Pirate</EN>
+          <DE>Merkmal:  Ehemaliger Pirat</DE>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
+        </Icon>
+        <Text ID="17396">
+          <EN>Damage to Steam Ships</EN>
+          <DE>Schaden an Dampfschiffen</DE>
+        </Text>
+        <Value>+30%</Value>
+      </Upgrade>
+    </AttackerUpgrades>
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>28100</TradePrice>
+    <Info ID="19966">
+      <EN>Went round the cape in search of gold, but now wants something more.</EN>
+      <DE>Hat des Goldes wegen das Kap umfahren, verlangt jetzt aber mehr vom Leben.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191602">
+    <Name>Corporal</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_admiral_708.png</Filename>
+    </Icon>
+    <Text ID="191602">
+      <EN>Ship's Chaplain</EN>
+      <DE>Schiffskaplan</DE>
+    </Text>
+    <Rarity ID="118004">
+      <EN>Rare</EN>
+      <DE>Selten</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>35</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>15</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
+        </Icon>
+        <Text ID="17395">
+          <EN>Damage to Sailing Ships</EN>
+          <DE>Schaden an Segelschiffen</DE>
+        </Text>
+        <Value>+30%</Value>
+      </Upgrade>
+    </AttackerUpgrades>
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>25850</TradePrice>
+    <Info ID="19967">
+      <EN>Rains fire and brimstone on the enemy.</EN>
+      <DE>Lässt Feuer und Schwefel auf den Feind niederregnen.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191603">
+    <Name>Grand Admiral</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_captain_103.png</Filename>
+    </Icon>
+    <Text ID="191603">
+      <EN>Vice-Admiral Adams</EN>
+      <DE>Vizeadmiral Adams</DE>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>45</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_plus.png</Filename>
+        </Icon>
+        <Text ID="1154">
+          <EN>Hitpoints</EN>
+          <DE>Trefferpunkte</DE>
+        </Text>
+        <Value>+800</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_morale.png</Filename>
+        </Icon>
+        <Text ID="15196">
+          <EN>Active Healing</EN>
+          <DE>Aktive Heilung</DE>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </AttackableUpgrades>
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>86250</TradePrice>
+    <Info ID="19968">
+      <EN>Adams has no concern for his own safety, unlike many of the higher ranks.</EN>
+      <DE>Anders als viele Hochrangige verschwendet Adams keinen Gedanken an die eigene Sicherheit.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191604">
+    <Name>Chief of the Navy</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/icon_specialist_captain_legendary_female.png</Filename>
+    </Icon>
+    <Text ID="191604">
+      <EN>Vice-Admiral Romanov</EN>
+      <DE>Vizeadmiral Romanow</DE>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Warship">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
+      </Icon>
+      <Text ID="12812">
+        <EN>Military Ships</EN>
+        <DE>Kriegsschiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>45</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="12021">
+          <EN>Attack Range</EN>
+          <DE>Angriffsreichweite</DE>
+        </Text>
+        <Value>+10%</Value>
+      </Upgrade>
+    </AttackerUpgrades>
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>91425</TradePrice>
+    <Info ID="19969">
+      <EN>Romanov eschewed her noble upbringing for the excitement of the high seas.</EN>
+      <DE>Romanow hat ihren beschaulichen Landsitz zugunsten des Abenteuers geopfert.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191605">
+    <Name>Admiral of the Fleet</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_uniform_504.png</Filename>
+    </Icon>
+    <Text ID="191605">
+      <EN>Vice-Almirante Gonçalves</EN>
+      <DE>Vize Almirante Gonçalves</DE>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>45</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
+        </Icon>
+        <Text ID="2339">
+          <EN>Movement Speed</EN>
+          <DE>Bewegungsgeschwindigkeit</DE>
+        </Text>
+        <Value>+15%</Value>
+      </Upgrade>
+    </VehicleUpgrades>
+    <AttackerUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="12021">
+          <EN>Attack Range</EN>
+          <DE>Angriffsreichweite</DE>
+        </Text>
+        <Value>+10%</Value>
+      </Upgrade>
+    </AttackerUpgrades>
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>73625</TradePrice>
+    <Info ID="19970">
+      <EN>Gonçalves is renowned for capturing ships during the battle of independence.</EN>
+      <DE>Gonçalves' gewagte Manöver konnten so manche große Seeschlacht entscheiden.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191606">
+    <Name>Senior Commodore</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_admiral_513.png</Filename>
+    </Icon>
+    <Text ID="191606">
+      <EN>Vice-Almirante Paulista</EN>
+      <DE>Vize Almirante Paulista</DE>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Warship">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
+      </Icon>
+      <Text ID="12812">
+        <EN>Military Ships</EN>
+        <DE>Kriegsschiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>45</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="12021">
+          <EN>Attack Range</EN>
+          <DE>Angriffsreichweite</DE>
+        </Text>
+        <Value>+10%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_go_to.png</Filename>
+        </Icon>
+        <Text ID="17230">
+          <EN>Attack Speed</EN>
+          <DE>Angriffsgeschwindigkeit</DE>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </AttackerUpgrades>
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>91425</TradePrice>
+    <Info ID="19971">
+      <EN>Paulista may be small of stature, but provoke him at your peril!</EN>
+      <DE>Paulista mag von kleiner Statur sein, aber es ist nicht ratsam, ihn zu provozieren.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191607">
+    <Name>Willma von Tegetthoff</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/icon_navigator_pirate.png</Filename>
+    </Icon>
+    <Text ID="191607">
+      <EN>Wilma the Wild, Bearer of Barracudas</EN>
+      <DE>Wilma die Wilde, Mitglied der Barrakudas</DE>
+    </Text>
+    <Rarity ID="118006">
+      <EN>Legendary</EN>
+      <DE>Legendär</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Warship">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
+      </Icon>
+      <Text ID="12812">
+        <EN>Military Ships</EN>
+        <DE>Kriegsschiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>55</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>25</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>25</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_expedition_pirate.png</Filename>
+        </Icon>
+        <Text ID="191598">
+          <EN>Trait:  Former Pirate</EN>
+          <DE>Merkmal:  Ehemaliger Pirat</DE>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_go_to.png</Filename>
+        </Icon>
+        <Text ID="17230">
+          <EN>Attack Speed</EN>
+          <DE>Angriffsgeschwindigkeit</DE>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </AttackerUpgrades>
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>247500</TradePrice>
+    <Info ID="19972">
+      <EN>"We take what is owed!" yells Wilma, who having been beaten by many a cruel master, takes revenge on the rich with interest.</EN>
+      <DE>„Wir nehmen, was man uns schuldig ist!“ Wilma treibt die Schulden mit Zins und Zinseszins ein.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191608">
+    <Name>Horatio Nelson</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_captain_102.png</Filename>
+    </Icon>
+    <Text ID="191608">
+      <EN>Lord High Admiral Nadasky, The Astute</EN>
+      <DE>Lord Admiral Nadasky, Meister des Scharfsinns</DE>
+    </Text>
+    <Rarity ID="118006">
+      <EN>Legendary</EN>
+      <DE>Legendär</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>55</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>25</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>25</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
+        </Icon>
+        <Text ID="2339">
+          <EN>Movement Speed</EN>
+          <DE>Bewegungsgeschwindigkeit</DE>
+        </Text>
+        <Value>+20%</Value>
+      </Upgrade>
+    </VehicleUpgrades>
+    <AttackerUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
+        </Icon>
+        <Text ID="17395">
+          <EN>Damage to Sailing Ships</EN>
+          <DE>Schaden an Segelschiffen</DE>
+        </Text>
+        <Value>+50%</Value>
+      </Upgrade>
+    </AttackerUpgrades>
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>232500</TradePrice>
+    <Info ID="19973">
+      <EN>A master of the board game Basilinda, there's no anticipating Nadasky's next move * but he certainly knows yours.</EN>
+      <DE>Als ein Meister des Brettspiels Basilinda lässt sich Nadaskys nächster Zug nie vorhersehen - aber er kennt ganz gewiss Ihren!</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191609">
+    <Name>Geordy Duff</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/icon_specialist_captain_legendary_pirate.png</Filename>
+    </Icon>
+    <Text ID="191609">
+      <EN>Georgina Duffy, The Call Your Bluffy</EN>
+      <DE>Georgina Duffy, Schrecken der Meere</DE>
+    </Text>
+    <Rarity ID="118006">
+      <EN>Legendary</EN>
+      <DE>Legendär</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>55</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>25</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>25</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_expedition_pirate.png</Filename>
+        </Icon>
+        <Text ID="191598">
+          <EN>Trait:  Former Pirate</EN>
+          <DE>Merkmal:  Ehemaliger Pirat</DE>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_morale.png</Filename>
+        </Icon>
+        <Text ID="15196">
+          <EN>Active Healing</EN>
+          <DE>Aktive Heilung</DE>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </AttackableUpgrades>
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
+        </Icon>
+        <Text ID="17395">
+          <EN>Damage to Sailing Ships</EN>
+          <DE>Schaden an Segelschiffen</DE>
+        </Text>
+        <Value>+50%</Value>
+      </Upgrade>
+    </AttackerUpgrades>
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>230000</TradePrice>
+    <Info ID="19974">
+      <EN>The guileful Georgina taught young Anne Harlow all she knew, before Anne tried to bite off the hand that feeds.</EN>
+      <DE>Die arglistige Georgina hat der jungen Anne Harlow alles beigebracht, was sie weiß, bevor Anne versucht hat, die Hand zu beißen, die sie füttert.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191610">
+    <Name>James Lawrence</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_admiral_701.png</Filename>
+    </Icon>
+    <Text ID="191610">
+      <EN>Admiral Haynes, Beholder of Far Horizons</EN>
+      <DE>Admiral Haynes, Erforscher neuer Horizonte</DE>
+    </Text>
+    <Rarity ID="118006">
+      <EN>Legendary</EN>
+      <DE>Legendär</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>55</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>25</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>25</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_plus.png</Filename>
+        </Icon>
+        <Text ID="1154">
+          <EN>Hitpoints</EN>
+          <DE>Trefferpunkte</DE>
+        </Text>
+        <Value>+1000</Value>
+      </Upgrade>
+    </AttackableUpgrades>
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="12021">
+          <EN>Attack Range</EN>
+          <DE>Angriffsreichweite</DE>
+        </Text>
+        <Value>+15%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
+        </Icon>
+        <Text ID="17394">
+          <EN>Damage to Buildings</EN>
+          <DE>Schaden an Gebäuden</DE>
+        </Text>
+        <Value>+50%</Value>
+      </Upgrade>
+    </AttackerUpgrades>
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>227500</TradePrice>
+    <Info ID="19975">
+      <EN>Always an eye on the distant has Haynes, in rare moments, turning that spyglass upon the arcane seas of the moon.</EN>
+      <DE>Haynes sieht mit einem Auge immer in die Ferne und richtet ihr Fernrohr in seltenen Momenten auch auf die befremdlichen Meere des Mondes.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191611">
+    <Name>Stephen Decatur</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/icon_police_officer_rare.png</Filename>
+    </Icon>
+    <Text ID="191611">
+      <EN>Commmodore Stephen Drake, The Besieger</EN>
+      <DE>Commodore Stephen Drake, Hüter des Embargos</DE>
+    </Text>
+    <Rarity ID="118006">
+      <EN>Legendary</EN>
+      <DE>Legendär</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>55</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>25</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>25</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_stance_attack.png</Filename>
+        </Icon>
+        <Text ID="19137">
+          <EN>Damage from Torpedoes</EN>
+          <DE>Schaden durch Torpedos</DE>
+        </Text>
+        <Value>-80%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_stance_attack.png</Filename>
+        </Icon>
+        <Text ID="19138">
+          <EN>Damage from Cannons</EN>
+          <DE>Schaden durch Kanonen</DE>
+        </Text>
+        <Value>-80%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_stance_attack.png</Filename>
+        </Icon>
+        <Text ID="19139">
+          <EN>Damage from Big Bertha</EN>
+          <DE>Schaden durch Dicke Berta</DE>
+        </Text>
+        <Value>-80%</Value>
+      </Upgrade>
+    </AttackableUpgrades>
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>213900</TradePrice>
+    <Info ID="19976">
+      <EN>Drake played castles as a child, and takes great pleasure in assaulting harbours from the comfort of his cabin.</EN>
+      <DE>Drake hat als Kind mit Burgen gespielt und es bereitet ihm große Freude, Häfen aus der Behaglichkeit seiner Kajüte anzugreifen.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191615">
+    <Name>Salesperson</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_bartender_813.png</Filename>
+    </Icon>
+    <Text ID="191615">
+      <EN>Lader</EN>
+      <DE>Beladerin</DE>
+    </Text>
+    <Rarity ID="118002">
+      <EN>Common</EN>
+      <DE>Gewöhnlich</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+        </Icon>
+        <Text ID="3920">
+          <EN>Diplomacy</EN>
+          <DE>Redegabe</DE>
+        </Text>
+        <Value>5</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_load_ships.png</Filename>
+        </Icon>
+        <Text ID="15197">
+          <EN>Loading Speed</EN>
+          <DE>Ladegeschwindigkeit</DE>
+        </Text>
+        <Value>+15%</Value>
+      </Upgrade>
+    </TradeShipUpgrades>
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>1250</TradePrice>
+    <Info ID="20018">
+      <EN>Laders know how to load.</EN>
+      <DE>Belader wissen, wie man belädt.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191616">
+    <Name>Trafficker</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_normal_dressed_105.png</Filename>
+    </Icon>
+    <Text ID="191616">
+      <EN>Handler</EN>
+      <DE>Schieber</DE>
+    </Text>
+    <Rarity ID="118002">
+      <EN>Common</EN>
+      <DE>Gewöhnlich</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+        </Icon>
+        <Text ID="3920">
+          <EN>Diplomacy</EN>
+          <DE>Redegabe</DE>
+        </Text>
+        <Value>5</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png</Filename>
+        </Icon>
+        <Text ID="15261">
+          <EN>Cargo Slowdown</EN>
+          <DE>Fracht-Verlangsamung</DE>
+        </Text>
+        <Value>-20%</Value>
+      </Upgrade>
+    </VehicleUpgrades>
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>1525</TradePrice>
+    <Info ID="20019">
+      <EN>He can handle himself.</EN>
+      <DE>Schiebt Probleme ungern auf die lange Bank.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191617">
+    <Name>Merchant</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_normaldress_308.png</Filename>
+    </Icon>
+    <Text ID="191617">
+      <EN>Merchant</EN>
+      <DE>Kauffrau</DE>
+    </Text>
+    <Rarity ID="118003">
+      <EN>Uncommon</EN>
+      <DE>Ungewöhnlich</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+        </Icon>
+        <Text ID="3920">
+          <EN>Diplomacy</EN>
+          <DE>Redegabe</DE>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>6900</TradePrice>
+    <Info ID="20020">
+      <EN>Makes the most of the available space.</EN>
+      <DE>Weiß den Platz optimal zu nutzen.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191618">
+    <Name>Retailer</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_normal_dressed_107.png</Filename>
+    </Icon>
+    <Text ID="191618">
+      <EN>Shipper</EN>
+      <DE>Spediteur</DE>
+    </Text>
+    <Rarity ID="118003">
+      <EN>Uncommon</EN>
+      <DE>Ungewöhnlich</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+        </Icon>
+        <Text ID="3920">
+          <EN>Diplomacy</EN>
+          <DE>Redegabe</DE>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_load_ships.png</Filename>
+        </Icon>
+        <Text ID="15197">
+          <EN>Loading Speed</EN>
+          <DE>Ladegeschwindigkeit</DE>
+        </Text>
+        <Value>+30%</Value>
+      </Upgrade>
+    </TradeShipUpgrades>
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>7350</TradePrice>
+    <Info ID="20021">
+      <EN>An authority on port logistics.</EN>
+      <DE>Eine Autorität in der Hafenlogistik.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191619">
+    <Name>Businessman</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_well_dressed_104.png</Filename>
+    </Icon>
+    <Text ID="191619">
+      <EN>Port Dealer</EN>
+      <DE>Geschäftsmann</DE>
+    </Text>
+    <Rarity ID="118004">
+      <EN>Rare</EN>
+      <DE>Selten</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+        </Icon>
+        <Text ID="3920">
+          <EN>Diplomacy</EN>
+          <DE>Redegabe</DE>
+        </Text>
+        <Value>15</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
+        </Icon>
+        <Text ID="2339">
+          <EN>Movement Speed</EN>
+          <DE>Bewegungsgeschwindigkeit</DE>
+        </Text>
+        <Value>+10%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png</Filename>
+        </Icon>
+        <Text ID="15261">
+          <EN>Cargo Slowdown</EN>
+          <DE>Fracht-Verlangsamung</DE>
+        </Text>
+        <Value>-60%</Value>
+      </Upgrade>
+    </VehicleUpgrades>
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>23575</TradePrice>
+    <Info ID="20022">
+      <EN>There are ways and means of getting it done cheap.</EN>
+      <DE>Es gibt Mittel und Wege, den Preis zu drücken.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191620">
+    <Name>Exporter</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_normaldress_303.png</Filename>
+    </Icon>
+    <Text ID="191620">
+      <EN>Exporter of Goods</EN>
+      <DE>Händlerin</DE>
+    </Text>
+    <Rarity ID="118004">
+      <EN>Rare</EN>
+      <DE>Selten</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+        </Icon>
+        <Text ID="3920">
+          <EN>Diplomacy</EN>
+          <DE>Redegabe</DE>
+        </Text>
+        <Value>15</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
+        </Icon>
+        <Text ID="15198">
+          <EN>Trade Prices</EN>
+          <DE>Handelspreise</DE>
+        </Text>
+        <Value>-5%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_load_ships.png</Filename>
+        </Icon>
+        <Text ID="15197">
+          <EN>Loading Speed</EN>
+          <DE>Ladegeschwindigkeit</DE>
+        </Text>
+        <Value>+45%</Value>
+      </Upgrade>
+    </TradeShipUpgrades>
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>20325</TradePrice>
+    <Info ID="20023">
+      <EN>The secret is to pack things up really really tightly.</EN>
+      <DE>Das Geheimnis besteht darin, alles richtig eng zu stapeln.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191621">
+    <Name>International Exporter</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_well_dressed_404.png</Filename>
+    </Icon>
+    <Text ID="191621">
+      <EN>Itsuko the International Exporter</EN>
+      <DE>Itsuko die Exporteurin</DE>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+        </Icon>
+        <Text ID="3920">
+          <EN>Diplomacy</EN>
+          <DE>Redegabe</DE>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
+        </Icon>
+        <Text ID="15198">
+          <EN>Trade Prices</EN>
+          <DE>Handelspreise</DE>
+        </Text>
+        <Value>-10%</Value>
+      </Upgrade>
+    </TradeShipUpgrades>
+    <VehicleUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png</Filename>
+        </Icon>
+        <Text ID="15261">
+          <EN>Cargo Slowdown</EN>
+          <DE>Fracht-Verlangsamung</DE>
+        </Text>
+        <Value>-80%</Value>
+      </Upgrade>
+    </VehicleUpgrades>
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>66625</TradePrice>
+    <Info ID="20024">
+      <EN>Itsuko knows how to provide flawless transoceanic delivery services.</EN>
+      <DE>Itsuko weiß, wie man ein internationales Frachtunternehmen aufzieht.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191622">
+    <Name>Ship Company Owner</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_normaldress_815.png</Filename>
+    </Icon>
+    <Text ID="191622">
+      <EN>Salima the Shipping Operator</EN>
+      <DE>Salima die Imorteurin</DE>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+        </Icon>
+        <Text ID="3920">
+          <EN>Diplomacy</EN>
+          <DE>Redegabe</DE>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
+        </Icon>
+        <Text ID="15198">
+          <EN>Trade Prices</EN>
+          <DE>Handelspreise</DE>
+        </Text>
+        <Value>-10%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_load_ships.png</Filename>
+        </Icon>
+        <Text ID="15197">
+          <EN>Loading Speed</EN>
+          <DE>Ladegeschwindigkeit</DE>
+        </Text>
+        <Value>+60%</Value>
+      </Upgrade>
+    </TradeShipUpgrades>
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>62500</TradePrice>
+    <Info ID="20025">
+      <EN>The many narrow straits of her home have made Salima adept at logistics.</EN>
+      <DE>Die vielen schmalen Meerengen in ihrer Heimat haben Salima zu einer Expertin der Navigation gemacht.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191623">
+    <Name>Renowned Diplomat</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_welldress_806.png</Filename>
+    </Icon>
+    <Text ID="191623">
+      <EN>Delores the Diplomat</EN>
+      <DE>Delores die Diplomatin</DE>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+        </Icon>
+        <Text ID="3920">
+          <EN>Diplomacy</EN>
+          <DE>Redegabe</DE>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
+        </Icon>
+        <Text ID="15198">
+          <EN>Trade Prices</EN>
+          <DE>Handelspreise</DE>
+        </Text>
+        <Value>-10%</Value>
+      </Upgrade>
+    </TradeShipUpgrades>
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>72025</TradePrice>
+    <Info ID="20026">
+      <EN>When Delores walked into the embassy, he knew he had his work cut out.</EN>
+      <DE>Als Delores die Botschaft betrat, wusste sie, dass sie alle Hände voll zu tun haben würde.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191624">
+    <Name>Kate Tyrell - The First Female Ship Merchant</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_well_dressed_402.png</Filename>
+    </Icon>
+    <Text ID="191624">
+      <EN>Ermenegilda Di Mercante, Purveyor of Tall Ships</EN>
+      <DE>Ermenegilda Di Mercante, Expertin für Export</DE>
+    </Text>
+    <Rarity ID="118006">
+      <EN>Legendary</EN>
+      <DE>Legendär</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+        </Icon>
+        <Text ID="3920">
+          <EN>Diplomacy</EN>
+          <DE>Redegabe</DE>
+        </Text>
+        <Value>25</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_load_ships.png</Filename>
+        </Icon>
+        <Text ID="15197">
+          <EN>Loading Speed</EN>
+          <DE>Ladegeschwindigkeit</DE>
+        </Text>
+        <Value>+75%</Value>
+      </Upgrade>
+    </TradeShipUpgrades>
+    <VehicleUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
+        </Icon>
+        <Text ID="2339">
+          <EN>Movement Speed</EN>
+          <DE>Bewegungsgeschwindigkeit</DE>
+        </Text>
+        <Value>+20%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png</Filename>
+        </Icon>
+        <Text ID="15261">
+          <EN>Cargo Slowdown</EN>
+          <DE>Fracht-Verlangsamung</DE>
+        </Text>
+        <Value>-100%</Value>
+      </Upgrade>
+    </VehicleUpgrades>
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>233300</TradePrice>
+    <Info ID="20027">
+      <EN>Ermenegilda owns a name as long and elaborate as her dockside schemes, none of which are ever traced back to her.</EN>
+      <DE>Ermenegilda entstammt einer traditionsreichen Kaufmannsfamilie. Um das Andenken zu wahren, würde auch sie zu unlauteren Mitteln greifen.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191625">
+    <Name>Patricia Siddins</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_entertainer_828.png</Filename>
+    </Icon>
+    <Text ID="191625">
+      <EN>Lalla Mazigh, Merchant of a Free Market</EN>
+      <DE>Lalla Mazigh, Verfechterin des freien Marktes</DE>
+    </Text>
+    <Rarity ID="118006">
+      <EN>Legendary</EN>
+      <DE>Legendär</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+        </Icon>
+        <Text ID="3920">
+          <EN>Diplomacy</EN>
+          <DE>Redegabe</DE>
+        </Text>
+        <Value>25</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
+        </Icon>
+        <Text ID="15198">
+          <EN>Trade Prices</EN>
+          <DE>Handelspreise</DE>
+        </Text>
+        <Value>-15%</Value>
+      </Upgrade>
+    </TradeShipUpgrades>
+    <VehicleUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
+        </Icon>
+        <Text ID="2339">
+          <EN>Movement Speed</EN>
+          <DE>Bewegungsgeschwindigkeit</DE>
+        </Text>
+        <Value>+20%</Value>
+      </Upgrade>
+    </VehicleUpgrades>
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>187500</TradePrice>
+    <Info ID="20028">
+      <EN>In trade, she sets the rules. Said to be a relative of Mme. Kahina, Lalla's offers are, by their nature, open to all.</EN>
+      <DE>Lalla handelt mit allem … Woher die Waren stammen? Nun, man munkelt, sie sei mit Madame Kahina verwandt.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="191626">
+    <Name>Hans Puggaard - The Leading Wholesaler</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_well_dressed_111.png</Filename>
+    </Icon>
+    <Text ID="191626">
+      <EN>Hans Eichendorf, A Wholesale Success</EN>
+      <DE>Hans Eichendorf, Meister der Logistik</DE>
+    </Text>
+    <Rarity ID="118006">
+      <EN>Legendary</EN>
+      <DE>Legendär</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+        </Icon>
+        <Text ID="3920">
+          <EN>Diplomacy</EN>
+          <DE>Redegabe</DE>
+        </Text>
+        <Value>25</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
+        </Icon>
+        <Text ID="15198">
+          <EN>Trade Prices</EN>
+          <DE>Handelspreise</DE>
+        </Text>
+        <Value>-15%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_load_ships.png</Filename>
+        </Icon>
+        <Text ID="15197">
+          <EN>Loading Speed</EN>
+          <DE>Ladegeschwindigkeit</DE>
+        </Text>
+        <Value>+75%</Value>
+      </Upgrade>
+    </TradeShipUpgrades>
+    <VehicleUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png</Filename>
+        </Icon>
+        <Text ID="15261">
+          <EN>Cargo Slowdown</EN>
+          <DE>Fracht-Verlangsamung</DE>
+        </Text>
+        <Value>-100%</Value>
+      </Upgrade>
+    </VehicleUpgrades>
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>199500</TradePrice>
+    <Info ID="20029">
+      <EN>Refusing to be left at the margins, they say Hans knows the value of everything - except perhaps, failure.</EN>
+      <DE>Dank Eichendorfs innovativem Frachtsystem konnten die Zeiten beim Löschen und der Überfahrt drastisch gesenkt werden.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="192444">
+    <Name>Drew Durnil</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/influencer/icon_influencer_drew_durnil_2.png</Filename>
+    </Icon>
+    <Text ID="192444">
+      <EN>Drew Durnil, the Speculative Historian</EN>
+      <DE>Drew Durnil, Gelehrter spekulativer Geschichte</DE>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+        </Icon>
+        <Text ID="3920">
+          <EN>Diplomacy</EN>
+          <DE>Redegabe</DE>
+        </Text>
+        <Value>45</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
+        </Icon>
+        <Text ID="15198">
+          <EN>Trade Prices</EN>
+          <DE>Handelspreise</DE>
+        </Text>
+        <Value>-15%</Value>
+      </Upgrade>
+    </TradeShipUpgrades>
+    <VehicleUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
+        </Icon>
+        <Text ID="2339">
+          <EN>Movement Speed</EN>
+          <DE>Bewegungsgeschwindigkeit</DE>
+        </Text>
+        <Value>+15%</Value>
+      </Upgrade>
+    </VehicleUpgrades>
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>90125</TradePrice>
+    <Info ID="21343">
+      <EN>An eager explorer of alternative realities, Drew harmonises with every culture he stumbles upon.</EN>
+      <DE>Als eifriger Erforscher alternativer Wirklichkeiten harmoniert Drew mit allen bekannten Kulturen. </DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="192449">
+    <Name>Lady Lu</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/influencer/icon_influencer_lady_lu.png</Filename>
+    </Icon>
+    <Text ID="192449">
+      <EN>Lady Lu, the Redeemed Pirate</EN>
+      <DE>Ladi Lu, Pirat der Entourage</DE>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_diseases_tint.png</Filename>
+        </Icon>
+        <Text ID="3924">
+          <EN>Medicine</EN>
+          <DE>Heilkunst</DE>
+        </Text>
+        <Value>45</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_expedition_pirate.png</Filename>
+        </Icon>
+        <Text ID="191598">
+          <EN>Trait:  Former Pirate</EN>
+          <DE>Merkmal:  Ehemaliger Pirat</DE>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_plus.png</Filename>
+        </Icon>
+        <Text ID="1154">
+          <EN>Hitpoints</EN>
+          <DE>Trefferpunkte</DE>
+        </Text>
+        <Value>+800</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_plus.png</Filename>
+        </Icon>
+        <Text ID="15195">
+          <EN>Self-Repair</EN>
+          <DE>Selbstreparatur</DE>
+        </Text>
+        <Value>+200%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_morale.png</Filename>
+        </Icon>
+        <Text ID="15196">
+          <EN>Active Healing</EN>
+          <DE>Aktive Heilung</DE>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </AttackableUpgrades>
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>91425</TradePrice>
+    <Info ID="21352">
+      <EN>Now a member of Qing's entourage, Lady Lu decided to put his nautical abilities to a more constructive use.</EN>
+      <DE>Als neues Mitglied von Qings Entourage hat Lu beschlossen, seine nautischen Fähigkeiten voll in ihren Dienst zu stellen.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="193188">
+    <Name>Draegast</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/influencer/icon_influencer_draegast.png</Filename>
+    </Icon>
+    <Text ID="193188">
+      <EN>Drae von Gast</EN>
+      <DE>Drae von Gast, Händler ohne Skrupel</DE>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Warship">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
+      </Icon>
+      <Text ID="12812">
+        <EN>Military Ships</EN>
+        <DE>Kriegsschiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+        </Icon>
+        <Text ID="3920">
+          <EN>Diplomacy</EN>
+          <DE>Redegabe</DE>
+        </Text>
+        <Value>25</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_expedition_pirate.png</Filename>
+        </Icon>
+        <Text ID="191598">
+          <EN>Trait:  Former Pirate</EN>
+          <DE>Merkmal:  Ehemaliger Pirat</DE>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
+        </Icon>
+        <Text ID="15198">
+          <EN>Trade Prices</EN>
+          <DE>Handelspreise</DE>
+        </Text>
+        <Value>-15%</Value>
+      </Upgrade>
+    </TradeShipUpgrades>
+    <VehicleUpgrades />
+    <AttackerUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
+        </Icon>
+        <Text ID="17394">
+          <EN>Damage to Buildings</EN>
+          <DE>Schaden an Gebäuden</DE>
+        </Text>
+        <Value>+50%</Value>
+      </Upgrade>
+    </AttackerUpgrades>
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>89000</TradePrice>
+    <Info ID="21987">
+      <EN>Von Gast is a powerful entrepreneur who earned much of his wealth through the trade of artisanal goods. It has since emerged, however, that some of those deals weren't entirely above board, giving Drae a cutthroat reputation. The rumour is that he's prone to blowing up entire harbours when he doesn't get what he wants...</EN>
+      <DE>Von Gast ist ein mächtiger Unternehmer, der den Großteil seines Wohlstands dem Handel mit Handwerkswaren verdankt. Drae hallt dabei der Ruf nach, auch mal unlautere Mittel einzusetzen und ganze Häfen bewusst in den Ruin zu treiben. </DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="192074">
+    <Name>Jack of all Traits</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/icon_craftsman_common.png</Filename>
+    </Icon>
+    <Text ID="192074">
+      <EN>Jack of all Traits</EN>
+      <DE>Jack of all Traits</DE>
+    </Text>
+    <Rarity ID="118006">
+      <EN>Legendary</EN>
+      <DE>Legendär</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_expedition_anthropologist.png</Filename>
+        </Icon>
+        <Text ID="3928">
+          <EN>Trait:  Anthropologist</EN>
+          <DE>Merkmal:  Anthropologe</DE>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_expedition_zoologist.png</Filename>
+        </Icon>
+        <Text ID="9998">
+          <EN>Trait:  Zoologist</EN>
+          <DE>Merkmal:  Zoologe</DE>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_expedition_hypnotist.png</Filename>
+        </Icon>
+        <Text ID="3929">
+          <EN>Trait:  Hypnotist</EN>
+          <DE>Merkmal:  Hypnotiseur</DE>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_expedition_pirate.png</Filename>
+        </Icon>
+        <Text ID="191598">
+          <EN>Trait:  Former Pirate</EN>
+          <DE>Merkmal:  Ehemaliger Pirat</DE>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_expedition_diver.png</Filename>
+        </Icon>
+        <Text ID="3931">
+          <EN>Trait:  Diver</EN>
+          <DE>Merkmal:  Taucher</DE>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_generic_expedition.png</Filename>
+        </Icon>
+        <Text ID="12262">
+          <EN>Trait:  Archaeologist</EN>
+          <DE>Merkmal:  Archäologe</DE>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_generic_expedition.png</Filename>
+        </Icon>
+        <Text ID="12266">
+          <EN>Trait:  Polyglot</EN>
+          <DE>Merkmal:  Sprachkundiger</DE>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+        </Icon>
+        <Text ID="3920">
+          <EN>Diplomacy</EN>
+          <DE>Redegabe</DE>
+        </Text>
+        <Value>100</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>100</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>100</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+        </Icon>
+        <Text ID="3923">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+        </Text>
+        <Value>100</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_diseases_tint.png</Filename>
+        </Icon>
+        <Text ID="3924">
+          <EN>Medicine</EN>
+          <DE>Heilkunst</DE>
+        </Text>
+        <Value>100</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_church_2d.png</Filename>
+        </Icon>
+        <Text ID="3925">
+          <EN>Faith</EN>
+          <DE>Glaube</DE>
+        </Text>
+        <Value>100</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_build_menu.png</Filename>
+        </Icon>
+        <Text ID="3926">
+          <EN>Crafting</EN>
+          <DE>Geschick</DE>
+        </Text>
+        <Value>100</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
+        </Icon>
+        <Text ID="3927">
+          <EN>Hunting</EN>
+          <DE>Jagdglück</DE>
+        </Text>
+        <Value>100</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice />
+    <Info ID="17225">
+      <EN>It is the master of expeditions, the eloquent, the strong and the mighty, they who is never lost, the savior of bodies, souls and things, the predator, the friend of man and animal, the puppetmaster, scourge of the sea, explorer of depths, the joker, the tomb raider,  the cosmopolitan, the Jack of all traits.</EN>
+      <DE>It is the master of expeditions, the eloquent, the strong and the mighty, they who is never lost, the savior of bodies, souls and things, the predator, the friend of man and animal, the puppetmaster, scourge of the sea, explorer of depths, the joker, the tomb raider,  the cosmopolitan, the Jack of all traits.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="190105">
+    <Name>Dr Snuggles</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/icons/icon_resource_worker_2.png</Filename>
+    </Icon>
+    <Text ID="190105">
+      <EN>Dr Snuggles</EN>
+      <DE>Dr Snuggles</DE>
+    </Text>
+    <Rarity ID="118002">
+      <EN>Common</EN>
+      <DE>Gewöhnlich</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_plus.png</Filename>
+        </Icon>
+        <Text ID="1154">
+          <EN>Hitpoints</EN>
+          <DE>Trefferpunkte</DE>
+        </Text>
+        <Value>+200%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_plus.png</Filename>
+        </Icon>
+        <Text ID="15195">
+          <EN>Self-Repair</EN>
+          <DE>Selbstreparatur</DE>
+        </Text>
+        <Value>+15</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_morale.png</Filename>
+        </Icon>
+        <Text ID="15196">
+          <EN>Active Healing</EN>
+          <DE>Aktive Heilung</DE>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </AttackableUpgrades>
+    <TradeShipUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_load_ships.png</Filename>
+        </Icon>
+        <Text ID="15197">
+          <EN>Loading Speed</EN>
+          <DE>Ladegeschwindigkeit</DE>
+        </Text>
+        <Value>+50%</Value>
+      </Upgrade>
+    </TradeShipUpgrades>
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>1250</TradePrice>
+    <Sources />
+  </Asset>
+  <Asset ID="190800">
+    <Name>CaptainMorgan</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/icon_captain_epic.png</Filename>
+    </Icon>
+    <Text ID="190800">
+      <EN>Ship Captain</EN>
+      <DE>Schiffskapitän</DE>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades />
+    <TradeShipUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
+        </Icon>
+        <Text ID="15198">
+          <EN>Trade Prices</EN>
+          <DE>Handelspreise</DE>
+        </Text>
+        <Value>-20%</Value>
+      </Upgrade>
+    </TradeShipUpgrades>
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>62500</TradePrice>
+    <Sources />
+  </Asset>
+  <Asset ID="192093">
+    <Name>Pirate Cadet</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_navigator_102.png</Filename>
+    </Icon>
+    <Text ID="192093">
+      <EN>Pirate Cadet</EN>
+      <DE>Piratenkadett</DE>
+    </Text>
+    <Rarity ID="118003">
+      <EN>Uncommon</EN>
+      <DE>Ungewöhnlich</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>25</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_expedition_pirate.png</Filename>
+        </Icon>
+        <Text ID="191598">
+          <EN>Trait:  Former Pirate</EN>
+          <DE>Merkmal:  Ehemaliger Pirat</DE>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
+        </Icon>
+        <Text ID="2339">
+          <EN>Movement Speed</EN>
+          <DE>Bewegungsgeschwindigkeit</DE>
+        </Text>
+        <Value>+30%</Value>
+      </Upgrade>
+    </VehicleUpgrades>
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>3750</TradePrice>
+    <Sources />
+  </Asset>
+  <Asset ID="192092">
+    <Name>Willma von Tegetthoff</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/icon_navigator_pirate.png</Filename>
+    </Icon>
+    <Text ID="192092">
+      <EN>Willma von Tegetthoff</EN>
+      <DE>Willma von Tegetthoff</DE>
+    </Text>
+    <Rarity ID="118004">
+      <EN>Rare</EN>
+      <DE>Selten</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>35</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_expedition_pirate.png</Filename>
+        </Icon>
+        <Text ID="191598">
+          <EN>Trait:  Former Pirate</EN>
+          <DE>Merkmal:  Ehemaliger Pirat</DE>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
+        </Icon>
+        <Text ID="2339">
+          <EN>Movement Speed</EN>
+          <DE>Bewegungsgeschwindigkeit</DE>
+        </Text>
+        <Value>+30%</Value>
+      </Upgrade>
+    </VehicleUpgrades>
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>12500</TradePrice>
+    <Sources />
+  </Asset>
+  <Asset ID="192090">
+    <Name>Captain Moby, Old Dog of the Sea</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_captain_103.png</Filename>
+    </Icon>
+    <Text ID="192090">
+      <EN>Captain Moby, Old Dog of the Sea</EN>
+      <DE>Kapitän Moby, der alte Seebär</DE>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>45</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_expedition_pirate.png</Filename>
+        </Icon>
+        <Text ID="191598">
+          <EN>Trait:  Former Pirate</EN>
+          <DE>Merkmal:  Ehemaliger Pirat</DE>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_plus.png</Filename>
+        </Icon>
+        <Text ID="1154">
+          <EN>Hitpoints</EN>
+          <DE>Trefferpunkte</DE>
+        </Text>
+        <Value>+500</Value>
+      </Upgrade>
+    </AttackableUpgrades>
+    <TradeShipUpgrades />
+    <VehicleUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
+        </Icon>
+        <Text ID="2339">
+          <EN>Movement Speed</EN>
+          <DE>Bewegungsgeschwindigkeit</DE>
+        </Text>
+        <Value>+30%</Value>
+      </Upgrade>
+    </VehicleUpgrades>
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>50000</TradePrice>
+    <Info ID="12597">
+      <EN>The Pope has redefined the position of the church, so it may safely navigate the confusion of the modern age.</EN>
+      <DE>Der blinde Papst hat die Position der Kirche neu definiert, um sie gegen die Wirren der Moderne zu wappnen.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="192091">
+    <Name>Geordy Duff</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/specialists/icon_specialist_captain_legendary_pirate.png</Filename>
+    </Icon>
+    <Text ID="192091">
+      <EN>Geordy Duff</EN>
+      <DE>Geordy Duff</DE>
+    </Text>
+    <Rarity ID="118006">
+      <EN>Legendary</EN>
+      <DE>Legendär</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ships">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+      <Text ID="191454">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>55</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>40</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_expedition_pirate.png</Filename>
+        </Icon>
+        <Text ID="191598">
+          <EN>Trait:  Former Pirate</EN>
+          <DE>Merkmal:  Ehemaliger Pirat</DE>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_plus.png</Filename>
+        </Icon>
+        <Text ID="1154">
+          <EN>Hitpoints</EN>
+          <DE>Trefferpunkte</DE>
+        </Text>
+        <Value>+1000</Value>
+      </Upgrade>
+    </AttackableUpgrades>
+    <TradeShipUpgrades />
+    <VehicleUpgrades>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
+        </Icon>
+        <Text ID="2339">
+          <EN>Movement Speed</EN>
+          <DE>Bewegungsgeschwindigkeit</DE>
+        </Text>
+        <Value>+30%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png</Filename>
+        </Icon>
+        <Text ID="15262">
+          <EN>Damage Slowdown</EN>
+          <DE>Schadens-Verlangsamung</DE>
+        </Text>
+        <Value>+100%</Value>
+      </Upgrade>
+    </VehicleUpgrades>
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>100000</TradePrice>
+    <Info ID="10031">
+      <EN>Travelled the seas her whole life to visit the homeland of the ancestors who gave her her name.</EN>
+      <DE>Ist ihr ganzes Leben lang zur See gefahren, um die Heimat ihres namensgebenden Vorfahren zu besuchen.</DE>
+    </Info>
+    <Sources />
+  </Asset>
+</ShipSpecialist>
