@@ -208,6 +208,7 @@ namespace RDA.Templates {
       this.Allocation = new Allocation(element.Parent.Parent.Element("Template").Value, element.Element("Allocation")?.Value);
       this.TradePrice = element.Element("TradePrice") == null ? null : (Int32.Parse(element.Element("TradePrice").Value) / 4).ToString();
       if (this.ItemType == "None") this.ItemType = "Common";
+      if (this.ItemType == "Normal") this.ItemType = "Common";
       if (this.ItemType != "Specialist" && this.ItemType != "Common") throw new NotImplementedException();
     }
     private void ProcessElement_ItemEffect(XElement element) {
@@ -244,6 +245,9 @@ namespace RDA.Templates {
       if (element.HasElements) {
         this.CultureUpgrades = new List<Upgrade>();
         foreach (var item in element.Elements()) {
+          if (item.Name.LocalName == "ChangeModule") continue;
+          if (item.Name.LocalName == "ForcedFeedbackVariation") continue;
+          if (item.Name.LocalName == "AdditionalModuleSoundLoop") continue;
           this.CultureUpgrades.Add(new Upgrade(item));
         }
       }

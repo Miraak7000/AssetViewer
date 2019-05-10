@@ -29,6 +29,9 @@ namespace RDA.Data {
         case "ShipSpecialist":
           this.Template_ShipSpecialist(value);
           break;
+        case "CultureItem":
+          this.Template_CultureItem(value);
+          break;
         default:
           throw new NotImplementedException(template);
       }
@@ -129,6 +132,21 @@ namespace RDA.Data {
           this.ID = "Ships";
           this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_ship.png");
           this.Text = new Description("191454");
+          break;
+      }
+    }
+    private void Template_CultureItem(String value) {
+      switch (value) {
+        case "Museum":
+          this.ID = "Museum";
+          this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_museum.png");
+          this.Text = new Description("2351");
+          break;
+        default:
+          if (value != null) throw new NotImplementedException();
+          this.ID = "Zoo";
+          this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_zoo.png");
+          this.Text = new Description("2349");
           break;
       }
     }

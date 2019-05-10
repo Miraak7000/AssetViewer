@@ -50,7 +50,8 @@ namespace RDA {
       //Program.ProcessingItems("TownhallItem");
       //Program.ProcessingItems("HarborOfficeItem");
       //Program.ProcessingItems("VehicleItem");
-      Program.ProcessingItems("ShipSpecialist");
+      //Program.ProcessingItems("ShipSpecialist");
+      Program.ProcessingItems("CultureItem");
       //Program.ProcessingThirdParty();
     }
     private static void ProcessingItems(String template) {

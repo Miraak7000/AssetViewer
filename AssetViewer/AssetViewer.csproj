@@ -35,7 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Resources\AssetViewer.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -142,22 +143,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="..\RDA\Modified\Assets_MonumentEvent.xml">
-      <Link>Resources\Assets\Assets_MonumentEvent.xml</Link>
-    </EmbeddedResource>
-    <EmbeddedResource Include="..\RDA\Modified\Assets_MonumentEventCategory.xml">
-      <Link>Resources\Assets\Assets_MonumentEventCategory.xml</Link>
-    </EmbeddedResource>
-    <EmbeddedResource Include="..\RDA\Modified\Assets_MonumentEventReward.xml">
-      <Link>Resources\Assets\Assets_MonumentEventReward.xml</Link>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="..\RDA\Modified\Assets_GuildhouseItemCleanedUp.xml">
-      <Link>Resources\Assets\Assets_GuildhouseItemCleanedUp.xml</Link>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\AssetViewer.ico" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\consumables\icon_building_repair_1.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\consumables\icon_building_repair_2.png" />
@@ -229,6 +214,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_archeology_0.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_architecture_0.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_banana.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_bank.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_beams.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_bear_trap.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_bear_trap_0.png" />
@@ -250,6 +236,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_chocolate.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_church.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_cigars.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_club_house.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_coal_2.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_coal_burn.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_cocoa.png" />
@@ -260,6 +247,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_diving_helmet.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_dynamite.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_electric_works_coal.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_electric_works_oil.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_fish.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_fishoil.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_fried_bananas.png" />
@@ -285,6 +273,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_jewelry.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_lateen_sails.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_light_bulb.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_marketplace.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_meat_raw.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_meat_sausage.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_museum_0.png" />
@@ -304,6 +293,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_salt.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_schnapps_3.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_schnapps_4.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_school.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_science_0.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_settlement_rights_1.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_sewing_machine.png" />
@@ -318,6 +308,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_tobacco.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_tools.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_townhall.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_university.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_visitor_harbour.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_weapons.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_white_flag.png" />
@@ -616,26 +607,37 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ships\icon_ship_collier.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ship_military\icon_pucklegun.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_boris_franke.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_captain_common.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_captain_epic.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_captain_rare.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_craftsman_common.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_craftsman_maciver.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_diplomat_legendary.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_doctor_common.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_doctor_james_barry.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_doctor_native.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_doctor_pirate.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_hunter_common.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_hunter_native.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_navigator_pirate.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_police_officer_angel.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_police_officer_epic.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_police_officer_legendary.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_police_officer_rare.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_police_officer_uncommon.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_priest_epic.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_priest_legendary.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_priest_uncommon.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_specialist_captain_legendary_female.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_specialist_captain_legendary_pirate.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\influencer\icon_influencer_alex_hancock.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\influencer\icon_influencer_amixem.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\influencer\icon_influencer_blitz.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\influencer\icon_influencer_br4mm3n.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\influencer\icon_influencer_draegast.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\influencer\icon_influencer_drew_durnil_2.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\influencer\icon_influencer_keralis_2.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\influencer\icon_influencer_lady_lu.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\influencer\icon_influencer_lewis_2.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\influencer\icon_influencer_realferas_2.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\pirates\icon_anna_350.png" />
@@ -647,6 +649,9 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\pirates\icon_sinistra_250.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\pirates\icon_stilton_252.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\pirates\icon_suspicia_650.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_admiral_513.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_admiral_701.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_admiral_708.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_architect_501.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_artillerist_201.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_artillerist_202.png" />
@@ -663,14 +668,21 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_bartender_323.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_bartender_813.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_blacksmith_317.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_captain_101.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_captain_102.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_captain_103.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_captain_201.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_captain_401.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_captain_401_b.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_captain_402.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_carpenter_721.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_carpenter_722.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_curator_702.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_custom_officer.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_custom_officer_101.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_custom_officer_102.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_custom_officer_103.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_custom_officer_104.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_custom_officer_201.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_doctor_717.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_doctor_802.png" />
@@ -714,6 +726,8 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_miner_201.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_miner_401.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_navigator_102.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_navigator_102_b.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_navigator_704.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_normaldress_303.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_normaldress_304.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_normaldress_308.png" />
@@ -770,9 +784,11 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_travelagent_827.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_travelagent_829.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_uniformed_101.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_uniform_504.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_uniform_707.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_welldress_307.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_welldress_319.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_welldress_806.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_welldress_812.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_well_dressed_102.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_well_dressed_103.png" />
@@ -791,6 +807,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_well_dressed_206.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_well_dressed_401.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_well_dressed_402.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_well_dressed_404.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_well_dressed_406.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_well_dressed_407.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_well_dressed_408.png" />
@@ -824,6 +841,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_worker_408.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_worker_410.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_worker_411.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_worker_412.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_worker_413.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_worker_414.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_worker_415.png" />
@@ -868,6 +886,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_incident_fire_0.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_incident_riot.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_kontor_2d.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_load_ships.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_marketplace_2d.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_morale.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_museum_2d_0.png" />
@@ -875,6 +894,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_options_0.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_plus.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_repair_crane_2d.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_resource_worker_2.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_shipsymbol.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_ship_tier03.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_stance_attack.png" />
@@ -899,59 +919,187 @@
     <Resource Include="Resources\data\ui\2kimages\main\profiles\enemy_01.png" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="..\RDA\Modified\Assets_GuildhouseItemCleanedUp.xml">
+      <Link>Resources\Assets\Assets_GuildhouseItemCleanedUp.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\RDA\Modified\Assets_MonumentEvent.xml">
+      <Link>Resources\Assets\Assets_MonumentEvent.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\RDA\Modified\Assets_MonumentEventCategory.xml">
+      <Link>Resources\Assets\Assets_MonumentEventCategory.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\RDA\Modified\Assets_MonumentEventReward.xml">
+      <Link>Resources\Assets\Assets_MonumentEventReward.xml</Link>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\Assets\GuildhouseItem.xml" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\Assets\HarborOfficeItem.xml" />
+    <EmbeddedResource Include="Resources\Assets\ShipSpecialist.xml" />
+    <EmbeddedResource Include="Resources\Assets\ThirdParty.xml" />
     <EmbeddedResource Include="Resources\Assets\TownhallItem.xml" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\Assets\VehicleItem.xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Assets\ThirdParty.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\Assets\ShipSpecialist.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_bank.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_club_house.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_electric_works_oil.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_marketplace.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_school.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_university.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_captain_common.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_captain_epic.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_captain_rare.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_doctor_pirate.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_navigator_pirate.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_police_officer_rare.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_specialist_captain_legendary_female.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\icon_specialist_captain_legendary_pirate.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\influencer\icon_influencer_draegast.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\influencer\icon_influencer_drew_durnil_2.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\influencer\icon_influencer_lady_lu.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_admiral_513.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_admiral_701.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_admiral_708.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_captain_101.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_captain_102.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_captain_201.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_captain_401.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_captain_402.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_custom_officer_102.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_custom_officer_104.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_navigator_102_b.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_navigator_704.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_uniform_504.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_welldress_806.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_well_dressed_404.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_worker_412.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_resource_worker_2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_load_ships.png" />
+    <EmbeddedResource Include="Resources\Assets\CultureItem.xml" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_albinos_fennec.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_albino_crocodile.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_albino_gorilla.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_albino_peacock.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_alpacca.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_amazonas_dolphin.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_asian_elephant.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_balloonfish.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_bird_of_paradise.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_bison.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_black_bear.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_black_caiman.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_black_cockatoo.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_black_panther.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_blanfords_fox.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_bornean_orangutan.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_brown_bear.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_butterflies.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_california_gull.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_cat.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_cattle.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_chicken.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_chital.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_crocodile.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_deer.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_dire_wolf.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_dog.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_dolphin.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_donkey.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_dusky_dolphin.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_eagle.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_false_killer_whale.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_fox.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_giant_deer.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_goat.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_gorilla_silverback.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_horse.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_jaguar.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_jellyfish.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_killerwhale.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_kolponomos.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_lionfish.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_lizard.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_mantaray.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_moose.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_norfolk_kaka.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_orangutan.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_oxen.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_pacific_gull.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_peacock.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_pelican.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_pigeon.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_pigs.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_puerto_rican_amazon.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_puma.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_pygmy_killer_whale.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_rodents.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_seagull.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_seahorses.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_shark.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_sharkwhale.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_sheep.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_smallbirds.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_snow_tiger.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_spectacled_bear.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_spotted_dolphin.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_storck.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_swan.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_swift.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_swordfish.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_tiger.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_turtle.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_vaquita.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_vulture_ver2.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_waterbuffalo.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_white_flag_dolphin.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_wolf.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_zanzibar_leopard.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_journal.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_museum.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_zoo.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_celtic_carving.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_celtic_dolmen.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_celtic_menhirs.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_coin_common.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_coin_epic.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_coin_uncommon.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_corinthian_mosaik.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_corinthian_mosaik_1.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_corinthian_olympean_remain.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_corinthian_temple_of_posseidon.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_dinosaur_egg.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_fabric_comon.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_fabric_epic.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_fabric_rare.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_fabric_uncommon.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_fossils.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_gem_diamond.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_gem_pyrite.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_gem_quartz.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_gem_rare.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_lascaux_painting.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_lined_stone.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_mayan_calendar.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_mayan_glyphs.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_mayan_house.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_mayan_seaport.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_mayan_temple.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_monkey_amulet.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_mummy_nazcan.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_mummy_rare.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_mummy_uncommon.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_museum_celts_dyrnwyn.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_museum_celts_stonehenge.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_museum_helmet_common.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_museum_helmet_epic.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_museum_helmet_rare.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_museum_helmet_uncommon.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_museum_mosasaurus.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_museum_neanderthaler.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_museum_readbeard_skeletton.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_museum_sauropodon.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_museum_shield_common.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_museum_shield_rare.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_museum_shield_uncommon.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_museum_stegosaurus.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_museum_sword_common.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_museum_sword_pirate_epic.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_museum_sword_rare.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_museum_sword_uncommon.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_museum_t_rex.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_museum_viking_edda.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_museum_viking_nibelungen_ring.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_museum_viking_valkyrie_helmet.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_nascan_tomb.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_necklace_common.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_necklace_epic.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_necklace_rare.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_necklace_uncommon.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_prehistorical_painting.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_ragnarsdrapa.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_ring_epic.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_ring_rare.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_ring_uncommon.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_roman_forum_remains.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_roman_sanctuary.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_scroll_odyssey.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_statue_broken.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_statue_marble_statue.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_statue_stone.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_tablet.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_viking_drakkar_carving.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_viking_uppsala_altar.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_wooden_ring.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\narative_item\icon_cursedmummy.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\narative_item\icon_fabric_recolor.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\narative_item\icon_gasparovs_portrait.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\narative_item\icon_monkeytalisman.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\narative_item\icon_necklace_harlow_family_heirloom.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\narative_item\icon_salpeter.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

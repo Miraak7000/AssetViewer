@@ -59,7 +59,6 @@ namespace RDA.Data {
         case "ActiveItem":
         case "ItemSpecialAction":
         case "ItemSpecialActionVisualEffect":
-        case "ShipSpecialist":
         case "CultureItem":
           // TODO: needs to be implemented first
           break;
@@ -67,6 +66,7 @@ namespace RDA.Data {
         case "HarborOfficeItem":
         case "TownhallItem":
         case "VehicleItem":
+        case "ShipSpecialist":
           var item = new Asset(asset, false);
           item.Path = path;
           if (this.OfferingItems.All(w => w.ID != item.ID)) this.OfferingItems.Add(item);
