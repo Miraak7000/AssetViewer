@@ -40,6 +40,8 @@ namespace RDA.Templates {
     public List<Upgrade> IncidentInfluencerUpgrades { get; set; }
     public List<Upgrade> ItemGeneratorUpgrades { get; set; }
     //
+    public List<Upgrade> ItemSets { get; set; }
+    //
     public String TradePrice { get; set; }
     //
     public Description Info { get; set; }
@@ -159,6 +161,7 @@ namespace RDA.Templates {
       result.Add(this.Text.ToXml("Text"));
       result.Add(this.Rarity.ToXml("Rarity"));
       result.Add(new XElement("ItemType", this.ItemType));
+      result.Add(new XElement("ItemSets", this.ItemSets?.Select(s => s.ToXml())));
       //
       result.Add(this.Allocation.ToXml());
       //
@@ -207,6 +210,10 @@ namespace RDA.Templates {
       this.ItemType = element.Element("ItemType")?.Value ?? "Common";
       this.Allocation = new Allocation(element.Parent.Parent.Element("Template").Value, element.Element("Allocation")?.Value);
       this.TradePrice = element.Element("TradePrice") == null ? null : (Int32.Parse(element.Element("TradePrice").Value) / 4).ToString();
+      if (element.Element("ItemSet") != null) {
+        this.ItemSets = new List<Upgrade>();
+        this.ItemSets.Add(new Upgrade(element.Element("ItemSet")));
+      }
       if (this.ItemType == "None") this.ItemType = "Common";
       if (this.ItemType == "Normal") this.ItemType = "Common";
       if (this.ItemType != "Specialist" && this.ItemType != "Common") throw new NotImplementedException();
@@ -466,6 +473,8 @@ namespace RDA.Templates {
             case "ExpeditionTrade":
             case "TutorialQuest":
             case "SettlementRightsFeature":
+            case "Profile_2ndParty":
+            case "GuildhouseItem":
               // ignore
               break;
             case "Expedition":

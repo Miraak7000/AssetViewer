@@ -18,7 +18,7 @@ namespace AssetViewer.Controls {
   public partial class ThirdParty : UserControl, INotifyPropertyChanged {
 
     #region Properties
-    public IEnumerable<Asset> Items {
+    public IEnumerable<TemplateThirdParty> Items {
       get {
         //var rarity = this.ComboBoxRarities.SelectedItem as String;
         //var type = this.ComboBoxTypes.SelectedItem as String;
@@ -49,18 +49,18 @@ namespace AssetViewer.Controls {
     #endregion
 
     #region Fields
-    private readonly List<Asset> Assets;
+    private readonly List<TemplateThirdParty> Assets;
     #endregion
 
     #region Constructor
     public ThirdParty() {
       this.InitializeComponent();
-      this.Assets = new List<Asset>();
+      this.Assets = new List<TemplateThirdParty>();
       ((MainWindow)Application.Current.MainWindow).ComboBoxLanguage.SelectionChanged += this.ComboBoxLanguage_SelectionChanged;
       using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.ThirdParty.xml")) {
         using (var reader = new StreamReader(stream)) {
           var document = XDocument.Parse(reader.ReadToEnd()).Root;
-          this.Assets.AddRange(document.XPathSelectElements("ThirdParty/OfferingItems/Asset").Select(s => new Asset(s)));
+          this.Assets.AddRange(document.Elements().Select(s => new TemplateThirdParty(s)));
         }
       }
       this.DataContext = this;

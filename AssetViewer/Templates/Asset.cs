@@ -40,6 +40,8 @@ namespace AssetViewer.Templates {
     public List<Upgrade> IncidentInfectableUpgrades { get; set; }
     public List<Upgrade> IncidentInfluencerUpgrades { get; set; }
     //
+    public List<Upgrade> ItemSets { get; set; }
+    //
     public String TradePrice { get; set; }
     //
     public Description Info { get; set; }
@@ -67,6 +69,9 @@ namespace AssetViewer.Templates {
         this.EffectTargetInfo.DE += this.EffectTargets[i].DE;
       }
       this.HasEffectTargetInfo = this.EffectTargets.Count > 0;
+      if (asset.Element("ItemSets") != null && asset.Element("ItemSets").HasElements) {
+        this.ItemSets = asset.Element("ItemSets").Elements().Select(s => new Upgrade(s)).ToList();
+      }
       if (asset.Element("FactoryUpgrades").HasElements) {
         this.FactoryUpgrades = asset.Element("FactoryUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
       }

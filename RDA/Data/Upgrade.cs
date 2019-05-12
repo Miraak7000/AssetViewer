@@ -288,6 +288,11 @@ namespace RDA.Data {
           this.Icon = new Icon("data/ui/2kimages/main/icons/icon_load_ships.png");
           this.Text = new Description("15197");
           break;
+        case "ItemSet":
+          var itemSet = Program.Original.Root.XPathSelectElement($"//Asset/Values/Standard[GUID={element.Value}]");
+          this.Icon = itemSet.Element("IconFilename") == null ? null : new Icon(itemSet.Element("IconFilename").Value);
+          this.Text = new Description(element.Value);
+          break;
         default:
           throw new NotImplementedException(element.Name.LocalName);
       }
@@ -390,7 +395,7 @@ namespace RDA.Data {
     #region Public Methods
     public XElement ToXml() {
       var result = new XElement(this.GetType().Name);
-      result.Add(this.Icon.ToXml());
+      if (this.Icon == null) result.Add(new XElement("Icon")); else result.Add(this.Icon.ToXml());
       result.Add(this.Text.ToXml("Text"));
       result.Add(new XElement("Value", this.Value));
       if (this.AdditionalOutputs != null) result.Add(new XElement("AdditionalOutputs", this.AdditionalOutputs.Select(s => s.ToXml())));

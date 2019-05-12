@@ -51,17 +51,17 @@ namespace RDA {
       //Program.ProcessingItems("HarborOfficeItem");
       //Program.ProcessingItems("VehicleItem");
       //Program.ProcessingItems("ShipSpecialist");
-      Program.ProcessingItems("CultureItem");
-      //Program.ProcessingThirdParty();
+      //Program.ProcessingItems("CultureItem");
+      Program.ProcessingThirdParty();
     }
     private static void ProcessingItems(String template) {
       var result = new List<Asset>();
-      var assets = Program.Original.XPathSelectElements($"//Asset[Template='{template}']").ToList(); //.AsParallel();
-      //var assets = Program.Original.XPathSelectElements($"//Asset[Template='{template}' and Values/Standard/GUID=191620]").ToList();
-      assets.ForEach((asset) => {
+      var assets = Program.Original.XPathSelectElements($"//Asset[Template='{template}']").ToList().AsParallel();
+      //var assets = Program.Original.XPathSelectElements($"//Asset[Template='{template}' and Values/Standard/GUID=191507]").ToList();
+      assets.ForAll((asset) => {
         //if (asset.XPathSelectElement("Values/Item/HasAction")?.Value == "1") return;
         Console.WriteLine(asset.XPathSelectElement("Values/Standard/GUID").Value);
-        var item = new Asset(asset, false);
+        var item = new Asset(asset, true);
         result.Add(item);
       });
       var document = new XDocument();
@@ -72,7 +72,7 @@ namespace RDA {
     }
     private static void ProcessingThirdParty() {
       var result = new List<ThirdParty>();
-      var assets = Program.Original.XPathSelectElements($"//Asset[Template='Profile_3rdParty']").ToArray().AsParallel();
+      var assets = Program.Original.XPathSelectElements($"//Asset[Template='Profile_3rdParty']").ToList().AsParallel();
       assets.ForAll((asset) => {
         if (!asset.XPathSelectElements("Values/Trader/Progression/*/OfferingItems").Any()) return;
         Console.WriteLine(asset.XPathSelectElement("Values/Standard/GUID").Value);
@@ -85,6 +85,29 @@ namespace RDA {
       document.Save($@"{Program.PathRoot}\Modified\Assets_ThirdParty.xml");
       document.Save($@"{Program.PathViewer}\Resources\Assets\ThirdParty.xml");
     }
+    //private static void MadameKahina() {
+    //  var document = XDocument.Load(@"C:\Users\Andreas\Downloads\Anno 1800\Schiff-Zoom-Einfluss-Mod\data0\data\config\export\main\asset\assets.xml");
+    //  var rewardPool_MidGame = document.XPathSelectElement($"//Asset[Values/Standard/GUID=190556]/Values/RewardPool/ItemsPool");
+    //  foreach (var item in rewardPool_MidGame.Elements().ToArray()) {
+    //    if (item.Element("ItemLink").Value != "192925") item.Remove();
+    //  }
+    //  //
+    //  var rewardPool_CommonCultural = document.XPathSelectElement($"//Asset[Values/Standard/GUID=192925]/Values/RewardPool/ItemsPool");
+    //  foreach (var item in rewardPool_CommonCultural.Elements().ToArray()) {
+    //    if (item.Element("ItemLink").Value != "192768") item.Remove();
+    //  }
+    //  //
+    //  var rewardPool_EuropeanAnimals = document.XPathSelectElement($"//Asset[Values/Standard/GUID=192768]/Values/RewardPool/ItemsPool");
+    //  rewardPool_EuropeanAnimals.Elements().Remove();
+    //  rewardPool_EuropeanAnimals.Add(new XElement("Item", new XElement("ItemLink", "190746")));
+    //  rewardPool_EuropeanAnimals.Add(new XElement("Item", new XElement("ItemLink", "190063")));
+    //  rewardPool_EuropeanAnimals.Add(new XElement("Item", new XElement("ItemLink", "190748")));
+    //  rewardPool_EuropeanAnimals.Add(new XElement("Item", new XElement("ItemLink", "191380")));
+    //  rewardPool_EuropeanAnimals.Add(new XElement("Item", new XElement("ItemLink", "191381")));
+    //  rewardPool_EuropeanAnimals.Add(new XElement("Item", new XElement("ItemLink", "192443")));
+    //  //
+    //  document.Save(@"C:\Users\Andreas\Downloads\Anno 1800\Schiff-Zoom-Einfluss-Mod\data0\data\config\export\main\asset\assets.xml");
+    //}
     #endregion
 
   }

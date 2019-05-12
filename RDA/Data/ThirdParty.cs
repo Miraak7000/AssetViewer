@@ -14,7 +14,7 @@ namespace RDA.Data {
     public String Name { get; set; }
     public Icon Icon { get; set; }
     public Description Text { get; set; }
-    public List<Asset> OfferingItems { get; set; }
+    public List<OfferingItems> OfferingItems { get; set; }
     #endregion
 
     #region Constructor
@@ -23,10 +23,11 @@ namespace RDA.Data {
       this.Name = asset.XPathSelectElement("Values/Standard/Name").Value;
       this.Icon = new Icon(asset.XPathSelectElement("Values/Standard/IconFilename").Value);
       this.Text = new Description(this.ID);
-      this.OfferingItems = new List<Asset>();
-      var progression = asset.XPathSelectElement("Values/Trader/Progression").Elements();
-      foreach (var game in progression) {
-        this.FindOfferingItems(game.Element("OfferingItems").Value, String.Empty);
+      this.OfferingItems = new List<OfferingItems>();
+      var progressions = asset.XPathSelectElements("Values/Trader/Progression/*");
+      foreach (var progression in progressions) {
+        var item = new OfferingItems(progression);
+        this.OfferingItems.Add(item);
       }
     }
     #endregion
@@ -40,40 +41,6 @@ namespace RDA.Data {
       result.Add(this.Text.ToXml("Text"));
       result.Add(new XElement("OfferingItems", this.OfferingItems.Select(s => s.ToXml())));
       return result;
-    }
-    #endregion
-
-    #region Private Methods
-    private void FindOfferingItems(String id, String path) {
-      path += $"/{id}";
-      var asset = Program.Original.XPathSelectElement($"//Asset[Values/Standard/GUID={id}]");
-      var template = asset.Element("Template").Value;
-      switch (template) {
-        case "RewardItemPool":
-        case "RewardPool":
-          var links = asset.XPathSelectElements("Values/RewardPool/ItemsPool/Item/ItemLink").ToArray();
-          foreach (var link in links) {
-            this.FindOfferingItems(link.Value, path);
-          }
-          break;
-        case "ActiveItem":
-        case "ItemSpecialAction":
-        case "ItemSpecialActionVisualEffect":
-        case "CultureItem":
-          // TODO: needs to be implemented first
-          break;
-        case "GuildhouseItem":
-        case "HarborOfficeItem":
-        case "TownhallItem":
-        case "VehicleItem":
-        case "ShipSpecialist":
-          var item = new Asset(asset, false);
-          item.Path = path;
-          if (this.OfferingItems.All(w => w.ID != item.ID)) this.OfferingItems.Add(item);
-          break;
-        default:
-          throw new NotImplementedException(template);
-      }
     }
     #endregion
 

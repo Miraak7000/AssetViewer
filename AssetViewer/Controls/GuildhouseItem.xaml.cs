@@ -117,6 +117,16 @@ namespace AssetViewer.Controls {
         }
       }
     }
+    public String ItemSetText {
+      get {
+        switch (App.Language) {
+          case Languages.German:
+            return "Teil eines Sets";
+          default:
+            return "Part of set";
+        }
+      }
+    }
     public IEnumerable<String> Rarities {
       get {
         switch (App.Language) {

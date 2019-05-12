@@ -226,6 +226,14 @@
                 <ItemsControl ItemsSource="{Binding Path=SelectedAsset.ExpeditionAttributes}" ItemTemplate="{StaticResource UpgradeTemplate}" Foreground="#FFFFE4AD" Opacity="0.5"/>
               </Grid>
             </StackPanel>
+            <!--ItemSet-->
+            <StackPanel Visibility="{Binding Path=SelectedAsset.ItemSets, Converter={StaticResource VisibilityConverter}}">
+              <Border BorderBrush="#FFA49370" BorderThickness="1" Height="1" Margin="0,5" Opacity="0.5"></Border>
+              <TextBlock VerticalAlignment="Center" Foreground="#FFA49370" Text="{Binding Path=ItemSetText}" Margin="0,2,0,5"></TextBlock>
+              <Grid Margin="0,2">
+                <ItemsControl ItemsSource="{Binding Path=SelectedAsset.ItemSets}" ItemTemplate="{StaticResource UpgradeTemplate}" Foreground="#FFFFE4AD"/>
+              </Grid>
+            </StackPanel>
             <!--Trade-->
             <StackPanel Visibility="{Binding Path=HasResult, Converter={StaticResource BooleanToVisibility}}">
               <Border BorderBrush="#FFA49370" BorderThickness="1" Height="1" Margin="0,5" Opacity="0.5"></Border>
