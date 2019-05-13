@@ -38,6 +38,8 @@ namespace AssetViewer {
         result.Add(1024, new Description("Effect Targets:", "Beeinflusste Gebäude:"));
         result.Add(1046, new Description("Has Population Upgrade", "Hat Bevölkerung-Erweiterungen"));
         result.Add(1047, new Description("Has Residence Upgrade", "Hat Einwohne-Erweiterungen"));
+        result.Add(1048, new Description("Progression", "Fortschritt"));
+        result.Add(1049, new Description("Player", "Spieler"));
         return result;
       }
     }

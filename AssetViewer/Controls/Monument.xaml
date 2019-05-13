@@ -10,7 +10,7 @@
              FontSize="13" Loaded="Monument_OnLoaded">
 
   <UserControl.Resources>
-    <converter:DescriptionConverterOld x:Key="DescriptionConverter"></converter:DescriptionConverterOld>
+    <converter:DescriptionConverter x:Key="DescriptionConverter"></converter:DescriptionConverter>
     <converter:GlobalDescriptionConverter x:Key="Description"></converter:GlobalDescriptionConverter>
     <DataTemplate x:Key="SelectableTemplate">
       <Grid MaxHeight="30">
@@ -18,14 +18,11 @@
           <ColumnDefinition Width="30"></ColumnDefinition>
           <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Image Grid.Column="0" Source="{Binding Path=Icon}" HorizontalAlignment="Left"></Image>
-        <TextBlock Grid.Column="1" Text="{Binding Path=Value, Converter={StaticResource DescriptionConverter}}" VerticalAlignment="Center"></TextBlock>
+        <Image Grid.Column="0" Source="{Binding Path=Icon.Filename}" HorizontalAlignment="Left"></Image>
+        <TextBlock Grid.Column="1" Text="{Binding Path=Text, Converter={StaticResource DescriptionConverter}}" VerticalAlignment="Center"></TextBlock>
       </Grid>
     </DataTemplate>
   </UserControl.Resources>
-  <!--<UserControl.Background>
-    <ImageBrush ImageSource="../Resources/data/ui/2kimages/main/assets16/bgr_playercreation_0.png" Stretch="UniformToFill"/>
-  </UserControl.Background>-->
 
   <Grid Grid.Row="2">
     <Grid.RowDefinitions>
@@ -48,7 +45,10 @@
         </Grid.RowDefinitions>
 
         <TextBlock Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" Text="{Binding Path=Categories, Converter={StaticResource Description}, ConverterParameter=107}" Margin="0,0,5,0"></TextBlock>
-        <ComboBox x:Name="ComboBoxCategories" Grid.Column="0" Grid.Row="1" Height="22" ItemsSource="{Binding Path=Categories}" ItemTemplate="{StaticResource SelectableTemplate}" SelectionChanged="ComboBoxCategories_OnSelectionChanged"></ComboBox>
+        <ComboBox x:Name="ComboBoxCategories" Grid.Column="0" Grid.Row="1" Height="22" 
+                  ItemsSource="{Binding Path=Categories}" 
+                  ItemTemplate="{StaticResource SelectableTemplate}" 
+                  SelectionChanged="ComboBoxCategories_OnSelectionChanged"></ComboBox>
 
         <TextBlock Grid.Column="2" Grid.Row="0" VerticalAlignment="Center" Text="{Binding Path=Events, Converter={StaticResource Description}, ConverterParameter=108}" Margin="0,0,5,0"></TextBlock>
         <ComboBox x:Name="ComboBoxEvents" Grid.Column="2" Grid.Row="1" Height="22" ItemsSource="{Binding Path=Events}" ItemTemplate="{StaticResource SelectableTemplate}" SelectionChanged="ComboBoxEvents_OnSelectionChanged"></ComboBox>

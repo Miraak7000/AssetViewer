@@ -7,8 +7,9 @@ using System.Linq;
 using System.Reflection;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 using System.Xml.Linq;
-using System.Xml.XPath;
+using AssetViewer.Data;
 using AssetViewer.Library;
 using AssetViewer.Templates;
 
@@ -18,32 +19,149 @@ namespace AssetViewer.Controls {
   public partial class ThirdParty : UserControl, INotifyPropertyChanged {
 
     #region Properties
-    public IEnumerable<TemplateThirdParty> Items {
+    public IEnumerable<Asset> Items {
       get {
-        //var rarity = this.ComboBoxRarities.SelectedItem as String;
-        //var type = this.ComboBoxTypes.SelectedItem as String;
-        //var target = this.ComboBoxTargets.SelectedItem as String;
-        //var equipped = this.ComboBoxEquipped.SelectedItem as String;
-        var result = this.Assets.AsQueryable();
-        //if (!String.IsNullOrEmpty(type)) result = result.Where(w => w.ItemType == type);
-        //switch (App.Language) {
-        //  case Languages.German:
-        //    if (!String.IsNullOrEmpty(rarity)) result = result.Where(w => w.Rarity.DE == rarity);
-        //    if (!String.IsNullOrEmpty(target)) result = result.Where(w => w.EffectTargets.Select(s => s.DE).Contains(target));
-        //    if (!String.IsNullOrEmpty(equipped)) result = result.Where(w => w.Allocation.Text.DE == equipped);
-        //    result = result.OrderBy(o => o.Text.DE);
-        //    break;
-        //  default:
-        //    if (!String.IsNullOrEmpty(rarity)) result = result.Where(w => w.Rarity.EN == rarity);
-        //    if (!String.IsNullOrEmpty(target)) result = result.Where(w => w.EffectTargets.Select(s => s.EN).Contains(target));
-        //    if (!String.IsNullOrEmpty(equipped)) result = result.Where(w => w.Allocation.Text.EN == equipped);
-        //    result = result.OrderBy(o => o.Text.EN);
-        //    break;
-        //}
-        //if (!String.IsNullOrEmpty(this.Search)) {
-        //  result = result.Where(w => w.ID.StartsWith(this.Search, StringComparison.InvariantCultureIgnoreCase) || (App.Language == Languages.English ? w.Text.EN.ToLower().Contains(this.Search.ToLower()) : w.Text.DE.ToLower().Contains(this.Search.ToLower())));
-        //}
+        var thirdParty = this.ComboBoxThirdParty.SelectedItem as Tuple<String, String>;
+        var progression = this.ComboBoxProgressions.SelectedItem as Tuple<Progression, String>;
+        if (thirdParty == null || progression == null) return new Asset[0];
+        var result = this.Assets.Single(w => w.ID == thirdParty.Item1).OfferingItems.Single(w => w.Progression == progression.Item1).Assets.AsEnumerable();
+        switch (App.Language) {
+          case Languages.German:
+            result = result.OrderBy(o => o.Text.DE);
+            break;
+          default:
+            result = result.OrderBy(o => o.Text.EN);
+            break;
+        }
         return result;
+      }
+    }
+    public IEnumerable<Tuple<String, String>> ThirdParties {
+      get {
+        switch (App.Language) {
+          case Languages.German:
+            return this.Assets.Select(s => new Tuple<String, String>(s.ID, $"{s.Text.DE} - {s.ID}")).OrderBy(o => o.Item2);
+          default:
+            return this.Assets.Select(s => new Tuple<String, String>(s.ID, $"{s.Text.EN} - {s.ID}")).OrderBy(o => o.Item2);
+        }
+      }
+    }
+    public IEnumerable<Tuple<Progression, String>> Progressions {
+      get {
+        switch (App.Language) {
+          case Languages.German:
+            return new[] {
+              new Tuple<Progression, String>(Progression.EarlyGame, "Frühes Spiel"),
+              new Tuple<Progression, String>(Progression.EarlyMidGame, "Frühes-Mittleres Spiel"),
+              new Tuple<Progression, String>(Progression.MidGame, "Mittleres Spiel"),
+              new Tuple<Progression, String>(Progression.LateMidGame, "Mittleres-Spätes Spiel"),
+              new Tuple<Progression, String>(Progression.LateGame, "Spätes Spiel"),
+              new Tuple<Progression, String>(Progression.EndGame, "Endspiel")
+            };
+          default:
+            return new[] {
+              new Tuple<Progression, String>(Progression.EarlyGame, "Early Game"),
+              new Tuple<Progression, String>(Progression.EarlyMidGame, "Early-Mid Game"),
+              new Tuple<Progression, String>(Progression.MidGame, "Mid Game"),
+              new Tuple<Progression, String>(Progression.LateMidGame, "Late-Mid Game"),
+              new Tuple<Progression, String>(Progression.LateGame, "Late Game"),
+              new Tuple<Progression, String>(Progression.EndGame, "End Game")
+            };
+        }
+      }
+    }
+    public Asset SelectedAsset { get; set; }
+    public LinearGradientBrush RarityBrush {
+      get {
+        var selection = this.SelectedAsset?.Rarity?.EN ?? "Common";
+        switch (selection) {
+          case "Uncommon":
+            return new LinearGradientBrush(new GradientStopCollection {
+              new GradientStop(Color.FromRgb(65, 89, 41), 0),
+              new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
+              new GradientStop(Color.FromRgb(42, 44, 39), 1)
+            }, 90);
+          case "Rare":
+            return new LinearGradientBrush(new GradientStopCollection {
+              new GradientStop(Color.FromRgb(50, 60, 83), 0),
+              new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
+              new GradientStop(Color.FromRgb(42, 44, 39), 1)
+            }, 90);
+          case "Epic":
+            return new LinearGradientBrush(new GradientStopCollection {
+              new GradientStop(Color.FromRgb(90, 65, 89), 0),
+              new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
+              new GradientStop(Color.FromRgb(42, 44, 39), 1)
+            }, 90);
+          case "Legendary":
+            return new LinearGradientBrush(new GradientStopCollection {
+              new GradientStop(Color.FromRgb(98, 66, 46), 0),
+              new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
+              new GradientStop(Color.FromRgb(42, 44, 39), 1)
+            }, 90);
+          default:
+            return new LinearGradientBrush(new GradientStopCollection {
+              new GradientStop(Color.FromRgb(126, 128, 125), 0),
+              new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
+              new GradientStop(Color.FromRgb(42, 44, 39), 1)
+            }, 90);
+        }
+      }
+    }
+    public Boolean HasResult {
+      get { return this.Items.Any(); }
+    }
+    public String AllocationText {
+      get {
+        switch (App.Language) {
+          case Languages.German:
+            return "Hier ausgerüstet";
+          default:
+            return "Equipped in";
+            break;
+        }
+      }
+    }
+    public String ExpeditionText {
+      get {
+        switch (App.Language) {
+          case Languages.German:
+            return "Expeditions-Bonus";
+          default:
+            return "Expedition Bonus";
+        }
+      }
+    }
+    public String ItemSetText {
+      get {
+        switch (App.Language) {
+          case Languages.German:
+            return "Teil eines Sets";
+          default:
+            return "Part of set";
+        }
+      }
+    }
+    public String TradeText {
+      get {
+        switch (App.Language) {
+          case Languages.German:
+            return "Verkaufspreis";
+          default:
+            return "Selling Price";
+            break;
+        }
+      }
+    }
+    public String ImageThirdParty {
+      get {
+        var thirdParty = this.ComboBoxThirdParty.SelectedItem as Tuple<String, String>;
+        if (thirdParty != null) {
+          return this.Assets.Single(w => w.ID == thirdParty.Item1).Icon.Filename;
+        } else {
+          return null;
+        }
+
       }
     }
     #endregion
@@ -69,28 +187,28 @@ namespace AssetViewer.Controls {
 
     #region Private Methods
     private void ThirdParty_OnLoaded(Object sender, RoutedEventArgs e) {
-      this.ComboBoxCategories.SelectedIndex = 0;
+      this.ComboBoxThirdParty.SelectedIndex = 0;
+      this.ComboBoxProgressions.SelectedIndex = 0;
     }
     private void ComboBoxLanguage_SelectionChanged(Object sender, SelectionChangedEventArgs e) {
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Categories"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Events"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Thresholds"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Rewards"));
-      this.ComboBoxCategories.SelectedIndex = 0;
+      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("ThirdParties"));
+      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Progressions"));
+      this.ComboBoxThirdParty.SelectedIndex = 0;
+      this.ComboBoxProgressions.SelectedIndex = 0;
     }
-    private void ComboBoxCategories_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Events"));
-      this.ComboBoxEvents.SelectedIndex = 0;
+    private void ComboBoxThirdParty_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
+      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
+      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
+      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("ImageThirdParty"));
     }
-    private void ComboBoxEvents_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Thresholds"));
-      this.ComboBoxThresholds.SelectedIndex = 0;
-    }
-    private void ComboBoxThresholds_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Rewards"));
-      this.ListBoxItems.SelectedIndex = 0;
+    private void ComboBoxProgressions_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
+      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
+      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
     }
     private void ListBoxItems_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
+      if (e.AddedItems.Count == 0) this.ListBoxItems.SelectedIndex = 0;
+      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SelectedAsset"));
+      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("RarityBrush"));
     }
     #endregion
 

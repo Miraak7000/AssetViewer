@@ -15,18 +15,6 @@ namespace AssetViewer.Templates {
     public Icon Icon { get; set; }
     public Description Text { get; set; }
     public List<OfferingItems> OfferingItems { get; set; }
-    public List<Description> Progressions {
-      get {
-        var result = new List<Description>();
-        result.Add(new Description("Early Game", "Frühes Spiel"));
-        result.Add(new Description("Early-Mid Game", "Frühes-Mittleres Spiel"));
-        result.Add(new Description("Mid Game", "Mittleres Spiel"));
-        result.Add(new Description("Late-Mid Game", "Mittleres-Spätes Spiel"));
-        result.Add(new Description("Late Game", "Spätes Spiel"));
-        result.Add(new Description("End Game", "Endspiel"));
-        return result;
-      }
-    }
     #endregion
 
     #region Constructor
@@ -40,7 +28,6 @@ namespace AssetViewer.Templates {
         var item = new OfferingItems(progression);
         this.OfferingItems.Add(item);
       }
-      
     }
     #endregion
 

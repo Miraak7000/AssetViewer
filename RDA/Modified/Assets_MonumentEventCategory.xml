@@ -1,129 +1,123 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <MonumentEventCategory>
-  <Asset>
-    <Template>MonumentEventCategory</Template>
-    <Values>
-      <Standard>
-        <GUID>17003</GUID>
-        <IconFilename>data/ui/2kimages/main/3dicons/icon_architecture_0.png</IconFilename>
-      </Standard>
-      <Description>
-        <EN>
-          <Short>Architectural Marvels</Short>
-        </EN>
-        <DE>
-          <Short>Wunder der Architektur</Short>
-        </DE>
-      </Description>
-      <MonumentEventCategory>
-        <Events>
-          <Item>
-            <Event>17006</Event>
-          </Item>
-          <Item>
-            <Event>17007</Event>
-          </Item>
-          <Item>
-            <Event>17008</Event>
-          </Item>
-        </Events>
-        <PotentialCategoryReward>
-          <Reward>14428</Reward>
-          <Description>
-            <EN>
-              <Short>Unique Ornaments</Short>
-            </EN>
-            <DE>
-              <Short>Einzigartige Ornamente</Short>
-            </DE>
-          </Description>
-          <IconFilename>data/ui/2kimages/main/icons/icon_townhall_2d_0.png</IconFilename>
-        </PotentialCategoryReward>
-      </MonumentEventCategory>
-    </Values>
+  <Asset ID="17003">
+    <Name>Architectural Wonders</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/icon_architecture.png</Filename>
+    </Icon>
+    <Text ID="17003">
+      <EN>Architectural Marvels</EN>
+      <DE>Wunder der Architektur</DE>
+    </Text>
+    <Rarity />
+    <ItemType />
+    <ItemSets />
+    <Allocation />
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice />
+    <Sources />
+    <MonumentEvents>
+      <Event>17006</Event>
+      <Event>17007</Event>
+      <Event>17008</Event>
+    </MonumentEvents>
+    <MonumentThresholds />
   </Asset>
-  <Asset>
-    <Template>MonumentEventCategory</Template>
-    <Values>
-      <Standard>
-        <GUID>17004</GUID>
-        <IconFilename>data/ui/2kimages/main/3dicons/icon_science_0.png</IconFilename>
-      </Standard>
-      <Description>
-        <EN>
-          <Short>Science and Innovation</Short>
-        </EN>
-        <DE>
-          <Short>Wissenschaft und Innovation</Short>
-        </DE>
-      </Description>
-      <MonumentEventCategory>
-        <Events>
-          <Item>
-            <Event>17009</Event>
-          </Item>
-          <Item>
-            <Event>17010</Event>
-          </Item>
-          <Item>
-            <Event>17011</Event>
-          </Item>
-        </Events>
-        <PotentialCategoryReward>
-          <Reward>14429</Reward>
-          <Description>
-            <EN>
-              <Short>Machines and Inventions</Short>
-            </EN>
-            <DE>
-              <Short>Maschinen und Erfindungen</Short>
-            </DE>
-          </Description>
-          <IconFilename>data/ui/2kimages/main/icons/icon_hospital_2d_0.png</IconFilename>
-        </PotentialCategoryReward>
-      </MonumentEventCategory>
-    </Values>
+  <Asset ID="17004">
+    <Name>Science and Technics</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/icon_science.png</Filename>
+    </Icon>
+    <Text ID="17004">
+      <EN>Science and Innovation</EN>
+      <DE>Wissenschaft und Innovation</DE>
+    </Text>
+    <Rarity />
+    <ItemType />
+    <ItemSets />
+    <Allocation />
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice />
+    <Sources />
+    <MonumentEvents>
+      <Event>17009</Event>
+      <Event>17010</Event>
+      <Event>17011</Event>
+    </MonumentEvents>
+    <MonumentThresholds />
   </Asset>
-  <Asset>
-    <Template>MonumentEventCategory</Template>
-    <Values>
-      <Standard>
-        <GUID>17005</GUID>
-        <IconFilename>data/ui/2kimages/main/3dicons/icon_archeology_0.png</IconFilename>
-      </Standard>
-      <Description>
-        <EN>
-          <Short>Archaeology and Ethnography</Short>
-        </EN>
-        <DE>
-          <Short>Archäologie und Ethnografie</Short>
-        </DE>
-      </Description>
-      <MonumentEventCategory>
-        <Events>
-          <Item>
-            <Event>17012</Event>
-          </Item>
-          <Item>
-            <Event>17013</Event>
-          </Item>
-          <Item>
-            <Event>17014</Event>
-          </Item>
-        </Events>
-        <PotentialCategoryReward>
-          <Reward>14492</Reward>
-          <Description>
-            <EN>
-              <Short>Relics and Antiquities</Short>
-            </EN>
-            <DE>
-              <Short>Relikte und Antiquitäten</Short>
-            </DE>
-          </Description>
-          <IconFilename>data/ui/2kimages/main/icons/icon_museum_2d_0.png</IconFilename>
-        </PotentialCategoryReward>
-      </MonumentEventCategory>
-    </Values>
+  <Asset ID="17005">
+    <Name>Archaeological Discoveries</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/icon_archeology.png</Filename>
+    </Icon>
+    <Text ID="17005">
+      <EN>Archaeology and Ethnography</EN>
+      <DE>Archäologie und Ethnografie</DE>
+    </Text>
+    <Rarity />
+    <ItemType />
+    <ItemSets />
+    <Allocation />
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice />
+    <Sources />
+    <MonumentEvents>
+      <Event>17012</Event>
+      <Event>17013</Event>
+      <Event>17014</Event>
+    </MonumentEvents>
+    <MonumentThresholds />
   </Asset>
 </MonumentEventCategory>
