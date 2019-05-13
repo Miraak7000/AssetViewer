@@ -52,7 +52,12 @@ namespace RDA {
       //Program.ProcessingItems("VehicleItem");
       //Program.ProcessingItems("ShipSpecialist");
       //Program.ProcessingItems("CultureItem");
-      Program.ProcessingThirdParty();
+      //Program.ProcessingThirdParty();
+
+      // Mod
+      Program.RemoveThirdPartyMessages();
+      Program.RemoveIncident();
+
     }
     private static void ProcessingItems(String template) {
       var result = new List<Asset>();
@@ -108,6 +113,46 @@ namespace RDA {
     //  //
     //  document.Save(@"C:\Users\Andreas\Downloads\Anno 1800\Schiff-Zoom-Einfluss-Mod\data0\data\config\export\main\asset\assets.xml");
     //}
+    private static void RemoveThirdPartyMessages() {
+      var files = new[] {
+        @"C:\Users\Andreas\Downloads\Anno 1800\Mod\data0\data\config\export\main\asset\assets.xml",
+        @"C:\Users\Andreas\Downloads\Anno 1800\Mod\data10\data\config\export\main\asset\assets.xml"
+      };
+      var triggers = new[] {
+        "ClickKontor",
+        "ActiveTradeConfirmation",
+        "OpenActiveTradeMenu",
+        "ClickNPCShip",
+        "ClickNPCBuilding",
+        "MenuIdleMessage"
+      };
+      foreach (var file in files) {
+        var document = XDocument.Load(file);
+        var assets = document.Root.XPathSelectElements($"//Asset[Template='Profile_3rdParty']").ToArray();
+        foreach (var assetProfile in assets) {
+          var idMessage = assetProfile.XPathSelectElement("Values/ParticipantMessageObject/ParticipantMessages").Value;
+          var message = document.Root.XPathSelectElement($"//Asset[Values/Standard/GUID={idMessage}]");
+          foreach (var trigger in triggers) {
+            var items = message.XPathSelectElements($"Values/ParticipantMessages/MessageTriggers/{trigger}/Reactions"); //.Remove();
+            items.Remove();
+          }
+        }
+        document.Save(file);
+        var lines = File.ReadAllLines(file).Skip(1);
+        File.WriteAllLines(file, lines);
+      }
+    }
+    private static void RemoveIncident() {
+      var file = @"C:\Users\Andreas\Downloads\Anno 1800\Mod\data0\data\config\export\main\asset\properties.xml";
+      var document = XDocument.Load(file);
+      var items = document.Root.XPathSelectElements($"//Groups/Group/DefaultValues/GeneralIncidentConfiguration/ProgressConfig/*/PerIncidentConfig/*/TargetInfectionFactor").ToArray();
+      foreach (var item in items) {
+        item.Value = "0";
+      }
+      document.Save(file);
+      var lines = File.ReadAllLines(file).Skip(1);
+      File.WriteAllLines(file, lines);
+    }
     #endregion
 
   }
