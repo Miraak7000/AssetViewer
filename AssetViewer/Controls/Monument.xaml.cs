@@ -18,81 +18,67 @@ namespace AssetViewer.Controls {
   public partial class Monument : UserControl, INotifyPropertyChanged {
 
     #region Properties
-    public IEnumerable<SelectableItem> Categories {
+    public IEnumerable<Asset> Categories {
+      get { return this.AssetCategory.AsEnumerable(); }
+    }
+    public IEnumerable<Asset> Events {
       get {
-        return this.AssetCategory.XPathSelectElements("Asset/Values")
-          .Select(s => new SelectableItem {
-            GUID = s.XPathSelectElement("Standard/GUID").Value,
-            Value = s.XPathSelectElement("Description"),
-            IconFilename = s.XPathSelectElement("Standard/IconFilename").Value
-          });
+        var monumentCategory = this.ComboBoxCategories.SelectedItem as Asset;
+        if (monumentCategory == null) return null;
+        return this.AssetEvent.Where(w => monumentCategory.MonumentEvents.Contains(w.ID));
       }
     }
-    public IEnumerable<SelectableItem> Events {
+    public IEnumerable<Asset> Thresholds {
       get {
-        if (this.ComboBoxCategories.SelectedItem == null) return null;
-        var assetCategory = ((SelectableItem)this.ComboBoxCategories.SelectedItem).GUID;
-        var assetEvents = this.AssetCategory.XPathSelectElements($"Asset/Values/Standard[GUID={assetCategory}]/../MonumentEventCategory/Events/Item/Event").Select(s => s.Value).ToArray();
-        return this.AssetEvent.Elements()
-          .Where(w => assetEvents.Contains(w.XPathSelectElement("Values/Standard/GUID").Value))
-          .Select(s => new SelectableItem {
-            GUID = s.XPathSelectElement("Values/Standard/GUID").Value,
-            Value = s.XPathSelectElement("Values/Description"),
-            IconFilename = s.XPathSelectElement("Values/Standard/IconFilename").Value
-          });
-      }
-    }
-    public IEnumerable<SelectableItem> Thresholds {
-      get {
-        if (this.ComboBoxEvents.SelectedItem == null) return null;
-        var assetEvent = ((SelectableItem)this.ComboBoxEvents.SelectedItem).GUID;
-        var assetRewards = this.AssetEvent.XPathSelectElements($"Asset/Values/Standard[GUID={assetEvent}]/../MonumentEvent/RewardThresholds/Item/Reward").Select(s => s.Value).ToArray();
-        return this.AssetReward.Elements()
-          .Where(w => assetRewards.Contains(w.XPathSelectElement("Values/Standard/GUID").Value))
-          .Select(s => new SelectableItem {
-            GUID = s.XPathSelectElement("Values/Standard/GUID").Value,
-            Value = s.XPathSelectElement("Values/Description"),
-            IconFilename = s.XPathSelectElement("Values/Standard/IconFilename").Value
-          });
+        var monumentEvent = this.ComboBoxEvents.SelectedItem as Asset;
+        if (monumentEvent == null) return null;
+        return this.AssetReward.Where(w => monumentEvent.MonumentThresholds.Contains(w.ID));
       }
     }
     public IEnumerable<SelectableItem> Rewards {
       get {
-        if (this.ComboBoxThresholds.SelectedItem == null) return null;
-        var assetThreshold = ((SelectableItem)this.ComboBoxThresholds.SelectedItem).GUID;
-        return this.AssetReward.XPathSelectElements($"Asset/Values/Standard[GUID={assetThreshold}]/../Reward/Asset")
-          .Select(s => new SelectableItem {
-            GUID = s.XPathSelectElement("Values/Standard/GUID").Value,
-            Value = s.XPathSelectElement("Values/Description"),
-            IconFilename = s.XPathSelectElement("Values/Standard/IconFilename").Value
-          });
+        return null;
+        //if (this.ComboBoxThresholds.SelectedItem == null) return null;
+        //var assetThreshold = ((SelectableItem)this.ComboBoxThresholds.SelectedItem).GUID;
+        //return this.AssetReward.XPathSelectElements($"Asset/Values/Standard[GUID={assetThreshold}]/../Reward/Asset")
+        //  .Select(s => new SelectableItem {
+        //    GUID = s.XPathSelectElement("Values/Standard/GUID").Value,
+        //    Value = s.XPathSelectElement("Values/Description"),
+        //    IconFilename = s.XPathSelectElement("Values/Standard/IconFilename").Value
+        //  });
       }
     }
     #endregion
 
     #region Fields
-    private readonly XElement AssetCategory;
-    private readonly XElement AssetEvent;
-    private readonly XElement AssetReward;
+    private readonly List<Asset> AssetCategory;
+    private readonly List<Asset> AssetEvent;
+    private readonly List<Asset> AssetReward;
     #endregion
 
     #region Constructor
     public Monument() {
       this.InitializeComponent();
       ((MainWindow)Application.Current.MainWindow).ComboBoxLanguage.SelectionChanged += this.ComboBoxLanguage_SelectionChanged;
-      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.Assets_MonumentEventCategory.xml")) {
+      this.AssetCategory = new List<Asset>();
+      this.AssetEvent = new List<Asset>();
+      this.AssetReward = new List<Asset>();
+      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.MonumentEventCategory.xml")) {
         using (var reader = new StreamReader(stream)) {
-          this.AssetCategory = XDocument.Parse(reader.ReadToEnd()).Root;
+          var document = XDocument.Parse(reader.ReadToEnd()).Root;
+          this.AssetCategory.AddRange(document.Elements().Select(s => new Asset(s)));
         }
       }
-      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.Assets_MonumentEvent.xml")) {
+      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.MonumentEvent.xml")) {
         using (var reader = new StreamReader(stream)) {
-          this.AssetEvent = XDocument.Parse(reader.ReadToEnd()).Root;
+          var document = XDocument.Parse(reader.ReadToEnd()).Root;
+          this.AssetEvent.AddRange(document.Elements().Select(s => new Asset(s)));
         }
       }
-      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.Assets_MonumentEventReward.xml")) {
+      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.MonumentEventReward.xml")) {
         using (var reader = new StreamReader(stream)) {
-          this.AssetReward = XDocument.Parse(reader.ReadToEnd()).Root;
+          var document = XDocument.Parse(reader.ReadToEnd()).Root;
+          this.AssetReward.AddRange(document.Elements().Select(s => new Asset(s)));
         }
       }
       this.DataContext = this;
@@ -104,6 +90,9 @@ namespace AssetViewer.Controls {
       this.ComboBoxCategories.SelectedIndex = 0;
     }
     private void ComboBoxLanguage_SelectionChanged(Object sender, SelectionChangedEventArgs e) {
+      this.ComboBoxCategories.SelectedItem = null;
+      this.ComboBoxEvents.SelectedItem = null;
+      this.ComboBoxThresholds.SelectedItem = null;
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Categories"));
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Events"));
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Thresholds"));
@@ -128,19 +117,19 @@ namespace AssetViewer.Controls {
         return;
       }
       var selectedItem = (SelectableItem)this.ListBoxItems.SelectedItem;
-      var reward = this.AssetReward.XPathSelectElement($"Asset/Values/Reward/Asset/Values/Standard[GUID={selectedItem.GUID}]/../..");
-      switch (reward.XPathSelectElement("Template").Value) {
-        case "BuildPermitBuilding":
-          this.Presenter.Content = new TemplateBuildPermitBuilding(reward);
-          break;
-        case "GuildhouseItem":
-          this.Presenter.Content = new TemplateGuildhouseItem(reward);
-          break;
-        default:
-          this.Presenter.Content = new TemplateGuildhouseItem(reward);
-          //this.Presenter.Content = null;
-          break;
-      }
+      //var reward = this.AssetReward.XPathSelectElement($"Asset/Values/Reward/Asset/Values/Standard[GUID={selectedItem.GUID}]/../..");
+      //switch (reward.XPathSelectElement("Template").Value) {
+      //  case "BuildPermitBuilding":
+      //    this.Presenter.Content = new TemplateBuildPermitBuilding(reward);
+      //    break;
+      //  case "GuildhouseItem":
+      //    this.Presenter.Content = new TemplateGuildhouseItem(reward);
+      //    break;
+      //  default:
+      //    this.Presenter.Content = new TemplateGuildhouseItem(reward);
+      //    //this.Presenter.Content = null;
+      //    break;
+      //}
     }
     #endregion
 

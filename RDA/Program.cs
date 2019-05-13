@@ -43,7 +43,7 @@ namespace RDA {
       Program.DescriptionDE = XDocument.Load(Program.PathRoot + @"\Modified\Texts_German.xml").Root.Elements().ToDictionary(k => k.Attribute("ID").Value, e => e.Value);
 
       // World Fair
-      //Monument.Create();
+      Monument.Create();
 
       // Create Assets
       //Program.ProcessingItems("GuildhouseItem");
@@ -52,7 +52,7 @@ namespace RDA {
       //Program.ProcessingItems("VehicleItem");
       //Program.ProcessingItems("ShipSpecialist");
       //Program.ProcessingItems("CultureItem");
-      Program.ProcessingThirdParty();
+      //Program.ProcessingThirdParty();
     }
     private static void ProcessingItems(String template) {
       var result = new List<Asset>();

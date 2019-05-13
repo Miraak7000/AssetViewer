@@ -32,6 +32,9 @@ namespace RDA.Data {
         case "CultureItem":
           this.Template_CultureItem(value);
           break;
+        case "ActiveItem":
+          this.Template_ActiveItem(value);
+          break;
         default:
           throw new NotImplementedException(template);
       }
@@ -148,6 +151,17 @@ namespace RDA.Data {
           this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_zoo.png");
           this.Text = new Description("2349");
           break;
+      }
+    }
+    private void Template_ActiveItem(String value) {
+      switch (value) {
+        case "SteamShip":
+          this.ID = "SteamShip";
+          this.Icon = new Icon("data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png");
+          this.Text = new Description(Helper.GetDescriptionID("SteamShip"));
+          break;
+        default:
+          throw new NotImplementedException(value);
       }
     }
     #endregion

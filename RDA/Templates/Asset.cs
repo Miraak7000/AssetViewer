@@ -47,6 +47,9 @@ namespace RDA.Templates {
     public Description Info { get; set; }
     //
     public List<TempSource> Sources { get; set; }
+    //
+    public List<String> MonumentEvents { get; set; }
+    public List<String> MonumentThresholds { get; set; }
     #endregion
 
     #region Fields
@@ -61,6 +64,17 @@ namespace RDA.Templates {
           case "Locked":
           case "Buff":
           case "Cost":
+          case "Blocking":
+          case "Building":
+          case "Selection":
+          case "Object":
+          case "Constructable":
+          case "Mesh":
+          case "SoundEmitter":
+          case "FeedbackController":
+          case "AmbientMoodProvider":
+          case "Pausable":
+          case "BuildPermit":
             // ignore this nodes
             break;
           case "Standard":
@@ -141,6 +155,15 @@ namespace RDA.Templates {
           case "SpecialAction":
             this.ProcessElement_SpecialActions(element);
             break;
+          case "MonumentEventCategory":
+            this.ProcessElement_MonumentEventCategory(element);
+            break;
+          case "MonumentEvent":
+            this.ProcessElement_MonumentEvent(element);
+            break;
+          case "Ornament":
+            this.Info = element.Element("OrnamentDescritpion") == null ? null : new Description(element.Element("OrnamentDescritpion").Value);
+            break;
           default:
             throw new NotImplementedException(element.Name.LocalName);
         }
@@ -159,11 +182,11 @@ namespace RDA.Templates {
       result.Add(new XElement("Name", this.Name));
       result.Add(this.Icon.ToXml());
       result.Add(this.Text.ToXml("Text"));
-      result.Add(this.Rarity.ToXml("Rarity"));
+      result.Add(this.Rarity == null ? new XElement("Rarity") : this.Rarity.ToXml("Rarity"));
       result.Add(new XElement("ItemType", this.ItemType));
       result.Add(new XElement("ItemSets", this.ItemSets?.Select(s => s.ToXml())));
       //
-      result.Add(this.Allocation.ToXml());
+      result.Add(this.Rarity == null ? new XElement("Allocation") : this.Allocation.ToXml());
       //
       result.Add(new XElement("EffectTargets", this.EffectTargets == null ? null : this.EffectTargets.Select(s => s.ToXml("Target"))));
       //
@@ -190,6 +213,9 @@ namespace RDA.Templates {
       if (this.Info != null) result.Add(this.Info.ToXml("Info"));
       //
       result.Add(new XElement("Sources", this.Sources?.Select(s => s.ToXml())));
+      //
+      result.Add(new XElement("MonumentEvents", this.MonumentEvents == null ? null : this.MonumentEvents.Select(s => new XElement("Event", s))));
+      result.Add(new XElement("MonumentThresholds", this.MonumentThresholds == null ? null : this.MonumentThresholds.Select(s => new XElement("Threshold", s))));
       return result;
     }
     public override String ToString() {
@@ -455,6 +481,12 @@ namespace RDA.Templates {
         // TODO: this needs to be implemented
         throw new NotImplementedException();
       }
+    }
+    private void ProcessElement_MonumentEventCategory(XElement element) {
+      this.MonumentEvents = element.XPathSelectElements("Events/Item/Event").Select(s => s.Value).ToList();
+    }
+    private void ProcessElement_MonumentEvent(XElement element) {
+      this.MonumentThresholds = element.XPathSelectElements("RewardThresholds/Item/Reward").Select(s => s.Value).ToList();
     }
     private List<XElement> FindSources(String id, List<String> previousIDs) {
       previousIDs.Add(id);

@@ -593,18 +593,6 @@
     <Resource Include="Resources\data\ui\2kimages\main\profiles\enemy_01.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="..\RDA\Modified\Assets_GuildhouseItemCleanedUp.xml">
-      <Link>Resources\Assets\Assets_GuildhouseItemCleanedUp.xml</Link>
-    </EmbeddedResource>
-    <EmbeddedResource Include="..\RDA\Modified\Assets_MonumentEvent.xml">
-      <Link>Resources\Assets\Assets_MonumentEvent.xml</Link>
-    </EmbeddedResource>
-    <EmbeddedResource Include="..\RDA\Modified\Assets_MonumentEventCategory.xml">
-      <Link>Resources\Assets\Assets_MonumentEventCategory.xml</Link>
-    </EmbeddedResource>
-    <EmbeddedResource Include="..\RDA\Modified\Assets_MonumentEventReward.xml">
-      <Link>Resources\Assets\Assets_MonumentEventReward.xml</Link>
-    </EmbeddedResource>
     <EmbeddedResource Include="Resources\Assets\GuildhouseItem.xml" />
     <EmbeddedResource Include="Resources\Assets\HarborOfficeItem.xml" />
     <EmbeddedResource Include="Resources\Assets\ShipSpecialist.xml" />
@@ -615,9 +603,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\Assets\CultureItem.xml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\data\ui\2kimages\main\3dicons\ornaments\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\fertilities\icon_fertility_banana.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\fertilities\icon_fertility_pearl.png" />
@@ -898,6 +884,39 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_worker_417.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_worker_418.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_worker_604.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_archeology.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_architecture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_science.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Assets\MonumentEvent.xml" />
+    <EmbeddedResource Include="Resources\Assets\MonumentEventCategory.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Assets\MonumentEventReward.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\machine_items\icon_generator_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_1x1_01.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_1x1_02.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_1x1_03.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_1x1_04.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_1x1_05.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_1x1_06.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_1x1_07.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_1x1_08.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_1x1_09.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_1x1_10.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_1x1_11.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_gate_01.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_module_01.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_tower_01.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

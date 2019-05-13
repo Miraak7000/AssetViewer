@@ -47,6 +47,9 @@ namespace AssetViewer.Templates {
     public Description Info { get; set; }
     //
     public List<Upgrade> Sources { get; set; }
+    //
+    public List<String> MonumentEvents { get; set; }
+    public List<String> MonumentThresholds { get; set; }
     #endregion
 
     #region Constructor
@@ -57,7 +60,7 @@ namespace AssetViewer.Templates {
       this.Text = new Description(asset.Element("Text"));
       this.Rarity = new Description(asset.Element("Rarity"));
       this.ItemType = asset.Element("ItemType").Value;
-      this.Allocation = new Allocation(asset.Element("Allocation"));
+      this.Allocation = asset.Element("Allocation").HasElements ? new Allocation(asset.Element("Allocation")) : null;
       this.EffectTargets = asset.Element("EffectTargets").Elements().Select(s => new Description(s)).ToList();
       this.EffectTargetInfo = new Description("Affects ", "Beeinflusst ");
       for (int i = 0; i < this.EffectTargets.Count; i++) {
@@ -126,6 +129,12 @@ namespace AssetViewer.Templates {
       }
       if (asset.Element("Sources") != null) {
         this.Sources = asset.Element("Sources").Elements().Select(s => new Upgrade(s)).ToList();
+      }
+      if (asset.Element("MonumentEvents") != null) {
+        this.MonumentEvents = asset.Element("MonumentEvents").Elements().Select(s => s.Value).ToList();
+      }
+      if (asset.Element("MonumentThresholds") != null) {
+        this.MonumentThresholds = asset.Element("MonumentThresholds").Elements().Select(s => s.Value).ToList();
       }
     }
     #endregion
