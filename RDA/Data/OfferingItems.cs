@@ -40,11 +40,14 @@ namespace RDA.Data {
       var asset = Program.Original.XPathSelectElement($"//Asset[Values/Standard/GUID={id}]");
       var template = asset.Element("Template").Value;
       switch (template) {
-        case "RewardItemPool":
         case "RewardPool":
-          var links = asset.XPathSelectElements("Values/RewardPool/ItemsPool/Item/ItemLink").ToArray();
+        case "RewardItemPool":
+          var links = asset.XPathSelectElements("Values/RewardPool/ItemsPool/Item").ToArray();
           foreach (var link in links) {
-            this.FindOfferingItems(link.Value, path);
+            var weight = link.Element("Weight")?.Value;
+            if (weight == null || Int32.Parse(weight) > 0) {
+              this.FindOfferingItems(link.Element("ItemLink").Value, path);
+            }
           }
           break;
         case "ActiveItem":

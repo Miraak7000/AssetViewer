@@ -102,7 +102,6 @@ namespace AssetViewer.Controls {
             return "Expeditions-Bonus";
           default:
             return "Expedition Bonus";
-            break;
         }
       }
     }

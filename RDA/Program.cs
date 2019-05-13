@@ -72,7 +72,7 @@ namespace RDA {
     }
     private static void ProcessingThirdParty() {
       var result = new List<ThirdParty>();
-      var assets = Program.Original.XPathSelectElements($"//Asset[Template='Profile_3rdParty']").ToList().AsParallel();
+      var assets = Program.Original.XPathSelectElements($"//Asset[Template='Profile_3rdParty' or Template='Profile_3rdParty_Pirate']").ToList().AsParallel();
       assets.ForAll((asset) => {
         if (!asset.XPathSelectElements("Values/Trader/Progression/*/OfferingItems").Any()) return;
         Console.WriteLine(asset.XPathSelectElement("Values/Standard/GUID").Value);
