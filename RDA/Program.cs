@@ -57,11 +57,13 @@ namespace RDA {
       //Program.Quests();
 
       // Expeditions
-      Program.Expeditions();
+      //Program.Expeditions();
 
       // Mod
-      //Program.RemoveThirdPartyMessages();
-      //Program.RemoveIncident();
+      Program.RemoveThirdPartyMessages();
+      Program.RemoveIncident1();
+      Program.RemoveIncident2();
+      //Program.RemoveShipIncident();
 
     }
     private static void ProcessingItems(String template) {
@@ -147,7 +149,7 @@ namespace RDA {
         File.WriteAllLines(file, lines);
       }
     }
-    private static void RemoveIncident() {
+    private static void RemoveIncident1() {
       var file = @"C:\Users\Andreas\Downloads\Anno 1800\Mod\data0\data\config\export\main\asset\properties.xml";
       var document = XDocument.Load(file);
       var items = document.Root.XPathSelectElements($"//Groups/Group/DefaultValues/GeneralIncidentConfiguration/ProgressConfig/*/PerIncidentConfig/*/TargetInfectionFactor").ToArray();
@@ -157,6 +159,22 @@ namespace RDA {
       document.Save(file);
       var lines = File.ReadAllLines(file).Skip(1);
       File.WriteAllLines(file, lines);
+    }
+    private static void RemoveIncident2() {
+      var files = new[] {
+        @"C:\Users\Andreas\Downloads\Anno 1800\Mod\data0\data\config\export\main\asset\assets.xml",
+        @"C:\Users\Andreas\Downloads\Anno 1800\Mod\data10\data\config\export\main\asset\assets.xml"
+      };
+      foreach (var file in files) {
+        var document = XDocument.Load(file);
+        var items = document.Root.XPathSelectElements($"//IncidentInfectable").ToArray();
+        foreach (var item in items) {
+          item.Value=String.Empty;
+        }
+        document.Save(file);
+        var lines = File.ReadAllLines(file).Skip(1);
+        File.WriteAllLines(file, lines);
+      }
     }
     private static void QuestGiver() {
       var result = new List<QuestGiver>();
@@ -198,9 +216,9 @@ namespace RDA {
     }
     private static void RemoveShipIncident() {
       // IllnessIncident
-      var file = @"C:\Users\Andreas\Downloads\Anno 1800\Mod\data0\data\config\export\main\asset\assets.xml";
+      var file = @"C:\Users\Andreas\Downloads\Anno 1800\Mod\data10\data\config\export\main\asset\assets.xml";
       var document = XDocument.Load(file);
-      var items = document.Root.XPathSelectElements($"//Incident/*").ToArray();
+      var items = document.Root.XPathSelectElements($"//Incident/*");
       foreach (var item in items) {
         if (item.Name.LocalName.StartsWith("ShipIncident") && !item.HasElements && item.Value != String.Empty) {
           item.Value = "0";
