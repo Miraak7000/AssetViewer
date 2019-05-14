@@ -197,6 +197,7 @@ namespace RDA {
       document.Save($@"{Program.PathRoot}\Modified\Assets_Expeditions.xml");
     }
     private static void RemoveShipIncident() {
+      // IllnessIncident
       var file = @"C:\Users\Andreas\Downloads\Anno 1800\Mod\data0\data\config\export\main\asset\assets.xml";
       var document = XDocument.Load(file);
       var items = document.Root.XPathSelectElements($"//Incident/*").ToArray();
