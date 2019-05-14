@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Xml.Linq;
 using AssetViewer.Data;
 
 namespace AssetViewer.Templates {
 
-  public class Asset {
+  public class TemplateAsset {
 
     #region Properties
     public String ID { get; set; }
@@ -50,10 +49,11 @@ namespace AssetViewer.Templates {
     //
     public List<String> MonumentEvents { get; set; }
     public List<String> MonumentThresholds { get; set; }
+    public List<String> MonumentRewards { get; set; }
     #endregion
 
     #region Constructor
-    public Asset(XElement asset) {
+    public TemplateAsset(XElement asset) {
       this.ID = asset.Attribute("ID").Value;
       this.Name = asset.Element("Name").Value;
       this.Icon = new Icon(asset.Element("Icon"));
@@ -63,7 +63,7 @@ namespace AssetViewer.Templates {
       this.Allocation = asset.Element("Allocation").HasElements ? new Allocation(asset.Element("Allocation")) : null;
       this.EffectTargets = asset.Element("EffectTargets").Elements().Select(s => new Description(s)).ToList();
       this.EffectTargetInfo = new Description("Affects ", "Beeinflusst ");
-      for (int i = 0; i < this.EffectTargets.Count; i++) {
+      for (var i = 0; i < this.EffectTargets.Count; i++) {
         if (i > 0) {
           this.EffectTargetInfo.EN += ", ";
           this.EffectTargetInfo.DE += ", ";
@@ -135,6 +135,9 @@ namespace AssetViewer.Templates {
       }
       if (asset.Element("MonumentThresholds") != null) {
         this.MonumentThresholds = asset.Element("MonumentThresholds").Elements().Select(s => s.Value).ToList();
+      }
+      if (asset.Element("MonumentRewards") != null) {
+        this.MonumentRewards = asset.Element("MonumentRewards").Elements().Select(s => s.Value).ToList();
       }
     }
     #endregion

@@ -50,6 +50,7 @@ namespace RDA.Templates {
     //
     public List<String> MonumentEvents { get; set; }
     public List<String> MonumentThresholds { get; set; }
+    public List<String> MonumentRewards { get; set; }
     #endregion
 
     #region Fields
@@ -164,6 +165,9 @@ namespace RDA.Templates {
           case "Ornament":
             this.Info = element.Element("OrnamentDescritpion") == null ? null : new Description(element.Element("OrnamentDescritpion").Value);
             break;
+          case "Reward":
+            this.ProcessElement_MonumentEventReward(element);
+            break;
           default:
             throw new NotImplementedException(element.Name.LocalName);
         }
@@ -216,6 +220,7 @@ namespace RDA.Templates {
       //
       result.Add(new XElement("MonumentEvents", this.MonumentEvents == null ? null : this.MonumentEvents.Select(s => new XElement("Event", s))));
       result.Add(new XElement("MonumentThresholds", this.MonumentThresholds == null ? null : this.MonumentThresholds.Select(s => new XElement("Threshold", s))));
+      result.Add(new XElement("MonumentRewards", this.MonumentRewards == null ? null : this.MonumentRewards.Select(s => new XElement("Reward", s))));
       return result;
     }
     public override String ToString() {
@@ -487,6 +492,9 @@ namespace RDA.Templates {
     }
     private void ProcessElement_MonumentEvent(XElement element) {
       this.MonumentThresholds = element.XPathSelectElements("RewardThresholds/Item/Reward").Select(s => s.Value).ToList();
+    }
+    private void ProcessElement_MonumentEventReward(XElement element) {
+      this.MonumentRewards = element.XPathSelectElements("RewardAssets/Item/Reward").Select(s => s.Value).ToList();
     }
     private List<XElement> FindSources(String id, List<String> previousIDs) {
       previousIDs.Add(id);

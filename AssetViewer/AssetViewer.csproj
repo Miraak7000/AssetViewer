@@ -87,13 +87,7 @@
     <Compile Include="Data\OfferingItems.cs" />
     <Compile Include="Data\Progression.cs" />
     <Compile Include="Data\Upgrade.cs" />
-    <Compile Include="Templates\Asset.cs" />
-    <Compile Include="Templates\TemplateGuildhouseItem.xaml.cs">
-      <DependentUpon>TemplateGuildhouseItem.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Templates\TemplateBuildPermitBuilding.xaml.cs">
-      <DependentUpon>TemplateBuildPermitBuilding.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="Templates\TemplateAsset.cs" />
     <Compile Include="Templates\TemplateThirdParty.cs" />
     <Page Include="Controls\GuildhouseItem.xaml">
       <SubType>Designer</SubType>
@@ -130,14 +124,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Templates\TemplateGuildhouseItem.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Templates\TemplateBuildPermitBuilding.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -603,7 +589,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\Assets\CultureItem.xml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Assets\MonumentThreshold.xml" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\fertilities\icon_fertility_banana.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\fertilities\icon_fertility_pearl.png" />
@@ -894,10 +882,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\Assets\MonumentEvent.xml" />
-    <EmbeddedResource Include="Resources\Assets\MonumentEventCategory.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\Assets\MonumentEventReward.xml" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\machine_items\icon_generator_1.png" />
@@ -917,6 +901,12 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_gate_01.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_module_01.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_tower_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Assets\MonumentCategory.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Assets\MonumentReward.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

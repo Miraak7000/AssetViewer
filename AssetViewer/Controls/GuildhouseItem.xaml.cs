@@ -18,7 +18,7 @@ namespace AssetViewer.Controls {
   public partial class GuildhouseItem : UserControl, INotifyPropertyChanged {
 
     #region Properties
-    public IEnumerable<Asset> Items {
+    public IEnumerable<TemplateAsset> Items {
       get {
         var rarity = this.ComboBoxRarities.SelectedItem as String;
         var type = this.ComboBoxTypes.SelectedItem as String;
@@ -46,7 +46,7 @@ namespace AssetViewer.Controls {
         return result;
       }
     }
-    public Asset SelectedAsset { get; set; }
+    public TemplateAsset SelectedAsset { get; set; }
     public LinearGradientBrush RarityBrush {
       get {
         var selection = this.SelectedAsset?.Rarity?.EN ?? "Common";
@@ -201,49 +201,49 @@ namespace AssetViewer.Controls {
     #endregion
 
     #region Fields
-    private readonly List<Asset> Assets;
+    private readonly List<TemplateAsset> Assets;
     private String Search = String.Empty;
     #endregion
 
     #region Constructor
     public GuildhouseItem() {
       this.InitializeComponent();
-      this.Assets = new List<Asset>();
+      this.Assets = new List<TemplateAsset>();
       ((MainWindow)Application.Current.MainWindow).ComboBoxLanguage.SelectionChanged += this.ComboBoxLanguage_SelectionChanged;
       using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.GuildhouseItem.xml")) {
         using (var reader = new StreamReader(stream)) {
           var document = XDocument.Parse(reader.ReadToEnd()).Root;
-          this.Assets.AddRange(document.Elements().Select(s => new Asset(s)));
+          this.Assets.AddRange(document.Elements().Select(s => new TemplateAsset(s)));
         }
       }
       using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.HarborOfficeItem.xml")) {
         using (var reader = new StreamReader(stream)) {
           var document = XDocument.Parse(reader.ReadToEnd()).Root;
-          this.Assets.AddRange(document.Elements().Select(s => new Asset(s)));
+          this.Assets.AddRange(document.Elements().Select(s => new TemplateAsset(s)));
         }
       }
       using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.TownhallItem.xml")) {
         using (var reader = new StreamReader(stream)) {
           var document = XDocument.Parse(reader.ReadToEnd()).Root;
-          this.Assets.AddRange(document.Elements().Select(s => new Asset(s)));
+          this.Assets.AddRange(document.Elements().Select(s => new TemplateAsset(s)));
         }
       }
       using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.VehicleItem.xml")) {
         using (var reader = new StreamReader(stream)) {
           var document = XDocument.Parse(reader.ReadToEnd()).Root;
-          this.Assets.AddRange(document.Elements().Select(s => new Asset(s)));
+          this.Assets.AddRange(document.Elements().Select(s => new TemplateAsset(s)));
         }
       }
       using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.ShipSpecialist.xml")) {
         using (var reader = new StreamReader(stream)) {
           var document = XDocument.Parse(reader.ReadToEnd()).Root;
-          this.Assets.AddRange(document.Elements().Select(s => new Asset(s)));
+          this.Assets.AddRange(document.Elements().Select(s => new TemplateAsset(s)));
         }
       }
       using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.CultureItem.xml")) {
         using (var reader = new StreamReader(stream)) {
           var document = XDocument.Parse(reader.ReadToEnd()).Root;
-          this.Assets.AddRange(document.Elements().Select(s => new Asset(s)));
+          this.Assets.AddRange(document.Elements().Select(s => new TemplateAsset(s)));
         }
       }
       this.DataContext = this;

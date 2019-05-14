@@ -19,11 +19,11 @@ namespace AssetViewer.Controls {
   public partial class ThirdParty : UserControl, INotifyPropertyChanged {
 
     #region Properties
-    public IEnumerable<Asset> Items {
+    public IEnumerable<TemplateAsset> Items {
       get {
         var thirdParty = this.ComboBoxThirdParty.SelectedItem as Tuple<String, String>;
         var progression = this.ComboBoxProgressions.SelectedItem as Tuple<Progression, String>;
-        if (thirdParty == null || progression == null) return new Asset[0];
+        if (thirdParty == null || progression == null) return new TemplateAsset[0];
         var result = this.Assets.Single(w => w.ID == thirdParty.Item1).OfferingItems.Single(w => w.Progression == progression.Item1).Assets.AsEnumerable();
         switch (App.Language) {
           case Languages.German:
@@ -70,7 +70,7 @@ namespace AssetViewer.Controls {
         }
       }
     }
-    public Asset SelectedAsset { get; set; }
+    public TemplateAsset SelectedAsset { get; set; }
     public LinearGradientBrush RarityBrush {
       get {
         var selection = this.SelectedAsset?.Rarity?.EN ?? "Common";

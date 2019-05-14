@@ -55,8 +55,8 @@ namespace RDA {
       //Program.ProcessingThirdParty();
 
       // Mod
-      Program.RemoveThirdPartyMessages();
-      Program.RemoveIncident();
+      //Program.RemoveThirdPartyMessages();
+      //Program.RemoveIncident();
 
     }
     private static void ProcessingItems(String template) {
