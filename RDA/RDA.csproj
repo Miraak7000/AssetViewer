@@ -52,6 +52,9 @@
   <ItemGroup>
     <Compile Include="Data\OfferingItems.cs" />
     <Compile Include="Data\Progression.cs" />
+    <Compile Include="Data\Expedition.cs" />
+    <Compile Include="Data\QuestGiver.cs" />
+    <Compile Include="Data\Quest.cs" />
     <Compile Include="Data\ReplacingWorkforce.cs" />
     <Compile Include="Data\AdditionalOutput.cs" />
     <Compile Include="Data\Allocation.cs" />
@@ -60,6 +63,8 @@
     <Compile Include="Data\Icon.cs" />
     <Compile Include="Data\InputAmountUpgrade.cs" />
     <Compile Include="Data\ReplaceInput.cs" />
+    <Compile Include="Data\RewardPool.cs" />
+    <Compile Include="Data\RewardPosition.cs" />
     <Compile Include="Data\TempSource.cs" />
     <Compile Include="Data\ThirdParty.cs" />
     <Compile Include="Data\Upgrade.cs" />
@@ -85,6 +90,7 @@
     <Content Include="Modified\Assets_CultureItem.xml" />
     <Content Include="Modified\Assets_Expedition.xml" />
     <Content Include="Modified\Assets_ExpeditionEvent.xml" />
+    <Content Include="Modified\Assets_Expeditions.xml" />
     <Content Include="Modified\Assets_FactoryBuilding7.xml" />
     <Content Include="Modified\Assets_FarmBuilding.xml" />
     <Content Include="Modified\Assets_FreeAreaBuilding.xml" />
@@ -3811,18 +3817,6 @@
     <Content Include="Resources\data\ui\2kimages\main\profiles\thirdparty_advanced\difficulties_queen_enabled_0.png" />
     <Content Include="Resources\data\ui\2kimages\main\profiles\vistor_0.png" />
     <Content Include="Resources\data\ui\2kimages\main\profiles\workforce_captain_0.png" />
-    <Content Include="Resources\TEMP.xml" />
-    <Content Include="Rewards\Category1_Event1.html" />
-    <Content Include="Rewards\Category1_Event2.html" />
-    <Content Include="Rewards\Category1_Event3.html" />
-    <Content Include="Rewards\Category2_Event1.html" />
-    <Content Include="Rewards\Category2_Event2.html" />
-    <Content Include="Rewards\Category2_Event3.html" />
-    <Content Include="Rewards\Category3_Event1.html" />
-    <Content Include="Rewards\Category3_Event2.html" />
-    <Content Include="Rewards\Category3_Event3.html" />
-    <Content Include="Rewards\Monument.html" />
-    <Content Include="Rewards\Monument.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

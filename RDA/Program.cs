@@ -17,7 +17,6 @@ namespace RDA {
     #region Fields
     private static readonly Dictionary<Int32, String> Descriptions = new Dictionary<Int32, String>();
     internal static XDocument Original;
-    internal static XDocument Sources;
     internal static String PathRoot;
     internal static String PathViewer;
     private static readonly List<XElement> RewardPoolList = new List<XElement>();
@@ -31,7 +30,6 @@ namespace RDA {
       Program.PathViewer = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase).Replace(@"file:\", String.Empty)).Parent.Parent.Parent.FullName + @"\AssetViewer";
       Program.PathRoot = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase).Replace(@"file:\", String.Empty)).Parent.Parent.FullName;
       Program.Original = XDocument.Load(Program.PathRoot + @"\Original\assets.xml");
-      Program.Sources = XDocument.Load(Program.PathRoot + @"\Modified\Assets_Sources.xml");
 
       // Helper
       //Helper.ExtractTextEnglish(Program.PathRoot + @"\Original\texts_english.xml");
@@ -43,9 +41,9 @@ namespace RDA {
       Program.DescriptionDE = XDocument.Load(Program.PathRoot + @"\Modified\Texts_German.xml").Root.Elements().ToDictionary(k => k.Attribute("ID").Value, e => e.Value);
 
       // World Fair
-      Monument.Create();
+      //Monument.Create();
 
-      // Create Assets
+      // Assets
       //Program.ProcessingItems("GuildhouseItem");
       //Program.ProcessingItems("TownhallItem");
       //Program.ProcessingItems("HarborOfficeItem");
@@ -53,6 +51,13 @@ namespace RDA {
       //Program.ProcessingItems("ShipSpecialist");
       //Program.ProcessingItems("CultureItem");
       //Program.ProcessingThirdParty();
+
+      // Quests
+      //Program.QuestGiver();
+      //Program.Quests();
+
+      // Expeditions
+      Program.Expeditions();
 
       // Mod
       //Program.RemoveThirdPartyMessages();
@@ -148,6 +153,57 @@ namespace RDA {
       var items = document.Root.XPathSelectElements($"//Groups/Group/DefaultValues/GeneralIncidentConfiguration/ProgressConfig/*/PerIncidentConfig/*/TargetInfectionFactor").ToArray();
       foreach (var item in items) {
         item.Value = "0";
+      }
+      document.Save(file);
+      var lines = File.ReadAllLines(file).Skip(1);
+      File.WriteAllLines(file, lines);
+    }
+    private static void QuestGiver() {
+      var result = new List<QuestGiver>();
+      var questGivers = Program.Original.Root.XPathSelectElements("//Asset[Template='Quest']/Values/Quest/QuestGiver").Select(s => s.Value).Distinct().ToList();
+      questGivers.ForEach((id) => {
+        Console.WriteLine(id);
+        var questGiver = Program.Original.Root.XPathSelectElement($"//Asset[Values/Standard/GUID={id}]");
+        var item = new QuestGiver(questGiver);
+        result.Add(item);
+      });
+      var document = new XDocument();
+      document.Add(new XElement("QuestGivers"));
+      document.Root.Add(result.Select(s => s.ToXml()));
+    }
+    private static void Quests() {
+      var result = new List<Quest>();
+      var assets = Program.Original.XPathSelectElements("//Asset[Template='Quest']").ToList();
+      assets.ForEach((asset) => {
+        Console.WriteLine(asset.XPathSelectElement("Values/Standard/GUID").Value);
+        var item = new Quest(asset);
+        result.Add(item);
+      });
+      var document = new XDocument();
+      document.Add(new XElement("Quests"));
+      document.Root.Add(result.Select(s => s.ToXml()));
+    }
+    private static void Expeditions() {
+      var result = new List<Expedition>();
+      var assets = Program.Original.XPathSelectElements("//Asset[Template='Expedition']").ToList();
+      assets.ForEach((asset) => {
+        Console.WriteLine(asset.XPathSelectElement("Values/Standard/GUID").Value);
+        var item = new Expedition(asset);
+        result.Add(item);
+      });
+      var document = new XDocument();
+      document.Add(new XElement("Expeditions"));
+      document.Root.Add(result.Select(s => s.ToXml()));
+      document.Save($@"{Program.PathRoot}\Modified\Assets_Expeditions.xml");
+    }
+    private static void RemoveShipIncident() {
+      var file = @"C:\Users\Andreas\Downloads\Anno 1800\Mod\data0\data\config\export\main\asset\assets.xml";
+      var document = XDocument.Load(file);
+      var items = document.Root.XPathSelectElements($"//Incident/*").ToArray();
+      foreach (var item in items) {
+        if (item.Name.LocalName.StartsWith("ShipIncident") && !item.HasElements && item.Value != String.Empty) {
+          item.Value = "0";
+        }
       }
       document.Save(file);
       var lines = File.ReadAllLines(file).Skip(1);
