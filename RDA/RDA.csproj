@@ -76,6 +76,12 @@
     <Compile Include="Templates\Asset.cs" />
     <Compile Include="Templates\CultureItem.cs" />
     <Compile Include="Templates\ItemSet.cs" />
+    <Compile Include="Veras\Details.cs" />
+    <Compile Include="Veras\RewardWithDetails.cs" />
+    <Compile Include="Veras\RewardWithDetailsList.cs" />
+    <Compile Include="Veras\VerasExtensions.cs" />
+    <Compile Include="Veras\VeraSource.cs" />
+    <Compile Include="Veras\VerasTempSource.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

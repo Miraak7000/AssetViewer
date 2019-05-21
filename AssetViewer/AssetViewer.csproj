@@ -58,9 +58,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Controls\Expedition.xaml.cs">
-      <DependentUpon>Expedition.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Controls\ThirdParty.xaml.cs">
       <DependentUpon>ThirdParty.xaml</DependentUpon>
     </Compile>
@@ -92,13 +89,13 @@
     <Compile Include="Data\Upgrade.cs" />
     <Compile Include="Templates\TemplateAsset.cs" />
     <Compile Include="Templates\TemplateThirdParty.cs" />
+    <Compile Include="Veras\VerasItemControl.xaml.cs">
+      <DependentUpon>VerasItemControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Veras\VerasUpgrade.cs" />
     <Page Include="Controls\GuildhouseItem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Controls\Expedition.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
     <Page Include="Controls\ThirdParty.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -131,6 +128,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Veras\VerasItemControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

@@ -46,7 +46,7 @@ namespace RDA.Templates {
     //
     public Description Info { get; set; }
     //
-    public List<TempSource> Sources { get; set; }
+    public List<VerasTempSource> Sources { get; set; }
     //
     public List<String> MonumentEvents { get; set; }
     public List<String> MonumentThresholds { get; set; }
@@ -173,8 +173,8 @@ namespace RDA.Templates {
         }
       }
       if (findSources) {
-        var sources = this.FindSources(this.ID, new List<String>()).ToArray();
-        this.Sources = sources.Select(s => new TempSource(s)).ToList();
+        var sources =VerasExtensions.VerasFindSourcesForItems(this.ID).ToArray();
+        this.Sources = sources.Select(s => new VerasTempSource(s)).ToList();
       }
     }
     #endregion
