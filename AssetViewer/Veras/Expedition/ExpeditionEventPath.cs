@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Windows.Documents;
 using System.Xml.Serialization;
 
 namespace AssetViewer.Veras {
@@ -12,6 +11,7 @@ namespace AssetViewer.Veras {
     public class ExpeditionEventPath {
 
         #region Properties
+
         [XmlArrayItem("Item", IsNullable = false)]
         public List<ExpeditionEventPathRewardsItem> Rewards { get; set; }
 

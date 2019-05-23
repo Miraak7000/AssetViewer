@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+﻿using System.IO;
 using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Linq;
 using System.Xml.Serialization;
 
 namespace AssetViewer.Veras {
+
     public static class VerasExtensions {
+
+        #region Methods
+
         public static XElement ToXElement<T>(this T obj) {
             using (var memoryStream = new MemoryStream()) {
                 using (TextWriter streamWriter = new StreamWriter(memoryStream)) {
@@ -23,5 +23,7 @@ namespace AssetViewer.Veras {
             var xmlSerializer = new XmlSerializer(typeof(T));
             return (T)xmlSerializer.Deserialize(xElement.CreateReader());
         }
+
+        #endregion Methods
     }
 }

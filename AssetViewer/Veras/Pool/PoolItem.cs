@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.Xml.Serialization;
 
@@ -10,13 +9,14 @@ namespace AssetViewer.Veras {
     [XmlType(AnonymousType = true)]
     public partial class PoolItem {
 
+        #region Properties
 
         [XmlAttribute()]
         public string ID { get; set; }
 
         [XmlAttribute()]
         public int Weight { get; set; }
+
+        #endregion Properties
     }
-
-
 }

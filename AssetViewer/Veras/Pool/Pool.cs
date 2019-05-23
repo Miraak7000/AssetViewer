@@ -1,10 +1,9 @@
-﻿using System.Collections.Generic;
-using System.Xml.Serialization;
-using System;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
+using System.Xml.Serialization;
 
 namespace AssetViewer.Veras {
-
 
     [Serializable()]
     [DesignerCategory("code")]
@@ -12,13 +11,14 @@ namespace AssetViewer.Veras {
     [XmlRoot(Namespace = "", IsNullable = false)]
     public partial class Pool {
 
+        #region Properties
+
         [XmlArrayItem("Item", IsNullable = false)]
         public List<PoolItem> Items { get; set; }
 
-
         [XmlAttribute()]
         public string ID { get; set; }
+
+        #endregion Properties
     }
-
-
 }
