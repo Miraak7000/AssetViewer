@@ -43,7 +43,9 @@ namespace RDA {
 
             // World Fair
             //Monument.Create();
-
+            //VerasExtensions.ProcessingRewardPools();
+            //VerasExtensions.ProcessingProducts();
+            VerasExtensions.ProcessingExpeditionEvents();
            // Assets
             VerasExtensions.ProcessingItems("GuildhouseItem");
             VerasExtensions.ProcessingItems("TownhallItem");

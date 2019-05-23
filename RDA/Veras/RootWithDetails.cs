@@ -3,14 +3,14 @@ using System.Xml.Linq;
 
 namespace RDA.Veras {
 
-    public struct RewardWithDetails {
+    public struct RootWithDetails {
 
         #region Constructors
 
-        public RewardWithDetails(RewardWithDetails other) : this(other.Root, other.Details) {
+        public RootWithDetails(RootWithDetails other) : this(other.Root, other.Details) {
         }
 
-        public RewardWithDetails(XElement root, HashSet<XElement> details) : this() {
+        public RootWithDetails(XElement root, HashSet<XElement> details) : this() {
             Details = new HashSet<XElement>(details);
             Root = root;
         }
@@ -26,8 +26,8 @@ namespace RDA.Veras {
 
         #region Methods
 
-        internal RewardWithDetails Copy() {
-            return new RewardWithDetails(this);
+        internal RootWithDetails Copy() {
+            return new RootWithDetails(this);
         }
 
         #endregion Methods

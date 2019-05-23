@@ -12,7 +12,7 @@ namespace RDA.Data {
 
         #region Constructors
 
-        public VerasTempSource(RewardWithDetails element) : base(element.Root) {
+        public VerasTempSource(RootWithDetails element) : base(element.Root) {
             switch (element.Root.Element("Template").Value) {
                 case "TourismFeature":
                 case "MonumentEventReward":

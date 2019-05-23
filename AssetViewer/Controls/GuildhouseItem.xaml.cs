@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Xml.Linq;
 using AssetViewer.Library;
 using AssetViewer.Templates;
+using AssetViewer.Veras;
 
 namespace AssetViewer.Controls {
 
@@ -24,7 +25,7 @@ namespace AssetViewer.Controls {
         var type = this.ComboBoxTypes.SelectedItem as String;
         var target = this.ComboBoxTargets.SelectedItem as String;
         var equipped = this.ComboBoxEquipped.SelectedItem as String;
-        var result = this.Assets.AsQueryable();
+                var result = ItemProvider.Items.Values.AsQueryable();
         if (!String.IsNullOrEmpty(type)) result = result.Where(w => w.ItemType == type);
         switch (App.Language) {
           case Languages.German:
@@ -152,7 +153,7 @@ namespace AssetViewer.Controls {
     }
     public IEnumerable<String> ItemTypes {
       get {
-        var result = this.Assets.Select(s => s.ItemType).Distinct().OrderBy(o => o).ToList();
+        var result = ItemProvider.Items.Values.Select(s => s.ItemType).Distinct().OrderBy(o => o).ToList();
         result.Insert(0, String.Empty);
         return result;
       }
@@ -162,10 +163,10 @@ namespace AssetViewer.Controls {
         List<String> result;
         switch (App.Language) {
           case Languages.German:
-            result = this.Assets.SelectMany(s => s.EffectTargets).Select(s => s.DE).Distinct().OrderBy(o => o).ToList();
+            result = ItemProvider.Items.Values.SelectMany(s => s.EffectTargets).Select(s => s.DE).Distinct().OrderBy(o => o).ToList();
             break;
           default:
-            result = this.Assets.SelectMany(s => s.EffectTargets).Select(s => s.EN).Distinct().OrderBy(o => o).ToList();
+            result = ItemProvider.Items.Values.SelectMany(s => s.EffectTargets).Select(s => s.EN).Distinct().OrderBy(o => o).ToList();
             break;
         }
         result.Insert(0, String.Empty);
@@ -177,10 +178,10 @@ namespace AssetViewer.Controls {
         List<String> result;
         switch (App.Language) {
           case Languages.German:
-            result = this.Assets.Select(s => s.Allocation.Text.DE).Distinct().OrderBy(o => o).ToList();
+            result = ItemProvider.Items.Values.Select(s => s.Allocation.Text.DE).Distinct().OrderBy(o => o).ToList();
             break;
           default:
-            result = this.Assets.Select(s => s.Allocation.Text.EN).Distinct().OrderBy(o => o).ToList();
+            result = ItemProvider.Items.Values.Select(s => s.Allocation.Text.EN).Distinct().OrderBy(o => o).ToList();
             break;
         }
         result.Insert(0, String.Empty);
@@ -201,51 +202,16 @@ namespace AssetViewer.Controls {
     #endregion
 
     #region Fields
-    private readonly List<TemplateAsset> Assets;
+    
     private String Search = String.Empty;
     #endregion
 
     #region Constructor
     public GuildhouseItem() {
       this.InitializeComponent();
-      this.Assets = new List<TemplateAsset>();
+    
       ((MainWindow)Application.Current.MainWindow).ComboBoxLanguage.SelectionChanged += this.ComboBoxLanguage_SelectionChanged;
-      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.GuildhouseItem.xml")) {
-        using (var reader = new StreamReader(stream)) {
-          var document = XDocument.Parse(reader.ReadToEnd()).Root;
-          this.Assets.AddRange(document.Elements().Select(s => new TemplateAsset(s)));
-        }
-      }
-      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.HarborOfficeItem.xml")) {
-        using (var reader = new StreamReader(stream)) {
-          var document = XDocument.Parse(reader.ReadToEnd()).Root;
-          this.Assets.AddRange(document.Elements().Select(s => new TemplateAsset(s)));
-        }
-      }
-      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.TownhallItem.xml")) {
-        using (var reader = new StreamReader(stream)) {
-          var document = XDocument.Parse(reader.ReadToEnd()).Root;
-          this.Assets.AddRange(document.Elements().Select(s => new TemplateAsset(s)));
-        }
-      }
-      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.VehicleItem.xml")) {
-        using (var reader = new StreamReader(stream)) {
-          var document = XDocument.Parse(reader.ReadToEnd()).Root;
-          this.Assets.AddRange(document.Elements().Select(s => new TemplateAsset(s)));
-        }
-      }
-      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.ShipSpecialist.xml")) {
-        using (var reader = new StreamReader(stream)) {
-          var document = XDocument.Parse(reader.ReadToEnd()).Root;
-          this.Assets.AddRange(document.Elements().Select(s => new TemplateAsset(s)));
-        }
-      }
-      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.CultureItem.xml")) {
-        using (var reader = new StreamReader(stream)) {
-          var document = XDocument.Parse(reader.ReadToEnd()).Root;
-          this.Assets.AddRange(document.Elements().Select(s => new TemplateAsset(s)));
-        }
-      }
+    
       this.DataContext = this;
     }
     #endregion

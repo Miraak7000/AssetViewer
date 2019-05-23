@@ -58,6 +58,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controls\ExpeditionEvents.xaml.cs">
+      <DependentUpon>ExpeditionEvents.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\ThirdParty.xaml.cs">
       <DependentUpon>ThirdParty.xaml</DependentUpon>
     </Compile>
@@ -89,10 +92,24 @@
     <Compile Include="Data\Upgrade.cs" />
     <Compile Include="Templates\TemplateAsset.cs" />
     <Compile Include="Templates\TemplateThirdParty.cs" />
+    <Compile Include="Veras\Expedition\ExpeditionEvent.cs" />
+    <Compile Include="Veras\Expedition\ExpeditionEventPath.cs" />
+    <Compile Include="Veras\Expedition\ExpeditionEventPathOption.cs" />
+    <Compile Include="Veras\Expedition\ExpeditionEventPathRewardsItem.cs" />
+    <Compile Include="Veras\ItemMarkupExtension.cs" />
+    <Compile Include="Veras\ItemProvider.cs" />
+    <Compile Include="Veras\Pool.cs" />
+    <Compile Include="Veras\PoolItem.cs" />
+    <Compile Include="Veras\RewardToItemConverter.cs" />
+    <Compile Include="Veras\VerasExtensions.cs" />
     <Compile Include="Veras\VerasItemControl.xaml.cs">
       <DependentUpon>VerasItemControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Veras\VerasUpgrade.cs" />
+    <Page Include="Controls\ExpeditionEvents.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\GuildhouseItem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -918,6 +935,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Assets\Expeditions.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Assets\Product.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Assets\RewardPools.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Assets\ExpeditionEvents.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
