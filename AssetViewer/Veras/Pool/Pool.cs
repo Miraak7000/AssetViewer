@@ -5,18 +5,18 @@ using System.Xml.Serialization;
 
 namespace AssetViewer.Veras {
 
-    [Serializable()]
+    [Serializable]
     [DesignerCategory("code")]
     [XmlType(AnonymousType = true)]
     [XmlRoot(Namespace = "", IsNullable = false)]
-    public partial class Pool {
+    public class Pool {
 
         #region Properties
 
         [XmlArrayItem("Item", IsNullable = false)]
         public List<PoolItem> Items { get; set; }
 
-        [XmlAttribute()]
+        [XmlAttribute]
         public string ID { get; set; }
 
         #endregion Properties

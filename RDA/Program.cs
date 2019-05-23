@@ -46,13 +46,16 @@ namespace RDA {
             //VerasExtensions.ProcessingRewardPools();
             //VerasExtensions.ProcessingProducts();
             VerasExtensions.ProcessingExpeditionEvents();
-           // Assets
-            VerasExtensions.ProcessingItems("GuildhouseItem");
-            VerasExtensions.ProcessingItems("TownhallItem");
-            VerasExtensions.ProcessingItems("HarborOfficeItem");
-            VerasExtensions.ProcessingItems("VehicleItem");
-            VerasExtensions.ProcessingItems("ShipSpecialist");
-            VerasExtensions.ProcessingItems("CultureItem");
+            //VerasExtensions.ProcessingItemSpecialAction();
+            //VerasExtensions.ProcessingActiveItem();
+            VerasExtensions.ProcessingItemSpecialActionVisualEffect();
+            // Assets
+            //VerasExtensions.ProcessingItems("GuildhouseItem");
+            //VerasExtensions.ProcessingItems("TownhallItem");
+            //VerasExtensions.ProcessingItems("HarborOfficeItem");
+            //VerasExtensions.ProcessingItems("VehicleItem");
+            //VerasExtensions.ProcessingItems("ShipSpecialist");
+            //VerasExtensions.ProcessingItems("CultureItem");
             //Program.ProcessingThirdParty();
 
             // Quests
@@ -60,7 +63,7 @@ namespace RDA {
             //Program.Quests();
 
             // Expeditions
-            Program.Expeditions();
+            //Program.Expeditions();
         }
         private static void ProcessingItems(String template) {
             var result = new List<Asset>();

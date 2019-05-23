@@ -5,7 +5,7 @@ using System.Xml.Serialization;
 
 namespace AssetViewer.Veras {
 
-    [Serializable()]
+    [Serializable]
     [DesignerCategory("code")]
     [XmlType(AnonymousType = true)]
     public class ExpeditionEventPath {
@@ -18,7 +18,7 @@ namespace AssetViewer.Veras {
         [XmlArrayItem("Option", IsNullable = false)]
         public List<ExpeditionEventPathOption> Options { get; set; }
 
-        [XmlAttribute()]
+        [XmlAttribute]
         public string ID { get; set; }
 
         #endregion Properties

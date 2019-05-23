@@ -7,7 +7,7 @@ using System.Xml.Serialization;
 namespace AssetViewer.Veras {
 
     // HINWEIS: Für den generierten Code ist möglicherweise mindestens .NET Framework 4.5 oder .NET Core/Standard 2.0 erforderlich.
-    [Serializable()]
+    [Serializable]
     [DesignerCategory("code")]
     [XmlType(AnonymousType = true)]
     [XmlRoot(Namespace = "", IsNullable = false)]
@@ -20,7 +20,7 @@ namespace AssetViewer.Veras {
         [XmlArrayItem("Path", IsNullable = false)]
         public List<ExpeditionEventPath> Paths { get; set; }
 
-        [XmlAttribute()]
+        [XmlAttribute]
         public string ID { get; set; }
 
         #endregion Properties

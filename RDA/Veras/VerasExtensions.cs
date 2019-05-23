@@ -64,9 +64,16 @@ namespace RDA.Library {
             document.Save($@"{Program.PathRoot}\Modified\Assets_RewardPools.xml");
             document.Save($@"{Program.PathViewer}\Resources\Assets\RewardPools.xml");
         }
-
+        public static void ProcessingActiveItem() {
+            ProcessingAssets("ActiveItem");
+        }
+        public static void ProcessingItemSpecialActionVisualEffect() {
+            ProcessingAssets("ItemSpecialActionVisualEffect");
+        }
         public static void ProcessingProducts() {
-            var template = "Product";
+            ProcessingAssets("Product");
+        }
+        public static void ProcessingAssets(string template) {
             var result = new List<Asset>();
             var products = Program.Original
                .XPathSelectElements($"//Asset[Template='{template}']").ToList();
@@ -111,8 +118,9 @@ namespace RDA.Library {
             document.Save($@"{Program.PathViewer}\Resources\Assets\{template}.xml");
         }
 
-       
-
+        public static void ProcessingItemSpecialAction() {
+            ProcessingAssets("ItemSpecialAction");
+        }
         //ExpeditionEvents
         public static XElement ToXml(this KeyValuePair<XElement, List<HashSet<XElement>>> events) {
             var xRoot = new XElement("ExpeditionEvent");

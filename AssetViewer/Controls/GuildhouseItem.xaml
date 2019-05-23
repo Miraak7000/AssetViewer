@@ -112,7 +112,7 @@
                                     </Grid.ColumnDefinitions>
                                     <Image Grid.Column="0" Source="{Binding Path=Icon.Filename}" HorizontalAlignment="Left"></Image>
                                     <TextBlock Grid.Column="1" Text="{Binding Path=Text, Converter={StaticResource DescriptionConverter}}" VerticalAlignment="Center" TextTrimming="CharacterEllipsis"></TextBlock>
-                                    <TextBlock Grid.Column="2" Text="{Binding Path=Text.ID}" VerticalAlignment="Center" FontSize="11" HorizontalAlignment="Right"></TextBlock>
+                                    <TextBlock Grid.Column="2" Text="{Binding Path=ID}" VerticalAlignment="Center" FontSize="11" HorizontalAlignment="Right"></TextBlock>
                                 </Grid>
                             </DataTemplate>
                         </ListBox.ItemTemplate>

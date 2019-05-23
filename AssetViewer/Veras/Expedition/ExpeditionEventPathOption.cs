@@ -1,11 +1,14 @@
 ﻿using AssetViewer.Data;
+using AssetViewer.Veras.Expedition;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel;
+using System.Windows.Documents;
 using System.Xml.Serialization;
 
 namespace AssetViewer.Veras {
 
-    [Serializable()]
+    [Serializable]
     [DesignerCategory("code")]
     [XmlType(AnonymousType = true)]
     public class ExpeditionEventPathOption {
@@ -14,11 +17,13 @@ namespace AssetViewer.Veras {
 
         public Description Text { get; set; }
 
-        [XmlAttribute()]
+        [XmlAttribute]
         public string ID { get; set; }
 
-        [XmlAttribute()]
+        [XmlAttribute]
         public string OptionAttribute { get; set; }
+        [XmlArrayItem("Item", IsNullable = false)]
+        public List<ExpeditionEventPathOptionsOptionRequirementsItem> Requirements { get; set; }
 
         #endregion Properties
     }

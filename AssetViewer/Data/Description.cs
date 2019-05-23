@@ -5,7 +5,7 @@ using System.Xml.Serialization;
 
 namespace AssetViewer.Data {
 
-    [Serializable()]
+    [Serializable]
     [DesignerCategory("code")]
     [XmlType(AnonymousType = true)]
     public class Description {
@@ -31,7 +31,7 @@ namespace AssetViewer.Data {
 
         #region Properties
 
-        [XmlAttribute()]
+        [XmlAttribute]
         public String ID { get; set; }
 
         public String EN { get; set; }

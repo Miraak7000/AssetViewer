@@ -76,6 +76,7 @@ namespace RDA.Templates {
                     case "AmbientMoodProvider":
                     case "Pausable":
                     case "BuildPermit":
+                    case "VisualEffectWhenActive":
                         // ignore this nodes
                         break;
                     case "Standard":
@@ -194,7 +195,7 @@ namespace RDA.Templates {
             result.Add(new XElement("ItemType", this.ItemType));
             result.Add(new XElement("ItemSets", this.ItemSets?.Select(s => s.ToXml())));
             //
-            result.Add(this.Rarity == null ? new XElement("Allocation") : this.Allocation.ToXml());
+            result.Add(this.Allocation == null ? new XElement("Allocation") : this.Allocation.ToXml());
             //
             result.Add(new XElement("EffectTargets", this.EffectTargets == null ? null : this.EffectTargets.Select(s => s.ToXml("Target"))));
             //
@@ -244,7 +245,7 @@ namespace RDA.Templates {
         private void ProcessElement_Item(XElement element) {
             this.Rarity = element.Element("Rarity") == null ? new Description("118002") : new Description(Helper.GetDescriptionID(element.Element("Rarity").Value));
             this.ItemType = element.Element("ItemType")?.Value ?? "Common";
-            this.Allocation = new Allocation(element.Parent.Parent.Element("Template").Value, element.Element("Allocation")?.Value);
+            this.Allocation = element.Element("Allocation") == null ? null : new Allocation(element.Parent.Parent.Element("Template").Value, element.Element("Allocation")?.Value);
             this.TradePrice = element.Element("TradePrice") == null ? null : (Int32.Parse(element.Element("TradePrice").Value) / 4).ToString();
             if (element.Element("ItemSet") != null) {
                 this.ItemSets = new List<Upgrade>();
@@ -517,7 +518,6 @@ namespace RDA.Templates {
         private void ProcessElement_SpecialActions(XElement element) {
             if (element.HasElements) {
                 // TODO: this needs to be implemented
-                throw new NotImplementedException();
             }
         }
         private void ProcessElement_MonumentEventCategory(XElement element) {
