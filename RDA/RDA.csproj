@@ -80,7 +80,6 @@
     <Compile Include="Veras\RootWithDetails.cs" />
     <Compile Include="Veras\RewardWithDetailsList.cs" />
     <Compile Include="Veras\VerasExtensions.cs" />
-    <Compile Include="Veras\VeraSource.cs" />
     <Compile Include="Veras\VerasTempSource.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -94,6 +93,7 @@
   <ItemGroup>
     <Content Include="Modified\Assets.xml" />
     <Content Include="Modified\Assets_ActiveItem.xml" />
+    <Content Include="Modified\Assets_BuildPermitBuilding.xml" />
     <Content Include="Modified\Assets_CultureItem.xml" />
     <Content Include="Modified\Assets_Expedition.xml" />
     <Content Include="Modified\Assets_ExpeditionEvent.xml" />

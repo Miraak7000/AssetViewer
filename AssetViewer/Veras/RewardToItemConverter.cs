@@ -1,4 +1,5 @@
-﻿using AssetViewer.Templates;
+﻿using AssetViewer.Library;
+using AssetViewer.Templates;
 using AssetViewer.Veras;
 using System;
 using System.Collections.Generic;
@@ -16,10 +17,20 @@ namespace AssetViewer.Converter {
 
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture) {
             if (value is ExpeditionEventPathRewardsItem item) {
-                return ItemProvider.GetItemsById(item.ID);
+                if (App.Language == Languages.German) {
+                    return item.ID.GetItemsById().OrderBy(l => l.Text.DE);
+                }
+                else {
+                    return item.ID.GetItemsById().OrderBy(l => l.Text.EN);
+                }
             }
             else if (value is IEnumerable<ExpeditionEventPathRewardsItem> rewards) {
-                return rewards.SelectMany(l => ItemProvider.GetItemsById(l.ID));
+                if (App.Language == Languages.German) {
+                    return rewards.SelectMany(l => l.ID.GetItemsById().OrderBy(k => k.Text.DE));
+                }
+                else {
+                    return rewards.SelectMany(l => l.ID.GetItemsById().OrderBy(k => k.Text.EN));
+                }
             }
             return null;
         }

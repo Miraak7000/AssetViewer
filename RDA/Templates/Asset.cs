@@ -7,9 +7,7 @@ using RDA.Data;
 using RDA.Library;
 
 namespace RDA.Templates {
-
     public class Asset {
-
         #region Properties
         public String ID { get; set; }
         public String Name { get; set; }
@@ -176,12 +174,11 @@ namespace RDA.Templates {
                 }
             }
             if (findSources) {
-                var sources = VerasExtensions.VerasFindSourcesForItems(this.ID).ToArray();
+                var sources = this.ID.VerasFindSourcesForItems().ToArray();
                 this.Sources = sources.Select(s => new VerasTempSource(s)).ToList();
             }
         }
 
-      
         #endregion
 
         #region Public Methods
@@ -197,25 +194,25 @@ namespace RDA.Templates {
             //
             result.Add(this.Allocation == null ? new XElement("Allocation") : this.Allocation.ToXml());
             //
-            result.Add(new XElement("EffectTargets", this.EffectTargets == null ? null : this.EffectTargets.Select(s => s.ToXml("Target"))));
+            result.Add(new XElement("EffectTargets", this.EffectTargets?.Select(s => s.ToXml("Target"))));
             //
-            result.Add(new XElement("FactoryUpgrades", this.FactoryUpgrades == null ? null : this.FactoryUpgrades.Select(s => s.ToXml())));
-            result.Add(new XElement("BuildingUpgrades", this.BuildingUpgrades == null ? null : this.BuildingUpgrades.Select(s => s.ToXml())));
-            result.Add(new XElement("CultureUpgrades", this.CultureUpgrades == null ? null : this.CultureUpgrades.Select(s => s.ToXml())));
-            result.Add(new XElement("ModuleOwnerUpgrades", this.ModuleOwnerUpgrades == null ? null : this.ModuleOwnerUpgrades.Select(s => s.ToXml())));
-            result.Add(new XElement("ResidenceUpgrades", this.ResidenceUpgrades == null ? null : this.ResidenceUpgrades.Select(s => s.ToXml())));
-            result.Add(new XElement("PopulationUpgrades", this.PopulationUpgrades == null ? null : this.PopulationUpgrades.Select(s => s.ToXml())));
-            result.Add(new XElement("ElectricUpgrades", this.ElectricUpgrades == null ? null : this.ElectricUpgrades.Select(s => s.ToXml())));
-            result.Add(new XElement("ExpeditionAttributes", this.ExpeditionAttributes == null ? null : this.ExpeditionAttributes.Select(s => s.ToXml())));
-            result.Add(new XElement("AttackableUpgrades", this.AttackableUpgrades == null ? null : this.AttackableUpgrades.Select(s => s.ToXml())));
-            result.Add(new XElement("TradeShipUpgrades", this.TradeShipUpgrades == null ? null : this.TradeShipUpgrades.Select(s => s.ToXml())));
-            result.Add(new XElement("VehicleUpgrades", this.VehicleUpgrades == null ? null : this.VehicleUpgrades.Select(s => s.ToXml())));
-            result.Add(new XElement("AttackerUpgrades", this.AttackerUpgrades == null ? null : this.AttackerUpgrades.Select(s => s.ToXml())));
-            result.Add(new XElement("VisitorHarborUpgrades", this.VisitorHarborUpgrades == null ? null : this.VisitorHarborUpgrades.Select(s => s.ToXml())));
-            result.Add(new XElement("RepairCraneUpgrades", this.RepairCraneUpgrades == null ? null : this.RepairCraneUpgrades.Select(s => s.ToXml())));
-            result.Add(new XElement("IncidentInfectableUpgrades", this.IncidentInfectableUpgrades == null ? null : this.IncidentInfectableUpgrades.Select(s => s.ToXml())));
-            result.Add(new XElement("IncidentInfluencerUpgrades", this.IncidentInfluencerUpgrades == null ? null : this.IncidentInfluencerUpgrades.Select(s => s.ToXml())));
-            result.Add(new XElement("ItemGeneratorUpgrades", this.ItemGeneratorUpgrades == null ? null : this.ItemGeneratorUpgrades.Select(s => s.ToXml())));
+            result.Add(new XElement("FactoryUpgrades", this.FactoryUpgrades?.Select(s => s.ToXml())));
+            result.Add(new XElement("BuildingUpgrades", this.BuildingUpgrades?.Select(s => s.ToXml())));
+            result.Add(new XElement("CultureUpgrades", this.CultureUpgrades?.Select(s => s.ToXml())));
+            result.Add(new XElement("ModuleOwnerUpgrades", this.ModuleOwnerUpgrades?.Select(s => s.ToXml())));
+            result.Add(new XElement("ResidenceUpgrades", this.ResidenceUpgrades?.Select(s => s.ToXml())));
+            result.Add(new XElement("PopulationUpgrades", this.PopulationUpgrades?.Select(s => s.ToXml())));
+            result.Add(new XElement("ElectricUpgrades", this.ElectricUpgrades?.Select(s => s.ToXml())));
+            result.Add(new XElement("ExpeditionAttributes", this.ExpeditionAttributes?.Select(s => s.ToXml())));
+            result.Add(new XElement("AttackableUpgrades", this.AttackableUpgrades?.Select(s => s.ToXml())));
+            result.Add(new XElement("TradeShipUpgrades", this.TradeShipUpgrades?.Select(s => s.ToXml())));
+            result.Add(new XElement("VehicleUpgrades", this.VehicleUpgrades?.Select(s => s.ToXml())));
+            result.Add(new XElement("AttackerUpgrades", this.AttackerUpgrades?.Select(s => s.ToXml())));
+            result.Add(new XElement("VisitorHarborUpgrades", this.VisitorHarborUpgrades?.Select(s => s.ToXml())));
+            result.Add(new XElement("RepairCraneUpgrades", this.RepairCraneUpgrades?.Select(s => s.ToXml())));
+            result.Add(new XElement("IncidentInfectableUpgrades", this.IncidentInfectableUpgrades?.Select(s => s.ToXml())));
+            result.Add(new XElement("IncidentInfluencerUpgrades", this.IncidentInfluencerUpgrades?.Select(s => s.ToXml())));
+            result.Add(new XElement("ItemGeneratorUpgrades", this.ItemGeneratorUpgrades?.Select(s => s.ToXml())));
             //
             result.Add(new XElement("TradePrice", this.TradePrice));
             //
@@ -224,11 +221,12 @@ namespace RDA.Templates {
             //
             result.Add(new XElement("Sources", this.Sources?.Select(s => s.ToXml())));
             //
-            result.Add(new XElement("MonumentEvents", this.MonumentEvents == null ? null : this.MonumentEvents.Select(s => new XElement("Event", s))));
-            result.Add(new XElement("MonumentThresholds", this.MonumentThresholds == null ? null : this.MonumentThresholds.Select(s => new XElement("Threshold", s))));
-            result.Add(new XElement("MonumentRewards", this.MonumentRewards == null ? null : this.MonumentRewards.Select(s => new XElement("Reward", s))));
+            result.Add(new XElement("MonumentEvents", this.MonumentEvents?.Select(s => new XElement("Event", s))));
+            result.Add(new XElement("MonumentThresholds", this.MonumentThresholds?.Select(s => new XElement("Threshold", s))));
+            result.Add(new XElement("MonumentRewards", this.MonumentRewards?.Select(s => new XElement("Reward", s))));
             return result;
         }
+
         public override String ToString() {
             return $"{this.ID} - {this.Name}";
         }
@@ -242,10 +240,11 @@ namespace RDA.Templates {
             this.Text = new Description(element.Element("GUID").Value);
             this.Info = element.Element("InfoDescription") == null ? null : new Description(element.Element("InfoDescription").Value);
         }
+
         private void ProcessElement_Item(XElement element) {
             this.Rarity = element.Element("Rarity") == null ? new Description("118002") : new Description(Helper.GetDescriptionID(element.Element("Rarity").Value));
             this.ItemType = element.Element("ItemType")?.Value ?? "Common";
-            this.Allocation = element.Element("Allocation") == null ? null : new Allocation(element.Parent.Parent.Element("Template").Value, element.Element("Allocation")?.Value);
+            this.Allocation = new Allocation(element.Parent.Parent.Element("Template").Value, element.Element("Allocation")?.Value);
             this.TradePrice = element.Element("TradePrice") == null ? null : (Int32.Parse(element.Element("TradePrice").Value) / 4).ToString();
             if (element.Element("ItemSet") != null) {
                 this.ItemSets = new List<Upgrade>();
@@ -258,6 +257,7 @@ namespace RDA.Templates {
             if (this.ItemType != "Specialist" && this.ItemType != "Common")
                 throw new NotImplementedException();
         }
+
         private void ProcessElement_ItemEffect(XElement element) {
             if (element.HasElements && element.Element("EffectTargets") == null)
                 throw new NotImplementedException();
@@ -268,6 +268,7 @@ namespace RDA.Templates {
                 }
             }
         }
+
         private void ProcessElement_FactoryUpgrade(XElement element) {
             if (element.HasElements) {
                 this.FactoryUpgrades = new List<Upgrade>();
@@ -276,6 +277,7 @@ namespace RDA.Templates {
                 }
             }
         }
+
         private void ProcessElement_BuildingUpgrade(XElement element) {
             if (element.HasElements) {
                 this.BuildingUpgrades = new List<Upgrade>();
@@ -293,6 +295,7 @@ namespace RDA.Templates {
                 }
             }
         }
+
         private void ProcessElement_CultureUpgrade(XElement element) {
             if (element.HasElements) {
                 this.CultureUpgrades = new List<Upgrade>();
@@ -307,6 +310,7 @@ namespace RDA.Templates {
                 }
             }
         }
+
         private void ProcessElement_ModuleOwnerUpgrade(XElement element) {
             if (element.HasElements) {
                 this.ModuleOwnerUpgrades = new List<Upgrade>();
@@ -315,6 +319,7 @@ namespace RDA.Templates {
                 }
             }
         }
+
         private void ProcessElement_ResidenceUpgrade(XElement element) {
             if (element.HasElements) {
                 this.ResidenceUpgrades = new List<Upgrade>();
@@ -326,6 +331,7 @@ namespace RDA.Templates {
                 }
             }
         }
+
         private void ProcessElement_PopulationUpgrade(XElement element) {
             if (element.HasElements) {
                 this.PopulationUpgrades = new List<Upgrade>();
@@ -356,6 +362,7 @@ namespace RDA.Templates {
                 }
             }
         }
+
         private void ProcessElement_ElectricUpgrade(XElement element) {
             if (element.HasElements) {
                 this.ElectricUpgrades = new List<Upgrade>();
@@ -364,6 +371,7 @@ namespace RDA.Templates {
                 }
             }
         }
+
         private void ProcessElement_ExpeditionAttribute(XElement element) {
             if (element.HasElements) {
                 var attributes = element.XPathSelectElements("ExpeditionAttributes/Item").Where(w => w.HasElements).ToArray();
@@ -383,6 +391,7 @@ namespace RDA.Templates {
                 }
             }
         }
+
         private void ProcessElement_VisitorHarborUpgrade(XElement element) {
             if (element.HasElements) {
                 this.VisitorHarborUpgrades = new List<Upgrade>();
@@ -391,11 +400,13 @@ namespace RDA.Templates {
                 }
             }
         }
+
         private void ProcessElement_PassiveTradeGoodGenUpgrades(XElement element) {
             if (element.HasElements) {
                 // TODO: this needs to be implemented
             }
         }
+
         private void ProcessElement_IncidentInfectableUpgrades(XElement element) {
             if (element.HasElements) {
                 this.IncidentInfectableUpgrades = new List<Upgrade>();
@@ -409,11 +420,13 @@ namespace RDA.Templates {
                 }
             }
         }
+
         private void ProcessElement_IncidentInfluencerUpgrades(XElement element) {
             if (element.HasElements) {
                 // TODO: this needs to be implemented
             }
         }
+
         private void ProcessElement_AttackerUpgrade(XElement element) {
             if (element.HasElements) {
                 this.AttackerUpgrades = new List<Upgrade>();
@@ -437,11 +450,13 @@ namespace RDA.Templates {
                 }
             }
         }
+
         private void ProcessElement_ShipyardUpgrade(XElement element) {
             if (element.HasElements) {
                 // TODO: this needs to be implemented
             }
         }
+
         private void ProcessElement_AttackableUpgrade(XElement element) {
             if (element.HasElements) {
                 this.AttackableUpgrades = new List<Upgrade>();
@@ -465,11 +480,13 @@ namespace RDA.Templates {
                 }
             }
         }
+
         private void ProcessElement_ProjectileUpgrade(XElement element) {
             if (element.HasElements) {
                 throw new NotImplementedException();
             }
         }
+
         private void ProcessElement_VehicleUpgrade(XElement element) {
             if (element.HasElements) {
                 this.VehicleUpgrades = new List<Upgrade>();
@@ -481,6 +498,7 @@ namespace RDA.Templates {
                 }
             }
         }
+
         private void ProcessElement_RepairCraneUpgrade(XElement element) {
             if (element.HasElements) {
                 this.RepairCraneUpgrades = new List<Upgrade>();
@@ -492,11 +510,13 @@ namespace RDA.Templates {
                 }
             }
         }
+
         private void ProcessElement_KontorUpgrade(XElement element) {
             if (element.HasElements) {
                 // TODO: this needs to be implemented
             }
         }
+
         private void ProcessElement_TradeShipUpgrade(XElement element) {
             if (element.HasElements) {
                 this.TradeShipUpgrades = new List<Upgrade>();
@@ -505,31 +525,36 @@ namespace RDA.Templates {
                 }
             }
         }
+
         private void ProcessElement_ItemActions(XElement element) {
             if (element.HasElements) {
                 // TODO: this needs to be implemented
             }
         }
+
         private void ProcessElement_ItemGeneratorUpgrades(XElement element) {
             if (element.HasElements) {
                 // TODO: this needs to be implemented
             }
         }
+
         private void ProcessElement_SpecialActions(XElement element) {
             if (element.HasElements) {
                 // TODO: this needs to be implemented
             }
         }
+
         private void ProcessElement_MonumentEventCategory(XElement element) {
             this.MonumentEvents = element.XPathSelectElements("Events/Item/Event").Select(s => s.Value).ToList();
         }
+
         private void ProcessElement_MonumentEvent(XElement element) {
             this.MonumentThresholds = element.XPathSelectElements("RewardThresholds/Item/Reward").Select(s => s.Value).ToList();
         }
+
         private void ProcessElement_MonumentEventReward(XElement element) {
             this.MonumentRewards = element.XPathSelectElements("RewardAssets/Item/Reward").Select(s => s.Value).ToList();
         }
-
 
         private List<XElement> FindSources(String id, List<String> previousIDs) {
             previousIDs.Add(id);
@@ -538,9 +563,7 @@ namespace RDA.Templates {
             if (links.Length > 0) {
                 for (var i = 0; i < links.Length; i++) {
                     var element = links[i];
-                    while (true) {
-                        if (element.Name.LocalName == "Asset" && element.HasElements)
-                            break;
+                    while (element.Name.LocalName != "Asset" || !element.HasElements) {
                         element = element.Parent;
                     }
                     if (element.Element("Template") == null)
@@ -597,5 +620,4 @@ namespace RDA.Templates {
         #endregion
 
     }
-
 }

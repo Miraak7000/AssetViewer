@@ -12,18 +12,16 @@ using RDA.Templates;
 // ReSharper disable IdentifierTypo
 // ReSharper disable CoVariantArrayConversion
 namespace RDA {
-
   /// <summary>
   ///   World Fair
   /// </summary>
   public static class Monument {
-
     #region Public Methods
     public static void Create() {
       Monument.MonumentEventCategory();
       Monument.MonumentEvent();
       Monument.MonumentThreshold();
-      Monument.MonumentEventReward();
+      //Monument.MonumentEventReward();
     }
     #endregion
 
@@ -42,6 +40,7 @@ namespace RDA {
       document.Save($@"{Program.PathRoot}\Modified\Assets_MonumentCategory.xml");
       document.Save($@"{Program.PathViewer}\Resources\Assets\MonumentCategory.xml");
     }
+
     private static void MonumentEvent() {
       var result = new List<Asset>();
       var monumentEvents = Program.Original.Root.XPathSelectElements("//Asset[Template='MonumentEvent']").ToArray();
@@ -56,6 +55,7 @@ namespace RDA {
       document.Save($@"{Program.PathRoot}\Modified\Assets_MonumentEvent.xml");
       document.Save($@"{Program.PathViewer}\Resources\Assets\MonumentEvent.xml");
     }
+
     private static void MonumentThreshold() {
       var result = new List<Asset>();
       var monumentEvents = Program.Original.Root.XPathSelectElements("//Asset[Template='MonumentEventReward']").ToArray();
@@ -70,6 +70,7 @@ namespace RDA {
       document.Save($@"{Program.PathRoot}\Modified\Assets_MonumentThreshold.xml");
       document.Save($@"{Program.PathViewer}\Resources\Assets\MonumentThreshold.xml");
     }
+
     private static void MonumentEventReward() {
       var result = new List<Asset>();
       var monumentRewards = Program.Original.Root.XPathSelectElements("//Asset[Template='MonumentEventReward']").ToArray();
@@ -121,5 +122,4 @@ namespace RDA {
     #endregion
 
   }
-
 }

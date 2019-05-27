@@ -18,9 +18,9 @@ namespace AssetViewer.Veras {
 
         public override object ProvideValue(IServiceProvider serviceProvider) {
             if (IsSingleItem) {
-                return ItemProvider.GetItemsById(Id).FirstOrDefault();
+                return Id.GetItemsById().FirstOrDefault();
             }
-            return ItemProvider.GetItemsById(Id);
+            return Id.GetItemsById();
         }
 
         #endregion Methods

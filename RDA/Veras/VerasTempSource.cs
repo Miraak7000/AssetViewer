@@ -7,9 +7,7 @@ using System.Xml.Linq;
 using System.Xml.XPath;
 
 namespace RDA.Data {
-
     public class VerasTempSource : TempSource {
-
         #region Constructors
 
         public VerasTempSource(RootWithDetails element) : base(element.Root) {
@@ -35,44 +33,28 @@ namespace RDA.Data {
                         if (item.Element("Template").Value == "ExpeditionDecision") {
                             path = item.XPathSelectElement("Values/Standard/Name").Value.Split(' ').Last();
                         }
-                        //if (VerasExtensions.Events.ContainsKey(item.XPathSelectElement("Values/Standard/Name").Value)) {
-                        //    var id = VerasExtensions.Events[item.XPathSelectElement("Values/Standard/Name").Value];
-                        //    if (id == "Expedition") {
-                        //        var desc = new Description("Expedition Abgeschossen", " Successfully Expedition");
-                        //        this.Details.Add(desc);
-                        //    }
-                        //    else {
-                        //        var desc = new Description(VerasExtensions.Events[item.XPathSelectElement("Values/Standard/Name").Value]);
-                        //        desc.DE = $"{desc.DE} {path}";
-                        //        desc.EN = $"{desc.EN} {path}";
-                        //        this.Details.Add(desc);
-                        //    }
-                        //}
-                        //else {
-                            var parent = VerasExtensions.VerasFindParent(item.XPathSelectElement("Values/Standard/GUID").Value, new[] { "ExpeditionEvent", "Expedition" });
-                            if (parent?.Element("Template") != null) {
-                                switch (parent.Element("Template").Value) {
-                                    case "ExpeditionEvent":
-                                        //VerasExtensions.Events.Add(item.XPathSelectElement("Values/Standard/Name").Value, parent.XPathSelectElement("Values/Standard/GUID").Value);
-                                        var desc = new Description(parent.XPathSelectElement("Values/Standard/GUID").Value);
-                                        desc.DE = $"{desc.DE} {path}";
-                                        desc.EN = $"{desc.EN} {path}";
-                                        this.Details.Add(desc);
-                                        break;
+                        var parent = item.XPathSelectElement("Values/Standard/GUID").Value.VerasFindParent(new[] { "ExpeditionEvent", "Expedition" });
+                        if (parent?.Element("Template") != null) {
+                            switch (parent.Element("Template").Value) {
+                                case "ExpeditionEvent":
+                                    var desc = new Description(parent.XPathSelectElement("Values/Standard/GUID").Value);
+                                    desc.DE = $"{desc.DE} {path}";
+                                    desc.EN = $"{desc.EN} {path}";
+                                    this.Details.Add(desc);
+                                    break;
 
-                                    case "Expedition":
-                                        //VerasExtensions.Events.Add(item.XPathSelectElement("Values/Standard/Name").Value, "Expedition");
-                                        desc = new Description("Expedition Abgeschossen", " Successfully Expedition");
-                                        this.Details.Add(desc);
-                                        break;
+                                case "Expedition":
+                                    desc = new Description("Expedition Abgeschossen", " Successfully Expedition");
+                                    this.Details.Add(desc);
+                                    break;
 
-                                    default:
-                                        break;
-                                }
+                                default:
+                                    break;
                             }
-                            else {
-                                Console.WriteLine("");
-                            }
+                        }
+                        else {
+                            Console.WriteLine("");
+                        }
                     }
                     break;
 
@@ -90,7 +72,11 @@ namespace RDA.Data {
                         this.Details.Add(desc);
                     }
                     break;
-
+                case "ShipDrop":
+                    this.Text = new Description(element.Root.XPathSelectElement("Values/Standard/GUID").Value);
+                    this.Text.EN = $"Ship Drop - {this.Text.EN}";
+                    this.Text.DE = $"Schiff Drop - {this.Text.DE}";
+                    break;
                 default:
                     throw new NotImplementedException();
             }

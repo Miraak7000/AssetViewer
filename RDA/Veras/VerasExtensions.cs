@@ -4,6 +4,7 @@ using RDA.Templates;
 using RDA.Veras;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -12,13 +13,8 @@ using System.Xml.Serialization;
 using System.Xml.XPath;
 
 namespace RDA.Library {
-
     internal static class VerasExtensions {
-
         #region Constructors
-
-        static VerasExtensions() {
-        }
 
         #endregion Constructors
 
@@ -32,7 +28,6 @@ namespace RDA.Library {
 
         #region Methods
         public static void ProcessingRewardPools() {
-
             var RewardItemPoolsAssets = Program.Original
                .XPathSelectElements($"//Asset[Template='RewardPool']")
                .Concat(Program.Original.XPathSelectElements($"//Asset[Template='RewardItemPool']"))
@@ -53,38 +48,14 @@ namespace RDA.Library {
                             xItem.Add(new XAttribute("ID", itemId));
                             xItem.Add(new XAttribute("Weight", item.XPathSelectElement("Weight")?.Value ?? "100"));
                         }
-
                     }
                 }
                 else {
-
                 }
             }
             var document = new XDocument(xRewardPools);
             document.Save($@"{Program.PathRoot}\Modified\Assets_RewardPools.xml");
             document.Save($@"{Program.PathViewer}\Resources\Assets\RewardPools.xml");
-        }
-        public static void ProcessingActiveItem() {
-            ProcessingAssets("ActiveItem");
-        }
-        public static void ProcessingItemSpecialActionVisualEffect() {
-            ProcessingAssets("ItemSpecialActionVisualEffect");
-        }
-        public static void ProcessingProducts() {
-            ProcessingAssets("Product");
-        }
-        public static void ProcessingAssets(string template) {
-            var result = new List<Asset>();
-            var products = Program.Original
-               .XPathSelectElements($"//Asset[Template='{template}']").ToList();
-            foreach (var item in products) {
-                result.Add(new Asset(item, false));
-            }
-            var document = new XDocument();
-            document.Add(new XElement(template));
-            document.Root.Add(result.Select(s => s.ToXml()));
-            document.Save($@"{Program.PathRoot}\Modified\Assets_{template}.xml");
-            document.Save($@"{Program.PathViewer}\Resources\Assets\{template}.xml");
         }
         public static void ProcessingExpeditionEvents() {
             var decicions = Program.Original
@@ -110,7 +81,7 @@ namespace RDA.Library {
                         result.Add(item.Root, new List<HashSet<XElement>> { item.Details });
                     }
                 }
-            };
+            }
             var document = new XDocument();
             document.Add(new XElement(template));
             document.Root.Add(result.Select(s => s.ToXml()));
@@ -118,9 +89,6 @@ namespace RDA.Library {
             document.Save($@"{Program.PathViewer}\Resources\Assets\{template}.xml");
         }
 
-        public static void ProcessingItemSpecialAction() {
-            ProcessingAssets("ItemSpecialAction");
-        }
         //ExpeditionEvents
         public static XElement ToXml(this KeyValuePair<XElement, List<HashSet<XElement>>> events) {
             var xRoot = new XElement("ExpeditionEvent");
@@ -156,7 +124,7 @@ namespace RDA.Library {
                         if (option.XPathSelectElement("Values/ExpeditionOption/OptionAttribute") != null) {
                             xOption.Add(new XAttribute("OptionAttribute", option.XPathSelectElement("Values/ExpeditionOption/OptionAttribute").Value));
                         }
-                        if (option.XPathSelectElement("Values/ExpeditionOption/Requirements") != null && option.XPathSelectElement("Values/ExpeditionOption/Requirements").HasElements) {
+                        if (option.XPathSelectElement("Values/ExpeditionOption/Requirements")?.HasElements == true) {
                             var xRequirements = new XElement("Requirements");
                             xOption.Add(xRequirements);
                             foreach (var requirement in option.XPathSelectElements("Values/ExpeditionOption/Requirements/Item")) {
@@ -181,6 +149,7 @@ namespace RDA.Library {
             }
             return xRoot;
         }
+
         private static RewardWithDetailsList VerasFindExpeditionEvents(string id, Details mainDetails = default, RewardWithDetailsList inResult = default) {
             mainDetails = (mainDetails == default) ? new Details() : mainDetails;
             mainDetails.PreviousIDs.Add(id);
@@ -236,7 +205,6 @@ namespace RDA.Library {
                             // ignore
                             break;
 
-
                         case "ExpeditionDecision":
                         case "ExpeditionOption":
                         case "ExpeditionTrade":
@@ -263,7 +231,7 @@ namespace RDA.Library {
             return mainResult;
         }
 
-        public static void ProcessingItems(String template) {
+        public static void ProcessingItems(String template, bool findSources = true) {
             var result = new List<Asset>();
             var assets = Program.Original.XPathSelectElements($"//Asset[Template='{template}']").ToList();
             //var assets = Program.Original.XPathSelectElements($"//Asset[Template='{template}' and Values/Standard/GUID=191507]").ToList();
@@ -273,9 +241,9 @@ namespace RDA.Library {
                 count++;
                 //if (asset.XPathSelectElement("Values/Item/HasAction")?.Value == "1") return;
                 Console.WriteLine(asset.XPathSelectElement("Values/Standard/GUID").Value + " - " + count);
-                var item = new Asset(asset, true);
+                var item = new Asset(asset, findSources);
                 result.Add(item);
-            };
+            }
             var document = new XDocument();
             document.Add(new XElement(template));
             document.Root.Add(result.Select(s => s.ToXml()));
@@ -295,15 +263,25 @@ namespace RDA.Library {
                     while (element.Name.LocalName != "Asset" || !element.HasElements) {
                         element = element.Parent;
                     }
+                    var Details = new Details(mainDetails);
+                    var result = mainResult.Copy();
                     if (element.Element("Template") == null) {
-                        continue;
+                        if (element.XPathSelectElement("Values/Profile/ShipDropRewardPool")?.Value == id) {
+                            result.AddSourceAsset(element.GetProxy("ShipDrop"), new HashSet<XElement> { element.GetProxy("ShipDrop") });
+                            resultstoadd.Add(result);
+                            continue;
+                        }
+                        else {
+                            continue;
+                        }
+
                     }
+
                     var key = element.XPathSelectElement("Values/Standard/GUID").Value;
                     if (mainDetails.PreviousIDs.Contains(key)) {
                         continue;
                     }
-                    var Details = new Details(mainDetails);
-                    var result = mainResult.Copy();
+
                     switch (element.Element("Template").Value) {
                         case "AssetPool":
                         case "TutorialQuest":
@@ -313,6 +291,7 @@ namespace RDA.Library {
                         case "HarborOfficeItem":
                         case "HarbourOfficeBuff":
                         case "MonumentEvent":
+                        case "MainQuest":
                             // ignore
                             break;
 
@@ -329,6 +308,13 @@ namespace RDA.Library {
 
                         case "Profile_3rdParty":
                         case "Profile_3rdParty_Pirate":
+                            if (!element.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")
+                                && element.XPathSelectElement("Standard/Profile/ShipDropRewardPool")?.Value == id) {
+                                result.AddSourceAsset(element.GetProxy("ShipDrop"), new HashSet<XElement> { element.GetProxy("ShipDrop") });
+                                break;
+                            }
+
+                            goto case "A7_QuestEscortObject";
                         case "A7_QuestEscortObject":
                         case "A7_QuestDeliveryObject":
                         case "A7_QuestDestroyObjects":
@@ -352,7 +338,7 @@ namespace RDA.Library {
                             var check = false;
                             var name = element.XPathSelectElement("Values/Standard/Name")?.Value;
                             var reward = element.XPathSelectElement("Values/Reward/RewardAssets");
-                            check = reward?.HasElements == true ? reward.Elements("Item").Any(l => l.Element("Reward").Value == id) : false;
+                            check = reward?.HasElements == true && reward.Elements("Item").Any(l => l.Element("Reward").Value == id);
                             if (check || element.XPathSelectElements($"//*[text()={id} and not(self::GUID) and (self::InsertEvent)]").Any()) {
                                 Details.Add(element);
                             }
@@ -381,7 +367,9 @@ namespace RDA.Library {
                             break;
 
                         default:
-                            throw new NotImplementedException(element.Element("Template").Value);
+                            Debug.WriteLine(element.Element("Template").Value);
+                            break;
+                            //throw new NotImplementedException(element.Element("Template").Value);
                     }
                     resultstoadd.Add(result);
                 }
@@ -393,7 +381,15 @@ namespace RDA.Library {
             return mainResult;
         }
 
-
+        private static XElement GetProxy(this XElement element, string proxyName) {
+            var xRoot = new XElement("Proxy");
+            var xTemplate = new XElement("Template");
+            xTemplate.Value = proxyName;
+            xRoot.Add(xTemplate);
+            xRoot.Add(element);
+            xRoot.Add(new XElement("Values", element.XPathSelectElement("Values/Standard")));
+            return xRoot;
+        }
 
         public static XElement VerasFindParent(this String id, string[] ParentTypes, List<String> previousIDs = null) {
             if (Events.ContainsKey(id)) {
@@ -431,32 +427,6 @@ namespace RDA.Library {
             }
             return result;
         }
-
-        //private static void LoadSources() {
-        //    using (var file = File.OpenRead(Program.PathRoot + @"\Modified\VerasSources.xml")) {
-        //        using (var textReader = new StreamReader(file)) {
-        //            using (var jReader = new JsonTextReader(textReader)) {
-        //                var serializer = JsonSerializer.Create(new JsonSerializerSettings { });
-        //                Sources = serializer.Deserialize<Dictionary<string, RewardWithDetailsList>>(jReader);
-        //            }
-        //        }
-        //    }
-        //}
-
-        //private static void SaveSources() {
-        //    try {
-        //        using (TextWriter file = File.CreateText(Program.PathRoot + @"\Modified\VerasSources.xml")) {
-        //            using (var jWriter = new JsonTextWriter(file)) {
-        //                jWriter.Formatting = Formatting.Indented;
-        //                var serializer = JsonSerializer.Create(new JsonSerializerSettings { });
-        //                serializer.Serialize(jWriter, Sources);
-        //            }
-        //        }
-        //    }
-        //    catch (Exception ex) {
-        //        Console.WriteLine(ex);
-        //    }
-        //}
 
         #endregion Methods
     }

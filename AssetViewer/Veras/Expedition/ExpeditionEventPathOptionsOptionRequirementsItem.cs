@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Serialization;
 using System.ComponentModel;
+using System.Xml.Serialization;
 
 namespace AssetViewer.Veras.Expedition {
 
@@ -13,9 +9,11 @@ namespace AssetViewer.Veras.Expedition {
     [XmlType(AnonymousType = true)]
     public partial class ExpeditionEventPathOptionsOptionRequirementsItem {
 
+        #region Properties
+
         [XmlAttribute]
         public string NeededAttribute { get; set; }
+
+        #endregion Properties
     }
-
-
 }

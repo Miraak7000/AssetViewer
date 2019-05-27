@@ -6,7 +6,6 @@ using System.Xml.Serialization;
 
 namespace AssetViewer.Veras {
 
-    // HINWEIS: Für den generierten Code ist möglicherweise mindestens .NET Framework 4.5 oder .NET Core/Standard 2.0 erforderlich.
     [Serializable]
     [DesignerCategory("code")]
     [XmlType(AnonymousType = true)]

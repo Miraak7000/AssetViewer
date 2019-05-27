@@ -1,5 +1,4 @@
 ﻿using AssetViewer.Templates;
-using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -14,7 +13,29 @@ namespace AssetViewer.Veras {
         #region Constructors
 
         static ItemProvider() {
-            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.GuildhouseItem.xml")) {
+            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.RewardPools.xml"))
+            using (var reader = new StreamReader(stream)) {
+                var document = XDocument.Parse(reader.ReadToEnd()).Root;
+                foreach (var item in document.Elements().Select(s => s.FromXElement<Pool>())) {
+                    Pools.Add(item.ID, item);
+                }
+            }
+
+            var arr = new[] {
+                "AssetViewer.Resources.Assets.GuildhouseItem.xml",
+                "AssetViewer.Resources.Assets.HarborOfficeItem.xml",
+                "AssetViewer.Resources.Assets.TownhallItem.xml",
+                "AssetViewer.Resources.Assets.VehicleItem.xml",
+                "AssetViewer.Resources.Assets.ShipSpecialist.xml",
+                "AssetViewer.Resources.Assets.CultureItem.xml",
+                "AssetViewer.Resources.Assets.Product.xml",
+                "AssetViewer.Resources.Assets.ItemSpecialAction.xml",
+                "AssetViewer.Resources.Assets.ActiveItem.xml",
+                "AssetViewer.Resources.Assets.ItemSpecialActionVisualEffect.xml",
+                "AssetViewer.Resources.Assets.BuildPermitBuilding.xml"
+            };
+            foreach (var str in arr) {
+                using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(str))
                 using (var reader = new StreamReader(stream)) {
                     var document = XDocument.Parse(reader.ReadToEnd()).Root;
                     foreach (var item in document.Elements().Select(s => new TemplateAsset(s))) {
@@ -22,87 +43,6 @@ namespace AssetViewer.Veras {
                     }
                 }
             }
-            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.HarborOfficeItem.xml")) {
-                using (var reader = new StreamReader(stream)) {
-                    var document = XDocument.Parse(reader.ReadToEnd()).Root;
-                    foreach (var item in document.Elements().Select(s => new TemplateAsset(s))) {
-                        Items.Add(item.ID, item);
-                    }
-                }
-            }
-            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.TownhallItem.xml")) {
-                using (var reader = new StreamReader(stream)) {
-                    var document = XDocument.Parse(reader.ReadToEnd()).Root;
-                    foreach (var item in document.Elements().Select(s => new TemplateAsset(s))) {
-                        Items.Add(item.ID, item);
-                    }
-                }
-            }
-            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.VehicleItem.xml")) {
-                using (var reader = new StreamReader(stream)) {
-                    var document = XDocument.Parse(reader.ReadToEnd()).Root;
-                    foreach (var item in document.Elements().Select(s => new TemplateAsset(s))) {
-                        Items.Add(item.ID, item);
-                    }
-                }
-            }
-            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.ShipSpecialist.xml")) {
-                using (var reader = new StreamReader(stream)) {
-                    var document = XDocument.Parse(reader.ReadToEnd()).Root;
-                    foreach (var item in document.Elements().Select(s => new TemplateAsset(s))) {
-                        Items.Add(item.ID, item);
-                    }
-                }
-            }
-            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.CultureItem.xml")) {
-                using (var reader = new StreamReader(stream)) {
-                    var document = XDocument.Parse(reader.ReadToEnd()).Root;
-                    foreach (var item in document.Elements().Select(s => new TemplateAsset(s))) {
-                        Items.Add(item.ID, item);
-                    }
-                }
-            }
-            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.Product.xml")) {
-                using (var reader = new StreamReader(stream)) {
-                    var document = XDocument.Parse(reader.ReadToEnd()).Root;
-                    foreach (var item in document.Elements().Select(s => new TemplateAsset(s))) {
-                        Products.Add(item.ID, item);
-                    }
-                }
-            }
-            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.RewardPools.xml")) {
-                using (var reader = new StreamReader(stream)) {
-                    var document = XDocument.Parse(reader.ReadToEnd()).Root;
-                    foreach (var item in document.Elements().Select(s => s.FromXElement<Pool>())) {
-                        Pools.Add(item.ID, item);
-                    }
-                }
-            }
-            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.ItemSpecialAction.xml")) {
-                using (var reader = new StreamReader(stream)) {
-                    var document = XDocument.Parse(reader.ReadToEnd()).Root;
-                    foreach (var item in document.Elements().Select(s => new TemplateAsset(s))) {
-                        ItemsSpecialActions.Add(item.ID, item);
-                    }
-                }
-            }
-            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.ActiveItem.xml")) {
-                using (var reader = new StreamReader(stream)) {
-                    var document = XDocument.Parse(reader.ReadToEnd()).Root;
-                    foreach (var item in document.Elements().Select(s => new TemplateAsset(s))) {
-                        ActiveItems.Add(item.ID, item);
-                    }
-                }
-            }
-            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.ItemSpecialActionVisualEffect.xml")) {
-                using (var reader = new StreamReader(stream)) {
-                    var document = XDocument.Parse(reader.ReadToEnd()).Root;
-                    foreach (var item in document.Elements().Select(s => new TemplateAsset(s))) {
-                        ItemSpecialActionVisualEffects.Add(item.ID, item);
-                    }
-                }
-            }
-            
         }
 
         #endregion Constructors
@@ -120,31 +60,27 @@ namespace AssetViewer.Veras {
 
         #region Methods
 
-        public static IEnumerable<TemplateAsset> GetItemsById(string id) {
-            foreach (var item in SearchItems(id)) {
+        public static IEnumerable<TemplateAsset> GetItemsById(this IEnumerable<string> ids) {
+            return ids.SelectMany(l => ItemProvider.GetItemsById(l)).Distinct() ?? Enumerable.Empty<TemplateAsset>();
+        }
+
+        public static IEnumerable<TemplateAsset> GetItemsById(this string id) {
+            foreach (var item in SearchItems(id).Distinct()) {
                 yield return item;
             }
 
             IEnumerable<TemplateAsset> SearchItems(string searchid) {
-                if (Items.ContainsKey(searchid)) {
+                if (searchid == null) {
+                }
+                else if (Items.ContainsKey(searchid)) {
                     yield return Items[searchid];
-                }
-                else if (Products.ContainsKey(searchid)) {
-                    yield return Products[searchid];
-                }
-                else if (ItemsSpecialActions.ContainsKey(searchid)) {
-                    yield return ItemsSpecialActions[searchid];
-                }
-                else if (ActiveItems.ContainsKey(searchid)) {
-                    yield return ActiveItems[searchid];
-                }
-                else if (ItemSpecialActionVisualEffects.ContainsKey(searchid)) {
-                    yield return ItemSpecialActionVisualEffects[searchid];
                 }
                 else if (Pools.ContainsKey(searchid)) {
                     foreach (var item in Pools[searchid].Items) {
-                        foreach (var item2 in SearchItems(item.ID)) {
-                            yield return item2;
+                        if (item.Weight > 0) {
+                            foreach (var item2 in SearchItems(item.ID)) {
+                                yield return item2;
+                            }
                         }
                     }
                 }

@@ -2,9 +2,7 @@
 using System.Xml.Linq;
 
 namespace RDA.Data {
-
     public class Allocation {
-
         #region Properties
         public String ID { get; set; }
         public Icon Icon { get; set; }
@@ -13,9 +11,7 @@ namespace RDA.Data {
 
         #region Constructor
         public Allocation(String template, String value) {
-            if (value != null) {
                 switch (template) {
-
                     case "GuildhouseItem":
                         this.Template_GuildhouseItem(value);
                         break;
@@ -42,11 +38,7 @@ namespace RDA.Data {
                     default:
                         throw new NotImplementedException(template);
                 }
-            }
         }
-
-       
-
 
         #endregion
 
@@ -87,9 +79,10 @@ namespace RDA.Data {
                     this.Text = new Description(Helper.GetDescriptionID("GuildHouse"));
                     break;
                 default:
-                    throw new NotImplementedException();
+                    break;
             }
         }
+
         private void Template_GuildhouseItem(String value) {
             switch (value) {
                 case "HarborOffice":
@@ -117,6 +110,7 @@ namespace RDA.Data {
                     break;
             }
         }
+
         private void Template_TownhallItem(String value) {
             switch (value) {
                 default:
@@ -128,6 +122,7 @@ namespace RDA.Data {
                     break;
             }
         }
+
         private void Template_HarborOfficeItem(String value) {
             switch (value) {
                 default:
@@ -139,6 +134,7 @@ namespace RDA.Data {
                     break;
             }
         }
+
         private void Template_VehicleItem(String value) {
             switch (value) {
                 case "Ship":
@@ -172,6 +168,7 @@ namespace RDA.Data {
                     break;
             }
         }
+
         private void Template_ShipSpecialist(String value) {
             switch (value) {
                 case "Warship":
@@ -188,6 +185,7 @@ namespace RDA.Data {
                     break;
             }
         }
+
         private void Template_CultureItem(String value) {
             switch (value) {
                 case "Museum":
@@ -204,6 +202,7 @@ namespace RDA.Data {
                     break;
             }
         }
+
         private void Template_ActiveItem(String value) {
             switch (value) {
                 case "SteamShip":
@@ -218,5 +217,4 @@ namespace RDA.Data {
         #endregion
 
     }
-
 }

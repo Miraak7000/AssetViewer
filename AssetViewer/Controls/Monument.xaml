@@ -9,253 +9,92 @@
              d:DesignHeight="450" d:DesignWidth="800" SnapsToDevicePixels="True"
              FontSize="13" Loaded="Monument_OnLoaded">
 
-  <UserControl.Resources>
-    <BooleanToVisibilityConverter x:Key="BooleanToVisibility"></BooleanToVisibilityConverter>
-    <converter:DescriptionConverter x:Key="DescriptionConverter"></converter:DescriptionConverter>
-    <converter:GlobalDescriptionConverter x:Key="Description"></converter:GlobalDescriptionConverter>
-    <converter:VisibilityConverter x:Key="VisibilityConverter"></converter:VisibilityConverter>
-    <DataTemplate x:Key="SelectableTemplate">
-      <Grid MaxHeight="30">
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="30"></ColumnDefinition>
-          <ColumnDefinition Width="*"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        <Image Grid.Column="0" Source="{Binding Path=Icon.Filename}" HorizontalAlignment="Left"></Image>
-        <TextBlock Grid.Column="1" Text="{Binding Path=Text, Converter={StaticResource DescriptionConverter}}" VerticalAlignment="Center"></TextBlock>
-      </Grid>
-    </DataTemplate>
-     <DataTemplate x:Key="UpgradeTemplate">
-      <Grid SnapsToDevicePixels="True">
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="30"></ColumnDefinition>
-          <ColumnDefinition Width="*"></ColumnDefinition>
-          <ColumnDefinition Width="Auto"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-          <RowDefinition Height="22"></RowDefinition>
-          <RowDefinition Height="Auto"></RowDefinition>
-        </Grid.RowDefinitions>
-        <Image Grid.Column="0" Grid.Row="0" Source="{Binding Path=Icon.Filename}" Height="18" Width="18" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
-        <TextBlock Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" Text="{Binding Path=Text, Converter={StaticResource DescriptionConverter}}"></TextBlock>
-        <TextBlock Grid.Column="2" Grid.Row="0" VerticalAlignment="Center" Text="{Binding Path=Value}"></TextBlock>
-        <ItemsControl Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" ItemsSource="{Binding Path=Additionals}">
-          <ItemsControl.ItemTemplate>
-            <DataTemplate>
-              <Grid>
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibility"></BooleanToVisibilityConverter>
+        <converter:DescriptionConverter x:Key="DescriptionConverter"></converter:DescriptionConverter>
+        <converter:GlobalDescriptionConverter x:Key="Description"></converter:GlobalDescriptionConverter>
+        <converter:VisibilityConverter x:Key="VisibilityConverter"></converter:VisibilityConverter>
+
+        <DataTemplate x:Key="SelectableTemplate">
+            <Grid MaxHeight="30">
                 <Grid.ColumnDefinitions>
-                  <ColumnDefinition Width="30"></ColumnDefinition>
-                  <ColumnDefinition Width="*"></ColumnDefinition>
-                  <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="30"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <Image Grid.Column="0" Source="{Binding Path=Icon.Filename}" Height="18" Width="18" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
-                <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Path=Text, Converter={StaticResource DescriptionConverter}}" Foreground="#FFA49370" TextWrapping="Wrap"></TextBlock>
-                <TextBlock Grid.Column="2" VerticalAlignment="Center" Text="{Binding Path=Value}" Foreground="#FFA49370"></TextBlock>
-              </Grid>
-            </DataTemplate>
-          </ItemsControl.ItemTemplate>
-        </ItemsControl>
-      </Grid>
-    </DataTemplate>
- </UserControl.Resources>
+                <Image Grid.Column="0" Source="{Binding Path=Icon.Filename}" HorizontalAlignment="Left"></Image>
+                <TextBlock Grid.Column="1" Text="{Binding Path=Text, Converter={StaticResource DescriptionConverter}}" VerticalAlignment="Center"></TextBlock>
+            </Grid>
+        </DataTemplate>
+    </UserControl.Resources>
 
-  <Grid Grid.Row="2">
-    <Grid.RowDefinitions>
-      <RowDefinition Height="Auto"></RowDefinition>
-      <RowDefinition Height="10"></RowDefinition>
-      <RowDefinition Height="*"></RowDefinition>
-    </Grid.RowDefinitions>
-    <Border Grid.Row="0" BorderBrush="#FF554628" BorderThickness="1" CornerRadius="5">
-      <Grid Margin="5">
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="225"></ColumnDefinition>
-          <ColumnDefinition Width="5"></ColumnDefinition>
-          <ColumnDefinition Width="300"></ColumnDefinition>
-          <ColumnDefinition Width="5"></ColumnDefinition>
-          <ColumnDefinition Width="225"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
+    <Grid Grid.Row="2">
         <Grid.RowDefinitions>
-          <RowDefinition Height="18"></RowDefinition>
-          <RowDefinition Height="22"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
+        <Border Grid.Row="0" BorderBrush="#FF554628" BorderThickness="1" CornerRadius="5">
+            <Grid Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="225"></ColumnDefinition>
+                    <ColumnDefinition Width="5"></ColumnDefinition>
+                    <ColumnDefinition Width="300"></ColumnDefinition>
+                    <ColumnDefinition Width="5"></ColumnDefinition>
+                    <ColumnDefinition Width="225"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="18"></RowDefinition>
+                    <RowDefinition Height="22"></RowDefinition>
+                </Grid.RowDefinitions>
 
-        <TextBlock Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" Text="{Binding Path=Categories, Converter={StaticResource Description}, ConverterParameter=107}" Margin="0,0,5,0"></TextBlock>
-        <ComboBox x:Name="ComboBoxCategories" Grid.Column="0" Grid.Row="1" Height="22" 
+                <TextBlock Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" Text="{Binding Path=Categories, Converter={StaticResource Description}, ConverterParameter=107}" Margin="0,0,5,0"></TextBlock>
+                <ComboBox x:Name="ComboBoxCategories" Grid.Column="0" Grid.Row="1" Height="22" 
                   ItemsSource="{Binding Path=Categories}" 
                   ItemTemplate="{StaticResource SelectableTemplate}" 
                   SelectionChanged="ComboBoxCategories_OnSelectionChanged"></ComboBox>
 
-        <TextBlock Grid.Column="2" Grid.Row="0" VerticalAlignment="Center" Text="{Binding Path=Events, Converter={StaticResource Description}, ConverterParameter=108}" Margin="0,0,5,0"></TextBlock>
-        <ComboBox x:Name="ComboBoxEvents" Grid.Column="2" Grid.Row="1" Height="22" ItemsSource="{Binding Path=Events}" ItemTemplate="{StaticResource SelectableTemplate}" SelectionChanged="ComboBoxEvents_OnSelectionChanged"></ComboBox>
+                <TextBlock Grid.Column="2" Grid.Row="0" VerticalAlignment="Center" Text="{Binding Path=Events, Converter={StaticResource Description}, ConverterParameter=108}" Margin="0,0,5,0"></TextBlock>
+                <ComboBox x:Name="ComboBoxEvents" Grid.Column="2" Grid.Row="1" Height="22" ItemsSource="{Binding Path=Events}" ItemTemplate="{StaticResource SelectableTemplate}" SelectionChanged="ComboBoxEvents_OnSelectionChanged"></ComboBox>
 
-        <TextBlock Grid.Column="4" Grid.Row="0" VerticalAlignment="Center" Text="{Binding Path=Thresholds, Converter={StaticResource Description}, ConverterParameter=109}" Margin="0,0,5,0"></TextBlock>
-        <ComboBox x:Name="ComboBoxThresholds" Grid.Column="4" Grid.Row="1" Height="22" ItemsSource="{Binding Path=Thresholds}" ItemTemplate="{StaticResource SelectableTemplate}" SelectionChanged="ComboBoxThresholds_OnSelectionChanged"></ComboBox>
+                <TextBlock Grid.Column="4" Grid.Row="0" VerticalAlignment="Center" Text="{Binding Path=Thresholds, Converter={StaticResource Description}, ConverterParameter=109}" Margin="0,0,5,0"></TextBlock>
+                <ComboBox x:Name="ComboBoxThresholds" Grid.Column="4" Grid.Row="1" Height="22" ItemsSource="{Binding Path=Thresholds}" ItemTemplate="{StaticResource SelectableTemplate}" SelectionChanged="ComboBoxThresholds_OnSelectionChanged"></ComboBox>
 
-      </Grid>
-    </Border>
-    <Grid Grid.Row="2">
-      <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="*"></ColumnDefinition>
-        <ColumnDefinition Width="10"></ColumnDefinition>
-        <ColumnDefinition Width="350"></ColumnDefinition>
-      </Grid.ColumnDefinitions>
-      <Grid Grid.Column="0">
-        <Border BorderBrush="#FF554628" BorderThickness="1" CornerRadius="5">
-          <ListBox x:Name="ListBoxItems" Background="Transparent" ItemsSource="{Binding Path=Rewards}" 
+            </Grid>
+        </Border>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="10"></ColumnDefinition>
+                <ColumnDefinition Width="350"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Border BorderBrush="#FF554628" BorderThickness="1" CornerRadius="5">
+                    <ListBox x:Name="ListBoxItems" Background="Transparent" ItemsSource="{Binding Path=Rewards}" 
                    SelectedItem="{Binding Path=SelectedAsset}" SelectionChanged="ListBoxItems_OnSelectionChanged" 
                    BorderBrush="Transparent" HorizontalContentAlignment="Stretch">
-            <ListBox.ItemTemplate>
-              <DataTemplate>
-                <Grid MaxHeight="24">
-                  <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="30"></ColumnDefinition>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
-                    <ColumnDefinition Width="Auto"></ColumnDefinition>
-                  </Grid.ColumnDefinitions>
-                  <Image Grid.Column="0" Source="{Binding Path=Icon.Filename}" HorizontalAlignment="Left"></Image>
-                  <TextBlock Grid.Column="1" Text="{Binding Path=Text, Converter={StaticResource DescriptionConverter}}" VerticalAlignment="Center" TextTrimming="CharacterEllipsis"></TextBlock>
-                  <TextBlock Grid.Column="2" Text="{Binding Path=Text.ID}" VerticalAlignment="Center" FontSize="11" HorizontalAlignment="Right"></TextBlock>
-                </Grid>
-              </DataTemplate>
-            </ListBox.ItemTemplate>
-          </ListBox>
-        </Border>
-      </Grid>
-      <Border Grid.Column="2" BorderBrush="#FF554628" BorderThickness="1" CornerRadius="5" 
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Grid MaxHeight="24">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="30"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Image Grid.Column="0" Source="{Binding Path=Icon.Filename}" HorizontalAlignment="Left"></Image>
+                                    <TextBlock Grid.Column="1" Text="{Binding Path=Text, Converter={StaticResource DescriptionConverter}}" VerticalAlignment="Center" TextTrimming="CharacterEllipsis"></TextBlock>
+                                    <TextBlock Grid.Column="2" Text="{Binding Path=Text.ID}" VerticalAlignment="Center" FontSize="11" HorizontalAlignment="Right"></TextBlock>
+                                </Grid>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </Border>
+            </Grid>
+            <Border Grid.Column="2" BorderBrush="#FF554628" BorderThickness="1" CornerRadius="5" 
               Background="{Binding Path=RarityBrush}">
-        <Grid>
-          <StackPanel Margin="10" Visibility="{Binding Path=HasResult, Converter={StaticResource BooleanToVisibility}}">
-            <!--Name-->
-            <StackPanel>
-              <Grid>
-                <Grid.ColumnDefinitions>
-                  <ColumnDefinition Width="90"></ColumnDefinition>
-                  <ColumnDefinition Width="*"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Image Grid.Column="0" Source="{Binding Path=SelectedAsset.Icon.Filename}" Width="75" Height="75" HorizontalAlignment="Left"></Image>
-                <Grid Grid.Column="1">
-                  <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"></RowDefinition>
-                    <RowDefinition Height="*"></RowDefinition>
-                  </Grid.RowDefinitions>
-                  <TextBlock Grid.Row="0" Text="{Binding Path=SelectedAsset.Text, Converter={StaticResource DescriptionConverter}}" FontWeight="Bold" FontSize="16" Foreground="#FFFFE4AD" TextWrapping="Wrap"></TextBlock>
-                  <TextBlock Grid.Row="1" Text="{Binding Path=SelectedAsset.Rarity, Converter={StaticResource DescriptionConverter}}" Foreground="#FFA49370"></TextBlock>
-                </Grid>
-              </Grid>
-            </StackPanel>
-            <!--Allocation-->
-            <StackPanel>
-              <Border BorderBrush="#FFA49370" BorderThickness="1" Height="1" Margin="0,5" Opacity="0.5"></Border>
-              <StackPanel Orientation="Horizontal" Visibility="{Binding Path=HasResult, Converter={StaticResource BooleanToVisibility}}">
-                <Image Source="{Binding Path=SelectedAsset.Allocation.Icon.Filename}" Height="25" Width="25" Margin="0,0,10,0"></Image>
-                <TextBlock VerticalAlignment="Center" Text="{Binding Path=AllocationText}" Foreground="#FFFFE4AD" Margin="0,0,10,0"></TextBlock>
-                <TextBlock VerticalAlignment="Center" Text="{Binding Path=SelectedAsset.Allocation.Text, Converter={StaticResource DescriptionConverter}}" Foreground="#FFDEAF04" FontWeight="Bold"></TextBlock>
-              </StackPanel>
-              <Border BorderBrush="#FFA49370" BorderThickness="1" Height="1" Margin="0,5" Opacity="0.5"></Border>
-            </StackPanel>
-            <!--Target-->
-            <StackPanel Visibility="{Binding Path=SelectedAsset.HasEffectTargetInfo, Converter={StaticResource BooleanToVisibility}}">
-              <TextBlock VerticalAlignment="Center" Text="{Binding Path=SelectedAsset.EffectTargetInfo, Converter={StaticResource DescriptionConverter}}" Margin="0,0,14,5" Foreground="#FFA49370" TextWrapping="Wrap"></TextBlock>
-            </StackPanel>
-            <!--FactoryUpgrade-->
-            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.FactoryUpgrades, Converter={StaticResource VisibilityConverter}}">
-              <ItemsControl ItemsSource="{Binding Path=SelectedAsset.FactoryUpgrades}" ItemTemplate="{StaticResource UpgradeTemplate}" Foreground="#FFFFE4AD"/>
-            </Grid>
-            <!--BuildingUpgrade-->
-            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.BuildingUpgrades, Converter={StaticResource VisibilityConverter}}">
-              <ItemsControl ItemsSource="{Binding Path=SelectedAsset.BuildingUpgrades}" ItemTemplate="{StaticResource UpgradeTemplate}" Foreground="#FFFFE4AD"/>
-            </Grid>
-            <!--CultureUpgrade-->
-            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.CultureUpgrades, Converter={StaticResource VisibilityConverter}}">
-              <ItemsControl ItemsSource="{Binding Path=SelectedAsset.CultureUpgrades}" ItemTemplate="{StaticResource UpgradeTemplate}" Foreground="#FFFFE4AD"/>
-            </Grid>
-            <!--ModuleOwnerUpgrade-->
-            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.ModuleOwnerUpgrades, Converter={StaticResource VisibilityConverter}}">
-              <ItemsControl ItemsSource="{Binding Path=SelectedAsset.ModuleOwnerUpgrades}" ItemTemplate="{StaticResource UpgradeTemplate}" Foreground="#FFFFE4AD"/>
-            </Grid>
-            <!--PopulationUpgrades-->
-            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.PopulationUpgrades, Converter={StaticResource VisibilityConverter}}">
-              <ItemsControl ItemsSource="{Binding Path=SelectedAsset.PopulationUpgrades}" ItemTemplate="{StaticResource UpgradeTemplate}" Foreground="#FFFFE4AD"/>
-            </Grid>
-            <!--ResidenceUpgrades-->
-            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.ResidenceUpgrades, Converter={StaticResource VisibilityConverter}}">
-              <ItemsControl ItemsSource="{Binding Path=SelectedAsset.ResidenceUpgrades}" ItemTemplate="{StaticResource UpgradeTemplate}" Foreground="#FFFFE4AD"/>
-            </Grid>
-            <!--ElectricUpgrades-->
-            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.ElectricUpgrades, Converter={StaticResource VisibilityConverter}}">
-              <ItemsControl ItemsSource="{Binding Path=SelectedAsset.ElectricUpgrades}" ItemTemplate="{StaticResource UpgradeTemplate}" Foreground="#FFFFE4AD"/>
-            </Grid>
-            <!--AttackableUpgrades-->
-            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.AttackableUpgrades, Converter={StaticResource VisibilityConverter}}">
-              <ItemsControl ItemsSource="{Binding Path=SelectedAsset.AttackableUpgrades}" ItemTemplate="{StaticResource UpgradeTemplate}" Foreground="#FFFFE4AD"/>
-            </Grid>
-            <!--TradeShipUpgrades-->
-            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.TradeShipUpgrades, Converter={StaticResource VisibilityConverter}}">
-              <ItemsControl ItemsSource="{Binding Path=SelectedAsset.TradeShipUpgrades}" ItemTemplate="{StaticResource UpgradeTemplate}" Foreground="#FFFFE4AD"/>
-            </Grid>
-            <!--VehicleUpgrades-->
-            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.VehicleUpgrades, Converter={StaticResource VisibilityConverter}}">
-              <ItemsControl ItemsSource="{Binding Path=SelectedAsset.VehicleUpgrades}" ItemTemplate="{StaticResource UpgradeTemplate}" Foreground="#FFFFE4AD"/>
-            </Grid>
-            <!--AttackerUpgrades-->
-            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.AttackerUpgrades, Converter={StaticResource VisibilityConverter}}">
-              <ItemsControl ItemsSource="{Binding Path=SelectedAsset.AttackerUpgrades}" ItemTemplate="{StaticResource UpgradeTemplate}" Foreground="#FFFFE4AD"/>
-            </Grid>
-            <!--VisitorHarborUpgrades-->
-            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.VisitorHarborUpgrades, Converter={StaticResource VisibilityConverter}}">
-              <ItemsControl ItemsSource="{Binding Path=SelectedAsset.VisitorHarborUpgrades}" ItemTemplate="{StaticResource UpgradeTemplate}" Foreground="#FFFFE4AD"/>
-            </Grid>
-            <!--RepairCraneUpgrades-->
-            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.RepairCraneUpgrades, Converter={StaticResource VisibilityConverter}}">
-              <ItemsControl ItemsSource="{Binding Path=SelectedAsset.RepairCraneUpgrades}" ItemTemplate="{StaticResource UpgradeTemplate}" Foreground="#FFFFE4AD"/>
-            </Grid>
-            <!--IncidentInfectableUpgrades-->
-            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.IncidentInfectableUpgrades, Converter={StaticResource VisibilityConverter}}">
-              <ItemsControl ItemsSource="{Binding Path=SelectedAsset.IncidentInfectableUpgrades}" ItemTemplate="{StaticResource UpgradeTemplate}" Foreground="#FFFFE4AD"/>
-            </Grid>
-            <!--IncidentInfluencerUpgrades-->
-            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.IncidentInfluencerUpgrades, Converter={StaticResource VisibilityConverter}}">
-              <ItemsControl ItemsSource="{Binding Path=SelectedAsset.IncidentInfluencerUpgrades}" ItemTemplate="{StaticResource UpgradeTemplate}" Foreground="#FFFFE4AD"/>
-            </Grid>
-            <!--Expedition-->
-            <StackPanel Visibility="{Binding Path=SelectedAsset.ExpeditionAttributes, Converter={StaticResource VisibilityConverter}}">
-              <Border BorderBrush="#FFA49370" BorderThickness="1" Height="1" Margin="0,5" Opacity="0.5"></Border>
-              <TextBlock VerticalAlignment="Center" Foreground="#FFA49370" Text="{Binding Path=ExpeditionText}" Margin="0,2,0,5"></TextBlock>
-              <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.ExpeditionAttributes, Converter={StaticResource VisibilityConverter}}">
-                <ItemsControl ItemsSource="{Binding Path=SelectedAsset.ExpeditionAttributes}" ItemTemplate="{StaticResource UpgradeTemplate}" Foreground="#FFFFE4AD" Opacity="0.5"/>
-              </Grid>
-            </StackPanel>
-            <!--ItemSet-->
-            <StackPanel Visibility="{Binding Path=SelectedAsset.ItemSets, Converter={StaticResource VisibilityConverter}}">
-              <Border BorderBrush="#FFA49370" BorderThickness="1" Height="1" Margin="0,5" Opacity="0.5"></Border>
-              <TextBlock VerticalAlignment="Center" Foreground="#FFA49370" Text="{Binding Path=ItemSetText}" Margin="0,2,0,5"></TextBlock>
-              <Grid Margin="0,2">
-                <ItemsControl ItemsSource="{Binding Path=SelectedAsset.ItemSets}" ItemTemplate="{StaticResource UpgradeTemplate}" Foreground="#FFFFE4AD"/>
-              </Grid>
-            </StackPanel>
-            <!--Trade-->
-            <StackPanel Visibility="{Binding Path=HasResult, Converter={StaticResource BooleanToVisibility}}">
-              <Border BorderBrush="#FFA49370" BorderThickness="1" Height="1" Margin="0,5" Opacity="0.5"></Border>
-              <Grid Visibility="{Binding Path=SelectedAsset.TradePrice, Converter={StaticResource VisibilityConverter}}">
-                <Grid.ColumnDefinitions>
-                  <ColumnDefinition Width="30"></ColumnDefinition>
-                  <ColumnDefinition Width="*"></ColumnDefinition>
-                  <ColumnDefinition Width="Auto"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Image Grid.Column="0" Source="../Resources/data/ui/2kimages/main/icons/icon_credits.png" Height="18" Width="18" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
-                <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Path=TradeText}" Foreground="#FFFFE4AD"></TextBlock>
-                <TextBlock Grid.Column="2" VerticalAlignment="Center" Text="{Binding Path=SelectedAsset.TradePrice}" Foreground="#FFFFE4AD"></TextBlock>
-              </Grid>
-            </StackPanel>
-            <!--Info-->
-            <StackPanel Visibility="{Binding Path=HasResult, Converter={StaticResource BooleanToVisibility}}">
-              <Border BorderBrush="#FFA49370" BorderThickness="1" Height="1" Margin="0,5" Opacity="0.5"></Border>
-              <TextBlock Text="{Binding Path=SelectedAsset.Info, Converter={StaticResource DescriptionConverter}, ConverterParameter=Long}" Foreground="#FFA49370" FontStyle="Italic" TextWrapping="Wrap"></TextBlock>
-            </StackPanel>
-          </StackPanel>
+                <local:ItemCard SelectedAsset="{Binding SelectedAsset}" CanSwap="True"/>
+            </Border>
         </Grid>
-      </Border>
     </Grid>
-  </Grid>
 
 
 </UserControl>

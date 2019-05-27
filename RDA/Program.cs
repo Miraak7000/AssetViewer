@@ -11,16 +11,13 @@ using RDA.Library;
 using RDA.Templates;
 
 namespace RDA {
-
     [SuppressMessage("ReSharper", "PossibleNullReferenceException"), SuppressMessage("ReSharper", "AssignNullToNotNullAttribute")]
     internal static class Program {
-
         #region Fields
         private static readonly Dictionary<Int32, String> Descriptions = new Dictionary<Int32, String>();
         internal static XDocument Original;
         internal static String PathRoot;
         internal static String PathViewer;
-        private static readonly List<XElement> RewardPoolList = new List<XElement>();
         internal static XDocument TextDE;
         internal static Dictionary<String, String> DescriptionEN;
         internal static Dictionary<String, String> DescriptionDE;
@@ -43,19 +40,27 @@ namespace RDA {
 
             // World Fair
             //Monument.Create();
-            //VerasExtensions.ProcessingRewardPools();
-            //VerasExtensions.ProcessingProducts();
-            VerasExtensions.ProcessingExpeditionEvents();
+
             //VerasExtensions.ProcessingItemSpecialAction();
             //VerasExtensions.ProcessingActiveItem();
-            VerasExtensions.ProcessingItemSpecialActionVisualEffect();
+            //VerasExtensions.ProcessingItemSpecialActionVisualEffect();
+            //VerasExtensions.ProcessingProducts();
+
             // Assets
-            //VerasExtensions.ProcessingItems("GuildhouseItem");
-            //VerasExtensions.ProcessingItems("TownhallItem");
-            //VerasExtensions.ProcessingItems("HarborOfficeItem");
-            //VerasExtensions.ProcessingItems("VehicleItem");
-            //VerasExtensions.ProcessingItems("ShipSpecialist");
-            //VerasExtensions.ProcessingItems("CultureItem");
+            //VerasExtensions.ProcessingRewardPools();
+            VerasExtensions.ProcessingItems("Product");
+            VerasExtensions.ProcessingItems("ActiveItem");
+            VerasExtensions.ProcessingItems("ItemSpecialActionVisualEffect");
+            VerasExtensions.ProcessingItems("ItemSpecialAction");
+            VerasExtensions.ProcessingItems("GuildhouseItem");
+            VerasExtensions.ProcessingItems("TownhallItem");
+            VerasExtensions.ProcessingItems("HarborOfficeItem");
+            VerasExtensions.ProcessingItems("VehicleItem");
+            VerasExtensions.ProcessingItems("ShipSpecialist");
+            VerasExtensions.ProcessingItems("CultureItem");
+            VerasExtensions.ProcessingItems("BuildPermitBuilding");
+
+            //Third Party
             //Program.ProcessingThirdParty();
 
             // Quests
@@ -64,7 +69,9 @@ namespace RDA {
 
             // Expeditions
             //Program.Expeditions();
+            //VerasExtensions.ProcessingExpeditionEvents();
         }
+
         private static void ProcessingItems(String template) {
             var result = new List<Asset>();
             var assets = Program.Original.XPathSelectElements($"//Asset[Template='{template}']").ToList().AsParallel();
@@ -81,6 +88,7 @@ namespace RDA {
             document.Save($@"{Program.PathRoot}\Modified\Assets_{template}.xml");
             document.Save($@"{Program.PathViewer}\Resources\Assets\{template}.xml");
         }
+
         private static void ProcessingThirdParty() {
             var result = new List<ThirdParty>();
             var assets = Program.Original.XPathSelectElements($"//Asset[Template='Profile_3rdParty' or Template='Profile_3rdParty_Pirate']").ToList().AsParallel();
@@ -97,6 +105,7 @@ namespace RDA {
             document.Save($@"{Program.PathRoot}\Modified\Assets_ThirdParty.xml");
             document.Save($@"{Program.PathViewer}\Resources\Assets\ThirdParty.xml");
         }
+
         private static void QuestGiver() {
             var result = new List<QuestGiver>();
             var questGivers = Program.Original.Root.XPathSelectElements("//Asset[Template='Quest']/Values/Quest/QuestGiver").Select(s => s.Value).Distinct().ToList();
@@ -110,6 +119,7 @@ namespace RDA {
             document.Add(new XElement("QuestGivers"));
             document.Root.Add(result.Select(s => s.ToXml()));
         }
+
         private static void Quests() {
             var result = new List<Quest>();
             var assets = Program.Original.XPathSelectElements("//Asset[Template='Quest']").ToList();
@@ -122,6 +132,7 @@ namespace RDA {
             document.Add(new XElement("Quests"));
             document.Root.Add(result.Select(s => s.ToXml()));
         }
+
         private static void Expeditions() {
             var result = new List<Expedition>();
             var assets = Program.Original.XPathSelectElements("//Asset[Template='Expedition']").ToList().AsParallel();
@@ -143,5 +154,4 @@ namespace RDA {
         #endregion
 
     }
-
 }

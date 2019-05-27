@@ -97,6 +97,9 @@
     <Compile Include="Veras\Expedition\ExpeditionEventPathOption.cs" />
     <Compile Include="Veras\Expedition\ExpeditionEventPathOptionsOptionRequirementsItem.cs" />
     <Compile Include="Veras\Expedition\ExpeditionEventPathRewardsItem.cs" />
+    <Compile Include="Controls\ItemCard.xaml.cs">
+      <DependentUpon>ItemCard.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Veras\ItemMarkupExtension.cs" />
     <Compile Include="Veras\ItemProvider.cs" />
     <Compile Include="Veras\Pool\Pool.cs" />
@@ -146,6 +149,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Controls\ItemCard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Veras\VerasItemControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -932,9 +939,6 @@
     <EmbeddedResource Include="Resources\Assets\MonumentCategory.xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Assets\MonumentReward.xml" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\Assets\Expeditions.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -1109,6 +1113,22 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\consumables\icon_fireworks_1.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\consumables\icon_fireworks_2.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\consumables\icon_fireworks_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Assets\BuildPermitBuilding.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\profiles\ai_01.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\profiles\ai_03.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\profiles\ai_04.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\profiles\ai_05.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\profiles\ai_06.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\profiles\ai_07.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\profiles\ai_08.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\profiles\ai_09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\profiles\enemy_02.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

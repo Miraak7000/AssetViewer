@@ -4,9 +4,7 @@ using System.Xml.Linq;
 using System.Xml.XPath;
 
 namespace RDA.Veras {
-
     public class RewardWithDetailsList : List<RootWithDetails> {
-
         #region Constructors
 
         public RewardWithDetailsList() : base() {
@@ -20,8 +18,6 @@ namespace RDA.Veras {
             return new RewardWithDetailsList(this.Select(l => l.Copy()));
         }
 
-        //public RewardWithDetailsList(RewardWithDetailsList collection) : base(collection.Copy()) {
-        //}
         public void AddSourceAsset(XElement element, HashSet<XElement> details = default) {
             var assetID = element.XPathSelectElement("Values/Standard/GUID").Value;
             var expeditionName = element.XPathSelectElement("Values/Expedition/ExpeditionName")?.Value;

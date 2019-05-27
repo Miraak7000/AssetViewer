@@ -6,7 +6,6 @@ using System.Xml.Linq;
 
 namespace RDA.Veras {
 
-    //[JsonConverter(typeof(DetailsConverter))]
     public class Details : IEnumerable<XElement> {
 
         #region Constructors
@@ -37,7 +36,6 @@ namespace RDA.Veras {
 
         #region Properties
 
-        //[JsonIgnore]
         public List<String> PreviousIDs { get; set; } = new List<string>();
 
         public HashSet<XElement> Items { get; set; } = new HashSet<XElement>();
@@ -60,26 +58,4 @@ namespace RDA.Veras {
 
         #endregion Methods
     }
-
-    //public class DetailsConverter : JsonConverter {
-
-    //    #region Methods
-
-    //    public override bool CanConvert(Type objectType) {
-    //        return objectType == typeof(Details);
-    //    }
-
-    //    public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer) {
-    //        var details = new Details {
-    //            Items = serializer.Deserialize<HashSet<XElement>>(reader)
-    //        };
-    //        return details;
-    //    }
-
-    //    public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer) {
-    //        serializer.Serialize(writer, value);
-    //    }
-
-    //    #endregion Methods
-    //}
 }

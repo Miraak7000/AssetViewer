@@ -3,7 +3,6 @@ using AssetViewer.Veras.Expedition;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Windows.Documents;
 using System.Xml.Serialization;
 
 namespace AssetViewer.Veras {
@@ -22,6 +21,7 @@ namespace AssetViewer.Veras {
 
         [XmlAttribute]
         public string OptionAttribute { get; set; }
+
         [XmlArrayItem("Item", IsNullable = false)]
         public List<ExpeditionEventPathOptionsOptionRequirementsItem> Requirements { get; set; }
 

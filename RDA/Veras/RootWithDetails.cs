@@ -2,9 +2,7 @@
 using System.Xml.Linq;
 
 namespace RDA.Veras {
-
     public struct RootWithDetails {
-
         #region Constructors
 
         public RootWithDetails(RootWithDetails other) : this(other.Root, other.Details) {

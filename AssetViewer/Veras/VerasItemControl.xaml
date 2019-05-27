@@ -15,13 +15,22 @@
     <ItemsControl Background="Transparent" BorderThickness="0" ItemsSource="{Binding Path=SelectedAsset.Sources}">
         <ItemsControl.ItemTemplate>
             <DataTemplate>
-                <Grid MaxHeight="24" Background="Transparent" ToolTipService.InitialShowDelay="0" ToolTipService.ShowDuration="60000">
+                <Grid
+                    MaxHeight="24"
+                    Background="Transparent"
+                    ToolTipService.InitialShowDelay="0"
+                    ToolTipService.ShowDuration="60000">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="30" />
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
                     <Image Grid.Column="0" HorizontalAlignment="Left" Source="{Binding Path=Icon.Filename}" />
-                    <TextBlock Grid.Column="1" VerticalAlignment="Center" Foreground="#FFFFE4AD" Text="{Binding Path=Text, Converter={StaticResource DescriptionConverter}}" TextTrimming="CharacterEllipsis" />
+                    <TextBlock
+                        Grid.Column="1"
+                        VerticalAlignment="Center"
+                        Foreground="#FFFFE4AD"
+                        Text="{Binding Path=Text, Converter={StaticResource DescriptionConverter}}"
+                        TextTrimming="CharacterEllipsis" />
                     <Grid.ToolTip>
                         <ToolTip DataContext="{Binding PlacementTarget.DataContext, RelativeSource={RelativeSource Self}}">
                             <ItemsControl Background="Transparent" BorderThickness="0" ItemsSource="{Binding Additionals}">
@@ -31,7 +40,12 @@
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="*" />
                                             </Grid.ColumnDefinitions>
-                                            <TextBlock Grid.Column="0" VerticalAlignment="Center" Foreground="#FF2A2C27" Text="{Binding Text, Converter={StaticResource DescriptionConverter}}" TextTrimming="CharacterEllipsis" />
+                                            <TextBlock
+                                                Grid.Column="0"
+                                                VerticalAlignment="Center"
+                                                Foreground="#FF2A2C27"
+                                                Text="{Binding Text, Converter={StaticResource DescriptionConverter}}"
+                                                TextTrimming="CharacterEllipsis" />
                                         </Grid>
                                     </DataTemplate>
                                 </ItemsControl.ItemTemplate>
