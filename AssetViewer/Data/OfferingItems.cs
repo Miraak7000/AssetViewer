@@ -6,7 +6,9 @@ using System.Xml.XPath;
 using AssetViewer.Templates;
 
 namespace AssetViewer.Data {
+
   public class OfferingItems {
+
     #region Properties
     public Progression Progression { get; set; }
     public string Items { get; set; }
@@ -20,4 +22,5 @@ namespace AssetViewer.Data {
     #endregion
 
   }
+
 }

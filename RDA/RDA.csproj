@@ -76,11 +76,9 @@
     <Compile Include="Templates\Asset.cs" />
     <Compile Include="Templates\CultureItem.cs" />
     <Compile Include="Templates\ItemSet.cs" />
-    <Compile Include="Veras\Details.cs" />
-    <Compile Include="Veras\RootWithDetails.cs" />
-    <Compile Include="Veras\RewardWithDetailsList.cs" />
-    <Compile Include="Veras\VerasExtensions.cs" />
-    <Compile Include="Veras\VerasTempSource.cs" />
+    <Compile Include="Templates\SourceWithDetails\Details.cs" />
+    <Compile Include="Templates\SourceWithDetails\SourceWithDetails.cs" />
+    <Compile Include="Templates\SourceWithDetails\SourceWithDetailsList.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -92,12 +90,9 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Modified\Assets.xml" />
-    <Content Include="Modified\Assets_ActiveItem.xml" />
-    <Content Include="Modified\Assets_BuildPermitBuilding.xml" />
     <Content Include="Modified\Assets_CultureItem.xml" />
     <Content Include="Modified\Assets_Expedition.xml" />
     <Content Include="Modified\Assets_ExpeditionEvent.xml" />
-    <Content Include="Modified\Assets_ExpeditionEvents.xml" />
     <Content Include="Modified\Assets_Expeditions.xml" />
     <Content Include="Modified\Assets_FactoryBuilding7.xml" />
     <Content Include="Modified\Assets_FarmBuilding.xml" />
@@ -110,16 +105,12 @@
     <Content Include="Modified\Assets_HarborOfficeItem.xml" />
     <Content Include="Modified\Assets_HeavyFactoryBuilding.xml" />
     <Content Include="Modified\Assets_HeavyFreeAreaBuilding.xml" />
-    <Content Include="Modified\Assets_ItemSpecialAction.xml" />
-    <Content Include="Modified\Assets_ItemSpecialActionVisualEffect.xml" />
     <Content Include="Modified\Assets_MonumentCategory.xml" />
     <Content Include="Modified\Assets_MonumentEvent.xml" />
     <Content Include="Modified\Assets_MonumentReward.xml" />
     <Content Include="Modified\Assets_MonumentThreshold.xml" />
     <Content Include="Modified\Assets_PowerplantBuilding.xml" />
-    <Content Include="Modified\Assets_Product.xml" />
     <Content Include="Modified\Assets_RewardPool.xml" />
-    <Content Include="Modified\Assets_RewardPools.xml" />
     <Content Include="Modified\Assets_ShipSpecialist.xml" />
     <Content Include="Modified\Assets_SlotFactoryBuilding7.xml" />
     <Content Include="Modified\Assets_Sources.xml" />

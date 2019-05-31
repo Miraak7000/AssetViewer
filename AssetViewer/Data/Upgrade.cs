@@ -5,7 +5,7 @@ using System.Xml.Linq;
 
 namespace AssetViewer.Data {
 
-  public class OldUpgrade {
+  public class Upgrade {
 
     #region Properties
     public Icon Icon { get; set; }
@@ -15,10 +15,12 @@ namespace AssetViewer.Data {
     #endregion
 
     #region Constructor
-    public OldUpgrade(XElement item) {
+    public Upgrade(XElement item) {
       this.Icon = item.Element("Icon") == null ? null : new Icon(item.Element("Icon"));
-      this.Text = new Description(item.Element("Text"));
+      var textItem = item.Name == "Text" ? item : item.Element("Text");
+      this.Text = new Description(textItem);
       this.Value = item.Element("Value")?.Value;
+
       if (item.Element("AdditionalOutputs") != null) {
         this.Additionals = item.Element("AdditionalOutputs").Elements().Select(s => new Upgrade(s)).ToList();
       }
@@ -33,6 +35,9 @@ namespace AssetViewer.Data {
       }
       if (item.Element("Additionals") != null) {
         this.Additionals = item.Element("Additionals").Elements().Select(s => new Upgrade(s)).ToList();
+      }
+      if (item.Element("Details") != null) {
+        this.Additionals = item.Element("Details").Elements().Select(s => new Upgrade(s)).ToList();
       }
     }
     #endregion
