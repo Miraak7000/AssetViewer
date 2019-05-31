@@ -5,7 +5,7 @@ using System.Xml.Linq;
 
 namespace AssetViewer.Data {
 
-  public class Upgrade {
+  public class OldUpgrade {
 
     #region Properties
     public Icon Icon { get; set; }
@@ -15,7 +15,7 @@ namespace AssetViewer.Data {
     #endregion
 
     #region Constructor
-    public Upgrade(XElement item) {
+    public OldUpgrade(XElement item) {
       this.Icon = item.Element("Icon") == null ? null : new Icon(item.Element("Icon"));
       this.Text = new Description(item.Element("Text"));
       this.Value = item.Element("Value")?.Value;

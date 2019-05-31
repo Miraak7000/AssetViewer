@@ -3,9 +3,7 @@ using System.IO;
 using System.Xml.Linq;
 
 namespace RDA.Data {
-
   public class Icon {
-
     #region Properties
     public String Filename { get; set; }
     #endregion
@@ -14,6 +12,9 @@ namespace RDA.Data {
     public Icon(String filename) {
       var searchPath = Path.GetDirectoryName($@"{Program.PathRoot}\Resources\{filename}");
       var searchPattern = Path.GetFileNameWithoutExtension($@"{Program.PathRoot}\Resources\{filename}");
+            if (!Directory.Exists(searchPath)) {
+                return;
+            }
       var fileNames = Directory.GetFiles(searchPath, $"{searchPattern}??.png", SearchOption.TopDirectoryOnly);
       if (fileNames.Length != 1) throw new FileNotFoundException();
       this.Filename = filename;
@@ -39,5 +40,4 @@ namespace RDA.Data {
     #endregion
 
   }
-
 }
