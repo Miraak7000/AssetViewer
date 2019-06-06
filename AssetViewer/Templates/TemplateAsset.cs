@@ -15,6 +15,7 @@ namespace AssetViewer.Templates {
     public Description Text { get; set; }
     public Description Rarity { get; set; }
     public String ItemType { get; set; }
+    public String ReleaseVersion { get; set; }
     //
     public Allocation Allocation { get; set; }
     //
@@ -67,6 +68,7 @@ namespace AssetViewer.Templates {
       this.Allocation = asset.Element("Allocation").HasElements ? new Allocation(asset.Element("Allocation")) : null;
       this.EffectTargets = asset.Element("EffectTargets").Elements().Select(s => new Description(s)).ToList();
       this.EffectTargetInfo = new Description("Affects ", "Beeinflusst ");
+      this.ReleaseVersion = asset.Attribute("Release")?.Value;
       for (var i = 0; i < this.EffectTargets.Count; i++) {
         if (i > 0) {
           this.EffectTargetInfo.EN += ", ";

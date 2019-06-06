@@ -23,6 +23,7 @@ namespace RDA {
     internal static XDocument TextDE;
     internal static Dictionary<String, String> DescriptionEN;
     internal static Dictionary<String, String> DescriptionDE;
+    internal static string Version = "Release";
     #endregion
 
     #region Private Methods
@@ -39,14 +40,11 @@ namespace RDA {
       // Descriptions
       Program.DescriptionEN = XDocument.Load(Program.PathRoot + @"\Modified\Texts_English.xml").Root.Elements().ToDictionary(k => k.Attribute("ID").Value, e => e.Value);
       Program.DescriptionDE = XDocument.Load(Program.PathRoot + @"\Modified\Texts_German.xml").Root.Elements().ToDictionary(k => k.Attribute("ID").Value, e => e.Value);
-
+      Version = "Update 03";
       // World Fair
       //Monument.Create();
 
       // Assets
-      //Program.ProcessingRewardPools();
-      //Program.ProcessingItems("BuildPermitBuilding");
-      //Program.ProcessingItems("Product");
       //Program.ProcessingItems("ActiveItem");
       //Program.ProcessingItems("ItemSpecialActionVisualEffect");
       //Program.ProcessingItems("ItemSpecialAction");
@@ -56,9 +54,13 @@ namespace RDA {
       //Program.ProcessingItems("VehicleItem");
       //Program.ProcessingItems("ShipSpecialist");
       //Program.ProcessingItems("CultureItem");
+      //Program.ProcessingItems("BuildPermitBuilding");
+      //Program.ProcessingItems("Product");
+
+      //Program.ProcessingRewardPools();
 
       //Third Party
-      //Program.ProcessingThirdParty();
+      Program.ProcessingThirdParty();
 
       // Quests
       //Program.QuestGiver();
@@ -66,10 +68,15 @@ namespace RDA {
 
       // Expeditions
       //Program.Expeditions();
-      Program.ProcessingExpeditionEvents();
+      //Program.ProcessingExpeditionEvents();
     }
     public static void ProcessingItems(String template, bool findSources = true) {
       var result = new List<Asset>();
+      var oldAssets = new Dictionary<string, XElement>();
+      if (File.Exists($@"{Program.PathRoot}\Modified\Assets_{template}.xml")) {
+        var doc = XDocument.Load($@"{Program.PathRoot}\Modified\Assets_{template}.xml");
+        oldAssets = doc.Root.Elements().ToDictionary(e => e.Attribute("ID").Value);
+      }
       var assets = Program.Original.XPathSelectElements($"//Asset[Template='{template}']").ToList();
       Console.WriteLine(template + "  Total: " + assets.Count);
       var count = 0;
@@ -77,6 +84,12 @@ namespace RDA {
         count++;
         Console.WriteLine(asset.XPathSelectElement("Values/Standard/GUID").Value + " - " + count);
         var item = new Asset(asset, findSources);
+        if (oldAssets.ContainsKey(item.ID)) {
+          item.ReleaseVersion = oldAssets[item.ID].Attribute("Release")?.Value ?? "Release";
+        }
+        else {
+          item.ReleaseVersion = Version;
+        }
         result.Add(item);
       }
       var document = new XDocument();

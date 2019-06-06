@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Product>
-  <Asset ID="1010017">
+  <Asset ID="1010017" Release="Release">
     <Name>Money</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
@@ -33,6 +33,22 @@
     <ItemGeneratorUpgrades />
     <TradePrice />
     <Sources>
+      <Source ID="110881">
+        <Name>RQ_Workers_RedressingTheBalance</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="193">
+          <EN>Quest - Worker</EN>
+          <DE>Quest - Arbeiter</DE>
+        </Text>
+        <Details>
+          <Text ID="110881">
+            <EN>The Value of Labour</EN>
+            <DE>Der Wert von Arbeit</DE>
+          </Text>
+        </Details>
+      </Source>
       <Source ID="152624">
         <Name>Smuggle A simple delivery - Hunt</Name>
         <Icon>
@@ -86,7 +102,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010190">
+  <Asset ID="1010190" Release="Release">
     <Name>Influence</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/icons/icon_influence.png</Filename>
@@ -123,7 +139,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010052">
+  <Asset ID="1010052" Release="Release">
     <Name>moderate workforce 1</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/icons/icon_resource_farmer_2.png</Filename>
@@ -160,7 +176,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010115">
+  <Asset ID="1010115" Release="Release">
     <Name>moderate workforce 2</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/icons/icon_resource_worker_2.png</Filename>
@@ -197,7 +213,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010116">
+  <Asset ID="1010116" Release="Release">
     <Name>moderate workforce 3</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/icons/icon_resource_merchants_2.png</Filename>
@@ -234,7 +250,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010117">
+  <Asset ID="1010117" Release="Release">
     <Name>moderate workforce 4</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/icons/icon_resource_craftspeople.png</Filename>
@@ -271,7 +287,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010128">
+  <Asset ID="1010128" Release="Release">
     <Name>moderate workforce 5</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/icons/icon_resource_industrialists.png</Filename>
@@ -308,7 +324,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010366">
+  <Asset ID="1010366" Release="Release">
     <Name>colony workforce 1</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png</Filename>
@@ -345,7 +361,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010367">
+  <Asset ID="1010367" Release="Release">
     <Name>colony workforce 2</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/icons/icon_ressource_worker_south_america.png</Filename>
@@ -382,7 +398,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010368">
+  <Asset ID="1010368" Release="Release">
     <Name>colony workforce 3</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/icons/icon_resource_merchants_2.png</Filename>
@@ -419,7 +435,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010369">
+  <Asset ID="1010369" Release="Release">
     <Name>colony workforce 4</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/icons/icon_resource_craftspeople.png</Filename>
@@ -456,7 +472,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010370">
+  <Asset ID="1010370" Release="Release">
     <Name>colony workforce 5</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/icons/icon_resource_industrialists.png</Filename>
@@ -493,7 +509,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="120020">
+  <Asset ID="120020" Release="Release">
     <Name>market</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_marketplace.png</Filename>
@@ -530,7 +546,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010349">
+  <Asset ID="1010349" Release="Release">
     <Name>pub</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_pub.png</Filename>
@@ -567,7 +583,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010350">
+  <Asset ID="1010350" Release="Release">
     <Name>church</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_church.png</Filename>
@@ -604,7 +620,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010351">
+  <Asset ID="1010351" Release="Release">
     <Name>school</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_school.png</Filename>
@@ -641,7 +657,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010352">
+  <Asset ID="1010352" Release="Release">
     <Name>variety theatre</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_cabaret.png</Filename>
@@ -678,7 +694,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010353">
+  <Asset ID="1010353" Release="Release">
     <Name>university</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_university.png</Filename>
@@ -715,7 +731,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010354">
+  <Asset ID="1010354" Release="Release">
     <Name>electric works</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_electric_works_oil.png</Filename>
@@ -752,7 +768,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010355">
+  <Asset ID="1010355" Release="Release">
     <Name>club house</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_club_house.png</Filename>
@@ -789,7 +805,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010356">
+  <Asset ID="1010356" Release="Release">
     <Name>bank</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_bank.png</Filename>
@@ -826,7 +842,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="120050">
+  <Asset ID="120050" Release="Release">
     <Name>chapel</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_church.png</Filename>
@@ -863,7 +879,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010348">
+  <Asset ID="1010348" Release="Release">
     <Name>Boxing Arena</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_box_arena.png</Filename>
@@ -900,7 +916,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010192">
+  <Asset ID="1010192" Release="Release">
     <Name>grain</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_cereals_2.png</Filename>
@@ -1002,68 +1018,7 @@
           <EN>Archaeological Expedition</EN>
           <DE>Archäologische Expedition</DE>
         </Text>
-        <Details>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-        </Details>
+        <Details />
       </Source>
       <Source ID="800214">
         <Name>Zoological Expedition Easy</Name>
@@ -1074,80 +1029,7 @@
           <EN>Zoological Expedition</EN>
           <DE>Zoologische Expedition</DE>
         </Text>
-        <Details>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-        </Details>
+        <Details />
       </Source>
       <Source ID="800399">
         <Name>Rescue Mission Easy</Name>
@@ -1158,80 +1040,7 @@
           <EN>Rescue Mission</EN>
           <DE>Rettungseinsatz</DE>
         </Text>
-        <Details>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-        </Details>
+        <Details />
       </Source>
       <Source ID="800403">
         <Name>Pirate Hunt Easy</Name>
@@ -1242,80 +1051,7 @@
           <EN>Pirate Hunt</EN>
           <DE>Piratenjagd</DE>
         </Text>
-        <Details>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-        </Details>
+        <Details />
       </Source>
       <Source ID="800777">
         <Name>Discovery South America Sandbox</Name>
@@ -1326,19 +1062,14 @@
           <EN>Discovery Expedition</EN>
           <DE>Entdeckungsreise</DE>
         </Text>
-        <Details>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-        </Details>
+        <Details />
       </Source>
     </Sources>
     <MonumentEvents />
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010193">
+  <Asset ID="1010193" Release="Release">
     <Name>beef</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_meat_raw.png</Filename>
@@ -1359,7 +1090,18 @@
     <ResidenceUpgrades />
     <PopulationUpgrades />
     <ElectricUpgrades />
-    <ExpeditionAttributes />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
     <AttackableUpgrades />
     <TradeShipUpgrades />
     <VehicleUpgrades />
@@ -1523,7 +1265,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010194">
+  <Asset ID="1010194" Release="Release">
     <Name>hops</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_hops.png</Filename>
@@ -1605,7 +1347,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010195">
+  <Asset ID="1010195" Release="Release">
     <Name>potatoes</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_potatoes.png</Filename>
@@ -1854,12 +1596,23 @@
         </Text>
         <Details />
       </Source>
+      <Source ID="220">
+        <Name>Second_ai_11 (Hugo Mercier)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/ai_11.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Ship Drop - Dr. Hugo Mercier</EN>
+          <DE>Schiff Drop - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details />
+      </Source>
     </Sources>
     <MonumentEvents />
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="120008">
+  <Asset ID="120008" Release="Release">
     <Name>wood</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_wood_log.png</Filename>
@@ -2055,7 +1808,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010197">
+  <Asset ID="1010197" Release="Release">
     <Name>wool</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_wool.png</Filename>
@@ -2148,7 +1901,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010199">
+  <Asset ID="1010199" Release="Release">
     <Name>pigs</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_pigs.png</Filename>
@@ -2339,7 +2092,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010209">
+  <Asset ID="1010209" Release="Release">
     <Name>fur</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_fur.png</Filename>
@@ -2436,7 +2189,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="120014">
+  <Asset ID="120014" Release="Release">
     <Name>grapes</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_grapes.png</Filename>
@@ -2615,7 +2368,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010198">
+  <Asset ID="1010198" Release="Release">
     <Name>paprika</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_pepper.png</Filename>
@@ -2763,7 +2516,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010200">
+  <Asset ID="1010200" Release="Release">
     <Name>fish</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_fish.png</Filename>
@@ -2800,6 +2553,22 @@
       <DE>Meeresbewohner mit Flossen und Kiemen.</DE>
     </Info>
     <Sources>
+      <Source ID="110891">
+        <Name>RQ_Workers_MoreThanEnoughFood_Fish</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="193">
+          <EN>Quest - Worker</EN>
+          <DE>Quest - Arbeiter</DE>
+        </Text>
+        <Details>
+          <Text ID="110891">
+            <EN>Overproduction — The Fish</EN>
+            <DE>Überproduktion - Der Fisch</DE>
+          </Text>
+        </Details>
+      </Source>
       <Source ID="51">
         <Name>Third_enemy_01 (Edvard Goode)</Name>
         <Icon>
@@ -2935,6 +2704,33 @@
         </Text>
         <Details />
       </Source>
+      <Source ID="220">
+        <Name>Second_ai_11 (Hugo Mercier)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/ai_11.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Ship Drop - Dr. Hugo Mercier</EN>
+          <DE>Schiff Drop - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details />
+      </Source>
+      <Source ID="110691">
+        <Name>Gift - We can afford it - Hugo Mercier</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Quest - Dr. Hugo Mercier</EN>
+          <DE>Quest - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details>
+          <Text ID="110691">
+            <EN>A Sample of Anarchy</EN>
+            <DE>Eine Kostprobe der Anarchie</DE>
+          </Text>
+        </Details>
+      </Source>
       <Source ID="152472">
         <Name>Take better care - George Smith</Name>
         <Icon>
@@ -2956,7 +2752,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010232">
+  <Asset ID="1010232" Release="Release">
     <Name>salpeter</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_niter.png</Filename>
@@ -3061,12 +2857,23 @@
           </Text>
         </Details>
       </Source>
+      <Source ID="220">
+        <Name>Second_ai_11 (Hugo Mercier)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/ai_11.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Ship Drop - Dr. Hugo Mercier</EN>
+          <DE>Schiff Drop - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details />
+      </Source>
     </Sources>
     <MonumentEvents />
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010228">
+  <Asset ID="1010228" Release="Release">
     <Name>quartz sand</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_quartz_sand.png</Filename>
@@ -3180,7 +2987,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010202">
+  <Asset ID="1010202" Release="Release">
     <Name>concrete</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png</Filename>
@@ -3322,7 +3129,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010203">
+  <Asset ID="1010203" Release="Release">
     <Name>soap</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_soap_2.png</Filename>
@@ -3492,12 +3299,23 @@
         </Text>
         <Details />
       </Source>
+      <Source ID="220">
+        <Name>Second_ai_11 (Hugo Mercier)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/ai_11.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Ship Drop - Dr. Hugo Mercier</EN>
+          <DE>Schiff Drop - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details />
+      </Source>
     </Sources>
     <MonumentEvents />
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010196">
+  <Asset ID="1010196" Release="Release">
     <Name>timber</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
@@ -4217,12 +4035,23 @@
         </Text>
         <Details />
       </Source>
+      <Source ID="220">
+        <Name>Second_ai_11 (Hugo Mercier)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/ai_11.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Ship Drop - Dr. Hugo Mercier</EN>
+          <DE>Schiff Drop - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details />
+      </Source>
     </Sources>
     <MonumentEvents />
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010205">
+  <Asset ID="1010205" Release="Release">
     <Name>bricks</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
@@ -4536,12 +4365,23 @@
           </Text>
         </Details>
       </Source>
+      <Source ID="220">
+        <Name>Second_ai_11 (Hugo Mercier)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/ai_11.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Ship Drop - Dr. Hugo Mercier</EN>
+          <DE>Schiff Drop - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details />
+      </Source>
     </Sources>
     <MonumentEvents />
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010247">
+  <Asset ID="1010247" Release="Release">
     <Name>fur coats</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_fur_coats.png</Filename>
@@ -4835,7 +4675,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010207">
+  <Asset ID="1010207" Release="Release">
     <Name>window</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
@@ -4929,7 +4769,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010208">
+  <Asset ID="1010208" Release="Release">
     <Name>light bulbs</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_light_bulb.png</Filename>
@@ -5069,7 +4909,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010210">
+  <Asset ID="1010210" Release="Release">
     <Name>sailcloth</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_sail.png</Filename>
@@ -5147,6 +4987,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="76">
@@ -5159,6 +5003,10 @@
           <DE>Hafen - Jean La Fortune</DE>
         </Text>
         <Details>
+          <Text ID="76">
+            <EN>Jean La Fortune</EN>
+            <DE>Jean La Fortune</DE>
+          </Text>
           <Text ID="76">
             <EN>Jean La Fortune</EN>
             <DE>Jean La Fortune</DE>
@@ -5345,7 +5193,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010211">
+  <Asset ID="1010211" Release="Release">
     <Name>chassis</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_chassis.png</Filename>
@@ -5411,7 +5259,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010201">
+  <Asset ID="1010201" Release="Release">
     <Name>clay</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_clay.png</Filename>
@@ -5524,7 +5372,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010206">
+  <Asset ID="1010206" Release="Release">
     <Name>sewing machines</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_sewing_machine.png</Filename>
@@ -5640,6 +5488,17 @@
           </Text>
         </Details>
       </Source>
+      <Source ID="220">
+        <Name>Second_ai_11 (Hugo Mercier)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/ai_11.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Ship Drop - Dr. Hugo Mercier</EN>
+          <DE>Schiff Drop - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details />
+      </Source>
       <Source ID="800399">
         <Name>Rescue Mission Easy</Name>
         <Icon>
@@ -5661,7 +5520,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010213">
+  <Asset ID="1010213" Release="Release">
     <Name>bread</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_bread.png</Filename>
@@ -5709,6 +5568,46 @@
       <DE>Handgefertigte Laibe.</DE>
     </Info>
     <Sources>
+      <Source ID="110687">
+        <Name>Construction - Increase the production - Hugo Mercier</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Quest - Dr. Hugo Mercier</EN>
+          <DE>Quest - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details>
+          <Text ID="110687">
+            <EN>Free from Free Market</EN>
+            <DE>Frei vom freien Markt</DE>
+          </Text>
+          <Text ID="110691">
+            <EN>A Sample of Anarchy</EN>
+            <DE>Eine Kostprobe der Anarchie</DE>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="110882">
+        <Name>RQ_Workers_Brioche</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="193">
+          <EN>Quest - Worker</EN>
+          <DE>Quest - Arbeiter</DE>
+        </Text>
+        <Details>
+          <Text ID="110882">
+            <EN>Let Them Eat Cake</EN>
+            <DE>Sollen sie doch Kuchen essen</DE>
+          </Text>
+          <Text ID="110888">
+            <EN>Overproduction — The Loaves</EN>
+            <DE>Überproduktion - Die Brotlaibe</DE>
+          </Text>
+        </Details>
+      </Source>
       <Source ID="150143">
         <Name>Deliver Bread - Jorgensen</Name>
         <Icon>
@@ -5890,6 +5789,17 @@
         </Text>
         <Details />
       </Source>
+      <Source ID="220">
+        <Name>Second_ai_11 (Hugo Mercier)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/ai_11.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Ship Drop - Dr. Hugo Mercier</EN>
+          <DE>Schiff Drop - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details />
+      </Source>
       <Source ID="152472">
         <Name>Take better care - George Smith</Name>
         <Icon>
@@ -5911,7 +5821,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010214">
+  <Asset ID="1010214" Release="Release">
     <Name>beer</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_beer.png</Filename>
@@ -6118,7 +6028,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010215">
+  <Asset ID="1010215" Release="Release">
     <Name>goulash</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_goulash_01.png</Filename>
@@ -6275,7 +6185,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010217">
+  <Asset ID="1010217" Release="Release">
     <Name>canned food</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_canned_goulash.png</Filename>
@@ -6312,6 +6222,22 @@
       <DE>Man hat hoffentlich einen Öffner zur Hand.</DE>
     </Info>
     <Sources>
+      <Source ID="110889">
+        <Name>RQ_Workers_MoreThanEnoughFood_CannedFood</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="193">
+          <EN>Quest - Worker</EN>
+          <DE>Quest - Arbeiter</DE>
+        </Text>
+        <Details>
+          <Text ID="110889">
+            <EN>Overproduction — Tin Rush</EN>
+            <DE>Überproduktion - Zinnrausch</DE>
+          </Text>
+        </Details>
+      </Source>
       <Source ID="150179">
         <Name>Deliver Corned Beef - Jorgensen</Name>
         <Icon>
@@ -6508,6 +6434,22 @@
           </Text>
         </Details>
       </Source>
+      <Source ID="110691">
+        <Name>Gift - We can afford it - Hugo Mercier</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Quest - Dr. Hugo Mercier</EN>
+          <DE>Quest - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details>
+          <Text ID="110691">
+            <EN>A Sample of Anarchy</EN>
+            <DE>Eine Kostprobe der Anarchie</DE>
+          </Text>
+        </Details>
+      </Source>
       <Source ID="152472">
         <Name>Take better care - George Smith</Name>
         <Icon>
@@ -6529,7 +6471,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010216">
+  <Asset ID="1010216" Release="Release">
     <Name>schnapps</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_schnapps_4.png</Filename>
@@ -6811,7 +6753,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010238">
+  <Asset ID="1010238" Release="Release">
     <Name>sausage</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_meat_sausage.png</Filename>
@@ -6848,6 +6790,22 @@
       <DE>Därme mit geheimnisvoller Füllung.</DE>
     </Info>
     <Sources>
+      <Source ID="110890">
+        <Name>RQ_Workers_MoreThanEnoughFood_Sausages</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="193">
+          <EN>Quest - Worker</EN>
+          <DE>Quest - Arbeiter</DE>
+        </Text>
+        <Details>
+          <Text ID="110890">
+            <EN>Overproduction — The Wurst</EN>
+            <DE>Überproduktion - Die Wurst</DE>
+          </Text>
+        </Details>
+      </Source>
       <Source ID="150877">
         <Name>RQ_Farmers_EscapedPig</Name>
         <Icon>
@@ -6978,6 +6936,33 @@
         </Text>
         <Details />
       </Source>
+      <Source ID="220">
+        <Name>Second_ai_11 (Hugo Mercier)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/ai_11.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Ship Drop - Dr. Hugo Mercier</EN>
+          <DE>Schiff Drop - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details />
+      </Source>
+      <Source ID="110691">
+        <Name>Gift - We can afford it - Hugo Mercier</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Quest - Dr. Hugo Mercier</EN>
+          <DE>Quest - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details>
+          <Text ID="110691">
+            <EN>A Sample of Anarchy</EN>
+            <DE>Eine Kostprobe der Anarchie</DE>
+          </Text>
+        </Details>
+      </Source>
       <Source ID="152472">
         <Name>Take better care - George Smith</Name>
         <Icon>
@@ -6999,7 +6984,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="120016">
+  <Asset ID="120016" Release="Release">
     <Name>champagne</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_champagne.png</Filename>
@@ -7328,7 +7313,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010218">
+  <Asset ID="1010218" Release="Release">
     <Name>beams</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
@@ -7376,6 +7361,22 @@
       <DE>Es gibt sie I-, H-, W- und T-förmig.</DE>
     </Info>
     <Sources>
+      <Source ID="110880">
+        <Name>RQ_Workers_ReapingTheFruits</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="193">
+          <EN>Quest - Worker</EN>
+          <DE>Quest - Arbeiter</DE>
+        </Text>
+        <Details>
+          <Text ID="110880">
+            <EN>Iron Grip</EN>
+            <DE>Eiserner Griff</DE>
+          </Text>
+        </Details>
+      </Source>
       <Source ID="51">
         <Name>Third_enemy_01 (Edvard Goode)</Name>
         <Icon>
@@ -7585,7 +7586,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010219">
+  <Asset ID="1010219" Release="Release">
     <Name>steel</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_steel.png</Filename>
@@ -7678,12 +7679,23 @@
           </Text>
         </Details>
       </Source>
+      <Source ID="220">
+        <Name>Second_ai_11 (Hugo Mercier)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/ai_11.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Ship Drop - Dr. Hugo Mercier</EN>
+          <DE>Schiff Drop - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details />
+      </Source>
     </Sources>
     <MonumentEvents />
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010221">
+  <Asset ID="1010221" Release="Release">
     <Name>weapons</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_weapons.png</Filename>
@@ -7731,6 +7743,22 @@
       <DE>Gut für Zähne, Haut und das Schüren von Feuern.</DE>
     </Info>
     <Sources>
+      <Source ID="110880">
+        <Name>RQ_Workers_ReapingTheFruits</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="193">
+          <EN>Quest - Worker</EN>
+          <DE>Quest - Arbeiter</DE>
+        </Text>
+        <Details>
+          <Text ID="110880">
+            <EN>Iron Grip</EN>
+            <DE>Eiserner Griff</DE>
+          </Text>
+        </Details>
+      </Source>
       <Source ID="73">
         <Name>Third_party_03 (Anne Harlow)</Name>
         <Icon>
@@ -7741,6 +7769,10 @@
           <DE>Hafen - Anne Harlow</DE>
         </Text>
         <Details>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
           <Text ID="73">
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
@@ -7757,6 +7789,10 @@
           <DE>Hafen - Jean La Fortune</DE>
         </Text>
         <Details>
+          <Text ID="76">
+            <EN>Jean La Fortune</EN>
+            <DE>Jean La Fortune</DE>
+          </Text>
           <Text ID="76">
             <EN>Jean La Fortune</EN>
             <DE>Jean La Fortune</DE>
@@ -8075,7 +8111,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010222">
+  <Asset ID="1010222" Release="Release">
     <Name>dynamite</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_dynamite.png</Filename>
@@ -8099,11 +8135,11 @@
     <ExpeditionAttributes>
       <Upgrade>
         <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
         </Icon>
-        <Text ID="3922">
-          <EN>Naval Power</EN>
-          <DE>Gefechtskunde</DE>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
         </Text>
         <Value>10</Value>
       </Upgrade>
@@ -8321,12 +8357,23 @@
         </Text>
         <Details />
       </Source>
+      <Source ID="220">
+        <Name>Second_ai_11 (Hugo Mercier)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/ai_11.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Ship Drop - Dr. Hugo Mercier</EN>
+          <DE>Schiff Drop - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details />
+      </Source>
     </Sources>
     <MonumentEvents />
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010223">
+  <Asset ID="1010223" Release="Release">
     <Name>advanced weapons</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_advanced_weaponry.png</Filename>
@@ -8388,6 +8435,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="76">
@@ -8400,6 +8451,10 @@
           <DE>Hafen - Jean La Fortune</DE>
         </Text>
         <Details>
+          <Text ID="76">
+            <EN>Jean La Fortune</EN>
+            <DE>Jean La Fortune</DE>
+          </Text>
           <Text ID="76">
             <EN>Jean La Fortune</EN>
             <DE>Jean La Fortune</DE>
@@ -8607,7 +8662,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010224">
+  <Asset ID="1010224" Release="Release">
     <Name>steam motors</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_steam_machine.png</Filename>
@@ -8764,7 +8819,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010225">
+  <Asset ID="1010225" Release="Release">
     <Name>steam carriages</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_steam_carriage.png</Filename>
@@ -8785,7 +8840,18 @@
     <ResidenceUpgrades />
     <PopulationUpgrades />
     <ElectricUpgrades />
-    <ExpeditionAttributes />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
     <AttackableUpgrades />
     <TradeShipUpgrades />
     <VehicleUpgrades />
@@ -8904,7 +8970,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010204">
+  <Asset ID="1010204" Release="Release">
     <Name>brass</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_brass.png</Filename>
@@ -9008,7 +9074,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010226">
+  <Asset ID="1010226" Release="Release">
     <Name>coal</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_coal.png</Filename>
@@ -9172,7 +9238,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010227">
+  <Asset ID="1010227" Release="Release">
     <Name>iron</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_iron.png</Filename>
@@ -9254,7 +9320,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010229">
+  <Asset ID="1010229" Release="Release">
     <Name>zinc</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_tin_ore.png</Filename>
@@ -9336,7 +9402,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010230">
+  <Asset ID="1010230" Release="Release">
     <Name>copper</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_copper.png</Filename>
@@ -9445,7 +9511,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010231">
+  <Asset ID="1010231" Release="Release">
     <Name>cement</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_cement.png</Filename>
@@ -9538,7 +9604,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010233">
+  <Asset ID="1010233" Release="Release">
     <Name>gold ore</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_gold_ore.png</Filename>
@@ -9616,7 +9682,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010234">
+  <Asset ID="1010234" Release="Release">
     <Name>tallow</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_tallow.png</Filename>
@@ -9709,12 +9775,23 @@
           </Text>
         </Details>
       </Source>
+      <Source ID="220">
+        <Name>Second_ai_11 (Hugo Mercier)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/ai_11.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Ship Drop - Dr. Hugo Mercier</EN>
+          <DE>Schiff Drop - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details />
+      </Source>
     </Sources>
     <MonumentEvents />
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010235">
+  <Asset ID="1010235" Release="Release">
     <Name>flour</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_flour.png</Filename>
@@ -9889,7 +9966,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010236">
+  <Asset ID="1010236" Release="Release">
     <Name>malt</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_malt.png</Filename>
@@ -9971,7 +10048,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010237">
+  <Asset ID="1010237" Release="Release">
     <Name>basic clothes</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_working_cloth.png</Filename>
@@ -10112,7 +10189,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010241">
+  <Asset ID="1010241" Release="Release">
     <Name>glass</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_glass.png</Filename>
@@ -10253,7 +10330,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010242">
+  <Asset ID="1010242" Release="Release">
     <Name>inlay</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_inlay.png</Filename>
@@ -10366,7 +10443,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010243">
+  <Asset ID="1010243" Release="Release">
     <Name>carbon filament</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_carbon_filament.png</Filename>
@@ -10432,7 +10509,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010245">
+  <Asset ID="1010245" Release="Release">
     <Name>high-wheeler</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_high_wheeler.png</Filename>
@@ -10587,7 +10664,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010246">
+  <Asset ID="1010246" Release="Release">
     <Name>pocket watch</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_pocket_watch.png</Filename>
@@ -10971,7 +11048,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="120030">
+  <Asset ID="120030" Release="Release">
     <Name>glasses</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_glasses.png</Filename>
@@ -11064,7 +11141,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010248">
+  <Asset ID="1010248" Release="Release">
     <Name>phonographs</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_phonographs.png</Filename>
@@ -11438,7 +11515,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010249">
+  <Asset ID="1010249" Release="Release">
     <Name>gold</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_gold.png</Filename>
@@ -11489,6 +11566,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="76">
@@ -11501,6 +11582,10 @@
           <DE>Hafen - Jean La Fortune</DE>
         </Text>
         <Details>
+          <Text ID="76">
+            <EN>Jean La Fortune</EN>
+            <DE>Jean La Fortune</DE>
+          </Text>
           <Text ID="76">
             <EN>Jean La Fortune</EN>
             <DE>Jean La Fortune</DE>
@@ -11804,7 +11889,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010250">
+  <Asset ID="1010250" Release="Release">
     <Name>jewelry</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_jewelry.png</Filename>
@@ -12061,7 +12146,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010251">
+  <Asset ID="1010251" Release="Release">
     <Name>sugar cane</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png</Filename>
@@ -12159,7 +12244,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010252">
+  <Asset ID="1010252" Release="Release">
     <Name>tobacco</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_tobacco.png</Filename>
@@ -12323,7 +12408,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010253">
+  <Asset ID="1010253" Release="Release">
     <Name>cotton</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_cotton.png</Filename>
@@ -12432,7 +12517,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010254">
+  <Asset ID="1010254" Release="Release">
     <Name>cocoa</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_cocoa.png</Filename>
@@ -12541,7 +12626,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010255">
+  <Asset ID="1010255" Release="Release">
     <Name>caoutchouc</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_caoutchouc.png</Filename>
@@ -12650,7 +12735,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="120031">
+  <Asset ID="120031" Release="Release">
     <Name>coffee beans</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_coffee_beans.png</Filename>
@@ -12716,7 +12801,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="120034">
+  <Asset ID="120034" Release="Release">
     <Name>corn</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_corn.png</Filename>
@@ -12862,7 +12947,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="120036">
+  <Asset ID="120036" Release="Release">
     <Name>alpaca wool</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_alpaca_wool.png</Filename>
@@ -12975,7 +13060,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="120041">
+  <Asset ID="120041" Release="Release">
     <Name>bananas</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_banana.png</Filename>
@@ -13328,7 +13413,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010256">
+  <Asset ID="1010256" Release="Release">
     <Name>pearls</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_pearls.png</Filename>
@@ -13533,7 +13618,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="120042">
+  <Asset ID="120042" Release="Release">
     <Name>fish oil</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_fishoil.png</Filename>
@@ -13650,7 +13735,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="120043">
+  <Asset ID="120043" Release="Release">
     <Name>ponchos</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_poncho.png</Filename>
@@ -13732,7 +13817,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="120044">
+  <Asset ID="120044" Release="Release">
     <Name>felt</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_felt.png</Filename>
@@ -13866,7 +13951,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="120037">
+  <Asset ID="120037" Release="Release">
     <Name>bombin</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_bowler_hat.png</Filename>
@@ -13948,7 +14033,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010257">
+  <Asset ID="1010257" Release="Release">
     <Name>rum</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_rum_barrel.png</Filename>
@@ -14026,6 +14111,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="76">
@@ -14038,6 +14127,10 @@
           <DE>Hafen - Jean La Fortune</DE>
         </Text>
         <Details>
+          <Text ID="76">
+            <EN>Jean La Fortune</EN>
+            <DE>Jean La Fortune</DE>
+          </Text>
           <Text ID="76">
             <EN>Jean La Fortune</EN>
             <DE>Jean La Fortune</DE>
@@ -14304,7 +14397,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010258">
+  <Asset ID="1010258" Release="Release">
     <Name>chocolate</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_chocolate.png</Filename>
@@ -14573,7 +14666,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="120032">
+  <Asset ID="120032" Release="Release">
     <Name>coffee</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_coffe_cup.png</Filename>
@@ -14594,7 +14687,18 @@
     <ResidenceUpgrades />
     <PopulationUpgrades />
     <ElectricUpgrades />
-    <ExpeditionAttributes />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>5</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
     <AttackableUpgrades />
     <TradeShipUpgrades />
     <VehicleUpgrades />
@@ -14802,7 +14906,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="120033">
+  <Asset ID="120033" Release="Release">
     <Name>fried bananas</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_fried_bananas.png</Filename>
@@ -14998,7 +15102,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="120035">
+  <Asset ID="120035" Release="Release">
     <Name>burrito</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_burrito.png</Filename>
@@ -15139,7 +15243,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010239">
+  <Asset ID="1010239" Release="Release">
     <Name>sugar</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_salt.png</Filename>
@@ -15305,7 +15409,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010240">
+  <Asset ID="1010240" Release="Release">
     <Name>cotton cloth</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_cotton_fur.png</Filename>
@@ -15450,7 +15554,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010259">
+  <Asset ID="1010259" Release="Release">
     <Name>cigars</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_cigars.png</Filename>
@@ -15786,7 +15890,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="120021">
+  <Asset ID="120021" Release="Release">
     <Name>stone coal</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_coal.png</Filename>
@@ -15827,7 +15931,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="1010566">
+  <Asset ID="1010566" Release="Release">
     <Name>oil</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_oil.png</Filename>
@@ -15864,6 +15968,22 @@
       <DE>Muss göttlich sein - es schwimmt auf dem Wasser.</DE>
     </Info>
     <Sources>
+      <Source ID="110779">
+        <Name>Delivery - Reconditioning - Hugo Mercier NO WRITING</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Quest - Dr. Hugo Mercier</EN>
+          <DE>Quest - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details>
+          <Text ID="">
+            <EN>Delivery - Reconditioning - Hugo Mercier NO WRITING</EN>
+            <DE>Delivery - Reconditioning - Hugo Mercier NO WRITING</DE>
+          </Text>
+        </Details>
+      </Source>
       <Source ID="78">
         <Name>Third_party_08 (Madame Kahina)</Name>
         <Icon>
@@ -15885,7 +16005,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="120022">
+  <Asset ID="120022" Release="Release">
     <Name>electricity</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_electricity.png</Filename>

@@ -9,7 +9,7 @@ namespace RDA.Data {
 
     #region Properties
     public String Filename { get; set; }
-    public string[] IgnoredDirectorys { get; set; } = new [] { @"E:\Proggn\Projects\GitRepos\GitRepos\AssetViewerAnnothek\RDA\Resources\data\ui\2kimages\main\3dicons\Temporary_Ornament" };
+    public string[] IgnoredDirectorys { get; set; } = new [] { $@"{Program.PathRoot}\Resources\data\ui\2kimages\main\3dicons\Temporary_Ornament" };
     #endregion
 
     #region Constructor

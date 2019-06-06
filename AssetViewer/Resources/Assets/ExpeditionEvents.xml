@@ -981,19 +981,19 @@
           <Option ID="802322" OptionAttribute="Hunting">
             <Text ID="802322">
               <EN>Follow the track</EN>
-              <DE>Die Spuren verfolgen</DE>
+              <DE>Dem Pfad folgen</DE>
             </Text>
           </Option>
           <Option ID="802333" OptionAttribute="Hunting">
             <Text ID="802333">
               <EN>Watch from a distance</EN>
-              <DE>Die Tätigkeit des Dorfs aus sicherer Entfernung beobachten</DE>
+              <DE>Aus sicherer Entfernung beobachten</DE>
             </Text>
           </Option>
           <Option ID="802340" OptionAttribute="Melee">
             <Text ID="802340">
               <EN>Draw your weapons!</EN>
-              <DE>Zuerst angreifen!</DE>
+              <DE>Die Waffen ziehen!</DE>
             </Text>
           </Option>
         </Options>
@@ -1313,6 +1313,45 @@
             <Text ID="803092">
               <EN>Blast the floe apart</EN>
               <DE>Das Treibeis zerschießen</DE>
+            </Text>
+          </Option>
+        </Options>
+      </Path>
+    </Paths>
+  </ExpeditionEvent>
+  <ExpeditionEvent ID="803363">
+    <Name ID="803363">
+      <EN>The Great Sickness</EN>
+      <DE>Die schwere Krankheit</DE>
+    </Name>
+    <Paths>
+      <Path ID="1.1.1.2.1">
+        <Rewards>
+          <Item ID="190720" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="803372">
+            <Text ID="803372">
+              <EN>Offer vaccination for free</EN>
+              <DE>Impfstoff kostenlos verteilen</DE>
+            </Text>
+          </Option>
+          <Option ID="803365" OptionAttribute="Medicine">
+            <Text ID="803365">
+              <EN>Have the ship's doctor produce a vaccine</EN>
+              <DE>Den Schiffsarzt einen Impfstoff herstellen lassen</DE>
+            </Text>
+          </Option>
+          <Option ID="803368">
+            <Text ID="803368">
+              <EN>Sell the locals your vaccine</EN>
+              <DE>Den Einheimischen den Impfstoff verkaufen</DE>
+            </Text>
+          </Option>
+          <Option ID="803371">
+            <Text ID="803371">
+              <EN>Refuse trade</EN>
+              <DE>Handel ablehnen</DE>
             </Text>
           </Option>
         </Options>
@@ -4883,6 +4922,52 @@
             </Text>
           </Option>
         </Options>
+      </Path>
+    </Paths>
+  </ExpeditionEvent>
+  <ExpeditionEvent ID="800005">
+    <Name ID="800005">
+      <EN>Polar Event</EN>
+      <DE>Polar Event</DE>
+    </Name>
+    <Paths>
+      <Path ID="1.1.2">
+        <Rewards>
+          <Item ID="150038" Amount="1" />
+          <Item ID="600005" Amount="1" />
+          <Item ID="180025" />
+        </Rewards>
+        <Options>
+          <Option ID="800110">
+            <Text ID="800110">
+              <EN>drink [ExpeditionEventRequirementAmount] [AssetData([ExpeditionEventRequirement]) Text]</EN>
+              <DE>drink [ExpeditionEventRequirementAmount] [AssetData([ExpeditionEventRequirement]) Text]</DE>
+            </Text>
+            <Requirements>
+              <Item ID="1010216" Amount="10" />
+            </Requirements>
+          </Option>
+          <Option ID="800087">
+            <Text ID="800087">
+              <EN>try to find a warm place</EN>
+              <DE>try to find a warm place</DE>
+            </Text>
+          </Option>
+        </Options>
+      </Path>
+    </Paths>
+  </ExpeditionEvent>
+  <ExpeditionEvent ID="800391">
+    <Name ID="800391">
+      <EN>Reward Event</EN>
+      <DE>Reward Event</DE>
+    </Name>
+    <Paths>
+      <Path ID="1">
+        <Rewards>
+          <Item ID="190016" Amount="2" />
+        </Rewards>
+        <Options />
       </Path>
     </Paths>
   </ExpeditionEvent>

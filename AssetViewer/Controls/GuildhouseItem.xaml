@@ -76,6 +76,8 @@
           <RowDefinition Height="22"></RowDefinition>
           <RowDefinition Height="18"></RowDefinition>
           <RowDefinition Height="22"></RowDefinition>
+          <RowDefinition Height="18"/>
+          <RowDefinition Height="22"/>
         </Grid.RowDefinitions>
 
         <TextBlock Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" Text="{Binding Path=Rarities, Converter={StaticResource Description}, ConverterParameter=1001}" Margin="0,0,5,0"></TextBlock>
@@ -96,6 +98,10 @@
         
         <TextBlock Grid.Row="2" Grid.Column="6" Margin="0,0,5,0" VerticalAlignment="Center" Text="{Binding Path=Upgrades, Converter={StaticResource Description}, ConverterParameter=1006}" />
         <ComboBox x:Name="ComboBoxUpgrades" Grid.Row="3" Grid.Column="6" Height="22" ItemsSource="{Binding Path=Upgrades}" SelectionChanged="ComboBoxRarities_OnSelectionChanged" />
+
+        <TextBlock Grid.Row="4" Grid.Column="0" Margin="0,0,5,0" VerticalAlignment="Center" Text="{Binding Path=ReleaseVersions, Converter={StaticResource Description}, ConverterParameter=1007}" />
+        <ComboBox x:Name="ComboBoxReleases" Grid.Row="5" Grid.Column="0" Height="22" ItemsSource="{Binding Path=ReleaseVersions}" SelectionChanged="ComboBoxRarities_OnSelectionChanged" />
+        
       </Grid>
     </Border>
     <Grid Grid.Row="2">

@@ -184,6 +184,7 @@ namespace RDA.Templates {
     public Description Text { get; set; }
     public Description Rarity { get; set; }
     public String ItemType { get; set; }
+    public String ReleaseVersion { get; set; } = "Release";
 
     //
     public Allocation Allocation { get; set; }
@@ -236,6 +237,7 @@ namespace RDA.Templates {
     public XElement ToXml() {
       var result = new XElement(this.GetType().Name);
       result.Add(new XAttribute("ID", this.ID));
+      result.Add(new XAttribute("Release", this.ReleaseVersion));
       result.Add(new XElement("Name", this.Name));
       result.Add(this.Icon.ToXml());
       result.Add(this.Text.ToXml("Text"));
@@ -590,6 +592,7 @@ namespace RDA.Templates {
       if (links.Length > 0) {
         for (var i = 0; i < links.Length; i++) {
           var element = links[i];
+          var isShipDrop = element.Name.LocalName == "ShipDropRewardPool";
           while (element.Name.LocalName != "Asset" || !element.HasElements) {
             element = element.Parent;
           }
@@ -598,7 +601,7 @@ namespace RDA.Templates {
           var result = mainResult.Copy();
           var key = element.XPathSelectElement("Values/Standard/GUID").Value;
 
-          if (element.Element("Template") == null) {
+          if (element.Element("Template") == null || isShipDrop) {
             // Ship Drop
             if (element.XPathSelectElement("Values/Profile/ShipDropRewardPool")?.Value == id) {
               result.AddSourceAsset(element.GetProxyElement("ShipDrop"), new HashSet<XElement> { element.GetProxyElement("ShipDrop") });
@@ -654,6 +657,7 @@ namespace RDA.Templates {
             case "CollectablePicturePuzzle":
             case "MonumentEventReward":
             case "TourismFeature":
+            case "A7_QuestSmuggler":
               if (!element.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
                 result.AddSourceAsset(element, new HashSet<XElement> { element });
               }

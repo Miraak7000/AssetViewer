@@ -1,6 +1,2051 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ItemSpecialAction>
-  <Asset ID="102487">
+  <Asset ID="110955" Release="Update 03">
+    <Name>Leader Anarchy Flag</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_mercier_flag.png</Filename>
+    </Icon>
+    <Text ID="110955">
+      <EN>Dr. Mercier's Feverishly Federating Flag of the Free</EN>
+      <DE>Dr. Merciers Fahne der Freiheit</DE>
+    </Text>
+    <Rarity ID="118006">
+      <EN>Legendary</EN>
+      <DE>Legendär</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <ItemSets />
+    <Allocation ID="Warship">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
+      </Icon>
+      <Text ID="12812">
+        <EN>Military Ships</EN>
+        <DE>Kriegsschiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets>
+      <Target ID="">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+      </Target>
+    </EffectTargets>
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+        </Icon>
+        <Text ID="3920">
+          <EN>Diplomacy</EN>
+          <DE>Redegabe</DE>
+        </Text>
+        <Value>50</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_church_2d.png</Filename>
+        </Icon>
+        <Text ID="3925">
+          <EN>Faith</EN>
+          <DE>Glaube</DE>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>172375</TradePrice>
+    <Info ID="110964">
+      <EN>Upon seeing Dr. Mercier's flag flapping from your ships, there is every chance of the enemy hopping on to your bandwagon…</EN>
+      <DE>Vernichtet den Feind wie Dr. Merciers flammende Reden.</DE>
+    </Info>
+    <Sources>
+      <Source ID="110825">
+        <Name>Destroy - Main arc Part 5 Side with Mercier - Hugo Mercier</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Quest - Dr. Hugo Mercier</EN>
+          <DE>Quest - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details>
+          <Text ID="110825">
+            <EN>No Gods, No Masters 5 — Chaos</EN>
+            <DE>Weder Gott, noch Herr 5 - Chaos</DE>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
+  <Asset ID="110965" Release="Update 03">
+    <Name>Anarchist Bomb Pack</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_anarchist_bomb_pack_1.png</Filename>
+    </Icon>
+    <Text ID="110965">
+      <EN>Anarchist's Bomb Pack</EN>
+      <DE>Anarchistisches Bomben-Paket</DE>
+    </Text>
+    <Rarity ID="118003">
+      <EN>Uncommon</EN>
+      <DE>Ungewöhnlich</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <ItemSets />
+    <Allocation ID="Warship">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
+      </Icon>
+      <Text ID="12812">
+        <EN>Military Ships</EN>
+        <DE>Kriegsschiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>2687</TradePrice>
+    <Info ID="110970">
+      <EN>If for any reason the books and pamphlets aren't working...</EN>
+      <DE>Sollten aus irgendeinem Grund die Bücher und Pamphlete nicht wirken …</DE>
+    </Info>
+    <Sources>
+      <Source ID="220">
+        <Name>Second_ai_11 (Hugo Mercier)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/ai_11.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Ship Drop - Dr. Hugo Mercier</EN>
+          <DE>Schiff Drop - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details />
+      </Source>
+      <Source ID="110692">
+        <Name>Escort - We welcome all - Hugo Mercier</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Quest - Dr. Hugo Mercier</EN>
+          <DE>Quest - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details>
+          <Text ID="110692">
+            <EN>Stronghold for the &lt;br/&gt;Oppressed</EN>
+            <DE>Festung für &lt;br/&gt;die Unterdrückten</DE>
+          </Text>
+          <Text ID="110693">
+            <EN>Survival of the Kindest</EN>
+            <DE>Überleben des Gütigsten</DE>
+          </Text>
+          <Text ID="110695">
+            <EN>Mutual Admiration</EN>
+            <DE>Gegenseitige Bewunderung</DE>
+          </Text>
+          <Text ID="110698">
+            <EN>Away with the Scale</EN>
+            <DE>Weg mit Justitia</DE>
+          </Text>
+          <Text ID="">
+            <EN>Destroy - Close prison door - Hugo Mercier NEED DESTROY DESTINATION</EN>
+            <DE>Destroy - Close prison door - Hugo Mercier NEED DESTROY DESTINATION</DE>
+          </Text>
+          <Text ID="110712">
+            <EN>The Last Laugh</EN>
+            <DE>Wer zuletzt lacht</DE>
+          </Text>
+          <Text ID="110717">
+            <EN>The Power of the Masses</EN>
+            <DE>Die Macht der Masse</DE>
+          </Text>
+          <Text ID="">
+            <EN>Status Quo - Parasites - Hugo Mercier NO WRITING</EN>
+            <DE>Status Quo - Parasites - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="">
+            <EN>Photo - Festival of reason - Hugo Mercier NO WRITING</EN>
+            <DE>Photo - Festival of reason - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="">
+            <EN>Destroy - No report - Hugo Mercier NO WRITING</EN>
+            <DE>Destroy - No report - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="110772">
+            <EN>Dissidence Adrift</EN>
+            <DE>Mitreißende Dissidenz</DE>
+          </Text>
+          <Text ID="">
+            <EN>Delivery - Reconditioning - Hugo Mercier NO WRITING</EN>
+            <DE>Delivery - Reconditioning - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="110780">
+            <EN>They Must Be Mad</EN>
+            <DE>Sie müssen verrückt sein</DE>
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - Conspirators Denounce - Hugo Mercier </EN>
+            <DE>Picture Puzzle - Conspirators Denounce - Hugo Mercier </DE>
+          </Text>
+          <Text ID="110745">
+            <EN>Growing Process</EN>
+            <DE>Wachstumsprozess</DE>
+          </Text>
+          <Text ID="110701">
+            <EN>Ignite the State</EN>
+            <DE>Setzt den Staat in Flammen</DE>
+          </Text>
+          <Text ID="110719">
+            <EN>La Propriété, C'est le Vol</EN>
+            <DE>La Propriété, C'est le Vol</DE>
+          </Text>
+          <Text ID="110755">
+            <EN>A Common Enemy</EN>
+            <DE>Ein gemeinsamer Feind</DE>
+          </Text>
+          <Text ID="110774">
+            <EN>Sedition</EN>
+            <DE>Volksverhetzung</DE>
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - The Hunt Part 1 - Hugo Mercier </EN>
+            <DE>Picture Puzzle - The Hunt Part 1 - Hugo Mercier </DE>
+          </Text>
+          <Text ID="110804">
+            <EN>Paranoia 1 — Mistrust</EN>
+            <DE>Paranoia 1 - Misstrauen</DE>
+          </Text>
+          <Text ID="">
+            <EN>Smuggle wo scanner - Main arc Prologue - Hugo Mercier</EN>
+            <DE>Smuggle wo scanner - Main arc Prologue - Hugo Mercier</DE>
+          </Text>
+          <Text ID="110817">
+            <EN>No Gods, No Masters 1 —  &lt;br/&gt;Intervention</EN>
+            <DE>Weder Gott, noch Herr 1 -  &lt;br/&gt;Intervention</DE>
+          </Text>
+          <Text ID="110819">
+            <EN>No Gods, No Masters 2 — An Eye for an Eye</EN>
+            <DE>Weder Gott, noch Herr 2 - Auge um Auge</DE>
+          </Text>
+          <Text ID="110821">
+            <EN>No Gods, No Masters 3 — Trust Issues</EN>
+            <DE>Weder Gott, noch Herr 3 - Vertrauensprobleme</DE>
+          </Text>
+          <Text ID="110792">
+            <EN>Gunpowder and Treason 3 — Emancipation</EN>
+            <DE>Schwarzpulver und Hochverrat 3 - Emanzipation</DE>
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - The Hunt Part 1 Select - Hugo Mercier </EN>
+            <DE>Picture Puzzle - The Hunt Part 1 Select - Hugo Mercier </DE>
+          </Text>
+          <Text ID="">
+            <EN>Follow ship - The Hunt Part 2 Minister Culture - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</EN>
+            <DE>Follow ship - The Hunt Part 2 Minister Culture - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</DE>
+          </Text>
+          <Text ID="">
+            <EN>Follow ship - The Hunt Part 2 Minister Productivity - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</EN>
+            <DE>Follow ship - The Hunt Part 2 Minister Productivity - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</DE>
+          </Text>
+          <Text ID="">
+            <EN>Destroy - The Hunt Part 3 - Hugo Mercier</EN>
+            <DE>Destroy - The Hunt Part 3 - Hugo Mercier</DE>
+          </Text>
+          <Text ID="110808">
+            <EN>Paranoia 3 — Incrimination</EN>
+            <DE>Paranoia 3 - Anschuldigung</DE>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
+  <Asset ID="110966" Release="Update 03">
+    <Name>Big Anarchist Bomb Pack</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_anarchist_bomb_pack_2.png</Filename>
+    </Icon>
+    <Text ID="110966">
+      <EN>Big Anarchist's Bomb Pack</EN>
+      <DE>Großes anarchistisches Bomben-Paket</DE>
+    </Text>
+    <Rarity ID="118004">
+      <EN>Rare</EN>
+      <DE>Selten</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <ItemSets />
+    <Allocation ID="Warship">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
+      </Icon>
+      <Text ID="12812">
+        <EN>Military Ships</EN>
+        <DE>Kriegsschiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>5912</TradePrice>
+    <Info ID="110971">
+      <EN>Big enough to bring the house of the Royal Council down — just don't fluff it, or they'll be celebrating your failure forever.</EN>
+      <DE>Groß genug, um den Sitz des Königlichen Rats zum Einsturz zu bringen. Aber vermasseln Sie es nicht, sonst feiern sie Ihr Scheitern bis in alle Ewigkeit.</DE>
+    </Info>
+    <Sources>
+      <Source ID="110824">
+        <Name>Sail to Mercier - Main arc Part 4 - Hugo Mercier</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Quest - Dr. Hugo Mercier</EN>
+          <DE>Quest - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details>
+          <Text ID="110824">
+            <EN>No Gods, No Masters 4 — Chaos</EN>
+            <DE>Weder Gott, noch Herr 4 - Chaos</DE>
+          </Text>
+          <Text ID="110692">
+            <EN>Stronghold for the &lt;br/&gt;Oppressed</EN>
+            <DE>Festung für &lt;br/&gt;die Unterdrückten</DE>
+          </Text>
+          <Text ID="110693">
+            <EN>Survival of the Kindest</EN>
+            <DE>Überleben des Gütigsten</DE>
+          </Text>
+          <Text ID="110695">
+            <EN>Mutual Admiration</EN>
+            <DE>Gegenseitige Bewunderung</DE>
+          </Text>
+          <Text ID="110698">
+            <EN>Away with the Scale</EN>
+            <DE>Weg mit Justitia</DE>
+          </Text>
+          <Text ID="">
+            <EN>Destroy - Close prison door - Hugo Mercier NEED DESTROY DESTINATION</EN>
+            <DE>Destroy - Close prison door - Hugo Mercier NEED DESTROY DESTINATION</DE>
+          </Text>
+          <Text ID="110712">
+            <EN>The Last Laugh</EN>
+            <DE>Wer zuletzt lacht</DE>
+          </Text>
+          <Text ID="110717">
+            <EN>The Power of the Masses</EN>
+            <DE>Die Macht der Masse</DE>
+          </Text>
+          <Text ID="">
+            <EN>Status Quo - Parasites - Hugo Mercier NO WRITING</EN>
+            <DE>Status Quo - Parasites - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="">
+            <EN>Photo - Festival of reason - Hugo Mercier NO WRITING</EN>
+            <DE>Photo - Festival of reason - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="">
+            <EN>Destroy - No report - Hugo Mercier NO WRITING</EN>
+            <DE>Destroy - No report - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="110772">
+            <EN>Dissidence Adrift</EN>
+            <DE>Mitreißende Dissidenz</DE>
+          </Text>
+          <Text ID="">
+            <EN>Delivery - Reconditioning - Hugo Mercier NO WRITING</EN>
+            <DE>Delivery - Reconditioning - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="110780">
+            <EN>They Must Be Mad</EN>
+            <DE>Sie müssen verrückt sein</DE>
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - Conspirators Denounce - Hugo Mercier </EN>
+            <DE>Picture Puzzle - Conspirators Denounce - Hugo Mercier </DE>
+          </Text>
+          <Text ID="110745">
+            <EN>Growing Process</EN>
+            <DE>Wachstumsprozess</DE>
+          </Text>
+          <Text ID="110701">
+            <EN>Ignite the State</EN>
+            <DE>Setzt den Staat in Flammen</DE>
+          </Text>
+          <Text ID="110719">
+            <EN>La Propriété, C'est le Vol</EN>
+            <DE>La Propriété, C'est le Vol</DE>
+          </Text>
+          <Text ID="110755">
+            <EN>A Common Enemy</EN>
+            <DE>Ein gemeinsamer Feind</DE>
+          </Text>
+          <Text ID="110774">
+            <EN>Sedition</EN>
+            <DE>Volksverhetzung</DE>
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - The Hunt Part 1 - Hugo Mercier </EN>
+            <DE>Picture Puzzle - The Hunt Part 1 - Hugo Mercier </DE>
+          </Text>
+          <Text ID="110804">
+            <EN>Paranoia 1 — Mistrust</EN>
+            <DE>Paranoia 1 - Misstrauen</DE>
+          </Text>
+          <Text ID="">
+            <EN>Smuggle wo scanner - Main arc Prologue - Hugo Mercier</EN>
+            <DE>Smuggle wo scanner - Main arc Prologue - Hugo Mercier</DE>
+          </Text>
+          <Text ID="110817">
+            <EN>No Gods, No Masters 1 —  &lt;br/&gt;Intervention</EN>
+            <DE>Weder Gott, noch Herr 1 -  &lt;br/&gt;Intervention</DE>
+          </Text>
+          <Text ID="110819">
+            <EN>No Gods, No Masters 2 — An Eye for an Eye</EN>
+            <DE>Weder Gott, noch Herr 2 - Auge um Auge</DE>
+          </Text>
+          <Text ID="110821">
+            <EN>No Gods, No Masters 3 — Trust Issues</EN>
+            <DE>Weder Gott, noch Herr 3 - Vertrauensprobleme</DE>
+          </Text>
+          <Text ID="110792">
+            <EN>Gunpowder and Treason 3 — Emancipation</EN>
+            <DE>Schwarzpulver und Hochverrat 3 - Emanzipation</DE>
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - The Hunt Part 1 Select - Hugo Mercier </EN>
+            <DE>Picture Puzzle - The Hunt Part 1 Select - Hugo Mercier </DE>
+          </Text>
+          <Text ID="">
+            <EN>Follow ship - The Hunt Part 2 Minister Culture - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</EN>
+            <DE>Follow ship - The Hunt Part 2 Minister Culture - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</DE>
+          </Text>
+          <Text ID="">
+            <EN>Follow ship - The Hunt Part 2 Minister Productivity - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</EN>
+            <DE>Follow ship - The Hunt Part 2 Minister Productivity - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</DE>
+          </Text>
+          <Text ID="">
+            <EN>Destroy - The Hunt Part 3 - Hugo Mercier</EN>
+            <DE>Destroy - The Hunt Part 3 - Hugo Mercier</DE>
+          </Text>
+          <Text ID="110808">
+            <EN>Paranoia 3 — Incrimination</EN>
+            <DE>Paranoia 3 - Anschuldigung</DE>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="220">
+        <Name>Second_ai_11 (Hugo Mercier)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/ai_11.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Ship Drop - Dr. Hugo Mercier</EN>
+          <DE>Schiff Drop - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details />
+      </Source>
+    </Sources>
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
+  <Asset ID="110982" Release="Update 03">
+    <Name>Sea Mine Small</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_seamine_1.png</Filename>
+    </Icon>
+    <Text ID="110982">
+      <EN>Time Bomb</EN>
+      <DE>Seemine</DE>
+    </Text>
+    <Rarity ID="118004">
+      <EN>Rare</EN>
+      <DE>Selten</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <ItemSets />
+    <Allocation ID="Warship">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
+      </Icon>
+      <Text ID="12812">
+        <EN>Military Ships</EN>
+        <DE>Kriegsschiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>5625</TradePrice>
+    <Info ID="110984">
+      <EN>It's only a matter of time before great change erupts!</EN>
+      <DE>Es ist nur eine Frage der Zeit, bis etwas explodiert!</DE>
+    </Info>
+    <Sources>
+      <Source ID="220">
+        <Name>Second_ai_11 (Hugo Mercier)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/ai_11.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Ship Drop - Dr. Hugo Mercier</EN>
+          <DE>Schiff Drop - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details />
+      </Source>
+      <Source ID="110692">
+        <Name>Escort - We welcome all - Hugo Mercier</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Quest - Dr. Hugo Mercier</EN>
+          <DE>Quest - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details>
+          <Text ID="110692">
+            <EN>Stronghold for the &lt;br/&gt;Oppressed</EN>
+            <DE>Festung für &lt;br/&gt;die Unterdrückten</DE>
+          </Text>
+          <Text ID="110693">
+            <EN>Survival of the Kindest</EN>
+            <DE>Überleben des Gütigsten</DE>
+          </Text>
+          <Text ID="110695">
+            <EN>Mutual Admiration</EN>
+            <DE>Gegenseitige Bewunderung</DE>
+          </Text>
+          <Text ID="110698">
+            <EN>Away with the Scale</EN>
+            <DE>Weg mit Justitia</DE>
+          </Text>
+          <Text ID="">
+            <EN>Destroy - Close prison door - Hugo Mercier NEED DESTROY DESTINATION</EN>
+            <DE>Destroy - Close prison door - Hugo Mercier NEED DESTROY DESTINATION</DE>
+          </Text>
+          <Text ID="110712">
+            <EN>The Last Laugh</EN>
+            <DE>Wer zuletzt lacht</DE>
+          </Text>
+          <Text ID="110717">
+            <EN>The Power of the Masses</EN>
+            <DE>Die Macht der Masse</DE>
+          </Text>
+          <Text ID="">
+            <EN>Status Quo - Parasites - Hugo Mercier NO WRITING</EN>
+            <DE>Status Quo - Parasites - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="">
+            <EN>Photo - Festival of reason - Hugo Mercier NO WRITING</EN>
+            <DE>Photo - Festival of reason - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="">
+            <EN>Destroy - No report - Hugo Mercier NO WRITING</EN>
+            <DE>Destroy - No report - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="110772">
+            <EN>Dissidence Adrift</EN>
+            <DE>Mitreißende Dissidenz</DE>
+          </Text>
+          <Text ID="">
+            <EN>Delivery - Reconditioning - Hugo Mercier NO WRITING</EN>
+            <DE>Delivery - Reconditioning - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="110780">
+            <EN>They Must Be Mad</EN>
+            <DE>Sie müssen verrückt sein</DE>
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - Conspirators Denounce - Hugo Mercier </EN>
+            <DE>Picture Puzzle - Conspirators Denounce - Hugo Mercier </DE>
+          </Text>
+          <Text ID="110745">
+            <EN>Growing Process</EN>
+            <DE>Wachstumsprozess</DE>
+          </Text>
+          <Text ID="110701">
+            <EN>Ignite the State</EN>
+            <DE>Setzt den Staat in Flammen</DE>
+          </Text>
+          <Text ID="110719">
+            <EN>La Propriété, C'est le Vol</EN>
+            <DE>La Propriété, C'est le Vol</DE>
+          </Text>
+          <Text ID="110755">
+            <EN>A Common Enemy</EN>
+            <DE>Ein gemeinsamer Feind</DE>
+          </Text>
+          <Text ID="110774">
+            <EN>Sedition</EN>
+            <DE>Volksverhetzung</DE>
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - The Hunt Part 1 - Hugo Mercier </EN>
+            <DE>Picture Puzzle - The Hunt Part 1 - Hugo Mercier </DE>
+          </Text>
+          <Text ID="110804">
+            <EN>Paranoia 1 — Mistrust</EN>
+            <DE>Paranoia 1 - Misstrauen</DE>
+          </Text>
+          <Text ID="">
+            <EN>Smuggle wo scanner - Main arc Prologue - Hugo Mercier</EN>
+            <DE>Smuggle wo scanner - Main arc Prologue - Hugo Mercier</DE>
+          </Text>
+          <Text ID="110817">
+            <EN>No Gods, No Masters 1 —  &lt;br/&gt;Intervention</EN>
+            <DE>Weder Gott, noch Herr 1 -  &lt;br/&gt;Intervention</DE>
+          </Text>
+          <Text ID="110819">
+            <EN>No Gods, No Masters 2 — An Eye for an Eye</EN>
+            <DE>Weder Gott, noch Herr 2 - Auge um Auge</DE>
+          </Text>
+          <Text ID="110821">
+            <EN>No Gods, No Masters 3 — Trust Issues</EN>
+            <DE>Weder Gott, noch Herr 3 - Vertrauensprobleme</DE>
+          </Text>
+          <Text ID="110792">
+            <EN>Gunpowder and Treason 3 — Emancipation</EN>
+            <DE>Schwarzpulver und Hochverrat 3 - Emanzipation</DE>
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - The Hunt Part 1 Select - Hugo Mercier </EN>
+            <DE>Picture Puzzle - The Hunt Part 1 Select - Hugo Mercier </DE>
+          </Text>
+          <Text ID="">
+            <EN>Follow ship - The Hunt Part 2 Minister Culture - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</EN>
+            <DE>Follow ship - The Hunt Part 2 Minister Culture - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</DE>
+          </Text>
+          <Text ID="">
+            <EN>Follow ship - The Hunt Part 2 Minister Productivity - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</EN>
+            <DE>Follow ship - The Hunt Part 2 Minister Productivity - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</DE>
+          </Text>
+          <Text ID="">
+            <EN>Destroy - The Hunt Part 3 - Hugo Mercier</EN>
+            <DE>Destroy - The Hunt Part 3 - Hugo Mercier</DE>
+          </Text>
+          <Text ID="110808">
+            <EN>Paranoia 3 — Incrimination</EN>
+            <DE>Paranoia 3 - Anschuldigung</DE>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
+  <Asset ID="110983" Release="Update 03">
+    <Name>Sea Mine Big</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_seamine_2.png</Filename>
+    </Icon>
+    <Text ID="110983">
+      <EN>Sea Mine</EN>
+      <DE>Haftmine</DE>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <ItemSets />
+    <Allocation ID="Warship">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
+      </Icon>
+      <Text ID="12812">
+        <EN>Military Ships</EN>
+        <DE>Kriegsschiffe</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>40</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>9125</TradePrice>
+    <Info ID="110985">
+      <EN>Only the invisible pilots steering a course to anarchy can avoid collisions with these invisible terrors!</EN>
+      <DE>Lautlos und nahezu unsichtbar, wartet dieses Grauen unter der Wasseroberfläche auf seine Opfer.</DE>
+    </Info>
+    <Sources>
+      <Source ID="220">
+        <Name>Second_ai_11 (Hugo Mercier)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/ai_11.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Ship Drop - Dr. Hugo Mercier</EN>
+          <DE>Schiff Drop - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details />
+      </Source>
+      <Source ID="110692">
+        <Name>Escort - We welcome all - Hugo Mercier</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Quest - Dr. Hugo Mercier</EN>
+          <DE>Quest - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details>
+          <Text ID="110692">
+            <EN>Stronghold for the &lt;br/&gt;Oppressed</EN>
+            <DE>Festung für &lt;br/&gt;die Unterdrückten</DE>
+          </Text>
+          <Text ID="110693">
+            <EN>Survival of the Kindest</EN>
+            <DE>Überleben des Gütigsten</DE>
+          </Text>
+          <Text ID="110695">
+            <EN>Mutual Admiration</EN>
+            <DE>Gegenseitige Bewunderung</DE>
+          </Text>
+          <Text ID="110698">
+            <EN>Away with the Scale</EN>
+            <DE>Weg mit Justitia</DE>
+          </Text>
+          <Text ID="">
+            <EN>Destroy - Close prison door - Hugo Mercier NEED DESTROY DESTINATION</EN>
+            <DE>Destroy - Close prison door - Hugo Mercier NEED DESTROY DESTINATION</DE>
+          </Text>
+          <Text ID="110712">
+            <EN>The Last Laugh</EN>
+            <DE>Wer zuletzt lacht</DE>
+          </Text>
+          <Text ID="110717">
+            <EN>The Power of the Masses</EN>
+            <DE>Die Macht der Masse</DE>
+          </Text>
+          <Text ID="">
+            <EN>Status Quo - Parasites - Hugo Mercier NO WRITING</EN>
+            <DE>Status Quo - Parasites - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="">
+            <EN>Photo - Festival of reason - Hugo Mercier NO WRITING</EN>
+            <DE>Photo - Festival of reason - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="">
+            <EN>Destroy - No report - Hugo Mercier NO WRITING</EN>
+            <DE>Destroy - No report - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="110772">
+            <EN>Dissidence Adrift</EN>
+            <DE>Mitreißende Dissidenz</DE>
+          </Text>
+          <Text ID="">
+            <EN>Delivery - Reconditioning - Hugo Mercier NO WRITING</EN>
+            <DE>Delivery - Reconditioning - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="110780">
+            <EN>They Must Be Mad</EN>
+            <DE>Sie müssen verrückt sein</DE>
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - Conspirators Denounce - Hugo Mercier </EN>
+            <DE>Picture Puzzle - Conspirators Denounce - Hugo Mercier </DE>
+          </Text>
+          <Text ID="110745">
+            <EN>Growing Process</EN>
+            <DE>Wachstumsprozess</DE>
+          </Text>
+          <Text ID="110701">
+            <EN>Ignite the State</EN>
+            <DE>Setzt den Staat in Flammen</DE>
+          </Text>
+          <Text ID="110719">
+            <EN>La Propriété, C'est le Vol</EN>
+            <DE>La Propriété, C'est le Vol</DE>
+          </Text>
+          <Text ID="110755">
+            <EN>A Common Enemy</EN>
+            <DE>Ein gemeinsamer Feind</DE>
+          </Text>
+          <Text ID="110774">
+            <EN>Sedition</EN>
+            <DE>Volksverhetzung</DE>
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - The Hunt Part 1 - Hugo Mercier </EN>
+            <DE>Picture Puzzle - The Hunt Part 1 - Hugo Mercier </DE>
+          </Text>
+          <Text ID="110804">
+            <EN>Paranoia 1 — Mistrust</EN>
+            <DE>Paranoia 1 - Misstrauen</DE>
+          </Text>
+          <Text ID="">
+            <EN>Smuggle wo scanner - Main arc Prologue - Hugo Mercier</EN>
+            <DE>Smuggle wo scanner - Main arc Prologue - Hugo Mercier</DE>
+          </Text>
+          <Text ID="110817">
+            <EN>No Gods, No Masters 1 —  &lt;br/&gt;Intervention</EN>
+            <DE>Weder Gott, noch Herr 1 -  &lt;br/&gt;Intervention</DE>
+          </Text>
+          <Text ID="110819">
+            <EN>No Gods, No Masters 2 — An Eye for an Eye</EN>
+            <DE>Weder Gott, noch Herr 2 - Auge um Auge</DE>
+          </Text>
+          <Text ID="110821">
+            <EN>No Gods, No Masters 3 — Trust Issues</EN>
+            <DE>Weder Gott, noch Herr 3 - Vertrauensprobleme</DE>
+          </Text>
+          <Text ID="110792">
+            <EN>Gunpowder and Treason 3 — Emancipation</EN>
+            <DE>Schwarzpulver und Hochverrat 3 - Emanzipation</DE>
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - The Hunt Part 1 Select - Hugo Mercier </EN>
+            <DE>Picture Puzzle - The Hunt Part 1 Select - Hugo Mercier </DE>
+          </Text>
+          <Text ID="">
+            <EN>Follow ship - The Hunt Part 2 Minister Culture - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</EN>
+            <DE>Follow ship - The Hunt Part 2 Minister Culture - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</DE>
+          </Text>
+          <Text ID="">
+            <EN>Follow ship - The Hunt Part 2 Minister Productivity - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</EN>
+            <DE>Follow ship - The Hunt Part 2 Minister Productivity - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</DE>
+          </Text>
+          <Text ID="">
+            <EN>Destroy - The Hunt Part 3 - Hugo Mercier</EN>
+            <DE>Destroy - The Hunt Part 3 - Hugo Mercier</DE>
+          </Text>
+          <Text ID="110808">
+            <EN>Paranoia 3 — Incrimination</EN>
+            <DE>Paranoia 3 - Anschuldigung</DE>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
+  <Asset ID="110986" Release="Update 03">
+    <Name>Anti Bourgeois Gas Pipe</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_gas_pipe_bomb.png</Filename>
+    </Icon>
+    <Text ID="110986">
+      <EN>Anti-Bourgeois Gas Pipe</EN>
+      <DE>Anti-Bourgeois Gasrohr</DE>
+    </Text>
+    <Rarity ID="118003">
+      <EN>Uncommon</EN>
+      <DE>Ungewöhnlich</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <ItemSets />
+    <Allocation ID="TownHall">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_townhall.png</Filename>
+      </Icon>
+      <Text ID="2347">
+        <EN>Town Hall</EN>
+        <DE>Rathaus</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets>
+      <Target ID="">
+        <EN>Engineer Residence</EN>
+        <DE>Ingenieurshaus</DE>
+      </Target>
+      <Target ID="">
+        <EN>Investor Residence</EN>
+        <DE>Investorenhaus</DE>
+      </Target>
+    </EffectTargets>
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>3125</TradePrice>
+    <Info ID="110989">
+      <EN>Accidents happen, and your toffs know it.</EN>
+      <DE>Unfälle passieren nun mal und die feinen Pinkel wissen das.</DE>
+    </Info>
+    <Sources>
+      <Source ID="220">
+        <Name>Second_ai_11 (Hugo Mercier)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/ai_11.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Ship Drop - Dr. Hugo Mercier</EN>
+          <DE>Schiff Drop - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details />
+      </Source>
+      <Source ID="110692">
+        <Name>Escort - We welcome all - Hugo Mercier</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Quest - Dr. Hugo Mercier</EN>
+          <DE>Quest - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details>
+          <Text ID="110692">
+            <EN>Stronghold for the &lt;br/&gt;Oppressed</EN>
+            <DE>Festung für &lt;br/&gt;die Unterdrückten</DE>
+          </Text>
+          <Text ID="110693">
+            <EN>Survival of the Kindest</EN>
+            <DE>Überleben des Gütigsten</DE>
+          </Text>
+          <Text ID="110695">
+            <EN>Mutual Admiration</EN>
+            <DE>Gegenseitige Bewunderung</DE>
+          </Text>
+          <Text ID="110698">
+            <EN>Away with the Scale</EN>
+            <DE>Weg mit Justitia</DE>
+          </Text>
+          <Text ID="">
+            <EN>Destroy - Close prison door - Hugo Mercier NEED DESTROY DESTINATION</EN>
+            <DE>Destroy - Close prison door - Hugo Mercier NEED DESTROY DESTINATION</DE>
+          </Text>
+          <Text ID="110712">
+            <EN>The Last Laugh</EN>
+            <DE>Wer zuletzt lacht</DE>
+          </Text>
+          <Text ID="110717">
+            <EN>The Power of the Masses</EN>
+            <DE>Die Macht der Masse</DE>
+          </Text>
+          <Text ID="">
+            <EN>Status Quo - Parasites - Hugo Mercier NO WRITING</EN>
+            <DE>Status Quo - Parasites - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="">
+            <EN>Photo - Festival of reason - Hugo Mercier NO WRITING</EN>
+            <DE>Photo - Festival of reason - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="">
+            <EN>Destroy - No report - Hugo Mercier NO WRITING</EN>
+            <DE>Destroy - No report - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="110772">
+            <EN>Dissidence Adrift</EN>
+            <DE>Mitreißende Dissidenz</DE>
+          </Text>
+          <Text ID="">
+            <EN>Delivery - Reconditioning - Hugo Mercier NO WRITING</EN>
+            <DE>Delivery - Reconditioning - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="110780">
+            <EN>They Must Be Mad</EN>
+            <DE>Sie müssen verrückt sein</DE>
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - Conspirators Denounce - Hugo Mercier </EN>
+            <DE>Picture Puzzle - Conspirators Denounce - Hugo Mercier </DE>
+          </Text>
+          <Text ID="110745">
+            <EN>Growing Process</EN>
+            <DE>Wachstumsprozess</DE>
+          </Text>
+          <Text ID="110701">
+            <EN>Ignite the State</EN>
+            <DE>Setzt den Staat in Flammen</DE>
+          </Text>
+          <Text ID="110719">
+            <EN>La Propriété, C'est le Vol</EN>
+            <DE>La Propriété, C'est le Vol</DE>
+          </Text>
+          <Text ID="110755">
+            <EN>A Common Enemy</EN>
+            <DE>Ein gemeinsamer Feind</DE>
+          </Text>
+          <Text ID="110774">
+            <EN>Sedition</EN>
+            <DE>Volksverhetzung</DE>
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - The Hunt Part 1 - Hugo Mercier </EN>
+            <DE>Picture Puzzle - The Hunt Part 1 - Hugo Mercier </DE>
+          </Text>
+          <Text ID="110804">
+            <EN>Paranoia 1 — Mistrust</EN>
+            <DE>Paranoia 1 - Misstrauen</DE>
+          </Text>
+          <Text ID="">
+            <EN>Smuggle wo scanner - Main arc Prologue - Hugo Mercier</EN>
+            <DE>Smuggle wo scanner - Main arc Prologue - Hugo Mercier</DE>
+          </Text>
+          <Text ID="110817">
+            <EN>No Gods, No Masters 1 —  &lt;br/&gt;Intervention</EN>
+            <DE>Weder Gott, noch Herr 1 -  &lt;br/&gt;Intervention</DE>
+          </Text>
+          <Text ID="110819">
+            <EN>No Gods, No Masters 2 — An Eye for an Eye</EN>
+            <DE>Weder Gott, noch Herr 2 - Auge um Auge</DE>
+          </Text>
+          <Text ID="110821">
+            <EN>No Gods, No Masters 3 — Trust Issues</EN>
+            <DE>Weder Gott, noch Herr 3 - Vertrauensprobleme</DE>
+          </Text>
+          <Text ID="110792">
+            <EN>Gunpowder and Treason 3 — Emancipation</EN>
+            <DE>Schwarzpulver und Hochverrat 3 - Emanzipation</DE>
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - The Hunt Part 1 Select - Hugo Mercier </EN>
+            <DE>Picture Puzzle - The Hunt Part 1 Select - Hugo Mercier </DE>
+          </Text>
+          <Text ID="">
+            <EN>Follow ship - The Hunt Part 2 Minister Culture - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</EN>
+            <DE>Follow ship - The Hunt Part 2 Minister Culture - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</DE>
+          </Text>
+          <Text ID="">
+            <EN>Follow ship - The Hunt Part 2 Minister Productivity - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</EN>
+            <DE>Follow ship - The Hunt Part 2 Minister Productivity - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</DE>
+          </Text>
+          <Text ID="">
+            <EN>Destroy - The Hunt Part 3 - Hugo Mercier</EN>
+            <DE>Destroy - The Hunt Part 3 - Hugo Mercier</DE>
+          </Text>
+          <Text ID="110808">
+            <EN>Paranoia 3 — Incrimination</EN>
+            <DE>Paranoia 3 - Anschuldigung</DE>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
+  <Asset ID="110994" Release="Update 03">
+    <Name>Anti Bourgeois Cocktail</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_cocktail_bomb.png</Filename>
+    </Icon>
+    <Text ID="110994">
+      <EN>Anti-Bourgeois Cocktail</EN>
+      <DE>Anti-Bourgeois Cocktail</DE>
+    </Text>
+    <Rarity ID="118004">
+      <EN>Rare</EN>
+      <DE>Selten</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <ItemSets />
+    <Allocation ID="TownHall">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_townhall.png</Filename>
+      </Icon>
+      <Text ID="2347">
+        <EN>Town Hall</EN>
+        <DE>Rathaus</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets>
+      <Target ID="">
+        <EN>Engineer Residence</EN>
+        <DE>Ingenieurshaus</DE>
+      </Target>
+      <Target ID="">
+        <EN>Investor Residence</EN>
+        <DE>Investorenhaus</DE>
+      </Target>
+    </EffectTargets>
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>5300</TradePrice>
+    <Info ID="110990">
+      <EN>Not so keen on cocktails now, are they!? Hehehee.</EN>
+      <DE>Jetzt sind sie wohl nicht mehr so scharf auf Cocktails, was?! Hähähää.</DE>
+    </Info>
+    <Sources>
+      <Source ID="220">
+        <Name>Second_ai_11 (Hugo Mercier)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/ai_11.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Ship Drop - Dr. Hugo Mercier</EN>
+          <DE>Schiff Drop - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details />
+      </Source>
+      <Source ID="110692">
+        <Name>Escort - We welcome all - Hugo Mercier</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Quest - Dr. Hugo Mercier</EN>
+          <DE>Quest - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details>
+          <Text ID="110692">
+            <EN>Stronghold for the &lt;br/&gt;Oppressed</EN>
+            <DE>Festung für &lt;br/&gt;die Unterdrückten</DE>
+          </Text>
+          <Text ID="110693">
+            <EN>Survival of the Kindest</EN>
+            <DE>Überleben des Gütigsten</DE>
+          </Text>
+          <Text ID="110695">
+            <EN>Mutual Admiration</EN>
+            <DE>Gegenseitige Bewunderung</DE>
+          </Text>
+          <Text ID="110698">
+            <EN>Away with the Scale</EN>
+            <DE>Weg mit Justitia</DE>
+          </Text>
+          <Text ID="">
+            <EN>Destroy - Close prison door - Hugo Mercier NEED DESTROY DESTINATION</EN>
+            <DE>Destroy - Close prison door - Hugo Mercier NEED DESTROY DESTINATION</DE>
+          </Text>
+          <Text ID="110712">
+            <EN>The Last Laugh</EN>
+            <DE>Wer zuletzt lacht</DE>
+          </Text>
+          <Text ID="110717">
+            <EN>The Power of the Masses</EN>
+            <DE>Die Macht der Masse</DE>
+          </Text>
+          <Text ID="">
+            <EN>Status Quo - Parasites - Hugo Mercier NO WRITING</EN>
+            <DE>Status Quo - Parasites - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="">
+            <EN>Photo - Festival of reason - Hugo Mercier NO WRITING</EN>
+            <DE>Photo - Festival of reason - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="">
+            <EN>Destroy - No report - Hugo Mercier NO WRITING</EN>
+            <DE>Destroy - No report - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="110772">
+            <EN>Dissidence Adrift</EN>
+            <DE>Mitreißende Dissidenz</DE>
+          </Text>
+          <Text ID="">
+            <EN>Delivery - Reconditioning - Hugo Mercier NO WRITING</EN>
+            <DE>Delivery - Reconditioning - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="110780">
+            <EN>They Must Be Mad</EN>
+            <DE>Sie müssen verrückt sein</DE>
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - Conspirators Denounce - Hugo Mercier </EN>
+            <DE>Picture Puzzle - Conspirators Denounce - Hugo Mercier </DE>
+          </Text>
+          <Text ID="110745">
+            <EN>Growing Process</EN>
+            <DE>Wachstumsprozess</DE>
+          </Text>
+          <Text ID="110701">
+            <EN>Ignite the State</EN>
+            <DE>Setzt den Staat in Flammen</DE>
+          </Text>
+          <Text ID="110719">
+            <EN>La Propriété, C'est le Vol</EN>
+            <DE>La Propriété, C'est le Vol</DE>
+          </Text>
+          <Text ID="110755">
+            <EN>A Common Enemy</EN>
+            <DE>Ein gemeinsamer Feind</DE>
+          </Text>
+          <Text ID="110774">
+            <EN>Sedition</EN>
+            <DE>Volksverhetzung</DE>
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - The Hunt Part 1 - Hugo Mercier </EN>
+            <DE>Picture Puzzle - The Hunt Part 1 - Hugo Mercier </DE>
+          </Text>
+          <Text ID="110804">
+            <EN>Paranoia 1 — Mistrust</EN>
+            <DE>Paranoia 1 - Misstrauen</DE>
+          </Text>
+          <Text ID="">
+            <EN>Smuggle wo scanner - Main arc Prologue - Hugo Mercier</EN>
+            <DE>Smuggle wo scanner - Main arc Prologue - Hugo Mercier</DE>
+          </Text>
+          <Text ID="110817">
+            <EN>No Gods, No Masters 1 —  &lt;br/&gt;Intervention</EN>
+            <DE>Weder Gott, noch Herr 1 -  &lt;br/&gt;Intervention</DE>
+          </Text>
+          <Text ID="110819">
+            <EN>No Gods, No Masters 2 — An Eye for an Eye</EN>
+            <DE>Weder Gott, noch Herr 2 - Auge um Auge</DE>
+          </Text>
+          <Text ID="110821">
+            <EN>No Gods, No Masters 3 — Trust Issues</EN>
+            <DE>Weder Gott, noch Herr 3 - Vertrauensprobleme</DE>
+          </Text>
+          <Text ID="110792">
+            <EN>Gunpowder and Treason 3 — Emancipation</EN>
+            <DE>Schwarzpulver und Hochverrat 3 - Emanzipation</DE>
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - The Hunt Part 1 Select - Hugo Mercier </EN>
+            <DE>Picture Puzzle - The Hunt Part 1 Select - Hugo Mercier </DE>
+          </Text>
+          <Text ID="">
+            <EN>Follow ship - The Hunt Part 2 Minister Culture - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</EN>
+            <DE>Follow ship - The Hunt Part 2 Minister Culture - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</DE>
+          </Text>
+          <Text ID="">
+            <EN>Follow ship - The Hunt Part 2 Minister Productivity - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</EN>
+            <DE>Follow ship - The Hunt Part 2 Minister Productivity - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</DE>
+          </Text>
+          <Text ID="">
+            <EN>Destroy - The Hunt Part 3 - Hugo Mercier</EN>
+            <DE>Destroy - The Hunt Part 3 - Hugo Mercier</DE>
+          </Text>
+          <Text ID="110808">
+            <EN>Paranoia 3 — Incrimination</EN>
+            <DE>Paranoia 3 - Anschuldigung</DE>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
+  <Asset ID="110995" Release="Update 03">
+    <Name>Anti Bourgeois Midnight Call</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_midnight_call_bomb_2.png</Filename>
+    </Icon>
+    <Text ID="110995">
+      <EN>Anti-Bourgeois Midnight Infusion</EN>
+      <DE>Anti-Bourgeois Mitternachtsschlag</DE>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <ItemSets />
+    <Allocation ID="TownHall">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_townhall.png</Filename>
+      </Icon>
+      <Text ID="2347">
+        <EN>Town Hall</EN>
+        <DE>Rathaus</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets>
+      <Target ID="">
+        <EN>Engineer Residence</EN>
+        <DE>Ingenieurshaus</DE>
+      </Target>
+      <Target ID="">
+        <EN>Investor Residence</EN>
+        <DE>Investorenhaus</DE>
+      </Target>
+    </EffectTargets>
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>40</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>9100</TradePrice>
+    <Info ID="110991">
+      <EN>Looks like Cinderella better think twice about going to that ball...</EN>
+      <DE>Sieht so aus, als sollte Aschenputtel es sich gut überlegen, zu diesem Ball zu gehen …</DE>
+    </Info>
+    <Sources>
+      <Source ID="220">
+        <Name>Second_ai_11 (Hugo Mercier)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/ai_11.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Ship Drop - Dr. Hugo Mercier</EN>
+          <DE>Schiff Drop - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details />
+      </Source>
+      <Source ID="110692">
+        <Name>Escort - We welcome all - Hugo Mercier</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Quest - Dr. Hugo Mercier</EN>
+          <DE>Quest - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details>
+          <Text ID="110692">
+            <EN>Stronghold for the &lt;br/&gt;Oppressed</EN>
+            <DE>Festung für &lt;br/&gt;die Unterdrückten</DE>
+          </Text>
+          <Text ID="110693">
+            <EN>Survival of the Kindest</EN>
+            <DE>Überleben des Gütigsten</DE>
+          </Text>
+          <Text ID="110695">
+            <EN>Mutual Admiration</EN>
+            <DE>Gegenseitige Bewunderung</DE>
+          </Text>
+          <Text ID="110698">
+            <EN>Away with the Scale</EN>
+            <DE>Weg mit Justitia</DE>
+          </Text>
+          <Text ID="">
+            <EN>Destroy - Close prison door - Hugo Mercier NEED DESTROY DESTINATION</EN>
+            <DE>Destroy - Close prison door - Hugo Mercier NEED DESTROY DESTINATION</DE>
+          </Text>
+          <Text ID="110712">
+            <EN>The Last Laugh</EN>
+            <DE>Wer zuletzt lacht</DE>
+          </Text>
+          <Text ID="110717">
+            <EN>The Power of the Masses</EN>
+            <DE>Die Macht der Masse</DE>
+          </Text>
+          <Text ID="">
+            <EN>Status Quo - Parasites - Hugo Mercier NO WRITING</EN>
+            <DE>Status Quo - Parasites - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="">
+            <EN>Photo - Festival of reason - Hugo Mercier NO WRITING</EN>
+            <DE>Photo - Festival of reason - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="">
+            <EN>Destroy - No report - Hugo Mercier NO WRITING</EN>
+            <DE>Destroy - No report - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="110772">
+            <EN>Dissidence Adrift</EN>
+            <DE>Mitreißende Dissidenz</DE>
+          </Text>
+          <Text ID="">
+            <EN>Delivery - Reconditioning - Hugo Mercier NO WRITING</EN>
+            <DE>Delivery - Reconditioning - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="110780">
+            <EN>They Must Be Mad</EN>
+            <DE>Sie müssen verrückt sein</DE>
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - Conspirators Denounce - Hugo Mercier </EN>
+            <DE>Picture Puzzle - Conspirators Denounce - Hugo Mercier </DE>
+          </Text>
+          <Text ID="110745">
+            <EN>Growing Process</EN>
+            <DE>Wachstumsprozess</DE>
+          </Text>
+          <Text ID="110701">
+            <EN>Ignite the State</EN>
+            <DE>Setzt den Staat in Flammen</DE>
+          </Text>
+          <Text ID="110719">
+            <EN>La Propriété, C'est le Vol</EN>
+            <DE>La Propriété, C'est le Vol</DE>
+          </Text>
+          <Text ID="110755">
+            <EN>A Common Enemy</EN>
+            <DE>Ein gemeinsamer Feind</DE>
+          </Text>
+          <Text ID="110774">
+            <EN>Sedition</EN>
+            <DE>Volksverhetzung</DE>
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - The Hunt Part 1 - Hugo Mercier </EN>
+            <DE>Picture Puzzle - The Hunt Part 1 - Hugo Mercier </DE>
+          </Text>
+          <Text ID="110804">
+            <EN>Paranoia 1 — Mistrust</EN>
+            <DE>Paranoia 1 - Misstrauen</DE>
+          </Text>
+          <Text ID="">
+            <EN>Smuggle wo scanner - Main arc Prologue - Hugo Mercier</EN>
+            <DE>Smuggle wo scanner - Main arc Prologue - Hugo Mercier</DE>
+          </Text>
+          <Text ID="110817">
+            <EN>No Gods, No Masters 1 —  &lt;br/&gt;Intervention</EN>
+            <DE>Weder Gott, noch Herr 1 -  &lt;br/&gt;Intervention</DE>
+          </Text>
+          <Text ID="110819">
+            <EN>No Gods, No Masters 2 — An Eye for an Eye</EN>
+            <DE>Weder Gott, noch Herr 2 - Auge um Auge</DE>
+          </Text>
+          <Text ID="110821">
+            <EN>No Gods, No Masters 3 — Trust Issues</EN>
+            <DE>Weder Gott, noch Herr 3 - Vertrauensprobleme</DE>
+          </Text>
+          <Text ID="110792">
+            <EN>Gunpowder and Treason 3 — Emancipation</EN>
+            <DE>Schwarzpulver und Hochverrat 3 - Emanzipation</DE>
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - The Hunt Part 1 Select - Hugo Mercier </EN>
+            <DE>Picture Puzzle - The Hunt Part 1 Select - Hugo Mercier </DE>
+          </Text>
+          <Text ID="">
+            <EN>Follow ship - The Hunt Part 2 Minister Culture - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</EN>
+            <DE>Follow ship - The Hunt Part 2 Minister Culture - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</DE>
+          </Text>
+          <Text ID="">
+            <EN>Follow ship - The Hunt Part 2 Minister Productivity - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</EN>
+            <DE>Follow ship - The Hunt Part 2 Minister Productivity - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</DE>
+          </Text>
+          <Text ID="">
+            <EN>Destroy - The Hunt Part 3 - Hugo Mercier</EN>
+            <DE>Destroy - The Hunt Part 3 - Hugo Mercier</DE>
+          </Text>
+          <Text ID="110808">
+            <EN>Paranoia 3 — Incrimination</EN>
+            <DE>Paranoia 3 - Anschuldigung</DE>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
+  <Asset ID="110998" Release="Update 03">
+    <Name>Inflammable Kit</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_bomb_recipe_1.png</Filename>
+    </Icon>
+    <Text ID="110998">
+      <EN>Inflammable Concoction</EN>
+      <DE>Leicht entzündliche Mischung</DE>
+    </Text>
+    <Rarity ID="118002">
+      <EN>Common</EN>
+      <DE>Gewöhnlich</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <ItemSets />
+    <Allocation ID="TradeUnion">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_guildhouse.png</Filename>
+      </Icon>
+      <Text ID="2346">
+        <EN>Trade Union</EN>
+        <DE>Handelskammer</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets>
+      <Target ID="">
+        <EN>All Mountain Mines</EN>
+        <DE>Alle Bergminen</DE>
+      </Target>
+    </EffectTargets>
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_build_menu.png</Filename>
+        </Icon>
+        <Text ID="3926">
+          <EN>Crafting</EN>
+          <DE>Geschick</DE>
+        </Text>
+        <Value>5</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>487</TradePrice>
+    <Info ID="111000">
+      <EN>Working conditions will be volatile!</EN>
+      <DE>Die Arbeitsbedingungen werden volatil sein!</DE>
+    </Info>
+    <Sources>
+      <Source ID="220">
+        <Name>Second_ai_11 (Hugo Mercier)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/ai_11.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Ship Drop - Dr. Hugo Mercier</EN>
+          <DE>Schiff Drop - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details />
+      </Source>
+      <Source ID="110692">
+        <Name>Escort - We welcome all - Hugo Mercier</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Quest - Dr. Hugo Mercier</EN>
+          <DE>Quest - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details>
+          <Text ID="110692">
+            <EN>Stronghold for the &lt;br/&gt;Oppressed</EN>
+            <DE>Festung für &lt;br/&gt;die Unterdrückten</DE>
+          </Text>
+          <Text ID="110693">
+            <EN>Survival of the Kindest</EN>
+            <DE>Überleben des Gütigsten</DE>
+          </Text>
+          <Text ID="110695">
+            <EN>Mutual Admiration</EN>
+            <DE>Gegenseitige Bewunderung</DE>
+          </Text>
+          <Text ID="110698">
+            <EN>Away with the Scale</EN>
+            <DE>Weg mit Justitia</DE>
+          </Text>
+          <Text ID="">
+            <EN>Destroy - Close prison door - Hugo Mercier NEED DESTROY DESTINATION</EN>
+            <DE>Destroy - Close prison door - Hugo Mercier NEED DESTROY DESTINATION</DE>
+          </Text>
+          <Text ID="110712">
+            <EN>The Last Laugh</EN>
+            <DE>Wer zuletzt lacht</DE>
+          </Text>
+          <Text ID="110717">
+            <EN>The Power of the Masses</EN>
+            <DE>Die Macht der Masse</DE>
+          </Text>
+          <Text ID="">
+            <EN>Status Quo - Parasites - Hugo Mercier NO WRITING</EN>
+            <DE>Status Quo - Parasites - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="">
+            <EN>Photo - Festival of reason - Hugo Mercier NO WRITING</EN>
+            <DE>Photo - Festival of reason - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="">
+            <EN>Destroy - No report - Hugo Mercier NO WRITING</EN>
+            <DE>Destroy - No report - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="110772">
+            <EN>Dissidence Adrift</EN>
+            <DE>Mitreißende Dissidenz</DE>
+          </Text>
+          <Text ID="">
+            <EN>Delivery - Reconditioning - Hugo Mercier NO WRITING</EN>
+            <DE>Delivery - Reconditioning - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="110780">
+            <EN>They Must Be Mad</EN>
+            <DE>Sie müssen verrückt sein</DE>
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - Conspirators Denounce - Hugo Mercier </EN>
+            <DE>Picture Puzzle - Conspirators Denounce - Hugo Mercier </DE>
+          </Text>
+          <Text ID="110745">
+            <EN>Growing Process</EN>
+            <DE>Wachstumsprozess</DE>
+          </Text>
+          <Text ID="110701">
+            <EN>Ignite the State</EN>
+            <DE>Setzt den Staat in Flammen</DE>
+          </Text>
+          <Text ID="110719">
+            <EN>La Propriété, C'est le Vol</EN>
+            <DE>La Propriété, C'est le Vol</DE>
+          </Text>
+          <Text ID="110755">
+            <EN>A Common Enemy</EN>
+            <DE>Ein gemeinsamer Feind</DE>
+          </Text>
+          <Text ID="110774">
+            <EN>Sedition</EN>
+            <DE>Volksverhetzung</DE>
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - The Hunt Part 1 - Hugo Mercier </EN>
+            <DE>Picture Puzzle - The Hunt Part 1 - Hugo Mercier </DE>
+          </Text>
+          <Text ID="110804">
+            <EN>Paranoia 1 — Mistrust</EN>
+            <DE>Paranoia 1 - Misstrauen</DE>
+          </Text>
+          <Text ID="">
+            <EN>Smuggle wo scanner - Main arc Prologue - Hugo Mercier</EN>
+            <DE>Smuggle wo scanner - Main arc Prologue - Hugo Mercier</DE>
+          </Text>
+          <Text ID="110817">
+            <EN>No Gods, No Masters 1 —  &lt;br/&gt;Intervention</EN>
+            <DE>Weder Gott, noch Herr 1 -  &lt;br/&gt;Intervention</DE>
+          </Text>
+          <Text ID="110819">
+            <EN>No Gods, No Masters 2 — An Eye for an Eye</EN>
+            <DE>Weder Gott, noch Herr 2 - Auge um Auge</DE>
+          </Text>
+          <Text ID="110821">
+            <EN>No Gods, No Masters 3 — Trust Issues</EN>
+            <DE>Weder Gott, noch Herr 3 - Vertrauensprobleme</DE>
+          </Text>
+          <Text ID="110792">
+            <EN>Gunpowder and Treason 3 — Emancipation</EN>
+            <DE>Schwarzpulver und Hochverrat 3 - Emanzipation</DE>
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - The Hunt Part 1 Select - Hugo Mercier </EN>
+            <DE>Picture Puzzle - The Hunt Part 1 Select - Hugo Mercier </DE>
+          </Text>
+          <Text ID="">
+            <EN>Follow ship - The Hunt Part 2 Minister Culture - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</EN>
+            <DE>Follow ship - The Hunt Part 2 Minister Culture - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</DE>
+          </Text>
+          <Text ID="">
+            <EN>Follow ship - The Hunt Part 2 Minister Productivity - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</EN>
+            <DE>Follow ship - The Hunt Part 2 Minister Productivity - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</DE>
+          </Text>
+          <Text ID="">
+            <EN>Destroy - The Hunt Part 3 - Hugo Mercier</EN>
+            <DE>Destroy - The Hunt Part 3 - Hugo Mercier</DE>
+          </Text>
+          <Text ID="110808">
+            <EN>Paranoia 3 — Incrimination</EN>
+            <DE>Paranoia 3 - Anschuldigung</DE>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
+  <Asset ID="110999" Release="Update 03">
+    <Name>Phosphorus Dissolution Recipe</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_bomb_recipe_2.png</Filename>
+    </Icon>
+    <Text ID="110999">
+      <EN>Phosphorus Dissipation Recipe</EN>
+      <DE>Phosphor Beschleuniger</DE>
+    </Text>
+    <Rarity ID="118003">
+      <EN>Uncommon</EN>
+      <DE>Ungewöhnlich</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <ItemSets />
+    <Allocation ID="TradeUnion">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_guildhouse.png</Filename>
+      </Icon>
+      <Text ID="2346">
+        <EN>Trade Union</EN>
+        <DE>Handelskammer</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets>
+      <Target ID="">
+        <EN>All Mountain Mines</EN>
+        <DE>Alle Bergminen</DE>
+      </Target>
+    </EffectTargets>
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_build_menu.png</Filename>
+        </Icon>
+        <Text ID="3926">
+          <EN>Crafting</EN>
+          <DE>Geschick</DE>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+        </Icon>
+        <Text ID="3921">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+        </Text>
+        <Value>5</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>2237</TradePrice>
+    <Info ID="111001">
+      <EN>This could be a (very) sudden solution to all the problems of capitalism.</EN>
+      <DE>Dies könnte eine (äußerst) plötzliche Lösung aller Probleme des Kapitalismus darstellen.</DE>
+    </Info>
+    <Sources>
+      <Source ID="220">
+        <Name>Second_ai_11 (Hugo Mercier)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/ai_11.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Ship Drop - Dr. Hugo Mercier</EN>
+          <DE>Schiff Drop - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details />
+      </Source>
+      <Source ID="110692">
+        <Name>Escort - We welcome all - Hugo Mercier</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="220">
+          <EN>Quest - Dr. Hugo Mercier</EN>
+          <DE>Quest - Dr. Hugo Mercier</DE>
+        </Text>
+        <Details>
+          <Text ID="110692">
+            <EN>Stronghold for the &lt;br/&gt;Oppressed</EN>
+            <DE>Festung für &lt;br/&gt;die Unterdrückten</DE>
+          </Text>
+          <Text ID="110693">
+            <EN>Survival of the Kindest</EN>
+            <DE>Überleben des Gütigsten</DE>
+          </Text>
+          <Text ID="110695">
+            <EN>Mutual Admiration</EN>
+            <DE>Gegenseitige Bewunderung</DE>
+          </Text>
+          <Text ID="110698">
+            <EN>Away with the Scale</EN>
+            <DE>Weg mit Justitia</DE>
+          </Text>
+          <Text ID="">
+            <EN>Destroy - Close prison door - Hugo Mercier NEED DESTROY DESTINATION</EN>
+            <DE>Destroy - Close prison door - Hugo Mercier NEED DESTROY DESTINATION</DE>
+          </Text>
+          <Text ID="110712">
+            <EN>The Last Laugh</EN>
+            <DE>Wer zuletzt lacht</DE>
+          </Text>
+          <Text ID="110717">
+            <EN>The Power of the Masses</EN>
+            <DE>Die Macht der Masse</DE>
+          </Text>
+          <Text ID="">
+            <EN>Status Quo - Parasites - Hugo Mercier NO WRITING</EN>
+            <DE>Status Quo - Parasites - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="">
+            <EN>Photo - Festival of reason - Hugo Mercier NO WRITING</EN>
+            <DE>Photo - Festival of reason - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="">
+            <EN>Destroy - No report - Hugo Mercier NO WRITING</EN>
+            <DE>Destroy - No report - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="110772">
+            <EN>Dissidence Adrift</EN>
+            <DE>Mitreißende Dissidenz</DE>
+          </Text>
+          <Text ID="">
+            <EN>Delivery - Reconditioning - Hugo Mercier NO WRITING</EN>
+            <DE>Delivery - Reconditioning - Hugo Mercier NO WRITING</DE>
+          </Text>
+          <Text ID="110780">
+            <EN>They Must Be Mad</EN>
+            <DE>Sie müssen verrückt sein</DE>
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - Conspirators Denounce - Hugo Mercier </EN>
+            <DE>Picture Puzzle - Conspirators Denounce - Hugo Mercier </DE>
+          </Text>
+          <Text ID="110745">
+            <EN>Growing Process</EN>
+            <DE>Wachstumsprozess</DE>
+          </Text>
+          <Text ID="110701">
+            <EN>Ignite the State</EN>
+            <DE>Setzt den Staat in Flammen</DE>
+          </Text>
+          <Text ID="110719">
+            <EN>La Propriété, C'est le Vol</EN>
+            <DE>La Propriété, C'est le Vol</DE>
+          </Text>
+          <Text ID="110755">
+            <EN>A Common Enemy</EN>
+            <DE>Ein gemeinsamer Feind</DE>
+          </Text>
+          <Text ID="110774">
+            <EN>Sedition</EN>
+            <DE>Volksverhetzung</DE>
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - The Hunt Part 1 - Hugo Mercier </EN>
+            <DE>Picture Puzzle - The Hunt Part 1 - Hugo Mercier </DE>
+          </Text>
+          <Text ID="110804">
+            <EN>Paranoia 1 — Mistrust</EN>
+            <DE>Paranoia 1 - Misstrauen</DE>
+          </Text>
+          <Text ID="">
+            <EN>Smuggle wo scanner - Main arc Prologue - Hugo Mercier</EN>
+            <DE>Smuggle wo scanner - Main arc Prologue - Hugo Mercier</DE>
+          </Text>
+          <Text ID="110817">
+            <EN>No Gods, No Masters 1 —  &lt;br/&gt;Intervention</EN>
+            <DE>Weder Gott, noch Herr 1 -  &lt;br/&gt;Intervention</DE>
+          </Text>
+          <Text ID="110819">
+            <EN>No Gods, No Masters 2 — An Eye for an Eye</EN>
+            <DE>Weder Gott, noch Herr 2 - Auge um Auge</DE>
+          </Text>
+          <Text ID="110821">
+            <EN>No Gods, No Masters 3 — Trust Issues</EN>
+            <DE>Weder Gott, noch Herr 3 - Vertrauensprobleme</DE>
+          </Text>
+          <Text ID="110792">
+            <EN>Gunpowder and Treason 3 — Emancipation</EN>
+            <DE>Schwarzpulver und Hochverrat 3 - Emanzipation</DE>
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - The Hunt Part 1 Select - Hugo Mercier </EN>
+            <DE>Picture Puzzle - The Hunt Part 1 Select - Hugo Mercier </DE>
+          </Text>
+          <Text ID="">
+            <EN>Follow ship - The Hunt Part 2 Minister Culture - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</EN>
+            <DE>Follow ship - The Hunt Part 2 Minister Culture - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</DE>
+          </Text>
+          <Text ID="">
+            <EN>Follow ship - The Hunt Part 2 Minister Productivity - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</EN>
+            <DE>Follow ship - The Hunt Part 2 Minister Productivity - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</DE>
+          </Text>
+          <Text ID="">
+            <EN>Destroy - The Hunt Part 3 - Hugo Mercier</EN>
+            <DE>Destroy - The Hunt Part 3 - Hugo Mercier</DE>
+          </Text>
+          <Text ID="110808">
+            <EN>Paranoia 3 — Incrimination</EN>
+            <DE>Paranoia 3 - Anschuldigung</DE>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
+  <Asset ID="102487" Release="Release">
     <Name>CQI Dynamite for Fishing</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_dynamite.png</Filename>
@@ -52,7 +2097,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192164">
+  <Asset ID="192164" Release="Release">
     <Name>Trunnioned Mortar</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_active_mortar_1.png</Filename>
@@ -333,6 +2378,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="76">
@@ -345,6 +2394,10 @@
           <DE>Hafen - Jean La Fortune</DE>
         </Text>
         <Details>
+          <Text ID="76">
+            <EN>Jean La Fortune</EN>
+            <DE>Jean La Fortune</DE>
+          </Text>
           <Text ID="76">
             <EN>Jean La Fortune</EN>
             <DE>Jean La Fortune</DE>
@@ -1001,7 +3054,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192165">
+  <Asset ID="192165" Release="Release">
     <Name>Cast Mortar</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_active_mortar_1.png</Filename>
@@ -1282,6 +3335,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="76">
@@ -1294,6 +3351,10 @@
           <DE>Hafen - Jean La Fortune</DE>
         </Text>
         <Details>
+          <Text ID="76">
+            <EN>Jean La Fortune</EN>
+            <DE>Jean La Fortune</DE>
+          </Text>
           <Text ID="76">
             <EN>Jean La Fortune</EN>
             <DE>Jean La Fortune</DE>
@@ -1954,14 +4015,14 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192166">
+  <Asset ID="192166" Release="Release">
     <Name>Grapeshot Cast Mortar</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_active_mortar_2.png</Filename>
     </Icon>
     <Text ID="192166">
       <EN>Grapeshot Cast Mortar</EN>
-      <DE>Gusseiserner Kartätschen Mörser</DE>
+      <DE>Gusseiserner Kartätschen-Mörser</DE>
     </Text>
     <Rarity ID="118005">
       <EN>Epic</EN>
@@ -2235,6 +4296,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="76">
@@ -2247,6 +4312,10 @@
           <DE>Hafen - Jean La Fortune</DE>
         </Text>
         <Details>
+          <Text ID="76">
+            <EN>Jean La Fortune</EN>
+            <DE>Jean La Fortune</DE>
+          </Text>
           <Text ID="76">
             <EN>Jean La Fortune</EN>
             <DE>Jean La Fortune</DE>
@@ -2903,14 +4972,14 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192168">
+  <Asset ID="192168" Release="Release">
     <Name>Multishot Mortar</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_active_mortar_3.png</Filename>
     </Icon>
     <Text ID="192168">
       <EN>Mullivann's Multi-Shot Mortar</EN>
-      <DE>Mullivanns MehrschussMörser</DE>
+      <DE>Mullivanns Mehrschuss-Mörser</DE>
     </Text>
     <Rarity ID="118006">
       <EN>Legendary</EN>
@@ -3008,6 +5077,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="76">
@@ -3020,6 +5093,10 @@
           <DE>Hafen - Jean La Fortune</DE>
         </Text>
         <Details>
+          <Text ID="76">
+            <EN>Jean La Fortune</EN>
+            <DE>Jean La Fortune</DE>
+          </Text>
           <Text ID="76">
             <EN>Jean La Fortune</EN>
             <DE>Jean La Fortune</DE>
@@ -3792,7 +5869,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191867">
+  <Asset ID="191867" Release="Release">
     <Name>Abus Gun</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_howitzer_1.png</Filename>
@@ -4073,6 +6150,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="76">
@@ -4085,6 +6166,10 @@
           <DE>Hafen - Jean La Fortune</DE>
         </Text>
         <Details>
+          <Text ID="76">
+            <EN>Jean La Fortune</EN>
+            <DE>Jean La Fortune</DE>
+          </Text>
           <Text ID="76">
             <EN>Jean La Fortune</EN>
             <DE>Jean La Fortune</DE>
@@ -4745,14 +6830,14 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191868">
+  <Asset ID="191868" Release="Release">
     <Name>Napoleon 12-Pounder</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_howitzer_2.png</Filename>
     </Icon>
     <Text ID="191868">
       <EN>"Blown-Apart" 12-Pounder</EN>
-      <DE>12 Pfünder Haubitze</DE>
+      <DE>12-Pfünder-Haubitze</DE>
     </Text>
     <Rarity ID="118005">
       <EN>Epic</EN>
@@ -5026,6 +7111,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="76">
@@ -5038,6 +7127,10 @@
           <DE>Hafen - Jean La Fortune</DE>
         </Text>
         <Details>
+          <Text ID="76">
+            <EN>Jean La Fortune</EN>
+            <DE>Jean La Fortune</DE>
+          </Text>
           <Text ID="76">
             <EN>Jean La Fortune</EN>
             <DE>Jean La Fortune</DE>
@@ -5694,7 +7787,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191869">
+  <Asset ID="191869" Release="Release">
     <Name>24 cm Mörser M 98</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_howitzer_3.png</Filename>
@@ -5799,6 +7892,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="76">
@@ -5811,6 +7908,10 @@
           <DE>Hafen - Jean La Fortune</DE>
         </Text>
         <Details>
+          <Text ID="76">
+            <EN>Jean La Fortune</EN>
+            <DE>Jean La Fortune</DE>
+          </Text>
           <Text ID="76">
             <EN>Jean La Fortune</EN>
             <DE>Jean La Fortune</DE>
@@ -6583,7 +8684,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192430">
+  <Asset ID="192430" Release="Release">
     <Name>Greek Fire</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_flame_thrower_1.png</Filename>
@@ -6904,6 +9005,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="48">
@@ -7313,7 +9418,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192433">
+  <Asset ID="192433" Release="Release">
     <Name>Flamenwerfer</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_flame_thrower_2.png</Filename>
@@ -7726,6 +9831,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="48">
@@ -8003,7 +10112,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192434">
+  <Asset ID="192434" Release="Release">
     <Name>Pyrophorian Flame Thrower</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_flame_thrower_3.png</Filename>
@@ -8104,6 +10213,10 @@
           <DE>Hafen - Anne Harlow</DE>
         </Text>
         <Details>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
           <Text ID="73">
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
@@ -8633,7 +10746,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191907">
+  <Asset ID="191907" Release="Release">
     <Name>Antiseptics</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_medicine_1.png</Filename>
@@ -9064,7 +11177,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191908">
+  <Asset ID="191908" Release="Release">
     <Name>Penicillin</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_medicine_2.png</Filename>
@@ -9603,7 +11716,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191909">
+  <Asset ID="191909" Release="Release">
     <Name>Rabies Vaccine</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_medicine_3.png</Filename>
@@ -10142,14 +12255,14 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191913">
+  <Asset ID="191913" Release="Release">
     <Name>Foam Extinguisher</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_fire_extinguisher_1.png</Filename>
     </Icon>
     <Text ID="191913">
       <EN>Foam Extinguisher</EN>
-      <DE>Schaum Feuerlöscher</DE>
+      <DE>Schaum-Feuerlöscher</DE>
     </Text>
     <Rarity ID="118002">
       <EN>Common</EN>
@@ -10728,14 +12841,14 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191914">
+  <Asset ID="191914" Release="Release">
     <Name>Soda-Acid Extinguisher</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_fire_extinguisher_2.png</Filename>
     </Icon>
     <Text ID="191914">
       <EN>Soda-Acid Extinguisher</EN>
-      <DE>Säure Basen Feuerlöscher</DE>
+      <DE>Säure-Basen-Feuerlöscher</DE>
     </Text>
     <Rarity ID="118003">
       <EN>Uncommon</EN>
@@ -11267,14 +13380,14 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191915">
+  <Asset ID="191915" Release="Release">
     <Name>CTC Extinguisher</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_fire_extinguisher_3.png</Filename>
     </Icon>
     <Text ID="191915">
       <EN>CTC Extinguisher</EN>
-      <DE>Tetrachlorkohlenstoff Löscher</DE>
+      <DE>Tetrachlorkohlenstoff-Löscher</DE>
     </Text>
     <Rarity ID="118004">
       <EN>Rare</EN>
@@ -11806,7 +13919,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191919">
+  <Asset ID="191919" Release="Release">
     <Name>Hand-Blown Grenade</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_extinguisher_grenade_1.png</Filename>
@@ -12237,14 +14350,14 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191920">
+  <Asset ID="191920" Release="Release">
     <Name>Suspended Frosted Glass Grenade</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_extinguisher_grenade_2.png</Filename>
     </Icon>
     <Text ID="191920">
       <EN>Suspended Frosted Glass Grenade</EN>
-      <DE>Hängende Glas Löschgranate</DE>
+      <DE>Hängende Glas-Löschgranate</DE>
     </Text>
     <Rarity ID="118003">
       <EN>Uncommon</EN>
@@ -12776,7 +14889,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191921">
+  <Asset ID="191921" Release="Release">
     <Name>Heat Activated CTC Grenade</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_extinguisher_grenade_3.png</Filename>
@@ -13315,7 +15428,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191922">
+  <Asset ID="191922" Release="Release">
     <Name>Alcohol Crate</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_alcohol_bag_1.png</Filename>
@@ -13383,7 +15496,7 @@
     <IncidentInfectableUpgrades />
     <IncidentInfluencerUpgrades />
     <ItemGeneratorUpgrades />
-    <TradePrice>9975</TradePrice>
+    <TradePrice>997</TradePrice>
     <Info ID="19549">
       <EN>Free beer!</EN>
       <DE>Freibier!</DE>
@@ -13415,6 +15528,10 @@
           <DE>Hafen - Anne Harlow</DE>
         </Text>
         <Details>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
           <Text ID="73">
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
@@ -13896,7 +16013,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191923">
+  <Asset ID="191923" Release="Release">
     <Name>Big Alcohol Crate</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_alcohol_bag_2.png</Filename>
@@ -13964,7 +16081,7 @@
     <IncidentInfectableUpgrades />
     <IncidentInfluencerUpgrades />
     <ItemGeneratorUpgrades />
-    <TradePrice>700</TradePrice>
+    <TradePrice>2700</TradePrice>
     <Info ID="19550">
       <EN>Free spirits!</EN>
       <DE>Freie Brände!</DE>
@@ -14108,6 +16225,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="82">
@@ -14585,7 +16706,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191924">
+  <Asset ID="191924" Release="Release">
     <Name>Huge Alcohol Crate</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_alcohol_bag_3.png</Filename>
@@ -14797,6 +16918,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="152515">
@@ -15278,7 +17403,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191925">
+  <Asset ID="191925" Release="Release">
     <Name>Bag of Money</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_moneybag_common.png</Filename>
@@ -15368,6 +17493,10 @@
           <DE>Hafen - Anne Harlow</DE>
         </Text>
         <Details>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
           <Text ID="73">
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
@@ -16004,7 +18133,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191926">
+  <Asset ID="191926" Release="Release">
     <Name>Big Bag of Money</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_moneybag_rare.png</Filename>
@@ -16206,6 +18335,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="82">
@@ -16838,7 +18971,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191927">
+  <Asset ID="191927" Release="Release">
     <Name>Huge Bag of money</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_moneybag_epic.png</Filename>
@@ -17036,6 +19169,10 @@
           <DE>Hafen - Anne Harlow</DE>
         </Text>
         <Details>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
           <Text ID="73">
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
@@ -17676,7 +19813,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192184">
+  <Asset ID="192184" Release="Release">
     <Name>Minenschiff</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_torpedo_1.png</Filename>
@@ -17929,6 +20066,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="76">
@@ -17941,6 +20082,10 @@
           <DE>Hafen - Jean La Fortune</DE>
         </Text>
         <Details>
+          <Text ID="76">
+            <EN>Jean La Fortune</EN>
+            <DE>Jean La Fortune</DE>
+          </Text>
           <Text ID="76">
             <EN>Jean La Fortune</EN>
             <DE>Jean La Fortune</DE>
@@ -18569,7 +20714,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192185">
+  <Asset ID="192185" Release="Release">
     <Name>Howell Torpedo</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_torpedo_2.png</Filename>
@@ -18850,6 +20995,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="76">
@@ -18862,6 +21011,10 @@
           <DE>Hafen - Jean La Fortune</DE>
         </Text>
         <Details>
+          <Text ID="76">
+            <EN>Jean La Fortune</EN>
+            <DE>Jean La Fortune</DE>
+          </Text>
           <Text ID="76">
             <EN>Jean La Fortune</EN>
             <DE>Jean La Fortune</DE>
@@ -19518,7 +21671,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192186">
+  <Asset ID="192186" Release="Release">
     <Name>Whitehead Torpedo</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_torpedo_3.png</Filename>
@@ -19799,6 +21952,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="76">
@@ -19811,6 +21968,10 @@
           <DE>Hafen - Jean La Fortune</DE>
         </Text>
         <Details>
+          <Text ID="76">
+            <EN>Jean La Fortune</EN>
+            <DE>Jean La Fortune</DE>
+          </Text>
           <Text ID="76">
             <EN>Jean La Fortune</EN>
             <DE>Jean La Fortune</DE>
@@ -20471,7 +22632,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191955">
+  <Asset ID="191955" Release="Release">
     <Name>Forged Steel Shells</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_piercing_shell_1.png</Filename>
@@ -20576,6 +22737,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="76">
@@ -20588,6 +22753,10 @@
           <DE>Hafen - Jean La Fortune</DE>
         </Text>
         <Details>
+          <Text ID="76">
+            <EN>Jean La Fortune</EN>
+            <DE>Jean La Fortune</DE>
+          </Text>
           <Text ID="76">
             <EN>Jean La Fortune</EN>
             <DE>Jean La Fortune</DE>
@@ -21360,7 +23529,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191958">
+  <Asset ID="191958" Release="Release">
     <Name>Cemented Steel Shells</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_piercing_shell_2.png</Filename>
@@ -21641,6 +23810,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="76">
@@ -21653,6 +23826,10 @@
           <DE>Hafen - Jean La Fortune</DE>
         </Text>
         <Details>
+          <Text ID="76">
+            <EN>Jean La Fortune</EN>
+            <DE>Jean La Fortune</DE>
+          </Text>
           <Text ID="76">
             <EN>Jean La Fortune</EN>
             <DE>Jean La Fortune</DE>
@@ -22309,7 +24486,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191962">
+  <Asset ID="191962" Release="Release">
     <Name>Melinite Shells</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_explosive_shells_1.png</Filename>
@@ -22414,6 +24591,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="76">
@@ -22426,6 +24607,10 @@
           <DE>Hafen - Jean La Fortune</DE>
         </Text>
         <Details>
+          <Text ID="76">
+            <EN>Jean La Fortune</EN>
+            <DE>Jean La Fortune</DE>
+          </Text>
           <Text ID="76">
             <EN>Jean La Fortune</EN>
             <DE>Jean La Fortune</DE>
@@ -23198,7 +25383,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191963">
+  <Asset ID="191963" Release="Release">
     <Name>Dunnite Shells</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_explosive_shells_2.png</Filename>
@@ -23479,6 +25664,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="76">
@@ -23491,6 +25680,10 @@
           <DE>Hafen - Jean La Fortune</DE>
         </Text>
         <Details>
+          <Text ID="76">
+            <EN>Jean La Fortune</EN>
+            <DE>Jean La Fortune</DE>
+          </Text>
           <Text ID="76">
             <EN>Jean La Fortune</EN>
             <DE>Jean La Fortune</DE>
@@ -24147,7 +26340,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191964">
+  <Asset ID="191964" Release="Release">
     <Name>Canister shots</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_big_berta_1.png</Filename>
@@ -24252,6 +26445,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="76">
@@ -24264,6 +26461,10 @@
           <DE>Hafen - Jean La Fortune</DE>
         </Text>
         <Details>
+          <Text ID="76">
+            <EN>Jean La Fortune</EN>
+            <DE>Jean La Fortune</DE>
+          </Text>
           <Text ID="76">
             <EN>Jean La Fortune</EN>
             <DE>Jean La Fortune</DE>
@@ -25036,7 +27237,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191965">
+  <Asset ID="191965" Release="Release">
     <Name>Double Canister shots</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_big_berta_2.png</Filename>
@@ -25317,6 +27518,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="76">
@@ -25329,6 +27534,10 @@
           <DE>Hafen - Jean La Fortune</DE>
         </Text>
         <Details>
+          <Text ID="76">
+            <EN>Jean La Fortune</EN>
+            <DE>Jean La Fortune</DE>
+          </Text>
           <Text ID="76">
             <EN>Jean La Fortune</EN>
             <DE>Jean La Fortune</DE>
@@ -25985,7 +28194,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191979">
+  <Asset ID="191979" Release="Release">
     <Name>Construction Wooden Spare Parts</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_building_repair_1.png</Filename>
@@ -26091,6 +28300,10 @@
           <DE>Hafen - Jean La Fortune</DE>
         </Text>
         <Details>
+          <Text ID="76">
+            <EN>Jean La Fortune</EN>
+            <DE>Jean La Fortune</DE>
+          </Text>
           <Text ID="76">
             <EN>Jean La Fortune</EN>
             <DE>Jean La Fortune</DE>
@@ -26388,8 +28601,24 @@
           </Text>
         </Details>
       </Source>
-      <Source ID="150916">
-        <Name>RQ_Worker_NoComplain</Name>
+      <Source ID="111260">
+        <Name>Quest Mercier Deserter Request</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="225">
+          <EN>Quest - Anarchist Defector</EN>
+          <DE>Quest - Abtrünniger Anarchist</DE>
+        </Text>
+        <Details>
+          <Text ID="111260">
+            <EN>Quest Mercier Deserter Question</EN>
+            <DE>Quest Mercier Deserter Question</DE>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="110770">
+        <Name>Picture Puzzle - Conspirators Rescue - Hugo Mercier </Name>
         <Icon>
           <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
         </Icon>
@@ -26398,6 +28627,14 @@
           <DE>Quest - Arbeiter</DE>
         </Text>
         <Details>
+          <Text ID="110770">
+            <EN>Conspiracy Theories: The Getaway</EN>
+            <DE>Verschwörungstheorien: Die Flucht</DE>
+          </Text>
+          <Text ID="110776">
+            <EN>Sedition: Mercy</EN>
+            <DE>Volksverhetzung: Gnade</DE>
+          </Text>
           <Text ID="150916">
             <EN>No Complaints</EN>
             <DE>Keine Klagen</DE>
@@ -26457,7 +28694,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191980">
+  <Asset ID="191980" Release="Release">
     <Name>Construction Steel Spare Parts</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_building_repair_2.png</Filename>
@@ -26675,6 +28912,10 @@
             <EN>Jean La Fortune</EN>
             <DE>Jean La Fortune</DE>
           </Text>
+          <Text ID="76">
+            <EN>Jean La Fortune</EN>
+            <DE>Jean La Fortune</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="81">
@@ -26968,8 +29209,24 @@
           </Text>
         </Details>
       </Source>
-      <Source ID="150916">
-        <Name>RQ_Worker_NoComplain</Name>
+      <Source ID="111260">
+        <Name>Quest Mercier Deserter Request</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="225">
+          <EN>Quest - Anarchist Defector</EN>
+          <DE>Quest - Abtrünniger Anarchist</DE>
+        </Text>
+        <Details>
+          <Text ID="111260">
+            <EN>Quest Mercier Deserter Question</EN>
+            <DE>Quest Mercier Deserter Question</DE>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="110770">
+        <Name>Picture Puzzle - Conspirators Rescue - Hugo Mercier </Name>
         <Icon>
           <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
         </Icon>
@@ -26978,6 +29235,14 @@
           <DE>Quest - Arbeiter</DE>
         </Text>
         <Details>
+          <Text ID="110770">
+            <EN>Conspiracy Theories: The Getaway</EN>
+            <DE>Verschwörungstheorien: Die Flucht</DE>
+          </Text>
+          <Text ID="110776">
+            <EN>Sedition: Mercy</EN>
+            <DE>Volksverhetzung: Gnade</DE>
+          </Text>
           <Text ID="150916">
             <EN>No Complaints</EN>
             <DE>Keine Klagen</DE>
@@ -27037,7 +29302,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191987">
+  <Asset ID="191987" Release="Release">
     <Name>Temporary Marque Letter</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_marque_letter_1.png</Filename>
@@ -27413,7 +29678,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191993">
+  <Asset ID="191993" Release="Release">
     <Name>Temporary Royal Marque Letter</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_marque_letter_2.png</Filename>
@@ -27789,7 +30054,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191986">
+  <Asset ID="191986" Release="Release">
     <Name>Temporary Protection Letter</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_marque_letter_1.png</Filename>
@@ -28269,7 +30534,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191992">
+  <Asset ID="191992" Release="Release">
     <Name>Temporary Royal Protection Letter</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_marque_letter_3.png</Filename>
@@ -28904,7 +31169,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191999">
+  <Asset ID="191999" Release="Release">
     <Name>Orsini Bomb</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_suicide_bombs_1.png</Filename>
@@ -29185,6 +31450,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="48">
@@ -29610,7 +31879,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192000">
+  <Asset ID="192000" Release="Release">
     <Name>TNT Bomb</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_suicide_bombs_3.png</Filename>
@@ -29891,6 +32160,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="48">
@@ -30316,7 +32589,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192001">
+  <Asset ID="192001" Release="Release">
     <Name>Greek Fire Grenades</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_fire_bomb_1.png</Filename>
@@ -30597,6 +32870,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="76">
@@ -30609,6 +32886,10 @@
           <DE>Hafen - Jean La Fortune</DE>
         </Text>
         <Details>
+          <Text ID="76">
+            <EN>Jean La Fortune</EN>
+            <DE>Jean La Fortune</DE>
+          </Text>
           <Text ID="76">
             <EN>Jean La Fortune</EN>
             <DE>Jean La Fortune</DE>
@@ -31420,7 +33701,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192002">
+  <Asset ID="192002" Release="Release">
     <Name>Elektron Grenades</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_fire_bomb_2.png</Filename>
@@ -31701,6 +33982,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="76">
@@ -31713,6 +33998,10 @@
           <DE>Hafen - Jean La Fortune</DE>
         </Text>
         <Details>
+          <Text ID="76">
+            <EN>Jean La Fortune</EN>
+            <DE>Jean La Fortune</DE>
+          </Text>
           <Text ID="76">
             <EN>Jean La Fortune</EN>
             <DE>Jean La Fortune</DE>
@@ -32373,7 +34662,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192005">
+  <Asset ID="192005" Release="Release">
     <Name>Iron Chain Shots</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_chainshot_1.png</Filename>
@@ -32654,6 +34943,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="76">
@@ -32666,6 +34959,10 @@
           <DE>Hafen - Jean La Fortune</DE>
         </Text>
         <Details>
+          <Text ID="76">
+            <EN>Jean La Fortune</EN>
+            <DE>Jean La Fortune</DE>
+          </Text>
           <Text ID="76">
             <EN>Jean La Fortune</EN>
             <DE>Jean La Fortune</DE>
@@ -33322,7 +35619,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192006">
+  <Asset ID="192006" Release="Release">
     <Name>Steel Chain Shots</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_chainshot_2.png</Filename>
@@ -33603,6 +35900,10 @@
             <EN>Anne Harlow</EN>
             <DE>Anne Harlow</DE>
           </Text>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+          </Text>
         </Details>
       </Source>
       <Source ID="76">
@@ -33615,6 +35916,10 @@
           <DE>Hafen - Jean La Fortune</DE>
         </Text>
         <Details>
+          <Text ID="76">
+            <EN>Jean La Fortune</EN>
+            <DE>Jean La Fortune</DE>
+          </Text>
           <Text ID="76">
             <EN>Jean La Fortune</EN>
             <DE>Jean La Fortune</DE>
@@ -34275,7 +36580,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192007">
+  <Asset ID="192007" Release="Release">
     <Name>Merchant Trading Tax Bill</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_tax_bill_1.png</Filename>
@@ -34591,7 +36896,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192008">
+  <Asset ID="192008" Release="Release">
     <Name>Grand Exporter Trading Tax Bill</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_tax_bill_2.png</Filename>
@@ -35015,7 +37320,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192012">
+  <Asset ID="192012" Release="Release">
     <Name>Archibald Trading Tax Bill</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_tax_bill_3.png</Filename>
@@ -35439,7 +37744,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192013">
+  <Asset ID="192013" Release="Release">
     <Name>Bag of Dynamite</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_dynamite_1.png</Filename>
@@ -35964,7 +38269,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192016">
+  <Asset ID="192016" Release="Release">
     <Name>Big Bag of Dynamite</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/consumables/icon_dynamite_2.png</Filename>
@@ -36549,7 +38854,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192028">
+  <Asset ID="192028" Release="Release">
     <Name>Armagnac Bottles</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_rum.png</Filename>
@@ -36983,7 +39288,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192029">
+  <Asset ID="192029" Release="Release">
     <Name>Milk Demijohn</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_sheep_milk.png</Filename>
@@ -37417,7 +39722,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192030">
+  <Asset ID="192030" Release="Release">
     <Name>Cheese Crate</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_sheep_cheese.png</Filename>
@@ -37851,7 +40156,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192031">
+  <Asset ID="192031" Release="Release">
     <Name>Fish Stew Plates</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_fish_stew.png</Filename>
@@ -38285,7 +40590,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192032">
+  <Asset ID="192032" Release="Release">
     <Name>Beef Potato Plates</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_beef_potatoes.png</Filename>
@@ -38719,7 +41024,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192033">
+  <Asset ID="192033" Release="Release">
     <Name>Tools Crate</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_tools.png</Filename>
@@ -39164,7 +41469,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192034">
+  <Asset ID="192034" Release="Release">
     <Name>Sewing Thread</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_sheep_wool.png</Filename>
@@ -39609,7 +41914,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192035">
+  <Asset ID="192035" Release="Release">
     <Name>Fish Cans</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_canned_food.png</Filename>
@@ -40043,7 +42348,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="190103">
+  <Asset ID="190103" Release="Release">
     <Name>Small Mortar</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_beer_2.png</Filename>
@@ -40102,7 +42407,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="190127">
+  <Asset ID="190127" Release="Release">
     <Name>Big Mortar</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_beer_2.png</Filename>
@@ -40161,7 +42466,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="190128">
+  <Asset ID="190128" Release="Release">
     <Name>Small Mortar Battery</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_beer_2.png</Filename>
@@ -40220,7 +42525,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="190129">
+  <Asset ID="190129" Release="Release">
     <Name>Big Mortar Battery</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_beer_2.png</Filename>
@@ -40279,7 +42584,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="190106">
+  <Asset ID="190106" Release="Release">
     <Name>Small Torpedo</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/icons/icon_bomb.png</Filename>
@@ -40338,7 +42643,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="190134">
+  <Asset ID="190134" Release="Release">
     <Name>Medium Torpedo</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/icons/icon_bomb.png</Filename>
@@ -40397,7 +42702,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="190135">
+  <Asset ID="190135" Release="Release">
     <Name>Big Torpedo</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/icons/icon_bomb.png</Filename>
@@ -40456,7 +42761,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191481">
+  <Asset ID="191481" Release="Release">
     <Name>Mortar_Dummy</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/ship_military/icon_mortar.png</Filename>
@@ -40519,7 +42824,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191474">
+  <Asset ID="191474" Release="Release">
     <Name>Torpedo_Dummy</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/military_items/icon_torpedo_rework.png</Filename>
@@ -40582,7 +42887,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="190107">
+  <Asset ID="190107" Release="Release">
     <Name>Barrage</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/icon_coal_burn.png</Filename>
@@ -40630,7 +42935,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191018">
+  <Asset ID="191018" Release="Release">
     <Name>Ignite</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/icons/icon_incident_fire.png</Filename>
@@ -40689,7 +42994,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192094">
+  <Asset ID="192094" Release="Release">
     <Name>Whitehead Torpedo</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/military_items/icon_torpedo_rework.png</Filename>
@@ -40752,7 +43057,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192098">
+  <Asset ID="192098" Release="Release">
     <Name>Whitehead Torpedo MK II</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/military_items/icon_torpedo_rework.png</Filename>
@@ -40815,7 +43120,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192099">
+  <Asset ID="192099" Release="Release">
     <Name>Whitehead Torpedo MK III</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/military_items/icon_torpedo_rework.png</Filename>
@@ -40878,7 +43183,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192096">
+  <Asset ID="192096" Release="Release">
     <Name>Mortar</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/ship_military/icon_mortar.png</Filename>
@@ -40941,7 +43246,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192102">
+  <Asset ID="192102" Release="Release">
     <Name>Mortar MK II</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/ship_military/icon_mortar.png</Filename>
@@ -41004,7 +43309,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192103">
+  <Asset ID="192103" Release="Release">
     <Name>Mortar MK III</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/ship_military/icon_mortar.png</Filename>
@@ -41067,7 +43372,7 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="192109">
+  <Asset ID="192109" Release="Release">
     <Name>Multishot-Mortar</Name>
     <Icon>
       <Filename>data/ui/2kimages/main/3dicons/ship_military/icon_mortar.png</Filename>

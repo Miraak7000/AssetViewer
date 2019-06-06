@@ -26,6 +26,7 @@ namespace AssetViewer.Controls {
         var equipped = this.ComboBoxEquipped.SelectedItem as String;
         var source = this.ComboBoxSources.SelectedItem as String;
         var upgrade = this.ComboBoxUpgrades.SelectedItem as String;
+        var release = this.ComboBoxReleases.SelectedItem as String;
         var result = ItemProvider.Items.Values.AsQueryable();
         if (!String.IsNullOrEmpty(type))
           result = result.Where(w => w.ItemType == type);
@@ -41,6 +42,8 @@ namespace AssetViewer.Controls {
               result = result.Where(w => w.AllUpgrades != null && w.AllUpgrades.Any(l => l.Text.DE == upgrade));
             if (!String.IsNullOrEmpty(source))
               result = result.Where(w => w.Sources != null && w.Sources.Any(l => l.Text.DE == source));
+            if (!String.IsNullOrEmpty(release))
+              result = result.Where(w => w.ReleaseVersion == release);
             result = result.OrderBy(o => o.Text.DE);
             break;
           default:
@@ -54,6 +57,8 @@ namespace AssetViewer.Controls {
               result = result.Where(w => w.AllUpgrades != null && w.AllUpgrades.Any(l => l.Text.EN == upgrade));
             if (!String.IsNullOrEmpty(source))
               result = result.Where(w => w.Sources != null && w.Sources.Any(l => l.Text.EN == source));
+            if (!String.IsNullOrEmpty(release))
+              result = result.Where(w => w.ReleaseVersion == release);
             result = result.OrderBy(o => o.Text.EN);
             break;
         }
@@ -91,6 +96,13 @@ namespace AssetViewer.Controls {
     public IEnumerable<String> ItemTypes {
       get {
         var result = ItemProvider.Items.Values.Select(s => s.ItemType).Distinct().Where(l => !string.IsNullOrWhiteSpace(l)).OrderBy(o => o).ToList();
+        result.Insert(0, String.Empty);
+        return result;
+      }
+    }
+    public IEnumerable<String> ReleaseVersions {
+      get {
+        var result = ItemProvider.Items.Values.Select(s => s.ReleaseVersion).Distinct().OrderBy(o => o).ToList();
         result.Insert(0, String.Empty);
         return result;
       }
