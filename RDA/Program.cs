@@ -100,9 +100,15 @@ namespace RDA {
     }
     private static void ProcessingThirdParty() {
       var result = new List<ThirdParty>();
-      var assets = Program.Original.XPathSelectElements($"//Asset[Template='Profile_3rdParty' or Template='Profile_3rdParty_Pirate']").ToList().AsParallel();
+      var assets = Program
+         .Original
+         .XPathSelectElements($"//Asset[Template='Profile_3rdParty' or Template='Profile_3rdParty_Pirate']")
+         .Concat(new[] { Program.Original.Descendants("Asset").FirstOrDefault(a => a.XPathSelectElement("Values/Standard/GUID")?.Value == "220") })
+         .ToList()
+         .AsParallel();
+
       assets.ForAll((asset) => {
-        if (!asset.XPathSelectElements("Values/Trader/Progression/*/OfferingItems").Any())
+        if (!asset.XPathSelectElements("Values/Trader/Progression/*/OfferingItems").Any() && !asset.XPathSelectElements("Values/ConstructionAI/ItemTradeConfig/ItemPools/*/Pool").Any())
           return;
         Console.WriteLine(asset.XPathSelectElement("Values/Standard/GUID").Value);
         var item = new ThirdParty(asset);

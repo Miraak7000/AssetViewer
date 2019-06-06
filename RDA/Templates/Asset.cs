@@ -607,6 +607,13 @@ namespace RDA.Templates {
               result.AddSourceAsset(element.GetProxyElement("ShipDrop"), new HashSet<XElement> { element.GetProxyElement("ShipDrop") });
               resultstoadd.Add(result);
             }
+            // Hafen Hugo Mercier
+            if (element.XPathSelectElement("Values/Standard/GUID")?.Value == "220") {
+              if (element.XPathSelectElements("Values/ConstructionAI/ItemTradeConfig/ItemPools").Elements().Any(f=> f.Element("Pool").Value == id)) {
+                result.AddSourceAsset(element.GetProxyElement("HafenHugo"), new HashSet<XElement> { element.GetProxyElement("HafenHugo") });
+                resultstoadd.Add(result);
+              }
+            }
             continue;
           }
           if (mainDetails.PreviousIDs.Contains(key)) {
@@ -682,11 +689,15 @@ namespace RDA.Templates {
               goto case "RewardPool";
             case "RewardPool":
             case "RewardItemPool":
+             
               if (SavedSources.ContainsKey(key)) {
                 result.AddSourceAsset(SavedSources[key].Copy());
                 break;
               }
-
+              var weight = element.Descendants("Item").FirstOrDefault(f => f.Elements().Any(l => l.Value == id))?.Element("Weight")?.Value;
+              if (weight == "0") {
+                break;
+              }
               FindSources(key, Details, result);
               if (!SavedSources.ContainsKey(key)) {
                 SavedSources.Add(key, result.Copy());

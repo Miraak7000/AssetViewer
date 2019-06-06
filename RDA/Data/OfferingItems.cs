@@ -17,7 +17,7 @@ namespace RDA.Data {
     #region Constructor
     public OfferingItems(XElement asset) {
       this.Progression = (Progression)Enum.Parse(typeof(Progression), asset.Name.LocalName);
-      var offeringItems = asset.XPathSelectElement("OfferingItems")?.Value;
+      var offeringItems = asset.XPathSelectElement("OfferingItems")?.Value ?? asset.XPathSelectElement("Pool")?.Value;
       if (offeringItems != null) {
         ItemPool = offeringItems;
       }

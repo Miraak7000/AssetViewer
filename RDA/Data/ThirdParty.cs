@@ -25,11 +25,16 @@ namespace RDA.Data {
       this.Text = new Description(this.ID);
       this.OfferingItems = new List<OfferingItems>();
       var progressions = asset.XPathSelectElements("Values/Trader/Progression/*");
+      //Hugo
+      if (ID == "220") {
+        progressions = asset.XPathSelectElements("Values/ConstructionAI/ItemTradeConfig/ItemPools")?.Elements();
+      }
       foreach (var progression in progressions) {
         var item = new OfferingItems(progression);
         this.OfferingItems.Add(item);
       }
     }
+
     #endregion
 
     #region Public Methods

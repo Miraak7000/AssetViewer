@@ -72,6 +72,7 @@ namespace RDA.Data {
           break;
         case "Profile_3rdParty":
         case "Profile_3rdParty_Pirate":
+        case "HafenHugo":
           this.Text = new Description(Source.XPathSelectElement("Values/Standard/GUID").Value);
           this.Text.EN = $"Harbour - {this.Text.EN}";
           this.Text.DE = $"Hafen - {this.Text.DE}";
