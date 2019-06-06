@@ -27,6 +27,7 @@ namespace AssetViewer {
         result.Add(109, new Description("Level", "Stufe"));
         result.Add(110, new Description("Third Party", "Gegenspieler"));
         result.Add(120, new Description("Expedition Events", "Expedition Events"));
+        result.Add(121, new Description("Tourism", "Tourismus"));
         result.Add(1001, new Description("Rarity", "Rarität"));
         result.Add(1002, new Description("Type", "Typ"));
         result.Add(1003, new Description("Allocation", "Zuweisung"));

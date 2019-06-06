@@ -67,6 +67,9 @@
     <Compile Include="Controls\ThirdParty.xaml.cs">
       <DependentUpon>ThirdParty.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Tourism.xaml.cs">
+      <DependentUpon>Tourism.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Converter\DescriptionConverter.cs" />
     <Compile Include="Converter\RewardToItemConverter.cs" />
     <Compile Include="Converter\VisibilityConverter.cs" />
@@ -100,6 +103,7 @@
     <Compile Include="Data\Pool\Pool.cs" />
     <Compile Include="Data\Pool\PoolItem.cs" />
     <Compile Include="Data\Progression.cs" />
+    <Compile Include="Data\Tourism\TourismStatus.cs" />
     <Compile Include="Data\Upgrade.cs" />
     <Compile Include="Extensions\XmlExtensions.cs" />
     <Compile Include="ItemProvider.cs" />
@@ -122,6 +126,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Controls\Monument.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Tourism.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -1209,6 +1217,9 @@
     <Resource Include="Resources\data\ui\2kimages\main\profiles\campaign_portrait_09.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\resident_tier02_work.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\resident_tier03_work.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Assets\Tourism.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -57,10 +57,10 @@ namespace RDA {
       //Program.ProcessingItems("BuildPermitBuilding");
       //Program.ProcessingItems("Product");
 
-      //Program.ProcessingRewardPools();
+      Program.ProcessingRewardPools();
 
       //Third Party
-      Program.ProcessingThirdParty();
+      //Program.ProcessingThirdParty();
 
       // Quests
       //Program.QuestGiver();
@@ -69,6 +69,9 @@ namespace RDA {
       // Expeditions
       //Program.Expeditions();
       //Program.ProcessingExpeditionEvents();
+
+      //Tourism
+      Program.ProcessingTourism();
     }
     public static void ProcessingItems(String template, bool findSources = true) {
       var result = new List<Asset>();
@@ -326,6 +329,35 @@ namespace RDA {
         }
         return mainResult;
       }
+    }
+    private static void ProcessingTourism() {
+      var TourismAsset = Program.Original.Root.Descendants("Asset").FirstOrDefault(l => l.Element("Template")?.Value == "TourismFeature");
+      var CityStatis = TourismAsset.XPathSelectElement("Values/TourismFeature/CityStati").Elements().ToList();
+      var StatiDic = new Dictionary<string, XElement>();
+      for (var i = 0; i < CityStatis.Count; i++) {
+        StatiDic[i.ToString()] = CityStatis[i];
+      }
+
+      var xRoot = new XElement("CityStati");
+      foreach (var pool in TourismAsset.Descendants("SpecialistPools").FirstOrDefault().Elements()) {
+        var id = pool.Element("CityStatus").Value;
+        var xStatus = new XElement("Status");
+        xRoot.Add(xStatus);
+        var desc = new Description(StatiDic[id].Element("AttractivenessThreshold").Value + " Attractiveness", StatiDic[id].Element("AttractivenessThreshold").Value + " Attraktivität");
+        xStatus.Add(new XAttribute("Pool", pool.Element("Pool").Value));
+        xStatus.Add(desc.ToXml("Requirement"));
+        xStatus.Add(new Description(StatiDic[id].Element("CityStatusFluff").Value).ToXml("Text"));
+      }
+
+      foreach (var pool in TourismAsset.Descendants("UnlockablePools").SelectMany(p => p.Elements())) {
+        var xStatus = new XElement("Status");
+        xRoot.Add(xStatus);
+        xStatus.Add(new XElement(new Description(pool.Element("UnlockingSpecialist").Value).ToXml("Requirement")));
+        xStatus.Add(new XAttribute("Pool", pool.Element("Pool").Value));
+      }
+      var document = new XDocument(xRoot);
+      document.Save($@"{Program.PathRoot}\Modified\Assets_Tourism.xml");
+      document.Save($@"{Program.PathViewer}\Resources\Assets\Tourism.xml");
     }
     #endregion
 
