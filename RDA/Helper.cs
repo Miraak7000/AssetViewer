@@ -83,6 +83,10 @@ namespace RDA {
           return "118002";
         case "HarborOffice":
           return "4065";
+        case "TownHall":
+          return "2347";
+        case "GuildHouse":
+          return "2346";
         case "Uncommon":
           return "118003";
         case "Rare":
@@ -101,8 +105,6 @@ namespace RDA {
           return "100369";
         case "OutputAmountFactorUpgrade":
           return "100371";
-        case "TownHall":
-          return "2347";
         case "NeededAreaPercentUpgrade":
           return "3030";
         case "NeedsElectricity":
@@ -169,8 +171,10 @@ namespace RDA {
           return "12262";
         case "MaxHitpointsUpgrade":
           return "1154";
-        case "SailShip":
+        case "Ship":
           return "2342";
+        case "SailShip":
+          return "2343";
         case "SteamShip":
           return "2344";
         case "Warship":

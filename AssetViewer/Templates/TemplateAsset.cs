@@ -15,6 +15,7 @@ namespace AssetViewer.Templates {
     public Description Text { get; set; }
     public Description Rarity { get; set; }
     public String ItemType { get; set; }
+    public String ReleaseVersion { get; set; }
     //
     public Allocation Allocation { get; set; }
     //
@@ -38,6 +39,10 @@ namespace AssetViewer.Templates {
     public List<Upgrade> RepairCraneUpgrades { get; set; }
     public List<Upgrade> IncidentInfectableUpgrades { get; set; }
     public List<Upgrade> IncidentInfluencerUpgrades { get; set; }
+    public IEnumerable<Upgrade> AllUpgrades => typeof(TemplateAsset)
+            .GetProperties()
+            .Where(p => p.PropertyType == typeof(List<Upgrade>) && p.Name != nameof(Sources))
+            .SelectMany(l => (List<Upgrade>)l.GetValue(this) ?? Enumerable.Empty<Upgrade>());
     //
     public List<Upgrade> ItemSets { get; set; }
     //
@@ -63,6 +68,7 @@ namespace AssetViewer.Templates {
       this.Allocation = asset.Element("Allocation").HasElements ? new Allocation(asset.Element("Allocation")) : null;
       this.EffectTargets = asset.Element("EffectTargets").Elements().Select(s => new Description(s)).ToList();
       this.EffectTargetInfo = new Description("Affects ", "Beeinflusst ");
+      this.ReleaseVersion = asset.Attribute("Release")?.Value;
       for (var i = 0; i < this.EffectTargets.Count; i++) {
         if (i > 0) {
           this.EffectTargetInfo.EN += ", ";

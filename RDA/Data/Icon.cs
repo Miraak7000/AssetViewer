@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 using System.Xml.Linq;
 
 namespace RDA.Data {
@@ -8,24 +9,31 @@ namespace RDA.Data {
 
     #region Properties
     public String Filename { get; set; }
+    public string[] IgnoredDirectorys { get; set; } = new [] { $@"{Program.PathRoot}\Resources\data\ui\2kimages\main\3dicons\Temporary_Ornament" };
     #endregion
 
     #region Constructor
     public Icon(String filename) {
       var searchPath = Path.GetDirectoryName($@"{Program.PathRoot}\Resources\{filename}");
       var searchPattern = Path.GetFileNameWithoutExtension($@"{Program.PathRoot}\Resources\{filename}");
+      if (IgnoredDirectorys.Contains(searchPath)) {
+        return;
+      }
       var fileNames = Directory.GetFiles(searchPath, $"{searchPattern}??.png", SearchOption.TopDirectoryOnly);
-      if (fileNames.Length != 1) throw new FileNotFoundException();
+      if (fileNames.Length != 1)
+        throw new FileNotFoundException();
       this.Filename = filename;
       var file = File.ReadAllBytes(fileNames[0]);
       // publish icon
       var targetPath = Path.GetDirectoryName($@"{Program.PathViewer}\Resources\{filename}");
       var targetFile = Path.GetFullPath($@"{Program.PathViewer}\Resources\{filename}");
-      if (!Directory.Exists(targetPath)) Directory.CreateDirectory(targetPath);
+      if (!Directory.Exists(targetPath))
+        Directory.CreateDirectory(targetPath);
       if (!File.Exists(targetFile)) {
         try {
           File.WriteAllBytes(targetFile, file);
-        } catch (Exception) { }
+        }
+        catch (Exception) { }
       }
     }
     #endregion

@@ -24,19 +24,46 @@ namespace AssetViewer.Controls {
         var type = this.ComboBoxTypes.SelectedItem as String;
         var target = this.ComboBoxTargets.SelectedItem as String;
         var equipped = this.ComboBoxEquipped.SelectedItem as String;
-        var result = this.Assets.AsQueryable();
-        if (!String.IsNullOrEmpty(type)) result = result.Where(w => w.ItemType == type);
+        var source = this.ComboBoxSources.SelectedItem as String;
+        var upgrade = this.ComboBoxUpgrades.SelectedItem as String;
+        var release = this.ComboBoxReleases.SelectedItem as String;
+        var detailedSources = this.ComboBoxDetailedSources.SelectedItem as string;
+        var result = ItemProvider.Items.Values.AsQueryable();
+        if (!String.IsNullOrEmpty(type))
+          result = result.Where(w => w.ItemType == type);
         switch (App.Language) {
           case Languages.German:
-            if (!String.IsNullOrEmpty(rarity)) result = result.Where(w => w.Rarity.DE == rarity);
-            if (!String.IsNullOrEmpty(target)) result = result.Where(w => w.EffectTargets.Select(s => s.DE).Contains(target));
-            if (!String.IsNullOrEmpty(equipped)) result = result.Where(w => w.Allocation.Text.DE == equipped);
+            if (!String.IsNullOrEmpty(rarity))
+              result = result.Where(w => w.Rarity.DE == rarity);
+            if (!String.IsNullOrEmpty(target))
+              result = result.Where(w => w.EffectTargets != null && w.EffectTargets.Select(s => s.DE).Contains(target));
+            if (!String.IsNullOrEmpty(equipped))
+              result = result.Where(w => w.Allocation != null && w.Allocation.Text.DE == equipped);
+            if (!String.IsNullOrEmpty(upgrade))
+              result = result.Where(w => w.AllUpgrades != null && w.AllUpgrades.Any(l => l.Text.DE == upgrade));
+            if (!String.IsNullOrEmpty(source))
+              result = result.Where(w => w.Sources != null && w.Sources.Any(l => l.Text.DE == source));
+            if (!String.IsNullOrEmpty(detailedSources))
+              result = result.Where(w => w.Sources != null && w.Sources.SelectMany(s => s.Additionals).Any(l => l.Text.DE == detailedSources));
+            if (!String.IsNullOrEmpty(release))
+              result = result.Where(w => w.ReleaseVersion == release);
             result = result.OrderBy(o => o.Text.DE);
             break;
           default:
-            if (!String.IsNullOrEmpty(rarity)) result = result.Where(w => w.Rarity.EN == rarity);
-            if (!String.IsNullOrEmpty(target)) result = result.Where(w => w.EffectTargets.Select(s => s.EN).Contains(target));
-            if (!String.IsNullOrEmpty(equipped)) result = result.Where(w => w.Allocation.Text.EN == equipped);
+            if (!String.IsNullOrEmpty(rarity))
+              result = result.Where(w => w.Rarity.EN == rarity);
+            if (!String.IsNullOrEmpty(target))
+              result = result.Where(w => w.EffectTargets != null && w.EffectTargets.Select(s => s.EN).Contains(target));
+            if (!String.IsNullOrEmpty(equipped))
+              result = result.Where(w => w.Allocation != null && w.Allocation.Text.EN == equipped);
+            if (!String.IsNullOrEmpty(upgrade))
+              result = result.Where(w => w.AllUpgrades != null && w.AllUpgrades.Any(l => l.Text.EN == upgrade));
+            if (!String.IsNullOrEmpty(source))
+              result = result.Where(w => w.Sources != null && w.Sources.Any(l => l.Text.EN == source));
+            if (!String.IsNullOrEmpty(detailedSources))
+              result = result.Where(w => w.Sources != null && w.Sources.SelectMany(s => s.Additionals).Any(l => l.Text.EN == detailedSources));
+            if (!String.IsNullOrEmpty(release))
+              result = result.Where(w => w.ReleaseVersion == release);
             result = result.OrderBy(o => o.Text.EN);
             break;
         }
@@ -47,85 +74,6 @@ namespace AssetViewer.Controls {
       }
     }
     public TemplateAsset SelectedAsset { get; set; }
-    public LinearGradientBrush RarityBrush {
-      get {
-        var selection = this.SelectedAsset?.Rarity?.EN ?? "Common";
-        switch (selection) {
-          case "Uncommon":
-            return new LinearGradientBrush(new GradientStopCollection {
-              new GradientStop(Color.FromRgb(65, 89, 41), 0),
-              new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
-              new GradientStop(Color.FromRgb(42, 44, 39), 1)
-            }, 90);
-          case "Rare":
-            return new LinearGradientBrush(new GradientStopCollection {
-              new GradientStop(Color.FromRgb(50, 60, 83), 0),
-              new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
-              new GradientStop(Color.FromRgb(42, 44, 39), 1)
-            }, 90);
-          case "Epic":
-            return new LinearGradientBrush(new GradientStopCollection {
-              new GradientStop(Color.FromRgb(90, 65, 89), 0),
-              new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
-              new GradientStop(Color.FromRgb(42, 44, 39), 1)
-            }, 90);
-          case "Legendary":
-            return new LinearGradientBrush(new GradientStopCollection {
-              new GradientStop(Color.FromRgb(98, 66, 46), 0),
-              new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
-              new GradientStop(Color.FromRgb(42, 44, 39), 1)
-            }, 90);
-          default:
-            return new LinearGradientBrush(new GradientStopCollection {
-              new GradientStop(Color.FromRgb(126, 128, 125), 0),
-              new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
-              new GradientStop(Color.FromRgb(42, 44, 39), 1)
-            }, 90);
-        }
-      }
-    }
-    public String AllocationText {
-      get {
-        switch (App.Language) {
-          case Languages.German:
-            return "Hier ausgerüstet";
-          default:
-            return "Equipped in";
-            break;
-        }
-      }
-    }
-    public String ExpeditionText {
-      get {
-        switch (App.Language) {
-          case Languages.German:
-            return "Expeditions-Bonus";
-          default:
-            return "Expedition Bonus";
-        }
-      }
-    }
-    public String TradeText {
-      get {
-        switch (App.Language) {
-          case Languages.German:
-            return "Verkaufspreis";
-          default:
-            return "Selling Price";
-            break;
-        }
-      }
-    }
-    public String ItemSetText {
-      get {
-        switch (App.Language) {
-          case Languages.German:
-            return "Teil eines Sets";
-          default:
-            return "Part of set";
-        }
-      }
-    }
     public IEnumerable<String> Rarities {
       get {
         switch (App.Language) {
@@ -152,7 +100,14 @@ namespace AssetViewer.Controls {
     }
     public IEnumerable<String> ItemTypes {
       get {
-        var result = this.Assets.Select(s => s.ItemType).Distinct().OrderBy(o => o).ToList();
+        var result = ItemProvider.Items.Values.Select(s => s.ItemType).Distinct().Where(l => !string.IsNullOrWhiteSpace(l)).OrderBy(o => o).ToList();
+        result.Insert(0, String.Empty);
+        return result;
+      }
+    }
+    public IEnumerable<String> ReleaseVersions {
+      get {
+        var result = ItemProvider.Items.Values.Select(s => s.ReleaseVersion).Distinct().OrderBy(o => o).ToList();
         result.Insert(0, String.Empty);
         return result;
       }
@@ -162,10 +117,10 @@ namespace AssetViewer.Controls {
         List<String> result;
         switch (App.Language) {
           case Languages.German:
-            result = this.Assets.SelectMany(s => s.EffectTargets).Select(s => s.DE).Distinct().OrderBy(o => o).ToList();
+            result = ItemProvider.Items.Values.SelectMany(s => s.EffectTargets).Select(s => s.DE).Distinct().OrderBy(o => o).ToList();
             break;
           default:
-            result = this.Assets.SelectMany(s => s.EffectTargets).Select(s => s.EN).Distinct().OrderBy(o => o).ToList();
+            result = ItemProvider.Items.Values.SelectMany(s => s.EffectTargets).Select(s => s.EN).Distinct().OrderBy(o => o).ToList();
             break;
         }
         result.Insert(0, String.Empty);
@@ -177,18 +132,60 @@ namespace AssetViewer.Controls {
         List<String> result;
         switch (App.Language) {
           case Languages.German:
-            result = this.Assets.Select(s => s.Allocation.Text.DE).Distinct().OrderBy(o => o).ToList();
+            result = ItemProvider.Items.Values.Select(s => s.Allocation?.Text.DE).Distinct().OrderBy(o => o).ToList();
             break;
           default:
-            result = this.Assets.Select(s => s.Allocation.Text.EN).Distinct().OrderBy(o => o).ToList();
+            result = ItemProvider.Items.Values.Select(s => s.Allocation?.Text.EN).Distinct().OrderBy(o => o).ToList();
             break;
         }
         result.Insert(0, String.Empty);
         return result;
       }
     }
-    public Boolean HasResult {
-      get { return this.Items.Any(); }
+    public IEnumerable<String> Sources {
+      get {
+        List<String> result;
+        switch (App.Language) {
+          case Languages.German:
+            result = ItemProvider.Items.Values.SelectMany(s => s.Sources).Select(s => s.Text.DE).Distinct().OrderBy(o => o).ToList();
+            break;
+          default:
+            result = ItemProvider.Items.Values.SelectMany(s => s.Sources).Select(s => s.Text.EN).Distinct().OrderBy(o => o).ToList();
+            break;
+        }
+        result.Insert(0, String.Empty);
+        return result;
+      }
+    }
+    public IEnumerable<String> DetailedSources {
+      get {
+        List<String> result;
+        switch (App.Language) {
+          case Languages.German:
+            result = ItemProvider.Items.Values.SelectMany(s => s.Sources).SelectMany(s => s.Additionals).Select(s => s.Text.DE).Distinct().OrderBy(o => o).ToList();
+            break;
+          default:
+            result = ItemProvider.Items.Values.SelectMany(s => s.Sources).SelectMany(s => s.Additionals).Select(s => s.Text.EN).Distinct().OrderBy(o => o).ToList();
+            break;
+        }
+        result.Insert(0, String.Empty);
+        return result;
+      }
+    }
+    public IEnumerable<String> Upgrades {
+      get {
+        List<String> result;
+        switch (App.Language) {
+          case Languages.German:
+            result = ItemProvider.Items.Values.SelectMany(s => s.AllUpgrades).Select(s => s.Text.DE).Distinct().OrderBy(o => o).ToList();
+            break;
+          default:
+            result = ItemProvider.Items.Values.SelectMany(s => s.AllUpgrades).Select(s => s.Text.EN).Distinct().OrderBy(o => o).ToList();
+            break;
+        }
+        result.Insert(0, String.Empty);
+        return result;
+      }
     }
     public String SearchText {
       get { return this.Search; }
@@ -201,51 +198,13 @@ namespace AssetViewer.Controls {
     #endregion
 
     #region Fields
-    private readonly List<TemplateAsset> Assets;
     private String Search = String.Empty;
     #endregion
 
     #region Constructor
     public GuildhouseItem() {
       this.InitializeComponent();
-      this.Assets = new List<TemplateAsset>();
       ((MainWindow)Application.Current.MainWindow).ComboBoxLanguage.SelectionChanged += this.ComboBoxLanguage_SelectionChanged;
-      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.GuildhouseItem.xml")) {
-        using (var reader = new StreamReader(stream)) {
-          var document = XDocument.Parse(reader.ReadToEnd()).Root;
-          this.Assets.AddRange(document.Elements().Select(s => new TemplateAsset(s)));
-        }
-      }
-      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.HarborOfficeItem.xml")) {
-        using (var reader = new StreamReader(stream)) {
-          var document = XDocument.Parse(reader.ReadToEnd()).Root;
-          this.Assets.AddRange(document.Elements().Select(s => new TemplateAsset(s)));
-        }
-      }
-      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.TownhallItem.xml")) {
-        using (var reader = new StreamReader(stream)) {
-          var document = XDocument.Parse(reader.ReadToEnd()).Root;
-          this.Assets.AddRange(document.Elements().Select(s => new TemplateAsset(s)));
-        }
-      }
-      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.VehicleItem.xml")) {
-        using (var reader = new StreamReader(stream)) {
-          var document = XDocument.Parse(reader.ReadToEnd()).Root;
-          this.Assets.AddRange(document.Elements().Select(s => new TemplateAsset(s)));
-        }
-      }
-      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.ShipSpecialist.xml")) {
-        using (var reader = new StreamReader(stream)) {
-          var document = XDocument.Parse(reader.ReadToEnd()).Root;
-          this.Assets.AddRange(document.Elements().Select(s => new TemplateAsset(s)));
-        }
-      }
-      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.CultureItem.xml")) {
-        using (var reader = new StreamReader(stream)) {
-          var document = XDocument.Parse(reader.ReadToEnd()).Root;
-          this.Assets.AddRange(document.Elements().Select(s => new TemplateAsset(s)));
-        }
-      }
       this.DataContext = this;
     }
     #endregion
@@ -260,24 +219,20 @@ namespace AssetViewer.Controls {
     }
     private void ComboBoxRarities_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
     }
     private void ComboBoxTypes_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
     }
     private void ComboBoxTargets_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
     }
     private void ComboBoxEquipped_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
     }
     private void ListBoxItems_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
-      if (e.AddedItems.Count == 0) this.ListBoxItems.SelectedIndex = 0;
+      if (e.AddedItems.Count == 0)
+        this.ListBoxItems.SelectedIndex = 0;
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SelectedAsset"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("RarityBrush"));
     }
     private void ComboBoxLanguage_SelectionChanged(Object sender, SelectionChangedEventArgs e) {
       switch (((ComboBox)sender).SelectedIndex) {
@@ -288,26 +243,7 @@ namespace AssetViewer.Controls {
           App.Language = Languages.German;
           break;
       }
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Rarities"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("ItemTypes"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Targets"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Equipped"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SelectedAsset"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("RarityBrush"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("AllocationText"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("ExpeditionText"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("TradeText"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
-    }
-    private void ButtonSwitch_Click(Object sender, RoutedEventArgs e) {
-      if (this.ItemFront.Visibility == Visibility.Visible) {
-        this.ItemFront.Visibility = Visibility.Collapsed;
-        this.ItemBack.Visibility = Visibility.Visible;
-      } else {
-        this.ItemBack.Visibility = Visibility.Collapsed;
-        this.ItemFront.Visibility = Visibility.Visible;
-      }
+      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(""));
     }
     #endregion
 

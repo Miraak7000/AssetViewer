@@ -11,13 +11,13 @@ namespace AssetViewer.Data {
 
     #region Properties
     public Progression Progression { get; set; }
-    public List<TemplateAsset> Assets { get; set; }
+    public string Items { get; set; }
     #endregion
 
     #region Constructor
     public OfferingItems(XElement asset) {
       this.Progression = (Progression)Enum.Parse(typeof(Progression), asset.Attribute("Progression").Value);
-      this.Assets = asset.XPathSelectElements("Assets/*").Select(s => new TemplateAsset(s)).ToList();
+      this.Items = asset.Attribute("Items")?.Value;
     }
     #endregion
 

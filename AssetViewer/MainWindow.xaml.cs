@@ -39,6 +39,12 @@ namespace AssetViewer {
           case 2:
             this.Presenter.Content = new ThirdParty();
             break;
+          case 3:
+            this.Presenter.Content = new ExpeditionEvents();
+            break;
+          case 4:
+            this.Presenter.Content = new Tourism();
+            break;
         }
       }
     }

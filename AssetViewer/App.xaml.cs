@@ -26,10 +26,16 @@ namespace AssetViewer {
         result.Add(108, new Description("Size", "Grösse"));
         result.Add(109, new Description("Level", "Stufe"));
         result.Add(110, new Description("Third Party", "Gegenspieler"));
+        result.Add(120, new Description("Expedition Events", "Expedition Events"));
+        result.Add(121, new Description("Tourism", "Tourismus"));
         result.Add(1001, new Description("Rarity", "Rarität"));
         result.Add(1002, new Description("Type", "Typ"));
         result.Add(1003, new Description("Allocation", "Zuweisung"));
         result.Add(1004, new Description("Search", "Suchen"));
+        result.Add(1005, new Description("Source", "Quelle"));
+        result.Add(1006, new Description("Effect", "Effekt"));
+        result.Add(1007, new Description("Patch Version", "Patch Version"));
+        result.Add(1008, new Description("Detailed Sources", "Detaillierte Quellen"));
         result.Add(1011, new Description("Has Factory Upgrades", "Hat Fabrik-Erweiterungen"));
         result.Add(1012, new Description("Has Building Upgrades", "Hat Gebäude-Erweiterungen"));
         result.Add(1021, new Description("Common", "Allgemein"));

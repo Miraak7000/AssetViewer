@@ -38,94 +38,12 @@ namespace AssetViewer.Controls {
     }
     public IEnumerable<TemplateAsset> Rewards {
       get {
-        var monumentThreshold = this.ComboBoxThresholds.SelectedItem as TemplateAsset;
-        if (monumentThreshold == null) return new TemplateAsset[0];
-        return this.AssetReward.Where(w => monumentThreshold.MonumentRewards.Contains(w.ID));
+        if (!(this.ComboBoxThresholds.SelectedItem is TemplateAsset monumentThreshold))
+          return new TemplateAsset[0];
+        return monumentThreshold.MonumentRewards.GetItemsById();
       }
     }
     public TemplateAsset SelectedAsset { get; set; }
-    public LinearGradientBrush RarityBrush {
-      get {
-        var selection = this.SelectedAsset?.Rarity?.EN ?? "Common";
-        switch (selection) {
-          case "Uncommon":
-            return new LinearGradientBrush(new GradientStopCollection {
-              new GradientStop(Color.FromRgb(65, 89, 41), 0),
-              new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
-              new GradientStop(Color.FromRgb(42, 44, 39), 1)
-            }, 90);
-          case "Rare":
-            return new LinearGradientBrush(new GradientStopCollection {
-              new GradientStop(Color.FromRgb(50, 60, 83), 0),
-              new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
-              new GradientStop(Color.FromRgb(42, 44, 39), 1)
-            }, 90);
-          case "Epic":
-            return new LinearGradientBrush(new GradientStopCollection {
-              new GradientStop(Color.FromRgb(90, 65, 89), 0),
-              new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
-              new GradientStop(Color.FromRgb(42, 44, 39), 1)
-            }, 90);
-          case "Legendary":
-            return new LinearGradientBrush(new GradientStopCollection {
-              new GradientStop(Color.FromRgb(98, 66, 46), 0),
-              new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
-              new GradientStop(Color.FromRgb(42, 44, 39), 1)
-            }, 90);
-          default:
-            return new LinearGradientBrush(new GradientStopCollection {
-              new GradientStop(Color.FromRgb(126, 128, 125), 0),
-              new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
-              new GradientStop(Color.FromRgb(42, 44, 39), 1)
-            }, 90);
-        }
-      }
-    }
-    public Boolean HasResult {
-      get { return this.Rewards.Any(); }
-    }
-    public String AllocationText {
-      get {
-        switch (App.Language) {
-          case Languages.German:
-            return "Hier ausgerüstet";
-          default:
-            return "Equipped in";
-            break;
-        }
-      }
-    }
-    public String ExpeditionText {
-      get {
-        switch (App.Language) {
-          case Languages.German:
-            return "Expeditions-Bonus";
-          default:
-            return "Expedition Bonus";
-        }
-      }
-    }
-    public String TradeText {
-      get {
-        switch (App.Language) {
-          case Languages.German:
-            return "Verkaufspreis";
-          default:
-            return "Selling Price";
-            break;
-        }
-      }
-    }
-    public String ItemSetText {
-      get {
-        switch (App.Language) {
-          case Languages.German:
-            return "Teil eines Sets";
-          default:
-            return "Part of set";
-        }
-      }
-    }
     #endregion
 
     #region Fields

@@ -37,6 +37,8 @@
         <TextBlock Text="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=102}"></TextBlock>
         <TextBlock Text="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=105}"></TextBlock>
         <TextBlock Text="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=110}"></TextBlock>
+        <TextBlock Text="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=120}"></TextBlock>
+        <TextBlock Text="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=121}"></TextBlock>
       </ComboBox>
       <ComboBox x:Name="ComboBoxLanguage" SelectedIndex="0" Grid.Column="4" SelectionChanged="ComboBoxLanguage_OnSelectionChanged">
         <TextBlock Text="English"></TextBlock>

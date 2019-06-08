@@ -32,8 +32,10 @@ namespace RDA.Data {
         case "CultureItem":
           this.Template_CultureItem(value);
           break;
+        case "ItemSpecialActionVisualEffect":
+        case "ItemSpecialAction":
         case "ActiveItem":
-          this.Template_ActiveItem(value);
+          this.Template_GenericItem(value);
           break;
         default:
           throw new NotImplementedException(template);
@@ -71,7 +73,8 @@ namespace RDA.Data {
           this.Text = new Description("2346");
           break;
         default:
-          if (value != null) throw new NotImplementedException();
+          if (value != null)
+            throw new NotImplementedException();
           this.ID = "TradeUnion";
           this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_guildhouse.png");
           this.Text = new Description("2346");
@@ -81,7 +84,8 @@ namespace RDA.Data {
     private void Template_TownhallItem(String value) {
       switch (value) {
         default:
-          if (value != null && value != "None") throw new NotImplementedException();
+          if (value != null && value != "None")
+            throw new NotImplementedException();
           this.ID = "TownHall";
           this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_townhall.png");
           this.Text = new Description("2347");
@@ -91,7 +95,8 @@ namespace RDA.Data {
     private void Template_HarborOfficeItem(String value) {
       switch (value) {
         default:
-          if (value != null && value != "None") throw new NotImplementedException();
+          if (value != null && value != "None")
+            throw new NotImplementedException();
           this.ID = "HarborOffice";
           this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_harbour_kontor.png");
           this.Text = new Description(Helper.GetDescriptionID("HarborOffice"));
@@ -115,8 +120,14 @@ namespace RDA.Data {
           this.Icon = new Icon("data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png");
           this.Text = new Description(Helper.GetDescriptionID("Warship"));
           break;
+        case "Ship":
+          this.ID = "Ships";
+          this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_ship.png");
+          this.Text = new Description("191454");
+          break;
         default:
-          if (value != null) throw new NotImplementedException();
+          if (value != null)
+            throw new NotImplementedException();
           this.ID = "Ships";
           this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_ship.png");
           this.Text = new Description("191454");
@@ -131,7 +142,8 @@ namespace RDA.Data {
           this.Text = new Description(Helper.GetDescriptionID("Warship"));
           break;
         default:
-          if (value != null) throw new NotImplementedException();
+          if (value != null)
+            throw new NotImplementedException();
           this.ID = "Ships";
           this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_ship.png");
           this.Text = new Description("191454");
@@ -146,22 +158,45 @@ namespace RDA.Data {
           this.Text = new Description("2351");
           break;
         default:
-          if (value != null) throw new NotImplementedException();
+          if (value != null)
+            throw new NotImplementedException();
           this.ID = "Zoo";
           this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_zoo.png");
           this.Text = new Description("2349");
           break;
       }
     }
-    private void Template_ActiveItem(String value) {
+    private void Template_GenericItem(String value) {
       switch (value) {
+        case "Ship":
+        case "SailShip":
         case "SteamShip":
-          this.ID = "SteamShip";
-          this.Icon = new Icon("data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png");
-          this.Text = new Description(Helper.GetDescriptionID("SteamShip"));
+        case "Warship":
+          Template_VehicleItem(value);
+          break;
+        case "HarborOffice":
+          this.ID = value;
+          this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_harbour_kontor.png");
+          this.Text = new Description(Helper.GetDescriptionID("HarborOffice"));
+          break;
+        case "TownHall":
+          this.ID = value;
+          this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_townhall.png");
+          this.Text = new Description(Helper.GetDescriptionID("TownHall"));
+          break;
+        case "RadiusBuilding":
+        case "GuildHouse":
+          this.ID = "TradeUnion";
+          this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_guildhouse.png");
+          this.Text = new Description("2346");
           break;
         default:
-          throw new NotImplementedException(value);
+          if (value != null)
+            throw new NotImplementedException();
+          this.ID = "TradeUnion";
+          this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_guildhouse.png");
+          this.Text = new Description("2346");
+          break;
       }
     }
     #endregion

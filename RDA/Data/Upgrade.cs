@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Xml.Linq;
 using System.Xml.XPath;
@@ -131,7 +132,8 @@ namespace RDA.Data {
             value = Int32.Parse(element.Value);
             if (value < 100) {
               value = -(100 - value);
-            } else {
+            }
+            else {
               value = (value - 100);
             }
           }
@@ -166,19 +168,19 @@ namespace RDA.Data {
         case "Cannon":
           this.Icon = new Icon("data/ui/2kimages/main/icons/icon_stance_attack.png");
           this.Text = new Description("19138");
-          value = -Convert.ToInt32((100M - (100M * Decimal.Parse(element.Element("Factor").Value))));
+          value = -Convert.ToInt32((100M - (100M * Decimal.Parse(element.Element("Factor").Value, CultureInfo.InvariantCulture))));
           isPercent = true;
           break;
         case "BigBertha":
           this.Icon = new Icon("data/ui/2kimages/main/icons/icon_stance_attack.png");
           this.Text = new Description("19139");
-          value = -Convert.ToInt32((100M - (100M * Decimal.Parse(element.Element("Factor").Value))));
+          value = -Convert.ToInt32((100M - (100M * Decimal.Parse(element.Element("Factor").Value, CultureInfo.InvariantCulture))));
           isPercent = true;
           break;
         case "Torpedo":
           this.Icon = new Icon("data/ui/2kimages/main/icons/icon_stance_attack.png");
           this.Text = new Description("19137");
-          value = -Convert.ToInt32((100M - (100M * Decimal.Parse(element.Element("Factor").Value))));
+          value = -Convert.ToInt32((100M - (100M * Decimal.Parse(element.Element("Factor").Value, CultureInfo.InvariantCulture))));
           isPercent = true;
           break;
         case "AttackSpeedUpgrade":
@@ -199,7 +201,8 @@ namespace RDA.Data {
           this.Text = new Description("15196");
           if (value == -100) {
             value = null;
-          } else {
+          }
+          else {
             throw new NotImplementedException();
           }
           break;
@@ -259,30 +262,23 @@ namespace RDA.Data {
             this.Additionals.Add(new Upgrade(item));
           }
           break;
-        case "DamageFactor":
-          var damageFactor = element.Elements().Single();
-          switch (damageFactor.Name.LocalName) {
-            case "Building":
-              this.Icon = new Icon("data/ui/2kimages/main/icons/ship_info/icon_damage.png");
-              this.Text = new Description("17394");
-              value = Convert.ToInt32((Decimal.Parse(damageFactor.Value) * 100) - 100);
-              isPercent = true;
-              break;
-            case "SailShip":
-              this.Icon = new Icon("data/ui/2kimages/main/icons/ship_info/icon_damage.png");
-              this.Text = new Description("17395");
-              value = Convert.ToInt32((Decimal.Parse(damageFactor.Value) * 100) - 100);
-              isPercent = true;
-              break;
-            case "SteamShip":
-              this.Icon = new Icon("data/ui/2kimages/main/icons/ship_info/icon_damage.png");
-              this.Text = new Description("17396");
-              value = Convert.ToInt32((Decimal.Parse(damageFactor.Value) * 100) - 100);
-              isPercent = true;
-              break;
-            default:
-              throw new NotImplementedException();
-          }
+        case "Building":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/ship_info/icon_damage.png");
+          this.Text = new Description("17394");
+          value = Convert.ToInt32((Decimal.Parse(element.Element("Factor").Value, System.Globalization.CultureInfo.InvariantCulture) * 100) - 100);
+          isPercent = true;
+          break;
+        case "SailShip":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/ship_info/icon_damage.png");
+          this.Text = new Description("17395");
+          value = Convert.ToInt32((Decimal.Parse(element.Element("Factor").Value, System.Globalization.CultureInfo.InvariantCulture) * 100) - 100);
+          isPercent = true;
+          break;
+        case "SteamShip":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/ship_info/icon_damage.png");
+          this.Text = new Description("17396");
+          value = Convert.ToInt32((Decimal.Parse(element.Element("Factor").Value, System.Globalization.CultureInfo.InvariantCulture) * 100) - 100);
+          isPercent = true;
           break;
         case "LoadingSpeedUpgrade":
           this.Icon = new Icon("data/ui/2kimages/main/icons/icon_load_ships.png");
@@ -293,15 +289,37 @@ namespace RDA.Data {
           this.Icon = itemSet.Element("IconFilename") == null ? null : new Icon(itemSet.Element("IconFilename").Value);
           this.Text = new Description(element.Value);
           break;
+        case "UseProjectile":
+          itemSet = Program.Original.Root.XPathSelectElement($"//Asset/Values/Standard[GUID={element.Value}]");
+          this.Text = new Description(itemSet.Element("InfoDescription").Value);
+          //Todo: maybe add more details
+          //<Projectile>
+          //<ProjectileType>Arc</ProjectileType>
+          //<ShotHeight>2</ShotHeight>
+          //<ShotAngle>0</ShotAngle>
+          //<ProjectileSpeed>15</ProjectileSpeed>
+          //<DamageType>Cannon</DamageType>
+          //</Projectile>
+          break;
+        case "BaseDamageUpgrade":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/ship_info/icon_damage.png");
+          this.Text = new Description("2334");
+          break;
+        case "AccuracyUpgrade":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png");
+          this.Text = new Description("12062");
+          break;
         default:
           throw new NotImplementedException(element.Name.LocalName);
       }
       if (value == null) {
         this.Value = String.Empty;
-      } else {
+      }
+      else {
         if (isPercent) {
           this.Value = value > 0 ? $"+{value * factor}%" : $"{value * factor}%";
-        } else {
+        }
+        else {
           this.Value = value > 0 ? $"+{value * factor}" : $"{value * factor}";
         }
       }
@@ -386,7 +404,8 @@ namespace RDA.Data {
       }
       if (value == null) {
         this.Value = String.Empty;
-      } else {
+      }
+      else {
         this.Value = value.ToString();
       }
     }
@@ -395,14 +414,22 @@ namespace RDA.Data {
     #region Public Methods
     public XElement ToXml() {
       var result = new XElement(this.GetType().Name);
-      if (this.Icon == null) result.Add(new XElement("Icon")); else result.Add(this.Icon.ToXml());
+      if (this.Icon == null)
+        result.Add(new XElement("Icon"));
+      else
+        result.Add(this.Icon.ToXml());
       result.Add(this.Text.ToXml("Text"));
       result.Add(new XElement("Value", this.Value));
-      if (this.AdditionalOutputs != null) result.Add(new XElement("AdditionalOutputs", this.AdditionalOutputs.Select(s => s.ToXml())));
-      if (this.ReplaceInputs != null) result.Add(new XElement("ReplaceInputs", this.ReplaceInputs.Select(s => s.ToXml())));
-      if (this.InputAmountUpgrades != null) result.Add(new XElement("InputAmountUpgrades", this.InputAmountUpgrades.Select(s => s.ToXml())));
-      if (this.ReplacingWorkforce != null) result.Add(new XElement("ReplacingWorkforce", this.ReplacingWorkforce.ToXml()));
-      if (this.Additionals != null) result.Add(new XElement("Additionals", this.Additionals.Select(s => s.ToXml())));
+      if (this.AdditionalOutputs != null)
+        result.Add(new XElement("AdditionalOutputs", this.AdditionalOutputs.Select(s => s.ToXml())));
+      if (this.ReplaceInputs != null)
+        result.Add(new XElement("ReplaceInputs", this.ReplaceInputs.Select(s => s.ToXml())));
+      if (this.InputAmountUpgrades != null)
+        result.Add(new XElement("InputAmountUpgrades", this.InputAmountUpgrades.Select(s => s.ToXml())));
+      if (this.ReplacingWorkforce != null)
+        result.Add(new XElement("ReplacingWorkforce", this.ReplacingWorkforce.ToXml()));
+      if (this.Additionals != null)
+        result.Add(new XElement("Additionals", this.Additionals.Select(s => s.ToXml())));
       return result;
     }
     #endregion

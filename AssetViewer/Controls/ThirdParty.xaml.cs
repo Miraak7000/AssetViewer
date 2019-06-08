@@ -24,7 +24,7 @@ namespace AssetViewer.Controls {
         var thirdParty = this.ComboBoxThirdParty.SelectedItem as Tuple<String, String>;
         var progression = this.ComboBoxProgressions.SelectedItem as Tuple<Progression, String>;
         if (thirdParty == null || progression == null) return new TemplateAsset[0];
-        var result = this.Assets.Single(w => w.ID == thirdParty.Item1).OfferingItems.Single(w => w.Progression == progression.Item1).Assets.AsEnumerable();
+        var result = this.Assets.Single(w => w.ID == thirdParty.Item1).OfferingItems.Single(w => w.Progression == progression.Item1).Items.GetItemsById();
         switch (App.Language) {
           case Languages.German:
             result = result.OrderBy(o => o.Text.DE);
@@ -71,88 +71,6 @@ namespace AssetViewer.Controls {
       }
     }
     public TemplateAsset SelectedAsset { get; set; }
-    public LinearGradientBrush RarityBrush {
-      get {
-        var selection = this.SelectedAsset?.Rarity?.EN ?? "Common";
-        switch (selection) {
-          case "Uncommon":
-            return new LinearGradientBrush(new GradientStopCollection {
-              new GradientStop(Color.FromRgb(65, 89, 41), 0),
-              new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
-              new GradientStop(Color.FromRgb(42, 44, 39), 1)
-            }, 90);
-          case "Rare":
-            return new LinearGradientBrush(new GradientStopCollection {
-              new GradientStop(Color.FromRgb(50, 60, 83), 0),
-              new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
-              new GradientStop(Color.FromRgb(42, 44, 39), 1)
-            }, 90);
-          case "Epic":
-            return new LinearGradientBrush(new GradientStopCollection {
-              new GradientStop(Color.FromRgb(90, 65, 89), 0),
-              new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
-              new GradientStop(Color.FromRgb(42, 44, 39), 1)
-            }, 90);
-          case "Legendary":
-            return new LinearGradientBrush(new GradientStopCollection {
-              new GradientStop(Color.FromRgb(98, 66, 46), 0),
-              new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
-              new GradientStop(Color.FromRgb(42, 44, 39), 1)
-            }, 90);
-          default:
-            return new LinearGradientBrush(new GradientStopCollection {
-              new GradientStop(Color.FromRgb(126, 128, 125), 0),
-              new GradientStop(Color.FromRgb(42, 44, 39), 0.2),
-              new GradientStop(Color.FromRgb(42, 44, 39), 1)
-            }, 90);
-        }
-      }
-    }
-    public Boolean HasResult {
-      get { return this.Items.Any(); }
-    }
-    public String AllocationText {
-      get {
-        switch (App.Language) {
-          case Languages.German:
-            return "Hier ausgerüstet";
-          default:
-            return "Equipped in";
-            break;
-        }
-      }
-    }
-    public String ExpeditionText {
-      get {
-        switch (App.Language) {
-          case Languages.German:
-            return "Expeditions-Bonus";
-          default:
-            return "Expedition Bonus";
-        }
-      }
-    }
-    public String ItemSetText {
-      get {
-        switch (App.Language) {
-          case Languages.German:
-            return "Teil eines Sets";
-          default:
-            return "Part of set";
-        }
-      }
-    }
-    public String TradeText {
-      get {
-        switch (App.Language) {
-          case Languages.German:
-            return "Verkaufspreis";
-          default:
-            return "Selling Price";
-            break;
-        }
-      }
-    }
     public String ImageThirdParty {
       get {
         var thirdParty = this.ComboBoxThirdParty.SelectedItem as Tuple<String, String>;
@@ -198,17 +116,14 @@ namespace AssetViewer.Controls {
     }
     private void ComboBoxThirdParty_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("ImageThirdParty"));
     }
     private void ComboBoxProgressions_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
     }
     private void ListBoxItems_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
       if (e.AddedItems.Count == 0) this.ListBoxItems.SelectedIndex = 0;
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SelectedAsset"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("RarityBrush"));
     }
     #endregion
 
