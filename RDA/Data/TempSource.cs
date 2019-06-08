@@ -28,10 +28,27 @@ namespace RDA.Data {
       switch (Source.Element("Template").Value) {
         case "TourismFeature":
           this.Text = new Description("Tourism", "Tourismus");
+          foreach (var item in element.Details) {
+            var cityStatus = item.Element("CityStatus");
+            if (cityStatus != null) {
+              var desc = new Description(Program.TourismStati[cityStatus.Value].Element("AttractivenessThreshold").Value + " Attractiveness",Program.TourismStati[cityStatus.Value].Element("AttractivenessThreshold").Value + " Attraktivität");
+              Details.Add(desc);
+            }
+            else if (item.Element("UnlockingSpecialist") != null) {
+              Details.Add(new Description(item.Element("UnlockingSpecialist").Value));
+            }
+            else if(item.Element("UnlockingSetBuff") != null) {
+              Details.Add(new Description(item.Element("UnlockingSetBuff").Value));
+            }
+            else {
+
+            }
+          }
           break;
         case "MonumentEventReward":
         case "CollectablePicturePuzzle":
           this.Text = new Description(Source.XPathSelectElement("Values/Standard/GUID").Value);
+          this.Details = element.Details.Select(d => new Description(d.XPathSelectElement("Values/Standard/GUID").Value)).ToList();
           break;
         case "Expedition":
           this.Text = new Description(Source.XPathSelectElement("Values/Expedition/ExpeditionName").Value);
@@ -108,6 +125,7 @@ namespace RDA.Data {
           this.Text = new Description(element.Source.XPathSelectElement("Values/Standard/GUID").Value);
           this.Text.EN = $"Ship Drop - {this.Text.EN}";
           this.Text.DE = $"Schiff Drop - {this.Text.DE}";
+          this.Details = element.Details.Select(d => new Description(d.XPathSelectElement("Values/Standard/GUID").Value)).ToList();
           break;
         default:
           throw new NotImplementedException();

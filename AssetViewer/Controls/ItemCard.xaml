@@ -104,8 +104,9 @@
       </Border>
     </ControlTemplate>
   </UserControl.Resources>
-  <Grid x:Name="mainGrid" d:DataContext="{d:DesignInstance {x:Type controls:ItemCard}}" DataContext="{Binding ElementName=userControl}">
-    <Border
+  <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Disabled">
+    <Grid x:Name="mainGrid" d:DataContext="{d:DesignInstance {x:Type controls:ItemCard}}" DataContext="{Binding ElementName=userControl}">
+      <Border
       x:Name="ItemFront"
       Grid.Column="2"
       Background="{Binding Path=RarityBrush}"
@@ -113,225 +114,225 @@
       BorderThickness="1"
       CornerRadius="5"
       Visibility="Visible">
-      <Grid>
-        <StackPanel Margin="10" Visibility="{Binding Path=SelectedAsset, Converter={StaticResource VisibilityConverter}}">
-          <!--  Name  -->
-          <StackPanel>
-            <Grid>
-              <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="90" />
-                <ColumnDefinition Width="*" />
-              </Grid.ColumnDefinitions>
-              <Image
+        <Grid>
+          <StackPanel Margin="10" Visibility="{Binding Path=SelectedAsset, Converter={StaticResource VisibilityConverter}}">
+            <!--  Name  -->
+            <StackPanel>
+              <Grid>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="90" />
+                  <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image
                 Grid.Column="0"
                 Width="75"
                 Height="75"
                 HorizontalAlignment="Left"
                 Source="{Binding Path=SelectedAsset.Icon.Filename}" />
-              <Grid Grid.Column="1">
-                <Grid.RowDefinitions>
-                  <RowDefinition Height="Auto" />
-                  <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-                <TextBlock
+                <Grid Grid.Column="1">
+                  <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                  </Grid.RowDefinitions>
+                  <TextBlock
                   Grid.Row="0"
                   FontSize="16"
                   FontWeight="Bold"
                   Foreground="#FFFFE4AD"
                   Text="{Binding Path=SelectedAsset.Text, Converter={StaticResource DescriptionConverter}}"
                   TextWrapping="Wrap" />
-                <TextBlock Grid.Row="1" Foreground="#FFA49370" Text="{Binding Path=SelectedAsset.Rarity, Converter={StaticResource DescriptionConverter}}" />
+                  <TextBlock Grid.Row="1" Foreground="#FFA49370" Text="{Binding Path=SelectedAsset.Rarity, Converter={StaticResource DescriptionConverter}}" />
+                </Grid>
               </Grid>
-            </Grid>
-          </StackPanel>
-          <!--  Allocation  -->
-          <StackPanel>
-            <Border
+            </StackPanel>
+            <!--  Allocation  -->
+            <StackPanel>
+              <Border
               Height="1"
               Margin="0,5"
               BorderBrush="#FFA49370"
               BorderThickness="1"
               Opacity="0.5" />
-            <StackPanel Orientation="Horizontal" Visibility="{Binding Path=SelectedAsset, Converter={StaticResource VisibilityConverter}}">
-              <Image
+              <StackPanel Orientation="Horizontal" Visibility="{Binding Path=SelectedAsset, Converter={StaticResource VisibilityConverter}}">
+                <Image
                 Width="25"
                 Height="25"
                 Margin="0,0,10,0"
                 Source="{Binding Path=SelectedAsset.Allocation.Icon.Filename}" />
-              <TextBlock
+                <TextBlock
                 Margin="0,0,10,0"
                 VerticalAlignment="Center"
                 Foreground="#FFFFE4AD"
                 Text="{Binding Path=AllocationText}" />
-              <TextBlock
+                <TextBlock
                 VerticalAlignment="Center"
                 FontWeight="Bold"
                 Foreground="#FFDEAF04"
                 Text="{Binding Path=SelectedAsset.Allocation.Text, Converter={StaticResource DescriptionConverter}}" />
-            </StackPanel>
-            <Border
+              </StackPanel>
+              <Border
               Height="1"
               Margin="0,5"
               BorderBrush="#FFA49370"
               BorderThickness="1"
               Opacity="0.5" />
-          </StackPanel>
-          <!--  Target  -->
-          <StackPanel Visibility="{Binding Path=SelectedAsset.HasEffectTargetInfo, Converter={StaticResource BooleanToVisibility}}">
-            <TextBlock
+            </StackPanel>
+            <!--  Target  -->
+            <StackPanel Visibility="{Binding Path=SelectedAsset.HasEffectTargetInfo, Converter={StaticResource BooleanToVisibility}}">
+              <TextBlock
               Margin="0,0,14,5"
               VerticalAlignment="Center"
               Foreground="#FFA49370"
               Text="{Binding Path=SelectedAsset.EffectTargetInfo, Converter={StaticResource DescriptionConverter}}"
               TextWrapping="Wrap" />
-          </StackPanel>
-          <!--  FactoryUpgrade  -->
-          <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.FactoryUpgrades, Converter={StaticResource VisibilityConverter}}">
-            <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.FactoryUpgrades}" />
-          </Grid>
-          <!--  BuildingUpgrade  -->
-          <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.BuildingUpgrades, Converter={StaticResource VisibilityConverter}}">
-            <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.BuildingUpgrades}" />
-          </Grid>
-          <!--  CultureUpgrade  -->
-          <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.CultureUpgrades, Converter={StaticResource VisibilityConverter}}">
-            <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.CultureUpgrades}" />
-          </Grid>
-          <!--  ModuleOwnerUpgrade  -->
-          <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.ModuleOwnerUpgrades, Converter={StaticResource VisibilityConverter}}">
-            <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.ModuleOwnerUpgrades}" />
-          </Grid>
-          <!--  PopulationUpgrades  -->
-          <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.PopulationUpgrades, Converter={StaticResource VisibilityConverter}}">
-            <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.PopulationUpgrades}" />
-          </Grid>
-          <!--  ResidenceUpgrades  -->
-          <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.ResidenceUpgrades, Converter={StaticResource VisibilityConverter}}">
-            <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.ResidenceUpgrades}" />
-          </Grid>
-          <!--  ElectricUpgrades  -->
-          <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.ElectricUpgrades, Converter={StaticResource VisibilityConverter}}">
-            <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.ElectricUpgrades}" />
-          </Grid>
-          <!--  AttackableUpgrades  -->
-          <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.AttackableUpgrades, Converter={StaticResource VisibilityConverter}}">
-            <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.AttackableUpgrades}" />
-          </Grid>
-          <!--  TradeShipUpgrades  -->
-          <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.TradeShipUpgrades, Converter={StaticResource VisibilityConverter}}">
-            <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.TradeShipUpgrades}" />
-          </Grid>
-          <!--  VehicleUpgrades  -->
-          <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.VehicleUpgrades, Converter={StaticResource VisibilityConverter}}">
-            <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.VehicleUpgrades}" />
-          </Grid>
-          <!--  AttackerUpgrades  -->
-          <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.AttackerUpgrades, Converter={StaticResource VisibilityConverter}}">
-            <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.AttackerUpgrades}" />
-          </Grid>
-          <!--  VisitorHarborUpgrades  -->
-          <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.VisitorHarborUpgrades, Converter={StaticResource VisibilityConverter}}">
-            <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.VisitorHarborUpgrades}" />
-          </Grid>
-          <!--  RepairCraneUpgrades  -->
-          <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.RepairCraneUpgrades, Converter={StaticResource VisibilityConverter}}">
-            <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.RepairCraneUpgrades}" />
-          </Grid>
-          <!--  IncidentInfectableUpgrades  -->
-          <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.IncidentInfectableUpgrades, Converter={StaticResource VisibilityConverter}}">
-            <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.IncidentInfectableUpgrades}" />
-          </Grid>
-          <!--  IncidentInfluencerUpgrades  -->
-          <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.IncidentInfluencerUpgrades, Converter={StaticResource VisibilityConverter}}">
-            <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.IncidentInfluencerUpgrades}" />
-          </Grid>
-          <!--  Expedition  -->
-          <StackPanel Visibility="{Binding Path=SelectedAsset.ExpeditionAttributes, Converter={StaticResource VisibilityConverter}}">
-            <Border
+            </StackPanel>
+            <!--  FactoryUpgrade  -->
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.FactoryUpgrades, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.FactoryUpgrades}" />
+            </Grid>
+            <!--  BuildingUpgrade  -->
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.BuildingUpgrades, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.BuildingUpgrades}" />
+            </Grid>
+            <!--  CultureUpgrade  -->
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.CultureUpgrades, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.CultureUpgrades}" />
+            </Grid>
+            <!--  ModuleOwnerUpgrade  -->
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.ModuleOwnerUpgrades, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.ModuleOwnerUpgrades}" />
+            </Grid>
+            <!--  PopulationUpgrades  -->
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.PopulationUpgrades, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.PopulationUpgrades}" />
+            </Grid>
+            <!--  ResidenceUpgrades  -->
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.ResidenceUpgrades, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.ResidenceUpgrades}" />
+            </Grid>
+            <!--  ElectricUpgrades  -->
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.ElectricUpgrades, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.ElectricUpgrades}" />
+            </Grid>
+            <!--  AttackableUpgrades  -->
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.AttackableUpgrades, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.AttackableUpgrades}" />
+            </Grid>
+            <!--  TradeShipUpgrades  -->
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.TradeShipUpgrades, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.TradeShipUpgrades}" />
+            </Grid>
+            <!--  VehicleUpgrades  -->
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.VehicleUpgrades, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.VehicleUpgrades}" />
+            </Grid>
+            <!--  AttackerUpgrades  -->
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.AttackerUpgrades, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.AttackerUpgrades}" />
+            </Grid>
+            <!--  VisitorHarborUpgrades  -->
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.VisitorHarborUpgrades, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.VisitorHarborUpgrades}" />
+            </Grid>
+            <!--  RepairCraneUpgrades  -->
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.RepairCraneUpgrades, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.RepairCraneUpgrades}" />
+            </Grid>
+            <!--  IncidentInfectableUpgrades  -->
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.IncidentInfectableUpgrades, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.IncidentInfectableUpgrades}" />
+            </Grid>
+            <!--  IncidentInfluencerUpgrades  -->
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.IncidentInfluencerUpgrades, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.IncidentInfluencerUpgrades}" />
+            </Grid>
+            <!--  Expedition  -->
+            <StackPanel Visibility="{Binding Path=SelectedAsset.ExpeditionAttributes, Converter={StaticResource VisibilityConverter}}">
+              <Border
               Height="1"
               Margin="0,5"
               BorderBrush="#FFA49370"
               BorderThickness="1"
               Opacity="0.5" />
-            <TextBlock
+              <TextBlock
               Margin="0,2,0,5"
               VerticalAlignment="Center"
               Foreground="#FFA49370"
               Text="{Binding Path=ExpeditionText}" />
-            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.ExpeditionAttributes, Converter={StaticResource VisibilityConverter}}">
-              <ItemsControl
+              <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.ExpeditionAttributes, Converter={StaticResource VisibilityConverter}}">
+                <ItemsControl
                 Foreground="#FFFFE4AD"
                 ItemTemplate="{StaticResource UpgradeTemplate}"
                 ItemsSource="{Binding Path=SelectedAsset.ExpeditionAttributes}"
                 Opacity="0.5" />
-            </Grid>
-          </StackPanel>
-          <!--  ItemSet  -->
-          <StackPanel Visibility="{Binding Path=SelectedAsset.ItemSets, Converter={StaticResource VisibilityConverter}}">
-            <Border
+              </Grid>
+            </StackPanel>
+            <!--  ItemSet  -->
+            <StackPanel Visibility="{Binding Path=SelectedAsset.ItemSets, Converter={StaticResource VisibilityConverter}}">
+              <Border
               Height="1"
               Margin="0,5"
               BorderBrush="#FFA49370"
               BorderThickness="1"
               Opacity="0.5" />
-            <TextBlock
+              <TextBlock
               Margin="0,2,0,5"
               VerticalAlignment="Center"
               Foreground="#FFA49370"
               Text="{Binding Path=ItemSetText}" />
-            <Grid Margin="0,2">
-              <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.ItemSets}" />
-            </Grid>
-          </StackPanel>
-          <!--  Trade  -->
-          <StackPanel Visibility="{Binding Path=SelectedAsset, Converter={StaticResource VisibilityConverter}}">
-            <Border
+              <Grid Margin="0,2">
+                <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.ItemSets}" />
+              </Grid>
+            </StackPanel>
+            <!--  Trade  -->
+            <StackPanel Visibility="{Binding Path=SelectedAsset, Converter={StaticResource VisibilityConverter}}">
+              <Border
               Height="1"
               Margin="0,5"
               BorderBrush="#FFA49370"
               BorderThickness="1"
               Opacity="0.5" />
-            <Grid Visibility="{Binding Path=SelectedAsset.TradePrice, Converter={StaticResource VisibilityConverter}}">
-              <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="30" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="Auto" />
-              </Grid.ColumnDefinitions>
-              <Image
+              <Grid Visibility="{Binding Path=SelectedAsset.TradePrice, Converter={StaticResource VisibilityConverter}}">
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="30" />
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Image
                 Grid.Column="0"
                 Width="18"
                 Height="18"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Center"
                 Source="../Resources/data/ui/2kimages/main/icons/icon_credits.png" />
-              <TextBlock
+                <TextBlock
                 Grid.Column="1"
                 VerticalAlignment="Center"
                 Foreground="#FFFFE4AD"
                 Text="{Binding Path=TradeText}" />
-              <TextBlock
+                <TextBlock
                 Grid.Column="2"
                 VerticalAlignment="Center"
                 Foreground="#FFFFE4AD"
                 Text="{Binding Path=SelectedAsset.TradePrice}" />
-            </Grid>
-          </StackPanel>
-          <!--  Info  -->
-          <StackPanel Visibility="{Binding Path=SelectedAsset, Converter={StaticResource VisibilityConverter}}">
-            <Border
+              </Grid>
+            </StackPanel>
+            <!--  Info  -->
+            <StackPanel Visibility="{Binding Path=SelectedAsset, Converter={StaticResource VisibilityConverter}}">
+              <Border
               Height="1"
               Margin="0,5"
               BorderBrush="#FFA49370"
               BorderThickness="1"
               Opacity="0.5" />
-            <TextBlock
+              <TextBlock
               FontStyle="Italic"
               Foreground="#FFA49370"
               Text="{Binding Path=SelectedAsset.Info, Converter={StaticResource DescriptionConverter}, ConverterParameter=Long}"
               TextWrapping="Wrap" />
+            </StackPanel>
           </StackPanel>
-        </StackPanel>
-        <Button
+          <Button
           Width="22"
           Height="22"
           Margin="2,2,0,0"
@@ -343,11 +344,11 @@
           Cursor="Hand"
           Template="{DynamicResource ButtonSwitchTemplate}"
           Visibility="{Binding CanSwap, Converter={StaticResource BooleanToVisibility}}">
-          <Image Source="../Resources/data/ui/2kimages/main/icons/icon_traderoutes.png" />
-        </Button>
-      </Grid>
-    </Border>
-    <Border
+            <Image Source="../Resources/data/ui/2kimages/main/icons/icon_traderoutes.png" />
+          </Button>
+        </Grid>
+      </Border>
+      <Border
       x:Name="ItemBack"
       Grid.Column="2"
       Background="{Binding Path=RarityBrush}"
@@ -355,69 +356,69 @@
       BorderThickness="1"
       CornerRadius="5"
       Visibility="Collapsed">
-      <Grid>
-        <StackPanel Margin="10">
-          <Grid>
-            <Grid.ColumnDefinitions>
-              <ColumnDefinition Width="90" />
-              <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Image
+        <Grid>
+          <StackPanel Margin="10">
+            <Grid>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="90" />
+                <ColumnDefinition Width="*" />
+              </Grid.ColumnDefinitions>
+              <Image
               Grid.Column="0"
               Width="75"
               Height="75"
               HorizontalAlignment="Left"
               Source="{Binding Path=SelectedAsset.Icon.Filename}" />
-            <Grid Grid.Column="1">
-              <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
-              </Grid.RowDefinitions>
-              <TextBlock
+              <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="Auto" />
+                  <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <TextBlock
                 Grid.Row="0"
                 FontSize="16"
                 FontWeight="Bold"
                 Foreground="#FFFFE4AD"
                 Text="{Binding Path=SelectedAsset.Text, Converter={StaticResource DescriptionConverter}}"
                 TextWrapping="Wrap" />
-              <TextBlock Grid.Row="1" Foreground="#FFA49370" Text="{Binding Path=SelectedAsset.Rarity, Converter={StaticResource DescriptionConverter}}" />
+                <TextBlock Grid.Row="1" Foreground="#FFA49370" Text="{Binding Path=SelectedAsset.Rarity, Converter={StaticResource DescriptionConverter}}" />
+              </Grid>
             </Grid>
-          </Grid>
-          <Border
+            <Border
             Height="1"
             Margin="0,5"
             BorderBrush="#FFA49370"
             BorderThickness="1"
             Opacity="0.5" />
-          <ItemsControl ItemsSource="{Binding Path=SelectedAsset.Sources}" Background="Transparent" BorderThickness="0">
-            <ItemsControl.ItemTemplate>
-              <DataTemplate>
-                <Grid MaxHeight="24" Background="Transparent" ToolTipService.InitialShowDelay="0" ToolTipService.ShowDuration="60000">
-                  <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="30"></ColumnDefinition>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
-                  </Grid.ColumnDefinitions>
-                  <Image Grid.Column="0" Source="{Binding Path=Icon.Filename}" HorizontalAlignment="Left"></Image>
-                  <TextBlock Grid.Column="1" Text="{Binding Path=Text, Converter={StaticResource DescriptionConverter}}" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" Foreground="#FFFFE4AD"></TextBlock>
-                  <Grid.ToolTip>
-                    <ToolTip DataContext="{Binding PlacementTarget.DataContext, RelativeSource={RelativeSource Self}}">
-                      <ItemsControl Background="Transparent" BorderThickness="0" ItemsSource="{Binding Additionals}">
-                        <ItemsControl.ItemTemplate>
-                          <DataTemplate>
-                            <Grid>
-                              <TextBlock VerticalAlignment="Center" Foreground="#FF2A2C27" Text="{Binding Text, Converter={StaticResource DescriptionConverter}}" TextTrimming="CharacterEllipsis" />
-                            </Grid>
-                          </DataTemplate>
-                        </ItemsControl.ItemTemplate>
-                      </ItemsControl>
-                    </ToolTip>
-                  </Grid.ToolTip>
-                </Grid>
-              </DataTemplate>
-            </ItemsControl.ItemTemplate>
-          </ItemsControl>
-        </StackPanel>
-        <Button
+            <ItemsControl ItemsSource="{Binding Path=SelectedAsset.Sources}" Background="Transparent" BorderThickness="0">
+              <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                  <Grid MaxHeight="24" Background="Transparent" ToolTipService.InitialShowDelay="0" ToolTipService.ShowDuration="60000">
+                    <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="30"></ColumnDefinition>
+                      <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="{Binding Path=Icon.Filename}" HorizontalAlignment="Left"></Image>
+                    <TextBlock Grid.Column="1" Text="{Binding Path=Text, Converter={StaticResource DescriptionConverter}}" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" Foreground="#FFFFE4AD"></TextBlock>
+                    <Grid.ToolTip>
+                      <ToolTip DataContext="{Binding PlacementTarget.DataContext, RelativeSource={RelativeSource Self}}">
+                        <ItemsControl Background="Transparent" BorderThickness="0" ItemsSource="{Binding Additionals}">
+                          <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                              <Grid>
+                                <TextBlock VerticalAlignment="Center" Foreground="#FF2A2C27" Text="{Binding Text, Converter={StaticResource DescriptionConverter}}" TextTrimming="CharacterEllipsis" />
+                              </Grid>
+                            </DataTemplate>
+                          </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                      </ToolTip>
+                    </Grid.ToolTip>
+                  </Grid>
+                </DataTemplate>
+              </ItemsControl.ItemTemplate>
+            </ItemsControl>
+          </StackPanel>
+          <Button
           Width="22"
           Height="22"
           Margin="2,2,0,0"
@@ -428,9 +429,10 @@
           Click="ButtonSwitch_Click"
           Cursor="Hand"
           Template="{DynamicResource ButtonSwitchTemplate}">
-          <Image Source="../Resources/data/ui/2kimages/main/icons/icon_traderoutes.png" />
-        </Button>
-      </Grid>
-    </Border>
-  </Grid>
+            <Image Source="../Resources/data/ui/2kimages/main/icons/icon_traderoutes.png" />
+          </Button>
+        </Grid>
+      </Border>
+    </Grid>
+  </ScrollViewer>
 </UserControl>

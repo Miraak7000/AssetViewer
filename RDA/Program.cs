@@ -4,6 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Threading.Tasks;
 using System.Xml.Linq;
 using System.Xml.XPath;
 using RDA.Data;
@@ -24,6 +25,7 @@ namespace RDA {
     internal static Dictionary<String, String> DescriptionEN;
     internal static Dictionary<String, String> DescriptionDE;
     internal static string Version = "Release";
+    internal static Dictionary<string, XElement> TourismStati = new Dictionary<string, XElement>();
     #endregion
 
     #region Private Methods
@@ -31,7 +33,7 @@ namespace RDA {
       Program.PathViewer = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase).Replace(@"file:\", String.Empty)).Parent.Parent.Parent.FullName + @"\AssetViewer";
       Program.PathRoot = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase).Replace(@"file:\", String.Empty)).Parent.Parent.FullName;
       Program.Original = XDocument.Load(Program.PathRoot + @"\Original\assets.xml");
-
+      SetTourismStati();
       // Helper
       //Helper.ExtractTextEnglish(Program.PathRoot + @"\Original\texts_english.xml");
       //Helper.ExtractTextGerman(Program.PathRoot + @"\Original\texts_german.xml");
@@ -57,7 +59,7 @@ namespace RDA {
       //Program.ProcessingItems("BuildPermitBuilding");
       //Program.ProcessingItems("Product");
 
-      Program.ProcessingRewardPools();
+      //Program.ProcessingRewardPools();
 
       //Third Party
       //Program.ProcessingThirdParty();
@@ -70,9 +72,19 @@ namespace RDA {
       //Program.Expeditions();
       //Program.ProcessingExpeditionEvents();
 
-      //Tourism
+      ////Tourism
       Program.ProcessingTourism();
     }
+
+    private static void SetTourismStati() {
+      var TourismAsset = Program.Original.Root.Descendants("Asset").FirstOrDefault(l => l.Element("Template")?.Value == "TourismFeature");
+      var CityStatis = TourismAsset.XPathSelectElement("Values/TourismFeature/CityStati").Elements().ToList();
+      TourismStati = new Dictionary<string, XElement>();
+      for (var i = 1; i < CityStatis.Count; i++) {
+        TourismStati[i.ToString()] = CityStatis[i];
+      }
+    }
+
     public static void ProcessingItems(String template, bool findSources = true) {
       var result = new List<Asset>();
       var oldAssets = new Dictionary<string, XElement>();
@@ -83,9 +95,8 @@ namespace RDA {
       var assets = Program.Original.XPathSelectElements($"//Asset[Template='{template}']").ToList();
       Console.WriteLine(template + "  Total: " + assets.Count);
       var count = 0;
-      foreach (var asset in assets) {
-        count++;
-        Console.WriteLine(asset.XPathSelectElement("Values/Standard/GUID").Value + " - " + count);
+     assets.AsParallel().ForAll(asset => {
+        Console.WriteLine(asset.XPathSelectElement("Values/Standard/GUID").Value + " - " + count++);
         var item = new Asset(asset, findSources);
         if (oldAssets.ContainsKey(item.ID)) {
           item.ReleaseVersion = oldAssets[item.ID].Attribute("Release")?.Value ?? "Release";
@@ -94,7 +105,7 @@ namespace RDA {
           item.ReleaseVersion = Version;
         }
         result.Add(item);
-      }
+      });
       var document = new XDocument();
       document.Add(new XElement(template));
       document.Root.Add(result.Select(s => s.ToXml()));
@@ -332,27 +343,28 @@ namespace RDA {
     }
     private static void ProcessingTourism() {
       var TourismAsset = Program.Original.Root.Descendants("Asset").FirstOrDefault(l => l.Element("Template")?.Value == "TourismFeature");
-      var CityStatis = TourismAsset.XPathSelectElement("Values/TourismFeature/CityStati").Elements().ToList();
-      var StatiDic = new Dictionary<string, XElement>();
-      for (var i = 0; i < CityStatis.Count; i++) {
-        StatiDic[i.ToString()] = CityStatis[i];
-      }
-
       var xRoot = new XElement("CityStati");
       foreach (var pool in TourismAsset.Descendants("SpecialistPools").FirstOrDefault().Elements()) {
         var id = pool.Element("CityStatus").Value;
         var xStatus = new XElement("Status");
         xRoot.Add(xStatus);
-        var desc = new Description(StatiDic[id].Element("AttractivenessThreshold").Value + " Attractiveness", StatiDic[id].Element("AttractivenessThreshold").Value + " Attraktivität");
+        var desc = new Description(TourismStati[id].Element("AttractivenessThreshold").Value + " Attractiveness", TourismStati[id].Element("AttractivenessThreshold").Value + " Attraktivität");
         xStatus.Add(new XAttribute("Pool", pool.Element("Pool").Value));
         xStatus.Add(desc.ToXml("Requirement"));
-        xStatus.Add(new Description(StatiDic[id].Element("CityStatusFluff").Value).ToXml("Text"));
+        xStatus.Add(new Description(TourismStati[id].Element("CityStatusFluff").Value).ToXml("Text"));
       }
 
       foreach (var pool in TourismAsset.Descendants("UnlockablePools").SelectMany(p => p.Elements())) {
         var xStatus = new XElement("Status");
         xRoot.Add(xStatus);
         xStatus.Add(new XElement(new Description(pool.Element("UnlockingSpecialist").Value).ToXml("Requirement")));
+        xStatus.Add(new XAttribute("Pool", pool.Element("Pool").Value));
+      }
+
+      foreach (var pool in TourismAsset.Descendants("SpecialistPoolsThroughSets").SelectMany(p => p.Elements())) {
+        var xStatus = new XElement("Status");
+        xRoot.Add(xStatus);
+        xStatus.Add(new XElement(new Description(pool.Element("UnlockingSetBuff").Value).ToXml("Requirement")));
         xStatus.Add(new XAttribute("Pool", pool.Element("Pool").Value));
       }
       var document = new XDocument(xRoot);

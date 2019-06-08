@@ -35,6 +35,7 @@ namespace AssetViewer {
         result.Add(1005, new Description("Source", "Quelle"));
         result.Add(1006, new Description("Effect", "Effekt"));
         result.Add(1007, new Description("Patch Version", "Patch Version"));
+        result.Add(1008, new Description("Detailed Sources", "Detaillierte Quellen"));
         result.Add(1011, new Description("Has Factory Upgrades", "Hat Fabrik-Erweiterungen"));
         result.Add(1012, new Description("Has Building Upgrades", "Hat Gebäude-Erweiterungen"));
         result.Add(1021, new Description("Common", "Allgemein"));

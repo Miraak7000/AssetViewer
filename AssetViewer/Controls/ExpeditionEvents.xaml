@@ -11,6 +11,7 @@
   mc:Ignorable="d">
   <UserControl.Resources>
     <converter:DescriptionConverter x:Key="DescriptionConverter" />
+    <converter:GlobalTranslationConverter x:Key="TranslationConverter"/>
     <converter:RewardToItemConverter x:Key="RewardToItemConverter" />
     <CollectionViewSource x:Key="EventSource" Source="{Binding Events}" />
     <CollectionViewSource x:Key="PathsSource" Source="{Binding /Paths, Source={StaticResource EventSource}}" />
@@ -90,11 +91,11 @@
                               <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
                             <StackPanel Grid.Column="0" Orientation="Horizontal">
-                              <TextBlock Foreground="Green" Text="{Binding OptionAttribute}" />
+                              <TextBlock Foreground="Green" Text="{Binding OptionAttribute, Converter={StaticResource TranslationConverter}}" />
                               <ItemsControl ItemsSource="{Binding Requirements}">
                                 <ItemsControl.ItemTemplate>
                                   <DataTemplate>
-                                    <TextBlock Foreground="Red" Text="{Binding NeededAttribute}" />
+                                    <TextBlock Foreground="Red" Text="{Binding NeededAttribute, Converter={StaticResource TranslationConverter}}" />
                                   </DataTemplate>
                                 </ItemsControl.ItemTemplate>
                                 <ItemsControl.ItemsPanel>

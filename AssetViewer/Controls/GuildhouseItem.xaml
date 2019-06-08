@@ -151,12 +151,12 @@
           ItemsSource="{Binding Path=Rarities}"
           SelectionChanged="ComboBoxRarities_OnSelectionChanged" />
         <TextBlock
-          Grid.Row="2"
+          Grid.Row="4"
           Grid.Column="0"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
           Text="{Binding Path=Rarities, Converter={StaticResource Description}, ConverterParameter=1004}" />
-        <TextBox Grid.Row="3" Grid.Column="0" Text="{Binding Path=SearchText, UpdateSourceTrigger=PropertyChanged}" />
+        <TextBox Grid.Row="5" Grid.Column="0" Text="{Binding Path=SearchText, UpdateSourceTrigger=PropertyChanged}" />
 
         <TextBlock
           Grid.Row="0"
@@ -204,45 +204,58 @@
           SelectionChanged="ComboBoxEquipped_OnSelectionChanged" />
 
         <TextBlock
-          Grid.Row="0"
+          Grid.Row="2"
           Grid.Column="6"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
           Text="{Binding Path=Sources, Converter={StaticResource Description}, ConverterParameter=1005}" />
         <ComboBox
           x:Name="ComboBoxSources"
-          Grid.Row="1"
+          Grid.Row="3"
           Grid.Column="6"
           Height="22"
           ItemsSource="{Binding Path=Sources}"
           SelectionChanged="ComboBoxRarities_OnSelectionChanged" />
 
         <TextBlock
-          Grid.Row="2"
+          Grid.Row="0"
           Grid.Column="6"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
           Text="{Binding Path=Upgrades, Converter={StaticResource Description}, ConverterParameter=1006}" />
         <ComboBox
           x:Name="ComboBoxUpgrades"
-          Grid.Row="3"
+          Grid.Row="1"
           Grid.Column="6"
           Height="22"
           ItemsSource="{Binding Path=Upgrades}"
           SelectionChanged="ComboBoxRarities_OnSelectionChanged" />
 
         <TextBlock
-          Grid.Row="4"
+          Grid.Row="2"
           Grid.Column="0"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
           Text="{Binding Path=ReleaseVersions, Converter={StaticResource Description}, ConverterParameter=1007}" />
         <ComboBox
           x:Name="ComboBoxReleases"
-          Grid.Row="5"
+          Grid.Row="3"
           Grid.Column="0"
           Height="22"
           ItemsSource="{Binding Path=ReleaseVersions}"
+          SelectionChanged="ComboBoxRarities_OnSelectionChanged" />
+        <TextBlock
+          Grid.Row="4"
+          Grid.Column="6"
+          Margin="0,0,5,0"
+          VerticalAlignment="Center"
+          Text="{Binding Path=DetailedSources, Converter={StaticResource Description}, ConverterParameter=1008}" />
+        <ComboBox
+          x:Name="ComboBoxDetailedSources"
+          Grid.Row="5"
+          Grid.Column="6"
+          Height="22"
+          ItemsSource="{Binding Path=DetailedSources}"
           SelectionChanged="ComboBoxRarities_OnSelectionChanged" />
 
       </Grid>

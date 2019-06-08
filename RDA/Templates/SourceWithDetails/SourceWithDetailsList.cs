@@ -48,9 +48,17 @@ namespace RDA.Templates {
         }
         return;
       }
-      var old = this.Find(l => l.Source.XPathSelectElement("Values/Standard/GUID").Value == assetID);
+      var old = this.Find(l => l.Source.XPathSelectElement("Values/Standard/GUID").Value == assetID && l.Source.Element("Template").Value == element.Element("Template").Value);
       if (old.Source != null) {
         foreach (var item in details) {
+          var asset = item.Element("Asset");
+          if (asset != null) {
+            var itemID = item.XPathSelectElement("Values/Standard/GUID").Value;
+            var itemTemplate = item.Element("Template").Value;
+            if (old.Details.Any(i => i.XPathSelectElement("Values/Standard/GUID")?.Value == itemID && i.Element("Template")?.Value == itemTemplate)) {
+              continue;
+            }
+          }
           old.Details.Add(item);
         }
       }

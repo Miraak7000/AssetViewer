@@ -96,7 +96,7 @@
           </ListBox>
         </Border>
       </Grid>
-      <local:ItemCard Grid.Column="4" SelectedAsset="{Binding /, Source={StaticResource ItemsSource}}" />
+      <local:ItemCard Grid.Column="4" CanSwap="True" SelectedAsset="{Binding /, Source={StaticResource ItemsSource}}" />
     </Grid>
   </Grid>
 </UserControl>

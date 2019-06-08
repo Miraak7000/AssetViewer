@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Xml.Linq;
 using System.Xml.XPath;
@@ -167,19 +168,19 @@ namespace RDA.Data {
         case "Cannon":
           this.Icon = new Icon("data/ui/2kimages/main/icons/icon_stance_attack.png");
           this.Text = new Description("19138");
-          value = -Convert.ToInt32((100M - (100M * Decimal.Parse(element.Element("Factor").Value))));
+          value = -Convert.ToInt32((100M - (100M * Decimal.Parse(element.Element("Factor").Value, CultureInfo.InvariantCulture))));
           isPercent = true;
           break;
         case "BigBertha":
           this.Icon = new Icon("data/ui/2kimages/main/icons/icon_stance_attack.png");
           this.Text = new Description("19139");
-          value = -Convert.ToInt32((100M - (100M * Decimal.Parse(element.Element("Factor").Value))));
+          value = -Convert.ToInt32((100M - (100M * Decimal.Parse(element.Element("Factor").Value, CultureInfo.InvariantCulture))));
           isPercent = true;
           break;
         case "Torpedo":
           this.Icon = new Icon("data/ui/2kimages/main/icons/icon_stance_attack.png");
           this.Text = new Description("19137");
-          value = -Convert.ToInt32((100M - (100M * Decimal.Parse(element.Element("Factor").Value))));
+          value = -Convert.ToInt32((100M - (100M * Decimal.Parse(element.Element("Factor").Value, CultureInfo.InvariantCulture))));
           isPercent = true;
           break;
         case "AttackSpeedUpgrade":
@@ -261,31 +262,23 @@ namespace RDA.Data {
             this.Additionals.Add(new Upgrade(item));
           }
           break;
-        case "DamageFactor":
-          //.Single throws exception
-          var damageFactor = element.Elements().First();
-          switch (damageFactor.Name.LocalName) {
-            case "Building":
-              this.Icon = new Icon("data/ui/2kimages/main/icons/ship_info/icon_damage.png");
-              this.Text = new Description("17394");
-              value = Convert.ToInt32((Decimal.Parse(damageFactor.Value) * 100) - 100);
-              isPercent = true;
-              break;
-            case "SailShip":
-              this.Icon = new Icon("data/ui/2kimages/main/icons/ship_info/icon_damage.png");
-              this.Text = new Description("17395");
-              value = Convert.ToInt32((Decimal.Parse(damageFactor.Value) * 100) - 100);
-              isPercent = true;
-              break;
-            case "SteamShip":
-              this.Icon = new Icon("data/ui/2kimages/main/icons/ship_info/icon_damage.png");
-              this.Text = new Description("17396");
-              value = Convert.ToInt32((Decimal.Parse(damageFactor.Value) * 100) - 100);
-              isPercent = true;
-              break;
-            default:
-              throw new NotImplementedException();
-          }
+        case "Building":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/ship_info/icon_damage.png");
+          this.Text = new Description("17394");
+          value = Convert.ToInt32((Decimal.Parse(element.Element("Factor").Value, System.Globalization.CultureInfo.InvariantCulture) * 100) - 100);
+          isPercent = true;
+          break;
+        case "SailShip":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/ship_info/icon_damage.png");
+          this.Text = new Description("17395");
+          value = Convert.ToInt32((Decimal.Parse(element.Element("Factor").Value, System.Globalization.CultureInfo.InvariantCulture) * 100) - 100);
+          isPercent = true;
+          break;
+        case "SteamShip":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/ship_info/icon_damage.png");
+          this.Text = new Description("17396");
+          value = Convert.ToInt32((Decimal.Parse(element.Element("Factor").Value, System.Globalization.CultureInfo.InvariantCulture) * 100) - 100);
+          isPercent = true;
           break;
         case "LoadingSpeedUpgrade":
           this.Icon = new Icon("data/ui/2kimages/main/icons/icon_load_ships.png");
@@ -307,6 +300,14 @@ namespace RDA.Data {
           //<ProjectileSpeed>15</ProjectileSpeed>
           //<DamageType>Cannon</DamageType>
           //</Projectile>
+          break;
+        case "BaseDamageUpgrade":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/ship_info/icon_damage.png");
+          this.Text = new Description("2334");
+          break;
+        case "AccuracyUpgrade":
+          this.Icon = new Icon("data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png");
+          this.Text = new Description("12062");
           break;
         default:
           throw new NotImplementedException(element.Name.LocalName);

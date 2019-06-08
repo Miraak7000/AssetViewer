@@ -1,6 +1,7 @@
 ﻿using RDA.Data;
 using RDA.Library;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -177,7 +178,7 @@ namespace RDA.Templates {
 
     #region Properties
 
-    public static Dictionary<string, SourceWithDetailsList> SavedSources { get; set; } = new Dictionary<string, SourceWithDetailsList>();
+    public static ConcurrentDictionary<string, SourceWithDetailsList> SavedSources { get; set; } = new ConcurrentDictionary<string, SourceWithDetailsList>();
     public String ID { get; set; }
     public String Name { get; set; }
     public Icon Icon { get; set; }
@@ -473,10 +474,6 @@ namespace RDA.Templates {
           // TODO: this needs to be implemented
           if (item.Name.LocalName == "LineOfSightRangeUpgrade")
             continue;
-          if (item.Name.LocalName == "BaseDamageUpgrade")
-            continue;
-          if (item.Name.LocalName == "AccuracyUpgrade")
-            continue;
           if (item.Name.LocalName == "HitpointDamage")
             continue;
           if (item.Name.LocalName == "ReloadTimeUpgrade")
@@ -485,6 +482,12 @@ namespace RDA.Templates {
             continue;
           if (item.Name.LocalName == "AddStatusEffects")
             continue;
+          if (item.Name.LocalName == "DamageFactor") {
+            foreach (var factor in item.Elements()) {
+              this.AttackerUpgrades.Add(new Upgrade(factor));
+            }
+            continue;
+          }
           this.AttackerUpgrades.Add(new Upgrade(item));
         }
       }
@@ -609,7 +612,7 @@ namespace RDA.Templates {
             }
             // Hafen Hugo Mercier
             if (element.XPathSelectElement("Values/Standard/GUID")?.Value == "220") {
-              if (element.XPathSelectElements("Values/ConstructionAI/ItemTradeConfig/ItemPools").Elements().Any(f=> f.Element("Pool").Value == id)) {
+              if (element.XPathSelectElements("Values/ConstructionAI/ItemTradeConfig/ItemPools").Elements().Any(f => f.Element("Pool").Value == id)) {
                 result.AddSourceAsset(element.GetProxyElement("HafenHugo"), new HashSet<XElement> { element.GetProxyElement("HafenHugo") });
                 resultstoadd.Add(result);
               }
@@ -663,13 +666,17 @@ namespace RDA.Templates {
             case "Quest":
             case "CollectablePicturePuzzle":
             case "MonumentEventReward":
-            case "TourismFeature":
             case "A7_QuestSmuggler":
               if (!element.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
                 result.AddSourceAsset(element, new HashSet<XElement> { element });
               }
               break;
-
+            case "TourismFeature":
+              var pool = element.Descendants("Pool").FirstOrDefault(p => p.Value == id)?.Parent;
+              if (pool != null) {
+                result.AddSourceAsset(element, new HashSet<XElement> { pool });
+              }
+              break;
             case "ExpeditionDecision":
               //Add Detail if has reward or is InsertEvent
               var reward = element.XPathSelectElement("Values/Reward/RewardAssets");
@@ -689,7 +696,7 @@ namespace RDA.Templates {
               goto case "RewardPool";
             case "RewardPool":
             case "RewardItemPool":
-             
+
               if (SavedSources.ContainsKey(key)) {
                 result.AddSourceAsset(SavedSources[key].Copy());
                 break;
@@ -700,7 +707,7 @@ namespace RDA.Templates {
               }
               FindSources(key, Details, result);
               if (!SavedSources.ContainsKey(key)) {
-                SavedSources.Add(key, result.Copy());
+                SavedSources.TryAdd(key, result.Copy());
               }
               break;
 

@@ -1,555 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ItemSpecialActionVisualEffect>
-  <Asset ID="191969" Release="Release">
-    <Name>Black Powder Fireworks</Name>
-    <Icon>
-      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_fireworks_1.png</Filename>
-    </Icon>
-    <Text ID="191969">
-      <EN>Black Powder Fireworks</EN>
-      <DE>Schwarzpulver-Feuerwerk</DE>
-    </Text>
-    <Rarity ID="118002">
-      <EN>Common</EN>
-      <DE>Gewöhnlich</DE>
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <ItemSets />
-    <Allocation ID="TownHall">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_townhall.png</Filename>
-      </Icon>
-      <Text ID="2347">
-        <EN>Town Hall</EN>
-        <DE>Rathaus</DE>
-      </Text>
-    </Allocation>
-    <EffectTargets>
-      <Target ID="">
-        <EN>Residences</EN>
-        <DE>Wohngebäude</DE>
-      </Target>
-    </EffectTargets>
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
-        </Icon>
-        <Text ID="3922">
-          <EN>Naval Power</EN>
-          <DE>Gefechtskunde</DE>
-        </Text>
-        <Value>1</Value>
-      </Upgrade>
-      <Upgrade>
-        <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
-        </Icon>
-        <Text ID="3920">
-          <EN>Diplomacy</EN>
-          <DE>Redegabe</DE>
-        </Text>
-        <Value>2</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
-    <AttackableUpgrades />
-    <TradeShipUpgrades />
-    <VehicleUpgrades />
-    <AttackerUpgrades />
-    <VisitorHarborUpgrades />
-    <RepairCraneUpgrades />
-    <IncidentInfectableUpgrades />
-    <IncidentInfluencerUpgrades />
-    <ItemGeneratorUpgrades />
-    <TradePrice>875</TradePrice>
-    <Info ID="19566">
-      <EN>Traditional fireworks.</EN>
-      <DE>Traditionelles Feuerwerk.</DE>
-    </Info>
-    <Sources>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
-        </Icon>
-        <Text ID="11631">
-          <EN>Rescue Mission</EN>
-          <DE>Rettungseinsatz</DE>
-        </Text>
-        <Details>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="78">
-        <Name>Third_party_08 (Madame Kahina)</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/profiles/3rd_party_08.png</Filename>
-        </Icon>
-        <Text ID="78">
-          <EN>Harbour - Madame Kahina</EN>
-          <DE>Hafen - Madame Kahina</DE>
-        </Text>
-        <Details>
-          <Text ID="78">
-            <EN>Madame Kahina</EN>
-            <DE>Madame Kahina</DE>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800103">
-        <Name>Archeological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
-        </Icon>
-        <Text ID="11629">
-          <EN>Archaeological Expedition</EN>
-          <DE>Archäologische Expedition</DE>
-        </Text>
-        <Details>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800214">
-        <Name>Zoological Expedition Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
-        </Icon>
-        <Text ID="11630">
-          <EN>Zoological Expedition</EN>
-          <DE>Zoologische Expedition</DE>
-        </Text>
-        <Details>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800403">
-        <Name>Pirate Hunt Easy</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
-        </Icon>
-        <Text ID="11632">
-          <EN>Pirate Hunt</EN>
-          <DE>Piratenjagd</DE>
-        </Text>
-        <Details>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800777">
-        <Name>Discovery South America Sandbox</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
-        </Icon>
-        <Text ID="11634">
-          <EN>Discovery Expedition</EN>
-          <DE>Entdeckungsreise</DE>
-        </Text>
-        <Details>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="150352">
-        <Name>Maintaining Contacts - Kahina - ON HOLD - till Story changes</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="78">
-          <EN>Quest - Madame Kahina</EN>
-          <DE>Quest - Madame Kahina</DE>
-        </Text>
-        <Details>
-          <Text ID="150352">
-            <EN>Maintaining Contacts (TBC - Quest not yet written)</EN>
-            <DE>Maintaining Contacts (TBC - Quest not yet written)</DE>
-          </Text>
-          <Text ID="150373">
-            <EN>Undead</EN>
-            <DE>Untot</DE>
-          </Text>
-          <Text ID="150374">
-            <EN>Their Last Heist</EN>
-            <DE>Ihr letzter Raubzug</DE>
-          </Text>
-          <Text ID="150376">
-            <EN>In It For The Money</EN>
-            <DE>Schlechter Ruf</DE>
-          </Text>
-          <Text ID="152531">
-            <EN>Ghosts of the Past</EN>
-            <DE>Geister der Vergangenheit</DE>
-          </Text>
-          <Text ID="150357">
-            <EN>Give Them an Inch</EN>
-            <DE>Den kleinen Finger reichen</DE>
-          </Text>
-          <Text ID="150390">
-            <EN>Unlawful Assistance (TBC - Quest not yet written)</EN>
-            <DE>Unlawful Assistance (TBC - Quest not yet written)</DE>
-          </Text>
-          <Text ID="150377">
-            <EN>What Goes Around Comes Around</EN>
-            <DE>Hoher Besuch</DE>
-          </Text>
-          <Text ID="150380">
-            <EN>No Excuses</EN>
-            <DE>Keine Ausflüchte</DE>
-          </Text>
-          <Text ID="152535">
-            <EN>Welcome to the Truth 3 — The Question</EN>
-            <DE>Willkommen bei der Wahrheit 3 - Die Frage</DE>
-          </Text>
-          <Text ID="153044">
-            <EN>Implications</EN>
-            <DE>Implikationen</DE>
-          </Text>
-          <Text ID="150375">
-            <EN>Coincidences Don't Exist</EN>
-            <DE>Zufälle gibt es nicht</DE>
-          </Text>
-          <Text ID="150366">
-            <EN>Trust Your Instincts</EN>
-            <DE>Auf den Instinkt ist Verlass</DE>
-          </Text>
-          <Text ID="152533">
-            <EN>Welcome to the Truth 1 — The Test</EN>
-            <DE>Willkommen bei der Wahrheit 1 - Der Test</DE>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="150969">
-        <Name>RQ_Artisans_PeerGynt</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="87">
-          <EN>Quest - Artisan</EN>
-          <DE>Quest - Handwerker</DE>
-        </Text>
-        <Details>
-          <Text ID="150969">
-            <EN>Peer Gynt</EN>
-            <DE>Peer Gynt</DE>
-          </Text>
-          <Text ID="150970">
-            <EN>Sound of Music</EN>
-            <DE>Der Klang der Musik</DE>
-          </Text>
-          <Text ID="150979">
-            <EN>The Wayward Apprentice</EN>
-            <DE>Lehrling auf Abwegen</DE>
-          </Text>
-          <Text ID="151847">
-            <EN>The Simple Life</EN>
-            <DE>Das einfache Leben</DE>
-          </Text>
-          <Text ID="150981">
-            <EN>New World</EN>
-            <DE>Neue Insel</DE>
-          </Text>
-          <Text ID="150982">
-            <EN>First Day of School</EN>
-            <DE>Erster Schultag</DE>
-          </Text>
-          <Text ID="150986">
-            <EN>A Day at the Zoo</EN>
-            <DE>Ein Tag im Zoo</DE>
-          </Text>
-          <Text ID="150987">
-            <EN>Can Opening</EN>
-            <DE>Dosenöffnung</DE>
-          </Text>
-          <Text ID="150988">
-            <EN>An Affair of Honor</EN>
-            <DE>Eine Sache der Ehre</DE>
-          </Text>
-          <Text ID="150989">
-            <EN>Culture Vulture</EN>
-            <DE>Kulturgeier</DE>
-          </Text>
-          <Text ID="151034">
-            <EN>Vicuña En Vogue</EN>
-            <DE>Vicuña en vogue</DE>
-          </Text>
-          <Text ID="151035">
-            <EN>Artisan Coffee</EN>
-            <DE>Handgefertigter Kaffee</DE>
-          </Text>
-          <Text ID="151036">
-            <EN>Pour, Oh Pour, The Pirate Rum</EN>
-            <DE>Fließe, oh, fließe, Piratenrum</DE>
-          </Text>
-          <Text ID="151037">
-            <EN>Turner Overdrive</EN>
-            <DE>Turners Impressionen</DE>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="80">
-        <Name>Second_ai_03 (Willie Wibblesock)</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/profiles/ai_03.png</Filename>
-        </Icon>
-        <Text ID="80">
-          <EN>Ship Drop - Willie Wibblesock</EN>
-          <DE>Schiff Drop - Willie Wibblesock</DE>
-        </Text>
-        <Details />
-      </Source>
-      <Source ID="150399">
-        <Name>Comeback King - Willie</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="80">
-          <EN>Quest - Willie Wibblesock</EN>
-          <DE>Quest - Willie Wibblesock</DE>
-        </Text>
-        <Details>
-          <Text ID="150399">
-            <EN>Walled-Up Emotions</EN>
-            <DE>Versteinerte Gesichter</DE>
-          </Text>
-          <Text ID="150403">
-            <EN>Rum Deal</EN>
-            <DE>Rum-Gezappel</DE>
-          </Text>
-          <Text ID="150404">
-            <EN>Practice Makes Pyre Effect</EN>
-            <DE>Übung macht den Feuerteufel</DE>
-          </Text>
-          <Text ID="150405">
-            <EN>Watch How It's Done</EN>
-            <DE>Taschenuhrentrick</DE>
-          </Text>
-          <Text ID="150406">
-            <EN>Heart of Gold</EN>
-            <DE>Herz aus Gold</DE>
-          </Text>
-          <Text ID="150407">
-            <EN>An Honest Mistake</EN>
-            <DE>Lächerlicher Lapsus</DE>
-          </Text>
-          <Text ID="150408">
-            <EN>Disillusionment</EN>
-            <DE>Desillusionierung</DE>
-          </Text>
-          <Text ID="150409">
-            <EN>Glass Act</EN>
-            <DE>Durchsichtiger Trick</DE>
-          </Text>
-          <Text ID="152396">
-            <EN>Me Old Mum — When Smoke Gets in Your Eyes</EN>
-            <DE>Meine alte Mutter - Das Lied vom Rauch</DE>
-          </Text>
-          <Text ID="152397">
-            <EN>Me Old Mum — A Taste of Their Own Medicine</EN>
-            <DE>Meine alte Mutter - Ein Löffel ihrer Medizin</DE>
-          </Text>
-          <Text ID="150415">
-            <EN>A Foe of Biblical Proportions</EN>
-            <DE>Ein Feind biblischen Ausmaßes</DE>
-          </Text>
-          <Text ID="150434">
-            <EN>Predicament Escape</EN>
-            <DE>Flucht aus der Zwickmühle</DE>
-          </Text>
-          <Text ID="152684">
-            <EN>Magicians Never Reveal Their Secrets</EN>
-            <DE>Magier enthüllen niemals ihre Geheimnisse</DE>
-          </Text>
-          <Text ID="150417">
-            <EN>Five-Second-Rule</EN>
-            <DE>Fünfsekundenregel</DE>
-          </Text>
-          <Text ID="150423">
-            <EN>Water Torture</EN>
-            <DE>Wasserprobe</DE>
-          </Text>
-          <Text ID="150424">
-            <EN>Cup and Balls</EN>
-            <DE>Hütchenspiel</DE>
-          </Text>
-          <Text ID="150425">
-            <EN>Finders Keepers</EN>
-            <DE>Finderlohn</DE>
-          </Text>
-          <Text ID="150426">
-            <EN>Hands Off My Lettuce</EN>
-            <DE>Fass meinen Salat nicht an!</DE>
-          </Text>
-          <Text ID="150433">
-            <EN>A Wandering Wand</EN>
-            <DE>Verflixter Verschwindezauber</DE>
-          </Text>
-          <Text ID="150436">
-            <EN>Sellsword</EN>
-            <DE>Schutzheiliger</DE>
-          </Text>
-          <Text ID="150437">
-            <EN>Disappearing Act</EN>
-            <DE>Verschwindezauber</DE>
-          </Text>
-          <Text ID="152398">
-            <EN>Me Old Mum — A Man Needs a Mum</EN>
-            <DE>Meine alte Mutter - Ein Mann braucht eine Mutter</DE>
-          </Text>
-          <Text ID="152652">
-            <EN>A Bit of a Circus</EN>
-            <DE>Ein bisschen wie im Zirkus</DE>
-          </Text>
-          <Text ID="152559">
-            <EN>The Prestige 2 — Birdman</EN>
-            <DE>Prestigefrage 2 — Vogelmensch</DE>
-          </Text>
-          <Text ID="152561">
-            <EN>The Prestige 3 — Dark Magic</EN>
-            <DE>Prestigefrage 3 — Dunkle Magie</DE>
-          </Text>
-          <Text ID="153205">
-            <EN>The Prestige 3 — Dark Magic</EN>
-            <DE>Prestigefrage 3 - Dunkle Magie</DE>
-          </Text>
-          <Text ID="152563">
-            <EN>A Ghostly Encounter 3 — Night Vigil</EN>
-            <DE>Eine geisterhafte Begegnung 3 — Nachtwächter</DE>
-          </Text>
-          <Text ID="152565">
-            <EN>A Ghostly Encounter 4 — The Spirit Shows Itself!</EN>
-            <DE>Eine geisterhafte Begegnung 4 — Der Geist erscheint persönlich!</DE>
-          </Text>
-          <Text ID="152566">
-            <EN>A Ghostly Encounter 5 — After-Images Remain</EN>
-            <DE>Eine geisterhafte Begegnung 5 — Phantombilder bleiben</DE>
-          </Text>
-          <Text ID="150410">
-            <EN>Wizarding Duel</EN>
-            <DE>Zaubereiduell</DE>
-          </Text>
-          <Text ID="150427">
-            <EN>Mystery Box</EN>
-            <DE>Wundertüte</DE>
-          </Text>
-          <Text ID="152394">
-            <EN>World's Greatest Showman 1 — Tent Pitch</EN>
-            <DE>Der weltgrößte Schausteller 1 - Zeltplatz</DE>
-          </Text>
-          <Text ID="152395">
-            <EN>The Prestige 1 — They Do It With Mirrors</EN>
-            <DE>Prestigefrage 1 — Sie machen das mit Spiegeln</DE>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="151029">
-        <Name>RQ_Worker_Oliver</Name>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-        </Icon>
-        <Text ID="30">
-          <EN>Quest - Worker</EN>
-          <DE>Quest - Arbeiter</DE>
-        </Text>
-        <Details>
-          <Text ID="151029">
-            <EN>Olly's Gift</EN>
-            <DE>Ollis Geschenk</DE>
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-    <MonumentEvents />
-    <MonumentThresholds />
-    <MonumentRewards />
-  </Asset>
   <Asset ID="191970" Release="Release">
     <Name>Colored Fireworks</Name>
     <Icon>
@@ -1448,7 +898,567 @@
           <EN>Ship Drop - Willie Wibblesock</EN>
           <DE>Schiff Drop - Willie Wibblesock</DE>
         </Text>
-        <Details />
+        <Details>
+          <Text ID="80">
+            <EN>Willie Wibblesock</EN>
+            <DE>Willie Wibblesock</DE>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="150399">
+        <Name>Comeback King - Willie</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="80">
+          <EN>Quest - Willie Wibblesock</EN>
+          <DE>Quest - Willie Wibblesock</DE>
+        </Text>
+        <Details>
+          <Text ID="150399">
+            <EN>Walled-Up Emotions</EN>
+            <DE>Versteinerte Gesichter</DE>
+          </Text>
+          <Text ID="150403">
+            <EN>Rum Deal</EN>
+            <DE>Rum-Gezappel</DE>
+          </Text>
+          <Text ID="150404">
+            <EN>Practice Makes Pyre Effect</EN>
+            <DE>Übung macht den Feuerteufel</DE>
+          </Text>
+          <Text ID="150405">
+            <EN>Watch How It's Done</EN>
+            <DE>Taschenuhrentrick</DE>
+          </Text>
+          <Text ID="150406">
+            <EN>Heart of Gold</EN>
+            <DE>Herz aus Gold</DE>
+          </Text>
+          <Text ID="150407">
+            <EN>An Honest Mistake</EN>
+            <DE>Lächerlicher Lapsus</DE>
+          </Text>
+          <Text ID="150408">
+            <EN>Disillusionment</EN>
+            <DE>Desillusionierung</DE>
+          </Text>
+          <Text ID="150409">
+            <EN>Glass Act</EN>
+            <DE>Durchsichtiger Trick</DE>
+          </Text>
+          <Text ID="152396">
+            <EN>Me Old Mum — When Smoke Gets in Your Eyes</EN>
+            <DE>Meine alte Mutter - Das Lied vom Rauch</DE>
+          </Text>
+          <Text ID="152397">
+            <EN>Me Old Mum — A Taste of Their Own Medicine</EN>
+            <DE>Meine alte Mutter - Ein Löffel ihrer Medizin</DE>
+          </Text>
+          <Text ID="150415">
+            <EN>A Foe of Biblical Proportions</EN>
+            <DE>Ein Feind biblischen Ausmaßes</DE>
+          </Text>
+          <Text ID="150434">
+            <EN>Predicament Escape</EN>
+            <DE>Flucht aus der Zwickmühle</DE>
+          </Text>
+          <Text ID="152684">
+            <EN>Magicians Never Reveal Their Secrets</EN>
+            <DE>Magier enthüllen niemals ihre Geheimnisse</DE>
+          </Text>
+          <Text ID="150417">
+            <EN>Five-Second-Rule</EN>
+            <DE>Fünfsekundenregel</DE>
+          </Text>
+          <Text ID="150423">
+            <EN>Water Torture</EN>
+            <DE>Wasserprobe</DE>
+          </Text>
+          <Text ID="150424">
+            <EN>Cup and Balls</EN>
+            <DE>Hütchenspiel</DE>
+          </Text>
+          <Text ID="150425">
+            <EN>Finders Keepers</EN>
+            <DE>Finderlohn</DE>
+          </Text>
+          <Text ID="150426">
+            <EN>Hands Off My Lettuce</EN>
+            <DE>Fass meinen Salat nicht an!</DE>
+          </Text>
+          <Text ID="150433">
+            <EN>A Wandering Wand</EN>
+            <DE>Verflixter Verschwindezauber</DE>
+          </Text>
+          <Text ID="150436">
+            <EN>Sellsword</EN>
+            <DE>Schutzheiliger</DE>
+          </Text>
+          <Text ID="150437">
+            <EN>Disappearing Act</EN>
+            <DE>Verschwindezauber</DE>
+          </Text>
+          <Text ID="152398">
+            <EN>Me Old Mum — A Man Needs a Mum</EN>
+            <DE>Meine alte Mutter - Ein Mann braucht eine Mutter</DE>
+          </Text>
+          <Text ID="152652">
+            <EN>A Bit of a Circus</EN>
+            <DE>Ein bisschen wie im Zirkus</DE>
+          </Text>
+          <Text ID="152559">
+            <EN>The Prestige 2 — Birdman</EN>
+            <DE>Prestigefrage 2 — Vogelmensch</DE>
+          </Text>
+          <Text ID="152561">
+            <EN>The Prestige 3 — Dark Magic</EN>
+            <DE>Prestigefrage 3 — Dunkle Magie</DE>
+          </Text>
+          <Text ID="153205">
+            <EN>The Prestige 3 — Dark Magic</EN>
+            <DE>Prestigefrage 3 - Dunkle Magie</DE>
+          </Text>
+          <Text ID="152563">
+            <EN>A Ghostly Encounter 3 — Night Vigil</EN>
+            <DE>Eine geisterhafte Begegnung 3 — Nachtwächter</DE>
+          </Text>
+          <Text ID="152565">
+            <EN>A Ghostly Encounter 4 — The Spirit Shows Itself!</EN>
+            <DE>Eine geisterhafte Begegnung 4 — Der Geist erscheint persönlich!</DE>
+          </Text>
+          <Text ID="152566">
+            <EN>A Ghostly Encounter 5 — After-Images Remain</EN>
+            <DE>Eine geisterhafte Begegnung 5 — Phantombilder bleiben</DE>
+          </Text>
+          <Text ID="150410">
+            <EN>Wizarding Duel</EN>
+            <DE>Zaubereiduell</DE>
+          </Text>
+          <Text ID="150427">
+            <EN>Mystery Box</EN>
+            <DE>Wundertüte</DE>
+          </Text>
+          <Text ID="152394">
+            <EN>World's Greatest Showman 1 — Tent Pitch</EN>
+            <DE>Der weltgrößte Schausteller 1 - Zeltplatz</DE>
+          </Text>
+          <Text ID="152395">
+            <EN>The Prestige 1 — They Do It With Mirrors</EN>
+            <DE>Prestigefrage 1 — Sie machen das mit Spiegeln</DE>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="151029">
+        <Name>RQ_Worker_Oliver</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="30">
+          <EN>Quest - Worker</EN>
+          <DE>Quest - Arbeiter</DE>
+        </Text>
+        <Details>
+          <Text ID="151029">
+            <EN>Olly's Gift</EN>
+            <DE>Ollis Geschenk</DE>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
+  <Asset ID="191969" Release="Release">
+    <Name>Black Powder Fireworks</Name>
+    <Icon>
+      <Filename>data/ui/2kimages/main/3dicons/consumables/icon_fireworks_1.png</Filename>
+    </Icon>
+    <Text ID="191969">
+      <EN>Black Powder Fireworks</EN>
+      <DE>Schwarzpulver-Feuerwerk</DE>
+    </Text>
+    <Rarity ID="118002">
+      <EN>Common</EN>
+      <DE>Gewöhnlich</DE>
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <ItemSets />
+    <Allocation ID="TownHall">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_townhall.png</Filename>
+      </Icon>
+      <Text ID="2347">
+        <EN>Town Hall</EN>
+        <DE>Rathaus</DE>
+      </Text>
+    </Allocation>
+    <EffectTargets>
+      <Target ID="">
+        <EN>Residences</EN>
+        <DE>Wohngebäude</DE>
+      </Target>
+    </EffectTargets>
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+        </Icon>
+        <Text ID="3922">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+        </Text>
+        <Value>1</Value>
+      </Upgrade>
+      <Upgrade>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+        </Icon>
+        <Text ID="3920">
+          <EN>Diplomacy</EN>
+          <DE>Redegabe</DE>
+        </Text>
+        <Value>2</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <TradePrice>875</TradePrice>
+    <Info ID="19566">
+      <EN>Traditional fireworks.</EN>
+      <DE>Traditionelles Feuerwerk.</DE>
+    </Info>
+    <Sources>
+      <Source ID="800399">
+        <Name>Rescue Mission Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</Filename>
+        </Icon>
+        <Text ID="11631">
+          <EN>Rescue Mission</EN>
+          <DE>Rettungseinsatz</DE>
+        </Text>
+        <Details>
+          <Text ID="">
+            <EN>Expedition Abgeschossen</EN>
+            <DE> Successfully Expedition</DE>
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.1.1</EN>
+            <DE>Piratenflagge 1.1.1.1.1</DE>
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.2.1</EN>
+            <DE>Piratenflagge 1.1.1.2.1</DE>
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.1.1</EN>
+            <DE>Piratenflagge 1.2.1.1.1</DE>
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.2.1</EN>
+            <DE>Piratenflagge 1.2.1.2.1</DE>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="78">
+        <Name>Third_party_08 (Madame Kahina)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/3rd_party_08.png</Filename>
+        </Icon>
+        <Text ID="78">
+          <EN>Harbour - Madame Kahina</EN>
+          <DE>Hafen - Madame Kahina</DE>
+        </Text>
+        <Details>
+          <Text ID="78">
+            <EN>Madame Kahina</EN>
+            <DE>Madame Kahina</DE>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800103">
+        <Name>Archeological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</Filename>
+        </Icon>
+        <Text ID="11629">
+          <EN>Archaeological Expedition</EN>
+          <DE>Archäologische Expedition</DE>
+        </Text>
+        <Details>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.1.1</EN>
+            <DE>Piratenflagge 1.1.1.1.1</DE>
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.2.1</EN>
+            <DE>Piratenflagge 1.1.1.2.1</DE>
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.1.1</EN>
+            <DE>Piratenflagge 1.2.1.1.1</DE>
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.2.1</EN>
+            <DE>Piratenflagge 1.2.1.2.1</DE>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800214">
+        <Name>Zoological Expedition Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</Filename>
+        </Icon>
+        <Text ID="11630">
+          <EN>Zoological Expedition</EN>
+          <DE>Zoologische Expedition</DE>
+        </Text>
+        <Details>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.1.1</EN>
+            <DE>Piratenflagge 1.1.1.1.1</DE>
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.2.1</EN>
+            <DE>Piratenflagge 1.1.1.2.1</DE>
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.1.1</EN>
+            <DE>Piratenflagge 1.2.1.1.1</DE>
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.2.1</EN>
+            <DE>Piratenflagge 1.2.1.2.1</DE>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800403">
+        <Name>Pirate Hunt Easy</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</Filename>
+        </Icon>
+        <Text ID="11632">
+          <EN>Pirate Hunt</EN>
+          <DE>Piratenjagd</DE>
+        </Text>
+        <Details>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.1.1</EN>
+            <DE>Piratenflagge 1.1.1.1.1</DE>
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.2.1</EN>
+            <DE>Piratenflagge 1.1.1.2.1</DE>
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.1.1</EN>
+            <DE>Piratenflagge 1.2.1.1.1</DE>
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.2.1</EN>
+            <DE>Piratenflagge 1.2.1.2.1</DE>
+          </Text>
+          <Text ID="">
+            <EN>Expedition Abgeschossen</EN>
+            <DE> Successfully Expedition</DE>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800777">
+        <Name>Discovery South America Sandbox</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</Filename>
+        </Icon>
+        <Text ID="11634">
+          <EN>Discovery Expedition</EN>
+          <DE>Entdeckungsreise</DE>
+        </Text>
+        <Details>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.1.1</EN>
+            <DE>Piratenflagge 1.1.1.1.1</DE>
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.2.1</EN>
+            <DE>Piratenflagge 1.1.1.2.1</DE>
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.1.1</EN>
+            <DE>Piratenflagge 1.2.1.1.1</DE>
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.2.1</EN>
+            <DE>Piratenflagge 1.2.1.2.1</DE>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="150352">
+        <Name>Maintaining Contacts - Kahina - ON HOLD - till Story changes</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="78">
+          <EN>Quest - Madame Kahina</EN>
+          <DE>Quest - Madame Kahina</DE>
+        </Text>
+        <Details>
+          <Text ID="150352">
+            <EN>Maintaining Contacts (TBC - Quest not yet written)</EN>
+            <DE>Maintaining Contacts (TBC - Quest not yet written)</DE>
+          </Text>
+          <Text ID="150373">
+            <EN>Undead</EN>
+            <DE>Untot</DE>
+          </Text>
+          <Text ID="150374">
+            <EN>Their Last Heist</EN>
+            <DE>Ihr letzter Raubzug</DE>
+          </Text>
+          <Text ID="150376">
+            <EN>In It For The Money</EN>
+            <DE>Schlechter Ruf</DE>
+          </Text>
+          <Text ID="152531">
+            <EN>Ghosts of the Past</EN>
+            <DE>Geister der Vergangenheit</DE>
+          </Text>
+          <Text ID="150357">
+            <EN>Give Them an Inch</EN>
+            <DE>Den kleinen Finger reichen</DE>
+          </Text>
+          <Text ID="150390">
+            <EN>Unlawful Assistance (TBC - Quest not yet written)</EN>
+            <DE>Unlawful Assistance (TBC - Quest not yet written)</DE>
+          </Text>
+          <Text ID="150377">
+            <EN>What Goes Around Comes Around</EN>
+            <DE>Hoher Besuch</DE>
+          </Text>
+          <Text ID="150380">
+            <EN>No Excuses</EN>
+            <DE>Keine Ausflüchte</DE>
+          </Text>
+          <Text ID="152535">
+            <EN>Welcome to the Truth 3 — The Question</EN>
+            <DE>Willkommen bei der Wahrheit 3 - Die Frage</DE>
+          </Text>
+          <Text ID="153044">
+            <EN>Implications</EN>
+            <DE>Implikationen</DE>
+          </Text>
+          <Text ID="150375">
+            <EN>Coincidences Don't Exist</EN>
+            <DE>Zufälle gibt es nicht</DE>
+          </Text>
+          <Text ID="150366">
+            <EN>Trust Your Instincts</EN>
+            <DE>Auf den Instinkt ist Verlass</DE>
+          </Text>
+          <Text ID="152533">
+            <EN>Welcome to the Truth 1 — The Test</EN>
+            <DE>Willkommen bei der Wahrheit 1 - Der Test</DE>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="150969">
+        <Name>RQ_Artisans_PeerGynt</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+        </Icon>
+        <Text ID="87">
+          <EN>Quest - Artisan</EN>
+          <DE>Quest - Handwerker</DE>
+        </Text>
+        <Details>
+          <Text ID="150969">
+            <EN>Peer Gynt</EN>
+            <DE>Peer Gynt</DE>
+          </Text>
+          <Text ID="150970">
+            <EN>Sound of Music</EN>
+            <DE>Der Klang der Musik</DE>
+          </Text>
+          <Text ID="150979">
+            <EN>The Wayward Apprentice</EN>
+            <DE>Lehrling auf Abwegen</DE>
+          </Text>
+          <Text ID="151847">
+            <EN>The Simple Life</EN>
+            <DE>Das einfache Leben</DE>
+          </Text>
+          <Text ID="150981">
+            <EN>New World</EN>
+            <DE>Neue Insel</DE>
+          </Text>
+          <Text ID="150982">
+            <EN>First Day of School</EN>
+            <DE>Erster Schultag</DE>
+          </Text>
+          <Text ID="150986">
+            <EN>A Day at the Zoo</EN>
+            <DE>Ein Tag im Zoo</DE>
+          </Text>
+          <Text ID="150987">
+            <EN>Can Opening</EN>
+            <DE>Dosenöffnung</DE>
+          </Text>
+          <Text ID="150988">
+            <EN>An Affair of Honor</EN>
+            <DE>Eine Sache der Ehre</DE>
+          </Text>
+          <Text ID="150989">
+            <EN>Culture Vulture</EN>
+            <DE>Kulturgeier</DE>
+          </Text>
+          <Text ID="151034">
+            <EN>Vicuña En Vogue</EN>
+            <DE>Vicuña en vogue</DE>
+          </Text>
+          <Text ID="151035">
+            <EN>Artisan Coffee</EN>
+            <DE>Handgefertigter Kaffee</DE>
+          </Text>
+          <Text ID="151036">
+            <EN>Pour, Oh Pour, The Pirate Rum</EN>
+            <DE>Fließe, oh, fließe, Piratenrum</DE>
+          </Text>
+          <Text ID="151037">
+            <EN>Turner Overdrive</EN>
+            <DE>Turners Impressionen</DE>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="80">
+        <Name>Second_ai_03 (Willie Wibblesock)</Name>
+        <Icon>
+          <Filename>data/ui/2kimages/main/profiles/ai_03.png</Filename>
+        </Icon>
+        <Text ID="80">
+          <EN>Ship Drop - Willie Wibblesock</EN>
+          <DE>Schiff Drop - Willie Wibblesock</DE>
+        </Text>
+        <Details>
+          <Text ID="80">
+            <EN>Willie Wibblesock</EN>
+            <DE>Willie Wibblesock</DE>
+          </Text>
+        </Details>
       </Source>
       <Source ID="150399">
         <Name>Comeback King - Willie</Name>

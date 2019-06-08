@@ -1,5 +1,6 @@
 ﻿using RDA.Templates;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
@@ -11,7 +12,7 @@ namespace RDA.Library {
 
     #region Properties
 
-    public static Dictionary<string, XElement> Events { get; set; } = new Dictionary<string, XElement>();
+    public static ConcurrentDictionary<string, XElement> Events { get; set; } = new ConcurrentDictionary<string, XElement>();
 
     #endregion Properties
 
@@ -70,7 +71,7 @@ namespace RDA.Library {
         }
       }
       if (!Events.ContainsKey(id)) {
-        Events.Add(id, result);
+        Events.TryAdd(id, result);
       }
       return result;
     }

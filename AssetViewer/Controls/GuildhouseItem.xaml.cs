@@ -27,6 +27,7 @@ namespace AssetViewer.Controls {
         var source = this.ComboBoxSources.SelectedItem as String;
         var upgrade = this.ComboBoxUpgrades.SelectedItem as String;
         var release = this.ComboBoxReleases.SelectedItem as String;
+        var detailedSources = this.ComboBoxDetailedSources.SelectedItem as string;
         var result = ItemProvider.Items.Values.AsQueryable();
         if (!String.IsNullOrEmpty(type))
           result = result.Where(w => w.ItemType == type);
@@ -35,13 +36,15 @@ namespace AssetViewer.Controls {
             if (!String.IsNullOrEmpty(rarity))
               result = result.Where(w => w.Rarity.DE == rarity);
             if (!String.IsNullOrEmpty(target))
-              result = result.Where(w => w.EffectTargets.Select(s => s.DE).Contains(target));
+              result = result.Where(w => w.EffectTargets != null && w.EffectTargets.Select(s => s.DE).Contains(target));
             if (!String.IsNullOrEmpty(equipped))
-              result = result.Where(w => w.Allocation.Text.DE == equipped);
+              result = result.Where(w => w.Allocation != null && w.Allocation.Text.DE == equipped);
             if (!String.IsNullOrEmpty(upgrade))
               result = result.Where(w => w.AllUpgrades != null && w.AllUpgrades.Any(l => l.Text.DE == upgrade));
             if (!String.IsNullOrEmpty(source))
               result = result.Where(w => w.Sources != null && w.Sources.Any(l => l.Text.DE == source));
+            if (!String.IsNullOrEmpty(detailedSources))
+              result = result.Where(w => w.Sources != null && w.Sources.SelectMany(s => s.Additionals).Any(l => l.Text.DE == detailedSources));
             if (!String.IsNullOrEmpty(release))
               result = result.Where(w => w.ReleaseVersion == release);
             result = result.OrderBy(o => o.Text.DE);
@@ -50,13 +53,15 @@ namespace AssetViewer.Controls {
             if (!String.IsNullOrEmpty(rarity))
               result = result.Where(w => w.Rarity.EN == rarity);
             if (!String.IsNullOrEmpty(target))
-              result = result.Where(w => w.EffectTargets.Select(s => s.EN).Contains(target));
+              result = result.Where(w => w.EffectTargets != null && w.EffectTargets.Select(s => s.EN).Contains(target));
             if (!String.IsNullOrEmpty(equipped))
-              result = result.Where(w => w.Allocation.Text.EN == equipped);
+              result = result.Where(w => w.Allocation != null && w.Allocation.Text.EN == equipped);
             if (!String.IsNullOrEmpty(upgrade))
               result = result.Where(w => w.AllUpgrades != null && w.AllUpgrades.Any(l => l.Text.EN == upgrade));
             if (!String.IsNullOrEmpty(source))
               result = result.Where(w => w.Sources != null && w.Sources.Any(l => l.Text.EN == source));
+            if (!String.IsNullOrEmpty(detailedSources))
+              result = result.Where(w => w.Sources != null && w.Sources.SelectMany(s => s.Additionals).Any(l => l.Text.EN == detailedSources));
             if (!String.IsNullOrEmpty(release))
               result = result.Where(w => w.ReleaseVersion == release);
             result = result.OrderBy(o => o.Text.EN);
@@ -152,6 +157,21 @@ namespace AssetViewer.Controls {
         return result;
       }
     }
+    public IEnumerable<String> DetailedSources {
+      get {
+        List<String> result;
+        switch (App.Language) {
+          case Languages.German:
+            result = ItemProvider.Items.Values.SelectMany(s => s.Sources).SelectMany(s => s.Additionals).Select(s => s.Text.DE).Distinct().OrderBy(o => o).ToList();
+            break;
+          default:
+            result = ItemProvider.Items.Values.SelectMany(s => s.Sources).SelectMany(s => s.Additionals).Select(s => s.Text.EN).Distinct().OrderBy(o => o).ToList();
+            break;
+        }
+        result.Insert(0, String.Empty);
+        return result;
+      }
+    }
     public IEnumerable<String> Upgrades {
       get {
         List<String> result;
@@ -223,12 +243,7 @@ namespace AssetViewer.Controls {
           App.Language = Languages.German;
           break;
       }
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Rarities"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("ItemTypes"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Targets"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Equipped"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SelectedAsset"));
+      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(""));
     }
     #endregion
 
