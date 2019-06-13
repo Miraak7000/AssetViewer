@@ -78,7 +78,7 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="Auto" />
                   </Grid.ColumnDefinitions>
-                  <Image Grid.Column="0" HorizontalAlignment="Left" Source="{Binding Path=Icon.Filename}" />
+                  <Image Grid.Column="0" HorizontalAlignment="Left" Source="{Binding Path=Text.Icon.Filename}" />
                   <TextBlock
                     Grid.Column="1"
                     VerticalAlignment="Center"

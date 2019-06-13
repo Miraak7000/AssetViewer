@@ -6,7 +6,6 @@ namespace RDA.Data {
   public class ReplaceInput {
 
     #region Properties
-    public Icon Icon { get; set; }
     public Description Text { get; set; }
     public String Value { get; set; }
     #endregion

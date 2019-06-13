@@ -46,6 +46,7 @@ namespace AssetViewer {
         result.Add(1047, new Description("Has Residence Upgrade", "Hat Einwohne-Erweiterungen"));
         result.Add(1048, new Description("Progression", "Fortschritt"));
         result.Add(1049, new Description("Player", "Spieler"));
+        result.Add(1100, new Description("Reset Filters", "Filter zurücksetzen"));
         return result;
       }
     }
@@ -115,6 +116,8 @@ namespace AssetViewer {
         result.Add("PerkHypnotist", new Tuple<String, String>("Perk Hypnotist", "Vorteil Hypnose"));
         result.Add("PerkAnthropologist", new Tuple<String, String>("Perk Anthropologist", "Vorteil Anthropologe"));
         result.Add("PerkPolyglot", new Tuple<String, String>("Perk Polyglot", "Vorteil Mehrsprachigkeit"));
+        result.Add("PerkSteamShip", new Tuple<String, String>("Perk Steam Ship", "Vorteil Dampfschiff"));
+        result.Add("PerkSailingShip", new Tuple<String, String>("Perk Sailing Ship", "Vorteil Segelschiff"));
         return result;
       }
     }

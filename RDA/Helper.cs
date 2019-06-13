@@ -76,113 +76,113 @@ namespace RDA {
       }
     }
     // Description
-    internal static String GetDescriptionID(String pattern) {
-      switch (pattern) {
-        case "Common":
-        case "Quest":
-          return "118002";
-        case "HarborOffice":
-          return "4065";
-        case "TownHall":
-          return "2347";
-        case "GuildHouse":
-          return "2346";
-        case "Uncommon":
-          return "118003";
-        case "Rare":
-          return "118004";
-        case "Epic":
-          return "118005";
-        case "Legendary":
-          return "118006";
-        case "ProductivityUpgrade":
-          return "14130";
-        case "AdditionalOutput":
-          return "20074";
-        case "ReplaceInputs":
-          return "20081";
-        case "InputAmountUpgrade":
-          return "100369";
-        case "OutputAmountFactorUpgrade":
-          return "100371";
-        case "NeededAreaPercentUpgrade":
-          return "3030";
-        case "NeedsElectricity":
-          return "12508";
-        case "Hunting":
-          return "3927";
-        case "PerkFormerPirate":
-          return "191598";
-        case "PerkFemale":
-          return "15798";
-        case "PerkMale":
-          return "15797";
-        case "PerkDiver":
-          return "3931";
-        case "Navigation":
-          return "3923";
-        case "Crafting":
-          return "3926";
-        case "PerkZoologist":
-          return "9998";
-        case "Might":
-          return "3922";
-        case "Diplomacy":
-          return "3920";
-        case "Faith":
-          return "3925";
-        case "Melee":
-          return "3921";
-        case "Medicine":
-          return "3924";
-        case "PerkMilitaryShip":
-          return "3932";
-        case "PerkHypnotist":
-          return "3929";
-        case "PerkAnthropologist":
-          return "3928";
-        case "PerkPolyglot":
-          return "12266";
-        case "AttractivenessUpgrade":
-          return "145011";
-        case "MaintenanceUpgrade":
-          return "2320";
-        case "WorkforceAmountUpgrade":
-          return "12337";
-        case "ReplacingWorkforce":
-          return "12480";
-        case "ModuleLimitUpgrade":
-          return "12075";
-        case "AdditionalHappiness":
-          return "12314";
-        case "ResidentsUpgrade":
-          return "12676";
-        case "StressUpgrade":
-          return "12227";
-        case "ProvideElectricity":
-          return "12485";
-        case "InputBenefitModifier":
-          return "12690";
-        case "TaxModifierInPercent":
-          return "15198";
-        case "WorkforceModifierInPercent":
-          return "12676";
-        case "PerkArcheologist":
-          return "12262";
-        case "MaxHitpointsUpgrade":
-          return "1154";
-        case "Ship":
-          return "2342";
-        case "SailShip":
-          return "2343";
-        case "SteamShip":
-          return "2344";
-        case "Warship":
-          return "12812";
-        default:
-          throw new KeyNotFoundException(pattern);
-      }
-    }
+    //internal static String GetDescriptionID(String pattern) {
+    //  switch (pattern) {
+    //    case "Common":
+    //    case "Quest":
+    //      return "118002";
+    //    case "HarborOffice":
+    //      return "4065";
+    //    case "TownHall":
+    //      return "2347";
+    //    case "GuildHouse":
+    //      return "2346";
+    //    case "Uncommon":
+    //      return "118003";
+    //    case "Rare":
+    //      return "118004";
+    //    case "Epic":
+    //      return "118005";
+    //    case "Legendary":
+    //      return "118006";
+    //    case "ProductivityUpgrade":
+    //      return "14130";
+    //    case "AdditionalOutput":
+    //      return "20074";
+    //    case "ReplaceInputs":
+    //      return "20081";
+    //    case "InputAmountUpgrade":
+    //      return "100369";
+    //    case "OutputAmountFactorUpgrade":
+    //      return "100371";
+    //    case "NeededAreaPercentUpgrade":
+    //      return "3030";
+    //    case "NeedsElectricity":
+    //      return "12508";
+    //    case "Hunting":
+    //      return "3927";
+    //    case "PerkFormerPirate":
+    //      return "191598";
+    //    case "PerkFemale":
+    //      return "15798";
+    //    case "PerkMale":
+    //      return "15797";
+    //    case "PerkDiver":
+    //      return "3931";
+    //    case "Navigation":
+    //      return "3923";
+    //    case "Crafting":
+    //      return "3926";
+    //    case "PerkZoologist":
+    //      return "9998";
+    //    case "Might":
+    //      return "3922";
+    //    case "Diplomacy":
+    //      return "3920";
+    //    case "Faith":
+    //      return "3925";
+    //    case "Melee":
+    //      return "3921";
+    //    case "Medicine":
+    //      return "3924";
+    //    case "PerkMilitaryShip":
+    //      return "3932";
+    //    case "PerkHypnotist":
+    //      return "3929";
+    //    case "PerkAnthropologist":
+    //      return "3928";
+    //    case "PerkPolyglot":
+    //      return "12266";
+    //    case "AttractivenessUpgrade":
+    //      return "145011";
+    //    case "MaintenanceUpgrade":
+    //      return "2320";
+    //    case "WorkforceAmountUpgrade":
+    //      return "12337";
+    //    case "ReplacingWorkforce":
+    //      return "12480";
+    //    case "ModuleLimitUpgrade":
+    //      return "12075";
+    //    case "AdditionalHappiness":
+    //      return "12314";
+    //    case "ResidentsUpgrade":
+    //      return "12676";
+    //    case "StressUpgrade":
+    //      return "12227";
+    //    case "ProvideElectricity":
+    //      return "12485";
+    //    case "InputBenefitModifier":
+    //      return "12690";
+    //    case "TaxModifierInPercent":
+    //      return "15198";
+    //    case "WorkforceModifierInPercent":
+    //      return "12676";
+    //    case "PerkArcheologist":
+    //      return "12262";
+    //    case "MaxHitpointsUpgrade":
+    //      return "1154";
+    //    case "Ship":
+    //      return "2342";
+    //    case "SailShip":
+    //      return "2343";
+    //    case "SteamShip":
+    //      return "2344";
+    //    case "Warship":
+    //      return "12812";
+    //    default:
+    //      throw new KeyNotFoundException(pattern);
+    //  }
+    //}
     // Processing
     internal static void SetImage(XElement element) {
       var name = element.Value.Replace(".png", "_0.png");
@@ -222,7 +222,7 @@ namespace RDA {
       item.XPathSelectElement("Values/Text").Remove();
       // ornament
       var ornamentGuid = item.XPathSelectElement("Values/Ornament/OrnamentDescritpion").Value;
-      textEN = Program.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={ornamentGuid}]/../Text/LocaText/English/Text").Value;
+      textEN = Assets.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={ornamentGuid}]/../Text/LocaText/English/Text").Value;
       textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={ornamentGuid}]/Text").Value;
       item.XPathSelectElement("Values/Description/EN").Add(new XElement("Long", textEN));
       item.XPathSelectElement("Values/Description/DE").Add(new XElement("Long", textDE));
@@ -249,7 +249,7 @@ namespace RDA {
       item.XPathSelectElement("Values/Text").Remove();
       // info
       var infoGuid = item.XPathSelectElement("Values/Standard/InfoDescription").Value;
-      textEN = Program.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={infoGuid}]/../Text/LocaText/English/Text").Value;
+      textEN = Assets.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={infoGuid}]/../Text/LocaText/English/Text").Value;
       textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={infoGuid}]/Text").Value;
       item.XPathSelectElement("Values/Description/EN").Add(new XElement("Long", textEN));
       item.XPathSelectElement("Values/Description/DE").Add(new XElement("Long", textDE));
@@ -257,7 +257,7 @@ namespace RDA {
       // EffectTargets
       foreach (var effectTarget in item.XPathSelectElements("Values/ItemEffect/EffectTargets/Item")) {
         var effectTargetGuid = effectTarget.Element("GUID").Value;
-        textEN = Program.Original.Root.XPathSelectElement($"//Asset/Values/Standard[GUID={effectTargetGuid}]/../Text/LocaText/English/Text").Value;
+        textEN = Assets.Original.Root.XPathSelectElement($"//Asset/Values/Standard[GUID={effectTargetGuid}]/../Text/LocaText/English/Text").Value;
         textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={effectTargetGuid}]/Text").Value;
         effectTarget.Add(new XElement("Description"));
         effectTarget.XPathSelectElement("Description").Add(new XElement("EN"));
@@ -287,7 +287,7 @@ namespace RDA {
       item.XPathSelectElement("Values/Text").Remove();
       // info
       var infoGuid = item.XPathSelectElement("Values/Standard/InfoDescription").Value;
-      textEN = Program.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={infoGuid}]/../Text/LocaText/English/Text").Value;
+      textEN = Assets.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={infoGuid}]/../Text/LocaText/English/Text").Value;
       textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={infoGuid}]/Text").Value;
       item.XPathSelectElement("Values/Description/EN").Add(new XElement("Long", textEN));
       item.XPathSelectElement("Values/Description/DE").Add(new XElement("Long", textDE));
@@ -316,7 +316,7 @@ namespace RDA {
       item.XPathSelectElement("Values/Text").Remove();
       // info
       var infoGuid = item.XPathSelectElement("Values/Standard/InfoDescription").Value;
-      textEN = Program.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={infoGuid}]/../Text/LocaText/English/Text").Value;
+      textEN = Assets.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={infoGuid}]/../Text/LocaText/English/Text").Value;
       textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={infoGuid}]/Text").Value;
       item.XPathSelectElement("Values/Description/EN").Add(new XElement("Long", textEN));
       item.XPathSelectElement("Values/Description/DE").Add(new XElement("Long", textDE));
@@ -324,7 +324,7 @@ namespace RDA {
       // EffectTargets
       foreach (var effectTarget in item.XPathSelectElements("Values/ItemEffect/EffectTargets/Item")) {
         var effectTargetGuid = effectTarget.Element("GUID").Value;
-        textEN = Program.Original.Root.XPathSelectElement($"//Asset/Values/Standard[GUID={effectTargetGuid}]/../Text/LocaText/English/Text").Value;
+        textEN = Assets.Original.Root.XPathSelectElement($"//Asset/Values/Standard[GUID={effectTargetGuid}]/../Text/LocaText/English/Text").Value;
         textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={effectTargetGuid}]/Text").Value;
         effectTarget.Add(new XElement("Description"));
         effectTarget.XPathSelectElement("Description").Add(new XElement("EN"));
@@ -355,7 +355,7 @@ namespace RDA {
       item.XPathSelectElement("Values/Text").Remove();
       // info
       var infoGuid = item.XPathSelectElement("Values/Standard/InfoDescription").Value;
-      textEN = Program.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={infoGuid}]/../Text/LocaText/English/Text").Value;
+      textEN = Assets.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={infoGuid}]/../Text/LocaText/English/Text").Value;
       textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={infoGuid}]/Text").Value;
       item.XPathSelectElement("Values/Description/EN").Add(new XElement("Long", textEN));
       item.XPathSelectElement("Values/Description/DE").Add(new XElement("Long", textDE));
@@ -383,7 +383,7 @@ namespace RDA {
       item.XPathSelectElement("Values/Text").Remove();
       // info
       var infoGuid = item.XPathSelectElement("Values/Standard/InfoDescription").Value;
-      textEN = Program.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={infoGuid}]/../Text/LocaText/English/Text").Value;
+      textEN = Assets.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={infoGuid}]/../Text/LocaText/English/Text").Value;
       textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={infoGuid}]/Text").Value;
       item.XPathSelectElement("Values/Description/EN").Add(new XElement("Long", textEN));
       item.XPathSelectElement("Values/Description/DE").Add(new XElement("Long", textDE));

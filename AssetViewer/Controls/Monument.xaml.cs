@@ -50,7 +50,7 @@ namespace AssetViewer.Controls {
     private readonly List<TemplateAsset> AssetCategory;
     private readonly List<TemplateAsset> AssetEvent;
     private readonly List<TemplateAsset> AssetThreshold;
-    private readonly List<TemplateAsset> AssetReward;
+    //private readonly List<TemplateAsset> AssetReward;
     #endregion
 
     #region Constructor
@@ -60,7 +60,7 @@ namespace AssetViewer.Controls {
       this.AssetCategory = new List<TemplateAsset>();
       this.AssetEvent = new List<TemplateAsset>();
       this.AssetThreshold = new List<TemplateAsset>();
-      this.AssetReward = new List<TemplateAsset>();
+      //this.AssetReward = new List<TemplateAsset>();
       using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.MonumentCategory.xml")) {
         using (var reader = new StreamReader(stream)) {
           var document = XDocument.Parse(reader.ReadToEnd()).Root;
@@ -79,12 +79,12 @@ namespace AssetViewer.Controls {
           this.AssetThreshold.AddRange(document.Elements().Select(s => new TemplateAsset(s)));
         }
       }
-      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.MonumentReward.xml")) {
-        using (var reader = new StreamReader(stream)) {
-          var document = XDocument.Parse(reader.ReadToEnd()).Root;
-          this.AssetReward.AddRange(document.Elements().Select(s => new TemplateAsset(s)));
-        }
-      }
+      //using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.MonumentReward.xml")) {
+      //  using (var reader = new StreamReader(stream)) {
+      //    var document = XDocument.Parse(reader.ReadToEnd()).Root;
+      //    this.AssetReward.AddRange(document.Elements().Select(s => new TemplateAsset(s)));
+      //  }
+      //}
       this.DataContext = this;
     }
     #endregion

@@ -8,7 +8,7 @@
   xmlns:local="clr-namespace:AssetViewer.Controls"
   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
   d:DesignHeight="450"
-  d:DesignWidth="800"
+  d:DesignWidth="836.864"
   FontSize="13"
   Loaded="GuildhouseItem_OnLoaded"
   SnapsToDevicePixels="True"
@@ -37,7 +37,7 @@
           Height="18"
           HorizontalAlignment="Left"
           VerticalAlignment="Center"
-          Source="{Binding Path=Icon.Filename}" />
+          Source="{Binding Path=Text.Icon.Filename}" />
         <TextBlock
           Grid.Row="0"
           Grid.Column="1"
@@ -67,7 +67,7 @@
                   Height="18"
                   HorizontalAlignment="Left"
                   VerticalAlignment="Center"
-                  Source="{Binding Path=Icon.Filename}" />
+                  Source="{Binding Path=Text.Icon.Filename}" />
                 <TextBlock
                   Grid.Column="1"
                   VerticalAlignment="Center"
@@ -149,14 +149,17 @@
           Grid.Column="0"
           Height="22"
           ItemsSource="{Binding Path=Rarities}"
-          SelectionChanged="ComboBoxRarities_OnSelectionChanged" />
+          SelectionChanged="ComboBoxFilter_OnSelectionChanged" />
         <TextBlock
           Grid.Row="4"
           Grid.Column="0"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
           Text="{Binding Path=Rarities, Converter={StaticResource Description}, ConverterParameter=1004}" />
-        <TextBox Grid.Row="5" Grid.Column="0" Text="{Binding Path=SearchText, UpdateSourceTrigger=PropertyChanged}" />
+        <TextBox
+          Grid.Row="5"
+          Grid.Column="0"
+          Text="{Binding Path=SearchText, UpdateSourceTrigger=PropertyChanged}" />
 
         <TextBlock
           Grid.Row="0"
@@ -171,7 +174,7 @@
           Height="22"
           Margin="0"
           ItemsSource="{Binding Path=ItemTypes}"
-          SelectionChanged="ComboBoxTypes_OnSelectionChanged" />
+          SelectionChanged="ComboBoxFilter_OnSelectionChanged" />
         <TextBlock
           Grid.Row="2"
           Grid.Column="2"
@@ -186,7 +189,7 @@
           Grid.ColumnSpan="3"
           Height="22"
           ItemsSource="{Binding Path=Targets}"
-          SelectionChanged="ComboBoxTargets_OnSelectionChanged" />
+          SelectionChanged="ComboBoxFilter_OnSelectionChanged" />
 
         <TextBlock
           Grid.Row="0"
@@ -201,35 +204,36 @@
           Height="22"
           Margin="0"
           ItemsSource="{Binding Path=Equipped}"
-          SelectionChanged="ComboBoxEquipped_OnSelectionChanged" />
-
-        <TextBlock
-          Grid.Row="2"
-          Grid.Column="6"
-          Margin="0,0,5,0"
-          VerticalAlignment="Center"
-          Text="{Binding Path=Sources, Converter={StaticResource Description}, ConverterParameter=1005}" />
-        <ComboBox
-          x:Name="ComboBoxSources"
-          Grid.Row="3"
-          Grid.Column="6"
-          Height="22"
-          ItemsSource="{Binding Path=Sources}"
-          SelectionChanged="ComboBoxRarities_OnSelectionChanged" />
+          SelectionChanged="ComboBoxFilter_OnSelectionChanged" />
 
         <TextBlock
           Grid.Row="0"
           Grid.Column="6"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
-          Text="{Binding Path=Upgrades, Converter={StaticResource Description}, ConverterParameter=1006}" />
+          Text="{Binding Path=Sources, Converter={StaticResource Description}, ConverterParameter=1005}" />
         <ComboBox
-          x:Name="ComboBoxUpgrades"
+          x:Name="ComboBoxSources"
           Grid.Row="1"
           Grid.Column="6"
           Height="22"
+          ItemsSource="{Binding Path=Sources}"
+          SelectionChanged="ComboBoxFilter_OnSelectionChanged" />
+
+        <TextBlock
+          Grid.Row="4"
+          Grid.Column="2"
+          Margin="0,0,5,0"
+          VerticalAlignment="Center"
+          Text="{Binding Path=Upgrades, Converter={StaticResource Description}, ConverterParameter=1006}" />
+        <ComboBox
+          x:Name="ComboBoxUpgrades"
+          Grid.Row="5"
+          Grid.Column="2"
+          Grid.ColumnSpan="3"
+          Height="22"
           ItemsSource="{Binding Path=Upgrades}"
-          SelectionChanged="ComboBoxRarities_OnSelectionChanged" />
+          SelectionChanged="ComboBoxFilter_OnSelectionChanged" />
 
         <TextBlock
           Grid.Row="2"
@@ -243,21 +247,27 @@
           Grid.Column="0"
           Height="22"
           ItemsSource="{Binding Path=ReleaseVersions}"
-          SelectionChanged="ComboBoxRarities_OnSelectionChanged" />
+          SelectionChanged="ComboBoxFilter_OnSelectionChanged" />
         <TextBlock
-          Grid.Row="4"
+          Grid.Row="2"
           Grid.Column="6"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
           Text="{Binding Path=DetailedSources, Converter={StaticResource Description}, ConverterParameter=1008}" />
         <ComboBox
           x:Name="ComboBoxDetailedSources"
-          Grid.Row="5"
+          Grid.Row="3"
           Grid.Column="6"
           Height="22"
           ItemsSource="{Binding Path=DetailedSources}"
-          SelectionChanged="ComboBoxRarities_OnSelectionChanged" />
-
+          SelectionChanged="ComboBoxFilter_OnSelectionChanged" />
+        <Button
+          x:Name="btnResetFilters"
+          Grid.Row="5" Margin="5 1"
+          Grid.Column="6"
+          Click="BtnResetFilters_Click"
+          Padding="0"
+          Content="{Binding Converter={StaticResource Description}, ConverterParameter=1100}" />
       </Grid>
     </Border>
     <Grid Grid.Row="2">
@@ -284,7 +294,7 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="Auto" />
                   </Grid.ColumnDefinitions>
-                  <Image Grid.Column="0" HorizontalAlignment="Left" Source="{Binding Path=Icon.Filename}" />
+                  <Image Grid.Column="0" HorizontalAlignment="Left" Source="{Binding Path=Text.Icon.Filename}" />
                   <TextBlock
                     Grid.Column="1"
                     VerticalAlignment="Center"

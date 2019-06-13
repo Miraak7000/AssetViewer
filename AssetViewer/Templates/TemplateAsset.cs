@@ -1,29 +1,35 @@
-﻿using System;
+﻿using AssetViewer.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
-using AssetViewer.Data;
 
 namespace AssetViewer.Templates {
 
   public class TemplateAsset {
 
     #region Properties
+
     public String ID { get; set; }
     public String Name { get; set; }
-    public Icon Icon { get; set; }
     public Description Text { get; set; }
+
     public Description Rarity { get; set; }
     public String ItemType { get; set; }
     public String ReleaseVersion { get; set; }
+
     //
     public Allocation Allocation { get; set; }
+
     //
     public List<Description> EffectTargets { get; set; }
+
     public Description EffectTargetInfo { get; set; }
     public Boolean HasEffectTargetInfo { get; set; }
+
     //
     public List<Upgrade> FactoryUpgrades { get; set; }
+
     public List<Upgrade> BuildingUpgrades { get; set; }
     public List<Upgrade> CultureUpgrades { get; set; }
     public List<Upgrade> ModuleOwnerUpgrades { get; set; }
@@ -39,29 +45,41 @@ namespace AssetViewer.Templates {
     public List<Upgrade> RepairCraneUpgrades { get; set; }
     public List<Upgrade> IncidentInfectableUpgrades { get; set; }
     public List<Upgrade> IncidentInfluencerUpgrades { get; set; }
+    public List<Upgrade> ItemActionUpgrades { get; set; }
+    public List<Upgrade> KontorUpgrades { get; }
+    public List<Upgrade> ShipyardUpgrades { get; }
+    public List<Upgrade> ItemGeneratorUpgrades { get; }
+
     public IEnumerable<Upgrade> AllUpgrades => typeof(TemplateAsset)
             .GetProperties()
             .Where(p => p.PropertyType == typeof(List<Upgrade>) && p.Name != nameof(Sources))
             .SelectMany(l => (List<Upgrade>)l.GetValue(this) ?? Enumerable.Empty<Upgrade>());
+
     //
     public List<Upgrade> ItemSets { get; set; }
+
     //
     public String TradePrice { get; set; }
+
     //
     public Description Info { get; set; }
+
     //
     public List<Upgrade> Sources { get; set; }
+
     //
     public List<String> MonumentEvents { get; set; }
+
     public List<String> MonumentThresholds { get; set; }
     public List<String> MonumentRewards { get; set; }
-    #endregion
 
-    #region Constructor
+    #endregion Properties
+
+    #region Constructors
+
     public TemplateAsset(XElement asset) {
       this.ID = asset.Attribute("ID").Value;
       this.Name = asset.Element("Name").Value;
-      this.Icon = new Icon(asset.Element("Icon"));
       this.Text = new Description(asset.Element("Text"));
       this.Rarity = new Description(asset.Element("Rarity"));
       this.ItemType = asset.Element("ItemType").Value;
@@ -117,17 +135,29 @@ namespace AssetViewer.Templates {
       if (asset.Element("AttackerUpgrades").HasElements) {
         this.AttackerUpgrades = asset.Element("AttackerUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
       }
+      if (asset.Element("ShipyardUpgrades").HasElements) {
+        this.ShipyardUpgrades = asset.Element("ShipyardUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
+      }
       if (asset.Element("VisitorHarborUpgrades").HasElements) {
         this.VisitorHarborUpgrades = asset.Element("VisitorHarborUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
       }
       if (asset.Element("RepairCraneUpgrades").HasElements) {
         this.RepairCraneUpgrades = asset.Element("RepairCraneUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
       }
+      if (asset.Element("KontorUpgrades").HasElements) {
+        this.KontorUpgrades = asset.Element("KontorUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
+      }
       if (asset.Element("IncidentInfectableUpgrades").HasElements) {
         this.IncidentInfectableUpgrades = asset.Element("IncidentInfectableUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
       }
       if (asset.Element("IncidentInfluencerUpgrades").HasElements) {
         this.IncidentInfluencerUpgrades = asset.Element("IncidentInfluencerUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
+      }
+      if (asset.Element("ItemGeneratorUpgrades").HasElements) {
+        this.ItemGeneratorUpgrades = asset.Element("ItemGeneratorUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
+      }
+      if (asset.Element("ItemActionUpgrades")?.HasElements ?? false) {
+        this.ItemActionUpgrades = asset.Element("ItemActionUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
       }
       this.TradePrice = asset.Element("TradePrice")?.Value;
       if (asset.Element("Info") != null) {
@@ -146,8 +176,7 @@ namespace AssetViewer.Templates {
         this.MonumentRewards = asset.Element("MonumentRewards").Elements().Select(s => s.Value).ToList();
       }
     }
-    #endregion
 
+    #endregion Constructors
   }
-
 }

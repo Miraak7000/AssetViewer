@@ -12,6 +12,73 @@ namespace RDA.Templates {
 
   public class Asset {
 
+    #region Properties
+
+    public static ConcurrentDictionary<string, SourceWithDetailsList> SavedSources { get; set; } = new ConcurrentDictionary<string, SourceWithDetailsList>();
+    public String ID { get; set; }
+    public String Name { get; set; }
+    public Description Text { get; set; }
+
+    public Description Rarity { get; set; }
+    public String ItemType { get; set; }
+    public String ReleaseVersion { get; set; } = "Release";
+
+    //
+    public Allocation Allocation { get; set; }
+
+    //
+    public List<Description> EffectTargets { get; set; }
+
+    //
+    public List<Upgrade> FactoryUpgrades { get; set; }
+
+    public List<Upgrade> BuildingUpgrades { get; set; }
+    public List<Upgrade> CultureUpgrades { get; set; }
+    public List<Upgrade> ModuleOwnerUpgrades { get; set; }
+    public List<Upgrade> ResidenceUpgrades { get; set; }
+    public List<Upgrade> PopulationUpgrades { get; set; }
+    public List<Upgrade> ElectricUpgrades { get; set; }
+    public List<Upgrade> ExpeditionAttributes { get; set; }
+    public List<Upgrade> AttackableUpgrades { get; set; }
+    public List<Upgrade> TradeShipUpgrades { get; set; }
+    public List<Upgrade> VehicleUpgrades { get; set; }
+    public List<Upgrade> AttackerUpgrades { get; set; }
+    public List<Upgrade> ShipyardUpgrades { get; set; }
+    public List<Upgrade> VisitorHarborUpgrades { get; set; }
+    public List<Upgrade> RepairCraneUpgrades { get; set; }
+    public List<Upgrade> KontorUpgrades { get; set; }
+    public List<Upgrade> IncidentInfectableUpgrades { get; set; }
+    public List<Upgrade> IncidentInfluencerUpgrades { get; set; }
+    public List<Upgrade> ItemGeneratorUpgrades { get; set; }
+    public List<Upgrade> ItemActionUpgrades { get; set; }
+
+    public IEnumerable<Upgrade> AllUpgrades => typeof(Asset)
+            .GetProperties()
+            .Where(p => p.PropertyType == typeof(List<Upgrade>) && p.Name != nameof(Sources))
+            .OrderBy(p => p.Name)
+            .SelectMany(l => (List<Upgrade>)l.GetValue(this) ?? Enumerable.Empty<Upgrade>());
+
+    //
+    public List<Upgrade> ItemSets { get; set; }
+
+    //
+    public String TradePrice { get; set; }
+
+    //
+    public Description Info { get; set; }
+
+    //
+    public List<TempSource> Sources { get; set; }
+
+    //
+    public List<String> MonumentEvents { get; set; }
+
+    public List<String> MonumentThresholds { get; set; }
+    public List<String> MonumentRewards { get; set; }
+    public List<Upgrade> PassiveTradeGoodGenUpgrades { get; private set; }
+
+    #endregion Properties
+
     #region Fields
 
     public String Path = String.Empty;
@@ -39,7 +106,10 @@ namespace RDA.Templates {
           case "Pausable":
           case "BuildPermit":
           case "VisualEffectWhenActive":
-            // ignore this nodes
+          // ignore this nodes
+          case "UpgradeList":
+          case "VisitorUpgrade":
+            //Maybe next patch. all empty
             break;
 
           case "Standard":
@@ -161,9 +231,15 @@ namespace RDA.Templates {
           case "Reward":
             this.ProcessElement_MonumentEventReward(element);
             break;
+
           case "Product":
-            //Todo: maybe add some properties
+          //Todo: maybe add some properties
+          case "NewspaperUpgrade":
+          case "DistributionUpgrade":
+            // Todo: needs to implemented
             break;
+            break;
+
           default:
             throw new NotImplementedException(element.Name.LocalName);
         }
@@ -176,63 +252,6 @@ namespace RDA.Templates {
 
     #endregion Constructors
 
-    #region Properties
-
-    public static ConcurrentDictionary<string, SourceWithDetailsList> SavedSources { get; set; } = new ConcurrentDictionary<string, SourceWithDetailsList>();
-    public String ID { get; set; }
-    public String Name { get; set; }
-    public Icon Icon { get; set; }
-    public Description Text { get; set; }
-    public Description Rarity { get; set; }
-    public String ItemType { get; set; }
-    public String ReleaseVersion { get; set; } = "Release";
-
-    //
-    public Allocation Allocation { get; set; }
-
-    //
-    public List<Description> EffectTargets { get; set; }
-
-    //
-    public List<Upgrade> FactoryUpgrades { get; set; }
-
-    public List<Upgrade> BuildingUpgrades { get; set; }
-    public List<Upgrade> CultureUpgrades { get; set; }
-    public List<Upgrade> ModuleOwnerUpgrades { get; set; }
-    public List<Upgrade> ResidenceUpgrades { get; set; }
-    public List<Upgrade> PopulationUpgrades { get; set; }
-    public List<Upgrade> ElectricUpgrades { get; set; }
-    public List<Upgrade> ExpeditionAttributes { get; set; }
-    public List<Upgrade> AttackableUpgrades { get; set; }
-    public List<Upgrade> TradeShipUpgrades { get; set; }
-    public List<Upgrade> VehicleUpgrades { get; set; }
-    public List<Upgrade> AttackerUpgrades { get; set; }
-    public List<Upgrade> VisitorHarborUpgrades { get; set; }
-    public List<Upgrade> RepairCraneUpgrades { get; set; }
-    public List<Upgrade> IncidentInfectableUpgrades { get; set; }
-    public List<Upgrade> IncidentInfluencerUpgrades { get; set; }
-    public List<Upgrade> ItemGeneratorUpgrades { get; set; }
-
-    //
-    public List<Upgrade> ItemSets { get; set; }
-
-    //
-    public String TradePrice { get; set; }
-
-    //
-    public Description Info { get; set; }
-
-    //
-    public List<TempSource> Sources { get; set; }
-
-    //
-    public List<String> MonumentEvents { get; set; }
-
-    public List<String> MonumentThresholds { get; set; }
-    public List<String> MonumentRewards { get; set; }
-
-    #endregion Properties
-
     #region Methods
 
     public XElement ToXml() {
@@ -240,13 +259,12 @@ namespace RDA.Templates {
       result.Add(new XAttribute("ID", this.ID));
       result.Add(new XAttribute("Release", this.ReleaseVersion));
       result.Add(new XElement("Name", this.Name));
-      result.Add(this.Icon.ToXml());
       result.Add(this.Text.ToXml("Text"));
       result.Add(this.Rarity == null ? new XElement("Rarity") : this.Rarity.ToXml("Rarity"));
       result.Add(new XElement("ItemType", this.ItemType));
       result.Add(new XElement("ItemSets", this.ItemSets?.Select(s => s.ToXml())));
       //
-      result.Add(this.Rarity == null ? new XElement("Allocation") : this.Allocation.ToXml());
+      result.Add(this.Allocation == null ? new XElement("Allocation") : this.Allocation.ToXml());
       //
       result.Add(new XElement("EffectTargets", this.EffectTargets == null ? null : this.EffectTargets.Select(s => s.ToXml("Target"))));
       //
@@ -267,6 +285,10 @@ namespace RDA.Templates {
       result.Add(new XElement("IncidentInfectableUpgrades", this.IncidentInfectableUpgrades == null ? null : this.IncidentInfectableUpgrades.Select(s => s.ToXml())));
       result.Add(new XElement("IncidentInfluencerUpgrades", this.IncidentInfluencerUpgrades == null ? null : this.IncidentInfluencerUpgrades.Select(s => s.ToXml())));
       result.Add(new XElement("ItemGeneratorUpgrades", this.ItemGeneratorUpgrades == null ? null : this.ItemGeneratorUpgrades.Select(s => s.ToXml())));
+      result.Add(new XElement("ItemActionUpgrades", this.ItemActionUpgrades == null ? null : this.ItemActionUpgrades.Select(s => s.ToXml())));
+      result.Add(new XElement("ShipyardUpgrades", this.ShipyardUpgrades == null ? null : this.ShipyardUpgrades.Select(s => s.ToXml())));
+      result.Add(new XElement("KontorUpgrades", this.KontorUpgrades == null ? null : this.KontorUpgrades.Select(s => s.ToXml())));
+
       //
       result.Add(new XElement("TradePrice", this.TradePrice));
       //
@@ -287,14 +309,60 @@ namespace RDA.Templates {
     private void ProcessElement_Standard(XElement element) {
       this.ID = element.Element("GUID").Value;
       this.Name = element.Element("Name").Value;
-      this.Icon = new Icon(element.Element("IconFilename").Value);
       this.Text = new Description(element.Element("GUID").Value);
       this.Info = element.Element("InfoDescription") == null ? null : new Description(element.Element("InfoDescription").Value);
     }
     private void ProcessElement_Item(XElement element) {
-      this.Rarity = element.Element("Rarity") == null ? new Description("118002") : new Description(Helper.GetDescriptionID(element.Element("Rarity").Value));
+      this.Rarity = element.Element("Rarity") == null ? new Description("118002") : new Description(Assets.GetDescriptionID(element.Element("Rarity").Value));
       this.ItemType = element.Element("ItemType")?.Value ?? "Common";
+      if (this.ItemType == "Common") {
+        switch (element.Parent.Parent.Element("Template").Value) {
+          case "ShipSpecialist":
+            this.ItemType = "Specialist";
+            break;
+
+          case "CultureItem":
+            this.ItemType = "Animal";
+            break;
+
+          case "Product":
+            this.ItemType = "Product";
+            break;
+          /// Items Without ItemTyp ///
+          /////////////////////////////
+          //case "ActiveItem":
+          //  this.ItemType = "ActiveItem";
+          //  break;
+          //case "ItemSpecialActionVisualEffect":
+          //  this.ItemType = "ItemSpecialActionVisualEffect";
+          //  break;
+          //case "GuildhouseItem":
+          //  this.ItemType = "GuildhouseItem";
+          //  break;
+          //case "ItemSpecialAction":
+          //  this.ItemType = "ItemSpecialAction";
+          //  break;
+          //case "HarborOfficeItem":
+          //  this.ItemType = "HarborOfficeItem";
+          //  break;
+          //case "VehicleItem":
+          //  this.ItemType = "VehicleItem";
+          //  break;
+          //case "TownhallItem":
+          //  this.ItemType = "TownhallItem";
+          //  break;
+          //case "BuildPermitBuilding":
+          //  this.ItemType = "BuildPermitBuilding";
+          //  break;
+
+          default:
+            break;
+        }
+      }
       this.Allocation = new Allocation(element.Parent.Parent.Element("Template").Value, element.Element("Allocation")?.Value);
+      if (element.Element("Allocation") == null) {
+        element.Add(new XElement("Allocation"), this.Allocation.ID);
+      }
       this.TradePrice = element.Element("TradePrice") == null ? null : (Int32.Parse(element.Element("TradePrice").Value) / 4).ToString();
       if (element.Element("ItemSet") != null) {
         this.ItemSets = new List<Upgrade>();
@@ -304,8 +372,6 @@ namespace RDA.Templates {
         this.ItemType = "Common";
       if (this.ItemType == "Normal")
         this.ItemType = "Common";
-      if (this.ItemType != "Specialist" && this.ItemType != "Common")
-        throw new NotImplementedException();
     }
     private void ProcessElement_ItemEffect(XElement element) {
       if (element.HasElements && element.Element("EffectTargets") == null)
@@ -313,7 +379,7 @@ namespace RDA.Templates {
       if (element.HasElements && element.Element("EffectTargets").HasElements) {
         this.EffectTargets = new List<Description>();
         foreach (var item in element.Element("EffectTargets").Elements()) {
-          this.EffectTargets.Add(new Description(Program.DescriptionEN[item.Value], Program.DescriptionDE[item.Value]));
+          this.EffectTargets.Add(new Description(Assets.DescriptionEN[item.Value], Assets.DescriptionDE[item.Value]));
         }
       }
     }
@@ -330,13 +396,7 @@ namespace RDA.Templates {
         this.BuildingUpgrades = new List<Upgrade>();
         foreach (var item in element.Elements()) {
           // TODO: this needs to be implemented
-          if (item.Name.LocalName == "ResolverUnitCountUpgrade")
-            continue;
           if (item.Name.LocalName == "PublicServiceNoSatisfactionDistance")
-            continue;
-          if (item.Name.LocalName == "ResolverUnitMovementSpeedUpgrade")
-            continue;
-          if (item.Name.LocalName == "ResolverUnitDecreaseUpgrade")
             continue;
           this.BuildingUpgrades.Add(new Upgrade(item));
         }
@@ -368,9 +428,6 @@ namespace RDA.Templates {
       if (element.HasElements) {
         this.ResidenceUpgrades = new List<Upgrade>();
         foreach (var item in element.Elements()) {
-          // TODO: this needs to be implemented
-          if (item.Name.LocalName == "ChangedSupplyValueUpgrade")
-            continue;
           this.ResidenceUpgrades.Add(new Upgrade(item));
         }
       }
@@ -381,24 +438,17 @@ namespace RDA.Templates {
         foreach (var item in element.Elements()) {
           switch (item.Name.LocalName) {
             case "InputBenefitModifier":
-              foreach (var subItem in item.XPathSelectElements("Item/*")) {
-                switch (subItem.Name.LocalName) {
-                  case "Product":
-                    // ignore
-                    break;
-
-                  case "AdditionalSupply":
-                    // TODO: this needs to be implemented
-                    break;
-
-                  case "AdditionalHappiness":
-                  case "AdditionalMoney":
-                    this.PopulationUpgrades.Add(new Upgrade(subItem));
-                    break;
-
-                  default:
-                    throw new NotImplementedException(subItem.Name.LocalName);
+              var buffs = item.Elements("Item").SelectMany(e => e.Elements().Where(ele => ele.Name.LocalName != "Product"));
+              foreach (var buffname in buffs.Select(b => b.Name.LocalName).Distinct()) {
+                var firstBuff = new Upgrade(buffs.FirstOrDefault(b => b.Name.LocalName == buffname));
+                firstBuff.Additionals = new List<Upgrade>();
+                firstBuff.Value = null;
+                foreach (var buff in buffs.Where(b => b.Name.LocalName == buffname)) {
+                  var secBuff = new Upgrade(buff);
+                  secBuff.Text = new Description(buff.Parent.Element("Product").Value);
+                  firstBuff.Additionals.Add(secBuff);
                 }
+                PopulationUpgrades.Add(firstBuff);
               }
               break;
 
@@ -425,10 +475,6 @@ namespace RDA.Templates {
           foreach (var attribute in attributes) {
             if (attribute.Element("Attribute") == null)
               continue;
-            if (attribute.Element("Attribute").Value == "PerkFemale")
-              continue;
-            if (attribute.Element("Attribute").Value == "PerkMale")
-              continue;
             if (attribute.Element("Attribute").Value == "PerkEntertainer")
               continue;
             this.ExpeditionAttributes.Add(new Upgrade(attribute.Element("Attribute").Value, attribute.Element("Amount")?.Value));
@@ -446,7 +492,8 @@ namespace RDA.Templates {
     }
     private void ProcessElement_PassiveTradeGoodGenUpgrades(XElement element) {
       if (element.HasElements) {
-        // TODO: this needs to be implemented
+        this.PassiveTradeGoodGenUpgrades = new List<Upgrade>();
+        PassiveTradeGoodGenUpgrades.Add(new Upgrade(element));
       }
     }
     private void ProcessElement_IncidentInfectableUpgrades(XElement element) {
@@ -454,8 +501,6 @@ namespace RDA.Templates {
         this.IncidentInfectableUpgrades = new List<Upgrade>();
         foreach (var item in element.Elements()) {
           // TODO: this needs to be implemented
-          if (item.Name.LocalName == "IncidentIllnessIncreaseUpgrade")
-            continue;
           if (item.Name.LocalName == "OverrideIncidentAttractiveness")
             continue;
           this.IncidentInfectableUpgrades.Add(new Upgrade(item));
@@ -464,21 +509,39 @@ namespace RDA.Templates {
     }
     private void ProcessElement_IncidentInfluencerUpgrades(XElement element) {
       if (element.HasElements) {
-        // TODO: this needs to be implemented
+        foreach (var item in element.Elements()) {
+          if (item.Name.LocalName == "RiotInfluenceUpgrade")
+            continue;
+          if (item.Name.LocalName == "FireInfluenceUpgrade")
+            continue;
+          if (item.Name.LocalName == "IllnessInfluenceUpgrade")
+            continue;
+          if (item.Name.LocalName == "DistanceUpgrade")
+            continue;
+          this.IncidentInfluencerUpgrades = new List<Upgrade>();
+          IncidentInfluencerUpgrades.Add(new Upgrade(item));
+        }
       }
     }
     private void ProcessElement_AttackerUpgrade(XElement element) {
       if (element.HasElements) {
         this.AttackerUpgrades = new List<Upgrade>();
-        foreach (var item in element.Elements()) {
+        var projektile = element.Element("UseProjectile");
+        if (projektile != null) {
+          this.AttackerUpgrades.Add(new Upgrade(projektile));
+          var Projectile = Assets
+            .Original
+            .Root
+            .Descendants("Asset")
+            .FirstOrDefault(a => a.XPathSelectElement($"Values/Standard/GUID")?.Value == projektile.Value);
+          if (Projectile.XPathSelectElement("Values/Exploder/InnerDamage")?.Value is string damage) {
+            this.AttackerUpgrades = new List<Upgrade>();
+            this.AttackerUpgrades.Add(new Upgrade() { Text = new Description("20621"), Value = damage });
+          }
+        }
+        foreach (var item in element.Elements().Except(new[] { projektile })) {
           // TODO: this needs to be implemented
-          if (item.Name.LocalName == "LineOfSightRangeUpgrade")
-            continue;
-          if (item.Name.LocalName == "HitpointDamage")
-            continue;
           if (item.Name.LocalName == "ReloadTimeUpgrade")
-            continue;
-          if (item.Name.LocalName == "MoraleDamage")
             continue;
           if (item.Name.LocalName == "AddStatusEffects")
             continue;
@@ -488,13 +551,23 @@ namespace RDA.Templates {
             }
             continue;
           }
-          this.AttackerUpgrades.Add(new Upgrade(item));
+          var upgrade = new Upgrade(item);
+          if (upgrade.Text == null) {
+            continue;
+          }
+          this.AttackerUpgrades.Add(upgrade);
         }
       }
     }
     private void ProcessElement_ShipyardUpgrade(XElement element) {
       if (element.HasElements) {
-        // TODO: this needs to be implemented
+        ShipyardUpgrades = new List<Upgrade>();
+        foreach (var item in element.Elements()) {
+          if (item.Name.LocalName == "ReplaceAssemblyOptions") {
+            continue;
+          }
+          ShipyardUpgrades.Add(new Upgrade(item));
+        }
       }
     }
     private void ProcessElement_AttackableUpgrade(XElement element) {
@@ -504,15 +577,8 @@ namespace RDA.Templates {
           switch (item.Name.LocalName) {
             case "DamageReceiveFactor":
               foreach (var subItem in item.Elements()) {
-                // TODO: this needs to be implemented
-                if (subItem.Name.LocalName == "Normal")
-                  continue;
                 this.AttackableUpgrades.Add(new Upgrade(subItem));
               }
-              break;
-
-            case "MoralePowerUpgrade":
-              // TODO: this needs to be implemented
               break;
 
             default:
@@ -531,9 +597,6 @@ namespace RDA.Templates {
       if (element.HasElements) {
         this.VehicleUpgrades = new List<Upgrade>();
         foreach (var item in element.Elements()) {
-          // TODO: this needs to be implemented
-          if (item.Name.LocalName == "MaintainanceUpgrade")
-            continue;
           this.VehicleUpgrades.Add(new Upgrade(item));
         }
       }
@@ -551,7 +614,10 @@ namespace RDA.Templates {
     }
     private void ProcessElement_KontorUpgrade(XElement element) {
       if (element.HasElements) {
-        // TODO: this needs to be implemented
+        KontorUpgrades = new List<Upgrade>();
+        foreach (var item in element.Elements()) {
+          this.KontorUpgrades.Add(new Upgrade(item));
+        }
       }
     }
     private void ProcessElement_TradeShipUpgrade(XElement element) {
@@ -564,9 +630,62 @@ namespace RDA.Templates {
     }
     private void ProcessElement_ItemActions(XElement element) {
       if (element.HasElements) {
-        // TODO: this needs to be implemented
+        var itemAction = element.Element("ItemAction")?.Value;
+        if (itemAction == null) {
+          switch (element.Parent.Parent.Element("Template").Value) {
+            case "ItemSpecialAction":
+            case "ItemSpecialActionVisualEffect":
+              element.Add(new XElement("ItemAction", "NUKE"));
+              break;
+
+            default:
+              element.Add(new XElement("ItemAction", "NOACTION"));
+              break;
+          }
+        }
+        var action = element.Element("ItemAction").Value;
+        // Ignore
+        if (action == "REPAIR")
+          return;
+        if (action == "DRAG")
+          return;
+        if (action == "HEAL_INCIDENT")
+          return;
+        if (action == "CHANNEL")
+          return;
+        //TODO: maybe this needs to be implemented
+        if (action == "PLACE_MINE")
+          return;
+
+        this.ItemActionUpgrades = new List<Upgrade>();
+
+        var ActionText = new Description("20072", DescriptionFontStyle.Light) { Icon = null };
+        if (element.Element("ActionDescription")?.Value is string desc) {
+          ActionText = new Description(desc, DescriptionFontStyle.Light);
+        }
+        this.ItemActionUpgrades.Add(new Upgrade() { Text = ActionText, Value = element.Element("Charges")?.Value ?? "" });
+
+        if (action == "KAMIKAZE") {
+          this.ItemActionUpgrades.Add(new Upgrade() { Text = new Description("21347") { AdditionalInformation = new Description("21348", DescriptionFontStyle.Light) } });
+          this.ItemActionUpgrades.Add(new Upgrade() { Text = new Description("21353") });
+          return;
+        }
+
+        if (element.Element("ActiveBuff")?.Value is string buff) {
+          this.ItemActionUpgrades.AddRange(Assets.Buffs[buff].AllUpgrades.ToList());
+        }
+        if (element.Element("ActionDuration")?.Value != null) {
+          this.ItemActionUpgrades.Add(new Upgrade(element.Element("ActionDuration")));
+        }
+        if (element.Element("ActionCooldown")?.Value != null) {
+          this.ItemActionUpgrades.Add(new Upgrade(element.Element("ActionCooldown")));
+        }
+        if (element.Element("IsDestroyedAfterCooldown")?.Value != null) {
+          this.ItemActionUpgrades.Add(new Upgrade(element.Element("IsDestroyedAfterCooldown")));
+        }
       }
     }
+
     private void ProcessElement_ItemGeneratorUpgrades(XElement element) {
       if (element.HasElements) {
         // TODO: this needs to be implemented
@@ -591,7 +710,7 @@ namespace RDA.Templates {
       mainDetails.PreviousIDs.Add(id);
       var mainResult = inResult ?? new SourceWithDetailsList();
       var resultstoadd = new List<SourceWithDetailsList>();
-      var links = Program.Original.Root.XPathSelectElements($"//*[text()={id} and not(self::GUID)]").ToArray();
+      var links = Assets.Original.Root.XPathSelectElements($"//*[text()={id} and not(self::GUID)]").ToArray();
       if (links.Length > 0) {
         for (var i = 0; i < links.Length; i++) {
           var element = links[i];
@@ -671,12 +790,14 @@ namespace RDA.Templates {
                 result.AddSourceAsset(element, new HashSet<XElement> { element });
               }
               break;
+
             case "TourismFeature":
               var pool = element.Descendants("Pool").FirstOrDefault(p => p.Value == id)?.Parent;
               if (pool != null) {
                 result.AddSourceAsset(element, new HashSet<XElement> { pool });
               }
               break;
+
             case "ExpeditionDecision":
               //Add Detail if has reward or is InsertEvent
               var reward = element.XPathSelectElement("Values/Reward/RewardAssets");

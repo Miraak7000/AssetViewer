@@ -15,7 +15,6 @@ namespace RDA.Data {
     #region Properties
     public String ID { get; set; }
     public String Name { get; set; }
-    public Icon Icon { get; set; }
     public Description Text { get; set; }
     public List<Description> Details { get; set; } = new List<Description>();
     #endregion
@@ -31,13 +30,13 @@ namespace RDA.Data {
           foreach (var item in element.Details) {
             var cityStatus = item.Element("CityStatus");
             if (cityStatus != null) {
-              var desc = new Description(Program.TourismStati[cityStatus.Value].Element("AttractivenessThreshold").Value + " Attractiveness",Program.TourismStati[cityStatus.Value].Element("AttractivenessThreshold").Value + " Attraktivität");
+              var desc = new Description((Assets.TourismStati[cityStatus.Value].Element("AttractivenessThreshold")?.Value ?? "0") + " Attractiveness", (Assets.TourismStati[cityStatus.Value].Element("AttractivenessThreshold")?.Value ?? "0") + " Attraktivität");
               Details.Add(desc);
             }
             else if (item.Element("UnlockingSpecialist") != null) {
               Details.Add(new Description(item.Element("UnlockingSpecialist").Value));
             }
-            else if(item.Element("UnlockingSetBuff") != null) {
+            else if (item.Element("UnlockingSetBuff") != null) {
               Details.Add(new Description(item.Element("UnlockingSetBuff").Value));
             }
             else {
@@ -56,7 +55,7 @@ namespace RDA.Data {
           foreach (var item in element.Details) {
             // Detail points to Expedition
             if (item.Element("Template")?.Value == "Expedition") {
-              var desc = new Description("Expedition Abgeschossen", " Successfully Expedition");
+              var desc = new Description("Expedition Abgeschossen", "Successfully Expedition");
               this.Details.Add(desc);
               continue;
             }
@@ -130,11 +129,8 @@ namespace RDA.Data {
         default:
           throw new NotImplementedException();
       }
-      if (Source.XPathSelectElement("Values/Standard/IconFilename") != null) {
-        this.Icon = new Icon(Source.XPathSelectElement("Values/Standard/IconFilename").Value);
-      }
-      else {
-        this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_skull.png");
+      if (this.Text.Icon == null) {
+        this.Text.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_skull.png");
       }
     }
     #endregion
@@ -144,7 +140,6 @@ namespace RDA.Data {
       var result = new XElement("Source");
       result.Add(new XAttribute("ID", this.ID));
       result.Add(new XElement("Name", this.Name));
-      result.Add(this.Icon == null ? new XElement("Icon") : this.Icon.ToXml());
       result.Add(this.Text.ToXml("Text"));
 
       var details = new XElement("Details");

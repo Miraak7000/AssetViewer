@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
@@ -16,6 +17,12 @@ namespace AssetViewer.Converter {
 
     #region Public Methods
     public Object Convert(Object value, Type targetType, Object parameter, CultureInfo culture) {
+      if (value is IEnumerable items) {
+        foreach (var item in items) {
+          return Visibility.Visible;
+        }
+        return Visibility.Collapsed;
+      }
       return value == null ? Visibility.Collapsed : Visibility.Visible;
     }
     public Object ConvertBack(Object value, Type targetType, Object parameter, CultureInfo culture) {

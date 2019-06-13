@@ -14,7 +14,6 @@ namespace RDA.Data {
     #region Properties
     public String ID { get; set; }
     public String Name { get; set; }
-    public Icon Icon { get; set; }
     public Description Text { get; set; }
     public String ExpeditionRegion { get; set; }
     public String FillEventPool { get; set; }
@@ -47,7 +46,6 @@ namespace RDA.Data {
       var result = new XElement(this.GetType().Name);
       result.Add(new XAttribute("ID", this.ID));
       result.Add(new XElement("Name", this.Name));
-      result.Add(this.Icon == null ? new XElement("Icon") : this.Icon.ToXml());
       result.Add(this.Text.ToXml("Text"));
       result.Add(new XElement("ExpeditionRegion", this.ExpeditionRegion));
       result.Add(new XElement("FillEventPool", this.FillEventPool));
@@ -65,14 +63,13 @@ namespace RDA.Data {
     private void ProcessElement_Standard(XElement element) {
       this.ID = element.Element("GUID").Value;
       this.Name = element.Element("Name").Value;
-      if (element.Element("IconFilename") != null) this.Icon = new Icon(element.Element("IconFilename").Value);
     }
     private void ProcessElement_Expedition(XElement element) {
       this.Text = new Description(element.Element("ExpeditionName").Value);
       this.ExpeditionRegion = element.Element("ExpeditionRegion")?.Value;
       this.FillEventPool = element.Element("FillEventPool")?.Value;
       if (element.Element("Reward") != null) {
-        var rewardAssets = Program.Original.XPathSelectElements($"//Asset[Values/Standard/GUID={element.Element("Reward").Value}]/Values/Reward/RewardAssets/Item");
+        var rewardAssets = Assets.Original.XPathSelectElements($"//Asset[Values/Standard/GUID={element.Element("Reward").Value}]/Values/Reward/RewardAssets/Item");
         this.Rewards = new List<RewardPosition>();
         foreach (var rewardAsset in rewardAssets) {
           var position = new RewardPosition(rewardAsset);

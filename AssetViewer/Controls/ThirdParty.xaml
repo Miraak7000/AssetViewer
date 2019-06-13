@@ -36,7 +36,7 @@
           Height="18"
           HorizontalAlignment="Left"
           VerticalAlignment="Center"
-          Source="{Binding Path=Icon.Filename}" />
+          Source="{Binding Path=Text.Icon.Filename}" />
         <TextBlock
           Grid.Row="0"
           Grid.Column="1"
@@ -66,7 +66,7 @@
                   Height="18"
                   HorizontalAlignment="Left"
                   VerticalAlignment="Center"
-                  Source="{Binding Path=Icon.Filename}" />
+                  Source="{Binding Path=Text.Icon.Filename}" />
                 <TextBlock
                   Grid.Column="1"
                   VerticalAlignment="Center"
@@ -171,7 +171,7 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="Auto" />
                   </Grid.ColumnDefinitions>
-                  <Image Grid.Column="0" HorizontalAlignment="Left" Source="{Binding Path=Icon.Filename}" />
+                  <Image Grid.Column="0" HorizontalAlignment="Left" Source="{Binding Path=Text.Icon.Filename}" />
                   <TextBlock
                     Grid.Column="1"
                     VerticalAlignment="Center"

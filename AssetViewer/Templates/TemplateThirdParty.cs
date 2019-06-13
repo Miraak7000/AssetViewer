@@ -12,7 +12,6 @@ namespace AssetViewer.Templates {
     #region Properties
     public String ID { get; set; }
     public String Name { get; set; }
-    public Icon Icon { get; set; }
     public Description Text { get; set; }
     public List<OfferingItems> OfferingItems { get; set; }
     #endregion
@@ -21,7 +20,6 @@ namespace AssetViewer.Templates {
     public TemplateThirdParty(XElement asset) {
       this.ID = asset.Attribute("ID").Value;
       this.Name = asset.Element("Name").Value;
-      this.Icon = new Icon(asset.Element("Icon"));
       this.Text = new Description(asset.Element("Text"));
       this.OfferingItems = new List<OfferingItems>();
       foreach (var progression in asset.Element("OfferingItems").Elements()) {

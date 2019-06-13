@@ -8,7 +8,6 @@ namespace AssetViewer.Data {
   public class Upgrade {
 
     #region Properties
-    public Icon Icon { get; set; }
     public Description Text { get; set; }
     public String Value { get; set; }
     public List<Upgrade> Additionals { get; set; }
@@ -16,11 +15,13 @@ namespace AssetViewer.Data {
 
     #region Constructor
     public Upgrade(XElement item) {
-      this.Icon = item.Element("Icon") == null ? null : new Icon(item.Element("Icon"));
       var textItem = item.Name == "Text" ? item : item.Element("Text");
-      this.Text = new Description(textItem);
-      this.Value = item.Element("Value")?.Value;
-
+      if (textItem != null) {
+        this.Text = new Description(textItem);
+      }
+      if (item.Element("Value") != null) {
+        this.Value = item.Element("Value")?.Value;
+      }
       if (item.Element("AdditionalOutputs") != null) {
         this.Additionals = item.Element("AdditionalOutputs").Elements().Select(s => new Upgrade(s)).ToList();
       }
