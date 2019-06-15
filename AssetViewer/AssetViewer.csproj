@@ -1195,5 +1195,11 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\Assets\Tourism.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\icons\GitHub-Mark-32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\icons\google-drive-logo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
