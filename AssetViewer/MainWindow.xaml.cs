@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Navigation;
 using AssetViewer.Controls;
 using AssetViewer.Library;
 
@@ -24,6 +26,14 @@ namespace AssetViewer {
     #endregion
 
     #region Private Methods
+
+    private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
+    {
+        Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri));
+        e.Handled = true;
+    }
+
+
     private void MainWindow_OnLoaded(Object sender, RoutedEventArgs e) {
       this.ComboBoxAsset.SelectedIndex = 0;
     }
