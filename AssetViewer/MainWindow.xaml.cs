@@ -20,6 +20,10 @@ namespace AssetViewer {
     public MainWindow() {
       this.InitializeComponent();
       this.DataContext = this;
+      if (App.Language == Languages.German) {
+        ComboBoxLanguage.SelectedIndex = 1;
+      }
+      ComboBoxLanguage.SelectionChanged += ComboBoxLanguage_OnSelectionChanged;
     }
     #endregion
 

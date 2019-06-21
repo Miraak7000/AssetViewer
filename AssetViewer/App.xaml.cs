@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
 using System.IO;
 using System.Reflection;
 using System.Windows;
@@ -11,7 +12,11 @@ namespace AssetViewer {
 
   [SuppressMessage("ReSharper", "AssignNullToNotNullAttribute"), SuppressMessage("ReSharper", "PossibleNullReferenceException")]
   public partial class App : Application {
-
+    public App() {
+      if (CultureInfo.CurrentCulture.ThreeLetterWindowsLanguageName == "DEU") {
+        Language = Languages.German;
+      }
+    }
     #region Properties
     public static Dictionary<Int32, Description> Descriptions {
       get {
