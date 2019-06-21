@@ -27,7 +27,7 @@ namespace RDA.Templates {
     public Allocation Allocation { get; set; }
 
     //
-    public List<Description> EffectTargets { get; set; }
+    public List<EffectTarget> EffectTargets { get; set; }
 
     //
     public List<Upgrade> FactoryUpgrades { get; set; }
@@ -266,7 +266,7 @@ namespace RDA.Templates {
       //
       result.Add(this.Allocation == null ? new XElement("Allocation") : this.Allocation.ToXml());
       //
-      result.Add(new XElement("EffectTargets", this.EffectTargets == null ? null : this.EffectTargets.Select(s => s.ToXml("Target"))));
+      result.Add(new XElement("EffectTargets", this.EffectTargets == null ? null : this.EffectTargets.Select(s => s.ToXml())));
       //
       result.Add(new XElement("FactoryUpgrades", this.FactoryUpgrades == null ? null : this.FactoryUpgrades.Select(s => s.ToXml())));
       result.Add(new XElement("BuildingUpgrades", this.BuildingUpgrades == null ? null : this.BuildingUpgrades.Select(s => s.ToXml())));
@@ -315,7 +315,7 @@ namespace RDA.Templates {
     private void ProcessElement_Item(XElement element) {
       this.Rarity = element.Element("Rarity") == null ? new Description("118002") : new Description(Assets.GetDescriptionID(element.Element("Rarity").Value));
       this.ItemType = element.Element("ItemType")?.Value ?? "Common";
-      if (this.ItemType == "Common") {
+      if (this.ItemType == "Common" || this.ItemType == string.Empty) {
         switch (element.Parent.Parent.Element("Template").Value) {
           case "ShipSpecialist":
             this.ItemType = "Specialist";
@@ -377,9 +377,10 @@ namespace RDA.Templates {
       if (element.HasElements && element.Element("EffectTargets") == null)
         throw new NotImplementedException();
       if (element.HasElements && element.Element("EffectTargets").HasElements) {
-        this.EffectTargets = new List<Description>();
+        this.EffectTargets = new List<EffectTarget>();
         foreach (var item in element.Element("EffectTargets").Elements()) {
-          this.EffectTargets.Add(new Description(Assets.DescriptionEN[item.Value], Assets.DescriptionDE[item.Value]));
+          EffectTargets.Add(new EffectTarget(item));
+          //this.EffectTargets.Add(new Description(Assets.DescriptionEN[item.Value], Assets.DescriptionDE[item.Value]));
         }
       }
     }
@@ -645,26 +646,29 @@ namespace RDA.Templates {
         }
         var action = element.Element("ItemAction").Value;
         // Ignore
-        if (action == "REPAIR")
-          return;
-        if (action == "DRAG")
-          return;
-        if (action == "HEAL_INCIDENT")
-          return;
-        if (action == "CHANNEL")
-          return;
-        //TODO: maybe this needs to be implemented
-        if (action == "PLACE_MINE")
-          return;
+        Description ActionText = null;
+        switch (action) {
+          case "REPAIR":
+          case "DRAG":
+          case "CHANNEL":
+            return;
+          case "HEAL_INCIDENT":
+          case "PLACE_MINE":
+            break;
+          default:
+            ActionText = new Description("20072", DescriptionFontStyle.Light) { Icon = null };
+           
+            break;
+        }
 
         this.ItemActionUpgrades = new List<Upgrade>();
 
-        var ActionText = new Description("20072", DescriptionFontStyle.Light) { Icon = null };
         if (element.Element("ActionDescription")?.Value is string desc) {
           ActionText = new Description(desc, DescriptionFontStyle.Light);
         }
-        this.ItemActionUpgrades.Add(new Upgrade() { Text = ActionText, Value = element.Element("Charges")?.Value ?? "" });
-
+        if (ActionText != null) {
+          this.ItemActionUpgrades.Add(new Upgrade() { Text = ActionText, Value = element.Element("Charges")?.Value ?? "" });
+        }
         if (action == "KAMIKAZE") {
           this.ItemActionUpgrades.Add(new Upgrade() { Text = new Description("21347") { AdditionalInformation = new Description("21348", DescriptionFontStyle.Light) } });
           this.ItemActionUpgrades.Add(new Upgrade() { Text = new Description("21353") });
@@ -714,6 +718,10 @@ namespace RDA.Templates {
       if (links.Length > 0) {
         for (var i = 0; i < links.Length; i++) {
           var element = links[i];
+          //Weight 0
+          if (element.Parent.Element("Weight")?.Value == "0") {
+            continue;
+          }
           var isShipDrop = element.Name.LocalName == "ShipDropRewardPool";
           while (element.Name.LocalName != "Asset" || !element.HasElements) {
             element = element.Parent;
@@ -732,8 +740,16 @@ namespace RDA.Templates {
             // Hafen Hugo Mercier
             if (element.XPathSelectElement("Values/Standard/GUID")?.Value == "220") {
               if (element.XPathSelectElements("Values/ConstructionAI/ItemTradeConfig/ItemPools").Elements().Any(f => f.Element("Pool").Value == id)) {
-                result.AddSourceAsset(element.GetProxyElement("HafenHugo"), new HashSet<XElement> { element.GetProxyElement("HafenHugo") });
-                resultstoadd.Add(result);
+                var progressions = GetProgession(element, id);
+                if (progressions != null) {
+                  foreach (var item in progressions) {
+                    result.AddSourceAsset(element.GetProxyElement("Harbor"), new HashSet<XElement> { element.GetProxyElement(item) });
+                  }
+
+                  break;
+                }
+                else {
+                }
               }
             }
             continue;
@@ -766,10 +782,21 @@ namespace RDA.Templates {
 
             case "Profile_3rdParty":
             case "Profile_3rdParty_Pirate":
-              if (!element.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")
-                  && element.XPathSelectElement("Standard/Profile/ShipDropRewardPool")?.Value == id) {
-                result.AddSourceAsset(element.GetProxyElement("ShipDrop"), new HashSet<XElement> { element.GetProxyElement("ShipDrop") });
-                break;
+              if (!element.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
+                if (element.XPathSelectElement("Standard/Profile/ShipDropRewardPool")?.Value == id) {
+                  result.AddSourceAsset(element.GetProxyElement("ShipDrop"), new HashSet<XElement> { element.GetProxyElement("ShipDrop") });
+                  break;
+                }
+                var progressions = GetProgession(element, id);
+                if (progressions != null) {
+                  foreach (var item in progressions) {
+                    result.AddSourceAsset(element.GetProxyElement("Harbor"), new HashSet<XElement> { element.GetProxyElement(item) });
+                  }
+
+                  break;
+                }
+                else {
+                }
               }
               goto case "A7_QuestEscortObject";
             case "A7_QuestEscortObject":
@@ -787,7 +814,8 @@ namespace RDA.Templates {
             case "MonumentEventReward":
             case "A7_QuestSmuggler":
               if (!element.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
-                result.AddSourceAsset(element, new HashSet<XElement> { element });
+                result.AddSourceAsset(element, new HashSet<XElement> { element
+  });
               }
               break;
 
@@ -845,6 +873,17 @@ namespace RDA.Templates {
         mainResult.AddSourceAsset(item);
       }
       return mainResult;
+    }
+
+    private IEnumerable<string> GetProgession(XElement element, string id) {
+      var progressions = element.Descendants().FirstOrDefault(e => e.Name.LocalName == "Progression")?.Elements();
+      if (progressions != null) {
+        return progressions.Where(p => p.Descendants().Any(e => e.Value == id && e.Parent.Element("Weight")?.Value != "0")).Select(s => s.Name.LocalName);
+      }
+      else {
+        var strs = element.Descendants("Pool").Where(e => e.Value == id).Select(e => e.Parent.Name.LocalName);
+        return strs;
+      }
     }
 
     #endregion Methods

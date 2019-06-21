@@ -142,53 +142,64 @@
           Grid.Column="0"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
-          Text="{Binding Path=Rarities, Converter={StaticResource Description}, ConverterParameter=1001}" />
+          Text="{Binding Path=ItemsHolder.Filters[Rarities].Description.CurrentLang}" />
         <ComboBox
           x:Name="ComboBoxRarities"
           Grid.Row="1"
           Grid.Column="0"
           Height="22"
-          ItemsSource="{Binding Path=Rarities}"
+          ItemsSource="{Binding Path=ItemsHolder.Filters[Rarities].CurrentValues}"
+          SelectedValue="{Binding Path=ItemsHolder.Filters[Rarities].SelectedValue}"
           SelectionChanged="ComboBoxFilter_OnSelectionChanged" />
         <TextBlock
           Grid.Row="4"
           Grid.Column="0"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
-          Text="{Binding Path=Rarities, Converter={StaticResource Description}, ConverterParameter=1004}" />
-        <TextBox
-          Grid.Row="5"
-          Grid.Column="0"
-          Text="{Binding Path=SearchText, UpdateSourceTrigger=PropertyChanged}" />
+          Text="{Binding Path=ItemsHolder.Filters[SearchText].Description.CurrentLang}" />
+        <TextBox Grid.Row="5" Grid.Column="0" Text="{Binding Path=ItemsHolder.Filters[SearchText].SelectedValue, UpdateSourceTrigger=PropertyChanged, Delay=100}" />
 
         <TextBlock
           Grid.Row="0"
           Grid.Column="2"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
-          Text="{Binding Path=ItemTypes, Converter={StaticResource Description}, ConverterParameter=1002}" />
+          Text="{Binding ItemsHolder.Filters[ItemTypes].Description.CurrentLang}" />
         <ComboBox
           x:Name="ComboBoxTypes"
           Grid.Row="1"
           Grid.Column="2"
           Height="22"
           Margin="0"
-          ItemsSource="{Binding Path=ItemTypes}"
+          ItemsSource="{Binding Path=ItemsHolder.Filters[ItemTypes].CurrentValues}"
+          SelectedValue="{Binding ItemsHolder.Filters[ItemTypes].SelectedValue}"
           SelectionChanged="ComboBoxFilter_OnSelectionChanged" />
         <TextBlock
           Grid.Row="2"
           Grid.Column="2"
-          Grid.ColumnSpan="3"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
-          Text="{Binding Path=Targets, Converter={StaticResource Description}, ConverterParameter=1003}" />
+          Text="{Binding ItemsHolder.Filters[Targets].Description.CurrentLang}" />
         <ComboBox
           x:Name="ComboBoxTargets"
           Grid.Row="3"
           Grid.Column="2"
-          Grid.ColumnSpan="3"
           Height="22"
-          ItemsSource="{Binding Path=Targets}"
+          ItemsSource="{Binding ItemsHolder.Filters[Targets].CurrentValues}"
+          SelectedValue="{Binding ItemsHolder.Filters[Targets].SelectedValue}"
+          SelectionChanged="ComboBoxFilter_OnSelectionChanged" />
+        <TextBlock
+          Grid.Row="2"
+          Grid.Column="4"
+          Margin="0,0,5,0"
+          VerticalAlignment="Center"
+          Text="{Binding ItemsHolder.Filters[TargetBuilding].Description.CurrentLang}" />
+        <ComboBox
+          Grid.Row="3"
+          Grid.Column="4"
+          Height="22"
+          ItemsSource="{Binding ItemsHolder.Filters[TargetBuilding].CurrentValues}"
+          SelectedValue="{Binding ItemsHolder.Filters[TargetBuilding].SelectedValue}"
           SelectionChanged="ComboBoxFilter_OnSelectionChanged" />
 
         <TextBlock
@@ -196,14 +207,15 @@
           Grid.Column="4"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
-          Text="{Binding Path=ItemTypes, Converter={StaticResource Description}, ConverterParameter=106}" />
+          Text="{Binding ItemsHolder.Filters[Equipped].Description.CurrentLang}" />
         <ComboBox
           x:Name="ComboBoxEquipped"
           Grid.Row="1"
           Grid.Column="4"
           Height="22"
           Margin="0"
-          ItemsSource="{Binding Path=Equipped}"
+          ItemsSource="{Binding ItemsHolder.Filters[Equipped].CurrentValues}"
+          SelectedValue="{Binding ItemsHolder.Filters[Equipped].SelectedValue}"
           SelectionChanged="ComboBoxFilter_OnSelectionChanged" />
 
         <TextBlock
@@ -211,13 +223,14 @@
           Grid.Column="6"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
-          Text="{Binding Path=Sources, Converter={StaticResource Description}, ConverterParameter=1005}" />
+          Text="{Binding ItemsHolder.Filters[Sources].Description.CurrentLang}" />
         <ComboBox
           x:Name="ComboBoxSources"
           Grid.Row="1"
           Grid.Column="6"
           Height="22"
-          ItemsSource="{Binding Path=Sources}"
+          ItemsSource="{Binding ItemsHolder.Filters[Sources].CurrentValues}"
+          SelectedValue="{Binding ItemsHolder.Filters[Sources].SelectedValue}"
           SelectionChanged="ComboBoxFilter_OnSelectionChanged" />
 
         <TextBlock
@@ -225,14 +238,26 @@
           Grid.Column="2"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
-          Text="{Binding Path=Upgrades, Converter={StaticResource Description}, ConverterParameter=1006}" />
+          Text="{Binding ItemsHolder.Filters[Upgrades].Description.CurrentLang}" />
+        <CheckBox
+          x:Name="cbOnlyAvailable"
+          Grid.Row="5"
+          Grid.Column="4"
+          HorizontalAlignment="Center"
+          VerticalAlignment="Center"
+          Checked="ComboBoxFilter_OnSelectionChanged"
+          FlowDirection="RightToLeft"
+          IsChecked="{Binding ItemsHolder.Filters[Available].IsChecked}"
+          Unchecked="ComboBoxFilter_OnSelectionChanged">
+          <TextBlock FlowDirection="LeftToRight" Text="{Binding ItemsHolder.Filters[Available].Description.CurrentLang}" />
+        </CheckBox>
         <ComboBox
           x:Name="ComboBoxUpgrades"
           Grid.Row="5"
           Grid.Column="2"
-          Grid.ColumnSpan="3"
           Height="22"
-          ItemsSource="{Binding Path=Upgrades}"
+          ItemsSource="{Binding ItemsHolder.Filters[Upgrades].CurrentValues}"
+          SelectedValue="{Binding ItemsHolder.Filters[Upgrades].SelectedValue}"
           SelectionChanged="ComboBoxFilter_OnSelectionChanged" />
 
         <TextBlock
@@ -240,33 +265,36 @@
           Grid.Column="0"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
-          Text="{Binding Path=ReleaseVersions, Converter={StaticResource Description}, ConverterParameter=1007}" />
+          Text="{Binding Path=ItemsHolder.Filters[ReleaseVersions].Description.CurrentLang}" />
         <ComboBox
           x:Name="ComboBoxReleases"
           Grid.Row="3"
           Grid.Column="0"
           Height="22"
-          ItemsSource="{Binding Path=ReleaseVersions}"
+          ItemsSource="{Binding Path=ItemsHolder.Filters[ReleaseVersions].CurrentValues}"
+          SelectedValue="{Binding ItemsHolder.Filters[ReleaseVersions].SelectedValue}"
           SelectionChanged="ComboBoxFilter_OnSelectionChanged" />
         <TextBlock
           Grid.Row="2"
           Grid.Column="6"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
-          Text="{Binding Path=DetailedSources, Converter={StaticResource Description}, ConverterParameter=1008}" />
+          Text="{Binding ItemsHolder.Filters[DetailedSources].Description.CurrentLang}" />
         <ComboBox
           x:Name="ComboBoxDetailedSources"
           Grid.Row="3"
           Grid.Column="6"
           Height="22"
-          ItemsSource="{Binding Path=DetailedSources}"
+          ItemsSource="{Binding ItemsHolder.Filters[DetailedSources].CurrentValues}"
+          SelectedValue="{Binding ItemsHolder.Filters[DetailedSources].SelectedValue}"
           SelectionChanged="ComboBoxFilter_OnSelectionChanged" />
         <Button
           x:Name="btnResetFilters"
-          Grid.Row="5" Margin="5 1"
+          Grid.Row="5"
           Grid.Column="6"
-          Click="BtnResetFilters_Click"
+          Margin="5,1"
           Padding="0"
+          Click="BtnResetFilters_Click"
           Content="{Binding Converter={StaticResource Description}, ConverterParameter=1100}" />
       </Grid>
     </Border>
@@ -283,7 +311,7 @@
             HorizontalContentAlignment="Stretch"
             Background="Transparent"
             BorderBrush="Transparent"
-            ItemsSource="{Binding Path=Items}"
+            ItemsSource="{Binding Path=ItemsHolder.Items}"
             SelectedItem="{Binding Path=SelectedAsset}"
             SelectionChanged="ListBoxItems_OnSelectionChanged">
             <ListBox.ItemTemplate>
@@ -315,5 +343,4 @@
       <local:ItemCard Grid.Column="2" CanSwap="True" SelectedAsset="{Binding SelectedAsset}" />
     </Grid>
   </Grid>
-
 </UserControl>

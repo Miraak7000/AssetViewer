@@ -1,7 +1,9 @@
 ﻿using AssetViewer.Data;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Windows.Media.Effects;
 using System.Xml.Linq;
 
 namespace AssetViewer.Templates {
@@ -22,7 +24,8 @@ namespace AssetViewer.Templates {
     public Allocation Allocation { get; set; }
 
     //
-    public List<Description> EffectTargets { get; set; }
+    public List<EffectTarget> EffectTargets { get; set; }
+    public IEnumerable<Description> EffectBuildings => EffectTargets?.SelectMany(e => e.Buildings).Distinct();
 
     public Description EffectTargetInfo { get; set; }
     public Boolean HasEffectTargetInfo { get; set; }
@@ -84,7 +87,7 @@ namespace AssetViewer.Templates {
       this.Rarity = new Description(asset.Element("Rarity"));
       this.ItemType = asset.Element("ItemType").Value;
       this.Allocation = asset.Element("Allocation").HasElements ? new Allocation(asset.Element("Allocation")) : null;
-      this.EffectTargets = asset.Element("EffectTargets").Elements().Select(s => new Description(s)).ToList();
+      this.EffectTargets = asset.Element("EffectTargets").Elements().Select(s => new EffectTarget(s)).ToList();
       this.EffectTargetInfo = new Description("Affects ", "Beeinflusst ");
       this.ReleaseVersion = asset.Attribute("Release")?.Value;
       for (var i = 0; i < this.EffectTargets.Count; i++) {
@@ -92,8 +95,8 @@ namespace AssetViewer.Templates {
           this.EffectTargetInfo.EN += ", ";
           this.EffectTargetInfo.DE += ", ";
         }
-        this.EffectTargetInfo.EN += this.EffectTargets[i].EN;
-        this.EffectTargetInfo.DE += this.EffectTargets[i].DE;
+        this.EffectTargetInfo.EN += this.EffectTargets[i].Text.EN;
+        this.EffectTargetInfo.DE += this.EffectTargets[i].Text.DE;
       }
       this.HasEffectTargetInfo = this.EffectTargets.Count > 0;
       if (asset.Element("ItemSets") != null && asset.Element("ItemSets").HasElements) {

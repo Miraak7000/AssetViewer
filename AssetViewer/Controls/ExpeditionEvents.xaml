@@ -11,9 +11,9 @@
   mc:Ignorable="d">
   <UserControl.Resources>
     <converter:DescriptionConverter x:Key="DescriptionConverter" />
-    <converter:GlobalTranslationConverter x:Key="TranslationConverter"/>
+    <converter:GlobalTranslationConverter x:Key="TranslationConverter" />
     <converter:RewardToItemConverter x:Key="RewardToItemConverter" />
-    <converter:VisibilityConverter x:Key="VisibilityConverter"/>
+    <converter:VisibilityConverter x:Key="VisibilityConverter" />
     <CollectionViewSource x:Key="EventSource" Source="{Binding Events}" />
     <CollectionViewSource x:Key="PathsSource" Source="{Binding /Paths, Source={StaticResource EventSource}}" />
   </UserControl.Resources>
@@ -81,7 +81,7 @@
             <ListBox.ItemTemplate>
               <DataTemplate>
                 <Border BorderBrush="#FF554628" BorderThickness="1" CornerRadius="5">
-                  <StackPanel Margin="5 0 0 0">
+                  <StackPanel Margin="5,0,0,0">
                     <TextBlock Text="{Binding ID}" />
                     <ItemsControl ItemsSource="{Binding Options}" ScrollViewer.VerticalScrollBarVisibility="Disabled">
                       <ItemsControl.ItemTemplate>
@@ -92,8 +92,12 @@
                               <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
                             <StackPanel Grid.Column="0" Orientation="Horizontal">
-                              <TextBlock Margin="0 0 5 0" Foreground="Green" Text="{Binding OptionAttribute, Converter={StaticResource TranslationConverter}}" Visibility="{Binding OptionAttribute, Converter={StaticResource VisibilityConverter}}"/>
-                              <ItemsControl Margin="0 0 5 0" ItemsSource="{Binding Requirements}" Visibility="{Binding Requirements, Converter={StaticResource VisibilityConverter}}">
+                              <TextBlock
+                                Margin="0,0,5,0"
+                                Foreground="Green"
+                                Text="{Binding OptionAttribute, Converter={StaticResource TranslationConverter}}"
+                                Visibility="{Binding OptionAttribute, Converter={StaticResource VisibilityConverter}}" />
+                              <ItemsControl Margin="0,0,5,0" ItemsSource="{Binding Requirements}" Visibility="{Binding Requirements, Converter={StaticResource VisibilityConverter}}">
                                 <ItemsControl.ItemTemplate>
                                   <DataTemplate>
                                     <TextBlock Foreground="Red" Text="{Binding NeededAttribute, Converter={StaticResource TranslationConverter}}" />

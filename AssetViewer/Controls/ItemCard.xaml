@@ -22,8 +22,8 @@
       <Grid SnapsToDevicePixels="True">
         <Grid.Resources>
           <Style TargetType="TextBlock">
-            <Setter Property="VerticalAlignment" Value="Top"/>
-            <Setter Property="MinHeight" Value="22"/>
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="MinHeight" Value="22" />
             <Style.Triggers>
               <Trigger Property="Text" Value="">
                 <Setter Property="Visibility" Value="Collapsed" />
@@ -83,11 +83,11 @@
       </Grid>
     </DataTemplate>-->
     <DataTemplate x:Key="UpgradeTemplate">
-      <Grid SnapsToDevicePixels="True" >
+      <Grid SnapsToDevicePixels="True">
         <Grid.Resources>
           <Style TargetType="TextBlock">
-            <Setter Property="VerticalAlignment" Value="Top"/>
-            <Setter Property="MinHeight" Value="22"/>
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="MinHeight" Value="22" />
             <Style.Triggers>
               <Trigger Property="Text" Value="">
                 <Setter Property="Visibility" Value="Collapsed" />
@@ -122,7 +122,7 @@
           <ContentPresenter Content="{Binding Path=Text}" />
           <ContentPresenter Content="{Binding Path=Text.AdditionalInformation}" />
         </StackPanel>
-        <TextBlock 
+        <TextBlock
           Grid.Row="0"
           Grid.Column="2"
           local:TextBlockExtensions.DescFontStyle="{Binding Text.FontStyle}"
@@ -146,9 +146,7 @@
                   Height="18"
                   HorizontalAlignment="Left"
                   Source="{Binding Path=Text.Icon.Filename}" />
-                <ContentPresenter
-                  Grid.Column="1"
-                  Content="{Binding Path=Text}" />
+                <ContentPresenter Grid.Column="1" Content="{Binding Path=Text}" />
                 <TextBlock
                   Grid.Column="2"
                   VerticalAlignment="Top"
@@ -256,13 +254,22 @@
                 Opacity="0.5" />
             </StackPanel>
             <!--  Target  -->
-            <StackPanel Visibility="{Binding Path=SelectedAsset.HasEffectTargetInfo, Converter={StaticResource BooleanToVisibility}}">
+            <StackPanel
+              Background="Transparent"
+              ToolTipService.InitialShowDelay="0"
+              ToolTipService.ShowDuration="60000"
+              Visibility="{Binding Path=SelectedAsset.HasEffectTargetInfo, Converter={StaticResource BooleanToVisibility}}">
               <TextBlock
                 Margin="0,0,14,5"
                 VerticalAlignment="Top"
                 Foreground="#FFA49370"
                 Text="{Binding Path=SelectedAsset.EffectTargetInfo, Converter={StaticResource DescriptionConverter}}"
                 TextWrapping="Wrap" />
+              <StackPanel.ToolTip>
+                <ToolTip DataContext="{Binding PlacementTarget.DataContext, RelativeSource={RelativeSource Self}}">
+                  <ItemsControl ItemsSource="{Binding SelectedAsset.EffectBuildings}" DisplayMemberPath="CurrentLang"/>
+                </ToolTip>
+              </StackPanel.ToolTip>
             </StackPanel>
 
             <!--  ItemActionUpgrades  -->

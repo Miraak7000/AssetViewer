@@ -166,7 +166,28 @@
     <IncidentInfectableUpgrades />
     <IncidentInfluencerUpgrades />
     <ItemGeneratorUpgrades />
-    <ItemActionUpgrades />
+    <ItemActionUpgrades>
+      <Upgrade>
+        <Text ID="2423" FontStyle="16">
+          <EN>Duration</EN>
+          <DE>Dauer</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
+          </Icon>
+        </Text>
+        <Value>05</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2424" FontStyle="16">
+          <EN>Cooldown</EN>
+          <DE>Aufladung</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_wait_till_full.png</Filename>
+          </Icon>
+        </Text>
+        <Value>00:15</Value>
+      </Upgrade>
+    </ItemActionUpgrades>
     <ShipyardUpgrades />
     <KontorUpgrades />
     <TradePrice>250</TradePrice>
@@ -760,7 +781,7 @@
             <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
           </Icon>
         </Text>
-        <Value>00:30</Value>
+        <Value>30</Value>
       </Upgrade>
       <Upgrade>
         <Text ID="2424" FontStyle="16">
@@ -971,7 +992,7 @@
             <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
           </Icon>
         </Text>
-        <Value>00:30</Value>
+        <Value>30</Value>
       </Upgrade>
       <Upgrade>
         <Text ID="2424" FontStyle="16">
@@ -1186,7 +1207,7 @@
             <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
           </Icon>
         </Text>
-        <Value>00:30</Value>
+        <Value>30</Value>
       </Upgrade>
       <Upgrade>
         <Text ID="2424" FontStyle="16">
@@ -1690,7 +1711,7 @@
             <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
           </Icon>
         </Text>
-        <Value>00:30</Value>
+        <Value>30</Value>
       </Upgrade>
       <Upgrade>
         <Text ID="2424" FontStyle="16">
@@ -1967,12 +1988,35 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="45">
-            <EN>Sir Archibald Blake</EN>
-            <DE>Sir Archibald Blake</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
-            </Icon>
+          <Text ID="">
+            <EN>Early Game</EN>
+            <DE>Frühes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Early-Mid Game</EN>
+            <DE>Frühes-Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
           </Text>
         </Details>
       </Source>
@@ -1986,12 +2030,35 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="29">
-            <EN>Isabel Sarmento</EN>
-            <DE>Isabel Sarmento</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
-            </Icon>
+          <Text ID="">
+            <EN>Early Game</EN>
+            <DE>Frühes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Early-Mid Game</EN>
+            <DE>Frühes-Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
           </Text>
         </Details>
       </Source>
@@ -2805,12 +2872,35 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="29">
-            <EN>Isabel Sarmento</EN>
-            <DE>Isabel Sarmento</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
-            </Icon>
+          <Text ID="">
+            <EN>Early Game</EN>
+            <DE>Frühes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Early-Mid Game</EN>
+            <DE>Frühes-Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
           </Text>
         </Details>
       </Source>
@@ -2824,12 +2914,25 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="76">
-            <EN>Jean La Fortune</EN>
-            <DE>Jean La Fortune</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
-            </Icon>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
           </Text>
         </Details>
       </Source>
@@ -3412,7 +3515,7 @@
             <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
           </Icon>
         </Text>
-        <Value>00:30</Value>
+        <Value>30</Value>
       </Upgrade>
       <Upgrade>
         <Text ID="2424" FontStyle="16">
@@ -3689,12 +3792,25 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="45">
-            <EN>Sir Archibald Blake</EN>
-            <DE>Sir Archibald Blake</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
-            </Icon>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
           </Text>
         </Details>
       </Source>
@@ -3708,12 +3824,35 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="29">
-            <EN>Isabel Sarmento</EN>
-            <DE>Isabel Sarmento</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
-            </Icon>
+          <Text ID="">
+            <EN>Early Game</EN>
+            <DE>Frühes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Early-Mid Game</EN>
+            <DE>Frühes-Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
           </Text>
         </Details>
       </Source>
@@ -3736,8 +3875,8 @@
           </Text>
         </Details>
       </Source>
-      <Source ID="150075">
-        <Name>Deliver Potatoes - Jorgensen</Name>
+      <Source ID="152611">
+        <Name>Smuggle In Love With The Devil 1 - Ready For Love - Bente</Name>
         <Text ID="47">
           <EN>Quest - Bente Jorgensen</EN>
           <DE>Quest - Bente Jorgensen</DE>
@@ -3746,126 +3885,6 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="150075">
-            <EN>Pet Food</EN>
-            <DE>Tierfutter</DE>
-            <Icon />
-          </Text>
-          <Text ID="150077">
-            <EN>Pigs on Parade</EN>
-            <DE>Schweineparade</DE>
-            <Icon />
-          </Text>
-          <Text ID="150119">
-            <EN>Goodbye Butterfly</EN>
-            <DE>Libellei</DE>
-            <Icon />
-          </Text>
-          <Text ID="150143">
-            <EN>Feeding the Five-Thousand</EN>
-            <DE>Speisung der Fünftausend</DE>
-            <Icon />
-          </Text>
-          <Text ID="150144">
-            <EN>Kid in a Sweet Shop</EN>
-            <DE>Wie ein Kind im Schokoladenladen</DE>
-            <Icon />
-          </Text>
-          <Text ID="150178">
-            <EN>Emergency Blankets</EN>
-            <DE>Notfalldecken</DE>
-            <Icon />
-          </Text>
-          <Text ID="150179">
-            <EN>The Pescatarian</EN>
-            <DE>Der Pescetarier</DE>
-            <Icon />
-          </Text>
-          <Text ID="150180">
-            <EN>Rubber Soul</EN>
-            <DE>Gummi statt Leder</DE>
-            <Icon />
-          </Text>
-          <Text ID="150083">
-            <EN>Hunter Becomes The Hunted</EN>
-            <DE>Vom Jäger zum Gejagten</DE>
-            <Icon />
-          </Text>
-          <Text ID="150098">
-            <EN>First Class Foul-Up</EN>
-            <DE>Unglück erster Klasse</DE>
-            <Icon />
-          </Text>
-          <Text ID="150159">
-            <EN>Jetsam Jinx</EN>
-            <DE>Vermaledeites Mitbringsel</DE>
-            <Icon />
-          </Text>
-          <Text ID="150207">
-            <EN>Eco-Warrior</EN>
-            <DE>Öko-Krieger</DE>
-            <Icon />
-          </Text>
-          <Text ID="150480">
-            <EN>Damp Feathers</EN>
-            <DE>Klamme Federn</DE>
-            <Icon />
-          </Text>
-          <Text ID="152492">
-            <EN>Animal Rescue</EN>
-            <DE>Tierrettung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152491">
-            <EN>Cultural Reappropriation</EN>
-            <DE>Kulturelle Wiederaneignung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152487">
-            <EN>Pet Shop Girl</EN>
-            <DE>Exotische Lieferung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152623">
-            <EN>Children's Charity 1 — Charity Begins At Home</EN>
-            <DE>Kinderfürsorge 1 - Nächstenliebe beginnt zu Hause</DE>
-            <Icon />
-          </Text>
-          <Text ID="152635">
-            <EN>§--152635--§</EN>
-            <DE>Ladehemmungen</DE>
-            <Icon />
-          </Text>
-          <Text ID="152616">
-            <EN>In Love With The Devil 3 — Heartbreak</EN>
-            <DE>Verliebt in den Teufel 3 - Herzeleid</DE>
-            <Icon />
-          </Text>
-          <Text ID="152631">
-            <EN>Children's Charity 3 — Most Apologetic</EN>
-            <DE>Kinderfürsorge 3 - Große Entschuldigung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152636">
-            <EN>§--152636--§</EN>
-            <DE>Ladehemmungen</DE>
-            <Icon />
-          </Text>
-          <Text ID="152759">
-            <EN>Bente's Tip-Top Expedition 3 — Help, Mummy!</EN>
-            <DE>Bentes Tipptopp-Expedition 3 - Hilfe, eine Mumie!</DE>
-            <Icon />
-          </Text>
-          <Text ID="152760">
-            <EN>Bente's Tip-Top Expedition 4 — The Curse of Choice</EN>
-            <DE>Bentes Tipptopp-Expedition 4 - Der Fluch der Entscheidung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152598">
-            <EN>Slimy Seduction 4 — An Offer He Cannot Accept</EN>
-            <DE>Schleimige Verführung 4 - Ein Angebot, das er nicht annehmen kann</DE>
-            <Icon />
-          </Text>
           <Text ID="152611">
             <EN>In Love With The Devil 1 — Bride-To-Be</EN>
             <DE>Verliebt in den Teufel 1 - Zukünftige Braut</DE>
@@ -3892,8 +3911,8 @@
           </Text>
         </Details>
       </Source>
-      <Source ID="151138">
-        <Name>Deliver Bread - Vicente</Name>
+      <Source ID="151155">
+        <Name>Down with Anne Harlow 3 - Vicente</Name>
         <Text ID="84">
           <EN>Quest - Admiral Vicente Silva</EN>
           <DE>Quest - Admiral Vicente Silva</DE>
@@ -3902,126 +3921,6 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="151138">
-            <EN>Regimental Baker</EN>
-            <DE>Backwahn</DE>
-            <Icon />
-          </Text>
-          <Text ID="151139">
-            <EN>Live by the Sword</EN>
-            <DE>Lebe durch das Schwert</DE>
-            <Icon />
-          </Text>
-          <Text ID="151140">
-            <EN>Man O' War</EN>
-            <DE>Flotte Flotte</DE>
-            <Icon />
-          </Text>
-          <Text ID="151141">
-            <EN>Fabian Strategy</EN>
-            <DE>Abnutzungsstrategie</DE>
-            <Icon />
-          </Text>
-          <Text ID="151142">
-            <EN>Coup De Main</EN>
-            <DE>Erstschlag</DE>
-            <Icon />
-          </Text>
-          <Text ID="151152">
-            <EN>Flare Up</EN>
-            <DE>Knallcharge</DE>
-            <Icon />
-          </Text>
-          <Text ID="152419">
-            <EN>Cod War</EN>
-            <DE>Dreister Fischzug</DE>
-            <Icon />
-          </Text>
-          <Text ID="152421">
-            <EN>Root Cause</EN>
-            <DE>Grundübel</DE>
-            <Icon />
-          </Text>
-          <Text ID="152422">
-            <EN>Not Fond Of Children</EN>
-            <DE>Keine Lust auf Kinder</DE>
-            <Icon />
-          </Text>
-          <Text ID="152423">
-            <EN>Cannon Fodder</EN>
-            <DE>Kanonenfutter</DE>
-            <Icon />
-          </Text>
-          <Text ID="152425">
-            <EN>Pastry War</EN>
-            <DE>Die Hefe des Krieges</DE>
-            <Icon />
-          </Text>
-          <Text ID="152426">
-            <EN>Leadership Training</EN>
-            <DE>Anführerfortbildung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152427">
-            <EN>Fart of War</EN>
-            <DE>Gunst des Krieges</DE>
-            <Icon />
-          </Text>
-          <Text ID="152428">
-            <EN>Scouting for Love</EN>
-            <DE>Suche nach Liebe</DE>
-            <Icon />
-          </Text>
-          <Text ID="152435">
-            <EN>A Fickle Foe 1 — Nemesis</EN>
-            <DE>Ein launischer Gegner 1 - Erzfeind</DE>
-            <Icon />
-          </Text>
-          <Text ID="151146">
-            <EN>Family Man 2 — Negligence</EN>
-            <DE>Familienmensch 2 - Vernachlässigung</DE>
-            <Icon />
-          </Text>
-          <Text ID="151149">
-            <EN>Pax Sinica 2 — The Spy Among Us</EN>
-            <DE>Pax Sinica 2 — Spione unter uns</DE>
-            <Icon />
-          </Text>
-          <Text ID="151154">
-            <EN>Bashing the Buccaneers 2 — Harlow's Revenge</EN>
-            <DE>Freibeutervernichtung 2 - Harlows Rache</DE>
-            <Icon />
-          </Text>
-          <Text ID="152038">
-            <EN>A Diplomatic Minefield 2 — While The Iron Is Hot</EN>
-            <DE>Ein diplomatisches Minenfeld 2 — Solange das Eisen heiß ist</DE>
-            <Icon />
-          </Text>
-          <Text ID="152569">
-            <EN>War And Peace 2 — Thanks But No Thanks</EN>
-            <DE>Krieg und Frieden 2 — Danke, aber nein Danke</DE>
-            <Icon />
-          </Text>
-          <Text ID="152046">
-            <EN>A Gap in the Armour 2 — Show of Force</EN>
-            <DE>Ein Loch in der Rüstung 2 - Machtdemonstration</DE>
-            <Icon />
-          </Text>
-          <Text ID="152047">
-            <EN>A Gap in the Armour 3 — Armada Grande</EN>
-            <DE>Ein Loch in der Rüstung 3 - Unbesiegbare Armada</DE>
-            <Icon />
-          </Text>
-          <Text ID="152048">
-            <EN>A Gap in the Armour 4 — At a Crossroads</EN>
-            <DE>Ein Loch in der Rüstung 4 - Am Scheideweg</DE>
-            <Icon />
-          </Text>
-          <Text ID="152049">
-            <EN>A Gap in the Armour 4 — Mushing the Movement</EN>
-            <DE>Ein Loch in der Rüstung 4 - Die Bewegung bezwingen</DE>
-            <Icon />
-          </Text>
           <Text ID="151155">
             <EN>Bashing the Buccaneers 3 — Harlow's End</EN>
             <DE>Freibeutervernichtung 3 - Harlows Ende</DE>
@@ -4059,8 +3958,8 @@
           </Text>
         </Details>
       </Source>
-      <Source ID="150115">
-        <Name>Close But No Cigar - Archibald Blake</Name>
+      <Source ID="150190">
+        <Name>Creaming the Colonials - Archibald Blake</Name>
         <Text ID="45">
           <EN>Quest - Sir Archibald Blake</EN>
           <DE>Quest - Sir Archibald Blake</DE>
@@ -4069,91 +3968,6 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="150115">
-            <EN>Close But No Cigar</EN>
-            <DE>Viel Rauch um nichts</DE>
-            <Icon />
-          </Text>
-          <Text ID="150116">
-            <EN>Alms Dealing</EN>
-            <DE>Royaler Almosenier</DE>
-            <Icon />
-          </Text>
-          <Text ID="150141">
-            <EN>Creative Block</EN>
-            <DE>Kreative Blockade</DE>
-            <Icon />
-          </Text>
-          <Text ID="150168">
-            <EN>An Icy Reception</EN>
-            <DE>Ein eisiger Empfang</DE>
-            <Icon />
-          </Text>
-          <Text ID="150169">
-            <EN>Would You Credit It!</EN>
-            <DE>Meine Schuld!</DE>
-            <Icon />
-          </Text>
-          <Text ID="150170">
-            <EN>The Gift Of Music</EN>
-            <DE>Die muskalische Gabe</DE>
-            <Icon />
-          </Text>
-          <Text ID="150127">
-            <EN>The End of an Era</EN>
-            <DE>Das Ende einer Ära</DE>
-            <Icon />
-          </Text>
-          <Text ID="150226">
-            <EN>Art Attack</EN>
-            <DE>Kunstbanausen</DE>
-            <Icon />
-          </Text>
-          <Text ID="150152">
-            <EN>Rain Stopped Play</EN>
-            <DE>Verhageltes Stelldichein</DE>
-            <Icon />
-          </Text>
-          <Text ID="150224">
-            <EN>Artefact-Finding</EN>
-            <DE>Sucher des verlorenen Schatzes</DE>
-            <Icon />
-          </Text>
-          <Text ID="150237">
-            <EN>Better Safe Than Sorry</EN>
-            <DE>Vorsicht ist die Mutter der Porzelankiste</DE>
-            <Icon />
-          </Text>
-          <Text ID="150238">
-            <EN>Torpedo Fish</EN>
-            <DE>Torpedofisch</DE>
-            <Icon />
-          </Text>
-          <Text ID="152199">
-            <EN>A Right Royal Boo-Boo</EN>
-            <DE>Königliche Kalamitäten</DE>
-            <Icon />
-          </Text>
-          <Text ID="150225">
-            <EN>Lost Sheep</EN>
-            <DE>Verlorene Schafe</DE>
-            <Icon />
-          </Text>
-          <Text ID="152213">
-            <EN>Birthday Treat</EN>
-            <DE>Geburtstagsschmankerl</DE>
-            <Icon />
-          </Text>
-          <Text ID="150241">
-            <EN>Escort Wood Expedition</EN>
-            <DE>Er und sein Holz</DE>
-            <Icon />
-          </Text>
-          <Text ID="152581">
-            <EN>The Executioner's Mask 2 — Error of Judgement</EN>
-            <DE>Die Grube und das Pendel 2 - Fehlurteil</DE>
-            <Icon />
-          </Text>
           <Text ID="150190">
             <EN>Creaming La Corona</EN>
             <DE>Kolonialer Kehraus</DE>
@@ -4162,113 +3976,6 @@
           <Text ID="150192">
             <EN>Sad State Of Affairs</EN>
             <DE>Beschädigte Beziehungen</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="150292">
-        <Name>Keeping Up - Sarmento</Name>
-        <Text ID="29">
-          <EN>Quest - Isabel Sarmento</EN>
-          <DE>Quest - Isabel Sarmento</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="150292">
-            <EN>Keeping Up</EN>
-            <DE>Mit der Zeit gehen</DE>
-            <Icon />
-          </Text>
-          <Text ID="150290">
-            <EN>Charity Collection</EN>
-            <DE>Spenden für den guten Zweck</DE>
-            <Icon />
-          </Text>
-          <Text ID="152582">
-            <EN>The Strangled Revolution</EN>
-            <DE>Die erstickte Revolution</DE>
-            <Icon />
-          </Text>
-          <Text ID="152583">
-            <EN>Guerrilla War</EN>
-            <DE>Guerillakrieg</DE>
-            <Icon />
-          </Text>
-          <Text ID="150276">
-            <EN>Rotten Apples</EN>
-            <DE>Schwarze Schafe</DE>
-            <Icon />
-          </Text>
-          <Text ID="150294">
-            <EN>Slow Them Down</EN>
-            <DE>Haltet sie auf!</DE>
-            <Icon />
-          </Text>
-          <Text ID="150295">
-            <EN>Biting the Bait</EN>
-            <DE>Angebissen</DE>
-            <Icon />
-          </Text>
-          <Text ID="150341">
-            <EN>Liberation</EN>
-            <DE>Befreiung</DE>
-            <Icon />
-          </Text>
-          <Text ID="150281">
-            <EN>Enemy Salvage</EN>
-            <DE>Feindliche Bergung</DE>
-            <Icon />
-          </Text>
-          <Text ID="150297">
-            <EN>Keep Your Cool</EN>
-            <DE>Einen kühlen Kopf bewahren</DE>
-            <Icon />
-          </Text>
-          <Text ID="150299">
-            <EN>Catching Up</EN>
-            <DE>Nacheifern</DE>
-            <Icon />
-          </Text>
-          <Text ID="150296">
-            <EN>Royal Delivery</EN>
-            <DE>Königliche Lieferung</DE>
-            <Icon />
-          </Text>
-          <Text ID="150342">
-            <EN>The Next Move</EN>
-            <DE>Spionage</DE>
-            <Icon />
-          </Text>
-          <Text ID="150343">
-            <EN>§--150343--§</EN>
-            <DE>Starting From Scratch (TBC - Quest not yet written)</DE>
-            <Icon />
-          </Text>
-          <Text ID="152584">
-            <EN>Crossing the Border</EN>
-            <DE>Grenzüberquerung</DE>
-            <Icon />
-          </Text>
-          <Text ID="150270">
-            <EN>Shared Objectives</EN>
-            <DE>Gemeinsame Ziele</DE>
-            <Icon />
-          </Text>
-          <Text ID="152050">
-            <EN>A Gap in the Armour 4 — Opportunity Knocks</EN>
-            <DE>Ein Loch in der Rüstung 4 - Die Gelegenheit klopft an</DE>
-            <Icon />
-          </Text>
-          <Text ID="150293">
-            <EN>Reinforcements</EN>
-            <DE>Verstärkung</DE>
-            <Icon />
-          </Text>
-          <Text ID="150300">
-            <EN>Risky Business</EN>
-            <DE>Riskante Geschäfte</DE>
             <Icon />
           </Text>
         </Details>
@@ -4669,12 +4376,35 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="29">
-            <EN>Isabel Sarmento</EN>
-            <DE>Isabel Sarmento</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
-            </Icon>
+          <Text ID="">
+            <EN>Early Game</EN>
+            <DE>Frühes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Early-Mid Game</EN>
+            <DE>Frühes-Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
           </Text>
         </Details>
       </Source>
@@ -4688,12 +4418,25 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="76">
-            <EN>Jean La Fortune</EN>
-            <DE>Jean La Fortune</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
-            </Icon>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
           </Text>
         </Details>
       </Source>
@@ -5442,7 +5185,7 @@
             <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
           </Icon>
         </Text>
-        <Value>00:30</Value>
+        <Value>30</Value>
       </Upgrade>
       <Upgrade>
         <Text ID="2424" FontStyle="16">
@@ -5625,7 +5368,7 @@
             <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
           </Icon>
         </Text>
-        <Value>00:30</Value>
+        <Value>30</Value>
       </Upgrade>
       <Upgrade>
         <Text ID="2424" FontStyle="16">
@@ -5902,12 +5645,30 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="45">
-            <EN>Sir Archibald Blake</EN>
-            <DE>Sir Archibald Blake</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
-            </Icon>
+          <Text ID="">
+            <EN>Early-Mid Game</EN>
+            <DE>Frühes-Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
           </Text>
         </Details>
       </Source>
@@ -5921,12 +5682,35 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="29">
-            <EN>Isabel Sarmento</EN>
-            <DE>Isabel Sarmento</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
-            </Icon>
+          <Text ID="">
+            <EN>Early Game</EN>
+            <DE>Frühes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Early-Mid Game</EN>
+            <DE>Frühes-Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
           </Text>
         </Details>
       </Source>
@@ -6691,7 +6475,7 @@
             <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
           </Icon>
         </Text>
-        <Value>00:30</Value>
+        <Value>30</Value>
       </Upgrade>
       <Upgrade>
         <Text ID="2424" FontStyle="16">
@@ -6968,12 +6752,35 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="45">
-            <EN>Sir Archibald Blake</EN>
-            <DE>Sir Archibald Blake</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
-            </Icon>
+          <Text ID="">
+            <EN>Early Game</EN>
+            <DE>Frühes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Early-Mid Game</EN>
+            <DE>Frühes-Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
           </Text>
         </Details>
       </Source>
@@ -6987,12 +6794,35 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="29">
-            <EN>Isabel Sarmento</EN>
-            <DE>Isabel Sarmento</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
-            </Icon>
+          <Text ID="">
+            <EN>Early Game</EN>
+            <DE>Frühes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Early-Mid Game</EN>
+            <DE>Frühes-Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
           </Text>
         </Details>
       </Source>
@@ -7006,12 +6836,25 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="76">
-            <EN>Jean La Fortune</EN>
-            <DE>Jean La Fortune</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
-            </Icon>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
           </Text>
         </Details>
       </Source>
@@ -7708,7 +7551,7 @@
             <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
           </Icon>
         </Text>
-        <Value>00:30</Value>
+        <Value>30</Value>
       </Upgrade>
       <Upgrade>
         <Text ID="2424" FontStyle="16">
@@ -8097,12 +7940,30 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="45">
-            <EN>Sir Archibald Blake</EN>
-            <DE>Sir Archibald Blake</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
-            </Icon>
+          <Text ID="">
+            <EN>Early-Mid Game</EN>
+            <DE>Frühes-Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
           </Text>
         </Details>
       </Source>
@@ -8116,12 +7977,35 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="29">
-            <EN>Isabel Sarmento</EN>
-            <DE>Isabel Sarmento</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
-            </Icon>
+          <Text ID="">
+            <EN>Early Game</EN>
+            <DE>Frühes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Early-Mid Game</EN>
+            <DE>Frühes-Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
           </Text>
         </Details>
       </Source>
@@ -8135,12 +8019,25 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="76">
-            <EN>Jean La Fortune</EN>
-            <DE>Jean La Fortune</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
-            </Icon>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
           </Text>
         </Details>
       </Source>
@@ -8730,7 +8627,7 @@
             <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
           </Icon>
         </Text>
-        <Value>00:30</Value>
+        <Value>30</Value>
       </Upgrade>
       <Upgrade>
         <Text ID="2424" FontStyle="16">
@@ -9007,12 +8904,25 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="45">
-            <EN>Sir Archibald Blake</EN>
-            <DE>Sir Archibald Blake</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
-            </Icon>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
           </Text>
         </Details>
       </Source>
@@ -9026,12 +8936,35 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="29">
-            <EN>Isabel Sarmento</EN>
-            <DE>Isabel Sarmento</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
-            </Icon>
+          <Text ID="">
+            <EN>Early Game</EN>
+            <DE>Frühes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Early-Mid Game</EN>
+            <DE>Frühes-Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
           </Text>
         </Details>
       </Source>
@@ -9045,12 +8978,25 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="76">
-            <EN>Jean La Fortune</EN>
-            <DE>Jean La Fortune</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
-            </Icon>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
           </Text>
         </Details>
       </Source>
@@ -9073,8 +9019,8 @@
           </Text>
         </Details>
       </Source>
-      <Source ID="152294">
-        <Name>Deliver Bandages - George Smith</Name>
+      <Source ID="152669">
+        <Name>Robin Hood Archibald Eli - George Smith</Name>
         <Text ID="81">
           <EN>Quest - George Smith</EN>
           <DE>Quest - George Smith</DE>
@@ -9083,101 +9029,6 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="152294">
-            <EN>Knight Hospitaller</EN>
-            <DE>Barmherziger Samariter</DE>
-            <Icon />
-          </Text>
-          <Text ID="152307">
-            <EN>Rail Tycoon</EN>
-            <DE>Eisenbahn-Tycoon</DE>
-            <Icon />
-          </Text>
-          <Text ID="152296">
-            <EN>Steam Dream</EN>
-            <DE>Hans Dampf</DE>
-            <Icon />
-          </Text>
-          <Text ID="152297">
-            <EN>Welcome to the Machine</EN>
-            <DE>Mechanisierung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152458">
-            <EN>The Nightingales</EN>
-            <DE>Karbolmäuschen</DE>
-            <Icon />
-          </Text>
-          <Text ID="152301">
-            <EN>Abolition</EN>
-            <DE>Sklavenbefreiung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152303">
-            <EN>Time For Reflection</EN>
-            <DE>Zeit zur Besinnung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152463">
-            <EN>Pipeline of Legislation</EN>
-            <DE>Rohrleitung der Gesetzgebung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152466">
-            <EN>Forced Transfer</EN>
-            <DE>Übernahme in Arbeit</DE>
-            <Icon />
-          </Text>
-          <Text ID="152468">
-            <EN>Early Learning</EN>
-            <DE>Frühkindliche Bildung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152459">
-            <EN>Theft is Theft</EN>
-            <DE>Dieb bleibt Dieb</DE>
-            <Icon />
-          </Text>
-          <Text ID="152457">
-            <EN>In A New Light</EN>
-            <DE>In einem neuen Licht</DE>
-            <Icon />
-          </Text>
-          <Text ID="152481">
-            <EN>Open Book 1 — The Library</EN>
-            <DE>Offenes Buch 1 - Die Bibliothek</DE>
-            <Icon />
-          </Text>
-          <Text ID="152482">
-            <EN>Room At The Inn 1 — A Refuge</EN>
-            <DE>Zimmer im Gasthaus 1 - Eine Zuflucht</DE>
-            <Icon />
-          </Text>
-          <Text ID="152571">
-            <EN>Open Book 2 — Building the Collection</EN>
-            <DE>Offenes Buch 2 - Aufbau der Sammlung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152572">
-            <EN>Room At The Inn 2 — A Purpose</EN>
-            <DE>Zimmer im Gasthaus 2 - Eine Aufgabe</DE>
-            <Icon />
-          </Text>
-          <Text ID="152573">
-            <EN>Burden of a Lifetime 2 — Toy Box</EN>
-            <DE>Bürde eines Lebens 2 - Spielzeugkiste</DE>
-            <Icon />
-          </Text>
-          <Text ID="152574">
-            <EN>Burden of a Lifetime 3 — The Fight Goes On</EN>
-            <DE>Bürde eines Lebens 3 - Der Kampf geht weiter</DE>
-            <Icon />
-          </Text>
-          <Text ID="152576">
-            <EN>Burden of a Lifetime 5 — A Truth Shared</EN>
-            <DE>Bürde eines Lebens 5 - Geteilte Wahrheit</DE>
-            <Icon />
-          </Text>
           <Text ID="152669">
             <EN>Merry Men — Pardon</EN>
             <DE>Fröhliche Gefährten - Gnade</DE>
@@ -9200,8 +9051,8 @@
           </Text>
         </Details>
       </Source>
-      <Source ID="150115">
-        <Name>Close But No Cigar - Archibald Blake</Name>
+      <Source ID="150190">
+        <Name>Creaming the Colonials - Archibald Blake</Name>
         <Text ID="45">
           <EN>Quest - Sir Archibald Blake</EN>
           <DE>Quest - Sir Archibald Blake</DE>
@@ -9210,91 +9061,6 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="150115">
-            <EN>Close But No Cigar</EN>
-            <DE>Viel Rauch um nichts</DE>
-            <Icon />
-          </Text>
-          <Text ID="150116">
-            <EN>Alms Dealing</EN>
-            <DE>Royaler Almosenier</DE>
-            <Icon />
-          </Text>
-          <Text ID="150141">
-            <EN>Creative Block</EN>
-            <DE>Kreative Blockade</DE>
-            <Icon />
-          </Text>
-          <Text ID="150168">
-            <EN>An Icy Reception</EN>
-            <DE>Ein eisiger Empfang</DE>
-            <Icon />
-          </Text>
-          <Text ID="150169">
-            <EN>Would You Credit It!</EN>
-            <DE>Meine Schuld!</DE>
-            <Icon />
-          </Text>
-          <Text ID="150170">
-            <EN>The Gift Of Music</EN>
-            <DE>Die muskalische Gabe</DE>
-            <Icon />
-          </Text>
-          <Text ID="150127">
-            <EN>The End of an Era</EN>
-            <DE>Das Ende einer Ära</DE>
-            <Icon />
-          </Text>
-          <Text ID="150226">
-            <EN>Art Attack</EN>
-            <DE>Kunstbanausen</DE>
-            <Icon />
-          </Text>
-          <Text ID="150152">
-            <EN>Rain Stopped Play</EN>
-            <DE>Verhageltes Stelldichein</DE>
-            <Icon />
-          </Text>
-          <Text ID="150224">
-            <EN>Artefact-Finding</EN>
-            <DE>Sucher des verlorenen Schatzes</DE>
-            <Icon />
-          </Text>
-          <Text ID="150237">
-            <EN>Better Safe Than Sorry</EN>
-            <DE>Vorsicht ist die Mutter der Porzelankiste</DE>
-            <Icon />
-          </Text>
-          <Text ID="150238">
-            <EN>Torpedo Fish</EN>
-            <DE>Torpedofisch</DE>
-            <Icon />
-          </Text>
-          <Text ID="152199">
-            <EN>A Right Royal Boo-Boo</EN>
-            <DE>Königliche Kalamitäten</DE>
-            <Icon />
-          </Text>
-          <Text ID="150225">
-            <EN>Lost Sheep</EN>
-            <DE>Verlorene Schafe</DE>
-            <Icon />
-          </Text>
-          <Text ID="152213">
-            <EN>Birthday Treat</EN>
-            <DE>Geburtstagsschmankerl</DE>
-            <Icon />
-          </Text>
-          <Text ID="150241">
-            <EN>Escort Wood Expedition</EN>
-            <DE>Er und sein Holz</DE>
-            <Icon />
-          </Text>
-          <Text ID="152581">
-            <EN>The Executioner's Mask 2 — Error of Judgement</EN>
-            <DE>Die Grube und das Pendel 2 - Fehlurteil</DE>
-            <Icon />
-          </Text>
           <Text ID="150190">
             <EN>Creaming La Corona</EN>
             <DE>Kolonialer Kehraus</DE>
@@ -9326,8 +9092,8 @@
           </Text>
         </Details>
       </Source>
-      <Source ID="151920">
-        <Name>Deliver Weapons - Jean LaFortune</Name>
+      <Source ID="152928">
+        <Name>Pickup Delaying Death - Jean LaFortune</Name>
         <Text ID="76">
           <EN>Quest - Jean La Fortune</EN>
           <DE>Quest - Jean La Fortune</DE>
@@ -9336,206 +9102,9 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="151920">
-            <EN>Gunboat Diplomacy</EN>
-            <DE>Kanonenboot-Diplomatie</DE>
-            <Icon />
-          </Text>
-          <Text ID="151921">
-            <EN>A Pirate Without a Ship</EN>
-            <DE>Ein Pirat ohne Schiff</DE>
-            <Icon />
-          </Text>
-          <Text ID="151924">
-            <EN>New Rules</EN>
-            <DE>Neue Regeln</DE>
-            <Icon />
-          </Text>
-          <Text ID="151923">
-            <EN>No Honor Among Thieves</EN>
-            <DE>Keine Ehre unter Dieben</DE>
-            <Icon />
-          </Text>
-          <Text ID="152436">
-            <EN>No Honour Among Thieves</EN>
-            <DE>Keine Ehre unter Dieben</DE>
-            <Icon />
-          </Text>
-          <Text ID="152439">
-            <EN>The Rescue</EN>
-            <DE>Die Rettung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152444">
-            <EN>(TBC - Quest not yet written)</EN>
-            <DE>Mein lieber Ara!</DE>
-            <Icon />
-          </Text>
-          <Text ID="152445">
-            <EN>(TBC - Quest not yet written)</EN>
-            <DE>Mein lieber Ara!</DE>
-            <Icon />
-          </Text>
-          <Text ID="152446">
-            <EN>(TBC - Quest not yet written)</EN>
-            <DE>Mein lieber Ara!</DE>
-            <Icon />
-          </Text>
-          <Text ID="152447">
-            <EN>(TBC - Quest not yet written)</EN>
-            <DE>Mein lieber Ara!</DE>
-            <Icon />
-          </Text>
-          <Text ID="152448">
-            <EN>Lost Souls</EN>
-            <DE>Verlorene Seelen</DE>
-            <Icon />
-          </Text>
-          <Text ID="152451">
-            <EN>(TBC - Quest not yet written)</EN>
-            <DE>Verlorene Seelen</DE>
-            <Icon />
-          </Text>
-          <Text ID="151925">
-            <EN>Neutral Flag</EN>
-            <DE>Neutrale Flagge</DE>
-            <Icon />
-          </Text>
-          <Text ID="152455">
-            <EN>(TBC - Quest not yet written)</EN>
-            <DE>Neutrale Flagge</DE>
-            <Icon />
-          </Text>
-          <Text ID="151930">
-            <EN>Retaliation</EN>
-            <DE>Vergeltung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152469">
-            <EN>(TBC - Quest not yet written)</EN>
-            <DE>Vergeltung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152470">
-            <EN>(TBC - Quest not yet written)</EN>
-            <DE>Vergeltung</DE>
-            <Icon />
-          </Text>
-          <Text ID="151935">
-            <EN>To the Roots 4 — The Long-Overdue Reckoning</EN>
-            <DE>Zurück zu den Wurzeln 4 - Die lange überfällige Abrechnung</DE>
-            <Icon />
-          </Text>
           <Text ID="152928">
             <EN>Lost Souls</EN>
             <DE>Verlorene Seelen</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="150292">
-        <Name>Keeping Up - Sarmento</Name>
-        <Text ID="29">
-          <EN>Quest - Isabel Sarmento</EN>
-          <DE>Quest - Isabel Sarmento</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="150292">
-            <EN>Keeping Up</EN>
-            <DE>Mit der Zeit gehen</DE>
-            <Icon />
-          </Text>
-          <Text ID="150290">
-            <EN>Charity Collection</EN>
-            <DE>Spenden für den guten Zweck</DE>
-            <Icon />
-          </Text>
-          <Text ID="152582">
-            <EN>The Strangled Revolution</EN>
-            <DE>Die erstickte Revolution</DE>
-            <Icon />
-          </Text>
-          <Text ID="152583">
-            <EN>Guerrilla War</EN>
-            <DE>Guerillakrieg</DE>
-            <Icon />
-          </Text>
-          <Text ID="150276">
-            <EN>Rotten Apples</EN>
-            <DE>Schwarze Schafe</DE>
-            <Icon />
-          </Text>
-          <Text ID="150294">
-            <EN>Slow Them Down</EN>
-            <DE>Haltet sie auf!</DE>
-            <Icon />
-          </Text>
-          <Text ID="150295">
-            <EN>Biting the Bait</EN>
-            <DE>Angebissen</DE>
-            <Icon />
-          </Text>
-          <Text ID="150341">
-            <EN>Liberation</EN>
-            <DE>Befreiung</DE>
-            <Icon />
-          </Text>
-          <Text ID="150281">
-            <EN>Enemy Salvage</EN>
-            <DE>Feindliche Bergung</DE>
-            <Icon />
-          </Text>
-          <Text ID="150297">
-            <EN>Keep Your Cool</EN>
-            <DE>Einen kühlen Kopf bewahren</DE>
-            <Icon />
-          </Text>
-          <Text ID="150299">
-            <EN>Catching Up</EN>
-            <DE>Nacheifern</DE>
-            <Icon />
-          </Text>
-          <Text ID="150296">
-            <EN>Royal Delivery</EN>
-            <DE>Königliche Lieferung</DE>
-            <Icon />
-          </Text>
-          <Text ID="150342">
-            <EN>The Next Move</EN>
-            <DE>Spionage</DE>
-            <Icon />
-          </Text>
-          <Text ID="150343">
-            <EN>§--150343--§</EN>
-            <DE>Starting From Scratch (TBC - Quest not yet written)</DE>
-            <Icon />
-          </Text>
-          <Text ID="152584">
-            <EN>Crossing the Border</EN>
-            <DE>Grenzüberquerung</DE>
-            <Icon />
-          </Text>
-          <Text ID="150270">
-            <EN>Shared Objectives</EN>
-            <DE>Gemeinsame Ziele</DE>
-            <Icon />
-          </Text>
-          <Text ID="152050">
-            <EN>A Gap in the Armour 4 — Opportunity Knocks</EN>
-            <DE>Ein Loch in der Rüstung 4 - Die Gelegenheit klopft an</DE>
-            <Icon />
-          </Text>
-          <Text ID="150293">
-            <EN>Reinforcements</EN>
-            <DE>Verstärkung</DE>
-            <Icon />
-          </Text>
-          <Text ID="150300">
-            <EN>Risky Business</EN>
-            <DE>Riskante Geschäfte</DE>
             <Icon />
           </Text>
         </Details>
@@ -9747,7 +9316,7 @@
             <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
           </Icon>
         </Text>
-        <Value>00:30</Value>
+        <Value>30</Value>
       </Upgrade>
       <Upgrade>
         <Text ID="2424" FontStyle="16">
@@ -9803,44 +9372,6 @@
             <EN>Jolly Roger 1.2.1.2.1</EN>
             <DE>Piratenflagge 1.2.1.2.1</DE>
             <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="45">
-        <Name>Third_party_02 (Archibald Blake)</Name>
-        <Text ID="45">
-          <EN>Harbour - Sir Archibald Blake</EN>
-          <DE>Hafen - Sir Archibald Blake</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="45">
-            <EN>Sir Archibald Blake</EN>
-            <DE>Sir Archibald Blake</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="29">
-        <Name>Third_party_05 (Isabel Sarmento)</Name>
-        <Text ID="29">
-          <EN>Harbour - Isabel Sarmento</EN>
-          <DE>Hafen - Isabel Sarmento</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="29">
-            <EN>Isabel Sarmento</EN>
-            <DE>Isabel Sarmento</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
-            </Icon>
           </Text>
         </Details>
       </Source>
@@ -9996,8 +9527,8 @@
           </Text>
         </Details>
       </Source>
-      <Source ID="152294">
-        <Name>Deliver Bandages - George Smith</Name>
+      <Source ID="152669">
+        <Name>Robin Hood Archibald Eli - George Smith</Name>
         <Text ID="81">
           <EN>Quest - George Smith</EN>
           <DE>Quest - George Smith</DE>
@@ -10006,101 +9537,6 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="152294">
-            <EN>Knight Hospitaller</EN>
-            <DE>Barmherziger Samariter</DE>
-            <Icon />
-          </Text>
-          <Text ID="152307">
-            <EN>Rail Tycoon</EN>
-            <DE>Eisenbahn-Tycoon</DE>
-            <Icon />
-          </Text>
-          <Text ID="152296">
-            <EN>Steam Dream</EN>
-            <DE>Hans Dampf</DE>
-            <Icon />
-          </Text>
-          <Text ID="152297">
-            <EN>Welcome to the Machine</EN>
-            <DE>Mechanisierung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152458">
-            <EN>The Nightingales</EN>
-            <DE>Karbolmäuschen</DE>
-            <Icon />
-          </Text>
-          <Text ID="152301">
-            <EN>Abolition</EN>
-            <DE>Sklavenbefreiung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152303">
-            <EN>Time For Reflection</EN>
-            <DE>Zeit zur Besinnung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152463">
-            <EN>Pipeline of Legislation</EN>
-            <DE>Rohrleitung der Gesetzgebung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152466">
-            <EN>Forced Transfer</EN>
-            <DE>Übernahme in Arbeit</DE>
-            <Icon />
-          </Text>
-          <Text ID="152468">
-            <EN>Early Learning</EN>
-            <DE>Frühkindliche Bildung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152459">
-            <EN>Theft is Theft</EN>
-            <DE>Dieb bleibt Dieb</DE>
-            <Icon />
-          </Text>
-          <Text ID="152457">
-            <EN>In A New Light</EN>
-            <DE>In einem neuen Licht</DE>
-            <Icon />
-          </Text>
-          <Text ID="152481">
-            <EN>Open Book 1 — The Library</EN>
-            <DE>Offenes Buch 1 - Die Bibliothek</DE>
-            <Icon />
-          </Text>
-          <Text ID="152482">
-            <EN>Room At The Inn 1 — A Refuge</EN>
-            <DE>Zimmer im Gasthaus 1 - Eine Zuflucht</DE>
-            <Icon />
-          </Text>
-          <Text ID="152571">
-            <EN>Open Book 2 — Building the Collection</EN>
-            <DE>Offenes Buch 2 - Aufbau der Sammlung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152572">
-            <EN>Room At The Inn 2 — A Purpose</EN>
-            <DE>Zimmer im Gasthaus 2 - Eine Aufgabe</DE>
-            <Icon />
-          </Text>
-          <Text ID="152573">
-            <EN>Burden of a Lifetime 2 — Toy Box</EN>
-            <DE>Bürde eines Lebens 2 - Spielzeugkiste</DE>
-            <Icon />
-          </Text>
-          <Text ID="152574">
-            <EN>Burden of a Lifetime 3 — The Fight Goes On</EN>
-            <DE>Bürde eines Lebens 3 - Der Kampf geht weiter</DE>
-            <Icon />
-          </Text>
-          <Text ID="152576">
-            <EN>Burden of a Lifetime 5 — A Truth Shared</EN>
-            <DE>Bürde eines Lebens 5 - Geteilte Wahrheit</DE>
-            <Icon />
-          </Text>
           <Text ID="152669">
             <EN>Merry Men — Pardon</EN>
             <DE>Fröhliche Gefährten - Gnade</DE>
@@ -10123,8 +9559,8 @@
           </Text>
         </Details>
       </Source>
-      <Source ID="150115">
-        <Name>Close But No Cigar - Archibald Blake</Name>
+      <Source ID="150190">
+        <Name>Creaming the Colonials - Archibald Blake</Name>
         <Text ID="45">
           <EN>Quest - Sir Archibald Blake</EN>
           <DE>Quest - Sir Archibald Blake</DE>
@@ -10133,91 +9569,6 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="150115">
-            <EN>Close But No Cigar</EN>
-            <DE>Viel Rauch um nichts</DE>
-            <Icon />
-          </Text>
-          <Text ID="150116">
-            <EN>Alms Dealing</EN>
-            <DE>Royaler Almosenier</DE>
-            <Icon />
-          </Text>
-          <Text ID="150141">
-            <EN>Creative Block</EN>
-            <DE>Kreative Blockade</DE>
-            <Icon />
-          </Text>
-          <Text ID="150168">
-            <EN>An Icy Reception</EN>
-            <DE>Ein eisiger Empfang</DE>
-            <Icon />
-          </Text>
-          <Text ID="150169">
-            <EN>Would You Credit It!</EN>
-            <DE>Meine Schuld!</DE>
-            <Icon />
-          </Text>
-          <Text ID="150170">
-            <EN>The Gift Of Music</EN>
-            <DE>Die muskalische Gabe</DE>
-            <Icon />
-          </Text>
-          <Text ID="150127">
-            <EN>The End of an Era</EN>
-            <DE>Das Ende einer Ära</DE>
-            <Icon />
-          </Text>
-          <Text ID="150226">
-            <EN>Art Attack</EN>
-            <DE>Kunstbanausen</DE>
-            <Icon />
-          </Text>
-          <Text ID="150152">
-            <EN>Rain Stopped Play</EN>
-            <DE>Verhageltes Stelldichein</DE>
-            <Icon />
-          </Text>
-          <Text ID="150224">
-            <EN>Artefact-Finding</EN>
-            <DE>Sucher des verlorenen Schatzes</DE>
-            <Icon />
-          </Text>
-          <Text ID="150237">
-            <EN>Better Safe Than Sorry</EN>
-            <DE>Vorsicht ist die Mutter der Porzelankiste</DE>
-            <Icon />
-          </Text>
-          <Text ID="150238">
-            <EN>Torpedo Fish</EN>
-            <DE>Torpedofisch</DE>
-            <Icon />
-          </Text>
-          <Text ID="152199">
-            <EN>A Right Royal Boo-Boo</EN>
-            <DE>Königliche Kalamitäten</DE>
-            <Icon />
-          </Text>
-          <Text ID="150225">
-            <EN>Lost Sheep</EN>
-            <DE>Verlorene Schafe</DE>
-            <Icon />
-          </Text>
-          <Text ID="152213">
-            <EN>Birthday Treat</EN>
-            <DE>Geburtstagsschmankerl</DE>
-            <Icon />
-          </Text>
-          <Text ID="150241">
-            <EN>Escort Wood Expedition</EN>
-            <DE>Er und sein Holz</DE>
-            <Icon />
-          </Text>
-          <Text ID="152581">
-            <EN>The Executioner's Mask 2 — Error of Judgement</EN>
-            <DE>Die Grube und das Pendel 2 - Fehlurteil</DE>
-            <Icon />
-          </Text>
           <Text ID="150190">
             <EN>Creaming La Corona</EN>
             <DE>Kolonialer Kehraus</DE>
@@ -10262,113 +9613,6 @@
           <Text ID="152928">
             <EN>Lost Souls</EN>
             <DE>Verlorene Seelen</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="150292">
-        <Name>Keeping Up - Sarmento</Name>
-        <Text ID="29">
-          <EN>Quest - Isabel Sarmento</EN>
-          <DE>Quest - Isabel Sarmento</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="150292">
-            <EN>Keeping Up</EN>
-            <DE>Mit der Zeit gehen</DE>
-            <Icon />
-          </Text>
-          <Text ID="150290">
-            <EN>Charity Collection</EN>
-            <DE>Spenden für den guten Zweck</DE>
-            <Icon />
-          </Text>
-          <Text ID="152582">
-            <EN>The Strangled Revolution</EN>
-            <DE>Die erstickte Revolution</DE>
-            <Icon />
-          </Text>
-          <Text ID="152583">
-            <EN>Guerrilla War</EN>
-            <DE>Guerillakrieg</DE>
-            <Icon />
-          </Text>
-          <Text ID="150276">
-            <EN>Rotten Apples</EN>
-            <DE>Schwarze Schafe</DE>
-            <Icon />
-          </Text>
-          <Text ID="150294">
-            <EN>Slow Them Down</EN>
-            <DE>Haltet sie auf!</DE>
-            <Icon />
-          </Text>
-          <Text ID="150295">
-            <EN>Biting the Bait</EN>
-            <DE>Angebissen</DE>
-            <Icon />
-          </Text>
-          <Text ID="150341">
-            <EN>Liberation</EN>
-            <DE>Befreiung</DE>
-            <Icon />
-          </Text>
-          <Text ID="150281">
-            <EN>Enemy Salvage</EN>
-            <DE>Feindliche Bergung</DE>
-            <Icon />
-          </Text>
-          <Text ID="150297">
-            <EN>Keep Your Cool</EN>
-            <DE>Einen kühlen Kopf bewahren</DE>
-            <Icon />
-          </Text>
-          <Text ID="150299">
-            <EN>Catching Up</EN>
-            <DE>Nacheifern</DE>
-            <Icon />
-          </Text>
-          <Text ID="150296">
-            <EN>Royal Delivery</EN>
-            <DE>Königliche Lieferung</DE>
-            <Icon />
-          </Text>
-          <Text ID="150342">
-            <EN>The Next Move</EN>
-            <DE>Spionage</DE>
-            <Icon />
-          </Text>
-          <Text ID="150343">
-            <EN>§--150343--§</EN>
-            <DE>Starting From Scratch (TBC - Quest not yet written)</DE>
-            <Icon />
-          </Text>
-          <Text ID="152584">
-            <EN>Crossing the Border</EN>
-            <DE>Grenzüberquerung</DE>
-            <Icon />
-          </Text>
-          <Text ID="150270">
-            <EN>Shared Objectives</EN>
-            <DE>Gemeinsame Ziele</DE>
-            <Icon />
-          </Text>
-          <Text ID="152050">
-            <EN>A Gap in the Armour 4 — Opportunity Knocks</EN>
-            <DE>Ein Loch in der Rüstung 4 - Die Gelegenheit klopft an</DE>
-            <Icon />
-          </Text>
-          <Text ID="150293">
-            <EN>Reinforcements</EN>
-            <DE>Verstärkung</DE>
-            <Icon />
-          </Text>
-          <Text ID="150300">
-            <EN>Risky Business</EN>
-            <DE>Riskante Geschäfte</DE>
             <Icon />
           </Text>
         </Details>
@@ -10901,12 +10145,25 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="73">
-            <EN>Anne Harlow</EN>
-            <DE>Anne Harlow</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
-            </Icon>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
           </Text>
         </Details>
       </Source>
@@ -10920,12 +10177,25 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="76">
-            <EN>Jean La Fortune</EN>
-            <DE>Jean La Fortune</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
-            </Icon>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
           </Text>
         </Details>
       </Source>
@@ -10967,8 +10237,8 @@
           </Text>
         </Details>
       </Source>
-      <Source ID="151920">
-        <Name>Deliver Weapons - Jean LaFortune</Name>
+      <Source ID="152928">
+        <Name>Pickup Delaying Death - Jean LaFortune</Name>
         <Text ID="76">
           <EN>Quest - Jean La Fortune</EN>
           <DE>Quest - Jean La Fortune</DE>
@@ -10977,96 +10247,6 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="151920">
-            <EN>Gunboat Diplomacy</EN>
-            <DE>Kanonenboot-Diplomatie</DE>
-            <Icon />
-          </Text>
-          <Text ID="151921">
-            <EN>A Pirate Without a Ship</EN>
-            <DE>Ein Pirat ohne Schiff</DE>
-            <Icon />
-          </Text>
-          <Text ID="151924">
-            <EN>New Rules</EN>
-            <DE>Neue Regeln</DE>
-            <Icon />
-          </Text>
-          <Text ID="151923">
-            <EN>No Honor Among Thieves</EN>
-            <DE>Keine Ehre unter Dieben</DE>
-            <Icon />
-          </Text>
-          <Text ID="152436">
-            <EN>No Honour Among Thieves</EN>
-            <DE>Keine Ehre unter Dieben</DE>
-            <Icon />
-          </Text>
-          <Text ID="152439">
-            <EN>The Rescue</EN>
-            <DE>Die Rettung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152444">
-            <EN>(TBC - Quest not yet written)</EN>
-            <DE>Mein lieber Ara!</DE>
-            <Icon />
-          </Text>
-          <Text ID="152445">
-            <EN>(TBC - Quest not yet written)</EN>
-            <DE>Mein lieber Ara!</DE>
-            <Icon />
-          </Text>
-          <Text ID="152446">
-            <EN>(TBC - Quest not yet written)</EN>
-            <DE>Mein lieber Ara!</DE>
-            <Icon />
-          </Text>
-          <Text ID="152447">
-            <EN>(TBC - Quest not yet written)</EN>
-            <DE>Mein lieber Ara!</DE>
-            <Icon />
-          </Text>
-          <Text ID="152448">
-            <EN>Lost Souls</EN>
-            <DE>Verlorene Seelen</DE>
-            <Icon />
-          </Text>
-          <Text ID="152451">
-            <EN>(TBC - Quest not yet written)</EN>
-            <DE>Verlorene Seelen</DE>
-            <Icon />
-          </Text>
-          <Text ID="151925">
-            <EN>Neutral Flag</EN>
-            <DE>Neutrale Flagge</DE>
-            <Icon />
-          </Text>
-          <Text ID="152455">
-            <EN>(TBC - Quest not yet written)</EN>
-            <DE>Neutrale Flagge</DE>
-            <Icon />
-          </Text>
-          <Text ID="151930">
-            <EN>Retaliation</EN>
-            <DE>Vergeltung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152469">
-            <EN>(TBC - Quest not yet written)</EN>
-            <DE>Vergeltung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152470">
-            <EN>(TBC - Quest not yet written)</EN>
-            <DE>Vergeltung</DE>
-            <Icon />
-          </Text>
-          <Text ID="151935">
-            <EN>To the Roots 4 — The Long-Overdue Reckoning</EN>
-            <DE>Zurück zu den Wurzeln 4 - Die lange überfällige Abrechnung</DE>
-            <Icon />
-          </Text>
           <Text ID="152928">
             <EN>Lost Souls</EN>
             <DE>Verlorene Seelen</DE>

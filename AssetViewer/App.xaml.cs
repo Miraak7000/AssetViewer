@@ -47,6 +47,8 @@ namespace AssetViewer {
         result.Add(1048, new Description("Progression", "Fortschritt"));
         result.Add(1049, new Description("Player", "Spieler"));
         result.Add(1100, new Description("Reset Filters", "Filter zurücksetzen"));
+        result.Add(1101, new Description("Only available items: ", "Nur verfügbare Items: "));
+        result.Add(1102, new Description("Affects building", "Beeinflusst Gebäude"));
         return result;
       }
     }
@@ -100,24 +102,24 @@ namespace AssetViewer {
         result.Add("BaseMorale", new Tuple<String, String>("Base Morale", "Basismoral"));
         result.Add("ItemDifficulties", new Tuple<String, String>("Difficulties", "Schwierigkeit"));
         result.Add("PerkMale", new Tuple<String, String>("Per kMale", "Vorteil männlich"));
-        result.Add("Medicine", new Tuple<String, String>("Medicine", "Medizin"));
-        result.Add("Melee", new Tuple<String, String>("Melee", "Nahkampf"));
-        result.Add("Crafting", new Tuple<String, String>("Crafting", "Reparieren"));
         result.Add("PerkFemale", new Tuple<String, String>("Perk Female", "Vorteil weiblich"));
-        result.Add("Hunting", new Tuple<String, String>("Hunting", "Jagen"));
         result.Add("PerkFormerPirate", new Tuple<String, String>("Perk Former Pirate", "Vorteil Pirat"));
         result.Add("PerkDiver", new Tuple<String, String>("Perk Diver", "Vorteil Taucher"));
-        result.Add("Navigation", new Tuple<String, String>("Navigation", "Navigation"));
-        result.Add("Might", new Tuple<String, String>("Might", "Können"));
         result.Add("PerkZoologist", new Tuple<String, String>("PerkZoologist", "Vorteil Zoo"));
-        result.Add("Diplomacy", new Tuple<String, String>("Diplomacy", "Diplomatie"));
-        result.Add("Faith", new Tuple<String, String>("Faith", "Glaube"));
         result.Add("PerkMilitaryShip", new Tuple<String, String>("Perk Military Ship", "Vorteil Militärschiff"));
         result.Add("PerkHypnotist", new Tuple<String, String>("Perk Hypnotist", "Vorteil Hypnose"));
         result.Add("PerkAnthropologist", new Tuple<String, String>("Perk Anthropologist", "Vorteil Anthropologe"));
         result.Add("PerkPolyglot", new Tuple<String, String>("Perk Polyglot", "Vorteil Mehrsprachigkeit"));
         result.Add("PerkSteamShip", new Tuple<String, String>("Perk Steam Ship", "Vorteil Dampfschiff"));
         result.Add("PerkSailingShip", new Tuple<String, String>("Perk Sailing Ship", "Vorteil Segelschiff"));
+        result.Add("Medicine", new Tuple<String, String>("Medicine", "Heilkunst"));
+        result.Add("Melee", new Tuple<String, String>("Force", "Kampfkraft"));
+        result.Add("Crafting", new Tuple<String, String>("Crafting", "Geschick"));
+        result.Add("Hunting", new Tuple<String, String>("Hunting", "Jagdglück"));
+        result.Add("Navigation", new Tuple<String, String>("Navigation", "Navigation"));
+        result.Add("Might", new Tuple<String, String>("Naval Power", "Gefechtskunde"));
+        result.Add("Diplomacy", new Tuple<String, String>("Diplomacy", "Redegabe"));
+        result.Add("Faith", new Tuple<String, String>("Faith", "Glaube"));
         return result;
       }
     }

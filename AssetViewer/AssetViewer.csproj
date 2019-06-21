@@ -37,6 +37,9 @@
   <PropertyGroup>
     <ApplicationIcon>Resources\AssetViewer.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -58,6 +61,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Comparer\RarityComparer.cs" />
     <Compile Include="Controls\ExpeditionEvents.xaml.cs">
       <DependentUpon>ExpeditionEvents.xaml</DependentUpon>
     </Compile>
@@ -96,11 +100,26 @@
     <Compile Include="Data\DataAllocation.cs" />
     <Compile Include="Data\Description.cs" />
     <Compile Include="Data\DescriptionFontStyle.cs" />
+    <Compile Include="Data\EffectTarget.cs" />
     <Compile Include="Data\Expedition\EventOption.cs" />
     <Compile Include="Data\Expedition\EventOptionRequirement.cs" />
     <Compile Include="Data\Expedition\EventPath.cs" />
     <Compile Include="Data\Expedition\ExpeditionEvent.cs" />
     <Compile Include="Data\Expedition\RewardsItem.cs" />
+    <Compile Include="Data\Filters\BaseFilter.cs" />
+    <Compile Include="Data\Filters\IFilter.cs" />
+    <Compile Include="Data\Filters\ItemsHolder.cs" />
+    <Compile Include="Data\Filters\DetailedSourcesFilter.cs" />
+    <Compile Include="Data\Filters\ReleaseVersionsFilter.cs" />
+    <Compile Include="Data\Filters\SearchTextFilter.cs" />
+    <Compile Include="Data\Filters\TargetBuildingFilter.cs" />
+    <Compile Include="Data\Filters\TargetsFilter.cs" />
+    <Compile Include="Data\Filters\EquippedFilter.cs" />
+    <Compile Include="Data\Filters\UpgradesFilter.cs" />
+    <Compile Include="Data\Filters\SourcesFilter.cs" />
+    <Compile Include="Data\Filters\AvailableFilter.cs" />
+    <Compile Include="Data\Filters\ItemTypesFilter.cs" />
+    <Compile Include="Data\Filters\RaritiesFilter.cs" />
     <Compile Include="Data\Icon.cs" />
     <Compile Include="Data\OfferingItems.cs" />
     <Compile Include="Data\Pool\Pool.cs" />
@@ -1194,6 +1213,76 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\Assets\Tourism.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ships\icon_pirate_ship_frigatte.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ships\icon_pirate_ship_gunboat.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ships\icon_pirate_ship_liner.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ships\icon_pirate_ship_monitor.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ships\icon_pyphorian_battlecruiser.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ships\icon_pyphorian_ship_monitor.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ships\icon_pyphorian_warship.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ships\icon_royal_liner.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ships\icon_ship_anno_union.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ships\icon_ship_clipper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ships\icon_ship_frigatte.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ships\icon_ship_great_eastern.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ships\icon_ship_gunboat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ships\icon_ship_monitor.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ships\icon_ship_oil_tanker.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ships\icon_ship_schooner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_commuter_pier.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_defense_tower_cannon.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_defense_tower_monstergun.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_defense_tower_pucklegun.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_depot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_hospital.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_kontor.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_market.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_military_ship_frigatte.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_military_ship_liner.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_military_ship_monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_oil_habour_01.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_oil_storage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_pier.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_police.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_repair_crane.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_resident.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_sail_shipyard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_ship_battle_cruiser.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_steam_shipyard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_ship_gunboat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_tradeship_clipper.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_tradeship_schooner.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_warehouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_world_fair_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_tick.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

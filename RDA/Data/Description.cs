@@ -1,23 +1,24 @@
 ﻿using System;
-using System.Drawing;
 using System.Linq;
-using System.Security.Cryptography;
 using System.Xml.Linq;
 
 namespace RDA.Data {
 
-  public class Description {
+  public class Description : IEquatable<Description> {
 
     #region Properties
+
     public String ID { get; set; }
     public String EN { get; set; }
     public String DE { get; set; }
     public Icon Icon { get; set; }
     public DescriptionFontStyle FontStyle { get; set; }
     public Description AdditionalInformation { get; set; }
-    #endregion
 
-    #region Constructor
+    #endregion Properties
+
+    #region Constructors
+
     public Description(String en, String de, Icon icon = null, Description AdditionalInformation = null, DescriptionFontStyle fontStyle = default) {
       this.ID = String.Empty;
       this.EN = en;
@@ -35,17 +36,19 @@ namespace RDA.Data {
       }
       this.FontStyle = fontStyle;
     }
-    #endregion
 
-    #region Public Methods
+    #endregion Constructors
+
+    #region Methods
+
+    public static Description Find(String pattern) {
+      var item = Assets.DescriptionEN.First(w => w.Value.StartsWith(pattern));
+      return new Description(item.Key);
+    }
     public Description InsertBefore(String en, String de) {
       this.EN = $"{en} {this.EN}";
       this.DE = $"{de} {this.DE}";
       return this;
-    }
-    public static Description Find(String pattern) {
-      var item = Assets.DescriptionEN.First(w => w.Value.StartsWith(pattern));
-      return new Description(item.Key);
     }
     public XElement ToXml(String name) {
       var result = new XElement(name);
@@ -59,14 +62,17 @@ namespace RDA.Data {
       if (AdditionalInformation != null) {
         result.Add(AdditionalInformation.ToXml("AdditionalInformation"));
       }
-      
+
       return result;
     }
     public override String ToString() {
       return this.EN;
     }
-    #endregion
 
+    public bool Equals(Description other) {
+      return ID == other.ID && EN == other.EN && DE == other.DE && Icon == other.Icon;
+    }
+
+    #endregion Methods
   }
-
 }

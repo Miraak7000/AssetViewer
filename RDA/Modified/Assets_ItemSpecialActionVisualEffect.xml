@@ -26,10 +26,59 @@
       </Text>
     </Allocation>
     <EffectTargets>
-      <Target ID="">
-        <EN>Residences</EN>
-        <DE>Wohngebäude</DE>
-        <Icon />
+      <Target>
+        <Text ID="">
+          <EN>Residences</EN>
+          <DE>Wohngebäude</DE>
+          <Icon />
+        </Text>
+        <Buildings>
+          <Text ID="1010343">
+            <EN>Farmer Residence</EN>
+            <DE>Bauernhaus</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+            </Icon>
+          </Text>
+          <Text ID="1010344">
+            <EN>Worker Residence</EN>
+            <DE>Arbeiterhaus</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+            </Icon>
+          </Text>
+          <Text ID="1010345">
+            <EN>Artisan Residence</EN>
+            <DE>Handwerkerhaus</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+            </Icon>
+          </Text>
+          <Text ID="1010346">
+            <EN>Engineer Residence</EN>
+            <DE>Ingenieurshaus</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+            </Icon>
+          </Text>
+          <Text ID="1010347">
+            <EN>Investor Residence</EN>
+            <DE>Investorenhaus</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+            </Icon>
+          </Text>
+          <Text ID="101254">
+            <EN>Jornalero Residence</EN>
+            <DE>Jornalero-Haus</DE>
+            <Icon />
+          </Text>
+          <Text ID="101255">
+            <EN>Obrero Residence</EN>
+            <DE>Obrero-Haus</DE>
+            <Icon />
+          </Text>
+        </Buildings>
       </Target>
     </EffectTargets>
     <FactoryUpgrades />
@@ -384,12 +433,35 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="78">
-            <EN>Madame Kahina</EN>
-            <DE>Madame Kahina</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_08.png</Filename>
-            </Icon>
+          <Text ID="">
+            <EN>Early Game</EN>
+            <DE>Frühes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Early-Mid Game</EN>
+            <DE>Frühes-Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
           </Text>
         </Details>
       </Source>
@@ -605,10 +677,59 @@
       </Text>
     </Allocation>
     <EffectTargets>
-      <Target ID="">
-        <EN>Residences</EN>
-        <DE>Wohngebäude</DE>
-        <Icon />
+      <Target>
+        <Text ID="">
+          <EN>Residences</EN>
+          <DE>Wohngebäude</DE>
+          <Icon />
+        </Text>
+        <Buildings>
+          <Text ID="1010343">
+            <EN>Farmer Residence</EN>
+            <DE>Bauernhaus</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+            </Icon>
+          </Text>
+          <Text ID="1010344">
+            <EN>Worker Residence</EN>
+            <DE>Arbeiterhaus</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+            </Icon>
+          </Text>
+          <Text ID="1010345">
+            <EN>Artisan Residence</EN>
+            <DE>Handwerkerhaus</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+            </Icon>
+          </Text>
+          <Text ID="1010346">
+            <EN>Engineer Residence</EN>
+            <DE>Ingenieurshaus</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+            </Icon>
+          </Text>
+          <Text ID="1010347">
+            <EN>Investor Residence</EN>
+            <DE>Investorenhaus</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+            </Icon>
+          </Text>
+          <Text ID="101254">
+            <EN>Jornalero Residence</EN>
+            <DE>Jornalero-Haus</DE>
+            <Icon />
+          </Text>
+          <Text ID="101255">
+            <EN>Obrero Residence</EN>
+            <DE>Obrero-Haus</DE>
+            <Icon />
+          </Text>
+        </Buildings>
       </Target>
     </EffectTargets>
     <FactoryUpgrades />
@@ -1014,12 +1135,30 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="78">
-            <EN>Madame Kahina</EN>
-            <DE>Madame Kahina</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_08.png</Filename>
-            </Icon>
+          <Text ID="">
+            <EN>Early-Mid Game</EN>
+            <DE>Frühes-Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
           </Text>
         </Details>
       </Source>
@@ -1431,10 +1570,59 @@
       </Text>
     </Allocation>
     <EffectTargets>
-      <Target ID="">
-        <EN>Residences</EN>
-        <DE>Wohngebäude</DE>
-        <Icon />
+      <Target>
+        <Text ID="">
+          <EN>Residences</EN>
+          <DE>Wohngebäude</DE>
+          <Icon />
+        </Text>
+        <Buildings>
+          <Text ID="1010343">
+            <EN>Farmer Residence</EN>
+            <DE>Bauernhaus</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+            </Icon>
+          </Text>
+          <Text ID="1010344">
+            <EN>Worker Residence</EN>
+            <DE>Arbeiterhaus</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+            </Icon>
+          </Text>
+          <Text ID="1010345">
+            <EN>Artisan Residence</EN>
+            <DE>Handwerkerhaus</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+            </Icon>
+          </Text>
+          <Text ID="1010346">
+            <EN>Engineer Residence</EN>
+            <DE>Ingenieurshaus</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+            </Icon>
+          </Text>
+          <Text ID="1010347">
+            <EN>Investor Residence</EN>
+            <DE>Investorenhaus</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+            </Icon>
+          </Text>
+          <Text ID="101254">
+            <EN>Jornalero Residence</EN>
+            <DE>Jornalero-Haus</DE>
+            <Icon />
+          </Text>
+          <Text ID="101255">
+            <EN>Obrero Residence</EN>
+            <DE>Obrero-Haus</DE>
+            <Icon />
+          </Text>
+        </Buildings>
       </Target>
     </EffectTargets>
     <FactoryUpgrades />
@@ -1571,12 +1759,35 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="78">
-            <EN>Madame Kahina</EN>
-            <DE>Madame Kahina</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_08.png</Filename>
-            </Icon>
+          <Text ID="">
+            <EN>Early Game</EN>
+            <DE>Frühes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Early-Mid Game</EN>
+            <DE>Frühes-Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
           </Text>
         </Details>
       </Source>

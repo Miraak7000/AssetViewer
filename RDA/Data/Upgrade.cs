@@ -574,7 +574,10 @@ namespace RDA.Data {
           this.Text = new Description("2423", DescriptionFontStyle.Light);
           this.Text.DE = "Dauer";
           this.Text.EN = "Duration";
-          this.Value = TimeSpan.FromMilliseconds(Convert.ToInt64(element.Value)).ToString("mm':'ss");
+          this.Value = TimeSpan.FromMilliseconds(Convert.ToInt64(element.Value)).ToString("hh':'mm':'ss");
+          while (this.Value.StartsWith("00:")) {
+            this.Value = this.Value.Remove(0, 3);
+          }
           return;
 
         case "ActionCooldown":

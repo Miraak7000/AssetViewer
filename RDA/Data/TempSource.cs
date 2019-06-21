@@ -89,10 +89,34 @@ namespace RDA.Data {
         case "Profile_3rdParty":
         case "Profile_3rdParty_Pirate":
         case "HafenHugo":
+        case "Harbor":
           this.Text = new Description(Source.XPathSelectElement("Values/Standard/GUID").Value);
           this.Text.EN = $"Harbour - {this.Text.EN}";
           this.Text.DE = $"Hafen - {this.Text.DE}";
-          this.Details = element.Details.Select(d => new Description(d.XPathSelectElement("Values/Standard/GUID").Value)).ToList();
+          foreach (var item in element.Details) {
+            Description desc = null;
+            switch (item.Element("Template").Value) {
+              case "EarlyGame":
+                desc = new Description("Early Game", "Frühes Spiel");
+                break;
+              case "EarlyMidGame":
+                desc = new Description("Early-Mid Game", "Frühes-Mittleres Spiel");
+                break;
+              case "MidGame":
+                desc = new Description("Mid Game", "Mittleres Spiel");
+                break;
+              case "LateMidGame":
+                desc = new Description("Late-Mid Game", "Mittleres-Spätes Spiel");
+                break;
+              case "LateGame":
+                desc = new Description("Late Game", "Spätes Spiel");
+                break;
+              case "EndGame":
+                desc = new Description("EndGame", "End Game");
+                break;
+            }
+            this.Details.Add(desc);
+          }
           break;
         case "Quest":
         case "A7_QuestStatusQuo":
