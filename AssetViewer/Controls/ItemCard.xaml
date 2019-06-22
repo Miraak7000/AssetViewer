@@ -267,7 +267,7 @@
                 TextWrapping="Wrap" />
               <StackPanel.ToolTip>
                 <ToolTip DataContext="{Binding PlacementTarget.DataContext, RelativeSource={RelativeSource Self}}">
-                  <ItemsControl ItemsSource="{Binding SelectedAsset.EffectBuildings}" DisplayMemberPath="CurrentLang"/>
+                  <ItemsControl DisplayMemberPath="CurrentLang" ItemsSource="{Binding SelectedAsset.EffectBuildings}" />
                 </ToolTip>
               </StackPanel.ToolTip>
             </StackPanel>
@@ -335,6 +335,15 @@
             <!--  IncidentInfluencerUpgrades  -->
             <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.IncidentInfluencerUpgrades, Converter={StaticResource VisibilityConverter}}">
               <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.IncidentInfluencerUpgrades}" />
+            </Grid>
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.KontorUpgrades, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.KontorUpgrades}" />
+            </Grid>
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.ShipyardUpgrades, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.ShipyardUpgrades}" />
+            </Grid>
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.ItemGeneratorUpgrades, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.ItemGeneratorUpgrades}" />
             </Grid>
             <!--  Expedition  -->
             <StackPanel Visibility="{Binding Path=SelectedAsset.ExpeditionAttributes, Converter={StaticResource VisibilityConverter}}">
