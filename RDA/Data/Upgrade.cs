@@ -10,6 +10,7 @@ namespace RDA.Data {
   public class Upgrade {
 
     #region Properties
+
     public Description Text { get; set; }
     public String Value { get; set; }
     public List<AdditionalOutput> AdditionalOutputs { get; set; }
@@ -568,8 +569,6 @@ namespace RDA.Data {
           }
           break;
 
-
-
         case "ActionDuration":
           this.Text = new Description("2423", DescriptionFontStyle.Light);
           this.Text.DE = "Dauer";
@@ -646,6 +645,7 @@ namespace RDA.Data {
           value = null;
           this.Text = Text.InsertBefore("Trait: ", "Merkmal: ");
           break;
+
         default:
           break;
       }

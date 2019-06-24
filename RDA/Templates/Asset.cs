@@ -652,12 +652,14 @@ namespace RDA.Templates {
           case "DRAG":
           case "CHANNEL":
             return;
+
           case "HEAL_INCIDENT":
           case "PLACE_MINE":
             break;
+
           default:
             ActionText = new Description("20072", DescriptionFontStyle.Light) { Icon = null };
-           
+
             break;
         }
 

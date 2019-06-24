@@ -5,18 +5,21 @@ using System.Linq;
 
 namespace AssetViewer.Data.Filters {
 
-  public class AvailableFilter : BaseFilter {
+  public class AvailableFilter : BaseFilter<bool> {
     public AvailableFilter(ItemsHolder itemsHolder) : base(itemsHolder) {
-      IsChecked = true;
+      FilterType = FilterType.Bool;
     }
 
     public override Func<IQueryable<TemplateAsset>, IQueryable<TemplateAsset>> FilterFunc => result => {
-      if (IsChecked)
+      if (SelectedValue)
         result = result.Where(w => w.Sources.Count > 0);
       return result;
     };
 
-    public override IEnumerable<String> CurrentValues => Enumerable.Empty<string>();
+    public override void ResetFilter() {
+      SelectedValue = true;
+    }
+    public override IEnumerable<bool> ComparisonValues => base.ComparisonValues;
 
     public override int DescriptionID => 1101;
   }

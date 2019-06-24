@@ -1,62 +1,60 @@
-﻿using System;
+﻿using AssetViewer.Data;
+using AssetViewer.Library;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
-using System.IO;
-using System.Reflection;
 using System.Windows;
 using System.Xml.Linq;
-using AssetViewer.Library;
 
 namespace AssetViewer {
 
   [SuppressMessage("ReSharper", "AssignNullToNotNullAttribute"), SuppressMessage("ReSharper", "PossibleNullReferenceException")]
   public partial class App : Application {
-    public App() {
-      if (CultureInfo.CurrentCulture.ThreeLetterWindowsLanguageName == "DEU") {
-        Language = Languages.German;
-      }
-    }
+
     #region Properties
-    public static Dictionary<Int32, Description> Descriptions {
+
+    public static Dictionary<Int32, Data.Description> Descriptions {
       get {
-        var result = new Dictionary<Int32, Description>();
-        result.Add(101, new Description("Asset:", "Gegenstand:"));
-        result.Add(102, new Description("Improvements", "Verbesserungen"));
-        result.Add(103, new Description("Harbor office items", "Hafenmeisterei Gegenstände"));
-        result.Add(104, new Description("Town hall items", "Rathaus Gegenstände"));
-        result.Add(105, new Description("World Fair", "Weltausstellung"));
-        result.Add(106, new Description("Equipped", "Ausgerüstet"));
-        result.Add(107, new Description("Topic", "Thema"));
-        result.Add(108, new Description("Size", "Grösse"));
-        result.Add(109, new Description("Level", "Stufe"));
-        result.Add(110, new Description("Third Party", "Gegenspieler"));
-        result.Add(120, new Description("Expedition Events", "Expedition Events"));
-        result.Add(121, new Description("Tourism", "Tourismus"));
-        result.Add(1001, new Description("Rarity", "Rarität"));
-        result.Add(1002, new Description("Type", "Typ"));
-        result.Add(1003, new Description("Allocation", "Zuweisung"));
-        result.Add(1004, new Description("Search", "Suchen"));
-        result.Add(1005, new Description("Source", "Quelle"));
-        result.Add(1006, new Description("Effect", "Effekt"));
-        result.Add(1007, new Description("Patch Version", "Patch Version"));
-        result.Add(1008, new Description("Detailed Sources", "Detaillierte Quellen"));
-        result.Add(1011, new Description("Has Factory Upgrades", "Hat Fabrik-Erweiterungen"));
-        result.Add(1012, new Description("Has Building Upgrades", "Hat Gebäude-Erweiterungen"));
-        result.Add(1021, new Description("Common", "Allgemein"));
-        result.Add(1022, new Description("Specialist", "Spezialist"));
-        result.Add(1023, new Description("Rarity:", "Seltenheit:"));
-        result.Add(1024, new Description("Effect Targets:", "Beeinflusste Gebäude:"));
-        result.Add(1046, new Description("Has Population Upgrade", "Hat Bevölkerung-Erweiterungen"));
-        result.Add(1047, new Description("Has Residence Upgrade", "Hat Einwohne-Erweiterungen"));
-        result.Add(1048, new Description("Progression", "Fortschritt"));
-        result.Add(1049, new Description("Player", "Spieler"));
-        result.Add(1100, new Description("Reset Filters", "Filter zurücksetzen"));
-        result.Add(1101, new Description("Only available items: ", "Nur verfügbare Items: "));
-        result.Add(1102, new Description("Affects building", "Beeinflusst Gebäude"));
+        var result = new Dictionary<Int32, Data.Description>();
+        result.Add(101, new Data.Description("Asset:", "Gegenstand:"));
+        result.Add(102, new Data.Description("Improvements", "Verbesserungen"));
+        result.Add(103, new Data.Description("Harbor office items", "Hafenmeisterei Gegenstände"));
+        result.Add(104, new Data.Description("Town hall items", "Rathaus Gegenstände"));
+        result.Add(105, new Data.Description("World Fair", "Weltausstellung"));
+        result.Add(106, new Data.Description("Equipped in", "Ausgerüstet in"));
+        result.Add(107, new Data.Description("Topic", "Thema"));
+        result.Add(108, new Data.Description("Size", "Grösse"));
+        result.Add(109, new Data.Description("Level", "Stufe"));
+        result.Add(110, new Data.Description("Third Party", "Gegenspieler"));
+        result.Add(120, new Data.Description("Expedition Events", "Expedition Events"));
+        result.Add(121, new Data.Description("Tourism", "Tourismus"));
+        result.Add(1001, new Data.Description("Rarity", "Rarität"));
+        result.Add(1002, new Data.Description("Type", "Typ"));
+        result.Add(1003, new Data.Description("Affect Building Group", "Beeinflusst Gebäude Gruppe"));
+        result.Add(1004, new Data.Description("Search", "Suchen"));
+        result.Add(1005, new Data.Description("Source", "Quelle"));
+        result.Add(1006, new Data.Description("Attribute", "Eigenschaft"));
+        result.Add(1007, new Data.Description("Patch Version", "Patch Version"));
+        result.Add(1008, new Data.Description("Detailed Sources", "Detaillierte Quellen"));
+        result.Add(1011, new Data.Description("Has Factory Upgrades", "Hat Fabrik-Erweiterungen"));
+        result.Add(1012, new Data.Description("Has Building Upgrades", "Hat Gebäude-Erweiterungen"));
+        result.Add(1021, new Data.Description("Common", "Allgemein"));
+        result.Add(1022, new Data.Description("Specialist", "Spezialist"));
+        result.Add(1023, new Data.Description("Rarity", "Seltenheit"));
+        result.Add(1024, new Data.Description("Effect Targets:", "Beeinflusste Gebäude:"));
+        result.Add(1046, new Data.Description("Has Population Upgrade", "Hat Bevölkerung-Erweiterungen"));
+        result.Add(1047, new Data.Description("Has Residence Upgrade", "Hat Einwohne-Erweiterungen"));
+        result.Add(1048, new Data.Description("Progression", "Fortschritt"));
+        result.Add(1049, new Data.Description("Player", "Spieler"));
+        result.Add(1100, new Data.Description("Reset Filters", "Filter zurücksetzen"));
+        result.Add(1101, new Data.Description("Only available items ", "Nur verfügbare Items "));
+        result.Add(1102, new Data.Description("Affect Building", "Beeinflusst Gebäude"));
+        result.Add(1103, new Data.Description("Sort by", "Sortieren nach"));
         return result;
       }
     }
+
     public static Dictionary<String, Tuple<String, String>> Translations {
       get {
         var result = new Dictionary<String, Tuple<String, String>>();
@@ -128,17 +126,32 @@ namespace AssetViewer {
         return result;
       }
     }
-    #endregion
+
+    #endregion Properties
 
     #region Fields
-    public static Languages Language = Languages.English;
-    #endregion
 
-    #region Public Methods
+    public static Languages Language = Languages.English;
+
+    #endregion Fields
+
+    #region Constructors
+
+    public App() {
+      if (CultureInfo.CurrentCulture.ThreeLetterWindowsLanguageName == "DEU") {
+        Language = Languages.German;
+      }
+    }
+
+    #endregion Constructors
+
+    #region Methods
+
     public static String GetTranslation(String key) {
       switch (App.Language) {
         case Languages.German:
           return App.Translations[key].Item2;
+
         default:
           return App.Translations[key].Item1;
       }
@@ -149,11 +162,11 @@ namespace AssetViewer {
         case Languages.German:
           return element.Element("DE").Element("Short").Value;
       }
-      if (result == String.Empty) result = element.Element("EN").Element("Short").Value;
+      if (result == String.Empty)
+        result = element.Element("EN").Element("Short").Value;
       return result;
     }
-    #endregion
 
+    #endregion Methods
   }
-
 }

@@ -12,9 +12,9 @@ namespace AssetViewer.Converter {
       var key = Int32.Parse(parameter.ToString());
       switch (App.Language) {
         case Languages.English:
-          return App.Descriptions[key].ShortEN;
+          return App.Descriptions[key].EN;
         case Languages.German:
-          return App.Descriptions[key].ShortDE;
+          return App.Descriptions[key].DE;
         default:
           throw new NotImplementedException();
       }

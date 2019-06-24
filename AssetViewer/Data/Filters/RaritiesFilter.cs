@@ -6,13 +6,17 @@ using System.Linq;
 
 namespace AssetViewer.Data.Filters {
 
-  public class RaritiesFilter : BaseFilter {
-    public RaritiesFilter(ItemsHolder itemsHolder) : base(itemsHolder) {
-    }
+  public class RaritiesFilter : BaseFilter<string> {
+
+    #region Properties
 
     public override Func<IQueryable<TemplateAsset>, IQueryable<TemplateAsset>> FilterFunc => result => {
-      if (!String.IsNullOrEmpty(SelectedValue))
+      if (!String.IsNullOrEmpty(SelectedComparisonValue)) {
+        result = result.Where(w => CompareToRarity(w.Rarity.CurrentLang));
+      }
+      else if (!String.IsNullOrEmpty(SelectedValue)) {
         result = result.Where(w => w.Rarity.CurrentLang == SelectedValue);
+      }
       return result;
     };
 
@@ -25,6 +29,44 @@ namespace AssetViewer.Data.Filters {
          .OrderBy(o => o, RarityComparer.Default)
          .ToList();
 
+    public override IEnumerable<string> ComparisonValues => ItemsHolder
+         .GetResultWithoutFilter(this)
+         .Select(s => s.Rarity.CurrentLang)
+         .Distinct()
+         .Where(l => !string.IsNullOrWhiteSpace(l))
+         .Concat(new[] { string.Empty })
+         .OrderBy(o => o, RarityComparer.Default)
+         .ToList();
+
     public override int DescriptionID => 1023;
+
+    #endregion Properties
+
+    #region Constructors
+
+    public RaritiesFilter(ItemsHolder itemsHolder) : base(itemsHolder) {
+      ComparisonType = FilterType.Selection;
+      FilterType = FilterType.None;
+    }
+
+    #endregion Constructors
+
+    #region Methods
+
+    private bool CompareToRarity(string l) {
+      switch (Comparison) {
+        case ValueComparisons.Equals:
+          return RarityComparer.Default.Compare(l, SelectedComparisonValue) == 0;
+
+        case ValueComparisons.LesserThan:
+          return RarityComparer.Default.Compare(l, SelectedComparisonValue) <= 0;
+
+        case ValueComparisons.GraterThan:
+          return RarityComparer.Default.Compare(l, SelectedComparisonValue) >= 0;
+      }
+      return false;
+    }
+
+    #endregion Methods
   }
 }

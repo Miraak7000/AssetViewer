@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace AssetViewer.Data.Filters {
 
-  public class TargetsFilter : BaseFilter {
+  public class TargetsFilter : BaseFilter<string> {
 
     #region Properties
 

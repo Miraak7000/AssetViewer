@@ -5,12 +5,12 @@ using System.Linq;
 
 namespace AssetViewer.Data.Filters {
 
-  public class EquippedFilter : BaseFilter {
+  public class EquippedFilter : BaseFilter<string> {
     public EquippedFilter(ItemsHolder itemsHolder) : base(itemsHolder) {
     }
 
     public override Func<IQueryable<TemplateAsset>, IQueryable<TemplateAsset>> FilterFunc => result => {
-      if (!String.IsNullOrEmpty(SelectedValue))
+      if (!String.IsNullOrEmpty(SelectedValue as string))
         result = result.Where(w => w.Allocation != null && w.Allocation.Text.CurrentLang == SelectedValue);
       return result;
     };

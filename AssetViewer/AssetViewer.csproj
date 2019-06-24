@@ -75,6 +75,7 @@
       <DependentUpon>Tourism.xaml</DependentUpon>
     </Compile>
     <Compile Include="Converter\DescriptionConverter.cs" />
+    <Compile Include="Converter\EnumDescriptionTypeConverter.cs" />
     <Compile Include="Converter\GlobalTranslationConverter.cs" />
     <Compile Include="Converter\PriorityMultiValueConverter.cs" />
     <Compile Include="Converter\RewardToItemConverter.cs" />
@@ -106,20 +107,24 @@
     <Compile Include="Data\Expedition\EventPath.cs" />
     <Compile Include="Data\Expedition\ExpeditionEvent.cs" />
     <Compile Include="Data\Expedition\RewardsItem.cs" />
-    <Compile Include="Data\Filters\BaseFilter.cs" />
-    <Compile Include="Data\Filters\IFilter.cs" />
-    <Compile Include="Data\Filters\ItemsHolder.cs" />
-    <Compile Include="Data\Filters\DetailedSourcesFilter.cs" />
+    <Compile Include="Data\Filters\Base\BaseFilter.cs" />
+    <Compile Include="Data\Filters\Base\FilterHolder.cs" />
+    <Compile Include="Data\Filters\Base\IFilter.cs" />
+    <Compile Include="Data\Filters\Base\ItemsHolder.cs" />
+    <Compile Include="Data\Filters\Enums\FilterType.cs" />
     <Compile Include="Data\Filters\ReleaseVersionsFilter.cs" />
     <Compile Include="Data\Filters\SearchTextFilter.cs" />
+    <Compile Include="Data\Filters\OrderFilter.cs" />
     <Compile Include="Data\Filters\TargetBuildingFilter.cs" />
     <Compile Include="Data\Filters\TargetsFilter.cs" />
     <Compile Include="Data\Filters\EquippedFilter.cs" />
+    <Compile Include="Data\Filters\SpecificUpgradesFilter.cs" />
     <Compile Include="Data\Filters\UpgradesFilter.cs" />
     <Compile Include="Data\Filters\SourcesFilter.cs" />
     <Compile Include="Data\Filters\AvailableFilter.cs" />
     <Compile Include="Data\Filters\ItemTypesFilter.cs" />
     <Compile Include="Data\Filters\RaritiesFilter.cs" />
+    <Compile Include="Data\Filters\Enums\ValueComparisons.cs" />
     <Compile Include="Data\Icon.cs" />
     <Compile Include="Data\OfferingItems.cs" />
     <Compile Include="Data\Pool\Pool.cs" />
@@ -127,6 +132,7 @@
     <Compile Include="Data\Progression.cs" />
     <Compile Include="Data\Tourism\TourismStatus.cs" />
     <Compile Include="Data\Upgrade.cs" />
+    <Compile Include="Extensions\EnumBindingSourceExtension.cs" />
     <Compile Include="Extensions\TextBlockExtensions.cs" />
     <Compile Include="Extensions\XmlExtensions.cs" />
     <Compile Include="ItemProvider.cs" />

@@ -1,9 +1,7 @@
 ﻿using AssetViewer.Data;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Windows.Media.Effects;
 using System.Xml.Linq;
 
 namespace AssetViewer.Templates {
@@ -25,6 +23,7 @@ namespace AssetViewer.Templates {
 
     //
     public List<EffectTarget> EffectTargets { get; set; }
+
     public IEnumerable<Description> EffectBuildings => EffectTargets?.SelectMany(e => e.Buildings).Distinct();
 
     public Description EffectTargetInfo { get; set; }

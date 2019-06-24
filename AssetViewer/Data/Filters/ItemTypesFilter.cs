@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace AssetViewer.Data.Filters {
 
-  public class ItemTypesFilter : BaseFilter {
+  public class ItemTypesFilter : BaseFilter<string> {
     public ItemTypesFilter(ItemsHolder itemsHolder) : base(itemsHolder) {
     }
 
