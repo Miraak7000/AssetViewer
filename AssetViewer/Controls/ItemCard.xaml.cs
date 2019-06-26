@@ -9,9 +9,6 @@ using System.Windows.Media;
 
 namespace AssetViewer.Controls {
 
-  /// <summary>
-  /// Interaktionslogik für ItemCard.xaml
-  /// </summary>
   public partial class ItemCard : UserControl, INotifyPropertyChanged {
 
     #region Properties

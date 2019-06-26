@@ -27,7 +27,6 @@ namespace AssetViewer.Extensions {
       var obj = (T)xmlSerializer.Deserialize(xElement.CreateReader());
       modifyFunktion?.Invoke(obj, xElement);
       return obj;
-
     }
 
     #endregion Methods

@@ -7,7 +7,6 @@ namespace RDA.Data {
   public class ReplacingWorkforce {
 
     #region Properties
-    public Icon Icon { get; set; }
     public Description Text { get; set; }
     public String Value { get; set; }
     #endregion
@@ -16,7 +15,7 @@ namespace RDA.Data {
     public ReplacingWorkforce(String id) {
       var en = "Instead of its usual workforce, the building employs";
       var de = "Statt der üblichen Arbeitskräfte beschäftigt das Gebäude";
-      this.Text = new Description($"{en} {Program.DescriptionEN[id]}", $"{de} {Program.DescriptionDE[id]}");
+      this.Text = new Description($"{en} {Assets.DescriptionEN[id]}", $"{de} {Assets.DescriptionDE[id]}");
       this.Value = String.Empty;
     }
     #endregion

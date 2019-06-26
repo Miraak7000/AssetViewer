@@ -8,7 +8,7 @@ namespace RDA.Templates {
     #region Properties
     public String ID { get; set; }
     public String Name { get; set; }
-    public Icon Icon { get; set; }
+    //public Icon Icon { get; set; }
     public Description Text { get; set; }
     public Description Info { get; set; }
     public Description Allocation { get; set; }

@@ -75,7 +75,7 @@ namespace AssetViewer.Controls {
       get {
         var thirdParty = this.ComboBoxThirdParty.SelectedItem as Tuple<String, String>;
         if (thirdParty != null) {
-          return this.Assets.Single(w => w.ID == thirdParty.Item1).Icon.Filename;
+          return this.Assets.Single(w => w.ID == thirdParty.Item1).Text.Icon.Filename;
         } else {
           return null;
         }

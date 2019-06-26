@@ -15,10 +15,9 @@ namespace RDA.Data {
     #region Constructor
     public AdditionalOutput(XElement element) {
       var id = element.Element("Product").Value;
-      var item = Program.Original.Root.XPathSelectElement($"//Asset/Values/Standard[GUID={id}]");
+      var item = Assets.Original.Root.XPathSelectElement($"//Asset/Values/Standard[GUID={id}]");
       var cycle = element.Element("AdditionalOutputCycle")?.Value;
       var amount = element.Element("Amount")?.Value;
-      this.Icon = new Icon(item.Element("IconFilename").Value);
       this.Text = new Description(id);
       if (cycle != null && amount != null) {
         this.Value = $"{cycle} / {amount}";
@@ -35,7 +34,6 @@ namespace RDA.Data {
     #region Public Methods
     public XElement ToXml() {
       var result = new XElement("Product");
-      result.Add(this.Icon.ToXml());
       result.Add(this.Text.ToXml("Text"));
       result.Add(new XElement("Value", this.Value));
       return result;

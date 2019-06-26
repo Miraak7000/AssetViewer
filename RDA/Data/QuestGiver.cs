@@ -8,7 +8,6 @@ namespace RDA.Data {
     #region Properties
     public String ID { get; set; }
     public String Name { get; set; }
-    public Icon Icon { get; set; }
     public Description Text { get; set; }
     #endregion
 
@@ -29,7 +28,6 @@ namespace RDA.Data {
       var result = new XElement(this.GetType().Name);
       result.Add(new XAttribute("ID", this.ID));
       result.Add(new XElement("Name", this.Name));
-      result.Add(this.Icon.ToXml());
       result.Add(this.Text.ToXml("Text"));
       return result;
     }
@@ -39,7 +37,6 @@ namespace RDA.Data {
     private void ProcessElement_Standard(XElement element) {
       this.ID = element.Element("GUID").Value;
       this.Name = element.Element("Name").Value;
-      this.Icon = new Icon(element.Element("IconFilename").Value);
       this.Text = new Description(element.Element("GUID").Value);
     }
     #endregion

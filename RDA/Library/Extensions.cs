@@ -1,5 +1,4 @@
-﻿using RDA.Templates;
-using System;
+﻿using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,27 +17,6 @@ namespace RDA.Library {
 
     #region Methods
 
-    public static void AddSourceAsset(this List<XElement> source, XElement element) {
-      var assetID = element.XPathSelectElement("Values/Standard/GUID").Value;
-      var expeditionName = element.XPathSelectElement("Values/Expedition/ExpeditionName")?.Value;
-      var questGiver = element.XPathSelectElement("Values/Quest/QuestGiver")?.Value;
-      if (!source.Where(w => w.XPathSelectElement("Values/Standard/GUID").Value == assetID).Any()) {
-        if (expeditionName != null) {
-          if (!source.Where(w => w.XPathSelectElement("Values/Expedition/ExpeditionName")?.Value == expeditionName).Any()) {
-            source.Add(element);
-          }
-        }
-        else if (questGiver != null) {
-          if (!source.Where(w => w.XPathSelectElement("Values/Quest/QuestGiver")?.Value == questGiver).Any()) {
-            source.Add(element);
-          }
-        }
-        else {
-          source.Add(element);
-        }
-      }
-    }
-
     public static XElement FindParentElement(this String id, string[] ParentTypes, List<String> previousIDs = null) {
       if (Events.ContainsKey(id)) {
         return Events[id];
@@ -46,7 +24,7 @@ namespace RDA.Library {
       XElement result = null;
       previousIDs = previousIDs ?? new List<string>();
       previousIDs.Add(id);
-      var links = Program.Original.Root.XPathSelectElements($"//*[text()={id} and not(self::GUID) and not(self::InsertEvent)]").ToArray();
+      var links = Assets.Original.Root.XPathSelectElements($"//*[text()={id} and not(self::GUID) and not(self::InsertEvent)]").ToArray();
       if (links.Length > 0) {
         for (var i = 0; i < links.Length; i++) {
           var element = links[i];

@@ -22,7 +22,7 @@ namespace RDA.Data {
       this.Weight = weight;
       this.Items = new List<String>();
       this.DiscoverItems(id);
-      //var rewardItem = Program.Original.XPathSelectElement($"//Asset[Values/Standard/GUID={id}]");
+      //var rewardItem = Assets.Original.XPathSelectElement($"//Asset[Values/Standard/GUID={id}]");
       //switch (rewardItem.Element("Template").Value) {
       //  case "QuestItem":
       //    // ignore
@@ -39,7 +39,7 @@ namespace RDA.Data {
     #endregion
 
     private void DiscoverItems(String value) {
-      var asset = Program.Original.XPathSelectElement($"//Asset[Values/Standard/GUID={value}]");
+      var asset = Assets.Original.XPathSelectElement($"//Asset[Values/Standard/GUID={value}]");
       switch (asset.Element("Template").Value) {
         case "RewardPool":
           foreach (var item in asset.XPathSelectElements("Values/RewardPool/ItemsPool/Item/ItemLink")) {
