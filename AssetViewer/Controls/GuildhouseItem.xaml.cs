@@ -17,6 +17,7 @@ namespace AssetViewer.Controls {
 
     public ItemsHolder ItemsHolder { get; } = new ItemsHolder();
     public Data.Description ResetButtonText => App.Descriptions[1100];
+    public Data.Description AdvancedFiltersText => App.Descriptions[1104];
 
     #endregion Properties
 

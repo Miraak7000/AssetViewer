@@ -10,7 +10,6 @@
   d:DesignWidth="800"
   mc:Ignorable="d">
   <UserControl.Resources>
-    <converter:DescriptionConverter x:Key="DescriptionConverter" />
     <converter:RewardToItemConverter x:Key="RewardToItemConverter" />
     <CollectionViewSource x:Key="StatiSource" Source="{Binding TourismStati}" />
     <CollectionViewSource x:Key="ItemsSource" Source="{Binding Path=/Pool, Source={StaticResource StatiSource}, Converter={StaticResource RewardToItemConverter}}" />
@@ -45,7 +44,7 @@
             ItemsSource="{Binding Source={StaticResource StatiSource}}">
             <ListBox.ItemTemplate>
               <DataTemplate>
-                <Grid MaxHeight="24" Background="Transparent" ToolTip="{Binding Text, Converter={StaticResource DescriptionConverter}}">
+                <Grid MaxHeight="24" Background="Transparent" ToolTip="{Binding Text}">
                   <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="Auto" />
@@ -53,7 +52,7 @@
                   <TextBlock
                     Grid.Column="0"
                     VerticalAlignment="Center"
-                    Text="{Binding Path=Requirement, Converter={StaticResource DescriptionConverter}}"
+                    Text="{Binding Path=Requirement}"
                     TextTrimming="CharacterEllipsis" />
                 </Grid>
               </DataTemplate>
@@ -82,7 +81,7 @@
                   <TextBlock
                     Grid.Column="1"
                     VerticalAlignment="Center"
-                    Text="{Binding Path=Text, Converter={StaticResource DescriptionConverter}}"
+                    Text="{Binding Path=Text}"
                     TextTrimming="CharacterEllipsis" />
                   <TextBlock
                     Grid.Column="2"

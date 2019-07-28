@@ -51,7 +51,12 @@ namespace RDA.Data {
       else {
         this.ID = value;
         this.Text = new Description(Assets.Descriptions[value]);
-        this.Text.Icon = new Icon(Assets.Icons[value]);
+        if (Assets.Icons.ContainsKey(value)) {
+          this.Text.Icon = new Icon(Assets.Icons[value]);
+        }
+        else if (Assets.Descriptions.ContainsKey(value)) {
+          this.Text.Icon = new Description(Assets.Descriptions[value]).Icon;
+        }
       }
     }
 

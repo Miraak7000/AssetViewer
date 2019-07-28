@@ -51,10 +51,12 @@ namespace AssetViewer.Templates {
     public List<Upgrade> KontorUpgrades { get; }
     public List<Upgrade> ShipyardUpgrades { get; }
     public List<Upgrade> ItemGeneratorUpgrades { get; }
+    public List<Upgrade> DivingBellUpgrades { get; private set; }
+    public List<Upgrade> CraftableItemUpgrades { get; private set; }
 
     public IEnumerable<Upgrade> AllUpgrades => typeof(TemplateAsset)
             .GetProperties()
-            .Where(p => p.PropertyType == typeof(List<Upgrade>) && p.Name != nameof(Sources))
+            .Where(p => p.PropertyType == typeof(List<Upgrade>) && p.Name != nameof(Sources) && p.Name != nameof(CraftableItemUpgrades))
             .SelectMany(l => (List<Upgrade>)l.GetValue(this) ?? Enumerable.Empty<Upgrade>());
 
     //
@@ -176,6 +178,12 @@ namespace AssetViewer.Templates {
       }
       if (asset.Element("MonumentRewards") != null) {
         this.MonumentRewards = asset.Element("MonumentRewards").Elements().Select(s => s.Value).ToList();
+      }
+      if (asset.Element("DivingBellUpgrades")?.HasElements ?? false) {
+        this.DivingBellUpgrades = asset.Element("DivingBellUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
+      }
+      if (asset.Element("CraftableItemUpgrades")?.HasElements ?? false) {
+        this.CraftableItemUpgrades = asset.Element("CraftableItemUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
       }
     }
 

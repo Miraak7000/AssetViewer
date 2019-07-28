@@ -16,7 +16,6 @@
   <UserControl.Resources>
     <BooleanToVisibilityConverter x:Key="BooleanToVisibility" />
     <converter:GlobalDescriptionConverter x:Key="Description" />
-    <converter:DescriptionConverter x:Key="DescriptionConverter" />
     <converter:VisibilityConverter x:Key="VisibilityConverter" />
     <DataTemplate x:Key="UpgradeTemplate">
       <Grid SnapsToDevicePixels="True">
@@ -41,7 +40,7 @@
           Grid.Row="0"
           Grid.Column="1"
           VerticalAlignment="Center"
-          Text="{Binding Path=Text, Converter={StaticResource DescriptionConverter}}" />
+          Text="{Binding Path=Text}" />
         <TextBlock
           Grid.Row="0"
           Grid.Column="2"
@@ -71,7 +70,7 @@
                   Grid.Column="1"
                   VerticalAlignment="Center"
                   Foreground="#FFA49370"
-                  Text="{Binding Path=Text, Converter={StaticResource DescriptionConverter}}"
+                  Text="{Binding Path=Text}"
                   TextWrapping="Wrap" />
                 <TextBlock
                   Grid.Column="2"
@@ -175,7 +174,7 @@
                   <TextBlock
                     Grid.Column="1"
                     VerticalAlignment="Center"
-                    Text="{Binding Path=Text, Converter={StaticResource DescriptionConverter}}"
+                    Text="{Binding Path=Text}"
                     TextTrimming="CharacterEllipsis" />
                   <TextBlock
                     Grid.Column="2"

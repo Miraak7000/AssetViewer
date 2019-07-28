@@ -17,6 +17,7 @@ namespace RDA {
       // Descriptions
       DescriptionEN = XDocument.Load(Program.PathRoot + @"\Modified\Texts_English.xml").Root.Elements().ToDictionary(k => k.Attribute("ID").Value, e => e.Value);
       DescriptionDE = XDocument.Load(Program.PathRoot + @"\Modified\Texts_German.xml").Root.Elements().ToDictionary(k => k.Attribute("ID").Value, e => e.Value);
+      Version = version;
       SetTextDictionarys();
       SetIcons();
       SetTourismStati();
@@ -107,6 +108,7 @@ namespace RDA {
         Descriptions.Add(item.Name.LocalName, item.Element("Name").Value);
       }
 
+      //Custom Additions
       Descriptions.Add("ProductivityUpgrade", "118000");
       Descriptions.Add("AdditionalOutput", "20074");
       Descriptions.Add("ReplaceInputs", "20081");
@@ -128,6 +130,54 @@ namespace RDA {
       Descriptions.Add("TaxModifierInPercent", "12677");
       Descriptions.Add("WorkforceModifierInPercent", "12676");
       Descriptions.Add("MaxHitpointsUpgrade", "2333");
+
+      Descriptions.Add("BlockBuyShare", "15802");
+      Descriptions.Add("BlockHostileTakeover", "15801");
+      Descriptions.Add("MaintainanceUpgrade", "2320");
+      Descriptions.Add("MoralePowerUpgrade", "15231");
+      Descriptions.Add("ConstructionCostInPercent", "12679");
+      Descriptions.Add("ConstructionTimeInPercent", "12678");
+      Descriptions.Add("PassiveTradeGoodGenUpgrade", "12920");     
+      Descriptions.Add("AddAssemblyOptions", "12693");     
+      Descriptions.Add("MoraleDamage", "21588");     
+      Descriptions.Add("HitpointDamage", "21587");     
+      Descriptions.Add("SpecialUnitHappinessThresholdUpgrade", "19625");     
+      Descriptions.Add("HappinessIgnoresMorale", "15811");     
+      Descriptions.Add("ResolverUnitMovementSpeedUpgrade", "12014");     
+      Descriptions.Add("IncidentIllnessIncreaseUpgrade", "12226");        
+      Descriptions.Add("ActiveTradePriceInPercent", "15198");     
+      Descriptions.Add("ForwardSpeedUpgrade", "2339");     
+      Descriptions.Add("IgnoreWeightFactorUpgrade", "15261");     
+      Descriptions.Add("IgnoreDamageFactorUpgrade", "15262");     
+      Descriptions.Add("AttackRangeUpgrade", "12021");     
+      Descriptions.Add("ActivateWhiteFlag", "19538");     
+      Descriptions.Add("ActivatePirateFlag", "17392");     
+      Descriptions.Add("Normal", "19136");     
+      Descriptions.Add("Cannon", "19138");     
+      Descriptions.Add("BigBertha", "19139");     
+      Descriptions.Add("Torpedo", "19137");     
+      Descriptions.Add("AttackSpeedUpgrade", "17230");     
+      Descriptions.Add("SpawnProbabilityFactor", "20603");     
+      Descriptions.Add("SelfHealUpgrade", "15195");     
+      Descriptions.Add("SelfHealPausedTimeIfAttackedUpgrade", "15196");     
+      Descriptions.Add("HealRadiusUpgrade", "15264");     
+      Descriptions.Add("HealPerMinuteUpgrade", "15265");     
+      Descriptions.Add("IncidentRiotIncreaseUpgrade", "12227");     
+      Descriptions.Add("PublicServiceFullSatisfactionDistance", "2321");     
+      Descriptions.Add("NeedProvideNeedUpgrade", "12315");     
+      Descriptions.Add("AdditionalMoney", "12690");     
+      Descriptions.Add("IncidentFireIncreaseUpgrade", "12225");     
+      Descriptions.Add("IncidentExplosionIncreaseUpgrade", "21489");     
+      Descriptions.Add("GoodConsumptionUpgrade", "21386");     
+
+      Descriptions.Add("LoadingSpeedUpgrade", "15197");     
+      Descriptions.Add("ActionDuration", "2423");     
+      Descriptions.Add("ActionCooldown", "2424");     
+      Descriptions.Add("IsDestroyedAfterCooldown", "2421");     
+      Descriptions.Add("LineOfSightRangeUpgrade", "15266");     
+      Descriptions.Add("BaseDamageUpgrade", "2334");     
+      Descriptions.Add("AccuracyUpgrade", "12062");     
+
     }
     private static void SetTourismStati() {
       Console.WriteLine("Setting up Tourism");

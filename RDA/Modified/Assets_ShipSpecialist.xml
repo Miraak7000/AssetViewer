@@ -5153,6 +5153,357 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
+  <Asset ID="111128" Release="Update 03">
+    <Name>Fierce Pyromaniac</Name>
+    <Text ID="111128">
+      <EN>Jittery Pyromaniac</EN>
+      <DE>Hektische Pyromanin</DE>
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_402.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118004">
+      <EN>Rare</EN>
+      <DE>Selten</DE>
+      <Icon />
+    </Rarity>
+    <ItemType>Specialist</ItemType>
+    <ItemSets />
+    <Allocation ID="Warship">
+      <Text ID="12812">
+        <EN>Military Ships</EN>
+        <DE>Kriegsschiffe</DE>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Text ID="15798">
+          <EN>Trait:  Female</EN>
+          <DE>Merkmal:  Weiblich</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_generic_expedition.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="800032">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+          </Icon>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades>
+      <Upgrade>
+        <Text ID="15198">
+          <EN>Trade Prices</EN>
+          <DE>Handelspreise</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_credits_2d.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-10%</Value>
+      </Upgrade>
+    </TradeShipUpgrades>
+    <VehicleUpgrades />
+    <AttackerUpgrades>
+      <Upgrade>
+        <Text ID="22111">
+          <EN>Flamethrower</EN>
+          <DE>Flammenwerfer</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/consumables/icon_flame_thrower_3.png</Filename>
+          </Icon>
+          <AdditionalInformation ID="22110" FontStyle="16">
+            <EN>Lets ships spit flames, setting their enemies ablaze.</EN>
+            <DE>Das Schiff spuckt nun Feuer und setzt die Feinde in Brand.</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/consumables/icon_flame_thrower_3.png</Filename>
+            </Icon>
+          </AdditionalInformation>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="12021">
+          <EN>Attack Range</EN>
+          <DE>Angriffsreichweite</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_war.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-50%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2334">
+          <EN>Damage per shot</EN>
+          <DE>Schaden pro Schuss</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-30%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="15266">
+          <EN>Vision Range</EN>
+          <DE>Sichtweite</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_go_to.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-40%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="17230">
+          <EN>Attack Speed</EN>
+          <DE>Angriffsgeschwindigkeit</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_timer.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+110%</Value>
+      </Upgrade>
+    </AttackerUpgrades>
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <ItemActionUpgrades />
+    <ShipyardUpgrades />
+    <KontorUpgrades />
+    <TradePrice>28100</TradePrice>
+    <Info ID="111157">
+      <EN>When the goal justifies the means, throw yourself into the action!</EN>
+      <DE>Wenn der Zweck die Mittel heiligt, dann stürzen Sie sich ins Getümmel!</DE>
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="220">
+        <Name>Second_ai_11 (Hugo Mercier)</Name>
+        <Text ID="220">
+          <EN>Ship Drop - Dr. Hugo Mercier</EN>
+          <DE>Schiff Drop - Dr. Hugo Mercier</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_11.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="220">
+            <EN>Dr. Hugo Mercier</EN>
+            <DE>Dr. Hugo Mercier</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/ai_11.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="110692">
+        <Name>Escort - We welcome all - Hugo Mercier</Name>
+        <Text ID="220">
+          <EN>Quest - Dr. Hugo Mercier</EN>
+          <DE>Quest - Dr. Hugo Mercier</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_11.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="110692">
+            <EN>Stronghold for the &lt;br/&gt;Oppressed</EN>
+            <DE>Festung für &lt;br/&gt;die Unterdrückten</DE>
+            <Icon />
+          </Text>
+          <Text ID="110693">
+            <EN>Survival of the Kindest</EN>
+            <DE>Überleben des Gütigsten</DE>
+            <Icon />
+          </Text>
+          <Text ID="110695">
+            <EN>Mutual Admiration</EN>
+            <DE>Gegenseitige Bewunderung</DE>
+            <Icon />
+          </Text>
+          <Text ID="110698">
+            <EN>Away with the Scale</EN>
+            <DE>Weg mit Justitia</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Destroy - Close prison door - Hugo Mercier NEED DESTROY DESTINATION</EN>
+            <DE>Destroy - Close prison door - Hugo Mercier NEED DESTROY DESTINATION</DE>
+            <Icon />
+          </Text>
+          <Text ID="110712">
+            <EN>The Last Laugh</EN>
+            <DE>Wer zuletzt lacht</DE>
+            <Icon />
+          </Text>
+          <Text ID="110717">
+            <EN>The Power of the Masses</EN>
+            <DE>Die Macht der Masse</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Status Quo - Parasites - Hugo Mercier NO WRITING</EN>
+            <DE>Status Quo - Parasites - Hugo Mercier NO WRITING</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Photo - Festival of reason - Hugo Mercier NO WRITING</EN>
+            <DE>Photo - Festival of reason - Hugo Mercier NO WRITING</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Destroy - No report - Hugo Mercier NO WRITING</EN>
+            <DE>Destroy - No report - Hugo Mercier NO WRITING</DE>
+            <Icon />
+          </Text>
+          <Text ID="110772">
+            <EN>Dissidence Adrift</EN>
+            <DE>Mitreißende Dissidenz</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Delivery - Reconditioning - Hugo Mercier NO WRITING</EN>
+            <DE>Delivery - Reconditioning - Hugo Mercier NO WRITING</DE>
+            <Icon />
+          </Text>
+          <Text ID="110780">
+            <EN>They Must Be Mad</EN>
+            <DE>Sie müssen verrückt sein</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - Conspirators Denounce - Hugo Mercier </EN>
+            <DE>Picture Puzzle - Conspirators Denounce - Hugo Mercier </DE>
+            <Icon />
+          </Text>
+          <Text ID="110745">
+            <EN>Growing Process</EN>
+            <DE>Wachstumsprozess</DE>
+            <Icon />
+          </Text>
+          <Text ID="110701">
+            <EN>Ignite the State</EN>
+            <DE>Setzt den Staat in Flammen</DE>
+            <Icon />
+          </Text>
+          <Text ID="110719">
+            <EN>La Propriété, C'est le Vol</EN>
+            <DE>La Propriété, C'est le Vol</DE>
+            <Icon />
+          </Text>
+          <Text ID="110755">
+            <EN>A Common Enemy</EN>
+            <DE>Ein gemeinsamer Feind</DE>
+            <Icon />
+          </Text>
+          <Text ID="110774">
+            <EN>Sedition</EN>
+            <DE>Volksverhetzung</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - The Hunt Part 1 - Hugo Mercier </EN>
+            <DE>Picture Puzzle - The Hunt Part 1 - Hugo Mercier </DE>
+            <Icon />
+          </Text>
+          <Text ID="110804">
+            <EN>Paranoia 1 — Mistrust</EN>
+            <DE>Paranoia 1 - Misstrauen</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Smuggle wo scanner - Main arc Prologue - Hugo Mercier</EN>
+            <DE>Smuggle wo scanner - Main arc Prologue - Hugo Mercier</DE>
+            <Icon />
+          </Text>
+          <Text ID="110817">
+            <EN>No Gods, No Masters 1 —  &lt;br/&gt;Intervention</EN>
+            <DE>Weder Gott, noch Herr 1 -  &lt;br/&gt;Intervention</DE>
+            <Icon />
+          </Text>
+          <Text ID="110819">
+            <EN>No Gods, No Masters 2 — An Eye for an Eye</EN>
+            <DE>Weder Gott, noch Herr 2 - Auge um Auge</DE>
+            <Icon />
+          </Text>
+          <Text ID="110821">
+            <EN>No Gods, No Masters 3 — Trust Issues</EN>
+            <DE>Weder Gott, noch Herr 3 - Vertrauensprobleme</DE>
+            <Icon />
+          </Text>
+          <Text ID="110792">
+            <EN>Gunpowder and Treason 3 — Emancipation</EN>
+            <DE>Schwarzpulver und Hochverrat 3 - Emanzipation</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Picture Puzzle - The Hunt Part 1 Select - Hugo Mercier </EN>
+            <DE>Picture Puzzle - The Hunt Part 1 Select - Hugo Mercier </DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Follow ship - The Hunt Part 2 Minister Culture - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</EN>
+            <DE>Follow ship - The Hunt Part 2 Minister Culture - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Follow ship - The Hunt Part 2 Minister Productivity - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</EN>
+            <DE>Follow ship - The Hunt Part 2 Minister Productivity - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Destroy - The Hunt Part 3 - Hugo Mercier</EN>
+            <DE>Destroy - The Hunt Part 3 - Hugo Mercier</DE>
+            <Icon />
+          </Text>
+          <Text ID="110808">
+            <EN>Paranoia 3 — Incrimination</EN>
+            <DE>Paranoia 3 - Anschuldigung</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="110910">
+        <Name>RQ_Worker_Specialist</Name>
+        <Text ID="225">
+          <EN>Quest - Anarchist Defector</EN>
+          <DE>Quest - Abtrünniger Anarchist</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/campaign_portrait_09.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="110910">
+            <EN>Eternally Grateful</EN>
+            <DE>Auf ewig dankbar</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
   <Asset ID="191609" Release="Release">
     <Name>Geordy Duff</Name>
     <Text ID="191609">
@@ -6628,357 +6979,6 @@
           <Text ID="152928">
             <EN>Lost Souls</EN>
             <DE>Verlorene Seelen</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-    <MonumentEvents />
-    <MonumentThresholds />
-    <MonumentRewards />
-  </Asset>
-  <Asset ID="111128" Release="Update 03">
-    <Name>Fierce Pyromaniac</Name>
-    <Text ID="111128">
-      <EN>Jittery Pyromaniac</EN>
-      <DE>Hektische Pyromanin</DE>
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_anarchist_402.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118004">
-      <EN>Rare</EN>
-      <DE>Selten</DE>
-      <Icon />
-    </Rarity>
-    <ItemType>Specialist</ItemType>
-    <ItemSets />
-    <Allocation ID="Warship">
-      <Text ID="12812">
-        <EN>Military Ships</EN>
-        <DE>Kriegsschiffe</DE>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Text ID="15798">
-          <EN>Trait:  Female</EN>
-          <DE>Merkmal:  Weiblich</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_generic_expedition.png</Filename>
-          </Icon>
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="800032">
-          <EN>Force</EN>
-          <DE>Kampfkraft</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
-          </Icon>
-        </Text>
-        <Value>30</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
-    <AttackableUpgrades />
-    <TradeShipUpgrades>
-      <Upgrade>
-        <Text ID="15198">
-          <EN>Trade Prices</EN>
-          <DE>Handelspreise</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_credits_2d.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-10%</Value>
-      </Upgrade>
-    </TradeShipUpgrades>
-    <VehicleUpgrades />
-    <AttackerUpgrades>
-      <Upgrade>
-        <Text ID="22111">
-          <EN>Flamethrower</EN>
-          <DE>Flammenwerfer</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/consumables/icon_flame_thrower_3.png</Filename>
-          </Icon>
-          <AdditionalInformation ID="22110" FontStyle="16">
-            <EN>Lets ships spit flames, setting their enemies ablaze.</EN>
-            <DE>Das Schiff spuckt nun Feuer und setzt die Feinde in Brand.</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/consumables/icon_flame_thrower_3.png</Filename>
-            </Icon>
-          </AdditionalInformation>
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="12021">
-          <EN>Attack Range</EN>
-          <DE>Angriffsreichweite</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_war.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-50%</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="2334">
-          <EN>Damage per shot</EN>
-          <DE>Schaden pro Schuss</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-30%</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="15266">
-          <EN>Vision Range</EN>
-          <DE>Sichtweite</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_go_to.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-40%</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="17230">
-          <EN>Attack Speed</EN>
-          <DE>Angriffsgeschwindigkeit</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_timer.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+110%</Value>
-      </Upgrade>
-    </AttackerUpgrades>
-    <VisitorHarborUpgrades />
-    <RepairCraneUpgrades />
-    <IncidentInfectableUpgrades />
-    <IncidentInfluencerUpgrades />
-    <ItemGeneratorUpgrades />
-    <ItemActionUpgrades />
-    <ShipyardUpgrades />
-    <KontorUpgrades />
-    <TradePrice>28100</TradePrice>
-    <Info ID="111157">
-      <EN>When the goal justifies the means, throw yourself into the action!</EN>
-      <DE>Wenn der Zweck die Mittel heiligt, dann stürzen Sie sich ins Getümmel!</DE>
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="220">
-        <Name>Second_ai_11 (Hugo Mercier)</Name>
-        <Text ID="220">
-          <EN>Ship Drop - Dr. Hugo Mercier</EN>
-          <DE>Schiff Drop - Dr. Hugo Mercier</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_11.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="220">
-            <EN>Dr. Hugo Mercier</EN>
-            <DE>Dr. Hugo Mercier</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/ai_11.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="110692">
-        <Name>Escort - We welcome all - Hugo Mercier</Name>
-        <Text ID="220">
-          <EN>Quest - Dr. Hugo Mercier</EN>
-          <DE>Quest - Dr. Hugo Mercier</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_11.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="110692">
-            <EN>Stronghold for the &lt;br/&gt;Oppressed</EN>
-            <DE>Festung für &lt;br/&gt;die Unterdrückten</DE>
-            <Icon />
-          </Text>
-          <Text ID="110693">
-            <EN>Survival of the Kindest</EN>
-            <DE>Überleben des Gütigsten</DE>
-            <Icon />
-          </Text>
-          <Text ID="110695">
-            <EN>Mutual Admiration</EN>
-            <DE>Gegenseitige Bewunderung</DE>
-            <Icon />
-          </Text>
-          <Text ID="110698">
-            <EN>Away with the Scale</EN>
-            <DE>Weg mit Justitia</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Destroy - Close prison door - Hugo Mercier NEED DESTROY DESTINATION</EN>
-            <DE>Destroy - Close prison door - Hugo Mercier NEED DESTROY DESTINATION</DE>
-            <Icon />
-          </Text>
-          <Text ID="110712">
-            <EN>The Last Laugh</EN>
-            <DE>Wer zuletzt lacht</DE>
-            <Icon />
-          </Text>
-          <Text ID="110717">
-            <EN>The Power of the Masses</EN>
-            <DE>Die Macht der Masse</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Status Quo - Parasites - Hugo Mercier NO WRITING</EN>
-            <DE>Status Quo - Parasites - Hugo Mercier NO WRITING</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Photo - Festival of reason - Hugo Mercier NO WRITING</EN>
-            <DE>Photo - Festival of reason - Hugo Mercier NO WRITING</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Destroy - No report - Hugo Mercier NO WRITING</EN>
-            <DE>Destroy - No report - Hugo Mercier NO WRITING</DE>
-            <Icon />
-          </Text>
-          <Text ID="110772">
-            <EN>Dissidence Adrift</EN>
-            <DE>Mitreißende Dissidenz</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Delivery - Reconditioning - Hugo Mercier NO WRITING</EN>
-            <DE>Delivery - Reconditioning - Hugo Mercier NO WRITING</DE>
-            <Icon />
-          </Text>
-          <Text ID="110780">
-            <EN>They Must Be Mad</EN>
-            <DE>Sie müssen verrückt sein</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Picture Puzzle - Conspirators Denounce - Hugo Mercier </EN>
-            <DE>Picture Puzzle - Conspirators Denounce - Hugo Mercier </DE>
-            <Icon />
-          </Text>
-          <Text ID="110745">
-            <EN>Growing Process</EN>
-            <DE>Wachstumsprozess</DE>
-            <Icon />
-          </Text>
-          <Text ID="110701">
-            <EN>Ignite the State</EN>
-            <DE>Setzt den Staat in Flammen</DE>
-            <Icon />
-          </Text>
-          <Text ID="110719">
-            <EN>La Propriété, C'est le Vol</EN>
-            <DE>La Propriété, C'est le Vol</DE>
-            <Icon />
-          </Text>
-          <Text ID="110755">
-            <EN>A Common Enemy</EN>
-            <DE>Ein gemeinsamer Feind</DE>
-            <Icon />
-          </Text>
-          <Text ID="110774">
-            <EN>Sedition</EN>
-            <DE>Volksverhetzung</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Picture Puzzle - The Hunt Part 1 - Hugo Mercier </EN>
-            <DE>Picture Puzzle - The Hunt Part 1 - Hugo Mercier </DE>
-            <Icon />
-          </Text>
-          <Text ID="110804">
-            <EN>Paranoia 1 — Mistrust</EN>
-            <DE>Paranoia 1 - Misstrauen</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Smuggle wo scanner - Main arc Prologue - Hugo Mercier</EN>
-            <DE>Smuggle wo scanner - Main arc Prologue - Hugo Mercier</DE>
-            <Icon />
-          </Text>
-          <Text ID="110817">
-            <EN>No Gods, No Masters 1 —  &lt;br/&gt;Intervention</EN>
-            <DE>Weder Gott, noch Herr 1 -  &lt;br/&gt;Intervention</DE>
-            <Icon />
-          </Text>
-          <Text ID="110819">
-            <EN>No Gods, No Masters 2 — An Eye for an Eye</EN>
-            <DE>Weder Gott, noch Herr 2 - Auge um Auge</DE>
-            <Icon />
-          </Text>
-          <Text ID="110821">
-            <EN>No Gods, No Masters 3 — Trust Issues</EN>
-            <DE>Weder Gott, noch Herr 3 - Vertrauensprobleme</DE>
-            <Icon />
-          </Text>
-          <Text ID="110792">
-            <EN>Gunpowder and Treason 3 — Emancipation</EN>
-            <DE>Schwarzpulver und Hochverrat 3 - Emanzipation</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Picture Puzzle - The Hunt Part 1 Select - Hugo Mercier </EN>
-            <DE>Picture Puzzle - The Hunt Part 1 Select - Hugo Mercier </DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Follow ship - The Hunt Part 2 Minister Culture - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</EN>
-            <DE>Follow ship - The Hunt Part 2 Minister Culture - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Follow ship - The Hunt Part 2 Minister Productivity - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</EN>
-            <DE>Follow ship - The Hunt Part 2 Minister Productivity - Hugo Mercier NEED FOLLOW SHIP MULTIDESTINATION</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Destroy - The Hunt Part 3 - Hugo Mercier</EN>
-            <DE>Destroy - The Hunt Part 3 - Hugo Mercier</DE>
-            <Icon />
-          </Text>
-          <Text ID="110808">
-            <EN>Paranoia 3 — Incrimination</EN>
-            <DE>Paranoia 3 - Anschuldigung</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="110910">
-        <Name>RQ_Worker_Specialist</Name>
-        <Text ID="225">
-          <EN>Quest - Anarchist Defector</EN>
-          <DE>Quest - Abtrünniger Anarchist</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/campaign_portrait_09.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="110910">
-            <EN>Eternally Grateful</EN>
-            <DE>Auf ewig dankbar</DE>
             <Icon />
           </Text>
         </Details>
@@ -17226,6 +17226,243 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
+  <Asset ID="192074" Release="Release">
+    <Name>Jack of all Traits</Name>
+    <Text ID="192074">
+      <EN>Jack of all Traits</EN>
+      <DE>Jack of all Traits</DE>
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/specialists/icon_craftsman_common.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118006">
+      <EN>Legendary</EN>
+      <DE>Legendär</DE>
+      <Icon />
+    </Rarity>
+    <ItemType>Specialist</ItemType>
+    <ItemSets />
+    <Allocation ID="Ship">
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Text ID="15797">
+          <EN>Trait:  Male</EN>
+          <DE>Merkmal:  Männlich</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_generic_expedition.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="15798">
+          <EN>Trait:  Female</EN>
+          <DE>Merkmal:  Weiblich</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_generic_expedition.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="3928">
+          <EN>Trait:  Anthropologist</EN>
+          <DE>Merkmal:  Anthropologe</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_expedition_anthropologist.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="9998">
+          <EN>Trait:  Zoologist</EN>
+          <DE>Merkmal:  Zoologe</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_expedition_zoologist.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="3929">
+          <EN>Trait:  Hypnotist</EN>
+          <DE>Merkmal:  Hypnotiseur</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_expedition_hypnotist.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="3930">
+          <EN>Trait:  Pirate</EN>
+          <DE>Merkmal:  Pirat</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_expedition_pirate.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="3931">
+          <EN>Trait:  Diver</EN>
+          <DE>Merkmal:  Taucher</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_expedition_diver.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="12262">
+          <EN>Trait:  Archaeologist</EN>
+          <DE>Merkmal:  Archäologe</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_museum_2d.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="12266">
+          <EN>Trait:  Polyglot</EN>
+          <DE>Merkmal:  Sprachkundiger</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_chatroom.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="800029">
+          <EN>Diplomacy</EN>
+          <DE>Redegabe</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+          </Icon>
+        </Text>
+        <Value>100</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="800032">
+          <EN>Force</EN>
+          <DE>Kampfkraft</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+          </Icon>
+        </Text>
+        <Value>100</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="800004">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+          </Icon>
+        </Text>
+        <Value>100</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="800033">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+          </Icon>
+        </Text>
+        <Value>100</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="800031">
+          <EN>Medicine</EN>
+          <DE>Heilkunst</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_threat_diseases_tint.png</Filename>
+          </Icon>
+        </Text>
+        <Value>100</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="800028">
+          <EN>Faith</EN>
+          <DE>Glaube</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
+          </Icon>
+        </Text>
+        <Value>100</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="800034">
+          <EN>Crafting</EN>
+          <DE>Geschick</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_threat_crafting_tint.png</Filename>
+          </Icon>
+        </Text>
+        <Value>100</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="800030">
+          <EN>Hunting</EN>
+          <DE>Jagdglück</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
+          </Icon>
+        </Text>
+        <Value>100</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <ItemActionUpgrades>
+      <Upgrade>
+        <Text ID="20072" FontStyle="16">
+          <EN>While active</EN>
+          <DE>Wenn aktiv</DE>
+          <Icon />
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </ItemActionUpgrades>
+    <ShipyardUpgrades />
+    <KontorUpgrades />
+    <TradePrice />
+    <Info ID="17225">
+      <EN>It is the master of expeditions, the eloquent, the strong and the mighty, they who is never lost, the savior of bodies, souls and things, the predator, the friend of man and animal, the puppetmaster, scourge of the sea, explorer of depths, the joker, the tomb raider,  the cosmopolitan, the Jack of all traits.</EN>
+      <DE>It is the master of expeditions, the eloquent, the strong and the mighty, they who is never lost, the savior of bodies, souls and things, the predator, the friend of man and animal, the puppetmaster, scourge of the sea, explorer of depths, the joker, the tomb raider,  the cosmopolitan, the Jack of all traits.</DE>
+      <Icon />
+    </Info>
+    <Sources />
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
   <Asset ID="191444" Release="Release">
     <Name>Sailor</Name>
     <Text ID="191444">
@@ -18708,243 +18945,6 @@
         </Details>
       </Source>
     </Sources>
-    <MonumentEvents />
-    <MonumentThresholds />
-    <MonumentRewards />
-  </Asset>
-  <Asset ID="192074" Release="Release">
-    <Name>Jack of all Traits</Name>
-    <Text ID="192074">
-      <EN>Jack of all Traits</EN>
-      <DE>Jack of all Traits</DE>
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/specialists/icon_craftsman_common.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118006">
-      <EN>Legendary</EN>
-      <DE>Legendär</DE>
-      <Icon />
-    </Rarity>
-    <ItemType>Specialist</ItemType>
-    <ItemSets />
-    <Allocation ID="Ship">
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Text ID="15797">
-          <EN>Trait:  Male</EN>
-          <DE>Merkmal:  Männlich</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_generic_expedition.png</Filename>
-          </Icon>
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="15798">
-          <EN>Trait:  Female</EN>
-          <DE>Merkmal:  Weiblich</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_generic_expedition.png</Filename>
-          </Icon>
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="3928">
-          <EN>Trait:  Anthropologist</EN>
-          <DE>Merkmal:  Anthropologe</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_expedition_anthropologist.png</Filename>
-          </Icon>
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="9998">
-          <EN>Trait:  Zoologist</EN>
-          <DE>Merkmal:  Zoologe</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_expedition_zoologist.png</Filename>
-          </Icon>
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="3929">
-          <EN>Trait:  Hypnotist</EN>
-          <DE>Merkmal:  Hypnotiseur</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_expedition_hypnotist.png</Filename>
-          </Icon>
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="3930">
-          <EN>Trait:  Pirate</EN>
-          <DE>Merkmal:  Pirat</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_expedition_pirate.png</Filename>
-          </Icon>
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="3931">
-          <EN>Trait:  Diver</EN>
-          <DE>Merkmal:  Taucher</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_expedition_diver.png</Filename>
-          </Icon>
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="12262">
-          <EN>Trait:  Archaeologist</EN>
-          <DE>Merkmal:  Archäologe</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_museum_2d.png</Filename>
-          </Icon>
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="12266">
-          <EN>Trait:  Polyglot</EN>
-          <DE>Merkmal:  Sprachkundiger</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_chatroom.png</Filename>
-          </Icon>
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="800029">
-          <EN>Diplomacy</EN>
-          <DE>Redegabe</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
-          </Icon>
-        </Text>
-        <Value>100</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="800032">
-          <EN>Force</EN>
-          <DE>Kampfkraft</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
-          </Icon>
-        </Text>
-        <Value>100</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="800004">
-          <EN>Naval Power</EN>
-          <DE>Gefechtskunde</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
-          </Icon>
-        </Text>
-        <Value>100</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="800033">
-          <EN>Navigation</EN>
-          <DE>Navigation</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-          </Icon>
-        </Text>
-        <Value>100</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="800031">
-          <EN>Medicine</EN>
-          <DE>Heilkunst</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_threat_diseases_tint.png</Filename>
-          </Icon>
-        </Text>
-        <Value>100</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="800028">
-          <EN>Faith</EN>
-          <DE>Glaube</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
-          </Icon>
-        </Text>
-        <Value>100</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="800034">
-          <EN>Crafting</EN>
-          <DE>Geschick</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_threat_crafting_tint.png</Filename>
-          </Icon>
-        </Text>
-        <Value>100</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="800030">
-          <EN>Hunting</EN>
-          <DE>Jagdglück</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
-          </Icon>
-        </Text>
-        <Value>100</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
-    <AttackableUpgrades />
-    <TradeShipUpgrades />
-    <VehicleUpgrades />
-    <AttackerUpgrades />
-    <VisitorHarborUpgrades />
-    <RepairCraneUpgrades />
-    <IncidentInfectableUpgrades />
-    <IncidentInfluencerUpgrades />
-    <ItemGeneratorUpgrades />
-    <ItemActionUpgrades>
-      <Upgrade>
-        <Text ID="20072" FontStyle="16">
-          <EN>While active</EN>
-          <DE>Wenn aktiv</DE>
-          <Icon />
-        </Text>
-        <Value></Value>
-      </Upgrade>
-    </ItemActionUpgrades>
-    <ShipyardUpgrades />
-    <KontorUpgrades />
-    <TradePrice />
-    <Info ID="17225">
-      <EN>It is the master of expeditions, the eloquent, the strong and the mighty, they who is never lost, the savior of bodies, souls and things, the predator, the friend of man and animal, the puppetmaster, scourge of the sea, explorer of depths, the joker, the tomb raider,  the cosmopolitan, the Jack of all traits.</EN>
-      <DE>It is the master of expeditions, the eloquent, the strong and the mighty, they who is never lost, the savior of bodies, souls and things, the predator, the friend of man and animal, the puppetmaster, scourge of the sea, explorer of depths, the joker, the tomb raider,  the cosmopolitan, the Jack of all traits.</DE>
-      <Icon />
-    </Info>
-    <Sources />
     <MonumentEvents />
     <MonumentThresholds />
     <MonumentRewards />
@@ -32355,6 +32355,537 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
+  <Asset ID="191621" Release="Release">
+    <Name>International Exporter</Name>
+    <Text ID="191621">
+      <EN>Itsuko the International Exporter</EN>
+      <DE>Itsuko die Exporteurin</DE>
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_well_dressed_404.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+      <Icon />
+    </Rarity>
+    <ItemType>Specialist</ItemType>
+    <ItemSets />
+    <Allocation ID="Ship">
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Text ID="15798">
+          <EN>Trait:  Female</EN>
+          <DE>Merkmal:  Weiblich</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_generic_expedition.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="800029">
+          <EN>Diplomacy</EN>
+          <DE>Redegabe</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+          </Icon>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades>
+      <Upgrade>
+        <Text ID="15198">
+          <EN>Trade Prices</EN>
+          <DE>Handelspreise</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_credits_2d.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-10%</Value>
+      </Upgrade>
+    </TradeShipUpgrades>
+    <VehicleUpgrades>
+      <Upgrade>
+        <Text ID="15261">
+          <EN>Cargo Slowdown</EN>
+          <DE>Fracht-Verlangsamung</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-80%</Value>
+      </Upgrade>
+    </VehicleUpgrades>
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <ItemActionUpgrades />
+    <ShipyardUpgrades />
+    <KontorUpgrades />
+    <TradePrice>66625</TradePrice>
+    <Info ID="20024">
+      <EN>Itsuko knows how to provide flawless transoceanic delivery services.</EN>
+      <DE>Itsuko weiß, wie man ein internationales Frachtunternehmen aufzieht.</DE>
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="46">
+        <Name>Third_party_07 (Eli Bleakworth)</Name>
+        <Text ID="46">
+          <EN>Harbour - Eli Bleakworth</EN>
+          <DE>Hafen - Eli Bleakworth</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_07.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800103">
+        <Name>Archeological Expedition Easy</Name>
+        <Text ID="11629">
+          <EN>Archaeological Expedition</EN>
+          <DE>Archäologische Expedition</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.1.1</EN>
+            <DE>Verheddert 1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.1.1</EN>
+            <DE>Verheddert 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.2.1</EN>
+            <DE>Verheddert 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.1.1</EN>
+            <DE>Flaschenpost 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.2.1</EN>
+            <DE>Flaschenpost 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.2.1.1</EN>
+            <DE>Flaschenpost 1.1.2.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="803072">
+            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
+            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800214">
+        <Name>Zoological Expedition Easy</Name>
+        <Text ID="11630">
+          <EN>Zoological Expedition</EN>
+          <DE>Zoologische Expedition</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.1.1</EN>
+            <DE>Verheddert 1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.1.1</EN>
+            <DE>Verheddert 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.2.1</EN>
+            <DE>Verheddert 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.1.1</EN>
+            <DE>Flaschenpost 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.2.1</EN>
+            <DE>Flaschenpost 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.2.1.1</EN>
+            <DE>Flaschenpost 1.1.2.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="803072">
+            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
+            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800399">
+        <Name>Rescue Mission Easy</Name>
+        <Text ID="11631">
+          <EN>Rescue Mission</EN>
+          <DE>Rettungseinsatz</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.1.1</EN>
+            <DE>Verheddert 1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.1.1</EN>
+            <DE>Verheddert 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.2.1</EN>
+            <DE>Verheddert 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.1.1</EN>
+            <DE>Flaschenpost 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.2.1</EN>
+            <DE>Flaschenpost 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.2.1.1</EN>
+            <DE>Flaschenpost 1.1.2.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="803072">
+            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
+            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Expedition Abgeschossen</EN>
+            <DE> Successfully Expedition</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800403">
+        <Name>Pirate Hunt Easy</Name>
+        <Text ID="11632">
+          <EN>Pirate Hunt</EN>
+          <DE>Piratenjagd</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.1.1</EN>
+            <DE>Verheddert 1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.1.1</EN>
+            <DE>Verheddert 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.2.1</EN>
+            <DE>Verheddert 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.1.1</EN>
+            <DE>Flaschenpost 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.2.1</EN>
+            <DE>Flaschenpost 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.2.1.1</EN>
+            <DE>Flaschenpost 1.1.2.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="803072">
+            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
+            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800777">
+        <Name>Discovery South America Sandbox</Name>
+        <Text ID="11634">
+          <EN>Discovery Expedition</EN>
+          <DE>Entdeckungsreise</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.1.1</EN>
+            <DE>Verheddert 1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.1.1</EN>
+            <DE>Verheddert 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.2.1</EN>
+            <DE>Verheddert 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.1.1</EN>
+            <DE>Flaschenpost 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.2.1</EN>
+            <DE>Flaschenpost 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.2.1.1</EN>
+            <DE>Flaschenpost 1.1.2.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="803072">
+            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
+            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="152437">
+        <Name>The Convicted Maid - Jailor DISABLED</Name>
+        <Text ID="46">
+          <EN>Quest - Eli Bleakworth</EN>
+          <DE>Quest - Eli Bleakworth</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_07.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="152437">
+            <EN>Convicted Maid (TBC - Quest not yet written) FORCED</EN>
+            <DE>Isolationshaft</DE>
+            <Icon />
+          </Text>
+          <Text ID="150131">
+            <EN>Judge, Jury, and Executioner</EN>
+            <DE>Richter, Geschworener und Henker</DE>
+            <Icon />
+          </Text>
+          <Text ID="152453">
+            <EN>Eli The Incorruptible 1 — &lt;br/&gt;Vitriol</EN>
+            <DE>Eli der Unbestechliche 1 - &lt;br/&gt;Vitriol</DE>
+            <Icon />
+          </Text>
+          <Text ID="152454">
+            <EN>The Pit and The Pendulum 1 — Condemned</EN>
+            <DE>Die Grube und das Pendel 1 - Verurteilt</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="78">
+        <Name>Third_party_08 (Madame Kahina)</Name>
+        <Text ID="78">
+          <EN>Harbour - Madame Kahina</EN>
+          <DE>Hafen - Madame Kahina</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_08.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="150375">
+        <Name>Concidences - Kahina</Name>
+        <Text ID="78">
+          <EN>Quest - Madame Kahina</EN>
+          <DE>Quest - Madame Kahina</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_08.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="150375">
+            <EN>Coincidences Don't Exist</EN>
+            <DE>Zufälle gibt es nicht</DE>
+            <Icon />
+          </Text>
+          <Text ID="150366">
+            <EN>Trust Your Instincts</EN>
+            <DE>Auf den Instinkt ist Verlass</DE>
+            <Icon />
+          </Text>
+          <Text ID="152533">
+            <EN>Welcome to the Truth 1 — The Test</EN>
+            <DE>Willkommen bei der Wahrheit 1 - Der Test</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="2001173">
+        <Name>TourismBalancing</Name>
+        <Text ID="">
+          <EN>Tourism</EN>
+          <DE>Tourismus</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="">
+            <EN>1000 Attractiveness</EN>
+            <DE>1000 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>1350 Attractiveness</EN>
+            <DE>1350 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>1750 Attractiveness</EN>
+            <DE>1750 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>2200 Attractiveness</EN>
+            <DE>2200 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>2700 Attractiveness</EN>
+            <DE>2700 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>3250 Attractiveness</EN>
+            <DE>3250 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>3850 Attractiveness</EN>
+            <DE>3850 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>4500 Attractiveness</EN>
+            <DE>4500 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>5200 Attractiveness</EN>
+            <DE>5200 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>5950 Attractiveness</EN>
+            <DE>5950 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>6500 Attractiveness</EN>
+            <DE>6500 Attraktivität</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
   <Asset ID="191448" Release="Release">
     <Name>Pilot</Name>
     <Text ID="191448">
@@ -33593,537 +34124,6 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191621" Release="Release">
-    <Name>International Exporter</Name>
-    <Text ID="191621">
-      <EN>Itsuko the International Exporter</EN>
-      <DE>Itsuko die Exporteurin</DE>
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_well_dressed_404.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118005">
-      <EN>Epic</EN>
-      <DE>Episch</DE>
-      <Icon />
-    </Rarity>
-    <ItemType>Specialist</ItemType>
-    <ItemSets />
-    <Allocation ID="Ship">
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Text ID="15798">
-          <EN>Trait:  Female</EN>
-          <DE>Merkmal:  Weiblich</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_generic_expedition.png</Filename>
-          </Icon>
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="800029">
-          <EN>Diplomacy</EN>
-          <DE>Redegabe</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
-          </Icon>
-        </Text>
-        <Value>20</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
-    <AttackableUpgrades />
-    <TradeShipUpgrades>
-      <Upgrade>
-        <Text ID="15198">
-          <EN>Trade Prices</EN>
-          <DE>Handelspreise</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_credits_2d.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-10%</Value>
-      </Upgrade>
-    </TradeShipUpgrades>
-    <VehicleUpgrades>
-      <Upgrade>
-        <Text ID="15261">
-          <EN>Cargo Slowdown</EN>
-          <DE>Fracht-Verlangsamung</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-80%</Value>
-      </Upgrade>
-    </VehicleUpgrades>
-    <AttackerUpgrades />
-    <VisitorHarborUpgrades />
-    <RepairCraneUpgrades />
-    <IncidentInfectableUpgrades />
-    <IncidentInfluencerUpgrades />
-    <ItemGeneratorUpgrades />
-    <ItemActionUpgrades />
-    <ShipyardUpgrades />
-    <KontorUpgrades />
-    <TradePrice>66625</TradePrice>
-    <Info ID="20024">
-      <EN>Itsuko knows how to provide flawless transoceanic delivery services.</EN>
-      <DE>Itsuko weiß, wie man ein internationales Frachtunternehmen aufzieht.</DE>
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="46">
-        <Name>Third_party_07 (Eli Bleakworth)</Name>
-        <Text ID="46">
-          <EN>Harbour - Eli Bleakworth</EN>
-          <DE>Hafen - Eli Bleakworth</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_07.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="">
-            <EN>Mid Game</EN>
-            <DE>Mittleres Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Late-Mid Game</EN>
-            <DE>Mittleres-Spätes Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Late Game</EN>
-            <DE>Spätes Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>EndGame</EN>
-            <DE>End Game</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800103">
-        <Name>Archeological Expedition Easy</Name>
-        <Text ID="11629">
-          <EN>Archaeological Expedition</EN>
-          <DE>Archäologische Expedition</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.1.1</EN>
-            <DE>Verheddert 1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.1.1</EN>
-            <DE>Verheddert 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.2.1</EN>
-            <DE>Verheddert 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.1.1</EN>
-            <DE>Flaschenpost 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.2.1</EN>
-            <DE>Flaschenpost 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.2.1.1</EN>
-            <DE>Flaschenpost 1.1.2.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="803072">
-            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
-            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800214">
-        <Name>Zoological Expedition Easy</Name>
-        <Text ID="11630">
-          <EN>Zoological Expedition</EN>
-          <DE>Zoologische Expedition</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.1.1</EN>
-            <DE>Verheddert 1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.1.1</EN>
-            <DE>Verheddert 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.2.1</EN>
-            <DE>Verheddert 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.1.1</EN>
-            <DE>Flaschenpost 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.2.1</EN>
-            <DE>Flaschenpost 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.2.1.1</EN>
-            <DE>Flaschenpost 1.1.2.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="803072">
-            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
-            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
-        <Text ID="11631">
-          <EN>Rescue Mission</EN>
-          <DE>Rettungseinsatz</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.1.1</EN>
-            <DE>Verheddert 1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.1.1</EN>
-            <DE>Verheddert 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.2.1</EN>
-            <DE>Verheddert 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.1.1</EN>
-            <DE>Flaschenpost 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.2.1</EN>
-            <DE>Flaschenpost 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.2.1.1</EN>
-            <DE>Flaschenpost 1.1.2.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="803072">
-            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
-            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800403">
-        <Name>Pirate Hunt Easy</Name>
-        <Text ID="11632">
-          <EN>Pirate Hunt</EN>
-          <DE>Piratenjagd</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.1.1</EN>
-            <DE>Verheddert 1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.1.1</EN>
-            <DE>Verheddert 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.2.1</EN>
-            <DE>Verheddert 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.1.1</EN>
-            <DE>Flaschenpost 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.2.1</EN>
-            <DE>Flaschenpost 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.2.1.1</EN>
-            <DE>Flaschenpost 1.1.2.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="803072">
-            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
-            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800777">
-        <Name>Discovery South America Sandbox</Name>
-        <Text ID="11634">
-          <EN>Discovery Expedition</EN>
-          <DE>Entdeckungsreise</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.1.1</EN>
-            <DE>Verheddert 1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.1.1</EN>
-            <DE>Verheddert 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.2.1</EN>
-            <DE>Verheddert 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.1.1</EN>
-            <DE>Flaschenpost 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.2.1</EN>
-            <DE>Flaschenpost 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.2.1.1</EN>
-            <DE>Flaschenpost 1.1.2.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="803072">
-            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
-            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="152437">
-        <Name>The Convicted Maid - Jailor DISABLED</Name>
-        <Text ID="46">
-          <EN>Quest - Eli Bleakworth</EN>
-          <DE>Quest - Eli Bleakworth</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_07.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="152437">
-            <EN>Convicted Maid (TBC - Quest not yet written) FORCED</EN>
-            <DE>Isolationshaft</DE>
-            <Icon />
-          </Text>
-          <Text ID="150131">
-            <EN>Judge, Jury, and Executioner</EN>
-            <DE>Richter, Geschworener und Henker</DE>
-            <Icon />
-          </Text>
-          <Text ID="152453">
-            <EN>Eli The Incorruptible 1 — &lt;br/&gt;Vitriol</EN>
-            <DE>Eli der Unbestechliche 1 - &lt;br/&gt;Vitriol</DE>
-            <Icon />
-          </Text>
-          <Text ID="152454">
-            <EN>The Pit and The Pendulum 1 — Condemned</EN>
-            <DE>Die Grube und das Pendel 1 - Verurteilt</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="78">
-        <Name>Third_party_08 (Madame Kahina)</Name>
-        <Text ID="78">
-          <EN>Harbour - Madame Kahina</EN>
-          <DE>Hafen - Madame Kahina</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_08.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="">
-            <EN>Mid Game</EN>
-            <DE>Mittleres Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Late-Mid Game</EN>
-            <DE>Mittleres-Spätes Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Late Game</EN>
-            <DE>Spätes Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>EndGame</EN>
-            <DE>End Game</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="150375">
-        <Name>Concidences - Kahina</Name>
-        <Text ID="78">
-          <EN>Quest - Madame Kahina</EN>
-          <DE>Quest - Madame Kahina</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_08.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="150375">
-            <EN>Coincidences Don't Exist</EN>
-            <DE>Zufälle gibt es nicht</DE>
-            <Icon />
-          </Text>
-          <Text ID="150366">
-            <EN>Trust Your Instincts</EN>
-            <DE>Auf den Instinkt ist Verlass</DE>
-            <Icon />
-          </Text>
-          <Text ID="152533">
-            <EN>Welcome to the Truth 1 — The Test</EN>
-            <DE>Willkommen bei der Wahrheit 1 - Der Test</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="2001173">
-        <Name>TourismBalancing</Name>
-        <Text ID="">
-          <EN>Tourism</EN>
-          <DE>Tourismus</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="">
-            <EN>1000 Attractiveness</EN>
-            <DE>1000 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>1350 Attractiveness</EN>
-            <DE>1350 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>1750 Attractiveness</EN>
-            <DE>1750 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>2200 Attractiveness</EN>
-            <DE>2200 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>2700 Attractiveness</EN>
-            <DE>2700 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>3250 Attractiveness</EN>
-            <DE>3250 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>3850 Attractiveness</EN>
-            <DE>3850 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>4500 Attractiveness</EN>
-            <DE>4500 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>5200 Attractiveness</EN>
-            <DE>5200 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>5950 Attractiveness</EN>
-            <DE>5950 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>6500 Attractiveness</EN>
-            <DE>6500 Attraktivität</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-    <MonumentEvents />
-    <MonumentThresholds />
-    <MonumentRewards />
-  </Asset>
   <Asset ID="191604" Release="Release">
     <Name>Chief of the Navy</Name>
     <Text ID="191604">
@@ -34823,6 +34823,618 @@
           <Text ID="">
             <EN>6500 Attractiveness</EN>
             <DE>6500 Attraktivität</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
+  <Asset ID="191622" Release="Release">
+    <Name>Ship Company Owner</Name>
+    <Text ID="191622">
+      <EN>Salima the Shipping Operator</EN>
+      <DE>Salima die Imorteurin</DE>
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_normaldress_815.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+      <Icon />
+    </Rarity>
+    <ItemType>Specialist</ItemType>
+    <ItemSets />
+    <Allocation ID="Ship">
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Text ID="15798">
+          <EN>Trait:  Female</EN>
+          <DE>Merkmal:  Weiblich</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_generic_expedition.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="800029">
+          <EN>Diplomacy</EN>
+          <DE>Redegabe</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+          </Icon>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades>
+      <Upgrade>
+        <Text ID="15198">
+          <EN>Trade Prices</EN>
+          <DE>Handelspreise</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_credits_2d.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-10%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="15197">
+          <EN>Loading Speed</EN>
+          <DE>Ladegeschwindigkeit</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_load_ships.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+60%</Value>
+      </Upgrade>
+    </TradeShipUpgrades>
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <ItemActionUpgrades />
+    <ShipyardUpgrades />
+    <KontorUpgrades />
+    <TradePrice>62500</TradePrice>
+    <Info ID="20025">
+      <EN>The many narrow straits of her home have made Salima adept at logistics.</EN>
+      <DE>Die vielen schmalen Meerengen in ihrer Heimat haben Salima zu einer Expertin der Navigation gemacht.</DE>
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="46">
+        <Name>Third_party_07 (Eli Bleakworth)</Name>
+        <Text ID="46">
+          <EN>Harbour - Eli Bleakworth</EN>
+          <DE>Hafen - Eli Bleakworth</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_07.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800103">
+        <Name>Archeological Expedition Easy</Name>
+        <Text ID="11629">
+          <EN>Archaeological Expedition</EN>
+          <DE>Archäologische Expedition</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.1.1</EN>
+            <DE>Verheddert 1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.1.1</EN>
+            <DE>Verheddert 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.2.1</EN>
+            <DE>Verheddert 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.1.1</EN>
+            <DE>Flaschenpost 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.2.1</EN>
+            <DE>Flaschenpost 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.2.1.1</EN>
+            <DE>Flaschenpost 1.1.2.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="803072">
+            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
+            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800214">
+        <Name>Zoological Expedition Easy</Name>
+        <Text ID="11630">
+          <EN>Zoological Expedition</EN>
+          <DE>Zoologische Expedition</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.1.1</EN>
+            <DE>Verheddert 1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.1.1</EN>
+            <DE>Verheddert 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.2.1</EN>
+            <DE>Verheddert 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.1.1</EN>
+            <DE>Flaschenpost 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.2.1</EN>
+            <DE>Flaschenpost 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.2.1.1</EN>
+            <DE>Flaschenpost 1.1.2.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="803072">
+            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
+            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800399">
+        <Name>Rescue Mission Easy</Name>
+        <Text ID="11631">
+          <EN>Rescue Mission</EN>
+          <DE>Rettungseinsatz</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.1.1</EN>
+            <DE>Verheddert 1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.1.1</EN>
+            <DE>Verheddert 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.2.1</EN>
+            <DE>Verheddert 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.1.1</EN>
+            <DE>Flaschenpost 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.2.1</EN>
+            <DE>Flaschenpost 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.2.1.1</EN>
+            <DE>Flaschenpost 1.1.2.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="803072">
+            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
+            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Expedition Abgeschossen</EN>
+            <DE> Successfully Expedition</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800403">
+        <Name>Pirate Hunt Easy</Name>
+        <Text ID="11632">
+          <EN>Pirate Hunt</EN>
+          <DE>Piratenjagd</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.1.1</EN>
+            <DE>Verheddert 1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.1.1</EN>
+            <DE>Verheddert 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.2.1</EN>
+            <DE>Verheddert 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.1.1</EN>
+            <DE>Flaschenpost 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.2.1</EN>
+            <DE>Flaschenpost 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.2.1.1</EN>
+            <DE>Flaschenpost 1.1.2.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="803072">
+            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
+            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800777">
+        <Name>Discovery South America Sandbox</Name>
+        <Text ID="11634">
+          <EN>Discovery Expedition</EN>
+          <DE>Entdeckungsreise</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.1.1</EN>
+            <DE>Verheddert 1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.1.1</EN>
+            <DE>Verheddert 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.2.1</EN>
+            <DE>Verheddert 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.1.1</EN>
+            <DE>Flaschenpost 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.2.1</EN>
+            <DE>Flaschenpost 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.2.1.1</EN>
+            <DE>Flaschenpost 1.1.2.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="803072">
+            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
+            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="152437">
+        <Name>The Convicted Maid - Jailor DISABLED</Name>
+        <Text ID="46">
+          <EN>Quest - Eli Bleakworth</EN>
+          <DE>Quest - Eli Bleakworth</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_07.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="152437">
+            <EN>Convicted Maid (TBC - Quest not yet written) FORCED</EN>
+            <DE>Isolationshaft</DE>
+            <Icon />
+          </Text>
+          <Text ID="150131">
+            <EN>Judge, Jury, and Executioner</EN>
+            <DE>Richter, Geschworener und Henker</DE>
+            <Icon />
+          </Text>
+          <Text ID="152453">
+            <EN>Eli The Incorruptible 1 — &lt;br/&gt;Vitriol</EN>
+            <DE>Eli der Unbestechliche 1 - &lt;br/&gt;Vitriol</DE>
+            <Icon />
+          </Text>
+          <Text ID="152454">
+            <EN>The Pit and The Pendulum 1 — Condemned</EN>
+            <DE>Die Grube und das Pendel 1 - Verurteilt</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="78">
+        <Name>Third_party_08 (Madame Kahina)</Name>
+        <Text ID="78">
+          <EN>Harbour - Madame Kahina</EN>
+          <DE>Hafen - Madame Kahina</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_08.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="150375">
+        <Name>Concidences - Kahina</Name>
+        <Text ID="78">
+          <EN>Quest - Madame Kahina</EN>
+          <DE>Quest - Madame Kahina</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_08.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="150375">
+            <EN>Coincidences Don't Exist</EN>
+            <DE>Zufälle gibt es nicht</DE>
+            <Icon />
+          </Text>
+          <Text ID="150366">
+            <EN>Trust Your Instincts</EN>
+            <DE>Auf den Instinkt ist Verlass</DE>
+            <Icon />
+          </Text>
+          <Text ID="152533">
+            <EN>Welcome to the Truth 1 — The Test</EN>
+            <DE>Willkommen bei der Wahrheit 1 - Der Test</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="2001173">
+        <Name>TourismBalancing</Name>
+        <Text ID="">
+          <EN>Tourism</EN>
+          <DE>Tourismus</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="">
+            <EN>1000 Attractiveness</EN>
+            <DE>1000 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>1350 Attractiveness</EN>
+            <DE>1350 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>1750 Attractiveness</EN>
+            <DE>1750 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>2200 Attractiveness</EN>
+            <DE>2200 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>2700 Attractiveness</EN>
+            <DE>2700 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>3250 Attractiveness</EN>
+            <DE>3250 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>3850 Attractiveness</EN>
+            <DE>3850 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>4500 Attractiveness</EN>
+            <DE>4500 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>5200 Attractiveness</EN>
+            <DE>5200 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>5950 Attractiveness</EN>
+            <DE>5950 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>6500 Attractiveness</EN>
+            <DE>6500 Attraktivität</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="150969">
+        <Name>RQ_Artisans_PeerGynt</Name>
+        <Text ID="87">
+          <EN>Quest - Artisan</EN>
+          <DE>Quest - Handwerker</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/resident_tier03.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="150969">
+            <EN>Peer Gynt</EN>
+            <DE>Peer Gynt</DE>
+            <Icon />
+          </Text>
+          <Text ID="150970">
+            <EN>Sound of Music</EN>
+            <DE>Der Klang der Musik</DE>
+            <Icon />
+          </Text>
+          <Text ID="150979">
+            <EN>The Wayward Apprentice</EN>
+            <DE>Lehrling auf Abwegen</DE>
+            <Icon />
+          </Text>
+          <Text ID="151847">
+            <EN>The Simple Life</EN>
+            <DE>Das einfache Leben</DE>
+            <Icon />
+          </Text>
+          <Text ID="150981">
+            <EN>New World</EN>
+            <DE>Neue Insel</DE>
+            <Icon />
+          </Text>
+          <Text ID="150982">
+            <EN>First Day of School</EN>
+            <DE>Erster Schultag</DE>
+            <Icon />
+          </Text>
+          <Text ID="150986">
+            <EN>A Day at the Zoo</EN>
+            <DE>Ein Tag im Zoo</DE>
+            <Icon />
+          </Text>
+          <Text ID="150987">
+            <EN>Can Opening</EN>
+            <DE>Dosenöffnung</DE>
+            <Icon />
+          </Text>
+          <Text ID="150988">
+            <EN>An Affair of Honor</EN>
+            <DE>Eine Sache der Ehre</DE>
+            <Icon />
+          </Text>
+          <Text ID="150989">
+            <EN>Culture Vulture</EN>
+            <DE>Kulturgeier</DE>
+            <Icon />
+          </Text>
+          <Text ID="151034">
+            <EN>Vicuña En Vogue</EN>
+            <DE>Vicuña en vogue</DE>
+            <Icon />
+          </Text>
+          <Text ID="151035">
+            <EN>Artisan Coffee</EN>
+            <DE>Handgefertigter Kaffee</DE>
+            <Icon />
+          </Text>
+          <Text ID="151036">
+            <EN>Pour, Oh Pour, The Pirate Rum</EN>
+            <DE>Fließe, oh, fließe, Piratenrum</DE>
+            <Icon />
+          </Text>
+          <Text ID="151037">
+            <EN>Turner Overdrive</EN>
+            <DE>Turners Impressionen</DE>
             <Icon />
           </Text>
         </Details>
@@ -36174,618 +36786,6 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191622" Release="Release">
-    <Name>Ship Company Owner</Name>
-    <Text ID="191622">
-      <EN>Salima the Shipping Operator</EN>
-      <DE>Salima die Imorteurin</DE>
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_normaldress_815.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118005">
-      <EN>Epic</EN>
-      <DE>Episch</DE>
-      <Icon />
-    </Rarity>
-    <ItemType>Specialist</ItemType>
-    <ItemSets />
-    <Allocation ID="Ship">
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Text ID="15798">
-          <EN>Trait:  Female</EN>
-          <DE>Merkmal:  Weiblich</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_generic_expedition.png</Filename>
-          </Icon>
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="800029">
-          <EN>Diplomacy</EN>
-          <DE>Redegabe</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
-          </Icon>
-        </Text>
-        <Value>20</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
-    <AttackableUpgrades />
-    <TradeShipUpgrades>
-      <Upgrade>
-        <Text ID="15198">
-          <EN>Trade Prices</EN>
-          <DE>Handelspreise</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_credits_2d.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-10%</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="15197">
-          <EN>Loading Speed</EN>
-          <DE>Ladegeschwindigkeit</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_load_ships.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+60%</Value>
-      </Upgrade>
-    </TradeShipUpgrades>
-    <VehicleUpgrades />
-    <AttackerUpgrades />
-    <VisitorHarborUpgrades />
-    <RepairCraneUpgrades />
-    <IncidentInfectableUpgrades />
-    <IncidentInfluencerUpgrades />
-    <ItemGeneratorUpgrades />
-    <ItemActionUpgrades />
-    <ShipyardUpgrades />
-    <KontorUpgrades />
-    <TradePrice>62500</TradePrice>
-    <Info ID="20025">
-      <EN>The many narrow straits of her home have made Salima adept at logistics.</EN>
-      <DE>Die vielen schmalen Meerengen in ihrer Heimat haben Salima zu einer Expertin der Navigation gemacht.</DE>
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="46">
-        <Name>Third_party_07 (Eli Bleakworth)</Name>
-        <Text ID="46">
-          <EN>Harbour - Eli Bleakworth</EN>
-          <DE>Hafen - Eli Bleakworth</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_07.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="">
-            <EN>Mid Game</EN>
-            <DE>Mittleres Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Late-Mid Game</EN>
-            <DE>Mittleres-Spätes Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Late Game</EN>
-            <DE>Spätes Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>EndGame</EN>
-            <DE>End Game</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800103">
-        <Name>Archeological Expedition Easy</Name>
-        <Text ID="11629">
-          <EN>Archaeological Expedition</EN>
-          <DE>Archäologische Expedition</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.1.1</EN>
-            <DE>Verheddert 1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.1.1</EN>
-            <DE>Verheddert 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.2.1</EN>
-            <DE>Verheddert 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.1.1</EN>
-            <DE>Flaschenpost 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.2.1</EN>
-            <DE>Flaschenpost 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.2.1.1</EN>
-            <DE>Flaschenpost 1.1.2.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="803072">
-            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
-            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800214">
-        <Name>Zoological Expedition Easy</Name>
-        <Text ID="11630">
-          <EN>Zoological Expedition</EN>
-          <DE>Zoologische Expedition</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.1.1</EN>
-            <DE>Verheddert 1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.1.1</EN>
-            <DE>Verheddert 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.2.1</EN>
-            <DE>Verheddert 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.1.1</EN>
-            <DE>Flaschenpost 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.2.1</EN>
-            <DE>Flaschenpost 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.2.1.1</EN>
-            <DE>Flaschenpost 1.1.2.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="803072">
-            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
-            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
-        <Text ID="11631">
-          <EN>Rescue Mission</EN>
-          <DE>Rettungseinsatz</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.1.1</EN>
-            <DE>Verheddert 1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.1.1</EN>
-            <DE>Verheddert 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.2.1</EN>
-            <DE>Verheddert 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.1.1</EN>
-            <DE>Flaschenpost 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.2.1</EN>
-            <DE>Flaschenpost 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.2.1.1</EN>
-            <DE>Flaschenpost 1.1.2.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="803072">
-            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
-            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800403">
-        <Name>Pirate Hunt Easy</Name>
-        <Text ID="11632">
-          <EN>Pirate Hunt</EN>
-          <DE>Piratenjagd</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.1.1</EN>
-            <DE>Verheddert 1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.1.1</EN>
-            <DE>Verheddert 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.2.1</EN>
-            <DE>Verheddert 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.1.1</EN>
-            <DE>Flaschenpost 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.2.1</EN>
-            <DE>Flaschenpost 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.2.1.1</EN>
-            <DE>Flaschenpost 1.1.2.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="803072">
-            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
-            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800777">
-        <Name>Discovery South America Sandbox</Name>
-        <Text ID="11634">
-          <EN>Discovery Expedition</EN>
-          <DE>Entdeckungsreise</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.1.1</EN>
-            <DE>Verheddert 1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.1.1</EN>
-            <DE>Verheddert 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.2.1</EN>
-            <DE>Verheddert 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.1.1</EN>
-            <DE>Flaschenpost 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.2.1</EN>
-            <DE>Flaschenpost 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.2.1.1</EN>
-            <DE>Flaschenpost 1.1.2.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="803072">
-            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
-            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="152437">
-        <Name>The Convicted Maid - Jailor DISABLED</Name>
-        <Text ID="46">
-          <EN>Quest - Eli Bleakworth</EN>
-          <DE>Quest - Eli Bleakworth</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_07.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="152437">
-            <EN>Convicted Maid (TBC - Quest not yet written) FORCED</EN>
-            <DE>Isolationshaft</DE>
-            <Icon />
-          </Text>
-          <Text ID="150131">
-            <EN>Judge, Jury, and Executioner</EN>
-            <DE>Richter, Geschworener und Henker</DE>
-            <Icon />
-          </Text>
-          <Text ID="152453">
-            <EN>Eli The Incorruptible 1 — &lt;br/&gt;Vitriol</EN>
-            <DE>Eli der Unbestechliche 1 - &lt;br/&gt;Vitriol</DE>
-            <Icon />
-          </Text>
-          <Text ID="152454">
-            <EN>The Pit and The Pendulum 1 — Condemned</EN>
-            <DE>Die Grube und das Pendel 1 - Verurteilt</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="78">
-        <Name>Third_party_08 (Madame Kahina)</Name>
-        <Text ID="78">
-          <EN>Harbour - Madame Kahina</EN>
-          <DE>Hafen - Madame Kahina</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_08.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="">
-            <EN>Mid Game</EN>
-            <DE>Mittleres Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Late-Mid Game</EN>
-            <DE>Mittleres-Spätes Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Late Game</EN>
-            <DE>Spätes Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>EndGame</EN>
-            <DE>End Game</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="150375">
-        <Name>Concidences - Kahina</Name>
-        <Text ID="78">
-          <EN>Quest - Madame Kahina</EN>
-          <DE>Quest - Madame Kahina</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_08.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="150375">
-            <EN>Coincidences Don't Exist</EN>
-            <DE>Zufälle gibt es nicht</DE>
-            <Icon />
-          </Text>
-          <Text ID="150366">
-            <EN>Trust Your Instincts</EN>
-            <DE>Auf den Instinkt ist Verlass</DE>
-            <Icon />
-          </Text>
-          <Text ID="152533">
-            <EN>Welcome to the Truth 1 — The Test</EN>
-            <DE>Willkommen bei der Wahrheit 1 - Der Test</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="2001173">
-        <Name>TourismBalancing</Name>
-        <Text ID="">
-          <EN>Tourism</EN>
-          <DE>Tourismus</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="">
-            <EN>1000 Attractiveness</EN>
-            <DE>1000 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>1350 Attractiveness</EN>
-            <DE>1350 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>1750 Attractiveness</EN>
-            <DE>1750 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>2200 Attractiveness</EN>
-            <DE>2200 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>2700 Attractiveness</EN>
-            <DE>2700 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>3250 Attractiveness</EN>
-            <DE>3250 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>3850 Attractiveness</EN>
-            <DE>3850 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>4500 Attractiveness</EN>
-            <DE>4500 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>5200 Attractiveness</EN>
-            <DE>5200 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>5950 Attractiveness</EN>
-            <DE>5950 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>6500 Attractiveness</EN>
-            <DE>6500 Attraktivität</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="150969">
-        <Name>RQ_Artisans_PeerGynt</Name>
-        <Text ID="87">
-          <EN>Quest - Artisan</EN>
-          <DE>Quest - Handwerker</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/resident_tier03.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="150969">
-            <EN>Peer Gynt</EN>
-            <DE>Peer Gynt</DE>
-            <Icon />
-          </Text>
-          <Text ID="150970">
-            <EN>Sound of Music</EN>
-            <DE>Der Klang der Musik</DE>
-            <Icon />
-          </Text>
-          <Text ID="150979">
-            <EN>The Wayward Apprentice</EN>
-            <DE>Lehrling auf Abwegen</DE>
-            <Icon />
-          </Text>
-          <Text ID="151847">
-            <EN>The Simple Life</EN>
-            <DE>Das einfache Leben</DE>
-            <Icon />
-          </Text>
-          <Text ID="150981">
-            <EN>New World</EN>
-            <DE>Neue Insel</DE>
-            <Icon />
-          </Text>
-          <Text ID="150982">
-            <EN>First Day of School</EN>
-            <DE>Erster Schultag</DE>
-            <Icon />
-          </Text>
-          <Text ID="150986">
-            <EN>A Day at the Zoo</EN>
-            <DE>Ein Tag im Zoo</DE>
-            <Icon />
-          </Text>
-          <Text ID="150987">
-            <EN>Can Opening</EN>
-            <DE>Dosenöffnung</DE>
-            <Icon />
-          </Text>
-          <Text ID="150988">
-            <EN>An Affair of Honor</EN>
-            <DE>Eine Sache der Ehre</DE>
-            <Icon />
-          </Text>
-          <Text ID="150989">
-            <EN>Culture Vulture</EN>
-            <DE>Kulturgeier</DE>
-            <Icon />
-          </Text>
-          <Text ID="151034">
-            <EN>Vicuña En Vogue</EN>
-            <DE>Vicuña en vogue</DE>
-            <Icon />
-          </Text>
-          <Text ID="151035">
-            <EN>Artisan Coffee</EN>
-            <DE>Handgefertigter Kaffee</DE>
-            <Icon />
-          </Text>
-          <Text ID="151036">
-            <EN>Pour, Oh Pour, The Pirate Rum</EN>
-            <DE>Fließe, oh, fließe, Piratenrum</DE>
-            <Icon />
-          </Text>
-          <Text ID="151037">
-            <EN>Turner Overdrive</EN>
-            <DE>Turners Impressionen</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-    <MonumentEvents />
-    <MonumentThresholds />
-    <MonumentRewards />
-  </Asset>
   <Asset ID="191605" Release="Release">
     <Name>Admiral of the Fleet</Name>
     <Text ID="191605">
@@ -37652,6 +37652,594 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
+  <Asset ID="191623" Release="Release">
+    <Name>Renowned Diplomat</Name>
+    <Text ID="191623">
+      <EN>Delores the Diplomat</EN>
+      <DE>Delores die Diplomatin</DE>
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_welldress_806.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+      <Icon />
+    </Rarity>
+    <ItemType>Specialist</ItemType>
+    <ItemSets />
+    <Allocation ID="Ship">
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Text ID="15798">
+          <EN>Trait:  Female</EN>
+          <DE>Merkmal:  Weiblich</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_generic_expedition.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="800029">
+          <EN>Diplomacy</EN>
+          <DE>Redegabe</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+          </Icon>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades>
+      <Upgrade>
+        <Text ID="15198">
+          <EN>Trade Prices</EN>
+          <DE>Handelspreise</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_credits_2d.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-10%</Value>
+      </Upgrade>
+    </TradeShipUpgrades>
+    <VehicleUpgrades>
+      <Upgrade>
+        <Text ID="2320">
+          <EN>Maintenance Cost</EN>
+          <DE>Unterhaltskosten</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-80%</Value>
+      </Upgrade>
+    </VehicleUpgrades>
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <ItemActionUpgrades />
+    <ShipyardUpgrades />
+    <KontorUpgrades />
+    <TradePrice>72025</TradePrice>
+    <Info ID="20026">
+      <EN>When Delores walked into the embassy, he knew he had his work cut out.</EN>
+      <DE>Als Delores die Botschaft betrat, wusste sie, dass sie alle Hände voll zu tun haben würde.</DE>
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="46">
+        <Name>Third_party_07 (Eli Bleakworth)</Name>
+        <Text ID="46">
+          <EN>Harbour - Eli Bleakworth</EN>
+          <DE>Hafen - Eli Bleakworth</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_07.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800103">
+        <Name>Archeological Expedition Easy</Name>
+        <Text ID="11629">
+          <EN>Archaeological Expedition</EN>
+          <DE>Archäologische Expedition</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.1.1</EN>
+            <DE>Verheddert 1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.1.1</EN>
+            <DE>Verheddert 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.2.1</EN>
+            <DE>Verheddert 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.1.1</EN>
+            <DE>Flaschenpost 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.2.1</EN>
+            <DE>Flaschenpost 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.2.1.1</EN>
+            <DE>Flaschenpost 1.1.2.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="803072">
+            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
+            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800214">
+        <Name>Zoological Expedition Easy</Name>
+        <Text ID="11630">
+          <EN>Zoological Expedition</EN>
+          <DE>Zoologische Expedition</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.1.1</EN>
+            <DE>Verheddert 1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.1.1</EN>
+            <DE>Verheddert 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.2.1</EN>
+            <DE>Verheddert 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.1.1</EN>
+            <DE>Flaschenpost 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.2.1</EN>
+            <DE>Flaschenpost 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.2.1.1</EN>
+            <DE>Flaschenpost 1.1.2.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="803072">
+            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
+            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800399">
+        <Name>Rescue Mission Easy</Name>
+        <Text ID="11631">
+          <EN>Rescue Mission</EN>
+          <DE>Rettungseinsatz</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.1.1</EN>
+            <DE>Verheddert 1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.1.1</EN>
+            <DE>Verheddert 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.2.1</EN>
+            <DE>Verheddert 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.1.1</EN>
+            <DE>Flaschenpost 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.2.1</EN>
+            <DE>Flaschenpost 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.2.1.1</EN>
+            <DE>Flaschenpost 1.1.2.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="803072">
+            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
+            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Expedition Abgeschossen</EN>
+            <DE> Successfully Expedition</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800403">
+        <Name>Pirate Hunt Easy</Name>
+        <Text ID="11632">
+          <EN>Pirate Hunt</EN>
+          <DE>Piratenjagd</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.1.1</EN>
+            <DE>Verheddert 1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.1.1</EN>
+            <DE>Verheddert 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.2.1</EN>
+            <DE>Verheddert 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.1.1</EN>
+            <DE>Flaschenpost 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.2.1</EN>
+            <DE>Flaschenpost 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.2.1.1</EN>
+            <DE>Flaschenpost 1.1.2.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="803072">
+            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
+            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800777">
+        <Name>Discovery South America Sandbox</Name>
+        <Text ID="11634">
+          <EN>Discovery Expedition</EN>
+          <DE>Entdeckungsreise</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.1.1</EN>
+            <DE>Verheddert 1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.1.1</EN>
+            <DE>Verheddert 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802094">
+            <EN>Sea of Sargassum 1.2.1.2.1</EN>
+            <DE>Verheddert 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.1.1</EN>
+            <DE>Flaschenpost 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.1.2.1</EN>
+            <DE>Flaschenpost 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802710">
+            <EN>Message In A Bottle 1.1.2.1.1</EN>
+            <DE>Flaschenpost 1.1.2.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="803072">
+            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
+            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="152437">
+        <Name>The Convicted Maid - Jailor DISABLED</Name>
+        <Text ID="46">
+          <EN>Quest - Eli Bleakworth</EN>
+          <DE>Quest - Eli Bleakworth</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_07.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="152437">
+            <EN>Convicted Maid (TBC - Quest not yet written) FORCED</EN>
+            <DE>Isolationshaft</DE>
+            <Icon />
+          </Text>
+          <Text ID="150131">
+            <EN>Judge, Jury, and Executioner</EN>
+            <DE>Richter, Geschworener und Henker</DE>
+            <Icon />
+          </Text>
+          <Text ID="152453">
+            <EN>Eli The Incorruptible 1 — &lt;br/&gt;Vitriol</EN>
+            <DE>Eli der Unbestechliche 1 - &lt;br/&gt;Vitriol</DE>
+            <Icon />
+          </Text>
+          <Text ID="152454">
+            <EN>The Pit and The Pendulum 1 — Condemned</EN>
+            <DE>Die Grube und das Pendel 1 - Verurteilt</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="78">
+        <Name>Third_party_08 (Madame Kahina)</Name>
+        <Text ID="78">
+          <EN>Harbour - Madame Kahina</EN>
+          <DE>Hafen - Madame Kahina</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_08.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="150375">
+        <Name>Concidences - Kahina</Name>
+        <Text ID="78">
+          <EN>Quest - Madame Kahina</EN>
+          <DE>Quest - Madame Kahina</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_08.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="150375">
+            <EN>Coincidences Don't Exist</EN>
+            <DE>Zufälle gibt es nicht</DE>
+            <Icon />
+          </Text>
+          <Text ID="150366">
+            <EN>Trust Your Instincts</EN>
+            <DE>Auf den Instinkt ist Verlass</DE>
+            <Icon />
+          </Text>
+          <Text ID="152533">
+            <EN>Welcome to the Truth 1 — The Test</EN>
+            <DE>Willkommen bei der Wahrheit 1 - Der Test</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="2001173">
+        <Name>TourismBalancing</Name>
+        <Text ID="">
+          <EN>Tourism</EN>
+          <DE>Tourismus</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="">
+            <EN>1000 Attractiveness</EN>
+            <DE>1000 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>1350 Attractiveness</EN>
+            <DE>1350 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>1750 Attractiveness</EN>
+            <DE>1750 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>2200 Attractiveness</EN>
+            <DE>2200 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>2700 Attractiveness</EN>
+            <DE>2700 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>3250 Attractiveness</EN>
+            <DE>3250 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>3850 Attractiveness</EN>
+            <DE>3850 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>4500 Attractiveness</EN>
+            <DE>4500 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>5200 Attractiveness</EN>
+            <DE>5200 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>5950 Attractiveness</EN>
+            <DE>5950 Attraktivität</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>6500 Attractiveness</EN>
+            <DE>6500 Attraktivität</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="151534">
+        <Name>RQ_Investors_Newspaper</Name>
+        <Text ID="89">
+          <EN>Quest - Investor</EN>
+          <DE>Quest - Investor</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/resident_tier05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="151534">
+            <EN>Paper Round</EN>
+            <DE>Zeitungstour</DE>
+            <Icon />
+          </Text>
+          <Text ID="151538">
+            <EN>Neighbourhood Watch</EN>
+            <DE>Bürgerwehr</DE>
+            <Icon />
+          </Text>
+          <Text ID="151539">
+            <EN>Here Kitty Kitty</EN>
+            <DE>Hier, miez, miez</DE>
+            <Icon />
+          </Text>
+          <Text ID="151547">
+            <EN>Boom and Bust</EN>
+            <DE>Zusammengekracht</DE>
+            <Icon />
+          </Text>
+          <Text ID="151548">
+            <EN>Elite Retreat</EN>
+            <DE>Elite-Rückzug</DE>
+            <Icon />
+          </Text>
+          <Text ID="151549">
+            <EN>Industrial Secrets</EN>
+            <DE>Industriegeheimnisse</DE>
+            <Icon />
+          </Text>
+          <Text ID="151552">
+            <EN>Picture of Success</EN>
+            <DE>Erfolgsbild</DE>
+            <Icon />
+          </Text>
+          <Text ID="151554">
+            <EN>Horse Party</EN>
+            <DE>Pferdeparty</DE>
+            <Icon />
+          </Text>
+          <Text ID="151556">
+            <EN>Dough from Dough</EN>
+            <DE>Knete durch Kneten</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
   <Asset ID="190766" Release="Release">
     <Name>Ship Captain</Name>
     <Text ID="190766">
@@ -37791,7 +38379,7 @@
             <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
           </Icon>
         </Text>
-        <Value>30</Value>
+        <Value>00:30</Value>
       </Upgrade>
       <Upgrade>
         <Text ID="2424" FontStyle="16">
@@ -37801,7 +38389,7 @@
             <Filename>data/ui/2kimages/main/icons/icon_wait_till_full.png</Filename>
           </Icon>
         </Text>
-        <Value>01:00</Value>
+        <Value>00:01:00</Value>
       </Upgrade>
     </ItemActionUpgrades>
     <ShipyardUpgrades />
@@ -38591,594 +39179,6 @@
           <Text ID="">
             <EN>Expedition Abgeschossen</EN>
             <DE>Successfully Expedition</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-    <MonumentEvents />
-    <MonumentThresholds />
-    <MonumentRewards />
-  </Asset>
-  <Asset ID="191623" Release="Release">
-    <Name>Renowned Diplomat</Name>
-    <Text ID="191623">
-      <EN>Delores the Diplomat</EN>
-      <DE>Delores die Diplomatin</DE>
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_welldress_806.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118005">
-      <EN>Epic</EN>
-      <DE>Episch</DE>
-      <Icon />
-    </Rarity>
-    <ItemType>Specialist</ItemType>
-    <ItemSets />
-    <Allocation ID="Ship">
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Text ID="15798">
-          <EN>Trait:  Female</EN>
-          <DE>Merkmal:  Weiblich</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_generic_expedition.png</Filename>
-          </Icon>
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="800029">
-          <EN>Diplomacy</EN>
-          <DE>Redegabe</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
-          </Icon>
-        </Text>
-        <Value>20</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
-    <AttackableUpgrades />
-    <TradeShipUpgrades>
-      <Upgrade>
-        <Text ID="15198">
-          <EN>Trade Prices</EN>
-          <DE>Handelspreise</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_credits_2d.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-10%</Value>
-      </Upgrade>
-    </TradeShipUpgrades>
-    <VehicleUpgrades>
-      <Upgrade>
-        <Text ID="2320">
-          <EN>Maintenance Cost</EN>
-          <DE>Unterhaltskosten</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-80%</Value>
-      </Upgrade>
-    </VehicleUpgrades>
-    <AttackerUpgrades />
-    <VisitorHarborUpgrades />
-    <RepairCraneUpgrades />
-    <IncidentInfectableUpgrades />
-    <IncidentInfluencerUpgrades />
-    <ItemGeneratorUpgrades />
-    <ItemActionUpgrades />
-    <ShipyardUpgrades />
-    <KontorUpgrades />
-    <TradePrice>72025</TradePrice>
-    <Info ID="20026">
-      <EN>When Delores walked into the embassy, he knew he had his work cut out.</EN>
-      <DE>Als Delores die Botschaft betrat, wusste sie, dass sie alle Hände voll zu tun haben würde.</DE>
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="46">
-        <Name>Third_party_07 (Eli Bleakworth)</Name>
-        <Text ID="46">
-          <EN>Harbour - Eli Bleakworth</EN>
-          <DE>Hafen - Eli Bleakworth</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_07.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="">
-            <EN>Mid Game</EN>
-            <DE>Mittleres Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Late-Mid Game</EN>
-            <DE>Mittleres-Spätes Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Late Game</EN>
-            <DE>Spätes Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>EndGame</EN>
-            <DE>End Game</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800103">
-        <Name>Archeological Expedition Easy</Name>
-        <Text ID="11629">
-          <EN>Archaeological Expedition</EN>
-          <DE>Archäologische Expedition</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.1.1</EN>
-            <DE>Verheddert 1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.1.1</EN>
-            <DE>Verheddert 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.2.1</EN>
-            <DE>Verheddert 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.1.1</EN>
-            <DE>Flaschenpost 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.2.1</EN>
-            <DE>Flaschenpost 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.2.1.1</EN>
-            <DE>Flaschenpost 1.1.2.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="803072">
-            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
-            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800214">
-        <Name>Zoological Expedition Easy</Name>
-        <Text ID="11630">
-          <EN>Zoological Expedition</EN>
-          <DE>Zoologische Expedition</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.1.1</EN>
-            <DE>Verheddert 1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.1.1</EN>
-            <DE>Verheddert 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.2.1</EN>
-            <DE>Verheddert 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.1.1</EN>
-            <DE>Flaschenpost 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.2.1</EN>
-            <DE>Flaschenpost 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.2.1.1</EN>
-            <DE>Flaschenpost 1.1.2.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="803072">
-            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
-            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
-        <Text ID="11631">
-          <EN>Rescue Mission</EN>
-          <DE>Rettungseinsatz</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.1.1</EN>
-            <DE>Verheddert 1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.1.1</EN>
-            <DE>Verheddert 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.2.1</EN>
-            <DE>Verheddert 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.1.1</EN>
-            <DE>Flaschenpost 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.2.1</EN>
-            <DE>Flaschenpost 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.2.1.1</EN>
-            <DE>Flaschenpost 1.1.2.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="803072">
-            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
-            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800403">
-        <Name>Pirate Hunt Easy</Name>
-        <Text ID="11632">
-          <EN>Pirate Hunt</EN>
-          <DE>Piratenjagd</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.1.1</EN>
-            <DE>Verheddert 1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.1.1</EN>
-            <DE>Verheddert 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.2.1</EN>
-            <DE>Verheddert 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.1.1</EN>
-            <DE>Flaschenpost 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.2.1</EN>
-            <DE>Flaschenpost 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.2.1.1</EN>
-            <DE>Flaschenpost 1.1.2.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="803072">
-            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
-            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800777">
-        <Name>Discovery South America Sandbox</Name>
-        <Text ID="11634">
-          <EN>Discovery Expedition</EN>
-          <DE>Entdeckungsreise</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.1.1</EN>
-            <DE>Verheddert 1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.1.1</EN>
-            <DE>Verheddert 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802094">
-            <EN>Sea of Sargassum 1.2.1.2.1</EN>
-            <DE>Verheddert 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.1.1</EN>
-            <DE>Flaschenpost 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.1.2.1</EN>
-            <DE>Flaschenpost 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802710">
-            <EN>Message In A Bottle 1.1.2.1.1</EN>
-            <DE>Flaschenpost 1.1.2.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="803072">
-            <EN>Ghosts in the Ice 1.1.1.2.1.1.1</EN>
-            <DE>Geister im Eis 1.1.1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="152437">
-        <Name>The Convicted Maid - Jailor DISABLED</Name>
-        <Text ID="46">
-          <EN>Quest - Eli Bleakworth</EN>
-          <DE>Quest - Eli Bleakworth</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_07.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="152437">
-            <EN>Convicted Maid (TBC - Quest not yet written) FORCED</EN>
-            <DE>Isolationshaft</DE>
-            <Icon />
-          </Text>
-          <Text ID="150131">
-            <EN>Judge, Jury, and Executioner</EN>
-            <DE>Richter, Geschworener und Henker</DE>
-            <Icon />
-          </Text>
-          <Text ID="152453">
-            <EN>Eli The Incorruptible 1 — &lt;br/&gt;Vitriol</EN>
-            <DE>Eli der Unbestechliche 1 - &lt;br/&gt;Vitriol</DE>
-            <Icon />
-          </Text>
-          <Text ID="152454">
-            <EN>The Pit and The Pendulum 1 — Condemned</EN>
-            <DE>Die Grube und das Pendel 1 - Verurteilt</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="78">
-        <Name>Third_party_08 (Madame Kahina)</Name>
-        <Text ID="78">
-          <EN>Harbour - Madame Kahina</EN>
-          <DE>Hafen - Madame Kahina</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_08.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="">
-            <EN>Mid Game</EN>
-            <DE>Mittleres Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Late-Mid Game</EN>
-            <DE>Mittleres-Spätes Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Late Game</EN>
-            <DE>Spätes Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>EndGame</EN>
-            <DE>End Game</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="150375">
-        <Name>Concidences - Kahina</Name>
-        <Text ID="78">
-          <EN>Quest - Madame Kahina</EN>
-          <DE>Quest - Madame Kahina</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_08.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="150375">
-            <EN>Coincidences Don't Exist</EN>
-            <DE>Zufälle gibt es nicht</DE>
-            <Icon />
-          </Text>
-          <Text ID="150366">
-            <EN>Trust Your Instincts</EN>
-            <DE>Auf den Instinkt ist Verlass</DE>
-            <Icon />
-          </Text>
-          <Text ID="152533">
-            <EN>Welcome to the Truth 1 — The Test</EN>
-            <DE>Willkommen bei der Wahrheit 1 - Der Test</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="2001173">
-        <Name>TourismBalancing</Name>
-        <Text ID="">
-          <EN>Tourism</EN>
-          <DE>Tourismus</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="">
-            <EN>1000 Attractiveness</EN>
-            <DE>1000 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>1350 Attractiveness</EN>
-            <DE>1350 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>1750 Attractiveness</EN>
-            <DE>1750 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>2200 Attractiveness</EN>
-            <DE>2200 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>2700 Attractiveness</EN>
-            <DE>2700 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>3250 Attractiveness</EN>
-            <DE>3250 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>3850 Attractiveness</EN>
-            <DE>3850 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>4500 Attractiveness</EN>
-            <DE>4500 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>5200 Attractiveness</EN>
-            <DE>5200 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>5950 Attractiveness</EN>
-            <DE>5950 Attraktivität</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>6500 Attractiveness</EN>
-            <DE>6500 Attraktivität</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="151534">
-        <Name>RQ_Investors_Newspaper</Name>
-        <Text ID="89">
-          <EN>Quest - Investor</EN>
-          <DE>Quest - Investor</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/resident_tier05.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="151534">
-            <EN>Paper Round</EN>
-            <DE>Zeitungstour</DE>
-            <Icon />
-          </Text>
-          <Text ID="151538">
-            <EN>Neighbourhood Watch</EN>
-            <DE>Bürgerwehr</DE>
-            <Icon />
-          </Text>
-          <Text ID="151539">
-            <EN>Here Kitty Kitty</EN>
-            <DE>Hier, miez, miez</DE>
-            <Icon />
-          </Text>
-          <Text ID="151547">
-            <EN>Boom and Bust</EN>
-            <DE>Zusammengekracht</DE>
-            <Icon />
-          </Text>
-          <Text ID="151548">
-            <EN>Elite Retreat</EN>
-            <DE>Elite-Rückzug</DE>
-            <Icon />
-          </Text>
-          <Text ID="151549">
-            <EN>Industrial Secrets</EN>
-            <DE>Industriegeheimnisse</DE>
-            <Icon />
-          </Text>
-          <Text ID="151552">
-            <EN>Picture of Success</EN>
-            <DE>Erfolgsbild</DE>
-            <Icon />
-          </Text>
-          <Text ID="151554">
-            <EN>Horse Party</EN>
-            <DE>Pferdeparty</DE>
-            <Icon />
-          </Text>
-          <Text ID="151556">
-            <EN>Dough from Dough</EN>
-            <DE>Knete durch Kneten</DE>
             <Icon />
           </Text>
         </Details>
@@ -40231,7 +40231,7 @@
             <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
           </Icon>
         </Text>
-        <Value>05</Value>
+        <Value>00:05</Value>
       </Upgrade>
       <Upgrade>
         <Text ID="2424" FontStyle="16">

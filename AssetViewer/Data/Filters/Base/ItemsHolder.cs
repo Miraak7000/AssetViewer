@@ -78,7 +78,7 @@ namespace AssetViewer.Data.Filters {
       foreach (var filter in StandardFilters.Values.Concat(CustomFilters.Where(cf => cf.SelectedFilter != null).Select(cf => cf.SelectedFilter))) {
         result = filter.FilterFunc(result);
       }
-      //result = result.OrderBy(s => s.Text.CurrentLang);
+      //result = result.OrderBy(s => s.Text);
       Items = result.ToList();
     }
     public IQueryable<TemplateAsset> GetResultWithoutFilter<T>(IFilter<T> filter) {

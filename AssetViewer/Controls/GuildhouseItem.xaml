@@ -19,7 +19,6 @@
   <UserControl.Resources>
     <BooleanToVisibilityConverter x:Key="BooleanToVisibility" />
     <converter:GlobalDescriptionConverter x:Key="Description" />
-    <converter:DescriptionConverter x:Key="DescriptionConverter" />
     <converter:VisibilityConverter x:Key="VisibilityConverter" />
     <DataTemplate x:Key="UpgradeTemplate">
       <Grid SnapsToDevicePixels="True">
@@ -44,7 +43,7 @@
           Grid.Row="0"
           Grid.Column="1"
           VerticalAlignment="Center"
-          Text="{Binding Path=Text, Converter={StaticResource DescriptionConverter}}" />
+          Text="{Binding Path=Tex}" />
         <TextBlock
           Grid.Row="0"
           Grid.Column="2"
@@ -74,7 +73,7 @@
                   Grid.Column="1"
                   VerticalAlignment="Center"
                   Foreground="#FFA49370"
-                  Text="{Binding Path=Text, Converter={StaticResource DescriptionConverter}}"
+                  Text="{Binding Path=Text}"
                   TextWrapping="Wrap" />
                 <TextBlock
                   Grid.Column="2"
@@ -142,7 +141,7 @@
           Grid.Row="4"
           Grid.Column="0"
           Grid.ColumnSpan="7"
-          Header="Advanced Filters"
+          Header="{Binding AdvancedFiltersText.CurrentLang}"
           IsExpanded="True">
           <Grid Margin="0,5,0,0">
             <Grid.ColumnDefinitions>
@@ -185,7 +184,7 @@
                       Content="-" />
                     <ComboBox
                       Grid.Column="1"
-                      DisplayMemberPath="Description.CurrentLang"
+                      DisplayMemberPath="Description"
                       ItemsSource="{Binding Filters}"
                       SelectedItem="{Binding SelectedFilter}" />
                     <Grid Grid.Column="3">
@@ -308,7 +307,7 @@
           Grid.Column="0"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
-          Text="{Binding Path=ItemsHolder.StandardFilters[Rarities].Description.CurrentLang}" />
+          Text="{Binding Path=ItemsHolder.StandardFilters[Rarities].Description}" />
         <ComboBox
           x:Name="ComboBoxRarities"
           Grid.Row="1"
@@ -322,7 +321,7 @@
           Grid.Column="0"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
-          Text="{Binding Path=ItemsHolder.StandardFilters[SearchText].Description.CurrentLang}" />
+          Text="{Binding Path=ItemsHolder.StandardFilters[SearchText].Description}" />
         <TextBox Grid.Row="3" Grid.Column="0" Text="{Binding Path=ItemsHolder.StandardFilters[SearchText].SelectedValue, UpdateSourceTrigger=PropertyChanged, Delay=100}" />
 
         <!--<TextBlock
@@ -330,7 +329,7 @@
           Grid.Column="2"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
-          Text="{Binding ItemsHolder.StandardFilters[ItemTypes].Description.CurrentLang}" />
+          Text="{Binding ItemsHolder.StandardFilters[ItemTypes].Description}" />
         <ComboBox
           x:Name="ComboBoxTypes"
           Grid.Row="1"
@@ -345,7 +344,7 @@
           Grid.Column="2"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
-          Text="{Binding ItemsHolder.StandardFilters[Order].Description.CurrentLang}" />
+          Text="{Binding ItemsHolder.StandardFilters[Order].Description}" />
         <ComboBox
           x:Name="ComboBoxTargets"
           Grid.Row="3"
@@ -359,7 +358,7 @@
           Grid.Column="6"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
-          Text="{Binding ItemsHolder.StandardFilters[TargetBuilding].Description.CurrentLang}" />
+          Text="{Binding ItemsHolder.StandardFilters[TargetBuilding].Description}" />
         <ComboBox
           Grid.Row="1"
           Grid.Column="6"
@@ -373,7 +372,7 @@
           Grid.Column="2"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
-          Text="{Binding ItemsHolder.StandardFilters[Equipped].Description.CurrentLang}" />
+          Text="{Binding ItemsHolder.StandardFilters[Equipped].Description}" />
         <ComboBox
           x:Name="ComboBoxEquipped"
           Grid.Row="1"
@@ -389,7 +388,7 @@
           Grid.Column="6"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
-          Text="{Binding ItemsHolder.StandardFilters[Sources].Description.CurrentLang}" />
+          Text="{Binding ItemsHolder.StandardFilters[Sources].Description}" />
         <ComboBox
           x:Name="ComboBoxSources"
           Grid.Row="1"
@@ -404,7 +403,7 @@
           Grid.Column="4"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
-          Text="{Binding ItemsHolder.StandardFilters[Upgrades].Description.CurrentLang}" />
+          Text="{Binding ItemsHolder.StandardFilters[Upgrades].Description}" />
         <CheckBox
           x:Name="cbOnlyAvailable"
           Grid.Row="3"
@@ -415,7 +414,7 @@
           FlowDirection="RightToLeft"
           IsChecked="{Binding ItemsHolder.StandardFilters[Available].SelectedValue}"
           Unchecked="ComboBox_SelectionChanged">
-          <TextBlock FlowDirection="LeftToRight" Text="{Binding ItemsHolder.StandardFilters[Available].Description.CurrentLang}" />
+          <TextBlock FlowDirection="LeftToRight" Text="{Binding ItemsHolder.StandardFilters[Available].Description}" />
         </CheckBox>
         <ComboBox
           x:Name="ComboBoxUpgrades"
@@ -431,7 +430,7 @@
           Grid.Column="0"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
-          Text="{Binding Path=ItemsHolder.StandardFilters[ReleaseVersions].Description.CurrentLang}" />
+          Text="{Binding Path=ItemsHolder.StandardFilters[ReleaseVersions].Description}" />
         <ComboBox
           x:Name="ComboBoxReleases"
           Grid.Row="3"
@@ -445,7 +444,7 @@
           Grid.Column="6"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
-          Text="{Binding ItemsHolder.StandardFilters[DetailedSources].Description.CurrentLang}" />
+          Text="{Binding ItemsHolder.StandardFilters[DetailedSources].Description}" />
         <ComboBox
           x:Name="ComboBoxDetailedSources"
           Grid.Row="3"
@@ -461,7 +460,7 @@
           Margin="5,1"
           Padding="0"
           Click="BtnResetFilters_Click"
-          Content="{Binding ResetButtonText.CurrentLang , ElementName=userControl}" />
+          Content="{Binding ResetButtonText.CurrentLang, ElementName=userControl}" />
       </Grid>
     </Border>
     <Grid Grid.Row="2">
@@ -492,7 +491,7 @@
                   <TextBlock
                     Grid.Column="1"
                     VerticalAlignment="Center"
-                    Text="{Binding Path=Text, Converter={StaticResource DescriptionConverter}}"
+                    Text="{Binding Path=Text}"
                     TextTrimming="CharacterEllipsis" />
                   <TextBlock
                     Grid.Column="2"

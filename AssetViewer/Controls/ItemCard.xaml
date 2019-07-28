@@ -345,6 +345,9 @@
             <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.ItemGeneratorUpgrades, Converter={StaticResource VisibilityConverter}}">
               <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.ItemGeneratorUpgrades}" />
             </Grid>
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.DivingBellUpgrades, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.DivingBellUpgrades}" />
+            </Grid>
             <!--  Expedition  -->
             <StackPanel Visibility="{Binding Path=SelectedAsset.ExpeditionAttributes, Converter={StaticResource VisibilityConverter}}">
               <Border

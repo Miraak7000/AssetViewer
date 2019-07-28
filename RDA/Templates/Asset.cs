@@ -76,6 +76,8 @@ namespace RDA.Templates {
     public List<String> MonumentThresholds { get; set; }
     public List<String> MonumentRewards { get; set; }
     public List<Upgrade> PassiveTradeGoodGenUpgrades { get; private set; }
+    public List<Upgrade> DivingBellUpgrades { get; private set; }
+    public List<Upgrade> CraftableItemUpgrades { get; private set; }
 
     #endregion Properties
 
@@ -238,6 +240,11 @@ namespace RDA.Templates {
           case "DistributionUpgrade":
             // Todo: needs to implemented
             break;
+          case "DivingBellUpgrade":
+            this.ProcessElement_DivingBellUpgrade(element);
+            break;
+          case "CraftableItem":
+            this.ProcessElement_CraftableItem(element);
             break;
 
           default:
@@ -288,7 +295,8 @@ namespace RDA.Templates {
       result.Add(new XElement("ItemActionUpgrades", this.ItemActionUpgrades == null ? null : this.ItemActionUpgrades.Select(s => s.ToXml())));
       result.Add(new XElement("ShipyardUpgrades", this.ShipyardUpgrades == null ? null : this.ShipyardUpgrades.Select(s => s.ToXml())));
       result.Add(new XElement("KontorUpgrades", this.KontorUpgrades == null ? null : this.KontorUpgrades.Select(s => s.ToXml())));
-
+      result.Add(new XElement("DivingBellUpgrades", this.DivingBellUpgrades == null ? null : this.DivingBellUpgrades.Select(s => s.ToXml())));
+      result.Add(new XElement("CraftableItemUpgrades", this.CraftableItemUpgrades == null ? null : this.CraftableItemUpgrades.Select(s => s.ToXml())));
       //
       result.Add(new XElement("TradePrice", this.TradePrice));
       //
@@ -711,6 +719,23 @@ namespace RDA.Templates {
     private void ProcessElement_MonumentEventReward(XElement element) {
       this.MonumentRewards = element.XPathSelectElements("RewardAssets/Item/Reward").Select(s => s.Value).ToList();
     }
+    private void ProcessElement_CraftableItem(XElement element) {
+      if (element.HasElements) {
+        this.CraftableItemUpgrades = new List<Upgrade>();
+        foreach (var item in element.Element("CraftingCosts").Elements()) {
+          this.CraftableItemUpgrades.Add(new Upgrade() { Text = new Description(item.Element("Product").Value), Value = item.Element("Amount").Value });
+        }
+      }
+    }
+
+    private void ProcessElement_DivingBellUpgrade(XElement element) {
+      if (element.HasElements) {
+        this.DivingBellUpgrades = new List<Upgrade>();
+        foreach (var item in element.Elements()) {
+          this.DivingBellUpgrades.Add(new Upgrade(item));
+        }
+      }
+    }
     private SourceWithDetailsList FindSources(String id, Details mainDetails = default, SourceWithDetailsList inResult = default) {
       mainDetails = (mainDetails == default) ? new Details() : mainDetails;
       mainDetails.PreviousIDs.Add(id);
@@ -816,8 +841,7 @@ namespace RDA.Templates {
             case "MonumentEventReward":
             case "A7_QuestSmuggler":
               if (!element.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
-                result.AddSourceAsset(element, new HashSet<XElement> { element
-  });
+                result.AddSourceAsset(element, new HashSet<XElement> { element});
               }
               break;
 

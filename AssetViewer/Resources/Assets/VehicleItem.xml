@@ -126,6 +126,69 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
+  <Asset ID="192086" Release="Release">
+    <Name>Basic Cannon Upgrade</Name>
+    <Text ID="192086">
+      <EN>Basic Cannon Upgrade</EN>
+      <DE>Einfacher Kanonen-Ausbau</DE>
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_weapons.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118003">
+      <EN>Uncommon</EN>
+      <DE>Ungewöhnlich</DE>
+      <Icon />
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <ItemSets />
+    <Allocation ID="Ship">
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades>
+      <Upgrade>
+        <Text ID="2334">
+          <EN>Damage per shot</EN>
+          <DE>Schaden pro Schuss</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+10%</Value>
+      </Upgrade>
+    </AttackerUpgrades>
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <ItemActionUpgrades />
+    <ShipyardUpgrades />
+    <KontorUpgrades />
+    <TradePrice>3750</TradePrice>
+    <Sources />
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
   <Asset ID="191824" Release="Release">
     <Name>Square Rig</Name>
     <Text ID="191824">
@@ -1251,69 +1314,6 @@
         </Details>
       </Source>
     </Sources>
-    <MonumentEvents />
-    <MonumentThresholds />
-    <MonumentRewards />
-  </Asset>
-  <Asset ID="192086" Release="Release">
-    <Name>Basic Cannon Upgrade</Name>
-    <Text ID="192086">
-      <EN>Basic Cannon Upgrade</EN>
-      <DE>Einfacher Kanonen-Ausbau</DE>
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_weapons.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118003">
-      <EN>Uncommon</EN>
-      <DE>Ungewöhnlich</DE>
-      <Icon />
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <ItemSets />
-    <Allocation ID="Ship">
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes />
-    <AttackableUpgrades />
-    <TradeShipUpgrades />
-    <VehicleUpgrades />
-    <AttackerUpgrades>
-      <Upgrade>
-        <Text ID="2334">
-          <EN>Damage per shot</EN>
-          <DE>Schaden pro Schuss</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+10%</Value>
-      </Upgrade>
-    </AttackerUpgrades>
-    <VisitorHarborUpgrades />
-    <RepairCraneUpgrades />
-    <IncidentInfectableUpgrades />
-    <IncidentInfluencerUpgrades />
-    <ItemGeneratorUpgrades />
-    <ItemActionUpgrades />
-    <ShipyardUpgrades />
-    <KontorUpgrades />
-    <TradePrice>3750</TradePrice>
-    <Sources />
     <MonumentEvents />
     <MonumentThresholds />
     <MonumentRewards />
@@ -3594,6 +3594,89 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
+  <Asset ID="192089" Release="Release">
+    <Name>State-of-the-Art Cannons</Name>
+    <Text ID="192089">
+      <EN>State-of-the-Art Cannons</EN>
+      <DE>Hochmoderne Kanonen</DE>
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_advanced_weaponry.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118006">
+      <EN>Legendary</EN>
+      <DE>Legendär</DE>
+      <Icon />
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <ItemSets />
+    <Allocation ID="Ship">
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades>
+      <Upgrade>
+        <Text ID="2334">
+          <EN>Damage per shot</EN>
+          <DE>Schaden pro Schuss</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+30%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="12062">
+          <EN>Accuracy</EN>
+          <DE>Präzision</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+100%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="17230">
+          <EN>Attack Speed</EN>
+          <DE>Angriffsgeschwindigkeit</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_timer.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+20%</Value>
+      </Upgrade>
+    </AttackerUpgrades>
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <ItemActionUpgrades />
+    <ShipyardUpgrades />
+    <KontorUpgrades />
+    <TradePrice>100000</TradePrice>
+    <Sources />
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
   <Asset ID="191013" Release="Release">
     <Name>Lateen Sails</Name>
     <Text ID="191013">
@@ -4743,89 +4826,6 @@
         </Details>
       </Source>
     </Sources>
-    <MonumentEvents />
-    <MonumentThresholds />
-    <MonumentRewards />
-  </Asset>
-  <Asset ID="192089" Release="Release">
-    <Name>State-of-the-Art Cannons</Name>
-    <Text ID="192089">
-      <EN>State-of-the-Art Cannons</EN>
-      <DE>Hochmoderne Kanonen</DE>
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_advanced_weaponry.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118006">
-      <EN>Legendary</EN>
-      <DE>Legendär</DE>
-      <Icon />
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <ItemSets />
-    <Allocation ID="Ship">
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes />
-    <AttackableUpgrades />
-    <TradeShipUpgrades />
-    <VehicleUpgrades />
-    <AttackerUpgrades>
-      <Upgrade>
-        <Text ID="2334">
-          <EN>Damage per shot</EN>
-          <DE>Schaden pro Schuss</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+30%</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="12062">
-          <EN>Accuracy</EN>
-          <DE>Präzision</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+100%</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="17230">
-          <EN>Attack Speed</EN>
-          <DE>Angriffsgeschwindigkeit</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_timer.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+20%</Value>
-      </Upgrade>
-    </AttackerUpgrades>
-    <VisitorHarborUpgrades />
-    <RepairCraneUpgrades />
-    <IncidentInfectableUpgrades />
-    <IncidentInfluencerUpgrades />
-    <ItemGeneratorUpgrades />
-    <ItemActionUpgrades />
-    <ShipyardUpgrades />
-    <KontorUpgrades />
-    <TradePrice>100000</TradePrice>
-    <Sources />
     <MonumentEvents />
     <MonumentThresholds />
     <MonumentRewards />
@@ -6572,6 +6572,69 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
+  <Asset ID="192114" Release="Release">
+    <Name>Building Annihilator</Name>
+    <Text ID="192114">
+      <EN>Building Annihilator</EN>
+      <DE>Gebäude-Vernichter</DE>
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ship_military/icon_pucklegun.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118006">
+      <EN>Legendary</EN>
+      <DE>Legendär</DE>
+      <Icon />
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <ItemSets />
+    <Allocation ID="Ship">
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades>
+      <Upgrade>
+        <Text ID="17394">
+          <EN>Damage to Buildings</EN>
+          <DE>Schaden an Gebäuden</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+100%</Value>
+      </Upgrade>
+    </AttackerUpgrades>
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <ItemActionUpgrades />
+    <ShipyardUpgrades />
+    <KontorUpgrades />
+    <TradePrice>18750</TradePrice>
+    <Sources />
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
   <Asset ID="191825" Release="Release">
     <Name>Fore-and-aft Rig</Name>
     <Text ID="191825">
@@ -7275,69 +7338,6 @@
         </Details>
       </Source>
     </Sources>
-    <MonumentEvents />
-    <MonumentThresholds />
-    <MonumentRewards />
-  </Asset>
-  <Asset ID="192114" Release="Release">
-    <Name>Building Annihilator</Name>
-    <Text ID="192114">
-      <EN>Building Annihilator</EN>
-      <DE>Gebäude-Vernichter</DE>
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/ship_military/icon_pucklegun.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118006">
-      <EN>Legendary</EN>
-      <DE>Legendär</DE>
-      <Icon />
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <ItemSets />
-    <Allocation ID="Ship">
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes />
-    <AttackableUpgrades />
-    <TradeShipUpgrades />
-    <VehicleUpgrades />
-    <AttackerUpgrades>
-      <Upgrade>
-        <Text ID="17394">
-          <EN>Damage to Buildings</EN>
-          <DE>Schaden an Gebäuden</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+100%</Value>
-      </Upgrade>
-    </AttackerUpgrades>
-    <VisitorHarborUpgrades />
-    <RepairCraneUpgrades />
-    <IncidentInfectableUpgrades />
-    <IncidentInfluencerUpgrades />
-    <ItemGeneratorUpgrades />
-    <ItemActionUpgrades />
-    <ShipyardUpgrades />
-    <KontorUpgrades />
-    <TradePrice>18750</TradePrice>
-    <Sources />
     <MonumentEvents />
     <MonumentThresholds />
     <MonumentRewards />
@@ -9396,6 +9396,429 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
+  <Asset ID="191851" Release="Release">
+    <Name>Steel Double-Hull</Name>
+    <Text ID="191851">
+      <EN>Singh's Steel Double-Hull</EN>
+      <DE>Singhs stählerne Doppelhülle</DE>
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/consumables/icon_hull_4.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118006">
+      <EN>Legendary</EN>
+      <DE>Legendär</DE>
+      <Icon />
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <ItemSets />
+    <Allocation ID="Ship">
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Text ID="800004">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+          </Icon>
+        </Text>
+        <Value>50</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades>
+      <Upgrade>
+        <Text ID="2333">
+          <EN>Hitpoints</EN>
+          <DE>Trefferpunkte</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/ship_info/icon_hitpoints.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+50%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="19137">
+          <EN>Damage from Torpedoes</EN>
+          <DE>Schaden durch Torpedos</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_stance_attack.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-15%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="19138">
+          <EN>Damage from Cannons</EN>
+          <DE>Schaden durch Kanonen</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_stance_attack.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-25%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="19139">
+          <EN>Damage from Big Bertha</EN>
+          <DE>Schaden durch Dicke Berta</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_stance_attack.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-25%</Value>
+      </Upgrade>
+    </AttackableUpgrades>
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <ItemActionUpgrades />
+    <ShipyardUpgrades />
+    <KontorUpgrades />
+    <TradePrice>175000</TradePrice>
+    <Info ID="19701">
+      <EN>Shipwright Singh's hulls are specifically designed to combat a misfortune of modern projectiles.</EN>
+      <DE>Schiffsbauer Singhs Rümpfe sind speziell darauf ausgelegt, dem Ungemach moderner Projektile zu widerstehen.</DE>
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="800399">
+        <Name>Rescue Mission Easy</Name>
+        <Text ID="11631">
+          <EN>Rescue Mission</EN>
+          <DE>Rettungseinsatz</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="">
+            <EN>Expedition Abgeschossen</EN>
+            <DE> Successfully Expedition</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.1.1</EN>
+            <DE>Piratenflagge 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.2.1</EN>
+            <DE>Piratenflagge 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.1.1</EN>
+            <DE>Piratenflagge 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.2.1</EN>
+            <DE>Piratenflagge 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800103">
+        <Name>Archeological Expedition Easy</Name>
+        <Text ID="11629">
+          <EN>Archaeological Expedition</EN>
+          <DE>Archäologische Expedition</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.1.1</EN>
+            <DE>Piratenflagge 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.2.1</EN>
+            <DE>Piratenflagge 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.1.1</EN>
+            <DE>Piratenflagge 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.2.1</EN>
+            <DE>Piratenflagge 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800214">
+        <Name>Zoological Expedition Easy</Name>
+        <Text ID="11630">
+          <EN>Zoological Expedition</EN>
+          <DE>Zoologische Expedition</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.1.1</EN>
+            <DE>Piratenflagge 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.2.1</EN>
+            <DE>Piratenflagge 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.1.1</EN>
+            <DE>Piratenflagge 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.2.1</EN>
+            <DE>Piratenflagge 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800403">
+        <Name>Pirate Hunt Easy</Name>
+        <Text ID="11632">
+          <EN>Pirate Hunt</EN>
+          <DE>Piratenjagd</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.1.1</EN>
+            <DE>Piratenflagge 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.2.1</EN>
+            <DE>Piratenflagge 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.1.1</EN>
+            <DE>Piratenflagge 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.2.1</EN>
+            <DE>Piratenflagge 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Expedition Abgeschossen</EN>
+            <DE> Successfully Expedition</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800777">
+        <Name>Discovery South America Sandbox</Name>
+        <Text ID="11634">
+          <EN>Discovery Expedition</EN>
+          <DE>Entdeckungsreise</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.1.1</EN>
+            <DE>Piratenflagge 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.2.1</EN>
+            <DE>Piratenflagge 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.1.1</EN>
+            <DE>Piratenflagge 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.2.1</EN>
+            <DE>Piratenflagge 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="47">
+        <Name>Second_ai_01 (Bente Jorgensen)</Name>
+        <Text ID="47">
+          <EN>Ship Drop - Bente Jorgensen</EN>
+          <DE>Schiff Drop - Bente Jorgensen</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="47">
+            <EN>Bente Jorgensen</EN>
+            <DE>Bente Jorgensen</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="152611">
+        <Name>Smuggle In Love With The Devil 1 - Ready For Love - Bente</Name>
+        <Text ID="47">
+          <EN>Quest - Bente Jorgensen</EN>
+          <DE>Quest - Bente Jorgensen</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="152611">
+            <EN>In Love With The Devil 1 — Bride-To-Be</EN>
+            <DE>Verliebt in den Teufel 1 - Zukünftige Braut</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="84">
+        <Name>Second_ai_09 (Vicente Silva)</Name>
+        <Text ID="84">
+          <EN>Ship Drop - Admiral Vicente Silva</EN>
+          <DE>Schiff Drop - Admiral Vicente Silva</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="84">
+            <EN>Admiral Vicente Silva</EN>
+            <DE>Admiral Vicente Silva</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="151155">
+        <Name>Down with Anne Harlow 3 - Vicente</Name>
+        <Text ID="84">
+          <EN>Quest - Admiral Vicente Silva</EN>
+          <DE>Quest - Admiral Vicente Silva</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="151155">
+            <EN>Bashing the Buccaneers 3 — Harlow's End</EN>
+            <DE>Freibeutervernichtung 3 - Harlows Ende</DE>
+            <Icon />
+          </Text>
+          <Text ID="152039">
+            <EN>A Diplomatic Minefield 3 — Crossing The Rubicon</EN>
+            <DE>Ein diplomatisches Minenfeld 3 — Den Rubikon überschreiten</DE>
+            <Icon />
+          </Text>
+          <Text ID="152418">
+            <EN>Do You Want A Medal?</EN>
+            <DE>Wollen Sie einen Orden?</DE>
+            <Icon />
+          </Text>
+          <Text ID="152420">
+            <EN>Lowly Mercenary</EN>
+            <DE>Einfacher Söldner</DE>
+            <Icon />
+          </Text>
+          <Text ID="152424">
+            <EN>Just Desserts</EN>
+            <DE>Nur Drückeberger</DE>
+            <Icon />
+          </Text>
+          <Text ID="151153">
+            <EN>Bashing the Buccaneers 1 — Cat And Mouse</EN>
+            <DE>Freibeutervernichtung 1 - Katz' und Maus</DE>
+            <Icon />
+          </Text>
+          <Text ID="152045">
+            <EN>A Gap in the Armour 1 — A Pitiful Foe</EN>
+            <DE>Eine Loch in der Rüstung 1 - Ein bedauernswerter Feind</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="150190">
+        <Name>Creaming the Colonials - Archibald Blake</Name>
+        <Text ID="45">
+          <EN>Quest - Sir Archibald Blake</EN>
+          <DE>Quest - Sir Archibald Blake</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="150190">
+            <EN>Creaming La Corona</EN>
+            <DE>Kolonialer Kehraus</DE>
+            <Icon />
+          </Text>
+          <Text ID="150192">
+            <EN>Sad State Of Affairs</EN>
+            <DE>Beschädigte Beziehungen</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="17047">
+        <Name>9 Unique Inventions</Name>
+        <Text ID="17047">
+          <EN>Unique Inventions</EN>
+          <DE>Einzigartige Erfindungen</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="17047">
+            <EN>Unique Inventions</EN>
+            <DE>Einzigartige Erfindungen</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
   <Asset ID="191830" Release="Release">
     <Name>One-Turn Screw Propeller</Name>
     <Text ID="191830">
@@ -10468,429 +10891,6 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191851" Release="Release">
-    <Name>Steel Double-Hull</Name>
-    <Text ID="191851">
-      <EN>Singh's Steel Double-Hull</EN>
-      <DE>Singhs stählerne Doppelhülle</DE>
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/consumables/icon_hull_4.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118006">
-      <EN>Legendary</EN>
-      <DE>Legendär</DE>
-      <Icon />
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <ItemSets />
-    <Allocation ID="Ship">
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Text ID="800004">
-          <EN>Naval Power</EN>
-          <DE>Gefechtskunde</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
-          </Icon>
-        </Text>
-        <Value>50</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
-    <AttackableUpgrades>
-      <Upgrade>
-        <Text ID="2333">
-          <EN>Hitpoints</EN>
-          <DE>Trefferpunkte</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/ship_info/icon_hitpoints.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+50%</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="19137">
-          <EN>Damage from Torpedoes</EN>
-          <DE>Schaden durch Torpedos</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_stance_attack.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-15%</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="19138">
-          <EN>Damage from Cannons</EN>
-          <DE>Schaden durch Kanonen</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_stance_attack.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-25%</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="19139">
-          <EN>Damage from Big Bertha</EN>
-          <DE>Schaden durch Dicke Berta</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_stance_attack.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-25%</Value>
-      </Upgrade>
-    </AttackableUpgrades>
-    <TradeShipUpgrades />
-    <VehicleUpgrades />
-    <AttackerUpgrades />
-    <VisitorHarborUpgrades />
-    <RepairCraneUpgrades />
-    <IncidentInfectableUpgrades />
-    <IncidentInfluencerUpgrades />
-    <ItemGeneratorUpgrades />
-    <ItemActionUpgrades />
-    <ShipyardUpgrades />
-    <KontorUpgrades />
-    <TradePrice>175000</TradePrice>
-    <Info ID="19701">
-      <EN>Shipwright Singh's hulls are specifically designed to combat a misfortune of modern projectiles.</EN>
-      <DE>Schiffsbauer Singhs Rümpfe sind speziell darauf ausgelegt, dem Ungemach moderner Projektile zu widerstehen.</DE>
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
-        <Text ID="11631">
-          <EN>Rescue Mission</EN>
-          <DE>Rettungseinsatz</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800103">
-        <Name>Archeological Expedition Easy</Name>
-        <Text ID="11629">
-          <EN>Archaeological Expedition</EN>
-          <DE>Archäologische Expedition</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800214">
-        <Name>Zoological Expedition Easy</Name>
-        <Text ID="11630">
-          <EN>Zoological Expedition</EN>
-          <DE>Zoologische Expedition</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800403">
-        <Name>Pirate Hunt Easy</Name>
-        <Text ID="11632">
-          <EN>Pirate Hunt</EN>
-          <DE>Piratenjagd</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800777">
-        <Name>Discovery South America Sandbox</Name>
-        <Text ID="11634">
-          <EN>Discovery Expedition</EN>
-          <DE>Entdeckungsreise</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="47">
-        <Name>Second_ai_01 (Bente Jorgensen)</Name>
-        <Text ID="47">
-          <EN>Ship Drop - Bente Jorgensen</EN>
-          <DE>Schiff Drop - Bente Jorgensen</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="47">
-            <EN>Bente Jorgensen</EN>
-            <DE>Bente Jorgensen</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="152611">
-        <Name>Smuggle In Love With The Devil 1 - Ready For Love - Bente</Name>
-        <Text ID="47">
-          <EN>Quest - Bente Jorgensen</EN>
-          <DE>Quest - Bente Jorgensen</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="152611">
-            <EN>In Love With The Devil 1 — Bride-To-Be</EN>
-            <DE>Verliebt in den Teufel 1 - Zukünftige Braut</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="84">
-        <Name>Second_ai_09 (Vicente Silva)</Name>
-        <Text ID="84">
-          <EN>Ship Drop - Admiral Vicente Silva</EN>
-          <DE>Schiff Drop - Admiral Vicente Silva</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="84">
-            <EN>Admiral Vicente Silva</EN>
-            <DE>Admiral Vicente Silva</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="151155">
-        <Name>Down with Anne Harlow 3 - Vicente</Name>
-        <Text ID="84">
-          <EN>Quest - Admiral Vicente Silva</EN>
-          <DE>Quest - Admiral Vicente Silva</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="151155">
-            <EN>Bashing the Buccaneers 3 — Harlow's End</EN>
-            <DE>Freibeutervernichtung 3 - Harlows Ende</DE>
-            <Icon />
-          </Text>
-          <Text ID="152039">
-            <EN>A Diplomatic Minefield 3 — Crossing The Rubicon</EN>
-            <DE>Ein diplomatisches Minenfeld 3 — Den Rubikon überschreiten</DE>
-            <Icon />
-          </Text>
-          <Text ID="152418">
-            <EN>Do You Want A Medal?</EN>
-            <DE>Wollen Sie einen Orden?</DE>
-            <Icon />
-          </Text>
-          <Text ID="152420">
-            <EN>Lowly Mercenary</EN>
-            <DE>Einfacher Söldner</DE>
-            <Icon />
-          </Text>
-          <Text ID="152424">
-            <EN>Just Desserts</EN>
-            <DE>Nur Drückeberger</DE>
-            <Icon />
-          </Text>
-          <Text ID="151153">
-            <EN>Bashing the Buccaneers 1 — Cat And Mouse</EN>
-            <DE>Freibeutervernichtung 1 - Katz' und Maus</DE>
-            <Icon />
-          </Text>
-          <Text ID="152045">
-            <EN>A Gap in the Armour 1 — A Pitiful Foe</EN>
-            <DE>Eine Loch in der Rüstung 1 - Ein bedauernswerter Feind</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="150190">
-        <Name>Creaming the Colonials - Archibald Blake</Name>
-        <Text ID="45">
-          <EN>Quest - Sir Archibald Blake</EN>
-          <DE>Quest - Sir Archibald Blake</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="150190">
-            <EN>Creaming La Corona</EN>
-            <DE>Kolonialer Kehraus</DE>
-            <Icon />
-          </Text>
-          <Text ID="150192">
-            <EN>Sad State Of Affairs</EN>
-            <DE>Beschädigte Beziehungen</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="17047">
-        <Name>9 Unique Inventions</Name>
-        <Text ID="17047">
-          <EN>Unique Inventions</EN>
-          <DE>Einzigartige Erfindungen</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="17047">
-            <EN>Unique Inventions</EN>
-            <DE>Einzigartige Erfindungen</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-    <MonumentEvents />
-    <MonumentThresholds />
-    <MonumentRewards />
-  </Asset>
   <Asset ID="191991" Release="Release">
     <Name>Royal White Flag</Name>
     <Text ID="191991">
@@ -11207,762 +11207,6 @@
     <KontorUpgrades />
     <TradePrice />
     <Sources />
-    <MonumentEvents />
-    <MonumentThresholds />
-    <MonumentRewards />
-  </Asset>
-  <Asset ID="191831" Release="Release">
-    <Name>Controllable-Pitch Propeller</Name>
-    <Text ID="191831">
-      <EN>Controllable-Pitch Propeller</EN>
-      <DE>Verstellbarer Propeller</DE>
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_screw_propeller_3.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118005">
-      <EN>Epic</EN>
-      <DE>Episch</DE>
-      <Icon />
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <ItemSets />
-    <Allocation ID="SteamShip">
-      <Text ID="2344">
-        <EN>Steamships</EN>
-        <DE>Dampfschiffe</DE>
-        <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_ship_tier03.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Text ID="800033">
-          <EN>Navigation</EN>
-          <DE>Navigation</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-          </Icon>
-        </Text>
-        <Value>30</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
-    <AttackableUpgrades />
-    <TradeShipUpgrades />
-    <VehicleUpgrades>
-      <Upgrade>
-        <Text ID="2339">
-          <EN>Movement Speed</EN>
-          <DE>Bewegungsgeschwindigkeit</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+15%</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="15261">
-          <EN>Cargo Slowdown</EN>
-          <DE>Fracht-Verlangsamung</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-50%</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="15262">
-          <EN>Damage Slowdown</EN>
-          <DE>Schadens-Verlangsamung</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-50%</Value>
-      </Upgrade>
-    </VehicleUpgrades>
-    <AttackerUpgrades />
-    <VisitorHarborUpgrades />
-    <RepairCraneUpgrades />
-    <IncidentInfectableUpgrades />
-    <IncidentInfluencerUpgrades />
-    <ItemGeneratorUpgrades />
-    <ItemActionUpgrades />
-    <ShipyardUpgrades />
-    <KontorUpgrades />
-    <TradePrice>60000</TradePrice>
-    <Info ID="19689">
-      <EN>A powerful propeller, that is also rather versatile.</EN>
-      <DE>Ein starker Propeller, der außerdem sehr variabel ist.</DE>
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="800103">
-        <Name>Archeological Expedition Easy</Name>
-        <Text ID="11629">
-          <EN>Archaeological Expedition</EN>
-          <DE>Archäologische Expedition</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.1</EN>
-            <DE>Der Inspekteur 1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.3.1</EN>
-            <DE>Der Inspekteur 1.3.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.3.2.1</EN>
-            <DE>Der Inspekteur 1.2.3.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800214">
-        <Name>Zoological Expedition Easy</Name>
-        <Text ID="11630">
-          <EN>Zoological Expedition</EN>
-          <DE>Zoologische Expedition</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.1</EN>
-            <DE>Der Inspekteur 1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.3.1</EN>
-            <DE>Der Inspekteur 1.3.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.3.2.1</EN>
-            <DE>Der Inspekteur 1.2.3.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
-        <Text ID="11631">
-          <EN>Rescue Mission</EN>
-          <DE>Rettungseinsatz</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.1</EN>
-            <DE>Der Inspekteur 1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.3.1</EN>
-            <DE>Der Inspekteur 1.3.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.3.2.1</EN>
-            <DE>Der Inspekteur 1.2.3.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800403">
-        <Name>Pirate Hunt Easy</Name>
-        <Text ID="11632">
-          <EN>Pirate Hunt</EN>
-          <DE>Piratenjagd</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.1</EN>
-            <DE>Der Inspekteur 1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.3.1</EN>
-            <DE>Der Inspekteur 1.3.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.3.2.1</EN>
-            <DE>Der Inspekteur 1.2.3.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800777">
-        <Name>Discovery South America Sandbox</Name>
-        <Text ID="11634">
-          <EN>Discovery Expedition</EN>
-          <DE>Entdeckungsreise</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.1</EN>
-            <DE>Der Inspekteur 1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.3.1</EN>
-            <DE>Der Inspekteur 1.3.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.3.2.1</EN>
-            <DE>Der Inspekteur 1.2.3.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="45">
-        <Name>Third_party_02 (Archibald Blake)</Name>
-        <Text ID="45">
-          <EN>Harbour - Sir Archibald Blake</EN>
-          <DE>Hafen - Sir Archibald Blake</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="">
-            <EN>Mid Game</EN>
-            <DE>Mittleres Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Late-Mid Game</EN>
-            <DE>Mittleres-Spätes Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Late Game</EN>
-            <DE>Spätes Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>EndGame</EN>
-            <DE>End Game</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="29">
-        <Name>Third_party_05 (Isabel Sarmento)</Name>
-        <Text ID="29">
-          <EN>Harbour - Isabel Sarmento</EN>
-          <DE>Hafen - Isabel Sarmento</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="">
-            <EN>Early Game</EN>
-            <DE>Frühes Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Early-Mid Game</EN>
-            <DE>Frühes-Mittleres Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Mid Game</EN>
-            <DE>Mittleres Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Late-Mid Game</EN>
-            <DE>Mittleres-Spätes Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Late Game</EN>
-            <DE>Spätes Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>EndGame</EN>
-            <DE>End Game</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="47">
-        <Name>Second_ai_01 (Bente Jorgensen)</Name>
-        <Text ID="47">
-          <EN>Ship Drop - Bente Jorgensen</EN>
-          <DE>Schiff Drop - Bente Jorgensen</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="47">
-            <EN>Bente Jorgensen</EN>
-            <DE>Bente Jorgensen</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="152611">
-        <Name>Smuggle In Love With The Devil 1 - Ready For Love - Bente</Name>
-        <Text ID="47">
-          <EN>Quest - Bente Jorgensen</EN>
-          <DE>Quest - Bente Jorgensen</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="152611">
-            <EN>In Love With The Devil 1 — Bride-To-Be</EN>
-            <DE>Verliebt in den Teufel 1 - Zukünftige Braut</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="84">
-        <Name>Second_ai_09 (Vicente Silva)</Name>
-        <Text ID="84">
-          <EN>Ship Drop - Admiral Vicente Silva</EN>
-          <DE>Schiff Drop - Admiral Vicente Silva</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="84">
-            <EN>Admiral Vicente Silva</EN>
-            <DE>Admiral Vicente Silva</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="151155">
-        <Name>Down with Anne Harlow 3 - Vicente</Name>
-        <Text ID="84">
-          <EN>Quest - Admiral Vicente Silva</EN>
-          <DE>Quest - Admiral Vicente Silva</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="151155">
-            <EN>Bashing the Buccaneers 3 — Harlow's End</EN>
-            <DE>Freibeutervernichtung 3 - Harlows Ende</DE>
-            <Icon />
-          </Text>
-          <Text ID="152039">
-            <EN>A Diplomatic Minefield 3 — Crossing The Rubicon</EN>
-            <DE>Ein diplomatisches Minenfeld 3 — Den Rubikon überschreiten</DE>
-            <Icon />
-          </Text>
-          <Text ID="152418">
-            <EN>Do You Want A Medal?</EN>
-            <DE>Wollen Sie einen Orden?</DE>
-            <Icon />
-          </Text>
-          <Text ID="152420">
-            <EN>Lowly Mercenary</EN>
-            <DE>Einfacher Söldner</DE>
-            <Icon />
-          </Text>
-          <Text ID="152424">
-            <EN>Just Desserts</EN>
-            <DE>Nur Drückeberger</DE>
-            <Icon />
-          </Text>
-          <Text ID="151153">
-            <EN>Bashing the Buccaneers 1 — Cat And Mouse</EN>
-            <DE>Freibeutervernichtung 1 - Katz' und Maus</DE>
-            <Icon />
-          </Text>
-          <Text ID="152045">
-            <EN>A Gap in the Armour 1 — A Pitiful Foe</EN>
-            <DE>Eine Loch in der Rüstung 1 - Ein bedauernswerter Feind</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="150190">
-        <Name>Creaming the Colonials - Archibald Blake</Name>
-        <Text ID="45">
-          <EN>Quest - Sir Archibald Blake</EN>
-          <DE>Quest - Sir Archibald Blake</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="150190">
-            <EN>Creaming La Corona</EN>
-            <DE>Kolonialer Kehraus</DE>
-            <Icon />
-          </Text>
-          <Text ID="150192">
-            <EN>Sad State Of Affairs</EN>
-            <DE>Beschädigte Beziehungen</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="151521">
-        <Name>RQ_Engineers_AnimalKingdom</Name>
-        <Text ID="88">
-          <EN>Quest - Engineer</EN>
-          <DE>Quest - Ingenieur</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/resident_tier04.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="151521">
-            <EN>Animal Kingdom</EN>
-            <DE>Tierreich</DE>
-            <Icon />
-          </Text>
-          <Text ID="151522">
-            <EN>Graduation Day</EN>
-            <DE>Abschlusstag</DE>
-            <Icon />
-          </Text>
-          <Text ID="151526">
-            <EN>Do The Locomotion</EN>
-            <DE>Loco-Motive</DE>
-            <Icon />
-          </Text>
-          <Text ID="151524">
-            <EN>Unenlightened Age</EN>
-            <DE>Die bewegende Frau</DE>
-            <Icon />
-          </Text>
-          <Text ID="151525">
-            <EN>Field Trip</EN>
-            <DE>Die eiserne Lady</DE>
-            <Icon />
-          </Text>
-          <Text ID="151527">
-            <EN>Enigma A</EN>
-            <DE>Enigma A</DE>
-            <Icon />
-          </Text>
-          <Text ID="151622">
-            <EN>Enigma B</EN>
-            <DE>Enigma B</DE>
-            <Icon />
-          </Text>
-          <Text ID="151707">
-            <EN>Enigma C</EN>
-            <DE>Enigma C</DE>
-            <Icon />
-          </Text>
-          <Text ID="151708">
-            <EN>Enigma D</EN>
-            <DE>Enigma D</DE>
-            <Icon />
-          </Text>
-          <Text ID="151709">
-            <EN>Enigma E</EN>
-            <DE>Enigma E</DE>
-            <Icon />
-          </Text>
-          <Text ID="151710">
-            <EN>Enigma F</EN>
-            <DE>Enigma F</DE>
-            <Icon />
-          </Text>
-          <Text ID="151711">
-            <EN>Enigma G</EN>
-            <DE>Enigma G</DE>
-            <Icon />
-          </Text>
-          <Text ID="151512">
-            <EN>Adipose Compounds And Dunes: A Two-Mass Binding Model.</EN>
-            <DE>Fettverbindungen und Dünen: Ein Zweimassen-Bindungsmodell</DE>
-            <Icon />
-          </Text>
-          <Text ID="151513">
-            <EN>"Kaffebase"</EN>
-            <DE>Kaffeeklatsch</DE>
-            <Icon />
-          </Text>
-          <Text ID="151514">
-            <EN>Hungry Minds</EN>
-            <DE>Wissenshungrig</DE>
-            <Icon />
-          </Text>
-          <Text ID="151515">
-            <EN>Life Cycle</EN>
-            <DE>Lebenszyklus</DE>
-            <Icon />
-          </Text>
-          <Text ID="151516">
-            <EN>Eureka!</EN>
-            <DE>Lichtgestalt</DE>
-            <Icon />
-          </Text>
-          <Text ID="151504">
-            <EN>Proof of the Pudding</EN>
-            <DE>Probieren geht über Studieren</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="17047">
-        <Name>9 Unique Inventions</Name>
-        <Text ID="17047">
-          <EN>Unique Inventions</EN>
-          <DE>Einzigartige Erfindungen</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="17047">
-            <EN>Unique Inventions</EN>
-            <DE>Einzigartige Erfindungen</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-    <MonumentEvents />
-    <MonumentThresholds />
-    <MonumentRewards />
-  </Asset>
-  <Asset ID="190024" Release="Release">
-    <Name>common sailship speed boost</Name>
-    <Text ID="190024">
-      <EN>Crappy Sails</EN>
-      <DE>Miese Segel</DE>
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_sail.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <EN>Common</EN>
-      <DE>Gewöhnlich</DE>
-      <Icon />
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <ItemSets />
-    <Allocation ID="SailShip">
-      <Text ID="2343">
-        <EN>Sailing Ships</EN>
-        <DE>Segelschiffe</DE>
-        <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_shipsymbol.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Text ID="800033">
-          <EN>Navigation</EN>
-          <DE>Navigation</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-          </Icon>
-        </Text>
-        <Value>10</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
-    <AttackableUpgrades />
-    <TradeShipUpgrades />
-    <VehicleUpgrades>
-      <Upgrade>
-        <Text ID="2339">
-          <EN>Movement Speed</EN>
-          <DE>Bewegungsgeschwindigkeit</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+25%</Value>
-      </Upgrade>
-    </VehicleUpgrades>
-    <AttackerUpgrades />
-    <VisitorHarborUpgrades />
-    <RepairCraneUpgrades />
-    <IncidentInfectableUpgrades />
-    <IncidentInfluencerUpgrades />
-    <ItemGeneratorUpgrades />
-    <ItemActionUpgrades />
-    <ShipyardUpgrades />
-    <KontorUpgrades />
-    <TradePrice>250</TradePrice>
-    <Sources>
-      <Source ID="152560">
-        <Name>Use Item/Smuggle Sunken Poetry 3 - Submarine Archaeology - Pincess Qing DISABLED</Name>
-        <Text ID="79">
-          <EN>Quest - Princess Qing</EN>
-          <DE>Quest - Prinzessin Qing</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_02.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="152560">
-            <EN>Forgotten Words 3 — Epic Hero</EN>
-            <DE>Vergessene Worte 3 - Epischer Held</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
     <MonumentEvents />
     <MonumentThresholds />
     <MonumentRewards />
@@ -13211,13 +12455,13 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="190025" Release="Release">
-    <Name>common steamsip speed boost</Name>
-    <Text ID="190025">
-      <EN>Crappy Steam Motor</EN>
-      <DE>Miese Dampfmaschine</DE>
+  <Asset ID="190024" Release="Release">
+    <Name>common sailship speed boost</Name>
+    <Text ID="190024">
+      <EN>Crappy Sails</EN>
+      <DE>Miese Segel</DE>
       <Icon>
-        <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/icon_sail.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="118002">
@@ -13227,12 +12471,12 @@
     </Rarity>
     <ItemType>Common</ItemType>
     <ItemSets />
-    <Allocation ID="SteamShip">
-      <Text ID="2344">
-        <EN>Steamships</EN>
-        <DE>Dampfschiffe</DE>
+    <Allocation ID="SailShip">
+      <Text ID="2343">
+        <EN>Sailing Ships</EN>
+        <DE>Segelschiffe</DE>
         <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_ship_tier03.png</Filename>
+          <Filename>data/ui/2kimages/main/icons/icon_shipsymbol.png</Filename>
         </Icon>
       </Text>
     </Allocation>
@@ -13279,152 +12523,52 @@
     <ItemActionUpgrades />
     <ShipyardUpgrades />
     <KontorUpgrades />
-    <TradePrice>1250</TradePrice>
-    <Sources />
+    <TradePrice>250</TradePrice>
+    <Sources>
+      <Source ID="152560">
+        <Name>Use Item/Smuggle Sunken Poetry 3 - Submarine Archaeology - Pincess Qing DISABLED</Name>
+        <Text ID="79">
+          <EN>Quest - Princess Qing</EN>
+          <DE>Quest - Prinzessin Qing</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_02.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="152560">
+            <EN>Forgotten Words 3 — Epic Hero</EN>
+            <DE>Vergessene Worte 3 - Epischer Held</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
     <MonumentEvents />
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="6000004" Release="Release">
-    <Name>VehicleTestItem</Name>
-    <Text ID="6000004">
-      <EN>SimpleTestItem</EN>
-      <DE>SimpleTestItem</DE>
+  <Asset ID="191831" Release="Release">
+    <Name>Controllable-Pitch Propeller</Name>
+    <Text ID="191831">
+      <EN>Controllable-Pitch Propeller</EN>
+      <DE>Verstellbarer Propeller</DE>
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_screw_propeller_3.png</Filename>
       </Icon>
     </Text>
-    <Rarity ID="118002">
-      <EN>Common</EN>
-      <DE>Gewöhnlich</DE>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
       <Icon />
     </Rarity>
     <ItemType>Common</ItemType>
     <ItemSets />
-    <Allocation ID="SailShip">
-      <Text ID="2343">
-        <EN>Sailing Ships</EN>
-        <DE>Segelschiffe</DE>
+    <Allocation ID="SteamShip">
+      <Text ID="2344">
+        <EN>Steamships</EN>
+        <DE>Dampfschiffe</DE>
         <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_shipsymbol.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes />
-    <AttackableUpgrades />
-    <TradeShipUpgrades />
-    <VehicleUpgrades>
-      <Upgrade>
-        <Text ID="17392">
-          <EN>Pirate Mode</EN>
-          <DE>Piratenmodus</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
-          </Icon>
-          <AdditionalInformation ID="17393" FontStyle="16">
-            <EN>Allows the ship to attack without need of a state of war in diplomacy.</EN>
-            <DE>Erlaubt es Schiffen, anzugreifen, auch wenn diplomatisch gesehen kein Kriegszustand herrscht.</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_smiley.png</Filename>
-            </Icon>
-          </AdditionalInformation>
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="15261">
-          <EN>Cargo Slowdown</EN>
-          <DE>Fracht-Verlangsamung</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-100%</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="15262">
-          <EN>Damage Slowdown</EN>
-          <DE>Schadens-Verlangsamung</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-50%</Value>
-      </Upgrade>
-    </VehicleUpgrades>
-    <AttackerUpgrades>
-      <Upgrade>
-        <Text ID="21587">
-          <EN>Unwavering</EN>
-          <DE>Unerschütterlich</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/ship_info/icon_hitpoints.png</Filename>
-          </Icon>
-          <AdditionalInformation ID="21585" FontStyle="16">
-            <EN>Your ship deals increased damage when its hitpoints are running low.</EN>
-            <DE>Ihr Schiff fügt erhöhten Schaden zu, wenn seine Trefferpunkte niedriger sind.</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_happy.png</Filename>
-            </Icon>
-          </AdditionalInformation>
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="17394">
-          <EN>Damage to Buildings</EN>
-          <DE>Schaden an Gebäuden</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+100%</Value>
-      </Upgrade>
-    </AttackerUpgrades>
-    <VisitorHarborUpgrades />
-    <RepairCraneUpgrades />
-    <IncidentInfectableUpgrades />
-    <IncidentInfluencerUpgrades />
-    <ItemGeneratorUpgrades />
-    <ItemActionUpgrades />
-    <ShipyardUpgrades />
-    <KontorUpgrades />
-    <TradePrice />
-    <Sources />
-    <MonumentEvents />
-    <MonumentThresholds />
-    <MonumentRewards />
-  </Asset>
-  <Asset ID="191838" Release="Release">
-    <Name>Spyglass</Name>
-    <Text ID="191838">
-      <EN>Fine Spyglass</EN>
-      <DE>Gutes Fernglas</DE>
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/consumables/icon_telescope_1.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118003">
-      <EN>Uncommon</EN>
-      <DE>Ungewöhnlich</DE>
-      <Icon />
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <ItemSets />
-    <Allocation ID="Ship">
-      <Text ID="2342">
-        <EN>Ships</EN>
-        <DE>Schiffe</DE>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+          <Filename>data/ui/2kimages/main/icons/icon_ship_tier03.png</Filename>
         </Icon>
       </Text>
     </Allocation>
@@ -13445,44 +12589,44 @@
             <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
           </Icon>
         </Text>
-        <Value>20</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="800030">
-          <EN>Hunting</EN>
-          <DE>Jagdglück</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
-          </Icon>
-        </Text>
-        <Value>10</Value>
+        <Value>30</Value>
       </Upgrade>
     </ExpeditionAttributes>
     <AttackableUpgrades />
     <TradeShipUpgrades />
-    <VehicleUpgrades />
-    <AttackerUpgrades>
+    <VehicleUpgrades>
       <Upgrade>
-        <Text ID="12021">
-          <EN>Attack Range</EN>
-          <DE>Angriffsreichweite</DE>
+        <Text ID="2339">
+          <EN>Movement Speed</EN>
+          <DE>Bewegungsgeschwindigkeit</DE>
           <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_war.png</Filename>
+            <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
           </Icon>
         </Text>
-        <Value>+5%</Value>
+        <Value>+15%</Value>
       </Upgrade>
       <Upgrade>
-        <Text ID="15266">
-          <EN>Vision Range</EN>
-          <DE>Sichtweite</DE>
+        <Text ID="15261">
+          <EN>Cargo Slowdown</EN>
+          <DE>Fracht-Verlangsamung</DE>
           <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_go_to.png</Filename>
+            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png</Filename>
           </Icon>
         </Text>
-        <Value>+5%</Value>
+        <Value>-50%</Value>
       </Upgrade>
-    </AttackerUpgrades>
+      <Upgrade>
+        <Text ID="15262">
+          <EN>Damage Slowdown</EN>
+          <DE>Schadens-Verlangsamung</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-50%</Value>
+      </Upgrade>
+    </VehicleUpgrades>
+    <AttackerUpgrades />
     <VisitorHarborUpgrades />
     <RepairCraneUpgrades />
     <IncidentInfectableUpgrades />
@@ -13491,10 +12635,10 @@
     <ItemActionUpgrades />
     <ShipyardUpgrades />
     <KontorUpgrades />
-    <TradePrice>6000</TradePrice>
-    <Info ID="19695">
-      <EN>Worth looking into.</EN>
-      <DE>Lohnt das Hindurchsehen.</DE>
+    <TradePrice>60000</TradePrice>
+    <Info ID="19689">
+      <EN>A powerful propeller, that is also rather versatile.</EN>
+      <DE>Ein starker Propeller, der außerdem sehr variabel ist.</DE>
       <Icon />
     </Info>
     <Sources>
@@ -13754,16 +12898,6 @@
         </Text>
         <Details>
           <Text ID="">
-            <EN>Early Game</EN>
-            <DE>Frühes Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Early-Mid Game</EN>
-            <DE>Frühes-Mittleres Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
             <EN>Mid Game</EN>
             <DE>Mittleres Spiel</DE>
             <Icon />
@@ -13846,8 +12980,8 @@
           </Text>
         </Details>
       </Source>
-      <Source ID="150075">
-        <Name>Deliver Potatoes - Jorgensen</Name>
+      <Source ID="152611">
+        <Name>Smuggle In Love With The Devil 1 - Ready For Love - Bente</Name>
         <Text ID="47">
           <EN>Quest - Bente Jorgensen</EN>
           <DE>Quest - Bente Jorgensen</DE>
@@ -13856,126 +12990,6 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="150075">
-            <EN>Pet Food</EN>
-            <DE>Tierfutter</DE>
-            <Icon />
-          </Text>
-          <Text ID="150077">
-            <EN>Pigs on Parade</EN>
-            <DE>Schweineparade</DE>
-            <Icon />
-          </Text>
-          <Text ID="150119">
-            <EN>Goodbye Butterfly</EN>
-            <DE>Libellei</DE>
-            <Icon />
-          </Text>
-          <Text ID="150143">
-            <EN>Feeding the Five-Thousand</EN>
-            <DE>Speisung der Fünftausend</DE>
-            <Icon />
-          </Text>
-          <Text ID="150144">
-            <EN>Kid in a Sweet Shop</EN>
-            <DE>Wie ein Kind im Schokoladenladen</DE>
-            <Icon />
-          </Text>
-          <Text ID="150178">
-            <EN>Emergency Blankets</EN>
-            <DE>Notfalldecken</DE>
-            <Icon />
-          </Text>
-          <Text ID="150179">
-            <EN>The Pescatarian</EN>
-            <DE>Der Pescetarier</DE>
-            <Icon />
-          </Text>
-          <Text ID="150180">
-            <EN>Rubber Soul</EN>
-            <DE>Gummi statt Leder</DE>
-            <Icon />
-          </Text>
-          <Text ID="150083">
-            <EN>Hunter Becomes The Hunted</EN>
-            <DE>Vom Jäger zum Gejagten</DE>
-            <Icon />
-          </Text>
-          <Text ID="150098">
-            <EN>First Class Foul-Up</EN>
-            <DE>Unglück erster Klasse</DE>
-            <Icon />
-          </Text>
-          <Text ID="150159">
-            <EN>Jetsam Jinx</EN>
-            <DE>Vermaledeites Mitbringsel</DE>
-            <Icon />
-          </Text>
-          <Text ID="150207">
-            <EN>Eco-Warrior</EN>
-            <DE>Öko-Krieger</DE>
-            <Icon />
-          </Text>
-          <Text ID="150480">
-            <EN>Damp Feathers</EN>
-            <DE>Klamme Federn</DE>
-            <Icon />
-          </Text>
-          <Text ID="152492">
-            <EN>Animal Rescue</EN>
-            <DE>Tierrettung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152491">
-            <EN>Cultural Reappropriation</EN>
-            <DE>Kulturelle Wiederaneignung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152487">
-            <EN>Pet Shop Girl</EN>
-            <DE>Exotische Lieferung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152623">
-            <EN>Children's Charity 1 — Charity Begins At Home</EN>
-            <DE>Kinderfürsorge 1 - Nächstenliebe beginnt zu Hause</DE>
-            <Icon />
-          </Text>
-          <Text ID="152635">
-            <EN>§--152635--§</EN>
-            <DE>Ladehemmungen</DE>
-            <Icon />
-          </Text>
-          <Text ID="152616">
-            <EN>In Love With The Devil 3 — Heartbreak</EN>
-            <DE>Verliebt in den Teufel 3 - Herzeleid</DE>
-            <Icon />
-          </Text>
-          <Text ID="152631">
-            <EN>Children's Charity 3 — Most Apologetic</EN>
-            <DE>Kinderfürsorge 3 - Große Entschuldigung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152636">
-            <EN>§--152636--§</EN>
-            <DE>Ladehemmungen</DE>
-            <Icon />
-          </Text>
-          <Text ID="152759">
-            <EN>Bente's Tip-Top Expedition 3 — Help, Mummy!</EN>
-            <DE>Bentes Tipptopp-Expedition 3 - Hilfe, eine Mumie!</DE>
-            <Icon />
-          </Text>
-          <Text ID="152760">
-            <EN>Bente's Tip-Top Expedition 4 — The Curse of Choice</EN>
-            <DE>Bentes Tipptopp-Expedition 4 - Der Fluch der Entscheidung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152598">
-            <EN>Slimy Seduction 4 — An Offer He Cannot Accept</EN>
-            <DE>Schleimige Verführung 4 - Ein Angebot, das er nicht annehmen kann</DE>
-            <Icon />
-          </Text>
           <Text ID="152611">
             <EN>In Love With The Devil 1 — Bride-To-Be</EN>
             <DE>Verliebt in den Teufel 1 - Zukünftige Braut</DE>
@@ -14002,8 +13016,8 @@
           </Text>
         </Details>
       </Source>
-      <Source ID="151138">
-        <Name>Deliver Bread - Vicente</Name>
+      <Source ID="151155">
+        <Name>Down with Anne Harlow 3 - Vicente</Name>
         <Text ID="84">
           <EN>Quest - Admiral Vicente Silva</EN>
           <DE>Quest - Admiral Vicente Silva</DE>
@@ -14012,126 +13026,6 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="151138">
-            <EN>Regimental Baker</EN>
-            <DE>Backwahn</DE>
-            <Icon />
-          </Text>
-          <Text ID="151139">
-            <EN>Live by the Sword</EN>
-            <DE>Lebe durch das Schwert</DE>
-            <Icon />
-          </Text>
-          <Text ID="151140">
-            <EN>Man O' War</EN>
-            <DE>Flotte Flotte</DE>
-            <Icon />
-          </Text>
-          <Text ID="151141">
-            <EN>Fabian Strategy</EN>
-            <DE>Abnutzungsstrategie</DE>
-            <Icon />
-          </Text>
-          <Text ID="151142">
-            <EN>Coup De Main</EN>
-            <DE>Erstschlag</DE>
-            <Icon />
-          </Text>
-          <Text ID="151152">
-            <EN>Flare Up</EN>
-            <DE>Knallcharge</DE>
-            <Icon />
-          </Text>
-          <Text ID="152419">
-            <EN>Cod War</EN>
-            <DE>Dreister Fischzug</DE>
-            <Icon />
-          </Text>
-          <Text ID="152421">
-            <EN>Root Cause</EN>
-            <DE>Grundübel</DE>
-            <Icon />
-          </Text>
-          <Text ID="152422">
-            <EN>Not Fond Of Children</EN>
-            <DE>Keine Lust auf Kinder</DE>
-            <Icon />
-          </Text>
-          <Text ID="152423">
-            <EN>Cannon Fodder</EN>
-            <DE>Kanonenfutter</DE>
-            <Icon />
-          </Text>
-          <Text ID="152425">
-            <EN>Pastry War</EN>
-            <DE>Die Hefe des Krieges</DE>
-            <Icon />
-          </Text>
-          <Text ID="152426">
-            <EN>Leadership Training</EN>
-            <DE>Anführerfortbildung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152427">
-            <EN>Fart of War</EN>
-            <DE>Gunst des Krieges</DE>
-            <Icon />
-          </Text>
-          <Text ID="152428">
-            <EN>Scouting for Love</EN>
-            <DE>Suche nach Liebe</DE>
-            <Icon />
-          </Text>
-          <Text ID="152435">
-            <EN>A Fickle Foe 1 — Nemesis</EN>
-            <DE>Ein launischer Gegner 1 - Erzfeind</DE>
-            <Icon />
-          </Text>
-          <Text ID="151146">
-            <EN>Family Man 2 — Negligence</EN>
-            <DE>Familienmensch 2 - Vernachlässigung</DE>
-            <Icon />
-          </Text>
-          <Text ID="151149">
-            <EN>Pax Sinica 2 — The Spy Among Us</EN>
-            <DE>Pax Sinica 2 — Spione unter uns</DE>
-            <Icon />
-          </Text>
-          <Text ID="151154">
-            <EN>Bashing the Buccaneers 2 — Harlow's Revenge</EN>
-            <DE>Freibeutervernichtung 2 - Harlows Rache</DE>
-            <Icon />
-          </Text>
-          <Text ID="152038">
-            <EN>A Diplomatic Minefield 2 — While The Iron Is Hot</EN>
-            <DE>Ein diplomatisches Minenfeld 2 — Solange das Eisen heiß ist</DE>
-            <Icon />
-          </Text>
-          <Text ID="152569">
-            <EN>War And Peace 2 — Thanks But No Thanks</EN>
-            <DE>Krieg und Frieden 2 — Danke, aber nein Danke</DE>
-            <Icon />
-          </Text>
-          <Text ID="152046">
-            <EN>A Gap in the Armour 2 — Show of Force</EN>
-            <DE>Ein Loch in der Rüstung 2 - Machtdemonstration</DE>
-            <Icon />
-          </Text>
-          <Text ID="152047">
-            <EN>A Gap in the Armour 3 — Armada Grande</EN>
-            <DE>Ein Loch in der Rüstung 3 - Unbesiegbare Armada</DE>
-            <Icon />
-          </Text>
-          <Text ID="152048">
-            <EN>A Gap in the Armour 4 — At a Crossroads</EN>
-            <DE>Ein Loch in der Rüstung 4 - Am Scheideweg</DE>
-            <Icon />
-          </Text>
-          <Text ID="152049">
-            <EN>A Gap in the Armour 4 — Mushing the Movement</EN>
-            <DE>Ein Loch in der Rüstung 4 - Die Bewegung bezwingen</DE>
-            <Icon />
-          </Text>
           <Text ID="151155">
             <EN>Bashing the Buccaneers 3 — Harlow's End</EN>
             <DE>Freibeutervernichtung 3 - Harlows Ende</DE>
@@ -14169,8 +13063,8 @@
           </Text>
         </Details>
       </Source>
-      <Source ID="150115">
-        <Name>Close But No Cigar - Archibald Blake</Name>
+      <Source ID="150190">
+        <Name>Creaming the Colonials - Archibald Blake</Name>
         <Text ID="45">
           <EN>Quest - Sir Archibald Blake</EN>
           <DE>Quest - Sir Archibald Blake</DE>
@@ -14179,91 +13073,6 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="150115">
-            <EN>Close But No Cigar</EN>
-            <DE>Viel Rauch um nichts</DE>
-            <Icon />
-          </Text>
-          <Text ID="150116">
-            <EN>Alms Dealing</EN>
-            <DE>Royaler Almosenier</DE>
-            <Icon />
-          </Text>
-          <Text ID="150141">
-            <EN>Creative Block</EN>
-            <DE>Kreative Blockade</DE>
-            <Icon />
-          </Text>
-          <Text ID="150168">
-            <EN>An Icy Reception</EN>
-            <DE>Ein eisiger Empfang</DE>
-            <Icon />
-          </Text>
-          <Text ID="150169">
-            <EN>Would You Credit It!</EN>
-            <DE>Meine Schuld!</DE>
-            <Icon />
-          </Text>
-          <Text ID="150170">
-            <EN>The Gift Of Music</EN>
-            <DE>Die muskalische Gabe</DE>
-            <Icon />
-          </Text>
-          <Text ID="150127">
-            <EN>The End of an Era</EN>
-            <DE>Das Ende einer Ära</DE>
-            <Icon />
-          </Text>
-          <Text ID="150226">
-            <EN>Art Attack</EN>
-            <DE>Kunstbanausen</DE>
-            <Icon />
-          </Text>
-          <Text ID="150152">
-            <EN>Rain Stopped Play</EN>
-            <DE>Verhageltes Stelldichein</DE>
-            <Icon />
-          </Text>
-          <Text ID="150224">
-            <EN>Artefact-Finding</EN>
-            <DE>Sucher des verlorenen Schatzes</DE>
-            <Icon />
-          </Text>
-          <Text ID="150237">
-            <EN>Better Safe Than Sorry</EN>
-            <DE>Vorsicht ist die Mutter der Porzelankiste</DE>
-            <Icon />
-          </Text>
-          <Text ID="150238">
-            <EN>Torpedo Fish</EN>
-            <DE>Torpedofisch</DE>
-            <Icon />
-          </Text>
-          <Text ID="152199">
-            <EN>A Right Royal Boo-Boo</EN>
-            <DE>Königliche Kalamitäten</DE>
-            <Icon />
-          </Text>
-          <Text ID="150225">
-            <EN>Lost Sheep</EN>
-            <DE>Verlorene Schafe</DE>
-            <Icon />
-          </Text>
-          <Text ID="152213">
-            <EN>Birthday Treat</EN>
-            <DE>Geburtstagsschmankerl</DE>
-            <Icon />
-          </Text>
-          <Text ID="150241">
-            <EN>Escort Wood Expedition</EN>
-            <DE>Er und sein Holz</DE>
-            <Icon />
-          </Text>
-          <Text ID="152581">
-            <EN>The Executioner's Mask 2 — Error of Judgement</EN>
-            <DE>Die Grube und das Pendel 2 - Fehlurteil</DE>
-            <Icon />
-          </Text>
           <Text ID="150190">
             <EN>Creaming La Corona</EN>
             <DE>Kolonialer Kehraus</DE>
@@ -14276,192 +13085,124 @@
           </Text>
         </Details>
       </Source>
-      <Source ID="150292">
-        <Name>Keeping Up - Sarmento</Name>
-        <Text ID="29">
-          <EN>Quest - Isabel Sarmento</EN>
-          <DE>Quest - Isabel Sarmento</DE>
+      <Source ID="151521">
+        <Name>RQ_Engineers_AnimalKingdom</Name>
+        <Text ID="88">
+          <EN>Quest - Engineer</EN>
+          <DE>Quest - Ingenieur</DE>
           <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+            <Filename>data/ui/2kimages/main/profiles/resident_tier04.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="150292">
-            <EN>Keeping Up</EN>
-            <DE>Mit der Zeit gehen</DE>
+          <Text ID="151521">
+            <EN>Animal Kingdom</EN>
+            <DE>Tierreich</DE>
             <Icon />
           </Text>
-          <Text ID="150290">
-            <EN>Charity Collection</EN>
-            <DE>Spenden für den guten Zweck</DE>
+          <Text ID="151522">
+            <EN>Graduation Day</EN>
+            <DE>Abschlusstag</DE>
             <Icon />
           </Text>
-          <Text ID="152582">
-            <EN>The Strangled Revolution</EN>
-            <DE>Die erstickte Revolution</DE>
+          <Text ID="151526">
+            <EN>Do The Locomotion</EN>
+            <DE>Loco-Motive</DE>
             <Icon />
           </Text>
-          <Text ID="152583">
-            <EN>Guerrilla War</EN>
-            <DE>Guerillakrieg</DE>
+          <Text ID="151524">
+            <EN>Unenlightened Age</EN>
+            <DE>Die bewegende Frau</DE>
             <Icon />
           </Text>
-          <Text ID="150276">
-            <EN>Rotten Apples</EN>
-            <DE>Schwarze Schafe</DE>
+          <Text ID="151525">
+            <EN>Field Trip</EN>
+            <DE>Die eiserne Lady</DE>
             <Icon />
           </Text>
-          <Text ID="150294">
-            <EN>Slow Them Down</EN>
-            <DE>Haltet sie auf!</DE>
+          <Text ID="151527">
+            <EN>Enigma A</EN>
+            <DE>Enigma A</DE>
             <Icon />
           </Text>
-          <Text ID="150295">
-            <EN>Biting the Bait</EN>
-            <DE>Angebissen</DE>
+          <Text ID="151622">
+            <EN>Enigma B</EN>
+            <DE>Enigma B</DE>
             <Icon />
           </Text>
-          <Text ID="150341">
-            <EN>Liberation</EN>
-            <DE>Befreiung</DE>
+          <Text ID="151707">
+            <EN>Enigma C</EN>
+            <DE>Enigma C</DE>
             <Icon />
           </Text>
-          <Text ID="150281">
-            <EN>Enemy Salvage</EN>
-            <DE>Feindliche Bergung</DE>
+          <Text ID="151708">
+            <EN>Enigma D</EN>
+            <DE>Enigma D</DE>
             <Icon />
           </Text>
-          <Text ID="150297">
-            <EN>Keep Your Cool</EN>
-            <DE>Einen kühlen Kopf bewahren</DE>
+          <Text ID="151709">
+            <EN>Enigma E</EN>
+            <DE>Enigma E</DE>
             <Icon />
           </Text>
-          <Text ID="150299">
-            <EN>Catching Up</EN>
-            <DE>Nacheifern</DE>
+          <Text ID="151710">
+            <EN>Enigma F</EN>
+            <DE>Enigma F</DE>
             <Icon />
           </Text>
-          <Text ID="150296">
-            <EN>Royal Delivery</EN>
-            <DE>Königliche Lieferung</DE>
+          <Text ID="151711">
+            <EN>Enigma G</EN>
+            <DE>Enigma G</DE>
             <Icon />
           </Text>
-          <Text ID="150342">
-            <EN>The Next Move</EN>
-            <DE>Spionage</DE>
+          <Text ID="151512">
+            <EN>Adipose Compounds And Dunes: A Two-Mass Binding Model.</EN>
+            <DE>Fettverbindungen und Dünen: Ein Zweimassen-Bindungsmodell</DE>
             <Icon />
           </Text>
-          <Text ID="150343">
-            <EN>§--150343--§</EN>
-            <DE>Starting From Scratch (TBC - Quest not yet written)</DE>
+          <Text ID="151513">
+            <EN>"Kaffebase"</EN>
+            <DE>Kaffeeklatsch</DE>
             <Icon />
           </Text>
-          <Text ID="152584">
-            <EN>Crossing the Border</EN>
-            <DE>Grenzüberquerung</DE>
+          <Text ID="151514">
+            <EN>Hungry Minds</EN>
+            <DE>Wissenshungrig</DE>
             <Icon />
           </Text>
-          <Text ID="150270">
-            <EN>Shared Objectives</EN>
-            <DE>Gemeinsame Ziele</DE>
+          <Text ID="151515">
+            <EN>Life Cycle</EN>
+            <DE>Lebenszyklus</DE>
             <Icon />
           </Text>
-          <Text ID="152050">
-            <EN>A Gap in the Armour 4 — Opportunity Knocks</EN>
-            <DE>Ein Loch in der Rüstung 4 - Die Gelegenheit klopft an</DE>
+          <Text ID="151516">
+            <EN>Eureka!</EN>
+            <DE>Lichtgestalt</DE>
             <Icon />
           </Text>
-          <Text ID="150293">
-            <EN>Reinforcements</EN>
-            <DE>Verstärkung</DE>
-            <Icon />
-          </Text>
-          <Text ID="150300">
-            <EN>Risky Business</EN>
-            <DE>Riskante Geschäfte</DE>
+          <Text ID="151504">
+            <EN>Proof of the Pudding</EN>
+            <DE>Probieren geht über Studieren</DE>
             <Icon />
           </Text>
         </Details>
       </Source>
-      <Source ID="150969">
-        <Name>RQ_Artisans_PeerGynt</Name>
-        <Text ID="87">
-          <EN>Quest - Artisan</EN>
-          <DE>Quest - Handwerker</DE>
+      <Source ID="17047">
+        <Name>9 Unique Inventions</Name>
+        <Text ID="17047">
+          <EN>Unique Inventions</EN>
+          <DE>Einzigartige Erfindungen</DE>
           <Icon>
-            <Filename>data/ui/2kimages/main/profiles/resident_tier03.png</Filename>
+            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="150969">
-            <EN>Peer Gynt</EN>
-            <DE>Peer Gynt</DE>
-            <Icon />
-          </Text>
-          <Text ID="150970">
-            <EN>Sound of Music</EN>
-            <DE>Der Klang der Musik</DE>
-            <Icon />
-          </Text>
-          <Text ID="150979">
-            <EN>The Wayward Apprentice</EN>
-            <DE>Lehrling auf Abwegen</DE>
-            <Icon />
-          </Text>
-          <Text ID="151847">
-            <EN>The Simple Life</EN>
-            <DE>Das einfache Leben</DE>
-            <Icon />
-          </Text>
-          <Text ID="150981">
-            <EN>New World</EN>
-            <DE>Neue Insel</DE>
-            <Icon />
-          </Text>
-          <Text ID="150982">
-            <EN>First Day of School</EN>
-            <DE>Erster Schultag</DE>
-            <Icon />
-          </Text>
-          <Text ID="150986">
-            <EN>A Day at the Zoo</EN>
-            <DE>Ein Tag im Zoo</DE>
-            <Icon />
-          </Text>
-          <Text ID="150987">
-            <EN>Can Opening</EN>
-            <DE>Dosenöffnung</DE>
-            <Icon />
-          </Text>
-          <Text ID="150988">
-            <EN>An Affair of Honor</EN>
-            <DE>Eine Sache der Ehre</DE>
-            <Icon />
-          </Text>
-          <Text ID="150989">
-            <EN>Culture Vulture</EN>
-            <DE>Kulturgeier</DE>
-            <Icon />
-          </Text>
-          <Text ID="151034">
-            <EN>Vicuña En Vogue</EN>
-            <DE>Vicuña en vogue</DE>
-            <Icon />
-          </Text>
-          <Text ID="151035">
-            <EN>Artisan Coffee</EN>
-            <DE>Handgefertigter Kaffee</DE>
-            <Icon />
-          </Text>
-          <Text ID="151036">
-            <EN>Pour, Oh Pour, The Pirate Rum</EN>
-            <DE>Fließe, oh, fließe, Piratenrum</DE>
-            <Icon />
-          </Text>
-          <Text ID="151037">
-            <EN>Turner Overdrive</EN>
-            <DE>Turners Impressionen</DE>
-            <Icon />
+          <Text ID="17047">
+            <EN>Unique Inventions</EN>
+            <DE>Einzigartige Erfindungen</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
+            </Icon>
           </Text>
         </Details>
       </Source>
@@ -14470,18 +13211,92 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="190138" Release="Release">
-    <Name>ship speed</Name>
-    <Text ID="190138">
-      <EN>one time equip Sails</EN>
-      <DE>one time equip Sails</DE>
+  <Asset ID="190025" Release="Release">
+    <Name>common steamsip speed boost</Name>
+    <Text ID="190025">
+      <EN>Crappy Steam Motor</EN>
+      <DE>Miese Dampfmaschine</DE>
       <Icon>
-        <Filename>data/ui/2kimages/main/icons/icon_shipsymbol.png</Filename>
+        <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
       </Icon>
     </Text>
-    <Rarity ID="118005">
-      <EN>Epic</EN>
-      <DE>Episch</DE>
+    <Rarity ID="118002">
+      <EN>Common</EN>
+      <DE>Gewöhnlich</DE>
+      <Icon />
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <ItemSets />
+    <Allocation ID="SteamShip">
+      <Text ID="2344">
+        <EN>Steamships</EN>
+        <DE>Dampfschiffe</DE>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_ship_tier03.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Text ID="800033">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades>
+      <Upgrade>
+        <Text ID="2339">
+          <EN>Movement Speed</EN>
+          <DE>Bewegungsgeschwindigkeit</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+25%</Value>
+      </Upgrade>
+    </VehicleUpgrades>
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <ItemActionUpgrades />
+    <ShipyardUpgrades />
+    <KontorUpgrades />
+    <TradePrice>1250</TradePrice>
+    <Sources />
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
+  <Asset ID="6000004" Release="Release">
+    <Name>VehicleTestItem</Name>
+    <Text ID="6000004">
+      <EN>SimpleTestItem</EN>
+      <DE>SimpleTestItem</DE>
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <EN>Common</EN>
+      <DE>Gewöhnlich</DE>
       <Icon />
     </Rarity>
     <ItemType>Common</ItemType>
@@ -14508,17 +13323,72 @@
     <TradeShipUpgrades />
     <VehicleUpgrades>
       <Upgrade>
-        <Text ID="2339">
-          <EN>Movement Speed</EN>
-          <DE>Bewegungsgeschwindigkeit</DE>
+        <Text ID="17392">
+          <EN>Pirate Mode</EN>
+          <DE>Piratenmodus</DE>
           <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
+            <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+          </Icon>
+          <AdditionalInformation ID="17393" FontStyle="16">
+            <EN>Allows the ship to attack without need of a state of war in diplomacy.</EN>
+            <DE>Erlaubt es Schiffen, anzugreifen, auch wenn diplomatisch gesehen kein Kriegszustand herrscht.</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_smiley.png</Filename>
+            </Icon>
+          </AdditionalInformation>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="15261">
+          <EN>Cargo Slowdown</EN>
+          <DE>Fracht-Verlangsamung</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png</Filename>
           </Icon>
         </Text>
-        <Value>+25%</Value>
+        <Value>-100%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="15262">
+          <EN>Damage Slowdown</EN>
+          <DE>Schadens-Verlangsamung</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-50%</Value>
       </Upgrade>
     </VehicleUpgrades>
-    <AttackerUpgrades />
+    <AttackerUpgrades>
+      <Upgrade>
+        <Text ID="21587">
+          <EN>Unwavering</EN>
+          <DE>Unerschütterlich</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/ship_info/icon_hitpoints.png</Filename>
+          </Icon>
+          <AdditionalInformation ID="21585" FontStyle="16">
+            <EN>Your ship deals increased damage when its hitpoints are running low.</EN>
+            <DE>Ihr Schiff fügt erhöhten Schaden zu, wenn seine Trefferpunkte niedriger sind.</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_happy.png</Filename>
+            </Icon>
+          </AdditionalInformation>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="17394">
+          <EN>Damage to Buildings</EN>
+          <DE>Schaden an Gebäuden</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+100%</Value>
+      </Upgrade>
+    </AttackerUpgrades>
     <VisitorHarborUpgrades />
     <RepairCraneUpgrades />
     <IncidentInfectableUpgrades />
@@ -14527,7 +13397,7 @@
     <ItemActionUpgrades />
     <ShipyardUpgrades />
     <KontorUpgrades />
-    <TradePrice>250</TradePrice>
+    <TradePrice />
     <Sources />
     <MonumentEvents />
     <MonumentThresholds />
@@ -15787,6 +14657,1790 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
+  <Asset ID="190138" Release="Release">
+    <Name>ship speed</Name>
+    <Text ID="190138">
+      <EN>one time equip Sails</EN>
+      <DE>one time equip Sails</DE>
+      <Icon>
+        <Filename>data/ui/2kimages/main/icons/icon_shipsymbol.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+      <Icon />
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <ItemSets />
+    <Allocation ID="SailShip">
+      <Text ID="2343">
+        <EN>Sailing Ships</EN>
+        <DE>Segelschiffe</DE>
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_shipsymbol.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades>
+      <Upgrade>
+        <Text ID="2339">
+          <EN>Movement Speed</EN>
+          <DE>Bewegungsgeschwindigkeit</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+25%</Value>
+      </Upgrade>
+    </VehicleUpgrades>
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <ItemActionUpgrades />
+    <ShipyardUpgrades />
+    <KontorUpgrades />
+    <TradePrice>250</TradePrice>
+    <Sources />
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
+  <Asset ID="191838" Release="Release">
+    <Name>Spyglass</Name>
+    <Text ID="191838">
+      <EN>Fine Spyglass</EN>
+      <DE>Gutes Fernglas</DE>
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/consumables/icon_telescope_1.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118003">
+      <EN>Uncommon</EN>
+      <DE>Ungewöhnlich</DE>
+      <Icon />
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <ItemSets />
+    <Allocation ID="Ship">
+      <Text ID="2342">
+        <EN>Ships</EN>
+        <DE>Schiffe</DE>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Text ID="800033">
+          <EN>Navigation</EN>
+          <DE>Navigation</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+          </Icon>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="800030">
+          <EN>Hunting</EN>
+          <DE>Jagdglück</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades>
+      <Upgrade>
+        <Text ID="12021">
+          <EN>Attack Range</EN>
+          <DE>Angriffsreichweite</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_war.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+5%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="15266">
+          <EN>Vision Range</EN>
+          <DE>Sichtweite</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_go_to.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+5%</Value>
+      </Upgrade>
+    </AttackerUpgrades>
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <ItemActionUpgrades />
+    <ShipyardUpgrades />
+    <KontorUpgrades />
+    <TradePrice>6000</TradePrice>
+    <Info ID="19695">
+      <EN>Worth looking into.</EN>
+      <DE>Lohnt das Hindurchsehen.</DE>
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="800103">
+        <Name>Archeological Expedition Easy</Name>
+        <Text ID="11629">
+          <EN>Archaeological Expedition</EN>
+          <DE>Archäologische Expedition</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="800171">
+            <EN>The Inspector 1.2.1</EN>
+            <DE>Der Inspekteur 1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="800171">
+            <EN>The Inspector 1.3.1</EN>
+            <DE>Der Inspekteur 1.3.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="800171">
+            <EN>The Inspector 1.2.3.2.1</EN>
+            <DE>Der Inspekteur 1.2.3.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.1.1</EN>
+            <DE>Piratenflagge 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.2.1</EN>
+            <DE>Piratenflagge 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.1.1</EN>
+            <DE>Piratenflagge 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.2.1</EN>
+            <DE>Piratenflagge 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800214">
+        <Name>Zoological Expedition Easy</Name>
+        <Text ID="11630">
+          <EN>Zoological Expedition</EN>
+          <DE>Zoologische Expedition</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="800171">
+            <EN>The Inspector 1.2.1</EN>
+            <DE>Der Inspekteur 1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="800171">
+            <EN>The Inspector 1.3.1</EN>
+            <DE>Der Inspekteur 1.3.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="800171">
+            <EN>The Inspector 1.2.3.2.1</EN>
+            <DE>Der Inspekteur 1.2.3.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.1.1</EN>
+            <DE>Piratenflagge 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.2.1</EN>
+            <DE>Piratenflagge 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.1.1</EN>
+            <DE>Piratenflagge 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.2.1</EN>
+            <DE>Piratenflagge 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800399">
+        <Name>Rescue Mission Easy</Name>
+        <Text ID="11631">
+          <EN>Rescue Mission</EN>
+          <DE>Rettungseinsatz</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="800171">
+            <EN>The Inspector 1.2.1</EN>
+            <DE>Der Inspekteur 1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="800171">
+            <EN>The Inspector 1.3.1</EN>
+            <DE>Der Inspekteur 1.3.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="800171">
+            <EN>The Inspector 1.2.3.2.1</EN>
+            <DE>Der Inspekteur 1.2.3.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Expedition Abgeschossen</EN>
+            <DE> Successfully Expedition</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.1.1</EN>
+            <DE>Piratenflagge 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.2.1</EN>
+            <DE>Piratenflagge 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.1.1</EN>
+            <DE>Piratenflagge 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.2.1</EN>
+            <DE>Piratenflagge 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800403">
+        <Name>Pirate Hunt Easy</Name>
+        <Text ID="11632">
+          <EN>Pirate Hunt</EN>
+          <DE>Piratenjagd</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="800171">
+            <EN>The Inspector 1.2.1</EN>
+            <DE>Der Inspekteur 1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="800171">
+            <EN>The Inspector 1.3.1</EN>
+            <DE>Der Inspekteur 1.3.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="800171">
+            <EN>The Inspector 1.2.3.2.1</EN>
+            <DE>Der Inspekteur 1.2.3.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.1.1</EN>
+            <DE>Piratenflagge 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.2.1</EN>
+            <DE>Piratenflagge 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.1.1</EN>
+            <DE>Piratenflagge 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.2.1</EN>
+            <DE>Piratenflagge 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Expedition Abgeschossen</EN>
+            <DE> Successfully Expedition</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800777">
+        <Name>Discovery South America Sandbox</Name>
+        <Text ID="11634">
+          <EN>Discovery Expedition</EN>
+          <DE>Entdeckungsreise</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="800171">
+            <EN>The Inspector 1.2.1</EN>
+            <DE>Der Inspekteur 1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="800171">
+            <EN>The Inspector 1.3.1</EN>
+            <DE>Der Inspekteur 1.3.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="800171">
+            <EN>The Inspector 1.2.3.2.1</EN>
+            <DE>Der Inspekteur 1.2.3.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.1.1</EN>
+            <DE>Piratenflagge 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.2.1</EN>
+            <DE>Piratenflagge 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.1.1</EN>
+            <DE>Piratenflagge 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.2.1</EN>
+            <DE>Piratenflagge 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="45">
+        <Name>Third_party_02 (Archibald Blake)</Name>
+        <Text ID="45">
+          <EN>Harbour - Sir Archibald Blake</EN>
+          <DE>Hafen - Sir Archibald Blake</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="">
+            <EN>Early Game</EN>
+            <DE>Frühes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Early-Mid Game</EN>
+            <DE>Frühes-Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="29">
+        <Name>Third_party_05 (Isabel Sarmento)</Name>
+        <Text ID="29">
+          <EN>Harbour - Isabel Sarmento</EN>
+          <DE>Hafen - Isabel Sarmento</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="">
+            <EN>Early Game</EN>
+            <DE>Frühes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Early-Mid Game</EN>
+            <DE>Frühes-Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="47">
+        <Name>Second_ai_01 (Bente Jorgensen)</Name>
+        <Text ID="47">
+          <EN>Ship Drop - Bente Jorgensen</EN>
+          <DE>Schiff Drop - Bente Jorgensen</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="47">
+            <EN>Bente Jorgensen</EN>
+            <DE>Bente Jorgensen</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="150075">
+        <Name>Deliver Potatoes - Jorgensen</Name>
+        <Text ID="47">
+          <EN>Quest - Bente Jorgensen</EN>
+          <DE>Quest - Bente Jorgensen</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="150075">
+            <EN>Pet Food</EN>
+            <DE>Tierfutter</DE>
+            <Icon />
+          </Text>
+          <Text ID="150077">
+            <EN>Pigs on Parade</EN>
+            <DE>Schweineparade</DE>
+            <Icon />
+          </Text>
+          <Text ID="150119">
+            <EN>Goodbye Butterfly</EN>
+            <DE>Libellei</DE>
+            <Icon />
+          </Text>
+          <Text ID="150143">
+            <EN>Feeding the Five-Thousand</EN>
+            <DE>Speisung der Fünftausend</DE>
+            <Icon />
+          </Text>
+          <Text ID="150144">
+            <EN>Kid in a Sweet Shop</EN>
+            <DE>Wie ein Kind im Schokoladenladen</DE>
+            <Icon />
+          </Text>
+          <Text ID="150178">
+            <EN>Emergency Blankets</EN>
+            <DE>Notfalldecken</DE>
+            <Icon />
+          </Text>
+          <Text ID="150179">
+            <EN>The Pescatarian</EN>
+            <DE>Der Pescetarier</DE>
+            <Icon />
+          </Text>
+          <Text ID="150180">
+            <EN>Rubber Soul</EN>
+            <DE>Gummi statt Leder</DE>
+            <Icon />
+          </Text>
+          <Text ID="150083">
+            <EN>Hunter Becomes The Hunted</EN>
+            <DE>Vom Jäger zum Gejagten</DE>
+            <Icon />
+          </Text>
+          <Text ID="150098">
+            <EN>First Class Foul-Up</EN>
+            <DE>Unglück erster Klasse</DE>
+            <Icon />
+          </Text>
+          <Text ID="150159">
+            <EN>Jetsam Jinx</EN>
+            <DE>Vermaledeites Mitbringsel</DE>
+            <Icon />
+          </Text>
+          <Text ID="150207">
+            <EN>Eco-Warrior</EN>
+            <DE>Öko-Krieger</DE>
+            <Icon />
+          </Text>
+          <Text ID="150480">
+            <EN>Damp Feathers</EN>
+            <DE>Klamme Federn</DE>
+            <Icon />
+          </Text>
+          <Text ID="152492">
+            <EN>Animal Rescue</EN>
+            <DE>Tierrettung</DE>
+            <Icon />
+          </Text>
+          <Text ID="152491">
+            <EN>Cultural Reappropriation</EN>
+            <DE>Kulturelle Wiederaneignung</DE>
+            <Icon />
+          </Text>
+          <Text ID="152487">
+            <EN>Pet Shop Girl</EN>
+            <DE>Exotische Lieferung</DE>
+            <Icon />
+          </Text>
+          <Text ID="152623">
+            <EN>Children's Charity 1 — Charity Begins At Home</EN>
+            <DE>Kinderfürsorge 1 - Nächstenliebe beginnt zu Hause</DE>
+            <Icon />
+          </Text>
+          <Text ID="152635">
+            <EN>§--152635--§</EN>
+            <DE>Ladehemmungen</DE>
+            <Icon />
+          </Text>
+          <Text ID="152616">
+            <EN>In Love With The Devil 3 — Heartbreak</EN>
+            <DE>Verliebt in den Teufel 3 - Herzeleid</DE>
+            <Icon />
+          </Text>
+          <Text ID="152631">
+            <EN>Children's Charity 3 — Most Apologetic</EN>
+            <DE>Kinderfürsorge 3 - Große Entschuldigung</DE>
+            <Icon />
+          </Text>
+          <Text ID="152636">
+            <EN>§--152636--§</EN>
+            <DE>Ladehemmungen</DE>
+            <Icon />
+          </Text>
+          <Text ID="152759">
+            <EN>Bente's Tip-Top Expedition 3 — Help, Mummy!</EN>
+            <DE>Bentes Tipptopp-Expedition 3 - Hilfe, eine Mumie!</DE>
+            <Icon />
+          </Text>
+          <Text ID="152760">
+            <EN>Bente's Tip-Top Expedition 4 — The Curse of Choice</EN>
+            <DE>Bentes Tipptopp-Expedition 4 - Der Fluch der Entscheidung</DE>
+            <Icon />
+          </Text>
+          <Text ID="152598">
+            <EN>Slimy Seduction 4 — An Offer He Cannot Accept</EN>
+            <DE>Schleimige Verführung 4 - Ein Angebot, das er nicht annehmen kann</DE>
+            <Icon />
+          </Text>
+          <Text ID="152611">
+            <EN>In Love With The Devil 1 — Bride-To-Be</EN>
+            <DE>Verliebt in den Teufel 1 - Zukünftige Braut</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="84">
+        <Name>Second_ai_09 (Vicente Silva)</Name>
+        <Text ID="84">
+          <EN>Ship Drop - Admiral Vicente Silva</EN>
+          <DE>Schiff Drop - Admiral Vicente Silva</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="84">
+            <EN>Admiral Vicente Silva</EN>
+            <DE>Admiral Vicente Silva</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="151138">
+        <Name>Deliver Bread - Vicente</Name>
+        <Text ID="84">
+          <EN>Quest - Admiral Vicente Silva</EN>
+          <DE>Quest - Admiral Vicente Silva</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="151138">
+            <EN>Regimental Baker</EN>
+            <DE>Backwahn</DE>
+            <Icon />
+          </Text>
+          <Text ID="151139">
+            <EN>Live by the Sword</EN>
+            <DE>Lebe durch das Schwert</DE>
+            <Icon />
+          </Text>
+          <Text ID="151140">
+            <EN>Man O' War</EN>
+            <DE>Flotte Flotte</DE>
+            <Icon />
+          </Text>
+          <Text ID="151141">
+            <EN>Fabian Strategy</EN>
+            <DE>Abnutzungsstrategie</DE>
+            <Icon />
+          </Text>
+          <Text ID="151142">
+            <EN>Coup De Main</EN>
+            <DE>Erstschlag</DE>
+            <Icon />
+          </Text>
+          <Text ID="151152">
+            <EN>Flare Up</EN>
+            <DE>Knallcharge</DE>
+            <Icon />
+          </Text>
+          <Text ID="152419">
+            <EN>Cod War</EN>
+            <DE>Dreister Fischzug</DE>
+            <Icon />
+          </Text>
+          <Text ID="152421">
+            <EN>Root Cause</EN>
+            <DE>Grundübel</DE>
+            <Icon />
+          </Text>
+          <Text ID="152422">
+            <EN>Not Fond Of Children</EN>
+            <DE>Keine Lust auf Kinder</DE>
+            <Icon />
+          </Text>
+          <Text ID="152423">
+            <EN>Cannon Fodder</EN>
+            <DE>Kanonenfutter</DE>
+            <Icon />
+          </Text>
+          <Text ID="152425">
+            <EN>Pastry War</EN>
+            <DE>Die Hefe des Krieges</DE>
+            <Icon />
+          </Text>
+          <Text ID="152426">
+            <EN>Leadership Training</EN>
+            <DE>Anführerfortbildung</DE>
+            <Icon />
+          </Text>
+          <Text ID="152427">
+            <EN>Fart of War</EN>
+            <DE>Gunst des Krieges</DE>
+            <Icon />
+          </Text>
+          <Text ID="152428">
+            <EN>Scouting for Love</EN>
+            <DE>Suche nach Liebe</DE>
+            <Icon />
+          </Text>
+          <Text ID="152435">
+            <EN>A Fickle Foe 1 — Nemesis</EN>
+            <DE>Ein launischer Gegner 1 - Erzfeind</DE>
+            <Icon />
+          </Text>
+          <Text ID="151146">
+            <EN>Family Man 2 — Negligence</EN>
+            <DE>Familienmensch 2 - Vernachlässigung</DE>
+            <Icon />
+          </Text>
+          <Text ID="151149">
+            <EN>Pax Sinica 2 — The Spy Among Us</EN>
+            <DE>Pax Sinica 2 — Spione unter uns</DE>
+            <Icon />
+          </Text>
+          <Text ID="151154">
+            <EN>Bashing the Buccaneers 2 — Harlow's Revenge</EN>
+            <DE>Freibeutervernichtung 2 - Harlows Rache</DE>
+            <Icon />
+          </Text>
+          <Text ID="152038">
+            <EN>A Diplomatic Minefield 2 — While The Iron Is Hot</EN>
+            <DE>Ein diplomatisches Minenfeld 2 — Solange das Eisen heiß ist</DE>
+            <Icon />
+          </Text>
+          <Text ID="152569">
+            <EN>War And Peace 2 — Thanks But No Thanks</EN>
+            <DE>Krieg und Frieden 2 — Danke, aber nein Danke</DE>
+            <Icon />
+          </Text>
+          <Text ID="152046">
+            <EN>A Gap in the Armour 2 — Show of Force</EN>
+            <DE>Ein Loch in der Rüstung 2 - Machtdemonstration</DE>
+            <Icon />
+          </Text>
+          <Text ID="152047">
+            <EN>A Gap in the Armour 3 — Armada Grande</EN>
+            <DE>Ein Loch in der Rüstung 3 - Unbesiegbare Armada</DE>
+            <Icon />
+          </Text>
+          <Text ID="152048">
+            <EN>A Gap in the Armour 4 — At a Crossroads</EN>
+            <DE>Ein Loch in der Rüstung 4 - Am Scheideweg</DE>
+            <Icon />
+          </Text>
+          <Text ID="152049">
+            <EN>A Gap in the Armour 4 — Mushing the Movement</EN>
+            <DE>Ein Loch in der Rüstung 4 - Die Bewegung bezwingen</DE>
+            <Icon />
+          </Text>
+          <Text ID="151155">
+            <EN>Bashing the Buccaneers 3 — Harlow's End</EN>
+            <DE>Freibeutervernichtung 3 - Harlows Ende</DE>
+            <Icon />
+          </Text>
+          <Text ID="152039">
+            <EN>A Diplomatic Minefield 3 — Crossing The Rubicon</EN>
+            <DE>Ein diplomatisches Minenfeld 3 — Den Rubikon überschreiten</DE>
+            <Icon />
+          </Text>
+          <Text ID="152418">
+            <EN>Do You Want A Medal?</EN>
+            <DE>Wollen Sie einen Orden?</DE>
+            <Icon />
+          </Text>
+          <Text ID="152420">
+            <EN>Lowly Mercenary</EN>
+            <DE>Einfacher Söldner</DE>
+            <Icon />
+          </Text>
+          <Text ID="152424">
+            <EN>Just Desserts</EN>
+            <DE>Nur Drückeberger</DE>
+            <Icon />
+          </Text>
+          <Text ID="151153">
+            <EN>Bashing the Buccaneers 1 — Cat And Mouse</EN>
+            <DE>Freibeutervernichtung 1 - Katz' und Maus</DE>
+            <Icon />
+          </Text>
+          <Text ID="152045">
+            <EN>A Gap in the Armour 1 — A Pitiful Foe</EN>
+            <DE>Eine Loch in der Rüstung 1 - Ein bedauernswerter Feind</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="150115">
+        <Name>Close But No Cigar - Archibald Blake</Name>
+        <Text ID="45">
+          <EN>Quest - Sir Archibald Blake</EN>
+          <DE>Quest - Sir Archibald Blake</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="150115">
+            <EN>Close But No Cigar</EN>
+            <DE>Viel Rauch um nichts</DE>
+            <Icon />
+          </Text>
+          <Text ID="150116">
+            <EN>Alms Dealing</EN>
+            <DE>Royaler Almosenier</DE>
+            <Icon />
+          </Text>
+          <Text ID="150141">
+            <EN>Creative Block</EN>
+            <DE>Kreative Blockade</DE>
+            <Icon />
+          </Text>
+          <Text ID="150168">
+            <EN>An Icy Reception</EN>
+            <DE>Ein eisiger Empfang</DE>
+            <Icon />
+          </Text>
+          <Text ID="150169">
+            <EN>Would You Credit It!</EN>
+            <DE>Meine Schuld!</DE>
+            <Icon />
+          </Text>
+          <Text ID="150170">
+            <EN>The Gift Of Music</EN>
+            <DE>Die muskalische Gabe</DE>
+            <Icon />
+          </Text>
+          <Text ID="150127">
+            <EN>The End of an Era</EN>
+            <DE>Das Ende einer Ära</DE>
+            <Icon />
+          </Text>
+          <Text ID="150226">
+            <EN>Art Attack</EN>
+            <DE>Kunstbanausen</DE>
+            <Icon />
+          </Text>
+          <Text ID="150152">
+            <EN>Rain Stopped Play</EN>
+            <DE>Verhageltes Stelldichein</DE>
+            <Icon />
+          </Text>
+          <Text ID="150224">
+            <EN>Artefact-Finding</EN>
+            <DE>Sucher des verlorenen Schatzes</DE>
+            <Icon />
+          </Text>
+          <Text ID="150237">
+            <EN>Better Safe Than Sorry</EN>
+            <DE>Vorsicht ist die Mutter der Porzelankiste</DE>
+            <Icon />
+          </Text>
+          <Text ID="150238">
+            <EN>Torpedo Fish</EN>
+            <DE>Torpedofisch</DE>
+            <Icon />
+          </Text>
+          <Text ID="152199">
+            <EN>A Right Royal Boo-Boo</EN>
+            <DE>Königliche Kalamitäten</DE>
+            <Icon />
+          </Text>
+          <Text ID="150225">
+            <EN>Lost Sheep</EN>
+            <DE>Verlorene Schafe</DE>
+            <Icon />
+          </Text>
+          <Text ID="152213">
+            <EN>Birthday Treat</EN>
+            <DE>Geburtstagsschmankerl</DE>
+            <Icon />
+          </Text>
+          <Text ID="150241">
+            <EN>Escort Wood Expedition</EN>
+            <DE>Er und sein Holz</DE>
+            <Icon />
+          </Text>
+          <Text ID="152581">
+            <EN>The Executioner's Mask 2 — Error of Judgement</EN>
+            <DE>Die Grube und das Pendel 2 - Fehlurteil</DE>
+            <Icon />
+          </Text>
+          <Text ID="150190">
+            <EN>Creaming La Corona</EN>
+            <DE>Kolonialer Kehraus</DE>
+            <Icon />
+          </Text>
+          <Text ID="150192">
+            <EN>Sad State Of Affairs</EN>
+            <DE>Beschädigte Beziehungen</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="150292">
+        <Name>Keeping Up - Sarmento</Name>
+        <Text ID="29">
+          <EN>Quest - Isabel Sarmento</EN>
+          <DE>Quest - Isabel Sarmento</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="150292">
+            <EN>Keeping Up</EN>
+            <DE>Mit der Zeit gehen</DE>
+            <Icon />
+          </Text>
+          <Text ID="150290">
+            <EN>Charity Collection</EN>
+            <DE>Spenden für den guten Zweck</DE>
+            <Icon />
+          </Text>
+          <Text ID="152582">
+            <EN>The Strangled Revolution</EN>
+            <DE>Die erstickte Revolution</DE>
+            <Icon />
+          </Text>
+          <Text ID="152583">
+            <EN>Guerrilla War</EN>
+            <DE>Guerillakrieg</DE>
+            <Icon />
+          </Text>
+          <Text ID="150276">
+            <EN>Rotten Apples</EN>
+            <DE>Schwarze Schafe</DE>
+            <Icon />
+          </Text>
+          <Text ID="150294">
+            <EN>Slow Them Down</EN>
+            <DE>Haltet sie auf!</DE>
+            <Icon />
+          </Text>
+          <Text ID="150295">
+            <EN>Biting the Bait</EN>
+            <DE>Angebissen</DE>
+            <Icon />
+          </Text>
+          <Text ID="150341">
+            <EN>Liberation</EN>
+            <DE>Befreiung</DE>
+            <Icon />
+          </Text>
+          <Text ID="150281">
+            <EN>Enemy Salvage</EN>
+            <DE>Feindliche Bergung</DE>
+            <Icon />
+          </Text>
+          <Text ID="150297">
+            <EN>Keep Your Cool</EN>
+            <DE>Einen kühlen Kopf bewahren</DE>
+            <Icon />
+          </Text>
+          <Text ID="150299">
+            <EN>Catching Up</EN>
+            <DE>Nacheifern</DE>
+            <Icon />
+          </Text>
+          <Text ID="150296">
+            <EN>Royal Delivery</EN>
+            <DE>Königliche Lieferung</DE>
+            <Icon />
+          </Text>
+          <Text ID="150342">
+            <EN>The Next Move</EN>
+            <DE>Spionage</DE>
+            <Icon />
+          </Text>
+          <Text ID="150343">
+            <EN>§--150343--§</EN>
+            <DE>Starting From Scratch (TBC - Quest not yet written)</DE>
+            <Icon />
+          </Text>
+          <Text ID="152584">
+            <EN>Crossing the Border</EN>
+            <DE>Grenzüberquerung</DE>
+            <Icon />
+          </Text>
+          <Text ID="150270">
+            <EN>Shared Objectives</EN>
+            <DE>Gemeinsame Ziele</DE>
+            <Icon />
+          </Text>
+          <Text ID="152050">
+            <EN>A Gap in the Armour 4 — Opportunity Knocks</EN>
+            <DE>Ein Loch in der Rüstung 4 - Die Gelegenheit klopft an</DE>
+            <Icon />
+          </Text>
+          <Text ID="150293">
+            <EN>Reinforcements</EN>
+            <DE>Verstärkung</DE>
+            <Icon />
+          </Text>
+          <Text ID="150300">
+            <EN>Risky Business</EN>
+            <DE>Riskante Geschäfte</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="150969">
+        <Name>RQ_Artisans_PeerGynt</Name>
+        <Text ID="87">
+          <EN>Quest - Artisan</EN>
+          <DE>Quest - Handwerker</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/resident_tier03.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="150969">
+            <EN>Peer Gynt</EN>
+            <DE>Peer Gynt</DE>
+            <Icon />
+          </Text>
+          <Text ID="150970">
+            <EN>Sound of Music</EN>
+            <DE>Der Klang der Musik</DE>
+            <Icon />
+          </Text>
+          <Text ID="150979">
+            <EN>The Wayward Apprentice</EN>
+            <DE>Lehrling auf Abwegen</DE>
+            <Icon />
+          </Text>
+          <Text ID="151847">
+            <EN>The Simple Life</EN>
+            <DE>Das einfache Leben</DE>
+            <Icon />
+          </Text>
+          <Text ID="150981">
+            <EN>New World</EN>
+            <DE>Neue Insel</DE>
+            <Icon />
+          </Text>
+          <Text ID="150982">
+            <EN>First Day of School</EN>
+            <DE>Erster Schultag</DE>
+            <Icon />
+          </Text>
+          <Text ID="150986">
+            <EN>A Day at the Zoo</EN>
+            <DE>Ein Tag im Zoo</DE>
+            <Icon />
+          </Text>
+          <Text ID="150987">
+            <EN>Can Opening</EN>
+            <DE>Dosenöffnung</DE>
+            <Icon />
+          </Text>
+          <Text ID="150988">
+            <EN>An Affair of Honor</EN>
+            <DE>Eine Sache der Ehre</DE>
+            <Icon />
+          </Text>
+          <Text ID="150989">
+            <EN>Culture Vulture</EN>
+            <DE>Kulturgeier</DE>
+            <Icon />
+          </Text>
+          <Text ID="151034">
+            <EN>Vicuña En Vogue</EN>
+            <DE>Vicuña en vogue</DE>
+            <Icon />
+          </Text>
+          <Text ID="151035">
+            <EN>Artisan Coffee</EN>
+            <DE>Handgefertigter Kaffee</DE>
+            <Icon />
+          </Text>
+          <Text ID="151036">
+            <EN>Pour, Oh Pour, The Pirate Rum</EN>
+            <DE>Fließe, oh, fließe, Piratenrum</DE>
+            <Icon />
+          </Text>
+          <Text ID="151037">
+            <EN>Turner Overdrive</EN>
+            <DE>Turners Impressionen</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
+  <Asset ID="191854" Release="Release">
+    <Name>Paixhans Gun</Name>
+    <Text ID="191854">
+      <EN>Hans Gun</EN>
+      <DE>Bombenkanone</DE>
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/consumables/icon_cannon_2.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118005">
+      <EN>Epic</EN>
+      <DE>Episch</DE>
+      <Icon />
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <ItemSets />
+    <Allocation ID="Warship">
+      <Text ID="12812">
+        <EN>Military Ships</EN>
+        <DE>Kriegsschiffe</DE>
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Text ID="800004">
+          <EN>Naval Power</EN>
+          <DE>Gefechtskunde</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+          </Icon>
+        </Text>
+        <Value>40</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades>
+      <Upgrade>
+        <Text ID="2334">
+          <EN>Damage per shot</EN>
+          <DE>Schaden pro Schuss</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+25%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="12062">
+          <EN>Accuracy</EN>
+          <DE>Präzision</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+35%</Value>
+      </Upgrade>
+    </AttackerUpgrades>
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <ItemActionUpgrades />
+    <ShipyardUpgrades />
+    <KontorUpgrades />
+    <TradePrice>60750</TradePrice>
+    <Info ID="19705">
+      <EN>A modern gun, it is said, that has been particularly lucky in its aim.</EN>
+      <DE>Ein modernes Geschütz, so heißt es, das genauer zielt.</DE>
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="800103">
+        <Name>Archeological Expedition Easy</Name>
+        <Text ID="11629">
+          <EN>Archaeological Expedition</EN>
+          <DE>Archäologische Expedition</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="800171">
+            <EN>The Inspector 1.2.1</EN>
+            <DE>Der Inspekteur 1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="800171">
+            <EN>The Inspector 1.3.1</EN>
+            <DE>Der Inspekteur 1.3.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="800171">
+            <EN>The Inspector 1.2.3.2.1</EN>
+            <DE>Der Inspekteur 1.2.3.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.1.1</EN>
+            <DE>Piratenflagge 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.2.1</EN>
+            <DE>Piratenflagge 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.1.1</EN>
+            <DE>Piratenflagge 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.2.1</EN>
+            <DE>Piratenflagge 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800214">
+        <Name>Zoological Expedition Easy</Name>
+        <Text ID="11630">
+          <EN>Zoological Expedition</EN>
+          <DE>Zoologische Expedition</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="800171">
+            <EN>The Inspector 1.2.1</EN>
+            <DE>Der Inspekteur 1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="800171">
+            <EN>The Inspector 1.3.1</EN>
+            <DE>Der Inspekteur 1.3.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="800171">
+            <EN>The Inspector 1.2.3.2.1</EN>
+            <DE>Der Inspekteur 1.2.3.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.1.1</EN>
+            <DE>Piratenflagge 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.2.1</EN>
+            <DE>Piratenflagge 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.1.1</EN>
+            <DE>Piratenflagge 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.2.1</EN>
+            <DE>Piratenflagge 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800399">
+        <Name>Rescue Mission Easy</Name>
+        <Text ID="11631">
+          <EN>Rescue Mission</EN>
+          <DE>Rettungseinsatz</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="800171">
+            <EN>The Inspector 1.2.1</EN>
+            <DE>Der Inspekteur 1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="800171">
+            <EN>The Inspector 1.3.1</EN>
+            <DE>Der Inspekteur 1.3.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="800171">
+            <EN>The Inspector 1.2.3.2.1</EN>
+            <DE>Der Inspekteur 1.2.3.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Expedition Abgeschossen</EN>
+            <DE> Successfully Expedition</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.1.1</EN>
+            <DE>Piratenflagge 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.2.1</EN>
+            <DE>Piratenflagge 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.1.1</EN>
+            <DE>Piratenflagge 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.2.1</EN>
+            <DE>Piratenflagge 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800403">
+        <Name>Pirate Hunt Easy</Name>
+        <Text ID="11632">
+          <EN>Pirate Hunt</EN>
+          <DE>Piratenjagd</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="800171">
+            <EN>The Inspector 1.2.1</EN>
+            <DE>Der Inspekteur 1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="800171">
+            <EN>The Inspector 1.3.1</EN>
+            <DE>Der Inspekteur 1.3.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="800171">
+            <EN>The Inspector 1.2.3.2.1</EN>
+            <DE>Der Inspekteur 1.2.3.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.1.1</EN>
+            <DE>Piratenflagge 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.2.1</EN>
+            <DE>Piratenflagge 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.1.1</EN>
+            <DE>Piratenflagge 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.2.1</EN>
+            <DE>Piratenflagge 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Expedition Abgeschossen</EN>
+            <DE> Successfully Expedition</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800777">
+        <Name>Discovery South America Sandbox</Name>
+        <Text ID="11634">
+          <EN>Discovery Expedition</EN>
+          <DE>Entdeckungsreise</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="800171">
+            <EN>The Inspector 1.2.1</EN>
+            <DE>Der Inspekteur 1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="800171">
+            <EN>The Inspector 1.3.1</EN>
+            <DE>Der Inspekteur 1.3.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="800171">
+            <EN>The Inspector 1.2.3.2.1</EN>
+            <DE>Der Inspekteur 1.2.3.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.1.1</EN>
+            <DE>Piratenflagge 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.2.1</EN>
+            <DE>Piratenflagge 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.1.1</EN>
+            <DE>Piratenflagge 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.2.1</EN>
+            <DE>Piratenflagge 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="73">
+        <Name>Third_party_03 (Anne Harlow)</Name>
+        <Text ID="73">
+          <EN>Harbour - Anne Harlow</EN>
+          <DE>Hafen - Anne Harlow</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="76">
+        <Name>Third_party_04 (La Fortune)</Name>
+        <Text ID="76">
+          <EN>Harbour - Jean La Fortune</EN>
+          <DE>Hafen - Jean La Fortune</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="">
+            <EN>Mid Game</EN>
+            <DE>Mittleres Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late-Mid Game</EN>
+            <DE>Mittleres-Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>Late Game</EN>
+            <DE>Spätes Spiel</DE>
+            <Icon />
+          </Text>
+          <Text ID="">
+            <EN>EndGame</EN>
+            <DE>End Game</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="82">
+        <Name>Second_ai_05 (Beryl O'Mara)</Name>
+        <Text ID="82">
+          <EN>Ship Drop - Beryl O'Mara</EN>
+          <DE>Schiff Drop - Beryl O'Mara</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="82">
+            <EN>Beryl O'Mara</EN>
+            <DE>Beryl O'Mara</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/ai_05.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="152498">
+        <Name>Sabotage the prisoner transport - Beryl</Name>
+        <Text ID="82">
+          <EN>Quest - Beryl O'Mara</EN>
+          <DE>Quest - Beryl O'Mara</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="152498">
+            <EN>Free Birds</EN>
+            <DE>Freie Vögel</DE>
+            <Icon />
+          </Text>
+          <Text ID="152508">
+            <EN>Clueless Courier</EN>
+            <DE>Unwissender Kurier</DE>
+            <Icon />
+          </Text>
+          <Text ID="152514">
+            <EN>Preferential Treatment</EN>
+            <DE>Bevorzugte Behandlung</DE>
+            <Icon />
+          </Text>
+          <Text ID="152520">
+            <EN>Family Matters 1 — The Bride</EN>
+            <DE>Familienangelegenheiten 1 - Die Braut</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="48">
+        <Name>Second_ai_08 (Alonso Gravez)</Name>
+        <Text ID="48">
+          <EN>Ship Drop - Alonso Graves</EN>
+          <DE>Schiff Drop - Alonso Graves</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_08.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="48">
+            <EN>Alonso Graves</EN>
+            <DE>Alonso Graves</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/ai_08.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="152518">
+        <Name>Passionate Love - Alonso Graves</Name>
+        <Text ID="48">
+          <EN>Quest - Alonso Graves</EN>
+          <DE>Quest - Alonso Graves</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_08.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="152518">
+            <EN>Heart Throb</EN>
+            <DE>Herzklopfen</DE>
+            <Icon />
+          </Text>
+          <Text ID="152522">
+            <EN>Hothead</EN>
+            <DE>Heißsporn</DE>
+            <Icon />
+          </Text>
+          <Text ID="152529">
+            <EN>Burning News</EN>
+            <DE>Brandaktuelle Nachrichten</DE>
+            <Icon />
+          </Text>
+          <Text ID="152637">
+            <EN>Hellfire Club 1 — The Purge</EN>
+            <DE>Höllenfeuerclub 1 - Die Säuberung</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="84">
+        <Name>Second_ai_09 (Vicente Silva)</Name>
+        <Text ID="84">
+          <EN>Ship Drop - Admiral Vicente Silva</EN>
+          <DE>Schiff Drop - Admiral Vicente Silva</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="84">
+            <EN>Admiral Vicente Silva</EN>
+            <DE>Admiral Vicente Silva</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="151155">
+        <Name>Down with Anne Harlow 3 - Vicente</Name>
+        <Text ID="84">
+          <EN>Quest - Admiral Vicente Silva</EN>
+          <DE>Quest - Admiral Vicente Silva</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="151155">
+            <EN>Bashing the Buccaneers 3 — Harlow's End</EN>
+            <DE>Freibeutervernichtung 3 - Harlows Ende</DE>
+            <Icon />
+          </Text>
+          <Text ID="152039">
+            <EN>A Diplomatic Minefield 3 — Crossing The Rubicon</EN>
+            <DE>Ein diplomatisches Minenfeld 3 — Den Rubikon überschreiten</DE>
+            <Icon />
+          </Text>
+          <Text ID="152418">
+            <EN>Do You Want A Medal?</EN>
+            <DE>Wollen Sie einen Orden?</DE>
+            <Icon />
+          </Text>
+          <Text ID="152420">
+            <EN>Lowly Mercenary</EN>
+            <DE>Einfacher Söldner</DE>
+            <Icon />
+          </Text>
+          <Text ID="152424">
+            <EN>Just Desserts</EN>
+            <DE>Nur Drückeberger</DE>
+            <Icon />
+          </Text>
+          <Text ID="151153">
+            <EN>Bashing the Buccaneers 1 — Cat And Mouse</EN>
+            <DE>Freibeutervernichtung 1 - Katz' und Maus</DE>
+            <Icon />
+          </Text>
+          <Text ID="152045">
+            <EN>A Gap in the Armour 1 — A Pitiful Foe</EN>
+            <DE>Eine Loch in der Rüstung 1 - Ein bedauernswerter Feind</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="73">
+        <Name>Third_party_03 (Anne Harlow)</Name>
+        <Text ID="73">
+          <EN>Ship Drop - Anne Harlow</EN>
+          <DE>Schiff Drop - Anne Harlow</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="73">
+            <EN>Anne Harlow</EN>
+            <DE>Anne Harlow</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="152169">
+        <Name>Smuggle Out of prison - Anne Harlow</Name>
+        <Text ID="73">
+          <EN>Quest - Anne Harlow</EN>
+          <DE>Quest - Anne Harlow</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="152169">
+            <EN>Pleading the Belly</EN>
+            <DE>Bauchplädoyer</DE>
+            <Icon />
+          </Text>
+          <Text ID="152238">
+            <EN>Abuse of Privilege</EN>
+            <DE>Privilegienmissbrauch</DE>
+            <Icon />
+          </Text>
+          <Text ID="152244">
+            <EN>Taking Its Toll</EN>
+            <DE>Tributpflichtig</DE>
+            <Icon />
+          </Text>
+          <Text ID="152207">
+            <EN>In the Name of the Father 1 — The Truth</EN>
+            <DE>Im Namen des Vaters 1 - Die Wahrheit</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="76">
+        <Name>Third_party_04 (La Fortune)</Name>
+        <Text ID="76">
+          <EN>Ship Drop - Jean La Fortune</EN>
+          <DE>Schiff Drop - Jean La Fortune</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="76">
+            <EN>Jean La Fortune</EN>
+            <DE>Jean La Fortune</DE>
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="152928">
+        <Name>Pickup Delaying Death - Jean LaFortune</Name>
+        <Text ID="76">
+          <EN>Quest - Jean La Fortune</EN>
+          <DE>Quest - Jean La Fortune</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="152928">
+            <EN>Lost Souls</EN>
+            <DE>Verlorene Seelen</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
   <Asset ID="191839" Release="Release">
     <Name>High-Powered Scope</Name>
     <Text ID="191839">
@@ -16869,18 +17523,18 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="191854" Release="Release">
-    <Name>Paixhans Gun</Name>
-    <Text ID="191854">
-      <EN>Hans Gun</EN>
-      <DE>Bombenkanone</DE>
+  <Asset ID="191855" Release="Release">
+    <Name>Armstrong Gun</Name>
+    <Text ID="191855">
+      <EN>Strongarm's Disappearing Gun</EN>
+      <DE>Strongarms Verschwindlafette</DE>
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/consumables/icon_cannon_2.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/consumables/icon_cannon_4.png</Filename>
       </Icon>
     </Text>
-    <Rarity ID="118005">
-      <EN>Epic</EN>
-      <DE>Episch</DE>
+    <Rarity ID="118006">
+      <EN>Legendary</EN>
+      <DE>Legendär</DE>
       <Icon />
     </Rarity>
     <ItemType>Common</ItemType>
@@ -16911,7 +17565,7 @@
             <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
           </Icon>
         </Text>
-        <Value>40</Value>
+        <Value>50</Value>
       </Upgrade>
     </ExpeditionAttributes>
     <AttackableUpgrades />
@@ -16926,7 +17580,7 @@
             <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
           </Icon>
         </Text>
-        <Value>+25%</Value>
+        <Value>+35%</Value>
       </Upgrade>
       <Upgrade>
         <Text ID="12062">
@@ -16936,7 +17590,7 @@
             <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png</Filename>
           </Icon>
         </Text>
-        <Value>+35%</Value>
+        <Value>+50%</Value>
       </Upgrade>
     </AttackerUpgrades>
     <VisitorHarborUpgrades />
@@ -16947,13 +17601,50 @@
     <ItemActionUpgrades />
     <ShipyardUpgrades />
     <KontorUpgrades />
-    <TradePrice>60750</TradePrice>
-    <Info ID="19705">
-      <EN>A modern gun, it is said, that has been particularly lucky in its aim.</EN>
-      <DE>Ein modernes Geschütz, so heißt es, das genauer zielt.</DE>
+    <TradePrice>164500</TradePrice>
+    <Info ID="19706">
+      <EN>Mr. Strongarm's gun is as potent as it sounds, sneakily disappearing from view when not in use.</EN>
+      <DE>Mr. Strongarms Geschütz ist so durchschlagskräftig wie es klingt und verschwindet verstohlen außer Sicht, wenn es nicht benutzt wird.</DE>
       <Icon />
     </Info>
     <Sources>
+      <Source ID="800399">
+        <Name>Rescue Mission Easy</Name>
+        <Text ID="11631">
+          <EN>Rescue Mission</EN>
+          <DE>Rettungseinsatz</DE>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="">
+            <EN>Expedition Abgeschossen</EN>
+            <DE> Successfully Expedition</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.1.1</EN>
+            <DE>Piratenflagge 1.1.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.1.1.2.1</EN>
+            <DE>Piratenflagge 1.1.1.2.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.1.1</EN>
+            <DE>Piratenflagge 1.2.1.1.1</DE>
+            <Icon />
+          </Text>
+          <Text ID="802745">
+            <EN>Jolly Roger 1.2.1.2.1</EN>
+            <DE>Piratenflagge 1.2.1.2.1</DE>
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
       <Source ID="800103">
         <Name>Archeological Expedition Easy</Name>
         <Text ID="11629">
@@ -16964,21 +17655,6 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.1</EN>
-            <DE>Der Inspekteur 1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.3.1</EN>
-            <DE>Der Inspekteur 1.3.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.3.2.1</EN>
-            <DE>Der Inspekteur 1.2.3.2.1</DE>
-            <Icon />
-          </Text>
           <Text ID="802745">
             <EN>Jolly Roger 1.1.1.1.1</EN>
             <DE>Piratenflagge 1.1.1.1.1</DE>
@@ -17011,73 +17687,6 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.1</EN>
-            <DE>Der Inspekteur 1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.3.1</EN>
-            <DE>Der Inspekteur 1.3.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.3.2.1</EN>
-            <DE>Der Inspekteur 1.2.3.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
-        <Text ID="11631">
-          <EN>Rescue Mission</EN>
-          <DE>Rettungseinsatz</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.1</EN>
-            <DE>Der Inspekteur 1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.3.1</EN>
-            <DE>Der Inspekteur 1.3.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.3.2.1</EN>
-            <DE>Der Inspekteur 1.2.3.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-            <Icon />
-          </Text>
           <Text ID="802745">
             <EN>Jolly Roger 1.1.1.1.1</EN>
             <DE>Piratenflagge 1.1.1.1.1</DE>
@@ -17110,21 +17719,6 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.1</EN>
-            <DE>Der Inspekteur 1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.3.1</EN>
-            <DE>Der Inspekteur 1.3.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.3.2.1</EN>
-            <DE>Der Inspekteur 1.2.3.2.1</DE>
-            <Icon />
-          </Text>
           <Text ID="802745">
             <EN>Jolly Roger 1.1.1.1.1</EN>
             <DE>Piratenflagge 1.1.1.1.1</DE>
@@ -17162,21 +17756,6 @@
           </Icon>
         </Text>
         <Details>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.1</EN>
-            <DE>Der Inspekteur 1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.3.1</EN>
-            <DE>Der Inspekteur 1.3.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.3.2.1</EN>
-            <DE>Der Inspekteur 1.2.3.2.1</DE>
-            <Icon />
-          </Text>
           <Text ID="802745">
             <EN>Jolly Roger 1.1.1.1.1</EN>
             <DE>Piratenflagge 1.1.1.1.1</DE>
@@ -17195,70 +17774,6 @@
           <Text ID="802745">
             <EN>Jolly Roger 1.2.1.2.1</EN>
             <DE>Piratenflagge 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="73">
-        <Name>Third_party_03 (Anne Harlow)</Name>
-        <Text ID="73">
-          <EN>Harbour - Anne Harlow</EN>
-          <DE>Hafen - Anne Harlow</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="">
-            <EN>Mid Game</EN>
-            <DE>Mittleres Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Late-Mid Game</EN>
-            <DE>Mittleres-Spätes Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Late Game</EN>
-            <DE>Spätes Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>EndGame</EN>
-            <DE>End Game</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="76">
-        <Name>Third_party_04 (La Fortune)</Name>
-        <Text ID="76">
-          <EN>Harbour - Jean La Fortune</EN>
-          <DE>Hafen - Jean La Fortune</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="">
-            <EN>Mid Game</EN>
-            <DE>Mittleres Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Late-Mid Game</EN>
-            <DE>Mittleres-Spätes Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Late Game</EN>
-            <DE>Spätes Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>EndGame</EN>
-            <DE>End Game</DE>
             <Icon />
           </Text>
         </Details>
@@ -18179,521 +18694,6 @@
             <Icon>
               <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
             </Icon>
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-    <MonumentEvents />
-    <MonumentThresholds />
-    <MonumentRewards />
-  </Asset>
-  <Asset ID="191855" Release="Release">
-    <Name>Armstrong Gun</Name>
-    <Text ID="191855">
-      <EN>Strongarm's Disappearing Gun</EN>
-      <DE>Strongarms Verschwindlafette</DE>
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/consumables/icon_cannon_4.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118006">
-      <EN>Legendary</EN>
-      <DE>Legendär</DE>
-      <Icon />
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <ItemSets />
-    <Allocation ID="Warship">
-      <Text ID="12812">
-        <EN>Military Ships</EN>
-        <DE>Kriegsschiffe</DE>
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Text ID="800004">
-          <EN>Naval Power</EN>
-          <DE>Gefechtskunde</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
-          </Icon>
-        </Text>
-        <Value>50</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
-    <AttackableUpgrades />
-    <TradeShipUpgrades />
-    <VehicleUpgrades />
-    <AttackerUpgrades>
-      <Upgrade>
-        <Text ID="2334">
-          <EN>Damage per shot</EN>
-          <DE>Schaden pro Schuss</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+35%</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="12062">
-          <EN>Accuracy</EN>
-          <DE>Präzision</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+50%</Value>
-      </Upgrade>
-    </AttackerUpgrades>
-    <VisitorHarborUpgrades />
-    <RepairCraneUpgrades />
-    <IncidentInfectableUpgrades />
-    <IncidentInfluencerUpgrades />
-    <ItemGeneratorUpgrades />
-    <ItemActionUpgrades />
-    <ShipyardUpgrades />
-    <KontorUpgrades />
-    <TradePrice>164500</TradePrice>
-    <Info ID="19706">
-      <EN>Mr. Strongarm's gun is as potent as it sounds, sneakily disappearing from view when not in use.</EN>
-      <DE>Mr. Strongarms Geschütz ist so durchschlagskräftig wie es klingt und verschwindet verstohlen außer Sicht, wenn es nicht benutzt wird.</DE>
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
-        <Text ID="11631">
-          <EN>Rescue Mission</EN>
-          <DE>Rettungseinsatz</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800103">
-        <Name>Archeological Expedition Easy</Name>
-        <Text ID="11629">
-          <EN>Archaeological Expedition</EN>
-          <DE>Archäologische Expedition</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800214">
-        <Name>Zoological Expedition Easy</Name>
-        <Text ID="11630">
-          <EN>Zoological Expedition</EN>
-          <DE>Zoologische Expedition</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800403">
-        <Name>Pirate Hunt Easy</Name>
-        <Text ID="11632">
-          <EN>Pirate Hunt</EN>
-          <DE>Piratenjagd</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800777">
-        <Name>Discovery South America Sandbox</Name>
-        <Text ID="11634">
-          <EN>Discovery Expedition</EN>
-          <DE>Entdeckungsreise</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="82">
-        <Name>Second_ai_05 (Beryl O'Mara)</Name>
-        <Text ID="82">
-          <EN>Ship Drop - Beryl O'Mara</EN>
-          <DE>Schiff Drop - Beryl O'Mara</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_05.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="82">
-            <EN>Beryl O'Mara</EN>
-            <DE>Beryl O'Mara</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/ai_05.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="152498">
-        <Name>Sabotage the prisoner transport - Beryl</Name>
-        <Text ID="82">
-          <EN>Quest - Beryl O'Mara</EN>
-          <DE>Quest - Beryl O'Mara</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_05.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="152498">
-            <EN>Free Birds</EN>
-            <DE>Freie Vögel</DE>
-            <Icon />
-          </Text>
-          <Text ID="152508">
-            <EN>Clueless Courier</EN>
-            <DE>Unwissender Kurier</DE>
-            <Icon />
-          </Text>
-          <Text ID="152514">
-            <EN>Preferential Treatment</EN>
-            <DE>Bevorzugte Behandlung</DE>
-            <Icon />
-          </Text>
-          <Text ID="152520">
-            <EN>Family Matters 1 — The Bride</EN>
-            <DE>Familienangelegenheiten 1 - Die Braut</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="48">
-        <Name>Second_ai_08 (Alonso Gravez)</Name>
-        <Text ID="48">
-          <EN>Ship Drop - Alonso Graves</EN>
-          <DE>Schiff Drop - Alonso Graves</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_08.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="48">
-            <EN>Alonso Graves</EN>
-            <DE>Alonso Graves</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/ai_08.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="152518">
-        <Name>Passionate Love - Alonso Graves</Name>
-        <Text ID="48">
-          <EN>Quest - Alonso Graves</EN>
-          <DE>Quest - Alonso Graves</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_08.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="152518">
-            <EN>Heart Throb</EN>
-            <DE>Herzklopfen</DE>
-            <Icon />
-          </Text>
-          <Text ID="152522">
-            <EN>Hothead</EN>
-            <DE>Heißsporn</DE>
-            <Icon />
-          </Text>
-          <Text ID="152529">
-            <EN>Burning News</EN>
-            <DE>Brandaktuelle Nachrichten</DE>
-            <Icon />
-          </Text>
-          <Text ID="152637">
-            <EN>Hellfire Club 1 — The Purge</EN>
-            <DE>Höllenfeuerclub 1 - Die Säuberung</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="84">
-        <Name>Second_ai_09 (Vicente Silva)</Name>
-        <Text ID="84">
-          <EN>Ship Drop - Admiral Vicente Silva</EN>
-          <DE>Schiff Drop - Admiral Vicente Silva</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="84">
-            <EN>Admiral Vicente Silva</EN>
-            <DE>Admiral Vicente Silva</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="151155">
-        <Name>Down with Anne Harlow 3 - Vicente</Name>
-        <Text ID="84">
-          <EN>Quest - Admiral Vicente Silva</EN>
-          <DE>Quest - Admiral Vicente Silva</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="151155">
-            <EN>Bashing the Buccaneers 3 — Harlow's End</EN>
-            <DE>Freibeutervernichtung 3 - Harlows Ende</DE>
-            <Icon />
-          </Text>
-          <Text ID="152039">
-            <EN>A Diplomatic Minefield 3 — Crossing The Rubicon</EN>
-            <DE>Ein diplomatisches Minenfeld 3 — Den Rubikon überschreiten</DE>
-            <Icon />
-          </Text>
-          <Text ID="152418">
-            <EN>Do You Want A Medal?</EN>
-            <DE>Wollen Sie einen Orden?</DE>
-            <Icon />
-          </Text>
-          <Text ID="152420">
-            <EN>Lowly Mercenary</EN>
-            <DE>Einfacher Söldner</DE>
-            <Icon />
-          </Text>
-          <Text ID="152424">
-            <EN>Just Desserts</EN>
-            <DE>Nur Drückeberger</DE>
-            <Icon />
-          </Text>
-          <Text ID="151153">
-            <EN>Bashing the Buccaneers 1 — Cat And Mouse</EN>
-            <DE>Freibeutervernichtung 1 - Katz' und Maus</DE>
-            <Icon />
-          </Text>
-          <Text ID="152045">
-            <EN>A Gap in the Armour 1 — A Pitiful Foe</EN>
-            <DE>Eine Loch in der Rüstung 1 - Ein bedauernswerter Feind</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="73">
-        <Name>Third_party_03 (Anne Harlow)</Name>
-        <Text ID="73">
-          <EN>Ship Drop - Anne Harlow</EN>
-          <DE>Schiff Drop - Anne Harlow</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="73">
-            <EN>Anne Harlow</EN>
-            <DE>Anne Harlow</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="152169">
-        <Name>Smuggle Out of prison - Anne Harlow</Name>
-        <Text ID="73">
-          <EN>Quest - Anne Harlow</EN>
-          <DE>Quest - Anne Harlow</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="152169">
-            <EN>Pleading the Belly</EN>
-            <DE>Bauchplädoyer</DE>
-            <Icon />
-          </Text>
-          <Text ID="152238">
-            <EN>Abuse of Privilege</EN>
-            <DE>Privilegienmissbrauch</DE>
-            <Icon />
-          </Text>
-          <Text ID="152244">
-            <EN>Taking Its Toll</EN>
-            <DE>Tributpflichtig</DE>
-            <Icon />
-          </Text>
-          <Text ID="152207">
-            <EN>In the Name of the Father 1 — The Truth</EN>
-            <DE>Im Namen des Vaters 1 - Die Wahrheit</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="76">
-        <Name>Third_party_04 (La Fortune)</Name>
-        <Text ID="76">
-          <EN>Ship Drop - Jean La Fortune</EN>
-          <DE>Schiff Drop - Jean La Fortune</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="76">
-            <EN>Jean La Fortune</EN>
-            <DE>Jean La Fortune</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="152928">
-        <Name>Pickup Delaying Death - Jean LaFortune</Name>
-        <Text ID="76">
-          <EN>Quest - Jean La Fortune</EN>
-          <DE>Quest - Jean La Fortune</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="152928">
-            <EN>Lost Souls</EN>
-            <DE>Verlorene Seelen</DE>
-            <Icon />
           </Text>
         </Details>
       </Source>

@@ -20,12 +20,13 @@ namespace RDA {
     public static void Main(String[] args) {
       Program.PathViewer = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase).Replace(@"file:\", String.Empty)).Parent.Parent.Parent.FullName + @"\AssetViewer";
       Program.PathRoot = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase).Replace(@"file:\", String.Empty)).Parent.Parent.FullName;
-      Assets.Init("Update 03");
+
       // Helper
       Helper.ExtractTextEnglish(Program.PathRoot + @"\Original\texts_english.xml");
       Helper.ExtractTextGerman(Program.PathRoot + @"\Original\texts_german.xml");
       //Helper.ExtractTemplateNames(Program.PathRoot + @"\Original\assets.xml");
 
+      Assets.Init("Update 04");
       // World Fair
       Monument.Create();
 

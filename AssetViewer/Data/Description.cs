@@ -47,6 +47,9 @@ namespace AssetViewer.Data {
       this.Icon = icon;
       this.AdditionalInformation = AdditionalInformation;
     }
+    public override string ToString() {
+      return CurrentLang;
+    }
     #endregion
 
   }
