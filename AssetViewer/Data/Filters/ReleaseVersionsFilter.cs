@@ -32,13 +32,15 @@ namespace AssetViewer.Data.Filters {
       switch (Comparison) {
         case ValueComparisons.Equals:
           return l.CompareTo(SelectedComparisonValue) == 0;
+
         case ValueComparisons.LesserThan:
           return l.CompareTo(SelectedComparisonValue) <= 0;
+
         case ValueComparisons.GraterThan:
           return l.CompareTo(SelectedComparisonValue) >= 0;
       }
       return false;
     }
-    public override int DescriptionID => 1007;
+    public override string DescriptionID => "-1007";
   }
 }

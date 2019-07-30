@@ -1,5 +1,4 @@
-﻿using AssetViewer.Library;
-using AssetViewer.Templates;
+﻿using AssetViewer.Templates;
 using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
@@ -25,7 +24,7 @@ namespace AssetViewer.Controls {
 
     public LinearGradientBrush RarityBrush {
       get {
-        var selection = this.SelectedAsset?.Rarity?.EN ?? "Common";
+        var selection = this.SelectedAsset?.RarityType ?? "Common";
         switch (selection) {
           case "Uncommon":
             return new LinearGradientBrush(new GradientStopCollection {
@@ -67,53 +66,39 @@ namespace AssetViewer.Controls {
 
     public String AllocationText {
       get {
-        switch (App.Language) {
-          case Languages.German:
-            return "Hier ausgerüstet";
-
-          default:
-            return "Equipped in";
-        }
+        return App.Descriptions["-106"];
       }
     }
 
     public String ExpeditionText {
       get {
-        switch (App.Language) {
-          case Languages.German:
-            return "Expeditions-Bonus";
-
-          default:
-            return "Expedition Bonus";
-        }
+        return App.Descriptions["-1220"];
       }
     }
 
     public String TradeText {
       get {
-        switch (App.Language) {
-          case Languages.German:
-            return "Verkaufspreis";
-
-          default:
-            return "Selling Price";
-        }
+        return App.Descriptions["-1202"];
       }
     }
 
     public String ItemSetText {
       get {
-        switch (App.Language) {
-          case Languages.German:
-            return "Teil eines Sets";
-
-          default:
-            return "Part of set";
-        }
+        return App.Descriptions["-1221"];
       }
     }
 
     #endregion Properties
+
+    #region Fields
+
+    public static readonly DependencyProperty CanSwapProperty =
+                                                    DependencyProperty.Register("CanSwap", typeof(bool), typeof(ItemCard), new PropertyMetadata(false));
+
+    public static readonly DependencyProperty SelectedAssetProperty =
+        DependencyProperty.Register("SelectedAsset", typeof(TemplateAsset), typeof(ItemCard), new PropertyMetadata(null, OnSelectedAssetChanged));
+
+    #endregion Fields
 
     #region Constructors
 
@@ -136,19 +121,6 @@ namespace AssetViewer.Controls {
     public void RaisePropertyChanged([CallerMemberName]string name = "") {
       PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
     }
-
-    #endregion Methods
-
-    #region Fields
-
-    public static readonly DependencyProperty CanSwapProperty =
-                                                    DependencyProperty.Register("CanSwap", typeof(bool), typeof(ItemCard), new PropertyMetadata(false));
-
-    public static readonly DependencyProperty SelectedAssetProperty =
-        DependencyProperty.Register("SelectedAsset", typeof(TemplateAsset), typeof(ItemCard), new PropertyMetadata(null, OnSelectedAssetChanged));
-
-    #endregion Fields
-
     private static void OnSelectedAssetChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {
       if (d is ItemCard card) {
         card.RaisePropertyChanged(nameof(RarityBrush));
@@ -182,5 +154,7 @@ namespace AssetViewer.Controls {
         this.ItemFront.Visibility = Visibility.Visible;
       }
     }
+
+    #endregion Methods
   }
 }

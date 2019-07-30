@@ -18,7 +18,7 @@ namespace RDA.Templates {
     public String ID { get; set; }
     public String Name { get; set; }
     public Description Text { get; set; }
-
+    public string RarityType { get; private set; } = "Common";
     public Description Rarity { get; set; }
     public String ItemType { get; set; }
     public String ReleaseVersion { get; set; } = "Release";
@@ -240,9 +240,11 @@ namespace RDA.Templates {
           case "DistributionUpgrade":
             // Todo: needs to implemented
             break;
+
           case "DivingBellUpgrade":
             this.ProcessElement_DivingBellUpgrade(element);
             break;
+
           case "CraftableItem":
             this.ProcessElement_CraftableItem(element);
             break;
@@ -267,47 +269,35 @@ namespace RDA.Templates {
       result.Add(new XAttribute("Release", this.ReleaseVersion));
       result.Add(new XElement("Name", this.Name));
       result.Add(this.Text.ToXml("Text"));
-      result.Add(this.Rarity == null ? new XElement("Rarity") : this.Rarity.ToXml("Rarity"));
+      result.Add(this.Rarity == null ? new Description(Assets.KeyToIdDict["Common"]).ToXml("Rarity") : this.Rarity.ToXml("Rarity"));
+      result.Add(new XAttribute("RarityType", RarityType));
       result.Add(new XElement("ItemType", this.ItemType));
-      result.Add(new XElement("ItemSets", this.ItemSets?.Select(s => s.ToXml())));
       //
       result.Add(this.Allocation == null ? new XElement("Allocation") : this.Allocation.ToXml());
       //
-      result.Add(new XElement("EffectTargets", this.EffectTargets == null ? null : this.EffectTargets.Select(s => s.ToXml())));
-      //
-      result.Add(new XElement("FactoryUpgrades", this.FactoryUpgrades == null ? null : this.FactoryUpgrades.Select(s => s.ToXml())));
-      result.Add(new XElement("BuildingUpgrades", this.BuildingUpgrades == null ? null : this.BuildingUpgrades.Select(s => s.ToXml())));
-      result.Add(new XElement("CultureUpgrades", this.CultureUpgrades == null ? null : this.CultureUpgrades.Select(s => s.ToXml())));
-      result.Add(new XElement("ModuleOwnerUpgrades", this.ModuleOwnerUpgrades == null ? null : this.ModuleOwnerUpgrades.Select(s => s.ToXml())));
-      result.Add(new XElement("ResidenceUpgrades", this.ResidenceUpgrades == null ? null : this.ResidenceUpgrades.Select(s => s.ToXml())));
-      result.Add(new XElement("PopulationUpgrades", this.PopulationUpgrades == null ? null : this.PopulationUpgrades.Select(s => s.ToXml())));
-      result.Add(new XElement("ElectricUpgrades", this.ElectricUpgrades == null ? null : this.ElectricUpgrades.Select(s => s.ToXml())));
-      result.Add(new XElement("ExpeditionAttributes", this.ExpeditionAttributes == null ? null : this.ExpeditionAttributes.Select(s => s.ToXml())));
-      result.Add(new XElement("AttackableUpgrades", this.AttackableUpgrades == null ? null : this.AttackableUpgrades.Select(s => s.ToXml())));
-      result.Add(new XElement("TradeShipUpgrades", this.TradeShipUpgrades == null ? null : this.TradeShipUpgrades.Select(s => s.ToXml())));
-      result.Add(new XElement("VehicleUpgrades", this.VehicleUpgrades == null ? null : this.VehicleUpgrades.Select(s => s.ToXml())));
-      result.Add(new XElement("AttackerUpgrades", this.AttackerUpgrades == null ? null : this.AttackerUpgrades.Select(s => s.ToXml())));
-      result.Add(new XElement("VisitorHarborUpgrades", this.VisitorHarborUpgrades == null ? null : this.VisitorHarborUpgrades.Select(s => s.ToXml())));
-      result.Add(new XElement("RepairCraneUpgrades", this.RepairCraneUpgrades == null ? null : this.RepairCraneUpgrades.Select(s => s.ToXml())));
-      result.Add(new XElement("IncidentInfectableUpgrades", this.IncidentInfectableUpgrades == null ? null : this.IncidentInfectableUpgrades.Select(s => s.ToXml())));
-      result.Add(new XElement("IncidentInfluencerUpgrades", this.IncidentInfluencerUpgrades == null ? null : this.IncidentInfluencerUpgrades.Select(s => s.ToXml())));
-      result.Add(new XElement("ItemGeneratorUpgrades", this.ItemGeneratorUpgrades == null ? null : this.ItemGeneratorUpgrades.Select(s => s.ToXml())));
-      result.Add(new XElement("ItemActionUpgrades", this.ItemActionUpgrades == null ? null : this.ItemActionUpgrades.Select(s => s.ToXml())));
-      result.Add(new XElement("ShipyardUpgrades", this.ShipyardUpgrades == null ? null : this.ShipyardUpgrades.Select(s => s.ToXml())));
-      result.Add(new XElement("KontorUpgrades", this.KontorUpgrades == null ? null : this.KontorUpgrades.Select(s => s.ToXml())));
-      result.Add(new XElement("DivingBellUpgrades", this.DivingBellUpgrades == null ? null : this.DivingBellUpgrades.Select(s => s.ToXml())));
-      result.Add(new XElement("CraftableItemUpgrades", this.CraftableItemUpgrades == null ? null : this.CraftableItemUpgrades.Select(s => s.ToXml())));
+      var type = typeof(Asset);
+      foreach (var item in type.GetProperties().Where(p => p.PropertyType == typeof(List<Upgrade>))) {
+        if (item.GetValue(this) != null) {
+          result.Add(new XElement(item.Name, (item.GetValue(this) as List<Upgrade>).Select(s => s.ToXml())));
+        }
+      }
       //
       result.Add(new XElement("TradePrice", this.TradePrice));
       //
       if (this.Info != null)
         result.Add(this.Info.ToXml("Info"));
       //
-      result.Add(new XElement("Sources", this.Sources?.Select(s => s.ToXml())));
+      if (this.EffectTargets != null)
+        result.Add(new XElement("EffectTargets", this.EffectTargets.Select(s => s.ToXml())));
+      if (this.Sources != null)
+        result.Add(new XElement("Sources", this.Sources?.Select(s => s.ToXml())));
       //
-      result.Add(new XElement("MonumentEvents", this.MonumentEvents == null ? null : this.MonumentEvents.Select(s => new XElement("Event", s))));
-      result.Add(new XElement("MonumentThresholds", this.MonumentThresholds == null ? null : this.MonumentThresholds.Select(s => new XElement("Threshold", s))));
-      result.Add(new XElement("MonumentRewards", this.MonumentRewards == null ? null : this.MonumentRewards.Select(s => new XElement("Reward", s))));
+      if (this.MonumentEvents != null)
+        result.Add(new XElement("MonumentEvents", this.MonumentEvents?.Select(s => new XElement("Event", s))));
+      if (this.MonumentThresholds != null)
+        result.Add(new XElement("MonumentThresholds", this.MonumentThresholds?.Select(s => new XElement("Threshold", s))));
+      if (this.MonumentRewards != null)
+        result.Add(new XElement("MonumentRewards", this.MonumentRewards?.Select(s => new XElement("Reward", s))));
       return result;
     }
     public override String ToString() {
@@ -321,6 +311,7 @@ namespace RDA.Templates {
       this.Info = element.Element("InfoDescription") == null ? null : new Description(element.Element("InfoDescription").Value);
     }
     private void ProcessElement_Item(XElement element) {
+      this.RarityType = element.Element("Rarity")?.Value ?? "Common";
       this.Rarity = element.Element("Rarity") == null ? new Description("118002") : new Description(Assets.GetDescriptionID(element.Element("Rarity").Value));
       this.ItemType = element.Element("ItemType")?.Value ?? "Common";
       if (this.ItemType == "Common" || this.ItemType == string.Empty) {
@@ -388,7 +379,6 @@ namespace RDA.Templates {
         this.EffectTargets = new List<EffectTarget>();
         foreach (var item in element.Element("EffectTargets").Elements()) {
           EffectTargets.Add(new EffectTarget(item));
-          //this.EffectTargets.Add(new Description(Assets.DescriptionEN[item.Value], Assets.DescriptionDE[item.Value]));
         }
       }
     }
@@ -841,7 +831,7 @@ namespace RDA.Templates {
             case "MonumentEventReward":
             case "A7_QuestSmuggler":
               if (!element.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
-                result.AddSourceAsset(element, new HashSet<XElement> { element});
+                result.AddSourceAsset(element, new HashSet<XElement> { element });
               }
               break;
 

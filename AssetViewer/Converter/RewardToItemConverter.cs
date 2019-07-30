@@ -17,28 +17,13 @@ namespace AssetViewer.Converter {
 
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture) {
       if (value is RewardsItem item) {
-        if (App.Language == Languages.German) {
-          return item.ID.GetItemsById().OrderBy(l => l.Text.DE);
-        }
-        else {
-          return item.ID.GetItemsById().OrderBy(l => l.Text.EN);
-        }
+        return item.ID.GetItemsById().OrderBy(l => l.Text.CurrentLang);
       }
       else if (value is IEnumerable<RewardsItem> rewards) {
-        if (App.Language == Languages.German) {
-          return rewards.SelectMany(l => l.ID.GetItemsById().OrderBy(k => k.Text.DE));
-        }
-        else {
-          return rewards.SelectMany(l => l.ID.GetItemsById().OrderBy(k => k.Text.EN));
-        }
+        return rewards.SelectMany(l => l.ID.GetItemsById().OrderBy(k => k.Text.CurrentLang));
       }
       else if (value is string pool) {
-        if (App.Language == Languages.German) {
-          return pool.GetItemsById().OrderBy(k => k.Text.DE);
-        }
-        else {
-          return pool.GetItemsById().OrderBy(k => k.Text.EN);
-        }
+        return pool.GetItemsById().OrderBy(k => k.Text.CurrentLang);
       }
       return null;
     }

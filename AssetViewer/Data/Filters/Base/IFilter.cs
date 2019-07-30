@@ -18,27 +18,18 @@ namespace AssetViewer.Data.Filters {
   }
 
   public interface IFilter {
-
-    #region Properties
-
     object SelectedValue { get; }
     Func<IQueryable<TemplateAsset>, IQueryable<TemplateAsset>> FilterFunc { get; }
     IEnumerable<object> CurrentValues { get; }
     IEnumerable<object> ComparisonValues { get; }
-    Description Description { get; }
+    string Description { get; }
     FilterType FilterType { get; set; }
     FilterType ComparisonType { get; set; }
     ValueComparisons Comparison { get; set; }
     object SelectedComparisonValue { get; }
 
-    #endregion Properties
-
-    #region Methods
-
     void RaisePropertyChanged(string name);
     void UpdateUI();
     void ResetFilter();
-
-    #endregion Methods
   }
 }

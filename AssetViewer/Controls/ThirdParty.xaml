@@ -11,6 +11,7 @@
   FontSize="13"
   Loaded="ThirdParty_OnLoaded"
   SnapsToDevicePixels="True"
+  Unloaded="UserControl_Unloaded"
   mc:Ignorable="d">
 
   <UserControl.Resources>
@@ -114,7 +115,7 @@
           Grid.Column="0"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
-          Text="{Binding Path=ThirdParties, Converter={StaticResource Description}, ConverterParameter=1049}" />
+          Text="{Binding Converter={StaticResource Description}, ConverterParameter=-1049}" />
         <ComboBox
           x:Name="ComboBoxThirdParty"
           Grid.Row="1"
@@ -129,7 +130,7 @@
           Grid.Column="2"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
-          Text="{Binding Path=Progressions, Converter={StaticResource Description}, ConverterParameter=1048}" />
+          Text="{Binding Converter={StaticResource Description}, ConverterParameter=-1048}" />
         <ComboBox
           x:Name="ComboBoxProgressions"
           Grid.Row="1"
@@ -181,7 +182,7 @@
                     HorizontalAlignment="Right"
                     VerticalAlignment="Center"
                     FontSize="11"
-                    Text="{Binding Path=Text.ID}" />
+                    Text="{Binding Path=ID}" />
                 </Grid>
               </DataTemplate>
             </ListBox.ItemTemplate>
@@ -191,6 +192,4 @@
       <local:ItemCard Grid.Column="2" CanSwap="True" SelectedAsset="{Binding SelectedAsset}" />
     </Grid>
   </Grid>
-
-
 </UserControl>

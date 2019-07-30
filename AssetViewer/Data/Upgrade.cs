@@ -8,12 +8,15 @@ namespace AssetViewer.Data {
   public class Upgrade {
 
     #region Properties
+
     public Description Text { get; set; }
     public String Value { get; set; }
     public List<Upgrade> Additionals { get; set; }
-    #endregion
 
-    #region Constructor
+    #endregion Properties
+
+    #region Constructors
+
     public Upgrade(XElement item) {
       var textItem = item.Name == "Text" ? item : item.Element("Text");
       if (textItem != null) {
@@ -41,8 +44,7 @@ namespace AssetViewer.Data {
         this.Additionals = item.Element("Details").Elements().Select(s => new Upgrade(s)).ToList();
       }
     }
-    #endregion
 
+    #endregion Constructors
   }
-
 }

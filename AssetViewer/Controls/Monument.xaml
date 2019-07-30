@@ -11,6 +11,7 @@
   FontSize="13"
   Loaded="Monument_OnLoaded"
   SnapsToDevicePixels="True"
+  Unloaded="UserControl_Unloaded"
   mc:Ignorable="d">
 
   <UserControl.Resources>
@@ -124,7 +125,7 @@
           Grid.Column="0"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
-          Text="{Binding Path=Categories, Converter={StaticResource Description}, ConverterParameter=107}" />
+          Text="{Binding Converter={StaticResource Description}, ConverterParameter=-107}" />
         <ComboBox
           x:Name="ComboBoxCategories"
           Grid.Row="1"
@@ -139,7 +140,7 @@
           Grid.Column="2"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
-          Text="{Binding Path=Events, Converter={StaticResource Description}, ConverterParameter=108}" />
+          Text="{Binding Converter={StaticResource Description}, ConverterParameter=-108}" />
         <ComboBox
           x:Name="ComboBoxEvents"
           Grid.Row="1"
@@ -154,7 +155,7 @@
           Grid.Column="4"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
-          Text="{Binding Path=Thresholds, Converter={StaticResource Description}, ConverterParameter=109}" />
+          Text="{Binding Converter={StaticResource Description}, ConverterParameter=-109}" />
         <ComboBox
           x:Name="ComboBoxThresholds"
           Grid.Row="1"
@@ -163,7 +164,6 @@
           ItemTemplate="{StaticResource SelectableTemplate}"
           ItemsSource="{Binding Path=Thresholds}"
           SelectionChanged="ComboBoxThresholds_OnSelectionChanged" />
-
       </Grid>
     </Border>
     <Grid Grid.Row="2">
@@ -201,7 +201,7 @@
                     HorizontalAlignment="Right"
                     VerticalAlignment="Center"
                     FontSize="11"
-                    Text="{Binding Path=Text.ID}" />
+                    Text="{Binding Path=ID}" />
                 </Grid>
               </DataTemplate>
             </ListBox.ItemTemplate>
@@ -211,6 +211,4 @@
       <local:ItemCard Grid.Column="2" CanSwap="True" SelectedAsset="{Binding SelectedAsset}" />
     </Grid>
   </Grid>
-
-
 </UserControl>

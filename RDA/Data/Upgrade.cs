@@ -30,8 +30,8 @@ namespace RDA.Data {
       var isPercent = element.Element("Percental") == null ? false : element.Element("Percental").Value == "1";
       var value = element.Element("Value") == null ? null : (Int32?)Int32.Parse(element.Element("Value").Value);
       var factor = 1;
-      if (Assets.Descriptions.ContainsKey(element.Name.LocalName)) {
-        this.Text = new Description(Assets.Descriptions[element.Name.LocalName]);
+      if (Assets.KeyToIdDict.ContainsKey(element.Name.LocalName)) {
+        this.Text = new Description(Assets.KeyToIdDict[element.Name.LocalName]);
       }
       switch (element.Name.LocalName) {
         case "PassiveTradeGoodGenUpgrade":
@@ -41,12 +41,10 @@ namespace RDA.Data {
             .Original
             .Descendants("Asset")
             .FirstOrDefault(a => a.XPathSelectElement("Values/Standard/GUID")?.Value == genpool)
-            .XPathSelectElement("Values/RewardPool")
+            .XPathSelectElement("Values/RewardPool/ItemsPool")
             .Elements("Item")
-            .Select(i => i.Element("ItemLink").Value)
-            .Select(i => new Description(i));
-          this.Text.AdditionalInformation.EN.Replace("[ItemAssetData([RefGuid]) GoodGenerationPoolFormatted]", string.Join(",", items.Select(d => d.EN)));
-          this.Text.AdditionalInformation.DE.Replace("[ItemAssetData([RefGuid]) GoodGenerationPoolFormatted]", string.Join(",", items.Select(d => d.DE)));
+            .Select(i => new Description(i.Element("ItemLink").Value));
+          this.Text.AdditionalInformation.Replace("[ItemAssetData([RefGuid]) GoodGenerationPoolFormatted]", items, (s) => string.Join(", ", s));
           value = Convert.ToInt32(element.Value);
           isPercent = true;
           break;
@@ -54,8 +52,7 @@ namespace RDA.Data {
         case "AddAssemblyOptions":
           this.Text.AdditionalInformation = new Description("20325", DescriptionFontStyle.Light);
           var descs = element.Elements("Items").Select(i => new Description(i.Element("NewOption").Value));
-          this.Text.AdditionalInformation.EN.Replace("[ItemAssetData([RefGuid]) AddAssemblyOptionsFormatted]", string.Join(",", descs.Select(d => d.EN)));
-          this.Text.AdditionalInformation.DE.Replace("[ItemAssetData([RefGuid]) AddAssemblyOptionsFormatted]", string.Join(",", descs.Select(d => d.DE)));
+          this.Text.AdditionalInformation.Replace("[ItemAssetData([RefGuid]) AddAssemblyOptionsFormatted]", descs, (s) => string.Join(", ", s));
           break;
 
         case "MoraleDamage":
@@ -100,8 +97,7 @@ namespace RDA.Data {
             default:
               throw new NotImplementedException(target);
           }
-          this.Text.AdditionalInformation.EN = this.Text.EN.Replace("[AssetData([ToolOneHelper IncidentResolverUnitsForTargetBuildings([RefGuid], 1) AT(0)]) Text]", unit.EN);
-          this.Text.AdditionalInformation.DE = this.Text.DE.Replace("[AssetData([ToolOneHelper IncidentResolverUnitsForTargetBuildings([RefGuid], 1) AT(0)]) Text]", unit.DE);
+          this.Text.AdditionalInformation.Replace("[AssetData([ToolOneHelper IncidentResolverUnitsForTargetBuildings([RefGuid], 1) AT(0)]) Text]", unit);
           break;
 
         case "ItemSet":
@@ -115,8 +111,8 @@ namespace RDA.Data {
 
         case "AdditionalSupply":
           this.Text = new Description("12687");
-          this.Text.DE = this.Text.DE.Replace(" [AssetData([ItemAssetData([RefGuid]) InputBenefitModifierProduct(index)]) Text]", "");
-          this.Text.EN = this.Text.DE.Replace(" [AssetData([ItemAssetData([RefGuid]) InputBenefitModifierProduct(index)]) Text]", "");
+          this.Text.Remove(" [AssetData([ItemAssetData([RefGuid]) InputBenefitModifierProduct(index)]) Text]");
+
           value = Int32.Parse(element.Value);
           break;
 
@@ -205,9 +201,8 @@ namespace RDA.Data {
           break;
 
         case "AddedFertility":
-          this.Text = new Description(element.Value);
-          this.Text.EN += " Provided";
-          this.Text.DE += " bereitgestellt";
+          this.Text = new Description("21371").Replace("[AssetData([ItemAssetData([RefGuid]) AddedFertility]) Text]", new Description(element.Value));
+         
           break;
 
         case "ActiveTradePriceInPercent":
@@ -217,7 +212,7 @@ namespace RDA.Data {
               value = -(100 - value);
             }
             else {
-              value = (value - 100);
+              value -= 100;
             }
           }
           isPercent = true;
@@ -247,13 +242,10 @@ namespace RDA.Data {
 
         case "NeedProvideNeedUpgrade":
           var SubstituteNeeds = element.Descendants("SubstituteNeed").Select(i => new Description(i.Value));
-          var ProvidedNeeds = element.Descendants("SubstituteNeed").Select(i => new Description(i.Value));
+          var ProvidedNeeds = element.Descendants("ProvidedNeed").Select(i => new Description(i.Value));
           this.Text.AdditionalInformation = new Description("20323", DescriptionFontStyle.Light);
-          this.Text.AdditionalInformation.EN.Replace("[ItemAssetData([RefGuid]) AllSubstituteNeedsFormatted]", string.Join(",", SubstituteNeeds.Select(d => d.EN)));
-          this.Text.AdditionalInformation.EN.Replace("[ItemAssetData([RefGuid]) AllProvidedNeedsFormatted]", string.Join(",", ProvidedNeeds.Select(d => d.EN)));
-
-          this.Text.AdditionalInformation.DE.Replace("[ItemAssetData([RefGuid]) AllSubstituteNeedsFormatted]", string.Join(",", SubstituteNeeds.Select(d => d.DE)));
-          this.Text.AdditionalInformation.DE.Replace("[ItemAssetData([RefGuid]) AllProvidedNeedsFormatted]", string.Join(",", ProvidedNeeds.Select(d => d.DE)));
+          this.Text.AdditionalInformation.Replace("[ItemAssetData([RefGuid]) AllSubstituteNeedsFormatted]", SubstituteNeeds, s => String.Join(", ", s.Distinct()));
+          this.Text.AdditionalInformation.Replace("[ItemAssetData([RefGuid]) AllProvidedNeedsFormatted]", ProvidedNeeds, s => String.Join(", ", s.Distinct()));
           break;
 
         case "GoodConsumptionUpgrade":
@@ -284,8 +276,7 @@ namespace RDA.Data {
 
         case "ActionDuration":
           this.Text.FontStyle = DescriptionFontStyle.Light;
-          this.Text.DE = "Dauer";
-          this.Text.EN = "Duration";
+          this.Text.Languages = new Description("3898").Languages;
           this.Value = TimeSpan.FromMilliseconds(Convert.ToInt64(element.Value)).ToString("hh':'mm':'ss");
           while (this.Value.StartsWith("00:00:")) {
             this.Value = this.Value.Remove(0, 3);
@@ -294,8 +285,7 @@ namespace RDA.Data {
 
         case "ActionCooldown":
           this.Text.FontStyle = DescriptionFontStyle.Light;
-          this.Text.DE = "Aufladung";
-          this.Text.EN = "Cooldown";
+          this.Text.Languages = new Description("3899").Languages;
           this.Value = TimeSpan.FromMilliseconds(Convert.ToInt64(element.Value)).ToString("hh':'mm':'ss");
           while (this.Value.StartsWith("00:00:")) {
             this.Value = this.Value.Remove(0, 3);
@@ -304,8 +294,7 @@ namespace RDA.Data {
 
         case "IsDestroyedAfterCooldown":
           this.Text.FontStyle = DescriptionFontStyle.Light;
-          this.Text.DE = "Wird nach Gebrauch zerstört";
-          this.Text.EN = "Destroyed after use";
+          this.Text.Languages = new Description("2421").Remove("&lt;font color='0xff817f87'&gt;").Remove("&lt;/font&gt;").Languages;
           break;
 
         case "Building":
@@ -313,11 +302,13 @@ namespace RDA.Data {
           value = Convert.ToInt32((Decimal.Parse(element.Element("Factor").Value, System.Globalization.CultureInfo.InvariantCulture) * 100) - 100);
           isPercent = true;
           break;
+
         case "SailShip":
           this.Text = new Description("17395");
           value = Convert.ToInt32((Decimal.Parse(element.Element("Factor").Value, System.Globalization.CultureInfo.InvariantCulture) * 100) - 100);
           isPercent = true;
           break;
+
         case "SteamShip":
           this.Text = new Description("17396");
           value = Convert.ToInt32((Decimal.Parse(element.Element("Factor").Value, System.Globalization.CultureInfo.InvariantCulture) * 100) - 100);
@@ -471,7 +462,7 @@ namespace RDA.Data {
         case "PerkMale":
         case "PerkFemale":
           value = null;
-          this.Text = Text.InsertBefore("Trait: ", "Merkmal: ");
+          this.Text = Text.InsertBefore(new Description("-1"));
           break;
 
         default:

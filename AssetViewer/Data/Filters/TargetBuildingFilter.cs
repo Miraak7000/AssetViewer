@@ -26,7 +26,7 @@ namespace AssetViewer.Data.Filters {
          .OrderBy(o => o)
          .ToList();
 
-    public override int DescriptionID => 1102;
+    public override string DescriptionID => "-1102";
 
     #endregion Properties
 

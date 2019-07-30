@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RDA.Library;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -14,51 +15,32 @@ namespace RDA {
 
   public static class Helper {
 
-    #region Internal Methods
+    #region Methods
+
     // Extraction
-    internal static void ExtractTextEnglish(String path) {
-      var element = XDocument.Load(path).Root;
-      var result = new Dictionary<String, String>();
-      // assets
-      var values = element.XPathSelectElements("//Texts/Text");
-      foreach (var value in values) {
-        var id = value.XPathSelectElement("GUID").Value;
-        if (!result.ContainsKey(id)) {
-          var text = value.XPathSelectElement("Text")?.Value;
-          if (text != null) result.Add(id, text);
+    internal static void ExtractText() {
+      foreach (Languages language in Enum.GetValues(typeof(Languages))) {
+        var element = XDocument.Load(Program.PathRoot + $@"\Original\texts_{language.ToString("G").ToLower()}.xml").Root;
+        var result = new Dictionary<String, String>();
+        // assets
+        var values = element.XPathSelectElements("//Texts/Text");
+        foreach (var value in values) {
+          var id = value.XPathSelectElement("GUID").Value;
+          if (!result.ContainsKey(id)) {
+            var text = value.XPathSelectElement("Text")?.Value;
+            if (text != null)
+              result.Add(id, text);
+          }
         }
-      }
-      // finish
-      using (var xmlWriter = XmlWriter.Create($@"{Program.PathRoot}\Modified\Texts_English.xml", new XmlWriterSettings() { Indent = true })) {
-        xmlWriter.WriteStartElement("Texts");
-        foreach (var item in result) {
-          xmlWriter.WriteStartElement("Text");
-          xmlWriter.WriteAttributeString("ID", item.Key);
-          xmlWriter.WriteValue(item.Value);
-          xmlWriter.WriteEndElement();
-        }
-      }
-    }
-    internal static void ExtractTextGerman(String path) {
-      var element = XDocument.Load(path).Root;
-      var result = new Dictionary<String, String>();
-      // assets
-      var values = element.XPathSelectElements("//Texts/Text");
-      foreach (var value in values) {
-        var id = value.XPathSelectElement("GUID").Value;
-        if (!result.ContainsKey(id)) {
-          var text = value.XPathSelectElement("Text")?.Value;
-          if (text != null) result.Add(id, text);
-        }
-      }
-      // finish
-      using (var xmlWriter = XmlWriter.Create($@"{Program.PathRoot}\Modified\Texts_German.xml", new XmlWriterSettings() { Indent = true })) {
-        xmlWriter.WriteStartElement("Texts");
-        foreach (var item in result) {
-          xmlWriter.WriteStartElement("Text");
-          xmlWriter.WriteAttributeString("ID", item.Key);
-          xmlWriter.WriteValue(item.Value);
-          xmlWriter.WriteEndElement();
+        // finish
+        using (var xmlWriter = XmlWriter.Create($@"{Program.PathRoot}\Modified\Texts_{language.ToString("G")}.xml", new XmlWriterSettings() { Indent = true })) {
+          xmlWriter.WriteStartElement("Texts");
+          foreach (var item in result) {
+            xmlWriter.WriteStartElement("Text");
+            xmlWriter.WriteAttributeString("ID", item.Key);
+            xmlWriter.WriteValue(item.Value);
+            xmlWriter.WriteEndElement();
+          }
         }
       }
     }
@@ -80,11 +62,14 @@ namespace RDA {
       var source = Path.GetFullPath(Path.Combine(Program.PathRoot, "Resources", name));
       if (File.Exists(source)) {
         var destination = Path.GetFullPath(Path.Combine(Program.PathViewer, "Resources", name));
-        if (!Directory.Exists(Path.GetDirectoryName(destination))) Directory.CreateDirectory(Path.GetDirectoryName(destination));
+        if (!Directory.Exists(Path.GetDirectoryName(destination)))
+          Directory.CreateDirectory(Path.GetDirectoryName(destination));
         File.Copy(source, destination, true);
         element.Value = name;
-      } else
+      }
+      else {
         element.Value = String.Empty;
+      }
     }
     internal static void TemplateBuildPermitBuilding(XElement item) {
       item.XPathSelectElement("Values/Standard/Name").Remove();
@@ -282,8 +267,7 @@ namespace RDA {
       // image
       Helper.SetImage(item.XPathSelectElement("Values/Standard/IconFilename"));
     }
-    #endregion
 
+    #endregion Methods
   }
-
 }

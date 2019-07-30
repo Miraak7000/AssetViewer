@@ -39,22 +39,22 @@
         <ColumnDefinition Width="*" />
         <ColumnDefinition Width="150" />
       </Grid.ColumnDefinitions>
-      <TextBlock Grid.Column="0" VerticalAlignment="Center" Text="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=101}" />
+      <TextBlock Grid.Column="0" VerticalAlignment="Center" Text="{Binding Converter={StaticResource Description}, ConverterParameter=-101}" />
       <ComboBox x:Name="ComboBoxAsset" Grid.Column="2" SelectionChanged="ComboBoxAsset_OnSelectionChanged">
-        <TextBlock Text="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=102}" />
-        <TextBlock Text="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=105}" />
-        <TextBlock Text="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=110}" />
-        <TextBlock Text="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=120}" />
-        <TextBlock Text="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=121}" />
+        <TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=-102}" />
+        <TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=-105}" />
+        <TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=-110}" />
+        <TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=-120}" />
+        <TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=-121}" />
       </ComboBox>
       <ComboBox x:Name="ComboBoxLanguage" Grid.Column="4" SelectedIndex="0">
         <TextBlock Text="English" />
         <TextBlock Text="Deutsch" />
+        <TextBlock Text="한국어" />
       </ComboBox>
     </Grid>
     <Grid Grid.Row="2">
       <ContentPresenter x:Name="Presenter" />
     </Grid>
   </Grid>
-
 </Window>

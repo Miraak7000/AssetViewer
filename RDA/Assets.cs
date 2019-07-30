@@ -1,7 +1,11 @@
-﻿using RDA.Templates;
+﻿using RDA.Data;
+using RDA.Library;
+using RDA.Templates;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Web.Script.Serialization;
 using System.Xml.Linq;
 using System.Xml.XPath;
 
@@ -12,12 +16,11 @@ namespace RDA {
     #region Methods
 
     public static void Init(string version = "Release") {
+      Version = version;
       Console.WriteLine("Load Asset.xml");
       Original = XDocument.Load(Program.PathRoot + @"\Original\assets.xml");
-      // Descriptions
-      DescriptionEN = XDocument.Load(Program.PathRoot + @"\Modified\Texts_English.xml").Root.Elements().ToDictionary(k => k.Attribute("ID").Value, e => e.Value);
-      DescriptionDE = XDocument.Load(Program.PathRoot + @"\Modified\Texts_German.xml").Root.Elements().ToDictionary(k => k.Attribute("ID").Value, e => e.Value);
-      Version = version;
+      LoadDescriptions();
+      LoadCustomDescriptions();
       SetTextDictionarys();
       SetIcons();
       SetTourismStati();
@@ -25,7 +28,7 @@ namespace RDA {
     }
 
     public static string GetDescriptionID(string id) {
-      return Descriptions[id];
+      return KeyToIdDict[id];
     }
 
     #endregion Methods
@@ -33,16 +36,46 @@ namespace RDA {
     #region Fields
 
     internal static XDocument Original;
-    internal static Dictionary<String, String> DescriptionEN;
-    internal static Dictionary<String, String> DescriptionDE;
+    internal static Dictionary<string, Dictionary<Languages, string>> Descriptions = new Dictionary<string, Dictionary<Languages, string>>();
+    internal static Dictionary<string, Dictionary<Languages, string>> CustomDescriptions = new Dictionary<string, Dictionary<Languages, string>>();
     internal static string Version = "Release";
     internal static Dictionary<string, XElement> TourismStati = new Dictionary<string, XElement>();
     internal static Dictionary<string, Asset> Buffs = new Dictionary<string, Asset>();
     internal static Dictionary<string, string> Icons = new Dictionary<string, string>();
-    internal static Dictionary<string, string> Descriptions = new Dictionary<string, string>();
+    internal static Dictionary<string, string> KeyToIdDict = new Dictionary<string, string>();
 
     #endregion Fields
 
+    private static void LoadDescriptions() {
+      foreach (Languages language in Enum.GetValues(typeof(Languages))) {
+        var dic = XDocument.Load(Program.PathRoot + $@"\Original\texts_{language.ToString("G").ToLower()}.xml").Root.Element("Texts").Elements().ToDictionary(k => k.Element("GUID").Value, e => e.Element("Text").Value);
+        foreach (var item in dic) {
+          if (Descriptions.ContainsKey(item.Key)) {
+            Descriptions[item.Key].Add(language, item.Value);
+          }
+          else {
+            Descriptions.Add(item.Key, new Dictionary<Languages, string> { { language, item.Value } });
+          }
+        }
+      }
+    }
+    private static void LoadCustomDescriptions() {
+      var js = new JavaScriptSerializer();
+      foreach (Languages language in Enum.GetValues(typeof(Languages))) {
+        var filepath = Program.PathRoot + $@"\Modified\LanguageFiles\Texts_Custom_{language.ToString("G")}.json";
+        if (File.Exists(filepath)) {
+          dynamic dic = js.Deserialize<dynamic>(File.ReadAllText(filepath));
+          foreach (var item in dic) {
+            if (CustomDescriptions.ContainsKey(item.Key)) {
+              CustomDescriptions[item.Key].Add(language, item.Value);
+            }
+            else {
+              CustomDescriptions.Add(item.Key, new Dictionary<Languages, string> { { language, item.Value } });
+            }
+          }
+        }
+      }
+    }
     private static void SetIcons() {
       Console.WriteLine("Setting up Icons");
       var asset = Original
@@ -82,15 +115,15 @@ namespace RDA {
          .Element("ItemConfig");
       //RarityText
       foreach (var item in asset.Element("RarityText").Elements()) {
-        Descriptions.Add(item.Name.LocalName, item.Element("Text").Value);
+        KeyToIdDict.Add(item.Name.LocalName, item.Element("Text").Value);
       }
       //ExclusiveGroupText
       foreach (var item in asset.Element("ExclusiveGroupText").Elements()) {
-        Descriptions.Add(item.Name.LocalName, item.Element("Text").Value);
+        KeyToIdDict.Add(item.Name.LocalName, item.Element("Text").Value);
       }
       //ExclusiveGroupText
       foreach (var item in asset.Element("AllocationText").Elements()) {
-        Descriptions.Add(item.Name.LocalName, item.Element("Text").Value);
+        KeyToIdDict.Add(item.Name.LocalName, item.Element("Text").Value);
       }
 
       asset = Original
@@ -101,83 +134,83 @@ namespace RDA {
        .Element("ExpeditionFeature");
       //ExpeditionRegions
       foreach (var item in asset.Element("ExpeditionRegions").Elements()) {
-        Descriptions.Add(item.Name.LocalName, item.Element("Region").Value);
+        KeyToIdDict.Add(item.Name.LocalName, item.Element("Region").Value);
       }
       //AttributeNames
       foreach (var item in asset.Element("AttributeNames").Elements()) {
-        Descriptions.Add(item.Name.LocalName, item.Element("Name").Value);
+        KeyToIdDict.Add(item.Name.LocalName, item.Element("Name").Value);
       }
 
       //Custom Additions
-      Descriptions.Add("ProductivityUpgrade", "118000");
-      Descriptions.Add("AdditionalOutput", "20074");
-      Descriptions.Add("ReplaceInputs", "20081");
-      Descriptions.Add("InputAmountUpgrade", "100369");
-      Descriptions.Add("OutputAmountFactorUpgrade", "11989");
-      Descriptions.Add("NeededAreaPercentUpgrade", "15319");
-      Descriptions.Add("NeedsElectricity", "12508");
-      Descriptions.Add("PerkFemale", "15798");
-      Descriptions.Add("PerkMale", "15797");
-      Descriptions.Add("AttractivenessUpgrade", "145011");
-      Descriptions.Add("MaintenanceUpgrade", "2320");
-      Descriptions.Add("WorkforceAmountUpgrade", "12337");
-      Descriptions.Add("ReplacingWorkforce", "12480");
-      Descriptions.Add("ModuleLimitUpgrade", "12075");
-      Descriptions.Add("AdditionalHappiness", "12314");
-      Descriptions.Add("ResidentsUpgrade", "2322");
-      Descriptions.Add("StressUpgrade", "12227");
-      Descriptions.Add("ProvideElectricity", "12485");
-      Descriptions.Add("TaxModifierInPercent", "12677");
-      Descriptions.Add("WorkforceModifierInPercent", "12676");
-      Descriptions.Add("MaxHitpointsUpgrade", "2333");
+      KeyToIdDict.Add("ProductivityUpgrade", "118000");
+      KeyToIdDict.Add("AdditionalOutput", "20074");
+      KeyToIdDict.Add("ReplaceInputs", "20081");
+      KeyToIdDict.Add("InputAmountUpgrade", "100369");
+      KeyToIdDict.Add("OutputAmountFactorUpgrade", "11989");
+      KeyToIdDict.Add("NeededAreaPercentUpgrade", "15319");
+      KeyToIdDict.Add("NeedsElectricity", "12508");
+      KeyToIdDict.Add("PerkFemale", "15798");
+      KeyToIdDict.Add("PerkMale", "15797");
+      KeyToIdDict.Add("PerkSteamShip", "15795");
+      KeyToIdDict.Add("AttractivenessUpgrade", "145011");
+      KeyToIdDict.Add("MaintenanceUpgrade", "2320");
+      KeyToIdDict.Add("WorkforceAmountUpgrade", "12337");
+      KeyToIdDict.Add("ReplacingWorkforce", "12480");
+      KeyToIdDict.Add("ModuleLimitUpgrade", "12075");
+      KeyToIdDict.Add("AdditionalHappiness", "12314");
+      KeyToIdDict.Add("ResidentsUpgrade", "2322");
+      KeyToIdDict.Add("StressUpgrade", "12227");
+      KeyToIdDict.Add("ProvideElectricity", "12485");
+      KeyToIdDict.Add("TaxModifierInPercent", "12677");
+      KeyToIdDict.Add("WorkforceModifierInPercent", "12676");
+      KeyToIdDict.Add("MaxHitpointsUpgrade", "2333");
 
-      Descriptions.Add("BlockBuyShare", "15802");
-      Descriptions.Add("BlockHostileTakeover", "15801");
-      Descriptions.Add("MaintainanceUpgrade", "2320");
-      Descriptions.Add("MoralePowerUpgrade", "15231");
-      Descriptions.Add("ConstructionCostInPercent", "12679");
-      Descriptions.Add("ConstructionTimeInPercent", "12678");
-      Descriptions.Add("PassiveTradeGoodGenUpgrade", "12920");     
-      Descriptions.Add("AddAssemblyOptions", "12693");     
-      Descriptions.Add("MoraleDamage", "21588");     
-      Descriptions.Add("HitpointDamage", "21587");     
-      Descriptions.Add("SpecialUnitHappinessThresholdUpgrade", "19625");     
-      Descriptions.Add("HappinessIgnoresMorale", "15811");     
-      Descriptions.Add("ResolverUnitMovementSpeedUpgrade", "12014");     
-      Descriptions.Add("IncidentIllnessIncreaseUpgrade", "12226");        
-      Descriptions.Add("ActiveTradePriceInPercent", "15198");     
-      Descriptions.Add("ForwardSpeedUpgrade", "2339");     
-      Descriptions.Add("IgnoreWeightFactorUpgrade", "15261");     
-      Descriptions.Add("IgnoreDamageFactorUpgrade", "15262");     
-      Descriptions.Add("AttackRangeUpgrade", "12021");     
-      Descriptions.Add("ActivateWhiteFlag", "19538");     
-      Descriptions.Add("ActivatePirateFlag", "17392");     
-      Descriptions.Add("Normal", "19136");     
-      Descriptions.Add("Cannon", "19138");     
-      Descriptions.Add("BigBertha", "19139");     
-      Descriptions.Add("Torpedo", "19137");     
-      Descriptions.Add("AttackSpeedUpgrade", "17230");     
-      Descriptions.Add("SpawnProbabilityFactor", "20603");     
-      Descriptions.Add("SelfHealUpgrade", "15195");     
-      Descriptions.Add("SelfHealPausedTimeIfAttackedUpgrade", "15196");     
-      Descriptions.Add("HealRadiusUpgrade", "15264");     
-      Descriptions.Add("HealPerMinuteUpgrade", "15265");     
-      Descriptions.Add("IncidentRiotIncreaseUpgrade", "12227");     
-      Descriptions.Add("PublicServiceFullSatisfactionDistance", "2321");     
-      Descriptions.Add("NeedProvideNeedUpgrade", "12315");     
-      Descriptions.Add("AdditionalMoney", "12690");     
-      Descriptions.Add("IncidentFireIncreaseUpgrade", "12225");     
-      Descriptions.Add("IncidentExplosionIncreaseUpgrade", "21489");     
-      Descriptions.Add("GoodConsumptionUpgrade", "21386");     
+      KeyToIdDict.Add("BlockBuyShare", "15802");
+      KeyToIdDict.Add("BlockHostileTakeover", "15801");
+      KeyToIdDict.Add("MaintainanceUpgrade", "2320");
+      KeyToIdDict.Add("MoralePowerUpgrade", "15231");
+      KeyToIdDict.Add("ConstructionCostInPercent", "12679");
+      KeyToIdDict.Add("ConstructionTimeInPercent", "12678");
+      KeyToIdDict.Add("PassiveTradeGoodGenUpgrade", "12920");
+      KeyToIdDict.Add("AddAssemblyOptions", "12693");
+      KeyToIdDict.Add("MoraleDamage", "21588");
+      KeyToIdDict.Add("HitpointDamage", "21587");
+      KeyToIdDict.Add("SpecialUnitHappinessThresholdUpgrade", "19625");
+      KeyToIdDict.Add("HappinessIgnoresMorale", "15811");
+      KeyToIdDict.Add("ResolverUnitMovementSpeedUpgrade", "12014");
+      KeyToIdDict.Add("IncidentIllnessIncreaseUpgrade", "12226");
+      KeyToIdDict.Add("ActiveTradePriceInPercent", "15198");
+      KeyToIdDict.Add("ForwardSpeedUpgrade", "2339");
+      KeyToIdDict.Add("IgnoreWeightFactorUpgrade", "15261");
+      KeyToIdDict.Add("IgnoreDamageFactorUpgrade", "15262");
+      KeyToIdDict.Add("AttackRangeUpgrade", "12021");
+      KeyToIdDict.Add("ActivateWhiteFlag", "19538");
+      KeyToIdDict.Add("ActivatePirateFlag", "17392");
+      KeyToIdDict.Add("Normal", "19136");
+      KeyToIdDict.Add("Cannon", "19138");
+      KeyToIdDict.Add("BigBertha", "19139");
+      KeyToIdDict.Add("Torpedo", "19137");
+      KeyToIdDict.Add("AttackSpeedUpgrade", "17230");
+      KeyToIdDict.Add("SpawnProbabilityFactor", "20603");
+      KeyToIdDict.Add("SelfHealUpgrade", "15195");
+      KeyToIdDict.Add("SelfHealPausedTimeIfAttackedUpgrade", "15196");
+      KeyToIdDict.Add("HealRadiusUpgrade", "15264");
+      KeyToIdDict.Add("HealPerMinuteUpgrade", "15265");
+      KeyToIdDict.Add("IncidentRiotIncreaseUpgrade", "12227");
+      KeyToIdDict.Add("PublicServiceFullSatisfactionDistance", "2321");
+      KeyToIdDict.Add("NeedProvideNeedUpgrade", "12315");
+      KeyToIdDict.Add("AdditionalMoney", "12690");
+      KeyToIdDict.Add("IncidentFireIncreaseUpgrade", "12225");
+      KeyToIdDict.Add("IncidentExplosionIncreaseUpgrade", "21489");
+      KeyToIdDict.Add("GoodConsumptionUpgrade", "21386");
 
-      Descriptions.Add("LoadingSpeedUpgrade", "15197");     
-      Descriptions.Add("ActionDuration", "2423");     
-      Descriptions.Add("ActionCooldown", "2424");     
-      Descriptions.Add("IsDestroyedAfterCooldown", "2421");     
-      Descriptions.Add("LineOfSightRangeUpgrade", "15266");     
-      Descriptions.Add("BaseDamageUpgrade", "2334");     
-      Descriptions.Add("AccuracyUpgrade", "12062");     
-
+      KeyToIdDict.Add("LoadingSpeedUpgrade", "15197");
+      KeyToIdDict.Add("ActionDuration", "2423");
+      KeyToIdDict.Add("ActionCooldown", "2424");
+      KeyToIdDict.Add("IsDestroyedAfterCooldown", "2421");
+      KeyToIdDict.Add("LineOfSightRangeUpgrade", "15266");
+      KeyToIdDict.Add("BaseDamageUpgrade", "2334");
+      KeyToIdDict.Add("AccuracyUpgrade", "12062");
     }
     private static void SetTourismStati() {
       Console.WriteLine("Setting up Tourism");

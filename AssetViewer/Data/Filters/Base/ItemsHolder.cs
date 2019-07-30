@@ -13,8 +13,6 @@ namespace AssetViewer.Data.Filters {
 
     public List<TemplateAsset> Items { get; set; }
 
-    //public IQueryable<TemplateAsset> Result { get; set; } = ItemProvider.Items.Values.AsQueryable();
-
     public IQueryable<TemplateAsset> Base { get; } = ItemProvider.Items.Values.AsQueryable();
 
     public Dictionary<string, IFilter> StandardFilters { get; } = new Dictionary<string, IFilter>();

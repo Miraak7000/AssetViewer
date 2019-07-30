@@ -14,6 +14,7 @@
   FontSize="13"
   Loaded="GuildhouseItem_OnLoaded"
   SnapsToDevicePixels="True"
+  Unloaded="UserControl_Unloaded"
   mc:Ignorable="d">
 
   <UserControl.Resources>
@@ -141,7 +142,7 @@
           Grid.Row="4"
           Grid.Column="0"
           Grid.ColumnSpan="7"
-          Header="{Binding AdvancedFiltersText.CurrentLang}"
+          Header="{Binding AdvancedFiltersText}"
           IsExpanded="True">
           <Grid Margin="0,5,0,0">
             <Grid.ColumnDefinitions>
@@ -460,7 +461,7 @@
           Margin="5,1"
           Padding="0"
           Click="BtnResetFilters_Click"
-          Content="{Binding ResetButtonText.CurrentLang, ElementName=userControl}" />
+          Content="{Binding ResetButtonText, ElementName=userControl}" />
       </Grid>
     </Border>
     <Grid Grid.Row="2">
@@ -498,7 +499,7 @@
                     HorizontalAlignment="Right"
                     VerticalAlignment="Center"
                     FontSize="11"
-                    Text="{Binding Path=Text.ID}" />
+                    Text="{Binding Path=ID}" />
                 </Grid>
               </DataTemplate>
             </ListBox.ItemTemplate>

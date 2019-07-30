@@ -1,4 +1,5 @@
 ﻿using RDA.Data;
+using RDA.Library;
 using RDA.Templates;
 using System;
 using System.Collections.Concurrent;
@@ -7,6 +8,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Xml;
 using System.Xml.Linq;
 using System.Xml.XPath;
 
@@ -20,10 +22,11 @@ namespace RDA {
     public static void Main(String[] args) {
       Program.PathViewer = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase).Replace(@"file:\", String.Empty)).Parent.Parent.Parent.FullName + @"\AssetViewer";
       Program.PathRoot = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase).Replace(@"file:\", String.Empty)).Parent.Parent.FullName;
-
-      // Helper
-      Helper.ExtractTextEnglish(Program.PathRoot + @"\Original\texts_english.xml");
-      Helper.ExtractTextGerman(Program.PathRoot + @"\Original\texts_german.xml");
+     
+      // Helper  Obsolete
+      //Helper.ExtractTextEnglish(Program.PathRoot + @"\Original\texts_english.xml");
+      //Helper.ExtractTextGerman(Program.PathRoot + @"\Original\texts_german.xml");
+      //Helper.ExtractText();
       //Helper.ExtractTemplateNames(Program.PathRoot + @"\Original\assets.xml");
 
       Assets.Init("Update 04");
@@ -56,8 +59,11 @@ namespace RDA {
       //Program.Expeditions();
       Program.ProcessingExpeditionEvents();
 
-      ////Tourism
+      //Tourism
       Program.ProcessingTourism();
+
+      //Save Descriptions
+      Program.SaveDescriptions();
     }
 
     #endregion Methods
@@ -67,10 +73,56 @@ namespace RDA {
     internal static String PathRoot;
     internal static String PathViewer;
     internal static XDocument TextDE;
-    private static readonly Dictionary<Int32, String> Descriptions = new Dictionary<Int32, String>();
 
     #endregion Fields
 
+    private static void SaveDescriptions(bool resetOld = false) {
+      // Split Languages To single Files
+      foreach (Languages language in Enum.GetValues(typeof(Languages))) {
+        using (var xmlWriter = XmlWriter.Create($@"{Program.PathRoot}\Modified\Texts_{language.ToString("G")}.xml", new XmlWriterSettings() { Indent = true })) {
+          xmlWriter.WriteStartElement("Texts");
+          var savedIDs = new HashSet<string>();
+          foreach (var item in Assets.CustomDescriptions) {
+            if (!savedIDs.Contains(item.Key)) {
+            xmlWriter.WriteStartElement("Text");
+            xmlWriter.WriteAttributeString("ID", item.Key);
+            xmlWriter.WriteValue(item.Value.TryGetValue(language, out var value) ? value : item.Value.First().Value);
+            xmlWriter.WriteEndElement();
+            savedIDs.Add(item.Key);
+            }
+          }
+          foreach (var item in Description.GlobalDescriptions.Values) {
+            if (!savedIDs.Contains(item.ID)) {
+              xmlWriter.WriteStartElement("Text");
+              xmlWriter.WriteAttributeString("ID", item.ID);
+              xmlWriter.WriteValue(item.Languages.TryGetValue(language, out var value) ? value : item.Languages.First().Value);
+              xmlWriter.WriteEndElement();
+              savedIDs.Add(item.ID);
+            }
+          }
+          //Load Last Descriptions to make single file updates available
+          if (!resetOld && File.Exists($@"{Program.PathViewer}\Resources\Assets\Texts_{language.ToString("G")}.xml")) {
+            var doc = XDocument.Load($@"{Program.PathViewer}\Resources\Assets\Texts_{language.ToString("G")}.xml").Root;
+            foreach (var item in doc.Elements()) {
+              if (!savedIDs.Contains(item.Attribute("ID").Value)) {
+                xmlWriter.WriteStartElement("Text");
+                xmlWriter.WriteAttributeString("ID", item.Attribute("ID").Value);
+                xmlWriter.WriteValue(item.Value);
+                xmlWriter.WriteEndElement();
+              }
+              else {
+              }
+            }
+          }
+        }
+
+        // Copy Languages To Viewer
+        if (File.Exists($@"{Program.PathViewer}\Resources\Assets\Texts_{language.ToString("G")}.xml")) {
+          File.Delete($@"{Program.PathViewer}\Resources\Assets\Texts_{language.ToString("G")}.xml");
+        }
+        File.Copy($@"{Program.PathRoot}\Modified\Texts_{language.ToString("G")}.xml", $@"{Program.PathViewer}\Resources\Assets\Texts_{language.ToString("G")}.xml");
+      }
+    }
     private static void ProcessingItems(String template, bool findSources = true) {
       var result = new List<Asset>();
       var oldAssets = new Dictionary<string, XElement>();
@@ -251,15 +303,15 @@ namespace RDA {
               xOptions.AddFirst(xOption);
               xOption.Add(new XAttribute("ID", option.XPathSelectElement("Values/Standard/GUID").Value));
               var text = new Description(option.XPathSelectElement("Values/Standard/GUID").Value);
-              if (text.EN == "Confirm") {
+              if (text.Languages[Library.Languages.English] == "Confirm") {
                 text = new Description("145001");
               }
-              else if (text.EN == "Cancel") {
+              else if (text.Languages[Library.Languages.English] == "Cancel") {
                 text = new Description("145002");
               }
               xOption.Add(text.ToXml("Text"));
               if (option.XPathSelectElement("Values/ExpeditionOption/OptionAttribute")?.Value != null) {
-                xOption.Add(new XAttribute("OptionAttribute", option.XPathSelectElement("Values/ExpeditionOption/OptionAttribute").Value));
+                xOption.Add(new Description(Assets.KeyToIdDict[option.XPathSelectElement("Values/ExpeditionOption/OptionAttribute").Value]).ToXml("OptionAttribute"));
               }
               if (option.XPathSelectElement("Values/ExpeditionOption/Requirements")?.HasElements == true) {
                 var xRequirements = new XElement("Requirements");
@@ -268,7 +320,8 @@ namespace RDA {
                   var xItem = new XElement("Item");
                   xRequirements.Add(xItem);
                   if (requirement.XPathSelectElement("NeededAttribute")?.Value != null) {
-                    xItem.Add(new XAttribute("NeededAttribute", requirement.XPathSelectElement("NeededAttribute").Value));
+
+                    xItem.Add(new Description(Assets.KeyToIdDict[requirement.XPathSelectElement("NeededAttribute").Value]).ToXml("NeededAttribute"));
                   }
                   if (requirement.XPathSelectElement("ItemOrProduct")?.Value != null) {
                     xItem.Add(new XAttribute("ID", requirement.XPathSelectElement("ItemOrProduct").Value));
@@ -341,7 +394,7 @@ namespace RDA {
         var id = pool.Element("CityStatus").Value;
         var xStatus = new XElement("Status");
         xRoot.Add(xStatus);
-        var desc = new Description((Assets.TourismStati[id].Element("AttractivenessThreshold")?.Value ?? "0") + " Attractiveness", (Assets.TourismStati[id].Element("AttractivenessThreshold")?.Value ?? "0") + " Attraktivität");
+        var desc = new Description("145011").InsertBefore((Assets.TourismStati[id].Element("AttractivenessThreshold")?.Value ?? "0"));
         xStatus.Add(new XAttribute("Pool", pool.Element("Pool").Value));
         xStatus.Add(desc.ToXml("Requirement"));
         xStatus.Add(new Description(Assets.TourismStati[id].Element("CityStatusFluff").Value).ToXml("Text"));

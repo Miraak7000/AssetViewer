@@ -15,73 +15,8 @@
   <UserControl.Resources>
     <BooleanToVisibilityConverter x:Key="BooleanToVisibility" />
     <converter:GlobalDescriptionConverter x:Key="Description" />
-    <converter:DescriptionConverter x:Key="DescriptionConverter" />
     <converter:VisibilityConverter x:Key="VisibilityConverter" />
     <converter:PriorityMultiValueConverter x:Key="PriorityConverter" />
-    <!--<DataTemplate x:Key="ActionUpgradeTemplate">
-      <Grid SnapsToDevicePixels="True">
-        <Grid.Resources>
-          <Style TargetType="TextBlock">
-            <Setter Property="VerticalAlignment" Value="Top" />
-            <Setter Property="MinHeight" Value="22" />
-            <Style.Triggers>
-              <Trigger Property="Text" Value="">
-                <Setter Property="Visibility" Value="Collapsed" />
-              </Trigger>
-              <Trigger Property="Text" Value="{x:Null}">
-                <Setter Property="Visibility" Value="Collapsed" />
-              </Trigger>
-            </Style.Triggers>
-          </Style>
-        </Grid.Resources>
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="30" />
-          <ColumnDefinition Width="*" />
-          <ColumnDefinition Width="Auto" />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-          <RowDefinition Height="Auto" />
-          <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <Image
-          Grid.Row="0"
-          Grid.Column="0"
-          Width="18"
-          Height="18"
-          HorizontalAlignment="Left"
-          VerticalAlignment="Top">
-          <Image.Source>
-            <MultiBinding Converter="{StaticResource PriorityConverter}">
-              <Binding Path="Text.Icon.Filename" />
-              <Binding Path="Text.AdditionalInformation.Icon.Filename" />
-            </MultiBinding>
-          </Image.Source>
-        </Image>
-        <StackPanel
-          Grid.Row="0"
-          Grid.Column="1"
-          ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-          ScrollViewer.VerticalScrollBarVisibility="Disabled">
-          <TextBlock  VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding Path=Text, Converter={StaticResource DescriptionConverter}}" />
-          <TextBlock
-            VerticalAlignment="Top"
-            Foreground="#FFA49370"
-            Text="{Binding Path=Text.AdditionalInformation, Converter={StaticResource DescriptionConverter}}"
-            TextWrapping="Wrap" />
-        </StackPanel>
-        <TextBlock
-          Grid.Row="0"
-          Grid.Column="2"
-          VerticalAlignment="Top"
-          Text="{Binding Path=Value}" />
-        <ItemsControl
-          Grid.Row="1"
-          Grid.Column="0"
-          Grid.ColumnSpan="3"
-          ItemTemplate="{DynamicResource ActionUpgradeTemplate}"
-          ItemsSource="{Binding Path=Additionals}" />
-      </Grid>
-    </DataTemplate>-->
     <DataTemplate x:Key="UpgradeTemplate">
       <Grid SnapsToDevicePixels="True">
         <Grid.Resources>
@@ -215,9 +150,9 @@
                     FontSize="16"
                     FontWeight="Bold"
                     Foreground="#FFFFE4AD"
-                    Text="{Binding Path=SelectedAsset.Text, Converter={StaticResource DescriptionConverter}}"
+                    Text="{Binding Path=SelectedAsset.Text}"
                     TextWrapping="Wrap" />
-                  <TextBlock Grid.Row="1" Foreground="#FFA49370" Text="{Binding Path=SelectedAsset.Rarity, Converter={StaticResource DescriptionConverter}}" />
+                  <TextBlock Grid.Row="1" Foreground="#FFA49370" Text="{Binding Path=SelectedAsset.Rarity}" />
                 </Grid>
               </Grid>
             </StackPanel>
@@ -244,7 +179,7 @@
                   VerticalAlignment="Top"
                   FontWeight="Bold"
                   Foreground="#FFDEAF04"
-                  Text="{Binding Path=SelectedAsset.Allocation.Text, Converter={StaticResource DescriptionConverter}}" />
+                  Text="{Binding Path=SelectedAsset.Allocation.Text}" />
               </StackPanel>
               <Border
                 Height="1"
@@ -263,7 +198,7 @@
                 Margin="0,0,14,5"
                 VerticalAlignment="Top"
                 Foreground="#FFA49370"
-                Text="{Binding Path=SelectedAsset.EffectTargetInfo, Converter={StaticResource DescriptionConverter}}"
+                Text="{Binding Path=SelectedAsset.EffectTargetInfo}"
                 TextWrapping="Wrap" />
               <StackPanel.ToolTip>
                 <ToolTip DataContext="{Binding PlacementTarget.DataContext, RelativeSource={RelativeSource Self}}">
@@ -336,15 +271,19 @@
             <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.IncidentInfluencerUpgrades, Converter={StaticResource VisibilityConverter}}">
               <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.IncidentInfluencerUpgrades}" />
             </Grid>
+            <!--  KontorUpgrades  -->
             <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.KontorUpgrades, Converter={StaticResource VisibilityConverter}}">
               <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.KontorUpgrades}" />
             </Grid>
+            <!--  ShipyardUpgrades  -->
             <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.ShipyardUpgrades, Converter={StaticResource VisibilityConverter}}">
               <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.ShipyardUpgrades}" />
             </Grid>
+            <!--  ItemGeneratorUpgrades  -->
             <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.ItemGeneratorUpgrades, Converter={StaticResource VisibilityConverter}}">
               <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.ItemGeneratorUpgrades}" />
             </Grid>
+            <!--  DivingBellUpgrades  -->
             <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.DivingBellUpgrades, Converter={StaticResource VisibilityConverter}}">
               <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.DivingBellUpgrades}" />
             </Grid>
@@ -430,7 +369,7 @@
               <TextBlock
                 FontStyle="Italic"
                 Foreground="#FFA49370"
-                Text="{Binding Path=SelectedAsset.Info, Converter={StaticResource DescriptionConverter}, ConverterParameter=Long}"
+                Text="{Binding Path=SelectedAsset.Info}"
                 TextWrapping="Wrap" />
             </StackPanel>
           </StackPanel>
@@ -481,9 +420,9 @@
                   FontSize="16"
                   FontWeight="Bold"
                   Foreground="#FFFFE4AD"
-                  Text="{Binding Path=SelectedAsset.Text, Converter={StaticResource DescriptionConverter}}"
+                  Text="{Binding Path=SelectedAsset.Text}"
                   TextWrapping="Wrap" />
-                <TextBlock Grid.Row="1" Foreground="#FFA49370" Text="{Binding Path=SelectedAsset.Rarity, Converter={StaticResource DescriptionConverter}}" />
+                <TextBlock Grid.Row="1" Foreground="#FFA49370" Text="{Binding Path=SelectedAsset.Rarity}" />
               </Grid>
             </Grid>
             <Border
@@ -509,7 +448,7 @@
                       Grid.Column="1"
                       VerticalAlignment="Top"
                       Foreground="#FFFFE4AD"
-                      Text="{Binding Path=Text, Converter={StaticResource DescriptionConverter}}"
+                      Text="{Binding Path=Text}"
                       TextTrimming="CharacterEllipsis" />
                     <Grid.ToolTip>
                       <ToolTip DataContext="{Binding PlacementTarget.DataContext, RelativeSource={RelativeSource Self}}">
@@ -520,7 +459,7 @@
                                 <TextBlock
                                   VerticalAlignment="Top"
                                   Foreground="#FF2A2C27"
-                                  Text="{Binding Text, Converter={StaticResource DescriptionConverter}}"
+                                  Text="{Binding Text}"
                                   TextTrimming="CharacterEllipsis" />
                               </Grid>
                             </DataTemplate>

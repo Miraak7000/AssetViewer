@@ -10,8 +10,6 @@
   d:DesignWidth="800"
   mc:Ignorable="d">
   <UserControl.Resources>
-    <converter:DescriptionConverter x:Key="DescriptionConverter" />
-    <converter:GlobalTranslationConverter x:Key="TranslationConverter" />
     <converter:RewardToItemConverter x:Key="RewardToItemConverter" />
     <converter:VisibilityConverter x:Key="VisibilityConverter" />
     <CollectionViewSource x:Key="EventSource" Source="{Binding Events}" />
@@ -55,7 +53,7 @@
                   <TextBlock
                     Grid.Column="0"
                     VerticalAlignment="Center"
-                    Text="{Binding Path=Name, Converter={StaticResource DescriptionConverter}}"
+                    Text="{Binding Path=Name}"
                     TextTrimming="CharacterEllipsis" />
                   <TextBlock
                     Grid.Column="1"
@@ -95,12 +93,12 @@
                               <TextBlock
                                 Margin="0,0,5,0"
                                 Foreground="Green"
-                                Text="{Binding OptionAttribute, Converter={StaticResource TranslationConverter}}"
+                                Text="{Binding OptionAttribute}"
                                 Visibility="{Binding OptionAttribute, Converter={StaticResource VisibilityConverter}}" />
-                              <ItemsControl Margin="0,0,5,0" ItemsSource="{Binding Requirements}" Visibility="{Binding Requirements, Converter={StaticResource VisibilityConverter}}">
+                              <ItemsControl Margin="0,0,5,0" ItemsSource="{Binding Requirements}" Visibility="Visible">
                                 <ItemsControl.ItemTemplate>
                                   <DataTemplate>
-                                    <TextBlock Foreground="Red" Text="{Binding NeededAttribute, Converter={StaticResource TranslationConverter}}" />
+                                    <TextBlock Foreground="Red" Text="{Binding NeededAttribute}" />
                                   </DataTemplate>
                                 </ItemsControl.ItemTemplate>
                                 <ItemsControl.ItemsPanel>
@@ -113,8 +111,8 @@
                             <TextBlock
                               Grid.Column="1"
                               Margin="0,0,0,0"
-                              Text="{Binding Text, Converter={StaticResource DescriptionConverter}}"
-                              ToolTip="{Binding Text, Converter={StaticResource DescriptionConverter}}" />
+                              Text="{Binding Text}"
+                              ToolTip="{Binding Text}" />
                           </Grid>
                         </DataTemplate>
                       </ItemsControl.ItemTemplate>
@@ -166,22 +164,17 @@
                 <TextBlock
                   Grid.Column="1"
                   VerticalAlignment="Center"
-                  Text="{Binding Path=Text, Converter={StaticResource DescriptionConverter}}"
+                  Text="{Binding Path=Text}"
                   TextTrimming="CharacterEllipsis" />
                 <TextBlock
                   Grid.Column="2"
                   HorizontalAlignment="Right"
                   VerticalAlignment="Center"
                   FontSize="11"
-                  Text="{Binding Path=Text.ID}" />
+                  Text="{Binding Path=ID}" />
               </Grid>
             </DataTemplate>
           </ListBox.ItemTemplate>
-          <!--<ListBox.ItemsPanel>
-                        <ItemsPanelTemplate>
-                            <StackPanel />
-                        </ItemsPanelTemplate>
-                    </ListBox.ItemsPanel>-->
         </ListBox>
       </Border>
     </Grid>

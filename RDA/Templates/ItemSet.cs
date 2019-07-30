@@ -23,7 +23,6 @@ namespace RDA.Templates {
     public ItemSet(XElement asset) {
       this.ID = asset.XPathSelectElement("Values/Standard/GUID").Value;
       this.Name = asset.XPathSelectElement("Values/Standard/Name").Value;
-      //this.Icon = new Icon(asset.XPathSelectElement("Values/Standard/IconFilename").Value);
       this.Text = new Description(asset.XPathSelectElement("Values/Standard/GUID").Value);
       this.Info = new Description(asset.XPathSelectElement("Values/Standard/InfoDescription").Value);
     }

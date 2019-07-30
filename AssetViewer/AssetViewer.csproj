@@ -43,6 +43,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -74,31 +75,12 @@
     <Compile Include="Controls\Tourism.xaml.cs">
       <DependentUpon>Tourism.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Converter\DescriptionConverter.cs" />
     <Compile Include="Converter\EnumDescriptionTypeConverter.cs" />
-    <Compile Include="Converter\GlobalTranslationConverter.cs" />
+    <Compile Include="Converter\GlobalDescriptionConverter.cs" />
     <Compile Include="Converter\PriorityMultiValueConverter.cs" />
     <Compile Include="Converter\RewardToItemConverter.cs" />
     <Compile Include="Converter\VisibilityConverter.cs" />
     <Compile Include="Data\Allocation.cs" />
-    <Compile Include="Data\DataAttractivenessUpgrade.cs" />
-    <Compile Include="Data\DataExpeditionAttributeFaith.cs" />
-    <Compile Include="Data\DataExpeditionAttributeNavigation.cs" />
-    <Compile Include="Data\DataExpeditionAttributeMedicine.cs" />
-    <Compile Include="Data\DataExpeditionAttributeHunting.cs" />
-    <Compile Include="Data\DataExpeditionAttributeCrafting.cs" />
-    <Compile Include="Data\DataIncidentFireIncreaseUpgrade.cs" />
-    <Compile Include="Data\DataAddedFertility.cs" />
-    <Compile Include="Data\DataModuleLimitUpgrade.cs" />
-    <Compile Include="Data\DataMaintenanceUpgrade.cs" />
-    <Compile Include="Data\DataProvideElectricity.cs" />
-    <Compile Include="Data\DataIncidentExplosionIncreaseUpgrade.cs" />
-    <Compile Include="Data\DataExpeditionAttribute.cs" />
-    <Compile Include="Data\DataWorkforceAmountUpgrade.cs" />
-    <Compile Include="Data\DataProductivityUpgrade.cs" />
-    <Compile Include="Data\DataEffectTargets.cs" />
-    <Compile Include="Data\DataRarity.cs" />
-    <Compile Include="Data\DataAllocation.cs" />
     <Compile Include="Data\Description.cs" />
     <Compile Include="Data\DescriptionFontStyle.cs" />
     <Compile Include="Data\EffectTarget.cs" />
@@ -176,9 +158,6 @@
     <Compile Include="Controls\Monument.xaml.cs">
       <DependentUpon>Monument.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Converter\DescriptionConverterOld.cs" />
-    <Compile Include="Converter\GlobalDescriptionConverter.cs" />
-    <Compile Include="Library\Description.cs" />
     <Compile Include="Library\Languages.cs" />
     <Compile Include="Library\SelectableItem.cs" />
     <Compile Include="MainWindow.xaml.cs">
@@ -1292,6 +1271,14 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_resident_investor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\Data Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Assets\Texts_English.xml" />
+    <EmbeddedResource Include="Resources\Assets\Texts_German.xml" />
+    <EmbeddedResource Include="Resources\Assets\Texts_Korean.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

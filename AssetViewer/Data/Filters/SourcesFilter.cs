@@ -18,8 +18,10 @@ namespace AssetViewer.Data.Filters {
           result = result.Where(w => w.Sources != null && w.Sources.SelectMany(s => s.Additionals).Any(l => l.Text.CurrentLang == SelectedComparisonValue));
         }
       }
-      else if (!String.IsNullOrEmpty(SelectedValue))
+      else if (!String.IsNullOrEmpty(SelectedValue)) {
         result = result.Where(w => w.Sources != null && w.Sources.Any(l => l.Text.CurrentLang == SelectedValue));
+      }
+
       return result;
     };
 
@@ -34,7 +36,7 @@ namespace AssetViewer.Data.Filters {
          .ToList();
 
     public override IEnumerable<string> ComparisonValues => GetComparisonValues();
-    public override int DescriptionID => 1005;
+    public override string DescriptionID => "-1005";
 
     #endregion Properties
 

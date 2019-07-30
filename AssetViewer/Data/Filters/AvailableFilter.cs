@@ -6,9 +6,8 @@ using System.Linq;
 namespace AssetViewer.Data.Filters {
 
   public class AvailableFilter : BaseFilter<bool> {
-    public AvailableFilter(ItemsHolder itemsHolder) : base(itemsHolder) {
-      FilterType = FilterType.Bool;
-    }
+
+    #region Properties
 
     public override Func<IQueryable<TemplateAsset>, IQueryable<TemplateAsset>> FilterFunc => result => {
       if (SelectedValue)
@@ -16,11 +15,25 @@ namespace AssetViewer.Data.Filters {
       return result;
     };
 
+    public override IEnumerable<bool> ComparisonValues => base.ComparisonValues;
+    public override string DescriptionID => "-1101";
+
+    #endregion Properties
+
+    #region Constructors
+
+    public AvailableFilter(ItemsHolder itemsHolder) : base(itemsHolder) {
+      FilterType = FilterType.Bool;
+    }
+
+    #endregion Constructors
+
+    #region Methods
+
     public override void ResetFilter() {
       SelectedValue = true;
     }
-    public override IEnumerable<bool> ComparisonValues => base.ComparisonValues;
 
-    public override int DescriptionID => 1101;
+    #endregion Methods
   }
 }

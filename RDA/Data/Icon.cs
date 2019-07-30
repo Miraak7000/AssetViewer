@@ -8,11 +8,14 @@ namespace RDA.Data {
   public class Icon {
 
     #region Properties
-    public String Filename { get; set; }
-    public static string[] IgnoredDirectorys { get; set; } = new [] { $@"{Program.PathRoot}\Resources\data\ui\2kimages\main\3dicons\Temporary_Ornament" };
-    #endregion
 
-    #region Constructor
+    public static string[] IgnoredDirectorys { get; set; } = new[] { $@"{Program.PathRoot}\Resources\data\ui\2kimages\main\3dicons\Temporary_Ornament" };
+    public String Filename { get; set; }
+
+    #endregion Properties
+
+    #region Constructors
+
     public Icon(String filename) {
       var searchPath = Path.GetDirectoryName($@"{Program.PathRoot}\Resources\{filename}");
       var searchPattern = Path.GetFileNameWithoutExtension($@"{Program.PathRoot}\Resources\{filename}");
@@ -36,16 +39,17 @@ namespace RDA.Data {
         catch (Exception) { }
       }
     }
-    #endregion
 
-    #region Public Methods
+    #endregion Constructors
+
+    #region Methods
+
     public XElement ToXml() {
       var result = new XElement(this.GetType().Name);
       result.Add(new XElement("Filename", this.Filename));
       return result;
     }
-    #endregion
 
+    #endregion Methods
   }
-
 }

@@ -39,6 +39,8 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -73,6 +75,7 @@
     <Compile Include="Data\Upgrade.cs" />
     <Compile Include="Helper.cs" />
     <Compile Include="Library\Extensions.cs" />
+    <Compile Include="Library\Languages.cs" />
     <Compile Include="Monument.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -82,10 +85,10 @@
     <Compile Include="Templates\SourceWithDetails\Details.cs" />
     <Compile Include="Templates\SourceWithDetails\SourceWithDetails.cs" />
     <Compile Include="Templates\SourceWithDetails\SourceWithDetailsList.cs" />
-    <Compile Include="Templates\Tourism\TourismStatus.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <Content Include="Modified\LanguageFiles\Texts_Custom_Korean.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -130,12 +133,36 @@
     <Content Include="Modified\Assets_Tourism.xml" />
     <Content Include="Modified\Assets_TownhallItem.xml" />
     <Content Include="Modified\Assets_VehicleItem.xml" />
+    <Content Include="Modified\LanguageFiles\Texts_Custom_German.json" />
+    <Content Include="Modified\LanguageFiles\Texts_Custom_English.json" />
     <Content Include="Modified\TemplateNames.xml" />
+    <Content Include="Modified\Texts_Brazilian.xml" />
+    <Content Include="Modified\Texts_Chinese.xml" />
     <Content Include="Modified\Texts_English.xml" />
+    <Content Include="Modified\Texts_French.xml" />
     <Content Include="Modified\Texts_German.xml" />
+    <Content Include="Modified\Texts_Italian.xml" />
+    <Content Include="Modified\Texts_Japanese.xml" />
+    <Content Include="Modified\Texts_Korean.xml" />
+    <Content Include="Modified\Texts_Polish.xml" />
+    <Content Include="Modified\Texts_Portuguese.xml" />
+    <Content Include="Modified\Texts_Russian.xml" />
+    <Content Include="Modified\Texts_Spanish.xml" />
+    <Content Include="Modified\Texts_Taiwanese.xml" />
     <Content Include="Original\camera.xml" />
+    <Content Include="Original\texts_brazilian.xml" />
+    <Content Include="Original\texts_chinese.xml" />
     <Content Include="Original\texts_english.xml" />
+    <Content Include="Original\texts_french.xml" />
     <Content Include="Original\texts_german.xml" />
+    <Content Include="Original\texts_italian.xml" />
+    <Content Include="Original\texts_japanese.xml" />
+    <Content Include="Original\texts_korean.xml" />
+    <Content Include="Original\texts_polish.xml" />
+    <Content Include="Original\texts_portuguese.xml" />
+    <Content Include="Original\texts_russian.xml" />
+    <Content Include="Original\texts_spanish.xml" />
+    <Content Include="Original\texts_taiwanese.xml" />
     <Content Include="Resources\data\ui\2kimages\fpp\assets16\bar_pgrogress_glow_end_0.png" />
     <Content Include="Resources\data\ui\2kimages\fpp\assets16\bar_progress_front_0.png" />
     <Content Include="Resources\data\ui\2kimages\fpp\assets16\bar_progress_fx_glow_0.png" />

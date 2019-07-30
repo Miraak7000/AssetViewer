@@ -12,10 +12,10 @@ namespace AssetViewer.Data.Filters {
 
     public override Func<IQueryable<TemplateAsset>, IQueryable<TemplateAsset>> FilterFunc => result => {
       if (!String.IsNullOrEmpty(SelectedComparisonValue)) {
-        result = result.Where(w => CompareToRarity(w.Rarity.CurrentLang));
+        return result.Where(w => CompareToRarity(w.Rarity.CurrentLang));
       }
       else if (!String.IsNullOrEmpty(SelectedValue)) {
-        result = result.Where(w => w.Rarity.CurrentLang == SelectedValue);
+        return result.Where(w => w.Rarity.CurrentLang == SelectedValue);
       }
       return result;
     };
@@ -38,7 +38,7 @@ namespace AssetViewer.Data.Filters {
          .OrderBy(o => o, RarityComparer.Default)
          .ToList();
 
-    public override int DescriptionID => 1023;
+    public override string DescriptionID => "-1023";
 
     #endregion Properties
 

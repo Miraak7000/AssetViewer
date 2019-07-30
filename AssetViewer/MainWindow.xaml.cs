@@ -1,23 +1,13 @@
 ﻿using AssetViewer.Controls;
 using AssetViewer.Library;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
 
 namespace AssetViewer {
 
-  public partial class MainWindow : Window, INotifyPropertyChanged {
-
-    #region Properties
-
-    public Dictionary<int, Data.Description> Descriptions {
-      get { return App.Descriptions; }
-    }
-
-    #endregion Properties
-
+  public partial class MainWindow : Window {
     #region Constructors
 
     public MainWindow() {
@@ -33,7 +23,6 @@ namespace AssetViewer {
 
     #region Events
 
-    public event PropertyChangedEventHandler PropertyChanged;
 
     #endregion Events
 
@@ -76,8 +65,13 @@ namespace AssetViewer {
         case 1:
           App.Language = Languages.German;
           break;
+        case 2:
+          App.Language = Languages.Korean;
+          break;
       }
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Descriptions"));
+      App.LoadLanguageFile();
+      DataContext = null;
+      DataContext = this;
     }
 
     #endregion Methods

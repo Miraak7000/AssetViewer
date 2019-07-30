@@ -17,8 +17,7 @@ namespace AssetViewer.Data {
     [XmlAttribute]
     public string ID { get; set; }
 
-    [XmlAttribute]
-    public string OptionAttribute { get; set; }
+    public Description OptionAttribute { get; set; }
 
     [XmlArrayItem("Item", IsNullable = false)]
     public List<EventOptionRequirement> Requirements { get; set; }
