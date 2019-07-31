@@ -1,5 +1,658 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ExpeditionEvents>
+  <ExpeditionEvent ID="802269">
+    <Name ID="802269">
+      <Icon />
+    </Name>
+    <Paths>
+      <Path ID="1.2.1.1.1">
+        <Rewards>
+          <Item ID="192038" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="802275">
+            <Text ID="802275">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800028">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="802277">
+            <Text ID="802277">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800030">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.1.1">
+        <Rewards>
+          <Item ID="192038" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="802272">
+            <Text ID="802272">
+              <Icon />
+            </Text>
+            <Requirements>
+              <Item>
+                <NeededAttribute ID="9998">
+                  <Icon>
+                    <Filename>data/ui/2kimages/main/icons/icon_expedition_zoologist.png</Filename>
+                  </Icon>
+                </NeededAttribute>
+              </Item>
+            </Requirements>
+          </Option>
+        </Options>
+      </Path>
+    </Paths>
+  </ExpeditionEvent>
+  <ExpeditionEvent ID="802320">
+    <Name ID="802320">
+      <Icon />
+    </Name>
+    <Paths>
+      <Path ID="1.1.1.2.2.2.1">
+        <Rewards>
+          <Item ID="192040" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="802322">
+            <Text ID="802322">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800030">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="802333">
+            <Text ID="802333">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800030">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="802340">
+            <Text ID="802340">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800032">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+    </Paths>
+  </ExpeditionEvent>
+  <ExpeditionEvent ID="801607">
+    <Name ID="801607">
+      <Icon />
+    </Name>
+    <Paths>
+      <Path ID="1.3.1">
+        <Rewards>
+          <Item ID="191151" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="801612">
+            <Text ID="801612">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800029">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.2.1">
+        <Rewards>
+          <Item ID="191151" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="801611">
+            <Text ID="801611">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800030">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.1.1">
+        <Rewards>
+          <Item ID="191151" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="801610">
+            <Text ID="801610">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800032">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+    </Paths>
+  </ExpeditionEvent>
+  <ExpeditionEvent ID="801587">
+    <Name ID="801587">
+      <Icon />
+    </Name>
+    <Paths>
+      <Path ID="1.2.1.2.1">
+        <Rewards>
+          <Item ID="190527" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="801590">
+            <Text ID="801590">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800034">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_crafting_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="801596">
+            <Text ID="801596">
+              <Icon />
+            </Text>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.2.1.1.1.2.1">
+        <Rewards>
+          <Item ID="190489" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="801590">
+            <Text ID="801590">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800034">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_crafting_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="801595">
+            <Text ID="801595">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800028">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="801600">
+            <Text ID="801600">
+              <Icon />
+            </Text>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.2.1.1.1.1.1">
+        <Rewards>
+          <Item ID="190551" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="801590">
+            <Text ID="801590">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800034">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_crafting_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="801595">
+            <Text ID="801595">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800028">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="801599">
+            <Text ID="801599">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800028">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.1.1">
+        <Rewards>
+          <Item ID="191150" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="801589">
+            <Text ID="801589">
+              <Icon />
+            </Text>
+            <Requirements>
+              <Item>
+                <NeededAttribute ID="190616">
+                  <Icon>
+                    <Filename>data/ui/2kimages/main/icons/icon_expedition_diver.png</Filename>
+                  </Icon>
+                </NeededAttribute>
+              </Item>
+            </Requirements>
+          </Option>
+        </Options>
+      </Path>
+    </Paths>
+  </ExpeditionEvent>
+  <ExpeditionEvent ID="803389">
+    <Name ID="803389">
+      <Icon />
+    </Name>
+    <Paths>
+      <Path ID="1.1.1.1.1.3.1">
+        <Rewards>
+          <Item ID="190476" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="803409">
+            <Text ID="803409">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800032">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="803406">
+            <Text ID="803406">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800029">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="803391">
+            <Text ID="803391">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800028">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="803393">
+            <Text ID="803393">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800028">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="803417">
+            <Text ID="803417">
+              <Icon />
+            </Text>
+            <Requirements>
+              <Item ID="1010222" />
+            </Requirements>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.1.1.1.1.2.1">
+        <Rewards>
+          <Item ID="190476" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="803409">
+            <Text ID="803409">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800032">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="803406">
+            <Text ID="803406">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800029">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="803391">
+            <Text ID="803391">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800028">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="803393">
+            <Text ID="803393">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800028">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="803398">
+            <Text ID="803398">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800034">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_crafting_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.1.1.1.1.1.1">
+        <Rewards>
+          <Item ID="190476" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="803409">
+            <Text ID="803409">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800032">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="803406">
+            <Text ID="803406">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800029">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="803391">
+            <Text ID="803391">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800028">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="803393">
+            <Text ID="803393">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800028">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="803395">
+            <Text ID="803395">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800032">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+    </Paths>
+  </ExpeditionEvent>
+  <ExpeditionEvent ID="802567">
+    <Name ID="802567">
+      <Icon />
+    </Name>
+    <Paths>
+      <Path ID="1.1.1.1.1.1.1">
+        <Rewards>
+          <Item ID="191063" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="802575">
+            <Text ID="802575">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800034">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_crafting_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="802579">
+            <Text ID="802579">
+              <Icon />
+            </Text>
+          </Option>
+          <Option ID="802596">
+            <Text ID="145002">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_untick.png</Filename>
+              </Icon>
+            </Text>
+          </Option>
+          <Option ID="802601">
+            <Text ID="802601">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800030">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="802570">
+            <Text ID="802570">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800030">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="802574">
+            <Text ID="802574">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800030">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="802578">
+            <Text ID="802578">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800030">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+    </Paths>
+  </ExpeditionEvent>
+  <ExpeditionEvent ID="802672">
+    <Name ID="802672">
+      <Icon />
+    </Name>
+    <Paths>
+      <Path ID="1.4.1">
+        <Rewards>
+          <Item ID="1010217" Amount="40" />
+        </Rewards>
+        <Options>
+          <Option ID="802678">
+            <Text ID="802678">
+              <Icon />
+            </Text>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.3.1.1.1">
+        <Rewards>
+          <Item ID="192075" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="802677">
+            <Text ID="802677">
+              <Icon />
+            </Text>
+          </Option>
+          <Option ID="802704">
+            <Text ID="145001">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_tick.png</Filename>
+              </Icon>
+            </Text>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.2.1">
+        <Rewards>
+          <Item ID="192075" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="802676">
+            <Text ID="802676">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800004">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.1.1">
+        <Rewards>
+          <Item ID="192075" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="802675">
+            <Text ID="802675">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800029">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+    </Paths>
+  </ExpeditionEvent>
+  <ExpeditionEvent ID="800005">
+    <Name ID="800005">
+      <Icon />
+    </Name>
+    <Paths>
+      <Path ID="1.1.2">
+        <Rewards>
+          <Item ID="150038" Amount="1" />
+          <Item ID="600005" Amount="1" />
+          <Item ID="180025" />
+        </Rewards>
+        <Options>
+          <Option ID="800110">
+            <Text ID="800110">
+              <Icon />
+            </Text>
+            <Requirements>
+              <Item ID="1010216" Amount="10" />
+            </Requirements>
+          </Option>
+          <Option ID="800087">
+            <Text ID="800087">
+              <Icon />
+            </Text>
+          </Option>
+        </Options>
+      </Path>
+    </Paths>
+  </ExpeditionEvent>
+  <ExpeditionEvent ID="800336">
+    <Name ID="800336">
+      <Icon />
+    </Name>
+    <Paths>
+      <Path ID="1.3.1">
+        <Rewards>
+          <Item ID="190016" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="800352">
+            <Text ID="800352">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800029">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+    </Paths>
+  </ExpeditionEvent>
   <ExpeditionEvent ID="802426">
     <Name ID="802426">
       <Icon />
@@ -357,6 +1010,445 @@
       </Path>
     </Paths>
   </ExpeditionEvent>
+  <ExpeditionEvent ID="802094">
+    <Name ID="802094">
+      <Icon />
+    </Name>
+    <Paths>
+      <Path ID="1.2.1.2.1">
+        <Rewards>
+          <Item ID="190423" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="802097">
+            <Text ID="802097">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800004">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="802103">
+            <Text ID="802103">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800028">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.2.1.1.1">
+        <Rewards>
+          <Item ID="190423" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="802097">
+            <Text ID="802097">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800004">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="802102">
+            <Text ID="802102">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800034">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_crafting_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.1.1">
+        <Rewards>
+          <Item ID="190423" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="802096">
+            <Text ID="802096">
+              <Icon />
+            </Text>
+            <Requirements>
+              <Item>
+                <NeededAttribute ID="15795">
+                  <Icon />
+                </NeededAttribute>
+              </Item>
+            </Requirements>
+          </Option>
+        </Options>
+      </Path>
+    </Paths>
+  </ExpeditionEvent>
+  <ExpeditionEvent ID="802710">
+    <Name ID="802710">
+      <Icon />
+    </Name>
+    <Paths>
+      <Path ID="1.1.2.1.1">
+        <Rewards>
+          <Item ID="190423" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="802713">
+            <Text ID="802713">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800033">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="802712">
+            <Text ID="802712">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800031">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_diseases_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="802725">
+            <Text ID="802725">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800028">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.1.1.2.1">
+        <Rewards>
+          <Item ID="190423" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="802713">
+            <Text ID="802713">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800033">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="802712">
+            <Text ID="802712">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800031">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_diseases_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="802719">
+            <Text ID="802719">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800030">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.1.1.1.1">
+        <Rewards>
+          <Item ID="190423" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="802713">
+            <Text ID="802713">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800033">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="802712">
+            <Text ID="802712">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800031">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_diseases_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="802718">
+            <Text ID="802718">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800033">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+    </Paths>
+  </ExpeditionEvent>
+  <ExpeditionEvent ID="800157">
+    <Name ID="800157">
+      <Icon />
+    </Name>
+    <Paths>
+      <Path ID="1.3.2">
+        <Rewards>
+          <Item ID="1010249" Amount="20" />
+          <Item ID="190495" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="800161">
+            <Text ID="800161">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800032">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.3.1">
+        <Rewards>
+          <Item ID="1010249" Amount="20" />
+          <Item ID="190495" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="800161">
+            <Text ID="800161">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800032">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.2.2">
+        <Rewards>
+          <Item ID="1010249" Amount="20" />
+        </Rewards>
+        <Options>
+          <Option ID="800160">
+            <Text ID="800160">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800004">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.2.1">
+        <Rewards>
+          <Item ID="1010249" Amount="20" />
+        </Rewards>
+        <Options>
+          <Option ID="800160">
+            <Text ID="800160">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800004">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.1.1">
+        <Rewards>
+          <Item ID="1010249" Amount="20" />
+          <Item ID="190495" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="800159">
+            <Text ID="800159">
+              <Icon />
+            </Text>
+            <Requirements>
+              <Item>
+                <NeededAttribute ID="3930">
+                  <Icon>
+                    <Filename>data/ui/2kimages/main/icons/icon_expedition_pirate.png</Filename>
+                  </Icon>
+                </NeededAttribute>
+              </Item>
+            </Requirements>
+          </Option>
+        </Options>
+      </Path>
+    </Paths>
+  </ExpeditionEvent>
+  <ExpeditionEvent ID="803072">
+    <Name ID="803072">
+      <Icon />
+    </Name>
+    <Paths>
+      <Path ID="1.1.1.2.1.1.1">
+        <Rewards>
+          <Item ID="190423" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="803074">
+            <Text ID="803074">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800031">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_diseases_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="803083">
+            <Text ID="803083">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800030">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="803092">
+            <Text ID="803092">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800004">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+    </Paths>
+  </ExpeditionEvent>
+  <ExpeditionEvent ID="803468">
+    <Name ID="803468">
+      <Icon />
+    </Name>
+    <Paths>
+      <Path ID="1.1.1.2.1">
+        <Rewards>
+          <Item ID="1010249" Amount="10" />
+        </Rewards>
+        <Options>
+          <Option ID="803496">
+            <Text ID="145001">
+              <Icon />
+            </Text>
+          </Option>
+          <Option ID="803491">
+            <Text ID="803491">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800032">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="803494">
+            <Text ID="803494">
+              <Icon />
+            </Text>
+          </Option>
+          <Option ID="803497">
+            <Text ID="145002">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_untick.png</Filename>
+              </Icon>
+            </Text>
+          </Option>
+          <Option ID="803488">
+            <Text ID="803488">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800030">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="803485">
+            <Text ID="803485">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800029">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="803474">
+            <Text ID="145002">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_untick.png</Filename>
+              </Icon>
+            </Text>
+          </Option>
+          <Option ID="803482">
+            <Text ID="803482">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800034">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_crafting_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="803471">
+            <Text ID="803471">
+              <Icon />
+            </Text>
+          </Option>
+          <Option ID="803473">
+            <Text ID="145001">
+              <Icon />
+            </Text>
+          </Option>
+          <Option ID="803479">
+            <Text ID="803479">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800028">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+    </Paths>
+  </ExpeditionEvent>
   <ExpeditionEvent ID="800112">
     <Name ID="800112">
       <Icon />
@@ -422,6 +1514,515 @@
             <Text ID="800135">
               <Icon />
             </Text>
+          </Option>
+        </Options>
+      </Path>
+    </Paths>
+  </ExpeditionEvent>
+  <ExpeditionEvent ID="800467">
+    <Name ID="800467">
+      <Icon />
+    </Name>
+    <Paths>
+      <Path ID="1.3.1">
+        <Rewards>
+          <Item ID="190434" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="800472">
+            <Text ID="800472">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800028">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.2.1">
+        <Rewards>
+          <Item ID="190434" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="800471">
+            <Text ID="800471">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800029">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.1.1">
+        <Rewards>
+          <Item ID="190434" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="800470">
+            <Text ID="800470">
+              <Icon />
+            </Text>
+            <Requirements>
+              <Item ID="1010248" />
+            </Requirements>
+          </Option>
+        </Options>
+      </Path>
+    </Paths>
+  </ExpeditionEvent>
+  <ExpeditionEvent ID="800059">
+    <Name ID="800059">
+      <Icon />
+    </Name>
+    <Paths>
+      <Path ID="1.1.2">
+        <Rewards>
+          <Item ID="190157" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="800100">
+            <Text ID="800100">
+              <Icon />
+            </Text>
+          </Option>
+          <Option ID="800098">
+            <Text ID="800098">
+              <Icon />
+            </Text>
+          </Option>
+        </Options>
+      </Path>
+    </Paths>
+  </ExpeditionEvent>
+  <ExpeditionEvent ID="802381">
+    <Name ID="802381">
+      <Icon />
+    </Name>
+    <Paths>
+      <Path ID="1.3.1">
+        <Rewards>
+          <Item ID="192044" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="802385">
+            <Text ID="802385">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800030">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.1.1">
+        <Rewards>
+          <Item ID="192044" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="802383">
+            <Text ID="802383">
+              <Icon />
+            </Text>
+            <Requirements>
+              <Item>
+                <NeededAttribute ID="9998">
+                  <Icon>
+                    <Filename>data/ui/2kimages/main/icons/icon_expedition_zoologist.png</Filename>
+                  </Icon>
+                </NeededAttribute>
+              </Item>
+            </Requirements>
+          </Option>
+        </Options>
+      </Path>
+    </Paths>
+  </ExpeditionEvent>
+  <ExpeditionEvent ID="801664">
+    <Name ID="801664">
+      <Icon />
+    </Name>
+    <Paths>
+      <Path ID="1.2.1.1.1">
+        <Rewards>
+          <Item ID="192430" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="801698">
+            <Text ID="801698">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800030">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="801700">
+            <Text ID="801700">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800033">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.1.1.2.2.2.1">
+        <Rewards>
+          <Item ID="192430" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="801666">
+            <Text ID="801666">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800033">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="801680">
+            <Text ID="801680">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800032">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="801687">
+            <Text ID="801687">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800004">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.1.1.2.2.1.1">
+        <Rewards>
+          <Item ID="192430" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="801666">
+            <Text ID="801666">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800033">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="801680">
+            <Text ID="801680">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800032">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="801683">
+            <Text ID="801683">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800030">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.1.1.2.1">
+        <Rewards>
+          <Item ID="192430" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="801666">
+            <Text ID="801666">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800033">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="801680">
+            <Text ID="801680">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800032">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.1.1.1.2.2.1">
+        <Rewards>
+          <Item ID="192430" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="801666">
+            <Text ID="801666">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800033">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="801670">
+            <Text ID="801670">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800004">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="801675">
+            <Text ID="801675">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800004">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.1.1.1.2.1.1">
+        <Rewards>
+          <Item ID="192430" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="801666">
+            <Text ID="801666">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800033">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="801670">
+            <Text ID="801670">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800004">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="801674">
+            <Text ID="801674">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800032">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.1.1.1.1">
+        <Rewards>
+          <Item ID="192430" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="801666">
+            <Text ID="801666">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800033">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="801670">
+            <Text ID="801670">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800004">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+    </Paths>
+  </ExpeditionEvent>
+  <ExpeditionEvent ID="800391">
+    <Name ID="800391">
+      <Icon />
+    </Name>
+    <Paths>
+      <Path ID="1">
+        <Rewards>
+          <Item ID="190016" Amount="2" />
+        </Rewards>
+        <Options />
+      </Path>
+    </Paths>
+  </ExpeditionEvent>
+  <ExpeditionEvent ID="802228">
+    <Name ID="802228">
+      <Icon />
+    </Name>
+    <Paths>
+      <Path ID="1.1.1.2.1">
+        <Rewards>
+          <Item ID="192037" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="802231">
+            <Text ID="802231">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800032">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="802230">
+            <Text ID="802230">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800033">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="802236">
+            <Text ID="802236">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800032">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.1.1.1.1">
+        <Rewards>
+          <Item ID="192037" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="802231">
+            <Text ID="802231">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800032">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="802230">
+            <Text ID="802230">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800033">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="802233">
+            <Text ID="802233">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800028">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.2.1.2.1">
+        <Rewards>
+          <Item ID="190501" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="802231">
+            <Text ID="802231">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800032">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="802256">
+            <Text ID="802256">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800030">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.2.1.1.1">
+        <Rewards>
+          <Item ID="190547" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="802231">
+            <Text ID="802231">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800032">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="802255">
+            <Text ID="802255">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800032">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
           </Option>
         </Options>
       </Path>
@@ -566,23 +2167,146 @@
       </Path>
     </Paths>
   </ExpeditionEvent>
-  <ExpeditionEvent ID="800059">
-    <Name ID="800059">
+  <ExpeditionEvent ID="802397">
+    <Name ID="802397">
       <Icon />
     </Name>
     <Paths>
-      <Path ID="1.1.2">
+      <Path ID="1.1.1.2.1">
         <Rewards>
-          <Item ID="190157" Amount="1" />
+          <Item ID="192045" Amount="1" />
         </Rewards>
         <Options>
-          <Option ID="800100">
-            <Text ID="800100">
+          <Option ID="802399">
+            <Text ID="802399">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800028">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="802404">
+            <Text ID="802404">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800033">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.1.1.1.1.2.1">
+        <Rewards>
+          <Item ID="190545" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="802399">
+            <Text ID="802399">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800028">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="802403">
+            <Text ID="802403">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800029">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="802408">
+            <Text ID="802408">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800030">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.1.1.1.1.1.1">
+        <Rewards>
+          <Item ID="190545" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="802399">
+            <Text ID="802399">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800028">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="802403">
+            <Text ID="802403">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800029">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="802407">
+            <Text ID="802407">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800028">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+        </Options>
+      </Path>
+    </Paths>
+  </ExpeditionEvent>
+  <ExpeditionEvent ID="803363">
+    <Name ID="803363">
+      <Icon />
+    </Name>
+    <Paths>
+      <Path ID="1.1.1.2.1">
+        <Rewards>
+          <Item ID="190720" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="803372">
+            <Text ID="803372">
               <Icon />
             </Text>
           </Option>
-          <Option ID="800098">
-            <Text ID="800098">
+          <Option ID="803365">
+            <Text ID="803365">
+              <Icon />
+            </Text>
+            <OptionAttribute ID="800031">
+              <Icon>
+                <Filename>data/ui/2kimages/main/icons/icon_threat_diseases_tint.png</Filename>
+              </Icon>
+            </OptionAttribute>
+          </Option>
+          <Option ID="803368">
+            <Text ID="803368">
+              <Icon />
+            </Text>
+          </Option>
+          <Option ID="803371">
+            <Text ID="803371">
               <Icon />
             </Text>
           </Option>
@@ -590,28 +2314,43 @@
       </Path>
     </Paths>
   </ExpeditionEvent>
-  <ExpeditionEvent ID="800005">
-    <Name ID="800005">
+  <ExpeditionEvent ID="800038">
+    <Name ID="800038">
       <Icon />
     </Name>
     <Paths>
-      <Path ID="1.1.2">
+      <Path ID="1.2.1.1.1">
         <Rewards>
-          <Item ID="150038" Amount="1" />
-          <Item ID="600005" Amount="1" />
-          <Item ID="180025" />
+          <Item ID="190007" Amount="1" />
         </Rewards>
         <Options>
-          <Option ID="800110">
-            <Text ID="800110">
+          <Option ID="800092">
+            <Text ID="800092">
+              <Icon />
+            </Text>
+          </Option>
+          <Option ID="800096">
+            <Text ID="800096">
+              <Icon />
+            </Text>
+          </Option>
+        </Options>
+      </Path>
+      <Path ID="1.1.1.1.1">
+        <Rewards>
+          <Item ID="190152" Amount="1" />
+        </Rewards>
+        <Options>
+          <Option ID="800091">
+            <Text ID="800091">
               <Icon />
             </Text>
             <Requirements>
-              <Item ID="1010216" Amount="10" />
+              <Item ID="190105" />
             </Requirements>
           </Option>
-          <Option ID="800087">
-            <Text ID="800087">
+          <Option ID="800094">
+            <Text ID="800094">
               <Icon />
             </Text>
           </Option>
@@ -871,673 +2610,6 @@
                 <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
               </Icon>
             </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-    </Paths>
-  </ExpeditionEvent>
-  <ExpeditionEvent ID="803363">
-    <Name ID="803363">
-      <Icon />
-    </Name>
-    <Paths>
-      <Path ID="1.1.1.2.1">
-        <Rewards>
-          <Item ID="190720" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="803372">
-            <Text ID="803372">
-              <Icon />
-            </Text>
-          </Option>
-          <Option ID="803365">
-            <Text ID="803365">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800031">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_diseases_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="803368">
-            <Text ID="803368">
-              <Icon />
-            </Text>
-          </Option>
-          <Option ID="803371">
-            <Text ID="803371">
-              <Icon />
-            </Text>
-          </Option>
-        </Options>
-      </Path>
-    </Paths>
-  </ExpeditionEvent>
-  <ExpeditionEvent ID="802269">
-    <Name ID="802269">
-      <Icon />
-    </Name>
-    <Paths>
-      <Path ID="1.2.1.1.1">
-        <Rewards>
-          <Item ID="192038" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="802275">
-            <Text ID="802275">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800028">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="802277">
-            <Text ID="802277">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800030">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.1.1">
-        <Rewards>
-          <Item ID="192038" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="802272">
-            <Text ID="802272">
-              <Icon />
-            </Text>
-            <Requirements>
-              <Item>
-                <NeededAttribute ID="9998">
-                  <Icon>
-                    <Filename>data/ui/2kimages/main/icons/icon_expedition_zoologist.png</Filename>
-                  </Icon>
-                </NeededAttribute>
-              </Item>
-            </Requirements>
-          </Option>
-        </Options>
-      </Path>
-    </Paths>
-  </ExpeditionEvent>
-  <ExpeditionEvent ID="802672">
-    <Name ID="802672">
-      <Icon />
-    </Name>
-    <Paths>
-      <Path ID="1.4.1">
-        <Rewards>
-          <Item ID="1010217" Amount="40" />
-        </Rewards>
-        <Options>
-          <Option ID="802678">
-            <Text ID="802678">
-              <Icon />
-            </Text>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.3.1.1.1">
-        <Rewards>
-          <Item ID="192075" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="802677">
-            <Text ID="802677">
-              <Icon />
-            </Text>
-          </Option>
-          <Option ID="802704">
-            <Text ID="145001">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_tick.png</Filename>
-              </Icon>
-            </Text>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.2.1">
-        <Rewards>
-          <Item ID="192075" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="802676">
-            <Text ID="802676">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800004">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.1.1">
-        <Rewards>
-          <Item ID="192075" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="802675">
-            <Text ID="802675">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800029">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-    </Paths>
-  </ExpeditionEvent>
-  <ExpeditionEvent ID="800038">
-    <Name ID="800038">
-      <Icon />
-    </Name>
-    <Paths>
-      <Path ID="1.2.1.1.1">
-        <Rewards>
-          <Item ID="190007" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="800092">
-            <Text ID="800092">
-              <Icon />
-            </Text>
-          </Option>
-          <Option ID="800096">
-            <Text ID="800096">
-              <Icon />
-            </Text>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.1.1.1.1">
-        <Rewards>
-          <Item ID="190152" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="800091">
-            <Text ID="800091">
-              <Icon />
-            </Text>
-            <Requirements>
-              <Item ID="190105" />
-            </Requirements>
-          </Option>
-          <Option ID="800094">
-            <Text ID="800094">
-              <Icon />
-            </Text>
-          </Option>
-        </Options>
-      </Path>
-    </Paths>
-  </ExpeditionEvent>
-  <ExpeditionEvent ID="801664">
-    <Name ID="801664">
-      <Icon />
-    </Name>
-    <Paths>
-      <Path ID="1.2.1.1.1">
-        <Rewards>
-          <Item ID="192430" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="801698">
-            <Text ID="801698">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800030">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="801700">
-            <Text ID="801700">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800033">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.1.1.2.2.2.1">
-        <Rewards>
-          <Item ID="192430" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="801666">
-            <Text ID="801666">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800033">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="801680">
-            <Text ID="801680">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800032">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="801687">
-            <Text ID="801687">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800004">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.1.1.2.2.1.1">
-        <Rewards>
-          <Item ID="192430" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="801666">
-            <Text ID="801666">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800033">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="801680">
-            <Text ID="801680">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800032">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="801683">
-            <Text ID="801683">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800030">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.1.1.2.1">
-        <Rewards>
-          <Item ID="192430" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="801666">
-            <Text ID="801666">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800033">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="801680">
-            <Text ID="801680">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800032">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.1.1.1.2.2.1">
-        <Rewards>
-          <Item ID="192430" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="801666">
-            <Text ID="801666">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800033">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="801670">
-            <Text ID="801670">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800004">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="801675">
-            <Text ID="801675">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800004">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.1.1.1.2.1.1">
-        <Rewards>
-          <Item ID="192430" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="801666">
-            <Text ID="801666">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800033">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="801670">
-            <Text ID="801670">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800004">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="801674">
-            <Text ID="801674">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800032">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.1.1.1.1">
-        <Rewards>
-          <Item ID="192430" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="801666">
-            <Text ID="801666">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800033">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="801670">
-            <Text ID="801670">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800004">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-    </Paths>
-  </ExpeditionEvent>
-  <ExpeditionEvent ID="803072">
-    <Name ID="803072">
-      <Icon />
-    </Name>
-    <Paths>
-      <Path ID="1.1.1.2.1.1.1">
-        <Rewards>
-          <Item ID="190423" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="803074">
-            <Text ID="803074">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800031">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_diseases_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="803083">
-            <Text ID="803083">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800030">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="803092">
-            <Text ID="803092">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800004">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-    </Paths>
-  </ExpeditionEvent>
-  <ExpeditionEvent ID="800336">
-    <Name ID="800336">
-      <Icon />
-    </Name>
-    <Paths>
-      <Path ID="1.3.1">
-        <Rewards>
-          <Item ID="190016" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="800352">
-            <Text ID="800352">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800029">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-    </Paths>
-  </ExpeditionEvent>
-  <ExpeditionEvent ID="802397">
-    <Name ID="802397">
-      <Icon />
-    </Name>
-    <Paths>
-      <Path ID="1.1.1.2.1">
-        <Rewards>
-          <Item ID="192045" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="802399">
-            <Text ID="802399">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800028">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="802404">
-            <Text ID="802404">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800033">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.1.1.1.1.2.1">
-        <Rewards>
-          <Item ID="190545" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="802399">
-            <Text ID="802399">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800028">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="802403">
-            <Text ID="802403">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800029">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="802408">
-            <Text ID="802408">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800030">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.1.1.1.1.1.1">
-        <Rewards>
-          <Item ID="190545" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="802399">
-            <Text ID="802399">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800028">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="802403">
-            <Text ID="802403">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800029">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="802407">
-            <Text ID="802407">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800028">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-    </Paths>
-  </ExpeditionEvent>
-  <ExpeditionEvent ID="802381">
-    <Name ID="802381">
-      <Icon />
-    </Name>
-    <Paths>
-      <Path ID="1.3.1">
-        <Rewards>
-          <Item ID="192044" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="802385">
-            <Text ID="802385">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800030">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.1.1">
-        <Rewards>
-          <Item ID="192044" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="802383">
-            <Text ID="802383">
-              <Icon />
-            </Text>
-            <Requirements>
-              <Item>
-                <NeededAttribute ID="9998">
-                  <Icon>
-                    <Filename>data/ui/2kimages/main/icons/icon_expedition_zoologist.png</Filename>
-                  </Icon>
-                </NeededAttribute>
-              </Item>
-            </Requirements>
           </Option>
         </Options>
       </Path>
@@ -3767,473 +4839,6 @@
       </Path>
     </Paths>
   </ExpeditionEvent>
-  <ExpeditionEvent ID="802710">
-    <Name ID="802710">
-      <Icon />
-    </Name>
-    <Paths>
-      <Path ID="1.1.2.1.1">
-        <Rewards>
-          <Item ID="190423" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="802713">
-            <Text ID="802713">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800033">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="802712">
-            <Text ID="802712">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800031">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_diseases_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="802725">
-            <Text ID="802725">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800028">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.1.1.2.1">
-        <Rewards>
-          <Item ID="190423" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="802713">
-            <Text ID="802713">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800033">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="802712">
-            <Text ID="802712">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800031">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_diseases_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="802719">
-            <Text ID="802719">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800030">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.1.1.1.1">
-        <Rewards>
-          <Item ID="190423" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="802713">
-            <Text ID="802713">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800033">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="802712">
-            <Text ID="802712">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800031">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_diseases_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="802718">
-            <Text ID="802718">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800033">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-    </Paths>
-  </ExpeditionEvent>
-  <ExpeditionEvent ID="800391">
-    <Name ID="800391">
-      <Icon />
-    </Name>
-    <Paths>
-      <Path ID="1">
-        <Rewards>
-          <Item ID="190016" Amount="2" />
-        </Rewards>
-        <Options />
-      </Path>
-    </Paths>
-  </ExpeditionEvent>
-  <ExpeditionEvent ID="802320">
-    <Name ID="802320">
-      <Icon />
-    </Name>
-    <Paths>
-      <Path ID="1.1.1.2.2.2.1">
-        <Rewards>
-          <Item ID="192040" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="802322">
-            <Text ID="802322">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800030">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="802333">
-            <Text ID="802333">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800030">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="802340">
-            <Text ID="802340">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800032">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-    </Paths>
-  </ExpeditionEvent>
-  <ExpeditionEvent ID="801607">
-    <Name ID="801607">
-      <Icon />
-    </Name>
-    <Paths>
-      <Path ID="1.1.1">
-        <Rewards>
-          <Item ID="191151" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="801610">
-            <Text ID="801610">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800032">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.3.1">
-        <Rewards>
-          <Item ID="191151" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="801612">
-            <Text ID="801612">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800029">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.2.1">
-        <Rewards>
-          <Item ID="191151" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="801611">
-            <Text ID="801611">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800030">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-    </Paths>
-  </ExpeditionEvent>
-  <ExpeditionEvent ID="802228">
-    <Name ID="802228">
-      <Icon />
-    </Name>
-    <Paths>
-      <Path ID="1.2.1.2.1">
-        <Rewards>
-          <Item ID="190501" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="802231">
-            <Text ID="802231">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800032">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="802256">
-            <Text ID="802256">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800030">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.2.1.1.1">
-        <Rewards>
-          <Item ID="190547" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="802231">
-            <Text ID="802231">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800032">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="802255">
-            <Text ID="802255">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800032">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.1.1.2.1">
-        <Rewards>
-          <Item ID="192037" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="802231">
-            <Text ID="802231">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800032">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="802230">
-            <Text ID="802230">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800033">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="802236">
-            <Text ID="802236">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800032">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.1.1.1.1">
-        <Rewards>
-          <Item ID="192037" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="802231">
-            <Text ID="802231">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800032">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="802230">
-            <Text ID="802230">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800033">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="802233">
-            <Text ID="802233">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800028">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-    </Paths>
-  </ExpeditionEvent>
-  <ExpeditionEvent ID="800157">
-    <Name ID="800157">
-      <Icon />
-    </Name>
-    <Paths>
-      <Path ID="1.3.2">
-        <Rewards>
-          <Item ID="1010249" Amount="20" />
-          <Item ID="190495" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="800161">
-            <Text ID="800161">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800032">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.3.1">
-        <Rewards>
-          <Item ID="1010249" Amount="20" />
-          <Item ID="190495" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="800161">
-            <Text ID="800161">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800032">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.2.2">
-        <Rewards>
-          <Item ID="1010249" Amount="20" />
-        </Rewards>
-        <Options>
-          <Option ID="800160">
-            <Text ID="800160">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800004">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.2.1">
-        <Rewards>
-          <Item ID="1010249" Amount="20" />
-        </Rewards>
-        <Options>
-          <Option ID="800160">
-            <Text ID="800160">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800004">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.1.1">
-        <Rewards>
-          <Item ID="1010249" Amount="20" />
-          <Item ID="190495" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="800159">
-            <Text ID="800159">
-              <Icon />
-            </Text>
-            <Requirements>
-              <Item>
-                <NeededAttribute ID="3930">
-                  <Icon>
-                    <Filename>data/ui/2kimages/main/icons/icon_expedition_pirate.png</Filename>
-                  </Icon>
-                </NeededAttribute>
-              </Item>
-            </Requirements>
-          </Option>
-        </Options>
-      </Path>
-    </Paths>
-  </ExpeditionEvent>
   <ExpeditionEvent ID="801808">
     <Name ID="801808">
       <Icon />
@@ -6264,337 +6869,6 @@
             <Text ID="801863">
               <Icon />
             </Text>
-          </Option>
-        </Options>
-      </Path>
-    </Paths>
-  </ExpeditionEvent>
-  <ExpeditionEvent ID="802567">
-    <Name ID="802567">
-      <Icon />
-    </Name>
-    <Paths>
-      <Path ID="1.1.1.1.1.1.1">
-        <Rewards>
-          <Item ID="191063" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="802575">
-            <Text ID="802575">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800034">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_crafting_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="802579">
-            <Text ID="802579">
-              <Icon />
-            </Text>
-          </Option>
-          <Option ID="802596">
-            <Text ID="145002">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_untick.png</Filename>
-              </Icon>
-            </Text>
-          </Option>
-          <Option ID="802601">
-            <Text ID="802601">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800030">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="802570">
-            <Text ID="802570">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800030">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="802574">
-            <Text ID="802574">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800030">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="802578">
-            <Text ID="802578">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800030">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/ship_info/icon_accuracy.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-    </Paths>
-  </ExpeditionEvent>
-  <ExpeditionEvent ID="802094">
-    <Name ID="802094">
-      <Icon />
-    </Name>
-    <Paths>
-      <Path ID="1.2.1.2.1">
-        <Rewards>
-          <Item ID="190423" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="802097">
-            <Text ID="802097">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800004">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="802103">
-            <Text ID="802103">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800028">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.2.1.1.1">
-        <Rewards>
-          <Item ID="190423" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="802097">
-            <Text ID="802097">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800004">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="802102">
-            <Text ID="802102">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800034">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_crafting_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.1.1">
-        <Rewards>
-          <Item ID="190423" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="802096">
-            <Text ID="802096">
-              <Icon />
-            </Text>
-            <Requirements>
-              <Item>
-                <NeededAttribute ID="15795">
-                  <Icon />
-                </NeededAttribute>
-              </Item>
-            </Requirements>
-          </Option>
-        </Options>
-      </Path>
-    </Paths>
-  </ExpeditionEvent>
-  <ExpeditionEvent ID="800467">
-    <Name ID="800467">
-      <Icon />
-    </Name>
-    <Paths>
-      <Path ID="1.3.1">
-        <Rewards>
-          <Item ID="190434" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="800472">
-            <Text ID="800472">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800028">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.2.1">
-        <Rewards>
-          <Item ID="190434" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="800471">
-            <Text ID="800471">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800029">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.1.1">
-        <Rewards>
-          <Item ID="190434" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="800470">
-            <Text ID="800470">
-              <Icon />
-            </Text>
-            <Requirements>
-              <Item ID="1010248" />
-            </Requirements>
-          </Option>
-        </Options>
-      </Path>
-    </Paths>
-  </ExpeditionEvent>
-  <ExpeditionEvent ID="801587">
-    <Name ID="801587">
-      <Icon />
-    </Name>
-    <Paths>
-      <Path ID="1.2.1.2.1">
-        <Rewards>
-          <Item ID="190527" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="801590">
-            <Text ID="801590">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800034">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_crafting_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="801596">
-            <Text ID="801596">
-              <Icon />
-            </Text>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.2.1.1.1.2.1">
-        <Rewards>
-          <Item ID="190489" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="801590">
-            <Text ID="801590">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800034">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_crafting_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="801595">
-            <Text ID="801595">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800028">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="801600">
-            <Text ID="801600">
-              <Icon />
-            </Text>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.2.1.1.1.1.1">
-        <Rewards>
-          <Item ID="190551" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="801590">
-            <Text ID="801590">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800034">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_threat_crafting_tint.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="801595">
-            <Text ID="801595">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800028">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-          <Option ID="801599">
-            <Text ID="801599">
-              <Icon />
-            </Text>
-            <OptionAttribute ID="800028">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_church_2D.png</Filename>
-              </Icon>
-            </OptionAttribute>
-          </Option>
-        </Options>
-      </Path>
-      <Path ID="1.1.1">
-        <Rewards>
-          <Item ID="191150" Amount="1" />
-        </Rewards>
-        <Options>
-          <Option ID="801589">
-            <Text ID="801589">
-              <Icon />
-            </Text>
-            <Requirements>
-              <Item>
-                <NeededAttribute ID="190616">
-                  <Icon>
-                    <Filename>data/ui/2kimages/main/icons/icon_expedition_diver.png</Filename>
-                  </Icon>
-                </NeededAttribute>
-              </Item>
-            </Requirements>
           </Option>
         </Options>
       </Path>

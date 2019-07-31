@@ -287,6 +287,10 @@
             <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.DivingBellUpgrades, Converter={StaticResource VisibilityConverter}}">
               <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.DivingBellUpgrades}" />
             </Grid>
+            <!--  PierUpgrade  -->
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.PierUpgrade, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.PierUpgrade}" />
+            </Grid>
             <!--  Expedition  -->
             <StackPanel Visibility="{Binding Path=SelectedAsset.ExpeditionAttributes, Converter={StaticResource VisibilityConverter}}">
               <Border
@@ -487,6 +491,36 @@
           </Button>
         </Grid>
       </Border>
+      <Image
+        Height="28"
+        Margin="0,2,2,0"
+        HorizontalAlignment="Right"
+        VerticalAlignment="Top"
+        Source="pack://application:,,,/AssetViewer;component/Resources/data/ui/2kimages/main/icons/icon_threat_crafting_tint.png"
+        ToolTipService.InitialShowDelay="0"
+        ToolTipService.ShowDuration="60000"
+        Visibility="{Binding Path=SelectedAsset.CraftableItemUpgrades, Converter={StaticResource VisibilityConverter}}">
+        <Image.ToolTip>
+          <ToolTip Background="#FF2A2C27" DataContext="{Binding PlacementTarget.DataContext, RelativeSource={RelativeSource Self}}" Placement="Left">
+            <ItemsControl ItemsSource="{Binding SelectedAsset.CraftableItemUpgrades}" >
+              <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                  <Grid>
+                    <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="Auto"/>
+                      <ColumnDefinition/>
+                      <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Height="22" Source="{Binding Text.Icon.Filename}"/>
+                    <TextBlock Grid.Column="1" Text="{Binding Text.CurrentLang}" Foreground="#FFFFE4AD" Margin="5 0" VerticalAlignment="Center"/>
+                    <TextBlock Grid.Column="2" Text="{Binding Value}" Foreground="#FFFFE4AD" VerticalAlignment="Center"/>
+                  </Grid>
+                </DataTemplate>
+              </ItemsControl.ItemTemplate>
+            </ItemsControl>
+          </ToolTip>
+        </Image.ToolTip>
+      </Image>
     </Grid>
   </ScrollViewer>
 </UserControl>

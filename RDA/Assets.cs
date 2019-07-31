@@ -169,6 +169,12 @@ namespace RDA {
       KeyToIdDict.Add("BlockHostileTakeover", "15801");
       KeyToIdDict.Add("MaintainanceUpgrade", "2320");
       KeyToIdDict.Add("MoralePowerUpgrade", "15231");
+      //Update 04
+      KeyToIdDict.Add("MinPickupTimeUpgrade", "22219");  
+
+      KeyToIdDict.Add("MaxPickupTimeUpgrade", "22219");  
+      KeyToIdDict.Add("ScrapAmountLevelUpgrade", "22220");  
+      //
       KeyToIdDict.Add("ConstructionCostInPercent", "12679");
       KeyToIdDict.Add("ConstructionTimeInPercent", "12678");
       KeyToIdDict.Add("PassiveTradeGoodGenUpgrade", "12920");

@@ -120,7 +120,7 @@ namespace AssetViewer.Controls {
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SelectedAsset"));
     }
     private void UserControl_Unloaded(object sender, RoutedEventArgs e) {
-      ((MainWindow)Application.Current.MainWindow).ComboBoxLanguage.SelectionChanged -= this.ComboBoxLanguage_SelectionChanged;
+      if (Application.Current.MainWindow is MainWindow main)main.ComboBoxLanguage.SelectionChanged -= this.ComboBoxLanguage_SelectionChanged;
     }
 
     #endregion Methods

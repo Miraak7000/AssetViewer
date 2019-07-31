@@ -78,6 +78,7 @@ namespace RDA.Templates {
     public List<Upgrade> PassiveTradeGoodGenUpgrades { get; private set; }
     public List<Upgrade> DivingBellUpgrades { get; private set; }
     public List<Upgrade> CraftableItemUpgrades { get; private set; }
+    public List<Upgrade> PierUpgrade { get; private set; }
 
     #endregion Properties
 
@@ -247,6 +248,9 @@ namespace RDA.Templates {
 
           case "CraftableItem":
             this.ProcessElement_CraftableItem(element);
+            break;
+          case "PierUpgrade":
+            this.ProcessElement_PierUpgrade(element);
             break;
 
           default:
@@ -726,7 +730,15 @@ namespace RDA.Templates {
         }
       }
     }
-    private SourceWithDetailsList FindSources(String id, Details mainDetails = default, SourceWithDetailsList inResult = default) {
+    private void ProcessElement_PierUpgrade(XElement element) {
+      if (element.HasElements) {
+        this.PierUpgrade = new List<Upgrade>();
+        foreach (var item in element.Elements()) {
+          this.PierUpgrade.Add(new Upgrade(item));
+        }
+      }
+    }
+      private SourceWithDetailsList FindSources(String id, Details mainDetails = default, SourceWithDetailsList inResult = default) {
       mainDetails = (mainDetails == default) ? new Details() : mainDetails;
       mainDetails.PreviousIDs.Add(id);
       var mainResult = inResult ?? new SourceWithDetailsList();
@@ -776,6 +788,7 @@ namespace RDA.Templates {
           }
 
           switch (element.Element("Template").Value) {
+            // ignore
             case "AssetPool":
             case "TutorialQuest":
             case "SettlementRightsFeature":
@@ -785,9 +798,78 @@ namespace RDA.Templates {
             case "HarbourOfficeBuff":
             case "MonumentEvent":
             case "MainQuest":
-              // ignore
-              break;
+            case "ObjectmenuMilitary":
+            case "WarShip":
+            case "ExpeditionFeature":
+            case "ConstructionCategory":
+            case "FarmBuilding":
+            case "FactoryBuilding7":
+            case "FestivalBuff":
+            case "VehicleItem":
+            case "TownhallItem":
+            case "ItemSpecialAction":
+            case "PopulationLevel7":
+            case "NeedsSatisfactionNews":
+            case "ProductFilter":
+            case "PlayerCounterContextPool":
+            case "OrnamentalBuilding":
+            case "CultureModule":
+            case "ResidenceBuilding7":
+            case "FreeAreaBuilding":
+            case "HeavyFreeAreaBuilding":
+            case "SlotFactoryBuilding7":
+            case "HeavyFactoryBuilding":
+            case "Farmfield":
+            case "OilPumpBuilding":
+            case "PublicServiceBuilding":
+            case "CityInstitutionBuilding":
+            case "Market":
+            case "Warehouse":
+            case "CultureBuilding":
+            case "Monument":
+            case "PowerplantBuilding":
+            case "Street":
+            case "Guildhouse":
+            case "HarborOffice":
+            case "GuildhouseBuff":
+            case "TriggerQuest":
+            case "TradeRouteFeature":
+            case "HarborWarehouse7":
+            case "HarborDepot":
+            case "Shipyard":
+            case "HarborBuildingAttacker":
+            case "RepairCrane":
+            case "HarborLandingStage7":
+            case "VisitorPier":
+            case "HarborWarehouseStrategic":
+            case "WorkforceConnector":
+            case "Headquarter":
+            case "QuestVehicleTrade":
+            case "DifficultyBalancing":
+            case "RewardConfig":
+            case "ResourcePool":
+            case "UplayAction":
+            case "NegotiationPopup":
+            case "NewspaperArticle":
+            case "WorkforceNewsTracker":
+            case "InfluenceTitleBuff":
+            case "WorkforceMenu":
+            case "TownhallBuff":
+            case "AudioText":
+            case "TradeShip":
+            case "TriggerCampaign":
+            case "ActiveItem":
+            case "QuestVehicle":
+            case "Achievement":
+            case "EventTradeShip":
+            case "Audio":
+            case "WorkforceSliderNewsTracker":
 
+            //Todo?
+            case "Trigger":
+            case "PassiveTradeFeature":
+              break;
+             //
             case "Expedition":
               if (!element.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
                 if (Details.Items.Count == 0) {
@@ -830,11 +912,35 @@ namespace RDA.Templates {
             case "CollectablePicturePuzzle":
             case "MonumentEventReward":
             case "A7_QuestSmuggler":
+            case "A7_QuestDivingBellGeneric":
+            case "A7_QuestDivingBellSonar":
               if (!element.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
                 result.AddSourceAsset(element, new HashSet<XElement> { element });
               }
               break;
+            case "DivingBellShip":
+              if (element.Descendants("DivingBell").FirstOrDefault().Descendants("ReplacementPool").Any(rp => rp.Value == id)) {
+                result.AddSourceAsset(element.GetProxyElement("Dive"), new HashSet<XElement> { element.GetProxyElement("Dive") });
+              }
+              break;
+            case "Profile_3rdParty_ItemCrafter":
+              var craftable = element.Descendants("CraftableItems").FirstOrDefault().Descendants("Item").FirstOrDefault(item => item?.Value == id) != null;
+              if (craftable) {
+                result.AddSourceAsset(element.GetProxyElement("Crafting"), new HashSet<XElement> { element.GetProxyElement("Crafting") });
+              }
+              else {
+                var progressions = GetProgession(element, id);
+                if (progressions != null) {
+                  foreach (var item in progressions) {
+                    result.AddSourceAsset(element.GetProxyElement("Harbor"), new HashSet<XElement> { element.GetProxyElement(item) });
+                  }
 
+                  break;
+                }
+                else {
+                }
+              }
+              break;
             case "TourismFeature":
               var pool = element.Descendants("Pool").FirstOrDefault(p => p.Value == id)?.Parent;
               if (pool != null) {

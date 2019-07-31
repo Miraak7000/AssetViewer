@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ActiveItem>
-  <Asset ID="191410" Release="Release" RarityType="Uncommon">
-    <Name>PuckleGunItem</Name>
-    <Text ID="191410">
+  <Asset ID="191494" Release="Release" RarityType="Common">
+    <Name>ClearIncidentItem</Name>
+    <Text ID="191494">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_advanced_weaponry.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/icon_fire_house.png</Filename>
       </Icon>
     </Text>
-    <Rarity ID="118003">
+    <Rarity ID="118002">
       <Icon />
     </Rarity>
     <ItemType>Common</ItemType>
@@ -20,10 +20,12 @@
     </Allocation>
     <ItemActionUpgrades>
       <Upgrade>
-        <Text ID="20072" FontStyle="16">
-          <Icon />
+        <Text ID="2423" FontStyle="16">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
+          </Icon>
         </Text>
-        <Value></Value>
+        <Value>00:05</Value>
       </Upgrade>
       <Upgrade>
         <Text ID="2424" FontStyle="16">
@@ -31,10 +33,10 @@
             <Filename>data/ui/2kimages/main/icons/icon_wait_till_full.png</Filename>
           </Icon>
         </Text>
-        <Value>00:30</Value>
+        <Value>00:15</Value>
       </Upgrade>
     </ItemActionUpgrades>
-    <TradePrice />
+    <TradePrice>250</TradePrice>
     <Sources />
   </Asset>
   <Asset ID="6000033" Release="Release" RarityType="Common">
@@ -77,95 +79,6 @@
       </Text>
     </Allocation>
     <TradePrice>250</TradePrice>
-    <Sources />
-  </Asset>
-  <Asset ID="191494" Release="Release" RarityType="Common">
-    <Name>ClearIncidentItem</Name>
-    <Text ID="191494">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_fire_house.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="Ship">
-      <Text ID="2342">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemActionUpgrades>
-      <Upgrade>
-        <Text ID="2423" FontStyle="16">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
-          </Icon>
-        </Text>
-        <Value>00:05</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="2424" FontStyle="16">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_wait_till_full.png</Filename>
-          </Icon>
-        </Text>
-        <Value>00:15</Value>
-      </Upgrade>
-    </ItemActionUpgrades>
-    <TradePrice>250</TradePrice>
-    <Sources />
-  </Asset>
-  <Asset ID="190814" Release="Release" RarityType="Uncommon">
-    <Name>WhiteFlagItem</Name>
-    <Text ID="190814">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_white_flag.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118003">
-      <Icon />
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="Ship">
-      <Text ID="2342">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemActionUpgrades>
-      <Upgrade>
-        <Text ID="20072" FontStyle="16">
-          <Icon />
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="19538">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_claim_island.png</Filename>
-          </Icon>
-          <AdditionalInformation ID="19487" FontStyle="16">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_smiley.png</Filename>
-            </Icon>
-          </AdditionalInformation>
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="2424" FontStyle="16">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_wait_till_full.png</Filename>
-          </Icon>
-        </Text>
-        <Value>00:30</Value>
-      </Upgrade>
-    </ItemActionUpgrades>
-    <TradePrice />
     <Sources />
   </Asset>
   <Asset ID="191509" Release="Release" RarityType="Uncommon">
@@ -277,6 +190,115 @@
     <TradePrice />
     <Sources />
   </Asset>
+  <Asset ID="190814" Release="Release" RarityType="Uncommon">
+    <Name>WhiteFlagItem</Name>
+    <Text ID="190814">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_white_flag.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118003">
+      <Icon />
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ship">
+      <Text ID="2342">
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <ItemActionUpgrades>
+      <Upgrade>
+        <Text ID="20072" FontStyle="16">
+          <Icon />
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="19538">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_claim_island.png</Filename>
+          </Icon>
+          <AdditionalInformation ID="19487" FontStyle="16">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_smiley.png</Filename>
+            </Icon>
+          </AdditionalInformation>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2424" FontStyle="16">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_wait_till_full.png</Filename>
+          </Icon>
+        </Text>
+        <Value>00:30</Value>
+      </Upgrade>
+    </ItemActionUpgrades>
+    <TradePrice />
+    <Sources />
+  </Asset>
+  <Asset ID="193396" Release="Update 04" RarityType="Epic">
+    <Name>TestSonar</Name>
+    <Text ID="193396">
+      <Icon>
+        <Filename>data/ui/2kimages/main/icons/icon_wifi.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118005">
+      <Icon />
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="DivingVessel">
+      <Text ID="112084">
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_diving_vessel.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <ItemActionUpgrades>
+      <Upgrade>
+        <Text ID="20072" FontStyle="16">
+          <Icon />
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2423" FontStyle="16">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
+          </Icon>
+        </Text>
+        <Value>01:10:49</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2424" FontStyle="16">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_wait_till_full.png</Filename>
+          </Icon>
+        </Text>
+        <Value>00:10</Value>
+      </Upgrade>
+    </ItemActionUpgrades>
+    <TradePrice />
+    <Sources>
+      <Source ID="113457">
+        <Name>SL112_NewPages3</Name>
+        <Text ID="1524200647">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_01.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="113457">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+  </Asset>
   <Asset ID="190988" Release="Release" RarityType="Uncommon">
     <Name>PirateFlag</Name>
     <Text ID="190988">
@@ -325,6 +347,223 @@
       </Upgrade>
     </ItemActionUpgrades>
     <TradePrice />
+    <Sources />
+  </Asset>
+  <Asset ID="112551" Release="Update 04" RarityType="Rare">
+    <Name>Fessenden Oscillator</Name>
+    <Text ID="112551">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/machine_items/item_sonar_01.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118004">
+      <Icon />
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="DivingVessel">
+      <Text ID="112084">
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_diving_vessel.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Text ID="800033">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <ItemActionUpgrades>
+      <Upgrade>
+        <Text ID="20072" FontStyle="16">
+          <Icon />
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="20621">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
+          </Icon>
+        </Text>
+        <Value>0</Value>
+      </Upgrade>
+    </ItemActionUpgrades>
+    <CraftableItemUpgrades>
+      <Upgrade>
+        <Text ID="1010219">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_steel.png</Filename>
+          </Icon>
+        </Text>
+        <Value>5</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010228">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_quartz_sand.png</Filename>
+          </Icon>
+        </Text>
+        <Value>5</Value>
+      </Upgrade>
+    </CraftableItemUpgrades>
+    <TradePrice>20000</TradePrice>
+    <Info ID="112582">
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="112250">
+        <Name>SL113_Innovation</Name>
+        <Text ID="2126719323">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_06.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="112250">
+            <Icon />
+          </Text>
+          <Text ID="112967">
+            <Icon />
+          </Text>
+          <Text ID="113006">
+            <Icon />
+          </Text>
+          <Text ID="113006">
+            <Icon />
+          </Text>
+          <Text ID="113006">
+            <Icon />
+          </Text>
+          <Text ID="113006">
+            <Icon />
+          </Text>
+          <Text ID="113010">
+            <Icon />
+          </Text>
+          <Text ID="113010">
+            <Icon />
+          </Text>
+          <Text ID="113010">
+            <Icon />
+          </Text>
+          <Text ID="113010">
+            <Icon />
+          </Text>
+          <Text ID="113014">
+            <Icon />
+          </Text>
+          <Text ID="113014">
+            <Icon />
+          </Text>
+          <Text ID="113014">
+            <Icon />
+          </Text>
+          <Text ID="113014">
+            <Icon />
+          </Text>
+          <Text ID="112974">
+            <Icon />
+          </Text>
+          <Text ID="112975">
+            <Icon />
+          </Text>
+          <Text ID="112977">
+            <Icon />
+          </Text>
+          <Text ID="112980">
+            <Icon />
+          </Text>
+          <Text ID="112981">
+            <Icon />
+          </Text>
+          <Text ID="112983">
+            <Icon />
+          </Text>
+          <Text ID="112984">
+            <Icon />
+          </Text>
+          <Text ID="112985">
+            <Icon />
+          </Text>
+          <Text ID="112986">
+            <Icon />
+          </Text>
+          <Text ID="112986">
+            <Icon />
+          </Text>
+          <Text ID="112987">
+            <Icon />
+          </Text>
+          <Text ID="112987">
+            <Icon />
+          </Text>
+          <Text ID="112988">
+            <Icon />
+          </Text>
+          <Text ID="112989">
+            <Icon />
+          </Text>
+          <Text ID="113006">
+            <Icon />
+          </Text>
+          <Text ID="113010">
+            <Icon />
+          </Text>
+          <Text ID="113014">
+            <Icon />
+          </Text>
+          <Text ID="112973">
+            <Icon />
+          </Text>
+          <Text ID="112978">
+            <Icon />
+          </Text>
+          <Text ID="112979">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="77">
+        <Name>Third_party_06 (Old Nate)</Name>
+        <Text ID="-1255403405">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_06.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="77">
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/3rd_party_06.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="193478" Release="Update 04" RarityType="Common">
+    <Name>Horadric Cube</Name>
+    <Text ID="193478">
+      <Icon>
+        <Filename>data/ui/2kimages/main/icons/icon_resource_worker_2.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ship">
+      <Text ID="2342">
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <TradePrice>5000</TradePrice>
     <Sources />
   </Asset>
   <Asset ID="190989" Release="Release" RarityType="Uncommon">
@@ -569,6 +808,59 @@
     <TradePrice>37500</TradePrice>
     <Sources />
   </Asset>
+  <Asset ID="190997" Release="Release" RarityType="Uncommon">
+    <Name>Snare</Name>
+    <Text ID="190990">
+      <Icon>
+        <Filename>data/ui/2kimages/main/icons/icon_expedition_hypnotist.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118003">
+      <Icon />
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ship">
+      <Text ID="2342">
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <ItemActionUpgrades>
+      <Upgrade>
+        <Text ID="20072" FontStyle="16">
+          <Icon />
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2339">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-50%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2423" FontStyle="16">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
+          </Icon>
+        </Text>
+        <Value>00:30</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2424" FontStyle="16">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_wait_till_full.png</Filename>
+          </Icon>
+        </Text>
+        <Value>00:30</Value>
+      </Upgrade>
+    </ItemActionUpgrades>
+    <TradePrice />
+    <Sources />
+  </Asset>
   <Asset ID="192110" Release="Release" RarityType="Legendary">
     <Name>Ship Repair Toolset</Name>
     <Text ID="192110">
@@ -648,11 +940,11 @@
     </Info>
     <Sources />
   </Asset>
-  <Asset ID="190997" Release="Release" RarityType="Uncommon">
-    <Name>Snare</Name>
-    <Text ID="190990">
+  <Asset ID="191410" Release="Release" RarityType="Uncommon">
+    <Name>PuckleGunItem</Name>
+    <Text ID="191410">
       <Icon>
-        <Filename>data/ui/2kimages/main/icons/icon_expedition_hypnotist.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/icon_advanced_weaponry.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="118003">
@@ -674,22 +966,6 @@
         <Value></Value>
       </Upgrade>
       <Upgrade>
-        <Text ID="2339">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-50%</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="2423" FontStyle="16">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
-          </Icon>
-        </Text>
-        <Value>00:30</Value>
-      </Upgrade>
-      <Upgrade>
         <Text ID="2424" FontStyle="16">
           <Icon>
             <Filename>data/ui/2kimages/main/icons/icon_wait_till_full.png</Filename>
@@ -700,6 +976,342 @@
     </ItemActionUpgrades>
     <TradePrice />
     <Sources />
+  </Asset>
+  <Asset ID="192173" Release="Release" RarityType="Epic">
+    <Name>Pirate Flag</Name>
+    <Text ID="192173">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_pirate_flag.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118005">
+      <Icon />
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Warship">
+      <Text ID="12812">
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Text ID="800032">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+          </Icon>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <ItemActionUpgrades>
+      <Upgrade>
+        <Text ID="20071" FontStyle="16">
+          <Icon />
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="17392">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
+          </Icon>
+          <AdditionalInformation ID="17393" FontStyle="16">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_smiley.png</Filename>
+            </Icon>
+          </AdditionalInformation>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2423" FontStyle="16">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
+          </Icon>
+        </Text>
+        <Value>00:05:00</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2424" FontStyle="16">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_wait_till_full.png</Filename>
+          </Icon>
+        </Text>
+        <Value>00:20:00</Value>
+      </Upgrade>
+    </ItemActionUpgrades>
+    <TradePrice>63875</TradePrice>
+    <Info ID="19793">
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="112084">
+        <Name>Diving Vessel</Name>
+        <Text ID="113420">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="113420">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="152509">
+        <Name>Life Of Destruction - Alonso Graves - DISABLED</Name>
+        <Text ID="-1854513861">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_08.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="152509">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="152174">
+        <Name>Destroy Main arc 4 - Anne Harlow</Name>
+        <Text ID="-1609246374">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="152174">
+            <Icon />
+          </Text>
+          <Text ID="152169">
+            <Icon />
+          </Text>
+          <Text ID="152238">
+            <Icon />
+          </Text>
+          <Text ID="152244">
+            <Icon />
+          </Text>
+          <Text ID="152207">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800103">
+        <Name>Archeological Expedition Easy</Name>
+        <Text ID="11629">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-353998529">
+            <Icon />
+          </Text>
+          <Text ID="-353998530">
+            <Icon />
+          </Text>
+          <Text ID="1534142650">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800214">
+        <Name>Zoological Expedition Easy</Name>
+        <Text ID="11630">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-353998529">
+            <Icon />
+          </Text>
+          <Text ID="-353998530">
+            <Icon />
+          </Text>
+          <Text ID="1534142650">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800399">
+        <Name>Rescue Mission Easy</Name>
+        <Text ID="11631">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-353998529">
+            <Icon />
+          </Text>
+          <Text ID="-353998530">
+            <Icon />
+          </Text>
+          <Text ID="1534142650">
+            <Icon />
+          </Text>
+          <Text ID="-5">
+            <Icon />
+          </Text>
+          <Text ID="-5">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800403">
+        <Name>Pirate Hunt Easy</Name>
+        <Text ID="11632">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-353998529">
+            <Icon />
+          </Text>
+          <Text ID="-353998530">
+            <Icon />
+          </Text>
+          <Text ID="1534142650">
+            <Icon />
+          </Text>
+          <Text ID="-5">
+            <Icon />
+          </Text>
+          <Text ID="-5">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800777">
+        <Name>Discovery South America Sandbox</Name>
+        <Text ID="11634">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-353998529">
+            <Icon />
+          </Text>
+          <Text ID="-353998530">
+            <Icon />
+          </Text>
+          <Text ID="1534142650">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="803519">
+        <Name>Discovery Sunken Treasures Multiplayer</Name>
+        <Text ID="22262">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-353998529">
+            <Icon />
+          </Text>
+          <Text ID="-353998530">
+            <Icon />
+          </Text>
+          <Text ID="1534142650">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="73">
+        <Name>Third_party_03 (Anne Harlow)</Name>
+        <Text ID="-2142036734">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="76">
+        <Name>Third_party_04 (La Fortune)</Name>
+        <Text ID="1205039976">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="73">
+        <Name>Third_party_03 (Anne Harlow)</Name>
+        <Text ID="1514529701">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="73">
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="76">
+        <Name>Third_party_04 (La Fortune)</Name>
+        <Text ID="1638667151">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="76">
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="152928">
+        <Name>Pickup Delaying Death - Jean LaFortune</Name>
+        <Text ID="1063198249">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="152928">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
   </Asset>
   <Asset ID="192172" Release="Release" RarityType="Legendary">
     <Name>Pirate Captain Flag</Name>
@@ -787,8 +1399,21 @@
       <Icon />
     </Info>
     <Sources>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
+      <Source ID="112084">
+        <Name>Diving Vessel</Name>
+        <Text ID="113420">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="113420">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800401">
+        <Name>Rescue Mission Hard</Name>
         <Text ID="11631">
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
@@ -798,107 +1423,17 @@
           <Text ID="-5">
             <Icon />
           </Text>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
-            <Icon />
-          </Text>
         </Details>
       </Source>
-      <Source ID="800103">
-        <Name>Archeological Expedition Easy</Name>
-        <Text ID="11629">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800214">
-        <Name>Zoological Expedition Easy</Name>
-        <Text ID="11630">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800403">
-        <Name>Pirate Hunt Easy</Name>
+      <Source ID="800402">
+        <Name>Pirate Hunt Hard</Name>
         <Text ID="11632">
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
-            <Icon />
-          </Text>
           <Text ID="-5">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800777">
-        <Name>Discovery South America Sandbox</Name>
-        <Text ID="11634">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
             <Icon />
           </Text>
         </Details>
@@ -970,714 +1505,6 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="191832" Release="Release" RarityType="Uncommon">
-    <Name>Speed Turbine</Name>
-    <Text ID="191832">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_generator_3.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118003">
-      <Icon />
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="SteamShip">
-      <Text ID="2344">
-        <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_ship_tier03.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Text ID="800033">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-          </Icon>
-        </Text>
-        <Value>20</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
-    <ItemActionUpgrades>
-      <Upgrade>
-        <Text ID="20071" FontStyle="16">
-          <Icon />
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="2339">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+20%</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="2320">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+30%</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="2423" FontStyle="16">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
-          </Icon>
-        </Text>
-        <Value>00:30</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="2424" FontStyle="16">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_wait_till_full.png</Filename>
-          </Icon>
-        </Text>
-        <Value>00:45</Value>
-      </Upgrade>
-    </ItemActionUpgrades>
-    <TradePrice>6250</TradePrice>
-    <Info ID="19692">
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="800103">
-        <Name>Archeological Expedition Easy</Name>
-        <Text ID="11629">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="-353998529">
-            <Icon />
-          </Text>
-          <Text ID="-353998530">
-            <Icon />
-          </Text>
-          <Text ID="1534142650">
-            <Icon />
-          </Text>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800214">
-        <Name>Zoological Expedition Easy</Name>
-        <Text ID="11630">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="-353998529">
-            <Icon />
-          </Text>
-          <Text ID="-353998530">
-            <Icon />
-          </Text>
-          <Text ID="1534142650">
-            <Icon />
-          </Text>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
-        <Text ID="11631">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="-353998529">
-            <Icon />
-          </Text>
-          <Text ID="-353998530">
-            <Icon />
-          </Text>
-          <Text ID="1534142650">
-            <Icon />
-          </Text>
-          <Text ID="-5">
-            <Icon />
-          </Text>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800403">
-        <Name>Pirate Hunt Easy</Name>
-        <Text ID="11632">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="-353998529">
-            <Icon />
-          </Text>
-          <Text ID="-353998530">
-            <Icon />
-          </Text>
-          <Text ID="1534142650">
-            <Icon />
-          </Text>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
-            <Icon />
-          </Text>
-          <Text ID="-5">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800777">
-        <Name>Discovery South America Sandbox</Name>
-        <Text ID="11634">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="-353998529">
-            <Icon />
-          </Text>
-          <Text ID="-353998530">
-            <Icon />
-          </Text>
-          <Text ID="1534142650">
-            <Icon />
-          </Text>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="45">
-        <Name>Third_party_02 (Archibald Blake)</Name>
-        <Text ID="-360802622">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="-6">
-            <Icon />
-          </Text>
-          <Text ID="-7">
-            <Icon />
-          </Text>
-          <Text ID="-8">
-            <Icon />
-          </Text>
-          <Text ID="-9">
-            <Icon />
-          </Text>
-          <Text ID="-10">
-            <Icon />
-          </Text>
-          <Text ID="-11">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="29">
-        <Name>Third_party_05 (Isabel Sarmento)</Name>
-        <Text ID="351925916">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="-6">
-            <Icon />
-          </Text>
-          <Text ID="-7">
-            <Icon />
-          </Text>
-          <Text ID="-8">
-            <Icon />
-          </Text>
-          <Text ID="-9">
-            <Icon />
-          </Text>
-          <Text ID="-10">
-            <Icon />
-          </Text>
-          <Text ID="-11">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="47">
-        <Name>Second_ai_01 (Bente Jorgensen)</Name>
-        <Text ID="6977702">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="47">
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="150075">
-        <Name>Deliver Potatoes - Jorgensen</Name>
-        <Text ID="-1344968251">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="150075">
-            <Icon />
-          </Text>
-          <Text ID="150077">
-            <Icon />
-          </Text>
-          <Text ID="150119">
-            <Icon />
-          </Text>
-          <Text ID="150143">
-            <Icon />
-          </Text>
-          <Text ID="150144">
-            <Icon />
-          </Text>
-          <Text ID="150178">
-            <Icon />
-          </Text>
-          <Text ID="150179">
-            <Icon />
-          </Text>
-          <Text ID="150180">
-            <Icon />
-          </Text>
-          <Text ID="150083">
-            <Icon />
-          </Text>
-          <Text ID="150098">
-            <Icon />
-          </Text>
-          <Text ID="150159">
-            <Icon />
-          </Text>
-          <Text ID="150207">
-            <Icon />
-          </Text>
-          <Text ID="150480">
-            <Icon />
-          </Text>
-          <Text ID="152492">
-            <Icon />
-          </Text>
-          <Text ID="152491">
-            <Icon />
-          </Text>
-          <Text ID="152487">
-            <Icon />
-          </Text>
-          <Text ID="152623">
-            <Icon />
-          </Text>
-          <Text ID="152635">
-            <Icon />
-          </Text>
-          <Text ID="152616">
-            <Icon />
-          </Text>
-          <Text ID="152631">
-            <Icon />
-          </Text>
-          <Text ID="152636">
-            <Icon />
-          </Text>
-          <Text ID="152759">
-            <Icon />
-          </Text>
-          <Text ID="152760">
-            <Icon />
-          </Text>
-          <Text ID="152598">
-            <Icon />
-          </Text>
-          <Text ID="152611">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="84">
-        <Name>Second_ai_09 (Vicente Silva)</Name>
-        <Text ID="-1608301314">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="84">
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="151138">
-        <Name>Deliver Bread - Vicente</Name>
-        <Text ID="902886679">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="151138">
-            <Icon />
-          </Text>
-          <Text ID="151139">
-            <Icon />
-          </Text>
-          <Text ID="151140">
-            <Icon />
-          </Text>
-          <Text ID="151141">
-            <Icon />
-          </Text>
-          <Text ID="151142">
-            <Icon />
-          </Text>
-          <Text ID="151152">
-            <Icon />
-          </Text>
-          <Text ID="152419">
-            <Icon />
-          </Text>
-          <Text ID="152421">
-            <Icon />
-          </Text>
-          <Text ID="152422">
-            <Icon />
-          </Text>
-          <Text ID="152423">
-            <Icon />
-          </Text>
-          <Text ID="152425">
-            <Icon />
-          </Text>
-          <Text ID="152426">
-            <Icon />
-          </Text>
-          <Text ID="152427">
-            <Icon />
-          </Text>
-          <Text ID="152428">
-            <Icon />
-          </Text>
-          <Text ID="152435">
-            <Icon />
-          </Text>
-          <Text ID="151146">
-            <Icon />
-          </Text>
-          <Text ID="151149">
-            <Icon />
-          </Text>
-          <Text ID="151154">
-            <Icon />
-          </Text>
-          <Text ID="152038">
-            <Icon />
-          </Text>
-          <Text ID="152569">
-            <Icon />
-          </Text>
-          <Text ID="152046">
-            <Icon />
-          </Text>
-          <Text ID="152047">
-            <Icon />
-          </Text>
-          <Text ID="152048">
-            <Icon />
-          </Text>
-          <Text ID="152049">
-            <Icon />
-          </Text>
-          <Text ID="151155">
-            <Icon />
-          </Text>
-          <Text ID="152039">
-            <Icon />
-          </Text>
-          <Text ID="152418">
-            <Icon />
-          </Text>
-          <Text ID="152420">
-            <Icon />
-          </Text>
-          <Text ID="152424">
-            <Icon />
-          </Text>
-          <Text ID="151153">
-            <Icon />
-          </Text>
-          <Text ID="152045">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="150115">
-        <Name>Close But No Cigar - Archibald Blake</Name>
-        <Text ID="15279892">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="150115">
-            <Icon />
-          </Text>
-          <Text ID="150116">
-            <Icon />
-          </Text>
-          <Text ID="150141">
-            <Icon />
-          </Text>
-          <Text ID="150168">
-            <Icon />
-          </Text>
-          <Text ID="150169">
-            <Icon />
-          </Text>
-          <Text ID="150170">
-            <Icon />
-          </Text>
-          <Text ID="150127">
-            <Icon />
-          </Text>
-          <Text ID="150226">
-            <Icon />
-          </Text>
-          <Text ID="150152">
-            <Icon />
-          </Text>
-          <Text ID="150224">
-            <Icon />
-          </Text>
-          <Text ID="150237">
-            <Icon />
-          </Text>
-          <Text ID="150238">
-            <Icon />
-          </Text>
-          <Text ID="152199">
-            <Icon />
-          </Text>
-          <Text ID="150225">
-            <Icon />
-          </Text>
-          <Text ID="152213">
-            <Icon />
-          </Text>
-          <Text ID="150241">
-            <Icon />
-          </Text>
-          <Text ID="152581">
-            <Icon />
-          </Text>
-          <Text ID="150190">
-            <Icon />
-          </Text>
-          <Text ID="150192">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="150292">
-        <Name>Keeping Up - Sarmento</Name>
-        <Text ID="961146262">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="150292">
-            <Icon />
-          </Text>
-          <Text ID="150290">
-            <Icon />
-          </Text>
-          <Text ID="152582">
-            <Icon />
-          </Text>
-          <Text ID="152583">
-            <Icon />
-          </Text>
-          <Text ID="150276">
-            <Icon />
-          </Text>
-          <Text ID="150294">
-            <Icon />
-          </Text>
-          <Text ID="150295">
-            <Icon />
-          </Text>
-          <Text ID="150341">
-            <Icon />
-          </Text>
-          <Text ID="150281">
-            <Icon />
-          </Text>
-          <Text ID="150297">
-            <Icon />
-          </Text>
-          <Text ID="150299">
-            <Icon />
-          </Text>
-          <Text ID="150296">
-            <Icon />
-          </Text>
-          <Text ID="150342">
-            <Icon />
-          </Text>
-          <Text ID="150343">
-            <Icon />
-          </Text>
-          <Text ID="152584">
-            <Icon />
-          </Text>
-          <Text ID="150270">
-            <Icon />
-          </Text>
-          <Text ID="152050">
-            <Icon />
-          </Text>
-          <Text ID="150293">
-            <Icon />
-          </Text>
-          <Text ID="150300">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="151521">
-        <Name>RQ_Engineers_AnimalKingdom</Name>
-        <Text ID="-263237181">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/resident_tier04.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="151521">
-            <Icon />
-          </Text>
-          <Text ID="151522">
-            <Icon />
-          </Text>
-          <Text ID="151526">
-            <Icon />
-          </Text>
-          <Text ID="151524">
-            <Icon />
-          </Text>
-          <Text ID="151525">
-            <Icon />
-          </Text>
-          <Text ID="151527">
-            <Icon />
-          </Text>
-          <Text ID="151622">
-            <Icon />
-          </Text>
-          <Text ID="151707">
-            <Icon />
-          </Text>
-          <Text ID="151708">
-            <Icon />
-          </Text>
-          <Text ID="151709">
-            <Icon />
-          </Text>
-          <Text ID="151710">
-            <Icon />
-          </Text>
-          <Text ID="151711">
-            <Icon />
-          </Text>
-          <Text ID="151512">
-            <Icon />
-          </Text>
-          <Text ID="151513">
-            <Icon />
-          </Text>
-          <Text ID="151514">
-            <Icon />
-          </Text>
-          <Text ID="151515">
-            <Icon />
-          </Text>
-          <Text ID="151516">
-            <Icon />
-          </Text>
-          <Text ID="151504">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-  </Asset>
   <Asset ID="191977" Release="Release" RarityType="Common">
     <Name>Ship Wooden Spare Parts</Name>
     <Text ID="191977">
@@ -1708,8 +1535,10 @@
     </ExpeditionAttributes>
     <ItemActionUpgrades>
       <Upgrade>
-        <Text ID="20072" FontStyle="16">
-          <Icon />
+        <Text ID="22097" FontStyle="16">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_bomb.png</Filename>
+          </Icon>
         </Text>
         <Value>3</Value>
       </Upgrade>
@@ -1756,15 +1585,15 @@
       <Icon />
     </Info>
     <Sources>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
-        <Text ID="11631">
+      <Source ID="112084">
+        <Name>Diving Vessel</Name>
+        <Text ID="113420">
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="-5">
+          <Text ID="113420">
             <Icon />
           </Text>
         </Details>
@@ -1805,6 +1634,34 @@
           </Icon>
         </Text>
         <Details>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="77">
+        <Name>Third_party_06 (Old Nate)</Name>
+        <Text ID="-1939944159">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_06.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-6">
+            <Icon />
+          </Text>
+          <Text ID="-7">
+            <Icon />
+          </Text>
           <Text ID="-8">
             <Icon />
           </Text>
@@ -2132,461 +1989,6 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="191834" Release="Release" RarityType="Epic">
-    <Name>Multiple Expansion Steam Engine</Name>
-    <Text ID="191834">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_generator_1.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118005">
-      <Icon />
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="SteamShip">
-      <Text ID="2344">
-        <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_ship_tier03.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Text ID="800033">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
-          </Icon>
-        </Text>
-        <Value>40</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
-    <ItemActionUpgrades>
-      <Upgrade>
-        <Text ID="20071" FontStyle="16">
-          <Icon />
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="2339">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+30%</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="15261">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-100%</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="2423" FontStyle="16">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
-          </Icon>
-        </Text>
-        <Value>00:30</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="2424" FontStyle="16">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_wait_till_full.png</Filename>
-          </Icon>
-        </Text>
-        <Value>00:45</Value>
-      </Upgrade>
-    </ItemActionUpgrades>
-    <TradePrice>65000</TradePrice>
-    <Info ID="19694">
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="800103">
-        <Name>Archeological Expedition Easy</Name>
-        <Text ID="11629">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="-353998529">
-            <Icon />
-          </Text>
-          <Text ID="-353998530">
-            <Icon />
-          </Text>
-          <Text ID="1534142650">
-            <Icon />
-          </Text>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800214">
-        <Name>Zoological Expedition Easy</Name>
-        <Text ID="11630">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="-353998529">
-            <Icon />
-          </Text>
-          <Text ID="-353998530">
-            <Icon />
-          </Text>
-          <Text ID="1534142650">
-            <Icon />
-          </Text>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
-        <Text ID="11631">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="-353998529">
-            <Icon />
-          </Text>
-          <Text ID="-353998530">
-            <Icon />
-          </Text>
-          <Text ID="1534142650">
-            <Icon />
-          </Text>
-          <Text ID="-5">
-            <Icon />
-          </Text>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800403">
-        <Name>Pirate Hunt Easy</Name>
-        <Text ID="11632">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="-353998529">
-            <Icon />
-          </Text>
-          <Text ID="-353998530">
-            <Icon />
-          </Text>
-          <Text ID="1534142650">
-            <Icon />
-          </Text>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
-            <Icon />
-          </Text>
-          <Text ID="-5">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800777">
-        <Name>Discovery South America Sandbox</Name>
-        <Text ID="11634">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="-353998529">
-            <Icon />
-          </Text>
-          <Text ID="-353998530">
-            <Icon />
-          </Text>
-          <Text ID="1534142650">
-            <Icon />
-          </Text>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="45">
-        <Name>Third_party_02 (Archibald Blake)</Name>
-        <Text ID="-360802622">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="-8">
-            <Icon />
-          </Text>
-          <Text ID="-9">
-            <Icon />
-          </Text>
-          <Text ID="-10">
-            <Icon />
-          </Text>
-          <Text ID="-11">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="29">
-        <Name>Third_party_05 (Isabel Sarmento)</Name>
-        <Text ID="351925916">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="-6">
-            <Icon />
-          </Text>
-          <Text ID="-7">
-            <Icon />
-          </Text>
-          <Text ID="-8">
-            <Icon />
-          </Text>
-          <Text ID="-9">
-            <Icon />
-          </Text>
-          <Text ID="-10">
-            <Icon />
-          </Text>
-          <Text ID="-11">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="47">
-        <Name>Second_ai_01 (Bente Jorgensen)</Name>
-        <Text ID="6977702">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="47">
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="152611">
-        <Name>Smuggle In Love With The Devil 1 - Ready For Love - Bente</Name>
-        <Text ID="-1344968251">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="152611">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="84">
-        <Name>Second_ai_09 (Vicente Silva)</Name>
-        <Text ID="-1608301314">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="84">
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="151155">
-        <Name>Down with Anne Harlow 3 - Vicente</Name>
-        <Text ID="902886679">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="151155">
-            <Icon />
-          </Text>
-          <Text ID="152039">
-            <Icon />
-          </Text>
-          <Text ID="152418">
-            <Icon />
-          </Text>
-          <Text ID="152420">
-            <Icon />
-          </Text>
-          <Text ID="152424">
-            <Icon />
-          </Text>
-          <Text ID="151153">
-            <Icon />
-          </Text>
-          <Text ID="152045">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="150190">
-        <Name>Creaming the Colonials - Archibald Blake</Name>
-        <Text ID="15279892">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="150190">
-            <Icon />
-          </Text>
-          <Text ID="150192">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="151521">
-        <Name>RQ_Engineers_AnimalKingdom</Name>
-        <Text ID="-263237181">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/resident_tier04.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="151521">
-            <Icon />
-          </Text>
-          <Text ID="151522">
-            <Icon />
-          </Text>
-          <Text ID="151526">
-            <Icon />
-          </Text>
-          <Text ID="151524">
-            <Icon />
-          </Text>
-          <Text ID="151525">
-            <Icon />
-          </Text>
-          <Text ID="151527">
-            <Icon />
-          </Text>
-          <Text ID="151622">
-            <Icon />
-          </Text>
-          <Text ID="151707">
-            <Icon />
-          </Text>
-          <Text ID="151708">
-            <Icon />
-          </Text>
-          <Text ID="151709">
-            <Icon />
-          </Text>
-          <Text ID="151710">
-            <Icon />
-          </Text>
-          <Text ID="151711">
-            <Icon />
-          </Text>
-          <Text ID="151512">
-            <Icon />
-          </Text>
-          <Text ID="151513">
-            <Icon />
-          </Text>
-          <Text ID="151514">
-            <Icon />
-          </Text>
-          <Text ID="151515">
-            <Icon />
-          </Text>
-          <Text ID="151516">
-            <Icon />
-          </Text>
-          <Text ID="151504">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="17047">
-        <Name>9 Unique Inventions</Name>
-        <Text ID="17047">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="17047">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-  </Asset>
   <Asset ID="191978" Release="Release" RarityType="Uncommon">
     <Name>Ship Steel Spare Parts</Name>
     <Text ID="191978">
@@ -2617,8 +2019,10 @@
     </ExpeditionAttributes>
     <ItemActionUpgrades>
       <Upgrade>
-        <Text ID="20072" FontStyle="16">
-          <Icon />
+        <Text ID="22097" FontStyle="16">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_bomb.png</Filename>
+          </Icon>
         </Text>
         <Value>3</Value>
       </Upgrade>
@@ -2665,6 +2069,19 @@
       <Icon />
     </Info>
     <Sources>
+      <Source ID="112084">
+        <Name>Diving Vessel</Name>
+        <Text ID="113420">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="113420">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
       <Source ID="800103">
         <Name>Archeological Expedition Easy</Name>
         <Text ID="11629">
@@ -2747,6 +2164,25 @@
       <Source ID="800777">
         <Name>Discovery South America Sandbox</Name>
         <Text ID="11634">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-353998529">
+            <Icon />
+          </Text>
+          <Text ID="-353998530">
+            <Icon />
+          </Text>
+          <Text ID="1534142650">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="803519">
+        <Name>Discovery Sunken Treasures Multiplayer</Name>
+        <Text ID="22262">
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
           </Icon>
@@ -2799,6 +2235,34 @@
           </Icon>
         </Text>
         <Details>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="77">
+        <Name>Third_party_06 (Old Nate)</Name>
+        <Text ID="-1939944159">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_06.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-6">
+            <Icon />
+          </Text>
+          <Text ID="-7">
+            <Icon />
+          </Text>
           <Text ID="-8">
             <Icon />
           </Text>
@@ -3291,7 +2755,7 @@
   </Asset>
   <Asset ID="6000031" Release="Release" RarityType="Common">
     <Name>RepairItem</Name>
-    <Text ID="6000031">
+    <Text ID="193478">
       <Icon>
         <Filename>data/ui/2kimages/main/icons/icon_resource_worker_2.png</Filename>
       </Icon>
@@ -3334,14 +2798,14 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="191833" Release="Release" RarityType="Rare">
-    <Name>Piston Steam Engine</Name>
-    <Text ID="191833">
+  <Asset ID="191832" Release="Release" RarityType="Uncommon">
+    <Name>Speed Turbine</Name>
+    <Text ID="191832">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_generator_2.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_generator_3.png</Filename>
       </Icon>
     </Text>
-    <Rarity ID="118004">
+    <Rarity ID="118003">
       <Icon />
     </Rarity>
     <ItemType>Common</ItemType>
@@ -3359,7 +2823,7 @@
             <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
           </Icon>
         </Text>
-        <Value>30</Value>
+        <Value>20</Value>
       </Upgrade>
     </ExpeditionAttributes>
     <ItemActionUpgrades>
@@ -3375,7 +2839,15 @@
             <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
           </Icon>
         </Text>
-        <Value>+25%</Value>
+        <Value>+20%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2320">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+30%</Value>
       </Upgrade>
       <Upgrade>
         <Text ID="2423" FontStyle="16">
@@ -3394,8 +2866,8 @@
         <Value>00:45</Value>
       </Upgrade>
     </ItemActionUpgrades>
-    <TradePrice>21250</TradePrice>
-    <Info ID="19693">
+    <TradePrice>6250</TradePrice>
+    <Info ID="19692">
       <Icon />
     </Info>
     <Sources>
@@ -3560,6 +3032,37 @@
           </Text>
         </Details>
       </Source>
+      <Source ID="803519">
+        <Name>Discovery Sunken Treasures Multiplayer</Name>
+        <Text ID="22262">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-353998529">
+            <Icon />
+          </Text>
+          <Text ID="-353998530">
+            <Icon />
+          </Text>
+          <Text ID="1534142650">
+            <Icon />
+          </Text>
+          <Text ID="1485039551">
+            <Icon />
+          </Text>
+          <Text ID="-81044390">
+            <Icon />
+          </Text>
+          <Text ID="-981721778">
+            <Icon />
+          </Text>
+          <Text ID="584362163">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
       <Source ID="45">
         <Name>Third_party_02 (Archibald Blake)</Name>
         <Text ID="-360802622">
@@ -3568,6 +3071,9 @@
           </Icon>
         </Text>
         <Details>
+          <Text ID="-6">
+            <Icon />
+          </Text>
           <Text ID="-7">
             <Icon />
           </Text>
@@ -3590,6 +3096,34 @@
         <Text ID="351925916">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-6">
+            <Icon />
+          </Text>
+          <Text ID="-7">
+            <Icon />
+          </Text>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="77">
+        <Name>Third_party_06 (Old Nate)</Name>
+        <Text ID="-1939944159">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_06.png</Filename>
           </Icon>
         </Text>
         <Details>
@@ -4031,6 +3565,1223 @@
       </Source>
     </Sources>
   </Asset>
+  <Asset ID="191833" Release="Release" RarityType="Rare">
+    <Name>Piston Steam Engine</Name>
+    <Text ID="191833">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_generator_2.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118004">
+      <Icon />
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="SteamShip">
+      <Text ID="2344">
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_ship_tier03.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Text ID="800033">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+          </Icon>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <ItemActionUpgrades>
+      <Upgrade>
+        <Text ID="20071" FontStyle="16">
+          <Icon />
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2339">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+25%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2423" FontStyle="16">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
+          </Icon>
+        </Text>
+        <Value>00:30</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2424" FontStyle="16">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_wait_till_full.png</Filename>
+          </Icon>
+        </Text>
+        <Value>00:45</Value>
+      </Upgrade>
+    </ItemActionUpgrades>
+    <TradePrice>21250</TradePrice>
+    <Info ID="19693">
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="800103">
+        <Name>Archeological Expedition Easy</Name>
+        <Text ID="11629">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-353998529">
+            <Icon />
+          </Text>
+          <Text ID="-353998530">
+            <Icon />
+          </Text>
+          <Text ID="1534142650">
+            <Icon />
+          </Text>
+          <Text ID="1485039551">
+            <Icon />
+          </Text>
+          <Text ID="-81044390">
+            <Icon />
+          </Text>
+          <Text ID="-981721778">
+            <Icon />
+          </Text>
+          <Text ID="584362163">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800214">
+        <Name>Zoological Expedition Easy</Name>
+        <Text ID="11630">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-353998529">
+            <Icon />
+          </Text>
+          <Text ID="-353998530">
+            <Icon />
+          </Text>
+          <Text ID="1534142650">
+            <Icon />
+          </Text>
+          <Text ID="1485039551">
+            <Icon />
+          </Text>
+          <Text ID="-81044390">
+            <Icon />
+          </Text>
+          <Text ID="-981721778">
+            <Icon />
+          </Text>
+          <Text ID="584362163">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800399">
+        <Name>Rescue Mission Easy</Name>
+        <Text ID="11631">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-353998529">
+            <Icon />
+          </Text>
+          <Text ID="-353998530">
+            <Icon />
+          </Text>
+          <Text ID="1534142650">
+            <Icon />
+          </Text>
+          <Text ID="-5">
+            <Icon />
+          </Text>
+          <Text ID="-5">
+            <Icon />
+          </Text>
+          <Text ID="1485039551">
+            <Icon />
+          </Text>
+          <Text ID="-81044390">
+            <Icon />
+          </Text>
+          <Text ID="-981721778">
+            <Icon />
+          </Text>
+          <Text ID="584362163">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800403">
+        <Name>Pirate Hunt Easy</Name>
+        <Text ID="11632">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-353998529">
+            <Icon />
+          </Text>
+          <Text ID="-353998530">
+            <Icon />
+          </Text>
+          <Text ID="1534142650">
+            <Icon />
+          </Text>
+          <Text ID="1485039551">
+            <Icon />
+          </Text>
+          <Text ID="-81044390">
+            <Icon />
+          </Text>
+          <Text ID="-981721778">
+            <Icon />
+          </Text>
+          <Text ID="584362163">
+            <Icon />
+          </Text>
+          <Text ID="-5">
+            <Icon />
+          </Text>
+          <Text ID="-5">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800777">
+        <Name>Discovery South America Sandbox</Name>
+        <Text ID="11634">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-353998529">
+            <Icon />
+          </Text>
+          <Text ID="-353998530">
+            <Icon />
+          </Text>
+          <Text ID="1534142650">
+            <Icon />
+          </Text>
+          <Text ID="1485039551">
+            <Icon />
+          </Text>
+          <Text ID="-81044390">
+            <Icon />
+          </Text>
+          <Text ID="-981721778">
+            <Icon />
+          </Text>
+          <Text ID="584362163">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="803519">
+        <Name>Discovery Sunken Treasures Multiplayer</Name>
+        <Text ID="22262">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-353998529">
+            <Icon />
+          </Text>
+          <Text ID="-353998530">
+            <Icon />
+          </Text>
+          <Text ID="1534142650">
+            <Icon />
+          </Text>
+          <Text ID="1485039551">
+            <Icon />
+          </Text>
+          <Text ID="-81044390">
+            <Icon />
+          </Text>
+          <Text ID="-981721778">
+            <Icon />
+          </Text>
+          <Text ID="584362163">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="45">
+        <Name>Third_party_02 (Archibald Blake)</Name>
+        <Text ID="-360802622">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-7">
+            <Icon />
+          </Text>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="29">
+        <Name>Third_party_05 (Isabel Sarmento)</Name>
+        <Text ID="351925916">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-6">
+            <Icon />
+          </Text>
+          <Text ID="-7">
+            <Icon />
+          </Text>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="77">
+        <Name>Third_party_06 (Old Nate)</Name>
+        <Text ID="-1939944159">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_06.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-7">
+            <Icon />
+          </Text>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="47">
+        <Name>Second_ai_01 (Bente Jorgensen)</Name>
+        <Text ID="6977702">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="47">
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="150075">
+        <Name>Deliver Potatoes - Jorgensen</Name>
+        <Text ID="-1344968251">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="150075">
+            <Icon />
+          </Text>
+          <Text ID="150077">
+            <Icon />
+          </Text>
+          <Text ID="150119">
+            <Icon />
+          </Text>
+          <Text ID="150143">
+            <Icon />
+          </Text>
+          <Text ID="150144">
+            <Icon />
+          </Text>
+          <Text ID="150178">
+            <Icon />
+          </Text>
+          <Text ID="150179">
+            <Icon />
+          </Text>
+          <Text ID="150180">
+            <Icon />
+          </Text>
+          <Text ID="150083">
+            <Icon />
+          </Text>
+          <Text ID="150098">
+            <Icon />
+          </Text>
+          <Text ID="150159">
+            <Icon />
+          </Text>
+          <Text ID="150207">
+            <Icon />
+          </Text>
+          <Text ID="150480">
+            <Icon />
+          </Text>
+          <Text ID="152492">
+            <Icon />
+          </Text>
+          <Text ID="152491">
+            <Icon />
+          </Text>
+          <Text ID="152487">
+            <Icon />
+          </Text>
+          <Text ID="152623">
+            <Icon />
+          </Text>
+          <Text ID="152635">
+            <Icon />
+          </Text>
+          <Text ID="152616">
+            <Icon />
+          </Text>
+          <Text ID="152631">
+            <Icon />
+          </Text>
+          <Text ID="152636">
+            <Icon />
+          </Text>
+          <Text ID="152759">
+            <Icon />
+          </Text>
+          <Text ID="152760">
+            <Icon />
+          </Text>
+          <Text ID="152598">
+            <Icon />
+          </Text>
+          <Text ID="152611">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="84">
+        <Name>Second_ai_09 (Vicente Silva)</Name>
+        <Text ID="-1608301314">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="84">
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="151138">
+        <Name>Deliver Bread - Vicente</Name>
+        <Text ID="902886679">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="151138">
+            <Icon />
+          </Text>
+          <Text ID="151139">
+            <Icon />
+          </Text>
+          <Text ID="151140">
+            <Icon />
+          </Text>
+          <Text ID="151141">
+            <Icon />
+          </Text>
+          <Text ID="151142">
+            <Icon />
+          </Text>
+          <Text ID="151152">
+            <Icon />
+          </Text>
+          <Text ID="152419">
+            <Icon />
+          </Text>
+          <Text ID="152421">
+            <Icon />
+          </Text>
+          <Text ID="152422">
+            <Icon />
+          </Text>
+          <Text ID="152423">
+            <Icon />
+          </Text>
+          <Text ID="152425">
+            <Icon />
+          </Text>
+          <Text ID="152426">
+            <Icon />
+          </Text>
+          <Text ID="152427">
+            <Icon />
+          </Text>
+          <Text ID="152428">
+            <Icon />
+          </Text>
+          <Text ID="152435">
+            <Icon />
+          </Text>
+          <Text ID="151146">
+            <Icon />
+          </Text>
+          <Text ID="151149">
+            <Icon />
+          </Text>
+          <Text ID="151154">
+            <Icon />
+          </Text>
+          <Text ID="152038">
+            <Icon />
+          </Text>
+          <Text ID="152569">
+            <Icon />
+          </Text>
+          <Text ID="152046">
+            <Icon />
+          </Text>
+          <Text ID="152047">
+            <Icon />
+          </Text>
+          <Text ID="152048">
+            <Icon />
+          </Text>
+          <Text ID="152049">
+            <Icon />
+          </Text>
+          <Text ID="151155">
+            <Icon />
+          </Text>
+          <Text ID="152039">
+            <Icon />
+          </Text>
+          <Text ID="152418">
+            <Icon />
+          </Text>
+          <Text ID="152420">
+            <Icon />
+          </Text>
+          <Text ID="152424">
+            <Icon />
+          </Text>
+          <Text ID="151153">
+            <Icon />
+          </Text>
+          <Text ID="152045">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="150115">
+        <Name>Close But No Cigar - Archibald Blake</Name>
+        <Text ID="15279892">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="150115">
+            <Icon />
+          </Text>
+          <Text ID="150116">
+            <Icon />
+          </Text>
+          <Text ID="150141">
+            <Icon />
+          </Text>
+          <Text ID="150168">
+            <Icon />
+          </Text>
+          <Text ID="150169">
+            <Icon />
+          </Text>
+          <Text ID="150170">
+            <Icon />
+          </Text>
+          <Text ID="150127">
+            <Icon />
+          </Text>
+          <Text ID="150226">
+            <Icon />
+          </Text>
+          <Text ID="150152">
+            <Icon />
+          </Text>
+          <Text ID="150224">
+            <Icon />
+          </Text>
+          <Text ID="150237">
+            <Icon />
+          </Text>
+          <Text ID="150238">
+            <Icon />
+          </Text>
+          <Text ID="152199">
+            <Icon />
+          </Text>
+          <Text ID="150225">
+            <Icon />
+          </Text>
+          <Text ID="152213">
+            <Icon />
+          </Text>
+          <Text ID="150241">
+            <Icon />
+          </Text>
+          <Text ID="152581">
+            <Icon />
+          </Text>
+          <Text ID="150190">
+            <Icon />
+          </Text>
+          <Text ID="150192">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="150292">
+        <Name>Keeping Up - Sarmento</Name>
+        <Text ID="961146262">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="150292">
+            <Icon />
+          </Text>
+          <Text ID="150290">
+            <Icon />
+          </Text>
+          <Text ID="152582">
+            <Icon />
+          </Text>
+          <Text ID="152583">
+            <Icon />
+          </Text>
+          <Text ID="150276">
+            <Icon />
+          </Text>
+          <Text ID="150294">
+            <Icon />
+          </Text>
+          <Text ID="150295">
+            <Icon />
+          </Text>
+          <Text ID="150341">
+            <Icon />
+          </Text>
+          <Text ID="150281">
+            <Icon />
+          </Text>
+          <Text ID="150297">
+            <Icon />
+          </Text>
+          <Text ID="150299">
+            <Icon />
+          </Text>
+          <Text ID="150296">
+            <Icon />
+          </Text>
+          <Text ID="150342">
+            <Icon />
+          </Text>
+          <Text ID="150343">
+            <Icon />
+          </Text>
+          <Text ID="152584">
+            <Icon />
+          </Text>
+          <Text ID="150270">
+            <Icon />
+          </Text>
+          <Text ID="152050">
+            <Icon />
+          </Text>
+          <Text ID="150293">
+            <Icon />
+          </Text>
+          <Text ID="150300">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="151521">
+        <Name>RQ_Engineers_AnimalKingdom</Name>
+        <Text ID="-263237181">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/resident_tier04.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="151521">
+            <Icon />
+          </Text>
+          <Text ID="151522">
+            <Icon />
+          </Text>
+          <Text ID="151526">
+            <Icon />
+          </Text>
+          <Text ID="151524">
+            <Icon />
+          </Text>
+          <Text ID="151525">
+            <Icon />
+          </Text>
+          <Text ID="151527">
+            <Icon />
+          </Text>
+          <Text ID="151622">
+            <Icon />
+          </Text>
+          <Text ID="151707">
+            <Icon />
+          </Text>
+          <Text ID="151708">
+            <Icon />
+          </Text>
+          <Text ID="151709">
+            <Icon />
+          </Text>
+          <Text ID="151710">
+            <Icon />
+          </Text>
+          <Text ID="151711">
+            <Icon />
+          </Text>
+          <Text ID="151512">
+            <Icon />
+          </Text>
+          <Text ID="151513">
+            <Icon />
+          </Text>
+          <Text ID="151514">
+            <Icon />
+          </Text>
+          <Text ID="151515">
+            <Icon />
+          </Text>
+          <Text ID="151516">
+            <Icon />
+          </Text>
+          <Text ID="151504">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="191834" Release="Release" RarityType="Epic">
+    <Name>Multiple Expansion Steam Engine</Name>
+    <Text ID="191834">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_generator_1.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118005">
+      <Icon />
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="SteamShip">
+      <Text ID="2344">
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_ship_tier03.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Text ID="800033">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+          </Icon>
+        </Text>
+        <Value>40</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <ItemActionUpgrades>
+      <Upgrade>
+        <Text ID="20071" FontStyle="16">
+          <Icon />
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2339">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+30%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="15261">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-100%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2423" FontStyle="16">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
+          </Icon>
+        </Text>
+        <Value>00:30</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2424" FontStyle="16">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_wait_till_full.png</Filename>
+          </Icon>
+        </Text>
+        <Value>00:45</Value>
+      </Upgrade>
+    </ItemActionUpgrades>
+    <TradePrice>65000</TradePrice>
+    <Info ID="19694">
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="800103">
+        <Name>Archeological Expedition Easy</Name>
+        <Text ID="11629">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-353998529">
+            <Icon />
+          </Text>
+          <Text ID="-353998530">
+            <Icon />
+          </Text>
+          <Text ID="1534142650">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800214">
+        <Name>Zoological Expedition Easy</Name>
+        <Text ID="11630">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-353998529">
+            <Icon />
+          </Text>
+          <Text ID="-353998530">
+            <Icon />
+          </Text>
+          <Text ID="1534142650">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800399">
+        <Name>Rescue Mission Easy</Name>
+        <Text ID="11631">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-353998529">
+            <Icon />
+          </Text>
+          <Text ID="-353998530">
+            <Icon />
+          </Text>
+          <Text ID="1534142650">
+            <Icon />
+          </Text>
+          <Text ID="-5">
+            <Icon />
+          </Text>
+          <Text ID="-5">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800403">
+        <Name>Pirate Hunt Easy</Name>
+        <Text ID="11632">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-353998529">
+            <Icon />
+          </Text>
+          <Text ID="-353998530">
+            <Icon />
+          </Text>
+          <Text ID="1534142650">
+            <Icon />
+          </Text>
+          <Text ID="-5">
+            <Icon />
+          </Text>
+          <Text ID="-5">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800777">
+        <Name>Discovery South America Sandbox</Name>
+        <Text ID="11634">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-353998529">
+            <Icon />
+          </Text>
+          <Text ID="-353998530">
+            <Icon />
+          </Text>
+          <Text ID="1534142650">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="803519">
+        <Name>Discovery Sunken Treasures Multiplayer</Name>
+        <Text ID="22262">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-353998529">
+            <Icon />
+          </Text>
+          <Text ID="-353998530">
+            <Icon />
+          </Text>
+          <Text ID="1534142650">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="45">
+        <Name>Third_party_02 (Archibald Blake)</Name>
+        <Text ID="-360802622">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="29">
+        <Name>Third_party_05 (Isabel Sarmento)</Name>
+        <Text ID="351925916">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-6">
+            <Icon />
+          </Text>
+          <Text ID="-7">
+            <Icon />
+          </Text>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="77">
+        <Name>Third_party_06 (Old Nate)</Name>
+        <Text ID="-1939944159">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_06.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="47">
+        <Name>Second_ai_01 (Bente Jorgensen)</Name>
+        <Text ID="6977702">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="47">
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="152611">
+        <Name>Smuggle In Love With The Devil 1 - Ready For Love - Bente</Name>
+        <Text ID="-1344968251">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="152611">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="84">
+        <Name>Second_ai_09 (Vicente Silva)</Name>
+        <Text ID="-1608301314">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="84">
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="151155">
+        <Name>Down with Anne Harlow 3 - Vicente</Name>
+        <Text ID="902886679">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="151155">
+            <Icon />
+          </Text>
+          <Text ID="152039">
+            <Icon />
+          </Text>
+          <Text ID="152418">
+            <Icon />
+          </Text>
+          <Text ID="152420">
+            <Icon />
+          </Text>
+          <Text ID="152424">
+            <Icon />
+          </Text>
+          <Text ID="151153">
+            <Icon />
+          </Text>
+          <Text ID="152045">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="150190">
+        <Name>Creaming the Colonials - Archibald Blake</Name>
+        <Text ID="15279892">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="150190">
+            <Icon />
+          </Text>
+          <Text ID="150192">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="150293">
+        <Name>Destroy Them Or Us - Sarmento</Name>
+        <Text ID="961146262">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="150293">
+            <Icon />
+          </Text>
+          <Text ID="150300">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="151521">
+        <Name>RQ_Engineers_AnimalKingdom</Name>
+        <Text ID="-263237181">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/resident_tier04.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="151521">
+            <Icon />
+          </Text>
+          <Text ID="151522">
+            <Icon />
+          </Text>
+          <Text ID="151526">
+            <Icon />
+          </Text>
+          <Text ID="151524">
+            <Icon />
+          </Text>
+          <Text ID="151525">
+            <Icon />
+          </Text>
+          <Text ID="151527">
+            <Icon />
+          </Text>
+          <Text ID="151622">
+            <Icon />
+          </Text>
+          <Text ID="151707">
+            <Icon />
+          </Text>
+          <Text ID="151708">
+            <Icon />
+          </Text>
+          <Text ID="151709">
+            <Icon />
+          </Text>
+          <Text ID="151710">
+            <Icon />
+          </Text>
+          <Text ID="151711">
+            <Icon />
+          </Text>
+          <Text ID="151512">
+            <Icon />
+          </Text>
+          <Text ID="151513">
+            <Icon />
+          </Text>
+          <Text ID="151514">
+            <Icon />
+          </Text>
+          <Text ID="151515">
+            <Icon />
+          </Text>
+          <Text ID="151516">
+            <Icon />
+          </Text>
+          <Text ID="151504">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="17047">
+        <Name>9 Unique Inventions</Name>
+        <Text ID="17047">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="17047">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+  </Asset>
   <Asset ID="192151" Release="Release" RarityType="Uncommon">
     <Name>Ship Toolbox</Name>
     <Text ID="192151">
@@ -4109,6 +4860,19 @@
       <Icon />
     </Info>
     <Sources>
+      <Source ID="112084">
+        <Name>Diving Vessel</Name>
+        <Text ID="113420">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="113420">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
       <Source ID="800103">
         <Name>Archeological Expedition Easy</Name>
         <Text ID="11629">
@@ -4270,6 +5034,37 @@
           </Text>
         </Details>
       </Source>
+      <Source ID="803519">
+        <Name>Discovery Sunken Treasures Multiplayer</Name>
+        <Text ID="22262">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-353998529">
+            <Icon />
+          </Text>
+          <Text ID="-353998530">
+            <Icon />
+          </Text>
+          <Text ID="1534142650">
+            <Icon />
+          </Text>
+          <Text ID="1485039551">
+            <Icon />
+          </Text>
+          <Text ID="-81044390">
+            <Icon />
+          </Text>
+          <Text ID="-981721778">
+            <Icon />
+          </Text>
+          <Text ID="584362163">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
       <Source ID="45">
         <Name>Third_party_02 (Archibald Blake)</Name>
         <Text ID="-360802622">
@@ -4334,6 +5129,34 @@
           </Icon>
         </Text>
         <Details>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="77">
+        <Name>Third_party_06 (Old Nate)</Name>
+        <Text ID="-1939944159">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_06.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-6">
+            <Icon />
+          </Text>
+          <Text ID="-7">
+            <Icon />
+          </Text>
           <Text ID="-8">
             <Icon />
           </Text>
@@ -4876,6 +5699,19 @@
           </Text>
         </Details>
       </Source>
+      <Source ID="112084">
+        <Name>Diving Vessel</Name>
+        <Text ID="113420">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="113420">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
       <Source ID="800103">
         <Name>Archeological Expedition Easy</Name>
         <Text ID="11629">
@@ -4958,6 +5794,9 @@
           <Text ID="-5">
             <Icon />
           </Text>
+          <Text ID="-5">
+            <Icon />
+          </Text>
           <Text ID="1485039551">
             <Icon />
           </Text>
@@ -5004,11 +5843,45 @@
           <Text ID="-5">
             <Icon />
           </Text>
+          <Text ID="-5">
+            <Icon />
+          </Text>
         </Details>
       </Source>
       <Source ID="800777">
         <Name>Discovery South America Sandbox</Name>
         <Text ID="11634">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-353998529">
+            <Icon />
+          </Text>
+          <Text ID="-353998530">
+            <Icon />
+          </Text>
+          <Text ID="1534142650">
+            <Icon />
+          </Text>
+          <Text ID="1485039551">
+            <Icon />
+          </Text>
+          <Text ID="-81044390">
+            <Icon />
+          </Text>
+          <Text ID="-981721778">
+            <Icon />
+          </Text>
+          <Text ID="584362163">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="803519">
+        <Name>Discovery Sunken Treasures Multiplayer</Name>
+        <Text ID="22262">
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
           </Icon>
@@ -5098,6 +5971,31 @@
           </Icon>
         </Text>
         <Details>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="77">
+        <Name>Third_party_06 (Old Nate)</Name>
+        <Text ID="-1939944159">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_06.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-7">
+            <Icon />
+          </Text>
           <Text ID="-8">
             <Icon />
           </Text>
@@ -5503,6 +6401,19 @@
       <Icon />
     </Info>
     <Sources>
+      <Source ID="112084">
+        <Name>Diving Vessel</Name>
+        <Text ID="113420">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="113420">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
       <Source ID="800103">
         <Name>Archeological Expedition Easy</Name>
         <Text ID="11629">
@@ -5518,18 +6429,6 @@
             <Icon />
           </Text>
           <Text ID="1534142650">
-            <Icon />
-          </Text>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
             <Icon />
           </Text>
         </Details>
@@ -5549,18 +6448,6 @@
             <Icon />
           </Text>
           <Text ID="1534142650">
-            <Icon />
-          </Text>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
             <Icon />
           </Text>
         </Details>
@@ -5585,16 +6472,7 @@
           <Text ID="-5">
             <Icon />
           </Text>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
+          <Text ID="-5">
             <Icon />
           </Text>
         </Details>
@@ -5616,16 +6494,7 @@
           <Text ID="1534142650">
             <Icon />
           </Text>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
+          <Text ID="-5">
             <Icon />
           </Text>
           <Text ID="-5">
@@ -5650,16 +6519,23 @@
           <Text ID="1534142650">
             <Icon />
           </Text>
-          <Text ID="1485039551">
+        </Details>
+      </Source>
+      <Source ID="803519">
+        <Name>Discovery Sunken Treasures Multiplayer</Name>
+        <Text ID="22262">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-353998529">
             <Icon />
           </Text>
-          <Text ID="-81044390">
+          <Text ID="-353998530">
             <Icon />
           </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
+          <Text ID="1534142650">
             <Icon />
           </Text>
         </Details>
@@ -5719,6 +6595,28 @@
         <Text ID="1205039976">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="77">
+        <Name>Third_party_06 (Old Nate)</Name>
+        <Text ID="-1939944159">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_06.png</Filename>
           </Icon>
         </Text>
         <Details>
@@ -5813,6 +6711,22 @@
         </Text>
         <Details>
           <Text ID="152928">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="150293">
+        <Name>Destroy Them Or Us - Sarmento</Name>
+        <Text ID="961146262">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="150293">
+            <Icon />
+          </Text>
+          <Text ID="150300">
             <Icon />
           </Text>
         </Details>
@@ -5965,8 +6879,21 @@
       <Icon />
     </Info>
     <Sources>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
+      <Source ID="112084">
+        <Name>Diving Vessel</Name>
+        <Text ID="113420">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="113420">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800401">
+        <Name>Rescue Mission Hard</Name>
         <Text ID="11631">
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
@@ -5976,107 +6903,17 @@
           <Text ID="-5">
             <Icon />
           </Text>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
-            <Icon />
-          </Text>
         </Details>
       </Source>
-      <Source ID="800103">
-        <Name>Archeological Expedition Easy</Name>
-        <Text ID="11629">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800214">
-        <Name>Zoological Expedition Easy</Name>
-        <Text ID="11630">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800403">
-        <Name>Pirate Hunt Easy</Name>
+      <Source ID="800402">
+        <Name>Pirate Hunt Hard</Name>
         <Text ID="11632">
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
-            <Icon />
-          </Text>
           <Text ID="-5">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800777">
-        <Name>Discovery South America Sandbox</Name>
-        <Text ID="11634">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
             <Icon />
           </Text>
         </Details>
@@ -6162,6 +6999,22 @@
           </Text>
         </Details>
       </Source>
+      <Source ID="150293">
+        <Name>Destroy Them Or Us - Sarmento</Name>
+        <Text ID="961146262">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="150293">
+            <Icon />
+          </Text>
+          <Text ID="150300">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
       <Source ID="111260">
         <Name>Quest Mercier Deserter Request</Name>
         <Text ID="500049077">
@@ -6226,364 +7079,6 @@
             <Icon />
           </Text>
           <Text ID="151033">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="192173" Release="Release" RarityType="Epic">
-    <Name>Pirate Flag</Name>
-    <Text ID="192173">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_pirate_flag.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118005">
-      <Icon />
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="Warship">
-      <Text ID="12812">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Text ID="800032">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
-          </Icon>
-        </Text>
-        <Value>20</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
-    <ItemActionUpgrades>
-      <Upgrade>
-        <Text ID="20071" FontStyle="16">
-          <Icon />
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="17392">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
-          </Icon>
-          <AdditionalInformation ID="17393" FontStyle="16">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_smiley.png</Filename>
-            </Icon>
-          </AdditionalInformation>
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="2423" FontStyle="16">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
-          </Icon>
-        </Text>
-        <Value>00:05:00</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="2424" FontStyle="16">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_wait_till_full.png</Filename>
-          </Icon>
-        </Text>
-        <Value>00:20:00</Value>
-      </Upgrade>
-    </ItemActionUpgrades>
-    <TradePrice>63875</TradePrice>
-    <Info ID="19793">
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="152509">
-        <Name>Life Of Destruction - Alonso Graves - DISABLED</Name>
-        <Text ID="-1854513861">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_08.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="152509">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="152174">
-        <Name>Destroy Main arc 4 - Anne Harlow</Name>
-        <Text ID="-1609246374">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="152174">
-            <Icon />
-          </Text>
-          <Text ID="152169">
-            <Icon />
-          </Text>
-          <Text ID="152238">
-            <Icon />
-          </Text>
-          <Text ID="152244">
-            <Icon />
-          </Text>
-          <Text ID="152207">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800103">
-        <Name>Archeological Expedition Easy</Name>
-        <Text ID="11629">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="-353998529">
-            <Icon />
-          </Text>
-          <Text ID="-353998530">
-            <Icon />
-          </Text>
-          <Text ID="1534142650">
-            <Icon />
-          </Text>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800214">
-        <Name>Zoological Expedition Easy</Name>
-        <Text ID="11630">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="-353998529">
-            <Icon />
-          </Text>
-          <Text ID="-353998530">
-            <Icon />
-          </Text>
-          <Text ID="1534142650">
-            <Icon />
-          </Text>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
-        <Text ID="11631">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="-353998529">
-            <Icon />
-          </Text>
-          <Text ID="-353998530">
-            <Icon />
-          </Text>
-          <Text ID="1534142650">
-            <Icon />
-          </Text>
-          <Text ID="-5">
-            <Icon />
-          </Text>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800403">
-        <Name>Pirate Hunt Easy</Name>
-        <Text ID="11632">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="-353998529">
-            <Icon />
-          </Text>
-          <Text ID="-353998530">
-            <Icon />
-          </Text>
-          <Text ID="1534142650">
-            <Icon />
-          </Text>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
-            <Icon />
-          </Text>
-          <Text ID="-5">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800777">
-        <Name>Discovery South America Sandbox</Name>
-        <Text ID="11634">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="-353998529">
-            <Icon />
-          </Text>
-          <Text ID="-353998530">
-            <Icon />
-          </Text>
-          <Text ID="1534142650">
-            <Icon />
-          </Text>
-          <Text ID="1485039551">
-            <Icon />
-          </Text>
-          <Text ID="-81044390">
-            <Icon />
-          </Text>
-          <Text ID="-981721778">
-            <Icon />
-          </Text>
-          <Text ID="584362163">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="73">
-        <Name>Third_party_03 (Anne Harlow)</Name>
-        <Text ID="-2142036734">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="-8">
-            <Icon />
-          </Text>
-          <Text ID="-9">
-            <Icon />
-          </Text>
-          <Text ID="-10">
-            <Icon />
-          </Text>
-          <Text ID="-11">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="76">
-        <Name>Third_party_04 (La Fortune)</Name>
-        <Text ID="1205039976">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="-8">
-            <Icon />
-          </Text>
-          <Text ID="-9">
-            <Icon />
-          </Text>
-          <Text ID="-10">
-            <Icon />
-          </Text>
-          <Text ID="-11">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="73">
-        <Name>Third_party_03 (Anne Harlow)</Name>
-        <Text ID="1514529701">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="73">
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="76">
-        <Name>Third_party_04 (La Fortune)</Name>
-        <Text ID="1638667151">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="76">
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="152928">
-        <Name>Pickup Delaying Death - Jean LaFortune</Name>
-        <Text ID="1063198249">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="152928">
             <Icon />
           </Text>
         </Details>

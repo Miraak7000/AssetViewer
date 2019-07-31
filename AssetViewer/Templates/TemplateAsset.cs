@@ -54,6 +54,7 @@ namespace AssetViewer.Templates {
     public List<Upgrade> ItemGeneratorUpgrades { get; set; }
     public List<Upgrade> DivingBellUpgrades { get; set; }
     public List<Upgrade> CraftableItemUpgrades { get; set; }
+    public List<Upgrade> PierUpgrade { get; set; }
 
     public IEnumerable<Upgrade> AllUpgrades => typeof(TemplateAsset)
             .GetProperties()
@@ -177,6 +178,9 @@ namespace AssetViewer.Templates {
       }
       if (asset.Element("CraftableItemUpgrades")?.HasElements ?? false) {
         this.CraftableItemUpgrades = asset.Element("CraftableItemUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
+      }
+      if (asset.Element("PierUpgrade")?.HasElements ?? false) {
+        this.PierUpgrade = asset.Element("PierUpgrade").Elements().Select(s => new Upgrade(s)).ToList();
       }
     }
 

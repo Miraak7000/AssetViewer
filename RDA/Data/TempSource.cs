@@ -133,7 +133,9 @@ namespace RDA.Data {
         case "A7_QuestItemUsage":
         case "A7_QuestPicturePuzzleObject":
         case "A7_QuestSmuggler":
-          this.Text = new Description(Source.XPathSelectElement("Values/Quest/QuestGiver").Value).InsertBefore(new Description("2734"));
+        case "A7_QuestDivingBellGeneric":
+        case "A7_QuestDivingBellSonar":
+          this.Text = new Description(Source.XPathSelectElement("Values/Quest/QuestGiver").Value).InsertBefore("-").InsertBefore(new Description("2734"));
           foreach (var item in element.Details) {
             // Todo: Fehlende Texte??
             var desc = new Description(item.XPathSelectElement("Values/Standard/GUID").Value);
@@ -153,7 +155,14 @@ namespace RDA.Data {
           this.Text = new Description(element.Source.XPathSelectElement("Values/Standard/GUID").Value).InsertBefore("-").InsertBefore(new Description("-12"));
           this.Details = element.Details.Select(d => new Description(d.XPathSelectElement("Values/Standard/GUID").Value)).ToList();
           break;
-
+        case "Crafting":
+          this.Text = new Description(element.Source.XPathSelectElement("Values/Standard/GUID").Value).InsertBefore("-").InsertBefore(new Description("112529"));
+          this.Details = element.Details.Select(d => new Description(d.XPathSelectElement("Values/Standard/GUID").Value)).ToList();
+          break;
+        case "Dive":
+          this.Text = new Description("113420");
+          this.Details = element.Details.Select(d => new Description("113420")).ToList();
+          break;
         default:
           throw new NotImplementedException();
       }

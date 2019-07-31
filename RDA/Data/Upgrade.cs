@@ -60,7 +60,7 @@ namespace RDA.Data {
           break;
 
         case "HitpointDamage":
-          switch (element.Parent.Parent.Element("Item").Element("Allocation").Value) {
+          switch (element.Parent.Parent.Element("Item")?.Element("Allocation").Value ?? "Ship") {
             case "Ship":
             case "SailShip":
             case "Warship":
@@ -393,44 +393,49 @@ namespace RDA.Data {
         case "BlockHostileTakeover":
         case "MaintainanceUpgrade":
         case "MoralePowerUpgrade":
+        case "ScrapAmountLevelUpgrade":
           break;
 
-        //case "MinPickupTimeUpgrade":
-        //  this.Text = new Description("22219").InsertBefore("Minimum", "Minimum");
-        //  break;
-        //case "MaxPickupTimeUpgrade":
-        //  this.Text = new Description("22219").InsertBefore("Maximum", "Maximum");
-        //  break;
-        //case "ScrapAmountLevelUpgrade":
-        //  this.Text = new Description("22220");
-        //  break;
-        //case "RarityWeightUpgrade":
-        //  this.Additionals = new List<Upgrade>();
-        //  this.Text = new Description("22227");
-        //  foreach (var item in element.Elements()) {
-        //    if (item.Name.LocalName == "None") {
-        //      this.Additionals.Add(new Upgrade() { Text = new Description("None", "None"), Value = $"+{item.Element("AdditionalWeight").Value}" });
-        //    }
-        //    else {
-        //      this.Additionals.Add(new Upgrade() { Text = new Description(Assets.Descriptions[item.Name.LocalName]), Value = $"+{item.Element("AdditionalWeight").Value}" });
-        //    }
+        case "MinPickupTimeUpgrade":
+        case "MaxPickupTimeUpgrade":
+          //.InsertBefore("Maximum", "Maximum");
+          break;
+        case "PierSpeedUpgrade":
+          this.Text = new Description("PierSpeedUpgrade");
+          break;
+        case "RarityWeightUpgrade":
+          this.Additionals = new List<Upgrade>();
+          this.Text = new Description("22227");
+          foreach (var item in element.Elements()) {
+            if (item.Name.LocalName == "None") {
+              //this.Additionals.Add(new Upgrade() { Text = new Description("None", "None"), Value = $"+{item.Element("AdditionalWeight").Value}" });
+            }
+            else {
+              this.Additionals.Add(new Upgrade() { Text = new Description(Assets.KeyToIdDict[item.Name.LocalName]), Value = $"+{item.Element("AdditionalWeight").Value}" });
+            }
 
-        //  }
-        //  break;
-        //case "AllocationWeightUpgrade":
-        //  this.Additionals = new List<Upgrade>();
-        //  this.Text = new Description("22230");
+          }
+          break;
+        case "AllocationWeightUpgrade":
+          this.Additionals = new List<Upgrade>();
+          this.Text = new Description("22230");
 
-        //  foreach (var item in element.Elements()) {
-        //    if (item.Name.LocalName == "None") {
-        //      this.Additionals.Add(new Upgrade() { Text = new Description("None", "None"), Value = $"+{item.Element("AdditionalWeight").Value}" });
-        //    }
-        //    else {
-        //      this.Additionals.Add(new Upgrade() { Text = new Description(Assets.Descriptions[item.Name.LocalName]), Value = $"+{item.Element("AdditionalWeight").Value}" });
+          foreach (var item in element.Elements()) {
+            if (item.Name.LocalName == "None") {
+             // this.Additionals.Add(new Upgrade() { Text = new Description("None", "None"), Value = $"+{item.Element("AdditionalWeight").Value}" });
+            }
+            else {
+              var upgrade = new Upgrade() { Text = new Description(Assets.KeyToIdDict[item.Name.LocalName]), Value = $"+{item.Element("AdditionalWeight").Value}" };
+              //if (upgrade.Text.Icon == null ) {
+              //  if (Assets.Icons.TryGetValue(item.Name.LocalName, out var icon)) {
+              //  upgrade.Text.Icon = new Icon(icon);
+              //  }
+              //}
+              this.Additionals.Add(upgrade);
 
-        //    }
-        //  }
-        //  break;
+            }
+          }
+          break;
 
         default:
           throw new NotImplementedException(element.Name.LocalName);
