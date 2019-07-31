@@ -502,18 +502,27 @@
         Visibility="{Binding Path=SelectedAsset.CraftableItemUpgrades, Converter={StaticResource VisibilityConverter}}">
         <Image.ToolTip>
           <ToolTip Background="#FF2A2C27" DataContext="{Binding PlacementTarget.DataContext, RelativeSource={RelativeSource Self}}" Placement="Left">
-            <ItemsControl ItemsSource="{Binding SelectedAsset.CraftableItemUpgrades}" >
+            <ItemsControl ItemsSource="{Binding SelectedAsset.CraftableItemUpgrades}">
               <ItemsControl.ItemTemplate>
                 <DataTemplate>
                   <Grid>
                     <Grid.ColumnDefinitions>
-                      <ColumnDefinition Width="Auto"/>
-                      <ColumnDefinition/>
-                      <ColumnDefinition Width="Auto"/>
+                      <ColumnDefinition Width="Auto" />
+                      <ColumnDefinition />
+                      <ColumnDefinition Width="Auto" />
                     </Grid.ColumnDefinitions>
-                    <Image Grid.Column="0" Height="22" Source="{Binding Text.Icon.Filename}"/>
-                    <TextBlock Grid.Column="1" Text="{Binding Text.CurrentLang}" Foreground="#FFFFE4AD" Margin="5 0" VerticalAlignment="Center"/>
-                    <TextBlock Grid.Column="2" Text="{Binding Value}" Foreground="#FFFFE4AD" VerticalAlignment="Center"/>
+                    <Image Grid.Column="0" Height="22" Source="{Binding Text.Icon.Filename}" />
+                    <TextBlock
+                      Grid.Column="1"
+                      Margin="5,0"
+                      VerticalAlignment="Center"
+                      Foreground="#FFFFE4AD"
+                      Text="{Binding Text.CurrentLang}" />
+                    <TextBlock
+                      Grid.Column="2"
+                      VerticalAlignment="Center"
+                      Foreground="#FFFFE4AD"
+                      Text="{Binding Value}" />
                   </Grid>
                 </DataTemplate>
               </ItemsControl.ItemTemplate>
