@@ -894,8 +894,6 @@ namespace RDA.Templates {
 
                   break;
                 }
-                else {
-                }
               }
               goto case "A7_QuestEscortObject";
             case "A7_QuestEscortObject":
@@ -936,8 +934,6 @@ namespace RDA.Templates {
                   }
 
                   break;
-                }
-                else {
                 }
               }
               break;

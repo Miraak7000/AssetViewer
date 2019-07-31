@@ -136,18 +136,8 @@ namespace RDA.Data {
         case "A7_QuestDivingBellGeneric":
         case "A7_QuestDivingBellSonar":
           this.Text = new Description(Source.XPathSelectElement("Values/Quest/QuestGiver").Value).InsertBefore("-").InsertBefore(new Description("2734"));
-          foreach (var item in element.Details) {
-            // Todo: Fehlende Texte??
-            var desc = new Description(item.XPathSelectElement("Values/Standard/GUID").Value);
-            this.Details.Add(desc);
-            //try {
-            //  var desc = new Description(item.XPathSelectElement("Values/Standard/GUID").Value);
-            //  this.Details.Add(desc);
-            //}
-            //catch (Exception e) {
-            //  var desc = new Description(item.XPathSelectElement("Values/Standard/Name").Value, item.XPathSelectElement("Values/Standard/Name").Value);
-            //  this.Details.Add(desc);
-            //}
+          foreach (var item in element.Details.Select(e=> new Description(e.XPathSelectElement("Values/Standard/GUID").Value)).Distinct()) {
+            this.Details.Add(item);
           }
           break;
 

@@ -60,27 +60,6 @@
     <TradePrice />
     <Sources />
   </Asset>
-  <Asset ID="190579" Release="Release" RarityType="Quest">
-    <Name>DynamiteItem (not in use)</Name>
-    <Text ID="190579">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_dynamite.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118007">
-      <Icon />
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="Ship">
-      <Text ID="2342">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <TradePrice>250</TradePrice>
-    <Sources />
-  </Asset>
   <Asset ID="191509" Release="Release" RarityType="Uncommon">
     <Name>Kamikaze</Name>
     <Text ID="191509">
@@ -127,6 +106,27 @@
       </Upgrade>
     </ItemActionUpgrades>
     <TradePrice />
+    <Sources />
+  </Asset>
+  <Asset ID="190579" Release="Release" RarityType="Quest">
+    <Name>DynamiteItem (not in use)</Name>
+    <Text ID="190579">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_dynamite.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118007">
+      <Icon />
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ship">
+      <Text ID="2342">
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <TradePrice>250</TradePrice>
     <Sources />
   </Asset>
   <Asset ID="191513" Release="Release" RarityType="Uncommon">
@@ -286,7 +286,7 @@
     <Sources>
       <Source ID="113457">
         <Name>SL112_NewPages3</Name>
-        <Text ID="1524200647">
+        <Text ID="-789427430">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_01.png</Filename>
           </Icon>
@@ -418,7 +418,7 @@
     <Sources>
       <Source ID="112250">
         <Name>SL113_Innovation</Name>
-        <Text ID="2126719323">
+        <Text ID="-1497861245">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_06.png</Filename>
           </Icon>
@@ -679,59 +679,6 @@
     <TradePrice>6250</TradePrice>
     <Sources />
   </Asset>
-  <Asset ID="190990" Release="Release" RarityType="Uncommon">
-    <Name>GoShip</Name>
-    <Text ID="190990">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_elephant.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118003">
-      <Icon />
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="Ship">
-      <Text ID="2342">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemActionUpgrades>
-      <Upgrade>
-        <Text ID="20072" FontStyle="16">
-          <Icon />
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="2339">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+75%</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="2423" FontStyle="16">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
-          </Icon>
-        </Text>
-        <Value>00:30</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="2424" FontStyle="16">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_wait_till_full.png</Filename>
-          </Icon>
-        </Text>
-        <Value>00:30</Value>
-      </Upgrade>
-    </ItemActionUpgrades>
-    <TradePrice />
-    <Sources />
-  </Asset>
   <Asset ID="192130" Release="Release" RarityType="Legendary">
     <Name>Pirate Captain Flag</Name>
     <Text ID="192130">
@@ -808,11 +755,11 @@
     <TradePrice>37500</TradePrice>
     <Sources />
   </Asset>
-  <Asset ID="190997" Release="Release" RarityType="Uncommon">
-    <Name>Snare</Name>
+  <Asset ID="190990" Release="Release" RarityType="Uncommon">
+    <Name>GoShip</Name>
     <Text ID="190990">
       <Icon>
-        <Filename>data/ui/2kimages/main/icons/icon_expedition_hypnotist.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/icon_elephant.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="118003">
@@ -839,7 +786,7 @@
             <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
           </Icon>
         </Text>
-        <Value>-50%</Value>
+        <Value>+75%</Value>
       </Upgrade>
       <Upgrade>
         <Text ID="2423" FontStyle="16">
@@ -938,6 +885,59 @@
     <Info ID="15953">
       <Icon />
     </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="190997" Release="Release" RarityType="Uncommon">
+    <Name>Snare</Name>
+    <Text ID="190990">
+      <Icon>
+        <Filename>data/ui/2kimages/main/icons/icon_expedition_hypnotist.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118003">
+      <Icon />
+    </Rarity>
+    <ItemType>Common</ItemType>
+    <Allocation ID="Ship">
+      <Text ID="2342">
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <ItemActionUpgrades>
+      <Upgrade>
+        <Text ID="20072" FontStyle="16">
+          <Icon />
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2339">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-50%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2423" FontStyle="16">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
+          </Icon>
+        </Text>
+        <Value>00:30</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2424" FontStyle="16">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_wait_till_full.png</Filename>
+          </Icon>
+        </Text>
+        <Value>00:30</Value>
+      </Upgrade>
+    </ItemActionUpgrades>
+    <TradePrice />
     <Sources />
   </Asset>
   <Asset ID="191410" Release="Release" RarityType="Uncommon">
@@ -1062,7 +1062,7 @@
       </Source>
       <Source ID="152509">
         <Name>Life Of Destruction - Alonso Graves - DISABLED</Name>
-        <Text ID="-1854513861">
+        <Text ID="-1974997055">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/ai_08.png</Filename>
           </Icon>
@@ -1075,7 +1075,7 @@
       </Source>
       <Source ID="152174">
         <Name>Destroy Main arc 4 - Anne Harlow</Name>
-        <Text ID="-1609246374">
+        <Text ID="1169735448">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
           </Icon>
@@ -1300,7 +1300,7 @@
       </Source>
       <Source ID="152928">
         <Name>Pickup Delaying Death - Jean LaFortune</Name>
-        <Text ID="1063198249">
+        <Text ID="1368805180">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
           </Icon>
@@ -1455,7 +1455,7 @@
       </Source>
       <Source ID="152169">
         <Name>Smuggle Out of prison - Anne Harlow</Name>
-        <Text ID="-1609246374">
+        <Text ID="1169735448">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
           </Icon>
@@ -1492,7 +1492,7 @@
       </Source>
       <Source ID="152928">
         <Name>Pickup Delaying Death - Jean LaFortune</Name>
-        <Text ID="1063198249">
+        <Text ID="1368805180">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
           </Icon>
@@ -1693,7 +1693,7 @@
       </Source>
       <Source ID="152294">
         <Name>Deliver Bandages - George Smith</Name>
-        <Text ID="213893959">
+        <Text ID="1842115247">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/ai_04.png</Filename>
           </Icon>
@@ -1787,7 +1787,7 @@
       </Source>
       <Source ID="151920">
         <Name>Deliver Weapons - Jean LaFortune</Name>
-        <Text ID="1063198249">
+        <Text ID="1368805180">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
           </Icon>
@@ -1854,7 +1854,7 @@
       </Source>
       <Source ID="150292">
         <Name>Keeping Up - Sarmento</Name>
-        <Text ID="961146262">
+        <Text ID="1251086765">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
           </Icon>
@@ -1921,7 +1921,7 @@
       </Source>
       <Source ID="111260">
         <Name>Quest Mercier Deserter Request</Name>
-        <Text ID="500049077">
+        <Text ID="2077310275">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/campaign_portrait_09.png</Filename>
           </Icon>
@@ -1934,7 +1934,7 @@
       </Source>
       <Source ID="110770">
         <Name>Picture Puzzle - Conspirators Rescue - Hugo Mercier </Name>
-        <Text ID="579397740">
+        <Text ID="1749551055">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/portrait_icons_0014_resident_tier02.png</Filename>
           </Icon>
@@ -2294,7 +2294,7 @@
       </Source>
       <Source ID="152294">
         <Name>Deliver Bandages - George Smith</Name>
-        <Text ID="213893959">
+        <Text ID="1842115247">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/ai_04.png</Filename>
           </Icon>
@@ -2388,7 +2388,7 @@
       </Source>
       <Source ID="151920">
         <Name>Deliver Weapons - Jean LaFortune</Name>
-        <Text ID="1063198249">
+        <Text ID="1368805180">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
           </Icon>
@@ -2455,7 +2455,7 @@
       </Source>
       <Source ID="150292">
         <Name>Keeping Up - Sarmento</Name>
-        <Text ID="961146262">
+        <Text ID="1251086765">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
           </Icon>
@@ -2522,7 +2522,7 @@
       </Source>
       <Source ID="111260">
         <Name>Quest Mercier Deserter Request</Name>
-        <Text ID="500049077">
+        <Text ID="2077310275">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/campaign_portrait_09.png</Filename>
           </Icon>
@@ -2535,7 +2535,7 @@
       </Source>
       <Source ID="110770">
         <Name>Picture Puzzle - Conspirators Rescue - Hugo Mercier </Name>
-        <Text ID="579397740">
+        <Text ID="1749551055">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/portrait_icons_0014_resident_tier02.png</Filename>
           </Icon>
@@ -2785,7 +2785,7 @@
     <Sources>
       <Source ID="152560">
         <Name>Use Item/Smuggle Sunken Poetry 3 - Submarine Archaeology - Pincess Qing DISABLED</Name>
-        <Text ID="1979339370">
+        <Text ID="1973756075">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/ai_02.png</Filename>
           </Icon>
@@ -3164,7 +3164,7 @@
       </Source>
       <Source ID="150075">
         <Name>Deliver Potatoes - Jorgensen</Name>
-        <Text ID="-1344968251">
+        <Text ID="1645540357">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
           </Icon>
@@ -3264,7 +3264,7 @@
       </Source>
       <Source ID="151138">
         <Name>Deliver Bread - Vicente</Name>
-        <Text ID="902886679">
+        <Text ID="-1858726192">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
           </Icon>
@@ -3367,7 +3367,7 @@
       </Source>
       <Source ID="150115">
         <Name>Close But No Cigar - Archibald Blake</Name>
-        <Text ID="15279892">
+        <Text ID="-1684163760">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
           </Icon>
@@ -3434,7 +3434,7 @@
       </Source>
       <Source ID="150292">
         <Name>Keeping Up - Sarmento</Name>
-        <Text ID="961146262">
+        <Text ID="1251086765">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
           </Icon>
@@ -3501,7 +3501,7 @@
       </Source>
       <Source ID="151521">
         <Name>RQ_Engineers_AnimalKingdom</Name>
-        <Text ID="-263237181">
+        <Text ID="227424301">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/resident_tier04.png</Filename>
           </Icon>
@@ -3923,7 +3923,7 @@
       </Source>
       <Source ID="150075">
         <Name>Deliver Potatoes - Jorgensen</Name>
-        <Text ID="-1344968251">
+        <Text ID="1645540357">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
           </Icon>
@@ -4023,7 +4023,7 @@
       </Source>
       <Source ID="151138">
         <Name>Deliver Bread - Vicente</Name>
-        <Text ID="902886679">
+        <Text ID="-1858726192">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
           </Icon>
@@ -4126,7 +4126,7 @@
       </Source>
       <Source ID="150115">
         <Name>Close But No Cigar - Archibald Blake</Name>
-        <Text ID="15279892">
+        <Text ID="-1684163760">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
           </Icon>
@@ -4193,7 +4193,7 @@
       </Source>
       <Source ID="150292">
         <Name>Keeping Up - Sarmento</Name>
-        <Text ID="961146262">
+        <Text ID="1251086765">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
           </Icon>
@@ -4260,7 +4260,7 @@
       </Source>
       <Source ID="151521">
         <Name>RQ_Engineers_AnimalKingdom</Name>
-        <Text ID="-263237181">
+        <Text ID="227424301">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/resident_tier04.png</Filename>
           </Icon>
@@ -4612,7 +4612,7 @@
       </Source>
       <Source ID="152611">
         <Name>Smuggle In Love With The Devil 1 - Ready For Love - Bente</Name>
-        <Text ID="-1344968251">
+        <Text ID="1645540357">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
           </Icon>
@@ -4640,7 +4640,7 @@
       </Source>
       <Source ID="151155">
         <Name>Down with Anne Harlow 3 - Vicente</Name>
-        <Text ID="902886679">
+        <Text ID="-1858726192">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/ai_09.png</Filename>
           </Icon>
@@ -4671,7 +4671,7 @@
       </Source>
       <Source ID="150190">
         <Name>Creaming the Colonials - Archibald Blake</Name>
-        <Text ID="15279892">
+        <Text ID="-1684163760">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
           </Icon>
@@ -4687,7 +4687,7 @@
       </Source>
       <Source ID="150293">
         <Name>Destroy Them Or Us - Sarmento</Name>
-        <Text ID="961146262">
+        <Text ID="1251086765">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
           </Icon>
@@ -4703,7 +4703,7 @@
       </Source>
       <Source ID="151521">
         <Name>RQ_Engineers_AnimalKingdom</Name>
-        <Text ID="-263237181">
+        <Text ID="227424301">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/resident_tier04.png</Filename>
           </Icon>
@@ -5188,7 +5188,7 @@
       </Source>
       <Source ID="152294">
         <Name>Deliver Bandages - George Smith</Name>
-        <Text ID="213893959">
+        <Text ID="1842115247">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/ai_04.png</Filename>
           </Icon>
@@ -5267,7 +5267,7 @@
       </Source>
       <Source ID="150115">
         <Name>Close But No Cigar - Archibald Blake</Name>
-        <Text ID="15279892">
+        <Text ID="-1684163760">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
           </Icon>
@@ -5349,7 +5349,7 @@
       </Source>
       <Source ID="151920">
         <Name>Deliver Weapons - Jean LaFortune</Name>
-        <Text ID="1063198249">
+        <Text ID="1368805180">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
           </Icon>
@@ -5416,7 +5416,7 @@
       </Source>
       <Source ID="150292">
         <Name>Keeping Up - Sarmento</Name>
-        <Text ID="961146262">
+        <Text ID="1251086765">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
           </Icon>
@@ -5483,7 +5483,7 @@
       </Source>
       <Source ID="111260">
         <Name>Quest Mercier Deserter Request</Name>
-        <Text ID="500049077">
+        <Text ID="2077310275">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/campaign_portrait_09.png</Filename>
           </Icon>
@@ -5496,7 +5496,7 @@
       </Source>
       <Source ID="110770">
         <Name>Picture Puzzle - Conspirators Rescue - Hugo Mercier </Name>
-        <Text ID="579397740">
+        <Text ID="1749551055">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/portrait_icons_0014_resident_tier02.png</Filename>
           </Icon>
@@ -5631,7 +5631,7 @@
     <Sources>
       <Source ID="111202">
         <Name>Sail to Archie - Main arc Part 4 - Hugo Mercier</Name>
-        <Text ID="15279892">
+        <Text ID="-1684163760">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
           </Icon>
@@ -6027,7 +6027,7 @@
       </Source>
       <Source ID="152294">
         <Name>Deliver Bandages - George Smith</Name>
-        <Text ID="213893959">
+        <Text ID="1842115247">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/ai_04.png</Filename>
           </Icon>
@@ -6121,7 +6121,7 @@
       </Source>
       <Source ID="151920">
         <Name>Deliver Weapons - Jean LaFortune</Name>
-        <Text ID="1063198249">
+        <Text ID="1368805180">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
           </Icon>
@@ -6188,7 +6188,7 @@
       </Source>
       <Source ID="150292">
         <Name>Keeping Up - Sarmento</Name>
-        <Text ID="961146262">
+        <Text ID="1251086765">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
           </Icon>
@@ -6255,7 +6255,7 @@
       </Source>
       <Source ID="111260">
         <Name>Quest Mercier Deserter Request</Name>
-        <Text ID="500049077">
+        <Text ID="2077310275">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/campaign_portrait_09.png</Filename>
           </Icon>
@@ -6268,7 +6268,7 @@
       </Source>
       <Source ID="110770">
         <Name>Picture Puzzle - Conspirators Rescue - Hugo Mercier </Name>
-        <Text ID="579397740">
+        <Text ID="1749551055">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/portrait_icons_0014_resident_tier02.png</Filename>
           </Icon>
@@ -6651,7 +6651,7 @@
       </Source>
       <Source ID="152669">
         <Name>Robin Hood Archibald Eli - George Smith</Name>
-        <Text ID="213893959">
+        <Text ID="1842115247">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/ai_04.png</Filename>
           </Icon>
@@ -6673,7 +6673,7 @@
       </Source>
       <Source ID="150190">
         <Name>Creaming the Colonials - Archibald Blake</Name>
-        <Text ID="15279892">
+        <Text ID="-1684163760">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
           </Icon>
@@ -6704,7 +6704,7 @@
       </Source>
       <Source ID="152928">
         <Name>Pickup Delaying Death - Jean LaFortune</Name>
-        <Text ID="1063198249">
+        <Text ID="1368805180">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
           </Icon>
@@ -6717,7 +6717,7 @@
       </Source>
       <Source ID="150293">
         <Name>Destroy Them Or Us - Sarmento</Name>
-        <Text ID="961146262">
+        <Text ID="1251086765">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
           </Icon>
@@ -6733,7 +6733,7 @@
       </Source>
       <Source ID="111260">
         <Name>Quest Mercier Deserter Request</Name>
-        <Text ID="500049077">
+        <Text ID="2077310275">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/campaign_portrait_09.png</Filename>
           </Icon>
@@ -6746,7 +6746,7 @@
       </Source>
       <Source ID="110770">
         <Name>Picture Puzzle - Conspirators Rescue - Hugo Mercier </Name>
-        <Text ID="579397740">
+        <Text ID="1749551055">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/portrait_icons_0014_resident_tier02.png</Filename>
           </Icon>
@@ -6935,7 +6935,7 @@
       </Source>
       <Source ID="152669">
         <Name>Robin Hood Archibald Eli - George Smith</Name>
-        <Text ID="213893959">
+        <Text ID="1842115247">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/ai_04.png</Filename>
           </Icon>
@@ -6957,7 +6957,7 @@
       </Source>
       <Source ID="150190">
         <Name>Creaming the Colonials - Archibald Blake</Name>
-        <Text ID="15279892">
+        <Text ID="-1684163760">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
           </Icon>
@@ -6988,7 +6988,7 @@
       </Source>
       <Source ID="152928">
         <Name>Pickup Delaying Death - Jean LaFortune</Name>
-        <Text ID="1063198249">
+        <Text ID="1368805180">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
           </Icon>
@@ -7001,7 +7001,7 @@
       </Source>
       <Source ID="150293">
         <Name>Destroy Them Or Us - Sarmento</Name>
-        <Text ID="961146262">
+        <Text ID="1251086765">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
           </Icon>
@@ -7017,7 +7017,7 @@
       </Source>
       <Source ID="111260">
         <Name>Quest Mercier Deserter Request</Name>
-        <Text ID="500049077">
+        <Text ID="2077310275">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/campaign_portrait_09.png</Filename>
           </Icon>
@@ -7030,7 +7030,7 @@
       </Source>
       <Source ID="110770">
         <Name>Picture Puzzle - Conspirators Rescue - Hugo Mercier </Name>
-        <Text ID="579397740">
+        <Text ID="1749551055">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/portrait_icons_0014_resident_tier02.png</Filename>
           </Icon>

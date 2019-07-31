@@ -63,7 +63,8 @@ namespace RDA {
       Program.ProcessingTourism();
 
       //Save Descriptions
-      Program.SaveDescriptions();
+      //Set True for fully new Set of Descriptions.
+      Program.SaveDescriptions(true);
     }
 
     #endregion Methods
@@ -156,7 +157,7 @@ namespace RDA {
          .Original
          .XPathSelectElements($"//Asset[Template='Profile_3rdParty' or Template='Profile_3rdParty_Pirate']")
          .Concat(new[] { Assets.Original.Descendants("Asset").FirstOrDefault(a => a.XPathSelectElement("Values/Standard/GUID")?.Value == "220") })
-         .ToList()
+         .Concat(Assets.Original.XPathSelectElements($"//Asset[Template='Profile_3rdParty_ItemCrafter']"))
          .AsParallel();
 
       assets.ForAll((asset) => {

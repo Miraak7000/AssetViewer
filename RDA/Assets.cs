@@ -217,6 +217,9 @@ namespace RDA {
       KeyToIdDict.Add("LineOfSightRangeUpgrade", "15266");
       KeyToIdDict.Add("BaseDamageUpgrade", "2334");
       KeyToIdDict.Add("AccuracyUpgrade", "12062");
+
+      //Override Allocation Tradeship
+      KeyToIdDict["Tradeship"] = "12006";
     }
     private static void SetTourismStati() {
       Console.WriteLine("Setting up Tourism");
