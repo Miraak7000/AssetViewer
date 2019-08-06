@@ -1,5 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ActiveItem>
+  <Asset ID="6000033" Release="Release" RarityType="Common">
+    <Name>VehicleActionItem Tow</Name>
+    <Text ID="6000033">
+      <Icon>
+        <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Item</ItemType>
+    <Allocation ID="Ship">
+      <Text ID="2342">
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <TradePrice />
+    <Sources />
+  </Asset>
   <Asset ID="191494" Release="Release" RarityType="Common">
     <Name>ClearIncidentItem</Name>
     <Text ID="191494">
@@ -39,14 +60,14 @@
     <TradePrice>250</TradePrice>
     <Sources />
   </Asset>
-  <Asset ID="6000033" Release="Release" RarityType="Common">
-    <Name>VehicleActionItem Tow</Name>
-    <Text ID="6000033">
+  <Asset ID="190579" Release="Release" RarityType="Quest">
+    <Name>DynamiteItem (not in use)</Name>
+    <Text ID="190579">
       <Icon>
-        <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/icon_dynamite.png</Filename>
       </Icon>
     </Text>
-    <Rarity ID="118002">
+    <Rarity ID="118007">
       <Icon />
     </Rarity>
     <ItemType>Item</ItemType>
@@ -57,7 +78,7 @@
         </Icon>
       </Text>
     </Allocation>
-    <TradePrice />
+    <TradePrice>250</TradePrice>
     <Sources />
   </Asset>
   <Asset ID="191509" Release="Release" RarityType="Uncommon">
@@ -108,14 +129,14 @@
     <TradePrice />
     <Sources />
   </Asset>
-  <Asset ID="190579" Release="Release" RarityType="Quest">
-    <Name>DynamiteItem (not in use)</Name>
-    <Text ID="190579">
+  <Asset ID="190814" Release="Release" RarityType="Uncommon">
+    <Name>WhiteFlagItem</Name>
+    <Text ID="190814">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_dynamite.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/icon_white_flag.png</Filename>
       </Icon>
     </Text>
-    <Rarity ID="118007">
+    <Rarity ID="118003">
       <Icon />
     </Rarity>
     <ItemType>Item</ItemType>
@@ -126,7 +147,36 @@
         </Icon>
       </Text>
     </Allocation>
-    <TradePrice>250</TradePrice>
+    <ItemActionUpgrades>
+      <Upgrade>
+        <Text ID="20072" FontStyle="16">
+          <Icon />
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="19538">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_claim_island.png</Filename>
+          </Icon>
+          <AdditionalInformation ID="19487" FontStyle="16">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_smiley.png</Filename>
+            </Icon>
+          </AdditionalInformation>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2424" FontStyle="16">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_wait_till_full.png</Filename>
+          </Icon>
+        </Text>
+        <Value>00:30</Value>
+      </Upgrade>
+    </ItemActionUpgrades>
+    <TradePrice />
     <Sources />
   </Asset>
   <Asset ID="191513" Release="Release" RarityType="Uncommon">
@@ -190,11 +240,11 @@
     <TradePrice />
     <Sources />
   </Asset>
-  <Asset ID="190814" Release="Release" RarityType="Uncommon">
-    <Name>WhiteFlagItem</Name>
-    <Text ID="190814">
+  <Asset ID="190988" Release="Release" RarityType="Uncommon">
+    <Name>PirateFlag</Name>
+    <Text ID="190988">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_white_flag.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/icon_pirate_flag.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="118003">
@@ -216,11 +266,11 @@
         <Value></Value>
       </Upgrade>
       <Upgrade>
-        <Text ID="19538">
+        <Text ID="17392">
           <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_claim_island.png</Filename>
+            <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
           </Icon>
-          <AdditionalInformation ID="19487" FontStyle="16">
+          <AdditionalInformation ID="17393" FontStyle="16">
             <Icon>
               <Filename>data/ui/2kimages/main/icons/icon_smiley.png</Filename>
             </Icon>
@@ -234,7 +284,7 @@
             <Filename>data/ui/2kimages/main/icons/icon_wait_till_full.png</Filename>
           </Icon>
         </Text>
-        <Value>00:30</Value>
+        <Value>00:05</Value>
       </Upgrade>
     </ItemActionUpgrades>
     <TradePrice />
@@ -298,77 +348,6 @@
         </Details>
       </Source>
     </Sources>
-  </Asset>
-  <Asset ID="190988" Release="Release" RarityType="Uncommon">
-    <Name>PirateFlag</Name>
-    <Text ID="190988">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_pirate_flag.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118003">
-      <Icon />
-    </Rarity>
-    <ItemType>Item</ItemType>
-    <Allocation ID="Ship">
-      <Text ID="2342">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemActionUpgrades>
-      <Upgrade>
-        <Text ID="20072" FontStyle="16">
-          <Icon />
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="17392">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_threat_melee_tint.png</Filename>
-          </Icon>
-          <AdditionalInformation ID="17393" FontStyle="16">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_smiley.png</Filename>
-            </Icon>
-          </AdditionalInformation>
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="2424" FontStyle="16">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_wait_till_full.png</Filename>
-          </Icon>
-        </Text>
-        <Value>00:05</Value>
-      </Upgrade>
-    </ItemActionUpgrades>
-    <TradePrice />
-    <Sources />
-  </Asset>
-  <Asset ID="193478" Release="Update 04" RarityType="Common">
-    <Name>Horadric Cube</Name>
-    <Text ID="193478">
-      <Icon>
-        <Filename>data/ui/2kimages/main/icons/icon_resource_worker_2.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item</ItemType>
-    <Allocation ID="Ship">
-      <Text ID="2342">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <TradePrice>5000</TradePrice>
-    <Sources />
   </Asset>
   <Asset ID="112551" Release="Update 04" RarityType="Rare">
     <Name>Fessenden Oscillator</Name>
@@ -624,6 +603,80 @@
     <TradePrice />
     <Sources />
   </Asset>
+  <Asset ID="193478" Release="Update 04" RarityType="Common">
+    <Name>Horadric Cube</Name>
+    <Text ID="193478">
+      <Icon>
+        <Filename>data/ui/2kimages/main/icons/icon_resource_worker_2.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Item</ItemType>
+    <Allocation ID="Ship">
+      <Text ID="2342">
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <TradePrice>5000</TradePrice>
+    <Sources />
+  </Asset>
+  <Asset ID="190990" Release="Release" RarityType="Uncommon">
+    <Name>GoShip</Name>
+    <Text ID="190990">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_elephant.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118003">
+      <Icon />
+    </Rarity>
+    <ItemType>Item</ItemType>
+    <Allocation ID="Ship">
+      <Text ID="2342">
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <ItemActionUpgrades>
+      <Upgrade>
+        <Text ID="20072" FontStyle="16">
+          <Icon />
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2339">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+75%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2423" FontStyle="16">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
+          </Icon>
+        </Text>
+        <Value>00:30</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2424" FontStyle="16">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_wait_till_full.png</Filename>
+          </Icon>
+        </Text>
+        <Value>00:30</Value>
+      </Upgrade>
+    </ItemActionUpgrades>
+    <TradePrice />
+    <Sources />
+  </Asset>
   <Asset ID="192129" Release="Release" RarityType="Rare">
     <Name>Pirate Flag</Name>
     <Text ID="190988">
@@ -684,11 +737,11 @@
     <TradePrice>6250</TradePrice>
     <Sources />
   </Asset>
-  <Asset ID="190990" Release="Release" RarityType="Uncommon">
-    <Name>GoShip</Name>
+  <Asset ID="190997" Release="Release" RarityType="Uncommon">
+    <Name>Snare</Name>
     <Text ID="190990">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_elephant.png</Filename>
+        <Filename>data/ui/2kimages/main/icons/icon_expedition_hypnotist.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="118003">
@@ -715,7 +768,7 @@
             <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
           </Icon>
         </Text>
-        <Value>+75%</Value>
+        <Value>-50%</Value>
       </Upgrade>
       <Upgrade>
         <Text ID="2423" FontStyle="16">
@@ -937,59 +990,6 @@
         </Details>
       </Source>
     </Sources>
-  </Asset>
-  <Asset ID="190997" Release="Release" RarityType="Uncommon">
-    <Name>Snare</Name>
-    <Text ID="190990">
-      <Icon>
-        <Filename>data/ui/2kimages/main/icons/icon_expedition_hypnotist.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118003">
-      <Icon />
-    </Rarity>
-    <ItemType>Item</ItemType>
-    <Allocation ID="Ship">
-      <Text ID="2342">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemActionUpgrades>
-      <Upgrade>
-        <Text ID="20072" FontStyle="16">
-          <Icon />
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="2339">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-50%</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="2423" FontStyle="16">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
-          </Icon>
-        </Text>
-        <Value>00:30</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="2424" FontStyle="16">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_wait_till_full.png</Filename>
-          </Icon>
-        </Text>
-        <Value>00:30</Value>
-      </Upgrade>
-    </ItemActionUpgrades>
-    <TradePrice />
-    <Sources />
   </Asset>
   <Asset ID="192110" Release="Release" RarityType="Legendary">
     <Name>Ship Repair Toolset</Name>

@@ -72,14 +72,14 @@ namespace RDA {
 
       // Expeditions
       //Program.Expeditions();
-      //Program.ProcessingExpeditionEvents();
+      Program.ProcessingExpeditionEvents();
 
       //Tourism
       Program.ProcessingTourism();
 
       //Save Descriptions
       //Set True for fully new Set of Descriptions.
-      Program.SaveDescriptions(false);
+      Program.SaveDescriptions(true);
     }
 
     #endregion Methods

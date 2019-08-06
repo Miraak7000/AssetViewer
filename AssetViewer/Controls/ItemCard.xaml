@@ -425,7 +425,7 @@
             Cursor="Hand"
             Template="{DynamicResource ButtonSwitchTemplate}"
             Visibility="{Binding CanSwap, Converter={StaticResource BooleanToVisibility}}">
-            <Image Source="../Resources/data/ui/2kimages/main/icons/icon_traderoutes.png" />
+            <Image Source="../Resources/icon_traderoutes.png" />
           </Button>
         </Grid>
       </Border>
@@ -523,7 +523,7 @@
             Click="ButtonSwitch_Click"
             Cursor="Hand"
             Template="{DynamicResource ButtonSwitchTemplate}">
-            <Image Source="../Resources/data/ui/2kimages/main/icons/icon_traderoutes.png" />
+            <Image Source="../Resources/icon_traderoutes.png" />
           </Button>
         </Grid>
       </Border>

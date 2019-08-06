@@ -52,44 +52,6 @@
     <TradePrice>25</TradePrice>
     <Sources />
   </Asset>
-  <Asset ID="192216" Release="Release" RarityType="Narrative">
-    <Name>Artur's journal</Name>
-    <Text ID="192216">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_book_comon.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="19850">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Info ID="19880">
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="83">
-        <Name>Second_ai_06 (Artur Gasparov)</Name>
-        <Text ID="2076585079">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_06.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="83">
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/ai_06.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-  </Asset>
   <Asset ID="111187" Release="Update 03" RarityType="Narrative">
     <Name>Loud Hailer</Name>
     <Text ID="111187">
@@ -122,6 +84,44 @@
           <Text ID="220">
             <Icon>
               <Filename>data/ui/2kimages/main/profiles/ai_11.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="192216" Release="Release" RarityType="Narrative">
+    <Name>Artur's journal</Name>
+    <Text ID="192216">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/museum/icon_book_comon.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="19850">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Info ID="19880">
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="83">
+        <Name>Second_ai_06 (Artur Gasparov)</Name>
+        <Text ID="2076585079">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_06.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="83">
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/ai_06.png</Filename>
             </Icon>
           </Text>
         </Details>
@@ -226,6 +226,28 @@
     <TradePrice>25</TradePrice>
     <Sources />
   </Asset>
+  <Asset ID="192300" Release="Release" RarityType="Narrative">
+    <Name>Empty bottle</Name>
+    <Text ID="192300">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_beer_2.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="19850">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Info ID="19983">
+      <Icon />
+    </Info>
+    <Sources />
+  </Asset>
   <Asset ID="192217" Release="Release" RarityType="Narrative">
     <Name>Jade dragon statue</Name>
     <Text ID="192217">
@@ -302,66 +324,6 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="192300" Release="Release" RarityType="Narrative">
-    <Name>Empty bottle</Name>
-    <Text ID="192300">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_beer_2.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="19850">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Info ID="19983">
-      <Icon />
-    </Info>
-    <Sources />
-  </Asset>
-  <Asset ID="192219" Release="Release" RarityType="Narrative">
-    <Name>Oriental Fireworks</Name>
-    <Text ID="192219">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="19850">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Info ID="19882">
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="79">
-        <Name>Second_ai_02 (Princess Qing)</Name>
-        <Text ID="-104297185">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_02.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="79">
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/ai_02.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-  </Asset>
   <Asset ID="113963" Release="Update 04" RarityType="Quest">
     <Name>QI_Sonar_Goods_Dummy</Name>
     <Text ID="114044">
@@ -428,6 +390,28 @@
       </Source>
     </Sources>
   </Asset>
+  <Asset ID="192301" Release="Release" RarityType="Narrative">
+    <Name>A box full of tools</Name>
+    <Text ID="192301">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/military_items/ico_repair_toolset.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="19850">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Info ID="19984">
+      <Icon />
+    </Info>
+    <Sources />
+  </Asset>
   <Asset ID="111190" Release="Update 03" RarityType="Narrative">
     <Name>Anarchist's Cookbook</Name>
     <Text ID="111190">
@@ -466,11 +450,11 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="192301" Release="Release" RarityType="Narrative">
-    <Name>A box full of tools</Name>
-    <Text ID="192301">
+  <Asset ID="192219" Release="Release" RarityType="Narrative">
+    <Name>Oriental Fireworks</Name>
+    <Text ID="192219">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/military_items/ico_repair_toolset.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="19850">
@@ -483,29 +467,7 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
-    <Info ID="19984">
-      <Icon />
-    </Info>
-    <Sources />
-  </Asset>
-  <Asset ID="192220" Release="Release" RarityType="Narrative">
-    <Name>Qing's eyeglasses</Name>
-    <Text ID="192220">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_precision_instruments_1.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="19850">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Info ID="19883">
+    <Info ID="19882">
       <Icon />
     </Info>
     <Sources>
@@ -521,55 +483,6 @@
             <Icon>
               <Filename>data/ui/2kimages/main/profiles/ai_02.png</Filename>
             </Icon>
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="112946" Release="Update 04" RarityType="Quest">
-    <Name>QI_ArtefactsOldWorld_Rare_Dummy</Name>
-    <Text ID="114044">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118007">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Sources>
-      <Source ID="113680">
-        <Name>VQ Old Nate - Diving Bell and Treasure Map - Trust your Dealer - Bad</Name>
-        <Text ID="-1497861245">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_06.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="113675">
-            <Icon />
-          </Text>
-          <Text ID="113675">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="112942">
-        <Name>Ancient Trade Route Map (Old World)</Name>
-        <Text ID="1021022190">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/captain.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="112933">
-            <Icon />
           </Text>
         </Details>
       </Source>
@@ -650,99 +563,6 @@
     </Allocation>
     <TradePrice>25</TradePrice>
     <Info ID="19985">
-      <Icon />
-    </Info>
-    <Sources />
-  </Asset>
-  <Asset ID="192221" Release="Release" RarityType="Narrative">
-    <Name>Qing's book of poems</Name>
-    <Text ID="192221">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_book_uncommon.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="19850">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Info ID="19884">
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="79">
-        <Name>Second_ai_02 (Princess Qing)</Name>
-        <Text ID="-104297185">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_02.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="79">
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/ai_02.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="112951" Release="Update 04" RarityType="Quest">
-    <Name>QI_ArtefactsNewWorld_Rare_Dummy</Name>
-    <Text ID="114044">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118007">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Sources>
-      <Source ID="113180">
-        <Name>Ancient Trade Route Map (New World)</Name>
-        <Text ID="1021022190">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/captain.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="112936">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="192303" Release="Release" RarityType="Narrative">
-    <Name>A worker's gold</Name>
-    <Text ID="192303">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_coal_2.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="19850">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Info ID="19986">
       <Icon />
     </Info>
     <Sources />
@@ -1133,6 +953,246 @@
       </Source>
     </Sources>
   </Asset>
+  <Asset ID="112946" Release="Update 04" RarityType="Quest">
+    <Name>QI_ArtefactsOldWorld_Rare_Dummy</Name>
+    <Text ID="114044">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118007">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Sources>
+      <Source ID="113680">
+        <Name>VQ Old Nate - Diving Bell and Treasure Map - Trust your Dealer - Bad</Name>
+        <Text ID="-1497861245">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_06.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="113675">
+            <Icon />
+          </Text>
+          <Text ID="113675">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="112942">
+        <Name>Ancient Trade Route Map (Old World)</Name>
+        <Text ID="1021022190">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/captain.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="112933">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="192220" Release="Release" RarityType="Narrative">
+    <Name>Qing's eyeglasses</Name>
+    <Text ID="192220">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_precision_instruments_1.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="19850">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Info ID="19883">
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="79">
+        <Name>Second_ai_02 (Princess Qing)</Name>
+        <Text ID="-104297185">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_02.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="79">
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/ai_02.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="192303" Release="Release" RarityType="Narrative">
+    <Name>A worker's gold</Name>
+    <Text ID="192303">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_coal_2.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="19850">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Info ID="19986">
+      <Icon />
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="112951" Release="Update 04" RarityType="Quest">
+    <Name>QI_ArtefactsNewWorld_Rare_Dummy</Name>
+    <Text ID="114044">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118007">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Sources>
+      <Source ID="113180">
+        <Name>Ancient Trade Route Map (New World)</Name>
+        <Text ID="1021022190">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/captain.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="112936">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="192221" Release="Release" RarityType="Narrative">
+    <Name>Qing's book of poems</Name>
+    <Text ID="192221">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/museum/icon_book_uncommon.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="19850">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Info ID="19884">
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="79">
+        <Name>Second_ai_02 (Princess Qing)</Name>
+        <Text ID="-104297185">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_02.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="79">
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/ai_02.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="192304" Release="Release" RarityType="Narrative">
+    <Name>A jar full of beer</Name>
+    <Text ID="192304">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_beer.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="19850">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Info ID="19987">
+      <Icon />
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="192190" Release="Release" RarityType="Narrative">
+    <Name>Some uncommon seedling</Name>
+    <Text ID="192190">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_fertile_lands.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="19850">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Info ID="19857">
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="47">
+        <Name>Second_ai_01 (Bente Jorgensen)</Name>
+        <Text ID="6977702">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="47">
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+  </Asset>
   <Asset ID="112952" Release="Update 04" RarityType="Quest">
     <Name>QI_ArtefactsSunkenWorld_Rare_Dummy</Name>
     <Text ID="114044">
@@ -1179,11 +1239,11 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="192304" Release="Release" RarityType="Narrative">
-    <Name>A jar full of beer</Name>
-    <Text ID="192304">
+  <Asset ID="192193" Release="Release" RarityType="Narrative">
+    <Name>Bente's Travel Diary</Name>
+    <Text ID="192193">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_beer.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/museum/icon_book_rare.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="19850">
@@ -1196,10 +1256,26 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
-    <Info ID="19987">
+    <Info ID="19858">
       <Icon />
     </Info>
-    <Sources />
+    <Sources>
+      <Source ID="47">
+        <Name>Second_ai_01 (Bente Jorgensen)</Name>
+        <Text ID="6977702">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="47">
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
   </Asset>
   <Asset ID="192222" Release="Release" RarityType="Narrative">
     <Name>Harlow family ring</Name>
@@ -1272,11 +1348,11 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="192190" Release="Release" RarityType="Narrative">
-    <Name>Some uncommon seedling</Name>
-    <Text ID="192190">
+  <Asset ID="192306" Release="Release" RarityType="Narrative">
+    <Name>A used pocket watch</Name>
+    <Text ID="192306">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_fertile_lands.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="19850">
@@ -1289,7 +1365,43 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
-    <Info ID="19857">
+    <Info ID="19989">
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="151018">
+        <Name>RQ_Artisans_IMadeThis</Name>
+        <Text ID="1521030542">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/resident_tier03.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="151018">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="192194" Release="Release" RarityType="Narrative">
+    <Name>Shiny Pearls</Name>
+    <Text ID="192194">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_pearls.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="19850">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Info ID="19859">
       <Icon />
     </Info>
     <Sources>
@@ -1381,11 +1493,11 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="192306" Release="Release" RarityType="Narrative">
-    <Name>A used pocket watch</Name>
-    <Text ID="192306">
+  <Asset ID="192307" Release="Release" RarityType="Narrative">
+    <Name>A flask full of sleeping pills</Name>
+    <Text ID="192307">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_vitamin_supplement_1.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="19850">
@@ -1398,30 +1510,16 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
-    <Info ID="19989">
+    <Info ID="19990">
       <Icon />
     </Info>
-    <Sources>
-      <Source ID="151018">
-        <Name>RQ_Artisans_IMadeThis</Name>
-        <Text ID="1521030542">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/resident_tier03.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="151018">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
+    <Sources />
   </Asset>
-  <Asset ID="192193" Release="Release" RarityType="Narrative">
-    <Name>Bente's Travel Diary</Name>
-    <Text ID="192193">
+  <Asset ID="192195" Release="Release" RarityType="Narrative">
+    <Name>Manifest of the Jorgensen Trust</Name>
+    <Text ID="192195">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_book_rare.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="19850">
@@ -1434,7 +1532,7 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
-    <Info ID="19858">
+    <Info ID="19860">
       <Icon />
     </Info>
     <Sources>
@@ -1526,11 +1624,11 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="192307" Release="Release" RarityType="Narrative">
-    <Name>A flask full of sleeping pills</Name>
-    <Text ID="192307">
+  <Asset ID="192308" Release="Release" RarityType="Narrative">
+    <Name>A huge loud hailer</Name>
+    <Text ID="192308">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_vitamin_supplement_1.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/military_items/icon_loudspeaker.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="19850">
@@ -1543,44 +1641,20 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
-    <Info ID="19990">
-      <Icon />
-    </Info>
-    <Sources />
-  </Asset>
-  <Asset ID="192194" Release="Release" RarityType="Narrative">
-    <Name>Shiny Pearls</Name>
-    <Text ID="192194">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_pearls.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="19850">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Info ID="19859">
+    <Info ID="19991">
       <Icon />
     </Info>
     <Sources>
-      <Source ID="47">
-        <Name>Second_ai_01 (Bente Jorgensen)</Name>
-        <Text ID="6977702">
+      <Source ID="151018">
+        <Name>RQ_Artisans_IMadeThis</Name>
+        <Text ID="1521030542">
           <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
+            <Filename>data/ui/2kimages/main/profiles/resident_tier03.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="47">
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
-            </Icon>
+          <Text ID="151018">
+            <Icon />
           </Text>
         </Details>
       </Source>
@@ -1624,42 +1698,6 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="192308" Release="Release" RarityType="Narrative">
-    <Name>A huge loud hailer</Name>
-    <Text ID="192308">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/military_items/icon_loudspeaker.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="19850">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Info ID="19991">
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="151018">
-        <Name>RQ_Artisans_IMadeThis</Name>
-        <Text ID="1521030542">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/resident_tier03.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="151018">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-  </Asset>
   <Asset ID="112957" Release="Update 04" RarityType="Quest">
     <Name>QI_ArtefactsOldWorld_Leg_Dummy</Name>
     <Text ID="114044">
@@ -1693,11 +1731,11 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="192195" Release="Release" RarityType="Narrative">
-    <Name>Manifest of the Jorgensen Trust</Name>
-    <Text ID="192195">
+  <Asset ID="192309" Release="Release" RarityType="Narrative">
+    <Name>A pair of eyeglasses</Name>
+    <Text ID="192309">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/icon_glasses.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="19850">
@@ -1710,21 +1748,57 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
-    <Info ID="19860">
+    <Info ID="19992">
       <Icon />
     </Info>
     <Sources>
-      <Source ID="47">
-        <Name>Second_ai_01 (Bente Jorgensen)</Name>
-        <Text ID="6977702">
+      <Source ID="151018">
+        <Name>RQ_Artisans_IMadeThis</Name>
+        <Text ID="1521030542">
           <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
+            <Filename>data/ui/2kimages/main/profiles/resident_tier03.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="47">
+          <Text ID="151018">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="192196" Release="Release" RarityType="Narrative">
+    <Name>Alonso's screw driller</Name>
+    <Text ID="192196">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_drill_1.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="19850">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Info ID="19861">
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="48">
+        <Name>Second_ai_08 (Alonso Gravez)</Name>
+        <Text ID="-317323353">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_08.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="48">
             <Icon>
-              <Filename>data/ui/2kimages/main/profiles/ai_01.png</Filename>
+              <Filename>data/ui/2kimages/main/profiles/ai_08.png</Filename>
             </Icon>
           </Text>
         </Details>
@@ -1764,11 +1838,11 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="192309" Release="Release" RarityType="Narrative">
-    <Name>A pair of eyeglasses</Name>
-    <Text ID="192309">
+  <Asset ID="192311" Release="Release" RarityType="Narrative">
+    <Name>Sourpuss</Name>
+    <Text ID="192311">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_glasses.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/animals/icon_goat.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="19850">
@@ -1781,20 +1855,44 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
-    <Info ID="19992">
+    <Info ID="19993">
+      <Icon />
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="192197" Release="Release" RarityType="Narrative">
+    <Name>Human Skull</Name>
+    <Text ID="192197">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/museum/icon_museum_neanderthaler.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="19850">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Info ID="19862">
       <Icon />
     </Info>
     <Sources>
-      <Source ID="151018">
-        <Name>RQ_Artisans_IMadeThis</Name>
-        <Text ID="1521030542">
+      <Source ID="48">
+        <Name>Second_ai_08 (Alonso Gravez)</Name>
+        <Text ID="-317323353">
           <Icon>
-            <Filename>data/ui/2kimages/main/profiles/resident_tier03.png</Filename>
+            <Filename>data/ui/2kimages/main/profiles/ai_08.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="151018">
-            <Icon />
+          <Text ID="48">
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/ai_08.png</Filename>
+            </Icon>
           </Text>
         </Details>
       </Source>
@@ -1871,11 +1969,11 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="192196" Release="Release" RarityType="Narrative">
-    <Name>Alonso's screw driller</Name>
-    <Text ID="192196">
+  <Asset ID="192198" Release="Release" RarityType="Narrative">
+    <Name>Blunted Bone Saw</Name>
+    <Text ID="192198">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_drill_1.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_dragsaw_.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="19850">
@@ -1888,7 +1986,7 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
-    <Info ID="19861">
+    <Info ID="19863">
       <Icon />
     </Info>
     <Sources>
@@ -1909,11 +2007,44 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="192311" Release="Release" RarityType="Narrative">
-    <Name>Sourpuss</Name>
-    <Text ID="192311">
+  <Asset ID="113097" Release="Update 04" RarityType="Quest">
+    <Name>QI_AnimalsOldWorld_Rare_Dummy</Name>
+    <Text ID="114044">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/animals/icon_goat.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118007">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Sources>
+      <Source ID="113206">
+        <Name>Rare Fishes Distribution Map (Old World)</Name>
+        <Text ID="1021022190">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/captain.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="113188">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="192313" Release="Release" RarityType="Narrative">
+    <Name>A very technical thing</Name>
+    <Text ID="192313">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_drill_3.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="19850">
@@ -1926,7 +2057,7 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
-    <Info ID="19993">
+    <Info ID="19995">
       <Icon />
     </Info>
     <Sources />
@@ -1969,44 +2100,11 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="113097" Release="Update 04" RarityType="Quest">
-    <Name>QI_AnimalsOldWorld_Rare_Dummy</Name>
-    <Text ID="114044">
+  <Asset ID="192199" Release="Release" RarityType="Narrative">
+    <Name>Alonso's tranquilizers</Name>
+    <Text ID="192199">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118007">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Sources>
-      <Source ID="113206">
-        <Name>Rare Fishes Distribution Map (Old World)</Name>
-        <Text ID="1021022190">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/captain.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="113188">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="192197" Release="Release" RarityType="Narrative">
-    <Name>Human Skull</Name>
-    <Text ID="192197">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_museum_neanderthaler.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_vitamin_supplement_2.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="19850">
@@ -2019,7 +2117,7 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
-    <Info ID="19862">
+    <Info ID="19864">
       <Icon />
     </Info>
     <Sources>
@@ -2111,11 +2209,11 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="192198" Release="Release" RarityType="Narrative">
-    <Name>Blunted Bone Saw</Name>
-    <Text ID="192198">
+  <Asset ID="192314" Release="Release" RarityType="Narrative">
+    <Name>Experimental arrangement</Name>
+    <Text ID="192314">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_dragsaw_.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_thermometer_3.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="19850">
@@ -2128,32 +2226,87 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
-    <Info ID="19863">
+    <Info ID="19996">
       <Icon />
     </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="113099" Release="Update 04" RarityType="Quest">
+    <Name>QI_AnimalsSunkenWorld_Rare_Dummy</Name>
+    <Text ID="114044">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118007">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
     <Sources>
-      <Source ID="48">
-        <Name>Second_ai_08 (Alonso Gravez)</Name>
-        <Text ID="-317323353">
+      <Source ID="113208">
+        <Name>Rare Fishes Distribution Map (Sunken World)</Name>
+        <Text ID="1021022190">
           <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_08.png</Filename>
+            <Filename>data/ui/2kimages/main/profiles/captain.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="48">
+          <Text ID="113190">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="192200" Release="Release" RarityType="Narrative">
+    <Name>Willie's Diary</Name>
+    <Text ID="192200">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/museum/icon_book_comon.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="19850">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Info ID="19865">
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="80">
+        <Name>Second_ai_03 (Willie Wibblesock)</Name>
+        <Text ID="2050890057">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_03.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="80">
             <Icon>
-              <Filename>data/ui/2kimages/main/profiles/ai_08.png</Filename>
+              <Filename>data/ui/2kimages/main/profiles/ai_03.png</Filename>
             </Icon>
           </Text>
         </Details>
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="192313" Release="Release" RarityType="Narrative">
-    <Name>A very technical thing</Name>
-    <Text ID="192313">
+  <Asset ID="192315" Release="Release" RarityType="Narrative">
+    <Name>The journal of missed chances</Name>
+    <Text ID="192315">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_drill_3.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/icon_journal.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="19850">
@@ -2166,7 +2319,7 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
-    <Info ID="19995">
+    <Info ID="19997">
       <Icon />
     </Info>
     <Sources />
@@ -2209,44 +2362,11 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="113099" Release="Update 04" RarityType="Quest">
-    <Name>QI_AnimalsSunkenWorld_Rare_Dummy</Name>
-    <Text ID="114044">
+  <Asset ID="192201" Release="Release" RarityType="Narrative">
+    <Name>A barrel of gold</Name>
+    <Text ID="192201">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118007">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Sources>
-      <Source ID="113208">
-        <Name>Rare Fishes Distribution Map (Sunken World)</Name>
-        <Text ID="1021022190">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/captain.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="113190">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="192199" Release="Release" RarityType="Narrative">
-    <Name>Alonso's tranquilizers</Name>
-    <Text ID="192199">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_vitamin_supplement_2.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/icon_gold.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="19850">
@@ -2259,32 +2379,32 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
-    <Info ID="19864">
+    <Info ID="19866">
       <Icon />
     </Info>
     <Sources>
-      <Source ID="48">
-        <Name>Second_ai_08 (Alonso Gravez)</Name>
-        <Text ID="-317323353">
+      <Source ID="80">
+        <Name>Second_ai_03 (Willie Wibblesock)</Name>
+        <Text ID="2050890057">
           <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_08.png</Filename>
+            <Filename>data/ui/2kimages/main/profiles/ai_03.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="48">
+          <Text ID="80">
             <Icon>
-              <Filename>data/ui/2kimages/main/profiles/ai_08.png</Filename>
+              <Filename>data/ui/2kimages/main/profiles/ai_03.png</Filename>
             </Icon>
           </Text>
         </Details>
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="192314" Release="Release" RarityType="Narrative">
-    <Name>Experimental arrangement</Name>
-    <Text ID="192314">
+  <Asset ID="192317" Release="Release" RarityType="Narrative">
+    <Name>Broken generator</Name>
+    <Text ID="192317">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_thermometer_3.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_generator_1.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="19850">
@@ -2297,7 +2417,7 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
-    <Info ID="19996">
+    <Info ID="19998">
       <Icon />
     </Info>
     <Sources />
@@ -2335,11 +2455,11 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="192315" Release="Release" RarityType="Narrative">
-    <Name>The journal of missed chances</Name>
-    <Text ID="192315">
+  <Asset ID="192202" Release="Release" RarityType="Narrative">
+    <Name>Half a sausage</Name>
+    <Text ID="192202">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_journal.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/icon_meat_sausage.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="19850">
@@ -2352,10 +2472,26 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
-    <Info ID="19997">
+    <Info ID="19867">
       <Icon />
     </Info>
-    <Sources />
+    <Sources>
+      <Source ID="80">
+        <Name>Second_ai_03 (Willie Wibblesock)</Name>
+        <Text ID="2050890057">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_03.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="80">
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/ai_03.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
   </Asset>
   <Asset ID="113101" Release="Update 04" RarityType="Quest">
     <Name>QI_AnimalsNewWorld_Epic_Dummy</Name>
@@ -2428,11 +2564,11 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="192200" Release="Release" RarityType="Narrative">
-    <Name>Willie's Diary</Name>
-    <Text ID="192200">
+  <Asset ID="192318" Release="Release" RarityType="Narrative">
+    <Name>Prototype turbine</Name>
+    <Text ID="192318">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_book_comon.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_turbine_1.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="19850">
@@ -2445,7 +2581,29 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
-    <Info ID="19865">
+    <Info ID="19999">
+      <Icon />
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="192203" Release="Release" RarityType="Narrative">
+    <Name>Wooden Box</Name>
+    <Text ID="192203">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_3.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="19850">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Info ID="19868">
       <Icon />
     </Info>
     <Sources>
@@ -2465,28 +2623,6 @@
         </Details>
       </Source>
     </Sources>
-  </Asset>
-  <Asset ID="192317" Release="Release" RarityType="Narrative">
-    <Name>Broken generator</Name>
-    <Text ID="192317">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_generator_1.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="19850">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Info ID="19998">
-      <Icon />
-    </Info>
-    <Sources />
   </Asset>
   <Asset ID="113102" Release="Update 04" RarityType="Quest">
     <Name>QI_AnimalsSunkenWorld_Epic_Dummy</Name>
@@ -2521,28 +2657,6 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="192318" Release="Release" RarityType="Narrative">
-    <Name>Prototype turbine</Name>
-    <Text ID="192318">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_turbine_1.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="19850">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Info ID="19999">
-      <Icon />
-    </Info>
-    <Sources />
-  </Asset>
   <Asset ID="192231" Release="Release" RarityType="Narrative">
     <Name>Quartz from the mines</Name>
     <Text ID="192231">
@@ -2575,44 +2689,6 @@
           <Text ID="81">
             <Icon>
               <Filename>data/ui/2kimages/main/profiles/ai_04.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="192201" Release="Release" RarityType="Narrative">
-    <Name>A barrel of gold</Name>
-    <Text ID="192201">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_gold.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="19850">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Info ID="19866">
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="80">
-        <Name>Second_ai_03 (Willie Wibblesock)</Name>
-        <Text ID="2050890057">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_03.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="80">
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/ai_03.png</Filename>
             </Icon>
           </Text>
         </Details>
@@ -2690,44 +2766,6 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="192202" Release="Release" RarityType="Narrative">
-    <Name>Half a sausage</Name>
-    <Text ID="192202">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_meat_sausage.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="19850">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Info ID="19867">
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="80">
-        <Name>Second_ai_03 (Willie Wibblesock)</Name>
-        <Text ID="2050890057">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_03.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="80">
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/ai_03.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-  </Asset>
   <Asset ID="192321" Release="Release" RarityType="Narrative">
     <Name>Golden pucklegun</Name>
     <Text ID="192321">
@@ -2750,14 +2788,14 @@
     </Info>
     <Sources />
   </Asset>
-  <Asset ID="113104" Release="Update 04" RarityType="Quest">
-    <Name>QI_AnimalsNewWorld_Leg_Dummy</Name>
-    <Text ID="114044">
+  <Asset ID="192204" Release="Release" RarityType="Narrative">
+    <Name>Beryl's mink coat</Name>
+    <Text ID="192204">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/icon_fur_coats.png</Filename>
       </Icon>
     </Text>
-    <Rarity ID="118007">
+    <Rarity ID="19850">
       <Icon />
     </Rarity>
     <ItemType>Character Item</ItemType>
@@ -2767,17 +2805,22 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
+    <Info ID="19869">
+      <Icon />
+    </Info>
     <Sources>
-      <Source ID="113213">
-        <Name>Mythological Animal Hideout Map (New World)</Name>
-        <Text ID="1021022190">
+      <Source ID="82">
+        <Name>Second_ai_05 (Beryl O'Mara)</Name>
+        <Text ID="212207197">
           <Icon>
-            <Filename>data/ui/2kimages/main/profiles/captain.png</Filename>
+            <Filename>data/ui/2kimages/main/profiles/ai_05.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="113195">
-            <Icon />
+          <Text ID="82">
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/ai_05.png</Filename>
+            </Icon>
           </Text>
         </Details>
       </Source>
@@ -2821,11 +2864,44 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="192203" Release="Release" RarityType="Narrative">
-    <Name>Wooden Box</Name>
-    <Text ID="192203">
+  <Asset ID="113104" Release="Update 04" RarityType="Quest">
+    <Name>QI_AnimalsNewWorld_Leg_Dummy</Name>
+    <Text ID="114044">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_3.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118007">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Sources>
+      <Source ID="113213">
+        <Name>Mythological Animal Hideout Map (New World)</Name>
+        <Text ID="1021022190">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/captain.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="113195">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="192205" Release="Release" RarityType="Narrative">
+    <Name>Beryl's nail clippers</Name>
+    <Text ID="192205">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_pruning_material_3.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="19850">
@@ -2838,21 +2914,21 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
-    <Info ID="19868">
+    <Info ID="19870">
       <Icon />
     </Info>
     <Sources>
-      <Source ID="80">
-        <Name>Second_ai_03 (Willie Wibblesock)</Name>
-        <Text ID="2050890057">
+      <Source ID="82">
+        <Name>Second_ai_05 (Beryl O'Mara)</Name>
+        <Text ID="212207197">
           <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_03.png</Filename>
+            <Filename>data/ui/2kimages/main/profiles/ai_05.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="80">
+          <Text ID="82">
             <Icon>
-              <Filename>data/ui/2kimages/main/profiles/ai_03.png</Filename>
+              <Filename>data/ui/2kimages/main/profiles/ai_05.png</Filename>
             </Icon>
           </Text>
         </Details>
@@ -2881,6 +2957,66 @@
     </Info>
     <Sources />
   </Asset>
+  <Asset ID="192323" Release="Release" RarityType="Narrative">
+    <Name>A giant bottle of Champagne</Name>
+    <Text ID="192323">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_champagne.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="19850">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Info ID="20003">
+      <Icon />
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="192206" Release="Release" RarityType="Narrative">
+    <Name>Beryl's barrel</Name>
+    <Text ID="192206">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_flotsam.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="19850">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Info ID="19871">
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="82">
+        <Name>Second_ai_05 (Beryl O'Mara)</Name>
+        <Text ID="212207197">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="82">
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/ai_05.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+  </Asset>
   <Asset ID="113105" Release="Update 04" RarityType="Quest">
     <Name>QI_AnimalsSunkenWorld_Leg_Dummy</Name>
     <Text ID="114044">
@@ -2908,67 +3044,6 @@
         </Text>
         <Details>
           <Text ID="113196">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="192323" Release="Release" RarityType="Narrative">
-    <Name>A giant bottle of Champagne</Name>
-    <Text ID="192323">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_champagne.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="19850">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Info ID="20003">
-      <Icon />
-    </Info>
-    <Sources />
-  </Asset>
-  <Asset ID="113106" Release="Update 04" RarityType="Quest">
-    <Name>QI_Machines_Rare_Dummy</Name>
-    <Text ID="114044">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118007">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Sources>
-      <Source ID="113215">
-        <Name>Naval Battles Map (Old World)</Name>
-        <Text ID="1021022190">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/captain.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="113197">
-            <Icon />
-          </Text>
-          <Text ID="113198">
-            <Icon />
-          </Text>
-          <Text ID="113199">
             <Icon />
           </Text>
         </Details>
@@ -3035,11 +3110,11 @@
     </Info>
     <Sources />
   </Asset>
-  <Asset ID="192204" Release="Release" RarityType="Narrative">
-    <Name>Beryl's mink coat</Name>
-    <Text ID="192204">
+  <Asset ID="192207" Release="Release" RarityType="Narrative">
+    <Name>A pot of hot coffee</Name>
+    <Text ID="192207">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_fur_coats.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/narative_item/icon_beryl_tea.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="19850">
@@ -3052,7 +3127,7 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
-    <Info ID="19869">
+    <Info ID="19872">
       <Icon />
     </Info>
     <Sources>
@@ -3073,8 +3148,8 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="113109" Release="Update 04" RarityType="Quest">
-    <Name>QI_Machines_Epic_Dummy</Name>
+  <Asset ID="113106" Release="Update 04" RarityType="Quest">
+    <Name>QI_Machines_Rare_Dummy</Name>
     <Text ID="114044">
       <Icon>
         <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
@@ -3091,21 +3166,21 @@
     </Allocation>
     <TradePrice>25</TradePrice>
     <Sources>
-      <Source ID="113218">
-        <Name>Merchant Ships Sinking Spots Map (Old World)</Name>
+      <Source ID="113215">
+        <Name>Naval Battles Map (Old World)</Name>
         <Text ID="1021022190">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/captain.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="113200">
+          <Text ID="113197">
             <Icon />
           </Text>
-          <Text ID="113201">
+          <Text ID="113198">
             <Icon />
           </Text>
-          <Text ID="113202">
+          <Text ID="113199">
             <Icon />
           </Text>
         </Details>
@@ -3172,46 +3247,8 @@
     </Info>
     <Sources />
   </Asset>
-  <Asset ID="192205" Release="Release" RarityType="Narrative">
-    <Name>Beryl's nail clippers</Name>
-    <Text ID="192205">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/machine_items/icon_pruning_material_3.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="19850">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Info ID="19870">
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="82">
-        <Name>Second_ai_05 (Beryl O'Mara)</Name>
-        <Text ID="212207197">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_05.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="82">
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/ai_05.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="113112" Release="Update 04" RarityType="Quest">
-    <Name>QI_Machines_Leg_Dummy</Name>
+  <Asset ID="113109" Release="Update 04" RarityType="Quest">
+    <Name>QI_Machines_Epic_Dummy</Name>
     <Text ID="114044">
       <Icon>
         <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
@@ -3228,21 +3265,21 @@
     </Allocation>
     <TradePrice>25</TradePrice>
     <Sources>
-      <Source ID="113221">
-        <Name>Royal Shipwreck Map (Old World)</Name>
+      <Source ID="113218">
+        <Name>Merchant Ships Sinking Spots Map (Old World)</Name>
         <Text ID="1021022190">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/captain.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="113203">
+          <Text ID="113200">
             <Icon />
           </Text>
-          <Text ID="113204">
+          <Text ID="113201">
             <Icon />
           </Text>
-          <Text ID="113205">
+          <Text ID="113202">
             <Icon />
           </Text>
         </Details>
@@ -3287,318 +3324,6 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="192206" Release="Release" RarityType="Narrative">
-    <Name>Beryl's barrel</Name>
-    <Text ID="192206">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_flotsam.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="19850">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Info ID="19871">
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="82">
-        <Name>Second_ai_05 (Beryl O'Mara)</Name>
-        <Text ID="212207197">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_05.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="82">
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/ai_05.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="113422" Release="Update 04" RarityType="Quest">
-    <Name>QI_Sceptre_Head_Dummy</Name>
-    <Text ID="113422">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118007">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Sources>
-      <Source ID="112259">
-        <Name>SL204_GoingUnder</Name>
-        <Text ID="-789427430">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_01.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="112259">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="192327" Release="Release" RarityType="Narrative">
-    <Name>Stubborn donkey</Name>
-    <Text ID="192327">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/animals/icon_donkey.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="19850">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Info ID="20007">
-      <Icon />
-    </Info>
-    <Sources />
-  </Asset>
-  <Asset ID="192237" Release="Release" RarityType="Narrative">
-    <Name>Message in a bottle</Name>
-    <Text ID="192237">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_drift_bottle.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="19850">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Info ID="19900">
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="73">
-        <Name>Third_party_03 (Anne Harlow)</Name>
-        <Text ID="1514529701">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="73">
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="192207" Release="Release" RarityType="Narrative">
-    <Name>A pot of hot coffee</Name>
-    <Text ID="192207">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/narative_item/icon_beryl_tea.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="19850">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Info ID="19872">
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="82">
-        <Name>Second_ai_05 (Beryl O'Mara)</Name>
-        <Text ID="212207197">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_05.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="82">
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/ai_05.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="113444" Release="Update 04" RarityType="Quest">
-    <Name>QI_Sceptre_Stick_Dummy</Name>
-    <Text ID="113444">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118007">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Sources>
-      <Source ID="113418">
-        <Name>SL111_CrackingTheCode_Dive2_HIT</Name>
-        <Text ID="-789427430">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_01.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="113417">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="192328" Release="Release" RarityType="Narrative">
-    <Name>Worn out hat</Name>
-    <Text ID="192328">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_fedora_hat.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="19850">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Info ID="20008">
-      <Icon />
-    </Info>
-    <Sources />
-  </Asset>
-  <Asset ID="113446" Release="Update 04" RarityType="Quest">
-    <Name>QI_Journal_Damaged_Dummy</Name>
-    <Text ID="113444">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118007">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Sources>
-      <Source ID="111850">
-        <Name>SL107_UnderTheSeas</Name>
-        <Text ID="-789427430">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_01.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="111850">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="192329" Release="Release" RarityType="Narrative">
-    <Name>A basket of cranberries</Name>
-    <Text ID="192329">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_coffee_beans.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="19850">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Info ID="20009">
-      <Icon />
-    </Info>
-    <Sources />
-  </Asset>
-  <Asset ID="113691" Release="Update 04" RarityType="Quest">
-    <Name>QI_TestingTheProtoype_Dummy</Name>
-    <Text ID="112518">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118007">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Sources>
-      <Source ID="112967">
-        <Name>VQ Old Nate - Diving Bell - Scrap</Name>
-        <Text ID="-1497861245">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_06.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="112967">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-  </Asset>
   <Asset ID="192208" Release="Release" RarityType="Narrative">
     <Name>Germ resistant soap</Name>
     <Text ID="192208">
@@ -3637,11 +3362,11 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="192330" Release="Release" RarityType="Narrative">
-    <Name>Oscar, the parrot</Name>
-    <Text ID="192330">
+  <Asset ID="192327" Release="Release" RarityType="Narrative">
+    <Name>Stubborn donkey</Name>
+    <Text ID="192327">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/animals/icon_parrot.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/animals/icon_donkey.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="19850">
@@ -3654,54 +3379,16 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
-    <Info ID="20010">
+    <Info ID="20007">
       <Icon />
     </Info>
     <Sources />
   </Asset>
-  <Asset ID="192238" Release="Release" RarityType="Narrative">
-    <Name>Strange talisman</Name>
-    <Text ID="192238">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_monkey_amulet.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="19850">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Info ID="19901">
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="76">
-        <Name>Third_party_04 (La Fortune)</Name>
-        <Text ID="1638667151">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="76">
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="114043" Release="Update 04" RarityType="Quest">
-    <Name>QI_RestoringSceptre_Gold_Dummy</Name>
+  <Asset ID="113112" Release="Update 04" RarityType="Quest">
+    <Name>QI_Machines_Leg_Dummy</Name>
     <Text ID="114044">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_gold.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="118007">
@@ -3715,15 +3402,21 @@
     </Allocation>
     <TradePrice>25</TradePrice>
     <Sources>
-      <Source ID="114040">
-        <Name>SL206C - Optional diving for goods</Name>
-        <Text ID="-1497861245">
+      <Source ID="113221">
+        <Name>Royal Shipwreck Map (Old World)</Name>
+        <Text ID="1021022190">
           <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_06.png</Filename>
+            <Filename>data/ui/2kimages/main/profiles/captain.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="114040">
+          <Text ID="113203">
+            <Icon />
+          </Text>
+          <Text ID="113204">
+            <Icon />
+          </Text>
+          <Text ID="113205">
             <Icon />
           </Text>
         </Details>
@@ -3768,11 +3461,11 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="192239" Release="Release" RarityType="Narrative">
-    <Name>Ragged white flag</Name>
-    <Text ID="192239">
+  <Asset ID="192237" Release="Release" RarityType="Narrative">
+    <Name>Message in a bottle</Name>
+    <Text ID="192237">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_white_flag.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/icon_drift_bottle.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="19850">
@@ -3785,22 +3478,77 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
-    <Info ID="19902">
+    <Info ID="19900">
       <Icon />
     </Info>
     <Sources>
-      <Source ID="76">
-        <Name>Third_party_04 (La Fortune)</Name>
-        <Text ID="1638667151">
+      <Source ID="73">
+        <Name>Third_party_03 (Anne Harlow)</Name>
+        <Text ID="1514529701">
           <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="76">
+          <Text ID="73">
             <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
+              <Filename>data/ui/2kimages/main/profiles/3rd_party_03.png</Filename>
             </Icon>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="192328" Release="Release" RarityType="Narrative">
+    <Name>Worn out hat</Name>
+    <Text ID="192328">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_fedora_hat.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="19850">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Info ID="20008">
+      <Icon />
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="113422" Release="Update 04" RarityType="Quest">
+    <Name>QI_Sceptre_Head_Dummy</Name>
+    <Text ID="113422">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118007">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Sources>
+      <Source ID="112259">
+        <Name>SL204_GoingUnder</Name>
+        <Text ID="-789427430">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_01.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="112259">
+            <Icon />
           </Text>
         </Details>
       </Source>
@@ -3844,11 +3592,11 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="192332" Release="Release" RarityType="Narrative">
-    <Name>Tattered Novel</Name>
-    <Text ID="192332">
+  <Asset ID="192329" Release="Release" RarityType="Narrative">
+    <Name>A basket of cranberries</Name>
+    <Text ID="192329">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_book_comon.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/icon_coffee_beans.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="19850">
@@ -3861,16 +3609,49 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
-    <Info ID="20012">
+    <Info ID="20009">
       <Icon />
     </Info>
     <Sources />
   </Asset>
-  <Asset ID="192240" Release="Release" RarityType="Narrative">
-    <Name>A child's letter</Name>
-    <Text ID="192240">
+  <Asset ID="113444" Release="Update 04" RarityType="Quest">
+    <Name>QI_Sceptre_Stick_Dummy</Name>
+    <Text ID="113444">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/campaign/icon_letter_closed.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118007">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Sources>
+      <Source ID="113418">
+        <Name>SL111_CrackingTheCode_Dive2_HIT</Name>
+        <Text ID="-789427430">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_01.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="113417">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="192238" Release="Release" RarityType="Narrative">
+    <Name>Strange talisman</Name>
+    <Text ID="192238">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/museum/icon_monkey_amulet.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="19850">
@@ -3883,7 +3664,7 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
-    <Info ID="19903">
+    <Info ID="19901">
       <Icon />
     </Info>
     <Sources>
@@ -3942,11 +3723,11 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="192333" Release="Release" RarityType="Narrative">
-    <Name>Jose, the chimpanzee</Name>
-    <Text ID="192333">
+  <Asset ID="192330" Release="Release" RarityType="Narrative">
+    <Name>Oscar, the parrot</Name>
+    <Text ID="192330">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/animals/icon_chimpanzee.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/animals/icon_parrot.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="19850">
@@ -3959,16 +3740,49 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
-    <Info ID="20013">
+    <Info ID="20010">
       <Icon />
     </Info>
     <Sources />
   </Asset>
-  <Asset ID="192241" Release="Release" RarityType="Narrative">
-    <Name>Jean's little helper</Name>
-    <Text ID="192241">
+  <Asset ID="113446" Release="Update 04" RarityType="Quest">
+    <Name>QI_Journal_Damaged_Dummy</Name>
+    <Text ID="113444">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_rum_barrel.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118007">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Sources>
+      <Source ID="111850">
+        <Name>SL107_UnderTheSeas</Name>
+        <Text ID="-789427430">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_01.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="111850">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="192239" Release="Release" RarityType="Narrative">
+    <Name>Ragged white flag</Name>
+    <Text ID="192239">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_white_flag.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="19850">
@@ -3981,7 +3795,7 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
-    <Info ID="19904">
+    <Info ID="19902">
       <Icon />
     </Info>
     <Sources>
@@ -4001,28 +3815,6 @@
         </Details>
       </Source>
     </Sources>
-  </Asset>
-  <Asset ID="192334" Release="Release" RarityType="Narrative">
-    <Name>A family recipe</Name>
-    <Text ID="192334">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_tortilla.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="19850">
-      <Icon />
-    </Rarity>
-    <ItemType>Character Item</ItemType>
-    <Allocation ID="NoneAllocation">
-      <Text ID="-1230">
-        <Icon />
-      </Text>
-    </Allocation>
-    <TradePrice>25</TradePrice>
-    <Info ID="20015">
-      <Icon />
-    </Info>
-    <Sources />
   </Asset>
   <Asset ID="192213" Release="Release" RarityType="Narrative">
     <Name>A bottle of Champaign</Name>
@@ -4062,11 +3854,44 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="192293" Release="Release" RarityType="Narrative">
-    <Name>A tiny seedling</Name>
-    <Text ID="192293">
+  <Asset ID="113691" Release="Update 04" RarityType="Quest">
+    <Name>QI_TestingTheProtoype_Dummy</Name>
+    <Text ID="112518">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_fertile_lands.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118007">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Sources>
+      <Source ID="112967">
+        <Name>VQ Old Nate - Diving Bell - Scrap</Name>
+        <Text ID="-1497861245">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_06.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="112967">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="192240" Release="Release" RarityType="Narrative">
+    <Name>A child's letter</Name>
+    <Text ID="192240">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/campaign/icon_letter_closed.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="19850">
@@ -4079,16 +3904,32 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
-    <Info ID="19977">
+    <Info ID="19903">
       <Icon />
     </Info>
-    <Sources />
+    <Sources>
+      <Source ID="76">
+        <Name>Third_party_04 (La Fortune)</Name>
+        <Text ID="1638667151">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="76">
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
   </Asset>
-  <Asset ID="192335" Release="Release" RarityType="Narrative">
-    <Name>Grandmother's sewing machine</Name>
-    <Text ID="192335">
+  <Asset ID="192332" Release="Release" RarityType="Narrative">
+    <Name>Tattered Novel</Name>
+    <Text ID="192332">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_sewing_machine.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/museum/icon_book_comon.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="19850">
@@ -4101,7 +3942,7 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
-    <Info ID="20016">
+    <Info ID="20012">
       <Icon />
     </Info>
     <Sources />
@@ -4144,11 +3985,44 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="192295" Release="Release" RarityType="Narrative">
-    <Name>Monica</Name>
-    <Text ID="192295">
+  <Asset ID="114043" Release="Update 04" RarityType="Quest">
+    <Name>QI_RestoringSceptre_Gold_Dummy</Name>
+    <Text ID="114044">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_pigs.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/icon_gold.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118007">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Sources>
+      <Source ID="114040">
+        <Name>SL206C - Optional diving for goods</Name>
+        <Text ID="-1497861245">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_06.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="114040">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="192241" Release="Release" RarityType="Narrative">
+    <Name>Jean's little helper</Name>
+    <Text ID="192241">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_rum_barrel.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="19850">
@@ -4161,7 +4035,45 @@
       </Text>
     </Allocation>
     <TradePrice>25</TradePrice>
-    <Info ID="19978">
+    <Info ID="19904">
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="76">
+        <Name>Third_party_04 (La Fortune)</Name>
+        <Text ID="1638667151">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="76">
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="192333" Release="Release" RarityType="Narrative">
+    <Name>Jose, the chimpanzee</Name>
+    <Text ID="192333">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/animals/icon_chimpanzee.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="19850">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Info ID="20013">
       <Icon />
     </Info>
     <Sources />
@@ -4203,6 +4115,94 @@
         </Details>
       </Source>
     </Sources>
+  </Asset>
+  <Asset ID="192293" Release="Release" RarityType="Narrative">
+    <Name>A tiny seedling</Name>
+    <Text ID="192293">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_fertile_lands.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="19850">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Info ID="19977">
+      <Icon />
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="192334" Release="Release" RarityType="Narrative">
+    <Name>A family recipe</Name>
+    <Text ID="192334">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_tortilla.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="19850">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Info ID="20015">
+      <Icon />
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="192295" Release="Release" RarityType="Narrative">
+    <Name>Monica</Name>
+    <Text ID="192295">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_pigs.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="19850">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Info ID="19978">
+      <Icon />
+    </Info>
+    <Sources />
+  </Asset>
+  <Asset ID="192335" Release="Release" RarityType="Narrative">
+    <Name>Grandmother's sewing machine</Name>
+    <Text ID="192335">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_sewing_machine.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="19850">
+      <Icon />
+    </Rarity>
+    <ItemType>Character Item</ItemType>
+    <Allocation ID="NoneAllocation">
+      <Text ID="-1230">
+        <Icon />
+      </Text>
+    </Allocation>
+    <TradePrice>25</TradePrice>
+    <Info ID="20016">
+      <Icon />
+    </Info>
+    <Sources />
   </Asset>
   <Asset ID="192296" Release="Release" RarityType="Narrative">
     <Name>Warm loaf of bread</Name>
