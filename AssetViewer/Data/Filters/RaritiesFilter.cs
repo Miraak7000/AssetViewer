@@ -63,6 +63,9 @@ namespace AssetViewer.Data.Filters {
 
         case ValueComparisons.GraterThan:
           return RarityComparer.Default.Compare(l, SelectedComparisonValue) >= 0;
+
+        case ValueComparisons.UnEqual:
+          return RarityComparer.Default.Compare(l, SelectedComparisonValue) != 0;
       }
       return false;
     }

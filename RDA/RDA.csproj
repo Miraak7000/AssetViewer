@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets.cs" />
+    <Compile Include="Comparer\BasicUpgradeComparer.cs" />
     <Compile Include="Data\DescriptionFontStyle.cs" />
     <Compile Include="Data\EffectTarget.cs" />
     <Compile Include="Data\OfferingItems.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="Data\TempSource.cs" />
     <Compile Include="Data\ThirdParty.cs" />
     <Compile Include="Data\Upgrade.cs" />
+    <Compile Include="Data\XmlLoader.cs" />
     <Compile Include="Helper.cs" />
     <Compile Include="Library\Extensions.cs" />
     <Compile Include="Library\Languages.cs" />
@@ -92,14 +94,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Original\assets.xml" />
+    <None Include="Original\assets00.xml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
     <Content Include="Modified\Assets.xml" />
-    <Content Include="Modified\Assets_ActiveItem.xml" />
-    <Content Include="Modified\Assets_BuildPermitBuilding.xml" />
-    <Content Include="Modified\Assets_CultureItem.xml" />
     <Content Include="Modified\Assets_Expedition.xml" />
     <Content Include="Modified\Assets_ExpeditionEvent.xml" />
     <Content Include="Modified\Assets_ExpeditionEvents.xml" />
@@ -109,30 +108,22 @@
     <Content Include="Modified\Assets_FreeAreaBuilding.xml" />
     <Content Include="Modified\Assets_Guildhouse.xml" />
     <Content Include="Modified\Assets_GuildhouseBuff.xml" />
-    <Content Include="Modified\Assets_GuildhouseItem.xml" />
     <Content Include="Modified\Assets_GuildhouseItemCleanedUp.xml" />
     <Content Include="Modified\Assets_HarborOffice.xml" />
-    <Content Include="Modified\Assets_HarborOfficeItem.xml" />
     <Content Include="Modified\Assets_HeavyFactoryBuilding.xml" />
     <Content Include="Modified\Assets_HeavyFreeAreaBuilding.xml" />
-    <Content Include="Modified\Assets_ItemSpecialAction.xml" />
-    <Content Include="Modified\Assets_ItemSpecialActionVisualEffect.xml" />
     <Content Include="Modified\Assets_MonumentCategory.xml" />
     <Content Include="Modified\Assets_MonumentEvent.xml" />
     <Content Include="Modified\Assets_MonumentReward.xml" />
     <Content Include="Modified\Assets_MonumentThreshold.xml" />
     <Content Include="Modified\Assets_PowerplantBuilding.xml" />
-    <Content Include="Modified\Assets_Product.xml" />
     <Content Include="Modified\Assets_RewardPool.xml" />
     <Content Include="Modified\Assets_RewardPools.xml" />
-    <Content Include="Modified\Assets_ShipSpecialist.xml" />
     <Content Include="Modified\Assets_SlotFactoryBuilding7.xml" />
     <Content Include="Modified\Assets_Sources.xml" />
     <Content Include="Modified\Assets_Text.xml" />
     <Content Include="Modified\Assets_ThirdParty.xml" />
     <Content Include="Modified\Assets_Tourism.xml" />
-    <Content Include="Modified\Assets_TownhallItem.xml" />
-    <Content Include="Modified\Assets_VehicleItem.xml" />
     <Content Include="Modified\LanguageFiles\Texts_Custom_German.json" />
     <Content Include="Modified\LanguageFiles\Texts_Custom_English.json" />
     <Content Include="Modified\TemplateNames.xml" />
@@ -149,7 +140,11 @@
     <Content Include="Modified\Texts_Russian.xml" />
     <Content Include="Modified\Texts_Spanish.xml" />
     <Content Include="Modified\Texts_Taiwanese.xml" />
+    <Content Include="Original\assets03.xml" />
+    <Content Include="Original\assets.xml" />
     <Content Include="Original\camera.xml" />
+    <Content Include="Original\properties.xml" />
+    <Content Include="Original\templates.xml" />
     <Content Include="Original\texts_brazilian.xml" />
     <Content Include="Original\texts_chinese.xml" />
     <Content Include="Original\texts_english.xml" />

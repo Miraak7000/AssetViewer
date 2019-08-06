@@ -27,7 +27,7 @@ namespace AssetViewer.Templates {
 
     public IEnumerable<Description> EffectBuildings => EffectTargets?.SelectMany(e => e.Buildings).Distinct();
 
-    public string EffectTargetInfo => new Description("-1210").CurrentLang  + string.Join(", ", EffectTargets.Select(s => s.Text.CurrentLang));
+    public string EffectTargetInfo => new Description("-1210").CurrentLang + string.Join(", ", EffectTargets.Select(s => s.Text.CurrentLang));
     public Boolean HasEffectTargetInfo { get; set; }
 
     //
@@ -52,6 +52,7 @@ namespace AssetViewer.Templates {
     public List<Upgrade> KontorUpgrades { get; set; }
     public List<Upgrade> ShipyardUpgrades { get; set; }
     public List<Upgrade> ItemGeneratorUpgrades { get; set; }
+    public List<Upgrade> PassiveTradeGoodGenUpgrades { get; private set; }
     public List<Upgrade> DivingBellUpgrades { get; set; }
     public List<Upgrade> CraftableItemUpgrades { get; set; }
     public List<Upgrade> PierUpgrade { get; set; }
@@ -78,6 +79,9 @@ namespace AssetViewer.Templates {
 
     public List<String> MonumentThresholds { get; set; }
     public List<String> MonumentRewards { get; set; }
+    public List<Upgrade> ItemWithUI { get; }
+    public List<Upgrade> ItemStartExpedition { get; }
+    public List<Upgrade> Building { get; }
 
     #endregion Properties
 
@@ -88,7 +92,7 @@ namespace AssetViewer.Templates {
       this.Name = asset.Element("Name").Value;
       this.Text = new Description(asset.Element("Text"));
       this.RarityType = asset.Attribute("RarityType").Value;
-        this.Rarity = new Description(asset.Element("Rarity"));
+      this.Rarity = new Description(asset.Element("Rarity"));
       this.ItemType = asset.Element("ItemType").Value;
       this.Allocation = asset.Element("Allocation").HasElements ? new Allocation(asset.Element("Allocation")) : null;
       this.EffectTargets = asset.Element("EffectTargets")?.Elements().Select(s => new EffectTarget(s)).ToList() ?? new List<EffectTarget>();
@@ -157,6 +161,9 @@ namespace AssetViewer.Templates {
       if (asset.Element("ItemActionUpgrades")?.HasElements ?? false) {
         this.ItemActionUpgrades = asset.Element("ItemActionUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
       }
+      if (asset.Element("PassiveTradeGoodGenUpgrades")?.HasElements ?? false) {
+        this.PassiveTradeGoodGenUpgrades = asset.Element("PassiveTradeGoodGenUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
+      }
       this.TradePrice = asset.Element("TradePrice")?.Value;
       if (asset.Element("Info") != null) {
         this.Info = new Description(asset.Element("Info"));
@@ -178,6 +185,18 @@ namespace AssetViewer.Templates {
       }
       if (asset.Element("CraftableItemUpgrades")?.HasElements ?? false) {
         this.CraftableItemUpgrades = asset.Element("CraftableItemUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
+      }
+      if (asset.Element("PierUpgrade")?.HasElements ?? false) {
+        this.PierUpgrade = asset.Element("PierUpgrade").Elements().Select(s => new Upgrade(s)).ToList();
+      }
+      if (asset.Element("ItemWithUI")?.HasElements ?? false) {
+        this.ItemWithUI = asset.Element("ItemWithUI").Elements().Select(s => new Upgrade(s)).ToList();
+      }
+      if (asset.Element("ItemStartExpedition")?.HasElements ?? false) {
+        this.ItemStartExpedition = asset.Element("ItemStartExpedition").Elements().Select(s => new Upgrade(s)).ToList();
+      }
+      if (asset.Element("Building")?.HasElements ?? false) {
+        this.Building = asset.Element("Building").Elements().Select(s => new Upgrade(s)).ToList();
       }
       if (asset.Element("PierUpgrade")?.HasElements ?? false) {
         this.PierUpgrade = asset.Element("PierUpgrade").Elements().Select(s => new Upgrade(s)).ToList();

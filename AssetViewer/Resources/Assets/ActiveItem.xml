@@ -10,7 +10,7 @@
     <Rarity ID="118002">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="Ship">
       <Text ID="2342">
         <Icon>
@@ -49,7 +49,7 @@
     <Rarity ID="118002">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="Ship">
       <Text ID="2342">
         <Icon>
@@ -70,7 +70,7 @@
     <Rarity ID="118003">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="Ship">
       <Text ID="2342">
         <Icon>
@@ -118,7 +118,7 @@
     <Rarity ID="118007">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="Ship">
       <Text ID="2342">
         <Icon>
@@ -139,7 +139,7 @@
     <Rarity ID="118003">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="HarborOffice">
       <Text ID="4065">
         <Icon>
@@ -200,7 +200,7 @@
     <Rarity ID="118003">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="Ship">
       <Text ID="2342">
         <Icon>
@@ -250,7 +250,7 @@
     <Rarity ID="118005">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="DivingVessel">
       <Text ID="112084">
         <Icon>
@@ -309,7 +309,7 @@
     <Rarity ID="118003">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="Ship">
       <Text ID="2342">
         <Icon>
@@ -349,6 +349,27 @@
     <TradePrice />
     <Sources />
   </Asset>
+  <Asset ID="193478" Release="Update 04" RarityType="Common">
+    <Name>Horadric Cube</Name>
+    <Text ID="193478">
+      <Icon>
+        <Filename>data/ui/2kimages/main/icons/icon_resource_worker_2.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Item</ItemType>
+    <Allocation ID="Ship">
+      <Text ID="2342">
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <TradePrice>5000</TradePrice>
+    <Sources />
+  </Asset>
   <Asset ID="112551" Release="Update 04" RarityType="Rare">
     <Name>Fessenden Oscillator</Name>
     <Text ID="112551">
@@ -359,7 +380,7 @@
     <Rarity ID="118004">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="DivingVessel">
       <Text ID="112084">
         <Icon>
@@ -385,12 +406,17 @@
         <Value></Value>
       </Upgrade>
       <Upgrade>
-        <Text ID="20621">
+        <Text ID="113403">
           <Icon>
-            <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
+            <Filename>data/ui/2kimages/main/icons/icon_wifi.png</Filename>
           </Icon>
+          <AdditionalInformation ID="113404" FontStyle="16">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_wifi.png</Filename>
+            </Icon>
+          </AdditionalInformation>
         </Text>
-        <Value>0</Value>
+        <Value></Value>
       </Upgrade>
     </ItemActionUpgrades>
     <CraftableItemUpgrades>
@@ -545,27 +571,6 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="193478" Release="Update 04" RarityType="Common">
-    <Name>Horadric Cube</Name>
-    <Text ID="193478">
-      <Icon>
-        <Filename>data/ui/2kimages/main/icons/icon_resource_worker_2.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="Ship">
-      <Text ID="2342">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <TradePrice>5000</TradePrice>
-    <Sources />
-  </Asset>
   <Asset ID="190989" Release="Release" RarityType="Uncommon">
     <Name>GoTeam</Name>
     <Text ID="190989">
@@ -576,7 +581,7 @@
     <Rarity ID="118003">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="Ship">
       <Text ID="2342">
         <Icon>
@@ -629,7 +634,7 @@
     <Rarity ID="118004">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="Ship">
       <Text ID="2342">
         <Icon>
@@ -679,6 +684,59 @@
     <TradePrice>6250</TradePrice>
     <Sources />
   </Asset>
+  <Asset ID="190990" Release="Release" RarityType="Uncommon">
+    <Name>GoShip</Name>
+    <Text ID="190990">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_elephant.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118003">
+      <Icon />
+    </Rarity>
+    <ItemType>Item</ItemType>
+    <Allocation ID="Ship">
+      <Text ID="2342">
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <ItemActionUpgrades>
+      <Upgrade>
+        <Text ID="20072" FontStyle="16">
+          <Icon />
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2339">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+75%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2423" FontStyle="16">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
+          </Icon>
+        </Text>
+        <Value>00:30</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2424" FontStyle="16">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_wait_till_full.png</Filename>
+          </Icon>
+        </Text>
+        <Value>00:30</Value>
+      </Upgrade>
+    </ItemActionUpgrades>
+    <TradePrice />
+    <Sources />
+  </Asset>
   <Asset ID="192130" Release="Release" RarityType="Legendary">
     <Name>Pirate Captain Flag</Name>
     <Text ID="192130">
@@ -689,7 +747,7 @@
     <Rarity ID="118006">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="Ship">
       <Text ID="2342">
         <Icon>
@@ -755,17 +813,142 @@
     <TradePrice>37500</TradePrice>
     <Sources />
   </Asset>
-  <Asset ID="190990" Release="Release" RarityType="Uncommon">
-    <Name>GoShip</Name>
+  <Asset ID="112552" Release="Update 04" RarityType="Epic">
+    <Name>ASDIC</Name>
+    <Text ID="112552">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/machine_items/item_sonar_02.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118005">
+      <Icon />
+    </Rarity>
+    <ItemType>Item</ItemType>
+    <Allocation ID="DivingVessel">
+      <Text ID="112084">
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_diving_vessel.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Text ID="800033">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+          </Icon>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <ItemActionUpgrades>
+      <Upgrade>
+        <Text ID="20072" FontStyle="16">
+          <Icon />
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="113403">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_wifi.png</Filename>
+          </Icon>
+          <AdditionalInformation ID="113408" FontStyle="16">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_wifi.png</Filename>
+            </Icon>
+          </AdditionalInformation>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </ItemActionUpgrades>
+    <CraftableItemUpgrades>
+      <Upgrade>
+        <Text ID="112518">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_junk_inferior.png</Filename>
+          </Icon>
+        </Text>
+        <Value>15</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010219">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_steel.png</Filename>
+          </Icon>
+        </Text>
+        <Value>5</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010228">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_quartz_sand.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+    </CraftableItemUpgrades>
+    <TradePrice>60000</TradePrice>
+    <Info ID="112583">
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="77">
+        <Name>Third_party_06 (Old Nate)</Name>
+        <Text ID="-1255403405">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_06.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="77">
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/3rd_party_06.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="112970">
+        <Name>VQ Old Nate - Diving Bell - Blueprints v1</Name>
+        <Text ID="-1497861245">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_06.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="113006">
+            <Icon />
+          </Text>
+          <Text ID="113010">
+            <Icon />
+          </Text>
+          <Text ID="113014">
+            <Icon />
+          </Text>
+          <Text ID="112973">
+            <Icon />
+          </Text>
+          <Text ID="112978">
+            <Icon />
+          </Text>
+          <Text ID="112979">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="190997" Release="Release" RarityType="Uncommon">
+    <Name>Snare</Name>
     <Text ID="190990">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_elephant.png</Filename>
+        <Filename>data/ui/2kimages/main/icons/icon_expedition_hypnotist.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="118003">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="Ship">
       <Text ID="2342">
         <Icon>
@@ -786,7 +969,7 @@
             <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
           </Icon>
         </Text>
-        <Value>+75%</Value>
+        <Value>-50%</Value>
       </Upgrade>
       <Upgrade>
         <Text ID="2423" FontStyle="16">
@@ -818,7 +1001,7 @@
     <Rarity ID="118006">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="Ship">
       <Text ID="2342">
         <Icon>
@@ -887,17 +1070,17 @@
     </Info>
     <Sources />
   </Asset>
-  <Asset ID="190997" Release="Release" RarityType="Uncommon">
-    <Name>Snare</Name>
-    <Text ID="190990">
+  <Asset ID="191410" Release="Release" RarityType="Uncommon">
+    <Name>PuckleGunItem</Name>
+    <Text ID="191410">
       <Icon>
-        <Filename>data/ui/2kimages/main/icons/icon_expedition_hypnotist.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/icon_advanced_weaponry.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="118003">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="Ship">
       <Text ID="2342">
         <Icon>
@@ -913,12 +1096,197 @@
         <Value></Value>
       </Upgrade>
       <Upgrade>
-        <Text ID="2339">
+        <Text ID="2424" FontStyle="16">
           <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
+            <Filename>data/ui/2kimages/main/icons/icon_wait_till_full.png</Filename>
           </Icon>
         </Text>
-        <Value>-50%</Value>
+        <Value>00:30</Value>
+      </Upgrade>
+    </ItemActionUpgrades>
+    <TradePrice />
+    <Sources />
+  </Asset>
+  <Asset ID="112553" Release="Update 04" RarityType="Legendary">
+    <Name>Sonar QB</Name>
+    <Text ID="112553">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/machine_items/item_sonar_03.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118006">
+      <Icon />
+    </Rarity>
+    <ItemType>Item</ItemType>
+    <Allocation ID="DivingVessel">
+      <Text ID="112084">
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_diving_vessel.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Text ID="800033">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_threat_navigation_tint.png</Filename>
+          </Icon>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <ItemActionUpgrades>
+      <Upgrade>
+        <Text ID="20072" FontStyle="16">
+          <Icon />
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="113403">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_wifi.png</Filename>
+          </Icon>
+          <AdditionalInformation ID="113410" FontStyle="16">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_wifi.png</Filename>
+            </Icon>
+          </AdditionalInformation>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </ItemActionUpgrades>
+    <CraftableItemUpgrades>
+      <Upgrade>
+        <Text ID="112520">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_junk.png</Filename>
+          </Icon>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010219">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_steel.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010228">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_quartz_sand.png</Filename>
+          </Icon>
+        </Text>
+        <Value>15</Value>
+      </Upgrade>
+    </CraftableItemUpgrades>
+    <TradePrice>177375</TradePrice>
+    <Info ID="112584">
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="77">
+        <Name>Third_party_06 (Old Nate)</Name>
+        <Text ID="-1255403405">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_06.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="77">
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/3rd_party_06.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="112970">
+        <Name>VQ Old Nate - Diving Bell - Blueprints v1</Name>
+        <Text ID="-1497861245">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_06.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="113006">
+            <Icon />
+          </Text>
+          <Text ID="113010">
+            <Icon />
+          </Text>
+          <Text ID="113014">
+            <Icon />
+          </Text>
+          <Text ID="112973">
+            <Icon />
+          </Text>
+          <Text ID="112978">
+            <Icon />
+          </Text>
+          <Text ID="112979">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="192155" Release="Release" RarityType="Legendary">
+    <Name>Self-Propelled Ship Toolcart</Name>
+    <Text ID="192155">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/consumables/icon_ship_repair_2.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118006">
+      <Icon />
+    </Rarity>
+    <ItemType>Item</ItemType>
+    <Allocation ID="Ship">
+      <Text ID="2342">
+        <Icon>
+          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Text ID="800034">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_threat_crafting_tint.png</Filename>
+          </Icon>
+        </Text>
+        <Value>50</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <ItemActionUpgrades>
+      <Upgrade>
+        <Text ID="20071" FontStyle="16">
+          <Icon />
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="15195">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/ship_info/icon_hitpoints.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+1000%</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="15196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_morale.png</Filename>
+          </Icon>
+          <AdditionalInformation ID="21590" FontStyle="16">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_morale.png</Filename>
+            </Icon>
+          </AdditionalInformation>
+        </Text>
+        <Value></Value>
       </Upgrade>
       <Upgrade>
         <Text ID="2423" FontStyle="16">
@@ -934,48 +1302,219 @@
             <Filename>data/ui/2kimages/main/icons/icon_wait_till_full.png</Filename>
           </Icon>
         </Text>
-        <Value>00:30</Value>
+        <Value>00:05:00</Value>
       </Upgrade>
     </ItemActionUpgrades>
-    <TradePrice />
-    <Sources />
-  </Asset>
-  <Asset ID="191410" Release="Release" RarityType="Uncommon">
-    <Name>PuckleGunItem</Name>
-    <Text ID="191410">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_advanced_weaponry.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118003">
+    <TradePrice>172000</TradePrice>
+    <Info ID="19798">
       <Icon />
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="Ship">
-      <Text ID="2342">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemActionUpgrades>
-      <Upgrade>
-        <Text ID="20072" FontStyle="16">
-          <Icon />
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="2424" FontStyle="16">
+    </Info>
+    <Sources>
+      <Source ID="112084">
+        <Name>Diving Vessel</Name>
+        <Text ID="113420">
           <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_wait_till_full.png</Filename>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
           </Icon>
         </Text>
-        <Value>00:30</Value>
-      </Upgrade>
-    </ItemActionUpgrades>
-    <TradePrice />
-    <Sources />
+        <Details>
+          <Text ID="113420">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800401">
+        <Name>Rescue Mission Hard</Name>
+        <Text ID="11631">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-5">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800402">
+        <Name>Pirate Hunt Hard</Name>
+        <Text ID="11632">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-5">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="81">
+        <Name>Second_ai_04 (George Smith)</Name>
+        <Text ID="-1992475406">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_04.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="81">
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/ai_04.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="152669">
+        <Name>Robin Hood Archibald Eli - George Smith</Name>
+        <Text ID="1842115247">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_04.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="152669">
+            <Icon />
+          </Text>
+          <Text ID="152298">
+            <Icon />
+          </Text>
+          <Text ID="152302">
+            <Icon />
+          </Text>
+          <Text ID="152483">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="150190">
+        <Name>Creaming the Colonials - Archibald Blake</Name>
+        <Text ID="-1684163760">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="150190">
+            <Icon />
+          </Text>
+          <Text ID="150192">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="76">
+        <Name>Third_party_04 (La Fortune)</Name>
+        <Text ID="1638667151">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="76">
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="152928">
+        <Name>Pickup Delaying Death - Jean LaFortune</Name>
+        <Text ID="1368805180">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="152928">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="150293">
+        <Name>Destroy Them Or Us - Sarmento</Name>
+        <Text ID="1251086765">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="150293">
+            <Icon />
+          </Text>
+          <Text ID="150300">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="111260">
+        <Name>Quest Mercier Deserter Request</Name>
+        <Text ID="2077310275">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/campaign_portrait_09.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="111260">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="110770">
+        <Name>Picture Puzzle - Conspirators Rescue - Hugo Mercier </Name>
+        <Text ID="1749551055">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/portrait_icons_0014_resident_tier02.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="110770">
+            <Icon />
+          </Text>
+          <Text ID="110776">
+            <Icon />
+          </Text>
+          <Text ID="150916">
+            <Icon />
+          </Text>
+          <Text ID="150917">
+            <Icon />
+          </Text>
+          <Text ID="150952">
+            <Icon />
+          </Text>
+          <Text ID="150955">
+            <Icon />
+          </Text>
+          <Text ID="150923">
+            <Icon />
+          </Text>
+          <Text ID="151024">
+            <Icon />
+          </Text>
+          <Text ID="151025">
+            <Icon />
+          </Text>
+          <Text ID="150927">
+            <Icon />
+          </Text>
+          <Text ID="150928">
+            <Icon />
+          </Text>
+          <Text ID="151030">
+            <Icon />
+          </Text>
+          <Text ID="151031">
+            <Icon />
+          </Text>
+          <Text ID="151032">
+            <Icon />
+          </Text>
+          <Text ID="151033">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
   </Asset>
   <Asset ID="192173" Release="Release" RarityType="Epic">
     <Name>Pirate Flag</Name>
@@ -987,7 +1526,7 @@
     <Rarity ID="118005">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="Warship">
       <Text ID="12812">
         <Icon>
@@ -1323,7 +1862,7 @@
     <Rarity ID="118006">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="Warship">
       <Text ID="12812">
         <Icon>
@@ -1515,7 +2054,7 @@
     <Rarity ID="118002">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="Ship">
       <Text ID="2342">
         <Icon>
@@ -1600,6 +2139,62 @@
       </Source>
       <Source ID="29">
         <Name>Third_party_05 (Isabel Sarmento)</Name>
+        <Text ID="351925916">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-6">
+            <Icon />
+          </Text>
+          <Text ID="-7">
+            <Icon />
+          </Text>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="199">
+        <Name>Third_party_05b (Isabel Sarmento Prosperity Campaign)</Name>
+        <Text ID="351925916">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-6">
+            <Icon />
+          </Text>
+          <Text ID="-7">
+            <Icon />
+          </Text>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="200">
+        <Name>Third_party_05c (Isabel Sarmento Attackable Campaign)</Name>
         <Text ID="351925916">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
@@ -1999,7 +2594,7 @@
     <Rarity ID="118003">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="Ship">
       <Text ID="2342">
         <Icon>
@@ -2201,6 +2796,62 @@
       </Source>
       <Source ID="29">
         <Name>Third_party_05 (Isabel Sarmento)</Name>
+        <Text ID="351925916">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-6">
+            <Icon />
+          </Text>
+          <Text ID="-7">
+            <Icon />
+          </Text>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="199">
+        <Name>Third_party_05b (Isabel Sarmento Prosperity Campaign)</Name>
+        <Text ID="351925916">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-6">
+            <Icon />
+          </Text>
+          <Text ID="-7">
+            <Icon />
+          </Text>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="200">
+        <Name>Third_party_05c (Isabel Sarmento Attackable Campaign)</Name>
         <Text ID="351925916">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
@@ -2600,7 +3251,7 @@
     <Rarity ID="118002">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="Ship">
       <Text ID="2342">
         <Icon>
@@ -2631,7 +3282,7 @@
     <Rarity ID="118002">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="Ship">
       <Text ID="2342">
         <Icon>
@@ -2710,7 +3361,7 @@
     <Rarity ID="118003">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="Ship">
       <Text ID="2342">
         <Icon>
@@ -2763,7 +3414,7 @@
     <Rarity ID="118002">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="Ship">
       <Text ID="2342">
         <Icon>
@@ -2808,7 +3459,7 @@
     <Rarity ID="118003">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="SteamShip">
       <Text ID="2344">
         <Icon>
@@ -3093,6 +3744,62 @@
       </Source>
       <Source ID="29">
         <Name>Third_party_05 (Isabel Sarmento)</Name>
+        <Text ID="351925916">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-6">
+            <Icon />
+          </Text>
+          <Text ID="-7">
+            <Icon />
+          </Text>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="199">
+        <Name>Third_party_05b (Isabel Sarmento Prosperity Campaign)</Name>
+        <Text ID="351925916">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-6">
+            <Icon />
+          </Text>
+          <Text ID="-7">
+            <Icon />
+          </Text>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="200">
+        <Name>Third_party_05c (Isabel Sarmento Attackable Campaign)</Name>
         <Text ID="351925916">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
@@ -3575,7 +4282,7 @@
     <Rarity ID="118004">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="SteamShip">
       <Text ID="2344">
         <Icon>
@@ -3855,6 +4562,62 @@
       </Source>
       <Source ID="29">
         <Name>Third_party_05 (Isabel Sarmento)</Name>
+        <Text ID="351925916">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-6">
+            <Icon />
+          </Text>
+          <Text ID="-7">
+            <Icon />
+          </Text>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="199">
+        <Name>Third_party_05b (Isabel Sarmento Prosperity Campaign)</Name>
+        <Text ID="351925916">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-6">
+            <Icon />
+          </Text>
+          <Text ID="-7">
+            <Icon />
+          </Text>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="200">
+        <Name>Third_party_05c (Isabel Sarmento Attackable Campaign)</Name>
         <Text ID="351925916">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
@@ -4334,7 +5097,7 @@
     <Rarity ID="118005">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="SteamShip">
       <Text ID="2344">
         <Icon>
@@ -4547,6 +5310,62 @@
       </Source>
       <Source ID="29">
         <Name>Third_party_05 (Isabel Sarmento)</Name>
+        <Text ID="351925916">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-6">
+            <Icon />
+          </Text>
+          <Text ID="-7">
+            <Icon />
+          </Text>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="199">
+        <Name>Third_party_05b (Isabel Sarmento Prosperity Campaign)</Name>
+        <Text ID="351925916">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-6">
+            <Icon />
+          </Text>
+          <Text ID="-7">
+            <Icon />
+          </Text>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="200">
+        <Name>Third_party_05c (Isabel Sarmento Attackable Campaign)</Name>
         <Text ID="351925916">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
@@ -4792,7 +5611,7 @@
     <Rarity ID="118003">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="Ship">
       <Text ID="2342">
         <Icon>
@@ -5095,6 +5914,62 @@
       </Source>
       <Source ID="29">
         <Name>Third_party_05 (Isabel Sarmento)</Name>
+        <Text ID="351925916">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-6">
+            <Icon />
+          </Text>
+          <Text ID="-7">
+            <Icon />
+          </Text>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="199">
+        <Name>Third_party_05b (Isabel Sarmento Prosperity Campaign)</Name>
+        <Text ID="351925916">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-6">
+            <Icon />
+          </Text>
+          <Text ID="-7">
+            <Icon />
+          </Text>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="200">
+        <Name>Third_party_05c (Isabel Sarmento Attackable Campaign)</Name>
         <Text ID="351925916">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
@@ -5561,7 +6436,7 @@
     <Rarity ID="118004">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="Ship">
       <Text ID="2342">
         <Icon>
@@ -5963,6 +6838,62 @@
           </Text>
         </Details>
       </Source>
+      <Source ID="199">
+        <Name>Third_party_05b (Isabel Sarmento Prosperity Campaign)</Name>
+        <Text ID="351925916">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-6">
+            <Icon />
+          </Text>
+          <Text ID="-7">
+            <Icon />
+          </Text>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="200">
+        <Name>Third_party_05c (Isabel Sarmento Attackable Campaign)</Name>
+        <Text ID="351925916">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-6">
+            <Icon />
+          </Text>
+          <Text ID="-7">
+            <Icon />
+          </Text>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
       <Source ID="76">
         <Name>Third_party_04 (La Fortune)</Name>
         <Text ID="1205039976">
@@ -6333,7 +7264,7 @@
     <Rarity ID="118005">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
+    <ItemType>Item</ItemType>
     <Allocation ID="Ship">
       <Text ID="2342">
         <Icon>
@@ -6590,6 +7521,62 @@
           </Text>
         </Details>
       </Source>
+      <Source ID="199">
+        <Name>Third_party_05b (Isabel Sarmento Prosperity Campaign)</Name>
+        <Text ID="351925916">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-6">
+            <Icon />
+          </Text>
+          <Text ID="-7">
+            <Icon />
+          </Text>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="200">
+        <Name>Third_party_05c (Isabel Sarmento Attackable Campaign)</Name>
+        <Text ID="351925916">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-6">
+            <Icon />
+          </Text>
+          <Text ID="-7">
+            <Icon />
+          </Text>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
       <Source ID="76">
         <Name>Third_party_04 (La Fortune)</Name>
         <Text ID="1205039976">
@@ -6630,290 +7617,6 @@
             <Icon />
           </Text>
           <Text ID="-11">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="81">
-        <Name>Second_ai_04 (George Smith)</Name>
-        <Text ID="-1992475406">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_04.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="81">
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/ai_04.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="152669">
-        <Name>Robin Hood Archibald Eli - George Smith</Name>
-        <Text ID="1842115247">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_04.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="152669">
-            <Icon />
-          </Text>
-          <Text ID="152298">
-            <Icon />
-          </Text>
-          <Text ID="152302">
-            <Icon />
-          </Text>
-          <Text ID="152483">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="150190">
-        <Name>Creaming the Colonials - Archibald Blake</Name>
-        <Text ID="-1684163760">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_02.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="150190">
-            <Icon />
-          </Text>
-          <Text ID="150192">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="76">
-        <Name>Third_party_04 (La Fortune)</Name>
-        <Text ID="1638667151">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="76">
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="152928">
-        <Name>Pickup Delaying Death - Jean LaFortune</Name>
-        <Text ID="1368805180">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_04.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="152928">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="150293">
-        <Name>Destroy Them Or Us - Sarmento</Name>
-        <Text ID="1251086765">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_05.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="150293">
-            <Icon />
-          </Text>
-          <Text ID="150300">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="111260">
-        <Name>Quest Mercier Deserter Request</Name>
-        <Text ID="2077310275">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/campaign_portrait_09.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="111260">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="110770">
-        <Name>Picture Puzzle - Conspirators Rescue - Hugo Mercier </Name>
-        <Text ID="1749551055">
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/portrait_icons_0014_resident_tier02.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="110770">
-            <Icon />
-          </Text>
-          <Text ID="110776">
-            <Icon />
-          </Text>
-          <Text ID="150916">
-            <Icon />
-          </Text>
-          <Text ID="150917">
-            <Icon />
-          </Text>
-          <Text ID="150952">
-            <Icon />
-          </Text>
-          <Text ID="150955">
-            <Icon />
-          </Text>
-          <Text ID="150923">
-            <Icon />
-          </Text>
-          <Text ID="151024">
-            <Icon />
-          </Text>
-          <Text ID="151025">
-            <Icon />
-          </Text>
-          <Text ID="150927">
-            <Icon />
-          </Text>
-          <Text ID="150928">
-            <Icon />
-          </Text>
-          <Text ID="151030">
-            <Icon />
-          </Text>
-          <Text ID="151031">
-            <Icon />
-          </Text>
-          <Text ID="151032">
-            <Icon />
-          </Text>
-          <Text ID="151033">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-  </Asset>
-  <Asset ID="192155" Release="Release" RarityType="Legendary">
-    <Name>Self-Propelled Ship Toolcart</Name>
-    <Text ID="192155">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/consumables/icon_ship_repair_2.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118006">
-      <Icon />
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <Allocation ID="Ship">
-      <Text ID="2342">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_ship.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Text ID="800034">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_threat_crafting_tint.png</Filename>
-          </Icon>
-        </Text>
-        <Value>50</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
-    <ItemActionUpgrades>
-      <Upgrade>
-        <Text ID="20071" FontStyle="16">
-          <Icon />
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="15195">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/ship_info/icon_hitpoints.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+1000%</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="15196">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_morale.png</Filename>
-          </Icon>
-          <AdditionalInformation ID="21590" FontStyle="16">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_morale.png</Filename>
-            </Icon>
-          </AdditionalInformation>
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="2423" FontStyle="16">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
-          </Icon>
-        </Text>
-        <Value>00:30</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="2424" FontStyle="16">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_wait_till_full.png</Filename>
-          </Icon>
-        </Text>
-        <Value>00:05:00</Value>
-      </Upgrade>
-    </ItemActionUpgrades>
-    <TradePrice>172000</TradePrice>
-    <Info ID="19798">
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="112084">
-        <Name>Diving Vessel</Name>
-        <Text ID="113420">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="113420">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800401">
-        <Name>Rescue Mission Hard</Name>
-        <Text ID="11631">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="-5">
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800402">
-        <Name>Pirate Hunt Hard</Name>
-        <Text ID="11632">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="-5">
             <Icon />
           </Text>
         </Details>

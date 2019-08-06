@@ -47,7 +47,9 @@
           Grid.Column="0"
           Width="18"
           Height="18"
+          Margin="0,2,0,0"
           HorizontalAlignment="Left"
+          VerticalAlignment="Top"
           Source="{Binding Path=Text.Icon.Filename}" />
         <StackPanel
           Grid.Row="0"
@@ -283,6 +285,10 @@
             <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.ItemGeneratorUpgrades, Converter={StaticResource VisibilityConverter}}">
               <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.ItemGeneratorUpgrades}" />
             </Grid>
+            <!--  PassiveTradeGoodGenUpgrades  -->
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.PassiveTradeGoodGenUpgrades, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.PassiveTradeGoodGenUpgrades}" />
+            </Grid>
             <!--  DivingBellUpgrades  -->
             <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.DivingBellUpgrades, Converter={StaticResource VisibilityConverter}}">
               <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.DivingBellUpgrades}" />
@@ -290,6 +296,18 @@
             <!--  PierUpgrade  -->
             <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.PierUpgrade, Converter={StaticResource VisibilityConverter}}">
               <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.PierUpgrade}" />
+            </Grid>
+            <!--  ItemWithUI  -->
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.ItemWithUI, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.ItemWithUI}" />
+            </Grid>
+            <!--  ItemStartExpedition  -->
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.ItemStartExpedition, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.ItemStartExpedition}" />
+            </Grid>
+            <!--  Building  -->
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.Building, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.Building}" />
             </Grid>
             <!--  Expedition  -->
             <StackPanel Visibility="{Binding Path=SelectedAsset.ExpeditionAttributes, Converter={StaticResource VisibilityConverter}}">
@@ -329,8 +347,26 @@
                 <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.ItemSets}" />
               </Grid>
             </StackPanel>
+
+            <!--  Transmute  -->
+            <StackPanel Visibility="{Binding Path=SelectedAsset.CraftableItemUpgrades, Converter={StaticResource VisibilityConverter}}">
+              <Border
+                Height="1"
+                Margin="0,5"
+                BorderBrush="#FFA49370"
+                BorderThickness="1"
+                Opacity="0.5" />
+              <TextBlock
+                Margin="0,2,0,5"
+                VerticalAlignment="Top"
+                Foreground="#FFA49370"
+                Text="{Binding Path=ItemTrasmutable}" />
+              <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.CraftableItemUpgrades, Converter={StaticResource VisibilityConverter}}">
+                <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.CraftableItemUpgrades}" />
+              </Grid>
+            </StackPanel>
             <!--  Trade  -->
-            <StackPanel Visibility="{Binding Path=SelectedAsset, Converter={StaticResource VisibilityConverter}}">
+            <StackPanel Visibility="{Binding Path=SelectedAsset.TradePrice, Converter={StaticResource VisibilityConverter}}">
               <Border
                 Height="1"
                 Margin="0,5"
@@ -363,7 +399,7 @@
               </Grid>
             </StackPanel>
             <!--  Info  -->
-            <StackPanel Visibility="{Binding Path=SelectedAsset, Converter={StaticResource VisibilityConverter}}">
+            <StackPanel Visibility="{Binding Path=SelectedAsset.Info, Converter={StaticResource VisibilityConverter}}">
               <Border
                 Height="1"
                 Margin="0,5"
@@ -491,45 +527,6 @@
           </Button>
         </Grid>
       </Border>
-      <Image
-        Height="28"
-        Margin="0,2,2,0"
-        HorizontalAlignment="Right"
-        VerticalAlignment="Top"
-        Source="pack://application:,,,/AssetViewer;component/Resources/data/ui/2kimages/main/icons/icon_threat_crafting_tint.png"
-        ToolTipService.InitialShowDelay="0"
-        ToolTipService.ShowDuration="60000"
-        Visibility="{Binding Path=SelectedAsset.CraftableItemUpgrades, Converter={StaticResource VisibilityConverter}}">
-        <Image.ToolTip>
-          <ToolTip Background="#FF2A2C27" DataContext="{Binding PlacementTarget.DataContext, RelativeSource={RelativeSource Self}}" Placement="Left">
-            <ItemsControl ItemsSource="{Binding SelectedAsset.CraftableItemUpgrades}">
-              <ItemsControl.ItemTemplate>
-                <DataTemplate>
-                  <Grid>
-                    <Grid.ColumnDefinitions>
-                      <ColumnDefinition Width="Auto" />
-                      <ColumnDefinition />
-                      <ColumnDefinition Width="Auto" />
-                    </Grid.ColumnDefinitions>
-                    <Image Grid.Column="0" Height="22" Source="{Binding Text.Icon.Filename}" />
-                    <TextBlock
-                      Grid.Column="1"
-                      Margin="5,0"
-                      VerticalAlignment="Center"
-                      Foreground="#FFFFE4AD"
-                      Text="{Binding Text.CurrentLang}" />
-                    <TextBlock
-                      Grid.Column="2"
-                      VerticalAlignment="Center"
-                      Foreground="#FFFFE4AD"
-                      Text="{Binding Value}" />
-                  </Grid>
-                </DataTemplate>
-              </ItemsControl.ItemTemplate>
-            </ItemsControl>
-          </ToolTip>
-        </Image.ToolTip>
-      </Image>
     </Grid>
   </ScrollViewer>
 </UserControl>

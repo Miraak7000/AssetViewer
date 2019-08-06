@@ -2,6 +2,7 @@
 using RDA.Templates;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Xml.Linq;
 using System.Xml.XPath;
@@ -45,6 +46,7 @@ namespace RDA.Data {
           }
           break;
 
+        case "ItemWithUI":
         case "MonumentEventReward":
         case "CollectablePicturePuzzle":
           this.Text = new Description(Source.XPathSelectElement("Values/Standard/GUID").Value);
@@ -134,9 +136,22 @@ namespace RDA.Data {
         case "A7_QuestPicturePuzzleObject":
         case "A7_QuestSmuggler":
         case "A7_QuestDivingBellGeneric":
+        case "A7_QuestSelectObject":
+        case "A7_QuestPhotography":
+        case "A7_QuestSustain":
+        case "A7_QuestNewspaperArticle":
+          var questgiver = Source.XPathSelectElement("Values/Quest/QuestGiver").Value;
+          this.Text = new Description(questgiver).InsertBefore("-").InsertBefore(new Description("2734"));
+          foreach (var item in element.Details.Select(e => new Description(e.XPathSelectElement("Values/Standard/GUID").Value)).Distinct()) {
+            this.Details.Add(item);
+          }
+          break;
+
         case "A7_QuestDivingBellSonar":
-          this.Text = new Description(Source.XPathSelectElement("Values/Quest/QuestGiver").Value).InsertBefore("-").InsertBefore(new Description("2734"));
-          foreach (var item in element.Details.Select(e=> new Description(e.XPathSelectElement("Values/Standard/GUID").Value)).Distinct()) {
+        case "A7_QuestDivingBellTreasureMap":
+          questgiver = Source.XPathSelectElement("Values/Quest/QuestGiver")?.Value;
+          this.Text = new Description(questgiver ?? "113420").InsertBefore("-").InsertBefore(new Description("2734"));
+          foreach (var item in element.Details.Select(e => new Description(e.XPathSelectElement("Values/Standard/GUID").Value)).Distinct()) {
             this.Details.Add(item);
           }
           break;
@@ -145,15 +160,19 @@ namespace RDA.Data {
           this.Text = new Description(element.Source.XPathSelectElement("Values/Standard/GUID").Value).InsertBefore("-").InsertBefore(new Description("-12"));
           this.Details = element.Details.Select(d => new Description(d.XPathSelectElement("Values/Standard/GUID").Value)).ToList();
           break;
+
         case "Crafting":
           this.Text = new Description(element.Source.XPathSelectElement("Values/Standard/GUID").Value).InsertBefore("-").InsertBefore(new Description("112529"));
           this.Details = element.Details.Select(d => new Description(d.XPathSelectElement("Values/Standard/GUID").Value)).ToList();
           break;
+
         case "Dive":
           this.Text = new Description("113420");
           this.Details = element.Details.Select(d => new Description("113420")).ToList();
           break;
+
         default:
+          Debug.WriteLine(Source.Element("Template").Value);
           throw new NotImplementedException();
       }
       if (this.Text.Icon == null) {

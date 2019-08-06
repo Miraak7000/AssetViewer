@@ -41,6 +41,11 @@ namespace AssetViewer {
                 "AssetViewer.Resources.Assets.ItemSpecialAction.xml",
                 "AssetViewer.Resources.Assets.ActiveItem.xml",
                 "AssetViewer.Resources.Assets.ItemSpecialActionVisualEffect.xml",
+                "AssetViewer.Resources.Assets.ItemWithUI.xml",
+                "AssetViewer.Resources.Assets.FluffItem.xml",
+                "AssetViewer.Resources.Assets.QuestItemMagistrate.xml",
+                "AssetViewer.Resources.Assets.StartExpeditionItem.xml",
+                "AssetViewer.Resources.Assets.QuestItem.xml",
                 "AssetViewer.Resources.Assets.BuildPermitBuilding.xml"
             };
 

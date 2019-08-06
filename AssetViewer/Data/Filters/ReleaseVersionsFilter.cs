@@ -38,6 +38,9 @@ namespace AssetViewer.Data.Filters {
 
         case ValueComparisons.GraterThan:
           return l.CompareTo(SelectedComparisonValue) >= 0;
+
+        case ValueComparisons.UnEqual:
+          return l.CompareTo(SelectedComparisonValue) != 0;
       }
       return false;
     }

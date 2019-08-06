@@ -44,6 +44,14 @@ namespace RDA.Data {
             this.Text = new Description(Assets.KeyToIdDict[ID]);
             break;
 
+          case "QuestItem":
+          case "StartExpeditionItem":
+          case "FluffItem":
+          case "ItemWithUI":
+            this.ID = "NoneAllocation";
+            this.Text = new Description("-1230");
+            break;
+
           default:
             throw new NotImplementedException();
         }

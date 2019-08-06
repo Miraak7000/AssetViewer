@@ -33,7 +33,21 @@ namespace RDA.Data {
       if (Assets.KeyToIdDict.ContainsKey(element.Name.LocalName)) {
         this.Text = new Description(Assets.KeyToIdDict[element.Name.LocalName]);
       }
+
       switch (element.Name.LocalName) {
+        case "Action":
+          switch (element.Element("Template").Value) {
+            case "ActionStartTreasureMapQuest":
+              this.Additionals = new List<Upgrade>();
+              this.Text = new Description("2734").Append("-").Append(new Description(element.XPathSelectElement("Values/ActionStartTreasureMapQuest/TreasureSessionOrRegion").Value));
+              this.Additionals.Add(new Upgrade { Text = new Description(element.XPathSelectElement("Values/ActionStartTreasureMapQuest/TreasureMapQuest").Value) });
+              break;
+
+            default:
+              break;
+          }
+          break;
+
         case "PassiveTradeGoodGenUpgrade":
           this.Text.AdditionalInformation = new Description("20327", DescriptionFontStyle.Light);
           var genpool = element.Element("GenPool").Value;
@@ -45,7 +59,7 @@ namespace RDA.Data {
             .Elements("Item")
             .Select(i => new Description(i.Element("ItemLink").Value));
           this.Text.AdditionalInformation.Replace("[ItemAssetData([RefGuid]) GoodGenerationPoolFormatted]", items, (s) => string.Join(", ", s));
-          value = Convert.ToInt32(element.Value);
+          value = Convert.ToInt32(element.Element("GenProbability").Value);
           isPercent = true;
           break;
 
@@ -202,7 +216,7 @@ namespace RDA.Data {
 
         case "AddedFertility":
           this.Text = new Description("21371").Replace("[AssetData([ItemAssetData([RefGuid]) AddedFertility]) Text]", new Description(element.Value));
-         
+
           break;
 
         case "ActiveTradePriceInPercent":
@@ -258,7 +272,6 @@ namespace RDA.Data {
         case "UseProjectile":
           var Projectile = Assets
             .Original
-            .Root
             .Descendants("Asset")
             .FirstOrDefault(a => a.XPathSelectElement($"Values/Standard/GUID")?.Value == element.Value);
 
@@ -267,7 +280,7 @@ namespace RDA.Data {
             this.Text = new Description(element.Parent.Parent.XPathSelectElement($"Standard/GUID").Value);
             break;
           }
-          var infodescAsset = Assets.Original.Root.Descendants("Asset").FirstOrDefault(a => a.XPathSelectElement($"Values/Standard/GUID")?.Value == infodesc);
+          var infodescAsset = Assets.Original.Descendants("Asset").FirstOrDefault(a => a.XPathSelectElement($"Values/Standard/GUID")?.Value == infodesc);
           if (infodescAsset != null) {
             this.Text = new Description(infodescAsset.XPathSelectElement("Values/Standard/InfoDescription").Value);
             this.Text.AdditionalInformation = new Description(infodescAsset.XPathSelectElement("Values/Standard/GUID").Value, DescriptionFontStyle.Light);
@@ -394,15 +407,14 @@ namespace RDA.Data {
         case "MaintainanceUpgrade":
         case "MoralePowerUpgrade":
         case "ScrapAmountLevelUpgrade":
+        case "PierSpeedUpgrade":
           break;
 
         case "MinPickupTimeUpgrade":
         case "MaxPickupTimeUpgrade":
           //.InsertBefore("Maximum", "Maximum");
           break;
-        case "PierSpeedUpgrade":
-          this.Text = new Description("PierSpeedUpgrade");
-          break;
+
         case "RarityWeightUpgrade":
           this.Additionals = new List<Upgrade>();
           this.Text = new Description("22227");
@@ -413,29 +425,32 @@ namespace RDA.Data {
             else {
               this.Additionals.Add(new Upgrade() { Text = new Description(Assets.KeyToIdDict[item.Name.LocalName]), Value = $"+{item.Element("AdditionalWeight").Value}" });
             }
-
           }
           break;
-        case "AllocationWeightUpgrade":
-          this.Additionals = new List<Upgrade>();
-          this.Text = new Description("22230");
-
-          foreach (var item in element.Elements()) {
-            if (item.Name.LocalName == "None") {
-             // this.Additionals.Add(new Upgrade() { Text = new Description("None", "None"), Value = $"+{item.Element("AdditionalWeight").Value}" });
-            }
-            else {
-              var upgrade = new Upgrade() { Text = new Description(Assets.KeyToIdDict[item.Name.LocalName]), Value = $"+{item.Element("AdditionalWeight").Value}" };
-              //if (upgrade.Text.Icon == null ) {
-              //  if (Assets.Icons.TryGetValue(item.Name.LocalName, out var icon)) {
-              //  upgrade.Text.Icon = new Icon(icon);
-              //  }
-              //}
-              this.Additionals.Add(upgrade);
-
-            }
-          }
-          break;
+        //case "AllocationWeightUpgrade":
+        //  this.Additionals = new List<Upgrade>();
+        //  this.Text = new Description("22230");
+        //  var result = new Collection<Upgrade>();
+        //  foreach (var item in element.Elements()) {
+        //    switch (item.Name.LocalName) {
+        //      case "None":
+        //        result.Add(new Upgrade() { Text = new Description("22230"), Value = $"+{item.Element("AdditionalWeight").Value}" });
+        //        break;
+        //      case "Zoo":
+        //        result.Add(new Upgrade() { Text = new Description("22231"), Value = $"+{item.Element("AdditionalWeight").Value}" });
+        //        break;
+        //      case "Museum":
+        //        result.Add(new Upgrade() { Text = new Description("22232"), Value = $"+{item.Element("AdditionalWeight").Value}" });
+        //        break;
+        //      default:
+        //        result.Add(new Upgrade() { Text = new Description("22233"), Value = $"+{item.Element("AdditionalWeight").Value}" });
+        //        break;
+        //    }
+        //  }
+        //  foreach (var item in result.Distinct(new BasicUpgradeComparer())) {
+        //    this.Additionals.Add(item);
+        //  }
+        //  break;
 
         default:
           throw new NotImplementedException(element.Name.LocalName);

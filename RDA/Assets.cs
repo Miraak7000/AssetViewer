@@ -1,10 +1,10 @@
-﻿using RDA.Data;
-using RDA.Library;
+﻿using RDA.Library;
 using RDA.Templates;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Web;
 using System.Web.Script.Serialization;
 using System.Xml.Linq;
 using System.Xml.XPath;
@@ -18,7 +18,8 @@ namespace RDA {
     public static void Init(string version = "Release") {
       Version = version;
       Console.WriteLine("Load Asset.xml");
-      Original = XDocument.Load(Program.PathRoot + @"\Original\assets.xml");
+      Original = XmlLoader.LoadXml(Program.PathRoot + @"\Original\assets.xml");
+      SolveXmlInheritance();
       LoadDescriptions();
       LoadCustomDescriptions();
       SetTextDictionarys();
@@ -26,7 +27,6 @@ namespace RDA {
       SetTourismStati();
       SetBuffs();
     }
-
     public static string GetDescriptionID(string id) {
       return KeyToIdDict[id];
     }
@@ -35,7 +35,7 @@ namespace RDA {
 
     #region Fields
 
-    internal static XDocument Original;
+    internal static XElement Original;
     internal static Dictionary<string, Dictionary<Languages, string>> Descriptions = new Dictionary<string, Dictionary<Languages, string>>();
     internal static Dictionary<string, Dictionary<Languages, string>> CustomDescriptions = new Dictionary<string, Dictionary<Languages, string>>();
     internal static string Version = "Release";
@@ -46,20 +46,102 @@ namespace RDA {
 
     #endregion Fields
 
+    private static void AddBaseValues(this XElement asset, XElement standarts) {
+      foreach (var property in standarts.Elements()) {
+        if (asset.Element(property.Name.LocalName) is XElement current) {
+          if (property.HasElements) {
+            AddBaseValues(current, property);
+          }
+        }
+        else {
+          asset.Add(property);
+        }
+      }
+    }
+    private static int InheritDepth(this XElement ele) {
+      int depth = 0;
+      var search = ele.Element("BaseAssetGUID")?.Value;
+      while (search != null) {
+        var founded = Original.Descendants("Asset").FirstOrDefault(a => a.XPathSelectElement("Values/Standard/GUID")?.Value == search);
+        if (founded != null) {
+          depth++;
+          search = founded.Element("BaseAssetGUID")?.Value;
+        }
+      }
+      return depth;
+      //return CalcInheritDepth(ele, 0).Max();
+
+      //IEnumerable<int> CalcInheritDepth(XElement el, int depth) {
+      //  var search = el.Element("BaseAssetGUID")?.Value;
+      //  if (search != null) {
+      //    depth++;
+      //    var founded = Original.Descendants("Asset").FirstOrDefault(a => a.XPathSelectElement("Values/Standard/GUID")?.Value == search);
+      //    if (founded != null) {
+      //      CalcInheritDepth(founded, depth);
+      //    }
+      //    foreach (var asset in founded) {
+      //      foreach (var item in CalcInheritDepth(asset, depth)) {
+      //        yield return item;
+      //      }
+
+      //    }
+
+      //  }
+      //  else {
+      //    yield return depth;
+      //  }
+      //}
+    }
+    private static void SolveXmlInheritance() {
+      Console.WriteLine("Solve Xml Inheritance");
+      var InheritHelper = Original.Descendants("Asset").OrderBy(a => a.InheritDepth()).ToArray();
+      foreach (var item in InheritHelper) {
+        var baseGuid = item.Element("BaseAssetGUID")?.Value;
+        if (baseGuid != null) {
+          var baseAsset = Original.Descendants("Asset").FirstOrDefault(a => a.XPathSelectElement("Values/Standard/GUID")?.Value == baseGuid);
+          if (baseAsset != null) {
+            item.AddBaseValues(baseAsset);
+          }
+        }
+      }
+    }
     private static void LoadDescriptions() {
+      Console.WriteLine("Load Descriptions");
       foreach (Languages language in Enum.GetValues(typeof(Languages))) {
-        var dic = XDocument.Load(Program.PathRoot + $@"\Original\texts_{language.ToString("G").ToLower()}.xml").Root.Element("Texts").Elements().ToDictionary(k => k.Element("GUID").Value, e => e.Element("Text").Value);
+        var dic = XDocument
+            .Load(Program.PathRoot + $@"\Original\texts_{language.ToString("G").ToLower()}.xml")
+            .Root
+            .Element("Texts")
+            .Elements()
+            .ToDictionary(k => k.Element("GUID").Value, e => e.Element("Text").Value);
         foreach (var item in dic) {
+          var str = item.Value;
+          //Delete some trash
+          var removes = new[] {
+            HttpUtility.HtmlDecode("&lt;font overrideTextColor=\"true\" color='#e3ce10'&gt;&lt;b&gt;"),
+            HttpUtility.HtmlDecode("&lt;/b&gt;&lt;/font&gt;"),
+            HttpUtility.HtmlDecode("&lt;font overrideTextColor=\"true\" color='#e1e1e1'&gt;&lt;b&gt;"),
+            HttpUtility.HtmlDecode("&lt;font overrideTextColor=\"true\" color='#d8556a'&gt;&lt;b&gt;"),
+            HttpUtility.HtmlDecode("&lt;br /&gt;"),
+            "<br>",
+            "<b>",
+            "</b>",
+          };
+          foreach (var remove in removes) {
+            str = str.Replace(remove, "");
+          }
+
           if (Descriptions.ContainsKey(item.Key)) {
-            Descriptions[item.Key].Add(language, item.Value);
+            Descriptions[item.Key].Add(language, str);
           }
           else {
-            Descriptions.Add(item.Key, new Dictionary<Languages, string> { { language, item.Value } });
+            Descriptions.Add(item.Key, new Dictionary<Languages, string> { { language, str } });
           }
         }
       }
     }
     private static void LoadCustomDescriptions() {
+      Console.WriteLine("Load Custom Descriptions");
       var js = new JavaScriptSerializer();
       foreach (Languages language in Enum.GetValues(typeof(Languages))) {
         var filepath = Program.PathRoot + $@"\Modified\LanguageFiles\Texts_Custom_{language.ToString("G")}.json";
@@ -79,7 +161,6 @@ namespace RDA {
     private static void SetIcons() {
       Console.WriteLine("Setting up Icons");
       var asset = Original
-         .Root
          .Descendants("Asset")
          .FirstOrDefault(a => a.Element("Template")?.Value == "ItemBalancing")
          .Element("Values")
@@ -90,7 +171,6 @@ namespace RDA {
       }
 
       var texts = Original
-        .Root
         .Descendants("Asset")
         .Where(a => a.XPathSelectElement("Values/Text/LocaText")?.HasElements == true && a.XPathSelectElement("Values/Standard/IconFilename")?.Value != null).Select(e => e.Element("Values").Element("Standard"));
       //TextIcons
@@ -108,7 +188,6 @@ namespace RDA {
     private static void SetTextDictionarys() {
       Console.WriteLine("Setting up Descriptions");
       var asset = Original
-         .Root
          .Descendants("Asset")
          .FirstOrDefault(a => a.Element("Template")?.Value == "ItemBalancing")
          .Element("Values")
@@ -127,7 +206,6 @@ namespace RDA {
       }
 
       asset = Original
-       .Root
        .Descendants("Asset")
        .FirstOrDefault(a => a.Element("Template")?.Value == "ExpeditionFeature")
        .Element("Values")
@@ -170,10 +248,10 @@ namespace RDA {
       KeyToIdDict.Add("MaintainanceUpgrade", "2320");
       KeyToIdDict.Add("MoralePowerUpgrade", "15231");
       //Update 04
-      KeyToIdDict.Add("MinPickupTimeUpgrade", "22219");  
+      KeyToIdDict.Add("MinPickupTimeUpgrade", "22219");
 
-      KeyToIdDict.Add("MaxPickupTimeUpgrade", "22219");  
-      KeyToIdDict.Add("ScrapAmountLevelUpgrade", "22220");  
+      KeyToIdDict.Add("MaxPickupTimeUpgrade", "22219");
+      KeyToIdDict.Add("ScrapAmountLevelUpgrade", "22220");
       //
       KeyToIdDict.Add("ConstructionCostInPercent", "12679");
       KeyToIdDict.Add("ConstructionTimeInPercent", "12678");
@@ -217,13 +295,14 @@ namespace RDA {
       KeyToIdDict.Add("LineOfSightRangeUpgrade", "15266");
       KeyToIdDict.Add("BaseDamageUpgrade", "2334");
       KeyToIdDict.Add("AccuracyUpgrade", "12062");
+      KeyToIdDict.Add("PierSpeedUpgrade", "15197");
 
       //Override Allocation Tradeship
       KeyToIdDict["Tradeship"] = "12006";
     }
     private static void SetTourismStati() {
       Console.WriteLine("Setting up Tourism");
-      var TourismAsset = Original.Root.Descendants("Asset").FirstOrDefault(l => l.Element("Template")?.Value == "TourismFeature");
+      var TourismAsset = Original.Descendants("Asset").FirstOrDefault(l => l.Element("Template")?.Value == "TourismFeature");
       var CityStatis = TourismAsset.XPathSelectElement("Values/TourismFeature/CityStati").Elements().ToList();
       TourismStati = new Dictionary<string, XElement>();
       for (var i = 1; i < CityStatis.Count; i++) {
@@ -233,7 +312,6 @@ namespace RDA {
     private static void SetBuffs() {
       Console.WriteLine("Setting up Buffs");
       Buffs = Original
-         .Root
          .Descendants("Asset")
          .Where(l => l.Element("Template")?.Value.EndsWith("Buff") ?? false)
          .Select(l => new Asset(l, false))

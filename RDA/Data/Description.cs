@@ -75,9 +75,9 @@ namespace RDA.Data {
       SetNewId();
       return this;
     }
-    public Description Append(Description value) {
+    public Description Append(Description description) {
       foreach (var item in Languages.ToArray()) {
-        Languages[item.Key] = $"{value} {item.Value}";
+        Languages[item.Key] = $"{item.Value} {(description.Languages.TryGetValue(item.Key, out var value) ? value : description.Languages.First().Value)}";
       }
       SetNewId();
       return this;
@@ -124,9 +124,7 @@ namespace RDA.Data {
     public override String ToString() {
       return this.Languages.First().Value;
     }
-    public bool Equals(Description other) {
-      return ID == other.ID && this.Languages.First().Value == other.Languages.First().Value && Icon == other.Icon;
-    }
+
     private string GetOrCheckExistenz() {
       if (GlobalDescriptions.TryGetValue(this.Languages.First().Value, out var value)) {
         return value.ID;
@@ -136,6 +134,10 @@ namespace RDA.Data {
 
         return ID;
       }
+    }
+
+    public bool Equals(Description other) {
+      return ID == other.ID && this.Languages.First().Value == other.Languages.First().Value && Icon.Filename == other.Icon.Filename;
     }
 
     #endregion Methods

@@ -49,6 +49,16 @@ namespace RDA.Templates {
         return;
       }
       var old = this.Find(l => l.Source.XPathSelectElement("Values/Standard/GUID").Value == assetID && l.Source.Element("Template").Value == element.Element("Template").Value);
+
+      // Special Diving exception
+      if (element.Element("Template")?.Value == "Dive") {
+        old = this.Find(l => l.Source.Element("Template").Value == element.Element("Template").Value);
+        if (old.Source != null) {
+          return;
+        }
+      }
+
+      // Normal adding to old code
       if (old.Source != null) {
         foreach (var item in details) {
           var asset = item.Element("Asset");
@@ -63,6 +73,11 @@ namespace RDA.Templates {
         }
       }
       else {
+        var u = element.Element("Template")?.Value;
+        if (u == "Dive" && this.FirstOrDefault(e => e.Source.Element("Template").Value == "Dive").Source != null) {
+          var old2 = this.Where(l => l.Source.XPathSelectElement("Values/Standard/GUID").Value == assetID).ToList();
+          var old3 = old2.FirstOrDefault(l => l.Source.Element("Template").Value == element.Element("Template").Value);
+        }
         this.Add(new SourceWithDetails(element, details));
       }
     }

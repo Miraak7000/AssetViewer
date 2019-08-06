@@ -15,7 +15,7 @@ namespace AssetViewer {
     #region Properties
 
     public static Dictionary<string, string> Descriptions { get; } = new Dictionary<string, string>();
-   
+
     #endregion Properties
 
     #region Fields

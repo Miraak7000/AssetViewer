@@ -20,7 +20,7 @@ namespace RDA.Templates {
     public Description Text { get; set; }
     public string RarityType { get; private set; } = "Common";
     public Description Rarity { get; set; }
-    public String ItemType { get; set; }
+    public string ItemType { get; set; }
     public String ReleaseVersion { get; set; } = "Release";
 
     //
@@ -79,6 +79,8 @@ namespace RDA.Templates {
     public List<Upgrade> DivingBellUpgrades { get; private set; }
     public List<Upgrade> CraftableItemUpgrades { get; private set; }
     public List<Upgrade> PierUpgrade { get; private set; }
+    public List<Upgrade> ItemWithUI { get; private set; }
+    public List<Upgrade> ItemStartExpedition { get; private set; }
 
     #endregion Properties
 
@@ -91,6 +93,89 @@ namespace RDA.Templates {
     #region Constructors
 
     public Asset(XElement asset, Boolean findSources) {
+      //Set Item Typ
+      this.ItemType = asset.Element("Item")?.Element("ItemType")?.Value;
+      if (this.ItemType == "Normal" || this.ItemType == "None" || string.IsNullOrWhiteSpace(this.ItemType)) {
+        switch (asset.Element("Template").Value) {
+          case string s when s.EndsWith("Buff"):
+          case "MonumentEventCategory":
+          case "MonumentEvent":
+          case "MonumentEventReward":
+          case "StartExpeditionItem":
+            //Ignore
+            break;
+
+          case "GuildhouseItem":
+          case "ItemSpecialAction":
+          case "HarborOfficeItem":
+          case "VehicleItem":
+          case "TownhallItem":
+          case "ItemSpecialActionVisualEffect":
+          case "ActiveItem":
+          case "ShipSpecialist":
+            this.ItemType = "Item";
+            break;
+
+          case "BuildPermitBuilding":
+            this.ItemType = "Building";
+            break;
+
+          case "CultureItem":
+            this.ItemType = "Animal";
+            break;
+
+          case "Product":
+            this.ItemType = "Product";
+            break;
+
+          case "FluffItem":
+            this.ItemType = "Character Item";
+            break;
+
+          case "ItemWithUI":
+            this.ItemType = "Document";
+            break;
+
+          case "QuestItem":
+          case "QuestItemMagistrate":
+            this.ItemType = "Quest Item";
+            break;
+          /// Items Without ItemTyp ///
+          /////////////////////////////
+          //case "ActiveItem":
+          //  this.ItemType = "ActiveItem";
+          //  break;
+          //case "ItemSpecialActionVisualEffect":
+          //  this.ItemType = "ItemSpecialActionVisualEffect";
+          //  break;
+          //case "GuildhouseItem":
+          //  this.ItemType = "GuildhouseItem";
+          //  break;
+          //case "ItemSpecialAction":
+          //  this.ItemType = "ItemSpecialAction";
+          //  break;
+          //case "HarborOfficeItem":
+          //  this.ItemType = "HarborOfficeItem";
+          //  break;
+          //case "VehicleItem":
+          //  this.ItemType = "VehicleItem";
+          //  break;
+          //case "TownhallItem":
+          //  this.ItemType = "TownhallItem";
+          //  break;
+          //case "BuildPermitBuilding":
+          //  this.ItemType = "BuildPermitBuilding";
+          //  break;
+          //if (this.ItemType == "None")
+          //  this.ItemType = "Common";
+          //if (this.ItemType == "Normal")
+          //  this.ItemType = "Common";
+          default:
+            Debug.WriteLine(asset.Element("Template").Value);
+            break;
+        }
+      }
+      //All Other Elements
       foreach (var element in asset.Element("Values").Elements()) {
         switch (element.Name.LocalName) {
           case "Text":
@@ -98,7 +183,6 @@ namespace RDA.Templates {
           case "Buff":
           case "Cost":
           case "Blocking":
-          case "Building":
           case "Selection":
           case "Object":
           case "Constructable":
@@ -249,8 +333,21 @@ namespace RDA.Templates {
           case "CraftableItem":
             this.ProcessElement_CraftableItem(element);
             break;
+
           case "PierUpgrade":
             this.ProcessElement_PierUpgrade(element);
+            break;
+
+          case "ItemWithUI":
+            this.ProcessElement_ItemWithUI(element);
+            break;
+
+          case "ItemStartExpedition":
+            this.ProcessElement_ItemStartExpedition(element);
+            break;
+
+          case "Building":
+            this.ProcessElement_Building(element);
             break;
 
           default:
@@ -317,64 +414,15 @@ namespace RDA.Templates {
     private void ProcessElement_Item(XElement element) {
       this.RarityType = element.Element("Rarity")?.Value ?? "Common";
       this.Rarity = element.Element("Rarity") == null ? new Description("118002") : new Description(Assets.GetDescriptionID(element.Element("Rarity").Value));
-      this.ItemType = element.Element("ItemType")?.Value ?? "Common";
-      if (this.ItemType == "Common" || this.ItemType == string.Empty) {
-        switch (element.Parent.Parent.Element("Template").Value) {
-          case "ShipSpecialist":
-            this.ItemType = "Specialist";
-            break;
-
-          case "CultureItem":
-            this.ItemType = "Animal";
-            break;
-
-          case "Product":
-            this.ItemType = "Product";
-            break;
-          /// Items Without ItemTyp ///
-          /////////////////////////////
-          //case "ActiveItem":
-          //  this.ItemType = "ActiveItem";
-          //  break;
-          //case "ItemSpecialActionVisualEffect":
-          //  this.ItemType = "ItemSpecialActionVisualEffect";
-          //  break;
-          //case "GuildhouseItem":
-          //  this.ItemType = "GuildhouseItem";
-          //  break;
-          //case "ItemSpecialAction":
-          //  this.ItemType = "ItemSpecialAction";
-          //  break;
-          //case "HarborOfficeItem":
-          //  this.ItemType = "HarborOfficeItem";
-          //  break;
-          //case "VehicleItem":
-          //  this.ItemType = "VehicleItem";
-          //  break;
-          //case "TownhallItem":
-          //  this.ItemType = "TownhallItem";
-          //  break;
-          //case "BuildPermitBuilding":
-          //  this.ItemType = "BuildPermitBuilding";
-          //  break;
-
-          default:
-            break;
-        }
-      }
       this.Allocation = new Allocation(element.Parent.Parent.Element("Template").Value, element.Element("Allocation")?.Value);
       if (element.Element("Allocation") == null) {
-        element.Add(new XElement("Allocation"), this.Allocation.ID);
+        element.Add(new XElement("Allocation", this.Allocation.ID));
       }
       this.TradePrice = element.Element("TradePrice") == null ? null : (Int32.Parse(element.Element("TradePrice").Value) / 4).ToString();
       if (element.Element("ItemSet") != null) {
         this.ItemSets = new List<Upgrade>();
         this.ItemSets.Add(new Upgrade(element.Element("ItemSet")));
       }
-      if (this.ItemType == "None")
-        this.ItemType = "Common";
-      if (this.ItemType == "Normal")
-        this.ItemType = "Common";
     }
     private void ProcessElement_ItemEffect(XElement element) {
       if (element.HasElements && element.Element("EffectTargets") == null)
@@ -414,6 +462,8 @@ namespace RDA.Templates {
           if (item.Name.LocalName == "ForcedFeedbackVariation")
             continue;
           if (item.Name.LocalName == "AdditionalModuleSoundLoop")
+            continue;
+          if (item.Name.LocalName == "HideBuff")
             continue;
           this.CultureUpgrades.Add(new Upgrade(item));
         }
@@ -534,12 +584,12 @@ namespace RDA.Templates {
           this.AttackerUpgrades.Add(new Upgrade(projektile));
           var Projectile = Assets
             .Original
-            .Root
             .Descendants("Asset")
             .FirstOrDefault(a => a.XPathSelectElement($"Values/Standard/GUID")?.Value == projektile.Value);
           if (Projectile.XPathSelectElement("Values/Exploder/InnerDamage")?.Value is string damage) {
-            this.AttackerUpgrades = new List<Upgrade>();
-            this.AttackerUpgrades.Add(new Upgrade() { Text = new Description("20621"), Value = damage });
+            if (damage != "0") {
+              this.AttackerUpgrades.Add(new Upgrade() { Text = new Description("20621"), Value = damage });
+            }
           }
         }
         foreach (var item in element.Elements().Except(new[] { projektile })) {
@@ -726,7 +776,55 @@ namespace RDA.Templates {
       if (element.HasElements) {
         this.DivingBellUpgrades = new List<Upgrade>();
         foreach (var item in element.Elements()) {
-          this.DivingBellUpgrades.Add(new Upgrade(item));
+          if (item.Name.LocalName == "AllocationWeightUpgrade") {
+            var results = new Dictionary<string, Upgrade>();
+            //var results = new Collection<Upgrade>();
+            foreach (var AllocationWeight in item.Elements()) {
+              string key = null;
+              switch (AllocationWeight.Name.LocalName) {
+                case "None":
+                  key = "22230";
+
+                  break;
+
+                case "Zoo":
+                  key = "22231";
+                  //results.Add(new Upgrade() { Text = new Description("22231"), Value = $"+{AllocationWeight.Element("AdditionalWeight").Value}" });
+                  break;
+
+                case "Museum":
+                  key = "22232";
+                  //results.Add(new Upgrade() { Text = new Description("22232"), Value = $"+{AllocationWeight.Element("AdditionalWeight").Value}" });
+                  break;
+
+                default:
+                  key = "22233";
+                  ////results.Add(new Upgrade() { Text = new Description("22233"), Value = $"+{AllocationWeight.Element("AdditionalWeight").Value}" });
+                  break;
+              }
+              if (results.ContainsKey(key)) {
+                results[key].Additionals.Add(new Upgrade() { Text = new Description(Assets.KeyToIdDict[AllocationWeight.Name.LocalName]), Value = $"+{AllocationWeight.Element("AdditionalWeight").Value}" });
+              }
+              else {
+                results.Add(key,
+                  new Upgrade() {
+                    Text = new Description(key),
+                    Additionals = new List<Upgrade>{
+                      new Upgrade() {
+                        Text = new Description(Assets.KeyToIdDict[AllocationWeight.Name.LocalName]),
+                        Value = $"+{AllocationWeight.Element("AdditionalWeight").Value}"
+                      }
+                    }
+                  });
+              }
+            }
+            foreach (var result in results.Values) {
+              this.DivingBellUpgrades.Add(result);
+            }
+          }
+          else {
+            this.DivingBellUpgrades.Add(new Upgrade(item));
+          }
         }
       }
     }
@@ -738,12 +836,56 @@ namespace RDA.Templates {
         }
       }
     }
-      private SourceWithDetailsList FindSources(String id, Details mainDetails = default, SourceWithDetailsList inResult = default) {
+    private void ProcessElement_ItemStartExpedition(XElement element) {
+      if (element.HasElements) {
+        this.ItemStartExpedition = new List<Upgrade>();
+        foreach (var item in element.Elements()) {
+          this.ItemStartExpedition.Add(new Upgrade {
+            Text = new Description("2637"),
+            Additionals = new List<Upgrade> {
+              new Upgrade {
+                Text = new Description(element.Value)}
+            }
+          });
+        }
+      }
+    }
+
+    private void ProcessElement_ItemWithUI(XElement element) {
+      var actions = element.XPathSelectElement("ItemActions/Values/ActionList/Actions").Elements("Item").Select(a => a.Element("Action"));
+      if (actions != null) {
+        this.ItemWithUI = new List<Upgrade>();
+        foreach (var action in actions) {
+          switch (action.Element("Template").Value) {
+            case "ActionStartTreasureMapQuest":
+              this.ItemWithUI.Add(new Upgrade(action));
+              break;
+
+            case "ActionTriggerTextPopup":
+            case "ActionRegisterTrigger":
+            case "ActionNotification":
+            case "ActionReplaceItem":
+              //Ignore
+              break;
+
+            default:
+              Debug.WriteLine(action.Element("Template").Value);
+              break;
+          }
+        }
+      }
+    }
+
+    private void ProcessElement_Building(XElement element) {
+      //Todo
+    }
+
+    private SourceWithDetailsList FindSources(String id, Details mainDetails = default, SourceWithDetailsList inResult = default) {
       mainDetails = (mainDetails == default) ? new Details() : mainDetails;
       mainDetails.PreviousIDs.Add(id);
       var mainResult = inResult ?? new SourceWithDetailsList();
       var resultstoadd = new List<SourceWithDetailsList>();
-      var links = Assets.Original.Root.XPathSelectElements($"//*[text()={id} and not(self::GUID)]").ToArray();
+      var links = Assets.Original.XPathSelectElements($"//*[text()={id} and not(self::GUID)]").ToArray();
       if (links.Length > 0) {
         for (var i = 0; i < links.Length; i++) {
           var element = links[i];
@@ -788,7 +930,6 @@ namespace RDA.Templates {
           }
 
           switch (element.Element("Template").Value) {
-            // ignore
             case "AssetPool":
             case "TutorialQuest":
             case "SettlementRightsFeature":
@@ -847,7 +988,6 @@ namespace RDA.Templates {
             case "QuestVehicleTrade":
             case "DifficultyBalancing":
             case "RewardConfig":
-            case "ResourcePool":
             case "UplayAction":
             case "NegotiationPopup":
             case "NewspaperArticle":
@@ -857,19 +997,24 @@ namespace RDA.Templates {
             case "TownhallBuff":
             case "AudioText":
             case "TradeShip":
-            case "TriggerCampaign":
             case "ActiveItem":
             case "QuestVehicle":
             case "Achievement":
             case "EventTradeShip":
             case "Audio":
             case "WorkforceSliderNewsTracker":
+            case "ChannelTarget":
+            case "ResolveActionCost":
+            case "Region":
+              // ignore
+              break;
 
-            //Todo?
+            case "TriggerCampaign":
             case "Trigger":
             case "PassiveTradeFeature":
+              //Todo?
               break;
-             //
+            //
             case "Expedition":
               if (!element.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
                 if (Details.Items.Count == 0) {
@@ -912,15 +1057,28 @@ namespace RDA.Templates {
             case "A7_QuestSmuggler":
             case "A7_QuestDivingBellGeneric":
             case "A7_QuestDivingBellSonar":
+            case "A7_QuestSelectObject":
+            case "A7_QuestDivingBellTreasureMap":
+            case "A7_QuestNewspaperArticle":
               if (!element.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
                 result.AddSourceAsset(element, new HashSet<XElement> { element });
               }
               break;
+
             case "DivingBellShip":
               if (element.Descendants("DivingBell").FirstOrDefault().Descendants("ReplacementPool").Any(rp => rp.Value == id)) {
                 result.AddSourceAsset(element.GetProxyElement("Dive"), new HashSet<XElement> { element.GetProxyElement("Dive") });
               }
               break;
+
+            case "ItemWithUI":
+              if (element.Descendants("NewItem").Any(ni => ni.Value == id)) {
+                result.AddSourceAsset(element, new HashSet<XElement> { element });
+              }
+              else {
+              }
+              break;
+
             case "Profile_3rdParty_ItemCrafter":
               var craftable = element.Descendants("CraftableItems").FirstOrDefault().Descendants("Item").FirstOrDefault(item => item?.Value == id) != null;
               if (craftable) {
@@ -937,6 +1095,7 @@ namespace RDA.Templates {
                 }
               }
               break;
+
             case "TourismFeature":
               var pool = element.Descendants("Pool").FirstOrDefault(p => p.Value == id)?.Parent;
               if (pool != null) {
@@ -963,6 +1122,7 @@ namespace RDA.Templates {
               goto case "RewardPool";
             case "RewardPool":
             case "RewardItemPool":
+            case "ResourcePool":
 
               if (SavedSources.ContainsKey(key)) {
                 result.AddSourceAsset(SavedSources[key].Copy());

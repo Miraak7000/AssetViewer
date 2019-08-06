@@ -87,6 +87,11 @@ namespace AssetViewer.Controls {
         return App.Descriptions["-1221"];
       }
     }
+    public String ItemTrasmutable {
+      get {
+        return App.Descriptions["113817"];
+      }
+    }
 
     #endregion Properties
 

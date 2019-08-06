@@ -276,7 +276,7 @@
                       <CheckBox
                         HorizontalAlignment="Center"
                         Checked="ComboBox_SelectionChanged"
-                        IsChecked="{Binding SelectedFilter.IsChecked}"
+                        IsChecked="{Binding SelectedFilter.SelectedValue}"
                         Unchecked="ComboBox_SelectionChanged">
                         <CheckBox.Style>
                           <Style TargetType="CheckBox">

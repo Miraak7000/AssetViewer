@@ -33,7 +33,7 @@ namespace AssetViewer.Comparer {
     #region Fields
 
     private readonly Dictionary<string, string> RaritiesToENConverter = new Dictionary<string, string>();
-    private readonly List<string> RaritiesEN = new List<string>() { "Quest Item", "Common", "Uncommon", "Rare", "Epic", "Legendary" };
+    private readonly List<string> RaritiesEN = new List<string>() { "Narrative", "Quest", "Common", "Uncommon", "Rare", "Epic", "Legendary" };
 
     #endregion Fields
 

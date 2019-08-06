@@ -1,39 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BuildPermitBuilding>
-  <Asset ID="102474" Release="Release" RarityType="Common">
-    <Name>culture_4x3_pavillion</Name>
-    <Text ID="102474">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_module_01.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType />
-    <Allocation />
-    <TradePrice />
-    <Info ID="17742">
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="17709">
-        <Name>9 World Fair Annexe</Name>
-        <Text ID="17709">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="17709">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-  </Asset>
   <Asset ID="102463" Release="Release" RarityType="Common">
     <Name>culture_1x1_columnsangle</Name>
     <Text ID="102463">
@@ -44,7 +10,7 @@
     <Rarity ID="118002">
       <Icon />
     </Rarity>
-    <ItemType />
+    <ItemType>Building</ItemType>
     <Allocation />
     <TradePrice />
     <Info ID="17743">
@@ -78,7 +44,7 @@
     <Rarity ID="118002">
       <Icon />
     </Rarity>
-    <ItemType />
+    <ItemType>Building</ItemType>
     <Allocation />
     <TradePrice />
     <Info ID="17737">
@@ -102,38 +68,23 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="102475" Release="Release" RarityType="Common">
-    <Name>culture_2x2_tower</Name>
-    <Text ID="102475">
+  <Asset ID="102474" Release="Release" RarityType="Common">
+    <Name>culture_4x3_pavillion</Name>
+    <Text ID="102474">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_tower_01.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_module_01.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="118002">
       <Icon />
     </Rarity>
-    <ItemType />
+    <ItemType>Building</ItemType>
     <Allocation />
     <TradePrice />
-    <Info ID="17740">
+    <Info ID="17742">
       <Icon />
     </Info>
     <Sources>
-      <Source ID="17707">
-        <Name>7 Refined Architecture</Name>
-        <Text ID="17707">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_7.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="17707">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_7.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
       <Source ID="17709">
         <Name>9 World Fair Annexe</Name>
         <Text ID="17709">
@@ -151,6 +102,55 @@
       </Source>
     </Sources>
   </Asset>
+  <Asset ID="102464" Release="Release" RarityType="Common">
+    <Name>culture_1x1_advertisingcolumn</Name>
+    <Text ID="102464">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_03.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <Allocation />
+    <TradePrice />
+    <Info ID="17734">
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="17015">
+        <Name>1 City Signage</Name>
+        <Text ID="17015">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_1.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="17015">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_1.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="17700">
+        <Name>2 City Furnitures</Name>
+        <Text ID="17700">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_2.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="17700">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_2.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+  </Asset>
   <Asset ID="102467" Release="Release" RarityType="Common">
     <Name>culture_1x1_flag</Name>
     <Text ID="102467">
@@ -161,7 +161,7 @@
     <Rarity ID="118002">
       <Icon />
     </Rarity>
-    <ItemType />
+    <ItemType>Building</ItemType>
     <Allocation />
     <TradePrice />
     <Info ID="17736">
@@ -215,49 +215,49 @@
       </Source>
     </Sources>
   </Asset>
-  <Asset ID="102464" Release="Release" RarityType="Common">
-    <Name>culture_1x1_advertisingcolumn</Name>
-    <Text ID="102464">
+  <Asset ID="102475" Release="Release" RarityType="Common">
+    <Name>culture_2x2_tower</Name>
+    <Text ID="102475">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_03.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_tower_01.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="118002">
       <Icon />
     </Rarity>
-    <ItemType />
+    <ItemType>Building</ItemType>
     <Allocation />
     <TradePrice />
-    <Info ID="17734">
+    <Info ID="17740">
       <Icon />
     </Info>
     <Sources>
-      <Source ID="17015">
-        <Name>1 City Signage</Name>
-        <Text ID="17015">
+      <Source ID="17707">
+        <Name>7 Refined Architecture</Name>
+        <Text ID="17707">
           <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_1.png</Filename>
+            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_7.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="17015">
+          <Text ID="17707">
             <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_1.png</Filename>
+              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_7.png</Filename>
             </Icon>
           </Text>
         </Details>
       </Source>
-      <Source ID="17700">
-        <Name>2 City Furnitures</Name>
-        <Text ID="17700">
+      <Source ID="17709">
+        <Name>9 World Fair Annexe</Name>
+        <Text ID="17709">
           <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_2.png</Filename>
+            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="17700">
+          <Text ID="17709">
             <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_2.png</Filename>
+              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
             </Icon>
           </Text>
         </Details>
@@ -274,7 +274,7 @@
     <Rarity ID="118002">
       <Icon />
     </Rarity>
-    <ItemType />
+    <ItemType>Building</ItemType>
     <Allocation />
     <TradePrice />
     <Info ID="17743">
@@ -338,7 +338,7 @@
     <Rarity ID="118002">
       <Icon />
     </Rarity>
-    <ItemType />
+    <ItemType>Building</ItemType>
     <Allocation />
     <TradePrice />
     <Info ID="17735">
@@ -402,7 +402,7 @@
     <Rarity ID="118002">
       <Icon />
     </Rarity>
-    <ItemType />
+    <ItemType>Building</ItemType>
     <Allocation />
     <TradePrice />
     <Info ID="17739">
@@ -436,7 +436,7 @@
     <Rarity ID="118002">
       <Icon />
     </Rarity>
-    <ItemType />
+    <ItemType>Building</ItemType>
     <Allocation />
     <TradePrice />
     <Info ID="17737">
@@ -485,7 +485,7 @@
     <Rarity ID="118002">
       <Icon />
     </Rarity>
-    <ItemType />
+    <ItemType>Building</ItemType>
     <Allocation />
     <TradePrice />
     <Info ID="17741">
@@ -534,7 +534,7 @@
     <Rarity ID="118002">
       <Icon />
     </Rarity>
-    <ItemType />
+    <ItemType>Building</ItemType>
     <Allocation />
     <TradePrice />
     <Info ID="17738">
@@ -583,7 +583,7 @@
     <Rarity ID="118002">
       <Icon />
     </Rarity>
-    <ItemType />
+    <ItemType>Building</ItemType>
     <Allocation />
     <TradePrice />
     <Info ID="17731">
@@ -662,7 +662,7 @@
     <Rarity ID="118002">
       <Icon />
     </Rarity>
-    <ItemType />
+    <ItemType>Building</ItemType>
     <Allocation />
     <TradePrice />
     <Info ID="17737">
