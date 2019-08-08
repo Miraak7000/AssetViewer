@@ -1,29 +1,20 @@
 ﻿using System;
 using System.Globalization;
 using System.Windows.Data;
-using AssetViewer.Library;
 
 namespace AssetViewer.Converter {
 
   public class GlobalDescriptionConverter : IValueConverter {
 
-    #region Public Methods
+    #region Methods
+
     public Object Convert(Object value, Type targetType, Object parameter, CultureInfo culture) {
-      var key = Int32.Parse(parameter.ToString());
-      switch (App.Language) {
-        case Languages.English:
-          return App.Descriptions[key].EN;
-        case Languages.German:
-          return App.Descriptions[key].DE;
-        default:
-          throw new NotImplementedException();
-      }
+      return App.Descriptions.TryGetValue(parameter.ToString(), out var str) ? str : null;
     }
     public Object ConvertBack(Object value, Type targetType, Object parameter, CultureInfo culture) {
       throw new NotImplementedException();
     }
-    #endregion
 
+    #endregion Methods
   }
-
 }

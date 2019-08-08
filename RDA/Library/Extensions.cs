@@ -24,7 +24,7 @@ namespace RDA.Library {
       XElement result = null;
       previousIDs = previousIDs ?? new List<string>();
       previousIDs.Add(id);
-      var links = Assets.Original.Root.XPathSelectElements($"//*[text()={id} and not(self::GUID) and not(self::InsertEvent)]").ToArray();
+      var links = Assets.Original.XPathSelectElements($"//*[text()={id} and not(self::GUID) and not(self::InsertEvent)]").ToArray();
       if (links.Length > 0) {
         for (var i = 0; i < links.Length; i++) {
           var element = links[i];

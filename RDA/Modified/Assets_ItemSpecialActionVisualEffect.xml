@@ -1,98 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ItemSpecialActionVisualEffect>
-  <Asset ID="191970" Release="Release">
+  <Asset ID="191970" Release="Release" RarityType="Uncommon">
     <Name>Colored Fireworks</Name>
     <Text ID="191970">
-      <EN>Coloured Fireworks</EN>
-      <DE>Buntes Feuerwerk</DE>
       <Icon>
         <Filename>data/ui/2kimages/main/3dicons/consumables/icon_fireworks_2.png</Filename>
       </Icon>
     </Text>
     <Rarity ID="118003">
-      <EN>Uncommon</EN>
-      <DE>Ungewöhnlich</DE>
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
-    <ItemSets />
+    <ItemType>Item</ItemType>
     <Allocation ID="TownHall">
       <Text ID="2347">
-        <EN>Town Hall</EN>
-        <DE>Rathaus</DE>
         <Icon>
           <Filename>data/ui/2kimages/main/icons/icon_house.png</Filename>
         </Icon>
       </Text>
     </Allocation>
-    <EffectTargets>
-      <Target>
-        <Text ID="">
-          <EN>Residences</EN>
-          <DE>Wohngebäude</DE>
-          <Icon />
-        </Text>
-        <Buildings>
-          <Text ID="1010343">
-            <EN>Farmer Residence</EN>
-            <DE>Bauernhaus</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010344">
-            <EN>Worker Residence</EN>
-            <DE>Arbeiterhaus</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010345">
-            <EN>Artisan Residence</EN>
-            <DE>Handwerkerhaus</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010346">
-            <EN>Engineer Residence</EN>
-            <DE>Ingenieurshaus</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010347">
-            <EN>Investor Residence</EN>
-            <DE>Investorenhaus</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101254">
-            <EN>Jornalero Residence</EN>
-            <DE>Jornalero-Haus</DE>
-            <Icon />
-          </Text>
-          <Text ID="101255">
-            <EN>Obrero Residence</EN>
-            <DE>Obrero-Haus</DE>
-            <Icon />
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
     <ExpeditionAttributes>
       <Upgrade>
         <Text ID="800004">
-          <EN>Naval Power</EN>
-          <DE>Gefechtskunde</DE>
           <Icon>
             <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
           </Icon>
@@ -101,8 +29,6 @@
       </Upgrade>
       <Upgrade>
         <Text ID="800029">
-          <EN>Diplomacy</EN>
-          <DE>Redegabe</DE>
           <Icon>
             <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
           </Icon>
@@ -110,28 +36,15 @@
         <Value>4</Value>
       </Upgrade>
     </ExpeditionAttributes>
-    <AttackableUpgrades />
-    <TradeShipUpgrades />
-    <VehicleUpgrades />
-    <AttackerUpgrades />
-    <VisitorHarborUpgrades />
-    <RepairCraneUpgrades />
-    <IncidentInfectableUpgrades />
-    <IncidentInfluencerUpgrades />
-    <ItemGeneratorUpgrades />
     <ItemActionUpgrades>
       <Upgrade>
         <Text ID="20072" FontStyle="16">
-          <EN>While active</EN>
-          <DE>Wenn aktiv</DE>
           <Icon />
         </Text>
         <Value></Value>
       </Upgrade>
       <Upgrade>
         <Text ID="145011">
-          <EN>Attractiveness</EN>
-          <DE>Attraktivität</DE>
           <Icon>
             <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
           </Icon>
@@ -140,8 +53,6 @@
       </Upgrade>
       <Upgrade>
         <Text ID="12314">
-          <EN>Happiness</EN>
-          <DE>Zufriedenheit</DE>
           <Icon>
             <Filename>data/ui/2kimages/main/icons/icon_happy.png</Filename>
           </Icon>
@@ -150,18 +61,14 @@
       </Upgrade>
       <Upgrade>
         <Text ID="2423" FontStyle="16">
-          <EN>Duration</EN>
-          <DE>Dauer</DE>
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
           </Icon>
         </Text>
-        <Value>40:00</Value>
+        <Value>00:40:00</Value>
       </Upgrade>
       <Upgrade>
         <Text ID="2421" FontStyle="16">
-          <EN>Destroyed after use</EN>
-          <DE>Wird nach Gebrauch zerstört</DE>
           <Icon>
             <Filename>data/ui/2kimages/main/icons/icon_untick.png</Filename>
           </Icon>
@@ -169,58 +76,84 @@
         <Value></Value>
       </Upgrade>
     </ItemActionUpgrades>
-    <ShipyardUpgrades />
-    <KontorUpgrades />
     <TradePrice>3500</TradePrice>
     <Info ID="19567">
-      <EN>Building on a spectacular tradition.</EN>
-      <DE>Fortsetzung einer spektakulären Tradition.</DE>
       <Icon />
     </Info>
+    <EffectTargets>
+      <Target>
+        <Text ID="190762">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
+          </Icon>
+        </Text>
+        <Buildings>
+          <Text ID="1010343">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+            </Icon>
+          </Text>
+          <Text ID="1010344">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+            </Icon>
+          </Text>
+          <Text ID="1010345">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+            </Icon>
+          </Text>
+          <Text ID="1010346">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+            </Icon>
+          </Text>
+          <Text ID="1010347">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+            </Icon>
+          </Text>
+          <Text ID="101254">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+            </Icon>
+          </Text>
+          <Text ID="101255">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+            </Icon>
+          </Text>
+        </Buildings>
+      </Target>
+    </EffectTargets>
     <Sources>
       <Source ID="800103">
         <Name>Archeological Expedition Easy</Name>
         <Text ID="11629">
-          <EN>Archaeological Expedition</EN>
-          <DE>Archäologische Expedition</DE>
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.1</EN>
-            <DE>Der Inspekteur 1.2.1</DE>
+          <Text ID="-353998529">
             <Icon />
           </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.3.1</EN>
-            <DE>Der Inspekteur 1.3.1</DE>
+          <Text ID="-353998530">
             <Icon />
           </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.3.2.1</EN>
-            <DE>Der Inspekteur 1.2.3.2.1</DE>
+          <Text ID="1534142650">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
+          <Text ID="1485039551">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
+          <Text ID="-81044390">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
+          <Text ID="-981721778">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
+          <Text ID="584362163">
             <Icon />
           </Text>
         </Details>
@@ -228,46 +161,30 @@
       <Source ID="800214">
         <Name>Zoological Expedition Easy</Name>
         <Text ID="11630">
-          <EN>Zoological Expedition</EN>
-          <DE>Zoologische Expedition</DE>
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.1</EN>
-            <DE>Der Inspekteur 1.2.1</DE>
+          <Text ID="-353998529">
             <Icon />
           </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.3.1</EN>
-            <DE>Der Inspekteur 1.3.1</DE>
+          <Text ID="-353998530">
             <Icon />
           </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.3.2.1</EN>
-            <DE>Der Inspekteur 1.2.3.2.1</DE>
+          <Text ID="1534142650">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
+          <Text ID="1485039551">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
+          <Text ID="-81044390">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
+          <Text ID="-981721778">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
+          <Text ID="584362163">
             <Icon />
           </Text>
         </Details>
@@ -275,51 +192,33 @@
       <Source ID="800399">
         <Name>Rescue Mission Easy</Name>
         <Text ID="11631">
-          <EN>Rescue Mission</EN>
-          <DE>Rettungseinsatz</DE>
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.1</EN>
-            <DE>Der Inspekteur 1.2.1</DE>
+          <Text ID="-353998529">
             <Icon />
           </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.3.1</EN>
-            <DE>Der Inspekteur 1.3.1</DE>
+          <Text ID="-353998530">
             <Icon />
           </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.3.2.1</EN>
-            <DE>Der Inspekteur 1.2.3.2.1</DE>
+          <Text ID="1534142650">
             <Icon />
           </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
+          <Text ID="-5">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
+          <Text ID="1485039551">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
+          <Text ID="-81044390">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
+          <Text ID="-981721778">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
+          <Text ID="584362163">
             <Icon />
           </Text>
         </Details>
@@ -327,51 +226,33 @@
       <Source ID="800403">
         <Name>Pirate Hunt Easy</Name>
         <Text ID="11632">
-          <EN>Pirate Hunt</EN>
-          <DE>Piratenjagd</DE>
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.1</EN>
-            <DE>Der Inspekteur 1.2.1</DE>
+          <Text ID="-353998529">
             <Icon />
           </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.3.1</EN>
-            <DE>Der Inspekteur 1.3.1</DE>
+          <Text ID="-353998530">
             <Icon />
           </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.3.2.1</EN>
-            <DE>Der Inspekteur 1.2.3.2.1</DE>
+          <Text ID="1534142650">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
+          <Text ID="1485039551">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
+          <Text ID="-81044390">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
+          <Text ID="-981721778">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
+          <Text ID="584362163">
             <Icon />
           </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
+          <Text ID="-5">
             <Icon />
           </Text>
         </Details>
@@ -379,371 +260,679 @@
       <Source ID="800777">
         <Name>Discovery South America Sandbox</Name>
         <Text ID="11634">
-          <EN>Discovery Expedition</EN>
-          <DE>Entdeckungsreise</DE>
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.1</EN>
-            <DE>Der Inspekteur 1.2.1</DE>
+          <Text ID="-353998529">
             <Icon />
           </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.3.1</EN>
-            <DE>Der Inspekteur 1.3.1</DE>
+          <Text ID="-353998530">
             <Icon />
           </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.3.2.1</EN>
-            <DE>Der Inspekteur 1.2.3.2.1</DE>
+          <Text ID="1534142650">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
+          <Text ID="1485039551">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
+          <Text ID="-81044390">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
+          <Text ID="-981721778">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
+          <Text ID="584362163">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="803519">
+        <Name>Discovery Sunken Treasures Multiplayer</Name>
+        <Text ID="22262">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-353998529">
+            <Icon />
+          </Text>
+          <Text ID="-353998530">
+            <Icon />
+          </Text>
+          <Text ID="1534142650">
+            <Icon />
+          </Text>
+          <Text ID="1485039551">
+            <Icon />
+          </Text>
+          <Text ID="-81044390">
+            <Icon />
+          </Text>
+          <Text ID="-981721778">
+            <Icon />
+          </Text>
+          <Text ID="584362163">
             <Icon />
           </Text>
         </Details>
       </Source>
       <Source ID="78">
         <Name>Third_party_08 (Madame Kahina)</Name>
-        <Text ID="78">
-          <EN>Harbour - Madame Kahina</EN>
-          <DE>Hafen - Madame Kahina</DE>
+        <Text ID="-1574342061">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_08.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="">
-            <EN>Early Game</EN>
-            <DE>Frühes Spiel</DE>
+          <Text ID="-6">
             <Icon />
           </Text>
-          <Text ID="">
-            <EN>Early-Mid Game</EN>
-            <DE>Frühes-Mittleres Spiel</DE>
+          <Text ID="-7">
             <Icon />
           </Text>
-          <Text ID="">
-            <EN>Mid Game</EN>
-            <DE>Mittleres Spiel</DE>
+          <Text ID="-8">
             <Icon />
           </Text>
-          <Text ID="">
-            <EN>Late-Mid Game</EN>
-            <DE>Mittleres-Spätes Spiel</DE>
+          <Text ID="-9">
             <Icon />
           </Text>
-          <Text ID="">
-            <EN>Late Game</EN>
-            <DE>Spätes Spiel</DE>
+          <Text ID="-10">
             <Icon />
           </Text>
-          <Text ID="">
-            <EN>EndGame</EN>
-            <DE>End Game</DE>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="77">
+        <Name>Third_party_06 (Old Nate)</Name>
+        <Text ID="-1939944159">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_06.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-6">
+            <Icon />
+          </Text>
+          <Text ID="-7">
+            <Icon />
+          </Text>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
             <Icon />
           </Text>
         </Details>
       </Source>
       <Source ID="150352">
         <Name>Maintaining Contacts - Kahina - ON HOLD - till Story changes</Name>
-        <Text ID="78">
-          <EN>Quest - Madame Kahina</EN>
-          <DE>Quest - Madame Kahina</DE>
+        <Text ID="-13435679">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_08.png</Filename>
           </Icon>
         </Text>
         <Details>
           <Text ID="150352">
-            <EN>Maintaining Contacts (TBC - Quest not yet written)</EN>
-            <DE>Maintaining Contacts (TBC - Quest not yet written)</DE>
             <Icon />
           </Text>
           <Text ID="150373">
-            <EN>Undead</EN>
-            <DE>Untot</DE>
             <Icon />
           </Text>
           <Text ID="150374">
-            <EN>Their Last Heist</EN>
-            <DE>Ihr letzter Raubzug</DE>
             <Icon />
           </Text>
           <Text ID="150376">
-            <EN>In It For The Money</EN>
-            <DE>Schlechter Ruf</DE>
             <Icon />
           </Text>
           <Text ID="152531">
-            <EN>Ghosts of the Past</EN>
-            <DE>Geister der Vergangenheit</DE>
             <Icon />
           </Text>
           <Text ID="150357">
-            <EN>Give Them an Inch</EN>
-            <DE>Den kleinen Finger reichen</DE>
             <Icon />
           </Text>
           <Text ID="150390">
-            <EN>Unlawful Assistance (TBC - Quest not yet written)</EN>
-            <DE>Unlawful Assistance (TBC - Quest not yet written)</DE>
             <Icon />
           </Text>
           <Text ID="150377">
-            <EN>What Goes Around Comes Around</EN>
-            <DE>Hoher Besuch</DE>
             <Icon />
           </Text>
           <Text ID="150380">
-            <EN>No Excuses</EN>
-            <DE>Keine Ausflüchte</DE>
             <Icon />
           </Text>
           <Text ID="152535">
-            <EN>Welcome to the Truth 3 — The Question</EN>
-            <DE>Willkommen bei der Wahrheit 3 - Die Frage</DE>
             <Icon />
           </Text>
           <Text ID="153044">
-            <EN>Implications</EN>
-            <DE>Implikationen</DE>
             <Icon />
           </Text>
           <Text ID="150375">
-            <EN>Coincidences Don't Exist</EN>
-            <DE>Zufälle gibt es nicht</DE>
             <Icon />
           </Text>
           <Text ID="150366">
-            <EN>Trust Your Instincts</EN>
-            <DE>Auf den Instinkt ist Verlass</DE>
             <Icon />
           </Text>
           <Text ID="152533">
-            <EN>Welcome to the Truth 1 — The Test</EN>
-            <DE>Willkommen bei der Wahrheit 1 - Der Test</DE>
             <Icon />
           </Text>
         </Details>
       </Source>
       <Source ID="151029">
         <Name>RQ_Worker_Oliver</Name>
-        <Text ID="30">
-          <EN>Quest - Worker</EN>
-          <DE>Quest - Arbeiter</DE>
+        <Text ID="1749551055">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/portrait_icons_0014_resident_tier02.png</Filename>
           </Icon>
         </Text>
         <Details>
           <Text ID="151029">
-            <EN>Olly's Gift</EN>
-            <DE>Ollis Geschenk</DE>
             <Icon />
           </Text>
         </Details>
       </Source>
       <Source ID="150969">
         <Name>RQ_Artisans_PeerGynt</Name>
-        <Text ID="87">
-          <EN>Quest - Artisan</EN>
-          <DE>Quest - Handwerker</DE>
+        <Text ID="1521030542">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/resident_tier03.png</Filename>
           </Icon>
         </Text>
         <Details>
           <Text ID="150969">
-            <EN>Peer Gynt</EN>
-            <DE>Peer Gynt</DE>
             <Icon />
           </Text>
           <Text ID="150970">
-            <EN>Sound of Music</EN>
-            <DE>Der Klang der Musik</DE>
             <Icon />
           </Text>
           <Text ID="150979">
-            <EN>The Wayward Apprentice</EN>
-            <DE>Lehrling auf Abwegen</DE>
             <Icon />
           </Text>
           <Text ID="151847">
-            <EN>The Simple Life</EN>
-            <DE>Das einfache Leben</DE>
             <Icon />
           </Text>
           <Text ID="150981">
-            <EN>New World</EN>
-            <DE>Neue Insel</DE>
             <Icon />
           </Text>
           <Text ID="150982">
-            <EN>First Day of School</EN>
-            <DE>Erster Schultag</DE>
             <Icon />
           </Text>
           <Text ID="150986">
-            <EN>A Day at the Zoo</EN>
-            <DE>Ein Tag im Zoo</DE>
             <Icon />
           </Text>
           <Text ID="150987">
-            <EN>Can Opening</EN>
-            <DE>Dosenöffnung</DE>
             <Icon />
           </Text>
           <Text ID="150988">
-            <EN>An Affair of Honor</EN>
-            <DE>Eine Sache der Ehre</DE>
             <Icon />
           </Text>
           <Text ID="150989">
-            <EN>Culture Vulture</EN>
-            <DE>Kulturgeier</DE>
             <Icon />
           </Text>
           <Text ID="151034">
-            <EN>Vicuña En Vogue</EN>
-            <DE>Vicuña en vogue</DE>
             <Icon />
           </Text>
           <Text ID="151035">
-            <EN>Artisan Coffee</EN>
-            <DE>Handgefertigter Kaffee</DE>
             <Icon />
           </Text>
           <Text ID="151036">
-            <EN>Pour, Oh Pour, The Pirate Rum</EN>
-            <DE>Fließe, oh, fließe, Piratenrum</DE>
             <Icon />
           </Text>
           <Text ID="151037">
-            <EN>Turner Overdrive</EN>
-            <DE>Turners Impressionen</DE>
             <Icon />
           </Text>
         </Details>
       </Source>
     </Sources>
-    <MonumentEvents />
-    <MonumentThresholds />
-    <MonumentRewards />
   </Asset>
-  <Asset ID="191971" Release="Release">
-    <Name>Aerial Fireworks</Name>
-    <Text ID="191971">
-      <EN>Brilliant Fireworks</EN>
-      <DE>Leuchtendes Feuerwerk</DE>
+  <Asset ID="191969" Release="Release" RarityType="Common">
+    <Name>Black Powder Fireworks</Name>
+    <Text ID="191969">
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/consumables/icon_fireworks_3.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/consumables/icon_fireworks_1.png</Filename>
       </Icon>
     </Text>
-    <Rarity ID="118004">
-      <EN>Rare</EN>
-      <DE>Selten</DE>
+    <Rarity ID="118002">
       <Icon />
     </Rarity>
-    <ItemType>Common</ItemType>
-    <ItemSets />
+    <ItemType>Item</ItemType>
     <Allocation ID="TownHall">
       <Text ID="2347">
-        <EN>Town Hall</EN>
-        <DE>Rathaus</DE>
         <Icon>
           <Filename>data/ui/2kimages/main/icons/icon_house.png</Filename>
         </Icon>
       </Text>
     </Allocation>
+    <ExpeditionAttributes>
+      <Upgrade>
+        <Text ID="800004">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
+          </Icon>
+        </Text>
+        <Value>1</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="800029">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
+          </Icon>
+        </Text>
+        <Value>2</Value>
+      </Upgrade>
+    </ExpeditionAttributes>
+    <ItemActionUpgrades>
+      <Upgrade>
+        <Text ID="20072" FontStyle="16">
+          <Icon />
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="12314">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_happy.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+7</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2423" FontStyle="16">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
+          </Icon>
+        </Text>
+        <Value>00:30:00</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="2421" FontStyle="16">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_untick.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </ItemActionUpgrades>
+    <TradePrice>875</TradePrice>
+    <Info ID="19566">
+      <Icon />
+    </Info>
     <EffectTargets>
       <Target>
-        <Text ID="">
-          <EN>Residences</EN>
-          <DE>Wohngebäude</DE>
-          <Icon />
+        <Text ID="190762">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
+          </Icon>
         </Text>
         <Buildings>
           <Text ID="1010343">
-            <EN>Farmer Residence</EN>
-            <DE>Bauernhaus</DE>
             <Icon>
               <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
             </Icon>
           </Text>
           <Text ID="1010344">
-            <EN>Worker Residence</EN>
-            <DE>Arbeiterhaus</DE>
             <Icon>
               <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
             </Icon>
           </Text>
           <Text ID="1010345">
-            <EN>Artisan Residence</EN>
-            <DE>Handwerkerhaus</DE>
             <Icon>
               <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
             </Icon>
           </Text>
           <Text ID="1010346">
-            <EN>Engineer Residence</EN>
-            <DE>Ingenieurshaus</DE>
             <Icon>
               <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
             </Icon>
           </Text>
           <Text ID="1010347">
-            <EN>Investor Residence</EN>
-            <DE>Investorenhaus</DE>
             <Icon>
               <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
             </Icon>
           </Text>
           <Text ID="101254">
-            <EN>Jornalero Residence</EN>
-            <DE>Jornalero-Haus</DE>
-            <Icon />
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+            </Icon>
           </Text>
           <Text ID="101255">
-            <EN>Obrero Residence</EN>
-            <DE>Obrero-Haus</DE>
-            <Icon />
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+            </Icon>
           </Text>
         </Buildings>
       </Target>
     </EffectTargets>
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
+    <Sources>
+      <Source ID="78">
+        <Name>Third_party_08 (Madame Kahina)</Name>
+        <Text ID="-1574342061">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_08.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-6">
+            <Icon />
+          </Text>
+          <Text ID="-7">
+            <Icon />
+          </Text>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="77">
+        <Name>Third_party_06 (Old Nate)</Name>
+        <Text ID="-1939944159">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_06.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-6">
+            <Icon />
+          </Text>
+          <Text ID="-7">
+            <Icon />
+          </Text>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="150352">
+        <Name>Maintaining Contacts - Kahina - ON HOLD - till Story changes</Name>
+        <Text ID="-13435679">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_08.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="150352">
+            <Icon />
+          </Text>
+          <Text ID="150373">
+            <Icon />
+          </Text>
+          <Text ID="150374">
+            <Icon />
+          </Text>
+          <Text ID="150376">
+            <Icon />
+          </Text>
+          <Text ID="152531">
+            <Icon />
+          </Text>
+          <Text ID="150357">
+            <Icon />
+          </Text>
+          <Text ID="150390">
+            <Icon />
+          </Text>
+          <Text ID="150377">
+            <Icon />
+          </Text>
+          <Text ID="150380">
+            <Icon />
+          </Text>
+          <Text ID="152535">
+            <Icon />
+          </Text>
+          <Text ID="153044">
+            <Icon />
+          </Text>
+          <Text ID="150375">
+            <Icon />
+          </Text>
+          <Text ID="150366">
+            <Icon />
+          </Text>
+          <Text ID="152533">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="150969">
+        <Name>RQ_Artisans_PeerGynt</Name>
+        <Text ID="1521030542">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/resident_tier03.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="150969">
+            <Icon />
+          </Text>
+          <Text ID="150970">
+            <Icon />
+          </Text>
+          <Text ID="150979">
+            <Icon />
+          </Text>
+          <Text ID="151847">
+            <Icon />
+          </Text>
+          <Text ID="150981">
+            <Icon />
+          </Text>
+          <Text ID="150982">
+            <Icon />
+          </Text>
+          <Text ID="150986">
+            <Icon />
+          </Text>
+          <Text ID="150987">
+            <Icon />
+          </Text>
+          <Text ID="150988">
+            <Icon />
+          </Text>
+          <Text ID="150989">
+            <Icon />
+          </Text>
+          <Text ID="151034">
+            <Icon />
+          </Text>
+          <Text ID="151035">
+            <Icon />
+          </Text>
+          <Text ID="151036">
+            <Icon />
+          </Text>
+          <Text ID="151037">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="80">
+        <Name>Second_ai_03 (Willie Wibblesock)</Name>
+        <Text ID="2050890057">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_03.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="80">
+            <Icon>
+              <Filename>data/ui/2kimages/main/profiles/ai_03.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="150399">
+        <Name>Comeback King - Willie</Name>
+        <Text ID="-202254027">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/ai_03.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="150399">
+            <Icon />
+          </Text>
+          <Text ID="150403">
+            <Icon />
+          </Text>
+          <Text ID="150404">
+            <Icon />
+          </Text>
+          <Text ID="150405">
+            <Icon />
+          </Text>
+          <Text ID="150406">
+            <Icon />
+          </Text>
+          <Text ID="150407">
+            <Icon />
+          </Text>
+          <Text ID="150408">
+            <Icon />
+          </Text>
+          <Text ID="150409">
+            <Icon />
+          </Text>
+          <Text ID="152396">
+            <Icon />
+          </Text>
+          <Text ID="152397">
+            <Icon />
+          </Text>
+          <Text ID="150415">
+            <Icon />
+          </Text>
+          <Text ID="150434">
+            <Icon />
+          </Text>
+          <Text ID="152684">
+            <Icon />
+          </Text>
+          <Text ID="150417">
+            <Icon />
+          </Text>
+          <Text ID="150423">
+            <Icon />
+          </Text>
+          <Text ID="150424">
+            <Icon />
+          </Text>
+          <Text ID="150425">
+            <Icon />
+          </Text>
+          <Text ID="150426">
+            <Icon />
+          </Text>
+          <Text ID="150433">
+            <Icon />
+          </Text>
+          <Text ID="150436">
+            <Icon />
+          </Text>
+          <Text ID="150437">
+            <Icon />
+          </Text>
+          <Text ID="152398">
+            <Icon />
+          </Text>
+          <Text ID="152652">
+            <Icon />
+          </Text>
+          <Text ID="152559">
+            <Icon />
+          </Text>
+          <Text ID="152561">
+            <Icon />
+          </Text>
+          <Text ID="152561">
+            <Icon />
+          </Text>
+          <Text ID="152563">
+            <Icon />
+          </Text>
+          <Text ID="152565">
+            <Icon />
+          </Text>
+          <Text ID="152566">
+            <Icon />
+          </Text>
+          <Text ID="150410">
+            <Icon />
+          </Text>
+          <Text ID="150427">
+            <Icon />
+          </Text>
+          <Text ID="152394">
+            <Icon />
+          </Text>
+          <Text ID="152395">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="151029">
+        <Name>RQ_Worker_Oliver</Name>
+        <Text ID="1749551055">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/portrait_icons_0014_resident_tier02.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="151029">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+  </Asset>
+  <Asset ID="191971" Release="Release" RarityType="Rare">
+    <Name>Aerial Fireworks</Name>
+    <Text ID="191971">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/consumables/icon_fireworks_3.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118004">
+      <Icon />
+    </Rarity>
+    <ItemType>Item</ItemType>
+    <Allocation ID="TownHall">
+      <Text ID="2347">
+        <Icon>
+          <Filename>data/ui/2kimages/main/icons/icon_house.png</Filename>
+        </Icon>
+      </Text>
+    </Allocation>
     <ExpeditionAttributes>
       <Upgrade>
         <Text ID="800004">
-          <EN>Naval Power</EN>
-          <DE>Gefechtskunde</DE>
           <Icon>
             <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
           </Icon>
@@ -752,8 +941,6 @@
       </Upgrade>
       <Upgrade>
         <Text ID="800029">
-          <EN>Diplomacy</EN>
-          <DE>Redegabe</DE>
           <Icon>
             <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
           </Icon>
@@ -761,28 +948,15 @@
         <Value>6</Value>
       </Upgrade>
     </ExpeditionAttributes>
-    <AttackableUpgrades />
-    <TradeShipUpgrades />
-    <VehicleUpgrades />
-    <AttackerUpgrades />
-    <VisitorHarborUpgrades />
-    <RepairCraneUpgrades />
-    <IncidentInfectableUpgrades />
-    <IncidentInfluencerUpgrades />
-    <ItemGeneratorUpgrades />
     <ItemActionUpgrades>
       <Upgrade>
         <Text ID="20072" FontStyle="16">
-          <EN>While active</EN>
-          <DE>Wenn aktiv</DE>
           <Icon />
         </Text>
         <Value></Value>
       </Upgrade>
       <Upgrade>
         <Text ID="145011">
-          <EN>Attractiveness</EN>
-          <DE>Attraktivität</DE>
           <Icon>
             <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
           </Icon>
@@ -791,8 +965,6 @@
       </Upgrade>
       <Upgrade>
         <Text ID="12690">
-          <EN>Bonus Income</EN>
-          <DE>Zusatzeinkommen</DE>
           <Icon>
             <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
           </Icon>
@@ -800,8 +972,6 @@
         <Additionals>
           <Upgrade>
             <Text ID="1010216">
-              <EN>Schnapps</EN>
-              <DE>Schnaps</DE>
               <Icon>
                 <Filename>data/ui/2kimages/main/3dicons/icon_schnapps_4.png</Filename>
               </Icon>
@@ -810,8 +980,6 @@
           </Upgrade>
           <Upgrade>
             <Text ID="1010214">
-              <EN>Beer</EN>
-              <DE>Bier</DE>
               <Icon>
                 <Filename>data/ui/2kimages/main/3dicons/icon_beer.png</Filename>
               </Icon>
@@ -820,8 +988,6 @@
           </Upgrade>
           <Upgrade>
             <Text ID="1010257">
-              <EN>Rum</EN>
-              <DE>Rum</DE>
               <Icon>
                 <Filename>data/ui/2kimages/main/3dicons/icon_rum_barrel.png</Filename>
               </Icon>
@@ -830,8 +996,6 @@
           </Upgrade>
           <Upgrade>
             <Text ID="120016">
-              <EN>Champagne</EN>
-              <DE>Sekt</DE>
               <Icon>
                 <Filename>data/ui/2kimages/main/3dicons/icon_champagne.png</Filename>
               </Icon>
@@ -842,8 +1006,6 @@
       </Upgrade>
       <Upgrade>
         <Text ID="12314">
-          <EN>Happiness</EN>
-          <DE>Zufriedenheit</DE>
           <Icon>
             <Filename>data/ui/2kimages/main/icons/icon_happy.png</Filename>
           </Icon>
@@ -852,18 +1014,14 @@
       </Upgrade>
       <Upgrade>
         <Text ID="2423" FontStyle="16">
-          <EN>Duration</EN>
-          <DE>Dauer</DE>
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
           </Icon>
         </Text>
-        <Value>50:00</Value>
+        <Value>00:50:00</Value>
       </Upgrade>
       <Upgrade>
         <Text ID="2421" FontStyle="16">
-          <EN>Destroyed after use</EN>
-          <DE>Wird nach Gebrauch zerstört</DE>
           <Icon>
             <Filename>data/ui/2kimages/main/icons/icon_untick.png</Filename>
           </Icon>
@@ -871,954 +1029,84 @@
         <Value></Value>
       </Upgrade>
     </ItemActionUpgrades>
-    <ShipyardUpgrades />
-    <KontorUpgrades />
     <TradePrice>10000</TradePrice>
     <Info ID="19568">
-      <EN>They linger high and vivid in the night sky.</EN>
-      <DE>Erstrahlt hoch und leuchtend am Nachthimmel.</DE>
       <Icon />
     </Info>
-    <Sources>
-      <Source ID="800103">
-        <Name>Archeological Expedition Easy</Name>
-        <Text ID="11629">
-          <EN>Archaeological Expedition</EN>
-          <DE>Archäologische Expedition</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.1</EN>
-            <DE>Der Inspekteur 1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.3.1</EN>
-            <DE>Der Inspekteur 1.3.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.3.2.1</EN>
-            <DE>Der Inspekteur 1.2.3.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800214">
-        <Name>Zoological Expedition Easy</Name>
-        <Text ID="11630">
-          <EN>Zoological Expedition</EN>
-          <DE>Zoologische Expedition</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.1</EN>
-            <DE>Der Inspekteur 1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.3.1</EN>
-            <DE>Der Inspekteur 1.3.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.3.2.1</EN>
-            <DE>Der Inspekteur 1.2.3.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
-        <Text ID="11631">
-          <EN>Rescue Mission</EN>
-          <DE>Rettungseinsatz</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.1</EN>
-            <DE>Der Inspekteur 1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.3.1</EN>
-            <DE>Der Inspekteur 1.3.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.3.2.1</EN>
-            <DE>Der Inspekteur 1.2.3.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800403">
-        <Name>Pirate Hunt Easy</Name>
-        <Text ID="11632">
-          <EN>Pirate Hunt</EN>
-          <DE>Piratenjagd</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.1</EN>
-            <DE>Der Inspekteur 1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.3.1</EN>
-            <DE>Der Inspekteur 1.3.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.3.2.1</EN>
-            <DE>Der Inspekteur 1.2.3.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="800777">
-        <Name>Discovery South America Sandbox</Name>
-        <Text ID="11634">
-          <EN>Discovery Expedition</EN>
-          <DE>Entdeckungsreise</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.1</EN>
-            <DE>Der Inspekteur 1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.3.1</EN>
-            <DE>Der Inspekteur 1.3.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="800171">
-            <EN>The Inspector 1.2.3.2.1</EN>
-            <DE>Der Inspekteur 1.2.3.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="78">
-        <Name>Third_party_08 (Madame Kahina)</Name>
-        <Text ID="78">
-          <EN>Harbour - Madame Kahina</EN>
-          <DE>Hafen - Madame Kahina</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_08.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="">
-            <EN>Early-Mid Game</EN>
-            <DE>Frühes-Mittleres Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Mid Game</EN>
-            <DE>Mittleres Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Late-Mid Game</EN>
-            <DE>Mittleres-Spätes Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Late Game</EN>
-            <DE>Spätes Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>EndGame</EN>
-            <DE>End Game</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="150352">
-        <Name>Maintaining Contacts - Kahina - ON HOLD - till Story changes</Name>
-        <Text ID="78">
-          <EN>Quest - Madame Kahina</EN>
-          <DE>Quest - Madame Kahina</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_08.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="150352">
-            <EN>Maintaining Contacts (TBC - Quest not yet written)</EN>
-            <DE>Maintaining Contacts (TBC - Quest not yet written)</DE>
-            <Icon />
-          </Text>
-          <Text ID="150373">
-            <EN>Undead</EN>
-            <DE>Untot</DE>
-            <Icon />
-          </Text>
-          <Text ID="150374">
-            <EN>Their Last Heist</EN>
-            <DE>Ihr letzter Raubzug</DE>
-            <Icon />
-          </Text>
-          <Text ID="150376">
-            <EN>In It For The Money</EN>
-            <DE>Schlechter Ruf</DE>
-            <Icon />
-          </Text>
-          <Text ID="152531">
-            <EN>Ghosts of the Past</EN>
-            <DE>Geister der Vergangenheit</DE>
-            <Icon />
-          </Text>
-          <Text ID="150357">
-            <EN>Give Them an Inch</EN>
-            <DE>Den kleinen Finger reichen</DE>
-            <Icon />
-          </Text>
-          <Text ID="150390">
-            <EN>Unlawful Assistance (TBC - Quest not yet written)</EN>
-            <DE>Unlawful Assistance (TBC - Quest not yet written)</DE>
-            <Icon />
-          </Text>
-          <Text ID="150377">
-            <EN>What Goes Around Comes Around</EN>
-            <DE>Hoher Besuch</DE>
-            <Icon />
-          </Text>
-          <Text ID="150380">
-            <EN>No Excuses</EN>
-            <DE>Keine Ausflüchte</DE>
-            <Icon />
-          </Text>
-          <Text ID="152535">
-            <EN>Welcome to the Truth 3 — The Question</EN>
-            <DE>Willkommen bei der Wahrheit 3 - Die Frage</DE>
-            <Icon />
-          </Text>
-          <Text ID="153044">
-            <EN>Implications</EN>
-            <DE>Implikationen</DE>
-            <Icon />
-          </Text>
-          <Text ID="150375">
-            <EN>Coincidences Don't Exist</EN>
-            <DE>Zufälle gibt es nicht</DE>
-            <Icon />
-          </Text>
-          <Text ID="150366">
-            <EN>Trust Your Instincts</EN>
-            <DE>Auf den Instinkt ist Verlass</DE>
-            <Icon />
-          </Text>
-          <Text ID="152533">
-            <EN>Welcome to the Truth 1 — The Test</EN>
-            <DE>Willkommen bei der Wahrheit 1 - Der Test</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="150969">
-        <Name>RQ_Artisans_PeerGynt</Name>
-        <Text ID="87">
-          <EN>Quest - Artisan</EN>
-          <DE>Quest - Handwerker</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/resident_tier03.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="150969">
-            <EN>Peer Gynt</EN>
-            <DE>Peer Gynt</DE>
-            <Icon />
-          </Text>
-          <Text ID="150970">
-            <EN>Sound of Music</EN>
-            <DE>Der Klang der Musik</DE>
-            <Icon />
-          </Text>
-          <Text ID="150979">
-            <EN>The Wayward Apprentice</EN>
-            <DE>Lehrling auf Abwegen</DE>
-            <Icon />
-          </Text>
-          <Text ID="151847">
-            <EN>The Simple Life</EN>
-            <DE>Das einfache Leben</DE>
-            <Icon />
-          </Text>
-          <Text ID="150981">
-            <EN>New World</EN>
-            <DE>Neue Insel</DE>
-            <Icon />
-          </Text>
-          <Text ID="150982">
-            <EN>First Day of School</EN>
-            <DE>Erster Schultag</DE>
-            <Icon />
-          </Text>
-          <Text ID="150986">
-            <EN>A Day at the Zoo</EN>
-            <DE>Ein Tag im Zoo</DE>
-            <Icon />
-          </Text>
-          <Text ID="150987">
-            <EN>Can Opening</EN>
-            <DE>Dosenöffnung</DE>
-            <Icon />
-          </Text>
-          <Text ID="150988">
-            <EN>An Affair of Honor</EN>
-            <DE>Eine Sache der Ehre</DE>
-            <Icon />
-          </Text>
-          <Text ID="150989">
-            <EN>Culture Vulture</EN>
-            <DE>Kulturgeier</DE>
-            <Icon />
-          </Text>
-          <Text ID="151034">
-            <EN>Vicuña En Vogue</EN>
-            <DE>Vicuña en vogue</DE>
-            <Icon />
-          </Text>
-          <Text ID="151035">
-            <EN>Artisan Coffee</EN>
-            <DE>Handgefertigter Kaffee</DE>
-            <Icon />
-          </Text>
-          <Text ID="151036">
-            <EN>Pour, Oh Pour, The Pirate Rum</EN>
-            <DE>Fließe, oh, fließe, Piratenrum</DE>
-            <Icon />
-          </Text>
-          <Text ID="151037">
-            <EN>Turner Overdrive</EN>
-            <DE>Turners Impressionen</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="80">
-        <Name>Second_ai_03 (Willie Wibblesock)</Name>
-        <Text ID="80">
-          <EN>Ship Drop - Willie Wibblesock</EN>
-          <DE>Schiff Drop - Willie Wibblesock</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_03.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="80">
-            <EN>Willie Wibblesock</EN>
-            <DE>Willie Wibblesock</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/profiles/ai_03.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="150399">
-        <Name>Comeback King - Willie</Name>
-        <Text ID="80">
-          <EN>Quest - Willie Wibblesock</EN>
-          <DE>Quest - Willie Wibblesock</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/ai_03.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="150399">
-            <EN>Walled-Up Emotions</EN>
-            <DE>Versteinerte Gesichter</DE>
-            <Icon />
-          </Text>
-          <Text ID="150403">
-            <EN>Rum Deal</EN>
-            <DE>Rum-Gezappel</DE>
-            <Icon />
-          </Text>
-          <Text ID="150404">
-            <EN>Practice Makes Pyre Effect</EN>
-            <DE>Übung macht den Feuerteufel</DE>
-            <Icon />
-          </Text>
-          <Text ID="150405">
-            <EN>Watch How It's Done</EN>
-            <DE>Taschenuhrentrick</DE>
-            <Icon />
-          </Text>
-          <Text ID="150406">
-            <EN>Heart of Gold</EN>
-            <DE>Herz aus Gold</DE>
-            <Icon />
-          </Text>
-          <Text ID="150407">
-            <EN>An Honest Mistake</EN>
-            <DE>Lächerlicher Lapsus</DE>
-            <Icon />
-          </Text>
-          <Text ID="150408">
-            <EN>Disillusionment</EN>
-            <DE>Desillusionierung</DE>
-            <Icon />
-          </Text>
-          <Text ID="150409">
-            <EN>Glass Act</EN>
-            <DE>Durchsichtiger Trick</DE>
-            <Icon />
-          </Text>
-          <Text ID="152396">
-            <EN>Me Old Mum — When Smoke Gets in Your Eyes</EN>
-            <DE>Meine alte Mutter - Das Lied vom Rauch</DE>
-            <Icon />
-          </Text>
-          <Text ID="152397">
-            <EN>Me Old Mum — A Taste of Their Own Medicine</EN>
-            <DE>Meine alte Mutter - Ein Löffel ihrer Medizin</DE>
-            <Icon />
-          </Text>
-          <Text ID="150415">
-            <EN>A Foe of Biblical Proportions</EN>
-            <DE>Ein Feind biblischen Ausmaßes</DE>
-            <Icon />
-          </Text>
-          <Text ID="150434">
-            <EN>Predicament Escape</EN>
-            <DE>Flucht aus der Zwickmühle</DE>
-            <Icon />
-          </Text>
-          <Text ID="152684">
-            <EN>Magicians Never Reveal Their Secrets</EN>
-            <DE>Magier enthüllen niemals ihre Geheimnisse</DE>
-            <Icon />
-          </Text>
-          <Text ID="150417">
-            <EN>Five-Second-Rule</EN>
-            <DE>Fünfsekundenregel</DE>
-            <Icon />
-          </Text>
-          <Text ID="150423">
-            <EN>Water Torture</EN>
-            <DE>Wasserprobe</DE>
-            <Icon />
-          </Text>
-          <Text ID="150424">
-            <EN>Cup and Balls</EN>
-            <DE>Hütchenspiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="150425">
-            <EN>Finders Keepers</EN>
-            <DE>Finderlohn</DE>
-            <Icon />
-          </Text>
-          <Text ID="150426">
-            <EN>Hands Off My Lettuce</EN>
-            <DE>Fass meinen Salat nicht an!</DE>
-            <Icon />
-          </Text>
-          <Text ID="150433">
-            <EN>A Wandering Wand</EN>
-            <DE>Verflixter Verschwindezauber</DE>
-            <Icon />
-          </Text>
-          <Text ID="150436">
-            <EN>Sellsword</EN>
-            <DE>Schutzheiliger</DE>
-            <Icon />
-          </Text>
-          <Text ID="150437">
-            <EN>Disappearing Act</EN>
-            <DE>Verschwindezauber</DE>
-            <Icon />
-          </Text>
-          <Text ID="152398">
-            <EN>Me Old Mum — A Man Needs a Mum</EN>
-            <DE>Meine alte Mutter - Ein Mann braucht eine Mutter</DE>
-            <Icon />
-          </Text>
-          <Text ID="152652">
-            <EN>A Bit of a Circus</EN>
-            <DE>Ein bisschen wie im Zirkus</DE>
-            <Icon />
-          </Text>
-          <Text ID="152559">
-            <EN>The Prestige 2 — Birdman</EN>
-            <DE>Prestigefrage 2 — Vogelmensch</DE>
-            <Icon />
-          </Text>
-          <Text ID="152561">
-            <EN>The Prestige 3 — Dark Magic</EN>
-            <DE>Prestigefrage 3 — Dunkle Magie</DE>
-            <Icon />
-          </Text>
-          <Text ID="153205">
-            <EN>The Prestige 3 — Dark Magic</EN>
-            <DE>Prestigefrage 3 - Dunkle Magie</DE>
-            <Icon />
-          </Text>
-          <Text ID="152563">
-            <EN>A Ghostly Encounter 3 — Night Vigil</EN>
-            <DE>Eine geisterhafte Begegnung 3 — Nachtwächter</DE>
-            <Icon />
-          </Text>
-          <Text ID="152565">
-            <EN>A Ghostly Encounter 4 — The Spirit Shows Itself!</EN>
-            <DE>Eine geisterhafte Begegnung 4 — Der Geist erscheint persönlich!</DE>
-            <Icon />
-          </Text>
-          <Text ID="152566">
-            <EN>A Ghostly Encounter 5 — After-Images Remain</EN>
-            <DE>Eine geisterhafte Begegnung 5 — Phantombilder bleiben</DE>
-            <Icon />
-          </Text>
-          <Text ID="150410">
-            <EN>Wizarding Duel</EN>
-            <DE>Zaubereiduell</DE>
-            <Icon />
-          </Text>
-          <Text ID="150427">
-            <EN>Mystery Box</EN>
-            <DE>Wundertüte</DE>
-            <Icon />
-          </Text>
-          <Text ID="152394">
-            <EN>World's Greatest Showman 1 — Tent Pitch</EN>
-            <DE>Der weltgrößte Schausteller 1 - Zeltplatz</DE>
-            <Icon />
-          </Text>
-          <Text ID="152395">
-            <EN>The Prestige 1 — They Do It With Mirrors</EN>
-            <DE>Prestigefrage 1 — Sie machen das mit Spiegeln</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="151029">
-        <Name>RQ_Worker_Oliver</Name>
-        <Text ID="30">
-          <EN>Quest - Worker</EN>
-          <DE>Quest - Arbeiter</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/portrait_icons_0014_resident_tier02.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="151029">
-            <EN>Olly's Gift</EN>
-            <DE>Ollis Geschenk</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-    <MonumentEvents />
-    <MonumentThresholds />
-    <MonumentRewards />
-  </Asset>
-  <Asset ID="191969" Release="Release">
-    <Name>Black Powder Fireworks</Name>
-    <Text ID="191969">
-      <EN>Black Powder Fireworks</EN>
-      <DE>Schwarzpulver-Feuerwerk</DE>
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/consumables/icon_fireworks_1.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <EN>Common</EN>
-      <DE>Gewöhnlich</DE>
-      <Icon />
-    </Rarity>
-    <ItemType>Common</ItemType>
-    <ItemSets />
-    <Allocation ID="TownHall">
-      <Text ID="2347">
-        <EN>Town Hall</EN>
-        <DE>Rathaus</DE>
-        <Icon>
-          <Filename>data/ui/2kimages/main/icons/icon_house.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
     <EffectTargets>
       <Target>
-        <Text ID="">
-          <EN>Residences</EN>
-          <DE>Wohngebäude</DE>
-          <Icon />
+        <Text ID="190762">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
+          </Icon>
         </Text>
         <Buildings>
           <Text ID="1010343">
-            <EN>Farmer Residence</EN>
-            <DE>Bauernhaus</DE>
             <Icon>
               <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
             </Icon>
           </Text>
           <Text ID="1010344">
-            <EN>Worker Residence</EN>
-            <DE>Arbeiterhaus</DE>
             <Icon>
               <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
             </Icon>
           </Text>
           <Text ID="1010345">
-            <EN>Artisan Residence</EN>
-            <DE>Handwerkerhaus</DE>
             <Icon>
               <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
             </Icon>
           </Text>
           <Text ID="1010346">
-            <EN>Engineer Residence</EN>
-            <DE>Ingenieurshaus</DE>
             <Icon>
               <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
             </Icon>
           </Text>
           <Text ID="1010347">
-            <EN>Investor Residence</EN>
-            <DE>Investorenhaus</DE>
             <Icon>
               <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
             </Icon>
           </Text>
           <Text ID="101254">
-            <EN>Jornalero Residence</EN>
-            <DE>Jornalero-Haus</DE>
-            <Icon />
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+            </Icon>
           </Text>
           <Text ID="101255">
-            <EN>Obrero Residence</EN>
-            <DE>Obrero-Haus</DE>
-            <Icon />
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+            </Icon>
           </Text>
         </Buildings>
       </Target>
     </EffectTargets>
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes>
-      <Upgrade>
-        <Text ID="800004">
-          <EN>Naval Power</EN>
-          <DE>Gefechtskunde</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png</Filename>
-          </Icon>
-        </Text>
-        <Value>1</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="800029">
-          <EN>Diplomacy</EN>
-          <DE>Redegabe</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png</Filename>
-          </Icon>
-        </Text>
-        <Value>2</Value>
-      </Upgrade>
-    </ExpeditionAttributes>
-    <AttackableUpgrades />
-    <TradeShipUpgrades />
-    <VehicleUpgrades />
-    <AttackerUpgrades />
-    <VisitorHarborUpgrades />
-    <RepairCraneUpgrades />
-    <IncidentInfectableUpgrades />
-    <IncidentInfluencerUpgrades />
-    <ItemGeneratorUpgrades />
-    <ItemActionUpgrades>
-      <Upgrade>
-        <Text ID="20072" FontStyle="16">
-          <EN>While active</EN>
-          <DE>Wenn aktiv</DE>
-          <Icon />
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="12314">
-          <EN>Happiness</EN>
-          <DE>Zufriedenheit</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_happy.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+7</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="2423" FontStyle="16">
-          <EN>Duration</EN>
-          <DE>Dauer</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_time.png</Filename>
-          </Icon>
-        </Text>
-        <Value>30:00</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="2421" FontStyle="16">
-          <EN>Destroyed after use</EN>
-          <DE>Wird nach Gebrauch zerstört</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_untick.png</Filename>
-          </Icon>
-        </Text>
-        <Value></Value>
-      </Upgrade>
-    </ItemActionUpgrades>
-    <ShipyardUpgrades />
-    <KontorUpgrades />
-    <TradePrice>875</TradePrice>
-    <Info ID="19566">
-      <EN>Traditional fireworks.</EN>
-      <DE>Traditionelles Feuerwerk.</DE>
-      <Icon />
-    </Info>
     <Sources>
-      <Source ID="800399">
-        <Name>Rescue Mission Easy</Name>
-        <Text ID="11631">
-          <EN>Rescue Mission</EN>
-          <DE>Rettungseinsatz</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
-            <Icon />
-          </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="78">
-        <Name>Third_party_08 (Madame Kahina)</Name>
-        <Text ID="78">
-          <EN>Harbour - Madame Kahina</EN>
-          <DE>Hafen - Madame Kahina</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/profiles/3rd_party_08.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="">
-            <EN>Early Game</EN>
-            <DE>Frühes Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Early-Mid Game</EN>
-            <DE>Frühes-Mittleres Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Mid Game</EN>
-            <DE>Mittleres Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Late-Mid Game</EN>
-            <DE>Mittleres-Spätes Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>Late Game</EN>
-            <DE>Spätes Spiel</DE>
-            <Icon />
-          </Text>
-          <Text ID="">
-            <EN>EndGame</EN>
-            <DE>End Game</DE>
-            <Icon />
-          </Text>
-        </Details>
-      </Source>
       <Source ID="800103">
         <Name>Archeological Expedition Easy</Name>
         <Text ID="11629">
-          <EN>Archaeological Expedition</EN>
-          <DE>Archäologische Expedition</DE>
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
+          <Text ID="-353998529">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
+          <Text ID="-353998530">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
+          <Text ID="1534142650">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
+          <Text ID="1485039551">
+            <Icon />
+          </Text>
+          <Text ID="-81044390">
+            <Icon />
+          </Text>
+          <Text ID="-981721778">
+            <Icon />
+          </Text>
+          <Text ID="584362163">
             <Icon />
           </Text>
         </Details>
@@ -1826,31 +1114,67 @@
       <Source ID="800214">
         <Name>Zoological Expedition Easy</Name>
         <Text ID="11630">
-          <EN>Zoological Expedition</EN>
-          <DE>Zoologische Expedition</DE>
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
+          <Text ID="-353998529">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
+          <Text ID="-353998530">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
+          <Text ID="1534142650">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
+          <Text ID="1485039551">
+            <Icon />
+          </Text>
+          <Text ID="-81044390">
+            <Icon />
+          </Text>
+          <Text ID="-981721778">
+            <Icon />
+          </Text>
+          <Text ID="584362163">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="800399">
+        <Name>Rescue Mission Easy</Name>
+        <Text ID="11631">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-353998529">
+            <Icon />
+          </Text>
+          <Text ID="-353998530">
+            <Icon />
+          </Text>
+          <Text ID="1534142650">
+            <Icon />
+          </Text>
+          <Text ID="-5">
+            <Icon />
+          </Text>
+          <Text ID="-5">
+            <Icon />
+          </Text>
+          <Text ID="1485039551">
+            <Icon />
+          </Text>
+          <Text ID="-81044390">
+            <Icon />
+          </Text>
+          <Text ID="-981721778">
+            <Icon />
+          </Text>
+          <Text ID="584362163">
             <Icon />
           </Text>
         </Details>
@@ -1858,36 +1182,36 @@
       <Source ID="800403">
         <Name>Pirate Hunt Easy</Name>
         <Text ID="11632">
-          <EN>Pirate Hunt</EN>
-          <DE>Piratenjagd</DE>
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
+          <Text ID="-353998529">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
+          <Text ID="-353998530">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
+          <Text ID="1534142650">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
+          <Text ID="1485039551">
             <Icon />
           </Text>
-          <Text ID="">
-            <EN>Expedition Abgeschossen</EN>
-            <DE> Successfully Expedition</DE>
+          <Text ID="-81044390">
+            <Icon />
+          </Text>
+          <Text ID="-981721778">
+            <Icon />
+          </Text>
+          <Text ID="584362163">
+            <Icon />
+          </Text>
+          <Text ID="-5">
+            <Icon />
+          </Text>
+          <Text ID="-5">
             <Icon />
           </Text>
         </Details>
@@ -1895,212 +1219,228 @@
       <Source ID="800777">
         <Name>Discovery South America Sandbox</Name>
         <Text ID="11634">
-          <EN>Discovery Expedition</EN>
-          <DE>Entdeckungsreise</DE>
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.1.1</EN>
-            <DE>Piratenflagge 1.1.1.1.1</DE>
+          <Text ID="-353998529">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.1.1.2.1</EN>
-            <DE>Piratenflagge 1.1.1.2.1</DE>
+          <Text ID="-353998530">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.1.1</EN>
-            <DE>Piratenflagge 1.2.1.1.1</DE>
+          <Text ID="1534142650">
             <Icon />
           </Text>
-          <Text ID="802745">
-            <EN>Jolly Roger 1.2.1.2.1</EN>
-            <DE>Piratenflagge 1.2.1.2.1</DE>
+          <Text ID="1485039551">
+            <Icon />
+          </Text>
+          <Text ID="-81044390">
+            <Icon />
+          </Text>
+          <Text ID="-981721778">
+            <Icon />
+          </Text>
+          <Text ID="584362163">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="803519">
+        <Name>Discovery Sunken Treasures Multiplayer</Name>
+        <Text ID="22262">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_skull.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-353998529">
+            <Icon />
+          </Text>
+          <Text ID="-353998530">
+            <Icon />
+          </Text>
+          <Text ID="1534142650">
+            <Icon />
+          </Text>
+          <Text ID="1485039551">
+            <Icon />
+          </Text>
+          <Text ID="-81044390">
+            <Icon />
+          </Text>
+          <Text ID="-981721778">
+            <Icon />
+          </Text>
+          <Text ID="584362163">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="78">
+        <Name>Third_party_08 (Madame Kahina)</Name>
+        <Text ID="-1574342061">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_08.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-7">
+            <Icon />
+          </Text>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
+            <Icon />
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="77">
+        <Name>Third_party_06 (Old Nate)</Name>
+        <Text ID="-1939944159">
+          <Icon>
+            <Filename>data/ui/2kimages/main/profiles/3rd_party_06.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="-7">
+            <Icon />
+          </Text>
+          <Text ID="-8">
+            <Icon />
+          </Text>
+          <Text ID="-9">
+            <Icon />
+          </Text>
+          <Text ID="-10">
+            <Icon />
+          </Text>
+          <Text ID="-11">
             <Icon />
           </Text>
         </Details>
       </Source>
       <Source ID="150352">
         <Name>Maintaining Contacts - Kahina - ON HOLD - till Story changes</Name>
-        <Text ID="78">
-          <EN>Quest - Madame Kahina</EN>
-          <DE>Quest - Madame Kahina</DE>
+        <Text ID="-13435679">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/3rd_party_08.png</Filename>
           </Icon>
         </Text>
         <Details>
           <Text ID="150352">
-            <EN>Maintaining Contacts (TBC - Quest not yet written)</EN>
-            <DE>Maintaining Contacts (TBC - Quest not yet written)</DE>
             <Icon />
           </Text>
           <Text ID="150373">
-            <EN>Undead</EN>
-            <DE>Untot</DE>
             <Icon />
           </Text>
           <Text ID="150374">
-            <EN>Their Last Heist</EN>
-            <DE>Ihr letzter Raubzug</DE>
             <Icon />
           </Text>
           <Text ID="150376">
-            <EN>In It For The Money</EN>
-            <DE>Schlechter Ruf</DE>
             <Icon />
           </Text>
           <Text ID="152531">
-            <EN>Ghosts of the Past</EN>
-            <DE>Geister der Vergangenheit</DE>
             <Icon />
           </Text>
           <Text ID="150357">
-            <EN>Give Them an Inch</EN>
-            <DE>Den kleinen Finger reichen</DE>
             <Icon />
           </Text>
           <Text ID="150390">
-            <EN>Unlawful Assistance (TBC - Quest not yet written)</EN>
-            <DE>Unlawful Assistance (TBC - Quest not yet written)</DE>
             <Icon />
           </Text>
           <Text ID="150377">
-            <EN>What Goes Around Comes Around</EN>
-            <DE>Hoher Besuch</DE>
             <Icon />
           </Text>
           <Text ID="150380">
-            <EN>No Excuses</EN>
-            <DE>Keine Ausflüchte</DE>
             <Icon />
           </Text>
           <Text ID="152535">
-            <EN>Welcome to the Truth 3 — The Question</EN>
-            <DE>Willkommen bei der Wahrheit 3 - Die Frage</DE>
             <Icon />
           </Text>
           <Text ID="153044">
-            <EN>Implications</EN>
-            <DE>Implikationen</DE>
             <Icon />
           </Text>
           <Text ID="150375">
-            <EN>Coincidences Don't Exist</EN>
-            <DE>Zufälle gibt es nicht</DE>
             <Icon />
           </Text>
           <Text ID="150366">
-            <EN>Trust Your Instincts</EN>
-            <DE>Auf den Instinkt ist Verlass</DE>
             <Icon />
           </Text>
           <Text ID="152533">
-            <EN>Welcome to the Truth 1 — The Test</EN>
-            <DE>Willkommen bei der Wahrheit 1 - Der Test</DE>
             <Icon />
           </Text>
         </Details>
       </Source>
       <Source ID="150969">
         <Name>RQ_Artisans_PeerGynt</Name>
-        <Text ID="87">
-          <EN>Quest - Artisan</EN>
-          <DE>Quest - Handwerker</DE>
+        <Text ID="1521030542">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/resident_tier03.png</Filename>
           </Icon>
         </Text>
         <Details>
           <Text ID="150969">
-            <EN>Peer Gynt</EN>
-            <DE>Peer Gynt</DE>
             <Icon />
           </Text>
           <Text ID="150970">
-            <EN>Sound of Music</EN>
-            <DE>Der Klang der Musik</DE>
             <Icon />
           </Text>
           <Text ID="150979">
-            <EN>The Wayward Apprentice</EN>
-            <DE>Lehrling auf Abwegen</DE>
             <Icon />
           </Text>
           <Text ID="151847">
-            <EN>The Simple Life</EN>
-            <DE>Das einfache Leben</DE>
             <Icon />
           </Text>
           <Text ID="150981">
-            <EN>New World</EN>
-            <DE>Neue Insel</DE>
             <Icon />
           </Text>
           <Text ID="150982">
-            <EN>First Day of School</EN>
-            <DE>Erster Schultag</DE>
             <Icon />
           </Text>
           <Text ID="150986">
-            <EN>A Day at the Zoo</EN>
-            <DE>Ein Tag im Zoo</DE>
             <Icon />
           </Text>
           <Text ID="150987">
-            <EN>Can Opening</EN>
-            <DE>Dosenöffnung</DE>
             <Icon />
           </Text>
           <Text ID="150988">
-            <EN>An Affair of Honor</EN>
-            <DE>Eine Sache der Ehre</DE>
             <Icon />
           </Text>
           <Text ID="150989">
-            <EN>Culture Vulture</EN>
-            <DE>Kulturgeier</DE>
             <Icon />
           </Text>
           <Text ID="151034">
-            <EN>Vicuña En Vogue</EN>
-            <DE>Vicuña en vogue</DE>
             <Icon />
           </Text>
           <Text ID="151035">
-            <EN>Artisan Coffee</EN>
-            <DE>Handgefertigter Kaffee</DE>
             <Icon />
           </Text>
           <Text ID="151036">
-            <EN>Pour, Oh Pour, The Pirate Rum</EN>
-            <DE>Fließe, oh, fließe, Piratenrum</DE>
             <Icon />
           </Text>
           <Text ID="151037">
-            <EN>Turner Overdrive</EN>
-            <DE>Turners Impressionen</DE>
             <Icon />
           </Text>
         </Details>
       </Source>
       <Source ID="80">
         <Name>Second_ai_03 (Willie Wibblesock)</Name>
-        <Text ID="80">
-          <EN>Ship Drop - Willie Wibblesock</EN>
-          <DE>Schiff Drop - Willie Wibblesock</DE>
+        <Text ID="2050890057">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/ai_03.png</Filename>
           </Icon>
         </Text>
         <Details>
           <Text ID="80">
-            <EN>Willie Wibblesock</EN>
-            <DE>Willie Wibblesock</DE>
             <Icon>
               <Filename>data/ui/2kimages/main/profiles/ai_03.png</Filename>
             </Icon>
@@ -2109,201 +1449,126 @@
       </Source>
       <Source ID="150399">
         <Name>Comeback King - Willie</Name>
-        <Text ID="80">
-          <EN>Quest - Willie Wibblesock</EN>
-          <DE>Quest - Willie Wibblesock</DE>
+        <Text ID="-202254027">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/ai_03.png</Filename>
           </Icon>
         </Text>
         <Details>
           <Text ID="150399">
-            <EN>Walled-Up Emotions</EN>
-            <DE>Versteinerte Gesichter</DE>
             <Icon />
           </Text>
           <Text ID="150403">
-            <EN>Rum Deal</EN>
-            <DE>Rum-Gezappel</DE>
             <Icon />
           </Text>
           <Text ID="150404">
-            <EN>Practice Makes Pyre Effect</EN>
-            <DE>Übung macht den Feuerteufel</DE>
             <Icon />
           </Text>
           <Text ID="150405">
-            <EN>Watch How It's Done</EN>
-            <DE>Taschenuhrentrick</DE>
             <Icon />
           </Text>
           <Text ID="150406">
-            <EN>Heart of Gold</EN>
-            <DE>Herz aus Gold</DE>
             <Icon />
           </Text>
           <Text ID="150407">
-            <EN>An Honest Mistake</EN>
-            <DE>Lächerlicher Lapsus</DE>
             <Icon />
           </Text>
           <Text ID="150408">
-            <EN>Disillusionment</EN>
-            <DE>Desillusionierung</DE>
             <Icon />
           </Text>
           <Text ID="150409">
-            <EN>Glass Act</EN>
-            <DE>Durchsichtiger Trick</DE>
             <Icon />
           </Text>
           <Text ID="152396">
-            <EN>Me Old Mum — When Smoke Gets in Your Eyes</EN>
-            <DE>Meine alte Mutter - Das Lied vom Rauch</DE>
             <Icon />
           </Text>
           <Text ID="152397">
-            <EN>Me Old Mum — A Taste of Their Own Medicine</EN>
-            <DE>Meine alte Mutter - Ein Löffel ihrer Medizin</DE>
             <Icon />
           </Text>
           <Text ID="150415">
-            <EN>A Foe of Biblical Proportions</EN>
-            <DE>Ein Feind biblischen Ausmaßes</DE>
             <Icon />
           </Text>
           <Text ID="150434">
-            <EN>Predicament Escape</EN>
-            <DE>Flucht aus der Zwickmühle</DE>
             <Icon />
           </Text>
           <Text ID="152684">
-            <EN>Magicians Never Reveal Their Secrets</EN>
-            <DE>Magier enthüllen niemals ihre Geheimnisse</DE>
             <Icon />
           </Text>
           <Text ID="150417">
-            <EN>Five-Second-Rule</EN>
-            <DE>Fünfsekundenregel</DE>
             <Icon />
           </Text>
           <Text ID="150423">
-            <EN>Water Torture</EN>
-            <DE>Wasserprobe</DE>
             <Icon />
           </Text>
           <Text ID="150424">
-            <EN>Cup and Balls</EN>
-            <DE>Hütchenspiel</DE>
             <Icon />
           </Text>
           <Text ID="150425">
-            <EN>Finders Keepers</EN>
-            <DE>Finderlohn</DE>
             <Icon />
           </Text>
           <Text ID="150426">
-            <EN>Hands Off My Lettuce</EN>
-            <DE>Fass meinen Salat nicht an!</DE>
             <Icon />
           </Text>
           <Text ID="150433">
-            <EN>A Wandering Wand</EN>
-            <DE>Verflixter Verschwindezauber</DE>
             <Icon />
           </Text>
           <Text ID="150436">
-            <EN>Sellsword</EN>
-            <DE>Schutzheiliger</DE>
             <Icon />
           </Text>
           <Text ID="150437">
-            <EN>Disappearing Act</EN>
-            <DE>Verschwindezauber</DE>
             <Icon />
           </Text>
           <Text ID="152398">
-            <EN>Me Old Mum — A Man Needs a Mum</EN>
-            <DE>Meine alte Mutter - Ein Mann braucht eine Mutter</DE>
             <Icon />
           </Text>
           <Text ID="152652">
-            <EN>A Bit of a Circus</EN>
-            <DE>Ein bisschen wie im Zirkus</DE>
             <Icon />
           </Text>
           <Text ID="152559">
-            <EN>The Prestige 2 — Birdman</EN>
-            <DE>Prestigefrage 2 — Vogelmensch</DE>
             <Icon />
           </Text>
           <Text ID="152561">
-            <EN>The Prestige 3 — Dark Magic</EN>
-            <DE>Prestigefrage 3 — Dunkle Magie</DE>
             <Icon />
           </Text>
-          <Text ID="153205">
-            <EN>The Prestige 3 — Dark Magic</EN>
-            <DE>Prestigefrage 3 - Dunkle Magie</DE>
+          <Text ID="152561">
             <Icon />
           </Text>
           <Text ID="152563">
-            <EN>A Ghostly Encounter 3 — Night Vigil</EN>
-            <DE>Eine geisterhafte Begegnung 3 — Nachtwächter</DE>
             <Icon />
           </Text>
           <Text ID="152565">
-            <EN>A Ghostly Encounter 4 — The Spirit Shows Itself!</EN>
-            <DE>Eine geisterhafte Begegnung 4 — Der Geist erscheint persönlich!</DE>
             <Icon />
           </Text>
           <Text ID="152566">
-            <EN>A Ghostly Encounter 5 — After-Images Remain</EN>
-            <DE>Eine geisterhafte Begegnung 5 — Phantombilder bleiben</DE>
             <Icon />
           </Text>
           <Text ID="150410">
-            <EN>Wizarding Duel</EN>
-            <DE>Zaubereiduell</DE>
             <Icon />
           </Text>
           <Text ID="150427">
-            <EN>Mystery Box</EN>
-            <DE>Wundertüte</DE>
             <Icon />
           </Text>
           <Text ID="152394">
-            <EN>World's Greatest Showman 1 — Tent Pitch</EN>
-            <DE>Der weltgrößte Schausteller 1 - Zeltplatz</DE>
             <Icon />
           </Text>
           <Text ID="152395">
-            <EN>The Prestige 1 — They Do It With Mirrors</EN>
-            <DE>Prestigefrage 1 — Sie machen das mit Spiegeln</DE>
             <Icon />
           </Text>
         </Details>
       </Source>
       <Source ID="151029">
         <Name>RQ_Worker_Oliver</Name>
-        <Text ID="30">
-          <EN>Quest - Worker</EN>
-          <DE>Quest - Arbeiter</DE>
+        <Text ID="1749551055">
           <Icon>
             <Filename>data/ui/2kimages/main/profiles/portrait_icons_0014_resident_tier02.png</Filename>
           </Icon>
         </Text>
         <Details>
           <Text ID="151029">
-            <EN>Olly's Gift</EN>
-            <DE>Ollis Geschenk</DE>
             <Icon />
           </Text>
         </Details>
       </Source>
     </Sources>
-    <MonumentEvents />
-    <MonumentThresholds />
-    <MonumentRewards />
   </Asset>
 </ItemSpecialActionVisualEffect>

@@ -1,4 +1,5 @@
 ﻿using RDA.Data;
+using RDA.Library;
 using RDA.Templates;
 using System;
 using System.Collections.Concurrent;
@@ -7,6 +8,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Xml;
 using System.Xml.Linq;
 using System.Xml.XPath;
 
@@ -20,11 +22,14 @@ namespace RDA {
     public static void Main(String[] args) {
       Program.PathViewer = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase).Replace(@"file:\", String.Empty)).Parent.Parent.Parent.FullName + @"\AssetViewer";
       Program.PathRoot = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase).Replace(@"file:\", String.Empty)).Parent.Parent.FullName;
-      Assets.Init("Update 03");
-      // Helper
-      Helper.ExtractTextEnglish(Program.PathRoot + @"\Original\texts_english.xml");
-      Helper.ExtractTextGerman(Program.PathRoot + @"\Original\texts_german.xml");
+
+      // Helper  Obsolete
+      //Helper.ExtractTextEnglish(Program.PathRoot + @"\Original\texts_english.xml");
+      //Helper.ExtractTextGerman(Program.PathRoot + @"\Original\texts_german.xml");
+      //Helper.ExtractText();
       //Helper.ExtractTemplateNames(Program.PathRoot + @"\Original\assets.xml");
+
+      Assets.Init("Update 04");
 
       // World Fair
       Monument.Create();
@@ -39,8 +44,22 @@ namespace RDA {
       Program.ProcessingItems("VehicleItem");
       Program.ProcessingItems("ShipSpecialist");
       Program.ProcessingItems("CultureItem");
-      Program.ProcessingItems("BuildPermitBuilding");
+      Program.ProcessingItems("ItemWithUI");
+      Program.ProcessingItems("FluffItem");
+      Program.ProcessingItems("QuestItemMagistrate");
+      Program.ProcessingItems("StartExpeditionItem");
+      Program.ProcessingItems("QuestItem");
+
       Program.ProcessingItems("Product");
+
+      //Buildings
+      Program.ProcessingItems("BuildPermitBuilding");
+
+      //Testing
+      //Program.ProcessingBuildings();
+
+      //Excluded
+      //Program.ProcessingItems("ItemConstructionPlan");
 
       Program.ProcessingRewardPools();
 
@@ -55,8 +74,12 @@ namespace RDA {
       //Program.Expeditions();
       Program.ProcessingExpeditionEvents();
 
-      ////Tourism
+      //Tourism
       Program.ProcessingTourism();
+
+      //Save Descriptions
+      //Set True for fully new Set of Descriptions.
+      Program.SaveDescriptions(true);
     }
 
     #endregion Methods
@@ -66,10 +89,80 @@ namespace RDA {
     internal static String PathRoot;
     internal static String PathViewer;
     internal static XDocument TextDE;
-    private static readonly Dictionary<Int32, String> Descriptions = new Dictionary<Int32, String>();
 
     #endregion Fields
 
+    private static void ProcessingBuildings() {
+      foreach (var item in Assets.Original.Descendants("Asset").Where(a => a.XPathSelectElement("Values/Building") != null).Select(a => a.Element("Template").Value).Distinct()) {
+        ProcessingItems(item, false);
+      }
+    }
+    private static void SaveDescriptions(bool resetOld = false) {
+      Console.WriteLine("Save Descriptions");
+      // Split Languages To single Files
+      foreach (Languages language in Enum.GetValues(typeof(Languages))) {
+        using (var xmlWriter = XmlWriter.Create($@"{Program.PathRoot}\Modified\Texts_{language.ToString("G")}.xml", new XmlWriterSettings() { Indent = true })) {
+          xmlWriter.WriteStartElement("Texts");
+          var savedIDs = new HashSet<string>();
+
+          //Custom Descriptions
+          foreach (var item in Assets.CustomDescriptions) {
+            if (!savedIDs.Contains(item.Key)) {
+              xmlWriter.WriteStartElement("Text");
+              xmlWriter.WriteAttributeString("ID", item.Key);
+              xmlWriter.WriteValue(item.Value.TryGetValue(language, out var value) ? value : item.Value.First().Value);
+              xmlWriter.WriteEndElement();
+              savedIDs.Add(item.Key);
+            }
+          }
+          //Global Descriptions
+          foreach (var item in Description.GlobalDescriptions.Values) {
+            if (!savedIDs.Contains(item.ID)) {
+              xmlWriter.WriteStartElement("Text");
+              xmlWriter.WriteAttributeString("ID", item.ID);
+              xmlWriter.WriteValue(item.Languages.TryGetValue(language, out var value) ? value : item.Languages.First().Value);
+              xmlWriter.WriteEndElement();
+              savedIDs.Add(item.ID);
+            }
+          }
+          //Descriptions needed by the Viewer
+          var needed = new[] {
+            new Description("113817")
+          };
+
+          foreach (var item in needed) {
+            if (!savedIDs.Contains(item.ID)) {
+              xmlWriter.WriteStartElement("Text");
+              xmlWriter.WriteAttributeString("ID", item.ID);
+              xmlWriter.WriteValue(item.Languages.TryGetValue(language, out var value) ? value : item.Languages.First().Value);
+              xmlWriter.WriteEndElement();
+              savedIDs.Add(item.ID);
+            }
+          }
+
+          //Load Last Descriptions to make single file updates available
+          if (!resetOld && File.Exists($@"{Program.PathViewer}\Resources\Assets\Texts_{language.ToString("G")}.xml")) {
+            var doc = XDocument.Load($@"{Program.PathViewer}\Resources\Assets\Texts_{language.ToString("G")}.xml").Root;
+            foreach (var item in doc.Elements()) {
+              if (!savedIDs.Contains(item.Attribute("ID").Value)) {
+                xmlWriter.WriteStartElement("Text");
+                xmlWriter.WriteAttributeString("ID", item.Attribute("ID").Value);
+                xmlWriter.WriteValue(item.Value);
+                xmlWriter.WriteEndElement();
+              }
+              else {
+              }
+            }
+          }
+        }
+
+        // Copy Languages To Viewer
+        if (File.Exists($@"{Program.PathViewer}\Resources\Assets\Texts_{language.ToString("G")}.xml")) {
+          File.Delete($@"{Program.PathViewer}\Resources\Assets\Texts_{language.ToString("G")}.xml");
+        }
+        File.Copy($@"{Program.PathRoot}\Modified\Texts_{language.ToString("G")}.xml", $@"{Program.PathViewer}\Resources\Assets\Texts_{language.ToString("G")}.xml");
+      }
+    }
     private static void ProcessingItems(String template, bool findSources = true) {
       var result = new List<Asset>();
       var oldAssets = new Dictionary<string, XElement>();
@@ -98,12 +191,13 @@ namespace RDA {
       document.Save($@"{Program.PathViewer}\Resources\Assets\{template}.xml");
     }
     private static void ProcessingThirdParty() {
+      Console.WriteLine("Processing Third Party");
       var result = new List<ThirdParty>();
       var assets = Assets
          .Original
          .XPathSelectElements($"//Asset[Template='Profile_3rdParty' or Template='Profile_3rdParty_Pirate']")
          .Concat(new[] { Assets.Original.Descendants("Asset").FirstOrDefault(a => a.XPathSelectElement("Values/Standard/GUID")?.Value == "220") })
-         .ToList()
+         .Concat(Assets.Original.XPathSelectElements($"//Asset[Template='Profile_3rdParty_ItemCrafter']"))
          .AsParallel();
 
       assets.ForAll((asset) => {
@@ -111,7 +205,11 @@ namespace RDA {
           return;
         Console.WriteLine(asset.XPathSelectElement("Values/Standard/GUID").Value);
         var item = new ThirdParty(asset);
-        result.Add(item);
+        //Exclude Isabel Campain
+        if (item.ID != "199" && item.ID != "200") {
+          result.Add(item);
+        }
+
       });
       var document = new XDocument();
       document.Add(new XElement("ThirdParties"));
@@ -121,10 +219,10 @@ namespace RDA {
     }
     private static void QuestGiver() {
       var result = new List<QuestGiver>();
-      var questGivers = Assets.Original.Root.XPathSelectElements("//Asset[Template='Quest']/Values/Quest/QuestGiver").Select(s => s.Value).Distinct().ToList();
+      var questGivers = Assets.Original.XPathSelectElements("//Asset[Template='Quest']/Values/Quest/QuestGiver").Select(s => s.Value).Distinct().ToList();
       questGivers.ForEach((id) => {
         Console.WriteLine(id);
-        var questGiver = Assets.Original.Root.XPathSelectElement($"//Asset[Values/Standard/GUID={id}]");
+        var questGiver = Assets.Original.XPathSelectElement($"//Asset[Values/Standard/GUID={id}]");
         var item = new QuestGiver(questGiver);
         result.Add(item);
       });
@@ -163,11 +261,14 @@ namespace RDA {
       document.Save($@"{Program.PathViewer}\Resources\Assets\Expeditions.xml");
     }
     private static void ProcessingRewardPools() {
+      Console.WriteLine("Processing Reward Pools");
+      var xRewardPools = new XElement("RewardPools");
+
+      //RewardPool and RewardItemPool
       var RewardItemPoolsAssets = Assets.Original
          .XPathSelectElements($"//Asset[Template='RewardPool']")
          .Concat(Assets.Original.XPathSelectElements($"//Asset[Template='RewardItemPool']"))
          .ToList();
-      var xRewardPools = new XElement("RewardPools");
       foreach (var RewardPool in RewardItemPoolsAssets) {
         var xPool = new XElement("Pool");
         xRewardPools.Add(xPool);
@@ -186,6 +287,58 @@ namespace RDA {
           }
         }
       }
+
+      //ResourcePool
+      var ResourcePoolAssets = Assets.Original
+         .XPathSelectElements($"//Asset[Template='ResourcePool']")
+         .ToList();
+      foreach (var ResourcePool in ResourcePoolAssets) {
+        var xPool = new XElement("Pool");
+        xRewardPools.Add(xPool);
+        xPool.Add(new XAttribute("ID", ResourcePool.XPathSelectElement("Values/Standard/GUID").Value));
+        if (ResourcePool.XPathSelectElement("Values/ResourceRewardPool/PossibleRewards")?.HasElements ?? false) {
+          var xItems = new XElement("Items");
+          xPool.Add(xItems);
+          foreach (var item in ResourcePool.XPathSelectElements("Values/ResourceRewardPool/PossibleRewards/Item")) {
+            var itemId = item.XPathSelectElement("Resource")?.Value;
+            if (itemId != null) {
+              var xItem = new XElement("Item");
+              xItems.Add(xItem);
+              xItem.Add(new XAttribute("ID", itemId));
+              xItem.Add(new XAttribute("Weight", item.XPathSelectElement("Weight")?.Value ?? "100"));
+            }
+          }
+        }
+      }
+
+      //AssetGroups
+      var AssetGroups = Assets.Original
+        .Descendants("Groups")
+        .Where(g => g.Element("GUID") != null)
+        .Concat(Assets.Original
+         .Descendants("Group")
+         .Where(g => g.Element("GUID") != null))
+         .ToList();
+      foreach (var AssetGroup in AssetGroups) {
+        var childAssets = AssetGroup.Descendants("Asset").Where(a => a.XPathSelectElement("Values/Item") != null || a.XPathSelectElement("Values/Product") != null);
+        if (childAssets.Any()) {
+          var xPool = new XElement("Pool");
+          xRewardPools.Add(xPool);
+          xPool.Add(new XAttribute("ID", AssetGroup.Element("GUID").Value));
+          var xItems = new XElement("Items");
+          xPool.Add(xItems);
+          foreach (var item in childAssets) {
+            var itemId = item.XPathSelectElement("Values/Standard/GUID")?.Value;
+            if (itemId != null) {
+              var xItem = new XElement("Item");
+              xItems.Add(xItem);
+              xItem.Add(new XAttribute("ID", itemId));
+              xItem.Add(new XAttribute("Weight", item.XPathSelectElement("Weight")?.Value ?? "100"));
+            }
+          }
+        }
+      }
+
       var document = new XDocument(xRewardPools);
       document.Save($@"{Program.PathRoot}\Modified\Assets_RewardPools.xml");
       document.Save($@"{Program.PathViewer}\Resources\Assets\RewardPools.xml");
@@ -193,7 +346,7 @@ namespace RDA {
     private static void ProcessingExpeditionEvents() {
       var decicions = Assets.Original
           .XPathSelectElements("//Asset[Template='ExpeditionDecision']")
-          .Where(f => f.XPathSelectElement("Values/Reward")?.HasElements ?? false)
+          .Where(f => f.XPathSelectElement("Values/Reward/RewardAssets")?.Elements("Item").Any(r => r.Element("Reward")?.Value != null) ?? false)
           .ToList();
 
       var template = "ExpeditionEvents";
@@ -250,15 +403,15 @@ namespace RDA {
               xOptions.AddFirst(xOption);
               xOption.Add(new XAttribute("ID", option.XPathSelectElement("Values/Standard/GUID").Value));
               var text = new Description(option.XPathSelectElement("Values/Standard/GUID").Value);
-              if (text.EN == "Confirm") {
+              if (text.Languages[Library.Languages.English] == "Confirm") {
                 text = new Description("145001");
               }
-              else if (text.EN == "Cancel") {
+              else if (text.Languages[Library.Languages.English] == "Cancel") {
                 text = new Description("145002");
               }
               xOption.Add(text.ToXml("Text"));
               if (option.XPathSelectElement("Values/ExpeditionOption/OptionAttribute")?.Value != null) {
-                xOption.Add(new XAttribute("OptionAttribute", option.XPathSelectElement("Values/ExpeditionOption/OptionAttribute").Value));
+                xOption.Add(new Description(Assets.KeyToIdDict[option.XPathSelectElement("Values/ExpeditionOption/OptionAttribute").Value]).ToXml("OptionAttribute"));
               }
               if (option.XPathSelectElement("Values/ExpeditionOption/Requirements")?.HasElements == true) {
                 var xRequirements = new XElement("Requirements");
@@ -267,7 +420,7 @@ namespace RDA {
                   var xItem = new XElement("Item");
                   xRequirements.Add(xItem);
                   if (requirement.XPathSelectElement("NeededAttribute")?.Value != null) {
-                    xItem.Add(new XAttribute("NeededAttribute", requirement.XPathSelectElement("NeededAttribute").Value));
+                    xItem.Add(new Description(Assets.KeyToIdDict[requirement.XPathSelectElement("NeededAttribute").Value]).ToXml("NeededAttribute"));
                   }
                   if (requirement.XPathSelectElement("ItemOrProduct")?.Value != null) {
                     xItem.Add(new XAttribute("ID", requirement.XPathSelectElement("ItemOrProduct").Value));
@@ -292,7 +445,7 @@ namespace RDA {
         mainDetails.PreviousIDs.Add(id);
         var mainResult = inResult ?? new SourceWithDetailsList();
         var resultstoadd = new List<SourceWithDetailsList>();
-        var links = Assets.Original.Root.XPathSelectElements($"//*[text()={id} and not(self::GUID)]").ToArray();
+        var links = Assets.Original.XPathSelectElements($"//*[text()={id} and not(self::GUID)]").ToArray();
         if (links.Length > 0) {
           for (var i = 0; i < links.Length; i++) {
             var element = links[i];
@@ -334,13 +487,14 @@ namespace RDA {
       }
     }
     private static void ProcessingTourism() {
-      var TourismAsset = Assets.Original.Root.Descendants("Asset").FirstOrDefault(l => l.Element("Template")?.Value == "TourismFeature");
+      Console.WriteLine("Processing Tourism");
+      var TourismAsset = Assets.Original.Descendants("Asset").FirstOrDefault(l => l.Element("Template")?.Value == "TourismFeature");
       var xRoot = new XElement("CityStati");
       foreach (var pool in TourismAsset.Descendants("SpecialistPools").FirstOrDefault().Elements()) {
         var id = pool.Element("CityStatus").Value;
         var xStatus = new XElement("Status");
         xRoot.Add(xStatus);
-        var desc = new Description((Assets.TourismStati[id].Element("AttractivenessThreshold")?.Value ?? "0") + " Attractiveness", (Assets.TourismStati[id].Element("AttractivenessThreshold")?.Value ?? "0") + " Attraktivität");
+        var desc = new Description("145011").InsertBefore((Assets.TourismStati[id].Element("AttractivenessThreshold")?.Value ?? "0"));
         xStatus.Add(new XAttribute("Pool", pool.Element("Pool").Value));
         xStatus.Add(desc.ToXml("Requirement"));
         xStatus.Add(new Description(Assets.TourismStati[id].Element("CityStatusFluff").Value).ToXml("Text"));

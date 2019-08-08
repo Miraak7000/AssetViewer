@@ -22,7 +22,7 @@
   </Window.Resources>
 
   <Window.Background>
-    <ImageBrush ImageSource="Resources/data/ui/2kimages/main/assets16/bgr_playercreation_0.png" Stretch="UniformToFill" />
+    <ImageBrush ImageSource="Resources/bgr_playercreation_0.png" Stretch="UniformToFill" />
   </Window.Background>
 
   <Grid Margin="10">
@@ -30,6 +30,8 @@
       <RowDefinition Height="24" />
       <RowDefinition Height="10" />
       <RowDefinition Height="*" />
+      <!--<RowDefinition Height="10" />
+      <RowDefinition Height="24" />-->
     </Grid.RowDefinitions>
     <Grid Grid.Row="0" Height="22">
       <Grid.ColumnDefinitions>
@@ -39,22 +41,68 @@
         <ColumnDefinition Width="*" />
         <ColumnDefinition Width="150" />
       </Grid.ColumnDefinitions>
-      <TextBlock Grid.Column="0" VerticalAlignment="Center" Text="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=101}" />
+      <TextBlock Grid.Column="0" VerticalAlignment="Center" Text="{Binding Converter={StaticResource Description}, ConverterParameter=-101}" />
       <ComboBox x:Name="ComboBoxAsset" Grid.Column="2" SelectionChanged="ComboBoxAsset_OnSelectionChanged">
-        <TextBlock Text="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=102}" />
-        <TextBlock Text="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=105}" />
-        <TextBlock Text="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=110}" />
-        <TextBlock Text="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=120}" />
-        <TextBlock Text="{Binding Path=Descriptions, Converter={StaticResource Description}, ConverterParameter=121}" />
+        <TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=-102}" />
+        <TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=-105}" />
+        <TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=-110}" />
+        <TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=-120}" />
+        <TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=-121}" />
       </ComboBox>
       <ComboBox x:Name="ComboBoxLanguage" Grid.Column="4" SelectedIndex="0">
         <TextBlock Text="English" />
         <TextBlock Text="Deutsch" />
+        <TextBlock Text="한국어" />
       </ComboBox>
     </Grid>
     <Grid Grid.Row="2">
       <ContentPresenter x:Name="Presenter" />
     </Grid>
+    <!--<Grid Grid.Row="4">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition />
+        <ColumnDefinition />
+        <ColumnDefinition />
+      </Grid.ColumnDefinitions>
+      <Grid Grid.Column="1">
+        <TextBlock  TextWrapping="Wrap"
+                    HorizontalAlignment="Center"
+                    Height="24"
+                    VerticalAlignment="Center">
+            <Hyperlink NavigateUri="https://github.com/Miraak7000/AssetViewer/tree/Sprint01"
+                       TextDecorations="{x:Null}"
+                       FontWeight="Bold"
+                       Foreground="Black"
+                       RequestNavigate="Hyperlink_RequestNavigate">
+                <Image Source="Resources\GitHub-Mark-32px.png"
+                       Width="24"
+                       Height="24"
+                       RenderTransformOrigin="2.317,-2.413"
+                       HorizontalAlignment="Left"
+                       ToolTip="Miraak7000's GitHub Project - Sprint1 Branch" />
+            </Hyperlink>
+            <Hyperlink NavigateUri="https://drive.google.com/open?id=1N5AUPYDhhluKMLPEMvF45qsUs27ed6Cg"
+                       TextDecorations="{x:Null}"
+                       FontWeight="Bold"
+                       Foreground="Black"
+                       RequestNavigate="Hyperlink_RequestNavigate">
+                <Image Source="Resources\google-drive-logo.png"
+                       Width="24"
+                       Height="24"
+                       RenderTransformOrigin="2.317,-2.413"
+                       HorizontalAlignment="Left"
+                       ToolTip="VeraAtVersus's Drive" />
+            </Hyperlink>
+        </TextBlock>
+      </Grid>
+      <Grid Grid.Column="2">
+        <TextBlock TextWrapping="Wrap"
+                   Text="v19.06.15"
+                   MinWidth="73"
+                   HorizontalAlignment="Right"
+                   FontSize="16"
+                   FontWeight="Bold" />
+      </Grid>
+    </Grid>-->
   </Grid>
-
 </Window>

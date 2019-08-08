@@ -8,7 +8,12 @@
   <Application.Resources>
     <DataTemplate DataType="{x:Type data:Description}">
       <Grid SnapsToDevicePixels="True">
-        <TextBlock Foreground="#FFFFE4AD" Margin="0 1 0 1"  Text="{Binding CurrentLang}"  local:TextBlockExtensions.DescFontStyle="{Binding FontStyle}" TextWrapping="Wrap" />
+        <TextBlock
+          Margin="0,1,0,1"
+          local:TextBlockExtensions.DescFontStyle="{Binding FontStyle}"
+          Foreground="#FFFFE4AD"
+          Text="{Binding CurrentLang}"
+          TextWrapping="Wrap" />
       </Grid>
     </DataTemplate>
   </Application.Resources>

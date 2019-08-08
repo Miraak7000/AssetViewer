@@ -13,7 +13,7 @@ namespace AssetViewer.Data.Filters {
 
     public FilterType FilterType { get; set; } = FilterType.Selection;
     public FilterType ComparisonType { get; set; }
-    public abstract int DescriptionID { get; }
+    public abstract string DescriptionID { get; }
 
     public virtual T SelectedValue {
       get {
@@ -36,7 +36,7 @@ namespace AssetViewer.Data.Filters {
     public ValueComparisons Comparison { get; set; }
     public virtual IEnumerable<T> ComparisonValues { get; }
     public T SelectedComparisonValue { get; set; }
-    public Description Description => new Description(App.Descriptions[DescriptionID].EN, App.Descriptions[DescriptionID].DE);
+    public string Description => App.Descriptions[DescriptionID];
     object IFilter.SelectedValue => SelectedValue;
     object IFilter.SelectedComparisonValue => SelectedComparisonValue;
     IEnumerable<T> IFilter<T>.CurrentValues => CurrentValues;
@@ -81,7 +81,6 @@ namespace AssetViewer.Data.Filters {
     #region Fields
 
     private T _selectedValue;
-    private bool _isChecked;
 
     #endregion Fields
   }

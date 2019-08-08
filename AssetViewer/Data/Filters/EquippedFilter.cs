@@ -6,8 +6,8 @@ using System.Linq;
 namespace AssetViewer.Data.Filters {
 
   public class EquippedFilter : BaseFilter<string> {
-    public EquippedFilter(ItemsHolder itemsHolder) : base(itemsHolder) {
-    }
+
+    #region Properties
 
     public override Func<IQueryable<TemplateAsset>, IQueryable<TemplateAsset>> FilterFunc => result => {
       if (!String.IsNullOrEmpty(SelectedValue as string))
@@ -24,6 +24,15 @@ namespace AssetViewer.Data.Filters {
          .OrderBy(o => o)
          .ToList();
 
-    public override int DescriptionID => 106;
+    public override string DescriptionID => "-106";
+
+    #endregion Properties
+
+    #region Constructors
+
+    public EquippedFilter(ItemsHolder itemsHolder) : base(itemsHolder) {
+    }
+
+    #endregion Constructors
   }
 }

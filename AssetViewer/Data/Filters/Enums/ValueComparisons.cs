@@ -14,6 +14,8 @@ namespace AssetViewer {
     [Description("<")]
     LesserThan,
     [Description(">")]
-    GraterThan
+    GraterThan  ,
+    [Description("≠")]
+    UnEqual,
   }
 }

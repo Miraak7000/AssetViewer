@@ -56,7 +56,7 @@ namespace AssetViewer.Controls {
     }
 
     private void ExpeditionEvents_Unloaded(object sender, RoutedEventArgs e) {
-      ((MainWindow)Application.Current.MainWindow).ComboBoxLanguage.SelectionChanged -= this.ComboBoxLanguage_SelectionChanged;
+      if (Application.Current.MainWindow is MainWindow main)main.ComboBoxLanguage.SelectionChanged -= this.ComboBoxLanguage_SelectionChanged;
     }
 
     private void ExpeditionEvents_Loaded(object sender, RoutedEventArgs e) {

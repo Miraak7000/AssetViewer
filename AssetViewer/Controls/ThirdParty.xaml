@@ -11,12 +11,12 @@
   FontSize="13"
   Loaded="ThirdParty_OnLoaded"
   SnapsToDevicePixels="True"
+  Unloaded="UserControl_Unloaded"
   mc:Ignorable="d">
 
   <UserControl.Resources>
     <BooleanToVisibilityConverter x:Key="BooleanToVisibility" />
     <converter:GlobalDescriptionConverter x:Key="Description" />
-    <converter:DescriptionConverter x:Key="DescriptionConverter" />
     <converter:VisibilityConverter x:Key="VisibilityConverter" />
     <DataTemplate x:Key="UpgradeTemplate">
       <Grid SnapsToDevicePixels="True">
@@ -41,7 +41,7 @@
           Grid.Row="0"
           Grid.Column="1"
           VerticalAlignment="Center"
-          Text="{Binding Path=Text, Converter={StaticResource DescriptionConverter}}" />
+          Text="{Binding Path=Text}" />
         <TextBlock
           Grid.Row="0"
           Grid.Column="2"
@@ -71,7 +71,7 @@
                   Grid.Column="1"
                   VerticalAlignment="Center"
                   Foreground="#FFA49370"
-                  Text="{Binding Path=Text, Converter={StaticResource DescriptionConverter}}"
+                  Text="{Binding Path=Text}"
                   TextWrapping="Wrap" />
                 <TextBlock
                   Grid.Column="2"
@@ -115,7 +115,7 @@
           Grid.Column="0"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
-          Text="{Binding Path=ThirdParties, Converter={StaticResource Description}, ConverterParameter=1049}" />
+          Text="{Binding Converter={StaticResource Description}, ConverterParameter=-1049}" />
         <ComboBox
           x:Name="ComboBoxThirdParty"
           Grid.Row="1"
@@ -130,7 +130,7 @@
           Grid.Column="2"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
-          Text="{Binding Path=Progressions, Converter={StaticResource Description}, ConverterParameter=1048}" />
+          Text="{Binding Converter={StaticResource Description}, ConverterParameter=-1048}" />
         <ComboBox
           x:Name="ComboBoxProgressions"
           Grid.Row="1"
@@ -175,14 +175,14 @@
                   <TextBlock
                     Grid.Column="1"
                     VerticalAlignment="Center"
-                    Text="{Binding Path=Text, Converter={StaticResource DescriptionConverter}}"
+                    Text="{Binding Path=Text}"
                     TextTrimming="CharacterEllipsis" />
                   <TextBlock
                     Grid.Column="2"
                     HorizontalAlignment="Right"
                     VerticalAlignment="Center"
                     FontSize="11"
-                    Text="{Binding Path=Text.ID}" />
+                    Text="{Binding Path=ID}" />
                 </Grid>
               </DataTemplate>
             </ListBox.ItemTemplate>
@@ -192,6 +192,4 @@
       <local:ItemCard Grid.Column="2" CanSwap="True" SelectedAsset="{Binding SelectedAsset}" />
     </Grid>
   </Grid>
-
-
 </UserControl>

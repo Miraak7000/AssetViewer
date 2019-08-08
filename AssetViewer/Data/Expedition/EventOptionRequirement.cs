@@ -11,8 +11,11 @@ namespace AssetViewer.Data {
 
     #region Properties
 
+    public Description NeededAttribute { get; set; }
     [XmlAttribute]
-    public string NeededAttribute { get; set; }
+    public string ID { get; set; }
+    [XmlAttribute]
+    public string Amount { get; set; }
 
     #endregion Properties
   }

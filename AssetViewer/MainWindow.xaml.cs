@@ -1,22 +1,14 @@
 ﻿using AssetViewer.Controls;
 using AssetViewer.Library;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Navigation;
 
 namespace AssetViewer {
 
-  public partial class MainWindow : Window, INotifyPropertyChanged {
-
-    #region Properties
-
-    public Dictionary<int, Data.Description> Descriptions {
-      get { return App.Descriptions; }
-    }
-
-    #endregion Properties
+  public partial class MainWindow : Window {
 
     #region Constructors
 
@@ -30,12 +22,6 @@ namespace AssetViewer {
     }
 
     #endregion Constructors
-
-    #region Events
-
-    public event PropertyChangedEventHandler PropertyChanged;
-
-    #endregion Events
 
     #region Methods
 
@@ -76,8 +62,18 @@ namespace AssetViewer {
         case 1:
           App.Language = Languages.German;
           break;
+
+        case 2:
+          App.Language = Languages.Korean;
+          break;
       }
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Descriptions"));
+      App.LoadLanguageFile();
+      DataContext = null;
+      DataContext = this;
+    }
+    private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e) {
+      Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri));
+      e.Handled = true;
     }
 
     #endregion Methods

@@ -5,20 +5,20 @@ using System.Xml.Serialization;
 
 namespace AssetViewer.Data {
 
-    [Serializable]
-    [DesignerCategory("code")]
-    [XmlType(AnonymousType = true)]
-    [XmlRoot(Namespace = "", IsNullable = false)]
-    public class Pool {
+  [Serializable]
+  [DesignerCategory("code")]
+  [XmlType(AnonymousType = true)]
+  [XmlRoot(Namespace = "", IsNullable = false)]
+  public class Pool {
 
-        #region Properties
+    #region Properties
 
-        [XmlArrayItem("Item", IsNullable = false)]
-        public List<PoolItem> Items { get; set; }
+    [XmlArrayItem("Item", IsNullable = false)]
+    public List<PoolItem> Items { get; set; }
 
-        [XmlAttribute]
-        public string ID { get; set; }
+    [XmlAttribute]
+    public string ID { get; set; }
 
-        #endregion Properties
-    }
+    #endregion Properties
+  }
 }

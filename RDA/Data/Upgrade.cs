@@ -30,53 +30,65 @@ namespace RDA.Data {
       var isPercent = element.Element("Percental") == null ? false : element.Element("Percental").Value == "1";
       var value = element.Element("Value") == null ? null : (Int32?)Int32.Parse(element.Element("Value").Value);
       var factor = 1;
+      if (Assets.KeyToIdDict.ContainsKey(element.Name.LocalName)) {
+        this.Text = new Description(Assets.KeyToIdDict[element.Name.LocalName]);
+      }
+
       switch (element.Name.LocalName) {
+        case "Action":
+          switch (element.Element("Template").Value) {
+            case "ActionStartTreasureMapQuest":
+              this.Additionals = new List<Upgrade>();
+              this.Text = new Description("2734").Append("-").Append(new Description(element.XPathSelectElement("Values/ActionStartTreasureMapQuest/TreasureSessionOrRegion").Value));
+              this.Additionals.Add(new Upgrade { Text = new Description(element.XPathSelectElement("Values/ActionStartTreasureMapQuest/TreasureMapQuest").Value) });
+              break;
+
+            default:
+              break;
+          }
+          break;
+
         case "PassiveTradeGoodGenUpgrade":
-          this.Text = new Description("12920") { AdditionalInformation = new Description("20327", DescriptionFontStyle.Light) };
+          this.Text.AdditionalInformation = new Description("20327", DescriptionFontStyle.Light);
           var genpool = element.Element("GenPool").Value;
           var items = Assets
             .Original
             .Descendants("Asset")
             .FirstOrDefault(a => a.XPathSelectElement("Values/Standard/GUID")?.Value == genpool)
-            .XPathSelectElement("Values/RewardPool")
+            .XPathSelectElement("Values/RewardPool/ItemsPool")
             .Elements("Item")
-            .Select(i => i.Element("ItemLink").Value)
-            .Select(i => new Description(i));
-          this.Text.AdditionalInformation.EN.Replace("[ItemAssetData([RefGuid]) GoodGenerationPoolFormatted]", string.Join(",", items.Select(d => d.EN)));
-          this.Text.AdditionalInformation.DE.Replace("[ItemAssetData([RefGuid]) GoodGenerationPoolFormatted]", string.Join(",", items.Select(d => d.DE)));
-          value = Convert.ToInt32(element.Value);
+            .Select(i => new Description(i.Element("ItemLink").Value));
+          this.Text.AdditionalInformation.Replace("[ItemAssetData([RefGuid]) GoodGenerationPoolFormatted]", items, (s) => string.Join(", ", s));
+          value = Convert.ToInt32(element.Element("GenProbability").Value);
           isPercent = true;
           break;
 
         case "AddAssemblyOptions":
-          this.Text = new Description("12693") { AdditionalInformation = new Description("20325", DescriptionFontStyle.Light) };
+          this.Text.AdditionalInformation = new Description("20325", DescriptionFontStyle.Light);
           var descs = element.Elements("Items").Select(i => new Description(i.Element("NewOption").Value));
-          this.Text.AdditionalInformation.EN.Replace("[ItemAssetData([RefGuid]) AddAssemblyOptionsFormatted]", string.Join(",", descs.Select(d => d.EN)));
-          this.Text.AdditionalInformation.DE.Replace("[ItemAssetData([RefGuid]) AddAssemblyOptionsFormatted]", string.Join(",", descs.Select(d => d.DE)));
+          this.Text.AdditionalInformation.Replace("[ItemAssetData([RefGuid]) AddAssemblyOptionsFormatted]", descs, (s) => string.Join(", ", s));
           break;
 
         case "MoraleDamage":
-          this.Text = new Description("21588") { AdditionalInformation = new Description("21586", DescriptionFontStyle.Light) };
+          this.Text.AdditionalInformation = new Description("21586", DescriptionFontStyle.Light);
           break;
 
         case "HitpointDamage":
-          switch (element.Parent.Parent.Element("Item").Element("Allocation").Value) {
+          switch (element.Parent.Parent.Element("Item")?.Element("Allocation").Value ?? "Ship") {
             case "Ship":
             case "SailShip":
             case "Warship":
             case "SteamShip":
-              this.Text = new Description("21587") { AdditionalInformation = new Description("21585", DescriptionFontStyle.Light) };
+              this.Text.AdditionalInformation = new Description("21585", DescriptionFontStyle.Light);
               break;
 
             default:
-              this.Text = new Description("21587") { AdditionalInformation = new Description("21589", DescriptionFontStyle.Light) };
+              this.Text.AdditionalInformation = new Description("21589", DescriptionFontStyle.Light);
               break;
           }
-
           break;
 
         case "SpecialUnitHappinessThresholdUpgrade":
-          this.Text = new Description("19625");
           this.Text.AdditionalInformation = new Description("21584", DescriptionFontStyle.Light);
           var target = element.Parent.Parent.Element("ItemEffect").Element("EffectTargets").Elements().FirstOrDefault().Element("GUID").Value;
           Description unit = null;
@@ -99,46 +111,22 @@ namespace RDA.Data {
             default:
               throw new NotImplementedException(target);
           }
-          this.Text.AdditionalInformation.EN = this.Text.EN.Replace("[AssetData([ToolOneHelper IncidentResolverUnitsForTargetBuildings([RefGuid], 1) AT(0)]) Text]", unit.EN);
-          this.Text.AdditionalInformation.DE = this.Text.DE.Replace("[AssetData([ToolOneHelper IncidentResolverUnitsForTargetBuildings([RefGuid], 1) AT(0)]) Text]", unit.DE);
+          this.Text.AdditionalInformation.Replace("[AssetData([ToolOneHelper IncidentResolverUnitsForTargetBuildings([RefGuid], 1) AT(0)]) Text]", unit);
           break;
 
-        case "BlockBuyShare":
-          this.Text = new Description("15802");
+        case "ItemSet":
+        case "ProvidedNeed":
+          this.Text = new Description(element.Value);
           break;
 
         case "HappinessIgnoresMorale":
-          this.Text = new Description("15811") { AdditionalInformation = new Description("20326", DescriptionFontStyle.Light) };
-          break;
-
-        case "BlockHostileTakeover":
-          this.Text = new Description("15801");
-          break;
-
-        case "MaintainanceUpgrade":
-          this.Text = new Description("2320");
-          break;
-
-        case "MoralePowerUpgrade":
-          this.Text = new Description("15231");
-          break;
-
-        case "ConstructionCostInPercent":
-          this.Text = new Description("12679");
-          value = Int32.Parse(element.Value);
-          isPercent = true;
-          break;
-
-        case "ConstructionTimeInPercent":
-          this.Text = new Description("12678");
-          value = Int32.Parse(element.Value);
-          isPercent = true;
+          this.Text.AdditionalInformation = new Description("20326", DescriptionFontStyle.Light);
           break;
 
         case "AdditionalSupply":
           this.Text = new Description("12687");
-          this.Text.DE = this.Text.DE.Replace(" [AssetData([ItemAssetData([RefGuid]) InputBenefitModifierProduct(index)]) Text]", "");
-          this.Text.EN = this.Text.DE.Replace(" [AssetData([ItemAssetData([RefGuid]) InputBenefitModifierProduct(index)]) Text]", "");
+          this.Text.Remove(" [AssetData([ItemAssetData([RefGuid]) InputBenefitModifierProduct(index)]) Text]");
+
           value = Int32.Parse(element.Value);
           break;
 
@@ -205,19 +193,7 @@ namespace RDA.Data {
           }
           break;
 
-        case "ResolverUnitMovementSpeedUpgrade":
-          this.Text = new Description("12014");
-          this.Value = null;
-          break;
-
-        case "ProductivityUpgrade":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_options.png");
-          this.Text = new Description(Assets.GetDescriptionID(element.Name.LocalName));
-          break;
-
         case "AdditionalOutput":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_plus.png");
-          this.Text = new Description(Assets.GetDescriptionID(element.Name.LocalName));
           this.AdditionalOutputs = new List<AdditionalOutput>();
           foreach (var item in element.Elements()) {
             this.AdditionalOutputs.Add(new AdditionalOutput(item));
@@ -225,8 +201,6 @@ namespace RDA.Data {
           break;
 
         case "ReplaceInputs":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_traderoutes.png");
-          this.Text = new Description(Assets.GetDescriptionID(element.Name.LocalName));
           this.ReplaceInputs = new List<ReplaceInput>();
           foreach (var item in element.Elements()) {
             this.ReplaceInputs.Add(new ReplaceInput(item));
@@ -234,326 +208,70 @@ namespace RDA.Data {
           break;
 
         case "InputAmountUpgrade":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_options.png");
-          this.Text = new Description(Assets.GetDescriptionID(element.Name.LocalName));
           this.InputAmountUpgrades = new List<InputAmountUpgrade>();
           foreach (var item in element.Elements()) {
             this.InputAmountUpgrades.Add(new InputAmountUpgrade(item));
           }
           break;
 
-        case "OutputAmountFactorUpgrade":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_options.png");
-          this.Text = new Description(Assets.GetDescriptionID(element.Name.LocalName));
-          break;
-
-        case "NeededAreaPercentUpgrade":
-          // this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_general_module_01.png");
-          this.Text = new Description(Assets.GetDescriptionID(element.Name.LocalName));
-          isPercent = true;
-          break;
-
-        case "IncidentIllnessIncreaseUpgrade":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_incident_diseases.png");
-          this.Text = new Description("12226");
-          isPercent = true;
-          factor = 10;
-          break;
-
         case "AddedFertility":
-          this.Text = new Description(element.Value);
-          this.Text.EN += " Provided";
-          this.Text.DE += " bereitgestellt";
-          break;
+          this.Text = new Description("21371").Replace("[AssetData([ItemAssetData([RefGuid]) AddedFertility]) Text]", new Description(element.Value));
 
-        case "NeedsElectricity":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_electricity.png");
-          this.Text = new Description(Assets.GetDescriptionID(element.Name.LocalName));
-          break;
-
-        case "AttractivenessUpgrade":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_attractiveness.png");
-          this.Text = new Description(Assets.GetDescriptionID(element.Name.LocalName));
-          break;
-
-        case "MaintenanceUpgrade":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_credits.png");
-          this.Text = new Description(Assets.GetDescriptionID(element.Name.LocalName));
-          break;
-
-        case "WorkforceAmountUpgrade":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_options.png");
-          this.Text = new Description(Assets.GetDescriptionID(element.Name.LocalName));
-          break;
-
-        case "ReplacingWorkforce":
-          // this.Icon = new Icon("data/ui/2kimages/main/icons/icon_build_menu.png");
-          this.Text = new Description(Assets.GetDescriptionID(element.Name.LocalName));
-          this.ReplacingWorkforce = new ReplacingWorkforce(element.Value);
-          break;
-
-        case "ModuleLimitUpgrade":
-          //this.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_general_module_01.png");
-          this.Text = new Description(Assets.GetDescriptionID(element.Name.LocalName));
-          break;
-
-        case "AdditionalHappiness":
-          // this.Icon = new Icon("data/ui/2kimages/main/icons/icon_happy.png");
-          this.Text = new Description(Assets.GetDescriptionID(element.Name.LocalName));
-          value = Int32.Parse(element.Value);
-          break;
-
-        case "ResidentsUpgrade":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_house.png");
-          this.Text = new Description("2322");
-          break;
-
-        case "StressUpgrade":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_incident_riot.png");
-          this.Text = new Description(Assets.GetDescriptionID(element.Name.LocalName));
-          break;
-
-        case "ProvideElectricity":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_electricity.png");
-          this.Text = new Description(Assets.GetDescriptionID(element.Name.LocalName));
-          break;
-
-        case "TaxModifierInPercent":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_credits.png");
-          this.Text = new Description(Assets.GetDescriptionID(element.Name.LocalName));
-          value = Int32.Parse(element.Value);
-          isPercent = true;
-          break;
-
-        case "WorkforceModifierInPercent":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_kontor_2d.png");
-          this.Text = new Description(Assets.GetDescriptionID(element.Name.LocalName));
-          value = Int32.Parse(element.Value);
-          isPercent = true;
-          break;
-
-        case "MaxHitpointsUpgrade":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_plus.png");
-          this.Text = new Description(Assets.GetDescriptionID(element.Name.LocalName));
           break;
 
         case "ActiveTradePriceInPercent":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_credits.png");
-          this.Text = new Description("15198");
           if (value == null && !element.HasElements) {
             value = Int32.Parse(element.Value);
             if (value < 100) {
               value = -(100 - value);
             }
             else {
-              value = (value - 100);
+              value -= 100;
             }
           }
           isPercent = true;
           break;
 
-        case "ForwardSpeedUpgrade":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_forward.png");
-          this.Text = new Description("2339");
-          break;
-
-        case "IgnoreWeightFactorUpgrade":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png");
-          this.Text = new Description("15261");
-          value = -value;
-          break;
-
-        case "IgnoreDamageFactorUpgrade":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png");
-          this.Text = new Description("15262");
-          value = -value;
-          break;
-
-        case "AttackRangeUpgrade":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_threat_melee_tint.png");
-          this.Text = new Description("12021");
-          break;
-
         case "ActivateWhiteFlag":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_claim_island.png");
-          this.Text = new Description("19538");
           this.Text.Icon = new Icon("data/ui/2kimages/main/icons/icon_claim_island.png");
           this.Text.AdditionalInformation = new Description("19487", DescriptionFontStyle.Light);
           break;
 
         case "ActivatePirateFlag":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_threat_melee_tint.png");
-          this.Text = new Description("17392");
           this.Text.Icon = new Icon("data/ui/2kimages/main/icons/icon_threat_melee_tint.png");
           this.Text.AdditionalInformation = new Description("17393", DescriptionFontStyle.Light);
           break;
 
-        case "Normal":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_stance_attack.png");
-          this.Text = new Description("19136");
-          value = -Convert.ToInt32((100M - (100M * Decimal.Parse(element.Element("Factor").Value, CultureInfo.InvariantCulture))));
-          isPercent = true;
-          break;
-
-        case "Cannon":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_stance_attack.png");
-          this.Text = new Description("19138");
-          value = -Convert.ToInt32((100M - (100M * Decimal.Parse(element.Element("Factor").Value, CultureInfo.InvariantCulture))));
-          isPercent = true;
-          break;
-
-        case "BigBertha":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_stance_attack.png");
-          this.Text = new Description("19139");
-          value = -Convert.ToInt32((100M - (100M * Decimal.Parse(element.Element("Factor").Value, CultureInfo.InvariantCulture))));
-          isPercent = true;
-          break;
-
-        case "Torpedo":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_stance_attack.png");
-          this.Text = new Description("19137");
-          value = -Convert.ToInt32((100M - (100M * Decimal.Parse(element.Element("Factor").Value, CultureInfo.InvariantCulture))));
-          isPercent = true;
-          break;
-
         case "AttackSpeedUpgrade":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_go_to.png");
-          this.Text = new Description("17230");
           if (value == null) {
             value = element.Value == null ? null : (Int32?)Int32.Parse(element.Value);
           }
           isPercent = true;
           break;
 
-        case "SpawnProbabilityFactor":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_add_slot_guild.png");
-          this.Text = new Description("20603");
-          break;
-
-        case "SelfHealUpgrade":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_plus.png");
-          this.Text = new Description("15195");
-          break;
-
         case "SelfHealPausedTimeIfAttackedUpgrade":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_morale.png");
-          this.Text = new Description("15196");
           this.Text.AdditionalInformation = new Description("21590", DescriptionFontStyle.Light);
-          if (value == -100) {
-            value = null;
-          }
-          else {
-            throw new NotImplementedException();
-          }
-          break;
-
-        case "HealRadiusUpgrade":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_build_menu.png");
-          this.Text = new Description("15264");
-          break;
-
-        case "HealPerMinuteUpgrade":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_build_menu.png");
-          this.Text = new Description("15265");
-          break;
-
-        case "IncidentRiotIncreaseUpgrade":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_incident_riot.png");
-          this.Text = new Description("12227");
-          factor = 10;
-          isPercent = true;
-          break;
-
-        case "PublicServiceFullSatisfactionDistance":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_church_2d.png");
-          this.Text = new Description("2321");
+          value = value == -100 ? null : value;
           break;
 
         case "NeedProvideNeedUpgrade":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_plus.png");
-          this.Text = new Description("12315");
-
           var SubstituteNeeds = element.Descendants("SubstituteNeed").Select(i => new Description(i.Value));
-          var ProvidedNeeds = element.Descendants("SubstituteNeed").Select(i => new Description(i.Value));
+          var ProvidedNeeds = element.Descendants("ProvidedNeed").Select(i => new Description(i.Value));
           this.Text.AdditionalInformation = new Description("20323", DescriptionFontStyle.Light);
-          this.Text.AdditionalInformation.EN.Replace("[ItemAssetData([RefGuid]) AllSubstituteNeedsFormatted]", string.Join(",", SubstituteNeeds.Select(d => d.EN)));
-          this.Text.AdditionalInformation.EN.Replace("[ItemAssetData([RefGuid]) AllProvidedNeedsFormatted]", string.Join(",", ProvidedNeeds.Select(d => d.EN)));
-
-          this.Text.AdditionalInformation.DE.Replace("[ItemAssetData([RefGuid]) AllSubstituteNeedsFormatted]", string.Join(",", SubstituteNeeds.Select(d => d.DE)));
-          this.Text.AdditionalInformation.DE.Replace("[ItemAssetData([RefGuid]) AllProvidedNeedsFormatted]", string.Join(",", ProvidedNeeds.Select(d => d.DE)));
-          break;
-
-        case "ProvidedNeed":
-          var providedNeed = Assets.Original.Root.XPathSelectElement($"//Asset/Values/Standard[GUID={element.Value}]");
-          // this.Icon = new Icon(providedNeed.Element("IconFilename").Value);
-          this.Text = new Description(element.Value);
-          break;
-
-        case "AdditionalMoney":
-          // this.Icon = new Icon("data/ui/2kimages/main/icons/icon_credits.png");
-          this.Text = new Description("12690");
-          value = Int32.Parse(element.Value);
-          break;
-
-        case "IncidentFireIncreaseUpgrade":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_incident_fire.png");
-          this.Text = new Description("12225");
-          factor = 10;
-          isPercent = true;
-          break;
-
-        case "IncidentExplosionIncreaseUpgrade":
-          // this.Icon = new Icon("data/ui/2kimages/main/icons/icon_bomb.png");
-          this.Text = new Description("21489");
-          factor = 10;
-          isPercent = true;
+          this.Text.AdditionalInformation.Replace("[ItemAssetData([RefGuid]) AllSubstituteNeedsFormatted]", SubstituteNeeds, s => String.Join(", ", s.Distinct()));
+          this.Text.AdditionalInformation.Replace("[ItemAssetData([RefGuid]) AllProvidedNeedsFormatted]", ProvidedNeeds, s => String.Join(", ", s.Distinct()));
           break;
 
         case "GoodConsumptionUpgrade":
-          // this.Icon = new Icon("data/ui/2kimages/main/icons/icon_marketplace_2d.png");
-          this.Text = new Description("21386");
           this.Additionals = new List<Upgrade>();
           foreach (var item in element.Elements("Item")) {
             this.Additionals.Add(new Upgrade() { Text = new Description(item.Element("ProvidedNeed").Value), Value = (item.Element("AmountInPercent").Value.StartsWith("-") ? "" : "+") + $"{item.Element("AmountInPercent").Value}%" });
           }
           break;
 
-        case "Building":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/ship_info/icon_damage.png");
-          this.Text = new Description("17394");
-          value = Convert.ToInt32((Decimal.Parse(element.Element("Factor").Value, System.Globalization.CultureInfo.InvariantCulture) * 100) - 100);
-          isPercent = true;
-          break;
-
-        case "SailShip":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/ship_info/icon_damage.png");
-          this.Text = new Description("17395");
-          value = Convert.ToInt32((Decimal.Parse(element.Element("Factor").Value, System.Globalization.CultureInfo.InvariantCulture) * 100) - 100);
-          isPercent = true;
-          break;
-
-        case "SteamShip":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/ship_info/icon_damage.png");
-          this.Text = new Description("17396");
-          value = Convert.ToInt32((Decimal.Parse(element.Element("Factor").Value, System.Globalization.CultureInfo.InvariantCulture) * 100) - 100);
-          isPercent = true;
-          break;
-
-        case "LoadingSpeedUpgrade":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_load_ships.png");
-          this.Text = new Description("15197");
-          break;
-
-        case "ItemSet":
-          var itemSet = Assets.Original.Root.XPathSelectElement($"//Asset/Values/Standard[GUID={element.Value}]");
-          //this.Icon = itemSet.Element("IconFilename") == null ? null : new Icon(itemSet.Element("IconFilename").Value);
-          this.Text = new Description(element.Value);
-          break;
-
         case "UseProjectile":
           var Projectile = Assets
             .Original
-            .Root
             .Descendants("Asset")
             .FirstOrDefault(a => a.XPathSelectElement($"Values/Standard/GUID")?.Value == element.Value);
 
@@ -562,7 +280,7 @@ namespace RDA.Data {
             this.Text = new Description(element.Parent.Parent.XPathSelectElement($"Standard/GUID").Value);
             break;
           }
-          var infodescAsset = Assets.Original.Root.Descendants("Asset").FirstOrDefault(a => a.XPathSelectElement($"Values/Standard/GUID")?.Value == infodesc);
+          var infodescAsset = Assets.Original.Descendants("Asset").FirstOrDefault(a => a.XPathSelectElement($"Values/Standard/GUID")?.Value == infodesc);
           if (infodescAsset != null) {
             this.Text = new Description(infodescAsset.XPathSelectElement("Values/Standard/InfoDescription").Value);
             this.Text.AdditionalInformation = new Description(infodescAsset.XPathSelectElement("Values/Standard/GUID").Value, DescriptionFontStyle.Light);
@@ -570,44 +288,169 @@ namespace RDA.Data {
           break;
 
         case "ActionDuration":
-          this.Text = new Description("2423", DescriptionFontStyle.Light);
-          this.Text.DE = "Dauer";
-          this.Text.EN = "Duration";
+          this.Text.FontStyle = DescriptionFontStyle.Light;
+          this.Text.Languages = new Description("3898").Languages;
           this.Value = TimeSpan.FromMilliseconds(Convert.ToInt64(element.Value)).ToString("hh':'mm':'ss");
-          while (this.Value.StartsWith("00:")) {
+          while (this.Value.StartsWith("00:00:")) {
             this.Value = this.Value.Remove(0, 3);
           }
           return;
 
         case "ActionCooldown":
-          this.Text = new Description("2424", DescriptionFontStyle.Light);
-          this.Text.DE = "Aufladung";
-          this.Text.EN = "Cooldown";
-          this.Value = TimeSpan.FromMilliseconds(Convert.ToInt64(element.Value)).ToString("mm':'ss");
+          this.Text.FontStyle = DescriptionFontStyle.Light;
+          this.Text.Languages = new Description("3899").Languages;
+          this.Value = TimeSpan.FromMilliseconds(Convert.ToInt64(element.Value)).ToString("hh':'mm':'ss");
+          while (this.Value.StartsWith("00:00:")) {
+            this.Value = this.Value.Remove(0, 3);
+          }
           return;
 
         case "IsDestroyedAfterCooldown":
-          this.Text = new Description("2421", DescriptionFontStyle.Light);
-          this.Text.DE = "Wird nach Gebrauch zerstört";
-          this.Text.EN = "Destroyed after use";
+          this.Text.FontStyle = DescriptionFontStyle.Light;
+          this.Text.Languages = new Description("2421").Remove("&lt;font color='0xff817f87'&gt;").Remove("&lt;/font&gt;").Languages;
           break;
 
-        case "LineOfSightRangeUpgrade":
-          this.Text = new Description("15266");
+        case "Building":
+          this.Text = new Description("17394");
+          value = Convert.ToInt32((Decimal.Parse(element.Element("Factor").Value, System.Globalization.CultureInfo.InvariantCulture) * 100) - 100);
+          isPercent = true;
+          break;
+
+        case "SailShip":
+          this.Text = new Description("17395");
+          value = Convert.ToInt32((Decimal.Parse(element.Element("Factor").Value, System.Globalization.CultureInfo.InvariantCulture) * 100) - 100);
+          isPercent = true;
+          break;
+
+        case "SteamShip":
+          this.Text = new Description("17396");
+          value = Convert.ToInt32((Decimal.Parse(element.Element("Factor").Value, System.Globalization.CultureInfo.InvariantCulture) * 100) - 100);
+          isPercent = true;
+          break;
+
+        case "ReplacingWorkforce":
+          this.ReplacingWorkforce = new ReplacingWorkforce(element.Value);
           break;
 
         case "BaseDamageUpgrade":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/ship_info/icon_damage.png");
-          this.Text = new Description("2334");
-          if (value == null) {
-            value = 0;
-          }
+          value = value ?? 0;
+          break;
+
+        case "AdditionalMoney":
+          value = Int32.Parse(element.Value);
+          break;
+
+        case "IncidentIllnessIncreaseUpgrade":
+        case "IncidentRiotIncreaseUpgrade":
+        case "IncidentFireIncreaseUpgrade":
+        case "IncidentExplosionIncreaseUpgrade":
+          factor = 10;
+          isPercent = true;
+          break;
+
+        case "Normal":
+        case "Cannon":
+        case "BigBertha":
+        case "Torpedo":
+          value = -Convert.ToInt32((100M - (100M * Decimal.Parse(element.Element("Factor").Value, CultureInfo.InvariantCulture))));
+          isPercent = true;
+          break;
+
+        case "ConstructionTimeInPercent":
+        case "ConstructionCostInPercent":
+        case "TaxModifierInPercent":
+        case "WorkforceModifierInPercent":
+          value = Int32.Parse(element.Value);
+          isPercent = true;
+          break;
+
+        case "IgnoreWeightFactorUpgrade":
+        case "IgnoreDamageFactorUpgrade":
+          value = -value;
+          break;
+
+        case "NeededAreaPercentUpgrade":
+          isPercent = true;
+          break;
+
+        case "AdditionalHappiness":
+          value = Int32.Parse(element.Value);
+          break;
+
+        case "ResolverUnitMovementSpeedUpgrade":
+          this.Value = null;
           break;
 
         case "AccuracyUpgrade":
-          //this.Icon = new Icon("data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png");
-          this.Text = new Description("12062");
+        case "LineOfSightRangeUpgrade":
+        case "LoadingSpeedUpgrade":
+        case "PublicServiceFullSatisfactionDistance":
+        case "HealRadiusUpgrade":
+        case "HealPerMinuteUpgrade":
+        case "SpawnProbabilityFactor":
+        case "SelfHealUpgrade":
+        case "AttackRangeUpgrade":
+        case "ForwardSpeedUpgrade":
+        case "MaxHitpointsUpgrade":
+        case "ResidentsUpgrade":
+        case "StressUpgrade":
+        case "ProvideElectricity":
+        case "ModuleLimitUpgrade":
+        case "NeedsElectricity":
+        case "AttractivenessUpgrade":
+        case "MaintenanceUpgrade":
+        case "WorkforceAmountUpgrade":
+        case "OutputAmountFactorUpgrade":
+        case "ProductivityUpgrade":
+        case "BlockBuyShare":
+        case "BlockHostileTakeover":
+        case "MaintainanceUpgrade":
+        case "MoralePowerUpgrade":
+        case "ScrapAmountLevelUpgrade":
+        case "PierSpeedUpgrade":
           break;
+
+        case "MinPickupTimeUpgrade":
+        case "MaxPickupTimeUpgrade":
+          //.InsertBefore("Maximum", "Maximum");
+          break;
+
+        case "RarityWeightUpgrade":
+          this.Additionals = new List<Upgrade>();
+          this.Text = new Description("22227");
+          foreach (var item in element.Elements()) {
+            if (item.Name.LocalName == "None") {
+              //this.Additionals.Add(new Upgrade() { Text = new Description("None", "None"), Value = $"+{item.Element("AdditionalWeight").Value}" });
+            }
+            else {
+              this.Additionals.Add(new Upgrade() { Text = new Description(Assets.KeyToIdDict[item.Name.LocalName]), Value = $"+{item.Element("AdditionalWeight").Value}" });
+            }
+          }
+          break;
+        //case "AllocationWeightUpgrade":
+        //  this.Additionals = new List<Upgrade>();
+        //  this.Text = new Description("22230");
+        //  var result = new Collection<Upgrade>();
+        //  foreach (var item in element.Elements()) {
+        //    switch (item.Name.LocalName) {
+        //      case "None":
+        //        result.Add(new Upgrade() { Text = new Description("22230"), Value = $"+{item.Element("AdditionalWeight").Value}" });
+        //        break;
+        //      case "Zoo":
+        //        result.Add(new Upgrade() { Text = new Description("22231"), Value = $"+{item.Element("AdditionalWeight").Value}" });
+        //        break;
+        //      case "Museum":
+        //        result.Add(new Upgrade() { Text = new Description("22232"), Value = $"+{item.Element("AdditionalWeight").Value}" });
+        //        break;
+        //      default:
+        //        result.Add(new Upgrade() { Text = new Description("22233"), Value = $"+{item.Element("AdditionalWeight").Value}" });
+        //        break;
+        //    }
+        //  }
+        //  foreach (var item in result.Distinct(new BasicUpgradeComparer())) {
+        //    this.Additionals.Add(item);
+        //  }
+        //  break;
 
         default:
           throw new NotImplementedException(element.Name.LocalName);
@@ -631,10 +474,6 @@ namespace RDA.Data {
         case "PerkFormerPirate":
         case "PerkDiver":
         case "PerkZoologist":
-          value = null;
-          this.Text = Text.InsertBefore("Trait: ", "Merkmal: ");
-          break;
-
         case "PerkMilitaryShip":
         case "PerkHypnotist":
         case "PerkAnthropologist":
@@ -643,7 +482,7 @@ namespace RDA.Data {
         case "PerkMale":
         case "PerkFemale":
           value = null;
-          this.Text = Text.InsertBefore("Trait: ", "Merkmal: ");
+          this.Text = Text.InsertBefore(new Description("-1"));
           break;
 
         default:

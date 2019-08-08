@@ -1,29 +1,28 @@
 ﻿using AssetViewer.Data;
 using AssetViewer.Extensions;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Xml.Linq;
 
 namespace AssetViewer.Controls {
+
   /// <summary>
   /// Interaktionslogik für Tourism.xaml
   /// </summary>
   public partial class Tourism : UserControl {
+
+    #region Properties
+
+    public ObservableCollection<TourismStatus> TourismStati { get; } = new ObservableCollection<TourismStatus>();
+
+    #endregion Properties
+
+    #region Constructors
+
     public Tourism() {
       InitializeComponent();
       Loaded += Tourism_Loaded;
@@ -38,19 +37,23 @@ namespace AssetViewer.Controls {
       }
       DataContext = this;
     }
-    public ObservableCollection<TourismStatus> TourismStati { get; } = new ObservableCollection<TourismStatus>();
-    private void Tourism_Unloaded(object sender, RoutedEventArgs e) {
-      ((MainWindow)Application.Current.MainWindow).ComboBoxLanguage.SelectionChanged -= this.ComboBoxLanguage_SelectionChanged;
 
+    #endregion Constructors
+
+    #region Methods
+
+    private void Tourism_Unloaded(object sender, RoutedEventArgs e) {
+      if (Application.Current.MainWindow is MainWindow main)main.ComboBoxLanguage.SelectionChanged -= this.ComboBoxLanguage_SelectionChanged;
     }
 
     private void Tourism_Loaded(object sender, RoutedEventArgs e) {
       ((MainWindow)Application.Current.MainWindow).ComboBoxLanguage.SelectionChanged += this.ComboBoxLanguage_SelectionChanged;
-
     }
     private void ComboBoxLanguage_SelectionChanged(object sender, SelectionChangedEventArgs e) {
-     DataContext = null;
-     DataContext = this;
+      DataContext = null;
+      DataContext = this;
     }
+
+    #endregion Methods
   }
 }

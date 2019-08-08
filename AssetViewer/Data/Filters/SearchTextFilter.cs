@@ -27,7 +27,7 @@ namespace AssetViewer.Data.Filters {
       return result;
     };
 
-    public override int DescriptionID => 1004;
+    public override string DescriptionID => "-1004";
 
     #endregion Properties
 

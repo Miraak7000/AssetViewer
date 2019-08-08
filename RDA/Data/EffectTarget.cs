@@ -17,7 +17,7 @@ namespace RDA.Data {
     #region Constructors
 
     public EffectTarget(XElement element) {
-      Text = new Description(Assets.DescriptionEN[element.Value], Assets.DescriptionDE[element.Value]);
+      Text = new Description(element.Value);
       var asset = Assets.Original.Descendants("Asset").FirstOrDefault(a => a
          .XPathSelectElement("Values/Standard/GUID")?
          .Value == element.Value);
@@ -29,7 +29,7 @@ namespace RDA.Data {
          .Descendants("GUID");
       if (buildings != null) {
         Buildings = buildings
-        .Where(a => Assets.DescriptionDE.ContainsKey(a.Value))
+        .Where(a => Assets.Descriptions.ContainsKey(a.Value))
         .Select(a => new Description(a.Value))
         .ToList();
         return;

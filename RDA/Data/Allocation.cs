@@ -19,29 +19,37 @@ namespace RDA.Data {
         switch (template) {
           case "TownhallItem":
             this.ID = "TownHall";
-            this.Text = new Description(Assets.Descriptions[ID]);
+            this.Text = new Description(Assets.KeyToIdDict[ID]);
             break;
 
           case "ShipSpecialist":
           case "VehicleItem":
           case "ActiveItem":
             this.ID = "Ship";
-            this.Text = new Description(Assets.Descriptions[ID]);
+            this.Text = new Description(Assets.KeyToIdDict[ID]);
             break;
 
           case "GuildhouseItem":
             this.ID = "GuildHouse";
-            this.Text = new Description(Assets.Descriptions[ID]);
+            this.Text = new Description(Assets.KeyToIdDict[ID]);
             break;
 
           case "HarborOfficeItem":
             this.ID = "HarborOffice";
-            this.Text = new Description(Assets.Descriptions[ID]);
+            this.Text = new Description(Assets.KeyToIdDict[ID]);
             break;
 
           case "CultureItem":
             this.ID = "Zoo";
-            this.Text = new Description(Assets.Descriptions[ID]);
+            this.Text = new Description(Assets.KeyToIdDict[ID]);
+            break;
+
+          case "QuestItem":
+          case "StartExpeditionItem":
+          case "FluffItem":
+          case "ItemWithUI":
+            this.ID = "NoneAllocation";
+            this.Text = new Description("-1230");
             break;
 
           default:
@@ -50,8 +58,13 @@ namespace RDA.Data {
       }
       else {
         this.ID = value;
-        this.Text = new Description(Assets.Descriptions[value]);
-        this.Text.Icon = new Icon(Assets.Icons[value]);
+        this.Text = new Description(Assets.KeyToIdDict[value]);
+        if (Assets.Icons.ContainsKey(value)) {
+          this.Text.Icon = new Icon(Assets.Icons[value]);
+        }
+        else if (Assets.KeyToIdDict.ContainsKey(value)) {
+          this.Text.Icon = new Description(Assets.KeyToIdDict[value]).Icon;
+        }
       }
     }
 

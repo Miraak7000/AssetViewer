@@ -11,13 +11,14 @@ namespace AssetViewer.Data.Filters {
     }
 
     public override Func<IQueryable<TemplateAsset>, IQueryable<TemplateAsset>> FilterFunc => result => {
-      if (!String.IsNullOrEmpty(SelectedValue))
+      if (!String.IsNullOrEmpty(SelectedValue)) {
         if (ComparisonType != FilterType.None && !String.IsNullOrEmpty(SelectedComparisonValue)) {
-          result = result.Where(w => w.AllUpgrades != null && w.AllUpgrades.Where(l => l.Text != null && l.Text.CurrentLang == SelectedValue).Any(l => CompareToUpgrade(l)));
+          result = result.Where(w => w.AllUpgrades != null && w.AllUpgrades.Any(l => l.Text != null && l.Text.CurrentLang == SelectedValue && CompareToUpgrade(l)));
         }
         else {
           result = result.Where(w => w.AllUpgrades != null && w.AllUpgrades.Any(l => l.Text != null && l.Text.CurrentLang == SelectedValue));
         }
+      }
 
       return result;
     };
@@ -33,6 +34,8 @@ namespace AssetViewer.Data.Filters {
 
           case ValueComparisons.GraterThan:
             return x >= y;
+          case ValueComparisons.UnEqual:
+            return x != y;
         }
       }
       else {
@@ -70,6 +73,6 @@ namespace AssetViewer.Data.Filters {
          .OrderBy(o => float.Parse(o.TrimEnd(' ', '%'))))
          .ToList();
 
-    public override int DescriptionID => 1006;
+    public override string DescriptionID => "-1006";
   }
 }
