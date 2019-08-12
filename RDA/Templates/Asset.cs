@@ -81,6 +81,7 @@ namespace RDA.Templates {
     public List<Upgrade> PierUpgrade { get; private set; }
     public List<Upgrade> ItemWithUI { get; private set; }
     public List<Upgrade> ItemStartExpedition { get; private set; }
+    public List<Upgrade> ItemSocketSet { get; private set; }
 
     #endregion Properties
 
@@ -139,6 +140,9 @@ namespace RDA.Templates {
           case "QuestItem":
           case "QuestItemMagistrate":
             this.ItemType = "Quest Item";
+            break;
+          case "ItemSet":
+            this.ItemType = "Item Set";
             break;
           /// Items Without ItemTyp ///
           /////////////////////////////
@@ -350,6 +354,10 @@ namespace RDA.Templates {
             this.ProcessElement_Building(element);
             break;
 
+          case "ItemSocketSet":
+            this.ProcessElement_ItemSocketSet(element);
+            break;
+
           default:
             throw new NotImplementedException(element.Name.LocalName);
         }
@@ -357,6 +365,14 @@ namespace RDA.Templates {
       if (findSources) {
         var sources = this.FindSources(this.ID).ToArray();
         this.Sources = sources.Select(s => new TempSource(s)).ToList();
+      }
+    }
+
+    private void ProcessElement_ItemSocketSet(XElement element) {
+      this.ItemSocketSet = new List<Upgrade>();
+      if (element.Element("SetBuff")?.Value is string buff) {
+        this.ItemSocketSet.AddRange(Assets.Buffs[buff].AllUpgrades.ToList());
+        this.EffectTargets = Assets.Buffs[buff].EffectTargets;
       }
     }
 

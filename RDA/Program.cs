@@ -4,6 +4,7 @@ using RDA.Templates;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
@@ -35,25 +36,29 @@ namespace RDA {
       Monument.Create();
 
       // Assets
-      Program.ProcessingItems("ActiveItem");
-      Program.ProcessingItems("ItemSpecialActionVisualEffect");
-      Program.ProcessingItems("ItemSpecialAction");
-      Program.ProcessingItems("GuildhouseItem");
-      Program.ProcessingItems("TownhallItem");
-      Program.ProcessingItems("HarborOfficeItem");
-      Program.ProcessingItems("VehicleItem");
-      Program.ProcessingItems("ShipSpecialist");
-      Program.ProcessingItems("CultureItem");
-      Program.ProcessingItems("ItemWithUI");
-      Program.ProcessingItems("FluffItem");
-      Program.ProcessingItems("QuestItemMagistrate");
-      Program.ProcessingItems("StartExpeditionItem");
-      Program.ProcessingItems("QuestItem");
+      //Program.ProcessingItems("ActiveItem");
+      //Program.ProcessingItems("ItemSpecialActionVisualEffect");
+      //Program.ProcessingItems("ItemSpecialAction");
+      //Program.ProcessingItems("GuildhouseItem");
+      //Program.ProcessingItems("TownhallItem");
+      //Program.ProcessingItems("HarborOfficeItem");
+      //Program.ProcessingItems("VehicleItem");
+      //Program.ProcessingItems("ShipSpecialist");
+      //Program.ProcessingItems("CultureItem");
+      //Program.ProcessingItems("ItemWithUI");
+      //Program.ProcessingItems("FluffItem");
+      //Program.ProcessingItems("QuestItemMagistrate");
+      //Program.ProcessingItems("StartExpeditionItem");
+      //Program.ProcessingItems("QuestItem");
 
-      Program.ProcessingItems("Product");
+      //Program.ProcessingItems("Product");
 
       //Buildings
-      Program.ProcessingItems("BuildPermitBuilding");
+      //Program.ProcessingItems("BuildPermitBuilding");
+
+
+      //ItemsSets
+      Program.ProcessingItems("ItemSet", false);
 
       //Testing
       //Program.ProcessingBuildings();
@@ -72,14 +77,14 @@ namespace RDA {
 
       // Expeditions
       //Program.Expeditions();
-      Program.ProcessingExpeditionEvents();
+      //Program.ProcessingExpeditionEvents();
 
       //Tourism
       Program.ProcessingTourism();
 
       //Save Descriptions
       //Set True for fully new Set of Descriptions.
-      Program.SaveDescriptions(true);
+      Program.SaveDescriptions(false);
     }
 
     #endregion Methods

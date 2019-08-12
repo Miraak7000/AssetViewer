@@ -11,7 +11,7 @@ namespace AssetViewer.Data.Filters {
 
     public override Func<IQueryable<TemplateAsset>, IQueryable<TemplateAsset>> FilterFunc => result => {
       if (SelectedValue)
-        result = result.Where(w => w.Sources.Count > 0);
+        result = result.Where(w => (w.Sources != null ? w.Sources.Count : 0) > 0);
       return result;
     };
 

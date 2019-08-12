@@ -237,7 +237,7 @@ namespace RDA {
       KeyToIdDict.Add("ModuleLimitUpgrade", "12075");
       KeyToIdDict.Add("AdditionalHappiness", "12314");
       KeyToIdDict.Add("ResidentsUpgrade", "2322");
-      KeyToIdDict.Add("StressUpgrade", "12227");
+      KeyToIdDict.Add("StressUpgrade", "2323");
       KeyToIdDict.Add("ProvideElectricity", "12485");
       KeyToIdDict.Add("TaxModifierInPercent", "12677");
       KeyToIdDict.Add("WorkforceModifierInPercent", "12676");
