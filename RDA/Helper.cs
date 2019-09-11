@@ -44,6 +44,7 @@ namespace RDA {
         }
       }
     }
+
     internal static void ExtractTemplateNames(String path) {
       var element = XDocument.Load(path).Root;
       var result = element.XPathSelectElements("//Asset/Template").Select(s => s.Value).Distinct().OrderBy(o => o);
@@ -57,6 +58,7 @@ namespace RDA {
         }
       }
     }
+
     internal static void SetImage(XElement element) {
       var name = element.Value.Replace(".png", "_0.png");
       var source = Path.GetFullPath(Path.Combine(Program.PathRoot, "Resources", name));
@@ -71,6 +73,7 @@ namespace RDA {
         element.Value = String.Empty;
       }
     }
+
     internal static void TemplateBuildPermitBuilding(XElement item) {
       item.XPathSelectElement("Values/Standard/Name").Remove();
       item.XPathSelectElement("Values/Blocking").Remove();
@@ -106,6 +109,7 @@ namespace RDA {
       // image
       Helper.SetImage(item.XPathSelectElement("Values/Standard/IconFilename"));
     }
+
     internal static void TemplateGuildhouseItem(XElement item) {
       item.XPathSelectElement("Values/Standard/Name").Remove();
       item.XPathSelectElement("Values/Item/MaxStackSize").Remove();
@@ -144,6 +148,7 @@ namespace RDA {
       // image
       Helper.SetImage(item.XPathSelectElement("Values/Standard/IconFilename"));
     }
+
     internal static void TemplateCultureItem(XElement item) {
       item.XPathSelectElement("Values/Standard/Name").Remove();
       item.XPathSelectElement("Values/Item/ItemType").Remove();
@@ -173,6 +178,7 @@ namespace RDA {
       // image
       Helper.SetImage(item.XPathSelectElement("Values/Standard/IconFilename"));
     }
+
     internal static void TemplateHarborOfficeItem(XElement item) {
       item.XPathSelectElement("Values/Standard/Name").Remove();
       item.XPathSelectElement("Values/Item/MaxStackSize").Remove();
@@ -211,6 +217,7 @@ namespace RDA {
       // image
       Helper.SetImage(item.XPathSelectElement("Values/Standard/IconFilename"));
     }
+
     internal static void TemplateVehicleItem(XElement item) {
       item.XPathSelectElement("Values/Standard/Name").Remove();
       item.XPathSelectElement("Values/Item/MaxStackSize").Remove();
@@ -239,6 +246,7 @@ namespace RDA {
       // image
       Helper.SetImage(item.XPathSelectElement("Values/Standard/IconFilename"));
     }
+
     internal static void TemplateActiveItem(XElement item) {
       item.XPathSelectElement("Values/Standard/Name").Remove();
       item.XPathSelectElement("Values/Item/MaxStackSize").Remove();

@@ -31,6 +31,7 @@ namespace AssetViewer.Data {
 
     public Description() {
     }
+
     public Description(XElement item) {
       var h = item.Attribute("ID")?.Value;
       if (h == null) {
@@ -43,6 +44,7 @@ namespace AssetViewer.Data {
       this.FontStyle = item.Attribute("FontStyle") == null ? default : (DescriptionFontStyle)Convert.ToInt32(item.Attribute("FontStyle").Value);
       this.AdditionalInformation = item.Element("AdditionalInformation")?.Value == null ? null : new Description(item.Element("AdditionalInformation"));
     }
+
     public Description(string id) {
       ID = id;
     }

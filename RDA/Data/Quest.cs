@@ -55,6 +55,7 @@ namespace RDA.Data {
       this.Name = element.Element("Name").Value;
       this.Text = new Description(element.Element("GUID").Value);
     }
+
     private void ProcessElement_Quest(XElement element) {
       this.QuestGiver = element.Element("QuestGiver").Value;
     }

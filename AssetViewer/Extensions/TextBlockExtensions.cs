@@ -23,6 +23,7 @@ namespace AssetViewer {
     public static void SetDescFontStyle(DependencyObject obj, int value) {
       obj.SetValue(DescFontStyle, value);
     }
+
     private static void OnFontStyleChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {
       if (d is TextBlock textBlock) {
         if (e.NewValue is DescriptionFontStyle style) {

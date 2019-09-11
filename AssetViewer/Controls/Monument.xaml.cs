@@ -102,6 +102,7 @@ namespace AssetViewer.Controls {
       ((MainWindow)Application.Current.MainWindow).ComboBoxLanguage.SelectionChanged += this.ComboBoxLanguage_SelectionChanged;
       this.ComboBoxCategories.SelectedIndex = 0;
     }
+
     private void ComboBoxLanguage_SelectionChanged(Object sender, SelectionChangedEventArgs e) {
       this.ComboBoxCategories.SelectedItem = null;
       this.ComboBoxEvents.SelectedItem = null;
@@ -109,29 +110,35 @@ namespace AssetViewer.Controls {
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(""));
       this.ComboBoxCategories.SelectedIndex = 0;
     }
+
     private void ComboBoxCategories_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Events"));
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
       this.ComboBoxEvents.SelectedIndex = 0;
     }
+
     private void ComboBoxEvents_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Thresholds"));
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
       this.ComboBoxThresholds.SelectedIndex = 0;
     }
+
     private void ComboBoxThresholds_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Rewards"));
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HasResult"));
       this.ListBoxItems.SelectedIndex = 0;
     }
+
     private void ListBoxItems_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
       if (e.AddedItems.Count == 0)
         this.ListBoxItems.SelectedIndex = 0;
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SelectedAsset"));
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("RarityBrush"));
     }
+
     private void UserControl_Unloaded(object sender, RoutedEventArgs e) {
-      if (Application.Current.MainWindow is MainWindow main)main.ComboBoxLanguage.SelectionChanged -= this.ComboBoxLanguage_SelectionChanged;
+      if (Application.Current.MainWindow is MainWindow main)
+        main.ComboBoxLanguage.SelectionChanged -= this.ComboBoxLanguage_SelectionChanged;
     }
 
     #endregion Methods

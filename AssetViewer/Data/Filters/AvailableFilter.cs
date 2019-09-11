@@ -15,8 +15,8 @@ namespace AssetViewer.Data.Filters {
       return result;
     };
 
-    public override IEnumerable<bool> ComparisonValues => base.ComparisonValues;
     public override string DescriptionID => "-1101";
+    public override IEnumerable<bool> ComparisonValues => base.ComparisonValues;
 
     #endregion Properties
 

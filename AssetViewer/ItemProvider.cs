@@ -47,7 +47,10 @@ namespace AssetViewer {
                 "AssetViewer.Resources.Assets.StartExpeditionItem.xml",
                 "AssetViewer.Resources.Assets.QuestItem.xml",
                 "AssetViewer.Resources.Assets.BuildPermitBuilding.xml",
-                "AssetViewer.Resources.Assets.ItemSet.xml"
+                "AssetViewer.Resources.Assets.ItemSet.xml",
+                "AssetViewer.Resources.Assets.BuildPermitModules.xml",
+                "AssetViewer.Resources.Assets.CultureModule.xml",
+                "AssetViewer.Resources.Assets.OrnamentalModule.xml"
             };
 
       foreach (var str in arr) {

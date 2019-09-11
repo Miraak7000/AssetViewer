@@ -52,7 +52,7 @@ namespace AssetViewer.Templates {
     public List<Upgrade> KontorUpgrades { get; set; }
     public List<Upgrade> ShipyardUpgrades { get; set; }
     public List<Upgrade> ItemGeneratorUpgrades { get; set; }
-    public List<Upgrade> PassiveTradeGoodGenUpgrades { get; private set; }
+    public List<Upgrade> PassiveTradeGoodGenUpgrades { get; set; }
     public List<Upgrade> DivingBellUpgrades { get; set; }
     public List<Upgrade> CraftableItemUpgrades { get; set; }
     public List<Upgrade> PierUpgrade { get; set; }

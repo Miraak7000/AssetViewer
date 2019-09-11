@@ -101,26 +101,32 @@ namespace AssetViewer.Controls {
       this.ComboBoxThirdParty.SelectedIndex = 0;
       this.ComboBoxProgressions.SelectedIndex = 0;
     }
+
     private void ComboBoxLanguage_SelectionChanged(Object sender, SelectionChangedEventArgs e) {
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("ThirdParties"));
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Progressions"));
       this.ComboBoxThirdParty.SelectedIndex = 0;
       this.ComboBoxProgressions.SelectedIndex = 0;
     }
+
     private void ComboBoxThirdParty_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("ImageThirdParty"));
     }
+
     private void ComboBoxProgressions_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
     }
+
     private void ListBoxItems_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
       if (e.AddedItems.Count == 0)
         this.ListBoxItems.SelectedIndex = 0;
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SelectedAsset"));
     }
+
     private void UserControl_Unloaded(object sender, RoutedEventArgs e) {
-      if (Application.Current.MainWindow is MainWindow main)main.ComboBoxLanguage.SelectionChanged -= this.ComboBoxLanguage_SelectionChanged;
+      if (Application.Current.MainWindow is MainWindow main)
+        main.ComboBoxLanguage.SelectionChanged -= this.ComboBoxLanguage_SelectionChanged;
     }
 
     #endregion Methods

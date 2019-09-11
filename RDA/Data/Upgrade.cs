@@ -54,7 +54,7 @@ namespace RDA.Data {
           var items = Assets
             .Original
             .Descendants("Asset")
-            .FirstOrDefault(a => a.XPathSelectElement("Values/Standard/GUID")?.Value == genpool)
+            .FirstOrDefault(a => a.XPathSelectElement("Values/Standard/GUID")?.Value == genpool)?
             .XPathSelectElement("Values/RewardPool/ItemsPool")
             .Elements("Item")
             .Select(i => new Description(i.Element("ItemLink").Value));
@@ -90,7 +90,7 @@ namespace RDA.Data {
 
         case "SpecialUnitHappinessThresholdUpgrade":
           this.Text.AdditionalInformation = new Description("21584", DescriptionFontStyle.Light);
-          var target = element.Parent.Parent.Element("ItemEffect").Element("EffectTargets").Elements().FirstOrDefault().Element("GUID").Value;
+          var target = element.Parent.Parent.Element("ItemEffect").Element("EffectTargets").Elements().FirstOrDefault()?.Element("GUID").Value;
           Description unit = null;
           switch (target) {
             case "190777": //Hospital
@@ -139,7 +139,7 @@ namespace RDA.Data {
           break;
 
         case "ResolverUnitDecreaseUpgrade":
-          target = element.Parent.Parent.Element("ItemEffect").Element("EffectTargets").Elements().FirstOrDefault().Element("GUID").Value;
+          target = element.Parent.Parent.Element("ItemEffect").Element("EffectTargets").Elements().FirstOrDefault()?.Element("GUID").Value;
           unit = null;
           switch (target) {
             case "190777": //Hospital
@@ -170,7 +170,7 @@ namespace RDA.Data {
             .Element("ItemEffect")
             .Element("EffectTargets")
             .Elements()
-            .FirstOrDefault()
+            .FirstOrDefault()?
             .Element("GUID")
             .Value;
           unit = null;
@@ -282,8 +282,9 @@ namespace RDA.Data {
           }
           var infodescAsset = Assets.Original.Descendants("Asset").FirstOrDefault(a => a.XPathSelectElement($"Values/Standard/GUID")?.Value == infodesc);
           if (infodescAsset != null) {
-            this.Text = new Description(infodescAsset.XPathSelectElement("Values/Standard/InfoDescription").Value);
-            this.Text.AdditionalInformation = new Description(infodescAsset.XPathSelectElement("Values/Standard/GUID").Value, DescriptionFontStyle.Light);
+            this.Text = new Description(infodescAsset.XPathSelectElement("Values/Standard/InfoDescription").Value) {
+              AdditionalInformation = new Description(infodescAsset.XPathSelectElement("Values/Standard/GUID").Value, DescriptionFontStyle.Light)
+            };
           }
           break;
 
@@ -356,6 +357,7 @@ namespace RDA.Data {
           isPercent = true;
           break;
 
+        case "ModuleLimitPercent":
         case "ConstructionTimeInPercent":
         case "ConstructionCostInPercent":
         case "TaxModifierInPercent":
@@ -395,7 +397,6 @@ namespace RDA.Data {
         case "ResidentsUpgrade":
         case "StressUpgrade":
         case "ProvideElectricity":
-        case "ModuleLimitUpgrade":
         case "NeedsElectricity":
         case "AttractivenessUpgrade":
         case "MaintenanceUpgrade":
@@ -425,6 +426,14 @@ namespace RDA.Data {
             else {
               this.Additionals.Add(new Upgrade() { Text = new Description(Assets.KeyToIdDict[item.Name.LocalName]), Value = $"+{item.Element("AdditionalWeight").Value}" });
             }
+          }
+          break;
+
+        case "ItemSetUpgrade":
+          this.Additionals = new List<Upgrade>();
+          this.Text = new Description("145011");
+          foreach (var item in element.Elements()) {
+              this.Additionals.Add(new Upgrade() { Text = new Description(item.Element("ItemSet").Value), Value = $"+{item.Element("AttractivenessUpgradePercent").Value}%" });
           }
           break;
         //case "AllocationWeightUpgrade":
@@ -467,6 +476,7 @@ namespace RDA.Data {
         }
       }
     }
+
     public Upgrade(String key, String amount) {
       var value = amount == null ? null : (Int32?)Int32.Parse(amount);
       this.Text = new Description(Assets.GetDescriptionID(key));

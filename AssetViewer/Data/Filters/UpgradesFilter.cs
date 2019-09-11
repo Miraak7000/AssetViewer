@@ -66,6 +66,7 @@ namespace AssetViewer.Data.Filters {
 
           case ValueComparisons.GraterThan:
             return x >= y;
+
           case ValueComparisons.UnEqual:
             return x != y;
         }

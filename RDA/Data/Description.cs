@@ -61,6 +61,7 @@ namespace RDA.Data {
       SetNewId();
       return this;
     }
+
     public Description InsertBefore(string value) {
       foreach (var item in Languages.ToArray()) {
         Languages[item.Key] = $"{value} {item.Value}";
@@ -68,6 +69,7 @@ namespace RDA.Data {
       SetNewId();
       return this;
     }
+
     public Description Append(string value) {
       foreach (var item in Languages.ToArray()) {
         Languages[item.Key] = $"{item.Value} {value}";
@@ -75,6 +77,7 @@ namespace RDA.Data {
       SetNewId();
       return this;
     }
+
     public Description Append(Description description) {
       foreach (var item in Languages.ToArray()) {
         Languages[item.Key] = $"{item.Value} {(description.Languages.TryGetValue(item.Key, out var value) ? value : description.Languages.First().Value)}";
@@ -82,6 +85,7 @@ namespace RDA.Data {
       SetNewId();
       return this;
     }
+
     public Description Remove(String value) {
       foreach (var item in Languages.ToArray()) {
         Languages[item.Key] = item.Value.Replace(HttpUtility.HtmlDecode(value), "");
@@ -89,6 +93,7 @@ namespace RDA.Data {
       SetNewId();
       return this;
     }
+
     public Description Replace(String oldValue, Description newValue) {
       foreach (var item in Languages.ToArray()) {
         Languages[item.Key] = item.Value.Replace(HttpUtility.HtmlDecode(oldValue), newValue.Languages.TryGetValue(item.Key, out var value) ? value : newValue.Languages.First().Value);
@@ -96,6 +101,7 @@ namespace RDA.Data {
       SetNewId();
       return this;
     }
+
     public Description Replace(String oldValue, IEnumerable<Description> newValue, Func<IEnumerable<string>, string> format) {
       foreach (var item in Languages.ToArray()) {
         Languages[item.Key] = item.Value.Replace(HttpUtility.HtmlDecode(oldValue), format(newValue.Select(v => v.Languages.TryGetValue(item.Key, out var value) ? value : v.Languages.First().Value)));
@@ -103,6 +109,7 @@ namespace RDA.Data {
       SetNewId();
       return this;
     }
+
     public XElement ToXml(String name) {
       this.ID = GetOrCheckExistenz();
       var result = new XElement(name);
@@ -117,12 +124,17 @@ namespace RDA.Data {
 
       return result;
     }
-    public void SetNewId() {
 
+    public void SetNewId() {
       ID = this.Languages.First().Value.GetHashCode().ToString();
     }
+
     public override String ToString() {
       return this.Languages.First().Value;
+    }
+
+    public bool Equals(Description other) {
+      return ID == other.ID && this.Languages.First().Value == other.Languages.First().Value && Icon.Filename == other.Icon.Filename;
     }
 
     private string GetOrCheckExistenz() {
@@ -134,10 +146,6 @@ namespace RDA.Data {
 
         return ID;
       }
-    }
-
-    public bool Equals(Description other) {
-      return ID == other.ID && this.Languages.First().Value == other.Languages.First().Value && Icon.Filename == other.Icon.Filename;
     }
 
     #endregion Methods

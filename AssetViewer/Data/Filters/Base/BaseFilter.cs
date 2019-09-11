@@ -46,14 +46,6 @@ namespace AssetViewer.Data.Filters {
 
     #endregion Properties
 
-    #region Constructors
-
-    public BaseFilter(ItemsHolder itemsHolder) {
-      ItemsHolder = itemsHolder;
-    }
-
-    #endregion Constructors
-
     #region Events
 
     public event PropertyChangedEventHandler PropertyChanged;
@@ -65,18 +57,28 @@ namespace AssetViewer.Data.Filters {
     public void RaisePropertyChanged([CallerMemberName]string name = "") {
       PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
     }
+
     public void UpdateUI() {
       var item = SelectedValue;
       RaisePropertyChanged(nameof(CurrentValues));
       _selectedValue = item;
       RaisePropertyChanged(nameof(SelectedValue));
     }
+
     public virtual void ResetFilter() {
       SelectedValue = default;
       SelectedComparisonValue = default;
     }
 
     #endregion Methods
+
+    #region Constructors
+
+    protected BaseFilter(ItemsHolder itemsHolder) {
+      ItemsHolder = itemsHolder;
+    }
+
+    #endregion Constructors
 
     #region Fields
 

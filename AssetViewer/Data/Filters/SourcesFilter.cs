@@ -27,6 +27,7 @@ namespace AssetViewer.Data.Filters {
 
     public override IEnumerable<String> CurrentValues => ItemsHolder
          .GetResultWithoutFilter(this)
+         .Where(s => s.Sources != null)
          .SelectMany(s => s.Sources)
          .Select(s => s.Text.CurrentLang)
          .Distinct()
@@ -54,6 +55,7 @@ namespace AssetViewer.Data.Filters {
       if (String.IsNullOrEmpty(SelectedValue)) {
         return ItemsHolder
         .GetResultWithoutFilter(this)
+        .Where(s => s.Sources != null)
         .SelectMany(s => s.Sources)
         .SelectMany(s => s.Additionals)
         .Select(s => s.Text.CurrentLang)
@@ -66,6 +68,7 @@ namespace AssetViewer.Data.Filters {
       else {
         return ItemsHolder
         .GetResultWithoutFilter(this)
+        .Where(s => s.Sources != null)
         .SelectMany(s => s.Sources)
         .Where(s => s.Text.CurrentLang == SelectedValue)
         .SelectMany(s => s.Additionals)

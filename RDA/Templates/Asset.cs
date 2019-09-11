@@ -120,6 +120,11 @@ namespace RDA.Templates {
           case "BuildPermitBuilding":
             this.ItemType = "Building";
             break;
+          case "BuildPermitModules":
+          case "CultureModule":
+          case "OrnamentalModule":
+            this.ItemType = "Module";
+            break;
 
           case "CultureItem":
             this.ItemType = "Animal";
@@ -141,6 +146,7 @@ namespace RDA.Templates {
           case "QuestItemMagistrate":
             this.ItemType = "Quest Item";
             break;
+
           case "ItemSet":
             this.ItemType = "Item Set";
             break;
@@ -196,11 +202,19 @@ namespace RDA.Templates {
           case "AmbientMoodProvider":
           case "Pausable":
           case "BuildPermit":
-          case "VisualEffectWhenActive":
+          case "VisualEffectWhenActive":         
+          case "QuestObject":         
           // ignore this nodes
+
           case "UpgradeList":
           case "VisitorUpgrade":
-            //Maybe next patch. all empty
+          //Maybe next patch. all empty
+
+          case "Infolayer":
+          case "ItemContainer":
+          case "BuildingModule":
+          case "Attackable":
+          //Maybe usefull Building Informations
             break;
 
           case "Standard":
@@ -359,20 +373,21 @@ namespace RDA.Templates {
             break;
 
           default:
-            throw new NotImplementedException(element.Name.LocalName);
+            Debug.WriteLine(element.Name.LocalName);
+            if (element.Name.LocalName == "Infolayer" && (element.HasElements || element.Value != null)) {
+
+
+            }
+            else {
+
+            }
+            //throw new NotImplementedException(element.Name.LocalName);
+            break;
         }
       }
       if (findSources) {
         var sources = this.FindSources(this.ID).ToArray();
         this.Sources = sources.Select(s => new TempSource(s)).ToList();
-      }
-    }
-
-    private void ProcessElement_ItemSocketSet(XElement element) {
-      this.ItemSocketSet = new List<Upgrade>();
-      if (element.Element("SetBuff")?.Value is string buff) {
-        this.ItemSocketSet.AddRange(Assets.Buffs[buff].AllUpgrades.ToList());
-        this.EffectTargets = Assets.Buffs[buff].EffectTargets;
       }
     }
 
@@ -395,7 +410,7 @@ namespace RDA.Templates {
       var type = typeof(Asset);
       foreach (var item in type.GetProperties().Where(p => p.PropertyType == typeof(List<Upgrade>))) {
         if (item.GetValue(this) != null) {
-          result.Add(new XElement(item.Name, (item.GetValue(this) as List<Upgrade>).Select(s => s.ToXml())));
+          result.Add(new XElement(item.Name, (item.GetValue(this) as List<Upgrade>)?.Select(s => s.ToXml())));
         }
       }
       //
@@ -417,8 +432,33 @@ namespace RDA.Templates {
         result.Add(new XElement("MonumentRewards", this.MonumentRewards?.Select(s => new XElement("Reward", s))));
       return result;
     }
+
     public override String ToString() {
       return $"{this.ID} - {this.Name}";
+    }
+
+    private void ProcessElement_ItemSocketSet(XElement element) {
+      this.ItemSocketSet = new List<Upgrade>();
+      if (element.Element("SetBuff")?.Value is string buff) {
+        this.ItemSocketSet.AddRange(Assets.Buffs[buff].AllUpgrades.ToList());
+        this.EffectTargets = Assets.Buffs[buff].EffectTargets;
+      }
+      else if (element.Element("RegionSetBuff") is XElement regionBuffs){
+        this.EffectTargets = new List<EffectTarget>();
+        foreach (var region in regionBuffs.Elements()) {
+          switch (region.Name.LocalName) {
+            case "Moderate":
+              this.ItemSocketSet.Add(new Upgrade { Text = new Description("113322"), Additionals = Assets.Buffs[region.Element("SetBuff").Value].AllUpgrades.ToList() });
+              break;
+            case "Colony01":
+              this.ItemSocketSet.Add(new Upgrade { Text = new Description("113395"), Additionals = Assets.Buffs[region.Element("SetBuff").Value].AllUpgrades.ToList() });
+              break;
+            default:
+              throw new NotImplementedException();
+          }
+          this.EffectTargets.AddRange(Assets.Buffs[region.Element("SetBuff").Value].EffectTargets);
+        }
+      }
     }
 
     private void ProcessElement_Standard(XElement element) {
@@ -427,6 +467,7 @@ namespace RDA.Templates {
       this.Text = new Description(element.Element("GUID").Value);
       this.Info = element.Element("InfoDescription") == null ? null : new Description(element.Element("InfoDescription").Value);
     }
+
     private void ProcessElement_Item(XElement element) {
       this.RarityType = element.Element("Rarity")?.Value ?? "Common";
       this.Rarity = element.Element("Rarity") == null ? new Description("118002") : new Description(Assets.GetDescriptionID(element.Element("Rarity").Value));
@@ -440,6 +481,7 @@ namespace RDA.Templates {
         this.ItemSets.Add(new Upgrade(element.Element("ItemSet")));
       }
     }
+
     private void ProcessElement_ItemEffect(XElement element) {
       if (element.HasElements && element.Element("EffectTargets") == null)
         throw new NotImplementedException();
@@ -450,6 +492,7 @@ namespace RDA.Templates {
         }
       }
     }
+
     private void ProcessElement_FactoryUpgrade(XElement element) {
       if (element.HasElements) {
         this.FactoryUpgrades = new List<Upgrade>();
@@ -458,6 +501,7 @@ namespace RDA.Templates {
         }
       }
     }
+
     private void ProcessElement_BuildingUpgrade(XElement element) {
       if (element.HasElements) {
         this.BuildingUpgrades = new List<Upgrade>();
@@ -469,6 +513,7 @@ namespace RDA.Templates {
         }
       }
     }
+
     private void ProcessElement_CultureUpgrade(XElement element) {
       if (element.HasElements) {
         this.CultureUpgrades = new List<Upgrade>();
@@ -485,6 +530,7 @@ namespace RDA.Templates {
         }
       }
     }
+
     private void ProcessElement_ModuleOwnerUpgrade(XElement element) {
       if (element.HasElements) {
         this.ModuleOwnerUpgrades = new List<Upgrade>();
@@ -493,6 +539,7 @@ namespace RDA.Templates {
         }
       }
     }
+
     private void ProcessElement_ResidenceUpgrade(XElement element) {
       if (element.HasElements) {
         this.ResidenceUpgrades = new List<Upgrade>();
@@ -501,6 +548,7 @@ namespace RDA.Templates {
         }
       }
     }
+
     private void ProcessElement_PopulationUpgrade(XElement element) {
       if (element.HasElements) {
         this.PopulationUpgrades = new List<Upgrade>();
@@ -528,6 +576,7 @@ namespace RDA.Templates {
         }
       }
     }
+
     private void ProcessElement_ElectricUpgrade(XElement element) {
       if (element.HasElements) {
         this.ElectricUpgrades = new List<Upgrade>();
@@ -536,6 +585,7 @@ namespace RDA.Templates {
         }
       }
     }
+
     private void ProcessElement_ExpeditionAttribute(XElement element) {
       if (element.HasElements) {
         var attributes = element.XPathSelectElements("ExpeditionAttributes/Item").Where(w => w.HasElements).ToArray();
@@ -551,6 +601,7 @@ namespace RDA.Templates {
         }
       }
     }
+
     private void ProcessElement_VisitorHarborUpgrade(XElement element) {
       if (element.HasElements) {
         this.VisitorHarborUpgrades = new List<Upgrade>();
@@ -559,12 +610,14 @@ namespace RDA.Templates {
         }
       }
     }
+
     private void ProcessElement_PassiveTradeGoodGenUpgrades(XElement element) {
       if (element.HasElements) {
         this.PassiveTradeGoodGenUpgrades = new List<Upgrade>();
         PassiveTradeGoodGenUpgrades.Add(new Upgrade(element));
       }
     }
+
     private void ProcessElement_IncidentInfectableUpgrades(XElement element) {
       if (element.HasElements) {
         this.IncidentInfectableUpgrades = new List<Upgrade>();
@@ -576,6 +629,7 @@ namespace RDA.Templates {
         }
       }
     }
+
     private void ProcessElement_IncidentInfluencerUpgrades(XElement element) {
       if (element.HasElements) {
         foreach (var item in element.Elements()) {
@@ -592,6 +646,7 @@ namespace RDA.Templates {
         }
       }
     }
+
     private void ProcessElement_AttackerUpgrade(XElement element) {
       if (element.HasElements) {
         this.AttackerUpgrades = new List<Upgrade>();
@@ -628,6 +683,7 @@ namespace RDA.Templates {
         }
       }
     }
+
     private void ProcessElement_ShipyardUpgrade(XElement element) {
       if (element.HasElements) {
         ShipyardUpgrades = new List<Upgrade>();
@@ -639,6 +695,7 @@ namespace RDA.Templates {
         }
       }
     }
+
     private void ProcessElement_AttackableUpgrade(XElement element) {
       if (element.HasElements) {
         this.AttackableUpgrades = new List<Upgrade>();
@@ -657,11 +714,13 @@ namespace RDA.Templates {
         }
       }
     }
+
     private void ProcessElement_ProjectileUpgrade(XElement element) {
       if (element.HasElements) {
         throw new NotImplementedException();
       }
     }
+
     private void ProcessElement_VehicleUpgrade(XElement element) {
       if (element.HasElements) {
         this.VehicleUpgrades = new List<Upgrade>();
@@ -670,6 +729,7 @@ namespace RDA.Templates {
         }
       }
     }
+
     private void ProcessElement_RepairCraneUpgrade(XElement element) {
       if (element.HasElements) {
         this.RepairCraneUpgrades = new List<Upgrade>();
@@ -681,6 +741,7 @@ namespace RDA.Templates {
         }
       }
     }
+
     private void ProcessElement_KontorUpgrade(XElement element) {
       if (element.HasElements) {
         KontorUpgrades = new List<Upgrade>();
@@ -689,6 +750,7 @@ namespace RDA.Templates {
         }
       }
     }
+
     private void ProcessElement_TradeShipUpgrade(XElement element) {
       if (element.HasElements) {
         this.TradeShipUpgrades = new List<Upgrade>();
@@ -697,6 +759,7 @@ namespace RDA.Templates {
         }
       }
     }
+
     private void ProcessElement_ItemActions(XElement element) {
       if (element.HasElements) {
         var itemAction = element.Element("ItemAction")?.Value;
@@ -765,20 +828,25 @@ namespace RDA.Templates {
         // TODO: this needs to be implemented
       }
     }
+
     private void ProcessElement_SpecialActions(XElement element) {
       if (element.HasElements) {
         // TODO: this needs to be implemented
       }
     }
+
     private void ProcessElement_MonumentEventCategory(XElement element) {
       this.MonumentEvents = element.XPathSelectElements("Events/Item/Event").Select(s => s.Value).ToList();
     }
+
     private void ProcessElement_MonumentEvent(XElement element) {
       this.MonumentThresholds = element.XPathSelectElements("RewardThresholds/Item/Reward").Select(s => s.Value).ToList();
     }
+
     private void ProcessElement_MonumentEventReward(XElement element) {
       this.MonumentRewards = element.XPathSelectElements("RewardAssets/Item/Reward").Select(s => s.Value).ToList();
     }
+
     private void ProcessElement_CraftableItem(XElement element) {
       if (element.HasElements) {
         this.CraftableItemUpgrades = new List<Upgrade>();
@@ -844,6 +912,7 @@ namespace RDA.Templates {
         }
       }
     }
+
     private void ProcessElement_PierUpgrade(XElement element) {
       if (element.HasElements) {
         this.PierUpgrade = new List<Upgrade>();
@@ -852,6 +921,7 @@ namespace RDA.Templates {
         }
       }
     }
+
     private void ProcessElement_ItemStartExpedition(XElement element) {
       if (element.HasElements) {
         this.ItemStartExpedition = new List<Upgrade>();
@@ -876,7 +946,9 @@ namespace RDA.Templates {
             case "ActionStartTreasureMapQuest":
               this.ItemWithUI.Add(new Upgrade(action));
               break;
-
+            case "ActionAddResource":
+              //Todo: new with update 05 maybe implement. (dokuments that becomes deko buildings)
+              break;
             case "ActionTriggerTextPopup":
             case "ActionRegisterTrigger":
             case "ActionNotification":
@@ -886,6 +958,7 @@ namespace RDA.Templates {
 
             default:
               Debug.WriteLine(action.Element("Template").Value);
+              throw new NotImplementedException();
               break;
           }
         }
@@ -1014,6 +1087,7 @@ namespace RDA.Templates {
             case "AudioText":
             case "TradeShip":
             case "ActiveItem":
+            case "CultureItem":
             case "QuestVehicle":
             case "Achievement":
             case "EventTradeShip":
@@ -1022,6 +1096,11 @@ namespace RDA.Templates {
             case "ChannelTarget":
             case "ResolveActionCost":
             case "Region":
+            case "OrnamentalModule":
+            case "ObjectBuildNewsTracker":
+            case "FeedbackBuildingGroup":
+            case "QuestItem":
+            case "Notification":
               // ignore
               break;
 
@@ -1082,7 +1161,7 @@ namespace RDA.Templates {
               break;
 
             case "DivingBellShip":
-              if (element.Descendants("DivingBell").FirstOrDefault().Descendants("ReplacementPool").Any(rp => rp.Value == id)) {
+              if (element.Descendants("DivingBell").FirstOrDefault()?.Descendants("ReplacementPool").Any(rp => rp.Value == id) == true) {
                 result.AddSourceAsset(element.GetProxyElement("Dive"), new HashSet<XElement> { element.GetProxyElement("Dive") });
               }
               break;
@@ -1091,13 +1170,19 @@ namespace RDA.Templates {
               if (element.Descendants("NewItem").Any(ni => ni.Value == id)) {
                 result.AddSourceAsset(element, new HashSet<XElement> { element });
               }
+              else if (element.Descendants("ActionAddResource").Any(e => e.Element("Resource").Value == id)) {
+                result.AddSourceAsset(element.GetProxyElement("Item"), new HashSet<XElement> { element.GetProxyElement("Item") });
+              }
               else {
+
               }
               break;
 
+
+
             case "Profile_3rdParty_ItemCrafter":
-              var craftable = element.Descendants("CraftableItems").FirstOrDefault().Descendants("Item").FirstOrDefault(item => item?.Value == id) != null;
-              if (craftable) {
+              var craftable = element.Descendants("CraftableItems").FirstOrDefault()?.Descendants("Item").Any(item => item?.Value == id);
+              if (craftable == true) {
                 result.AddSourceAsset(element.GetProxyElement("Crafting"), new HashSet<XElement> { element.GetProxyElement("Crafting") });
               }
               else {

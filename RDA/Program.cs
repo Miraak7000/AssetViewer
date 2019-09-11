@@ -4,7 +4,6 @@ using RDA.Templates;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
@@ -30,7 +29,7 @@ namespace RDA {
       //Helper.ExtractText();
       //Helper.ExtractTemplateNames(Program.PathRoot + @"\Original\assets.xml");
 
-      Assets.Init("Update 04");
+      Assets.Init("Update 05");
 
       // World Fair
       Monument.Create();
@@ -53,9 +52,11 @@ namespace RDA {
 
       //Program.ProcessingItems("Product");
 
-      //Buildings
+      ////Buildings
       //Program.ProcessingItems("BuildPermitBuilding");
-
+      //Program.ProcessingItems("BuildPermitModules");
+      //Program.ProcessingItems("CultureModule");
+      //Program.ProcessingItems("OrnamentalModule");
 
       //ItemsSets
       Program.ProcessingItems("ItemSet", false);
@@ -102,6 +103,7 @@ namespace RDA {
         ProcessingItems(item, false);
       }
     }
+
     private static void SaveDescriptions(bool resetOld = false) {
       Console.WriteLine("Save Descriptions");
       // Split Languages To single Files
@@ -168,6 +170,7 @@ namespace RDA {
         File.Copy($@"{Program.PathRoot}\Modified\Texts_{language.ToString("G")}.xml", $@"{Program.PathViewer}\Resources\Assets\Texts_{language.ToString("G")}.xml");
       }
     }
+
     private static void ProcessingItems(String template, bool findSources = true) {
       var result = new List<Asset>();
       var oldAssets = new Dictionary<string, XElement>();
@@ -195,6 +198,7 @@ namespace RDA {
       document.Save($@"{Program.PathRoot}\Modified\Assets_{template}.xml");
       document.Save($@"{Program.PathViewer}\Resources\Assets\{template}.xml");
     }
+
     private static void ProcessingThirdParty() {
       Console.WriteLine("Processing Third Party");
       var result = new List<ThirdParty>();
@@ -214,7 +218,6 @@ namespace RDA {
         if (item.ID != "199" && item.ID != "200") {
           result.Add(item);
         }
-
       });
       var document = new XDocument();
       document.Add(new XElement("ThirdParties"));
@@ -222,6 +225,7 @@ namespace RDA {
       document.Save($@"{Program.PathRoot}\Modified\Assets_ThirdParty.xml");
       document.Save($@"{Program.PathViewer}\Resources\Assets\ThirdParty.xml");
     }
+
     private static void QuestGiver() {
       var result = new List<QuestGiver>();
       var questGivers = Assets.Original.XPathSelectElements("//Asset[Template='Quest']/Values/Quest/QuestGiver").Select(s => s.Value).Distinct().ToList();
@@ -235,6 +239,7 @@ namespace RDA {
       document.Add(new XElement("QuestGivers"));
       document.Root.Add(result.Select(s => s.ToXml()));
     }
+
     private static void Quests() {
       var result = new List<Quest>();
       var assets = Assets.Original.XPathSelectElements("//Asset[Template='Quest']").ToList();
@@ -247,6 +252,7 @@ namespace RDA {
       document.Add(new XElement("Quests"));
       document.Root.Add(result.Select(s => s.ToXml()));
     }
+
     private static void Expeditions() {
       var result = new List<Expedition>();
       var assets = Assets.Original.XPathSelectElements("//Asset[Template='Expedition']").ToList().AsParallel();
@@ -265,6 +271,7 @@ namespace RDA {
       document.Save($@"{Program.PathRoot}\Modified\Assets_Expeditions.xml");
       document.Save($@"{Program.PathViewer}\Resources\Assets\Expeditions.xml");
     }
+
     private static void ProcessingRewardPools() {
       Console.WriteLine("Processing Reward Pools");
       var xRewardPools = new XElement("RewardPools");
@@ -348,13 +355,14 @@ namespace RDA {
       document.Save($@"{Program.PathRoot}\Modified\Assets_RewardPools.xml");
       document.Save($@"{Program.PathViewer}\Resources\Assets\RewardPools.xml");
     }
+
     private static void ProcessingExpeditionEvents() {
       var decicions = Assets.Original
           .XPathSelectElements("//Asset[Template='ExpeditionDecision']")
           .Where(f => f.XPathSelectElement("Values/Reward/RewardAssets")?.Elements("Item").Any(r => r.Element("Reward")?.Value != null) ?? false)
           .ToList();
 
-      var template = "ExpeditionEvents";
+      const string template = "ExpeditionEvents";
       var ResultEvents = new ConcurrentDictionary<XElement, ConcurrentBag<HashSet<XElement>>>();
       Console.WriteLine(template + "  Total: " + decicions.Count);
       var count = 0;
@@ -491,11 +499,12 @@ namespace RDA {
         return mainResult;
       }
     }
+
     private static void ProcessingTourism() {
       Console.WriteLine("Processing Tourism");
       var TourismAsset = Assets.Original.Descendants("Asset").FirstOrDefault(l => l.Element("Template")?.Value == "TourismFeature");
       var xRoot = new XElement("CityStati");
-      foreach (var pool in TourismAsset.Descendants("SpecialistPools").FirstOrDefault().Elements()) {
+      foreach (var pool in TourismAsset.Descendants("SpecialistPools").FirstOrDefault()?.Elements()) {
         var id = pool.Element("CityStatus").Value;
         var xStatus = new XElement("Status");
         xRoot.Add(xStatus);

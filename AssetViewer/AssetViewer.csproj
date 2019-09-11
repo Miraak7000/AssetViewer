@@ -236,6 +236,9 @@
     <Resource Include="Resources\icon_traderoutes.png" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\Assets\ItemSet.xml" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Resources\data\ui\2kimages\fpp\icons\icon_plus.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_albinos_fennec.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_albino_crocodile.png" />
@@ -298,7 +301,6 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_mantaray.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_moose.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_norfolk_kaka.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_okapi.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_orangutan.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_oxen.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_pacific_gull.png" />
@@ -487,6 +489,8 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_beef_potatoes.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_beer.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_beer_2.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_botanical.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_botanic_garden.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_bowler_hat.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_box_arena.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_brass.png" />
@@ -582,6 +586,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_military_ship_liner.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_military_ship_monitor.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_museum.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_music_pavillion.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_niter.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_oil.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_oil_habour_01.png" />
@@ -907,6 +912,11 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_viking_uppsala_altar.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_wooden_ring.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_yonaguni_pyramid.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\music\icon_music_score_1404.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\music\icon_music_score_1701.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\music\icon_music_score_1800.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\music\icon_music_score_2070.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\music\icon_music_score_2205.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\narative_item\icon_alonsos_diciples.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\narative_item\icon_beryls_children.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\narative_item\icon_beryl_tea.png" />
@@ -956,20 +966,87 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\newspaper\icon_antianarchist_newspaper_02.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\newspaper\icon_antianarchist_newspaper_03.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\newspaper\icon_mercier_newspaper.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_botanica_blueflower.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_botanica_darkpinkflower.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_botanica_hedgespath.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_botanica_labybrinth.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_botanica_orangeflower.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_botanica_pinkflower.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_botanica_purpleflower.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_botanica_redandwhiteflower.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_botanica_treesculptures.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_botanica_whiteflower.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_botanica_yellowflower.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_1x1_01.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_1x1_02.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_1x1_03.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_1x1_04.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_1x1_05.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_1x1_06.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_1x1_07.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_1x1_08.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_1x1_09.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_1x1_10.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_1x1_11.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_gate_01.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_module_01.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_tower_01.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_blue_lotus.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_brazil_nut_tree.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_cherry_blossom.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_coco_tree.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_dandelion.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_downy_jasmine.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_echium_wildpretii.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_elderberry.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_fern_flower.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_foxglove.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_frailejones.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_giant_water_lily.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_great_star_coral.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_guayacan_de_manizales.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_gunguru.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_hemp.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_hevea.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_jerusalem_sage.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_jujube.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_lianas.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_lilies.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_magnolia_champaca.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_mexican_horn_cone.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_moly.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_mother_in_law_tongue.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_orchids.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_palm_tree.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_peppermint.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_perrys_giant_sunburst.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_pillar_coral.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_poppy.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_pride_of_madeira.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_protea.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_purple_pitcher.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_queen_of_andes.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_reeds.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_rhododendron.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_rocky_mountain_fir.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_sacred_lotus.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_salvia.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_saxifraga.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_sea_lavender.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_spotted_stanhopea.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_staghorn_coral.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_star_bright_lotus.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_tassel_ferns.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_thrift.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_tiger_lotus.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_titan_arum.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_tulsi.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_underworld_asphodelus.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_vines.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\item_blueberry.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\item_bodhi_tree.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\item_marsh_mallow.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\item_metaxya.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\item_papyrus.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\item_water_hyacinth.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\posters\icon_anarchy_poster_01.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\posters\icon_anarchy_poster_02.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\posters\icon_anarchy_poster_03.png" />
@@ -1312,10 +1389,12 @@
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_arrowpoint_right.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_attractiveness.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_attractiveness_cityhall_big.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_attractiveness_group.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_attractiveness_house_big.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_bankrupt.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_big_shipyard_2d.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_bomb.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_botanic_garden_2d.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_build_menu.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_chatroom.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_church_2D.png" />
@@ -1425,7 +1504,31 @@
     <Resource Include="Resources\data\ui\2kimages\main\profiles\resident_tier05.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Assets\ItemSet.xml" />
+    <EmbeddedResource Include="Resources\Assets\BuildPermitModules.xml" />
+    <EmbeddedResource Include="Resources\Assets\CultureModule.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Assets\OrnamentalModule.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\cultural_1x1_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cultural_props_1x1_04.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cultural_props_1x1_16_front.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_1x1_05.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_1x1_08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_botanic_garden_module.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_museum_module.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_rich_sea.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -68,9 +68,11 @@ namespace AssetViewer.Data.Filters {
         }
       }
     }
+
     public void RaisePropertyChanged([CallerMemberName]string name = "") {
       PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
     }
+
     public void SetItems() {
       var result = Base;
       foreach (var filter in StandardFilters.Values.Concat(CustomFilters.Where(cf => cf.SelectedFilter != null).Select(cf => cf.SelectedFilter))) {
@@ -79,6 +81,7 @@ namespace AssetViewer.Data.Filters {
       //result = result.OrderBy(s => s.Text);
       Items = result.ToList();
     }
+
     public IQueryable<TemplateAsset> GetResultWithoutFilter<T>(IFilter<T> filter) {
       var result = Base;
 
@@ -97,6 +100,7 @@ namespace AssetViewer.Data.Filters {
       IsRefreshingUi = false;
       UpdateUI();
     }
+
     public void RaiseLanguageChanged() {
       IsRefreshingUi = true;
       foreach (var filter in StandardFilters.Values) {
@@ -105,8 +109,8 @@ namespace AssetViewer.Data.Filters {
       CustomFilters.Clear();
       IsRefreshingUi = false;
       UpdateUI();
-
     }
+
     #endregion Methods
   }
 }

@@ -6,9 +6,8 @@ using System.Linq;
 namespace AssetViewer.Data.Filters {
 
   public class SpecificUpgradesFilter : BaseFilter<string> {
-    public SpecificUpgradesFilter(ItemsHolder itemsHolder) : base(itemsHolder) {
-      ComparisonType = FilterType.Selection;
-    }
+
+    #region Properties
 
     public override Func<IQueryable<TemplateAsset>, IQueryable<TemplateAsset>> FilterFunc => result => {
       if (!String.IsNullOrEmpty(SelectedValue)) {
@@ -22,37 +21,6 @@ namespace AssetViewer.Data.Filters {
 
       return result;
     };
-
-    private bool CompareToUpgrade(Upgrade l) {
-      if (float.TryParse(l.Value.TrimEnd(' ', '%'), out var x) && float.TryParse(this.SelectedComparisonValue.TrimEnd(' ', '%'), out var y)) {
-        switch (Comparison) {
-          case ValueComparisons.Equals:
-            return x == y;
-
-          case ValueComparisons.LesserThan:
-            return x <= y;
-
-          case ValueComparisons.GraterThan:
-            return x >= y;
-          case ValueComparisons.UnEqual:
-            return x != y;
-        }
-      }
-      else {
-        var stringCompare = l.Value.CompareTo(this.SelectedValue);
-        switch (stringCompare) {
-          case -1:
-            return Comparison == ValueComparisons.LesserThan;
-
-          case 0:
-            return true;
-
-          case 1:
-            return Comparison == ValueComparisons.GraterThan;
-        }
-      }
-      return false;
-    }
 
     public override IEnumerable<String> CurrentValues => ItemsHolder
          .GetResultWithoutFilter(this)
@@ -74,5 +42,51 @@ namespace AssetViewer.Data.Filters {
          .ToList();
 
     public override string DescriptionID => "-1006";
+
+    #endregion Properties
+
+    #region Constructors
+
+    public SpecificUpgradesFilter(ItemsHolder itemsHolder) : base(itemsHolder) {
+      ComparisonType = FilterType.Selection;
+    }
+
+    #endregion Constructors
+
+    #region Methods
+
+    private bool CompareToUpgrade(Upgrade l) {
+      if (float.TryParse(l.Value.TrimEnd(' ', '%'), out var x) && float.TryParse(this.SelectedComparisonValue.TrimEnd(' ', '%'), out var y)) {
+        switch (Comparison) {
+          case ValueComparisons.Equals:
+            return x == y;
+
+          case ValueComparisons.LesserThan:
+            return x <= y;
+
+          case ValueComparisons.GraterThan:
+            return x >= y;
+
+          case ValueComparisons.UnEqual:
+            return x != y;
+        }
+      }
+      else {
+        var stringCompare = l.Value.CompareTo(this.SelectedValue);
+        switch (stringCompare) {
+          case -1:
+            return Comparison == ValueComparisons.LesserThan;
+
+          case 0:
+            return true;
+
+          case 1:
+            return Comparison == ValueComparisons.GraterThan;
+        }
+      }
+      return false;
+    }
+
+    #endregion Methods
   }
 }
