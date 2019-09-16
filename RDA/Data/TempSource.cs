@@ -23,6 +23,7 @@ namespace RDA.Data {
     #region Constructors
 
     public TempSource(SourceWithDetails element) {
+     
       var Source = element.Source;
       this.ID = Source.XPathSelectElement("Values/Standard/GUID").Value;
       this.Name = Source.XPathSelectElement("Values/Standard/Name").Value;
@@ -168,7 +169,10 @@ namespace RDA.Data {
 
         case "Dive":
           this.Text = new Description("113420");
-          this.Details = element.Details.Select(d => new Description("113420")).ToList();
+          this.Details = element.Details.Select(_ => new Description("113420")).ToList();
+          break;
+        case "Item":
+          this.Text = new Description(Source.XPathSelectElement("Values/Standard/GUID").Value).InsertBefore("-").InsertBefore(new Description("-101"));
           break;
 
         default:

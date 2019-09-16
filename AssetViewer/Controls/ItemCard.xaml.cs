@@ -87,6 +87,7 @@ namespace AssetViewer.Controls {
         return App.Descriptions["-1221"];
       }
     }
+
     public String ItemTrasmutable {
       get {
         return App.Descriptions["113817"];
@@ -126,6 +127,7 @@ namespace AssetViewer.Controls {
     public void RaisePropertyChanged([CallerMemberName]string name = "") {
       PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
     }
+
     private static void OnSelectedAssetChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {
       if (d is ItemCard card) {
         card.RaisePropertyChanged(nameof(RarityBrush));

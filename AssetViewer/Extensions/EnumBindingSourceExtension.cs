@@ -30,6 +30,7 @@ namespace AssetViewer {
 
     public EnumBindingSourceExtension() {
     }
+
     public EnumBindingSourceExtension(Type enumType) {
       this.EnumType = enumType;
     }

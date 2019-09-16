@@ -41,6 +41,7 @@ namespace RDA {
       document.Save($@"{Program.PathRoot}\Modified\Assets_MonumentCategory.xml");
       document.Save($@"{Program.PathViewer}\Resources\Assets\MonumentCategory.xml");
     }
+
     private static void MonumentEvent() {
       var result = new List<Asset>();
       var monumentEvents = Assets.Original.XPathSelectElements("//Asset[Template='MonumentEvent']").ToArray();
@@ -55,6 +56,7 @@ namespace RDA {
       document.Save($@"{Program.PathRoot}\Modified\Assets_MonumentEvent.xml");
       document.Save($@"{Program.PathViewer}\Resources\Assets\MonumentEvent.xml");
     }
+
     private static void MonumentThreshold() {
       var result = new List<Asset>();
       var monumentEvents = Assets.Original.XPathSelectElements("//Asset[Template='MonumentEventReward']").ToArray();

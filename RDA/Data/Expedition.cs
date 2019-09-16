@@ -64,6 +64,7 @@ namespace RDA.Data {
       this.ID = element.Element("GUID").Value;
       this.Name = element.Element("Name").Value;
     }
+
     private void ProcessElement_Expedition(XElement element) {
       this.Text = new Description(element.Element("ExpeditionName").Value);
       this.ExpeditionRegion = element.Element("ExpeditionRegion")?.Value;

@@ -56,7 +56,7 @@ namespace AssetViewer.Data.Filters {
     #region Methods
 
     private bool CompareToUpgrade(Upgrade l) {
-      if (float.TryParse(l.Value.TrimEnd(' ', '%'), out var x) && float.TryParse(this.SelectedComparisonValue.TrimEnd(' ', '%'), out var y)) {
+      if (float.TryParse(l.Value?.TrimEnd(' ', '%'), out var x) && float.TryParse(this.SelectedComparisonValue.TrimEnd(' ', '%'), out var y)) {
         switch (Comparison) {
           case ValueComparisons.Equals:
             return x == y;
@@ -66,19 +66,22 @@ namespace AssetViewer.Data.Filters {
 
           case ValueComparisons.GraterThan:
             return x >= y;
+
+          case ValueComparisons.UnEqual:
+            return x != y;
         }
       }
       else {
-        var stringCompare = l.Value.CompareTo(this.SelectedValue);
+        var stringCompare = l.Value?.CompareTo(this.SelectedValue);
         switch (stringCompare) {
           case -1:
-            return Comparison == ValueComparisons.LesserThan;
+            return Comparison == ValueComparisons.LesserThan || Comparison == ValueComparisons.UnEqual;
 
           case 0:
             return true;
 
           case 1:
-            return Comparison == ValueComparisons.GraterThan;
+            return Comparison == ValueComparisons.GraterThan || Comparison == ValueComparisons.UnEqual;
         }
       }
       return false;

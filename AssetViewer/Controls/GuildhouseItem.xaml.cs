@@ -39,6 +39,7 @@ namespace AssetViewer.Controls {
     #region Methods
 
     private void BtnResetFilters_Click(object sender, RoutedEventArgs e) => ItemsHolder.ResetFilters();
+
     private void GuildhouseItem_OnLoaded(Object sender, RoutedEventArgs e) {
       ((MainWindow)Application.Current.MainWindow).ComboBoxLanguage.SelectionChanged += this.ComboBoxLanguage_SelectionChanged;
       ItemsHolder.IsRefreshingUi = true;
@@ -59,6 +60,7 @@ namespace AssetViewer.Controls {
         this.ListBoxItems.SelectedIndex = 0;
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SelectedAsset"));
     }
+
     private void ComboBoxLanguage_SelectionChanged(Object sender, SelectionChangedEventArgs e) {
       ItemsHolder.RaiseLanguageChanged();
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(""));
@@ -80,7 +82,8 @@ namespace AssetViewer.Controls {
     }
 
     private void UserControl_Unloaded(object sender, RoutedEventArgs e) {
-      if (Application.Current.MainWindow is MainWindow main)main.ComboBoxLanguage.SelectionChanged -= this.ComboBoxLanguage_SelectionChanged;
+      if (Application.Current.MainWindow is MainWindow main)
+        main.ComboBoxLanguage.SelectionChanged -= this.ComboBoxLanguage_SelectionChanged;
     }
 
     #endregion Methods

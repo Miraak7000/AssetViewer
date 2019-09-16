@@ -28,6 +28,7 @@ namespace AssetViewer {
     private void MainWindow_OnLoaded(Object sender, RoutedEventArgs e) {
       this.ComboBoxAsset.SelectedIndex = 0;
     }
+
     private void ComboBoxAsset_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
       if (this.Presenter != null) {
         switch (this.ComboBoxAsset.SelectedIndex) {
@@ -53,6 +54,7 @@ namespace AssetViewer {
         }
       }
     }
+
     private void ComboBoxLanguage_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
       switch (this.ComboBoxLanguage.SelectedIndex) {
         case 0:
@@ -71,6 +73,7 @@ namespace AssetViewer {
       DataContext = null;
       DataContext = this;
     }
+
     private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e) {
       Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri));
       e.Handled = true;

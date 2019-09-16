@@ -46,7 +46,7 @@ namespace AssetViewer.Data.Filters {
 
     #region Fields
 
-    private Description[] values = new[] {
+    private readonly Description[] values = new[] {
       new Description("-1200"),
       new Description("-1201"),
       new Description("-1023"),

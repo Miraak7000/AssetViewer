@@ -27,6 +27,7 @@ namespace RDA {
       SetTourismStati();
       SetBuffs();
     }
+
     public static string GetDescriptionID(string id) {
       return KeyToIdDict[id];
     }
@@ -58,6 +59,7 @@ namespace RDA {
         }
       }
     }
+
     private static int InheritDepth(this XElement ele) {
       int depth = 0;
       var search = ele.Element("BaseAssetGUID")?.Value;
@@ -92,6 +94,7 @@ namespace RDA {
       //  }
       //}
     }
+
     private static void SolveXmlInheritance() {
       Console.WriteLine("Solve Xml Inheritance");
       var InheritHelper = Original.Descendants("Asset").OrderBy(a => a.InheritDepth()).ToArray();
@@ -105,6 +108,7 @@ namespace RDA {
         }
       }
     }
+
     private static void LoadDescriptions() {
       Console.WriteLine("Load Descriptions");
       foreach (Languages language in Enum.GetValues(typeof(Languages))) {
@@ -140,6 +144,7 @@ namespace RDA {
         }
       }
     }
+
     private static void LoadCustomDescriptions() {
       Console.WriteLine("Load Custom Descriptions");
       var js = new JavaScriptSerializer();
@@ -158,11 +163,12 @@ namespace RDA {
         }
       }
     }
+
     private static void SetIcons() {
       Console.WriteLine("Setting up Icons");
       var asset = Original
          .Descendants("Asset")
-         .FirstOrDefault(a => a.Element("Template")?.Value == "ItemBalancing")
+         .FirstOrDefault(a => a.Element("Template")?.Value == "ItemBalancing")?
          .Element("Values")
          .Element("ItemConfig");
       //AllocationIcons
@@ -185,11 +191,12 @@ namespace RDA {
       Icons.Add("15798", "data/ui/2kimages/main/icons/icon_generic_expedition.png");  //PerkMale
       Icons.Add("15797", "data/ui/2kimages/main/icons/icon_generic_expedition.png");  //PerkFeMale
     }
+
     private static void SetTextDictionarys() {
       Console.WriteLine("Setting up Descriptions");
       var asset = Original
          .Descendants("Asset")
-         .FirstOrDefault(a => a.Element("Template")?.Value == "ItemBalancing")
+         .FirstOrDefault(a => a.Element("Template")?.Value == "ItemBalancing")?
          .Element("Values")
          .Element("ItemConfig");
       //RarityText
@@ -207,7 +214,7 @@ namespace RDA {
 
       asset = Original
        .Descendants("Asset")
-       .FirstOrDefault(a => a.Element("Template")?.Value == "ExpeditionFeature")
+       .FirstOrDefault(a => a.Element("Template")?.Value == "ExpeditionFeature")?
        .Element("Values")
        .Element("ExpeditionFeature");
       //ExpeditionRegions
@@ -234,10 +241,10 @@ namespace RDA {
       KeyToIdDict.Add("MaintenanceUpgrade", "2320");
       KeyToIdDict.Add("WorkforceAmountUpgrade", "12337");
       KeyToIdDict.Add("ReplacingWorkforce", "12480");
-      KeyToIdDict.Add("ModuleLimitUpgrade", "12075");
+      KeyToIdDict.Add("ModuleLimitPercent", "12075");
       KeyToIdDict.Add("AdditionalHappiness", "12314");
       KeyToIdDict.Add("ResidentsUpgrade", "2322");
-      KeyToIdDict.Add("StressUpgrade", "12227");
+      KeyToIdDict.Add("StressUpgrade", "2323");
       KeyToIdDict.Add("ProvideElectricity", "12485");
       KeyToIdDict.Add("TaxModifierInPercent", "12677");
       KeyToIdDict.Add("WorkforceModifierInPercent", "12676");
@@ -300,6 +307,7 @@ namespace RDA {
       //Override Allocation Tradeship
       KeyToIdDict["Tradeship"] = "12006";
     }
+
     private static void SetTourismStati() {
       Console.WriteLine("Setting up Tourism");
       var TourismAsset = Original.Descendants("Asset").FirstOrDefault(l => l.Element("Template")?.Value == "TourismFeature");
@@ -309,6 +317,7 @@ namespace RDA {
         TourismStati[i.ToString()] = CityStatis[i - 1];
       }
     }
+
     private static void SetBuffs() {
       Console.WriteLine("Setting up Buffs");
       Buffs = Original

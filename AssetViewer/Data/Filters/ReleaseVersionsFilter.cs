@@ -44,6 +44,7 @@ namespace AssetViewer.Data.Filters {
       }
       return false;
     }
+
     public override string DescriptionID => "-1007";
   }
 }

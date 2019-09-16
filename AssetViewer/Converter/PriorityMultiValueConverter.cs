@@ -12,6 +12,7 @@ namespace AssetViewer.Converter {
 
     #region Methods
     public static ImageSourceConverter imageConverter = new ImageSourceConverter();
+
     public object Convert(object[] values, Type targetType, object parameter, CultureInfo culture) {
       if (Array.Find(values, o => o != null && o != DependencyProperty.UnsetValue) is string path) {
         return new BitmapImage(new Uri(path, UriKind.Relative));

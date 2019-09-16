@@ -49,6 +49,7 @@ namespace AssetViewer.Controls {
     private void Tourism_Loaded(object sender, RoutedEventArgs e) {
       ((MainWindow)Application.Current.MainWindow).ComboBoxLanguage.SelectionChanged += this.ComboBoxLanguage_SelectionChanged;
     }
+
     private void ComboBoxLanguage_SelectionChanged(object sender, SelectionChangedEventArgs e) {
       DataContext = null;
       DataContext = this;

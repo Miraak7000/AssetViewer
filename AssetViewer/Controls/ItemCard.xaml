@@ -309,6 +309,10 @@
             <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.Building, Converter={StaticResource VisibilityConverter}}">
               <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.Building}" />
             </Grid>
+            <!--  ItemSocketSet  -->
+            <Grid Margin="0,2" Visibility="{Binding Path=SelectedAsset.ItemSocketSet, Converter={StaticResource VisibilityConverter}}">
+              <ItemsControl Foreground="#FFFFE4AD" ItemTemplate="{StaticResource UpgradeTemplate}" ItemsSource="{Binding Path=SelectedAsset.ItemSocketSet}" />
+            </Grid>
             <!--  Expedition  -->
             <StackPanel Visibility="{Binding Path=SelectedAsset.ExpeditionAttributes, Converter={StaticResource VisibilityConverter}}">
               <Border
