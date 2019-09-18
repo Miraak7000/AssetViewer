@@ -18,6 +18,9 @@ namespace AssetViewer {
       if (App.Language == Languages.German) {
         ComboBoxLanguage.SelectedIndex = 1;
       }
+      else if (App.Language == Languages.Korean) {
+        ComboBoxLanguage.SelectedIndex = 2;
+      }
       ComboBoxLanguage.SelectionChanged += ComboBoxLanguage_OnSelectionChanged;
     }
 
