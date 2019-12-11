@@ -82,6 +82,7 @@ namespace RDA.Templates {
     public List<Upgrade> ItemWithUI { get; private set; }
     public List<Upgrade> ItemStartExpedition { get; private set; }
     public List<Upgrade> ItemSocketSet { get; private set; }
+    public List<Upgrade> HeaterUpgrade { get; private set; }
 
     #endregion Properties
 
@@ -370,6 +371,9 @@ namespace RDA.Templates {
 
           case "ItemSocketSet":
             this.ProcessElement_ItemSocketSet(element);
+            break; 
+          case "HeaterUpgrade":
+            this.ProcessElement_HeaterUpgrade(element);
             break;
 
           default:
@@ -545,6 +549,14 @@ namespace RDA.Templates {
         this.ResidenceUpgrades = new List<Upgrade>();
         foreach (var item in element.Elements()) {
           this.ResidenceUpgrades.Add(new Upgrade(item));
+        }
+      }
+    }     
+    private void ProcessElement_HeaterUpgrade(XElement element) {
+      if (element.HasElements) {
+        this.HeaterUpgrade = new List<Upgrade>();
+        foreach (var item in element.Elements()) {
+          this.HeaterUpgrade.Add(new Upgrade(item));
         }
       }
     }
@@ -938,7 +950,7 @@ namespace RDA.Templates {
     }
 
     private void ProcessElement_ItemWithUI(XElement element) {
-      var actions = element.XPathSelectElement("ItemActions/Values/ActionList/Actions").Elements("Item").Select(a => a.Element("Action"));
+      var actions = element.XPathSelectElement("ItemActions/Values/ActionList/Actions")?.Elements("Item")?.Select(a => a.Element("Action"));
       if (actions != null) {
         this.ItemWithUI = new List<Upgrade>();
         foreach (var action in actions) {
@@ -1101,12 +1113,28 @@ namespace RDA.Templates {
             case "FeedbackBuildingGroup":
             case "QuestItem":
             case "Notification":
+            //case "ProductList":
+            case "KeywordFilter":
+            case "ResidenceBuilding7_Arctic":
+            case "FreeAreaBuilding_Arctic":
+            case "FarmBuilding_Arctic":
+            case "HeavyFreeAreaBuilding_Arctic":
+            case "FactoryBuilding7_Arctic":
+            case "SlotFactoryBuilding7_Arctic":
+            case "Monument_with_Shipyard":
+            case "Heater_Arctic":
+            case "ObjectmenuCommuterHarbourScene":
+            case "IslandBarScene":
+            case "Matcher":
+
+            case "UplayProduct":
               // ignore
               break;
 
             case "TriggerCampaign":
             case "Trigger":
             case "PassiveTradeFeature":
+
               //Todo?
               break;
             //
@@ -1155,6 +1183,8 @@ namespace RDA.Templates {
             case "A7_QuestSelectObject":
             case "A7_QuestDivingBellTreasureMap":
             case "A7_QuestNewspaperArticle":
+            case "A7_QuestLostCargo":
+            case "A7_QuestExpedition":
               if (!element.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
                 result.AddSourceAsset(element, new HashSet<XElement> { element });
               }
@@ -1163,6 +1193,11 @@ namespace RDA.Templates {
             case "DivingBellShip":
               if (element.Descendants("DivingBell").FirstOrDefault()?.Descendants("ReplacementPool").Any(rp => rp.Value == id) == true) {
                 result.AddSourceAsset(element.GetProxyElement("Dive"), new HashSet<XElement> { element.GetProxyElement("Dive") });
+              }
+              break;  
+            case "AirShip":
+              if (element.Descendants("ItemReplacer").FirstOrDefault()?.Descendants("ItemReplacementPools").Any(rp => rp.Value == id) == true) {
+                result.AddSourceAsset(element.GetProxyElement("Pickup"), new HashSet<XElement> { element.GetProxyElement("Pickup") });
               }
               break;
 
@@ -1216,6 +1251,8 @@ namespace RDA.Templates {
             case "ExpeditionTrade":
             case "ExpeditionEvent":
             case "ExpeditionEventPool":
+            case "ExpeditionMapOption":
+            case "ExpeditionBribe":
               if (SavedSources.ContainsKey(key)) {
                 result.AddSourceAsset(SavedSources[key].Copy(), Details);
                 break;
@@ -1224,6 +1261,10 @@ namespace RDA.Templates {
             case "RewardPool":
             case "RewardItemPool":
             case "ResourcePool":
+            case "ItemReplacementPool":         //diving ship items to lootpools?
+            case "A7_QuestSubQuest":
+
+            case "ProductList":
 
               if (SavedSources.ContainsKey(key)) {
                 result.AddSourceAsset(SavedSources[key].Copy());

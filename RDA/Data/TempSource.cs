@@ -141,6 +141,8 @@ namespace RDA.Data {
         case "A7_QuestPhotography":
         case "A7_QuestSustain":
         case "A7_QuestNewspaperArticle":
+        case "A7_QuestLostCargo":
+        case "A7_QuestExpedition":
           var questgiver = Source.XPathSelectElement("Values/Quest/QuestGiver").Value;
           this.Text = new Description(questgiver).InsertBefore("-").InsertBefore(new Description("2734"));
           foreach (var item in element.Details.Select(e => new Description(e.XPathSelectElement("Values/Standard/GUID").Value)).Distinct()) {
@@ -170,6 +172,10 @@ namespace RDA.Data {
         case "Dive":
           this.Text = new Description("113420");
           this.Details = element.Details.Select(_ => new Description("113420")).ToList();
+          break;      
+        case "Pickup":
+          this.Text = new Description("500334");
+          this.Details = element.Details.Select(_ => new Description("500334")).ToList();
           break;
         case "Item":
           this.Text = new Description(Source.XPathSelectElement("Values/Standard/GUID").Value).InsertBefore("-").InsertBefore(new Description("-101"));

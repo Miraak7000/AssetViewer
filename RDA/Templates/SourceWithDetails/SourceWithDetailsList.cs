@@ -73,8 +73,8 @@ namespace RDA.Templates {
         }
       }
       else {
-        var u = element.Element("Template")?.Value;
-        if (u == "Dive" && this.FirstOrDefault(e => e.Source.Element("Template").Value == "Dive").Source != null) {
+        var templateName = element.Element("Template")?.Value;
+        if (templateName == "Dive" && this.FirstOrDefault(e => e.Source.Element("Template").Value == "Dive").Source != null) {
           var old2 = this.Where(l => l.Source.XPathSelectElement("Values/Standard/GUID").Value == assetID).ToList();
           var old3 = old2.Find(l => l.Source.Element("Template").Value == element.Element("Template").Value);
         }

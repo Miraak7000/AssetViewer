@@ -62,7 +62,8 @@ namespace RDA.Data {
           if (!this.Items.Contains(value)) this.Items.Add(value);
           break;
         default:
-          throw new NotImplementedException(asset.Element("Template").Value);
+          //throw new NotImplementedException(asset.Element("Template").Value);
+          break;
       }
     }
 

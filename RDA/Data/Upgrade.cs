@@ -107,6 +107,9 @@ namespace RDA.Data {
               unit = new Description("100580");
               //volunteer = new Description("100579");
               break;
+            //case "112669": //Polar Station
+            //  unit = new Description("114896");
+            //  break;
 
             default:
               throw new NotImplementedException(target);
@@ -121,13 +124,6 @@ namespace RDA.Data {
 
         case "HappinessIgnoresMorale":
           this.Text.AdditionalInformation = new Description("20326", DescriptionFontStyle.Light);
-          break;
-
-        case "AdditionalSupply":
-          this.Text = new Description("12687");
-          this.Text.Remove(" [AssetData([ItemAssetData([RefGuid]) InputBenefitModifierProduct(index)]) Text]");
-
-          value = Int32.Parse(element.Value);
           break;
 
         case "ChangedSupplyValueUpgrade":
@@ -150,6 +146,9 @@ namespace RDA.Data {
             case "190776": //Police Station
               this.Text = new Description("21509");
               //unit = new Description("100581");
+              break;    
+            case "112669": //Polar Station
+              this.Text = new Description("22983");
               break;
 
             case "190775": //Fire Station
@@ -181,6 +180,9 @@ namespace RDA.Data {
 
             case "190776": //Police Station
               this.Text = new Description("100581");
+              break;      
+            case "112669": //Polar Station
+              this.Text = new Description("114895");
               break;
 
             case "190775": //Fire Station
@@ -337,11 +339,8 @@ namespace RDA.Data {
           value = value ?? 0;
           break;
 
-        case "AdditionalMoney":
-          value = Int32.Parse(element.Value);
-          break;
-
         case "IncidentIllnessIncreaseUpgrade":
+        case "IncidentArcticIllnessIncreaseUpgrade":
         case "IncidentRiotIncreaseUpgrade":
         case "IncidentFireIncreaseUpgrade":
         case "IncidentExplosionIncreaseUpgrade":
@@ -374,8 +373,11 @@ namespace RDA.Data {
         case "NeededAreaPercentUpgrade":
           isPercent = true;
           break;
-
+          
         case "AdditionalHappiness":
+        case "AdditionalSupply":
+        case "AdditionalMoney":
+        case "AdditionalHeat":
           value = Int32.Parse(element.Value);
           break;
 
@@ -409,6 +411,7 @@ namespace RDA.Data {
         case "MoralePowerUpgrade":
         case "ScrapAmountLevelUpgrade":
         case "PierSpeedUpgrade":
+        case "HeatRangeUpgrade":
           break;
 
         case "MinPickupTimeUpgrade":
