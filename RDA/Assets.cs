@@ -176,7 +176,6 @@ namespace RDA {
         if (item.Element("AllocationIcon")?.Value is string val) {
           Icons[item.Element("Allocation").Value] = val;
         }
-        
       }
 
       var texts = Original
@@ -309,7 +308,7 @@ namespace RDA {
       KeyToIdDict.Add("BaseDamageUpgrade", "2334");
       KeyToIdDict.Add("AccuracyUpgrade", "12062");
       KeyToIdDict.Add("PierSpeedUpgrade", "15197");
-      KeyToIdDict.Add("HeatRangeUpgrade", "116349");
+      KeyToIdDict.Add("HeatRangeUpgrade", "2321");
 
       //Override Allocation Tradeship
       KeyToIdDict["Tradeship"] = "12006";

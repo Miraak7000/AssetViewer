@@ -79,7 +79,7 @@ namespace RDA {
       //Program.Quests();
 
       // Expeditions
-      //Program.Expeditions();
+      //Program.Expeditions(); //Obsolete
       Program.ProcessingExpeditionEvents();
 
       //Tourism
@@ -204,8 +204,6 @@ namespace RDA {
     private static void ProcessingThirdParty() {
       Console.WriteLine("Processing Third Party");
       var result = new List<ThirdParty>();
-      var u = Assets
-         .Original.Descendants("Asset").Where(a => a.Element("Template")?.Value == "Profile_3rdParty" || a.Element("Template")?.Value == "Profile_3rdParty_Pirate");
 
       var assets = Assets
          .Original
