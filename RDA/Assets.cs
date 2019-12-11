@@ -166,6 +166,7 @@ namespace RDA {
 
     private static void SetIcons() {
       Console.WriteLine("Setting up Icons");
+
       var asset = Original
          .Descendants("Asset")
          .FirstOrDefault(a => a.Element("Template")?.Value == "ItemBalancing")?
@@ -173,7 +174,8 @@ namespace RDA {
          .Element("ItemConfig");
       //AllocationIcons
       foreach (var item in asset.Element("AllocationIcons").Elements()) {
-        Icons[item.Element("Allocation").Value] = item.Element("AllocationIcon").Value;
+        if(item.Element("AllocationIcon") != null)
+            Icons[item.Element("Allocation").Value] = item.Element("AllocationIcon").Value;
       }
 
       var texts = Original
@@ -186,6 +188,7 @@ namespace RDA {
 
       Icons.Add("Ship", "data/ui/2kimages/main/3dicons/icon_ship.png");
       Icons.Add("Warship", "data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png");
+      Icons.Add("AirShip", "data/ui/2kimages/main/3dicons/ships/icon_airship.png");
       Icons.Add("RadiusBuilding", "data/ui/2kimages/main/3dicons/icon_guildhouse.png");
       Icons.Add("12508", "data/ui/2kimages/main/icons/icon_electricity.png");         //Need Elektrizität
       Icons.Add("15798", "data/ui/2kimages/main/icons/icon_generic_expedition.png");  //PerkMale

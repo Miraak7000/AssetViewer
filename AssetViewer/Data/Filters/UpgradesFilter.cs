@@ -24,7 +24,7 @@ namespace AssetViewer.Data.Filters {
 
     public override IEnumerable<String> CurrentValues => ItemsHolder
          .GetResultWithoutFilter(this)
-         .SelectMany(s => s.AllUpgrades)
+ //        .SelectMany(s => s.AllUpgrades)
          .Select(s => s.Text.CurrentLang)
          .Distinct()
          .Where(l => !string.IsNullOrWhiteSpace(l))

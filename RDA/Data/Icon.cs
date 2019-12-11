@@ -23,7 +23,7 @@ namespace RDA.Data {
         return;
       }
       var fileNames = Directory.GetFiles(searchPath, $"{searchPattern}??.png", SearchOption.TopDirectoryOnly);
-      if (fileNames.Length != 1)
+      if (fileNames.Length < 1)
         throw new FileNotFoundException();
       this.Filename = filename;
       var file = File.ReadAllBytes(fileNames[0]);

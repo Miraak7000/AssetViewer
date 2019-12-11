@@ -48,6 +48,8 @@ namespace RDA.Templates {
     public List<Upgrade> RepairCraneUpgrades { get; set; }
     public List<Upgrade> KontorUpgrades { get; set; }
     public List<Upgrade> IncidentInfectableUpgrades { get; set; }
+
+    public List<Upgrade> IncidentArcticIllnessIncreaseUpgrades { get; set; }
     public List<Upgrade> IncidentInfluencerUpgrades { get; set; }
     public List<Upgrade> ItemGeneratorUpgrades { get; set; }
     public List<Upgrade> ItemActionUpgrades { get; set; }
@@ -309,7 +311,11 @@ namespace RDA.Templates {
             this.ProcessElement_IncidentInfectableUpgrades(element);
             break;
 
-          case "IncidentInfluencerUpgrade":
+          case "IncidentArcticIllnessIncreaseUpgrade":
+            this.ProcessElement_IncidentArcticIllnessIncreaseUpgrades(element);
+            break;
+
+         case "IncidentInfluencerUpgrade":
             this.ProcessElement_IncidentInfluencerUpgrades(element);
             break;
 
@@ -453,8 +459,12 @@ namespace RDA.Templates {
             case "Colony01":
               this.ItemSocketSet.Add(new Upgrade { Text = new Description("113395"), Additionals = Assets.Buffs[region.Element("SetBuff").Value].AllUpgrades.ToList() });
               break;
+            case "Arctic Region":
+              this.ItemSocketSet.Add(new Upgrade { Text = new Description("115487"), Additionals = Assets.Buffs[region.Element("SetBuff").Value].AllUpgrades.ToList() });
+              break;
             default:
               throw new NotImplementedException();
+              break;
           }
           this.EffectTargets.AddRange(Assets.Buffs[region.Element("SetBuff").Value].EffectTargets);
         }
@@ -630,7 +640,19 @@ namespace RDA.Templates {
       }
     }
 
-    private void ProcessElement_IncidentInfluencerUpgrades(XElement element) {
+        private void ProcessElement_IncidentArcticIllnessIncreaseUpgrades(XElement element)
+        {
+            if (element.HasElements)
+            {
+                this.IncidentArcticIllnessIncreaseUpgrades = new List<Upgrade>();
+                foreach (var item in element.Elements())
+                {
+                    this.IncidentArcticIllnessIncreaseUpgrades.Add(new Upgrade(item));
+                }
+            }
+        }
+
+        private void ProcessElement_IncidentInfluencerUpgrades(XElement element) {
       if (element.HasElements) {
         foreach (var item in element.Elements()) {
           if (item.Name.LocalName == "RiotInfluenceUpgrade")
@@ -638,6 +660,8 @@ namespace RDA.Templates {
           if (item.Name.LocalName == "FireInfluenceUpgrade")
             continue;
           if (item.Name.LocalName == "IllnessInfluenceUpgrade")
+            continue;
+          if (item.Name.LocalName == "IncidentArcticIllnessIncreaseUpgrade")
             continue;
           if (item.Name.LocalName == "DistanceUpgrade")
             continue;
@@ -938,31 +962,37 @@ namespace RDA.Templates {
     }
 
     private void ProcessElement_ItemWithUI(XElement element) {
-      var actions = element.XPathSelectElement("ItemActions/Values/ActionList/Actions").Elements("Item").Select(a => a.Element("Action"));
-      if (actions != null) {
-        this.ItemWithUI = new List<Upgrade>();
-        foreach (var action in actions) {
-          switch (action.Element("Template").Value) {
-            case "ActionStartTreasureMapQuest":
-              this.ItemWithUI.Add(new Upgrade(action));
-              break;
-            case "ActionAddResource":
-              //Todo: new with update 05 maybe implement. (dokuments that becomes deko buildings)
-              break;
-            case "ActionTriggerTextPopup":
-            case "ActionRegisterTrigger":
-            case "ActionNotification":
-            case "ActionReplaceItem":
-              //Ignore
-              break;
+            if (element.HasElements)
+            {
+                var actions = element.XPathSelectElement("ItemActions/Values/ActionList/Actions").Elements("Item").Select(a => a.Element("Action"));
+                if (actions != null)
+                {
+                    this.ItemWithUI = new List<Upgrade>();
+                    foreach (var action in actions)
+                    {
+                        switch (action.Element("Template").Value)
+                        {
+                            case "ActionStartTreasureMapQuest":
+                                this.ItemWithUI.Add(new Upgrade(action));
+                                break;
+                            case "ActionAddResource":
+                                //Todo: new with update 05 maybe implement. (dokuments that becomes deko buildings)
+                                break;
+                            case "ActionTriggerTextPopup":
+                            case "ActionRegisterTrigger":
+                            case "ActionNotification":
+                            case "ActionReplaceItem":
+                                //Ignore
+                                break;
 
-            default:
-              Debug.WriteLine(action.Element("Template").Value);
-              throw new NotImplementedException();
-              break;
-          }
-        }
-      }
+                            default:
+                                Debug.WriteLine(action.Element("Template").Value);
+                                //              throw new NotImplementedException();
+                                break;
+                        }
+                    }
+                }
+            }
     }
 
     private void ProcessElement_Building(XElement element) {

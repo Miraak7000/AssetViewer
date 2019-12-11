@@ -29,7 +29,7 @@ namespace RDA.Data {
             this.ProcessElement_Quest(element);
             break;
           case "Reward":
-            if (element.HasElements) throw new ArgumentOutOfRangeException();
+//            if (element.HasElements) throw new ArgumentOutOfRangeException();
             break;
           default:
             throw new NotImplementedException(element.Name.LocalName);

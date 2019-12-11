@@ -47,6 +47,7 @@ namespace AssetViewer.Templates {
     public List<Upgrade> VisitorHarborUpgrades { get; set; }
     public List<Upgrade> RepairCraneUpgrades { get; set; }
     public List<Upgrade> IncidentInfectableUpgrades { get; set; }
+    public List<Upgrade> IncidentArcticIllnessIncreaseUpgrades { get; set; }
     public List<Upgrade> IncidentInfluencerUpgrades { get; set; }
     public List<Upgrade> ItemActionUpgrades { get; set; }
     public List<Upgrade> KontorUpgrades { get; set; }
@@ -149,6 +150,9 @@ namespace AssetViewer.Templates {
       }
       if (asset.Element("KontorUpgrades")?.HasElements ?? false) {
         this.KontorUpgrades = asset.Element("KontorUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
+      }
+      if (asset.Element("IncidentArcticIllnessIncreaseUpgrades")?.HasElements ?? false) {
+        this.IncidentArcticIllnessIncreaseUpgrades = asset.Element("IncidentArcticIllnessIncreaseUpgrades").Elements().Select(s => new Upgrade(s)).ToList();
       }
       if (asset.Element("IncidentInfectableUpgrades")?.HasElements ?? false) {
         this.IncidentInfectableUpgrades = asset.Element("IncidentInfectableUpgrades").Elements().Select(s => new Upgrade(s)).ToList();

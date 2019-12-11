@@ -29,7 +29,7 @@ namespace RDA {
       //Helper.ExtractText();
       //Helper.ExtractTemplateNames(Program.PathRoot + @"\Original\assets.xml");
 
-      Assets.Init("Update 05");
+      Assets.Init("Update 06");
 
       // World Fair
       Monument.Create();

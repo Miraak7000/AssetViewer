@@ -50,6 +50,7 @@ namespace RDA.Data {
         case "ActiveItem":
         case "ItemSpecialAction":
         case "ItemSpecialActionVisualEffect":
+        case "ItemWithUI":
           // TODO: need to be implemented first
           break;
         case "CultureItem":

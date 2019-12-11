@@ -108,6 +108,10 @@ namespace RDA.Data {
               //volunteer = new Description("100579");
               break;
 
+            case "112669": //Ranger Station
+              this.Text = new Description("142724");
+              break;
+
             default:
               throw new NotImplementedException(target);
           }
@@ -158,6 +162,10 @@ namespace RDA.Data {
               //unit = new Description("100579");
               break;
 
+            case "112669": //Ranger Station
+              this.Text = new Description("142724");
+              break;
+
             default:
               throw new NotImplementedException(target);
           }
@@ -187,6 +195,10 @@ namespace RDA.Data {
             case "1010463": //Fire Department
               this.Text = new Description("100579");
               break;
+
+            case "112669": //Ranger Station
+               this.Text = new Description("142724");
+               break;
 
             default:
               throw new NotImplementedException(target);
@@ -345,6 +357,7 @@ namespace RDA.Data {
         case "IncidentRiotIncreaseUpgrade":
         case "IncidentFireIncreaseUpgrade":
         case "IncidentExplosionIncreaseUpgrade":
+        case "IncidentArcticIllnessIncreaseUpgrade":
           factor = 10;
           isPercent = true;
           break;
@@ -376,6 +389,7 @@ namespace RDA.Data {
           break;
 
         case "AdditionalHappiness":
+        case "AdditionalHeat":
           value = Int32.Parse(element.Value);
           break;
 
