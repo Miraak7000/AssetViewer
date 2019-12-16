@@ -173,7 +173,9 @@ namespace RDA {
          .Element("ItemConfig");
       //AllocationIcons
       foreach (var item in asset.Element("AllocationIcons").Elements()) {
-        Icons[item.Element("Allocation").Value] = item.Element("AllocationIcon").Value;
+        if (item.Element("AllocationIcon")?.Value is string val) {
+          Icons[item.Element("Allocation").Value] = val;
+        }
       }
 
       var texts = Original
@@ -270,6 +272,7 @@ namespace RDA {
       KeyToIdDict.Add("HappinessIgnoresMorale", "15811");
       KeyToIdDict.Add("ResolverUnitMovementSpeedUpgrade", "12014");
       KeyToIdDict.Add("IncidentIllnessIncreaseUpgrade", "12226");
+      KeyToIdDict.Add("IncidentArcticIllnessIncreaseUpgrade", "22982");
       KeyToIdDict.Add("ActiveTradePriceInPercent", "15198");
       KeyToIdDict.Add("ForwardSpeedUpgrade", "2339");
       KeyToIdDict.Add("IgnoreWeightFactorUpgrade", "15261");
@@ -291,6 +294,8 @@ namespace RDA {
       KeyToIdDict.Add("PublicServiceFullSatisfactionDistance", "2321");
       KeyToIdDict.Add("NeedProvideNeedUpgrade", "12315");
       KeyToIdDict.Add("AdditionalMoney", "12690");
+      KeyToIdDict.Add("AdditionalHeat", "116350");
+      KeyToIdDict.Add("AdditionalSupply", "22286");
       KeyToIdDict.Add("IncidentFireIncreaseUpgrade", "12225");
       KeyToIdDict.Add("IncidentExplosionIncreaseUpgrade", "21489");
       KeyToIdDict.Add("GoodConsumptionUpgrade", "21386");
@@ -303,6 +308,7 @@ namespace RDA {
       KeyToIdDict.Add("BaseDamageUpgrade", "2334");
       KeyToIdDict.Add("AccuracyUpgrade", "12062");
       KeyToIdDict.Add("PierSpeedUpgrade", "15197");
+      KeyToIdDict.Add("HeatRangeUpgrade", "2321");
 
       //Override Allocation Tradeship
       KeyToIdDict["Tradeship"] = "12006";

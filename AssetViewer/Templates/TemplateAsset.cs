@@ -57,6 +57,7 @@ namespace AssetViewer.Templates {
     public List<Upgrade> CraftableItemUpgrades { get; set; }
     public List<Upgrade> PierUpgrade { get; set; }
     public List<Upgrade> ItemSocketSet { get; set; }
+    public List<Upgrade> HeaterUpgrade { get; set; }
 
     public IEnumerable<Upgrade> AllUpgrades => typeof(TemplateAsset)
             .GetProperties()
@@ -204,6 +205,9 @@ namespace AssetViewer.Templates {
       }
       if (asset.Element("ItemSocketSet")?.HasElements ?? false) {
         this.ItemSocketSet = asset.Element("ItemSocketSet").Elements().Select(s => new Upgrade(s)).ToList();
+      }  
+      if (asset.Element("HeaterUpgrade")?.HasElements ?? false) {
+        this.HeaterUpgrade = asset.Element("HeaterUpgrade").Elements().Select(s => new Upgrade(s)).ToList();
       }
     }
 

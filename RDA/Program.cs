@@ -4,6 +4,7 @@ using RDA.Templates;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
@@ -29,34 +30,34 @@ namespace RDA {
       //Helper.ExtractText();
       //Helper.ExtractTemplateNames(Program.PathRoot + @"\Original\assets.xml");
 
-      Assets.Init("Update 05");
+      Assets.Init("Update 06");
 
       // World Fair
       Monument.Create();
 
       // Assets
-      //Program.ProcessingItems("ActiveItem");
-      //Program.ProcessingItems("ItemSpecialActionVisualEffect");
-      //Program.ProcessingItems("ItemSpecialAction");
-      //Program.ProcessingItems("GuildhouseItem");
-      //Program.ProcessingItems("TownhallItem");
-      //Program.ProcessingItems("HarborOfficeItem");
-      //Program.ProcessingItems("VehicleItem");
-      //Program.ProcessingItems("ShipSpecialist");
-      //Program.ProcessingItems("CultureItem");
-      //Program.ProcessingItems("ItemWithUI");
-      //Program.ProcessingItems("FluffItem");
-      //Program.ProcessingItems("QuestItemMagistrate");
-      //Program.ProcessingItems("StartExpeditionItem");
-      //Program.ProcessingItems("QuestItem");
+      Program.ProcessingItems("ActiveItem");
+      Program.ProcessingItems("ItemSpecialActionVisualEffect");
+      Program.ProcessingItems("ItemSpecialAction");
+      Program.ProcessingItems("GuildhouseItem");
+      Program.ProcessingItems("TownhallItem");
+      Program.ProcessingItems("HarborOfficeItem");
+      Program.ProcessingItems("VehicleItem");
+      Program.ProcessingItems("ShipSpecialist");
+      Program.ProcessingItems("CultureItem");
+      Program.ProcessingItems("ItemWithUI");
+      Program.ProcessingItems("FluffItem");
+      Program.ProcessingItems("QuestItemMagistrate");
+      Program.ProcessingItems("StartExpeditionItem");
+      Program.ProcessingItems("QuestItem");
 
-      //Program.ProcessingItems("Product");
+      Program.ProcessingItems("Product");
 
-      ////Buildings
-      //Program.ProcessingItems("BuildPermitBuilding");
-      //Program.ProcessingItems("BuildPermitModules");
-      //Program.ProcessingItems("CultureModule");
-      //Program.ProcessingItems("OrnamentalModule");
+      //Buildings
+      Program.ProcessingItems("BuildPermitBuilding");
+      Program.ProcessingItems("BuildPermitModules");
+      Program.ProcessingItems("CultureModule");
+      Program.ProcessingItems("OrnamentalModule");
 
       //ItemsSets
       Program.ProcessingItems("ItemSet", false);
@@ -67,6 +68,7 @@ namespace RDA {
       //Excluded
       //Program.ProcessingItems("ItemConstructionPlan");
 
+      //RewardPools
       Program.ProcessingRewardPools();
 
       //Third Party
@@ -77,15 +79,15 @@ namespace RDA {
       //Program.Quests();
 
       // Expeditions
-      //Program.Expeditions();
-      //Program.ProcessingExpeditionEvents();
+      //Program.Expeditions(); //Obsolete
+      Program.ProcessingExpeditionEvents();
 
       //Tourism
       Program.ProcessingTourism();
 
       //Save Descriptions
       //Set True for fully new Set of Descriptions.
-      Program.SaveDescriptions(false);
+      Program.SaveDescriptions(true);
     }
 
     #endregion Methods
@@ -202,6 +204,7 @@ namespace RDA {
     private static void ProcessingThirdParty() {
       Console.WriteLine("Processing Third Party");
       var result = new List<ThirdParty>();
+
       var assets = Assets
          .Original
          .XPathSelectElements($"//Asset[Template='Profile_3rdParty' or Template='Profile_3rdParty_Pirate']")
@@ -411,7 +414,8 @@ namespace RDA {
           var xOptions = new XElement("Options");
           xPath.Add(xOptions);
           foreach (var option in path) {
-            if (option.XPathSelectElement("Template").Value == "ExpeditionOption") {
+            if (option.XPathSelectElement("Template").Value == "ExpeditionOption" ||
+                option.XPathSelectElement("Template").Value == "ExpeditionMapOption") {
               var xOption = new XElement("Option");
               xOptions.AddFirst(xOption);
               xOption.Add(new XAttribute("ID", option.XPathSelectElement("Values/Standard/GUID").Value));
@@ -472,9 +476,16 @@ namespace RDA {
               continue;
             }
             switch (element.Element("Template").Value) {
+              case "GuildhouseItem":
+              case "Expedition":
+                //Ignore
+                break;
+
               case "ExpeditionDecision":
               case "ExpeditionOption":
               case "ExpeditionTrade":
+              case "ExpeditionMapOption":
+              case "ExpeditionBribe":
                 Details.Add(element);
                 VerasFindExpeditionEvents(key, Details, result);
                 break;
@@ -486,6 +497,7 @@ namespace RDA {
                 break;
 
               default:
+                Debug.WriteLine(element.Element("Template").Value);
                 //ignore
                 break;
             }
