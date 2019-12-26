@@ -39,8 +39,19 @@ namespace RDA.Data {
             this.Text = new Description(Assets.KeyToIdDict[ID]);
             break;
 
+          case "1010470":
           case "CultureItem":
             this.ID = "Zoo";
+            this.Text = new Description(Assets.KeyToIdDict[ID]);
+            break;
+
+          case "1010471":
+            this.ID = "Museum";
+            this.Text = new Description(Assets.KeyToIdDict[ID]);
+            break;
+
+          case "110935":
+            this.ID = "BotanicGarden";
             this.Text = new Description(Assets.KeyToIdDict[ID]);
             break;
 

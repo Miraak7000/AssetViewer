@@ -17,6 +17,7 @@ namespace RDA {
 
     public static void Init(string version = "Release") {
       Version = version;
+      LoadDefaultValues();
       Console.WriteLine("Load Asset.xml");
       Original = XmlLoader.LoadXml(Program.PathRoot + @"\Original\assets.xml");
       SolveXmlInheritance();
@@ -37,26 +38,30 @@ namespace RDA {
     #region Fields
 
     internal static XElement Original;
+
+    internal static Dictionary<string, XElement> DefaultValues = new Dictionary<string, XElement>();
+
     internal static Dictionary<string, Dictionary<Languages, string>> Descriptions = new Dictionary<string, Dictionary<Languages, string>>();
+
     internal static Dictionary<string, Dictionary<Languages, string>> CustomDescriptions = new Dictionary<string, Dictionary<Languages, string>>();
+
     internal static string Version = "Release";
+
     internal static Dictionary<string, XElement> TourismStati = new Dictionary<string, XElement>();
+
     internal static Dictionary<string, Asset> Buffs = new Dictionary<string, Asset>();
+
     internal static Dictionary<string, string> Icons = new Dictionary<string, string>();
+
     internal static Dictionary<string, string> KeyToIdDict = new Dictionary<string, string>();
 
     #endregion Fields
 
-    private static void AddBaseValues(this XElement asset, XElement standarts) {
-      foreach (var property in standarts.Elements()) {
-        if (asset.Element(property.Name.LocalName) is XElement current) {
-          if (property.HasElements) {
-            AddBaseValues(current, property);
-          }
-        }
-        else {
-          asset.Add(property);
-        }
+    private static void LoadDefaultValues() {
+      Console.WriteLine("Load Standart Values");
+      var xml = XmlLoader.LoadXml(Program.PathRoot + @"\Original\properties.xml");
+      foreach (var item in xml.Descendants("DefaultValues").SelectMany(dv => dv.Elements())) {
+        DefaultValues.Add(item.Name.LocalName, item);
       }
     }
 
@@ -103,7 +108,7 @@ namespace RDA {
         if (baseGuid != null) {
           var baseAsset = Original.Descendants("Asset").FirstOrDefault(a => a.XPathSelectElement("Values/Standard/GUID")?.Value == baseGuid);
           if (baseAsset != null) {
-            item.AddBaseValues(baseAsset);
+            item.AddStandardValues(baseAsset);
           }
         }
       }
@@ -220,9 +225,9 @@ namespace RDA {
        .Element("Values")
        .Element("ExpeditionFeature");
       //ExpeditionRegions
-      foreach (var item in asset.Element("ExpeditionRegions").Elements()) {
-        KeyToIdDict.Add(item.Name.LocalName, item.Element("Region").Value);
-      }
+      //foreach (var item in asset.Element("ExpeditionRegions").Elements()) {
+      //  KeyToIdDict.Add(item.Name.LocalName, item.Element("Region").Value);
+      //}
       //AttributeNames
       foreach (var item in asset.Element("AttributeNames").Elements()) {
         KeyToIdDict.Add(item.Name.LocalName, item.Element("Name").Value);
@@ -266,6 +271,7 @@ namespace RDA {
       KeyToIdDict.Add("ConstructionTimeInPercent", "12678");
       KeyToIdDict.Add("PassiveTradeGoodGenUpgrade", "12920");
       KeyToIdDict.Add("AddAssemblyOptions", "12693");
+      KeyToIdDict.Add("AssemblyOptions", "12693");
       KeyToIdDict.Add("MoraleDamage", "21588");
       KeyToIdDict.Add("HitpointDamage", "21587");
       KeyToIdDict.Add("SpecialUnitHappinessThresholdUpgrade", "19625");
@@ -309,6 +315,22 @@ namespace RDA {
       KeyToIdDict.Add("AccuracyUpgrade", "12062");
       KeyToIdDict.Add("PierSpeedUpgrade", "15197");
       KeyToIdDict.Add("HeatRangeUpgrade", "2321");
+      KeyToIdDict.Add("Attractiveness", "145011");
+      KeyToIdDict.Add("HasPollution", "11279");
+      KeyToIdDict.Add("InfluenceRadius", "12504");
+      KeyToIdDict.Add("NumOfPiers", "15250");
+      KeyToIdDict.Add("LoadingSpeed", "15197");
+      KeyToIdDict.Add("MinLoadingTime", "12504");
+      KeyToIdDict.Add("AttackRange", "12021");
+      KeyToIdDict.Add("LineOfSightRange", "15266");
+      KeyToIdDict.Add("ReloadTime", "17230");
+      KeyToIdDict.Add("HealRadius", "12504");
+      KeyToIdDict.Add("BaseDamage", "2334");
+      KeyToIdDict.Add("HealPerMinute", "15196");
+      KeyToIdDict.Add("MaxTrainCount", "14865");
+      KeyToIdDict.Add("Moderate", "5000000");
+      KeyToIdDict.Add("Colony01", "5000001");
+      KeyToIdDict.Add("Arctic", "160001");
 
       //Override Allocation Tradeship
       KeyToIdDict["Tradeship"] = "12006";

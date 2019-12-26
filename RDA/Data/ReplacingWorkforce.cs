@@ -15,8 +15,7 @@ namespace RDA.Data {
     #region Constructors
 
     public ReplacingWorkforce(String id) {
-      var desc = new Description("-2");
-      this.Text = new Description(id).InsertBefore(desc);
+      this.Text = new Description("20116").Replace("[AssetData([ItemAssetData([RefGuid]) ReplacingWorkforce]) Text]", new Description(id));
       this.Value = String.Empty;
     }
 

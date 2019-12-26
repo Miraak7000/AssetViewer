@@ -22,7 +22,7 @@ namespace AssetViewer.Data.Filters {
         else if (SelectedValue == App.Descriptions["-1023"]) {
           result = result.OrderBy(w => w.Rarity.CurrentLang, RarityComparer.Default);
         }
-        else if (SelectedValue == App.Descriptions["-1202"]) {
+        else if (SelectedValue == App.Descriptions["12725"]) {
           result = result.OrderBy(w => string.IsNullOrWhiteSpace(w.TradePrice) ? 0 : Int32.Parse(w.TradePrice ?? "0", NumberStyles.Any));
         }
       }
@@ -50,7 +50,7 @@ namespace AssetViewer.Data.Filters {
       new Description("-1200"),
       new Description("-1201"),
       new Description("-1023"),
-      new Description("-1202")
+      new Description("12725")
     };
 
     #endregion Fields

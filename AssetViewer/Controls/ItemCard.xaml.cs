@@ -78,7 +78,13 @@ namespace AssetViewer.Controls {
 
     public String TradeText {
       get {
-        return App.Descriptions["-1202"];
+        return App.Descriptions["12725"];
+      }
+    }
+
+    public String HiringFeeText {
+      get {
+        return App.Descriptions["21731"];
       }
     }
 
@@ -91,6 +97,36 @@ namespace AssetViewer.Controls {
     public String ItemTrasmutable {
       get {
         return App.Descriptions["113817"];
+      }
+    }
+
+    public String ProductionText {
+      get {
+        return App.Descriptions["100006"];
+      }
+    }
+
+    public String ConsumptionText {
+      get {
+        return App.Descriptions["100007"];
+      }
+    }
+
+    public String BuildCostsText {
+      get {
+        return App.Descriptions["100008"];
+      }
+    }
+
+    public String MaintenanceText {
+      get {
+        return App.Descriptions["100409"];
+      }
+    }
+
+    public String UpgradeCostsText {
+      get {
+        return App.Descriptions["2001775"];
       }
     }
 

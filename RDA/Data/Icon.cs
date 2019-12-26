@@ -9,7 +9,11 @@ namespace RDA.Data {
 
     #region Properties
 
-    public static string[] IgnoredDirectorys { get; set; } = new[] { $@"{Program.PathRoot}\Resources\data\ui\2kimages\main\3dicons\Temporary_Ornament" };
+    public static string[] IgnoredDirectorys { get; set; } = new[] {
+      $@"{Program.PathRoot}\Resources\data\ui\2kimages\main\3dicons\Temporary_Ornament",
+      $@"{Program.PathRoot}\Resources\data\level_editor\random_slots_icons"
+    };
+
     public String Filename { get; set; }
 
     #endregion Properties
@@ -23,8 +27,12 @@ namespace RDA.Data {
         return;
       }
       var fileNames = Directory.GetFiles(searchPath, $"{searchPattern}??.png", SearchOption.TopDirectoryOnly);
-      if (fileNames.Length != 1)
-        throw new FileNotFoundException();
+      if (fileNames.Length != 1) {
+        if (searchPattern.Contains("seasonal")) {
+          return;
+        }
+        throw new NotImplementedException();
+      }
       this.Filename = filename;
       var file = File.ReadAllBytes(fileNames[0]);
       // publish icon

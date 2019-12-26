@@ -86,6 +86,14 @@ namespace RDA.Data {
       return this;
     }
 
+    public Description AppendInBraces(Description description) {
+      foreach (var item in Languages.ToArray()) {
+        Languages[item.Key] = $"{item.Value} ({(description.Languages.TryGetValue(item.Key, out var value) ? value : description.Languages.First().Value)})";
+      }
+      SetNewId();
+      return this;
+    }
+
     public Description Remove(String value) {
       foreach (var item in Languages.ToArray()) {
         Languages[item.Key] = item.Value.Replace(HttpUtility.HtmlDecode(value), "");

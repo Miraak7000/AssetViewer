@@ -1,9 +1,9 @@
-﻿using System;
+﻿using RDA.Templates;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
 using System.Xml.XPath;
-using RDA.Templates;
 
 // ReSharper disable PossibleNullReferenceException
 // ReSharper disable AssignNullToNotNullAttribute
@@ -18,18 +18,18 @@ namespace RDA {
   /// </summary>
   public static class Monument {
 
-    #region Public Methods
+    #region Methods
+
     public static void Create() {
       Monument.MonumentEventCategory();
       Monument.MonumentEvent();
       Monument.MonumentThreshold();
     }
-    #endregion
 
-    #region Private Methods
     private static void MonumentEventCategory() {
       var result = new List<Asset>();
       var monumentCategories = Assets.Original.XPathSelectElements("//Asset[Template='MonumentEventCategory']").ToArray();
+      Console.WriteLine("Create Monument");
       foreach (var monumentCategory in monumentCategories) {
         Console.WriteLine(monumentCategory.XPathSelectElement("Values/Standard/GUID").Value);
         var asset = new Asset(monumentCategory, false);
@@ -71,8 +71,7 @@ namespace RDA {
       document.Save($@"{Program.PathRoot}\Modified\Assets_MonumentThreshold.xml");
       document.Save($@"{Program.PathViewer}\Resources\Assets\MonumentThreshold.xml");
     }
-    #endregion
 
+    #endregion Methods
   }
-
 }

@@ -24,6 +24,8 @@ namespace RDA.Templates {
       var assetID = element.XPathSelectElement("Values/Standard/GUID").Value;
       var expeditionName = element.XPathSelectElement("Values/Expedition/ExpeditionName")?.Value;
       var questGiver = element.XPathSelectElement("Values/Quest/QuestGiver")?.Value;
+
+      //Expedition
       if (expeditionName != null) {
         var expedition = this.Find(w => w.Source.XPathSelectElement("Values/Expedition/ExpeditionName")?.Value == expeditionName);
         if (expedition.Source == null) {
@@ -31,11 +33,26 @@ namespace RDA.Templates {
         }
         else {
           foreach (var item in details) {
+            var itemID = item.XPathSelectElement("Values/Standard/GUID").Value;
+            var itemTemplate = item.Element("Template").Value;
+
+            if (expedition.Details.Any(i => i.XPathSelectElement("Values/Standard/GUID").Value == itemID && i.Element("Template").Value == itemTemplate)) {
+              continue;
+            }
+            if (item.Element("Template").Value == "Expedition") {
+              var subExpeditionName = item.XPathSelectElement("Values/Standard/Name")?.Value;
+              if (expedition.Details.Any(i => i.XPathSelectElement("Values/Standard/Name")?.Value == subExpeditionName)) {
+                continue;
+              }
+            }
+
             expedition.Details.Add(item);
           }
         }
         return;
       }
+
+      //Quest
       else if (questGiver != null) {
         var quest = this.Find(w => w.Source.XPathSelectElement("Values/Quest/QuestGiver")?.Value == questGiver);
         if (quest.Source == null) {
@@ -48,10 +65,32 @@ namespace RDA.Templates {
         }
         return;
       }
+
       var old = this.Find(l => l.Source.XPathSelectElement("Values/Standard/GUID").Value == assetID && l.Source.Element("Template").Value == element.Element("Template").Value);
 
-      // Special Diving exception
-      if (element.Element("Template")?.Value == "Dive") {
+      //Tourism
+      if (element.Element("Template")?.Value == "TourismFeature") {
+        if (old.Source != null) {
+          foreach (var pool in details) {
+            var poolTemplate = pool.Element("Template").Value;
+            if (old.Details.Any(e =>
+            e.Element("Template").Value == poolTemplate &&
+            e.Element("Item").Element("Pool").Value == pool.Element("Item").Element("Pool").Value)) {
+              return;
+            }
+            else {
+              old.Details.Add(pool);
+            }
+          }
+        }
+        else {
+          this.Add(new SourceWithDetails(element, details));
+        }
+        return;
+      }
+
+      //Special Diving exception
+      if (element.Element("Template")?.Value == "Dive" || element.Element("Template")?.Value == "Pickup" || element.Element("Template")?.Value == "Crafting") {
         old = this.Find(l => l.Source.Element("Template").Value == element.Element("Template").Value);
         if (old.Source != null) {
           return;
@@ -68,23 +107,21 @@ namespace RDA.Templates {
             if (old.Details.Any(i => i.XPathSelectElement("Values/Standard/GUID")?.Value == itemID && i.Element("Template")?.Value == itemTemplate)) {
               continue;
             }
+            if (old.Details.Any(i => i == item)) {
+              continue;
+            }
           }
           old.Details.Add(item);
         }
       }
       else {
-        var templateName = element.Element("Template")?.Value;
-        if (templateName == "Dive" && this.FirstOrDefault(e => e.Source.Element("Template").Value == "Dive").Source != null) {
-          var old2 = this.Where(l => l.Source.XPathSelectElement("Values/Standard/GUID").Value == assetID).ToList();
-          var old3 = old2.Find(l => l.Source.Element("Template").Value == element.Element("Template").Value);
-        }
         this.Add(new SourceWithDetails(element, details));
       }
     }
 
-    public void AddSourceAsset(SourceWithDetailsList input, Details details = null) {
+    public void AddSourceAsset(SourceWithDetailsList input/*, Details details = null*/) {
       foreach (var item in input) {
-        this.AddSourceAsset(item.Source, details?.Items ?? item.Details);
+        this.AddSourceAsset(item.Source, /*details?.Items ??*/ item.Details);
       }
     }
 

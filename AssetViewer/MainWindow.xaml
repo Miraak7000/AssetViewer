@@ -47,12 +47,14 @@
         <TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=-105}" />
         <TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=-110}" />
         <TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=-120}" />
-        <TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=-121}" />
+        <TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=-4}" />
       </ComboBox>
       <ComboBox x:Name="ComboBoxLanguage" Grid.Column="4" SelectedIndex="0">
         <TextBlock Text="English" />
         <TextBlock Text="Deutsch" />
         <TextBlock Text="한국어" />
+        <TextBlock Text="Français" />
+        <TextBlock Text="Italiano" />
       </ComboBox>
     </Grid>
     <Grid Grid.Row="2">
