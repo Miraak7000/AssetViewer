@@ -350,9 +350,9 @@ namespace RDA.Data {
 
         case "IncidentIllnessIncreaseUpgrade":
         case "IncidentArcticIllnessIncreaseUpgrade":
-        case "IncidentRiotIncreaseUpgrade":
         case "IncidentFireIncreaseUpgrade":
         case "IncidentExplosionIncreaseUpgrade":
+        case "ScrapAmountLevelUpgrade":
           factor = 10;
           isPercent = true;
           break;
@@ -405,6 +405,13 @@ namespace RDA.Data {
           this.Value = null;
           break;
 
+        case "IncidentRiotIncreaseUpgrade":
+          if (element.Element("Percental")?.Value != "1") {
+            factor = 10;
+          }
+          isPercent = true;
+          break;
+
         case "AccuracyUpgrade":
         case "LineOfSightRangeUpgrade":
         case "LoadingSpeedUpgrade":
@@ -429,7 +436,6 @@ namespace RDA.Data {
         case "BlockHostileTakeover":
         case "MaintainanceUpgrade":
         case "MoralePowerUpgrade":
-        case "ScrapAmountLevelUpgrade":
         case "PierSpeedUpgrade":
         case "HeatRangeUpgrade":
         case "HasPollution":

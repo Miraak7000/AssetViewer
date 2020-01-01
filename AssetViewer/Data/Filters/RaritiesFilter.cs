@@ -15,7 +15,12 @@ namespace AssetViewer.Data.Filters {
         return result.Where(w => CompareToRarity(w.Rarity.CurrentLang));
       }
       else if (!String.IsNullOrEmpty(SelectedValue)) {
-        return result.Where(w => w.Rarity.CurrentLang == SelectedValue);
+        if (Comparison == ValueComparisons.UnEqual) {
+          return result.Where(w => w.Rarity.CurrentLang != SelectedValue);
+        }
+        else {
+          return result.Where(w => w.Rarity.CurrentLang == SelectedValue);
+        }
       }
       return result;
     };

@@ -11,7 +11,12 @@ namespace AssetViewer.Data.Filters {
 
     public override Func<IQueryable<TemplateAsset>, IQueryable<TemplateAsset>> FilterFunc => result => {
       if (!String.IsNullOrEmpty(SelectedValue))
-        result = result.Where(w => w.EffectTargets != null && w.EffectTargets.SelectMany(e => e.Buildings).Any(s => s.CurrentLang == SelectedValue));
+        if (Comparison == ValueComparisons.UnEqual) {
+          result = result.Where(w => w.EffectTargets != null && !w.EffectTargets.SelectMany(e => e.Buildings).Any(s => s.CurrentLang == SelectedValue));
+        }
+        else {
+          result = result.Where(w => w.EffectTargets != null && w.EffectTargets.SelectMany(e => e.Buildings).Any(s => s.CurrentLang == SelectedValue));
+        }
       return result;
     };
 
@@ -33,6 +38,7 @@ namespace AssetViewer.Data.Filters {
     #region Constructors
 
     public TargetBuildingFilter(ItemsHolder itemsHolder) : base(itemsHolder) {
+      ComparisonType = FilterType.Selection;           ComparisonType = FilterType.Selection;
     }
 
     #endregion Constructors

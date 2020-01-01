@@ -18,6 +18,9 @@ namespace AssetViewer.Data.Filters {
            .Concat(result.Where(w => w.AllUpgrades != null && w.AllUpgrades.Any(l => l.Text != null && l.Text.CurrentLang == SelectedValue && l.Additionals != null && l.Additionals.Any(a => a.Text != null && a.Text.CurrentLang == SelectedComparisonValue))))
            .Concat(result.Where(w => w.AllUpgrades != null && w.AllUpgrades.Any(l => l.Text != null && l.Text.CurrentLang == SelectedValue && l.Text.AdditionalInformation != null && l.Text.AdditionalInformation.CurrentLang == SelectedComparisonValue)));
         }
+        else if (Comparison == ValueComparisons.UnEqual) {
+          result = result.Where(w => w.AllUpgrades != null && !w.AllUpgrades.Any(l => l.Text != null && l.Text.CurrentLang == SelectedValue));
+        }
         else {
           result = result.Where(w => w.AllUpgrades != null && w.AllUpgrades.Any(l => l.Text != null && l.Text.CurrentLang == SelectedValue));
         }

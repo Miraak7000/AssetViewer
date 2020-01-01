@@ -15,7 +15,9 @@
   Loaded="GuildhouseItem_OnLoaded"
   SnapsToDevicePixels="True"
   Unloaded="UserControl_Unloaded"
-  mc:Ignorable="d">
+  mc:Ignorable="d"
+xmlns:dataContextNamespace="clr-namespace:AssetViewer.Controls;assembly=AssetViewer"
+d:DataContext="{d:DesignInstance dataContextNamespace:GuildhouseItem}">
 
   <UserControl.Resources>
     <BooleanToVisibilityConverter x:Key="BooleanToVisibility" />

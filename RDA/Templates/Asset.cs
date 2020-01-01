@@ -1341,21 +1341,7 @@ namespace RDA.Templates {
             case "ExpeditionEventPool":
               if (SavedSources.ContainsKey(key)) {
                 var saved = SavedSources[key].Copy();
-                if (Details.Items.Count() == 2) {
-                  var ExEvent = Details.FirstOrDefault(d => d.Element("Template").Value == "ExpeditionEvent");
-                  var path = "";
-                  var decition = Details.First();
-                  path = decition.XPathSelectElement("Values/Standard/Name").Value.Split(' ').Last();
-                  var expi = ExEvent.GetProxyElement(path);
-
-                  foreach (var source in saved) {
-                    foreach (var detail in source.Details.Where(d => d.Element("Asset")?.Element("Template").Value == "ExpeditionEvent").ToArray()) {
-                      source.Details.Remove(detail);
-                      source.Details.Add(expi);
-                    }
-                  }
-                }
-                result.AddSourceAsset(saved);
+                AddFoundedExpeditionEvents(Details, result, saved);
               }
 
               result.AddSourceAsset(FindSources(key, Details));
@@ -1369,20 +1355,7 @@ namespace RDA.Templates {
               if (Details.Items.Count() == 2) {
                 if (SavedSources.ContainsKey(key)) {
                   var saved = SavedSources[key].Copy();
-
-                  var ExEvent = Details.FirstOrDefault(d => d.Element("Template").Value == "ExpeditionEvent");
-                  var path = "";
-                  var decition = Details.First();
-                  path = decition.XPathSelectElement("Values/Standard/Name").Value.Split(' ').Last();
-                  var expi = ExEvent.GetProxyElement(path);
-
-                  foreach (var source in saved) {
-                    foreach (var detail in source.Details.Where(d => d.Element("Asset")?.Element("Template").Value == "ExpeditionEvent").ToArray()) {
-                      source.Details.Remove(detail);
-                      source.Details.Add(expi);
-                    }
-                  }
-                  result.AddSourceAsset(saved);
+                  AddFoundedExpeditionEvents(Details, result, saved);
                   break;
                 }
               }
@@ -1412,6 +1385,24 @@ namespace RDA.Templates {
       }
 
       return mainResult;
+    }
+
+    private static void AddFoundedExpeditionEvents(Details Details, SourceWithDetailsList result, SourceWithDetailsList saved) {
+      if (Details.Items.Count() == 2) {
+        var ExEvent = Details.FirstOrDefault(d => d.Element("Template").Value == "ExpeditionEvent");
+        var path = "";
+        var decition = Details.First();
+        path = decition.XPathSelectElement("Values/Standard/Name").Value.Split(' ').Last();
+        var expi = ExEvent.GetProxyElement(path);
+
+        foreach (var source in saved) {
+          foreach (var detail in source.Details.Where(d => d.Element("Asset")?.Element("Template").Value == "ExpeditionEvent").ToArray()) {
+            source.Details.Remove(detail);
+            source.Details.Add(expi);
+          }
+        }
+      }
+      result.AddSourceAsset(saved);
     }
 
     private IEnumerable<string> GetProgession(XElement element, string id) {

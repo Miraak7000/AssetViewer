@@ -15,7 +15,12 @@ namespace AssetViewer.Data.Filters {
       if (!String.IsNullOrEmpty(SelectedComparisonValue))
         result = result.Where(w => CompareToReleaseVersion(w.ReleaseVersion));
       if (!String.IsNullOrEmpty(SelectedValue))
-        result = result.Where(w => w.ReleaseVersion == SelectedValue);
+        if (Comparison == ValueComparisons.UnEqual) {
+          result = result.Where(w => w.ReleaseVersion != SelectedValue);
+        }
+        else {
+          result = result.Where(w => w.ReleaseVersion == SelectedValue);
+        }
       return result;
     };
 

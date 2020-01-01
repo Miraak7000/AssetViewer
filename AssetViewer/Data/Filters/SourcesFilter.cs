@@ -19,7 +19,12 @@ namespace AssetViewer.Data.Filters {
         }
       }
       else if (!String.IsNullOrEmpty(SelectedValue)) {
-        result = result.Where(w => w.Sources != null && w.Sources.Any(l => l.Text.CurrentLang == SelectedValue));
+        if (Comparison == ValueComparisons.UnEqual) {
+          result = result.Where(w => w.Sources != null && !w.Sources.Any(l => l.Text.CurrentLang == SelectedValue));
+        }
+        else {
+          result = result.Where(w => w.Sources != null && w.Sources.Any(l => l.Text.CurrentLang == SelectedValue));
+        }
       }
 
       return result;

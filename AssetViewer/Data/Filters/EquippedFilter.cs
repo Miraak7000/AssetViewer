@@ -10,8 +10,13 @@ namespace AssetViewer.Data.Filters {
     #region Properties
 
     public override Func<IQueryable<TemplateAsset>, IQueryable<TemplateAsset>> FilterFunc => result => {
-      if (!String.IsNullOrEmpty(SelectedValue as string))
-        result = result.Where(w => w.Allocation != null && w.Allocation.Text.CurrentLang == SelectedValue);
+      if (!String.IsNullOrEmpty(SelectedValue))
+        if (Comparison == ValueComparisons.UnEqual) {
+          result = result.Where(w => w.Allocation != null && w.Allocation.Text.CurrentLang != SelectedValue);
+        }
+        else {
+          result = result.Where(w => w.Allocation != null && w.Allocation.Text.CurrentLang == SelectedValue);
+        }
       return result;
     };
 

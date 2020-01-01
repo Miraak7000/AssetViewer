@@ -7,11 +7,17 @@ namespace AssetViewer.Data.Filters {
 
   public class ItemTypesFilter : BaseFilter<string> {
     public ItemTypesFilter(ItemsHolder itemsHolder) : base(itemsHolder) {
+      ComparisonType = FilterType.Selection;
     }
 
     public override Func<IQueryable<TemplateAsset>, IQueryable<TemplateAsset>> FilterFunc => result => {
       if (!String.IsNullOrEmpty(SelectedValue))
-        result = result.Where(w => w.ItemType == SelectedValue);
+        if (Comparison == ValueComparisons.UnEqual) {
+          result = result.Where(w => w.ItemType != SelectedValue);
+        }
+        else {
+          result = result.Where(w => w.ItemType == SelectedValue);
+        }
       return result;
     };
 

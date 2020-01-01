@@ -14,6 +14,9 @@ namespace AssetViewer.Data.Filters {
         if (ComparisonType != FilterType.None && !String.IsNullOrEmpty(SelectedComparisonValue)) {
           result = result.Where(w => w.AllUpgrades != null && w.AllUpgrades.Any(l => l.Text != null && l.Text.CurrentLang == SelectedValue && CompareToUpgrade(l)));
         }
+        else if (Comparison == ValueComparisons.UnEqual) {
+          result = result.Where(w => w.AllUpgrades != null && !w.AllUpgrades.Any(l => l.Text != null && l.Text.CurrentLang == SelectedValue));
+        }
         else {
           result = result.Where(w => w.AllUpgrades != null && w.AllUpgrades.Any(l => l.Text != null && l.Text.CurrentLang == SelectedValue));
         }
