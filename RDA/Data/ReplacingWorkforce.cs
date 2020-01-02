@@ -16,7 +16,7 @@ namespace RDA.Data {
 
     public ReplacingWorkforce(String id) {
       var desc = new Description("-2");
-      this.Text = new Description(id).InsertBefore(desc);
+      this.Text = new Description(id).InsertBeforeOrFormat(desc, "$T");
       this.Value = String.Empty;
     }
 

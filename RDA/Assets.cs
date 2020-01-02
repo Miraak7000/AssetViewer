@@ -134,6 +134,16 @@ namespace RDA {
           foreach (var remove in removes) {
             str = str.Replace(remove, "");
           }
+		  
+          // walkaround to fix the problem that rarity "common" and "uncommon" are translated to the same Chinese word
+          if (language == Languages.Chinese && item.Key == "118002" && str == "普通")
+          {
+            str = "普通（白色）";
+          }
+          if (language == Languages.Chinese && item.Key == "118003" && str == "普通")
+          {
+            str = "普通（绿色）";
+          }
 
           if (Descriptions.ContainsKey(item.Key)) {
             Descriptions[item.Key].Add(language, str);

@@ -69,6 +69,30 @@ namespace RDA.Data {
       SetNewId();
       return this;
     }
+	
+    public Description InsertBeforeOrFormat(Description description, string format)
+    {
+      foreach (var item in Languages.ToArray())
+      {
+        if (description.Languages.TryGetValue(item.Key, out string desc_text))
+        {
+          if (desc_text.Contains(format))
+          {
+            Languages[item.Key] = desc_text.Replace(format, item.Value);
+          }
+          else
+          {
+            Languages[item.Key] = $"{desc_text} {item.Value}";
+          }
+        }
+        else
+        {
+          Languages[item.Key] = $"{(description.Languages.First().Value)} {item.Value}";
+        }
+      }
+      SetNewId();
+      return this;
+    }
 
     public Description Append(string value) {
       foreach (var item in Languages.ToArray()) {
