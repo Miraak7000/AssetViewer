@@ -3,9 +3,7 @@ using System.Linq;
 using System.Xml.Linq;
 
 namespace RDA {
-
   public static class XmlLoader {
-
     #region Methods
 
     public static XElement LoadXml(string path) {

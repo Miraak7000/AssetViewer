@@ -7,9 +7,7 @@ using System.Xml.XPath;
 // ReSharper disable PossibleMultipleEnumeration
 // ReSharper disable PossibleNullReferenceException
 namespace RDA.Data {
-
   public class RewardPool {
-
     #region Properties
 
     public String ID { get; set; }

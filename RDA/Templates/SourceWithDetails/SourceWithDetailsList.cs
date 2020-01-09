@@ -4,9 +4,7 @@ using System.Xml.Linq;
 using System.Xml.XPath;
 
 namespace RDA.Templates {
-
   public class SourceWithDetailsList : List<SourceWithDetails> {
-
     #region Constructors
 
     public SourceWithDetailsList() : base() {

@@ -3,9 +3,7 @@ using System.Linq;
 using System.Xml.Linq;
 
 namespace RDA.Data {
-
   public class Modules {
-
     #region Properties
 
     public string Limit { get; set; }

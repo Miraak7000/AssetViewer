@@ -6,15 +6,21 @@
   xmlns:local="clr-namespace:AssetViewer"
   StartupUri="MainWindow.xaml">
   <Application.Resources>
-    <DataTemplate DataType="{x:Type data:Description}">
-      <Grid SnapsToDevicePixels="True">
-        <TextBlock
-          Margin="0,1,0,1"
-          local:TextBlockExtensions.DescFontStyle="{Binding FontStyle}"
-          Foreground="#FFFFE4AD"
-          Text="{Binding CurrentLang}"
-          TextWrapping="Wrap" />
-      </Grid>
-    </DataTemplate>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="FilterExpander.xaml" />
+        <ResourceDictionary Source="TreeViewItemStyle1.xaml" />
+      </ResourceDictionary.MergedDictionaries>
+      <DataTemplate DataType="{x:Type data:Description}">
+        <Grid SnapsToDevicePixels="True">
+          <TextBlock
+            Margin="0,1,0,1"
+            local:TextBlockExtensions.DescFontStyle="{Binding FontStyle}"
+            Foreground="#FFFFE4AD"
+            Text="{Binding CurrentLang}"
+            TextWrapping="Wrap" />
+        </Grid>
+      </DataTemplate>
+    </ResourceDictionary>
   </Application.Resources>
 </Application>

@@ -5,32 +5,24 @@ using System.Linq;
 
 namespace AssetViewer.Data.Filters {
 
-  public class TargetsFilter : BaseFilter<string> {
+  public class TargetsFilter : BaseFilter<Description> {
 
     #region Properties
 
-    public override Func<IQueryable<TemplateAsset>, IQueryable<TemplateAsset>> FilterFunc => result => {
-      if (!String.IsNullOrEmpty(SelectedValue))
+    public override Func<IEnumerable<TemplateAsset>, IEnumerable<TemplateAsset>> FilterFunc => result => {
+      if (SelectedValue != null && SelectedValue.ID != 0) {
         if (Comparison == ValueComparisons.UnEqual) {
-          result = result.Where(w => w.EffectTargets != null && !w.EffectTargets.Any(s => s.Text.CurrentLang == SelectedValue));
+          return result.Where(w => w.EffectTargets?.Any(s => s.Text.Equals(SelectedValue)) == false);
         }
         else {
-          result = result.Where(w => w.EffectTargets != null && w.EffectTargets.Any(s => s.Text.CurrentLang == SelectedValue));
+          return result.Where(w => w.EffectTargets?.Any(s => s.Text.Equals(SelectedValue)) == true);
         }
-      return result;
+      }
+
+      return null;
     };
 
-    public override IEnumerable<String> CurrentValues => ItemsHolder
-         .GetResultWithoutFilter(this)
-         .SelectMany(s => s.EffectTargets)
-         .Select(s => s.Text.CurrentLang)
-         .Distinct()
-         .Where(l => !string.IsNullOrWhiteSpace(l))
-         .Concat(new[] { string.Empty })
-         .OrderBy(o => o)
-         .ToList();
-
-    public override string DescriptionID => "-1003";
+    public override int DescriptionID => -1003;
 
     #endregion Properties
 
@@ -41,5 +33,20 @@ namespace AssetViewer.Data.Filters {
     }
 
     #endregion Constructors
+
+    #region Methods
+
+    public override void SetCurrenValues() {
+      CurrentValues = ItemsHolder
+         .GetResultWithoutFilter(this)
+         .SelectMany(s => s.EffectTargets)
+         .Select(s => s.Text)
+         .Distinct()
+         .Concat(new[] { new Description(0) })
+         .OrderBy(o => o.CurrentLang)
+         .ToList();
+    }
+
+    #endregion Methods
   }
 }

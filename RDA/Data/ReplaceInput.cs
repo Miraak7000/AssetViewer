@@ -2,9 +2,7 @@
 using System.Xml.Linq;
 
 namespace RDA.Data {
-
   public class ReplaceInput {
-
     #region Properties
 
     public Description Text { get; set; }

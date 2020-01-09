@@ -1,13 +1,10 @@
-﻿//using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Linq;
 
 namespace RDA.Templates {
-
   public class Details : IEnumerable<XElement> {
-
     #region Properties
 
     public List<String> PreviousIDs { get; set; } = new List<string>();

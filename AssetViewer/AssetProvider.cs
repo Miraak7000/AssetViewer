@@ -10,18 +10,21 @@ using System.Xml.Linq;
 
 namespace AssetViewer {
 
-  public static class ItemProvider {
+  public static class AssetProvider {
 
     #region Properties
 
-    public static Dictionary<string, TemplateAsset> Items { get; } = new Dictionary<string, TemplateAsset>();
-    public static Dictionary<string, Pool> Pools { get; } = new Dictionary<string, Pool>();
+    public static Dictionary<int, TemplateAsset> Items { get; } = new Dictionary<int, TemplateAsset>();
+    public static Dictionary<int, TemplateAsset> Buildings { get; } = new Dictionary<int, TemplateAsset>();
+    public static Dictionary<int, TemplateAsset> ItemSets { get; } = new Dictionary<int, TemplateAsset>();
+    public static Dictionary<int, TemplateAsset> FestivalBuffs { get; } = new Dictionary<int, TemplateAsset>();
+    public static Dictionary<int, Pool> Pools { get; } = new Dictionary<int, Pool>();
 
     #endregion Properties
 
     #region Constructors
 
-    static ItemProvider() {
+    static AssetProvider() {
       using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.RewardPools.xml"))
       using (var reader = new StreamReader(stream)) {
         var document = XDocument.Parse(reader.ReadToEnd()).Root;
@@ -30,7 +33,7 @@ namespace AssetViewer {
         }
       }
 
-      var arr = new[] {
+      var items = new[] {
                 "AssetViewer.Resources.Assets.GuildhouseItem.xml",
                 "AssetViewer.Resources.Assets.HarborOfficeItem.xml",
                 "AssetViewer.Resources.Assets.TownhallItem.xml",
@@ -46,7 +49,18 @@ namespace AssetViewer {
                 "AssetViewer.Resources.Assets.QuestItemMagistrate.xml",
                 "AssetViewer.Resources.Assets.StartExpeditionItem.xml",
                 "AssetViewer.Resources.Assets.QuestItem.xml",
-                "AssetViewer.Resources.Assets.ItemSet.xml",
+            };
+
+      foreach (var str in items) {
+        using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(str))
+        using (var reader = new StreamReader(stream)) {
+          var document = XDocument.Parse(reader.ReadToEnd()).Root;
+          foreach (var item in document.Elements().Select(s => new TemplateAsset(s))) {
+            Items.Add(item.ID, item);
+          }
+        }
+      }
+      var buildings = new[] {
                 "AssetViewer.Resources.Assets.BuildPermitBuilding.xml",
                 "AssetViewer.Resources.Assets.BuildPermitModules.xml",
                 "AssetViewer.Resources.Assets.CultureModule.xml",
@@ -100,15 +114,30 @@ namespace AssetViewer {
                 "AssetViewer.Resources.Assets.Warehouse.xml",
                 "AssetViewer.Resources.Assets.WorkAreaSlot.xml",
                 "AssetViewer.Resources.Assets.WorkforceConnector.xml",
-            };
+      };
 
-      foreach (var str in arr) {
+      foreach (var str in buildings) {
         using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(str))
         using (var reader = new StreamReader(stream)) {
           var document = XDocument.Parse(reader.ReadToEnd()).Root;
           foreach (var item in document.Elements().Select(s => new TemplateAsset(s))) {
-            Items.Add(item.ID, item);
+            Buildings.Add(item.ID, item);
           }
+        }
+      }
+
+      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.ItemSet.xml"))
+      using (var reader = new StreamReader(stream)) {
+        var document = XDocument.Parse(reader.ReadToEnd()).Root;
+        foreach (var item in document.Elements().Select(s => new TemplateAsset(s))) {
+          ItemSets.Add(item.ID, item);
+        }
+      }
+      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.FestivalBuff.xml"))
+      using (var reader = new StreamReader(stream)) {
+        var document = XDocument.Parse(reader.ReadToEnd()).Root;
+        foreach (var item in document.Elements().Select(s => new TemplateAsset(s))) {
+          FestivalBuffs.Add(item.ID, item);
         }
       }
     }
@@ -117,20 +146,21 @@ namespace AssetViewer {
 
     #region Methods
 
-    public static IEnumerable<TemplateAsset> GetItemsById(this IEnumerable<string> ids) {
-      return ids.SelectMany(l => ItemProvider.GetItemsById(l)).Distinct() ?? Enumerable.Empty<TemplateAsset>();
+    public static IEnumerable<TemplateAsset> GetItemsById(this IEnumerable<int> ids) {
+      return ids.SelectMany(l => AssetProvider.GetItemsById(l)).Distinct() ?? Enumerable.Empty<TemplateAsset>();
     }
 
-    public static IEnumerable<TemplateAsset> GetItemsById(this string id) {
+    public static IEnumerable<TemplateAsset> GetItemsById(this int id) {
       foreach (var item in SearchItems(id).Distinct()) {
         yield return item;
       }
 
-      IEnumerable<TemplateAsset> SearchItems(string searchid) {
-        if (searchid == null) {
-        }
-        else if (Items.ContainsKey(searchid)) {
+      IEnumerable<TemplateAsset> SearchItems(int searchid) {
+        if (Items.ContainsKey(searchid)) {
           yield return Items[searchid];
+        }
+        else if (Buildings.ContainsKey(searchid)) {
+          yield return Buildings[searchid];
         }
         else if (Pools.ContainsKey(searchid)) {
           foreach (var item in Pools[searchid].Items) {

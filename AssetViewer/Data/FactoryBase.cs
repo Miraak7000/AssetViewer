@@ -9,8 +9,8 @@ namespace AssetViewer.Data {
     #region Properties
 
     public string CycleTime { get; set; }
-    public List<Upgrade> FactoryInputs { get; private set; }
-    public List<Upgrade> FactoryOutputs { get; private set; }
+    public List<Upgrade> FactoryInputs { get; }
+    public List<Upgrade> FactoryOutputs { get; }
 
     #endregion Properties
 

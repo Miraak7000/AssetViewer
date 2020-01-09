@@ -67,8 +67,27 @@
     <Compile Include="Controls\ExpeditionEvents.xaml.cs">
       <DependentUpon>ExpeditionEvents.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\ItemCard.xaml.cs">
+    <Compile Include="Controls\Buildings.xaml.cs">
+      <DependentUpon>Buildings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CityFestival.xaml.cs">
+      <DependentUpon>CityFestival.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Parts\ExtendedFilters.xaml.cs">
+      <DependentUpon>ExtendedFilters.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Parts\ItemList.xaml.cs">
+      <DependentUpon>ItemList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ItemSets.xaml.cs">
+      <DependentUpon>ItemSets.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Parts\ItemCard.xaml.cs">
       <DependentUpon>ItemCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ItemsBase.cs" />
+    <Compile Include="Controls\PoolToTree.xaml.cs">
+      <DependentUpon>PoolToTree.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\ThirdParty.xaml.cs">
       <DependentUpon>ThirdParty.xaml</DependentUpon>
@@ -79,11 +98,13 @@
     <Compile Include="Converter\EnumDescriptionTypeConverter.cs" />
     <Compile Include="Converter\GlobalDescriptionConverter.cs" />
     <Compile Include="Converter\PriorityMultiValueConverter.cs" />
+    <Compile Include="Converter\GuidToItemConverter.cs" />
     <Compile Include="Converter\RewardToItemConverter.cs" />
     <Compile Include="Converter\VisibilityConverter.cs" />
     <Compile Include="Data\Allocation.cs" />
     <Compile Include="Data\Description.cs" />
     <Compile Include="Data\DescriptionFontStyle.cs" />
+    <Compile Include="Data\DummyDescription.cs" />
     <Compile Include="Data\EffectTarget.cs" />
     <Compile Include="Data\Expedition\EventOption.cs" />
     <Compile Include="Data\Expedition\EventOptionRequirement.cs" />
@@ -91,18 +112,24 @@
     <Compile Include="Data\Expedition\ExpeditionEvent.cs" />
     <Compile Include="Data\Expedition\RewardsItem.cs" />
     <Compile Include="Data\FactoryBase.cs" />
+    <Compile Include="Data\Filters\Base\ItemsHolderCityFestival.cs" />
+    <Compile Include="Data\Filters\Base\ItemsHolderItemSets.cs" />
+    <Compile Include="Data\Filters\BuildableFilter.cs" />
     <Compile Include="Data\Filters\Base\BaseFilter.cs" />
     <Compile Include="Data\Filters\Base\FilterHolder.cs" />
     <Compile Include="Data\Filters\Base\IFilter.cs" />
+    <Compile Include="Data\Filters\Base\ItemsHolderGuildhouse.cs" />
+    <Compile Include="Data\Filters\Base\ItemsHolderBuildings.cs" />
     <Compile Include="Data\Filters\Base\ItemsHolder.cs" />
     <Compile Include="Data\Filters\Enums\FilterType.cs" />
+    <Compile Include="Data\Filters\ExpeditionAttributeFilter.cs" />
     <Compile Include="Data\Filters\ReleaseVersionsFilter.cs" />
     <Compile Include="Data\Filters\SearchTextFilter.cs" />
     <Compile Include="Data\Filters\OrderFilter.cs" />
     <Compile Include="Data\Filters\TargetBuildingFilter.cs" />
     <Compile Include="Data\Filters\TargetsFilter.cs" />
     <Compile Include="Data\Filters\EquippedFilter.cs" />
-    <Compile Include="Data\Filters\SpecificUpgradesFilter.cs" />
+    <Compile Include="Data\Filters\ItemSetFilter.cs" />
     <Compile Include="Data\Filters\UpgradesFilter.cs" />
     <Compile Include="Data\Filters\SourcesFilter.cs" />
     <Compile Include="Data\Filters\AvailableFilter.cs" />
@@ -121,10 +148,36 @@
     <Compile Include="Extensions\EnumBindingSourceExtension.cs" />
     <Compile Include="Extensions\TextBlockExtensions.cs" />
     <Compile Include="Extensions\XmlExtensions.cs" />
-    <Compile Include="ItemProvider.cs" />
+    <Compile Include="AssetProvider.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
     <Compile Include="Templates\TemplateAsset.cs" />
     <Compile Include="Templates\TemplateThirdParty.cs" />
     <Page Include="Controls\ExpeditionEvents.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Buildings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\CityFestival.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Parts\ExtendedFilters.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Parts\ItemList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ItemSets.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -132,9 +185,12 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\ItemCard.xaml">
+    <Page Include="Controls\Parts\ItemCard.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\PoolToTree.xaml">
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\ThirdParty.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -145,6 +201,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\Tourism.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FilterExpander.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -168,6 +228,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="TreeViewItemStyle1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -1894,6 +1958,47 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_okapi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_military_ship_frigatte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_military_ship_liner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_military_ship_monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_ship_battle_cruiser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_ship_gunboat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_tradeship_clipper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_tradeship_schooner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_resident_artisan.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_resident_engineer.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_resident_farmer.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_resident_investor.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_resident_worker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Assets\Texts_Chinese.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Assets\FestivalBuff.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

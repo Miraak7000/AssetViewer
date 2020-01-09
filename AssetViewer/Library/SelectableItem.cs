@@ -13,8 +13,10 @@ namespace AssetViewer.Library {
 
     public String Icon {
       get {
-        if (String.IsNullOrEmpty(this.IconFilename))
+        if (String.IsNullOrEmpty(this.IconFilename)) {
           return null;
+        }
+
         return $"/AssetViewer;component/Resources/{this.IconFilename}";
       }
     }

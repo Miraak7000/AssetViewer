@@ -6,9 +6,7 @@ using System.Xml.Linq;
 using System.Xml.XPath;
 
 namespace RDA.Data {
-
   public class Upgrade {
-
     #region Properties
 
     public Description Text { get; set; }
@@ -28,7 +26,7 @@ namespace RDA.Data {
     }
 
     public Upgrade(XElement element) {
-      var isPercent = element.Element("Percental") == null ? false : element.Element("Percental").Value == "1";
+      var isPercent = element.Element("Percental")?.Value == "1";
       var value = element.Element("Value") == null ? null : (Int32?)Int32.Parse(element.Element("Value").Value);
       var factor = 1;
       if (Assets.KeyToIdDict.ContainsKey(element.Name.LocalName)) {
@@ -40,7 +38,7 @@ namespace RDA.Data {
           switch (element.Element("Template").Value) {
             case "ActionStartTreasureMapQuest":
               this.Additionals = new List<Upgrade>();
-              this.Text = new Description("2734").Append("-").Append(new Description(element.XPathSelectElement("Values/ActionStartTreasureMapQuest/TreasureSessionOrRegion").Value));
+              this.Text = new Description("2734").AppendWithSpace("-").AppendWithSpace(new Description(element.XPathSelectElement("Values/ActionStartTreasureMapQuest/TreasureSessionOrRegion").Value));
               this.Additionals.Add(new Upgrade { Text = new Description(element.XPathSelectElement("Values/ActionStartTreasureMapQuest/TreasureMapQuest").Value) });
               break;
 
@@ -66,7 +64,7 @@ namespace RDA.Data {
 
         case "AddAssemblyOptions":
           this.Text.AdditionalInformation = new Description("20325", DescriptionFontStyle.Light);
-          var descs = element.Elements("Items").Select(i => new Description(i.Element("NewOption").Value));
+          var descs = element.Elements("Item").Select(i => new Description(i.Element("NewOption").Value));
           this.Text.AdditionalInformation.Replace("[ItemAssetData([RefGuid]) AddAssemblyOptionsFormatted]", descs, (s) => string.Join(", ", s));
           break;
 
@@ -102,17 +100,14 @@ namespace RDA.Data {
           switch (target) {
             case "190777": //Hospital
               unit = new Description("100584");
-              //volunteer = new Description("100583");
               break;
 
             case "190776": //Police Station
               unit = new Description("100582");
-              //volunteer = new Description("100581");
               break;
 
             case "190775": //Fire Station
               unit = new Description("100580");
-              //volunteer = new Description("100579");
               break;
             //case "112669": //Polar Station
             //  unit = new Description("114896");
@@ -143,16 +138,13 @@ namespace RDA.Data {
 
         case "ResolverUnitDecreaseUpgrade":
           target = element.Parent.Parent.Element("ItemEffect").Element("EffectTargets").Elements().FirstOrDefault()?.Element("GUID").Value;
-          unit = null;
           switch (target) {
             case "190777": //Hospital
               this.Text = new Description("12012");
-              //unit = new Description("100583");
               break;
 
             case "190776": //Police Station
               this.Text = new Description("21509");
-              //unit = new Description("100581");
               break;
 
             case "112669": //Polar Station
@@ -162,7 +154,6 @@ namespace RDA.Data {
             case "190775": //Fire Station
             case "1010463": //Fire Department
               this.Text = new Description("21508");
-              //unit = new Description("100579");
               break;
 
             default:
@@ -180,7 +171,7 @@ namespace RDA.Data {
             .FirstOrDefault()?
             .Element("GUID")
             .Value;
-          unit = null;
+    
           switch (target) {
             case "190777": //Hospital
               this.Text = new Description("100583");
@@ -361,7 +352,7 @@ namespace RDA.Data {
         case "Cannon":
         case "BigBertha":
         case "Torpedo":
-          value = -Convert.ToInt32((100M - (100M * Decimal.Parse(element.Element("Factor").Value, CultureInfo.InvariantCulture))));
+          value = -Convert.ToInt32(100M - (100M * Decimal.Parse(element.Element("Factor").Value, CultureInfo.InvariantCulture)));
           isPercent = true;
           break;
 
@@ -468,8 +459,9 @@ namespace RDA.Data {
 
         case "Residence7":
           this.Text = new Description("22379");
-          this.Additionals = new List<Upgrade>();
-          this.Additionals.Add(new Upgrade() { Text = new Description(element.Element("PopulationLevel7").Value), Value = element.Element("ResidentMax").Value });
+          this.Additionals = new List<Upgrade> {
+            new Upgrade() { Text = new Description(element.Element("PopulationLevel7").Value), Value = element.Element("ResidentMax").Value }
+          };
           break;
 
         default:

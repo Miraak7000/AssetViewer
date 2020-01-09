@@ -2,9 +2,7 @@
 using System.Xml.Linq;
 
 namespace RDA.Data {
-
   public class Allocation {
-
     #region Properties
 
     public String ID { get; set; }

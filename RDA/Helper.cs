@@ -12,9 +12,7 @@ using System.Xml.XPath;
 // ReSharper disable InconsistentNaming
 // ReSharper disable PossibleNullReferenceException
 namespace RDA {
-
   public static class Helper {
-
     #region Methods
 
     // Extraction

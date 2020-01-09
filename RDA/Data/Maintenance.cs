@@ -3,9 +3,7 @@ using System.Linq;
 using System.Xml.Linq;
 
 namespace RDA.Data {
-
   public class Maintenance {
-
     #region Properties
 
     public List<Upgrade> MaintenanceCosts { get; set; } = new List<Upgrade>();

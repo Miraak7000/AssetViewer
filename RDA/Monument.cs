@@ -12,12 +12,10 @@ using System.Xml.XPath;
 // ReSharper disable IdentifierTypo
 // ReSharper disable CoVariantArrayConversion
 namespace RDA {
-
   /// <summary>
   ///   World Fair
   /// </summary>
   public static class Monument {
-
     #region Methods
 
     public static void Create() {

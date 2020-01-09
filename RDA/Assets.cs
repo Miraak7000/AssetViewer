@@ -10,16 +10,17 @@ using System.Xml.Linq;
 using System.Xml.XPath;
 
 namespace RDA {
-
   public static class Assets {
-
     #region Methods
+    static Assets() {
+      Original = XmlLoader.LoadXml(Program.PathRoot + @"\Original\assets.xml");
+    }
 
     public static void Init(string version = "Release") {
       Version = version;
       LoadDefaultValues();
       Console.WriteLine("Load Asset.xml");
-      Original = XmlLoader.LoadXml(Program.PathRoot + @"\Original\assets.xml");
+      
       SolveXmlInheritance();
       LoadDescriptions();
       LoadCustomDescriptions();
@@ -37,23 +38,23 @@ namespace RDA {
 
     #region Fields
 
-    internal static XElement Original;
+    internal readonly static XElement Original;
 
-    internal static Dictionary<string, XElement> DefaultValues = new Dictionary<string, XElement>();
+    internal readonly static Dictionary<string, XElement> DefaultValues = new Dictionary<string, XElement>();
 
-    internal static Dictionary<string, Dictionary<Languages, string>> Descriptions = new Dictionary<string, Dictionary<Languages, string>>();
+    internal readonly static Dictionary<string, Dictionary<Languages, string>> Descriptions = new Dictionary<string, Dictionary<Languages, string>>();
 
-    internal static Dictionary<string, Dictionary<Languages, string>> CustomDescriptions = new Dictionary<string, Dictionary<Languages, string>>();
+    internal readonly static Dictionary<string, Dictionary<Languages, string>> CustomDescriptions = new Dictionary<string, Dictionary<Languages, string>>();
 
     internal static string Version = "Release";
 
-    internal static Dictionary<string, XElement> TourismStati = new Dictionary<string, XElement>();
+    internal readonly static Dictionary<string, XElement> TourismStati = new Dictionary<string, XElement>();
 
-    internal static Dictionary<string, Asset> Buffs = new Dictionary<string, Asset>();
+    internal readonly static Dictionary<string, Asset> Buffs = new Dictionary<string, Asset>();
 
-    internal static Dictionary<string, string> Icons = new Dictionary<string, string>();
+    internal readonly static Dictionary<string, string> Icons = new Dictionary<string, string>();
 
-    internal static Dictionary<string, string> KeyToIdDict = new Dictionary<string, string>();
+    internal readonly static Dictionary<string, string> KeyToIdDict = new Dictionary<string, string>();
 
     #endregion Fields
 
@@ -76,28 +77,6 @@ namespace RDA {
         }
       }
       return depth;
-      //return CalcInheritDepth(ele, 0).Max();
-
-      //IEnumerable<int> CalcInheritDepth(XElement el, int depth) {
-      //  var search = el.Element("BaseAssetGUID")?.Value;
-      //  if (search != null) {
-      //    depth++;
-      //    var founded = Original.Descendants("Asset").FirstOrDefault(a => a.XPathSelectElement("Values/Standard/GUID")?.Value == search);
-      //    if (founded != null) {
-      //      CalcInheritDepth(founded, depth);
-      //    }
-      //    foreach (var asset in founded) {
-      //      foreach (var item in CalcInheritDepth(asset, depth)) {
-      //        yield return item;
-      //      }
-
-      //    }
-
-      //  }
-      //  else {
-      //    yield return depth;
-      //  }
-      //}
     }
 
     private static void SolveXmlInheritance() {
@@ -138,6 +117,14 @@ namespace RDA {
           };
           foreach (var remove in removes) {
             str = str.Replace(remove, "");
+          }
+
+          // walkaround to fix the problem that rarity "common" and "uncommon" are translated to the same Chinese word
+          if (language == Languages.Chinese && item.Key == "118002" && str == "普通") {
+            str = "普通（白色）";
+          }
+          if (language == Languages.Chinese && item.Key == "118003" && str == "普通") {
+            str = "普通（绿色）";
           }
 
           if (Descriptions.ContainsKey(item.Key)) {
@@ -224,10 +211,12 @@ namespace RDA {
        .FirstOrDefault(a => a.Element("Template")?.Value == "ExpeditionFeature")?
        .Element("Values")
        .Element("ExpeditionFeature");
+     
       //ExpeditionRegions
       //foreach (var item in asset.Element("ExpeditionRegions").Elements()) {
       //  KeyToIdDict.Add(item.Name.LocalName, item.Element("Region").Value);
       //}
+
       //AttributeNames
       foreach (var item in asset.Element("AttributeNames").Elements()) {
         KeyToIdDict.Add(item.Name.LocalName, item.Element("Name").Value);
@@ -340,7 +329,6 @@ namespace RDA {
       Console.WriteLine("Setting up Tourism");
       var TourismAsset = Original.Descendants("Asset").FirstOrDefault(l => l.Element("Template")?.Value == "TourismFeature");
       var CityStatis = TourismAsset.XPathSelectElement("Values/TourismFeature/CityStati").Elements().ToList();
-      TourismStati = new Dictionary<string, XElement>();
       for (var i = 1; i < CityStatis.Count; i++) {
         TourismStati[i.ToString()] = CityStatis[i - 1];
       }
@@ -348,11 +336,13 @@ namespace RDA {
 
     private static void SetBuffs() {
       Console.WriteLine("Setting up Buffs");
-      Buffs = Original
+      var buffs = Original
          .Descendants("Asset")
          .Where(l => l.Element("Template")?.Value.EndsWith("Buff") ?? false)
-         .Select(l => new Asset(l, false))
-         .ToDictionary(b => b.ID);
+         .Select(l => new Asset(l, false));
+      foreach (var item in buffs) {
+        Buffs[item.ID] = item;
+      }
     }
   }
 }

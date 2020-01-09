@@ -1,5 +1,4 @@
 ﻿namespace RDA.Library {
-
   public enum Languages {
     English,
     German,

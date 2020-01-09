@@ -1,22 +1,23 @@
-﻿using System;
+﻿using AssetViewer.Data;
+using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Xml.Linq;
-using System.Xml.XPath;
-using AssetViewer.Data;
 
 namespace AssetViewer.Templates {
 
   public class TemplateThirdParty {
 
     #region Properties
+
     public String ID { get; set; }
     public String Name { get; set; }
     public Description Text { get; set; }
     public List<OfferingItems> OfferingItems { get; set; }
-    #endregion
 
-    #region Constructor
+    #endregion Properties
+
+    #region Constructors
+
     public TemplateThirdParty(XElement asset) {
       this.ID = asset.Attribute("ID").Value;
       this.Name = asset.Element("Name").Value;
@@ -27,8 +28,7 @@ namespace AssetViewer.Templates {
         this.OfferingItems.Add(item);
       }
     }
-    #endregion
 
+    #endregion Constructors
   }
-
 }

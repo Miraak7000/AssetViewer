@@ -9,7 +9,13 @@ namespace AssetViewer.Converter {
     #region Methods
 
     public Object Convert(Object value, Type targetType, Object parameter, CultureInfo culture) {
-      return App.Descriptions.TryGetValue(parameter.ToString(), out var str) ? str : null;
+      if (parameter is int idint) {
+        return App.Descriptions.TryGetValue(idint, out var str) ? str : null;
+      }
+      else if (parameter is string idstring && int.TryParse(idstring, out var id)) {
+        return App.Descriptions.TryGetValue(id, out var str) ? str : null;
+      }
+      return null;
     }
 
     public Object ConvertBack(Object value, Type targetType, Object parameter, CultureInfo culture) {

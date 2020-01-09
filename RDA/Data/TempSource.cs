@@ -7,9 +7,7 @@ using System.Xml.Linq;
 using System.Xml.XPath;
 
 namespace RDA.Data {
-
   public class TempSource {
-
     #region Properties
 
     public String ID { get; set; }
@@ -32,7 +30,7 @@ namespace RDA.Data {
             var cityStatus = item.Element("Item").Element("CityStatus");
             if (cityStatus != null) {
               var desc = new Description("145011")
-                .InsertBefore((Assets.TourismStati[cityStatus.Value].Element("AttractivenessThreshold")?.Value ?? "0"))
+                .InsertBefore(Assets.TourismStati[cityStatus.Value].Element("AttractivenessThreshold")?.Value ?? "0")
                 .AppendInBraces(new Description(Assets.KeyToIdDict[item.Element("Template").Value]));
               Details.Add(desc);
             }
@@ -78,13 +76,13 @@ namespace RDA.Data {
                   difficulty = new Description("11031");
                   break;
               }
-              var desc = new Description("-5").Append("-->").Append(difficulty);
+              var desc = new Description("-5").AppendWithSpace("-->").AppendWithSpace(difficulty);
               this.Details.Add(desc);
               continue;
             }
             // Detail points to Expedition Event
             else if (item.Element("Asset").Element("Template").Value == "ExpeditionEvent") {
-              var desc = new Description(item.XPathSelectElement("Values/Standard/GUID").Value).Append(item.Element("Template").Value);
+              var desc = new Description(item.XPathSelectElement("Values/Standard/GUID").Value).AppendWithSpace(item.Element("Template").Value);
               this.Details.Add(desc);
             }
             else {

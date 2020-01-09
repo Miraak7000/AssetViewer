@@ -4,9 +4,7 @@ using System.Linq;
 using System.Xml.Linq;
 
 namespace RDA.Data {
-
   public class Icon {
-
     #region Properties
 
     public static string[] IgnoredDirectorys { get; set; } = new[] {

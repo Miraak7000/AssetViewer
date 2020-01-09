@@ -10,10 +10,11 @@ namespace AssetViewer.Templates {
 
     #region Properties
 
-    public String ID { get; set; }
+    public int ID { get; set; }
     public String Name { get; set; }
     public Description Text { get; set; }
     public Description UpgradeText { get; set; }
+    public Description AssociatedRegions { get; set; }
     public string RarityType { get; set; }
 
     public Description Rarity { get; set; }
@@ -28,7 +29,7 @@ namespace AssetViewer.Templates {
 
     public IEnumerable<Description> EffectBuildings => EffectTargets?.SelectMany(e => e.Buildings).Distinct();
 
-    public string EffectTargetInfo => new Description("-1210").CurrentLang + string.Join(", ", EffectTargets.Select(s => s.Text.CurrentLang));
+    public string EffectTargetInfo => new Description(-1210).CurrentLang + string.Join(", ", EffectTargets.Select(s => s.Text.CurrentLang));
     public Boolean HasEffectTargetInfo { get; set; }
 
     //
@@ -49,6 +50,8 @@ namespace AssetViewer.Templates {
             && p.Name != nameof(CraftableItemUpgrades)
             && p.Name != nameof(UpgradeCosts)
             && p.Name != nameof(BuildCosts)
+            && p.Name != nameof(ItemSets)
+            && p.Name != nameof(ExpeditionAttributes)
             )
             .SelectMany(l => (List<Upgrade>)l.GetValue(this) ?? Enumerable.Empty<Upgrade>());
 
@@ -67,37 +70,47 @@ namespace AssetViewer.Templates {
     public List<Upgrade> Sources { get; set; }
 
     //
-    public List<String> MonumentEvents { get; set; }
+    public List<int> MonumentEvents { get; set; }
 
-    public List<String> MonumentThresholds { get; set; }
-    public List<String> MonumentRewards { get; set; }
+    public List<int> MonumentThresholds { get; set; }
+    public List<int> MonumentRewards { get; set; }
     public List<Upgrade> ItemWithUI { get; }
     public List<Upgrade> ItemStartExpedition { get; }
     public List<Upgrade> Building { get; }
     public Modules Modules { get; set; }
     public string IsPausable { get; set; }
-    public List<Upgrade> UpgradeCosts { get; private set; }
-    public List<Upgrade> BuildCosts { get; private set; }
-    public List<Upgrade> GenericUpgrades { get; private set; } = new List<Upgrade>();
-    public Maintenance Maintenance { get; private set; } = new Maintenance();
-    public List<Upgrade> Electric { get; private set; }
-    public FactoryBase FactoryBase { get; private set; } = new FactoryBase();
+    public List<Upgrade> UpgradeCosts { get; }
+    public List<Upgrade> BuildCosts { get; }
+    public List<Upgrade> GenericUpgrades { get; } = new List<Upgrade>();
+    public Maintenance Maintenance { get; } = new Maintenance();
+    public List<Upgrade> Electric { get; }
+    public FactoryBase FactoryBase { get; } = new FactoryBase();
+    public List<string> SetParts { get; }
+    public Description FestivalName { get; }
 
     #endregion Properties
 
     #region Constructors
 
     public TemplateAsset(XElement asset) {
-      this.ID = asset.Attribute("ID").Value;
+      this.ID = int.Parse(asset.Attribute("ID").Value);
       this.Name = asset.Element("Name").Value;
       this.Text = new Description(asset.Element("Text"));
       this.RarityType = asset.Attribute("RarityType").Value;
       this.Rarity = new Description(asset.Element("Rarity"));
       this.ItemType = asset.Element("ItemType").Value;
-      this.Allocation = asset.Element("Allocation").HasElements ? new Allocation(asset.Element("Allocation")) : null;
       this.EffectTargets = asset.Element("EffectTargets")?.Elements().Select(s => new EffectTarget(s)).ToList() ?? new List<EffectTarget>();
       this.ReleaseVersion = asset.Attribute("Release")?.Value;
       this.IsPausable = asset.Attribute("IsPausable")?.Value;
+      if (asset.Element("FestivalName") != null) {
+        this.FestivalName = new Description(asset.Element("FestivalName"));
+      }
+      if (asset.Element("Allocation")?.HasElements == true) {
+        this.Allocation = new Allocation(asset.Element("Allocation"));
+      }
+      if (asset.Element("AssociatedRegions") != null) {
+        this.AssociatedRegions = new Description(asset.Element("AssociatedRegions"));
+      }
       if (asset.Element("UpgradeText") != null) {
         this.UpgradeText = new Description(asset.Element("UpgradeText"));
       }
@@ -147,13 +160,16 @@ namespace AssetViewer.Templates {
         this.Sources = asset.Element("Sources").Elements().Select(s => new Upgrade(s)).ToList();
       }
       if (asset.Element("MonumentEvents") != null) {
-        this.MonumentEvents = asset.Element("MonumentEvents").Elements().Select(s => s.Value).ToList();
+        this.MonumentEvents = asset.Element("MonumentEvents").Elements().Select(s => int.Parse(s.Value)).ToList();
       }
       if (asset.Element("MonumentThresholds") != null) {
-        this.MonumentThresholds = asset.Element("MonumentThresholds").Elements().Select(s => s.Value).ToList();
+        this.MonumentThresholds = asset.Element("MonumentThresholds").Elements().Select(s => int.Parse(s.Value)).ToList();
       }
       if (asset.Element("MonumentRewards") != null) {
-        this.MonumentRewards = asset.Element("MonumentRewards").Elements().Select(s => s.Value).ToList();
+        this.MonumentRewards = asset.Element("MonumentRewards").Elements().Select(s => int.Parse(s.Value)).ToList();
+      }
+      if (asset.Element("SetParts") != null) {
+        this.SetParts = asset.Element("SetParts").Elements().Select(s => s.Value).ToList();
       }
       if (asset.Element("DivingBellUpgrades")?.HasElements ?? false) {
         this.DivingBellUpgrades = asset.Element("DivingBellUpgrades").Elements().Select(s => new Upgrade(s)).ToList();

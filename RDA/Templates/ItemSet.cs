@@ -1,34 +1,37 @@
-﻿using System;
+﻿using RDA.Data;
+using System;
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.XPath;
-using RDA.Data;
 
 namespace RDA.Templates {
-
   [SuppressMessage("ReSharper", "PossibleNullReferenceException")]
   public class ItemSet {
-
     #region Properties
+
     public String ID { get; set; }
     public String Name { get; set; }
     public Icon Icon { get; set; }
     public Description Text { get; set; }
     public Description Info { get; set; }
-    #endregion
 
-    #region Constructor
+    #endregion Properties
+
+    #region Constructors
+
     public ItemSet(XElement asset) {
       this.ID = asset.XPathSelectElement("Values/Standard/GUID").Value;
       this.Name = asset.XPathSelectElement("Values/Standard/Name").Value;
       this.Text = new Description(asset.XPathSelectElement("Values/Standard/GUID").Value);
       this.Info = new Description(asset.XPathSelectElement("Values/Standard/InfoDescription").Value);
     }
-    #endregion
 
-    #region Public Methods
+    #endregion Constructors
+
+    #region Methods
+
     public override String ToString() {
       using (var stringWriter = new StringWriter()) {
         using (var xmlWriter = XmlWriter.Create(stringWriter)) {
@@ -44,8 +47,7 @@ namespace RDA.Templates {
         return stringWriter.ToString();
       }
     }
-    #endregion
 
+    #endregion Methods
   }
-
 }

@@ -2,9 +2,7 @@
 using System.Xml.Linq;
 
 namespace RDA.Data {
-
   public class InputAmountUpgrade {
-
     #region Properties
 
     public Description Text { get; set; }

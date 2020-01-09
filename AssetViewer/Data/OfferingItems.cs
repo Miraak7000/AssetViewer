@@ -8,7 +8,7 @@ namespace AssetViewer.Data {
     #region Properties
 
     public Progression Progression { get; set; }
-    public string Items { get; set; }
+    public int Items { get; set; }
 
     #endregion Properties
 
@@ -16,7 +16,9 @@ namespace AssetViewer.Data {
 
     public OfferingItems(XElement asset) {
       this.Progression = (Progression)Enum.Parse(typeof(Progression), asset.Attribute("Progression").Value);
-      this.Items = asset.Attribute("Items")?.Value;
+      if (asset.Attribute("Items")?.Value is string str) {
+        this.Items = int.Parse(str);
+      }
     }
 
     #endregion Constructors

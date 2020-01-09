@@ -1,5 +1,4 @@
 ﻿namespace RDA.Data {
-
   public enum Progression {
     EarlyGame = 0,
     EarlyMidGame,
@@ -8,5 +7,4 @@
     LateGame,
     EndGame
   }
-
 }

@@ -3,9 +3,7 @@ using System.Linq;
 using System.Xml.Linq;
 
 namespace RDA.Data {
-
   public class FactoryBase {
-
     #region Properties
 
     public string CycleTime { get; set; }
@@ -19,7 +17,6 @@ namespace RDA.Data {
     public FactoryBase(XElement element) {
       if (element.Element("CycleTime")?.Value is string time) {
         CycleTime = time;
-
       }
       if (element.Element("FactoryInputs") != null) {
         this.FactoryInputs = new List<Upgrade>();

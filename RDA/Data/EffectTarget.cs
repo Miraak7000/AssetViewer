@@ -4,9 +4,7 @@ using System.Xml.Linq;
 using System.Xml.XPath;
 
 namespace RDA.Data {
-
   public class EffectTarget {
-
     #region Properties
 
     public Description Text { get; set; }
@@ -32,12 +30,9 @@ namespace RDA.Data {
         .Where(a => Assets.Descriptions.ContainsKey(a.Value))
         .Select(a => new Description(a.Value))
         .ToList();
-        return;
       }
       else {
-        //if (asset.XPathSelectElement("Values/Building") != null || asset.XPathSelectElement("Values/PopulationLevel7") != null)
         Buildings.Add(new Description(asset.XPathSelectElement("Values/Standard/GUID").Value));
-        return;
       }
     }
 

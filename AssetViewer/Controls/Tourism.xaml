@@ -44,7 +44,7 @@
             ItemsSource="{Binding Source={StaticResource StatiSource}}">
             <ListBox.ItemTemplate>
               <DataTemplate>
-                <Grid MaxHeight="24" Background="Transparent" ToolTip="{Binding Text}">
+                <Grid MaxHeight="24" Background="Transparent" ToolTip="{Binding Text.CurrentLang}">
                   <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="Auto" />
@@ -60,41 +60,7 @@
           </ListBox>
         </Border>
       </Grid>
-      <Grid Grid.Column="2">
-        <Border BorderBrush="#FF554628" BorderThickness="1" CornerRadius="5">
-          <ListBox
-            x:Name="ListBoxItems"
-            HorizontalContentAlignment="Stretch"
-            Background="Transparent"
-            BorderBrush="Transparent"
-            IsSynchronizedWithCurrentItem="True"
-            ItemsSource="{Binding Source={StaticResource ItemsSource}}">
-            <ListBox.ItemTemplate>
-              <DataTemplate>
-                <Grid MaxHeight="24">
-                  <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="30" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="Auto" />
-                  </Grid.ColumnDefinitions>
-                  <Image Grid.Column="0" HorizontalAlignment="Left" Source="{Binding Path=Text.Icon.Filename}" />
-                  <TextBlock
-                    Grid.Column="1"
-                    VerticalAlignment="Center"
-                    Text="{Binding Path=Text}"
-                    TextTrimming="CharacterEllipsis" />
-                  <TextBlock
-                    Grid.Column="2"
-                    HorizontalAlignment="Right"
-                    VerticalAlignment="Center"
-                    FontSize="11"
-                    Text="{Binding Path=ID}" />
-                </Grid>
-              </DataTemplate>
-            </ListBox.ItemTemplate>
-          </ListBox>
-        </Border>
-      </Grid>
+      <local:ItemList x:Name="lbItemsList" Grid.Column="2" ItemSource="{Binding Source={StaticResource ItemsSource}}" />
       <local:ItemCard Grid.Column="4" CanSwap="True" SelectedAsset="{Binding /, Source={StaticResource ItemsSource}}" />
     </Grid>
   </Grid>

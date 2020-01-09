@@ -5,7 +5,6 @@ using System.Runtime.CompilerServices;
 namespace AssetViewer.Data.Filters {
 
   public class FilterHolder : INotifyPropertyChanged {
-    private IFilter _selectedFilter;
 
     #region Properties
 
@@ -27,17 +26,7 @@ namespace AssetViewer.Data.Filters {
 
     #region Constructors
 
-    public FilterHolder(ItemsHolder holder) {
-      Filters.Add(new UpgradesFilter(holder));
-      Filters.Add(new SourcesFilter(holder));
-      Filters.Add(new ItemTypesFilter(holder));
-      Filters.Add(new TargetsFilter(holder));
-      Filters.Add(new ReleaseVersionsFilter(holder));
-      Filters.Add(new RaritiesFilter(holder));
-      Filters.Add(new AvailableFilter(holder) { SelectedValue = true });
-      Filters.Add(new EquippedFilter(holder));
-      Filters.Add(new SearchTextFilter(holder));
-      Filters.Add(new TargetBuildingFilter(holder));
+    public FilterHolder() {
     }
 
     #endregion Constructors
@@ -55,5 +44,11 @@ namespace AssetViewer.Data.Filters {
     }
 
     #endregion Methods
+
+    #region Fields
+
+    private IFilter _selectedFilter;
+
+    #endregion Fields
   }
 }

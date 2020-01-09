@@ -66,67 +66,67 @@ namespace AssetViewer.Controls {
 
     public String AllocationText {
       get {
-        return App.Descriptions["-106"];
+        return App.Descriptions[-106];
       }
     }
 
     public String ExpeditionText {
       get {
-        return App.Descriptions["-1220"];
+        return App.Descriptions[-1220];
       }
     }
 
     public String TradeText {
       get {
-        return App.Descriptions["12725"];
+        return App.Descriptions[12725];
       }
     }
 
     public String HiringFeeText {
       get {
-        return App.Descriptions["21731"];
+        return App.Descriptions[21731];
       }
     }
 
     public String ItemSetText {
       get {
-        return App.Descriptions["-1221"];
+        return App.Descriptions[-1221];
       }
     }
 
     public String ItemTrasmutable {
       get {
-        return App.Descriptions["113817"];
+        return App.Descriptions[113817];
       }
     }
 
     public String ProductionText {
       get {
-        return App.Descriptions["100006"];
+        return App.Descriptions[100006];
       }
     }
 
     public String ConsumptionText {
       get {
-        return App.Descriptions["100007"];
+        return App.Descriptions[100007];
       }
     }
 
     public String BuildCostsText {
       get {
-        return App.Descriptions["100008"];
+        return App.Descriptions[100008];
       }
     }
 
     public String MaintenanceText {
       get {
-        return App.Descriptions["100409"];
+        return App.Descriptions[100409];
       }
     }
 
     public String UpgradeCostsText {
       get {
-        return App.Descriptions["2001775"];
+        return App.Descriptions[2001775];
       }
     }
 
@@ -172,13 +172,13 @@ namespace AssetViewer.Controls {
 
     private void ItemCard_Unloaded(object sender, RoutedEventArgs e) {
       if (Application.Current.MainWindow is MainWindow main) {
-        main.ComboBoxLanguage.SelectionChanged -= this.ComboBoxLanguage_SelectionChanged;
+        main.OnLanguage_Changed -= this.ComboBoxLanguage_SelectionChanged;
       }
     }
 
     private void ItemCard_Loaded(object sender, RoutedEventArgs e) {
       if (Application.Current.MainWindow is MainWindow main) {
-        main.ComboBoxLanguage.SelectionChanged += this.ComboBoxLanguage_SelectionChanged;
+        main.OnLanguage_Changed += this.ComboBoxLanguage_SelectionChanged;
       }
     }
 

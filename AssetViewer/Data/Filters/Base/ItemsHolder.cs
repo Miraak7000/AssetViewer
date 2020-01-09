@@ -7,42 +7,22 @@ using System.Runtime.CompilerServices;
 
 namespace AssetViewer.Data.Filters {
 
-  public class ItemsHolder : INotifyPropertyChanged {
+  public abstract class ItemsHolder : INotifyPropertyChanged {
 
     #region Properties
 
+    public IFilter OrderFilter { get; }
     public List<TemplateAsset> Items { get; set; }
 
-    public IQueryable<TemplateAsset> Base { get; } = ItemProvider.Items.Values.AsQueryable();
+    public List<TemplateAsset> Base { get; }
 
     public Dictionary<string, IFilter> StandardFilters { get; } = new Dictionary<string, IFilter>();
-    public ObservableCollection<FilterHolder> CustomFilters { get; }
+    public ObservableCollection<FilterHolder> CustomFilters { get; } = new ObservableCollection<FilterHolder>();
     public bool IsRefreshingUi { get; set; }
 
     public List<IFilter> AllFilters { get; set; } = new List<IFilter>();
 
     #endregion Properties
-
-    #region Constructors
-
-    public ItemsHolder() {
-      StandardFilters.Add("Upgrades", new UpgradesFilter(this));
-      StandardFilters.Add("Rarities", new RaritiesFilter(this));
-      //StandardFilters.Add("ItemTypes", new ItemTypesFilter(this));
-      //StandardFilters.Add("Targets", new TargetsFilter(this));
-      StandardFilters.Add("Available", new AvailableFilter(this) { SelectedValue = true });
-      //StandardFilters.Add("DetailedSources", new DetailedSourcesFilter(this));
-      StandardFilters.Add("Equipped", new EquippedFilter(this));
-      //StandardFilters.Add("ReleaseVersions", new ReleaseVersionsFilter(this));
-      StandardFilters.Add("SearchText", new SearchTextFilter(this));
-      //StandardFilters.Add("Sources", new SourcesFilter(this));
-      StandardFilters.Add("TargetBuilding", new TargetBuildingFilter(this));
-      StandardFilters.Add("Order", new OrderFilter(this));
-
-      CustomFilters = new ObservableCollection<FilterHolder>(new[] { new FilterHolder(this) });
-    }
-
-    #endregion Constructors
 
     #region Events
 
@@ -54,18 +34,14 @@ namespace AssetViewer.Data.Filters {
 
     public void UpdateUI(IFilter filter = null) {
       if (!IsRefreshingUi) {
+        IsRefreshingUi = true;
         SetItems();
-        this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));
-        if (filter == null) {
-          foreach (var item in StandardFilters.Values.Concat(CustomFilters.Where(cf => cf.SelectedFilter != null).Select(cf => cf.SelectedFilter))) {
-            item.UpdateUI();
-          }
+        this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Items)));
+        foreach (var item in StandardFilters.Values.Concat(CustomFilters.Select(cf => cf.SelectedFilter)).Except(new[] { filter })) {
+          item.UpdateUI();
         }
-        else {
-          foreach (var item in StandardFilters.Values.Concat(CustomFilters.Where(cf => cf.SelectedFilter != null).Select(cf => cf.SelectedFilter).Except(new[] { filter }))) {
-            item.UpdateUI();
-          }
-        }
+        OrderFilter.UpdateUI();
+        IsRefreshingUi = false;
       }
     }
 
@@ -74,19 +50,23 @@ namespace AssetViewer.Data.Filters {
     }
 
     public void SetItems() {
-      var result = Base;
-      foreach (var filter in StandardFilters.Values.Concat(CustomFilters.Where(cf => cf.SelectedFilter != null).Select(cf => cf.SelectedFilter))) {
-        result = filter.FilterFunc(result);
-      }
-      //result = result.OrderBy(s => s.Text);
-      Items = result.ToList();
+      Items = OrderFilter.FilterFunc(GetResultWithoutFilter<IFilter>(null)).ToList();
     }
 
-    public IQueryable<TemplateAsset> GetResultWithoutFilter<T>(IFilter<T> filter) {
-      var result = Base;
-
+    public IEnumerable<TemplateAsset> GetResultWithoutFilter<T>(IFilter<T> filter) {
+      IEnumerable<TemplateAsset> result = null;
       foreach (var f in StandardFilters.Values.Concat(CustomFilters.Where(cf => cf.SelectedFilter != null).Select(cf => cf.SelectedFilter)).Except(new[] { filter })) {
-        result = f.FilterFunc(result);
+        if (f.SavedItems != null) {
+          if (result == null) {
+            result = f.SavedItems;
+          }
+          else {
+            result = result.Intersect(f.SavedItems);
+          }
+        }
+      }
+      if (result == null) {
+        result = Base;
       }
       return result;
     }
@@ -97,20 +77,28 @@ namespace AssetViewer.Data.Filters {
         filter.ResetFilter();
       }
       CustomFilters.Clear();
+      CustomFilters.Add(CreateFilterHolder());
+      OrderFilter.ResetFilter();
       IsRefreshingUi = false;
       UpdateUI();
     }
 
     public void RaiseLanguageChanged() {
-      IsRefreshingUi = true;
-      foreach (var filter in StandardFilters.Values) {
-        filter.ResetFilter();
-      }
-      CustomFilters.Clear();
-      IsRefreshingUi = false;
-      UpdateUI();
+      ResetFilters();
     }
 
+    public abstract FilterHolder CreateFilterHolder();
+
     #endregion Methods
+
+    #region Constructors
+
+    protected ItemsHolder(List<TemplateAsset> Base) {
+      this.Base = Base;
+      OrderFilter = new OrderFilter(this);
+      CustomFilters.Add(CreateFilterHolder());
+    }
+
+    #endregion Constructors
   }
 }

@@ -67,7 +67,6 @@
     <Compile Include="Data\ReplacingWorkforce.cs" />
     <Compile Include="Data\AdditionalOutput.cs" />
     <Compile Include="Data\Allocation.cs" />
-    <Compile Include="Data\CultureUpgrade.cs" />
     <Compile Include="Data\Description.cs" />
     <Compile Include="Data\Icon.cs" />
     <Compile Include="Data\InputAmountUpgrade.cs" />
@@ -108,6 +107,7 @@
     <Content Include="Modified\Assets_FarmBuilding.xml" />
     <Content Include="Modified\Assets_FarmBuilding_Arctic.xml" />
     <Content Include="Modified\Assets_Farmfield.xml" />
+    <Content Include="Modified\Assets_FestivalBuff.xml" />
     <Content Include="Modified\Assets_FluffItem.xml" />
     <Content Include="Modified\Assets_FreeAreaBuilding.xml" />
     <Content Include="Modified\Assets_FreeAreaBuilding_Arctic.xml" />
@@ -122,6 +122,7 @@
     <Content Include="Modified\Assets_HarborWarehouse7.xml" />
     <Content Include="Modified\Assets_HarborWarehouseSlot7.xml" />
     <Content Include="Modified\Assets_HarborWarehouseStrategic.xml" />
+    <Content Include="Modified\Assets_Headquarter.xml" />
     <Content Include="Modified\Assets_Heater_Arctic.xml" />
     <Content Include="Modified\Assets_HeavyFactoryBuilding.xml" />
     <Content Include="Modified\Assets_HeavyFreeAreaBuilding.xml" />
@@ -155,6 +156,7 @@
     <Content Include="Modified\Assets_StartExpeditionItem.xml" />
     <Content Include="Modified\Assets_Street.xml" />
     <Content Include="Modified\Assets_StreetBuilding.xml" />
+    <Content Include="Modified\Assets_TestConstructionPlan.xml" />
     <Content Include="Modified\Assets_TownhallItem.xml" />
     <Content Include="Modified\Assets_VehicleItem.xml" />
     <Content Include="Modified\Assets_VisitorPier.xml" />
@@ -165,6 +167,7 @@
     <Content Include="Modified\LanguageFiles\Texts_Custom_Korean.json" />
     <Content Include="Modified\LanguageFiles\Texts_Custom_French.json" />
     <Content Include="Modified\LanguageFiles\Texts_Custom_Italian.json" />
+    <Content Include="Modified\LanguageFiles\Texts_Custom_Chinese.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

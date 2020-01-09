@@ -6,9 +6,7 @@ using System.Web;
 using System.Xml.Linq;
 
 namespace RDA.Data {
-
   public class Description : IEquatable<Description> {
-
     #region Properties
 
     public String ID { get; set; }
@@ -23,7 +21,7 @@ namespace RDA.Data {
 
     #region Fields
 
-    public static Dictionary<string, Description> GlobalDescriptions = new Dictionary<string, Description>();
+    public static readonly Dictionary<string, Description> GlobalDescriptions = new Dictionary<string, Description>();
 
     #endregion Fields
 
@@ -72,13 +70,29 @@ namespace RDA.Data {
 
     public Description Append(string value) {
       foreach (var item in Languages.ToArray()) {
-        Languages[item.Key] = $"{item.Value} {value}";
+        Languages[item.Key] = $"{item.Value}{value}";
       }
       SetNewId();
       return this;
     }
 
     public Description Append(Description description) {
+      foreach (var item in Languages.ToArray()) {
+        Languages[item.Key] = $"{item.Value}{(description.Languages.TryGetValue(item.Key, out var value) ? value : description.Languages.First().Value)}";
+      }
+      SetNewId();
+      return this;
+    }
+
+    public Description AppendWithSpace(string value) {
+      foreach (var item in Languages.ToArray()) {
+        Languages[item.Key] = $"{item.Value} {value}";
+      }
+      SetNewId();
+      return this;
+    }
+
+    public Description AppendWithSpace(Description description) {
       foreach (var item in Languages.ToArray()) {
         Languages[item.Key] = $"{item.Value} {(description.Languages.TryGetValue(item.Key, out var value) ? value : description.Languages.First().Value)}";
       }
@@ -143,6 +157,17 @@ namespace RDA.Data {
 
     public bool Equals(Description other) {
       return ID == other.ID && this.Languages.First().Value == other.Languages.First().Value && Icon.Filename == other.Icon.Filename;
+    }
+
+    internal static Description Join(IEnumerable<Description> regions, string seperator) {
+      if (regions?.Any() == true) {
+        var desc = new Description(regions.First().ID);
+        foreach (var item in regions.Skip(1)) {
+          desc.Append(seperator).Append(item);
+        }
+        return desc;
+      }
+      return null;
     }
 
     private string GetOrCheckExistenz() {
