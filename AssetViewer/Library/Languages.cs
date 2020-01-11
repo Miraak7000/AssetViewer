@@ -15,7 +15,7 @@
     [Description("Brazilian")]
     Brazilian,
 
-    [Description("한국어")]
+    [Description("简体中文")]
     Chinese,
 
     [Description("Français")]
