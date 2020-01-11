@@ -8,12 +8,13 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>AssetViewer</RootNamespace>
     <AssemblyName>AssetViewer</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -66,8 +67,27 @@
     <Compile Include="Controls\ExpeditionEvents.xaml.cs">
       <DependentUpon>ExpeditionEvents.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\ItemCard.xaml.cs">
+    <Compile Include="Controls\Buildings.xaml.cs">
+      <DependentUpon>Buildings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CityFestival.xaml.cs">
+      <DependentUpon>CityFestival.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Parts\ExtendedFilters.xaml.cs">
+      <DependentUpon>ExtendedFilters.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Parts\ItemList.xaml.cs">
+      <DependentUpon>ItemList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ItemSets.xaml.cs">
+      <DependentUpon>ItemSets.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Parts\ItemCard.xaml.cs">
       <DependentUpon>ItemCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ItemsBase.cs" />
+    <Compile Include="Controls\PoolToTree.xaml.cs">
+      <DependentUpon>PoolToTree.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\ThirdParty.xaml.cs">
       <DependentUpon>ThirdParty.xaml</DependentUpon>
@@ -75,32 +95,44 @@
     <Compile Include="Controls\Tourism.xaml.cs">
       <DependentUpon>Tourism.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\WeightControl.xaml.cs">
+      <DependentUpon>WeightControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Converter\EnumDescriptionTypeConverter.cs" />
     <Compile Include="Converter\GlobalDescriptionConverter.cs" />
     <Compile Include="Converter\PriorityMultiValueConverter.cs" />
+    <Compile Include="Converter\GuidToItemConverter.cs" />
     <Compile Include="Converter\RewardToItemConverter.cs" />
     <Compile Include="Converter\VisibilityConverter.cs" />
     <Compile Include="Data\Allocation.cs" />
     <Compile Include="Data\Description.cs" />
     <Compile Include="Data\DescriptionFontStyle.cs" />
+    <Compile Include="Data\DummyDescription.cs" />
     <Compile Include="Data\EffectTarget.cs" />
     <Compile Include="Data\Expedition\EventOption.cs" />
     <Compile Include="Data\Expedition\EventOptionRequirement.cs" />
     <Compile Include="Data\Expedition\EventPath.cs" />
     <Compile Include="Data\Expedition\ExpeditionEvent.cs" />
     <Compile Include="Data\Expedition\RewardsItem.cs" />
+    <Compile Include="Data\FactoryBase.cs" />
+    <Compile Include="Data\Filters\Base\ItemsHolderCityFestival.cs" />
+    <Compile Include="Data\Filters\Base\ItemsHolderItemSets.cs" />
+    <Compile Include="Data\Filters\BuildableFilter.cs" />
     <Compile Include="Data\Filters\Base\BaseFilter.cs" />
     <Compile Include="Data\Filters\Base\FilterHolder.cs" />
     <Compile Include="Data\Filters\Base\IFilter.cs" />
+    <Compile Include="Data\Filters\Base\ItemsHolderGuildhouse.cs" />
+    <Compile Include="Data\Filters\Base\ItemsHolderBuildings.cs" />
     <Compile Include="Data\Filters\Base\ItemsHolder.cs" />
     <Compile Include="Data\Filters\Enums\FilterType.cs" />
+    <Compile Include="Data\Filters\ExpeditionAttributeFilter.cs" />
     <Compile Include="Data\Filters\ReleaseVersionsFilter.cs" />
     <Compile Include="Data\Filters\SearchTextFilter.cs" />
     <Compile Include="Data\Filters\OrderFilter.cs" />
     <Compile Include="Data\Filters\TargetBuildingFilter.cs" />
     <Compile Include="Data\Filters\TargetsFilter.cs" />
     <Compile Include="Data\Filters\EquippedFilter.cs" />
-    <Compile Include="Data\Filters\SpecificUpgradesFilter.cs" />
+    <Compile Include="Data\Filters\ItemSetFilter.cs" />
     <Compile Include="Data\Filters\UpgradesFilter.cs" />
     <Compile Include="Data\Filters\SourcesFilter.cs" />
     <Compile Include="Data\Filters\AvailableFilter.cs" />
@@ -108,6 +140,8 @@
     <Compile Include="Data\Filters\RaritiesFilter.cs" />
     <Compile Include="Data\Filters\Enums\ValueComparisons.cs" />
     <Compile Include="Data\Icon.cs" />
+    <Compile Include="Data\Maintenance.cs" />
+    <Compile Include="Data\Modules.cs" />
     <Compile Include="Data\OfferingItems.cs" />
     <Compile Include="Data\Pool\Pool.cs" />
     <Compile Include="Data\Pool\PoolItem.cs" />
@@ -117,10 +151,36 @@
     <Compile Include="Extensions\EnumBindingSourceExtension.cs" />
     <Compile Include="Extensions\TextBlockExtensions.cs" />
     <Compile Include="Extensions\XmlExtensions.cs" />
-    <Compile Include="ItemProvider.cs" />
+    <Compile Include="AssetProvider.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
     <Compile Include="Templates\TemplateAsset.cs" />
     <Compile Include="Templates\TemplateThirdParty.cs" />
     <Page Include="Controls\ExpeditionEvents.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Buildings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\CityFestival.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Parts\ExtendedFilters.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Parts\ItemList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ItemSets.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -128,9 +188,12 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\ItemCard.xaml">
+    <Page Include="Controls\Parts\ItemCard.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\PoolToTree.xaml">
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\ThirdParty.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -141,6 +204,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\Tourism.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\WeightControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FilterExpander.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -164,6 +235,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="TreeViewItemStyle1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -245,6 +320,61 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\Assets\QuestItemMagistrate.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Assets\Texts_French.xml" />
+    <EmbeddedResource Include="Resources\Assets\Texts_Italian.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Assets\BridgeBuilding.xml" />
+    <EmbeddedResource Include="Resources\Assets\CampaignQuestObject.xml" />
+    <EmbeddedResource Include="Resources\Assets\CampaignUncleMansion.xml" />
+    <EmbeddedResource Include="Resources\Assets\CityInstitutionBuilding.xml" />
+    <EmbeddedResource Include="Resources\Assets\CultureBuilding.xml" />
+    <EmbeddedResource Include="Resources\Assets\FactoryBuilding7.xml" />
+    <EmbeddedResource Include="Resources\Assets\FactoryBuilding7_Arctic.xml" />
+    <EmbeddedResource Include="Resources\Assets\FarmBuilding.xml" />
+    <EmbeddedResource Include="Resources\Assets\FarmBuilding_Arctic.xml" />
+    <EmbeddedResource Include="Resources\Assets\Farmfield.xml" />
+    <EmbeddedResource Include="Resources\Assets\FreeAreaBuilding.xml" />
+    <EmbeddedResource Include="Resources\Assets\FreeAreaBuilding_Arctic.xml" />
+    <EmbeddedResource Include="Resources\Assets\Guildhouse.xml" />
+    <EmbeddedResource Include="Resources\Assets\HarborBuildingAttacker.xml" />
+    <EmbeddedResource Include="Resources\Assets\HarborDepot.xml" />
+    <EmbeddedResource Include="Resources\Assets\HarborLandingStage7.xml" />
+    <EmbeddedResource Include="Resources\Assets\HarborOffice.xml" />
+    <EmbeddedResource Include="Resources\Assets\HarborPropObject.xml" />
+    <EmbeddedResource Include="Resources\Assets\HarborWarehouse7.xml" />
+    <EmbeddedResource Include="Resources\Assets\HarborWarehouseSlot7.xml" />
+    <EmbeddedResource Include="Resources\Assets\HarborWarehouseStrategic.xml" />
+    <EmbeddedResource Include="Resources\Assets\Heater_Arctic.xml" />
+    <EmbeddedResource Include="Resources\Assets\HeavyFactoryBuilding.xml" />
+    <EmbeddedResource Include="Resources\Assets\HeavyFreeAreaBuilding.xml" />
+    <EmbeddedResource Include="Resources\Assets\HeavyFreeAreaBuilding_Arctic.xml" />
+    <EmbeddedResource Include="Resources\Assets\ItemCrafterBuilding.xml" />
+    <EmbeddedResource Include="Resources\Assets\Market.xml" />
+    <EmbeddedResource Include="Resources\Assets\Monument.xml" />
+    <EmbeddedResource Include="Resources\Assets\Monument_with_Shipyard.xml" />
+    <EmbeddedResource Include="Resources\Assets\OilPumpBuilding.xml" />
+    <EmbeddedResource Include="Resources\Assets\OrnamentalBuilding.xml" />
+    <EmbeddedResource Include="Resources\Assets\PowerplantBuilding.xml" />
+    <EmbeddedResource Include="Resources\Assets\PublicServiceBuilding.xml" />
+    <EmbeddedResource Include="Resources\Assets\QuestLighthouse.xml" />
+    <EmbeddedResource Include="Resources\Assets\RepairCrane.xml" />
+    <EmbeddedResource Include="Resources\Assets\ResidenceBuilding7.xml" />
+    <EmbeddedResource Include="Resources\Assets\ResidenceBuilding7_Arctic.xml" />
+    <EmbeddedResource Include="Resources\Assets\Shipyard.xml" />
+    <EmbeddedResource Include="Resources\Assets\SimpleBuilding.xml" />
+    <EmbeddedResource Include="Resources\Assets\Slot.xml" />
+    <EmbeddedResource Include="Resources\Assets\SlotFactoryBuilding7.xml" />
+    <EmbeddedResource Include="Resources\Assets\SlotFactoryBuilding7_Arctic.xml" />
+    <EmbeddedResource Include="Resources\Assets\Street.xml" />
+    <EmbeddedResource Include="Resources\Assets\StreetBuilding.xml" />
+    <EmbeddedResource Include="Resources\Assets\VisitorPier.xml" />
+    <EmbeddedResource Include="Resources\Assets\VisualBuilding_NoLogic.xml" />
+    <EmbeddedResource Include="Resources\Assets\Warehouse.xml" />
+    <EmbeddedResource Include="Resources\Assets\WorkAreaSlot.xml" />
+    <EmbeddedResource Include="Resources\Assets\WorkforceConnector.xml" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\data\ui\2kimages\fpp\icons\icon_plus.png" />
@@ -363,6 +493,8 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\books\icon_capitalist_economic_doctrine_02.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\books\icon_capitalist_economic_doctrine_03.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\books\icon_knighthood_edict.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\campaign\icon_abandoned_camp.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\campaign\icon_court_of_justice.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\campaign\icon_journaleros_refugees.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\campaign\icon_letter_closed.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\campaign\icon_letter_open.png" />
@@ -498,6 +630,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\fertilities\icon_seeds_tobacco.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_advanced_weaponry.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_airship_hangar.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_airship_landing_plattform.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_alpaca_wool.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_anarchist.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_archeology.png" />
@@ -519,6 +652,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_brass_tube.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_bread.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_bricks.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_brick_road.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_burrito.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_cabaret.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_camera.png" />
@@ -537,12 +671,18 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_chocolate.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_church.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_cigars.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_city_ornament_base.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_city_ornament_large.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_city_ornament_medium.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_city_ornament_small.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_clay.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_cloth.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_club_house.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_coal.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_coal_2.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_coal_burn.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_coal_habour.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_coal_storage.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_cocoa.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_coffee_beans.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_coffe_cup.png" />
@@ -564,6 +704,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_electric_works_gas.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_electric_works_oil.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_elephant.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_farmfield_module.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_fedora_hat.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_felt.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_fertile_lands.png" />
@@ -619,6 +760,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_oil.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_oil_habour_01.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_oil_lamps.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_oil_rig.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_oil_storage.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_parrot.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_passage_junk.png" />
@@ -636,6 +778,8 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_potatoes.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_pub.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_quartz_sand.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_quay.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_railway.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_ranger_station.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_reindeer_meat.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_reinforced_concrete.png" />
@@ -643,6 +787,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_residence_big_dummy.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_resident.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_rope.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_ruin_settlement.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_rum.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_rum_barrel.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_rum_master.png" />
@@ -666,11 +811,13 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_sled.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_sled_frame.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_sleeping_bags.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_snow_street.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_soap_2.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_steam_carriage.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_steam_machine.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_steam_shipyard.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_steel.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_street01.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_tallow.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_time.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_tin_ore.png" />
@@ -1066,7 +1213,66 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\newspaper\icon_antianarchist_newspaper_02.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\newspaper\icon_antianarchist_newspaper_03.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\newspaper\icon_mercier_newspaper.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\beta_reward_2x2.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\christmas_carousel.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\christmas_park_props_system_02_corner.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\christmas_park_props_system_02_cross.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\christmas_park_props_system_02_end.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\christmas_park_props_system_02_gap.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\christmas_park_props_system_02_straight.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\christmas_park_props_system_02_t.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\christmas_park_props_system_corner.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\christmas_park_props_system_cross.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\christmas_park_props_system_end.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\christmas_park_props_system_gap.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\christmas_park_props_system_straight.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\christmas_park_props_system_t.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\christmas_props_lightpost_01.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\christmas_props_lightpost_02.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\christmas_props_presents.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\christmas_props_snowman.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\christmas_stand_01.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\christmas_stand_02.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\christmas_stand_03.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\christmas_tree_big.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\christmas_tree_small.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\clubrewards_pond_2x2.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\clubrewards_statue_1x2.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\colony_sa\col_park_props_1x1_20.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\colony_sa\col_park_props_1x1_24.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\colony_sa\col_park_props_system_1x1_16_back.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\colony_sa\col_park_props_system_1x1_17_front.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\colony_sa\col_park_props_system_1x1_21_back.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\colony_sa\col_park_props_system_1x1_23_back.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\colony_sa\col_park_props_system_1x1_24_back.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\colony_sa\col_park_props_system_1x1_35_front.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\colony_sa\col_park_props_system_2x2_03_back.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\colony_sa\col_park_props_system_3x3_02_front.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\colony_sa\col_park_props_system_3x3_03_back.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\colony_sa\col_props_1x1_03_back.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\colony_sa\col_props_1x1_07_back.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\colony_sa\col_props_1x1_08_front.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\colony_sa\col_props_1x1_09_back.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\colony_sa\col_props_1x1_11_back.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\colony_sa\col_props_1x1_12_back.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\colony_sa\col_props_1x1_13_back.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\colony_sa\col_props_1x1_14_back.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\colony_sa\cultural_props_1x1_05_front.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\colony_sa\cultural_props_1x1_06_back.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cultural_props_1x1_02.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cultural_props_1x1_03.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cultural_props_1x1_04.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cultural_props_1x1_05.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cultural_props_1x1_06.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cultural_props_1x1_07.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cultural_props_1x1_08.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cultural_props_1x1_09.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cultural_props_1x1_10.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cultural_props_1x1_11.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cultural_props_1x1_12.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cultural_props_1x1_13.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cultural_props_1x1_14.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cultural_props_1x1_15.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cultural_props_1x1_16_front.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_botanica_blueflower.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_botanica_darkpinkflower.png" />
@@ -1079,6 +1285,20 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_botanica_treesculptures.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_botanica_whiteflower.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_botanica_yellowflower.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_ornament_botanica01.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_ornament_botanica02.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_ornament_botanica03.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_propaganda_flag_03.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_propaganda_tower_01.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_twitch_advertisement_anarchy.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_twitch_advertisement_annoholic.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_twitch_advertisement_announion.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_twitch_advertisement_botanic.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_twitch_advertisement_northwestpassage.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_twitch_advertisement_sunkentreasures.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_twitch_column_annoholic.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_twitch_flag_annoholic.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_twitch_flag_announion.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_1x1_01.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_1x1_02.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_1x1_03.png" />
@@ -1093,7 +1313,93 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_gate_01.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_module_01.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\monument_01_tower_01.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props2x2_03.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props3x3_02.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_1x1_01.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_1x1_03.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_1x1_05.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_1x1_06.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_1x1_07.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_1x1_08.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_1x1_09.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_1x1_10.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_1x1_11.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_1x1_12.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_1x1_13.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_1x1_14.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_1x1_17.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_1x1_18.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_1x1_21.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_1x1_22.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_1x1_23.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_1x1_26.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_1x1_27.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_1x1_28.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_1x1_29.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_1x1_30.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_1x1_31.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_1x1_32.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_2x2_02.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_2x2_04.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_2x2_05.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_2x2_06.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_3x3_04.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_system_1x1_36.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_system_1x1_37.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_system_1x1_38.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_system_1x1_39.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_system_1x1_40.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_system_1x1_43.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_system_1x1_44.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_system_1x1_45.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_system_1x1_46.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_system_1x1_colonyforest.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_system_1x1_temperateforest.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\preorder_statue_back.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\santa_chair.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\seasonal_advertiser_billboard.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\up_st_statue_01.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\up_st_statue_02.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\up_st_statue_03.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\benches.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\bush01.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\bush02.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\bush03.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\bush04.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\bush05.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\city_1x1_01.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\city_1x1_02.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\city_1x1_03.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\city_2x2_02.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\city_2x2_03.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\city_2x2_04.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\city_3x3_02.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\city_3x3_03.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\cultural_1x1_01.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\cultural_1x1_02.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\cultural_1x1_03.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\cultural_1x1_04.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\cultural_1x1_05.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\cultural_1x1_06.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\cultural_1x1_07.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\cultural_1x1_08.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\cultural_1x1_09.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\cultural_1x1_10.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\cultural_1x1_11.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\cultural_1x1_12.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\cultural_1x1_13.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\cultural_1x1_14.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\grille04.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\grille05.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\park_1x1_01.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\park_1x1_02.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\park_1x1_03.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\park_1x1_06.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\park_2x2_02.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\park_2x2_04.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\park_2x2_05.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\park_3x3_02.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornament_placeholders\porte.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_banyan.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_blue_lotus.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\plants\icon_brazil_nut_tree.png" />
@@ -1165,10 +1471,14 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\posters\icon_cyclideon_science.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\resident\icon_dissidents.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\resident\icon_explorers.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\resident\icon_resident_artisan.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\resident\icon_resident_colony03_tier01.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\resident\icon_resident_colony03_tier02.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\resident\icon_resident_engineer.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\resident\icon_resident_farmer.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\resident\icon_resident_investor.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\resident\icon_resident_jornalero.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\resident\icon_resident_obrera.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\resident\icon_resident_worker.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\resident\icon_technicians.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ships\icon_airship.png" />
@@ -1514,6 +1824,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\treasure_map\item_treasuremap_st_01.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\treasure_map\item_treasuremap_st_02.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\treasure_map\item_treasuremap_st_03.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\assets16\attractiveness\category_pollution.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\achievement\icon_achievement_category_military.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_activate_trade.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_add_slot_guild.png" />
@@ -1601,14 +1912,17 @@
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_timer.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_tree_progress.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_untick.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_upgrade.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_wait_till_empty.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_wait_till_full.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_warning_2.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_warning_debuff_ship.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_wifi.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_zoo_2D.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\ship_info\icon_accuracy.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\ship_info\icon_damage.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\ship_info\icon_hitpoints.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\profiles\3rdparty_hunt_routemap.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\3rd_party_01.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\3rd_party_02.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\3rd_party_03.png" />
@@ -1619,6 +1933,8 @@
     <Resource Include="Resources\data\ui\2kimages\main\profiles\3rd_party_07.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\3rd_party_08.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\3rd_party_09.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\profiles\advisor_01.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\profiles\advisor_02.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\ai_01.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\ai_02.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\ai_03.png" />
@@ -1630,6 +1946,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\profiles\ai_09.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\ai_11.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\campaign_portrait_09.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\profiles\campaign_portrait_pyrophorian.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\captain.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\enemy_01.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\enemy_02.png" />
@@ -1645,6 +1962,50 @@
     <Resource Include="Resources\data\ui\2kimages\main\profiles\resident_tier03_work.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\resident_tier04.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\resident_tier05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_okapi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_military_ship_frigatte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_military_ship_liner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_military_ship_monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_ship_battle_cruiser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_ship_gunboat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_tradeship_clipper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_tradeship_schooner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_resident_artisan.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_resident_engineer.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_resident_farmer.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_resident_investor.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_resident_worker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Assets\Texts_Chinese.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Assets\FestivalBuff.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

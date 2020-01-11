@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
 using System.Xml.XPath;
-using RDA.Templates;
 
 namespace RDA.Data {
-
   public class ThirdParty {
-
     #region Properties
+
     public String ID { get; set; }
     public String Name { get; set; }
     public Description Text { get; set; }
     public List<OfferingItems> OfferingItems { get; set; }
-    #endregion
 
-    #region Constructor
+    #endregion Properties
+
+    #region Constructors
+
     public ThirdParty(XElement asset) {
       this.ID = asset.XPathSelectElement("Values/Standard/GUID").Value;
       this.Name = asset.XPathSelectElement("Values/Standard/Name").Value;
@@ -33,9 +33,10 @@ namespace RDA.Data {
       }
     }
 
-    #endregion
+    #endregion Constructors
 
-    #region Public Methods
+    #region Methods
+
     public XElement ToXml() {
       var result = new XElement(this.GetType().Name);
       result.Add(new XAttribute("ID", this.ID));
@@ -44,8 +45,7 @@ namespace RDA.Data {
       result.Add(new XElement("OfferingItems", this.OfferingItems.Select(s => s.ToXml())));
       return result;
     }
-    #endregion
 
+    #endregion Methods
   }
-
 }

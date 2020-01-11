@@ -1,20 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Xml.Linq;
 using System.Xml.XPath;
-using RDA.Templates;
 
 namespace RDA.Data {
-
   public class OfferingItems {
-
     #region Properties
+
     public Progression Progression { get; set; }
     public string ItemPool { get; set; }
-    #endregion
 
-    #region Constructor
+    #endregion Properties
+
+    #region Constructors
+
     public OfferingItems(XElement asset) {
       this.Progression = (Progression)Enum.Parse(typeof(Progression), asset.Name.LocalName);
       var offeringItems = asset.XPathSelectElement("OfferingItems")?.Value ?? asset.XPathSelectElement("Pool")?.Value;
@@ -22,9 +20,11 @@ namespace RDA.Data {
         ItemPool = offeringItems;
       }
     }
-    #endregion
 
-    #region Public Methods
+    #endregion Constructors
+
+    #region Methods
+
     public XElement ToXml() {
       var result = new XElement(this.GetType().Name);
       result.Add(new XAttribute("Progression", this.Progression));
@@ -33,7 +33,7 @@ namespace RDA.Data {
       }
       return result;
     }
-    #endregion
-  }
 
+    #endregion Methods
+  }
 }

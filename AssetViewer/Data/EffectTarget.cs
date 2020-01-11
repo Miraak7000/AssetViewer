@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
-using System.Xml.XPath;
 
 namespace AssetViewer.Data {
 
@@ -10,7 +9,7 @@ namespace AssetViewer.Data {
     #region Properties
 
     public Description Text { get; set; }
-    public List<Description> Buildings { get; set; } = new List<Description>();
+    public List<Description> Buildings { get; set; }
 
     #endregion Properties
 
@@ -22,10 +21,5 @@ namespace AssetViewer.Data {
     }
 
     #endregion Constructors
-
-    #region Methods
-
-
-    #endregion Methods
   }
 }

@@ -5,39 +5,31 @@ using System.Linq;
 
 namespace AssetViewer.Data.Filters {
 
-  public class SourcesFilter : BaseFilter<string> {
+  public class SourcesFilter : BaseFilter<Description> {
 
     #region Properties
 
-    public override Func<IQueryable<TemplateAsset>, IQueryable<TemplateAsset>> FilterFunc => result => {
-      if (!string.IsNullOrWhiteSpace(SelectedComparisonValue)) {
-        if (!string.IsNullOrWhiteSpace(SelectedValue)) {
-          result = result.Where(w => w.Sources != null && w.Sources.Where(s => s.Text.CurrentLang == SelectedValue).SelectMany(s => s.Additionals).Any(l => l.Text.CurrentLang == SelectedComparisonValue));
+    public override Func<IEnumerable<TemplateAsset>, IEnumerable<TemplateAsset>> FilterFunc => result => {
+      if (SelectedComparisonValue != null && SelectedComparisonValue.ID != 0) {
+        if (SelectedValue != null && SelectedValue.ID != 0) {
+          return result.Where(w => w.Sources?.Where(s => s.Text.Equals(SelectedValue)).SelectMany(s => s.Additionals).Any(l => l.Text.Equals(SelectedComparisonValue)) == true);
         }
         else {
-          result = result.Where(w => w.Sources != null && w.Sources.SelectMany(s => s.Additionals).Any(l => l.Text.CurrentLang == SelectedComparisonValue));
+          return result.Where(w => w.Sources?.SelectMany(s => s.Additionals).Any(l => l.Text.Equals(SelectedComparisonValue)) == true);
         }
       }
-      else if (!String.IsNullOrEmpty(SelectedValue)) {
-        result = result.Where(w => w.Sources != null && w.Sources.Any(l => l.Text.CurrentLang == SelectedValue));
+      else if (SelectedValue != null && SelectedValue.ID != 0) {
+        if (Comparison == ValueComparisons.UnEqual) {
+          return result.Where(w => w.Sources?.Any(l => l.Text.Equals(SelectedValue)) == false);
+        }
+        else {
+          return result.Where(w => w.Sources?.Any(l => l.Text.Equals(SelectedValue)) == true);
+        }
       }
-
-      return result;
+      return null;
     };
 
-    public override IEnumerable<String> CurrentValues => ItemsHolder
-         .GetResultWithoutFilter(this)
-         .Where(s => s.Sources != null)
-         .SelectMany(s => s.Sources)
-         .Select(s => s.Text.CurrentLang)
-         .Distinct()
-         .Where(l => !string.IsNullOrWhiteSpace(l))
-         .Concat(new[] { string.Empty })
-         .OrderBy(o => o)
-         .ToList();
-
-    public override IEnumerable<string> ComparisonValues => GetComparisonValues();
-    public override string DescriptionID => "-1005";
+    public override int DescriptionID => -1005;
 
     #endregion Properties
 
@@ -51,18 +43,31 @@ namespace AssetViewer.Data.Filters {
 
     #region Methods
 
-    private IEnumerable<string> GetComparisonValues() {
-      if (String.IsNullOrEmpty(SelectedValue)) {
+    public override void SetCurrenValues() {
+      CurrentValues = ItemsHolder
+         .GetResultWithoutFilter(this)
+         .Where(s => s.Sources != null)
+         .SelectMany(s => s.Sources)
+         .Select(s => s.Text)
+         .Distinct()
+         .Concat(new[] { new Description(0) })
+         .OrderBy(o => o.CurrentLang)
+         .ToList();
+
+      ComparisonValues = GetComparisonValues();
+    }
+
+    private List<Description> GetComparisonValues() {
+      if (SelectedValue == null || SelectedValue.ID == 0) {
         return ItemsHolder
         .GetResultWithoutFilter(this)
         .Where(s => s.Sources != null)
         .SelectMany(s => s.Sources)
         .SelectMany(s => s.Additionals)
-        .Select(s => s.Text.CurrentLang)
+        .Select(s => s.Text)
         .Distinct()
-        .Where(l => !string.IsNullOrWhiteSpace(l))
-        .Concat(new[] { string.Empty })
-        .OrderBy(o => o)
+        .Concat(new[] { new Description(0) })
+        .OrderBy(o => o.CurrentLang)
         .ToList();
       }
       else {
@@ -70,13 +75,12 @@ namespace AssetViewer.Data.Filters {
         .GetResultWithoutFilter(this)
         .Where(s => s.Sources != null)
         .SelectMany(s => s.Sources)
-        .Where(s => s.Text.CurrentLang == SelectedValue)
+        .Where(s => s.Text.Equals(SelectedValue))
         .SelectMany(s => s.Additionals)
-        .Select(s => s.Text.CurrentLang)
+        .Select(s => s.Text)
         .Distinct()
-        .Where(l => !string.IsNullOrWhiteSpace(l))
-        .Concat(new[] { string.Empty })
-        .OrderBy(o => o)
+        .Concat(new[] { new Description(0) })
+        .OrderBy(o => o.CurrentLang)
         .ToList();
       }
     }

@@ -3,6 +3,7 @@ using System.Xml.Linq;
 
 namespace AssetViewer.Data {
 
+  [Serializable]
   public class Icon {
 
     #region Properties

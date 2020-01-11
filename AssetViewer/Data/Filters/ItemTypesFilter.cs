@@ -6,16 +6,38 @@ using System.Linq;
 namespace AssetViewer.Data.Filters {
 
   public class ItemTypesFilter : BaseFilter<string> {
-    public ItemTypesFilter(ItemsHolder itemsHolder) : base(itemsHolder) {
-    }
 
-    public override Func<IQueryable<TemplateAsset>, IQueryable<TemplateAsset>> FilterFunc => result => {
-      if (!String.IsNullOrEmpty(SelectedValue))
-        result = result.Where(w => w.ItemType == SelectedValue);
-      return result;
+    #region Properties
+
+    public override Func<IEnumerable<TemplateAsset>, IEnumerable<TemplateAsset>> FilterFunc => result => {
+      if (!String.IsNullOrEmpty(SelectedValue)) {
+        if (Comparison == ValueComparisons.UnEqual) {
+          return result.Where(w => w.ItemType != SelectedValue);
+        }
+        else {
+          return result.Where(w => w.ItemType == SelectedValue);
+        }
+      }
+
+      return null;
     };
 
-    public override IEnumerable<String> CurrentValues => ItemsHolder
+    public override int DescriptionID => -1002;
+
+    #endregion Properties
+
+    #region Constructors
+
+    public ItemTypesFilter(ItemsHolder itemsHolder) : base(itemsHolder) {
+      ComparisonType = FilterType.Selection;
+    }
+
+    #endregion Constructors
+
+    #region Methods
+
+    public override void SetCurrenValues() {
+      CurrentValues = ItemsHolder
         .GetResultWithoutFilter(this)
         .Select(s => s.ItemType)
         .Distinct()
@@ -23,7 +45,8 @@ namespace AssetViewer.Data.Filters {
         .Concat(new[] { string.Empty })
         .OrderBy(o => o)
         .ToList();
+    }
 
-    public override string DescriptionID => "-1002";
+    #endregion Methods
   }
 }

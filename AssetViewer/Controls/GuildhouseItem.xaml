@@ -1,20 +1,17 @@
-﻿<UserControl
+﻿<local:ItemsBase
   x:Class="AssetViewer.Controls.GuildhouseItem"
   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-  xmlns:assetViewer="clr-namespace:AssetViewer"
   xmlns:converter="clr-namespace:AssetViewer.Converter"
   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-  xmlns:filter="clr-namespace:AssetViewer.Data.Filters"
   xmlns:local="clr-namespace:AssetViewer.Controls"
   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
   x:Name="userControl"
+  d:DataContext="{d:DesignInstance local:GuildhouseItem}"
   d:DesignHeight="450"
   d:DesignWidth="836.864"
   FontSize="13"
-  Loaded="GuildhouseItem_OnLoaded"
   SnapsToDevicePixels="True"
-  Unloaded="UserControl_Unloaded"
   mc:Ignorable="d">
 
   <UserControl.Resources>
@@ -135,238 +132,14 @@
           <RowDefinition Height="22" />
           <RowDefinition Height="18" />
           <RowDefinition Height="22" />
-
           <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <Expander
-          Grid.Row="4"
-          Grid.Column="0"
-          Grid.ColumnSpan="7"
-          Header="{Binding AdvancedFiltersText}"
-          IsExpanded="True">
-          <Grid Margin="0,5,0,0">
-            <Grid.ColumnDefinitions>
-              <ColumnDefinition Width="20" />
-              <ColumnDefinition />
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="Auto" />
-            </Grid.RowDefinitions>
-            <ItemsControl
-              Grid.Row="0"
-              Grid.Column="0"
-              Grid.ColumnSpan="2"
-              ItemsSource="{Binding ItemsHolder.CustomFilters}">
-              <ItemsControl.ItemContainerStyle>
-                <Style TargetType="ContentPresenter">
-                  <Setter Property="HorizontalAlignment" Value="Stretch" />
-                  <Setter Property="VerticalAlignment" Value="Stretch" />
-                </Style>
-              </ItemsControl.ItemContainerStyle>
-              <ItemsControl.ItemTemplate>
-                <DataTemplate DataType="{x:Type filter:FilterHolder}">
-                  <Grid>
-                    <Grid.ColumnDefinitions>
-                      <ColumnDefinition Width="20" />
-                      <ColumnDefinition Width="200" />
-                      <ColumnDefinition Width="5" />
-                      <ColumnDefinition Width="200" />
-                      <ColumnDefinition Width="5" />
-                      <ColumnDefinition Width="200" />
-                      <ColumnDefinition Width="5" />
-                      <ColumnDefinition Width="200" />
-                    </Grid.ColumnDefinitions>
-                    <Button
-                      x:Name="btnRemoveFilter"
-                      Grid.Column="0"
-                      Background="Transparent"
-                      Click="BtnRemoveFilter_Click"
-                      Content="-" />
-                    <ComboBox
-                      Grid.Column="1"
-                      DisplayMemberPath="Description"
-                      ItemsSource="{Binding Filters}"
-                      SelectedItem="{Binding SelectedFilter}" />
-                    <Grid Grid.Column="3">
-                      <ComboBox ItemsSource="{Binding SelectedFilter.CurrentValues}" SelectedValue="{Binding SelectedFilter.SelectedValue}" SelectionChanged="ComboBox_SelectionChanged">
-                        <ComboBox.Style>
-                          <Style TargetType="ComboBox">
-                            <Setter Property="Visibility" Value="Collapsed" />
-                            <Style.Triggers>
-                              <DataTrigger Binding="{Binding SelectedFilter.FilterType}" Value="{x:Static filter:FilterType.Selection}">
-                                <Setter Property="Visibility" Value="Visible" />
-                              </DataTrigger>
-                            </Style.Triggers>
-                          </Style>
-                        </ComboBox.Style>
-                      </ComboBox>
-                      <TextBox Text="{Binding SelectedFilter.SelectedValue, UpdateSourceTrigger=PropertyChanged, Delay=100}">
-                        <TextBox.Style>
-                          <Style TargetType="TextBox">
-                            <Setter Property="Visibility" Value="Collapsed" />
-                            <Style.Triggers>
-                              <DataTrigger Binding="{Binding SelectedFilter.FilterType}" Value="{x:Static filter:FilterType.Text}">
-                                <Setter Property="Visibility" Value="Visible" />
-                              </DataTrigger>
-                            </Style.Triggers>
-                          </Style>
-                        </TextBox.Style>
-                      </TextBox>
-                      <CheckBox
-                        HorizontalAlignment="Center"
-                        Checked="ComboBox_SelectionChanged"
-                        IsChecked="{Binding SelectedFilter.SelectedValue}"
-                        Unchecked="ComboBox_SelectionChanged">
-                        <CheckBox.Style>
-                          <Style TargetType="CheckBox">
-                            <Setter Property="Visibility" Value="Collapsed" />
-                            <Style.Triggers>
-                              <DataTrigger Binding="{Binding SelectedFilter.FilterType}" Value="{x:Static filter:FilterType.Bool}">
-                                <Setter Property="Visibility" Value="Visible" />
-                              </DataTrigger>
-                            </Style.Triggers>
-                          </Style>
-                        </CheckBox.Style>
-                      </CheckBox>
-                    </Grid>
-                    <ComboBox
-                      Grid.Column="5"
-                      ItemsSource="{Binding Source={assetViewer:EnumBindingSource {x:Type assetViewer:ValueComparisons}}}"
-                      SelectedItem="{Binding SelectedFilter.Comparison}"
-                      SelectionChanged="ComboBox_SelectionChanged">
-                      <ComboBox.Style>
-                        <Style TargetType="ComboBox">
-                          <Style.Triggers>
-                            <DataTrigger Binding="{Binding SelectedFilter.ComparisonType}" Value="{x:Static filter:FilterType.None}">
-                              <Setter Property="Visibility" Value="Collapsed" />
-                            </DataTrigger>
-                            <DataTrigger Binding="{Binding SelectedFilter}" Value="{x:Null}">
-                              <Setter Property="Visibility" Value="Collapsed" />
-                            </DataTrigger>
-                          </Style.Triggers>
-                        </Style>
-                      </ComboBox.Style>
-                    </ComboBox>
-                    <Grid Grid.Column="7">
-                      <ComboBox ItemsSource="{Binding SelectedFilter.ComparisonValues}" SelectedValue="{Binding SelectedFilter.SelectedComparisonValue}" SelectionChanged="ComboBox_SelectionChanged">
-                        <ComboBox.Style>
-                          <Style TargetType="ComboBox">
-                            <Setter Property="Visibility" Value="Collapsed" />
-                            <Style.Triggers>
-                              <DataTrigger Binding="{Binding SelectedFilter.ComparisonType}" Value="{x:Static filter:FilterType.Selection}">
-                                <Setter Property="Visibility" Value="Visible" />
-                              </DataTrigger>
-                            </Style.Triggers>
-                          </Style>
-                        </ComboBox.Style>
-                      </ComboBox>
-                      <TextBox Text="{Binding SelectedFilter.SelectedComparisonValue, UpdateSourceTrigger=PropertyChanged, Delay=100}">
-                        <TextBox.Style>
-                          <Style TargetType="TextBox">
-                            <Setter Property="Visibility" Value="Collapsed" />
-                            <Style.Triggers>
-                              <DataTrigger Binding="{Binding SelectedFilter.ComparisonType}" Value="{x:Static filter:FilterType.Text}">
-                                <Setter Property="Visibility" Value="Visible" />
-                              </DataTrigger>
-                            </Style.Triggers>
-                          </Style>
-                        </TextBox.Style>
-                      </TextBox>
-                      <CheckBox
-                        HorizontalAlignment="Center"
-                        Checked="ComboBox_SelectionChanged"
-                        IsChecked="{Binding SelectedFilter.SelectedValue}"
-                        Unchecked="ComboBox_SelectionChanged">
-                        <CheckBox.Style>
-                          <Style TargetType="CheckBox">
-                            <Setter Property="Visibility" Value="Collapsed" />
-                            <Style.Triggers>
-                              <DataTrigger Binding="{Binding SelectedFilter.ComparisonType}" Value="{x:Static filter:FilterType.Bool}">
-                                <Setter Property="Visibility" Value="Visible" />
-                              </DataTrigger>
-                            </Style.Triggers>
-                          </Style>
-                        </CheckBox.Style>
-                      </CheckBox>
-                    </Grid>
-                  </Grid>
-                </DataTemplate>
-              </ItemsControl.ItemTemplate>
-            </ItemsControl>
-            <Button
-              x:Name="btnAddFilter"
-              Grid.Row="1"
-              Grid.Column="0"
-              Background="Transparent"
-              Click="BtnAddFilter_Click"
-              Content="+" />
-          </Grid>
-        </Expander>
         <TextBlock
           Grid.Row="0"
           Grid.Column="0"
           Margin="0,0,5,0"
           VerticalAlignment="Center"
           Text="{Binding Path=ItemsHolder.StandardFilters[Rarities].Description}" />
-        <ComboBox
-          x:Name="ComboBoxRarities"
-          Grid.Row="1"
-          Grid.Column="0"
-          Height="22"
-          ItemsSource="{Binding Path=ItemsHolder.StandardFilters[Rarities].CurrentValues}"
-          SelectedValue="{Binding Path=ItemsHolder.StandardFilters[Rarities].SelectedValue}"
-          SelectionChanged="ComboBox_SelectionChanged" />
-        <TextBlock
-          Grid.Row="2"
-          Grid.Column="0"
-          Margin="0,0,5,0"
-          VerticalAlignment="Center"
-          Text="{Binding Path=ItemsHolder.StandardFilters[SearchText].Description}" />
-        <TextBox Grid.Row="3" Grid.Column="0" Text="{Binding Path=ItemsHolder.StandardFilters[SearchText].SelectedValue, UpdateSourceTrigger=PropertyChanged, Delay=100}" />
-
-        <!--<TextBlock
-          Grid.Row="0"
-          Grid.Column="2"
-          Margin="0,0,5,0"
-          VerticalAlignment="Center"
-          Text="{Binding ItemsHolder.StandardFilters[ItemTypes].Description}" />
-        <ComboBox
-          x:Name="ComboBoxTypes"
-          Grid.Row="1"
-          Grid.Column="2"
-          Height="22"
-          Margin="0"
-          ItemsSource="{Binding Path=ItemsHolder.StandardFilters[ItemTypes].CurrentValues}"
-          SelectedValue="{Binding ItemsHolder.StandardFilters[ItemTypes].SelectedValue}"
-          SelectionChanged="ComboBox_SelectionChanged" />-->
-        <TextBlock
-          Grid.Row="2"
-          Grid.Column="2"
-          Margin="0,0,5,0"
-          VerticalAlignment="Center"
-          Text="{Binding ItemsHolder.StandardFilters[Order].Description}" />
-        <ComboBox
-          x:Name="ComboBoxTargets"
-          Grid.Row="3"
-          Grid.Column="2"
-          Height="22"
-          ItemsSource="{Binding ItemsHolder.StandardFilters[Order].CurrentValues}"
-          SelectedValue="{Binding ItemsHolder.StandardFilters[Order].SelectedValue}"
-          SelectionChanged="ComboBox_SelectionChanged" />
-        <TextBlock
-          Grid.Row="0"
-          Grid.Column="6"
-          Margin="0,0,5,0"
-          VerticalAlignment="Center"
-          Text="{Binding ItemsHolder.StandardFilters[TargetBuilding].Description}" />
-        <ComboBox
-          Grid.Row="1"
-          Grid.Column="6"
-          Height="22"
-          ItemsSource="{Binding ItemsHolder.StandardFilters[TargetBuilding].CurrentValues}"
-          SelectedValue="{Binding ItemsHolder.StandardFilters[TargetBuilding].SelectedValue}"
-          SelectionChanged="ComboBox_SelectionChanged" />
 
         <TextBlock
           Grid.Row="0"
@@ -374,30 +147,6 @@
           Margin="0,0,5,0"
           VerticalAlignment="Center"
           Text="{Binding ItemsHolder.StandardFilters[Equipped].Description}" />
-        <ComboBox
-          x:Name="ComboBoxEquipped"
-          Grid.Row="1"
-          Grid.Column="2"
-          Height="22"
-          Margin="0"
-          ItemsSource="{Binding ItemsHolder.StandardFilters[Equipped].CurrentValues}"
-          SelectedValue="{Binding ItemsHolder.StandardFilters[Equipped].SelectedValue}"
-          SelectionChanged="ComboBox_SelectionChanged" />
-
-        <!--<TextBlock
-          Grid.Row="0"
-          Grid.Column="6"
-          Margin="0,0,5,0"
-          VerticalAlignment="Center"
-          Text="{Binding ItemsHolder.StandardFilters[Sources].Description}" />
-        <ComboBox
-          x:Name="ComboBoxSources"
-          Grid.Row="1"
-          Grid.Column="6"
-          Height="22"
-          ItemsSource="{Binding ItemsHolder.StandardFilters[Sources].CurrentValues}"
-          SelectedValue="{Binding ItemsHolder.StandardFilters[Sources].SelectedValue}"
-          SelectionChanged="ComboBox_SelectionChanged" />-->
 
         <TextBlock
           Grid.Row="0"
@@ -405,6 +154,74 @@
           Margin="0,0,5,0"
           VerticalAlignment="Center"
           Text="{Binding ItemsHolder.StandardFilters[Upgrades].Description}" />
+        <TextBlock
+          Grid.Row="0"
+          Grid.Column="6"
+          Margin="0,0,5,0"
+          VerticalAlignment="Center"
+          Text="{Binding ItemsHolder.StandardFilters[TargetBuilding].Description}" />
+        <ComboBox
+          x:Name="ComboBoxRarities"
+          Grid.Row="1"
+          Grid.Column="0"
+          Height="22"
+          DisplayMemberPath="CurrentLang"
+          ItemsSource="{Binding Path=ItemsHolder.StandardFilters[Rarities].CurrentValues}"
+          SelectedItem="{Binding Path=ItemsHolder.StandardFilters[Rarities].SelectedValue}"
+          SelectionChanged="ComboBox_SelectionChanged" />
+        <ComboBox
+          x:Name="ComboBoxEquipped"
+          Grid.Row="1"
+          Grid.Column="2"
+          Height="22"
+          Margin="0"
+          DisplayMemberPath="CurrentLang"
+          ItemsSource="{Binding ItemsHolder.StandardFilters[Equipped].CurrentValues}"
+          SelectedItem="{Binding ItemsHolder.StandardFilters[Equipped].SelectedValue}"
+          SelectionChanged="ComboBox_SelectionChanged" />
+        <ComboBox
+          x:Name="ComboBoxUpgrades"
+          Grid.Row="1"
+          Grid.Column="4"
+          Height="22"
+          DisplayMemberPath="CurrentLang"
+          ItemsSource="{Binding ItemsHolder.StandardFilters[Upgrades].CurrentValues}"
+          SelectedItem="{Binding ItemsHolder.StandardFilters[Upgrades].SelectedValue}"
+          SelectionChanged="ComboBox_SelectionChanged" />
+        <ComboBox
+          Grid.Row="1"
+          Grid.Column="6"
+          Height="22"
+          DisplayMemberPath="CurrentLang"
+          ItemsSource="{Binding ItemsHolder.StandardFilters[TargetBuilding].CurrentValues}"
+          SelectedItem="{Binding ItemsHolder.StandardFilters[TargetBuilding].SelectedValue}"
+          SelectionChanged="ComboBox_SelectionChanged" />
+        <TextBlock
+          Grid.Row="2"
+          Grid.Column="0"
+          Margin="0,0,5,0"
+          VerticalAlignment="Center"
+          Text="{Binding Path=ItemsHolder.StandardFilters[SearchText].Description}" />
+        <TextBlock
+          Grid.Row="2"
+          Grid.Column="2"
+          Margin="0,0,5,0"
+          VerticalAlignment="Center"
+          Text="{Binding ItemsHolder.OrderFilter.Description}" />
+        <TextBox
+          Grid.Row="3"
+          Grid.Column="0"
+          SourceUpdated="ComboBox_SelectionChanged"
+          Text="{Binding NotifyOnSourceUpdated=True, Path=ItemsHolder.StandardFilters[SearchText].SelectedValue, UpdateSourceTrigger=PropertyChanged, Delay=100}" />
+        <ComboBox
+          x:Name="ComboBoxTargets"
+          Grid.Row="3"
+          Grid.Column="2"
+          Height="22"
+          DisplayMemberPath="CurrentLang"
+          ItemsSource="{Binding ItemsHolder.OrderFilter.CurrentValues}"
+          SelectedItem="{Binding ItemsHolder.OrderFilter.SelectedValue}"
+          SelectionChanged="ComboBox_SelectionChanged" />
         <CheckBox
           x:Name="cbOnlyAvailable"
           Grid.Row="3"
@@ -417,43 +234,6 @@
           Unchecked="ComboBox_SelectionChanged">
           <TextBlock FlowDirection="LeftToRight" Text="{Binding ItemsHolder.StandardFilters[Available].Description}" />
         </CheckBox>
-        <ComboBox
-          x:Name="ComboBoxUpgrades"
-          Grid.Row="1"
-          Grid.Column="4"
-          Height="22"
-          ItemsSource="{Binding ItemsHolder.StandardFilters[Upgrades].CurrentValues}"
-          SelectedValue="{Binding ItemsHolder.StandardFilters[Upgrades].SelectedValue}"
-          SelectionChanged="ComboBox_SelectionChanged" />
-
-        <!--<TextBlock
-          Grid.Row="2"
-          Grid.Column="0"
-          Margin="0,0,5,0"
-          VerticalAlignment="Center"
-          Text="{Binding Path=ItemsHolder.StandardFilters[ReleaseVersions].Description}" />
-        <ComboBox
-          x:Name="ComboBoxReleases"
-          Grid.Row="3"
-          Grid.Column="0"
-          Height="22"
-          ItemsSource="{Binding Path=ItemsHolder.StandardFilters[ReleaseVersions].CurrentValues}"
-          SelectedValue="{Binding ItemsHolder.StandardFilters[ReleaseVersions].SelectedValue}"
-          SelectionChanged="ComboBox_SelectionChanged" />-->
-        <!--<TextBlock
-          Grid.Row="2"
-          Grid.Column="6"
-          Margin="0,0,5,0"
-          VerticalAlignment="Center"
-          Text="{Binding ItemsHolder.StandardFilters[DetailedSources].Description}" />
-        <ComboBox
-          x:Name="ComboBoxDetailedSources"
-          Grid.Row="3"
-          Grid.Column="6"
-          Height="22"
-          ItemsSource="{Binding ItemsHolder.StandardFilters[DetailedSources].CurrentValues}"
-          SelectedValue="{Binding ItemsHolder.StandardFilters[DetailedSources].SelectedValue}"
-          SelectionChanged="ComboBox_SelectionChanged" />-->
         <Button
           x:Name="btnResetFilters"
           Grid.Row="3"
@@ -462,6 +242,23 @@
           Padding="0"
           Click="BtnResetFilters_Click"
           Content="{Binding ResetButtonText, ElementName=userControl}" />
+        <local:ExtendedFilters
+          Grid.Row="4"
+          Grid.Column="0"
+          Grid.ColumnSpan="7"
+          AddFilter_Click="BtnAddFilter_Click"
+          RemoveFilter_Click="BtnRemoveFilter_Click"
+          SelectionChanged="ComboBox_SelectionChanged" />
+        <TextBlock
+          Grid.Row="4"
+          Grid.Column="0"
+          Grid.ColumnSpan="7"
+          Height="22"
+          Margin="21,0,0,0"
+          Padding="9,3,0,0"
+          HorizontalAlignment="Stretch"
+          VerticalAlignment="Top"
+          Text="{Binding AdvancedFiltersText}" />
       </Grid>
     </Border>
     <Grid Grid.Row="2">
@@ -470,43 +267,8 @@
         <ColumnDefinition Width="10" />
         <ColumnDefinition Width="350" />
       </Grid.ColumnDefinitions>
-      <Grid Grid.Column="0">
-        <Border BorderBrush="#FF554628" BorderThickness="1" CornerRadius="5">
-          <ListBox
-            x:Name="ListBoxItems"
-            HorizontalContentAlignment="Stretch"
-            Background="Transparent"
-            BorderBrush="Transparent"
-            ItemsSource="{Binding Path=ItemsHolder.Items}"
-            SelectedItem="{Binding Path=SelectedAsset}"
-            SelectionChanged="ListBoxItems_OnSelectionChanged">
-            <ListBox.ItemTemplate>
-              <DataTemplate>
-                <Grid MaxHeight="24">
-                  <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="30" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="Auto" />
-                  </Grid.ColumnDefinitions>
-                  <Image Grid.Column="0" HorizontalAlignment="Left" Source="{Binding Path=Text.Icon.Filename}" />
-                  <TextBlock
-                    Grid.Column="1"
-                    VerticalAlignment="Center"
-                    Text="{Binding Path=Text}"
-                    TextTrimming="CharacterEllipsis" />
-                  <TextBlock
-                    Grid.Column="2"
-                    HorizontalAlignment="Right"
-                    VerticalAlignment="Center"
-                    FontSize="11"
-                    Text="{Binding Path=ID}" />
-                </Grid>
-              </DataTemplate>
-            </ListBox.ItemTemplate>
-          </ListBox>
-        </Border>
-      </Grid>
+      <local:ItemList Grid.Column="0" ItemSource="{Binding ItemsHolder.Items}" />
       <local:ItemCard Grid.Column="2" CanSwap="True" SelectedAsset="{Binding SelectedAsset}" />
     </Grid>
   </Grid>
-</UserControl>
+</local:ItemsBase>

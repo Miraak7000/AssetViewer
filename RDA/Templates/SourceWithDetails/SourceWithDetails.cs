@@ -2,9 +2,7 @@
 using System.Xml.Linq;
 
 namespace RDA.Templates {
-
   public struct SourceWithDetails {
-
     #region Properties
 
     public XElement Source { get; set; }

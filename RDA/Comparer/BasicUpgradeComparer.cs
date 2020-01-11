@@ -1,19 +1,18 @@
 ﻿using RDA.Data;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RDA.Comparer {
   internal class BasicUpgradeComparer : IEqualityComparer<Upgrade> {
+    #region Methods
+
     public bool Equals(Upgrade x, Upgrade y) {
       return x.Text.Equals(y.Text) && x.Value.Equals(y.Value);
-
     }
 
     public int GetHashCode(Upgrade obj) {
       return 0;
     }
+
+    #endregion Methods
   }
 }

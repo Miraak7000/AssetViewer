@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using AssetViewer.Comparer;
+using AssetViewer.Library;
+using System;
+using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.IO;
@@ -14,19 +17,29 @@ namespace AssetViewer {
 
     #region Properties
 
-    public static Dictionary<string, string> Descriptions { get; } = new Dictionary<string, string>();
+    public static Dictionary<int, string> Descriptions { get; } = new Dictionary<int, string>();
 
     #endregion Properties
 
     #region Fields
 
-    public static Library.Languages Language = Library.Languages.English;
+    public static Library.Languages Language { get; set; } = Library.Languages.English;
+    public static List<Languages> PossibleLanguages { get; } = new List<Languages>();
 
     #endregion Fields
 
     #region Constructors
 
     public App() {
+      var comp = RarityComparer.Default;
+
+      foreach (var language in Enum.GetValues(typeof(Languages))) {
+        var lang = (Languages)language;
+        var resource = $"AssetViewer.Resources.Assets.Texts_{lang.ToString("G")}.xml";
+        if (Assembly.GetExecutingAssembly().GetManifestResourceNames().Contains(resource)) {
+          PossibleLanguages.Add(lang);
+        }
+      }
       switch (CultureInfo.CurrentCulture.TwoLetterISOLanguageName) {
         case "pt":
           Language = Library.Languages.Brazilian;
@@ -93,7 +106,7 @@ namespace AssetViewer {
       using (var reader = new StreamReader(stream)) {
         var document = XDocument.Parse(reader.ReadToEnd()).Root;
         foreach (var item in document.Elements()) {
-          Descriptions.Add(item.Attribute("ID").Value, item.Value);
+          Descriptions.Add(int.Parse(item.Attribute("ID").Value), item.Value);
         }
       }
     }

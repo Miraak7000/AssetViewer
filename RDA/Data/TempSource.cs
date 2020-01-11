@@ -1,5 +1,4 @@
-﻿using RDA.Library;
-using RDA.Templates;
+﻿using RDA.Templates;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -23,7 +22,6 @@ namespace RDA.Data {
     #region Constructors
 
     public TempSource(SourceWithDetails element) {
-     
       var Source = element.Source;
       this.ID = Source.XPathSelectElement("Values/Standard/GUID").Value;
       this.Name = Source.XPathSelectElement("Values/Standard/Name").Value;
@@ -31,16 +29,18 @@ namespace RDA.Data {
         case "TourismFeature":
           this.Text = new Description("-4");
           foreach (var item in element.Details) {
-            var cityStatus = item.Element("CityStatus");
+            var cityStatus = item.Element("Item").Element("CityStatus");
             if (cityStatus != null) {
-              var desc = new Description("145011").InsertBefore((Assets.TourismStati[cityStatus.Value].Element("AttractivenessThreshold")?.Value ?? "0"));
+              var desc = new Description("145011")
+                .InsertBefore(Assets.TourismStati[cityStatus.Value].Element("AttractivenessThreshold")?.Value ?? "0")
+                .AppendInBraces(new Description(Assets.KeyToIdDict[item.Element("Template").Value]));
               Details.Add(desc);
             }
-            else if (item.Element("UnlockingSpecialist") != null) {
-              Details.Add(new Description(item.Element("UnlockingSpecialist").Value));
+            else if (item.Element("Item").Element("UnlockingSpecialist") != null) {
+              Details.Add(new Description(item.Element("Item").Element("UnlockingSpecialist").Value));
             }
-            else if (item.Element("UnlockingSetBuff") != null) {
-              Details.Add(new Description(item.Element("UnlockingSetBuff").Value));
+            else if (item.Element("Item").Element("UnlockingSetBuff") != null) {
+              Details.Add(new Description(item.Element("Item").Element("UnlockingSetBuff").Value));
             }
             else {
             }
@@ -59,30 +59,33 @@ namespace RDA.Data {
           // Processing Details
           foreach (var item in element.Details) {
             // Detail points to Expedition
-            if (item.Element("Template")?.Value == "Expedition") {
-              var desc = new Description("-5");
+            if (item.Element("Template").Value == "Expedition") {
+              Description difficulty = null;
+              switch (item.XPathSelectElement("Values/Expedition/ExpeditionDifficulty")?.Value) {
+                case "Easy":
+                  difficulty = new Description("11031");
+                  break;
+
+                case "Average":
+                  difficulty = new Description("11032");
+                  break;
+
+                case "Hard":
+                  difficulty = new Description("11033");
+                  break;
+
+                default:
+                  difficulty = new Description("11031");
+                  break;
+              }
+              var desc = new Description("-5").AppendWithSpace("-->").AppendWithSpace(difficulty);
               this.Details.Add(desc);
               continue;
             }
-            // Detail points to ExpeditionDecision
-            var path = "";
-            if (item.Element("Template").Value == "ExpeditionDecision") {
-              path = item.XPathSelectElement("Values/Standard/Name").Value.Split(' ').Last();
-            }
-            // Add Detail
-            var parent = item.XPathSelectElement("Values/Standard/GUID").Value.FindParentElement(new[] { "ExpeditionEvent", "Expedition" });
-            if (parent?.Element("Template") != null) {
-              switch (parent.Element("Template").Value) {
-                case "ExpeditionEvent":
-                  var desc = new Description(parent.XPathSelectElement("Values/Standard/GUID").Value).Append(path);
-                  this.Details.Add(desc);
-                  break;
-
-                case "Expedition":
-                  desc = new Description("-5");
-                  this.Details.Add(desc);
-                  break;
-              }
+            // Detail points to Expedition Event
+            else if (item.Element("Asset").Element("Template").Value == "ExpeditionEvent") {
+              var desc = new Description(item.XPathSelectElement("Values/Standard/GUID").Value).AppendWithSpace(item.Element("Template").Value);
+              this.Details.Add(desc);
             }
             else {
               throw new NotImplementedException();
@@ -90,9 +93,9 @@ namespace RDA.Data {
           }
           break;
 
-        case "Profile_3rdParty":
-        case "Profile_3rdParty_Pirate":
-        case "HafenHugo":
+        //case "Profile_3rdParty":
+        //case "Profile_3rdParty_Pirate":
+        //case "HafenHugo":
         case "Harbor":
           this.Text = new Description(Source.XPathSelectElement("Values/Standard/GUID").Value).InsertBefore("-").InsertBefore(new Description("11150"));
           foreach (var item in element.Details) {
@@ -143,14 +146,16 @@ namespace RDA.Data {
         case "A7_QuestNewspaperArticle":
         case "A7_QuestLostCargo":
         case "A7_QuestExpedition":
-          var questgiver = Source.XPathSelectElement("Values/Quest/QuestGiver").Value;
-          this.Text = new Description(questgiver).InsertBefore("-").InsertBefore(new Description("2734"));
-          foreach (var item in element.Details.Select(e => new Description(e.XPathSelectElement("Values/Standard/GUID").Value)).Distinct()) {
-            this.Details.Add(item);
+        case "A7_QuestDivingBellSonar":
+          var questgiver = Source.XPathSelectElement("Values/Quest/QuestGiver")?.Value;
+          if (questgiver != null) {
+            this.Text = new Description(questgiver).InsertBefore("-").InsertBefore(new Description("2734"));
+            foreach (var item in element.Details.Select(e => new Description(e.XPathSelectElement("Values/Standard/GUID").Value)).Distinct()) {
+              this.Details.Add(item);
+            }
           }
           break;
 
-        case "A7_QuestDivingBellSonar":
         case "A7_QuestDivingBellTreasureMap":
           questgiver = Source.XPathSelectElement("Values/Quest/QuestGiver")?.Value;
           this.Text = new Description(questgiver ?? "113420").InsertBefore("-").InsertBefore(new Description("2734"));
@@ -172,11 +177,13 @@ namespace RDA.Data {
         case "Dive":
           this.Text = new Description("113420");
           this.Details = element.Details.Select(_ => new Description("113420")).ToList();
-          break;      
+          break;
+
         case "Pickup":
           this.Text = new Description("500334");
           this.Details = element.Details.Select(_ => new Description("500334")).ToList();
           break;
+
         case "Item":
           this.Text = new Description(Source.XPathSelectElement("Values/Standard/GUID").Value).InsertBefore("-").InsertBefore(new Description("-101"));
           break;

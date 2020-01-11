@@ -15,16 +15,17 @@ namespace AssetViewer {
     public MainWindow() {
       this.InitializeComponent();
       this.DataContext = this;
-      if (App.Language == Languages.German) {
-        ComboBoxLanguage.SelectedIndex = 1;
-      }
-      else if (App.Language == Languages.Korean) {
-        ComboBoxLanguage.SelectedIndex = 2;
-      }
+      ComboBoxLanguage.SelectedItem = App.Language;
       ComboBoxLanguage.SelectionChanged += ComboBoxLanguage_OnSelectionChanged;
     }
 
     #endregion Constructors
+
+    #region Events
+
+    public event Action<object, SelectionChangedEventArgs> OnLanguage_Changed;
+
+    #endregion Events
 
     #region Methods
 
@@ -54,26 +55,33 @@ namespace AssetViewer {
           case 4:
             this.Presenter.Content = new Tourism();
             break;
+
+          case 5:
+            this.Presenter.Content = new Buildings();
+            break;
+
+          case 6:
+            this.Presenter.Content = new ItemSets();
+            break;
+
+          case 7:
+            this.Presenter.Content = new CityFestival();
+            break;
+
+          case 8:
+            this.Presenter.Content = new PoolToTree();
+            break;
         }
       }
     }
 
     private void ComboBoxLanguage_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
-      switch (this.ComboBoxLanguage.SelectedIndex) {
-        case 0:
-          App.Language = Languages.English;
-          break;
-
-        case 1:
-          App.Language = Languages.German;
-          break;
-
-        case 2:
-          App.Language = Languages.Korean;
-          break;
+      if (ComboBoxLanguage.SelectedItem is Languages lang) {
+        App.Language = lang;
       }
       App.LoadLanguageFile();
       DataContext = null;
+      OnLanguage_Changed(sender, e);
       DataContext = this;
     }
 

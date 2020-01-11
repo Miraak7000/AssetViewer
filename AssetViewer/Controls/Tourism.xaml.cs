@@ -43,11 +43,15 @@ namespace AssetViewer.Controls {
     #region Methods
 
     private void Tourism_Unloaded(object sender, RoutedEventArgs e) {
-      if (Application.Current.MainWindow is MainWindow main)main.ComboBoxLanguage.SelectionChanged -= this.ComboBoxLanguage_SelectionChanged;
+      if (Application.Current.MainWindow is MainWindow main) {
+        main.OnLanguage_Changed -= this.ComboBoxLanguage_SelectionChanged;
+      }
     }
 
     private void Tourism_Loaded(object sender, RoutedEventArgs e) {
-      ((MainWindow)Application.Current.MainWindow).ComboBoxLanguage.SelectionChanged += this.ComboBoxLanguage_SelectionChanged;
+      ((MainWindow)Application.Current.MainWindow).OnLanguage_Changed += this.ComboBoxLanguage_SelectionChanged;
+      ListBoxStatis.SelectedIndex = 0;
+      lbItemsList.SelectedIndex = 0;
     }
 
     private void ComboBoxLanguage_SelectionChanged(object sender, SelectionChangedEventArgs e) {

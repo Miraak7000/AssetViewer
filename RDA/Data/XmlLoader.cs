@@ -3,9 +3,7 @@ using System.Linq;
 using System.Xml.Linq;
 
 namespace RDA {
-
   public static class XmlLoader {
-
     #region Methods
 
     public static XElement LoadXml(string path) {
@@ -18,7 +16,7 @@ namespace RDA {
             if (templates.Contains(asset.Element("Template")?.Value ?? "")) {
               var standards = templates[asset.Element("Template").Value];
               foreach (var standard in standards) {
-                AddStandardValues(asset.Element("Values"), standard.Element("Properties"));
+                asset.Element("Values").AddStandardValues(standard.Element("Properties"));
               }
             }
           }
@@ -28,15 +26,19 @@ namespace RDA {
       return null;
     }
 
-    private static void AddStandardValues(XElement asset, XElement standarts) {
-      foreach (var property in standarts.Elements()) {
-        if (asset.Element(property.Name.LocalName) is XElement current) {
-          if (property.HasElements) {
-            AddStandardValues(current, property);
+    public static void AddStandardValues(this XElement asset, XElement standarts) {
+      foreach (var group in standarts.Elements().GroupBy(e => e.Name.LocalName)) {
+        var groupArray = group.ToArray();
+        for (int i = 0; i < groupArray.Length; i++) {
+          var property = groupArray[i];
+          if (asset.Elements(group.Key).Count() > i && asset.Elements(property.Name.LocalName).ElementAt(i) is XElement current) {
+            if (property.HasElements) {
+              AddStandardValues(current, property);
+            }
           }
-        }
-        else {
-          asset.Add(property);
+          else {
+            asset.Add(property);
+          }
         }
       }
     }

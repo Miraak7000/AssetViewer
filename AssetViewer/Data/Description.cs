@@ -8,17 +8,17 @@ namespace AssetViewer.Data {
   [Serializable]
   [DesignerCategory("code")]
   [XmlType(AnonymousType = true)]
-  public class Description {
+  public class Description : IEquatable<Description> {
 
     #region Properties
 
     [XmlAttribute]
-    public String ID { get; set; }
+    public virtual int ID { get; set; }
 
     public Icon Icon { get; set; }
 
     [XmlIgnore]
-    public string CurrentLang => App.Descriptions[ID];
+    public virtual string CurrentLang => App.Descriptions[ID];
 
     [XmlAttribute]
     public DescriptionFontStyle FontStyle { get; set; }
@@ -33,19 +33,13 @@ namespace AssetViewer.Data {
     }
 
     public Description(XElement item) {
-      var h = item.Attribute("ID")?.Value;
-      if (h == null) {
-      }
-      this.ID = item.Attribute("ID").Value;
+      this.ID = int.Parse(item.Attribute("ID").Value);
       this.Icon = item.Element("Icon")?.Value == null ? null : new Icon(item.Element("Icon"));
-      var att = item.Attribute("FontStyle");
-      if (att != null) {
-      }
       this.FontStyle = item.Attribute("FontStyle") == null ? default : (DescriptionFontStyle)Convert.ToInt32(item.Attribute("FontStyle").Value);
       this.AdditionalInformation = item.Element("AdditionalInformation")?.Value == null ? null : new Description(item.Element("AdditionalInformation"));
     }
 
-    public Description(string id) {
+    public Description(int id) {
       ID = id;
     }
 
@@ -55,6 +49,14 @@ namespace AssetViewer.Data {
 
     public override string ToString() {
       return CurrentLang;
+    }
+
+    public bool Equals(Description other) {
+      return ID.Equals(other?.ID);
+    }
+
+    public override int GetHashCode() {
+      return ID.GetHashCode();
     }
 
     #endregion Methods

@@ -6,13 +6,12 @@ using System.Xml.Linq;
 using System.Xml.XPath;
 
 namespace RDA.Data {
-
   public class Upgrade {
-
     #region Properties
 
     public Description Text { get; set; }
     public String Value { get; set; }
+    public String Category { get; set; }
     public List<AdditionalOutput> AdditionalOutputs { get; set; }
     public List<ReplaceInput> ReplaceInputs { get; set; }
     public List<InputAmountUpgrade> InputAmountUpgrades { get; set; }
@@ -27,7 +26,7 @@ namespace RDA.Data {
     }
 
     public Upgrade(XElement element) {
-      var isPercent = element.Element("Percental") == null ? false : element.Element("Percental").Value == "1";
+      var isPercent = element.Element("Percental")?.Value == "1";
       var value = element.Element("Value") == null ? null : (Int32?)Int32.Parse(element.Element("Value").Value);
       var factor = 1;
       if (Assets.KeyToIdDict.ContainsKey(element.Name.LocalName)) {
@@ -39,7 +38,7 @@ namespace RDA.Data {
           switch (element.Element("Template").Value) {
             case "ActionStartTreasureMapQuest":
               this.Additionals = new List<Upgrade>();
-              this.Text = new Description("2734").Append("-").Append(new Description(element.XPathSelectElement("Values/ActionStartTreasureMapQuest/TreasureSessionOrRegion").Value));
+              this.Text = new Description("2734").AppendWithSpace("-").AppendWithSpace(new Description(element.XPathSelectElement("Values/ActionStartTreasureMapQuest/TreasureSessionOrRegion").Value));
               this.Additionals.Add(new Upgrade { Text = new Description(element.XPathSelectElement("Values/ActionStartTreasureMapQuest/TreasureMapQuest").Value) });
               break;
 
@@ -65,7 +64,13 @@ namespace RDA.Data {
 
         case "AddAssemblyOptions":
           this.Text.AdditionalInformation = new Description("20325", DescriptionFontStyle.Light);
-          var descs = element.Elements("Items").Select(i => new Description(i.Element("NewOption").Value));
+          var descs = element.Elements("Item").Select(i => new Description(i.Element("NewOption").Value));
+          this.Text.AdditionalInformation.Replace("[ItemAssetData([RefGuid]) AddAssemblyOptionsFormatted]", descs, (s) => string.Join(", ", s));
+          break;
+
+        case "AssemblyOptions":
+          this.Text.AdditionalInformation = new Description("20325", DescriptionFontStyle.Light);
+          descs = element.Descendants("Vehicle").Select(i => new Description(i.Value));
           this.Text.AdditionalInformation.Replace("[ItemAssetData([RefGuid]) AddAssemblyOptionsFormatted]", descs, (s) => string.Join(", ", s));
           break;
 
@@ -95,17 +100,14 @@ namespace RDA.Data {
           switch (target) {
             case "190777": //Hospital
               unit = new Description("100584");
-              //volunteer = new Description("100583");
               break;
 
             case "190776": //Police Station
               unit = new Description("100582");
-              //volunteer = new Description("100581");
               break;
 
             case "190775": //Fire Station
               unit = new Description("100580");
-              //volunteer = new Description("100579");
               break;
             //case "112669": //Polar Station
             //  unit = new Description("114896");
@@ -136,17 +138,15 @@ namespace RDA.Data {
 
         case "ResolverUnitDecreaseUpgrade":
           target = element.Parent.Parent.Element("ItemEffect").Element("EffectTargets").Elements().FirstOrDefault()?.Element("GUID").Value;
-          unit = null;
           switch (target) {
             case "190777": //Hospital
               this.Text = new Description("12012");
-              //unit = new Description("100583");
               break;
 
             case "190776": //Police Station
               this.Text = new Description("21509");
-              //unit = new Description("100581");
-              break;    
+              break;
+
             case "112669": //Polar Station
               this.Text = new Description("22983");
               break;
@@ -154,7 +154,6 @@ namespace RDA.Data {
             case "190775": //Fire Station
             case "1010463": //Fire Department
               this.Text = new Description("21508");
-              //unit = new Description("100579");
               break;
 
             default:
@@ -172,7 +171,7 @@ namespace RDA.Data {
             .FirstOrDefault()?
             .Element("GUID")
             .Value;
-          unit = null;
+    
           switch (target) {
             case "190777": //Hospital
               this.Text = new Description("100583");
@@ -180,7 +179,8 @@ namespace RDA.Data {
 
             case "190776": //Police Station
               this.Text = new Description("100581");
-              break;      
+              break;
+
             case "112669": //Polar Station
               this.Text = new Description("114895");
               break;
@@ -341,9 +341,9 @@ namespace RDA.Data {
 
         case "IncidentIllnessIncreaseUpgrade":
         case "IncidentArcticIllnessIncreaseUpgrade":
-        case "IncidentRiotIncreaseUpgrade":
         case "IncidentFireIncreaseUpgrade":
         case "IncidentExplosionIncreaseUpgrade":
+        case "ScrapAmountLevelUpgrade":
           factor = 10;
           isPercent = true;
           break;
@@ -352,7 +352,7 @@ namespace RDA.Data {
         case "Cannon":
         case "BigBertha":
         case "Torpedo":
-          value = -Convert.ToInt32((100M - (100M * Decimal.Parse(element.Element("Factor").Value, CultureInfo.InvariantCulture))));
+          value = -Convert.ToInt32(100M - (100M * Decimal.Parse(element.Element("Factor").Value, CultureInfo.InvariantCulture)));
           isPercent = true;
           break;
 
@@ -373,16 +373,34 @@ namespace RDA.Data {
         case "NeededAreaPercentUpgrade":
           isPercent = true;
           break;
-          
+
         case "AdditionalHappiness":
         case "AdditionalSupply":
         case "AdditionalMoney":
         case "AdditionalHeat":
+        case "Attractiveness":
+        case "NumOfPiers":
+        case "LoadingSpeed":
+        case "MinLoadingTime":
+        case "AttackRange":
+        case "LineOfSightRange":
+        case "ReloadTime":
+        case "BaseDamage":
+        case "HealRadius":
+        case "HealPerMinute":
+        case "MaxTrainCount":
           value = Int32.Parse(element.Value);
           break;
 
         case "ResolverUnitMovementSpeedUpgrade":
           this.Value = null;
+          break;
+
+        case "IncidentRiotIncreaseUpgrade":
+          if (element.Element("Percental")?.Value != "1") {
+            factor = 10;
+          }
+          isPercent = true;
           break;
 
         case "AccuracyUpgrade":
@@ -409,14 +427,13 @@ namespace RDA.Data {
         case "BlockHostileTakeover":
         case "MaintainanceUpgrade":
         case "MoralePowerUpgrade":
-        case "ScrapAmountLevelUpgrade":
         case "PierSpeedUpgrade":
         case "HeatRangeUpgrade":
+        case "HasPollution":
           break;
 
         case "MinPickupTimeUpgrade":
         case "MaxPickupTimeUpgrade":
-          //.InsertBefore("Maximum", "Maximum");
           break;
 
         case "RarityWeightUpgrade":
@@ -436,33 +453,16 @@ namespace RDA.Data {
           this.Additionals = new List<Upgrade>();
           this.Text = new Description("145011");
           foreach (var item in element.Elements()) {
-              this.Additionals.Add(new Upgrade() { Text = new Description(item.Element("ItemSet").Value), Value = $"+{item.Element("AttractivenessUpgradePercent").Value}%" });
+            this.Additionals.Add(new Upgrade() { Text = new Description(item.Element("ItemSet").Value), Value = $"+{item.Element("AttractivenessUpgradePercent").Value}%" });
           }
           break;
-        //case "AllocationWeightUpgrade":
-        //  this.Additionals = new List<Upgrade>();
-        //  this.Text = new Description("22230");
-        //  var result = new Collection<Upgrade>();
-        //  foreach (var item in element.Elements()) {
-        //    switch (item.Name.LocalName) {
-        //      case "None":
-        //        result.Add(new Upgrade() { Text = new Description("22230"), Value = $"+{item.Element("AdditionalWeight").Value}" });
-        //        break;
-        //      case "Zoo":
-        //        result.Add(new Upgrade() { Text = new Description("22231"), Value = $"+{item.Element("AdditionalWeight").Value}" });
-        //        break;
-        //      case "Museum":
-        //        result.Add(new Upgrade() { Text = new Description("22232"), Value = $"+{item.Element("AdditionalWeight").Value}" });
-        //        break;
-        //      default:
-        //        result.Add(new Upgrade() { Text = new Description("22233"), Value = $"+{item.Element("AdditionalWeight").Value}" });
-        //        break;
-        //    }
-        //  }
-        //  foreach (var item in result.Distinct(new BasicUpgradeComparer())) {
-        //    this.Additionals.Add(item);
-        //  }
-        //  break;
+
+        case "Residence7":
+          this.Text = new Description("22379");
+          this.Additionals = new List<Upgrade> {
+            new Upgrade() { Text = new Description(element.Element("PopulationLevel7").Value), Value = element.Element("ResidentMax").Value }
+          };
+          break;
 
         default:
           throw new NotImplementedException(element.Name.LocalName);
@@ -519,6 +519,8 @@ namespace RDA.Data {
         result.Add(this.Text.ToXml("Text"));
       if (this.Value != null)
         result.Add(new XElement("Value", this.Value));
+      if (this.Category != null)
+        result.Add(new XAttribute("Category", this.Category));
       if (this.AdditionalOutputs != null)
         result.Add(new XElement("AdditionalOutputs", this.AdditionalOutputs.Select(s => s.ToXml())));
       if (this.ReplaceInputs != null)

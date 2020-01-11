@@ -6,39 +6,26 @@ using System.Linq;
 
 namespace AssetViewer.Data.Filters {
 
-  public class RaritiesFilter : BaseFilter<string> {
+  public class RaritiesFilter : BaseFilter<Description> {
 
     #region Properties
 
-    public override Func<IQueryable<TemplateAsset>, IQueryable<TemplateAsset>> FilterFunc => result => {
-      if (!String.IsNullOrEmpty(SelectedComparisonValue)) {
-        return result.Where(w => CompareToRarity(w.Rarity.CurrentLang));
+    public override Func<IEnumerable<TemplateAsset>, IEnumerable<TemplateAsset>> FilterFunc => result => {
+      if (SelectedComparisonValue != null && SelectedComparisonValue.ID != 0) {
+        return result.Where(w => CompareToRarity(w.Rarity.ID));
       }
-      else if (!String.IsNullOrEmpty(SelectedValue)) {
-        return result.Where(w => w.Rarity.CurrentLang == SelectedValue);
+      else if (SelectedValue != null && SelectedValue.ID != 0) {
+        if (Comparison == ValueComparisons.UnEqual) {
+          return result.Where(w => !w.Rarity.Equals(SelectedValue));
+        }
+        else {
+          return result.Where(w => w.Rarity.Equals(SelectedValue));
+        }
       }
-      return result;
+      return null;
     };
 
-    public override IEnumerable<String> CurrentValues => ItemsHolder
-         .GetResultWithoutFilter(this)
-         .Select(s => s.Rarity.CurrentLang)
-         .Distinct()
-         .Where(l => !string.IsNullOrWhiteSpace(l))
-         .Concat(new[] { string.Empty })
-         .OrderBy(o => o, RarityComparer.Default)
-         .ToList();
-
-    public override IEnumerable<string> ComparisonValues => ItemsHolder
-         .GetResultWithoutFilter(this)
-         .Select(s => s.Rarity.CurrentLang)
-         .Distinct()
-         .Where(l => !string.IsNullOrWhiteSpace(l))
-         .Concat(new[] { string.Empty })
-         .OrderBy(o => o, RarityComparer.Default)
-         .ToList();
-
-    public override string DescriptionID => "-1023";
+    public override int DescriptionID => -1023;
 
     #endregion Properties
 
@@ -53,19 +40,39 @@ namespace AssetViewer.Data.Filters {
 
     #region Methods
 
-    private bool CompareToRarity(string l) {
+    public override void SetCurrenValues() {
+      CurrentValues = ItemsHolder
+         .GetResultWithoutFilter(this)
+         .Where(s => s.Rarity != null)
+         .Select(s => s.Rarity)
+         .Distinct()
+         .Concat(new[] { new Description(0) })
+         .OrderBy(o => o.ID, RarityComparer.Default)
+         .ToList();
+
+      ComparisonValues = ItemsHolder
+         .GetResultWithoutFilter(this)
+         .Where(s => s.Rarity != null)
+         .Select(s => s.Rarity)
+         .Distinct()
+         .Concat(new[] { new Description(0) })
+         .OrderBy(o => o.ID, RarityComparer.Default)
+         .ToList();
+    }
+
+    private bool CompareToRarity(int l) {
       switch (Comparison) {
         case ValueComparisons.Equals:
-          return RarityComparer.Default.Compare(l, SelectedComparisonValue) == 0;
+          return RarityComparer.Default.Compare(l, SelectedComparisonValue.ID) == 0;
 
         case ValueComparisons.LesserThan:
-          return RarityComparer.Default.Compare(l, SelectedComparisonValue) <= 0;
+          return RarityComparer.Default.Compare(l, SelectedComparisonValue.ID) <= 0;
 
         case ValueComparisons.GraterThan:
-          return RarityComparer.Default.Compare(l, SelectedComparisonValue) >= 0;
+          return RarityComparer.Default.Compare(l, SelectedComparisonValue.ID) >= 0;
 
         case ValueComparisons.UnEqual:
-          return RarityComparer.Default.Compare(l, SelectedComparisonValue) != 0;
+          return RarityComparer.Default.Compare(l, SelectedComparisonValue.ID) != 0;
       }
       return false;
     }

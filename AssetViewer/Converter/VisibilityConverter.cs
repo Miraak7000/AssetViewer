@@ -26,7 +26,6 @@ namespace AssetViewer.Converter {
       throw new NotImplementedException();
     }
 
-
     #endregion Methods
   }
 }

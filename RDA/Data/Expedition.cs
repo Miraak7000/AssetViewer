@@ -1,26 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
 using System.Xml.Linq;
 using System.Xml.XPath;
 
 // ReSharper disable PossibleMultipleEnumeration
 // ReSharper disable PossibleNullReferenceException
 namespace RDA.Data {
-
   public class Expedition {
-
     #region Properties
+
     public String ID { get; set; }
     public String Name { get; set; }
     public Description Text { get; set; }
     public String ExpeditionRegion { get; set; }
     public String FillEventPool { get; set; }
     public List<RewardPosition> Rewards { get; set; }
-    #endregion
 
-    #region Constructor
+    #endregion Properties
+
+    #region Constructors
+
     public Expedition(XElement asset) {
       foreach (var element in asset.Element("Values").Elements()) {
         switch (element.Name.LocalName) {
@@ -28,20 +27,25 @@ namespace RDA.Data {
           case "WorldMapSound":
             // ignore this nodes
             break;
+
           case "Standard":
             this.ProcessElement_Standard(element);
             break;
+
           case "Expedition":
             this.ProcessElement_Expedition(element);
             break;
+
           default:
             throw new NotImplementedException(element.Name.LocalName);
         }
       }
     }
-    #endregion
 
-    #region Public Methods
+    #endregion Constructors
+
+    #region Methods
+
     public XElement ToXml() {
       var result = new XElement(this.GetType().Name);
       result.Add(new XAttribute("ID", this.ID));
@@ -57,9 +61,7 @@ namespace RDA.Data {
       }
       return result;
     }
-    #endregion
 
-    #region Private Methods
     private void ProcessElement_Standard(XElement element) {
       this.ID = element.Element("GUID").Value;
       this.Name = element.Element("Name").Value;
@@ -81,10 +83,12 @@ namespace RDA.Data {
               this.Rewards.Add(position);
               this.Rewards.Add(position);
               break;
+
             case "2":
               this.Rewards.Add(position);
               this.Rewards.Add(position);
               break;
+
             case "1":
               this.Rewards.Add(position);
               break;
@@ -92,8 +96,7 @@ namespace RDA.Data {
         }
       }
     }
-    #endregion
 
+    #endregion Methods
   }
-
 }

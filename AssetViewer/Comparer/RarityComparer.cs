@@ -1,11 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using System.Windows;
-using System.Windows.Controls;
 
 namespace AssetViewer.Comparer {
 
-  public class RarityComparer : IComparer<string> {
+  public class RarityComparer : IComparer<int> {
 
     #region Properties
 
@@ -16,7 +14,6 @@ namespace AssetViewer.Comparer {
     #region Constructors
 
     public RarityComparer() {
-      ((MainWindow)Application.Current.MainWindow).ComboBoxLanguage.SelectionChanged += OnLanguageChanged;
       SetConverter();
     }
 
@@ -24,7 +21,7 @@ namespace AssetViewer.Comparer {
 
     #region Methods
 
-    public int Compare(string x, string y) {
+    public int Compare(int x, int y) {
       return RaritiesEN.IndexOf(RaritiesToENConverter.TryGetValue(x, out var Xrarity) ? Xrarity : "").CompareTo(RaritiesEN.IndexOf(RaritiesToENConverter.TryGetValue(y, out var Yrarity) ? Yrarity : ""));
     }
 
@@ -32,21 +29,17 @@ namespace AssetViewer.Comparer {
 
     #region Fields
 
-    private readonly Dictionary<string, string> RaritiesToENConverter = new Dictionary<string, string>();
+    private readonly Dictionary<int, string> RaritiesToENConverter = new Dictionary<int, string>();
     private readonly List<string> RaritiesEN = new List<string>() { "Narrative", "Quest", "Common", "Uncommon", "Rare", "Epic", "Legendary" };
 
     #endregion Fields
 
-    private void OnLanguageChanged(object sender, SelectionChangedEventArgs e) {
-      SetConverter();
-    }
-
     private void SetConverter() {
       RaritiesToENConverter.Clear();
       foreach (var item in RaritiesEN) {
-        var rarity = ItemProvider.Items.Values.FirstOrDefault(i => i.RarityType == item)?.Rarity.CurrentLang;
+        var rarity = AssetProvider.Items.Values.FirstOrDefault(i => i.RarityType == item)?.Rarity;
         if (rarity != null) {
-          RaritiesToENConverter.Add(rarity, item);
+          RaritiesToENConverter.Add(rarity.ID, item);
         }
       }
     }

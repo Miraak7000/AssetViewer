@@ -6,9 +6,7 @@ using System.Xml.Linq;
 using System.Xml.XPath;
 
 namespace RDA.Library {
-
   internal static class Extensions {
-
     #region Properties
 
     public static ConcurrentDictionary<string, XElement> Events { get; set; } = new ConcurrentDictionary<string, XElement>();

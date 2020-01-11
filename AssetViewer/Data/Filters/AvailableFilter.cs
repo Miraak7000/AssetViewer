@@ -9,14 +9,15 @@ namespace AssetViewer.Data.Filters {
 
     #region Properties
 
-    public override Func<IQueryable<TemplateAsset>, IQueryable<TemplateAsset>> FilterFunc => result => {
-      if (SelectedValue)
-        result = result.Where(w => (w.Sources != null ? w.Sources.Count : 0) > 0);
-      return result;
+    public override Func<IEnumerable<TemplateAsset>, IEnumerable<TemplateAsset>> FilterFunc => result => {
+      if (SelectedValue) {
+        return result.Where(w => (w.Sources != null ? w.Sources.Count : 0) > 0);
+      }
+
+      return null;
     };
 
-    public override string DescriptionID => "-1101";
-    public override IEnumerable<bool> ComparisonValues => base.ComparisonValues;
+    public override int DescriptionID => -1101;
 
     #endregion Properties
 

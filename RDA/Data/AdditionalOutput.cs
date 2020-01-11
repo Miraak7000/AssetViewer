@@ -2,9 +2,7 @@
 using System.Xml.Linq;
 
 namespace RDA.Data {
-
   public class AdditionalOutput {
-
     #region Properties
 
     public Icon Icon { get; set; }

@@ -5,43 +5,46 @@ using System.Linq;
 
 namespace AssetViewer.Data.Filters {
 
-  public class SpecificUpgradesFilter : BaseFilter<string> {
+  public class SpecificUpgradesFilter : BaseFilter<Description> {
 
     #region Properties
 
     public override Func<IQueryable<TemplateAsset>, IQueryable<TemplateAsset>> FilterFunc => result => {
-      if (!String.IsNullOrEmpty(SelectedValue)) {
-        if (ComparisonType != FilterType.None && !String.IsNullOrEmpty(SelectedComparisonValue)) {
-          result = result.Where(w => w.AllUpgrades != null && w.AllUpgrades.Any(l => l.Text != null && l.Text.CurrentLang == SelectedValue && CompareToUpgrade(l)));
+      if (SelectedValue != null && SelectedValue.ID != 0) {
+        if (ComparisonType != FilterType.None && SelectedComparisonValue != null && SelectedComparisonValue.ID != 0) {
+          result = result.Where(w => w.AllUpgrades != null && w.AllUpgrades.Any(l => l.Text != null && l.Text == SelectedValue && CompareToUpgrade(l)));
+        }
+        else if (Comparison == ValueComparisons.UnEqual) {
+          result = result.Where(w => w.AllUpgrades != null && !w.AllUpgrades.Any(l => l.Text != null && l.Text == SelectedValue));
         }
         else {
-          result = result.Where(w => w.AllUpgrades != null && w.AllUpgrades.Any(l => l.Text != null && l.Text.CurrentLang == SelectedValue));
+          result = result.Where(w => w.AllUpgrades != null && w.AllUpgrades.Any(l => l.Text != null && l.Text == SelectedValue));
         }
       }
 
       return result;
     };
 
-    public override IEnumerable<String> CurrentValues => ItemsHolder
+    public override IEnumerable<Description> CurrentValues => ItemsHolder
          .GetResultWithoutFilter(this)
          .SelectMany(s => s.AllUpgrades)
-         .Select(s => s.Text.CurrentLang)
+         .Select(s => s.Text)
          .Distinct()
-         .Where(l => !string.IsNullOrWhiteSpace(l))
-         .Concat(new[] { string.Empty })
-         .OrderBy(o => o)
+         .Concat(new[] { new Description(0) })
+         .OrderBy(o => o.CurrentLang)
          .ToList();
 
-    public override IEnumerable<string> ComparisonValues => (new[] { string.Empty }).Concat(ItemsHolder
+    public override IEnumerable<Description> ComparisonValues => (new[] { new Description(0) }).Concat(ItemsHolder
          .GetResultWithoutFilter(this)
-         .SelectMany(s => s.AllUpgrades.Where(u => u.Text.CurrentLang == SelectedValue))
-         .Select(u => u.Value).Where(l => !string.IsNullOrWhiteSpace(l))
+         .SelectMany(s => s.AllUpgrades.Where(u => u.Text == SelectedValue))
+         .Select(u => u.Value)
+         .Where(l => !string.IsNullOrWhiteSpace(l))
          .Distinct()
          .Where(l => !string.IsNullOrWhiteSpace(l))
-         .OrderBy(o => float.Parse(o.TrimEnd(' ', '%'))))
+         .OrderBy(o => float.Parse(o.TrimEnd(' ', '%').Replace(":", ""))))
          .ToList();
 
-    public override string DescriptionID => "-1006";
+    public override int DescriptionID => -1006;
 
     #endregion Properties
 
@@ -56,7 +59,7 @@ namespace AssetViewer.Data.Filters {
     #region Methods
 
     private bool CompareToUpgrade(Upgrade l) {
-      if (float.TryParse(l.Value.TrimEnd(' ', '%'), out var x) && float.TryParse(this.SelectedComparisonValue.TrimEnd(' ', '%'), out var y)) {
+      if (float.TryParse(l.Value.TrimEnd(' ', '%').Replace(":", ""), out var x) && float.TryParse(this.SelectedComparisonValue.TrimEnd(' ', '%').Replace(":", ""), out var y)) {
         switch (Comparison) {
           case ValueComparisons.Equals:
             return x == y;

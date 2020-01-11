@@ -5,36 +5,48 @@ using System.Linq;
 
 namespace AssetViewer.Data.Filters {
 
-  public class TargetBuildingFilter : BaseFilter<string> {
+  public class TargetBuildingFilter : BaseFilter<Description> {
 
     #region Properties
 
-    public override Func<IQueryable<TemplateAsset>, IQueryable<TemplateAsset>> FilterFunc => result => {
-      if (!String.IsNullOrEmpty(SelectedValue))
-        result = result.Where(w => w.EffectTargets != null && w.EffectTargets.SelectMany(e => e.Buildings).Any(s => s.CurrentLang == SelectedValue));
-      return result;
+    public override Func<IEnumerable<TemplateAsset>, IEnumerable<TemplateAsset>> FilterFunc => result => {
+      if (SelectedValue != null && SelectedValue.ID != 0) {
+        if (Comparison == ValueComparisons.UnEqual) {
+          return result.Where(w => w.EffectTargets?.SelectMany(e => e.Buildings).Any(s => s.Equals(SelectedValue)) == false);
+        }
+        else {
+          return result.Where(w => w.EffectTargets?.SelectMany(e => e.Buildings).Any(s => s.Equals(SelectedValue)) == true);
+        }
+      }
+      return null;
     };
 
-    public override IEnumerable<String> CurrentValues => ItemsHolder
-         .GetResultWithoutFilter(this)
-         .SelectMany(s => s.EffectTargets)
-         .SelectMany(s => s.Buildings)
-         .Select(s => s.CurrentLang)
-         .Distinct()
-         .Where(l => !string.IsNullOrWhiteSpace(l))
-         .Concat(new[] { string.Empty })
-         .OrderBy(o => o)
-         .ToList();
-
-    public override string DescriptionID => "-1102";
+    public override int DescriptionID => -1102;
 
     #endregion Properties
 
     #region Constructors
 
     public TargetBuildingFilter(ItemsHolder itemsHolder) : base(itemsHolder) {
+      ComparisonType = FilterType.Selection;
     }
 
     #endregion Constructors
+
+    #region Methods
+
+    public override void SetCurrenValues() {
+      CurrentValues = ItemsHolder
+         .GetResultWithoutFilter(this)
+         .SelectMany(s => s.EffectTargets)
+         .SelectMany(s => s.Buildings)
+         .Select(s => s)
+         .Distinct()
+         .Concat(new[] { new Description(0) })
+         .OrderBy(o => o.CurrentLang)
+         .ToList();
+    }
+
+    #endregion Methods
   }
 }

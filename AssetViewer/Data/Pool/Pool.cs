@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using System.Xml.Serialization;
 
 namespace AssetViewer.Data {
@@ -16,8 +17,13 @@ namespace AssetViewer.Data {
     [XmlArrayItem("Item", IsNullable = false)]
     public List<PoolItem> Items { get; set; }
 
+    public IEnumerable<object> TrueItems => Items.Select(i => i.Item);
+
     [XmlAttribute]
-    public string ID { get; set; }
+    public int ID { get; set; }
+
+    [XmlAttribute]
+    public string Name { get; set; }
 
     #endregion Properties
   }

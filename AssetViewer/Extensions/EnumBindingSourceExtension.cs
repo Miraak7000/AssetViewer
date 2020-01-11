@@ -14,9 +14,10 @@ namespace AssetViewer {
       set {
         if (value != this._enumType) {
           if (value != null) {
-            Type enumType = Nullable.GetUnderlyingType(value) ?? value;
-            if (!enumType.IsEnum)
+            var enumType = Nullable.GetUnderlyingType(value) ?? value;
+            if (!enumType.IsEnum) {
               throw new ArgumentException("Type must be for an Enum.");
+            }
           }
 
           this._enumType = value;
@@ -40,14 +41,16 @@ namespace AssetViewer {
     #region Methods
 
     public override object ProvideValue(IServiceProvider serviceProvider) {
-      if (this._enumType == null)
+      if (this._enumType == null) {
         throw new InvalidOperationException("The EnumType must be specified.");
+      }
 
-      Type actualEnumType = Nullable.GetUnderlyingType(this._enumType) ?? this._enumType;
-      Array enumValues = Enum.GetValues(actualEnumType);
+      var actualEnumType = Nullable.GetUnderlyingType(this._enumType) ?? this._enumType;
+      var enumValues = Enum.GetValues(actualEnumType);
 
-      if (actualEnumType == this._enumType)
+      if (actualEnumType == this._enumType) {
         return enumValues;
+      }
 
       var tempArray = Array.CreateInstance(actualEnumType, enumValues.Length + 1);
       enumValues.CopyTo(tempArray, 1);
