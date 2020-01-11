@@ -19,7 +19,7 @@ namespace RDA {
     public static void Init(string version = "Release") {
       Version = version;
       LoadDefaultValues();
-      Console.WriteLine("Load Asset.xml");
+      Program.ConsoleWriteHeadline("Load Asset.xml");
       
       SolveXmlInheritance();
       LoadDescriptions();
@@ -59,7 +59,7 @@ namespace RDA {
     #endregion Fields
 
     private static void LoadDefaultValues() {
-      Console.WriteLine("Load Standart Values");
+      Program.ConsoleWriteHeadline("Load Standart Values");
       var xml = XmlLoader.LoadXml(Program.PathRoot + @"\Original\properties.xml");
       foreach (var item in xml.Descendants("DefaultValues").SelectMany(dv => dv.Elements())) {
         DefaultValues.Add(item.Name.LocalName, item);
@@ -80,7 +80,7 @@ namespace RDA {
     }
 
     private static void SolveXmlInheritance() {
-      Console.WriteLine("Solve Xml Inheritance");
+      Program.ConsoleWriteHeadline("Solve Xml Inheritance");
       var InheritHelper = Original.Descendants("Asset").OrderBy(a => a.InheritDepth()).ToArray();
       foreach (var item in InheritHelper) {
         var baseGuid = item.Element("BaseAssetGUID")?.Value;
@@ -94,7 +94,7 @@ namespace RDA {
     }
 
     private static void LoadDescriptions() {
-      Console.WriteLine("Load Descriptions");
+      Program.ConsoleWriteHeadline("Load Descriptions");
       foreach (Languages language in Enum.GetValues(typeof(Languages))) {
         var dic = XDocument
             .Load(Program.PathRoot + $@"\Original\texts_{language.ToString("G").ToLower()}.xml")
@@ -138,7 +138,7 @@ namespace RDA {
     }
 
     private static void LoadCustomDescriptions() {
-      Console.WriteLine("Load Custom Descriptions");
+      Program.ConsoleWriteHeadline("Load Custom Descriptions");
       var js = new JavaScriptSerializer();
       foreach (Languages language in Enum.GetValues(typeof(Languages))) {
         var filepath = Program.PathRoot + $@"\Modified\LanguageFiles\Texts_Custom_{language.ToString("G")}.json";
@@ -157,7 +157,7 @@ namespace RDA {
     }
 
     private static void SetIcons() {
-      Console.WriteLine("Setting up Icons");
+      Program.ConsoleWriteHeadline("Setting up Icons");
       var asset = Original
          .Descendants("Asset")
          .FirstOrDefault(a => a.Element("Template")?.Value == "ItemBalancing")?
@@ -187,7 +187,7 @@ namespace RDA {
     }
 
     private static void SetTextDictionarys() {
-      Console.WriteLine("Setting up Descriptions");
+      Program.ConsoleWriteHeadline("Setting up Descriptions");
       var asset = Original
          .Descendants("Asset")
          .FirstOrDefault(a => a.Element("Template")?.Value == "ItemBalancing")?
@@ -326,7 +326,7 @@ namespace RDA {
     }
 
     private static void SetTourismStati() {
-      Console.WriteLine("Setting up Tourism");
+      Program.ConsoleWriteHeadline("Setting up Tourism");
       var TourismAsset = Original.Descendants("Asset").FirstOrDefault(l => l.Element("Template")?.Value == "TourismFeature");
       var CityStatis = TourismAsset.XPathSelectElement("Values/TourismFeature/CityStati").Elements().ToList();
       for (var i = 1; i < CityStatis.Count; i++) {
@@ -335,7 +335,7 @@ namespace RDA {
     }
 
     private static void SetBuffs() {
-      Console.WriteLine("Setting up Buffs");
+      Program.ConsoleWriteHeadline("Setting up Buffs");
       var buffs = Original
          .Descendants("Asset")
          .Where(l => l.Element("Template")?.Value.EndsWith("Buff") ?? false)

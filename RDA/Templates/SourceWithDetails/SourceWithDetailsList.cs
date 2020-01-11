@@ -1,10 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections.Concurrent;
+using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
 using System.Xml.XPath;
 
 namespace RDA.Templates {
-  public class SourceWithDetailsList : List<SourceWithDetails> {
+  public class SourceWithDetailsList : ConcurrentBag<SourceWithDetails> {
     #region Constructors
 
     public SourceWithDetailsList() : base() {
@@ -25,7 +26,7 @@ namespace RDA.Templates {
 
       //Expedition
       if (expeditionName != null) {
-        var expedition = this.Find(w => w.Source.XPathSelectElement("Values/Expedition/ExpeditionName")?.Value == expeditionName);
+        var expedition = this.FirstOrDefault(w => w.Source.XPathSelectElement("Values/Expedition/ExpeditionName")?.Value == expeditionName);
         if (expedition.Source == null) {
           this.Add(new SourceWithDetails(element, details));
         }
@@ -52,7 +53,7 @@ namespace RDA.Templates {
 
       //Quest
       else if (questGiver != null) {
-        var quest = this.Find(w => w.Source.XPathSelectElement("Values/Quest/QuestGiver")?.Value == questGiver);
+        var quest = this.FirstOrDefault(w => w.Source.XPathSelectElement("Values/Quest/QuestGiver")?.Value == questGiver);
         if (quest.Source == null) {
           this.Add(new SourceWithDetails(element, details));
         }
@@ -64,7 +65,7 @@ namespace RDA.Templates {
         return;
       }
 
-      var old = this.Find(l => l.Source.XPathSelectElement("Values/Standard/GUID").Value == assetID && l.Source.Element("Template").Value == element.Element("Template").Value);
+      var old = this.FirstOrDefault(l => l.Source.XPathSelectElement("Values/Standard/GUID").Value == assetID && l.Source.Element("Template").Value == element.Element("Template").Value);
 
       //Tourism
       if (element.Element("Template")?.Value == "TourismFeature") {
@@ -89,7 +90,7 @@ namespace RDA.Templates {
 
       //Special Diving exception
       if (element.Element("Template")?.Value == "Dive" || element.Element("Template")?.Value == "Pickup" || element.Element("Template")?.Value == "Crafting") {
-        old = this.Find(l => l.Source.Element("Template").Value == element.Element("Template").Value);
+        old = this.FirstOrDefault(l => l.Source.Element("Template").Value == element.Element("Template").Value);
         if (old.Source != null) {
           return;
         }

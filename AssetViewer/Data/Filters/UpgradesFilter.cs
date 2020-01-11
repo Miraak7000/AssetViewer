@@ -14,8 +14,8 @@ namespace AssetViewer.Data.Filters {
         if (ComparisonType != FilterType.None && SelectedComparisonValue != null && SelectedComparisonValue.ID != 0) {
           return result
           .Where(w =>
-          w.AllUpgrades.Any(l => l.Text?.Equals(SelectedValue) == true &&
           (
+          w.AllUpgrades.Any(l => l.Text?.Equals(SelectedValue) == true && 
           (l.Additionals?.Any(a => a.Text?.Equals(SelectedComparisonValue) == true) == true) ||
           (l.Text.AdditionalInformation?.Equals(SelectedComparisonValue) == true) ||
           CompareToUpgrade(l)

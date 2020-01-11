@@ -1026,325 +1026,321 @@ namespace RDA.Templates {
       mainDetails = (mainDetails == default) ? new Details() : mainDetails;
       mainDetails.PreviousIDs.Add(id);
       var mainResult = new SourceWithDetailsList();
-      var resultstoadd = new List<SourceWithDetailsList>();
+      var resultstoadd = new ConcurrentBag<SourceWithDetailsList>();
       var links = Assets.Original.XPathSelectElements($"//*[text()={id} and not(self::GUID)]").ToArray();
       if (links.Length > 0) {
-        for (var i = 0; i < links.Length; i++) {
-          var element = links[i];
-          var foundedElement = element;
+        links.AsParallel().ForAll(link => {
+          foreach (var link2 in new[] { link } /*links*/) {
+            var element = link2;
+            var foundedElement = element;
 
-          //Weight 0
-          if (element.Parent.Element("Weight")?.Value == "0") {
-            continue;
-          }
+            //Weight 0
+            if (element.Parent.Element("Weight")?.Value == "0") {
+              continue;
+            }
 
-          //Ignores
-          if (foundedElement.Name.LocalName is string foundedName &&
-            (foundedName == "BaseAssetGUID" || foundedName == "Icon" || foundedName == "ItemUsed" ||
-            foundedName == "TradePrice" || foundedName == "GenPool" || foundedName == "NotificationIcon" ||
-            foundedName == "ReplacingWorkforce" || foundedName == "ProductFilter")) {
-            continue;
-          }
-          if (foundedElement.Parent?.Parent?.Name.LocalName is string gparent &&
-            (gparent == "Costs" || gparent == "UpgradeCost" || gparent == "CraftingCosts" || gparent == "Maintenances" || gparent == "StoredProducts")) {
-            continue;
-          }
-          if (foundedElement.Parent?.Parent?.Parent?.Name.LocalName is string ggParent &&
-            (ggParent == "FactoryBase" || ggParent == "Sellable" || ggParent == "PublicService")) {
-            continue;
-          }
+            //Ignores
+            if (foundedElement.Name.LocalName is string foundedName &&
+              (foundedName == "BaseAssetGUID" || foundedName == "Icon" || foundedName == "ItemUsed" ||
+              foundedName == "TradePrice" || foundedName == "GenPool" || foundedName == "NotificationIcon" ||
+              foundedName == "ReplacingWorkforce" || foundedName == "ProductFilter")) {
+              continue;
+            }
+            if (foundedElement.Parent?.Parent?.Name.LocalName is string gparent &&
+              (gparent == "Costs" || gparent == "UpgradeCost" || gparent == "CraftingCosts" || gparent == "Maintenances" || gparent == "StoredProducts")) {
+              continue;
+            }
+            if (foundedElement.Parent?.Parent?.Parent?.Name.LocalName is string ggParent &&
+              (ggParent == "FactoryBase" || ggParent == "Sellable" || ggParent == "PublicService")) {
+              continue;
+            }
 
-          //Search Parent Assset
-          while (element.Name.LocalName != "Asset" || !element.HasElements) {
-            element = element.Parent;
-          }
+            //Search Parent Assset
+            while (element.Name.LocalName != "Asset" || !element.HasElements) {
+              element = element.Parent;
+            }
 
-          var Details = new Details(mainDetails);
-          var result = new SourceWithDetailsList();
-          var key = element.XPathSelectElement("Values/Standard/GUID").Value;
+            var Details = new Details(mainDetails);
+            var result = new SourceWithDetailsList();
+            var key = element.XPathSelectElement("Values/Standard/GUID").Value;
 
-          if (Details.PreviousIDs.Contains(key)) {
-            continue;
-          }
+            if (Details.PreviousIDs.Contains(key)) {
+              continue;
+            }
 
-          switch (element.Element("Template").Value) {
-            case "AssetPool":
-            case "TutorialQuest":
-            case "SettlementRightsFeature":
-            case "GuildhouseItem":
-            case "MonumentEvent":
-            case "MainQuest":
-            case "WarShip":
-            case "ExpeditionFeature":
-            case "FestivalBuff":
-            case "TownhallItem":
-            case "PopulationLevel7":
-            case "NeedsSatisfactionNews":
-            case "ProductFilter":
-            case "PlayerCounterContextPool":
-            case "PublicServiceBuilding":
-            case "Market":
-            case "GuildhouseBuff":
-            case "TriggerQuest":
-            case "TradeRouteFeature":
-            case "HarborWarehouse7":
-            case "DifficultyBalancing":
-            case "RewardConfig":
-            case "UplayAction":
-            case "NewspaperArticle":
-            case "WorkforceNewsTracker":
-            case "InfluenceTitleBuff":
-            case "WorkforceMenu":
-            case "TownhallBuff":
-            case "AudioText":
-            case "TradeShip":
-            case "Achievement":
-            case "Audio":
-            case "WorkforceSliderNewsTracker":
-            case "ChannelTarget":
-            case "Region":
-            case "KeywordFilter":
-            case "ObjectmenuCommuterHarbourScene":
-            case "IslandBarScene":
-            case "UplayProduct":
-              // ignore
-              break;
-
-            case "TriggerCampaign":
-            case "Trigger":
-            case "PassiveTradeFeature":
-              //Todo?
-              break;
-
-            case "Expedition":
-              if (!element.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
-                if (foundedElement.Name.LocalName != "FillEventPool" &&
-                  foundedElement.Name.LocalName != "Reward" &&
-                  foundedElement.Name.LocalName != "EventOrEventPool") {
-                  break;
-                }
-
-                XElement expi = null;
-                if (Details.FirstOrDefault(d => d.Element("Template").Value == "ExpeditionEvent") is XElement ExEvent) {
-                  var path = "";
-                  var decition = Details.First();
-                  path = decition.XPathSelectElement("Values/Standard/Name").Value.Split(' ').Last();
-                  expi = ExEvent.GetProxyElement(path);
-                }
-                else {
-                  expi = element;
-                }
-
-                result.AddSourceAsset(element, new HashSet<XElement> { expi });
-              }
-              break;
-
-            case "Profile_3rdParty_ItemCrafter":
-            case "Profile_3rdParty":
-            case "Profile_3rdParty_Pirate":
-            case "Profile_2ndParty":
-              if (key == "199" || key == "200" || key == "240" || key == "117422") {
+            switch (element.Element("Template").Value) {
+              case "AssetPool":
+              case "TutorialQuest":
+              case "SettlementRightsFeature":
+              case "GuildhouseItem":
+              case "MonumentEvent":
+              case "MainQuest":
+              case "WarShip":
+              case "ExpeditionFeature":
+              case "FestivalBuff":
+              case "TownhallItem":
+              case "PopulationLevel7":
+              case "NeedsSatisfactionNews":
+              case "ProductFilter":
+              case "PlayerCounterContextPool":
+              case "PublicServiceBuilding":
+              case "Market":
+              case "GuildhouseBuff":
+              case "TriggerQuest":
+              case "TradeRouteFeature":
+              case "HarborWarehouse7":
+              case "DifficultyBalancing":
+              case "RewardConfig":
+              case "UplayAction":
+              case "NewspaperArticle":
+              case "WorkforceNewsTracker":
+              case "InfluenceTitleBuff":
+              case "WorkforceMenu":
+              case "TownhallBuff":
+              case "AudioText":
+              case "TradeShip":
+              case "Achievement":
+              case "Audio":
+              case "WorkforceSliderNewsTracker":
+              case "ChannelTarget":
+              case "Region":
+              case "KeywordFilter":
+              case "ObjectmenuCommuterHarbourScene":
+              case "IslandBarScene":
+              case "UplayProduct":
+                // ignore
                 break;
-              }
-              if (!element.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
-                if (foundedElement.Name.LocalName == "ShipDropRewardPool") {
-                  result.AddSourceAsset(element.GetProxyElement("ShipDrop"), new HashSet<XElement> { element });
-                  break;
-                }
-                var craftable = element.Descendants("CraftableItems").FirstOrDefault()?.Descendants("Item").Any(item => item?.Value == id);
-                if (craftable == true) {
-                  result.AddSourceAsset(element.GetProxyElement("Crafting"), new HashSet<XElement> { element });
-                }
-                var progressions = GetProgession(element, id);
-                if (progressions != null) {
-                  foreach (var item in progressions) {
-                    result.AddSourceAsset(element.GetProxyElement("Harbor"), new HashSet<XElement> { element.GetProxyElement(item) });
-                  }
-                  break;
-                }
-                else {
-                  throw new NotImplementedException();
-                }
-              }
-              else {
+
+              case "TriggerCampaign":
+              case "Trigger":
+              case "PassiveTradeFeature":
+                //Todo?
                 break;
-              }
-            case "A7_QuestEscortObject":
-            case "A7_QuestDeliveryObject":
-            case "A7_QuestDestroyObjects":
-            case "A7_QuestPickupObject":
-            case "A7_QuestFollowShip":
-            case "A7_QuestPhotography":
-            case "A7_QuestStatusQuo":
-            case "A7_QuestItemUsage":
-            case "A7_QuestSustain":
-            case "A7_QuestPicturePuzzleObject":
-            case "Quest":
-            case "CollectablePicturePuzzle":
-            case "MonumentEventReward":
-            case "A7_QuestSmuggler":
-            case "A7_QuestDivingBellGeneric":
-            case "A7_QuestDivingBellSonar":
-            case "A7_QuestSelectObject":
-            case "A7_QuestDivingBellTreasureMap":
-            case "A7_QuestNewspaperArticle":
-            case "A7_QuestLostCargo":
-            case "A7_QuestExpedition":
-              if (!element.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
-                result.AddSourceAsset(element, new HashSet<XElement> { element });
-              }
-              break;
 
-            case "DivingBellShip":
-              if (foundedElement.Name.LocalName == "ItemReplacementPools") {
-                result.AddSourceAsset(element.GetProxyElement("Dive"), new HashSet<XElement> { element });
-              }
-              break;
-
-            case "AirShip":
-              if (foundedElement.Name.LocalName == "ItemReplacementPools") {
-                result.AddSourceAsset(element.GetProxyElement("Pickup"), new HashSet<XElement> { element });
-              }
-              break;
-
-            case "ItemWithUI":
-              if (foundedElement.Name.LocalName == "NewItem") {
-                result.AddSourceAsset(element, new HashSet<XElement> { element });
-              }
-              else if (foundedElement.Name.LocalName == "Ressource" && foundedElement.Parent.Name.LocalName == "ActionAddResource") {
-                result.AddSourceAsset(element.GetProxyElement("Item"), new HashSet<XElement> { element });
-              }
-              break;
-
-            case "TourismFeature":
-              if (foundedElement.Name.LocalName == "Pool") {
-                var pool = foundedElement.Parent;
-                result.AddSourceAsset(element, new HashSet<XElement> { pool.GetProxyElement(foundedElement.Parent.Parent.Parent.Name.LocalName) });
-              }
-
-              break;
-
-            case "ItemReplacementPool":
-              if (foundedElement.Name.LocalName == "DummyItem") {
-                break;
-              }
-              if (foundedElement.Name.LocalName != "ReplacementPool") {
-                break;
-              }
-              else {
-                goto case "RewardPool";
-              }
-
-            case "ExpeditionDecision":
-            case "ExpeditionTrade":
-              if (foundedElement.Name.LocalName == "Reward" ||
-                foundedElement.Name.LocalName == "Product" ||
-                foundedElement.Name.LocalName == "Item") {
-                if (Details.Items.Count == 0) {
-                  Details.Add(element);
-
-                  if (SavedSources.ContainsKey(key)) {
-                    result.AddSourceAsset(SavedSources[key].Copy());
+              case "Expedition":
+                if (!element.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
+                  if (foundedElement.Name.LocalName != "FillEventPool" &&
+                    foundedElement.Name.LocalName != "Reward" &&
+                    foundedElement.Name.LocalName != "EventOrEventPool") {
                     break;
                   }
-                  result.AddSourceAsset(FindSources(key, Details));
 
-                  if (!SavedSources.ContainsKey(key)) {
-                    SavedSources.TryAdd(key, result);
+                  XElement expi = null;
+                  if (Details.FirstOrDefault(d => d.Element("Template").Value == "ExpeditionEvent") is XElement ExEvent) {
+                    var path = "";
+                    var decition = Details.First();
+                    path = decition.XPathSelectElement("Values/Standard/Name").Value.Split(' ').Last();
+                    expi = ExEvent.GetProxyElement(path);
                   }
+                  else {
+                    expi = element;
+                  }
+
+                  result.AddSourceAsset(element, new HashSet<XElement> { expi });
+                }
+                break;
+
+              case "Profile_3rdParty_ItemCrafter":
+              case "Profile_3rdParty":
+              case "Profile_3rdParty_Pirate":
+              case "Profile_2ndParty":
+                if (key == "199" || key == "200" || key == "240" || key == "117422") {
                   break;
                 }
-              }
-              else if (foundedElement.Name.LocalName != "Option" &&
-                foundedElement.Name.LocalName != "FollowupSuccessOption" &&
-                foundedElement.Name.LocalName != "FollowupFailOrCancelOption" &&
-                foundedElement.Name.LocalName != "InsertEvent") {
+                if (!element.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
+                  if (foundedElement.Name.LocalName == "ShipDropRewardPool") {
+                    result.AddSourceAsset(element.GetProxyElement("ShipDrop"), new HashSet<XElement> { element });
+                    break;
+                  }
+                  var craftable = element.Descendants("CraftableItems").FirstOrDefault()?.Descendants("Item").Any(item => item?.Value == id);
+                  if (craftable == true) {
+                    result.AddSourceAsset(element.GetProxyElement("Crafting"), new HashSet<XElement> { element });
+                  }
+                  var progressions = GetProgession(element, id);
+                  if (progressions != null) {
+                    foreach (var item in progressions) {
+                      result.AddSourceAsset(element.GetProxyElement("Harbor"), new HashSet<XElement> { element.GetProxyElement(item) });
+                    }
+                    break;
+                  }
+                  else {
+                    throw new NotImplementedException();
+                  }
+                }
+                else {
+                  break;
+                }
+              case "A7_QuestEscortObject":
+              case "A7_QuestDeliveryObject":
+              case "A7_QuestDestroyObjects":
+              case "A7_QuestPickupObject":
+              case "A7_QuestFollowShip":
+              case "A7_QuestPhotography":
+              case "A7_QuestStatusQuo":
+              case "A7_QuestItemUsage":
+              case "A7_QuestSustain":
+              case "A7_QuestPicturePuzzleObject":
+              case "Quest":
+              case "CollectablePicturePuzzle":
+              case "MonumentEventReward":
+              case "A7_QuestSmuggler":
+              case "A7_QuestDivingBellGeneric":
+              case "A7_QuestDivingBellSonar":
+              case "A7_QuestSelectObject":
+              case "A7_QuestDivingBellTreasureMap":
+              case "A7_QuestNewspaperArticle":
+              case "A7_QuestLostCargo":
+              case "A7_QuestExpedition":
+                if (!element.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
+                  result.AddSourceAsset(element, new HashSet<XElement> { element });
+                }
                 break;
-              }
-              goto case "SearchAgain";
 
-            case "ExpeditionOption":
-            case "ExpeditionMapOption":
-              if (foundedElement.Name.LocalName == "ItemOrProduct") {
+              case "DivingBellShip":
+                if (foundedElement.Name.LocalName == "ItemReplacementPools") {
+                  result.AddSourceAsset(element.GetProxyElement("Dive"), new HashSet<XElement> { element });
+                }
                 break;
-              }
-              if (foundedElement.Name.LocalName != "Decision") {
+
+              case "AirShip":
+                if (foundedElement.Name.LocalName == "ItemReplacementPools") {
+                  result.AddSourceAsset(element.GetProxyElement("Pickup"), new HashSet<XElement> { element });
+                }
                 break;
-              }
-              goto case "SearchAgain";
 
-            case "ExpeditionEvent":
-              if (foundedElement.Name.LocalName != "StartDecision") {
+              case "ItemWithUI":
+                if (foundedElement.Name.LocalName == "NewItem") {
+                  result.AddSourceAsset(element, new HashSet<XElement> { element });
+                }
+                else if (foundedElement.Name.LocalName == "Ressource" && foundedElement.Parent.Name.LocalName == "ActionAddResource") {
+                  result.AddSourceAsset(element.GetProxyElement("Item"), new HashSet<XElement> { element });
+                }
                 break;
-              }
-              if (Details.Items.Count == 1) {
-                Details.Add(element);
-              }
-              goto case "SearchAgain";
 
-            case "ExpeditionBribe":
-              if (foundedElement.Name.LocalName == "Item") {
+              case "TourismFeature":
+                if (foundedElement.Name.LocalName == "Pool") {
+                  var pool = foundedElement.Parent;
+                  result.AddSourceAsset(element, new HashSet<XElement> { pool.GetProxyElement(foundedElement.Parent.Parent.Parent.Name.LocalName) });
+                }
+
                 break;
-              }
-              if (foundedElement.Name.LocalName != "FollowupSuccessOption" &&
-                foundedElement.Name.LocalName != "FollowupFailOrCancelOption") {
+
+              case "ItemReplacementPool":
+                if (foundedElement.Name.LocalName != "ReplacementPool") {
+                  break;
+                }
+                else {
+                  goto case "RewardPool";
+                }
+
+              case "ExpeditionDecision":
+              case "ExpeditionTrade":
+                if (foundedElement.Name.LocalName == "Reward" ||
+                  foundedElement.Name.LocalName == "Product" ||
+                  foundedElement.Name.LocalName == "Item") {
+                  if (Details.Items.Count == 0) {
+                    Details.Add(element);
+
+                    if (SavedSources.ContainsKey(key)) {
+                      result.AddSourceAsset(SavedSources[key].Copy());
+                      break;
+                    }
+                    result.AddSourceAsset(FindSources(key, Details));
+
+                    if (!SavedSources.ContainsKey(key)) {
+                      SavedSources.TryAdd(key, result);
+                    }
+                    break;
+                  }
+                }
+                else if (foundedElement.Name.LocalName != "Option" &&
+                  foundedElement.Name.LocalName != "FollowupSuccessOption" &&
+                  foundedElement.Name.LocalName != "FollowupFailOrCancelOption" &&
+                  foundedElement.Name.LocalName != "InsertEvent") {
+                  break;
+                }
+                goto case "SearchAgain";
+
+              case "ExpeditionOption":
+              case "ExpeditionMapOption":
+                if (foundedElement.Name.LocalName != "Decision") {
+                  break;
+                }
+                goto case "SearchAgain";
+
+              case "ExpeditionEvent":
+                if (foundedElement.Name.LocalName != "StartDecision") {
+                  break;
+                }
+                if (Details.Items.Count == 1) {
+                  Details.Add(element);
+                }
+                goto case "SearchAgain";
+
+              case "ExpeditionBribe":
+                if (foundedElement.Name.LocalName == "Item") {
+                  break;
+                }
+                if (foundedElement.Name.LocalName != "FollowupSuccessOption" &&
+                  foundedElement.Name.LocalName != "FollowupFailOrCancelOption") {
+                  break;
+                }
+                goto case "SearchAgain";
+
+              case "RewardPool":
+              case "RewardItemPool":
+              case "ResourcePool":
+              case "A7_QuestSubQuest":
+              case "ProductList":
+                if (SavedSources.ContainsKey(key)) {
+                  result.AddSourceAsset(SavedSources[key].Copy());
+                  break;
+                }
+
+                result.AddSourceAsset(FindSources(key, Details));
+
+                if (!SavedSources.ContainsKey(key)) {
+                  SavedSources.TryAdd(key, result);
+                }
                 break;
-              }
-              goto case "SearchAgain";
 
-            case "RewardPool":
-            case "RewardItemPool":
-            case "ResourcePool":
-            case "A7_QuestSubQuest":
-            case "ProductList":
-              if (SavedSources.ContainsKey(key)) {
-                result.AddSourceAsset(SavedSources[key].Copy());
+              case "ExpeditionEventPool":
+                if (SavedSources.ContainsKey(key)) {
+                  var saved = SavedSources[key].Copy();
+                  AddFoundedExpeditionEvents(Details, result, saved);
+                }
+
+                result.AddSourceAsset(FindSources(key, Details));
+
+                if (!SavedSources.ContainsKey(key)) {
+                  SavedSources.TryAdd(key, result);
+                }
                 break;
-              }
 
-              result.AddSourceAsset(FindSources(key, Details));
+              case "SearchAgain":
+                if (Details.Items.Count == 2 && SavedSources.ContainsKey(key)) {
+                  var saved = SavedSources[key].Copy();
+                  AddFoundedExpeditionEvents(Details, result, saved);
+                  break;
+                }
 
-              if (!SavedSources.ContainsKey(key)) {
-                SavedSources.TryAdd(key, result);
-              }
-              break;
+                result.AddSourceAsset(FindSources(key, Details));
 
-            case "ExpeditionEventPool":
-              if (SavedSources.ContainsKey(key)) {
-                var saved = SavedSources[key].Copy();
-                AddFoundedExpeditionEvents(Details, result, saved);
-              }
-
-              result.AddSourceAsset(FindSources(key, Details));
-
-              if (!SavedSources.ContainsKey(key)) {
-                SavedSources.TryAdd(key, result);
-              }
-              break;
-
-            case "SearchAgain":
-              if (Details.Items.Count == 2 && SavedSources.ContainsKey(key)) {
-                var saved = SavedSources[key].Copy();
-                AddFoundedExpeditionEvents(Details, result, saved);
+                if (Details.Items.Count == 2 && !SavedSources.ContainsKey(key)) {
+                  SavedSources.TryAdd(key, result);
+                }
                 break;
-              }
 
-              result.AddSourceAsset(FindSources(key, Details));
-
-              if (Details.Items.Count == 2 && !SavedSources.ContainsKey(key)) {
-                SavedSources.TryAdd(key, result);
-              }
-              break;
-
-            default:
-              //throw new NotImplementedException(element.Element("Template").Value);
-              Debug.WriteLine(element.Element("Template").Value);
-              break;
+              default:
+                //throw new NotImplementedException(element.Element("Template").Value);
+                Debug.WriteLine(element.Element("Template").Value);
+                break;
+            }
+            if (result.Any()) {
+              resultstoadd.Add(result);
+            }
           }
-          if (result.Any()) {
-            resultstoadd.Add(result);
-          }
-        }
+        });
       }
 
       foreach (var item in resultstoadd) {

@@ -7,7 +7,9 @@ using System.Xml.Linq;
 using System.Xml.XPath;
 
 namespace RDA.Data {
+
   public class TempSource {
+
     #region Properties
 
     public String ID { get; set; }
@@ -144,14 +146,16 @@ namespace RDA.Data {
         case "A7_QuestNewspaperArticle":
         case "A7_QuestLostCargo":
         case "A7_QuestExpedition":
-          var questgiver = Source.XPathSelectElement("Values/Quest/QuestGiver").Value;
-          this.Text = new Description(questgiver).InsertBefore("-").InsertBefore(new Description("2734"));
-          foreach (var item in element.Details.Select(e => new Description(e.XPathSelectElement("Values/Standard/GUID").Value)).Distinct()) {
-            this.Details.Add(item);
+        case "A7_QuestDivingBellSonar":
+          var questgiver = Source.XPathSelectElement("Values/Quest/QuestGiver")?.Value;
+          if (questgiver != null) {
+            this.Text = new Description(questgiver).InsertBefore("-").InsertBefore(new Description("2734"));
+            foreach (var item in element.Details.Select(e => new Description(e.XPathSelectElement("Values/Standard/GUID").Value)).Distinct()) {
+              this.Details.Add(item);
+            }
           }
           break;
 
-        case "A7_QuestDivingBellSonar":
         case "A7_QuestDivingBellTreasureMap":
           questgiver = Source.XPathSelectElement("Values/Quest/QuestGiver")?.Value;
           this.Text = new Description(questgiver ?? "113420").InsertBefore("-").InsertBefore(new Description("2734"));

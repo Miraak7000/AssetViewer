@@ -95,6 +95,9 @@
     <Compile Include="Controls\Tourism.xaml.cs">
       <DependentUpon>Tourism.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\WeightControl.xaml.cs">
+      <DependentUpon>WeightControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Converter\EnumDescriptionTypeConverter.cs" />
     <Compile Include="Converter\GlobalDescriptionConverter.cs" />
     <Compile Include="Converter\PriorityMultiValueConverter.cs" />
@@ -201,6 +204,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\Tourism.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\WeightControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

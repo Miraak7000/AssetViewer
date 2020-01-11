@@ -441,7 +441,7 @@
                   Height="18"
                   HorizontalAlignment="Left"
                   VerticalAlignment="Top"
-                  Source="../Resources/data/ui/2kimages/main/icons/icon_credits.png" />
+                  Source="../../Resources/data/ui/2kimages/main/icons/icon_credits.png" />
                 <TextBlock
                   Grid.Column="1"
                   VerticalAlignment="Top"
@@ -579,7 +579,7 @@
             Click="ButtonSwitch_Click"
             Cursor="Hand"
             Template="{DynamicResource ButtonSwitchTemplate}">
-            <Image Source="../Resources/icon_traderoutes.png" />
+            <Image Source="../../Resources/icon_traderoutes.png" />
           </Button>
         </Grid>
       </Border>

@@ -9,6 +9,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.XPath;
@@ -22,7 +23,7 @@ namespace RDA {
       Program.PathRoot = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase).Replace(@"file:\", String.Empty)).Parent.Parent.FullName;
 
     }
-    public static void Main(String[] _) { 
+    public static void Main(String[] _) {
       // Helper  Obsolete
       //Helper.ExtractTextEnglish(Program.PathRoot + @"\Original\texts_english.xml");
       //Helper.ExtractTextGerman(Program.PathRoot + @"\Original\texts_german.xml");
@@ -83,15 +84,20 @@ namespace RDA {
       //Set True for fully new Set of Descriptions.
       Program.SaveDescriptions(true);
     }
-
+    public static readonly object ConsoleLock = new object();
     public static void ConsoleWriteGUID(string str) {
-      if (Console.CursorLeft != 0) {
-        var currentLineCursor = Console.CursorTop;
-        Console.SetCursorPosition(0, Console.CursorTop);
-        Console.Write(new string(' ', Console.WindowWidth));
-        Console.SetCursorPosition(0, currentLineCursor);
+      lock (ConsoleLock) {
+        if (Console.CursorLeft != 0) {
+          var currentleft = Console.CursorLeft;
+          Console.SetCursorPosition(0, Console.CursorTop);
+          Console.Write(str);
+          Console.Write(new string(' ', Math.Abs(currentleft - Console.CursorLeft)));
+        }
+        else {
+          Console.Write(str);
+        }
       }
-      Console.Write(str);
+
     }
 
     public static void ConsoleWriteHeadline(string str) {
@@ -121,7 +127,7 @@ namespace RDA {
       ConsoleWriteHeadline("Save Descriptions");
       // Split Languages To single Files
       foreach (Languages language in Enum.GetValues(typeof(Languages))) {
-        using (var xmlWriter = XmlWriter.Create($@"{Program.PathRoot}\Modified\Texts_{language.ToString("G")}.xml", new XmlWriterSettings() { Indent = true })) {
+        using (var xmlWriter = XmlWriter.Create($@"{Program.PathRoot}\Modified\Texts_{language.ToString("G")}.xml", new XmlWriterSettings() { Indent = false })) {
           xmlWriter.WriteStartElement("Texts");
           var savedIDs = new HashSet<string>();
 
@@ -218,9 +224,12 @@ namespace RDA {
       document.Add(new XElement(template));
       document.Root.Add(result.Select(s => s.ToXml()));
       document.Save($@"{Program.PathRoot}\Modified\Assets_{template}.xml");
-      document.Save($@"{Program.PathViewer}\Resources\Assets\{template}.xml");
+      document.SaveIndent($@"{Program.PathViewer}\Resources\Assets\{template}.xml");
     }
+    public static void SaveIndent(this XDocument doc, string path) {
+      doc.Save(path, SaveOptions.DisableFormatting);
 
+    }
     private static void ProcessingItemSets() {
       ProcessingItems("ItemSet", false, asset => {
         asset.SetParts = Assets
@@ -267,7 +276,7 @@ namespace RDA {
       document.Add(new XElement("ThirdParties"));
       document.Root.Add(result.Select(s => s.ToXml()));
       document.Save($@"{Program.PathRoot}\Modified\Assets_ThirdParty.xml");
-      document.Save($@"{Program.PathViewer}\Resources\Assets\ThirdParty.xml");
+      document.SaveIndent($@"{Program.PathViewer}\Resources\Assets\ThirdParty.xml");
     }
 
     private static void QuestGiver() {
@@ -313,7 +322,7 @@ namespace RDA {
       document.Add(new XElement("Expeditions"));
       document.Root.Add(result.Select(s => s.ToXml()));
       document.Save($@"{Program.PathRoot}\Modified\Assets_Expeditions.xml");
-      document.Save($@"{Program.PathViewer}\Resources\Assets\Expeditions.xml");
+      document.SaveIndent($@"{Program.PathViewer}\Resources\Assets\Expeditions.xml");
     }
 
     private static void ProcessingRewardPools() {
@@ -399,7 +408,7 @@ namespace RDA {
 
       var document = new XDocument(xRewardPools);
       document.Save($@"{Program.PathRoot}\Modified\Assets_RewardPools.xml");
-      document.Save($@"{Program.PathViewer}\Resources\Assets\RewardPools.xml");
+      document.SaveIndent($@"{Program.PathViewer}\Resources\Assets\RewardPools.xml");
     }
 
     private static void ProcessingExpeditionEvents() {
@@ -430,8 +439,8 @@ namespace RDA {
       var document = new XDocument();
       document.Add(new XElement(template));
       document.Root.Add(ResultEvents.Select(s => ToXml(s)));
-      document.Save($@"{Program.PathRoot}\Modified\Assets_{template}.xml");
-      document.Save($@"{Program.PathViewer}\Resources\Assets\{template}.xml");
+      document.SaveIndent($@"{Program.PathRoot}\Modified\Assets_{template}.xml");
+      document.SaveIndent($@"{Program.PathViewer}\Resources\Assets\{template}.xml");
 
       //local method ExpeditionEvents ToXml
       XElement ToXml(KeyValuePair<XElement, ConcurrentBag<HashSet<XElement>>> events) {
@@ -533,82 +542,84 @@ namespace RDA {
         mainDetails = (mainDetails == default) ? new Details() : mainDetails;
         mainDetails.PreviousIDs.Add(id);
         var mainResult = inResult ?? new SourceWithDetailsList();
-        var resultstoadd = new List<SourceWithDetailsList>();
+        var resultstoadd = new ConcurrentBag<SourceWithDetailsList>();
         var links = Assets.Original.XPathSelectElements($"//*[text()={id} and not(self::GUID)]").ToArray();
         if (links.Length > 0) {
-          for (var i = 0; i < links.Length; i++) {
-            var element = links[i];
-            var foundedElement = element;
-            while (element.Name.LocalName != "Asset" || !element.HasElements) {
-              element = element.Parent;
-            }
-            var Details = new Details(mainDetails);
-            var result = mainResult.Copy();
-            var key = element.XPathSelectElement("Values/Standard/GUID").Value;
-            if (element.Element("Template") == null || mainDetails.PreviousIDs.Contains(key)) {
-              continue;
-            }
-            switch (element.Element("Template").Value) {
-              case "GuildhouseItem":
-                //Ignore
-                break;
+          links.AsParallel().ForAll(link => {
+            foreach (var link2 in new[] { link } /*links*/) {
+              var element = link2;
+              var foundedElement = element;
+              while (element.Name.LocalName != "Asset" || !element.HasElements) {
+                element = element.Parent;
+              }
+              var Details = new Details(mainDetails);
+              var result = mainResult.Copy();
+              var key = element.XPathSelectElement("Values/Standard/GUID").Value;
+              if (element.Element("Template") == null || mainDetails.PreviousIDs.Contains(key)) {
+                continue;
+              }
+              switch (element.Element("Template").Value) {
+                case "GuildhouseItem":
+                  //Ignore
+                  break;
 
-              case "Expedition":
+                case "Expedition":
 
-                break;
+                  break;
 
-              case "ExpeditionDecision":
-              case "ExpeditionTrade":
-                if (foundedElement.Name.LocalName == "Reward" ||
-                  foundedElement.Name.LocalName == "Product" ||
-                  foundedElement.Name.LocalName == "Item") {
+                case "ExpeditionDecision":
+                case "ExpeditionTrade":
+                  if (foundedElement.Name.LocalName == "Reward" ||
+                    foundedElement.Name.LocalName == "Product" ||
+                    foundedElement.Name.LocalName == "Item") {
+                    goto case "SearchAgain";
+                  }
+                  else if (foundedElement.Name.LocalName != "Option" &&
+                    foundedElement.Name.LocalName != "FollowupSuccessOption" &&
+                    foundedElement.Name.LocalName != "FollowupFailOrCancelOption" &&
+                    foundedElement.Name.LocalName != "InsertEvent") {
+                    break;
+                  }
                   goto case "SearchAgain";
-                }
-                else if (foundedElement.Name.LocalName != "Option" &&
-                  foundedElement.Name.LocalName != "FollowupSuccessOption" &&
-                  foundedElement.Name.LocalName != "FollowupFailOrCancelOption" &&
-                  foundedElement.Name.LocalName != "InsertEvent") {
-                  break;
-                }
-                goto case "SearchAgain";
 
-              case "ExpeditionMapOption":
-              case "ExpeditionOption":
-                if (foundedElement.Name.LocalName == "ItemOrProduct") {
+                case "ExpeditionMapOption":
+                case "ExpeditionOption":
+                  if (foundedElement.Name.LocalName == "ItemOrProduct") {
+                    break;
+                  }
+                  if (foundedElement.Name.LocalName != "Decision") {
+                    break;
+                  }
+                  goto case "SearchAgain";
+                case "ExpeditionBribe":
+                  if (foundedElement.Name.LocalName == "Item") {
+                    break;
+                  }
+                  if (foundedElement.Name.LocalName != "FollowupSuccessOption" &&
+                    foundedElement.Name.LocalName != "FollowupFailOrCancelOption") {
+                    break;
+                  }
+                  goto case "SearchAgain";
+                case "SearchAgain":
+                  Details.Add(element);
+                  VerasFindExpeditionEvents(key, Details, result);
                   break;
-                }
-                if (foundedElement.Name.LocalName != "Decision") {
-                  break;
-                }
-                goto case "SearchAgain";
-              case "ExpeditionBribe":
-                if (foundedElement.Name.LocalName == "Item") {
-                  break;
-                }
-                if (foundedElement.Name.LocalName != "FollowupSuccessOption" &&
-                  foundedElement.Name.LocalName != "FollowupFailOrCancelOption") {
-                  break;
-                }
-                goto case "SearchAgain";
-              case "SearchAgain":
-                Details.Add(element);
-                VerasFindExpeditionEvents(key, Details, result);
-                break;
 
-              case "ExpeditionEvent":
-                if (foundedElement.Name.LocalName != "StartDecision") {
+                case "ExpeditionEvent":
+                  if (foundedElement.Name.LocalName != "StartDecision") {
+                    break;
+                  }
+                  result.AddSourceAsset(element, Details.Items);
                   break;
-                }
-                result.AddSourceAsset(element, Details.Items);
-                break;
 
-              default:
-                Debug.WriteLine(element.Element("Template").Value);
-                //ignore
-                break;
+                default:
+                  Debug.WriteLine(element.Element("Template").Value);
+                  //ignore
+                  break;
+              }
+              resultstoadd.Add(result);
             }
-            resultstoadd.Add(result);
-          }
+          });
         }
 
         foreach (var item in resultstoadd) {
@@ -647,7 +658,7 @@ namespace RDA {
       }
       var document = new XDocument(xRoot);
       document.Save($@"{Program.PathRoot}\Modified\Assets_Tourism.xml");
-      document.Save($@"{Program.PathViewer}\Resources\Assets\Tourism.xml");
+      document.SaveIndent($@"{Program.PathViewer}\Resources\Assets\Tourism.xml");
     }
   }
 }

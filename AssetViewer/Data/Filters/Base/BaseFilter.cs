@@ -43,11 +43,20 @@ namespace AssetViewer.Data.Filters {
       }
     }
 
+    public ValueComparisons Comparison {
+      get { return comparison; }
+      set {
+        if (comparison != value) {
+          comparison = value;
+          UpdateSavedItems();
+          RaisePropertyChanged(nameof(Comparison));
+        }
+      }
+    }
+
     public abstract Func<IEnumerable<TemplateAsset>, IEnumerable<TemplateAsset>> FilterFunc { get; }
     public virtual List<T> CurrentValues { get; set; }
     public ItemsHolder ItemsHolder { get; set; }
-
-    public ValueComparisons Comparison { get; set; }
     public virtual List<T> ComparisonValues { get; set; }
 
     public List<TemplateAsset> SavedItems { get; set; }
@@ -144,6 +153,7 @@ namespace AssetViewer.Data.Filters {
 
     private T _selectedValue;
     private T _selectedComparisonValue;
+    private ValueComparisons comparison;
 
     #endregion Fields
   }
