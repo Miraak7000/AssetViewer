@@ -6,7 +6,7 @@ namespace RDA.Comparer {
     #region Methods
 
     public bool Equals(Upgrade x, Upgrade y) {
-      return x.Text.Equals(y.Text) && x.Value.Equals(y.Value);
+      return x?.Text.Equals(y?.Text) == true && x?.Value.Equals(y?.Value) == true;
     }
 
     public int GetHashCode(Upgrade obj) {

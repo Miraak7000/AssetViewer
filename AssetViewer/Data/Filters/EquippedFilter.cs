@@ -29,6 +29,7 @@ namespace AssetViewer.Data.Filters {
     #region Constructors
 
     public EquippedFilter(ItemsHolder itemsHolder) : base(itemsHolder) {
+      ComparisonType = FilterType.Selection;
     }
 
     #endregion Constructors

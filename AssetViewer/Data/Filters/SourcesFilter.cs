@@ -12,10 +12,21 @@ namespace AssetViewer.Data.Filters {
     public override Func<IEnumerable<TemplateAsset>, IEnumerable<TemplateAsset>> FilterFunc => result => {
       if (SelectedComparisonValue != null && SelectedComparisonValue.ID != 0) {
         if (SelectedValue != null && SelectedValue.ID != 0) {
-          return result.Where(w => w.Sources?.Where(s => s.Text.Equals(SelectedValue)).SelectMany(s => s.Additionals).Any(l => l.Text.Equals(SelectedComparisonValue)) == true);
+          if (Comparison == ValueComparisons.UnEqual) {
+            return result.Where(w => w.Sources?.Any(s => !(s.Text.Equals(SelectedValue) && s.Additionals.Any(u => u.Text.Equals(SelectedComparisonValue)))) == true);
+          }
+          else {
+            return result.Where(w => w.Sources?.Where(s => s.Text.Equals(SelectedValue)).SelectMany(s => s.Additionals).Any(l => l.Text.Equals(SelectedComparisonValue)) == true);
+          }
+
         }
         else {
-          return result.Where(w => w.Sources?.SelectMany(s => s.Additionals).Any(l => l.Text.Equals(SelectedComparisonValue)) == true);
+          if (Comparison == ValueComparisons.UnEqual) {
+            return result.Where(w => w.Sources?.Any(l => !l.Additionals.Any(a=> a.Text.Equals(SelectedComparisonValue))) == true);
+          }
+          else {
+            return result.Where(w => w.Sources?.SelectMany(s => s.Additionals).Any(l => l.Text.Equals(SelectedComparisonValue)) == true);
+          }
         }
       }
       else if (SelectedValue != null && SelectedValue.ID != 0) {
