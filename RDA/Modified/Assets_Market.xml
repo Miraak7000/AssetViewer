@@ -1,3 +1,205 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b9015c6d643cc68cdcb9716c6a86d768fa0b85e119e4c53dab59d69c443a9700
-size 5774
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Market>
+  <Asset ID="114889" Release="Update 06" RarityType="Common">
+    <Name>service_arctic_01 (Canteen)</Name>
+    <Text ID="114889">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_canteen.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="160001">
+      <Icon>
+        <Filename>data/ui/2kimages/main/icons/icon_session_passage.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>1000</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>5</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades>
+      <Upgrade>
+        <Text ID="12504">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_warning_2.png</Filename>
+          </Icon>
+        </Text>
+        <Value>20 / 40</Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="11144">
+      <Icon />
+    </Info>
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010017">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+            </Icon>
+          </Text>
+          <Value>100 / 100</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+  </Asset>
+  <Asset ID="101257" Release="Release" RarityType="Common">
+    <Name>service_colony01_01 (Marketplace)</Name>
+    <Text ID="101257">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_market.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000001">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>500</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades>
+      <Upgrade>
+        <Text ID="12504">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_warning_2.png</Filename>
+          </Icon>
+        </Text>
+        <Value>35 / 70</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="12504">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_warning_2.png</Filename>
+          </Icon>
+        </Text>
+        <Value>35 / 70</Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="2976">
+      <Icon />
+    </Info>
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010017">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+            </Icon>
+          </Text>
+          <Value>20 / 20</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+  </Asset>
+  <Asset ID="1010372" Release="Release" RarityType="Common">
+    <Name>logistic_01 (Marketplace)</Name>
+    <Text ID="101257">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_market.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000000">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>500</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades>
+      <Upgrade>
+        <Text ID="12504">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_warning_2.png</Filename>
+          </Icon>
+        </Text>
+        <Value>35 / 70</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="12504">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_warning_2.png</Filename>
+          </Icon>
+        </Text>
+        <Value>35 / 70</Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="2976">
+      <Icon />
+    </Info>
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010017">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+            </Icon>
+          </Text>
+          <Value>20 / 20</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+  </Asset>
+</Market>

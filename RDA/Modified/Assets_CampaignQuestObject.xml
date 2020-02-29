@@ -1,3 +1,1803 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:829a2cdb30928d44966ac0cd2df60eed8edbc4e8cc295f05b63c524f8c6d783f
-size 51680
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CampaignQuestObject>
+  <Asset ID="103074" Release="Release" RarityType="Common">
+    <Name>Von Malching castle</Name>
+    <Text ID="103074">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades />
+    <TradePrice />
+    <HiringFee />
+  </Asset>
+  <Asset ID="101399" Release="Release" RarityType="Common">
+    <Name>CQO_Ruins05_Optional_Fake</Name>
+    <Text ID="101399">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12935">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101678" Release="Release" RarityType="Common">
+    <Name>CQO_WorkerRuins04_Fake</Name>
+    <Text ID="101678">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12908">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101538" Release="Release" RarityType="Common">
+    <Name>CQO_RuinsB_Fake</Name>
+    <Text ID="101538">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12935">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101238" Release="Release" RarityType="Common">
+    <Name>CQO_Ruins01_Mandatory</Name>
+    <Text ID="101238">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12739">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101679" Release="Release" RarityType="Common">
+    <Name>CQO_WorkerRuins05</Name>
+    <Text ID="101679">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="13520">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101533" Release="Release" RarityType="Common">
+    <Name>CQO_Ruins06_Optional_Fake</Name>
+    <Text ID="101533">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12935">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101539" Release="Release" RarityType="Common">
+    <Name>CQO_RuinsC_Fake</Name>
+    <Text ID="101539">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12935">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101680" Release="Release" RarityType="Common">
+    <Name>CQO_WorkerRuins05_Fake</Name>
+    <Text ID="101679">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12908">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101534" Release="Release" RarityType="Common">
+    <Name>CQO_Ruins07_Optional_Fake</Name>
+    <Text ID="101534">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12935">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101445" Release="Release" RarityType="Common">
+    <Name>CQO_Ruins02_Mandatory</Name>
+    <Text ID="101445">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12738">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101540" Release="Release" RarityType="Common">
+    <Name>CQO_RuinsD_Fake</Name>
+    <Text ID="101540">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12935">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101681" Release="Release" RarityType="Common">
+    <Name>CQO_WorkerRuins06</Name>
+    <Text ID="101681">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="13521">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101535" Release="Release" RarityType="Common">
+    <Name>CQO_Ruins08_Optional_Fake</Name>
+    <Text ID="101535">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12935">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101446" Release="Release" RarityType="Common">
+    <Name>CQO_Ruins03_Mandatory</Name>
+    <Text ID="101446">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12737">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101682" Release="Release" RarityType="Common">
+    <Name>CQO_WorkerRuins06_Fake</Name>
+    <Text ID="101681">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12908">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101536" Release="Release" RarityType="Common">
+    <Name>CQO_Ruins09_Optional_Fake</Name>
+    <Text ID="101536">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12935">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101541" Release="Release" RarityType="Common">
+    <Name>CQO_RuinsE_Fake</Name>
+    <Text ID="101541">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12935">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101683" Release="Release" RarityType="Common">
+    <Name>CQO_WorkerRuins07</Name>
+    <Text ID="101683">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="13522">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101342" Release="Release" RarityType="Common">
+    <Name>CQO_Ruins04_Optional</Name>
+    <Text ID="101342">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="13510">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101346" Release="Release" RarityType="Common">
+    <Name>CQO_RuinsA</Name>
+    <Text ID="101346">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12740">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101542" Release="Release" RarityType="Common">
+    <Name>CQO_RuinsF_Fake</Name>
+    <Text ID="101542">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12935">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101684" Release="Release" RarityType="Common">
+    <Name>CQO_WorkerRuins07_Fake</Name>
+    <Text ID="101683">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12908">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101347" Release="Release" RarityType="Common">
+    <Name>CQO_RuinsB</Name>
+    <Text ID="101538">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12741">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101343" Release="Release" RarityType="Common">
+    <Name>CQO_Ruins05_Optional</Name>
+    <Text ID="101399">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="13511">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="110785" Release="Update 03" RarityType="Common">
+    <Name>Cure by work - Mercier work camp</Name>
+    <Text ID="110785">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades />
+    <TradePrice />
+    <HiringFee />
+  </Asset>
+  <Asset ID="101543" Release="Release" RarityType="Common">
+    <Name>CQO_RuinsG_Fake</Name>
+    <Text ID="101543">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12935">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101417" Release="Release" RarityType="Common">
+    <Name>CQO_Ruins06_Optional</Name>
+    <Text ID="101533">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="13512">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101348" Release="Release" RarityType="Common">
+    <Name>CQO_RuinsC</Name>
+    <Text ID="101539">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12742">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101421" Release="Release" RarityType="Common">
+    <Name>CQO_Ruins07_Optional</Name>
+    <Text ID="101534">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="13513">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101544" Release="Release" RarityType="Common">
+    <Name>CQO_RuinsH_Fake</Name>
+    <Text ID="101544">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12935">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101349" Release="Release" RarityType="Common">
+    <Name>CQO_RuinsD</Name>
+    <Text ID="101540">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12743">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101433" Release="Release" RarityType="Common">
+    <Name>CQO_WorkerRuins01</Name>
+    <Text ID="101433">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="13516">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101726" Release="Release" RarityType="Common">
+    <Name>CQO_Ruins08_Optional</Name>
+    <Text ID="101535">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="13514">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101350" Release="Release" RarityType="Common">
+    <Name>CQO_RuinsE</Name>
+    <Text ID="101541">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12744">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101434" Release="Release" RarityType="Common">
+    <Name>CQO_WorkerRuins01_Fake</Name>
+    <Text ID="101433">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12908">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101423" Release="Release" RarityType="Common">
+    <Name>CQO_Ruins09_Optional</Name>
+    <Text ID="101536">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="13515">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101351" Release="Release" RarityType="Common">
+    <Name>CQO_RuinsF</Name>
+    <Text ID="101542">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12745">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101435" Release="Release" RarityType="Common">
+    <Name>CQO_WorkerRuins02</Name>
+    <Text ID="101435">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="13517">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101397" Release="Release" RarityType="Common">
+    <Name>CQO_Ruins01_Mandatory_Fake</Name>
+    <Text ID="101238">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12935">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101436" Release="Release" RarityType="Common">
+    <Name>CQO_WorkerRuins02_Fake</Name>
+    <Text ID="101435">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12908">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101352" Release="Release" RarityType="Common">
+    <Name>CQO_RuinsG</Name>
+    <Text ID="101352">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12746">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101449" Release="Release" RarityType="Common">
+    <Name>CQO_Ruins02_Mandatory_Fake</Name>
+    <Text ID="101445">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12935">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101437" Release="Release" RarityType="Common">
+    <Name>CQO_WorkerRuins03</Name>
+    <Text ID="101437">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="13518">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101360" Release="Release" RarityType="Common">
+    <Name>CQO_RuinsH</Name>
+    <Text ID="101544">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12747">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101450" Release="Release" RarityType="Common">
+    <Name>CQO_Ruins03_Mandatory_Fake</Name>
+    <Text ID="101446">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12935">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101537" Release="Release" RarityType="Common">
+    <Name>CQO_RuinsA_Fake</Name>
+    <Text ID="101346">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12935">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101398" Release="Release" RarityType="Common">
+    <Name>CQO_Ruins04_Optional_Fake</Name>
+    <Text ID="101342">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12935">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101438" Release="Release" RarityType="Common">
+    <Name>CQO_WorkerRuins03_Fake</Name>
+    <Text ID="101438">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="12908">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101677" Release="Release" RarityType="Common">
+    <Name>CQO_WorkerRuins04</Name>
+    <Text ID="101678">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_ruin_settlement.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="13519">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="116946" Release="Update 06" RarityType="Common">
+    <Name>ArcticQ102_Ruins01 FAKE</Name>
+    <Text ID="116946">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/campaign/icon_abandoned_camp.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades />
+    <TradePrice />
+    <HiringFee />
+  </Asset>
+  <Asset ID="116947" Release="Update 06" RarityType="Common">
+    <Name>ArcticQ102_Ruins02 FAKE</Name>
+    <Text ID="116947">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/campaign/icon_abandoned_camp.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades />
+    <TradePrice />
+    <HiringFee />
+  </Asset>
+  <Asset ID="116948" Release="Update 06" RarityType="Common">
+    <Name>ArcticQ102_Ruins03 FAKE</Name>
+    <Text ID="116948">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/campaign/icon_abandoned_camp.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades />
+    <TradePrice />
+    <HiringFee />
+  </Asset>
+  <Asset ID="114373" Release="Update 06" RarityType="Common">
+    <Name>ArcticQ102_Ruins01</Name>
+    <Text ID="116946">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/campaign/icon_abandoned_camp.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades />
+    <TradePrice />
+    <HiringFee />
+  </Asset>
+  <Asset ID="116942" Release="Update 06" RarityType="Common">
+    <Name>ArcticQ102_Ruins02</Name>
+    <Text ID="116947">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/campaign/icon_abandoned_camp.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades />
+    <TradePrice />
+    <HiringFee />
+  </Asset>
+  <Asset ID="116943" Release="Update 06" RarityType="Common">
+    <Name>ArcticQ102_Ruins03</Name>
+    <Text ID="116948">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/campaign/icon_abandoned_camp.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <GenericUpgrades />
+    <TradePrice />
+    <HiringFee />
+  </Asset>
+</CampaignQuestObject>

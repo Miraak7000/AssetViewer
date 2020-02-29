@@ -1,3 +1,204 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dbd01a173117286b4ca126172edb88551a7ba9748219393ee8f095d9ece84f43
-size 5797
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HeavyFreeAreaBuilding>
+  <Asset ID="100807" Release="Release" RarityType="Common" IsPausable="true">
+    <Name>CQO_UnclesIsland_CoalHeavyIndustry</Name>
+    <Text ID="100807">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_coal_burn.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>500</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>3</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>2</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-2</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="10604">
+          <Icon />
+        </Text>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="11143">
+      <Icon />
+    </Info>
+    <FactoryBase>
+      <FactoryOutputs>
+        <Upgrade>
+          <Text ID="1010226">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_coal.png</Filename>
+            </Icon>
+          </Text>
+          <Value>1 / 3</Value>
+        </Upgrade>
+      </FactoryOutputs>
+    </FactoryBase>
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010017">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+            </Icon>
+          </Text>
+          <Value>30 / 12</Value>
+        </Upgrade>
+        <Upgrade>
+          <Text ID="1010115">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_worker_2.png</Filename>
+            </Icon>
+          </Text>
+          <Value>25</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+  </Asset>
+  <Asset ID="1010298" Release="Release" RarityType="Common" IsPausable="true">
+    <Name>heavy_03 (Coal Heavy Industry)</Name>
+    <Text ID="1010298">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_coal_burn.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000000">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>500</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>4</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>5</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="11279">
+          <Icon>
+            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
+          </Icon>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>-5</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="12504">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_warning_2.png</Filename>
+          </Icon>
+        </Text>
+        <Value>11</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="10604">
+          <Icon />
+        </Text>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="11143">
+      <Icon />
+    </Info>
+    <FactoryBase>
+      <FactoryOutputs>
+        <Upgrade>
+          <Text ID="1010226">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_coal.png</Filename>
+            </Icon>
+          </Text>
+          <Value>1 / 4</Value>
+        </Upgrade>
+      </FactoryOutputs>
+    </FactoryBase>
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010017">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+            </Icon>
+          </Text>
+          <Value>20 / 10</Value>
+        </Upgrade>
+        <Upgrade>
+          <Text ID="1010115">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_worker_2.png</Filename>
+            </Icon>
+          </Text>
+          <Value>10</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+  </Asset>
+</HeavyFreeAreaBuilding>

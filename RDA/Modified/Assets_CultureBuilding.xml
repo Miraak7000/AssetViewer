@@ -1,3 +1,1173 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:decc09c2a08530ab087972b40225a772ac1bc3d87aceaa651299f0f9984e5bcd
-size 38958
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CultureBuilding>
+  <Asset ID="114141" Release="Update 05" RarityType="Common">
+    <Name>colony01_culture_03 (BotanicalGarden)</Name>
+    <Text ID="110935">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_botanic_garden.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000001">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10000</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010218">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010207">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
+          </Icon>
+        </Text>
+        <Value>5</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades />
+    <TradePrice />
+    <HiringFee />
+    <Info ID="111084">
+      <Icon />
+    </Info>
+    <FactoryBase />
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010017">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+            </Icon>
+          </Text>
+          <Value>100 / 100</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+    <Modules Limit="500">
+      <PossibleModules>
+        <Module ID="111104">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_botanic_garden_module.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114323">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_music_pavillion.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114435">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornament_placeholders/cultural_1x1_01.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="103119">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/cultural_props_1x1_16_front.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="101510">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/cultural_props_1x1_04.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="102466">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_05.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="102469">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_08.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114867">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_purpleflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114869">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_pinkflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114871">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_yellowflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114874">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_redandwhiteflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114876">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_darkpinkflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114878">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_blueflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114880">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_whiteflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114882">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_orangeflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114884">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_hedgespath.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114886">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_labybrinth.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114888">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_treesculptures.png</Filename>
+          </Icon>
+        </Module>
+      </PossibleModules>
+    </Modules>
+  </Asset>
+  <Asset ID="102283" Release="Release" RarityType="Common">
+    <Name>culture_colony01_02 (Museum)</Name>
+    <Text ID="2351">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_museum.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000001">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10000</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010218">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010207">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
+          </Icon>
+        </Text>
+        <Value>5</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades />
+    <TradePrice />
+    <HiringFee />
+    <Info ID="11663">
+      <Icon />
+    </Info>
+    <FactoryBase />
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010017">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+            </Icon>
+          </Text>
+          <Value>100 / 100</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+    <Modules Limit="500">
+      <PossibleModules>
+        <Module ID="100454">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_museum_module.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114323">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_music_pavillion.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114435">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornament_placeholders/cultural_1x1_01.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="103119">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/cultural_props_1x1_16_front.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="101510">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/cultural_props_1x1_04.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="102466">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_05.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="102469">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_08.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114867">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_purpleflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114869">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_pinkflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114871">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_yellowflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114874">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_redandwhiteflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114876">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_darkpinkflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114878">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_blueflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114880">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_whiteflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114882">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_orangeflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114884">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_hedgespath.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114886">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_labybrinth.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114888">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_treesculptures.png</Filename>
+          </Icon>
+        </Module>
+      </PossibleModules>
+    </Modules>
+  </Asset>
+  <Asset ID="1010470" Release="Release" RarityType="Common">
+    <Name>culture_01 (Zoo)</Name>
+    <Text ID="2349">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_zoo.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000000">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10000</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010218">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010207">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
+          </Icon>
+        </Text>
+        <Value>5</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades />
+    <TradePrice />
+    <HiringFee />
+    <Info ID="118025">
+      <Icon />
+    </Info>
+    <FactoryBase />
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010017">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+            </Icon>
+          </Text>
+          <Value>100 / 100</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+    <Modules Limit="500">
+      <PossibleModules>
+        <Module ID="100455">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_general_module_01.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114323">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_music_pavillion.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114435">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornament_placeholders/cultural_1x1_01.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="103119">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/cultural_props_1x1_16_front.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="101510">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/cultural_props_1x1_04.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="102466">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_05.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="102469">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_08.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114867">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_purpleflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114869">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_pinkflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114871">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_yellowflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114874">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_redandwhiteflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114876">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_darkpinkflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114878">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_blueflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114880">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_whiteflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114882">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_orangeflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114884">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_hedgespath.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114886">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_labybrinth.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114888">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_treesculptures.png</Filename>
+          </Icon>
+        </Module>
+      </PossibleModules>
+    </Modules>
+  </Asset>
+  <Asset ID="100448" Release="Release" RarityType="Common">
+    <Name>Fake Ornament [test 2nd party]</Name>
+    <Text ID="2349">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_zoo.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000000">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <GenericUpgrades />
+    <TradePrice />
+    <HiringFee />
+    <Info ID="118025">
+      <Icon />
+    </Info>
+    <FactoryBase />
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010017">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+            </Icon>
+          </Text>
+          <Value>0</Value>
+        </Upgrade>
+        <Upgrade>
+          <Text ID="1010052">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_farmer_2.png</Filename>
+            </Icon>
+          </Text>
+          <Value>0</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+    <Modules Limit="0">
+      <PossibleModules>
+        <Module ID="100455">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_general_module_01.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114323">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_music_pavillion.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114435">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornament_placeholders/cultural_1x1_01.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="103119">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/cultural_props_1x1_16_front.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="101510">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/cultural_props_1x1_04.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="102466">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_05.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="102469">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_08.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114867">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_purpleflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114869">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_pinkflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114871">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_yellowflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114874">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_redandwhiteflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114876">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_darkpinkflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114878">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_blueflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114880">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_whiteflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114882">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_orangeflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114884">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_hedgespath.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114886">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_labybrinth.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114888">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_treesculptures.png</Filename>
+          </Icon>
+        </Module>
+      </PossibleModules>
+    </Modules>
+  </Asset>
+  <Asset ID="110935" Release="Update 05" RarityType="Common">
+    <Name>culture_03 (BotanicalGarden)</Name>
+    <Text ID="110935">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_botanic_garden.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000000">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10000</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010218">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010207">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
+          </Icon>
+        </Text>
+        <Value>5</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades />
+    <TradePrice />
+    <HiringFee />
+    <Info ID="111084">
+      <Icon />
+    </Info>
+    <FactoryBase />
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010017">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+            </Icon>
+          </Text>
+          <Value>100 / 100</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+    <Modules Limit="500">
+      <PossibleModules>
+        <Module ID="111104">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_botanic_garden_module.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114323">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_music_pavillion.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114435">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornament_placeholders/cultural_1x1_01.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="103119">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/cultural_props_1x1_16_front.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="101510">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/cultural_props_1x1_04.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="102466">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_05.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="102469">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_08.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114867">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_purpleflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114869">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_pinkflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114871">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_yellowflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114874">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_redandwhiteflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114876">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_darkpinkflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114878">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_blueflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114880">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_whiteflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114882">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_orangeflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114884">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_hedgespath.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114886">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_labybrinth.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114888">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_treesculptures.png</Filename>
+          </Icon>
+        </Module>
+      </PossibleModules>
+    </Modules>
+  </Asset>
+  <Asset ID="1010471" Release="Release" RarityType="Common">
+    <Name>culture_02 (Museum)</Name>
+    <Text ID="2351">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_museum.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000000">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10000</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010218">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010207">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
+          </Icon>
+        </Text>
+        <Value>5</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades />
+    <TradePrice />
+    <HiringFee />
+    <Info ID="11663">
+      <Icon />
+    </Info>
+    <FactoryBase />
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010017">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+            </Icon>
+          </Text>
+          <Value>100 / 100</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+    <Modules Limit="500">
+      <PossibleModules>
+        <Module ID="100454">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_museum_module.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114323">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_music_pavillion.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114435">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornament_placeholders/cultural_1x1_01.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="103119">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/cultural_props_1x1_16_front.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="101510">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/cultural_props_1x1_04.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="102466">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_05.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="102469">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_08.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114867">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_purpleflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114869">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_pinkflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114871">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_yellowflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114874">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_redandwhiteflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114876">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_darkpinkflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114878">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_blueflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114880">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_whiteflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114882">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_orangeflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114884">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_hedgespath.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114886">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_labybrinth.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114888">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_treesculptures.png</Filename>
+          </Icon>
+        </Module>
+      </PossibleModules>
+    </Modules>
+  </Asset>
+  <Asset ID="102282" Release="Release" RarityType="Common">
+    <Name>culture_colony01_01 (Zoo)</Name>
+    <Text ID="2349">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_zoo.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000001">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10000</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010218">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010207">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
+          </Icon>
+        </Text>
+        <Value>5</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades />
+    <TradePrice />
+    <HiringFee />
+    <Info ID="118025">
+      <Icon />
+    </Info>
+    <FactoryBase />
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010017">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+            </Icon>
+          </Text>
+          <Value>100 / 100</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+    <Modules Limit="500">
+      <PossibleModules>
+        <Module ID="100455">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_general_module_01.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114323">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_music_pavillion.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114435">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornament_placeholders/cultural_1x1_01.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="103119">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/cultural_props_1x1_16_front.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="101510">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/cultural_props_1x1_04.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="102466">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_05.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="102469">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_08.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114867">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_purpleflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114869">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_pinkflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114871">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_yellowflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114874">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_redandwhiteflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114876">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_darkpinkflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114878">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_blueflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114880">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_whiteflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114882">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_orangeflower.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114884">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_hedgespath.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114886">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_labybrinth.png</Filename>
+          </Icon>
+        </Module>
+        <Module ID="114888">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/ornaments/icon_botanica_treesculptures.png</Filename>
+          </Icon>
+        </Module>
+      </PossibleModules>
+    </Modules>
+  </Asset>
+</CultureBuilding>

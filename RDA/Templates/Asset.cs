@@ -1029,8 +1029,8 @@ namespace RDA.Templates {
       var resultstoadd = new ConcurrentBag<SourceWithDetailsList>();
       var links = Assets.Original.XPathSelectElements($"//*[text()={id} and not(self::GUID)]").ToArray();
       if (links.Length > 0) {
-        links.AsParallel().ForAll(link => {
-          foreach (var link2 in new[] { link } /*links*/) {
+        //links.AsParallel().ForAll(link => {
+          foreach (var link2 in/* new[] { link }*/ links) {
             var element = link2;
             var foundedElement = element;
 
@@ -1340,7 +1340,7 @@ namespace RDA.Templates {
               resultstoadd.Add(result);
             }
           }
-        });
+        //});
       }
 
       foreach (var item in resultstoadd) {
