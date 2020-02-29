@@ -1,3 +1,800 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9ab8d392601bbfaefb62fb360acada19dc18cec6ad6b9756f1b627caebc9a613
-size 22731
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Monument>
+  <Asset ID="101186" Release="Release" RarityType="Common">
+    <Name>CO_Tunnel_Entrance02</Name>
+    <Text ID="101186">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_dynamite.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>2500</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>100</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>50</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades />
+    <TradePrice />
+    <HiringFee />
+    <Info ID="100027">
+      <Icon />
+    </Info>
+    <FactoryBase CycleTime="60">
+      <FactoryInputs>
+        <Upgrade>
+          <Text ID="1010197">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_wool.png</Filename>
+            </Icon>
+          </Text>
+          <Value>5 / 15</Value>
+        </Upgrade>
+      </FactoryInputs>
+    </FactoryBase>
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010115">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_worker_2.png</Filename>
+            </Icon>
+          </Text>
+          <Value>100</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+    <UpgradeText ID="541646278">
+      <Icon />
+    </UpgradeText>
+  </Asset>
+  <Asset ID="1010489" Release="Release" RarityType="Common">
+    <Name>monument_01_00</Name>
+    <Text ID="1010489">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_world_fair_2.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000000">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>300000</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>100</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>200</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010218">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
+          </Icon>
+        </Text>
+        <Value>160</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010207">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
+          </Icon>
+        </Text>
+        <Value>150</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010202">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png</Filename>
+          </Icon>
+        </Text>
+        <Value>150</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades />
+    <TradePrice />
+    <HiringFee />
+    <Info ID="100027">
+      <Icon />
+    </Info>
+    <FactoryBase CycleTime="60">
+      <FactoryInputs>
+        <Upgrade>
+          <Text ID="1010196">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+            </Icon>
+          </Text>
+          <Value>5 / 150</Value>
+        </Upgrade>
+        <Upgrade>
+          <Text ID="1010231">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_cement.png</Filename>
+            </Icon>
+          </Text>
+          <Value>10 / 300</Value>
+        </Upgrade>
+      </FactoryInputs>
+    </FactoryBase>
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010052">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_farmer_2.png</Filename>
+            </Icon>
+          </Text>
+          <Value>500</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+    <UpgradeText ID="661871586">
+      <Icon />
+    </UpgradeText>
+  </Asset>
+  <Asset ID="1010491" Release="Release" RarityType="Common">
+    <Name>monument_01_03</Name>
+    <Text ID="1010491">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_world_fair_2.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000000">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <BuildCosts />
+    <GenericUpgrades>
+      <Upgrade>
+        <Text ID="12508">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_electricity.png</Filename>
+          </Icon>
+        </Text>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="100027">
+      <Icon />
+    </Info>
+    <FactoryBase CycleTime="60">
+      <FactoryInputs>
+        <Upgrade>
+          <Text ID="1010243">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_carbon_filament.png</Filename>
+            </Icon>
+          </Text>
+          <Value>10 / 300</Value>
+        </Upgrade>
+        <Upgrade>
+          <Text ID="1010208">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_light_bulb.png</Filename>
+            </Icon>
+          </Text>
+          <Value>5 / 150</Value>
+        </Upgrade>
+        <Upgrade>
+          <Text ID="1010255">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_caoutchouc.png</Filename>
+            </Icon>
+          </Text>
+          <Value>10 / 300</Value>
+        </Upgrade>
+      </FactoryInputs>
+    </FactoryBase>
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010117">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_craftspeople.png</Filename>
+            </Icon>
+          </Text>
+          <Value>2000</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+    <UpgradeText ID="2034961775">
+      <Icon />
+    </UpgradeText>
+  </Asset>
+  <Asset ID="101135" Release="Release" RarityType="Common">
+    <Name>CO_Tunnel_Final</Name>
+    <Text ID="101186">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_dynamite.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <BuildCosts />
+    <GenericUpgrades />
+    <TradePrice />
+    <HiringFee />
+    <Info ID="100027">
+      <Icon />
+    </Info>
+    <FactoryBase>
+      <FactoryInputs>
+        <Upgrade>
+          <Text ID="1010196">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+            </Icon>
+          </Text>
+          <Value>5 / 25</Value>
+        </Upgrade>
+        <Upgrade>
+          <Text ID="1010205">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+            </Icon>
+          </Text>
+          <Value>5 / 25</Value>
+        </Upgrade>
+      </FactoryInputs>
+    </FactoryBase>
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010052">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_farmer_2.png</Filename>
+            </Icon>
+          </Text>
+          <Value>10</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+  </Asset>
+  <Asset ID="1010492" Release="Release" RarityType="Common">
+    <Name>monument_01_04</Name>
+    <Text ID="1010492">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_world_fair_2.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000000">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <BuildCosts />
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+150</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="12508">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_electricity.png</Filename>
+          </Icon>
+        </Text>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="100027">
+      <Icon />
+    </Info>
+    <FactoryBase />
+    <Maintenance />
+  </Asset>
+  <Asset ID="1010490" Release="Release" RarityType="Common">
+    <Name>monument_01_01</Name>
+    <Text ID="1010490">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_world_fair_2.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000000">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <BuildCosts />
+    <GenericUpgrades />
+    <TradePrice />
+    <HiringFee />
+    <Info ID="100027">
+      <Icon />
+    </Info>
+    <FactoryBase CycleTime="60">
+      <FactoryInputs>
+        <Upgrade>
+          <Text ID="1010202">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png</Filename>
+            </Icon>
+          </Text>
+          <Value>5 / 150</Value>
+        </Upgrade>
+        <Upgrade>
+          <Text ID="1010218">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
+            </Icon>
+          </Text>
+          <Value>5 / 150</Value>
+        </Upgrade>
+        <Upgrade>
+          <Text ID="1010205">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+            </Icon>
+          </Text>
+          <Value>10 / 300</Value>
+        </Upgrade>
+      </FactoryInputs>
+    </FactoryBase>
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010115">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_worker_2.png</Filename>
+            </Icon>
+          </Text>
+          <Value>1000</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+    <UpgradeText ID="-458491787">
+      <Icon />
+    </UpgradeText>
+  </Asset>
+  <Asset ID="101040" Release="Release" RarityType="Common">
+    <Name>CO_Tunnel_Entrance01</Name>
+    <Text ID="101186">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_dynamite.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>2500</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>100</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>50</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades />
+    <TradePrice />
+    <HiringFee />
+    <Info ID="100027">
+      <Icon />
+    </Info>
+    <FactoryBase CycleTime="20">
+      <FactoryInputs>
+        <Upgrade>
+          <Text ID="1010196">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+            </Icon>
+          </Text>
+          <Value>5 / 25</Value>
+        </Upgrade>
+        <Upgrade>
+          <Text ID="1010205">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+            </Icon>
+          </Text>
+          <Value>5 / 25</Value>
+        </Upgrade>
+      </FactoryInputs>
+    </FactoryBase>
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010052">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_farmer_2.png</Filename>
+            </Icon>
+          </Text>
+          <Value>20</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+    <UpgradeText ID="541646278">
+      <Icon />
+    </UpgradeText>
+  </Asset>
+  <Asset ID="101336" Release="Release" RarityType="Common">
+    <Name>monument_01_02</Name>
+    <Text ID="101336">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_world_fair_2.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000000">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <BuildCosts />
+    <GenericUpgrades />
+    <TradePrice />
+    <HiringFee />
+    <Info ID="100027">
+      <Icon />
+    </Info>
+    <FactoryBase CycleTime="60">
+      <FactoryInputs>
+        <Upgrade>
+          <Text ID="1010207">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
+            </Icon>
+          </Text>
+          <Value>10 / 300</Value>
+        </Upgrade>
+        <Upgrade>
+          <Text ID="1010224">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_steam_machine.png</Filename>
+            </Icon>
+          </Text>
+          <Value>5 / 150</Value>
+        </Upgrade>
+        <Upgrade>
+          <Text ID="1010242">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_inlay.png</Filename>
+            </Icon>
+          </Text>
+          <Value>5 / 150</Value>
+        </Upgrade>
+      </FactoryInputs>
+    </FactoryBase>
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010116">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_merchants_2.png</Filename>
+            </Icon>
+          </Text>
+          <Value>1500</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+    <UpgradeText ID="-1752827957">
+      <Icon />
+    </UpgradeText>
+  </Asset>
+  <Asset ID="101953" Release="Release" RarityType="Common">
+    <Name>CourtOfJustice_01_02</Name>
+    <Text ID="101953">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/campaign/icon_court_of_justice.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000000">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <BuildCosts />
+    <GenericUpgrades />
+    <TradePrice />
+    <HiringFee />
+    <Info ID="100027">
+      <Icon />
+    </Info>
+    <FactoryBase CycleTime="60">
+      <FactoryInputs>
+        <Upgrade>
+          <Text ID="1010218">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
+            </Icon>
+          </Text>
+          <Value>3 / 30</Value>
+        </Upgrade>
+        <Upgrade>
+          <Text ID="1010205">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+            </Icon>
+          </Text>
+          <Value>8 / 80</Value>
+        </Upgrade>
+      </FactoryInputs>
+    </FactoryBase>
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010115">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_worker_2.png</Filename>
+            </Icon>
+          </Text>
+          <Value>700</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+    <UpgradeText ID="-673862289">
+      <Icon />
+    </UpgradeText>
+  </Asset>
+  <Asset ID="101951" Release="Release" RarityType="Common">
+    <Name>CourtOfJustice_01_01</Name>
+    <Text ID="101951">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/campaign/icon_court_of_justice.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000000">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>50000</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>100</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>80</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades />
+    <TradePrice />
+    <HiringFee />
+    <Info ID="100027">
+      <Icon />
+    </Info>
+    <FactoryBase CycleTime="60">
+      <FactoryInputs>
+        <Upgrade>
+          <Text ID="1010196">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+            </Icon>
+          </Text>
+          <Value>10 / 100</Value>
+        </Upgrade>
+        <Upgrade>
+          <Text ID="1010218">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
+            </Icon>
+          </Text>
+          <Value>5 / 50</Value>
+        </Upgrade>
+      </FactoryInputs>
+    </FactoryBase>
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010115">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_worker_2.png</Filename>
+            </Icon>
+          </Text>
+          <Value>500</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+    <UpgradeText ID="-501356459">
+      <Icon />
+    </UpgradeText>
+  </Asset>
+  <Asset ID="102035" Release="Release" RarityType="Common">
+    <Name>CourtOfJustice_01_03</Name>
+    <Text ID="102035">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/campaign/icon_court_of_justice.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000000">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <BuildCosts />
+    <GenericUpgrades />
+    <TradePrice />
+    <HiringFee />
+    <Info ID="100027">
+      <Icon />
+    </Info>
+    <FactoryBase CycleTime="60">
+      <FactoryInputs>
+        <Upgrade>
+          <Text ID="1010207">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
+            </Icon>
+          </Text>
+          <Value>3 / 30</Value>
+        </Upgrade>
+        <Upgrade>
+          <Text ID="1010205">
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+            </Icon>
+          </Text>
+          <Value>8 / 80</Value>
+        </Upgrade>
+      </FactoryInputs>
+    </FactoryBase>
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010116">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_merchants_2.png</Filename>
+            </Icon>
+          </Text>
+          <Value>200</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+    <UpgradeText ID="-15086716">
+      <Icon />
+    </UpgradeText>
+  </Asset>
+  <Asset ID="101952" Release="Release" RarityType="Common">
+    <Name>CourtOfJustice_01_04</Name>
+    <Text ID="101952">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/campaign/icon_court_of_justice.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000000">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <BuildCosts />
+    <GenericUpgrades>
+      <Upgrade Category="Culture">
+        <Text ID="145011">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+100</Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="15535">
+      <Icon />
+    </Info>
+    <FactoryBase />
+    <Maintenance />
+  </Asset>
+</Monument>

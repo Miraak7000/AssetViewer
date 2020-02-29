@@ -1,3 +1,562 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:66a93a69ae47ade963cfcc0003ac08684ae97272743c1cecbffc862c4fdeb170
-size 15741
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ResidenceBuilding7>
+  <Asset ID="1010347" Release="Release" RarityType="Common">
+    <Name>residence_tier05</Name>
+    <Text ID="1010347">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000000">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>15</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010218">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
+          </Icon>
+        </Text>
+        <Value>12</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010207">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010202">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades>
+      <Upgrade Category="Residence7">
+        <Text ID="22379">
+          <Icon />
+        </Text>
+        <Value></Value>
+        <Additionals>
+          <Upgrade>
+            <Text ID="15000004">
+              <Icon>
+                <Filename>data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png</Filename>
+              </Icon>
+            </Text>
+            <Value>50</Value>
+          </Upgrade>
+        </Additionals>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="163059">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="1010343" Release="Release" RarityType="Common">
+    <Name>residence_tier01</Name>
+    <Text ID="1010343">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000000">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <UpgradeCosts>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>4</Value>
+      </Upgrade>
+    </UpgradeCosts>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>2</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades>
+      <Upgrade Category="Residence7">
+        <Text ID="22379">
+          <Icon />
+        </Text>
+        <Value></Value>
+        <Additionals>
+          <Upgrade>
+            <Text ID="15000000">
+              <Icon>
+                <Filename>data/ui/2kimages/main/3dicons/resident/icon_resident_farmer.png</Filename>
+              </Icon>
+            </Text>
+            <Value>10</Value>
+          </Upgrade>
+        </Additionals>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="163059">
+      <Icon />
+    </Info>
+    <UpgradeText ID="10898076">
+      <Icon />
+    </UpgradeText>
+  </Asset>
+  <Asset ID="1010344" Release="Release" RarityType="Common">
+    <Name>residence_tier02</Name>
+    <Text ID="1010344">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000000">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <UpgradeCosts>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>6</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>2</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010218">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
+          </Icon>
+        </Text>
+        <Value>2</Value>
+      </Upgrade>
+    </UpgradeCosts>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>4</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades>
+      <Upgrade Category="Residence7">
+        <Text ID="22379">
+          <Icon />
+        </Text>
+        <Value></Value>
+        <Additionals>
+          <Upgrade>
+            <Text ID="15000001">
+              <Icon>
+                <Filename>data/ui/2kimages/main/3dicons/resident/icon_resident_worker.png</Filename>
+              </Icon>
+            </Text>
+            <Value>20</Value>
+          </Upgrade>
+        </Additionals>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="163059">
+      <Icon />
+    </Info>
+    <UpgradeText ID="-1470897392">
+      <Icon />
+    </UpgradeText>
+  </Asset>
+  <Asset ID="101255" Release="Release" RarityType="Common">
+    <Name>residence_colony01_tier02</Name>
+    <Text ID="101255">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000001">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>2</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades>
+      <Upgrade Category="Residence7">
+        <Text ID="22379">
+          <Icon />
+        </Text>
+        <Value></Value>
+        <Additionals>
+          <Upgrade>
+            <Text ID="15000006">
+              <Icon>
+                <Filename>data/ui/2kimages/main/3dicons/resident/icon_resident_obrera.png</Filename>
+              </Icon>
+            </Text>
+            <Value>20</Value>
+          </Upgrade>
+        </Additionals>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="163059">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="101254" Release="Release" RarityType="Common">
+    <Name>residence_colony01_tier01</Name>
+    <Text ID="101254">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000001">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <UpgradeCosts>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>2</Value>
+      </Upgrade>
+    </UpgradeCosts>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>1</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades>
+      <Upgrade Category="Residence7">
+        <Text ID="22379">
+          <Icon />
+        </Text>
+        <Value></Value>
+        <Additionals>
+          <Upgrade>
+            <Text ID="15000005">
+              <Icon>
+                <Filename>data/ui/2kimages/main/3dicons/resident/icon_resident_jornalero.png</Filename>
+              </Icon>
+            </Text>
+            <Value>10</Value>
+          </Upgrade>
+        </Additionals>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="163059">
+      <Icon />
+    </Info>
+    <UpgradeText ID="1313381114">
+      <Icon />
+    </UpgradeText>
+  </Asset>
+  <Asset ID="1010345" Release="Release" RarityType="Common">
+    <Name>residence_tier03</Name>
+    <Text ID="1010345">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000000">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <UpgradeCosts>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>8</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>3</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010218">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
+          </Icon>
+        </Text>
+        <Value>2</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010207">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
+          </Icon>
+        </Text>
+        <Value>2</Value>
+      </Upgrade>
+    </UpgradeCosts>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>8</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>5</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010218">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
+          </Icon>
+        </Text>
+        <Value>4</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades>
+      <Upgrade Category="Residence7">
+        <Text ID="22379">
+          <Icon />
+        </Text>
+        <Value></Value>
+        <Additionals>
+          <Upgrade>
+            <Text ID="15000002">
+              <Icon>
+                <Filename>data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png</Filename>
+              </Icon>
+            </Text>
+            <Value>30</Value>
+          </Upgrade>
+        </Additionals>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="163059">
+      <Icon />
+    </Info>
+    <UpgradeText ID="2133113045">
+      <Icon />
+    </UpgradeText>
+  </Asset>
+  <Asset ID="1010346" Release="Release" RarityType="Common">
+    <Name>residence_tier04</Name>
+    <Text ID="1010346">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000000">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <UpgradeCosts>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>4</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010218">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
+          </Icon>
+        </Text>
+        <Value>3</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010207">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
+          </Icon>
+        </Text>
+        <Value>3</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010202">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png</Filename>
+          </Icon>
+        </Text>
+        <Value>3</Value>
+      </Upgrade>
+    </UpgradeCosts>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>8</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010218">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
+          </Icon>
+        </Text>
+        <Value>8</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010207">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
+          </Icon>
+        </Text>
+        <Value>8</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades>
+      <Upgrade Category="Residence7">
+        <Text ID="22379">
+          <Icon />
+        </Text>
+        <Value></Value>
+        <Additionals>
+          <Upgrade>
+            <Text ID="15000003">
+              <Icon>
+                <Filename>data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png</Filename>
+              </Icon>
+            </Text>
+            <Value>40</Value>
+          </Upgrade>
+        </Additionals>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="163059">
+      <Icon />
+    </Info>
+    <UpgradeText ID="1622432022">
+      <Icon />
+    </UpgradeText>
+  </Asset>
+</ResidenceBuilding7>

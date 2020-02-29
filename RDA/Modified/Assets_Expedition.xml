@@ -1,3 +1,3904 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:93c22ae87853cb60daffe1f6ff73e1e3f3af7e45e91982ea17850e461fd1c658
-size 140264
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Expedition>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800103</GUID>
+        <Name>Archeological Expedition Easy</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11629</ExpeditionName>
+        <ExpeditionDescription>3161</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800029</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>500879</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_01.cfg</ExpeditionWorldMapAsset>
+        <Reward>800441</Reward>
+        <BackgroundVideo>data/ui/video/expedition/south_america_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202349</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800214</GUID>
+        <Name>Zoological Expedition Easy</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11630</ExpeditionName>
+        <ExpeditionDescription>3600</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800030</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501385</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_04.cfg</ExpeditionWorldMapAsset>
+        <Reward>800448</Reward>
+        <BackgroundVideo>data/ui/video/expedition/south_america_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202349</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800399</GUID>
+        <Name>Rescue Mission Easy</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11631</ExpeditionName>
+        <ExpeditionDescription>9972</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <FillEventPool>800037</FillEventPool>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501387</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_03.cfg</ExpeditionWorldMapAsset>
+        <Reward>800454</Reward>
+        <BackgroundVideo>data/ui/video/expedition/south_america_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202349</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800403</GUID>
+        <Name>Pirate Hunt Easy</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11632</ExpeditionName>
+        <ExpeditionDescription>9973</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800004</Threat>
+          </Item>
+          <Item>
+            <Threat>800032</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>500896</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_05.cfg</ExpeditionWorldMapAsset>
+        <Reward>800460</Reward>
+        <BackgroundVideo>data/ui/video/expedition/south_america_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202349</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800104</GUID>
+        <Name>Archeological Expedition Average</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11629</ExpeditionName>
+        <ExpeditionDescription>3161</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <ExpeditionDifficulty>Average</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800029</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>500879</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_01.cfg</ExpeditionWorldMapAsset>
+        <Reward>800441</Reward>
+        <BackgroundVideo>data/ui/video/expedition/south_america_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202349</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800216</GUID>
+        <Name>Zoological Expedition Average</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11630</ExpeditionName>
+        <ExpeditionDescription>3600</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <ExpeditionDifficulty>Average</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800030</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501385</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_04.cfg</ExpeditionWorldMapAsset>
+        <Reward>800448</Reward>
+        <BackgroundVideo>data/ui/video/expedition/south_america_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202349</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800400</GUID>
+        <Name>Rescue Mission Average</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11631</ExpeditionName>
+        <ExpeditionDescription>9972</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <ExpeditionDifficulty>Average</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501387</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_03.cfg</ExpeditionWorldMapAsset>
+        <Reward>800454</Reward>
+        <BackgroundVideo>data/ui/video/expedition/south_america_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202349</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800404</GUID>
+        <Name>Pirate Hunt Average</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11632</ExpeditionName>
+        <ExpeditionDescription>9973</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <ExpeditionDifficulty>Average</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800004</Threat>
+          </Item>
+          <Item>
+            <Threat>800032</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>500896</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_05.cfg</ExpeditionWorldMapAsset>
+        <Reward>800460</Reward>
+        <BackgroundVideo>data/ui/video/expedition/south_america_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202349</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800105</GUID>
+        <Name>Archeological Expedition Hard</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11629</ExpeditionName>
+        <ExpeditionDescription>3161</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <ExpeditionDifficulty>Hard</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800029</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>500879</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_01.cfg</ExpeditionWorldMapAsset>
+        <Reward>800441</Reward>
+        <BackgroundVideo>data/ui/video/expedition/south_america_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202349</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800217</GUID>
+        <Name>Zoological Expedition Hard</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11630</ExpeditionName>
+        <ExpeditionDescription>3600</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <ExpeditionDifficulty>Hard</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800030</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501385</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_04.cfg</ExpeditionWorldMapAsset>
+        <Reward>800448</Reward>
+        <BackgroundVideo>data/ui/video/expedition/south_america_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202349</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800401</GUID>
+        <Name>Rescue Mission Hard</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11631</ExpeditionName>
+        <ExpeditionDescription>9972</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <ExpeditionDifficulty>Hard</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501387</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_03.cfg</ExpeditionWorldMapAsset>
+        <Reward>800454</Reward>
+        <BackgroundVideo>data/ui/video/expedition/south_america_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202349</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800402</GUID>
+        <Name>Pirate Hunt Hard</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11632</ExpeditionName>
+        <ExpeditionDescription>9973</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <ExpeditionDifficulty>Hard</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800004</Threat>
+          </Item>
+          <Item>
+            <Threat>800032</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>500896</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_05.cfg</ExpeditionWorldMapAsset>
+        <Reward>800460</Reward>
+        <BackgroundVideo>data/ui/video/expedition/south_america_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202349</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800406</GUID>
+        <Name>Archeological Expedition Easy</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11629</ExpeditionName>
+        <ExpeditionDescription>3161</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800029</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501388</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_01.cfg</ExpeditionWorldMapAsset>
+        <Reward>800441</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800409</GUID>
+        <Name>Zoological Expedition Easy</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11630</ExpeditionName>
+        <ExpeditionDescription>3600</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800030</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501385</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_04.cfg</ExpeditionWorldMapAsset>
+        <Reward>800448</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800412</GUID>
+        <Name>Rescue Mission Easy</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11631</ExpeditionName>
+        <ExpeditionDescription>9972</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <FillEventPool>800037</FillEventPool>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501387</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_03.cfg</ExpeditionWorldMapAsset>
+        <Reward>800454</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800415</GUID>
+        <Name>Pirate Hunt Easy</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11632</ExpeditionName>
+        <ExpeditionDescription>9973</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800004</Threat>
+          </Item>
+          <Item>
+            <Threat>800032</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>500896</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_05.cfg</ExpeditionWorldMapAsset>
+        <Reward>800460</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800407</GUID>
+        <Name>Archeological Expedition Average</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11629</ExpeditionName>
+        <ExpeditionDescription>3161</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <ExpeditionDifficulty>Average</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800029</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501388</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_01.cfg</ExpeditionWorldMapAsset>
+        <Reward>800441</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800410</GUID>
+        <Name>Zoological Expedition Average</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11630</ExpeditionName>
+        <ExpeditionDescription>3600</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <ExpeditionDifficulty>Average</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800030</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501385</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_04.cfg</ExpeditionWorldMapAsset>
+        <Reward>800448</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800413</GUID>
+        <Name>Rescue Mission Average</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11631</ExpeditionName>
+        <ExpeditionDescription>9972</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <ExpeditionDifficulty>Average</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501387</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_03.cfg</ExpeditionWorldMapAsset>
+        <Reward>800454</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800416</GUID>
+        <Name>Pirate Hunt Average</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11632</ExpeditionName>
+        <ExpeditionDescription>9973</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <ExpeditionDifficulty>Average</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800004</Threat>
+          </Item>
+          <Item>
+            <Threat>800032</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501385</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_05.cfg</ExpeditionWorldMapAsset>
+        <Reward>800460</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800408</GUID>
+        <Name>Archeological Expedition Hard</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11629</ExpeditionName>
+        <ExpeditionDescription>3161</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <ExpeditionDifficulty>Hard</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800029</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501388</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_01.cfg</ExpeditionWorldMapAsset>
+        <Reward>800441</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800411</GUID>
+        <Name>Zoological Expedition Hard</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11630</ExpeditionName>
+        <ExpeditionDescription>3600</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <ExpeditionDifficulty>Hard</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800030</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501385</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_04.cfg</ExpeditionWorldMapAsset>
+        <Reward>800448</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800414</GUID>
+        <Name>Rescue Mission Hard</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11631</ExpeditionName>
+        <ExpeditionDescription>9972</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <ExpeditionDifficulty>Hard</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501387</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_03.cfg</ExpeditionWorldMapAsset>
+        <Reward>800454</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800417</GUID>
+        <Name>Pirate Hunt Hard</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11632</ExpeditionName>
+        <ExpeditionDescription>9973</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <ExpeditionDifficulty>Hard</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800004</Threat>
+          </Item>
+          <Item>
+            <Threat>800032</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>500896</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_05.cfg</ExpeditionWorldMapAsset>
+        <Reward>800460</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800422</GUID>
+        <Name>Zoological Expedition Easy</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11630</ExpeditionName>
+        <ExpeditionDescription>3600</ExpeditionDescription>
+        <ExpeditionRegion>Arctic</ExpeditionRegion>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800030</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501384</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_04.cfg</ExpeditionWorldMapAsset>
+        <Reward>800448</Reward>
+        <BackgroundVideo>data/ui/video/expedition/wildlife_polar_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202366</Event>
+          </Item>
+        </BackgroundVideoSounds>
+        <ContinueVideoSounds>
+          <Item />
+        </ContinueVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800425</GUID>
+        <Name>Rescue Mission Easy</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11631</ExpeditionName>
+        <ExpeditionDescription>9972</ExpeditionDescription>
+        <ExpeditionRegion>Arctic</ExpeditionRegion>
+        <FillEventPool>800037</FillEventPool>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501387</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_03.cfg</ExpeditionWorldMapAsset>
+        <Reward>800454</Reward>
+        <BackgroundVideo>data/ui/video/expedition/polar_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202348</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800428</GUID>
+        <Name>Pirate Hunt Easy</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11632</ExpeditionName>
+        <ExpeditionDescription>9973</ExpeditionDescription>
+        <ExpeditionRegion>Arctic</ExpeditionRegion>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800004</Threat>
+          </Item>
+          <Item>
+            <Threat>800032</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>500896</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_05.cfg</ExpeditionWorldMapAsset>
+        <Reward>800460</Reward>
+        <BackgroundVideo>data/ui/video/expedition/polar_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202348</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800423</GUID>
+        <Name>Zoological Expedition Average</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11630</ExpeditionName>
+        <ExpeditionDescription>3600</ExpeditionDescription>
+        <ExpeditionRegion>Arctic</ExpeditionRegion>
+        <ExpeditionDifficulty>Average</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800030</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501384</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_04.cfg</ExpeditionWorldMapAsset>
+        <Reward>800448</Reward>
+        <BackgroundVideo>data/ui/video/expedition/wildlife_polar_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202366</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800426</GUID>
+        <Name>Rescue Mission Average</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11631</ExpeditionName>
+        <ExpeditionDescription>9972</ExpeditionDescription>
+        <ExpeditionRegion>Arctic</ExpeditionRegion>
+        <ExpeditionDifficulty>Average</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501387</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_03.cfg</ExpeditionWorldMapAsset>
+        <Reward>800454</Reward>
+        <BackgroundVideo>data/ui/video/expedition/polar_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202348</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800429</GUID>
+        <Name>Pirate Hunt Average</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11632</ExpeditionName>
+        <ExpeditionDescription>9973</ExpeditionDescription>
+        <ExpeditionRegion>Arctic</ExpeditionRegion>
+        <ExpeditionDifficulty>Average</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800004</Threat>
+          </Item>
+          <Item>
+            <Threat>800032</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>500896</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_05.cfg</ExpeditionWorldMapAsset>
+        <Reward>800460</Reward>
+        <BackgroundVideo>data/ui/video/expedition/polar_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202348</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800424</GUID>
+        <Name>Zoological Expedition Hard</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11630</ExpeditionName>
+        <ExpeditionDescription>3600</ExpeditionDescription>
+        <ExpeditionRegion>Arctic</ExpeditionRegion>
+        <ExpeditionDifficulty>Hard</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800030</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501384</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_04.cfg</ExpeditionWorldMapAsset>
+        <Reward>800448</Reward>
+        <BackgroundVideo>data/ui/video/expedition/wildlife_polar_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202366</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800427</GUID>
+        <Name>Rescue Mission Hard</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11631</ExpeditionName>
+        <ExpeditionDescription>9972</ExpeditionDescription>
+        <ExpeditionRegion>Arctic</ExpeditionRegion>
+        <ExpeditionDifficulty>Hard</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501387</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_03.cfg</ExpeditionWorldMapAsset>
+        <Reward>800454</Reward>
+        <BackgroundVideo>data/ui/video/expedition/polar_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202348</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800430</GUID>
+        <Name>Pirate Hunt Hard</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11632</ExpeditionName>
+        <ExpeditionDescription>9973</ExpeditionDescription>
+        <ExpeditionRegion>Arctic</ExpeditionRegion>
+        <ExpeditionDifficulty>Hard</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800004</Threat>
+          </Item>
+          <Item>
+            <Threat>800032</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>500896</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_05.cfg</ExpeditionWorldMapAsset>
+        <Reward>800460</Reward>
+        <BackgroundVideo>data/ui/video/expedition/polar_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202348</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800839</GUID>
+        <Name>Archeological Expedition Easy</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11629</ExpeditionName>
+        <ExpeditionDescription>3161</ExpeditionDescription>
+        <ExpeditionRegion>SouthernEurope</ExpeditionRegion>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800029</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501388</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_01.cfg</ExpeditionWorldMapAsset>
+        <Reward>800441</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800840</GUID>
+        <Name>Zoological Expedition Easy</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11630</ExpeditionName>
+        <ExpeditionDescription>3600</ExpeditionDescription>
+        <ExpeditionRegion>SouthernEurope</ExpeditionRegion>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800030</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501385</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_04.cfg</ExpeditionWorldMapAsset>
+        <Reward>800448</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800841</GUID>
+        <Name>Rescue Mission Easy</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11631</ExpeditionName>
+        <ExpeditionDescription>9972</ExpeditionDescription>
+        <ExpeditionRegion>SouthernEurope</ExpeditionRegion>
+        <FillEventPool>800037</FillEventPool>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501387</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_03.cfg</ExpeditionWorldMapAsset>
+        <Reward>800454</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800842</GUID>
+        <Name>Pirate Hunt Easy</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11632</ExpeditionName>
+        <ExpeditionDescription>9973</ExpeditionDescription>
+        <ExpeditionRegion>SouthernEurope</ExpeditionRegion>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800004</Threat>
+          </Item>
+          <Item>
+            <Threat>800032</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>500896</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_06.cfg</ExpeditionWorldMapAsset>
+        <Reward>800460</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800843</GUID>
+        <Name>Archeological Expedition Average</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11629</ExpeditionName>
+        <ExpeditionDescription>3161</ExpeditionDescription>
+        <ExpeditionRegion>SouthernEurope</ExpeditionRegion>
+        <ExpeditionDifficulty>Average</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800029</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501388</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_01.cfg</ExpeditionWorldMapAsset>
+        <Reward>800441</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800844</GUID>
+        <Name>Zoological Expedition Average</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11630</ExpeditionName>
+        <ExpeditionDescription>3600</ExpeditionDescription>
+        <ExpeditionRegion>SouthernEurope</ExpeditionRegion>
+        <ExpeditionDifficulty>Average</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800030</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501385</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_04.cfg</ExpeditionWorldMapAsset>
+        <Reward>800448</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800845</GUID>
+        <Name>Rescue Mission Average</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11631</ExpeditionName>
+        <ExpeditionDescription>9972</ExpeditionDescription>
+        <ExpeditionRegion>SouthernEurope</ExpeditionRegion>
+        <ExpeditionDifficulty>Average</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501387</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_03.cfg</ExpeditionWorldMapAsset>
+        <Reward>800454</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800846</GUID>
+        <Name>Pirate Hunt Average</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11632</ExpeditionName>
+        <ExpeditionDescription>9973</ExpeditionDescription>
+        <ExpeditionRegion>SouthernEurope</ExpeditionRegion>
+        <ExpeditionDifficulty>Average</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800004</Threat>
+          </Item>
+          <Item>
+            <Threat>800032</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>500896</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_06.cfg</ExpeditionWorldMapAsset>
+        <Reward>800460</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800847</GUID>
+        <Name>Archeological Expedition Hard</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11629</ExpeditionName>
+        <ExpeditionDescription>3161</ExpeditionDescription>
+        <ExpeditionRegion>SouthernEurope</ExpeditionRegion>
+        <ExpeditionDifficulty>Hard</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800029</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501388</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_01.cfg</ExpeditionWorldMapAsset>
+        <Reward>800441</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800848</GUID>
+        <Name>Zoological Expedition Hard</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11630</ExpeditionName>
+        <ExpeditionDescription>3600</ExpeditionDescription>
+        <ExpeditionRegion>SouthernEurope</ExpeditionRegion>
+        <ExpeditionDifficulty>Hard</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800030</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501385</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_04.cfg</ExpeditionWorldMapAsset>
+        <Reward>800448</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800849</GUID>
+        <Name>Rescue Mission Hard</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11631</ExpeditionName>
+        <ExpeditionDescription>9972</ExpeditionDescription>
+        <ExpeditionRegion>SouthernEurope</ExpeditionRegion>
+        <ExpeditionDifficulty>Hard</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501387</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_03.cfg</ExpeditionWorldMapAsset>
+        <Reward>800454</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800850</GUID>
+        <Name>Pirate Hunt Hard</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11632</ExpeditionName>
+        <ExpeditionDescription>9973</ExpeditionDescription>
+        <ExpeditionRegion>SouthernEurope</ExpeditionRegion>
+        <ExpeditionDifficulty>Hard</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800004</Threat>
+          </Item>
+          <Item>
+            <Threat>800032</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>500896</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_06.cfg</ExpeditionWorldMapAsset>
+        <Reward>800460</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800851</GUID>
+        <Name>Archeological Expedition Easy</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11629</ExpeditionName>
+        <ExpeditionDescription>3161</ExpeditionDescription>
+        <ExpeditionRegion>SouthernSouthAmerica</ExpeditionRegion>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800029</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>500879</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_01.cfg</ExpeditionWorldMapAsset>
+        <Reward>800441</Reward>
+        <BackgroundVideo>data/ui/video/expedition/south_america_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202349</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800852</GUID>
+        <Name>Zoological Expedition Easy</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11630</ExpeditionName>
+        <ExpeditionDescription>3600</ExpeditionDescription>
+        <ExpeditionRegion>SouthernSouthAmerica</ExpeditionRegion>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800030</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501385</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_04.cfg</ExpeditionWorldMapAsset>
+        <Reward>800448</Reward>
+        <BackgroundVideo>data/ui/video/expedition/south_america_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202349</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800853</GUID>
+        <Name>Rescue Mission Easy</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11631</ExpeditionName>
+        <ExpeditionDescription>9972</ExpeditionDescription>
+        <ExpeditionRegion>SouthernSouthAmerica</ExpeditionRegion>
+        <FillEventPool>800037</FillEventPool>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501387</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_03.cfg</ExpeditionWorldMapAsset>
+        <Reward>800454</Reward>
+        <BackgroundVideo>data/ui/video/expedition/south_america_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202349</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800854</GUID>
+        <Name>Pirate Hunt Easy</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11632</ExpeditionName>
+        <ExpeditionDescription>9973</ExpeditionDescription>
+        <ExpeditionRegion>SouthernSouthAmerica</ExpeditionRegion>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800004</Threat>
+          </Item>
+          <Item>
+            <Threat>800032</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>500896</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_06.cfg</ExpeditionWorldMapAsset>
+        <Reward>800460</Reward>
+        <BackgroundVideo>data/ui/video/expedition/south_america_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202349</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800855</GUID>
+        <Name>Archeological Expedition Average</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11629</ExpeditionName>
+        <ExpeditionDescription>3161</ExpeditionDescription>
+        <ExpeditionRegion>SouthernSouthAmerica</ExpeditionRegion>
+        <ExpeditionDifficulty>Average</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800029</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>500879</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_01.cfg</ExpeditionWorldMapAsset>
+        <Reward>800441</Reward>
+        <BackgroundVideo>data/ui/video/expedition/south_america_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202349</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800856</GUID>
+        <Name>Zoological Expedition Average</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11630</ExpeditionName>
+        <ExpeditionDescription>3600</ExpeditionDescription>
+        <ExpeditionRegion>SouthernSouthAmerica</ExpeditionRegion>
+        <ExpeditionDifficulty>Average</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800030</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501385</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_04.cfg</ExpeditionWorldMapAsset>
+        <Reward>800448</Reward>
+        <BackgroundVideo>data/ui/video/expedition/south_america_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202349</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800857</GUID>
+        <Name>Rescue Mission Average</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11631</ExpeditionName>
+        <ExpeditionDescription>9972</ExpeditionDescription>
+        <ExpeditionRegion>SouthernSouthAmerica</ExpeditionRegion>
+        <ExpeditionDifficulty>Average</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501387</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_03.cfg</ExpeditionWorldMapAsset>
+        <Reward>800454</Reward>
+        <BackgroundVideo>data/ui/video/expedition/south_america_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202349</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800858</GUID>
+        <Name>Pirate Hunt Average</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11632</ExpeditionName>
+        <ExpeditionDescription>9973</ExpeditionDescription>
+        <ExpeditionRegion>SouthernSouthAmerica</ExpeditionRegion>
+        <ExpeditionDifficulty>Average</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800004</Threat>
+          </Item>
+          <Item>
+            <Threat>800032</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>500896</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_06.cfg</ExpeditionWorldMapAsset>
+        <Reward>800460</Reward>
+        <BackgroundVideo>data/ui/video/expedition/south_america_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202349</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800859</GUID>
+        <Name>Archeological Expedition Hard</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11629</ExpeditionName>
+        <ExpeditionDescription>3161</ExpeditionDescription>
+        <ExpeditionRegion>SouthernSouthAmerica</ExpeditionRegion>
+        <ExpeditionDifficulty>Hard</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800029</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>500879</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_01.cfg</ExpeditionWorldMapAsset>
+        <Reward>800441</Reward>
+        <BackgroundVideo>data/ui/video/expedition/south_america_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202349</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800860</GUID>
+        <Name>Zoological Expedition Hard</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11630</ExpeditionName>
+        <ExpeditionDescription>3600</ExpeditionDescription>
+        <ExpeditionRegion>SouthernSouthAmerica</ExpeditionRegion>
+        <ExpeditionDifficulty>Hard</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800030</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501385</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_04.cfg</ExpeditionWorldMapAsset>
+        <Reward>800448</Reward>
+        <BackgroundVideo>data/ui/video/expedition/south_america_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202349</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800861</GUID>
+        <Name>Rescue Mission Hard</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11631</ExpeditionName>
+        <ExpeditionDescription>9972</ExpeditionDescription>
+        <ExpeditionRegion>SouthernSouthAmerica</ExpeditionRegion>
+        <ExpeditionDifficulty>Hard</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501387</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_03.cfg</ExpeditionWorldMapAsset>
+        <Reward>800454</Reward>
+        <BackgroundVideo>data/ui/video/expedition/south_america_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202349</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800862</GUID>
+        <Name>Pirate Hunt Hard</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11632</ExpeditionName>
+        <ExpeditionDescription>9973</ExpeditionDescription>
+        <ExpeditionRegion>SouthernSouthAmerica</ExpeditionRegion>
+        <ExpeditionDifficulty>Hard</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800004</Threat>
+          </Item>
+          <Item>
+            <Threat>800032</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>500896</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_06.cfg</ExpeditionWorldMapAsset>
+        <Reward>800460</Reward>
+        <BackgroundVideo>data/ui/video/expedition/south_america_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202349</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800863</GUID>
+        <Name>Archeological Expedition Easy</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11629</ExpeditionName>
+        <ExpeditionDescription>3161</ExpeditionDescription>
+        <ExpeditionRegion>CentralEurope</ExpeditionRegion>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800029</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501388</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_01.cfg</ExpeditionWorldMapAsset>
+        <Reward>800441</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800864</GUID>
+        <Name>Zoological Expedition Easy</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11630</ExpeditionName>
+        <ExpeditionDescription>3600</ExpeditionDescription>
+        <ExpeditionRegion>CentralEurope</ExpeditionRegion>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800030</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501385</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_04.cfg</ExpeditionWorldMapAsset>
+        <Reward>800448</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800865</GUID>
+        <Name>Rescue Mission Easy</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11631</ExpeditionName>
+        <ExpeditionDescription>9972</ExpeditionDescription>
+        <ExpeditionRegion>CentralEurope</ExpeditionRegion>
+        <FillEventPool>800037</FillEventPool>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501387</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_03.cfg</ExpeditionWorldMapAsset>
+        <Reward>800454</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800866</GUID>
+        <Name>Pirate Hunt Easy</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11632</ExpeditionName>
+        <ExpeditionDescription>9973</ExpeditionDescription>
+        <ExpeditionRegion>CentralEurope</ExpeditionRegion>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800004</Threat>
+          </Item>
+          <Item>
+            <Threat>800032</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>500896</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_05.cfg</ExpeditionWorldMapAsset>
+        <Reward>800460</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800867</GUID>
+        <Name>Archeological Expedition Average</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11629</ExpeditionName>
+        <ExpeditionDescription>3161</ExpeditionDescription>
+        <ExpeditionRegion>CentralEurope</ExpeditionRegion>
+        <ExpeditionDifficulty>Average</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800029</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501388</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_01.cfg</ExpeditionWorldMapAsset>
+        <Reward>800441</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800868</GUID>
+        <Name>Zoological Expedition Average</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11630</ExpeditionName>
+        <ExpeditionDescription>3600</ExpeditionDescription>
+        <ExpeditionRegion>CentralEurope</ExpeditionRegion>
+        <ExpeditionDifficulty>Average</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800030</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501385</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_04.cfg</ExpeditionWorldMapAsset>
+        <Reward>800448</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800869</GUID>
+        <Name>Rescue Mission Average</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11631</ExpeditionName>
+        <ExpeditionDescription>9972</ExpeditionDescription>
+        <ExpeditionRegion>CentralEurope</ExpeditionRegion>
+        <ExpeditionDifficulty>Average</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501387</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_03.cfg</ExpeditionWorldMapAsset>
+        <Reward>800454</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800870</GUID>
+        <Name>Pirate Hunt Average</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11632</ExpeditionName>
+        <ExpeditionDescription>9973</ExpeditionDescription>
+        <ExpeditionRegion>CentralEurope</ExpeditionRegion>
+        <ExpeditionDifficulty>Average</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800004</Threat>
+          </Item>
+          <Item>
+            <Threat>800032</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>500896</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_05.cfg</ExpeditionWorldMapAsset>
+        <Reward>800460</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800871</GUID>
+        <Name>Archeological Expedition Hard</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_archeology.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11629</ExpeditionName>
+        <ExpeditionDescription>3161</ExpeditionDescription>
+        <ExpeditionRegion>CentralEurope</ExpeditionRegion>
+        <ExpeditionDifficulty>Hard</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800029</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501388</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_01.cfg</ExpeditionWorldMapAsset>
+        <Reward>800441</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800872</GUID>
+        <Name>Zoological Expedition Hard</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_wildlife.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11630</ExpeditionName>
+        <ExpeditionDescription>3600</ExpeditionDescription>
+        <ExpeditionRegion>CentralEurope</ExpeditionRegion>
+        <ExpeditionDifficulty>Hard</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800030</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501385</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_04.cfg</ExpeditionWorldMapAsset>
+        <Reward>800448</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800873</GUID>
+        <Name>Rescue Mission Hard</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_rescue_mission.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11631</ExpeditionName>
+        <ExpeditionDescription>9972</ExpeditionDescription>
+        <ExpeditionRegion>CentralEurope</ExpeditionRegion>
+        <ExpeditionDifficulty>Hard</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>501387</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_03.cfg</ExpeditionWorldMapAsset>
+        <Reward>800454</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800874</GUID>
+        <Name>Pirate Hunt Hard</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_pirate_hunt.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11632</ExpeditionName>
+        <ExpeditionDescription>9973</ExpeditionDescription>
+        <ExpeditionRegion>CentralEurope</ExpeditionRegion>
+        <ExpeditionDifficulty>Hard</ExpeditionDifficulty>
+        <FillEventPool>800037</FillEventPool>
+        <Threats>
+          <Item>
+            <Threat>800004</Threat>
+          </Item>
+          <Item>
+            <Threat>800032</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <WorldMapCardBG>500896</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_05.cfg</ExpeditionWorldMapAsset>
+        <Reward>800460</Reward>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+        <BackgroundVideoSounds>
+          <Item>
+            <Event>202364</Event>
+          </Item>
+        </BackgroundVideoSounds>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800253</GUID>
+        <Name>Test Expedition - Calico's Rogues Snare a Merchant Ship</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_pirates.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>800157</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>801062</GUID>
+        <Name>Test Expedition - Dockyard Dupe</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_pirates.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>801025</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>801639</GUID>
+        <Name>Test Expedition - Wall of Ice</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_pirates.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>801620</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>802093</GUID>
+        <Name>Test Expedition - Sea Still</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_pirates.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802094</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>802744</GUID>
+        <Name>Test Expedition - Jolly Roger</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_pirates.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802745</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>803028</GUID>
+        <Name>Test Expedition - Fortress Break</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_pirates.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>803029</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800278</GUID>
+        <Name>Test Expedition - The Ghost Ship</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_strangerthing.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>800277</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800536</GUID>
+        <Name>Test Expedition - The Visitation</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_strangerthing.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>800537</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>801000</GUID>
+        <Name>Test Expedition - Baptism of Fire</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_strangerthing.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>800972</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>802271</GUID>
+        <Name>Test Expedition - Songs Under the Sea</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_strangerthing.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802269</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>802380</GUID>
+        <Name>Test Expedition - The Devil Calls</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_strangerthing.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802381</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+        <BackgroundVideo>data/ui/video/expedition/south_america_a.bk2</BackgroundVideo>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>802396</GUID>
+        <Name>Test Expedition - The Treasure of Hassan Ben Sahid</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_strangerthing.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>Arctic</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802397</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+        <BackgroundVideo>data/ui/video/expedition/polar_a.bk2</BackgroundVideo>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>802425</GUID>
+        <Name>Test Expedition - Wood Keeper</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_strangerthing.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802426</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+        <BackgroundVideo>data/ui/video/expedition/south_america_a.bk2</BackgroundVideo>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>802545</GUID>
+        <Name>Test Expedition - Apostasy</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_strangerthing.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802546</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+        <BackgroundVideo>data/ui/video/expedition/south_america_a.bk2</BackgroundVideo>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800502</GUID>
+        <Name>Test Expedition - Love Island</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_tribe.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>800467</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800251</GUID>
+        <Name>Test Expedition - Temple of the Monkey God</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_tribe.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>800112</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>801024</GUID>
+        <Name>Test Expedition - Mysterious Artefacts</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_tribe.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>801001</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>802039</GUID>
+        <Name>Test Expedition - The Mutiny</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_tribe.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802040</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>802202</GUID>
+        <Name>Test Expedition - The Amazons</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_tribe.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802203</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>802671</GUID>
+        <Name>Test Expedition - The Runaway</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_tribe.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802672</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800311</GUID>
+        <Name>Test Expedition - The Predator</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_wild.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>800279</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800662</GUID>
+        <Name>Test Expedition - A Grizzly Encounter</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_wild.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>800605</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>802298</GUID>
+        <Name>Test Expedition - Release the Kraken</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_wild.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802299</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>802319</GUID>
+        <Name>Test Expedition - Teeth of the Mountain</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_wild.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802320</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>802350</GUID>
+        <Name>Test Expedition - The Mayan Map</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_wild.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802351</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>802566</GUID>
+        <Name>Test Expedition - A Fistful of Doubloons</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_wild.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802567</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800252</GUID>
+        <Name>Test Expedition - Of Unsound Mind</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_diseases.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>800227</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800697</GUID>
+        <Name>Test Expedition - The Seven-Year Itch</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_diseases.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>800663</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800904</GUID>
+        <Name>Test Expedition - Parasitic Infestation</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_diseases.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>800875</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>802082</GUID>
+        <Name>Test Expedition - Cut or Lift</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_diseases.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802083</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>802709</GUID>
+        <Name>Test Expedition - Bottles Found in the Sea</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_diseases.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802710</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>802733</GUID>
+        <Name>Test Expedition - The Preacher</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_diseases.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802734</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>802798</GUID>
+        <Name>Test Expedition - Taken In Broken Out</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_diseases.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802799</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>802899</GUID>
+        <Name>Test Expedition - The Frozen Chasm</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_diseases.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802900</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>803043</GUID>
+        <Name>Test Expedition - Fear of the Light</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_diseases.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>803044</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>803071</GUID>
+        <Name>Test Expedition - Ghosts in the Ice</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_diseases.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>803072</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800211</GUID>
+        <Name>Test Expedition - The Inspector</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_melee.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>800171</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>801619</GUID>
+        <Name>Test Expedition - The Trial</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_melee.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <ExpeditionDifficulty>Hard</ExpeditionDifficulty>
+        <EventList>
+          <Item>
+            <EventOrEventPool>801607</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>802019</GUID>
+        <Name>Test Expedition - Tavern Troubles</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_melee.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <ExpeditionDifficulty>Hard</ExpeditionDifficulty>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802020</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>802986</GUID>
+        <Name>Test Expedition - Blizzard</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_melee.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <ExpeditionDifficulty>Hard</ExpeditionDifficulty>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802987</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800368</GUID>
+        <Name>Test Expedition - The Minefield</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_navigation.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>800336</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800604</GUID>
+        <Name>Test Expedition - Lost in the Desert</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_navigation.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>800575</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>801659</GUID>
+        <Name>Test Expedition - Scylla and Charybdis</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_navigation.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>801642</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>802114</GUID>
+        <Name>Test Expedition - Lava Maze</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_navigation.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802115</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>802137</GUID>
+        <Name>Test Expedition - Selfless Deeds</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_navigation.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802138</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>802227</GUID>
+        <Name>Test Expedition - The Deeper You Go</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_navigation.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802228</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+        <BackgroundVideo>data/ui/video/expedition/temperate_a.bk2</BackgroundVideo>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>802469</GUID>
+        <Name>Test Expedition - The Storm</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_navigation.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802470</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>802608</GUID>
+        <Name>Test Expedition - The Mountain Maw</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_navigation.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802609</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>802641</GUID>
+        <Name>Test Expedition - Blood Oil Tears and Sweat</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_navigation.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802642</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800335</GUID>
+        <Name>Test Expedition - Opera House in the Jungle</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_severeweather.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>800312</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800969</GUID>
+        <Name>Test Expedition - The Icy Blizzard</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_severeweather.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>800932</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>5000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>5000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>801578</GUID>
+        <Name>Test Expedition - The Arid Basin</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_pirates.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>SouthernEurope</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>801063</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>801606</GUID>
+        <Name>Test Expedition - Sunken Depths</Name>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>801587</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>802001</GUID>
+        <Name>Test Expedition - Cracks in the Hull</Name>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802000</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800505</GUID>
+        <Name>Test Expedition - The Singular Case of the Midshipman</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_threat_severeweather.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11633</ExpeditionName>
+        <ExpeditionDescription>3597</ExpeditionDescription>
+        <ExpeditionRegion>NorthernEurope</ExpeditionRegion>
+        <EventList>
+          <Item>
+            <EventOrEventPool>800503</EventOrEventPool>
+          </Item>
+        </EventList>
+        <FillThreats>1</FillThreats>
+        <MinPauseBetweenEvents>30000</MinPauseBetweenEvents>
+        <MaxPauseBetweenEvents>30000</MaxPauseBetweenEvents>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>800777</GUID>
+        <Name>Discovery South America Sandbox</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_exploration.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>11634</ExpeditionName>
+        <ExpeditionDescription>3601</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <IsMandatory>1</IsMandatory>
+        <FillEventPool>800037</FillEventPool>
+        <FillThreats>1</FillThreats>
+        <MoraleAmounts>
+          <AddHigh>15</AddHigh>
+          <AddMedium>10</AddMedium>
+          <AddFew>5</AddFew>
+          <RemoveFew>-5</RemoveFew>
+          <RemoveMedium>-10</RemoveMedium>
+          <RemoveHigh>-15</RemoveHigh>
+          <RemoveVeryHigh>-20</RemoveVeryHigh>
+          <RemoveContinue>-10</RemoveContinue>
+        </MoraleAmounts>
+        <ExpeditionTargetSession>180025</ExpeditionTargetSession>
+        <WorldMapCardBG>500895</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_02.cfg</ExpeditionWorldMapAsset>
+        <Reward>801585</Reward>
+        <BackgroundVideo>data/ui/video/expedition/south_america_a.bk2</BackgroundVideo>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>803027</GUID>
+        <Name>Campaign Finding Isabel</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_generic_01.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>12777</ExpeditionName>
+        <ExpeditionDescription>12919</ExpeditionDescription>
+        <ExpeditionRegion>SouthAmerica</ExpeditionRegion>
+        <IsMandatory>1</IsMandatory>
+        <EventList>
+          <Item>
+            <EventOrEventPool>802852</EventOrEventPool>
+          </Item>
+          <Item>
+            <EventOrEventPool>802944</EventOrEventPool>
+          </Item>
+        </EventList>
+        <Threats>
+          <Item>
+            <Threat>800033</Threat>
+          </Item>
+          <Item>
+            <Threat>800004</Threat>
+          </Item>
+          <Item>
+            <Threat>800030</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <MoraleAmounts>
+          <AddHigh>15</AddHigh>
+          <AddMedium>10</AddMedium>
+          <AddFew>5</AddFew>
+          <RemoveFew>-5</RemoveFew>
+          <RemoveMedium>-10</RemoveMedium>
+          <RemoveHigh>-15</RemoveHigh>
+          <RemoveVeryHigh>-100</RemoveVeryHigh>
+          <RemoveContinue>-10</RemoveContinue>
+        </MoraleAmounts>
+        <ExpeditionTargetSession>180025</ExpeditionTargetSession>
+        <WorldMapCardBG>500876</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_02.cfg</ExpeditionWorldMapAsset>
+        <Reward>801585</Reward>
+        <LastEventNeedsContinue>0</LastEventNeedsContinue>
+        <BackgroundVideo>data/ui/video/expedition/campaign_01_a.bk2</BackgroundVideo>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>801900</GUID>
+        <Name>Campaign The Contract</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_generic_01.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>15201</ExpeditionName>
+        <ExpeditionDescription>15200</ExpeditionDescription>
+        <IsMandatory>1</IsMandatory>
+        <MandatoryFailExpedition>
+          <Item>
+            <NewExpedition>801901</NewExpedition>
+          </Item>
+          <Item>
+            <NewExpedition>801902</NewExpedition>
+          </Item>
+        </MandatoryFailExpedition>
+        <EventList>
+          <Item>
+            <EventOrEventPool>801664</EventOrEventPool>
+          </Item>
+        </EventList>
+        <Threats>
+          <Item>
+            <Threat>800033</Threat>
+          </Item>
+          <Item>
+            <Threat>800029</Threat>
+          </Item>
+          <Item>
+            <Threat>800032</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <MoraleAmounts>
+          <AddHigh>15</AddHigh>
+          <AddMedium>10</AddMedium>
+          <AddFew>5</AddFew>
+          <RemoveFew>-5</RemoveFew>
+          <RemoveMedium>-10</RemoveMedium>
+          <RemoveHigh>-15</RemoveHigh>
+          <RemoveVeryHigh>-100</RemoveVeryHigh>
+          <RemoveContinue>-10</RemoveContinue>
+        </MoraleAmounts>
+        <WorldMapCardBG>500876</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_02.cfg</ExpeditionWorldMapAsset>
+        <Reward>801899</Reward>
+        <LastEventNeedsContinue>0</LastEventNeedsContinue>
+        <BackgroundVideo>data/ui/video/expedition/campaign_01_a.bk2</BackgroundVideo>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>801901</GUID>
+        <Name>Campaign The Contract - Failed event 1</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_generic_01.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>15201</ExpeditionName>
+        <ExpeditionDescription>15200</ExpeditionDescription>
+        <IsMandatory>1</IsMandatory>
+        <MandatoryFailExpedition>
+          <Item>
+            <NewExpedition>801902</NewExpedition>
+          </Item>
+        </MandatoryFailExpedition>
+        <EventList>
+          <Item>
+            <EventOrEventPool>801903</EventOrEventPool>
+          </Item>
+        </EventList>
+        <Threats>
+          <Item>
+            <Threat>800030</Threat>
+          </Item>
+          <Item>
+            <Threat>800029</Threat>
+          </Item>
+          <Item>
+            <Threat>800032</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <MoraleAmounts>
+          <AddHigh>15</AddHigh>
+          <AddMedium>10</AddMedium>
+          <AddFew>5</AddFew>
+          <RemoveFew>-5</RemoveFew>
+          <RemoveMedium>-10</RemoveMedium>
+          <RemoveHigh>-15</RemoveHigh>
+          <RemoveVeryHigh>-100</RemoveVeryHigh>
+          <RemoveContinue>-10</RemoveContinue>
+        </MoraleAmounts>
+        <WorldMapCardBG>500876</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_02.cfg</ExpeditionWorldMapAsset>
+        <Reward>801899</Reward>
+        <LastEventNeedsContinue>0</LastEventNeedsContinue>
+        <BackgroundVideo>data/ui/video/expedition/campaign_02_a.bk2</BackgroundVideo>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>Expedition</Template>
+    <Values>
+      <Standard>
+        <GUID>801902</GUID>
+        <Name>Campaign The Contract - Failed event 2</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/expeditions/icon_expedition_generic_01.png</IconFilename>
+      </Standard>
+      <Expedition>
+        <ExpeditionName>15201</ExpeditionName>
+        <ExpeditionDescription>15200</ExpeditionDescription>
+        <IsMandatory>1</IsMandatory>
+        <EventList>
+          <Item>
+            <EventOrEventPool>801942</EventOrEventPool>
+          </Item>
+        </EventList>
+        <Threats>
+          <Item>
+            <Threat>800032</Threat>
+          </Item>
+          <Item>
+            <Threat>800030</Threat>
+          </Item>
+          <Item>
+            <Threat>800034</Threat>
+          </Item>
+        </Threats>
+        <FillThreats>1</FillThreats>
+        <MoraleAmounts>
+          <AddHigh>15</AddHigh>
+          <AddMedium>10</AddMedium>
+          <AddFew>5</AddFew>
+          <RemoveFew>-5</RemoveFew>
+          <RemoveMedium>-10</RemoveMedium>
+          <RemoveHigh>-15</RemoveHigh>
+          <RemoveVeryHigh>-100</RemoveVeryHigh>
+          <RemoveContinue>-10</RemoveContinue>
+        </MoraleAmounts>
+        <WorldMapCardBG>500876</WorldMapCardBG>
+        <ExpeditionWorldMapAsset>data/graphics/ui/3d_objects/expedition_marker/expedition_marker_02.cfg</ExpeditionWorldMapAsset>
+        <Reward>801899</Reward>
+        <LastEventNeedsContinue>0</LastEventNeedsContinue>
+        <BackgroundVideo>data/ui/video/expedition/campaign_02_a.bk2</BackgroundVideo>
+      </Expedition>
+      <Locked />
+      <WorldMapSound />
+    </Values>
+  </Asset>
+</Expedition>

@@ -1,3 +1,130 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2e3791f237a2ad13b788cdea562dedf9d99907497fa0d2012936c884124ed5c9
-size 3676
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ResidenceBuilding7_Arctic>
+  <Asset ID="112652" Release="Update 06" RarityType="Common">
+    <Name>residence_arctic_tier02</Name>
+    <Text ID="112652">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="160001">
+      <Icon>
+        <Filename>data/ui/2kimages/main/icons/icon_session_passage.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>2</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades>
+      <Upgrade Category="Residence7">
+        <Text ID="22379">
+          <Icon />
+        </Text>
+        <Value></Value>
+        <Additionals>
+          <Upgrade>
+            <Text ID="112643">
+              <Icon>
+                <Filename>data/ui/2kimages/main/3dicons/resident/icon_resident_colony03_tier02.png</Filename>
+              </Icon>
+            </Text>
+            <Value>20</Value>
+          </Upgrade>
+        </Additionals>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="116353">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_heating_center_2d.png</Filename>
+          </Icon>
+        </Text>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="163059">
+      <Icon />
+    </Info>
+  </Asset>
+  <Asset ID="112091" Release="Update 06" RarityType="Common">
+    <Name>residence_arctic_tier01</Name>
+    <Text ID="112091">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="160001">
+      <Icon>
+        <Filename>data/ui/2kimages/main/icons/icon_session_passage.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <UpgradeCosts>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>4</Value>
+      </Upgrade>
+    </UpgradeCosts>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>2</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades>
+      <Upgrade Category="Residence7">
+        <Text ID="22379">
+          <Icon />
+        </Text>
+        <Value></Value>
+        <Additionals>
+          <Upgrade>
+            <Text ID="112642">
+              <Icon>
+                <Filename>data/ui/2kimages/main/3dicons/resident/icon_resident_colony03_tier01.png</Filename>
+              </Icon>
+            </Text>
+            <Value>10</Value>
+          </Upgrade>
+        </Additionals>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="116353">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_heating_center_2d.png</Filename>
+          </Icon>
+        </Text>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="163059">
+      <Icon />
+    </Info>
+    <UpgradeText ID="825482529">
+      <Icon />
+    </UpgradeText>
+  </Asset>
+</ResidenceBuilding7_Arctic>

@@ -1,3 +1,288 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e33a68131224200fa6ef954fc9bb4b400e7547068a022fc32d948dc2c3053c47
-size 8580
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Shipyard>
+  <Asset ID="1010521" Release="Release" RarityType="Common">
+    <Name>harbor_03 (Steam Shipyard)</Name>
+    <Text ID="1010521">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_steam_shipyard.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000000">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>90000</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>50</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>100</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010218">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
+          </Icon>
+        </Text>
+        <Value>80</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010207">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
+          </Icon>
+        </Text>
+        <Value>75</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010202">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png</Filename>
+          </Icon>
+        </Text>
+        <Value>75</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades>
+      <Upgrade Category="Shipyard">
+        <Text ID="12693">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_sail_shipyard_2d.png</Filename>
+          </Icon>
+          <AdditionalInformation ID="-1339866593" FontStyle="16">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_trade.png</Filename>
+            </Icon>
+          </AdditionalInformation>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="12508">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_electricity.png</Filename>
+          </Icon>
+        </Text>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="1091">
+      <Icon />
+    </Info>
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010017">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+            </Icon>
+          </Text>
+          <Value>400 / 200</Value>
+        </Upgrade>
+        <Upgrade>
+          <Text ID="1010117">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_craftspeople.png</Filename>
+            </Icon>
+          </Text>
+          <Value>200</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+  </Asset>
+  <Asset ID="101277" Release="Release" RarityType="Common">
+    <Name>harbor_colony01_02 (Sailing Shipyard)</Name>
+    <Text ID="1010520">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_sail_shipyard.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000001">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10000</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>0</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades>
+      <Upgrade Category="Shipyard">
+        <Text ID="12693">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_sail_shipyard_2d.png</Filename>
+          </Icon>
+          <AdditionalInformation ID="-96302628" FontStyle="16">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_trade.png</Filename>
+            </Icon>
+          </AdditionalInformation>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="1090">
+      <Icon />
+    </Info>
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010017">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+            </Icon>
+          </Text>
+          <Value>100 / 50</Value>
+        </Upgrade>
+        <Upgrade>
+          <Text ID="1010366">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png</Filename>
+            </Icon>
+          </Text>
+          <Value>100</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+  </Asset>
+  <Asset ID="1010520" Release="Release" RarityType="Common">
+    <Name>harbor_02 (Sailing Shipyard)</Name>
+    <Text ID="1010520">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_sail_shipyard.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000000">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10000</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>25</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades>
+      <Upgrade Category="Shipyard">
+        <Text ID="12693">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_sail_shipyard_2d.png</Filename>
+          </Icon>
+          <AdditionalInformation ID="-96302628" FontStyle="16">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_trade.png</Filename>
+            </Icon>
+          </AdditionalInformation>
+        </Text>
+        <Value></Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="10604">
+          <Icon />
+        </Text>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="1090">
+      <Icon />
+    </Info>
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010017">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+            </Icon>
+          </Text>
+          <Value>100 / 50</Value>
+        </Upgrade>
+        <Upgrade>
+          <Text ID="1010115">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_worker_2.png</Filename>
+            </Icon>
+          </Text>
+          <Value>100</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+  </Asset>
+</Shipyard>

@@ -1,3 +1,993 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f4b3da2c93e9a70e1654bacc25ba712d08fa1be062492fbaaeb6d8ea13467227
-size 27864
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HarborWarehouseStrategic>
+  <Asset ID="101406" Release="Release" RarityType="Common">
+    <Name>harbor_colony01_14c (Oil Harbor III)</Name>
+    <Text ID="101404">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_oil_habour_01.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000001">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10000</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>25</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010218">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
+          </Icon>
+        </Text>
+        <Value>0</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010207">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
+          </Icon>
+        </Text>
+        <Value>0</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010202">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png</Filename>
+          </Icon>
+        </Text>
+        <Value>0</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades>
+      <Upgrade>
+        <Text ID="22426">
+          <Icon />
+        </Text>
+        <Value>+1000</Value>
+      </Upgrade>
+      <Upgrade Category="LoadingPier">
+        <Text ID="15250">
+          <Icon />
+        </Text>
+        <Value>+1</Value>
+      </Upgrade>
+      <Upgrade Category="LoadingPier">
+        <Text ID="15197">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_load_ships.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+100</Value>
+      </Upgrade>
+      <Upgrade Category="TrainStation">
+        <Text ID="14865">
+          <Icon />
+        </Text>
+        <Value>+5</Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="10951">
+      <Icon />
+    </Info>
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010017">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+            </Icon>
+          </Text>
+          <Value>200 / 200</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+  </Asset>
+  <Asset ID="101403" Release="Release" RarityType="Common">
+    <Name>harbor_14b (Oil Harbor II)</Name>
+    <Text ID="101403">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_oil_habour_01.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000000">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <UpgradeCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>15000</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>60</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>40</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010218">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
+          </Icon>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010207">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
+          </Icon>
+        </Text>
+        <Value>15</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010202">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png</Filename>
+          </Icon>
+        </Text>
+        <Value>15</Value>
+      </Upgrade>
+    </UpgradeCosts>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10000</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>25</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010218">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
+          </Icon>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010207">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
+          </Icon>
+        </Text>
+        <Value>15</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010202">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png</Filename>
+          </Icon>
+        </Text>
+        <Value>15</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades>
+      <Upgrade>
+        <Text ID="22426">
+          <Icon />
+        </Text>
+        <Value>+750</Value>
+      </Upgrade>
+      <Upgrade Category="LoadingPier">
+        <Text ID="15250">
+          <Icon />
+        </Text>
+        <Value>+1</Value>
+      </Upgrade>
+      <Upgrade Category="LoadingPier">
+        <Text ID="15197">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_load_ships.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+100</Value>
+      </Upgrade>
+      <Upgrade Category="TrainStation">
+        <Text ID="14865">
+          <Icon />
+        </Text>
+        <Value>+4</Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="10951">
+      <Icon />
+    </Info>
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010017">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+            </Icon>
+          </Text>
+          <Value>150 / 150</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+    <UpgradeText ID="-214023386">
+      <Icon />
+    </UpgradeText>
+  </Asset>
+  <Asset ID="101329" Release="Release" RarityType="Common">
+    <Name>harbor_colony01_14a (Oil Harbor I)</Name>
+    <Text ID="100783">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_oil_habour_01.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000001">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <UpgradeCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>15000</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>60</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>40</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010218">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
+          </Icon>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010207">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
+          </Icon>
+        </Text>
+        <Value>15</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010202">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png</Filename>
+          </Icon>
+        </Text>
+        <Value>15</Value>
+      </Upgrade>
+    </UpgradeCosts>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10000</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>25</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010218">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
+          </Icon>
+        </Text>
+        <Value>0</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010207">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
+          </Icon>
+        </Text>
+        <Value>0</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010202">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png</Filename>
+          </Icon>
+        </Text>
+        <Value>0</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades>
+      <Upgrade>
+        <Text ID="22426">
+          <Icon />
+        </Text>
+        <Value>+500</Value>
+      </Upgrade>
+      <Upgrade Category="LoadingPier">
+        <Text ID="15250">
+          <Icon />
+        </Text>
+        <Value>+1</Value>
+      </Upgrade>
+      <Upgrade Category="LoadingPier">
+        <Text ID="15197">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_load_ships.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+100</Value>
+      </Upgrade>
+      <Upgrade Category="TrainStation">
+        <Text ID="14865">
+          <Icon />
+        </Text>
+        <Value>+3</Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="10951">
+      <Icon />
+    </Info>
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010017">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+            </Icon>
+          </Text>
+          <Value>100 / 100</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+    <UpgradeText ID="-18018622">
+      <Icon />
+    </UpgradeText>
+  </Asset>
+  <Asset ID="100783" Release="Release" RarityType="Common">
+    <Name>harbor_14a (Oil Harbor I)</Name>
+    <Text ID="100783">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_oil_habour_01.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000000">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <UpgradeCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>15000</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>60</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>40</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010218">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
+          </Icon>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010207">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
+          </Icon>
+        </Text>
+        <Value>15</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010202">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png</Filename>
+          </Icon>
+        </Text>
+        <Value>15</Value>
+      </Upgrade>
+    </UpgradeCosts>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10000</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>25</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010218">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
+          </Icon>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010207">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
+          </Icon>
+        </Text>
+        <Value>15</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010202">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png</Filename>
+          </Icon>
+        </Text>
+        <Value>15</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades>
+      <Upgrade>
+        <Text ID="22426">
+          <Icon />
+        </Text>
+        <Value>+500</Value>
+      </Upgrade>
+      <Upgrade Category="LoadingPier">
+        <Text ID="15250">
+          <Icon />
+        </Text>
+        <Value>+1</Value>
+      </Upgrade>
+      <Upgrade Category="LoadingPier">
+        <Text ID="15197">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_load_ships.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+100</Value>
+      </Upgrade>
+      <Upgrade Category="TrainStation">
+        <Text ID="14865">
+          <Icon />
+        </Text>
+        <Value>+3</Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="10951">
+      <Icon />
+    </Info>
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010017">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+            </Icon>
+          </Text>
+          <Value>100 / 100</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+    <UpgradeText ID="-18018622">
+      <Icon />
+    </UpgradeText>
+  </Asset>
+  <Asset ID="101405" Release="Release" RarityType="Common">
+    <Name>harbor_colony01_14b (Oil Harbor II)</Name>
+    <Text ID="101403">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_oil_habour_01.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000001">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <UpgradeCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>15000</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>60</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>40</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010218">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
+          </Icon>
+        </Text>
+        <Value>30</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010207">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
+          </Icon>
+        </Text>
+        <Value>15</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010202">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png</Filename>
+          </Icon>
+        </Text>
+        <Value>15</Value>
+      </Upgrade>
+    </UpgradeCosts>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10000</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>25</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010218">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
+          </Icon>
+        </Text>
+        <Value>0</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010207">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
+          </Icon>
+        </Text>
+        <Value>0</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010202">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png</Filename>
+          </Icon>
+        </Text>
+        <Value>0</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades>
+      <Upgrade>
+        <Text ID="22426">
+          <Icon />
+        </Text>
+        <Value>+750</Value>
+      </Upgrade>
+      <Upgrade Category="LoadingPier">
+        <Text ID="15250">
+          <Icon />
+        </Text>
+        <Value>+1</Value>
+      </Upgrade>
+      <Upgrade Category="LoadingPier">
+        <Text ID="15197">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_load_ships.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+100</Value>
+      </Upgrade>
+      <Upgrade Category="TrainStation">
+        <Text ID="14865">
+          <Icon />
+        </Text>
+        <Value>+4</Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="10951">
+      <Icon />
+    </Info>
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010017">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+            </Icon>
+          </Text>
+          <Value>150 / 150</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+    <UpgradeText ID="-214023386">
+      <Icon />
+    </UpgradeText>
+  </Asset>
+  <Asset ID="100781" Release="Release" RarityType="Common">
+    <Name>harbor_12 (Coal Harbor)</Name>
+    <Text ID="100781">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_coal_habour.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000000">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10000</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>25</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010218">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
+          </Icon>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010207">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
+          </Icon>
+        </Text>
+        <Value>15</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010202">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png</Filename>
+          </Icon>
+        </Text>
+        <Value>15</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades>
+      <Upgrade>
+        <Text ID="22426">
+          <Icon />
+        </Text>
+        <Value>+500</Value>
+      </Upgrade>
+      <Upgrade Category="LoadingPier">
+        <Text ID="15250">
+          <Icon />
+        </Text>
+        <Value>+1</Value>
+      </Upgrade>
+      <Upgrade Category="LoadingPier">
+        <Text ID="15197">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_load_ships.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+100</Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="10949">
+      <Icon />
+    </Info>
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010017">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+            </Icon>
+          </Text>
+          <Value>100 / 100</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+  </Asset>
+  <Asset ID="101404" Release="Release" RarityType="Common">
+    <Name>harbor_14c (Oil Harbor III)</Name>
+    <Text ID="101404">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_oil_habour_01.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity ID="118002">
+      <Icon />
+    </Rarity>
+    <ItemType>Building</ItemType>
+    <AssociatedRegions ID="5000000">
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
+      </Icon>
+    </AssociatedRegions>
+    <BuildCosts>
+      <Upgrade>
+        <Text ID="1010017">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+          </Icon>
+        </Text>
+        <Value>10000</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010196">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010205">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
+          </Icon>
+        </Text>
+        <Value>25</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010218">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
+          </Icon>
+        </Text>
+        <Value>20</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010207">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
+          </Icon>
+        </Text>
+        <Value>15</Value>
+      </Upgrade>
+      <Upgrade>
+        <Text ID="1010202">
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png</Filename>
+          </Icon>
+        </Text>
+        <Value>15</Value>
+      </Upgrade>
+    </BuildCosts>
+    <GenericUpgrades>
+      <Upgrade>
+        <Text ID="22426">
+          <Icon />
+        </Text>
+        <Value>+1000</Value>
+      </Upgrade>
+      <Upgrade Category="LoadingPier">
+        <Text ID="15250">
+          <Icon />
+        </Text>
+        <Value>+1</Value>
+      </Upgrade>
+      <Upgrade Category="LoadingPier">
+        <Text ID="15197">
+          <Icon>
+            <Filename>data/ui/2kimages/main/icons/icon_load_ships.png</Filename>
+          </Icon>
+        </Text>
+        <Value>+100</Value>
+      </Upgrade>
+      <Upgrade Category="TrainStation">
+        <Text ID="14865">
+          <Icon />
+        </Text>
+        <Value>+5</Value>
+      </Upgrade>
+    </GenericUpgrades>
+    <TradePrice />
+    <HiringFee />
+    <Info ID="10951">
+      <Icon />
+    </Info>
+    <Maintenance>
+      <MaintenanceCosts>
+        <Upgrade>
+          <Text ID="1010017">
+            <Icon>
+              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
+            </Icon>
+          </Text>
+          <Value>200 / 200</Value>
+        </Upgrade>
+      </MaintenanceCosts>
+    </Maintenance>
+  </Asset>
+</HarborWarehouseStrategic>
