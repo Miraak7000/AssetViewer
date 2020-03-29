@@ -1,4 +1,4 @@
-﻿using AssetViewer.Templates;
+﻿using AssetViewer.Data;
 using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;

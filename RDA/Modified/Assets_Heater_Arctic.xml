@@ -1,68 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Heater_Arctic>
-  <Asset ID="114751" Release="Update 06" RarityType="Common" IsPausable="true">
-    <Name>heater_arctic</Name>
-    <Text ID="114751">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_heating_center.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Building</ItemType>
-    <AssociatedRegions ID="160001">
-      <Icon>
-        <Filename>data/ui/2kimages/main/icons/icon_session_passage.png</Filename>
-      </Icon>
-    </AssociatedRegions>
-    <BuildCosts>
-      <Upgrade>
-        <Text ID="1010017">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-          </Icon>
-        </Text>
-        <Value>1000</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010196">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
-          </Icon>
-        </Text>
-        <Value>5</Value>
-      </Upgrade>
-    </BuildCosts>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="114290">
-      <Icon />
-    </Info>
-    <FactoryBase>
-      <FactoryInputs>
-        <Upgrade>
-          <Text ID="1010226">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_coal.png</Filename>
-            </Icon>
-          </Text>
-          <Value>1 / 20</Value>
-        </Upgrade>
-      </FactoryInputs>
-    </FactoryBase>
-    <Maintenance>
-      <MaintenanceCosts>
-        <Upgrade>
-          <Text ID="1010017">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-            </Icon>
-          </Text>
-          <Value>50</Value>
-        </Upgrade>
-      </MaintenanceCosts>
-    </Maintenance>
+  <Asset ID="114751" RV="Update 06" RT="Common" IP="true">
+    <N>heater_arctic</N>
+    <T ID="114751" I="data/ui/2kimages/main/3dicons/icon_heating_center.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
+    <BC>
+      <U V="1000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="5">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="114290" />
+    <FB>
+      <FI>
+        <U V="1 / 20">
+          <T ID="1010226" I="data/ui/2kimages/main/3dicons/icon_coal.png" />
+        </U>
+      </FI>
+    </FB>
+    <M>
+      <MC>
+        <U V="50">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+      </MC>
+    </M>
   </Asset>
 </Heater_Arctic>

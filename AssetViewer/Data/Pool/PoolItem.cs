@@ -7,6 +7,7 @@ namespace AssetViewer.Data {
   [Serializable]
   [DesignerCategory("code")]
   [XmlType(AnonymousType = true)]
+  [XmlRoot("I")]
   public partial class PoolItem {
 
     #region Properties
@@ -14,7 +15,7 @@ namespace AssetViewer.Data {
     [XmlAttribute]
     public int ID { get; set; }
 
-    [XmlAttribute]
+    [XmlAttribute("W")]
     public int Weight { get; set; }
 
     public object Item {

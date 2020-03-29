@@ -1,5 +1,4 @@
 ﻿using AssetViewer.Comparer;
-using AssetViewer.Templates;
 using System;
 using System.Collections.Generic;
 using System.Linq;

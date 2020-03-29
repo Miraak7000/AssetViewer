@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Palace>
+  <Asset ID="249947" RV="Update 07" RT="Common">
+    <N>Palace</N>
+    <T ID="249947" I="data/ui/2kimages/main/3dicons/palace/icon_palace.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="1000000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="100">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="150">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="150">
+        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="120">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="200">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="+150" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="269133" />
+    <M>
+      <MC>
+        <U V="5000 / 2500">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+      </MC>
+    </M>
+    <Mo>
+      <PM>
+        <M ID="249950" I="data/ui/2kimages/main/3dicons/ornaments/palace_module/icon_ornament_palace_hall_01.png" />
+        <M ID="269086" I="data/ui/2kimages/main/3dicons/ornaments/palace_module/icon_ornament_palace_arch_gate.png" />
+        <M ID="269083" I="data/ui/2kimages/main/3dicons/ornaments/palace_module/icon_ornament_palace_hall_02.png" />
+        <M ID="269549" I="data/ui/2kimages/main/3dicons/ornaments/palace_module/icon_ornament_palace_tcrossing.png" />
+        <M ID="269084" I="data/ui/2kimages/main/3dicons/ornaments/palace_module/icon_ornament_palace_corner.png" />
+        <M ID="269085" I="data/ui/2kimages/main/3dicons/ornaments/palace_module/icon_ornament_palace_end_building.png" />
+      </PM>
+    </Mo>
+  </Asset>
+</Palace>

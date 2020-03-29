@@ -7,7 +7,7 @@
   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
   xmlns:local="clr-namespace:AssetViewer"
   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-  xmlns:template="clr-namespace:AssetViewer.Templates"
+  xmlns:template="clr-namespace:AssetViewer.Data"
   x:Name="userControl"
   d:DesignHeight="450"
   d:DesignWidth="800"
@@ -541,11 +541,22 @@
                     </Grid.ColumnDefinitions>
                     <Grid.ToolTip>
                       <ToolTip DataContext="{Binding PlacementTarget.DataContext, RelativeSource={RelativeSource Self}}">
-                        <ItemsControl Background="Transparent" BorderThickness="0" ItemsSource="{Binding Additionals}">
+                        <ItemsControl Grid.IsSharedSizeScope="True" Background="Transparent" BorderThickness="0" ItemsSource="{Binding Additionals}">
                           <ItemsControl.ItemTemplate>
                             <DataTemplate>
                               <Grid>
+                                <Grid.ColumnDefinitions>
+                                  <ColumnDefinition Width="Auto" SharedSizeGroup="percentage"/>
+                                  <ColumnDefinition Width="5"/>
+                                  <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
                                 <TextBlock
+                                  Grid.Column="0"
+                                  VerticalAlignment="Top"
+                                  Foreground="#FF2A2C27"
+                                  Text="{Binding Weight, StringFormat=\{0\} %}" />
+                                <TextBlock
+                                  Grid.Column="2"
                                   VerticalAlignment="Top"
                                   Foreground="#FF2A2C27"
                                   Text="{Binding Text}"

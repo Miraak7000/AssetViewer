@@ -9,16 +9,17 @@ namespace AssetViewer.Data {
   [XmlType(AnonymousType = true)]
   public partial class EventOptionRequirement {
 
-    #region Properties
+    #region Public Properties
 
+    [XmlElement("NA")]
     public Description NeededAttribute { get; set; }
 
     [XmlAttribute]
     public string ID { get; set; }
 
-    [XmlAttribute]
+    [XmlAttribute("A")]
     public string Amount { get; set; }
 
-    #endregion Properties
+    #endregion Public Properties
   }
 }

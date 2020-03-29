@@ -10,17 +10,19 @@ namespace AssetViewer.Data {
   [XmlType(AnonymousType = true)]
   public class EventPath {
 
-    #region Properties
+    #region Public Properties
 
-    [XmlArrayItem("Item", IsNullable = false)]
+    [XmlArray("R")]
+    [XmlArrayItem("I", IsNullable = false)]
     public List<RewardsItem> Rewards { get; set; }
 
-    [XmlArrayItem("Option", IsNullable = false)]
+    [XmlArray("OL")]
+    [XmlArrayItem("O", IsNullable = false)]
     public List<EventOption> Options { get; set; }
 
     [XmlAttribute]
     public string ID { get; set; }
 
-    #endregion Properties
+    #endregion Public Properties
   }
 }

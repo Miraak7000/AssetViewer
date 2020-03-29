@@ -1,141 +1,67 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <VisitorPier>
-  <Asset ID="102284" Release="Release" RarityType="Common">
-    <Name>harbor_colony01_09 (tourism_pier_01)</Name>
-    <Text ID="100429">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_visitor_harbour.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Building</ItemType>
-    <AssociatedRegions ID="5000001">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
-      </Icon>
-    </AssociatedRegions>
-    <BuildCosts>
-      <Upgrade>
-        <Text ID="1010017">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-          </Icon>
-        </Text>
-        <Value>2500</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010196">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
-          </Icon>
-        </Text>
-        <Value>20</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010205">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
-          </Icon>
-        </Text>
-        <Value>10</Value>
-      </Upgrade>
-    </BuildCosts>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="2463">
-      <Icon />
-    </Info>
-    <Maintenance>
-      <MaintenanceCosts>
-        <Upgrade>
-          <Text ID="1010017">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-            </Icon>
-          </Text>
-          <Value>250 / 250</Value>
-        </Upgrade>
-      </MaintenanceCosts>
-    </Maintenance>
+  <Asset ID="102284" RV="Release" RT="Common">
+    <N>harbor_colony01_09 (tourism_pier_01)</N>
+    <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="2500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="20">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="10">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="2463" />
+    <M>
+      <MC>
+        <U V="250 / 250">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+      </MC>
+    </M>
   </Asset>
-  <Asset ID="100429" Release="Release" RarityType="Common">
-    <Name>harbor_09 (tourism_pier_01)</Name>
-    <Text ID="100429">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_visitor_harbour.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Building</ItemType>
-    <AssociatedRegions ID="5000000">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
-      </Icon>
-    </AssociatedRegions>
-    <BuildCosts>
-      <Upgrade>
-        <Text ID="1010017">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-          </Icon>
-        </Text>
-        <Value>25000</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010196">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
-          </Icon>
-        </Text>
-        <Value>20</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010205">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
-          </Icon>
-        </Text>
-        <Value>20</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010218">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
-          </Icon>
-        </Text>
-        <Value>10</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010207">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
-          </Icon>
-        </Text>
-        <Value>8</Value>
-      </Upgrade>
-    </BuildCosts>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="2463">
-      <Icon />
-    </Info>
-    <Maintenance>
-      <MaintenanceCosts>
-        <Upgrade>
-          <Text ID="1010017">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-            </Icon>
-          </Text>
-          <Value>400 / 400</Value>
-        </Upgrade>
-      </MaintenanceCosts>
-    </Maintenance>
+  <Asset ID="100429" RV="Release" RT="Common">
+    <N>harbor_09 (tourism_pier_01)</N>
+    <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="25000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="20">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="20">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="10">
+        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="8">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="2463" />
+    <M>
+      <MC>
+        <U V="400 / 400">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+      </MC>
+    </M>
   </Asset>
 </VisitorPier>

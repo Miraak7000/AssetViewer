@@ -8,19 +8,20 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
 using System.Xml.Linq;
 
 namespace AssetViewer.Controls {
 
   public partial class ExpeditionEvents : UserControl, INotifyPropertyChanged {
 
-    #region Properties
+    #region Public Properties
 
     public List<ExpeditionEvent> Events { get; } = new List<ExpeditionEvent>();
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Constructors
+    #region Public Constructors
 
     public ExpeditionEvents() {
       Loaded += ExpeditionEvents_Loaded;
@@ -38,19 +39,23 @@ namespace AssetViewer.Controls {
       DataContext = this;
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
 
-    #region Events
+    #region Public Events
 
     public event PropertyChangedEventHandler PropertyChanged;
 
-    #endregion Events
+    #endregion Public Events
 
-    #region Methods
+    #region Public Methods
 
     public void RaisePropertyChanged([CallerMemberName]string name = "") {
       PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
     }
+
+    #endregion Public Methods
+
+    #region Private Methods
 
     private void ExpeditionEvents_Unloaded(object sender, RoutedEventArgs e) {
       if (Application.Current.MainWindow is MainWindow main) {
@@ -65,8 +70,9 @@ namespace AssetViewer.Controls {
     private void ComboBoxLanguage_SelectionChanged(object sender, SelectionChangedEventArgs e) {
       DataContext = null;
       DataContext = this;
+      (this.FindResource("EventSource") as CollectionViewSource)?.View.Refresh();
     }
 
-    #endregion Methods
+    #endregion Private Methods
   }
 }

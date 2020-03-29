@@ -1,866 +1,422 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <FactoryBuilding7_Arctic>
-  <Asset ID="112666" Release="Update 06" RarityType="Common" IsPausable="true">
-    <Name>coastal_arctic_01 (Whale Coast Building)</Name>
-    <Text ID="112666">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_whale_oil_2.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Building</ItemType>
-    <AssociatedRegions ID="160001">
-      <Icon>
-        <Filename>data/ui/2kimages/main/icons/icon_session_passage.png</Filename>
-      </Icon>
-    </AssociatedRegions>
-    <BuildCosts>
-      <Upgrade>
-        <Text ID="1010017">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-          </Icon>
-        </Text>
-        <Value>200</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010196">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
-          </Icon>
-        </Text>
-        <Value>5</Value>
-      </Upgrade>
-    </BuildCosts>
-    <GenericUpgrades>
-      <Upgrade>
-        <Text ID="116353">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_heating_center_2d.png</Filename>
-          </Icon>
-        </Text>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="11143">
-      <Icon />
-    </Info>
-    <FactoryBase CycleTime="60">
-      <FactoryOutputs>
-        <Upgrade>
-          <Text ID="112699">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_whale_oil_2.png</Filename>
-            </Icon>
-          </Text>
-          <Value>1 / 2</Value>
-        </Upgrade>
-      </FactoryOutputs>
-    </FactoryBase>
-    <Maintenance>
-      <MaintenanceCosts>
-        <Upgrade>
-          <Text ID="1010017">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-            </Icon>
-          </Text>
-          <Value>75 / 38</Value>
-        </Upgrade>
-        <Upgrade>
-          <Text ID="112653">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_ressource_explorer.png</Filename>
-            </Icon>
-          </Text>
-          <Value>30</Value>
-        </Upgrade>
-      </MaintenanceCosts>
-    </Maintenance>
+  <Asset ID="112666" RV="Update 06" RT="Common" IP="true">
+    <N>coastal_arctic_01 (Whale Coast Building)</N>
+    <T ID="112666" I="data/ui/2kimages/main/3dicons/icon_whale_oil_2.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
+    <BC>
+      <U V="200">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="5">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U>
+        <T ID="116353" I="data/ui/2kimages/main/icons/icon_heating_center_2d.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FO>
+        <U V="1 / 2">
+          <T ID="112699" I="data/ui/2kimages/main/3dicons/icon_whale_oil_2.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="75 / 38">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="30">
+          <T ID="112653" I="data/ui/2kimages/main/icons/icon_ressource_explorer.png" />
+        </U>
+      </MC>
+    </M>
   </Asset>
-  <Asset ID="112680" Release="Update 06" RarityType="Common" IsPausable="true">
-    <Name>factory_arctic_06 (Husky Sled Factory)</Name>
-    <Text ID="112680">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_sled.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Building</ItemType>
-    <AssociatedRegions ID="160001">
-      <Icon>
-        <Filename>data/ui/2kimages/main/icons/icon_session_passage.png</Filename>
-      </Icon>
-    </AssociatedRegions>
-    <BuildCosts>
-      <Upgrade>
-        <Text ID="1010017">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-          </Icon>
-        </Text>
-        <Value>5000</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010196">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
-          </Icon>
-        </Text>
-        <Value>20</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010218">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
-          </Icon>
-        </Text>
-        <Value>6</Value>
-      </Upgrade>
-    </BuildCosts>
-    <GenericUpgrades>
-      <Upgrade>
-        <Text ID="116353">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_heating_center_2d.png</Filename>
-          </Icon>
-        </Text>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="11143">
-      <Icon />
-    </Info>
-    <FactoryBase CycleTime="60">
-      <FactoryInputs>
-        <Upgrade>
-          <Text ID="112698">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/animals/icon_husky.png</Filename>
-            </Icon>
-          </Text>
-          <Value>1 / 4</Value>
-        </Upgrade>
-        <Upgrade>
-          <Text ID="112704">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_sled_frame.png</Filename>
-            </Icon>
-          </Text>
-          <Value>1 / 4</Value>
-        </Upgrade>
-      </FactoryInputs>
-      <FactoryOutputs>
-        <Upgrade>
-          <Text ID="112703">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_sled.png</Filename>
-            </Icon>
-          </Text>
-          <Value>1 / 2</Value>
-        </Upgrade>
-      </FactoryOutputs>
-    </FactoryBase>
-    <Maintenance>
-      <MaintenanceCosts>
-        <Upgrade>
-          <Text ID="1010017">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-            </Icon>
-          </Text>
-          <Value>650 / 325</Value>
-        </Upgrade>
-        <Upgrade>
-          <Text ID="112654">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_ressource_technican.png</Filename>
-            </Icon>
-          </Text>
-          <Value>100</Value>
-        </Upgrade>
-      </MaintenanceCosts>
-    </Maintenance>
+  <Asset ID="112675" RV="Update 06" RT="Common" IP="true">
+    <N>factory_arctic_02 (Sleeping Bags Factory)</N>
+    <T ID="112675" I="data/ui/2kimages/main/3dicons/icon_sleeping_bags.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
+    <BC>
+      <U V="1500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="15">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U>
+        <T ID="116353" I="data/ui/2kimages/main/icons/icon_heating_center_2d.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 4">
+          <T ID="112696" I="data/ui/2kimages/main/3dicons/icon_seal_skin.png" />
+        </U>
+        <U V="1 / 4">
+          <T ID="112697" I="data/ui/2kimages/main/3dicons/icon_goose_feathers.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="112701" I="data/ui/2kimages/main/3dicons/icon_sleeping_bags.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="120 / 60">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="50">
+          <T ID="112653" I="data/ui/2kimages/main/icons/icon_ressource_explorer.png" />
+        </U>
+      </MC>
+    </M>
   </Asset>
-  <Asset ID="112672" Release="Update 06" RarityType="Common" IsPausable="true">
-    <Name>factory_arctic_04 (Parka Factory)</Name>
-    <Text ID="112672">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_fur_parka.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Building</ItemType>
-    <AssociatedRegions ID="160001">
-      <Icon>
-        <Filename>data/ui/2kimages/main/icons/icon_session_passage.png</Filename>
-      </Icon>
-    </AssociatedRegions>
-    <BuildCosts>
-      <Upgrade>
-        <Text ID="1010017">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-          </Icon>
-        </Text>
-        <Value>2000</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010196">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
-          </Icon>
-        </Text>
-        <Value>10</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010218">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
-          </Icon>
-        </Text>
-        <Value>4</Value>
-      </Upgrade>
-    </BuildCosts>
-    <GenericUpgrades>
-      <Upgrade>
-        <Text ID="116353">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_heating_center_2d.png</Filename>
-          </Icon>
-        </Text>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="11143">
-      <Icon />
-    </Info>
-    <FactoryBase CycleTime="90">
-      <FactoryInputs>
-        <Upgrade>
-          <Text ID="112695">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_bear_fur.png</Filename>
-            </Icon>
-          </Text>
-          <Value>1 / 4</Value>
-        </Upgrade>
-        <Upgrade>
-          <Text ID="112696">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_seal_skin.png</Filename>
-            </Icon>
-          </Text>
-          <Value>1 / 4</Value>
-        </Upgrade>
-      </FactoryInputs>
-      <FactoryOutputs>
-        <Upgrade>
-          <Text ID="112700">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_fur_parka.png</Filename>
-            </Icon>
-          </Text>
-          <Value>1 / 1</Value>
-        </Upgrade>
-      </FactoryOutputs>
-    </FactoryBase>
-    <Maintenance>
-      <MaintenanceCosts>
-        <Upgrade>
-          <Text ID="1010017">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-            </Icon>
-          </Text>
-          <Value>350 / 175</Value>
-        </Upgrade>
-        <Upgrade>
-          <Text ID="112654">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_ressource_technican.png</Filename>
-            </Icon>
-          </Text>
-          <Value>80</Value>
-        </Upgrade>
-      </MaintenanceCosts>
-    </Maintenance>
+  <Asset ID="112672" RV="Update 06" RT="Common" IP="true">
+    <N>factory_arctic_04 (Parka Factory)</N>
+    <T ID="112672" I="data/ui/2kimages/main/3dicons/icon_fur_parka.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
+    <BC>
+      <U V="2000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="4">
+        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </BC>
+    <GU>
+      <U>
+        <T ID="116353" I="data/ui/2kimages/main/icons/icon_heating_center_2d.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="90">
+      <FI>
+        <U V="1 / 4">
+          <T ID="112695" I="data/ui/2kimages/main/3dicons/icon_bear_fur.png" />
+        </U>
+        <U V="1 / 4">
+          <T ID="112696" I="data/ui/2kimages/main/3dicons/icon_seal_skin.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 1">
+          <T ID="112700" I="data/ui/2kimages/main/3dicons/icon_fur_parka.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="350 / 175">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="80">
+          <T ID="112654" I="data/ui/2kimages/main/icons/icon_ressource_technican.png" />
+        </U>
+      </MC>
+    </M>
   </Asset>
-  <Asset ID="112675" Release="Update 06" RarityType="Common" IsPausable="true">
-    <Name>factory_arctic_02 (Sleeping Bags Factory)</Name>
-    <Text ID="112675">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_sleeping_bags.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Building</ItemType>
-    <AssociatedRegions ID="160001">
-      <Icon>
-        <Filename>data/ui/2kimages/main/icons/icon_session_passage.png</Filename>
-      </Icon>
-    </AssociatedRegions>
-    <BuildCosts>
-      <Upgrade>
-        <Text ID="1010017">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-          </Icon>
-        </Text>
-        <Value>1500</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010196">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
-          </Icon>
-        </Text>
-        <Value>15</Value>
-      </Upgrade>
-    </BuildCosts>
-    <GenericUpgrades>
-      <Upgrade>
-        <Text ID="116353">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_heating_center_2d.png</Filename>
-          </Icon>
-        </Text>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="11143">
-      <Icon />
-    </Info>
-    <FactoryBase CycleTime="60">
-      <FactoryInputs>
-        <Upgrade>
-          <Text ID="112696">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_seal_skin.png</Filename>
-            </Icon>
-          </Text>
-          <Value>1 / 4</Value>
-        </Upgrade>
-        <Upgrade>
-          <Text ID="112697">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_goose_feathers.png</Filename>
-            </Icon>
-          </Text>
-          <Value>1 / 4</Value>
-        </Upgrade>
-      </FactoryInputs>
-      <FactoryOutputs>
-        <Upgrade>
-          <Text ID="112701">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_sleeping_bags.png</Filename>
-            </Icon>
-          </Text>
-          <Value>1 / 4</Value>
-        </Upgrade>
-      </FactoryOutputs>
-    </FactoryBase>
-    <Maintenance>
-      <MaintenanceCosts>
-        <Upgrade>
-          <Text ID="1010017">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-            </Icon>
-          </Text>
-          <Value>120 / 60</Value>
-        </Upgrade>
-        <Upgrade>
-          <Text ID="112653">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_ressource_explorer.png</Filename>
-            </Icon>
-          </Text>
-          <Value>50</Value>
-        </Upgrade>
-      </MaintenanceCosts>
-    </Maintenance>
+  <Asset ID="112680" RV="Update 06" RT="Common" IP="true">
+    <N>factory_arctic_06 (Husky Sled Factory)</N>
+    <T ID="112680" I="data/ui/2kimages/main/3dicons/icon_sled.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
+    <BC>
+      <U V="5000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="20">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="6">
+        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </BC>
+    <GU>
+      <U>
+        <T ID="116353" I="data/ui/2kimages/main/icons/icon_heating_center_2d.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 4">
+          <T ID="112698" I="data/ui/2kimages/main/3dicons/animals/icon_husky.png" />
+        </U>
+        <U V="1 / 4">
+          <T ID="112704" I="data/ui/2kimages/main/3dicons/icon_sled_frame.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 2">
+          <T ID="112703" I="data/ui/2kimages/main/3dicons/icon_sled.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="650 / 325">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="100">
+          <T ID="112654" I="data/ui/2kimages/main/icons/icon_ressource_technican.png" />
+        </U>
+      </MC>
+    </M>
   </Asset>
-  <Asset ID="112674" Release="Update 06" RarityType="Common" IsPausable="true">
-    <Name>coastal_arctic_02 (Seal Hunter)</Name>
-    <Text ID="112674">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_seal_skin.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Building</ItemType>
-    <AssociatedRegions ID="160001">
-      <Icon>
-        <Filename>data/ui/2kimages/main/icons/icon_session_passage.png</Filename>
-      </Icon>
-    </AssociatedRegions>
-    <BuildCosts>
-      <Upgrade>
-        <Text ID="1010017">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-          </Icon>
-        </Text>
-        <Value>200</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010196">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
-          </Icon>
-        </Text>
-        <Value>5</Value>
-      </Upgrade>
-    </BuildCosts>
-    <GenericUpgrades>
-      <Upgrade>
-        <Text ID="116353">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_heating_center_2d.png</Filename>
-          </Icon>
-        </Text>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="11143">
-      <Icon />
-    </Info>
-    <FactoryBase>
-      <FactoryOutputs>
-        <Upgrade>
-          <Text ID="112696">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_seal_skin.png</Filename>
-            </Icon>
-          </Text>
-          <Value>1 / 2</Value>
-        </Upgrade>
-      </FactoryOutputs>
-    </FactoryBase>
-    <Maintenance>
-      <MaintenanceCosts>
-        <Upgrade>
-          <Text ID="1010017">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-            </Icon>
-          </Text>
-          <Value>50 / 25</Value>
-        </Upgrade>
-        <Upgrade>
-          <Text ID="112653">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_ressource_explorer.png</Filename>
-            </Icon>
-          </Text>
-          <Value>20</Value>
-        </Upgrade>
-      </MaintenanceCosts>
-    </Maintenance>
+  <Asset ID="112674" RV="Update 06" RT="Common" IP="true">
+    <N>coastal_arctic_02 (Seal Hunter)</N>
+    <T ID="112674" I="data/ui/2kimages/main/3dicons/icon_seal_skin.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
+    <BC>
+      <U V="200">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="5">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U>
+        <T ID="116353" I="data/ui/2kimages/main/icons/icon_heating_center_2d.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FO>
+        <U V="1 / 2">
+          <T ID="112696" I="data/ui/2kimages/main/3dicons/icon_seal_skin.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="50 / 25">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="20">
+          <T ID="112653" I="data/ui/2kimages/main/icons/icon_ressource_explorer.png" />
+        </U>
+      </MC>
+    </M>
   </Asset>
-  <Asset ID="112679" Release="Update 06" RarityType="Common" IsPausable="true">
-    <Name>factory_arctic_03 (Oil Lamp Factory)</Name>
-    <Text ID="112679">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_oil_lamps.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Building</ItemType>
-    <AssociatedRegions ID="160001">
-      <Icon>
-        <Filename>data/ui/2kimages/main/icons/icon_session_passage.png</Filename>
-      </Icon>
-    </AssociatedRegions>
-    <BuildCosts>
-      <Upgrade>
-        <Text ID="1010017">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-          </Icon>
-        </Text>
-        <Value>2000</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010196">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
-          </Icon>
-        </Text>
-        <Value>15</Value>
-      </Upgrade>
-    </BuildCosts>
-    <GenericUpgrades>
-      <Upgrade>
-        <Text ID="116353">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_heating_center_2d.png</Filename>
-          </Icon>
-        </Text>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="11143">
-      <Icon />
-    </Info>
-    <FactoryBase CycleTime="60">
-      <FactoryInputs>
-        <Upgrade>
-          <Text ID="112699">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_whale_oil_2.png</Filename>
-            </Icon>
-          </Text>
-          <Value>1 / 4</Value>
-        </Upgrade>
-        <Upgrade>
-          <Text ID="1010204">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_brass.png</Filename>
-            </Icon>
-          </Text>
-          <Value>1 / 4</Value>
-        </Upgrade>
-      </FactoryInputs>
-      <FactoryOutputs>
-        <Upgrade>
-          <Text ID="112702">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_oil_lamps.png</Filename>
-            </Icon>
-          </Text>
-          <Value>1 / 2</Value>
-        </Upgrade>
-      </FactoryOutputs>
-    </FactoryBase>
-    <Maintenance>
-      <MaintenanceCosts>
-        <Upgrade>
-          <Text ID="1010017">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-            </Icon>
-          </Text>
-          <Value>200 / 100</Value>
-        </Upgrade>
-        <Upgrade>
-          <Text ID="112653">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_ressource_explorer.png</Filename>
-            </Icon>
-          </Text>
-          <Value>70</Value>
-        </Upgrade>
-      </MaintenanceCosts>
-    </Maintenance>
+  <Asset ID="112679" RV="Update 06" RT="Common" IP="true">
+    <N>factory_arctic_03 (Oil Lamp Factory)</N>
+    <T ID="112679" I="data/ui/2kimages/main/3dicons/icon_oil_lamps.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
+    <BC>
+      <U V="2000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="15">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U>
+        <T ID="116353" I="data/ui/2kimages/main/icons/icon_heating_center_2d.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 4">
+          <T ID="112699" I="data/ui/2kimages/main/3dicons/icon_whale_oil_2.png" />
+        </U>
+        <U V="1 / 4">
+          <T ID="1010204" I="data/ui/2kimages/main/3dicons/icon_brass.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 2">
+          <T ID="112702" I="data/ui/2kimages/main/3dicons/icon_oil_lamps.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="200 / 100">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="70">
+          <T ID="112653" I="data/ui/2kimages/main/icons/icon_ressource_explorer.png" />
+        </U>
+      </MC>
+    </M>
   </Asset>
-  <Asset ID="112668" Release="Update 06" RarityType="Common" IsPausable="true">
-    <Name>food_arctic_01 (Pemmican)</Name>
-    <Text ID="112668">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_pemmican.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Building</ItemType>
-    <AssociatedRegions ID="160001">
-      <Icon>
-        <Filename>data/ui/2kimages/main/icons/icon_session_passage.png</Filename>
-      </Icon>
-    </AssociatedRegions>
-    <BuildCosts>
-      <Upgrade>
-        <Text ID="1010017">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-          </Icon>
-        </Text>
-        <Value>1000</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010196">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
-          </Icon>
-        </Text>
-        <Value>5</Value>
-      </Upgrade>
-    </BuildCosts>
-    <GenericUpgrades>
-      <Upgrade>
-        <Text ID="116353">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_heating_center_2d.png</Filename>
-          </Icon>
-        </Text>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="11143">
-      <Icon />
-    </Info>
-    <FactoryBase CycleTime="60">
-      <FactoryInputs>
-        <Upgrade>
-          <Text ID="112699">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_whale_oil_2.png</Filename>
-            </Icon>
-          </Text>
-          <Value>1 / 4</Value>
-        </Upgrade>
-        <Upgrade>
-          <Text ID="112694">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_reindeer_meat.png</Filename>
-            </Icon>
-          </Text>
-          <Value>1 / 4</Value>
-        </Upgrade>
-      </FactoryInputs>
-      <FactoryOutputs>
-        <Upgrade>
-          <Text ID="112705">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_pemmican.png</Filename>
-            </Icon>
-          </Text>
-          <Value>1 / 2</Value>
-        </Upgrade>
-      </FactoryOutputs>
-    </FactoryBase>
-    <Maintenance>
-      <MaintenanceCosts>
-        <Upgrade>
-          <Text ID="1010017">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-            </Icon>
-          </Text>
-          <Value>60 / 30</Value>
-        </Upgrade>
-        <Upgrade>
-          <Text ID="112653">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_ressource_explorer.png</Filename>
-            </Icon>
-          </Text>
-          <Value>30</Value>
-        </Upgrade>
-      </MaintenanceCosts>
-    </Maintenance>
+  <Asset ID="112668" RV="Update 06" RT="Common" IP="true">
+    <N>food_arctic_01 (Pemmican)</N>
+    <T ID="112668" I="data/ui/2kimages/main/3dicons/icon_pemmican.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
+    <BC>
+      <U V="1000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="5">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U>
+        <T ID="116353" I="data/ui/2kimages/main/icons/icon_heating_center_2d.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 4">
+          <T ID="112699" I="data/ui/2kimages/main/3dicons/icon_whale_oil_2.png" />
+        </U>
+        <U V="1 / 4">
+          <T ID="112694" I="data/ui/2kimages/main/3dicons/icon_reindeer_meat.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 2">
+          <T ID="112705" I="data/ui/2kimages/main/3dicons/icon_pemmican.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="60 / 30">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="30">
+          <T ID="112653" I="data/ui/2kimages/main/icons/icon_ressource_explorer.png" />
+        </U>
+      </MC>
+    </M>
   </Asset>
-  <Asset ID="112681" Release="Update 06" RarityType="Common" IsPausable="true">
-    <Name>factory_arctic_05 (Sled Frame Factory)</Name>
-    <Text ID="112681">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_sled_frame.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Building</ItemType>
-    <AssociatedRegions ID="160001">
-      <Icon>
-        <Filename>data/ui/2kimages/main/icons/icon_session_passage.png</Filename>
-      </Icon>
-    </AssociatedRegions>
-    <BuildCosts>
-      <Upgrade>
-        <Text ID="1010017">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-          </Icon>
-        </Text>
-        <Value>3000</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010196">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
-          </Icon>
-        </Text>
-        <Value>20</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010218">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
-          </Icon>
-        </Text>
-        <Value>5</Value>
-      </Upgrade>
-    </BuildCosts>
-    <GenericUpgrades>
-      <Upgrade>
-        <Text ID="116353">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_heating_center_2d.png</Filename>
-          </Icon>
-        </Text>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="11143">
-      <Icon />
-    </Info>
-    <FactoryBase CycleTime="60">
-      <FactoryInputs>
-        <Upgrade>
-          <Text ID="112696">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_seal_skin.png</Filename>
-            </Icon>
-          </Text>
-          <Value>1 / 4</Value>
-        </Upgrade>
-        <Upgrade>
-          <Text ID="120008">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_wood_log.png</Filename>
-            </Icon>
-          </Text>
-          <Value>1 / 4</Value>
-        </Upgrade>
-      </FactoryInputs>
-      <FactoryOutputs>
-        <Upgrade>
-          <Text ID="112704">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_sled_frame.png</Filename>
-            </Icon>
-          </Text>
-          <Value>1 / 2</Value>
-        </Upgrade>
-      </FactoryOutputs>
-    </FactoryBase>
-    <Maintenance>
-      <MaintenanceCosts>
-        <Upgrade>
-          <Text ID="1010017">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-            </Icon>
-          </Text>
-          <Value>450 / 225</Value>
-        </Upgrade>
-        <Upgrade>
-          <Text ID="112654">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_ressource_technican.png</Filename>
-            </Icon>
-          </Text>
-          <Value>80</Value>
-        </Upgrade>
-      </MaintenanceCosts>
-    </Maintenance>
+  <Asset ID="112681" RV="Update 06" RT="Common" IP="true">
+    <N>factory_arctic_05 (Sled Frame Factory)</N>
+    <T ID="112681" I="data/ui/2kimages/main/3dicons/icon_sled_frame.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
+    <BC>
+      <U V="3000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="20">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="5">
+        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </BC>
+    <GU>
+      <U>
+        <T ID="116353" I="data/ui/2kimages/main/icons/icon_heating_center_2d.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 4">
+          <T ID="112696" I="data/ui/2kimages/main/3dicons/icon_seal_skin.png" />
+        </U>
+        <U V="1 / 4">
+          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 2">
+          <T ID="112704" I="data/ui/2kimages/main/3dicons/icon_sled_frame.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="450 / 225">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="80">
+          <T ID="112654" I="data/ui/2kimages/main/icons/icon_ressource_technican.png" />
+        </U>
+      </MC>
+    </M>
   </Asset>
-  <Asset ID="114704" Release="Update 06" RarityType="Common" IsPausable="true">
-    <Name>factory_arctic_01 (Timber Factory)</Name>
-    <Text ID="100451">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Building</ItemType>
-    <AssociatedRegions ID="160001">
-      <Icon>
-        <Filename>data/ui/2kimages/main/icons/icon_session_passage.png</Filename>
-      </Icon>
-    </AssociatedRegions>
-    <BuildCosts>
-      <Upgrade>
-        <Text ID="1010017">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-          </Icon>
-        </Text>
-        <Value>100</Value>
-      </Upgrade>
-    </BuildCosts>
-    <GenericUpgrades>
-      <Upgrade>
-        <Text ID="116353">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_heating_center_2d.png</Filename>
-          </Icon>
-        </Text>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="11143">
-      <Icon />
-    </Info>
-    <FactoryBase CycleTime="15">
-      <FactoryInputs>
-        <Upgrade>
-          <Text ID="120008">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_wood_log.png</Filename>
-            </Icon>
-          </Text>
-          <Value>1 / 8</Value>
-        </Upgrade>
-      </FactoryInputs>
-      <FactoryOutputs>
-        <Upgrade>
-          <Text ID="1010196">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
-            </Icon>
-          </Text>
-          <Value>1 / 8</Value>
-        </Upgrade>
-      </FactoryOutputs>
-    </FactoryBase>
-    <Maintenance>
-      <MaintenanceCosts>
-        <Upgrade>
-          <Text ID="1010017">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-            </Icon>
-          </Text>
-          <Value>20 / 10</Value>
-        </Upgrade>
-        <Upgrade>
-          <Text ID="112653">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_ressource_explorer.png</Filename>
-            </Icon>
-          </Text>
-          <Value>10</Value>
-        </Upgrade>
-      </MaintenanceCosts>
-    </Maintenance>
+  <Asset ID="114704" RV="Update 06" RT="Common" IP="true">
+    <N>factory_arctic_01 (Timber Factory)</N>
+    <T ID="100451" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
+    <BC>
+      <U V="100">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU>
+      <U>
+        <T ID="116353" I="data/ui/2kimages/main/icons/icon_heating_center_2d.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="15">
+      <FI>
+        <U V="1 / 8">
+          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 8">
+          <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="20 / 10">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="10">
+          <T ID="112653" I="data/ui/2kimages/main/icons/icon_ressource_explorer.png" />
+        </U>
+      </MC>
+    </M>
   </Asset>
 </FactoryBuilding7_Arctic>

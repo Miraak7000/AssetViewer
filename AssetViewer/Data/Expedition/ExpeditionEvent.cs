@@ -8,14 +8,14 @@ namespace AssetViewer.Data {
   [Serializable]
   [DesignerCategory("code")]
   [XmlType(AnonymousType = true)]
-  [XmlRoot(Namespace = "", IsNullable = false)]
+  [XmlRoot("EE", Namespace = "", IsNullable = false)]
   public class ExpeditionEvent {
 
     #region Properties
-
+    [XmlElement("N")]
     public Description Name { get; set; }
-
-    [XmlArrayItem("Path", IsNullable = false)]
+    [XmlArray("PL")]
+    [XmlArrayItem("P", IsNullable = false)]
     public List<EventPath> Paths { get; set; }
 
     [XmlAttribute]

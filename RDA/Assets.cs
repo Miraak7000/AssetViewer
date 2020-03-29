@@ -1,5 +1,5 @@
-﻿using RDA.Library;
-using RDA.Templates;
+﻿using RDA.Data;
+using RDA.Services;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -10,23 +10,39 @@ using System.Xml.Linq;
 using System.Xml.XPath;
 
 namespace RDA {
+
   public static class Assets {
-    #region Methods
+
+    #region Public Properties
+
+    public static XElement TourismAsset { get; private set; }
+
+    #endregion Public Properties
+
+    #region Public Constructors
+
     static Assets() {
       Original = XmlLoader.LoadXml(Program.PathRoot + @"\Original\assets.xml");
     }
+
+    #endregion Public Constructors
+
+    #region Public Methods
 
     public static void Init(string version = "Release") {
       Version = version;
       LoadDefaultValues();
       Program.ConsoleWriteHeadline("Load Asset.xml");
-      
+
       SolveXmlInheritance();
       LoadDescriptions();
       LoadCustomDescriptions();
       SetTextDictionarys();
       SetIcons();
-      SetTourismStati();
+      SetTourismThresholds();
+
+      TourismAsset = Original.Descendants("Asset").First(a => a.Element("Template")?.Value == "TourismFeature");
+
       SetBuffs();
     }
 
@@ -34,9 +50,9 @@ namespace RDA {
       return KeyToIdDict[id];
     }
 
-    #endregion Methods
+    #endregion Public Methods
 
-    #region Fields
+    #region Internal Fields
 
     internal readonly static XElement Original;
 
@@ -46,17 +62,15 @@ namespace RDA {
 
     internal readonly static Dictionary<string, Dictionary<Languages, string>> CustomDescriptions = new Dictionary<string, Dictionary<Languages, string>>();
 
+    internal readonly static Dictionary<string, string> TourismThresholds = new Dictionary<string, string>();
+    internal readonly static Dictionary<string, Asset> Buffs = new Dictionary<string, Asset>();
+    internal readonly static Dictionary<string, string> Icons = new Dictionary<string, string>();
+    internal readonly static Dictionary<string, string> KeyToIdDict = new Dictionary<string, string>();
     internal static string Version = "Release";
 
-    internal readonly static Dictionary<string, XElement> TourismStati = new Dictionary<string, XElement>();
+    #endregion Internal Fields
 
-    internal readonly static Dictionary<string, Asset> Buffs = new Dictionary<string, Asset>();
-
-    internal readonly static Dictionary<string, string> Icons = new Dictionary<string, string>();
-
-    internal readonly static Dictionary<string, string> KeyToIdDict = new Dictionary<string, string>();
-
-    #endregion Fields
+    #region Private Methods
 
     private static void LoadDefaultValues() {
       Program.ConsoleWriteHeadline("Load Standart Values");
@@ -119,7 +133,8 @@ namespace RDA {
             str = str.Replace(remove, "");
           }
 
-          // walkaround to fix the problem that rarity "common" and "uncommon" are translated to the same Chinese word
+          // walkaround to fix the problem that rarity "common" and "uncommon" are translated to the
+          // same Chinese word
           if (language == Languages.Chinese && item.Key == "118002" && str == "普通") {
             str = "普通（白色）";
           }
@@ -211,7 +226,7 @@ namespace RDA {
        .FirstOrDefault(a => a.Element("Template")?.Value == "ExpeditionFeature")?
        .Element("Values")
        .Element("ExpeditionFeature");
-     
+
       //ExpeditionRegions
       //foreach (var item in asset.Element("ExpeditionRegions").Elements()) {
       //  KeyToIdDict.Add(item.Name.LocalName, item.Element("Region").Value);
@@ -255,7 +270,7 @@ namespace RDA {
 
       KeyToIdDict.Add("MaxPickupTimeUpgrade", "22219");
       KeyToIdDict.Add("ScrapAmountLevelUpgrade", "22220");
-      //
+
       KeyToIdDict.Add("ConstructionCostInPercent", "12679");
       KeyToIdDict.Add("ConstructionTimeInPercent", "12678");
       KeyToIdDict.Add("PassiveTradeGoodGenUpgrade", "12920");
@@ -320,17 +335,23 @@ namespace RDA {
       KeyToIdDict.Add("Moderate", "5000000");
       KeyToIdDict.Add("Colony01", "5000001");
       KeyToIdDict.Add("Arctic", "160001");
+      KeyToIdDict.Add("Africa", "22146");
+      KeyToIdDict.Add("AttractivenessPerSetUpgrade", "269251");
+      KeyToIdDict.Add("OverrideSpecialistPool", "269570");
+      KeyToIdDict.Add("ProductivityBoostUpgrade", "118000");
+      KeyToIdDict.Add("StorageCapacityModifier", "23231");
+      KeyToIdDict.Add("SocketCountUpgrade", "269364");
 
       //Override Allocation Tradeship
       KeyToIdDict["Tradeship"] = "12006";
     }
 
-    private static void SetTourismStati() {
+    private static void SetTourismThresholds() {
       Program.ConsoleWriteHeadline("Setting up Tourism");
-      var TourismAsset = Original.Descendants("Asset").FirstOrDefault(l => l.Element("Template")?.Value == "TourismFeature");
-      var CityStatis = TourismAsset.XPathSelectElement("Values/TourismFeature/CityStati").Elements().ToList();
-      for (var i = 1; i < CityStatis.Count; i++) {
-        TourismStati[i.ToString()] = CityStatis[i - 1];
+      var AttractivenessFeature = Original.Descendants("Asset").FirstOrDefault(l => l.Element("Template")?.Value == "AttractivenessFeature");
+      var CityStatis = AttractivenessFeature.XPathSelectElement("Values/AttractivenessFeature/AttractivenessLevel").Elements().ToList();
+      foreach (var stati in CityStatis) {
+        TourismThresholds.Add(stati.Name.LocalName, stati.Element("AttractivenessThreshold").Value);
       }
     }
 
@@ -344,5 +365,7 @@ namespace RDA {
         Buffs[item.ID] = item;
       }
     }
+
+    #endregion Private Methods
   }
 }

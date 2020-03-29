@@ -1,1749 +1,569 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <FestivalBuff>
-  <Asset ID="142453" Release="Release" RarityType="Common">
-    <Name>ArtsFestivalPublicBuff</Name>
-    <Text ID="142453">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_scroll_anthology_myths.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType />
-    <FestivalName ID="142453">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_scroll_anthology_myths.png</Filename>
-      </Icon>
-    </FestivalName>
-    <GenericUpgrades>
-      <Upgrade Category="CultureUpgrade">
-        <Text ID="145011">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+5</Value>
-      </Upgrade>
-      <Upgrade Category="BuildingUpgrade">
-        <Text ID="2320">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-50%</Value>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="20113">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_scroll_anthology_myths.png</Filename>
-      </Icon>
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="191501">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010349">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_pub.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010360">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_school.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010365">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_bank.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010359">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_church.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010352">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_cabaret.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010353">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_university.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010355">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_club_house.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101257">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_market.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101258">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_church.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101259">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_box_arena.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101257">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_market.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
+  <Asset ID="141896" RV="Release" RT="Common">
+    <N>BeerFestivalResidencesBuff</N>
+    <T ID="141896" I="data/ui/2kimages/main/3dicons/icon_beer_2.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="141896" I="data/ui/2kimages/main/3dicons/icon_beer_2.png" />
+    <GU>
+      <U V="+25" C="ResidenceUpgrade">
+        <T ID="12314" I="data/ui/2kimages/main/icons/icon_happy.png" />
+      </U>
+      <U V="" C="ResidenceUpgrade">
+        <T ID="21386" I="data/ui/2kimages/main/icons/icon_patrol.png" />
+        <A>
+          <U V="-100%">
+            <T ID="1010216" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
+          </U>
+          <U V="-100%">
+            <T ID="1010214" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+          </U>
+          <U V="-100%">
+            <T ID="1010257" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
+          </U>
+          <U V="-100%">
+            <T ID="120016" I="data/ui/2kimages/main/3dicons/icon_champagne.png" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="20111" I="data/ui/2kimages/main/3dicons/icon_beer_2.png" />
+    <ET>
+      <ET>
+        <T ID="190762" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010347" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+        </B>
+      </ET>
+    </ET>
   </Asset>
-  <Asset ID="142462" Release="Release" RarityType="Common">
-    <Name>CarnivalFestivalVisitorsBuff</Name>
-    <Text ID="142462">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType />
-    <FestivalName ID="20110">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png</Filename>
-      </Icon>
-    </FestivalName>
-    <GenericUpgrades>
-      <Upgrade Category="VisitorHarborUpgrade">
-        <Text ID="20603">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_add_slot_guild.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+100%</Value>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="20115">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png</Filename>
-      </Icon>
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="191563">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_visitor_harbour.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="100429">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_visitor_harbour.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100429">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_visitor_harbour.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
+  <Asset ID="142453" RV="Release" RT="Common">
+    <N>ArtsFestivalPublicBuff</N>
+    <T ID="142453" I="data/ui/2kimages/main/3dicons/museum/icon_scroll_anthology_myths.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="142453" I="data/ui/2kimages/main/3dicons/museum/icon_scroll_anthology_myths.png" />
+    <GU>
+      <U V="+5" C="CultureUpgrade">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+      <U V="-50%" C="BuildingUpgrade">
+        <T ID="2320" I="data/ui/2kimages/main/icons/icon_credits.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="20113" I="data/ui/2kimages/main/3dicons/museum/icon_scroll_anthology_myths.png" />
+    <ET>
+      <ET>
+        <T ID="191501" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010349" I="data/ui/2kimages/main/3dicons/icon_pub.png" />
+          <T ID="1010360" I="data/ui/2kimages/main/3dicons/icon_school.png" />
+          <T ID="1010365" I="data/ui/2kimages/main/3dicons/icon_bank.png" />
+          <T ID="1010359" I="data/ui/2kimages/main/3dicons/icon_church.png" />
+          <T ID="1010352" I="data/ui/2kimages/main/3dicons/icon_cabaret.png" />
+          <T ID="1010353" I="data/ui/2kimages/main/3dicons/icon_university.png" />
+          <T ID="1010355" I="data/ui/2kimages/main/3dicons/icon_club_house.png" />
+          <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
+          <T ID="101258" I="data/ui/2kimages/main/3dicons/icon_church.png" />
+          <T ID="101259" I="data/ui/2kimages/main/3dicons/icon_box_arena.png" />
+          <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
+        </B>
+      </ET>
+    </ET>
   </Asset>
-  <Asset ID="142456" Release="Release" RarityType="Common">
-    <Name>CommemorationFestivalProductionBuff</Name>
-    <Text ID="142456">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_museum_sword_rare.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType />
-    <FestivalName ID="142456">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_museum_sword_rare.png</Filename>
-      </Icon>
-    </FestivalName>
-    <GenericUpgrades>
-      <Upgrade Category="FactoryUpgrade">
-        <Text ID="118000">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_options.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+300%</Value>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="20114">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_museum_sword_rare.png</Filename>
-      </Icon>
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="192436">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010269">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_pigs.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010312">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_tallow.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010310">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_niter.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010297">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_steel.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010298">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_coal_burn.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010304">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_coal_2.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010305">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_iron.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010300">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_dynamite.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010299">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_weapons.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010301">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_advanced_weaponry.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
+  <Asset ID="142462" RV="Release" RT="Common">
+    <N>CarnivalFestivalVisitorsBuff</N>
+    <T ID="142462" I="data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="20110" I="data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png" />
+    <GU>
+      <U V="+100%" C="VisitorHarborUpgrade">
+        <T ID="20603" I="data/ui/2kimages/main/icons/icon_add_slot_guild.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="20115" I="data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png" />
+    <ET>
+      <ET>
+        <T ID="191563" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+        <B>
+          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+        </B>
+      </ET>
+    </ET>
   </Asset>
-  <Asset ID="141896" Release="Release" RarityType="Common">
-    <Name>BeerFestivalResidencesBuff</Name>
-    <Text ID="141896">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_beer_2.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType />
-    <FestivalName ID="141896">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_beer_2.png</Filename>
-      </Icon>
-    </FestivalName>
-    <GenericUpgrades>
-      <Upgrade Category="ResidenceUpgrade">
-        <Text ID="12314">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_happy.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+25</Value>
-      </Upgrade>
-      <Upgrade Category="ResidenceUpgrade">
-        <Text ID="21386">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_patrol.png</Filename>
-          </Icon>
-        </Text>
-        <Value></Value>
-        <Additionals>
-          <Upgrade>
-            <Text ID="1010216">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/icon_schnapps_4.png</Filename>
-              </Icon>
-            </Text>
-            <Value>-100%</Value>
-          </Upgrade>
-          <Upgrade>
-            <Text ID="1010214">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/icon_beer.png</Filename>
-              </Icon>
-            </Text>
-            <Value>-100%</Value>
-          </Upgrade>
-          <Upgrade>
-            <Text ID="1010257">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/icon_rum_barrel.png</Filename>
-              </Icon>
-            </Text>
-            <Value>-100%</Value>
-          </Upgrade>
-          <Upgrade>
-            <Text ID="120016">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/icon_champagne.png</Filename>
-              </Icon>
-            </Text>
-            <Value>-100%</Value>
-          </Upgrade>
-        </Additionals>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="20111">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_beer_2.png</Filename>
-      </Icon>
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="190762">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010343">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010344">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010345">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010346">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010347">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101254">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101255">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
+  <Asset ID="142456" RV="Release" RT="Common">
+    <N>CommemorationFestivalProductionBuff</N>
+    <T ID="142456" I="data/ui/2kimages/main/3dicons/museum/icon_museum_sword_rare.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="142456" I="data/ui/2kimages/main/3dicons/museum/icon_museum_sword_rare.png" />
+    <GU>
+      <U V="+300%" C="FactoryUpgrade">
+        <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="20114" I="data/ui/2kimages/main/3dicons/museum/icon_museum_sword_rare.png" />
+    <ET>
+      <ET>
+        <T ID="192436" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010269" I="data/ui/2kimages/main/3dicons/icon_pigs.png" />
+          <T ID="1010312" I="data/ui/2kimages/main/3dicons/icon_tallow.png" />
+          <T ID="1010310" I="data/ui/2kimages/main/3dicons/icon_niter.png" />
+          <T ID="1010297" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
+          <T ID="1010298" I="data/ui/2kimages/main/3dicons/icon_coal_burn.png" />
+          <T ID="1010304" I="data/ui/2kimages/main/3dicons/icon_coal_2.png" />
+          <T ID="1010305" I="data/ui/2kimages/main/3dicons/icon_iron.png" />
+          <T ID="1010300" I="data/ui/2kimages/main/3dicons/icon_dynamite.png" />
+          <T ID="1010299" I="data/ui/2kimages/main/3dicons/icon_weapons.png" />
+          <T ID="1010301" I="data/ui/2kimages/main/3dicons/icon_advanced_weaponry.png" />
+        </B>
+      </ET>
+    </ET>
   </Asset>
-  <Asset ID="142519" Release="Release" RarityType="Common">
-    <Name>CommemorationFestivalShipyardBuff</Name>
-    <Text ID="142456">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_museum_sword_rare.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType />
-    <FestivalName ID="142456">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_museum_sword_rare.png</Filename>
-      </Icon>
-    </FestivalName>
-    <GenericUpgrades>
-      <Upgrade Category="ShipyardUpgrade">
-        <Text ID="12679">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_big_shipyard_2d.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-30%</Value>
-      </Upgrade>
-      <Upgrade Category="ShipyardUpgrade">
-        <Text ID="12678">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_big_shipyard_2d.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-30%</Value>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="20114">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_museum_sword_rare.png</Filename>
-      </Icon>
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="190783">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010520">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_sail_shipyard.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010521">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_steam_shipyard.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010520">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_sail_shipyard.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
+  <Asset ID="142454" RV="Release" RT="Common">
+    <N>ArtsFestivalCultureBuff</N>
+    <T ID="142453" I="data/ui/2kimages/main/3dicons/museum/icon_scroll_anthology_myths.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="142453" I="data/ui/2kimages/main/3dicons/museum/icon_scroll_anthology_myths.png" />
+    <GU>
+      <U V="+5%" C="CultureUpgrade">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+      <U V="-100%" C="BuildingUpgrade">
+        <T ID="2320" I="data/ui/2kimages/main/icons/icon_credits.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="20113" I="data/ui/2kimages/main/3dicons/museum/icon_scroll_anthology_myths.png" />
+    <ET>
+      <ET>
+        <T ID="193666" I="data/ui/2kimages/main/icons/icon_attractiveness_group.png" />
+        <B>
+          <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+          <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+          <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+          <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+          <T ID="110935" I="data/ui/2kimages/main/3dicons/icon_botanic_garden.png" />
+          <T ID="110935" I="data/ui/2kimages/main/3dicons/icon_botanic_garden.png" />
+        </B>
+      </ET>
+    </ET>
   </Asset>
-  <Asset ID="142454" Release="Release" RarityType="Common">
-    <Name>ArtsFestivalCultureBuff</Name>
-    <Text ID="142453">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_scroll_anthology_myths.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType />
-    <FestivalName ID="142453">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_scroll_anthology_myths.png</Filename>
-      </Icon>
-    </FestivalName>
-    <GenericUpgrades>
-      <Upgrade Category="CultureUpgrade">
-        <Text ID="145011">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+5%</Value>
-      </Upgrade>
-      <Upgrade Category="BuildingUpgrade">
-        <Text ID="2320">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-100%</Value>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="20113">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_scroll_anthology_myths.png</Filename>
-      </Icon>
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="193666">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_attractiveness_group.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="2349">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_zoo.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="2351">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_museum.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="2349">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_zoo.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="2351">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_museum.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="110935">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_botanic_garden.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="110935">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_botanic_garden.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
+  <Asset ID="111831" RV="Update 03" RT="Common">
+    <N>AnarchyFestivalResidencesBuff</N>
+    <T ID="111831" I="data/ui/2kimages/main/3dicons/icon_anarchist.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="111831" I="data/ui/2kimages/main/icons/icon_warning.png" />
+    <GU>
+      <U V="+25" C="ResidenceUpgrade">
+        <T ID="12314" I="data/ui/2kimages/main/icons/icon_happy.png" />
+      </U>
+      <U V="" C="ResidenceUpgrade">
+        <T ID="21386" I="data/ui/2kimages/main/icons/icon_patrol.png" />
+        <A>
+          <U V="-100%">
+            <T ID="1010216" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
+          </U>
+          <U V="-100%">
+            <T ID="1010214" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+          </U>
+          <U V="-100%">
+            <T ID="1010257" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
+          </U>
+          <U V="-100%">
+            <T ID="120016" I="data/ui/2kimages/main/3dicons/icon_champagne.png" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="111837" I="data/ui/2kimages/main/3dicons/icon_anarchist.png" />
+    <ET>
+      <ET>
+        <T ID="190762" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010347" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+        </B>
+      </ET>
+    </ET>
   </Asset>
-  <Asset ID="142449" Release="Release" RarityType="Common">
-    <Name>BeerFestivalProductionBuff</Name>
-    <Text ID="141896">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_beer_2.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType />
-    <FestivalName ID="141896">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_beer_2.png</Filename>
-      </Icon>
-    </FestivalName>
-    <GenericUpgrades>
-      <Upgrade Category="BuildingUpgrade">
-        <Text ID="12337">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_options.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-25%</Value>
-      </Upgrade>
-      <Upgrade Category="FactoryUpgrade">
-        <Text ID="118000">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_options.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+50%</Value>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="20111">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_beer_2.png</Filename>
-      </Icon>
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="192566">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_beer.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010262">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_cereals_2.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010264">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_hops.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010292">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_beer.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010314">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_malt.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010265">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_potatoes.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010294">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_schnapps_4.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010266">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_wood_log.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010329">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010340">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_rum_barrel.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010560">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_quartz_sand.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010319">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_glass.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100659">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_champagne.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100655">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_grapes.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
+  <Asset ID="142519" RV="Release" RT="Common">
+    <N>CommemorationFestivalShipyardBuff</N>
+    <T ID="142456" I="data/ui/2kimages/main/3dicons/museum/icon_museum_sword_rare.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="142456" I="data/ui/2kimages/main/3dicons/museum/icon_museum_sword_rare.png" />
+    <GU>
+      <U V="-30%" C="ShipyardUpgrade">
+        <T ID="12679" I="data/ui/2kimages/main/icons/icon_big_shipyard_2d.png" />
+      </U>
+      <U V="-30%" C="ShipyardUpgrade">
+        <T ID="12678" I="data/ui/2kimages/main/icons/icon_big_shipyard_2d.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="20114" I="data/ui/2kimages/main/3dicons/museum/icon_museum_sword_rare.png" />
+    <ET>
+      <ET>
+        <T ID="190783" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010520" I="data/ui/2kimages/main/3dicons/icon_sail_shipyard.png" />
+          <T ID="1010521" I="data/ui/2kimages/main/3dicons/icon_steam_shipyard.png" />
+          <T ID="1010520" I="data/ui/2kimages/main/3dicons/icon_sail_shipyard.png" />
+        </B>
+      </ET>
+    </ET>
   </Asset>
-  <Asset ID="142432" Release="Update 06" RarityType="Common">
-    <Name>CommemorationFestivalResidencesBuff</Name>
-    <Text ID="142456">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_museum_sword_rare.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType />
-    <FestivalName ID="142456">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_museum_sword_rare.png</Filename>
-      </Icon>
-    </FestivalName>
-    <GenericUpgrades>
-      <Upgrade Category="ResidenceUpgrade">
-        <Text ID="12314">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_happy.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+10</Value>
-      </Upgrade>
-      <Upgrade Category="ResidenceUpgrade">
-        <Text ID="12676">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_kontor_2da.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+15%</Value>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="20114">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_museum_sword_rare.png</Filename>
-      </Icon>
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="190762">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010343">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010344">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010345">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010346">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010347">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101254">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101255">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
+  <Asset ID="142449" RV="Release" RT="Common">
+    <N>BeerFestivalProductionBuff</N>
+    <T ID="141896" I="data/ui/2kimages/main/3dicons/icon_beer_2.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="141896" I="data/ui/2kimages/main/3dicons/icon_beer_2.png" />
+    <GU>
+      <U V="-25%" C="BuildingUpgrade">
+        <T ID="12337" I="data/ui/2kimages/main/icons/icon_options.png" />
+      </U>
+      <U V="+50%" C="FactoryUpgrade">
+        <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="20111" I="data/ui/2kimages/main/3dicons/icon_beer_2.png" />
+    <ET>
+      <ET>
+        <T ID="192566" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+        <B>
+          <T ID="1010262" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+          <T ID="1010264" I="data/ui/2kimages/main/3dicons/icon_hops.png" />
+          <T ID="1010292" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+          <T ID="1010314" I="data/ui/2kimages/main/3dicons/icon_malt.png" />
+          <T ID="1010265" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
+          <T ID="1010294" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
+          <T ID="1010266" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+          <T ID="1010329" I="data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png" />
+          <T ID="1010340" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
+          <T ID="1010560" I="data/ui/2kimages/main/3dicons/icon_quartz_sand.png" />
+          <T ID="1010319" I="data/ui/2kimages/main/3dicons/icon_glass.png" />
+          <T ID="100659" I="data/ui/2kimages/main/3dicons/icon_champagne.png" />
+          <T ID="100655" I="data/ui/2kimages/main/3dicons/icon_grapes.png" />
+        </B>
+      </ET>
+    </ET>
   </Asset>
-  <Asset ID="111831" Release="Update 03" RarityType="Common">
-    <Name>AnarchyFestivalResidencesBuff</Name>
-    <Text ID="111831">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_anarchist.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType />
-    <FestivalName ID="111831">
-      <Icon>
-        <Filename>data/ui/2kimages/main/icons/icon_warning.png</Filename>
-      </Icon>
-    </FestivalName>
-    <GenericUpgrades>
-      <Upgrade Category="ResidenceUpgrade">
-        <Text ID="12314">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_happy.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+25</Value>
-      </Upgrade>
-      <Upgrade Category="ResidenceUpgrade">
-        <Text ID="21386">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_patrol.png</Filename>
-          </Icon>
-        </Text>
-        <Value></Value>
-        <Additionals>
-          <Upgrade>
-            <Text ID="1010216">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/icon_schnapps_4.png</Filename>
-              </Icon>
-            </Text>
-            <Value>-100%</Value>
-          </Upgrade>
-          <Upgrade>
-            <Text ID="1010214">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/icon_beer.png</Filename>
-              </Icon>
-            </Text>
-            <Value>-100%</Value>
-          </Upgrade>
-          <Upgrade>
-            <Text ID="1010257">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/icon_rum_barrel.png</Filename>
-              </Icon>
-            </Text>
-            <Value>-100%</Value>
-          </Upgrade>
-          <Upgrade>
-            <Text ID="120016">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/icon_champagne.png</Filename>
-              </Icon>
-            </Text>
-            <Value>-100%</Value>
-          </Upgrade>
-        </Additionals>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="111837">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_anarchist.png</Filename>
-      </Icon>
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="190762">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010343">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010344">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010345">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010346">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010347">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101254">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101255">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
+  <Asset ID="142432" RV="Update 06" RT="Common">
+    <N>CommemorationFestivalResidencesBuff</N>
+    <T ID="142456" I="data/ui/2kimages/main/3dicons/museum/icon_museum_sword_rare.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="142456" I="data/ui/2kimages/main/3dicons/museum/icon_museum_sword_rare.png" />
+    <GU>
+      <U V="+10" C="ResidenceUpgrade">
+        <T ID="12314" I="data/ui/2kimages/main/icons/icon_happy.png" />
+      </U>
+      <U V="+15%" C="ResidenceUpgrade">
+        <T ID="12676" I="data/ui/2kimages/main/icons/icon_kontor_2da.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="20114" I="data/ui/2kimages/main/3dicons/museum/icon_museum_sword_rare.png" />
+    <ET>
+      <ET>
+        <T ID="190762" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010347" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+        </B>
+      </ET>
+    </ET>
   </Asset>
-  <Asset ID="142433" Release="Release" RarityType="Common">
-    <Name>CarnivalFestivalResidencesBuff</Name>
-    <Text ID="142433">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType />
-    <FestivalName ID="20110">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png</Filename>
-      </Icon>
-    </FestivalName>
-    <PopulationUpgrades>
-      <Upgrade>
-        <Text ID="12690">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
-          </Icon>
-        </Text>
-        <Additionals>
-          <Upgrade>
-            <Text ID="1010214">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/icon_beer.png</Filename>
-              </Icon>
-            </Text>
-            <Value>+5</Value>
-          </Upgrade>
-          <Upgrade>
-            <Text ID="1010216">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/icon_schnapps_4.png</Filename>
-              </Icon>
-            </Text>
-            <Value>+5</Value>
-          </Upgrade>
-          <Upgrade>
-            <Text ID="1010257">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/icon_rum_barrel.png</Filename>
-              </Icon>
-            </Text>
-            <Value>+5</Value>
-          </Upgrade>
-          <Upgrade>
-            <Text ID="120016">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/icon_champagne.png</Filename>
-              </Icon>
-            </Text>
-            <Value>+5</Value>
-          </Upgrade>
-        </Additionals>
-      </Upgrade>
-    </PopulationUpgrades>
-    <GenericUpgrades>
-      <Upgrade Category="ResidenceUpgrade">
-        <Text ID="12314">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_happy.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+40</Value>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="20115">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png</Filename>
-      </Icon>
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="190762">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010343">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010344">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010345">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010346">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010347">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101254">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101255">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
+  <Asset ID="142433" RV="Release" RT="Common">
+    <N>CarnivalFestivalResidencesBuff</N>
+    <T ID="142433" I="data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="20110" I="data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png" />
+    <PU>
+      <U>
+        <T ID="12690" I="data/ui/2kimages/main/icons/icon_credits.png" />
+        <A>
+          <U V="+5">
+            <T ID="1010214" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+          </U>
+          <U V="+5">
+            <T ID="1010216" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
+          </U>
+          <U V="+5">
+            <T ID="1010257" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
+          </U>
+          <U V="+5">
+            <T ID="120016" I="data/ui/2kimages/main/3dicons/icon_champagne.png" />
+          </U>
+        </A>
+      </U>
+    </PU>
+    <GU>
+      <U V="+40" C="ResidenceUpgrade">
+        <T ID="12314" I="data/ui/2kimages/main/icons/icon_happy.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="20115" I="data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png" />
+    <ET>
+      <ET>
+        <T ID="190762" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010347" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+        </B>
+      </ET>
+    </ET>
   </Asset>
-  <Asset ID="142451" Release="Release" RarityType="Common">
-    <Name>HarvestFestivalResidencesBuff</Name>
-    <Text ID="142451">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_cereals_2.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType />
-    <FestivalName ID="142451">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_cereals_2.png</Filename>
-      </Icon>
-    </FestivalName>
-    <GenericUpgrades>
-      <Upgrade Category="ResidenceUpgrade">
-        <Text ID="12314">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_happy.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+10</Value>
-      </Upgrade>
-      <Upgrade Category="ResidenceUpgrade">
-        <Text ID="12677">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+10%</Value>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="20112">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_cereals_2.png</Filename>
-      </Icon>
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="190762">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010343">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010344">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010345">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010346">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010347">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101254">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101255">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
+  <Asset ID="111832" RV="Update 03" RT="Common">
+    <N>AnarchyFestivalProductionBuff</N>
+    <T ID="111831" I="data/ui/2kimages/main/3dicons/icon_anarchist.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="111831" I="data/ui/2kimages/main/icons/icon_warning.png" />
+    <GU>
+      <U V="-10%" C="BuildingUpgrade">
+        <T ID="2320" I="data/ui/2kimages/main/icons/icon_credits.png" />
+      </U>
+      <U V="+20%" C="FactoryUpgrade">
+        <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="111837" I="data/ui/2kimages/main/3dicons/icon_anarchist.png" />
+    <ET>
+      <ET>
+        <T ID="6000018" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010262" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+          <T ID="1010263" I="data/ui/2kimages/main/3dicons/icon_meat_raw.png" />
+          <T ID="1010264" I="data/ui/2kimages/main/3dicons/icon_hops.png" />
+          <T ID="1010265" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
+          <T ID="1010266" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+          <T ID="1010267" I="data/ui/2kimages/main/3dicons/icon_wool.png" />
+          <T ID="1010269" I="data/ui/2kimages/main/3dicons/icon_pigs.png" />
+          <T ID="1010558" I="data/ui/2kimages/main/3dicons/icon_fur.png" />
+          <T ID="100655" I="data/ui/2kimages/main/3dicons/icon_grapes.png" />
+          <T ID="100654" I="data/ui/2kimages/main/3dicons/icon_pepper.png" />
+          <T ID="1010278" I="data/ui/2kimages/main/3dicons/icon_fish.png" />
+          <T ID="1010310" I="data/ui/2kimages/main/3dicons/icon_niter.png" />
+          <T ID="1010560" I="data/ui/2kimages/main/3dicons/icon_quartz_sand.png" />
+          <T ID="1010280" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+          <T ID="1010281" I="data/ui/2kimages/main/3dicons/icon_soap_2.png" />
+          <T ID="100451" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+          <T ID="1010283" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+          <T ID="1010284" I="data/ui/2kimages/main/3dicons/icon_sewing_machine.png" />
+          <T ID="1010286" I="data/ui/2kimages/main/3dicons/icon_light_bulb.png" />
+          <T ID="1010285" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+          <T ID="1010288" I="data/ui/2kimages/main/3dicons/icon_sail.png" />
+          <T ID="1010289" I="data/ui/2kimages/main/3dicons/icon_chassis.png" />
+          <T ID="100416" I="data/ui/2kimages/main/3dicons/icon_clay.png" />
+          <T ID="1010291" I="data/ui/2kimages/main/3dicons/icon_bread.png" />
+          <T ID="1010292" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+          <T ID="1010293" I="data/ui/2kimages/main/3dicons/icon_goulash_01.png" />
+          <T ID="1010295" I="data/ui/2kimages/main/3dicons/icon_canned_goulash.png" />
+          <T ID="1010294" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
+          <T ID="1010316" I="data/ui/2kimages/main/3dicons/icon_meat_sausage.png" />
+          <T ID="100659" I="data/ui/2kimages/main/3dicons/icon_champagne.png" />
+          <T ID="1010296" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+          <T ID="1010297" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
+          <T ID="1010298" I="data/ui/2kimages/main/3dicons/icon_coal_burn.png" />
+          <T ID="1010299" I="data/ui/2kimages/main/3dicons/icon_weapons.png" />
+          <T ID="1010301" I="data/ui/2kimages/main/3dicons/icon_advanced_weaponry.png" />
+          <T ID="1010302" I="data/ui/2kimages/main/3dicons/icon_steam_machine.png" />
+          <T ID="1010303" I="data/ui/2kimages/main/3dicons/icon_steam_carriage.png" />
+          <T ID="1010282" I="data/ui/2kimages/main/3dicons/icon_brass.png" />
+          <T ID="101331" I="data/ui/2kimages/main/3dicons/icon_oil.png" />
+          <T ID="1010304" I="data/ui/2kimages/main/3dicons/icon_coal_2.png" />
+          <T ID="1010305" I="data/ui/2kimages/main/3dicons/icon_iron.png" />
+          <T ID="1010307" I="data/ui/2kimages/main/3dicons/icon_tin_ore.png" />
+          <T ID="1010308" I="data/ui/2kimages/main/3dicons/icon_copper.png" />
+          <T ID="1010309" I="data/ui/2kimages/main/3dicons/icon_cement.png" />
+          <T ID="1010311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
+          <T ID="1010312" I="data/ui/2kimages/main/3dicons/icon_tallow.png" />
+          <T ID="1010313" I="data/ui/2kimages/main/3dicons/icon_flour.png" />
+          <T ID="1010314" I="data/ui/2kimages/main/3dicons/icon_malt.png" />
+          <T ID="1010315" I="data/ui/2kimages/main/3dicons/icon_working_cloth.png" />
+          <T ID="1010300" I="data/ui/2kimages/main/3dicons/icon_dynamite.png" />
+          <T ID="1010319" I="data/ui/2kimages/main/3dicons/icon_glass.png" />
+          <T ID="1010320" I="data/ui/2kimages/main/3dicons/icon_inlay.png" />
+          <T ID="1010321" I="data/ui/2kimages/main/3dicons/icon_carbon_filament.png" />
+          <T ID="1010323" I="data/ui/2kimages/main/3dicons/icon_high_wheeler.png" />
+          <T ID="1010324" I="data/ui/2kimages/main/3dicons/icon_pocket_watch.png" />
+          <T ID="1010325" I="data/ui/2kimages/main/3dicons/icon_fur_coats.png" />
+          <T ID="1010326" I="data/ui/2kimages/main/3dicons/icon_phonographs.png" />
+          <T ID="1010327" I="data/ui/2kimages/main/3dicons/icon_gold.png" />
+          <T ID="1010328" I="data/ui/2kimages/main/3dicons/icon_jewelry.png" />
+          <T ID="101250" I="data/ui/2kimages/main/3dicons/icon_glasses.png" />
+          <T ID="1010329" I="data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png" />
+          <T ID="1010330" I="data/ui/2kimages/main/3dicons/icon_tobacco.png" />
+          <T ID="1010331" I="data/ui/2kimages/main/3dicons/icon_cotton.png" />
+          <T ID="1010332" I="data/ui/2kimages/main/3dicons/icon_cocoa.png" />
+          <T ID="1010333" I="data/ui/2kimages/main/3dicons/icon_caoutchouc.png" />
+          <T ID="1010266" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+          <T ID="101251" I="data/ui/2kimages/main/3dicons/icon_coffee_beans.png" />
+          <T ID="101263" I="data/ui/2kimages/main/3dicons/icon_banana.png" />
+          <T ID="1010263" I="data/ui/2kimages/main/3dicons/icon_meat_raw.png" />
+          <T ID="101270" I="data/ui/2kimages/main/3dicons/icon_corn.png" />
+          <T ID="101272" I="data/ui/2kimages/main/3dicons/icon_alpaca_wool.png" />
+          <T ID="1010342" I="data/ui/2kimages/main/3dicons/icon_cigars.png" />
+          <T ID="1010339" I="data/ui/2kimages/main/3dicons/icon_pearls.png" />
+          <T ID="101262" I="data/ui/2kimages/main/3dicons/icon_fishoil.png" />
+          <T ID="1010310" I="data/ui/2kimages/main/3dicons/icon_niter.png" />
+          <T ID="100451" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+          <T ID="1010288" I="data/ui/2kimages/main/3dicons/icon_sail.png" />
+          <T ID="1010318" I="data/ui/2kimages/main/3dicons/icon_cotton_fur.png" />
+          <T ID="100416" I="data/ui/2kimages/main/3dicons/icon_clay.png" />
+          <T ID="1010283" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+          <T ID="101415" I="data/ui/2kimages/main/3dicons/icon_felt.png" />
+          <T ID="101273" I="data/ui/2kimages/main/3dicons/icon_bowler_hat.png" />
+          <T ID="1010340" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
+          <T ID="1010341" I="data/ui/2kimages/main/3dicons/icon_chocolate.png" />
+          <T ID="101252" I="data/ui/2kimages/main/3dicons/icon_coffe_cup.png" />
+          <T ID="101264" I="data/ui/2kimages/main/3dicons/icon_fried_bananas.png" />
+          <T ID="101271" I="data/ui/2kimages/main/3dicons/icon_burrito.png" />
+          <T ID="101331" I="data/ui/2kimages/main/3dicons/icon_oil.png" />
+          <T ID="1010317" I="data/ui/2kimages/main/3dicons/icon_salt.png" />
+          <T ID="101266" I="data/ui/2kimages/main/3dicons/icon_poncho.png" />
+          <T ID="1010320" I="data/ui/2kimages/main/3dicons/icon_inlay.png" />
+          <T ID="1010342" I="data/ui/2kimages/main/3dicons/icon_cigars.png" />
+          <T ID="1010311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
+        </B>
+      </ET>
+    </ET>
   </Asset>
-  <Asset ID="142430" Release="Release" RarityType="Common">
-    <Name>HarvestFestivalProductionBuff</Name>
-    <Text ID="142451">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_cereals_2.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType />
-    <FestivalName ID="142451">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_cereals_2.png</Filename>
-      </Icon>
-    </FestivalName>
-    <GenericUpgrades>
-      <Upgrade Category="BuildingUpgrade">
-        <Text ID="2320">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-100%</Value>
-      </Upgrade>
-      <Upgrade Category="FactoryUpgrade">
-        <Text ID="118000">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_options.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+50%</Value>
-      </Upgrade>
-      <Upgrade Category="FactoryUpgrade">
-        <Text ID="20074">
-          <Icon>
-            <Filename>data/ui/2kimages/fpp/icons/icon_plus.png</Filename>
-          </Icon>
-        </Text>
-        <Value></Value>
-        <AdditionalOutputs>
-          <Product>
-            <Text ID="1010257">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/icon_rum_barrel.png</Filename>
-              </Icon>
-            </Text>
-            <Value>8 / 1</Value>
-          </Product>
-          <Product>
-            <Text ID="120016">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/icon_champagne.png</Filename>
-              </Icon>
-            </Text>
-            <Value>9 / 1</Value>
-          </Product>
-          <Product>
-            <Text ID="1010259">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/icon_cigars.png</Filename>
-              </Icon>
-            </Text>
-            <Value>10 / 1</Value>
-          </Product>
-          <Product>
-            <Text ID="1010258">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/icon_chocolate.png</Filename>
-              </Icon>
-            </Text>
-            <Value>11 / 1</Value>
-          </Product>
-        </AdditionalOutputs>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="20112">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_cereals_2.png</Filename>
-      </Icon>
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="190865">
-          <Icon />
-        </Text>
-        <Buildings>
-          <Text ID="1010262">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_cereals_2.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010264">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_hops.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010265">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_potatoes.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100655">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_grapes.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100654">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_pepper.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010329">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010330">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_tobacco.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010331">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_cotton.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010332">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_cocoa.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010333">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_caoutchouc.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101251">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_coffee_beans.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101263">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_banana.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101270">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_corn.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
+  <Asset ID="142451" RV="Release" RT="Common">
+    <N>HarvestFestivalResidencesBuff</N>
+    <T ID="142451" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="142451" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+    <GU>
+      <U V="+10" C="ResidenceUpgrade">
+        <T ID="12314" I="data/ui/2kimages/main/icons/icon_happy.png" />
+      </U>
+      <U V="+10%" C="ResidenceUpgrade">
+        <T ID="12677" I="data/ui/2kimages/main/icons/icon_credits.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="20112" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+    <ET>
+      <ET>
+        <T ID="190762" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010347" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+        </B>
+      </ET>
+    </ET>
   </Asset>
-  <Asset ID="111832" Release="Update 03" RarityType="Common">
-    <Name>AnarchyFestivalProductionBuff</Name>
-    <Text ID="111831">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_anarchist.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType />
-    <FestivalName ID="111831">
-      <Icon>
-        <Filename>data/ui/2kimages/main/icons/icon_warning.png</Filename>
-      </Icon>
-    </FestivalName>
-    <GenericUpgrades>
-      <Upgrade Category="BuildingUpgrade">
-        <Text ID="2320">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-10%</Value>
-      </Upgrade>
-      <Upgrade Category="FactoryUpgrade">
-        <Text ID="118000">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_options.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+20%</Value>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="111837">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_anarchist.png</Filename>
-      </Icon>
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="6000018">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010262">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_cereals_2.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010263">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_meat_raw.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010264">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_hops.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010265">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_potatoes.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010266">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_wood_log.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010267">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_wool.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010269">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_pigs.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010558">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_fur.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100655">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_grapes.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100654">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_pepper.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010278">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_fish.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010310">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_niter.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010560">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_quartz_sand.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010280">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010281">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_soap_2.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100451">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010283">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010284">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_sewing_machine.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010286">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_light_bulb.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010285">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010288">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_sail.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010289">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_chassis.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100416">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_clay.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010291">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_bread.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010292">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_beer.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010293">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_goulash_01.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010295">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_canned_goulash.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010294">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_schnapps_4.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010316">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_meat_sausage.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100659">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_champagne.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010296">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010297">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_steel.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010298">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_coal_burn.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010299">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_weapons.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010301">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_advanced_weaponry.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010302">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_steam_machine.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010303">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_steam_carriage.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010282">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_brass.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101331">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_oil.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010304">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_coal_2.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010305">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_iron.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010307">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_tin_ore.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010308">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_copper.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010309">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_cement.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010311">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_gold_ore.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010312">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_tallow.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010313">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_flour.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010314">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_malt.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010315">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_working_cloth.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010300">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_dynamite.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010319">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_glass.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010320">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_inlay.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010321">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_carbon_filament.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010323">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_high_wheeler.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010324">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_pocket_watch.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010325">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_fur_coats.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010326">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_phonographs.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010327">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_gold.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010328">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_jewelry.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101250">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_glasses.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010329">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010330">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_tobacco.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010331">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_cotton.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010332">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_cocoa.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010333">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_caoutchouc.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010266">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_wood_log.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101251">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_coffee_beans.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101263">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_banana.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010263">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_meat_raw.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101270">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_corn.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101272">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_alpaca_wool.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010342">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_cigars.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010339">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_pearls.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101262">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_fishoil.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010310">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_niter.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100451">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010288">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_sail.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010318">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_cotton_fur.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100416">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_clay.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010283">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101415">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_felt.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101273">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_bowler_hat.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010340">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_rum_barrel.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010341">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_chocolate.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101252">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_coffe_cup.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101264">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_fried_bananas.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101271">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_burrito.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101331">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_oil.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010317">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_salt.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101266">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_poncho.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010320">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_inlay.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010342">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_cigars.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010311">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_gold_ore.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
+  <Asset ID="142430" RV="Release" RT="Common">
+    <N>HarvestFestivalProductionBuff</N>
+    <T ID="142451" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="142451" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+    <GU>
+      <U V="-100%" C="BuildingUpgrade">
+        <T ID="2320" I="data/ui/2kimages/main/icons/icon_credits.png" />
+      </U>
+      <U V="+50%" C="FactoryUpgrade">
+        <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+      </U>
+      <U V="" C="FactoryUpgrade">
+        <T ID="20074" I="data/ui/2kimages/fpp/icons/icon_plus.png" />
+        <AO>
+          <AO V="8 / 1">
+            <T ID="1010257" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
+          </AO>
+          <AO V="9 / 1">
+            <T ID="120016" I="data/ui/2kimages/main/3dicons/icon_champagne.png" />
+          </AO>
+          <AO V="10 / 1">
+            <T ID="1010259" I="data/ui/2kimages/main/3dicons/icon_cigars.png" />
+          </AO>
+          <AO V="11 / 1">
+            <T ID="1010258" I="data/ui/2kimages/main/3dicons/icon_chocolate.png" />
+          </AO>
+        </AO>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="20112" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+    <ET>
+      <ET>
+        <T ID="190865" />
+        <B>
+          <T ID="1010262" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+          <T ID="1010264" I="data/ui/2kimages/main/3dicons/icon_hops.png" />
+          <T ID="1010265" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
+          <T ID="100655" I="data/ui/2kimages/main/3dicons/icon_grapes.png" />
+          <T ID="100654" I="data/ui/2kimages/main/3dicons/icon_pepper.png" />
+          <T ID="1010329" I="data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png" />
+          <T ID="1010330" I="data/ui/2kimages/main/3dicons/icon_tobacco.png" />
+          <T ID="1010331" I="data/ui/2kimages/main/3dicons/icon_cotton.png" />
+          <T ID="1010332" I="data/ui/2kimages/main/3dicons/icon_cocoa.png" />
+          <T ID="1010333" I="data/ui/2kimages/main/3dicons/icon_caoutchouc.png" />
+          <T ID="101251" I="data/ui/2kimages/main/3dicons/icon_coffee_beans.png" />
+          <T ID="101263" I="data/ui/2kimages/main/3dicons/icon_banana.png" />
+          <T ID="101270" I="data/ui/2kimages/main/3dicons/icon_corn.png" />
+        </B>
+      </ET>
+    </ET>
   </Asset>
 </FestivalBuff>

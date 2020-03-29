@@ -7,15 +7,16 @@ namespace AssetViewer.Data {
   [Serializable]
   [DesignerCategory("code")]
   [XmlType(AnonymousType = true)]
-  [XmlRoot(Namespace = "", ElementName = "Status", IsNullable = false)]
+  [XmlRoot(Namespace = "", ElementName = "S", IsNullable = false)]
   public class TourismStatus {
 
     #region Properties
-
+    [XmlElement("R")]
     public Description Requirement { get; set; }
+    [XmlElement("T")]
     public Description Text { get; set; }
 
-    [XmlAttribute]
+    [XmlAttribute("P")]
     public string Pool { get; set; }
 
     #endregion Properties

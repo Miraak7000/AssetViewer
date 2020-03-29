@@ -1,5 +1,5 @@
 ﻿using AssetViewer.Data.Filters;
-using AssetViewer.Templates;
+using AssetViewer.Data;
 
 namespace AssetViewer.Controls {
 
