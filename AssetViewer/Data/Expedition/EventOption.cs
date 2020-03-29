@@ -10,18 +10,21 @@ namespace AssetViewer.Data {
   [XmlType(AnonymousType = true)]
   public class EventOption {
 
-    #region Properties
+    #region Public Properties
 
+    [XmlElement("T")]
     public Description Text { get; set; }
 
     [XmlAttribute]
     public string ID { get; set; }
 
+    [XmlElement("OA")]
     public Description OptionAttribute { get; set; }
 
-    [XmlArrayItem("Item", IsNullable = false)]
+    [XmlArray("R")]
+    [XmlArrayItem("I", IsNullable = false)]
     public List<EventOptionRequirement> Requirements { get; set; }
 
-    #endregion Properties
+    #endregion Public Properties
   }
 }

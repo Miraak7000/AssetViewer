@@ -1,3646 +1,1703 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ItemSet>
-  <Asset ID="191131" Release="Release" RarityType="Common">
-    <Name>vikings</Name>
-    <Text ID="191131">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_museum_viking_valkyrie_helmet.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="Museum">
-      <Text ID="2351">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_museum.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade>
-        <Text ID="2333">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/ship_info/icon_hitpoints.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+5%</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="2334">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+3%</Value>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="15376">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="191458">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="100437">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100439">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100440">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100442">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100443">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_monitor.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101121">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_commandship.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="102437">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_commandship.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="102420">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_gunboat.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="102421">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_frigatte.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="102419">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_liner.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="102422">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="102423">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_pyphorian_ship_monitor.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="102425">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_pyphorian_battlecruiser.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="102428">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_pyphorian_warship.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="102427">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_royal_liner.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>190540</Part>
-      <Part>190518</Part>
-      <Part>190480</Part>
-      <Part>190493</Part>
-      <Part>190516</Part>
-      <Part>190470</Part>
-    </SetParts>
+  <Asset ID="193403" RV="Update 04" RT="Common">
+    <N>luminescent creatures</N>
+    <T ID="193403" I="data/ui/2kimages/main/3dicons/animals/icon_glowfish_03.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Zoo">
+      <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+    </A>
+    <ISS>
+      <U V="+3" C="CultureUpgrade">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="22238" />
+    <ET>
+      <ET>
+        <T ID="1010349" I="data/ui/2kimages/main/3dicons/icon_pub.png" />
+        <B>
+          <T ID="1010349" I="data/ui/2kimages/main/3dicons/icon_pub.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="1010352" I="data/ui/2kimages/main/3dicons/icon_cabaret.png" />
+        <B>
+          <T ID="1010352" I="data/ui/2kimages/main/3dicons/icon_cabaret.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="1010355" I="data/ui/2kimages/main/3dicons/icon_club_house.png" />
+        <B>
+          <T ID="1010355" I="data/ui/2kimages/main/3dicons/icon_club_house.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>112816</P>
+      <P>112817</P>
+      <P>113905</P>
+    </SP>
   </Asset>
-  <Asset ID="191114" Release="Release" RarityType="Common">
-    <Name>andes</Name>
-    <Text ID="191114">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/animals/icon_vulture_ver2.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="Zoo">
-      <Text ID="2349">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_zoo.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade Category="ResidenceUpgrade">
-        <Text ID="12676">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_kontor_2da.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+10%</Value>
-      </Upgrade>
-      <Upgrade Category="ResidenceUpgrade">
-        <Text ID="12677">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+10%</Value>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="15361">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="1010343">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010343">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-      <Target>
-        <Text ID="101254">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="101254">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>191113</Part>
-      <Part>191069</Part>
-      <Part>191094</Part>
-    </SetParts>
+  <Asset ID="191114" RV="Release" RT="Common">
+    <N>andes</N>
+    <T ID="191114" I="data/ui/2kimages/main/3dicons/animals/icon_vulture_ver2.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Zoo">
+      <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+    </A>
+    <ISS>
+      <U V="+10%" C="ResidenceUpgrade">
+        <T ID="12676" I="data/ui/2kimages/main/icons/icon_kontor_2da.png" />
+      </U>
+      <U V="+10%" C="ResidenceUpgrade">
+        <T ID="12677" I="data/ui/2kimages/main/icons/icon_credits.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="15361" />
+    <ET>
+      <ET>
+        <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+        <B>
+          <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+        <B>
+          <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>191113</P>
+      <P>191069</P>
+      <P>191094</P>
+    </SP>
   </Asset>
-  <Asset ID="193403" Release="Update 04" RarityType="Common">
-    <Name>luminescent creatures</Name>
-    <Text ID="193403">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/animals/icon_glowfish_03.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="Zoo">
-      <Text ID="2349">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_zoo.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade Category="CultureUpgrade">
-        <Text ID="145011">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+3</Value>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="22238">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="1010349">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_pub.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010349">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_pub.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-      <Target>
-        <Text ID="1010352">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_cabaret.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010352">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_cabaret.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-      <Target>
-        <Text ID="1010355">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_club_house.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010355">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_club_house.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>112816</Part>
-      <Part>112817</Part>
-      <Part>113905</Part>
-    </SetParts>
+  <Asset ID="191131" RV="Release" RT="Common">
+    <N>vikings</N>
+    <T ID="191131" I="data/ui/2kimages/main/3dicons/museum/icon_museum_viking_valkyrie_helmet.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Museum">
+      <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    </A>
+    <ISS>
+      <U V="+3%">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+5%">
+        <T ID="2333" I="data/ui/2kimages/main/icons/ship_info/icon_hitpoints.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="15376" />
+    <ET>
+      <ET>
+        <T ID="191458" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="100437" I="data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png" />
+          <T ID="100439" I="data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png" />
+          <T ID="100440" I="data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png" />
+          <T ID="100442" I="data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png" />
+          <T ID="100443" I="data/ui/2kimages/main/3dicons/ships/icon_ship_monitor.png" />
+          <T ID="101121" I="data/ui/2kimages/main/3dicons/ships/icon_ship_commandship.png" />
+          <T ID="102437" I="data/ui/2kimages/main/3dicons/ships/icon_ship_commandship.png" />
+          <T ID="102420" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_gunboat.png" />
+          <T ID="102421" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_frigatte.png" />
+          <T ID="102419" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_liner.png" />
+          <T ID="102422" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png" />
+          <T ID="102423" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_ship_monitor.png" />
+          <T ID="102425" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_battlecruiser.png" />
+          <T ID="102428" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_warship.png" />
+          <T ID="102427" I="data/ui/2kimages/main/3dicons/ships/icon_royal_liner.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>190540</P>
+      <P>190518</P>
+      <P>190480</P>
+      <P>190493</P>
+      <P>190516</P>
+      <P>190470</P>
+    </SP>
   </Asset>
-  <Asset ID="191115" Release="Release" RarityType="Common">
-    <Name>boreal forests</Name>
-    <Text ID="191115">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/animals/icon_moose.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="Zoo">
-      <Text ID="2349">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_zoo.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade Category="ResidenceUpgrade">
-        <Text ID="21386">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_patrol.png</Filename>
-          </Icon>
-        </Text>
-        <Value></Value>
-        <Additionals>
-          <Upgrade>
-            <Text ID="1010200">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/icon_fish.png</Filename>
-              </Icon>
-            </Text>
-            <Value>-5%</Value>
-          </Upgrade>
-          <Upgrade>
-            <Text ID="1010213">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/icon_bread.png</Filename>
-              </Icon>
-            </Text>
-            <Value>-5%</Value>
-          </Upgrade>
-          <Upgrade>
-            <Text ID="1010215">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/icon_goulash_01.png</Filename>
-              </Icon>
-            </Text>
-            <Value>-5%</Value>
-          </Upgrade>
-          <Upgrade>
-            <Text ID="1010217">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/icon_canned_goulash.png</Filename>
-              </Icon>
-            </Text>
-            <Value>-5%</Value>
-          </Upgrade>
-          <Upgrade>
-            <Text ID="1010238">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/icon_meat_sausage.png</Filename>
-              </Icon>
-            </Text>
-            <Value>-5%</Value>
-          </Upgrade>
-          <Upgrade>
-            <Text ID="1010258">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/icon_chocolate.png</Filename>
-              </Icon>
-            </Text>
-            <Value>-5%</Value>
-          </Upgrade>
-          <Upgrade>
-            <Text ID="120033">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/icon_fried_bananas.png</Filename>
-              </Icon>
-            </Text>
-            <Value>-5%</Value>
-          </Upgrade>
-          <Upgrade>
-            <Text ID="120035">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/icon_burrito.png</Filename>
-              </Icon>
-            </Text>
-            <Value>-5%</Value>
-          </Upgrade>
-        </Additionals>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="15362">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="190762">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010343">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010344">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010345">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010346">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010347">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101254">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101255">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>191072</Part>
-      <Part>191052</Part>
-      <Part>191083</Part>
-    </SetParts>
+  <Asset ID="191119" RV="Release" RT="Common">
+    <N>arctic</N>
+    <T ID="191119" I="data/ui/2kimages/main/3dicons/animals/icon_polar_bear.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Zoo">
+      <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+    </A>
+    <ISS>
+      <U V="+25%" C="FactoryUpgrade">
+        <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+      </U>
+      <U V="-25%" C="BuildingUpgrade">
+        <T ID="2320" I="data/ui/2kimages/main/icons/icon_credits.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="15366" />
+    <ET>
+      <ET>
+        <T ID="1010325" I="data/ui/2kimages/main/3dicons/icon_fur_coats.png" />
+        <B>
+          <T ID="1010325" I="data/ui/2kimages/main/3dicons/icon_fur_coats.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="1010315" I="data/ui/2kimages/main/3dicons/icon_working_cloth.png" />
+        <B>
+          <T ID="1010315" I="data/ui/2kimages/main/3dicons/icon_working_cloth.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="101273" I="data/ui/2kimages/main/3dicons/icon_bowler_hat.png" />
+        <B>
+          <T ID="101273" I="data/ui/2kimages/main/3dicons/icon_bowler_hat.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="101266" I="data/ui/2kimages/main/3dicons/icon_poncho.png" />
+        <B>
+          <T ID="101266" I="data/ui/2kimages/main/3dicons/icon_poncho.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>115469</P>
+      <P>191084</P>
+      <P>190448</P>
+      <P>116040</P>
+      <P>115470</P>
+      <P>115273</P>
+    </SP>
   </Asset>
-  <Asset ID="191125" Release="Release" RarityType="Common">
-    <Name>jurassic</Name>
-    <Text ID="191125">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_museum_t_rex.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="Museum">
-      <Text ID="2351">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_museum.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade Category="ResidenceUpgrade">
-        <Text ID="12314">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_happy.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+2</Value>
-      </Upgrade>
-      <Upgrade Category="ResidenceUpgrade">
-        <Text ID="12677">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+5%</Value>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="15377">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="190762">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010343">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010344">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010345">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010346">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010347">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101254">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101255">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>190483</Part>
-      <Part>190549</Part>
-      <Part>190503</Part>
-      <Part>190505</Part>
-      <Part>190504</Part>
-      <Part>190502</Part>
-    </SetParts>
+  <Asset ID="191115" RV="Release" RT="Common">
+    <N>boreal forests</N>
+    <T ID="191115" I="data/ui/2kimages/main/3dicons/animals/icon_moose.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Zoo">
+      <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+    </A>
+    <ISS>
+      <U V="" C="ResidenceUpgrade">
+        <T ID="21386" I="data/ui/2kimages/main/icons/icon_patrol.png" />
+        <A>
+          <U V="-5%">
+            <T ID="1010200" I="data/ui/2kimages/main/3dicons/icon_fish.png" />
+          </U>
+          <U V="-5%">
+            <T ID="1010213" I="data/ui/2kimages/main/3dicons/icon_bread.png" />
+          </U>
+          <U V="-5%">
+            <T ID="1010217" I="data/ui/2kimages/main/3dicons/icon_canned_goulash.png" />
+          </U>
+          <U V="-5%">
+            <T ID="1010238" I="data/ui/2kimages/main/3dicons/icon_meat_sausage.png" />
+          </U>
+          <U V="-5%">
+            <T ID="1010258" I="data/ui/2kimages/main/3dicons/icon_chocolate.png" />
+          </U>
+          <U V="-5%">
+            <T ID="120033" I="data/ui/2kimages/main/3dicons/icon_fried_bananas.png" />
+          </U>
+          <U V="-5%">
+            <T ID="120035" I="data/ui/2kimages/main/3dicons/icon_burrito.png" />
+          </U>
+        </A>
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="15362" />
+    <ET>
+      <ET>
+        <T ID="190762" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010347" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>191072</P>
+      <P>191052</P>
+      <P>191083</P>
+    </SP>
   </Asset>
-  <Asset ID="191119" Release="Release" RarityType="Common">
-    <Name>arctic</Name>
-    <Text ID="191119">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/animals/icon_polar_bear.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="Zoo">
-      <Text ID="2349">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_zoo.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade Category="FactoryUpgrade">
-        <Text ID="118000">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_options.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+25%</Value>
-      </Upgrade>
-      <Upgrade Category="BuildingUpgrade">
-        <Text ID="2320">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-25%</Value>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="15366">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="1010325">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_fur_coats.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010325">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_fur_coats.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-      <Target>
-        <Text ID="1010315">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_working_cloth.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010315">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_working_cloth.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-      <Target>
-        <Text ID="101273">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_bowler_hat.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="101273">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_bowler_hat.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-      <Target>
-        <Text ID="101266">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_poncho.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="101266">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_poncho.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>115469</Part>
-      <Part>191084</Part>
-      <Part>190448</Part>
-      <Part>116040</Part>
-      <Part>115470</Part>
-      <Part>115273</Part>
-    </SetParts>
+  <Asset ID="191125" RV="Release" RT="Common">
+    <N>jurassic</N>
+    <T ID="191125" I="data/ui/2kimages/main/3dicons/museum/icon_museum_t_rex.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Museum">
+      <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    </A>
+    <ISS>
+      <U V="+2" C="ResidenceUpgrade">
+        <T ID="12314" I="data/ui/2kimages/main/icons/icon_happy.png" />
+      </U>
+      <U V="+5%" C="ResidenceUpgrade">
+        <T ID="12677" I="data/ui/2kimages/main/icons/icon_credits.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="15377" />
+    <ET>
+      <ET>
+        <T ID="190762" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010347" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>190483</P>
+      <P>190549</P>
+      <P>190503</P>
+      <P>190505</P>
+      <P>190504</P>
+      <P>190502</P>
+    </SP>
   </Asset>
-  <Asset ID="193773" Release="Update 06" RarityType="Common">
-    <Name>tundra</Name>
-    <Text ID="193773">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/animals/icon_reindeer.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="Zoo">
-      <Text ID="2349">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_zoo.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade Category="VisitorHarborUpgrade">
-        <Text ID="20603">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_add_slot_guild.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+5%</Value>
-      </Upgrade>
-      <Upgrade Category="CultureUpgrade">
-        <Text ID="145011">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+100</Value>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="22675">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="191563">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_visitor_harbour.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="100429">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_visitor_harbour.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100429">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_visitor_harbour.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>191086</Part>
-      <Part>191076</Part>
-      <Part>191075</Part>
-    </SetParts>
+  <Asset ID="191116" RV="Release" RT="Common">
+    <N>extinct animals</N>
+    <T ID="191116" I="data/ui/2kimages/main/3dicons/animals/icon_giant_deer.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Zoo">
+      <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+    </A>
+    <ISS>
+      <U V="+5%" C="CultureUpgrade">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="15363" />
+    <ET>
+      <ET>
+        <T ID="191561" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+        <B>
+          <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+          <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>191107</P>
+      <P>191105</P>
+      <P>191104</P>
+    </SP>
   </Asset>
-  <Asset ID="191116" Release="Release" RarityType="Common">
-    <Name>extinct animals</Name>
-    <Text ID="191116">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/animals/icon_giant_deer.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="Zoo">
-      <Text ID="2349">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_zoo.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade Category="CultureUpgrade">
-        <Text ID="145011">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+5%</Value>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="15363">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="191561">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_zoo.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="2349">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_zoo.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="2349">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_zoo.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>191107</Part>
-      <Part>191105</Part>
-      <Part>191104</Part>
-    </SetParts>
+  <Asset ID="191123" RV="Release" RT="Common">
+    <N>celts</N>
+    <T ID="191123" I="data/ui/2kimages/main/3dicons/museum/icon_museum_celts_stonehenge.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Museum">
+      <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    </A>
+    <ISS>
+      <U V="+2" C="CultureUpgrade">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="15378" />
+    <ET>
+      <ET>
+        <T ID="190778" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+        <B>
+          <T ID="1010266" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+          <T ID="1010266" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="1010558" I="data/ui/2kimages/main/3dicons/icon_fur.png" />
+        <B>
+          <T ID="1010558" I="data/ui/2kimages/main/3dicons/icon_fur.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="190886" />
+        <B>
+          <T ID="1010310" I="data/ui/2kimages/main/3dicons/icon_niter.png" />
+          <T ID="1010560" I="data/ui/2kimages/main/3dicons/icon_quartz_sand.png" />
+          <T ID="100416" I="data/ui/2kimages/main/3dicons/icon_clay.png" />
+          <T ID="1010309" I="data/ui/2kimages/main/3dicons/icon_cement.png" />
+          <T ID="1010310" I="data/ui/2kimages/main/3dicons/icon_niter.png" />
+          <T ID="100416" I="data/ui/2kimages/main/3dicons/icon_clay.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>190539</P>
+      <P>190519</P>
+      <P>190515</P>
+      <P>190517</P>
+      <P>190552</P>
+      <P>190514</P>
+    </SP>
   </Asset>
-  <Asset ID="191123" Release="Release" RarityType="Common">
-    <Name>celts</Name>
-    <Text ID="191123">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_museum_celts_stonehenge.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="Museum">
-      <Text ID="2351">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_museum.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade Category="CultureUpgrade">
-        <Text ID="145011">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+2</Value>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="15378">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="190778">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_wood_log.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010266">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_wood_log.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010266">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_wood_log.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-      <Target>
-        <Text ID="1010558">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_fur.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010558">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_fur.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-      <Target>
-        <Text ID="190886">
-          <Icon />
-        </Text>
-        <Buildings>
-          <Text ID="1010310">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_niter.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010560">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_quartz_sand.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100416">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_clay.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010309">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_cement.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010310">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_niter.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100416">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_clay.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>190539</Part>
-      <Part>190519</Part>
-      <Part>190515</Part>
-      <Part>190517</Part>
-      <Part>190552</Part>
-      <Part>190514</Part>
-    </SetParts>
+  <Asset ID="193773" RV="Update 06" RT="Common">
+    <N>tundra</N>
+    <T ID="193773" I="data/ui/2kimages/main/3dicons/animals/icon_reindeer.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Zoo">
+      <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+    </A>
+    <ISS>
+      <U V="+5%" C="VisitorHarborUpgrade">
+        <T ID="20603" I="data/ui/2kimages/main/icons/icon_add_slot_guild.png" />
+      </U>
+      <U V="+100" C="CultureUpgrade">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="22675" />
+    <ET>
+      <ET>
+        <T ID="191563" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+        <B>
+          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>191086</P>
+      <P>191076</P>
+      <P>191075</P>
+    </SP>
   </Asset>
-  <Asset ID="191130" Release="Release" RarityType="Common">
-    <Name>roman</Name>
-    <Text ID="191130">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_coin_common.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="Museum">
-      <Text ID="2351">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_museum.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade Category="ResidenceUpgrade">
-        <Text ID="12677">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+5%</Value>
-      </Upgrade>
-      <Upgrade Category="IncidentInfectableUpgrade">
-        <Text ID="12225">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_incident_fire.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-10%</Value>
-      </Upgrade>
-      <Upgrade Category="IncidentInfectableUpgrade">
-        <Text ID="12226">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_incident_diseases.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-10%</Value>
-      </Upgrade>
-      <Upgrade Category="IncidentInfectableUpgrade">
-        <Text ID="12227">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_incident_riot.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-10%</Value>
-      </Upgrade>
-      <Upgrade Category="IncidentInfectableUpgrade">
-        <Text ID="21489">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_bomb.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-10%</Value>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="15360">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="190762">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010343">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010344">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010345">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010346">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010347">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101254">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101255">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>190512</Part>
-      <Part>190510</Part>
-      <Part>190511</Part>
-    </SetParts>
+  <Asset ID="191130" RV="Release" RT="Common">
+    <N>roman</N>
+    <T ID="191130" I="data/ui/2kimages/main/3dicons/museum/icon_coin_common.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Museum">
+      <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    </A>
+    <ISS>
+      <U V="+5%" C="ResidenceUpgrade">
+        <T ID="12677" I="data/ui/2kimages/main/icons/icon_credits.png" />
+      </U>
+      <U V="-10%" C="IncidentInfectableUpgrade">
+        <T ID="12225" I="data/ui/2kimages/main/icons/icon_incident_fire.png" />
+      </U>
+      <U V="-10%" C="IncidentInfectableUpgrade">
+        <T ID="12226" I="data/ui/2kimages/main/icons/icon_incident_diseases.png" />
+      </U>
+      <U V="-10%" C="IncidentInfectableUpgrade">
+        <T ID="12227" I="data/ui/2kimages/main/icons/icon_incident_riot.png" />
+      </U>
+      <U V="-10%" C="IncidentInfectableUpgrade">
+        <T ID="21489" I="data/ui/2kimages/main/icons/icon_bomb.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="15360" />
+    <ET>
+      <ET>
+        <T ID="190762" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010347" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>190512</P>
+      <P>190510</P>
+      <P>190511</P>
+    </SP>
   </Asset>
-  <Asset ID="193657" Release="Update 05" RarityType="Common">
-    <Name>marshes</Name>
-    <Text ID="193657">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/plants/icon_lilies.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="BotanicGarden">
-      <Text ID="110935">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_botanic_garden.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade Category="ResidenceUpgrade">
-        <Text ID="12314">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_happy.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+2</Value>
-      </Upgrade>
-      <Upgrade Category="IncidentInfectableUpgrade">
-        <Text ID="12226">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_incident_diseases.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-50%</Value>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="22332">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="190762">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010343">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010344">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010345">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010346">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010347">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101254">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101255">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>111112</Part>
-      <Part>111111</Part>
-      <Part>112733</Part>
-    </SetParts>
+  <Asset ID="193405" RV="Update 04" RT="Common">
+    <N>atlantean</N>
+    <T ID="193405" I="data/ui/2kimages/main/3dicons/museum/icon_temple_of_posseidon.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Museum">
+      <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    </A>
+    <ISS>
+      <U V="">
+        <T ID="22227" I="data/ui/2kimages/main/icons/icon_favourite.png" />
+        <A>
+          <U V="+5">
+            <T ID="118005" />
+          </U>
+          <U V="+2">
+            <T ID="118006" />
+          </U>
+        </A>
+      </U>
+      <U>
+        <T ID="22232" I="data/ui/2kimages/main/icons/icon_museum_2d.png" />
+        <A>
+          <U V="+5">
+            <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+          </U>
+        </A>
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="22240" />
+    <ET>
+      <ET>
+        <T ID="112084" I="data/ui/2kimages/main/3dicons/ships/icon_ship_diving_vessel.png" />
+        <B>
+          <T ID="112084" I="data/ui/2kimages/main/3dicons/ships/icon_ship_diving_vessel.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>112478</P>
+      <P>112483</P>
+      <P>112484</P>
+      <P>112485</P>
+      <P>112821</P>
+      <P>112824</P>
+    </SP>
   </Asset>
-  <Asset ID="191127" Release="Release" RarityType="Common">
-    <Name>nazcan</Name>
-    <Text ID="191127">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_mummy_nazcan.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="Museum">
-      <Text ID="2351">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_museum.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade Category="VisitorHarborUpgrade">
-        <Text ID="20603">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_add_slot_guild.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+5%</Value>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="15371">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="191563">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_visitor_harbour.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="100429">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_visitor_harbour.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100429">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_visitor_harbour.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>190282</Part>
-      <Part>190473</Part>
-      <Part>190496</Part>
-    </SetParts>
+  <Asset ID="191122" RV="Release" RT="Common">
+    <N>marine predators</N>
+    <T ID="191122" I="data/ui/2kimages/main/3dicons/animals/icon_swordfish.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Zoo">
+      <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+    </A>
+    <ISS>
+      <U V="+5%" C="FactoryUpgrade">
+        <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+      </U>
+      <U V="-10%" C="BuildingUpgrade">
+        <T ID="2320" I="data/ui/2kimages/main/icons/icon_credits.png" />
+      </U>
+      <U V="-10%" C="BuildingUpgrade">
+        <T ID="12337" I="data/ui/2kimages/main/icons/icon_options.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="15364" />
+    <ET>
+      <ET>
+        <T ID="190779" I="data/ui/2kimages/main/3dicons/icon_fish.png" />
+        <B>
+          <T ID="1010278" I="data/ui/2kimages/main/3dicons/icon_fish.png" />
+          <T ID="101262" I="data/ui/2kimages/main/3dicons/icon_fishoil.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="1010339" I="data/ui/2kimages/main/3dicons/icon_pearls.png" />
+        <B>
+          <T ID="1010339" I="data/ui/2kimages/main/3dicons/icon_pearls.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="101262" I="data/ui/2kimages/main/3dicons/icon_fishoil.png" />
+        <B>
+          <T ID="101262" I="data/ui/2kimages/main/3dicons/icon_fishoil.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>190450</P>
+      <P>191087</P>
+      <P>191099</P>
+    </SP>
   </Asset>
-  <Asset ID="191122" Release="Release" RarityType="Common">
-    <Name>marine predators</Name>
-    <Text ID="191122">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/animals/icon_swordfish.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="Zoo">
-      <Text ID="2349">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_zoo.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade Category="FactoryUpgrade">
-        <Text ID="118000">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_options.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+5%</Value>
-      </Upgrade>
-      <Upgrade Category="BuildingUpgrade">
-        <Text ID="2320">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-10%</Value>
-      </Upgrade>
-      <Upgrade Category="BuildingUpgrade">
-        <Text ID="12337">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_options.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-10%</Value>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="15364">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="190779">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_fish.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010278">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_fish.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101262">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_fishoil.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-      <Target>
-        <Text ID="1010339">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_pearls.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010339">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_pearls.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-      <Target>
-        <Text ID="101262">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_fishoil.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="101262">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_fishoil.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>190450</Part>
-      <Part>191087</Part>
-      <Part>191099</Part>
-    </SetParts>
+  <Asset ID="191127" RV="Release" RT="Common">
+    <N>nazcan</N>
+    <T ID="191127" I="data/ui/2kimages/main/3dicons/museum/icon_mummy_nazcan.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Museum">
+      <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    </A>
+    <ISS>
+      <U V="+5%" C="VisitorHarborUpgrade">
+        <T ID="20603" I="data/ui/2kimages/main/icons/icon_add_slot_guild.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="15371" />
+    <ET>
+      <ET>
+        <T ID="191563" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+        <B>
+          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>190282</P>
+      <P>190473</P>
+      <P>190496</P>
+    </SP>
   </Asset>
-  <Asset ID="193405" Release="Update 04" RarityType="Common">
-    <Name>atlantean</Name>
-    <Text ID="193405">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_temple_of_posseidon.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="Museum">
-      <Text ID="2351">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_museum.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade>
-        <Text ID="22227">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_favourite.png</Filename>
-          </Icon>
-        </Text>
-        <Value></Value>
-        <Additionals>
-          <Upgrade>
-            <Text ID="118005">
-              <Icon />
-            </Text>
-            <Value>+5</Value>
-          </Upgrade>
-          <Upgrade>
-            <Text ID="118006">
-              <Icon />
-            </Text>
-            <Value>+2</Value>
-          </Upgrade>
-        </Additionals>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="22232">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_museum_2d.png</Filename>
-          </Icon>
-        </Text>
-        <Additionals>
-          <Upgrade>
-            <Text ID="2351">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/icon_museum.png</Filename>
-              </Icon>
-            </Text>
-            <Value>+5</Value>
-          </Upgrade>
-        </Additionals>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="22240">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="112084">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_diving_vessel.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="112084">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_diving_vessel.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>112478</Part>
-      <Part>112483</Part>
-      <Part>112484</Part>
-      <Part>112485</Part>
-      <Part>112821</Part>
-      <Part>112824</Part>
-    </SetParts>
+  <Asset ID="193657" RV="Update 05" RT="Common">
+    <N>marshes</N>
+    <T ID="193657" I="data/ui/2kimages/main/3dicons/plants/icon_lilies.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="BotanicGarden">
+      <T ID="110935" I="data/ui/2kimages/main/3dicons/icon_botanic_garden.png" />
+    </A>
+    <ISS>
+      <U V="+2" C="ResidenceUpgrade">
+        <T ID="12314" I="data/ui/2kimages/main/icons/icon_happy.png" />
+      </U>
+      <U V="-50%" C="IncidentInfectableUpgrade">
+        <T ID="12226" I="data/ui/2kimages/main/icons/icon_incident_diseases.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="22332" />
+    <ET>
+      <ET>
+        <T ID="190762" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010347" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>111112</P>
+      <P>111111</P>
+      <P>112733</P>
+    </SP>
   </Asset>
-  <Asset ID="191118" Release="Release" RarityType="Common">
-    <Name>amazonia</Name>
-    <Text ID="191118">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/animals/icon_puerto_rican_amazon.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="Zoo">
-      <Text ID="2349">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_zoo.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade Category="CultureUpgrade">
-        <Text ID="145011">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+1</Value>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="15365">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="191501">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010349">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_pub.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010360">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_school.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010365">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_bank.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010359">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_church.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010352">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_cabaret.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010353">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_university.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010355">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_club_house.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101257">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_market.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101258">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_church.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101259">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_box_arena.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101257">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_market.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>191091</Part>
-      <Part>191090</Part>
-      <Part>191080</Part>
-      <Part>190962</Part>
-      <Part>190004</Part>
-      <Part>191092</Part>
-    </SetParts>
+  <Asset ID="193408" RV="Update 04" RT="Common">
+    <N>the empire</N>
+    <T ID="193408" I="data/ui/2kimages/main/3dicons/museum/icon_nadaskys_sword.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Museum">
+      <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    </A>
+    <ISS>
+      <U V="">
+        <T ID="21587" I="data/ui/2kimages/main/icons/ship_info/icon_hitpoints.png">
+          <AI ID="21585" I="data/ui/2kimages/main/icons/icon_happy.png" FS="16" />
+        </T>
+      </U>
+      <U V="+20%">
+        <T ID="17395" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="22242" />
+    <ET>
+      <ET>
+        <T ID="191458" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="100437" I="data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png" />
+          <T ID="100439" I="data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png" />
+          <T ID="100440" I="data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png" />
+          <T ID="100442" I="data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png" />
+          <T ID="100443" I="data/ui/2kimages/main/3dicons/ships/icon_ship_monitor.png" />
+          <T ID="101121" I="data/ui/2kimages/main/3dicons/ships/icon_ship_commandship.png" />
+          <T ID="102437" I="data/ui/2kimages/main/3dicons/ships/icon_ship_commandship.png" />
+          <T ID="102420" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_gunboat.png" />
+          <T ID="102421" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_frigatte.png" />
+          <T ID="102419" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_liner.png" />
+          <T ID="102422" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png" />
+          <T ID="102423" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_ship_monitor.png" />
+          <T ID="102425" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_battlecruiser.png" />
+          <T ID="102428" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_warship.png" />
+          <T ID="102427" I="data/ui/2kimages/main/3dicons/ships/icon_royal_liner.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>112825</P>
+      <P>113472</P>
+      <P>113473</P>
+    </SP>
   </Asset>
-  <Asset ID="193408" Release="Update 04" RarityType="Common">
-    <Name>the empire</Name>
-    <Text ID="193408">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_nadaskys_sword.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="Museum">
-      <Text ID="2351">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_museum.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade>
-        <Text ID="21587">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/ship_info/icon_hitpoints.png</Filename>
-          </Icon>
-          <AdditionalInformation ID="21585" FontStyle="16">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_happy.png</Filename>
-            </Icon>
-          </AdditionalInformation>
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="17395">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/ship_info/icon_damage.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+20%</Value>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="22242">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="191458">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="100437">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100439">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100440">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100442">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100443">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_monitor.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101121">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_commandship.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="102437">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_commandship.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="102420">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_gunboat.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="102421">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_frigatte.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="102419">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_liner.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="102422">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="102423">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_pyphorian_ship_monitor.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="102425">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_pyphorian_battlecruiser.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="102428">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_pyphorian_warship.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="102427">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_royal_liner.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>112825</Part>
-      <Part>113472</Part>
-      <Part>113473</Part>
-    </SetParts>
+  <Asset ID="191118" RV="Release" RT="Common">
+    <N>amazonia</N>
+    <T ID="191118" I="data/ui/2kimages/main/3dicons/animals/icon_puerto_rican_amazon.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Zoo">
+      <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+    </A>
+    <ISS>
+      <U V="+1" C="CultureUpgrade">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="15365" />
+    <ET>
+      <ET>
+        <T ID="191501" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010349" I="data/ui/2kimages/main/3dicons/icon_pub.png" />
+          <T ID="1010360" I="data/ui/2kimages/main/3dicons/icon_school.png" />
+          <T ID="1010365" I="data/ui/2kimages/main/3dicons/icon_bank.png" />
+          <T ID="1010359" I="data/ui/2kimages/main/3dicons/icon_church.png" />
+          <T ID="1010352" I="data/ui/2kimages/main/3dicons/icon_cabaret.png" />
+          <T ID="1010353" I="data/ui/2kimages/main/3dicons/icon_university.png" />
+          <T ID="1010355" I="data/ui/2kimages/main/3dicons/icon_club_house.png" />
+          <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
+          <T ID="101258" I="data/ui/2kimages/main/3dicons/icon_church.png" />
+          <T ID="101259" I="data/ui/2kimages/main/3dicons/icon_box_arena.png" />
+          <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>191091</P>
+      <P>191090</P>
+      <P>191080</P>
+      <P>190962</P>
+      <P>190004</P>
+      <P>191092</P>
+    </SP>
   </Asset>
-  <Asset ID="191129" Release="Release" RarityType="Common">
-    <Name>prehistorical</Name>
-    <Text ID="191129">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_museum_neanderthaler.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="Museum">
-      <Text ID="2351">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_museum.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade Category="FactoryUpgrade">
-        <Text ID="118000">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_options.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+5%</Value>
-      </Upgrade>
-      <Upgrade Category="BuildingUpgrade">
-        <Text ID="12337">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_options.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-5%</Value>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="15372">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="190779">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_fish.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010278">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_fish.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101262">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_fishoil.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-      <Target>
-        <Text ID="190865">
-          <Icon />
-        </Text>
-        <Buildings>
-          <Text ID="1010262">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_cereals_2.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010264">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_hops.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010265">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_potatoes.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100655">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_grapes.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100654">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_pepper.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010329">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010330">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_tobacco.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010331">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_cotton.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010332">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_cocoa.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010333">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_caoutchouc.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101251">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_coffee_beans.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101263">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_banana.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101270">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_corn.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-      <Target>
-        <Text ID="190872">
-          <Icon />
-        </Text>
-        <Buildings>
-          <Text ID="1010263">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_meat_raw.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010267">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_wool.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010269">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_pigs.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010263">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_meat_raw.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101272">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_alpaca_wool.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-      <Target>
-        <Text ID="1010558">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_fur.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010558">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_fur.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>190506</Part>
-      <Part>190507</Part>
-      <Part>190475</Part>
-    </SetParts>
+  <Asset ID="191129" RV="Release" RT="Common">
+    <N>prehistorical</N>
+    <T ID="191129" I="data/ui/2kimages/main/3dicons/museum/icon_museum_neanderthaler.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Museum">
+      <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    </A>
+    <ISS>
+      <U V="+5%" C="FactoryUpgrade">
+        <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+      </U>
+      <U V="-5%" C="BuildingUpgrade">
+        <T ID="12337" I="data/ui/2kimages/main/icons/icon_options.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="15372" />
+    <ET>
+      <ET>
+        <T ID="190779" I="data/ui/2kimages/main/3dicons/icon_fish.png" />
+        <B>
+          <T ID="1010278" I="data/ui/2kimages/main/3dicons/icon_fish.png" />
+          <T ID="101262" I="data/ui/2kimages/main/3dicons/icon_fishoil.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="190865" />
+        <B>
+          <T ID="1010262" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+          <T ID="1010264" I="data/ui/2kimages/main/3dicons/icon_hops.png" />
+          <T ID="1010265" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
+          <T ID="100655" I="data/ui/2kimages/main/3dicons/icon_grapes.png" />
+          <T ID="100654" I="data/ui/2kimages/main/3dicons/icon_pepper.png" />
+          <T ID="1010329" I="data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png" />
+          <T ID="1010330" I="data/ui/2kimages/main/3dicons/icon_tobacco.png" />
+          <T ID="1010331" I="data/ui/2kimages/main/3dicons/icon_cotton.png" />
+          <T ID="1010332" I="data/ui/2kimages/main/3dicons/icon_cocoa.png" />
+          <T ID="1010333" I="data/ui/2kimages/main/3dicons/icon_caoutchouc.png" />
+          <T ID="101251" I="data/ui/2kimages/main/3dicons/icon_coffee_beans.png" />
+          <T ID="101263" I="data/ui/2kimages/main/3dicons/icon_banana.png" />
+          <T ID="101270" I="data/ui/2kimages/main/3dicons/icon_corn.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="190872" />
+        <B>
+          <T ID="1010263" I="data/ui/2kimages/main/3dicons/icon_meat_raw.png" />
+          <T ID="1010267" I="data/ui/2kimages/main/3dicons/icon_wool.png" />
+          <T ID="1010269" I="data/ui/2kimages/main/3dicons/icon_pigs.png" />
+          <T ID="1010263" I="data/ui/2kimages/main/3dicons/icon_meat_raw.png" />
+          <T ID="101272" I="data/ui/2kimages/main/3dicons/icon_alpaca_wool.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="1010558" I="data/ui/2kimages/main/3dicons/icon_fur.png" />
+        <B>
+          <T ID="1010558" I="data/ui/2kimages/main/3dicons/icon_fur.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>190506</P>
+      <P>190507</P>
+      <P>190475</P>
+    </SP>
   </Asset>
-  <Asset ID="191120" Release="Release" RarityType="Common">
-    <Name>india</Name>
-    <Text ID="191120">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/animals/icon_tiger.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="Zoo">
-      <Text ID="2349">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_zoo.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade Category="PassiveTradeGoodGenUpgrade">
-        <Text ID="12920">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_activate_trade.png</Filename>
-          </Icon>
-          <AdditionalInformation ID="-653518958" FontStyle="16">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_trade.png</Filename>
-            </Icon>
-          </AdditionalInformation>
-        </Text>
-        <Value>+100%</Value>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="15367">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="190797">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="190797">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="190797">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>191073</Part>
-      <Part>191506</Part>
-      <Part>191079</Part>
-      <Part>193190</Part>
-      <Part>191088</Part>
-      <Part>191112</Part>
-    </SetParts>
+  <Asset ID="193774" RV="Update 06" RT="Common">
+    <N>inuit</N>
+    <T ID="193774" I="data/ui/2kimages/main/3dicons/specialists/icon_polar_5.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Museum">
+      <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    </A>
+    <ISS>
+      <U V="" C="CultureUpgrade">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+        <A>
+          <U V="+20%">
+            <T ID="191115" I="data/ui/2kimages/main/3dicons/animals/icon_moose.png" />
+          </U>
+          <U V="+20%">
+            <T ID="191119" I="data/ui/2kimages/main/3dicons/animals/icon_polar_bear.png" />
+          </U>
+          <U V="+20%">
+            <T ID="193773" I="data/ui/2kimages/main/3dicons/animals/icon_reindeer.png" />
+          </U>
+          <U V="+20%">
+            <T ID="191131" I="data/ui/2kimages/main/3dicons/museum/icon_museum_viking_valkyrie_helmet.png" />
+          </U>
+          <U V="+20%">
+            <T ID="191123" I="data/ui/2kimages/main/3dicons/museum/icon_museum_celts_stonehenge.png" />
+          </U>
+          <U V="+20%">
+            <T ID="193774" I="data/ui/2kimages/main/3dicons/specialists/icon_polar_5.png" />
+          </U>
+          <U V="+20%">
+            <T ID="193776" I="data/ui/2kimages/main/3dicons/museum/icon_museum_mammoth.png" />
+          </U>
+          <U V="+20%">
+            <T ID="193662" I="data/ui/2kimages/main/3dicons/plants/icon_rocky_mountain_fir.png" />
+          </U>
+        </A>
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="22677" />
+    <ET>
+      <ET>
+        <T ID="193666" I="data/ui/2kimages/main/icons/icon_attractiveness_group.png" />
+        <B>
+          <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+          <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+          <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+          <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+          <T ID="110935" I="data/ui/2kimages/main/3dicons/icon_botanic_garden.png" />
+          <T ID="110935" I="data/ui/2kimages/main/3dicons/icon_botanic_garden.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>115471</P>
+      <P>114796</P>
+      <P>114799</P>
+      <P>115472</P>
+      <P>114798</P>
+      <P>115473</P>
+    </SP>
   </Asset>
-  <Asset ID="191128" Release="Release" RarityType="Common">
-    <Name>pirates</Name>
-    <Text ID="191128">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_museum_sword_pirate_epic.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="Museum">
-      <Text ID="2351">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_museum.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade Category="VehicleUpgrade">
-        <Text ID="2339">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+3%</Value>
-      </Upgrade>
-      <Upgrade Category="VehicleUpgrade">
-        <Text ID="2320">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-5%</Value>
-      </Upgrade>
-      <Upgrade Category="VehicleUpgrade">
-        <Text ID="15262">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-10%</Value>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="15373">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="191458">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="100437">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100439">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100440">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100442">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100443">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_monitor.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101121">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_commandship.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="102437">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_commandship.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="102420">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_gunboat.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="102421">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_frigatte.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="102419">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_liner.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="102422">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="102423">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_pyphorian_ship_monitor.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="102425">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_pyphorian_battlecruiser.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="102428">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_pyphorian_warship.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="102427">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_royal_liner.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>190545</Part>
-      <Part>190551</Part>
-      <Part>190476</Part>
-    </SetParts>
+  <Asset ID="191128" RV="Release" RT="Common">
+    <N>pirates</N>
+    <T ID="191128" I="data/ui/2kimages/main/3dicons/museum/icon_museum_sword_pirate_epic.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Museum">
+      <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    </A>
+    <ISS>
+      <U V="+3%" C="VehicleUpgrade">
+        <T ID="2339" I="data/ui/2kimages/main/icons/icon_forward.png" />
+      </U>
+      <U V="-5%" C="VehicleUpgrade">
+        <T ID="2320" I="data/ui/2kimages/main/icons/icon_credits.png" />
+      </U>
+      <U V="-10%" C="VehicleUpgrade">
+        <T ID="15262" I="data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="15373" />
+    <ET>
+      <ET>
+        <T ID="191458" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="100437" I="data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png" />
+          <T ID="100439" I="data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png" />
+          <T ID="100440" I="data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png" />
+          <T ID="100442" I="data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png" />
+          <T ID="100443" I="data/ui/2kimages/main/3dicons/ships/icon_ship_monitor.png" />
+          <T ID="101121" I="data/ui/2kimages/main/3dicons/ships/icon_ship_commandship.png" />
+          <T ID="102437" I="data/ui/2kimages/main/3dicons/ships/icon_ship_commandship.png" />
+          <T ID="102420" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_gunboat.png" />
+          <T ID="102421" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_frigatte.png" />
+          <T ID="102419" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_liner.png" />
+          <T ID="102422" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png" />
+          <T ID="102423" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_ship_monitor.png" />
+          <T ID="102425" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_battlecruiser.png" />
+          <T ID="102428" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_warship.png" />
+          <T ID="102427" I="data/ui/2kimages/main/3dicons/ships/icon_royal_liner.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>190545</P>
+      <P>190551</P>
+      <P>190476</P>
+    </SP>
   </Asset>
-  <Asset ID="193774" Release="Update 06" RarityType="Common">
-    <Name>inuit</Name>
-    <Text ID="193774">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/specialists/icon_polar_5.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="Museum">
-      <Text ID="2351">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_museum.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade Category="CultureUpgrade">
-        <Text ID="145011">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
-          </Icon>
-        </Text>
-        <Value></Value>
-        <Additionals>
-          <Upgrade>
-            <Text ID="191115">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/animals/icon_moose.png</Filename>
-              </Icon>
-            </Text>
-            <Value>+20%</Value>
-          </Upgrade>
-          <Upgrade>
-            <Text ID="191119">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/animals/icon_polar_bear.png</Filename>
-              </Icon>
-            </Text>
-            <Value>+20%</Value>
-          </Upgrade>
-          <Upgrade>
-            <Text ID="193773">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/animals/icon_reindeer.png</Filename>
-              </Icon>
-            </Text>
-            <Value>+20%</Value>
-          </Upgrade>
-          <Upgrade>
-            <Text ID="191131">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/museum/icon_museum_viking_valkyrie_helmet.png</Filename>
-              </Icon>
-            </Text>
-            <Value>+20%</Value>
-          </Upgrade>
-          <Upgrade>
-            <Text ID="191123">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/museum/icon_museum_celts_stonehenge.png</Filename>
-              </Icon>
-            </Text>
-            <Value>+20%</Value>
-          </Upgrade>
-          <Upgrade>
-            <Text ID="193774">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/specialists/icon_polar_5.png</Filename>
-              </Icon>
-            </Text>
-            <Value>+20%</Value>
-          </Upgrade>
-          <Upgrade>
-            <Text ID="193776">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/museum/icon_museum_mammoth.png</Filename>
-              </Icon>
-            </Text>
-            <Value>+20%</Value>
-          </Upgrade>
-          <Upgrade>
-            <Text ID="193662">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/plants/icon_rocky_mountain_fir.png</Filename>
-              </Icon>
-            </Text>
-            <Value>+20%</Value>
-          </Upgrade>
-        </Additionals>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="22677">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="193666">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_attractiveness_group.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="2349">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_zoo.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="2351">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_museum.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="2349">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_zoo.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="2351">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_museum.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="110935">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_botanic_garden.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="110935">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_botanic_garden.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>115471</Part>
-      <Part>114796</Part>
-      <Part>114799</Part>
-      <Part>115472</Part>
-      <Part>114798</Part>
-      <Part>115473</Part>
-    </SetParts>
+  <Asset ID="191120" RV="Release" RT="Common">
+    <N>india</N>
+    <T ID="191120" I="data/ui/2kimages/main/3dicons/animals/icon_tiger.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Zoo">
+      <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+    </A>
+    <ISS>
+      <U V="+100%" C="PassiveTradeGoodGenUpgrade">
+        <T ID="12920" I="data/ui/2kimages/main/icons/icon_activate_trade.png">
+          <AI ID="-653518958" I="data/ui/2kimages/main/icons/icon_diplomacy_options_trade.png" FS="16" />
+        </T>
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="15367" />
+    <ET>
+      <ET>
+        <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+          <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>191073</P>
+      <P>191506</P>
+      <P>191079</P>
+      <P>193190</P>
+      <P>191088</P>
+      <P>191112</P>
+    </SP>
   </Asset>
-  <Asset ID="191121" Release="Release" RarityType="Common">
-    <Name>farm</Name>
-    <Text ID="191121">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/animals/icon_sheep.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="Zoo">
-      <Text ID="2349">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_zoo.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade Category="FactoryUpgrade">
-        <Text ID="118000">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_options.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+5%</Value>
-      </Upgrade>
-      <Upgrade Category="BuildingUpgrade">
-        <Text ID="2320">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-10%</Value>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="15368">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="190872">
-          <Icon />
-        </Text>
-        <Buildings>
-          <Text ID="1010263">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_meat_raw.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010267">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_wool.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010269">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_pigs.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010263">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_meat_raw.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101272">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_alpaca_wool.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>191058</Part>
-      <Part>191059</Part>
-      <Part>191062</Part>
-      <Part>191063</Part>
-      <Part>191065</Part>
-      <Part>191066</Part>
-    </SetParts>
+  <Asset ID="193776" RV="Update 06" RT="Common">
+    <N>frozen</N>
+    <T ID="193776" I="data/ui/2kimages/main/3dicons/museum/icon_museum_mammoth.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Museum">
+      <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    </A>
+    <ISS>
+      <U V="-20%" C="BuildingUpgrade">
+        <T ID="2320" I="data/ui/2kimages/main/icons/icon_credits.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="22679" />
+    <ET>
+      <ET>
+        <T ID="190897" />
+        <B>
+          <T ID="1010291" I="data/ui/2kimages/main/3dicons/icon_bread.png" />
+          <T ID="1010293" I="data/ui/2kimages/main/3dicons/icon_goulash_01.png" />
+          <T ID="1010316" I="data/ui/2kimages/main/3dicons/icon_meat_sausage.png" />
+          <T ID="1010341" I="data/ui/2kimages/main/3dicons/icon_chocolate.png" />
+          <T ID="101264" I="data/ui/2kimages/main/3dicons/icon_fried_bananas.png" />
+          <T ID="101271" I="data/ui/2kimages/main/3dicons/icon_burrito.png" />
+          <T ID="1010317" I="data/ui/2kimages/main/3dicons/icon_salt.png" />
+          <T ID="1010295" I="data/ui/2kimages/main/3dicons/icon_canned_goulash.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="193778" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010292" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+          <T ID="1010294" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
+          <T ID="100659" I="data/ui/2kimages/main/3dicons/icon_champagne.png" />
+          <T ID="1010340" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
+          <T ID="101252" I="data/ui/2kimages/main/3dicons/icon_coffe_cup.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>114637</P>
+      <P>115474</P>
+      <P>114794</P>
+    </SP>
   </Asset>
-  <Asset ID="191117" Release="Release" RarityType="Common">
-    <Name>ocean</Name>
-    <Text ID="191117">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/animals/icon_lionfish.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="Zoo">
-      <Text ID="2349">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_zoo.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade Category="ResidenceUpgrade">
-        <Text ID="12314">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_happy.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+2</Value>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="15369">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="1010344">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010344">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-      <Target>
-        <Text ID="1010345">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010345">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-      <Target>
-        <Text ID="101255">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="101255">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>190466</Part>
-      <Part>190462</Part>
-      <Part>190463</Part>
-      <Part>190458</Part>
-      <Part>190464</Part>
-      <Part>190449</Part>
-    </SetParts>
+  <Asset ID="191124" RV="Release" RT="Common">
+    <N>greek</N>
+    <T ID="191124" I="data/ui/2kimages/main/3dicons/museum/icon_scroll_anthology_myths.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Museum">
+      <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    </A>
+    <ISS>
+      <U V="-20%" C="BuildingUpgrade">
+        <T ID="2320" I="data/ui/2kimages/main/icons/icon_credits.png" />
+      </U>
+      <U V="+5" C="CultureUpgrade">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="15374" />
+    <ET>
+      <ET>
+        <T ID="1010352" I="data/ui/2kimages/main/3dicons/icon_cabaret.png" />
+        <B>
+          <T ID="1010352" I="data/ui/2kimages/main/3dicons/icon_cabaret.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="191562" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+        <B>
+          <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+          <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>190543</P>
+      <P>190513</P>
+      <P>190508</P>
+      <P>190485</P>
+      <P>190484</P>
+      <P>190509</P>
+    </SP>
   </Asset>
-  <Asset ID="193776" Release="Update 06" RarityType="Common">
-    <Name>frozen</Name>
-    <Text ID="193776">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_museum_mammoth.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="Museum">
-      <Text ID="2351">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_museum.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade Category="BuildingUpgrade">
-        <Text ID="2320">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-20%</Value>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="22679">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="190897">
-          <Icon />
-        </Text>
-        <Buildings>
-          <Text ID="1010291">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_bread.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010293">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_goulash_01.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010316">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_meat_sausage.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010341">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_chocolate.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101264">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_fried_bananas.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101271">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_burrito.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010317">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_salt.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010295">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_canned_goulash.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-      <Target>
-        <Text ID="193778">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010292">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_beer.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010294">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_schnapps_4.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100659">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_champagne.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010340">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_rum_barrel.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="101252">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_coffe_cup.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>114637</Part>
-      <Part>115474</Part>
-      <Part>114794</Part>
-    </SetParts>
+  <Asset ID="191121" RV="Release" RT="Common">
+    <N>farm</N>
+    <T ID="191121" I="data/ui/2kimages/main/3dicons/animals/icon_sheep.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Zoo">
+      <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+    </A>
+    <ISS>
+      <U V="+5%" C="FactoryUpgrade">
+        <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+      </U>
+      <U V="-10%" C="BuildingUpgrade">
+        <T ID="2320" I="data/ui/2kimages/main/icons/icon_credits.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="15368" />
+    <ET>
+      <ET>
+        <T ID="190872" />
+        <B>
+          <T ID="1010263" I="data/ui/2kimages/main/3dicons/icon_meat_raw.png" />
+          <T ID="1010267" I="data/ui/2kimages/main/3dicons/icon_wool.png" />
+          <T ID="1010269" I="data/ui/2kimages/main/3dicons/icon_pigs.png" />
+          <T ID="1010263" I="data/ui/2kimages/main/3dicons/icon_meat_raw.png" />
+          <T ID="101272" I="data/ui/2kimages/main/3dicons/icon_alpaca_wool.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>191058</P>
+      <P>191059</P>
+      <P>191062</P>
+      <P>191063</P>
+      <P>191065</P>
+      <P>191066</P>
+    </SP>
   </Asset>
-  <Asset ID="191124" Release="Release" RarityType="Common">
-    <Name>greek</Name>
-    <Text ID="191124">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_scroll_anthology_myths.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="Museum">
-      <Text ID="2351">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_museum.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade Category="BuildingUpgrade">
-        <Text ID="2320">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-20%</Value>
-      </Upgrade>
-      <Upgrade Category="CultureUpgrade">
-        <Text ID="145011">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+5</Value>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="15374">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="1010352">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_cabaret.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010352">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_cabaret.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-      <Target>
-        <Text ID="191562">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_museum.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="2351">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_museum.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="2351">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_museum.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>190543</Part>
-      <Part>190513</Part>
-      <Part>190508</Part>
-      <Part>190485</Part>
-      <Part>190484</Part>
-      <Part>190509</Part>
-    </SetParts>
+  <Asset ID="191126" RV="Release" RT="Common">
+    <N>mayan</N>
+    <T ID="191126" I="data/ui/2kimages/main/3dicons/museum/icon_mayan_glyphs.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Museum">
+      <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    </A>
+    <ISS>
+      <U V="+100%" C="PassiveTradeGoodGenUpgrade">
+        <T ID="12920" I="data/ui/2kimages/main/icons/icon_activate_trade.png">
+          <AI ID="306166239" I="data/ui/2kimages/main/icons/icon_diplomacy_options_trade.png" FS="16" />
+        </T>
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="15375" />
+    <ET>
+      <ET>
+        <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+          <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>190500</P>
+      <P>190497</P>
+      <P>190474</P>
+      <P>190501</P>
+      <P>190498</P>
+      <P>190499</P>
+    </SP>
   </Asset>
-  <Asset ID="193193" Release="Release" RarityType="Common">
-    <Name>white animals</Name>
-    <Text ID="193193">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/animals/icon_albinos_fennec.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="Zoo">
-      <Text ID="2349">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_zoo.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade Category="BuildingUpgrade">
-        <Text ID="2320">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_credits.png</Filename>
-          </Icon>
-        </Text>
-        <Value>-50%</Value>
-      </Upgrade>
-      <Upgrade Category="CultureUpgrade">
-        <Text ID="145011">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+10%</Value>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="22051">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="191561">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_zoo.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="2349">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_zoo.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="2349">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_zoo.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>191507</Part>
-      <Part>191106</Part>
-      <Part>191108</Part>
-      <Part>190452</Part>
-      <Part>193191</Part>
-      <Part>193192</Part>
-    </SetParts>
+  <Asset ID="191117" RV="Release" RT="Common">
+    <N>ocean</N>
+    <T ID="191117" I="data/ui/2kimages/main/3dicons/animals/icon_lionfish.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Zoo">
+      <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+    </A>
+    <ISS>
+      <U V="+2" C="ResidenceUpgrade">
+        <T ID="12314" I="data/ui/2kimages/main/icons/icon_happy.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="15369" />
+    <ET>
+      <ET>
+        <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+        <B>
+          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+        <B>
+          <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+        <B>
+          <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>190466</P>
+      <P>190462</P>
+      <P>190463</P>
+      <P>190458</P>
+      <P>190464</P>
+      <P>190449</P>
+    </SP>
   </Asset>
-  <Asset ID="191126" Release="Release" RarityType="Common">
-    <Name>mayan</Name>
-    <Text ID="191126">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/museum/icon_mayan_glyphs.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="Museum">
-      <Text ID="2351">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_museum.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade Category="PassiveTradeGoodGenUpgrade">
-        <Text ID="12920">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_activate_trade.png</Filename>
-          </Icon>
-          <AdditionalInformation ID="306166239" FontStyle="16">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_trade.png</Filename>
-            </Icon>
-          </AdditionalInformation>
-        </Text>
-        <Value>+100%</Value>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="15375">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="190797">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="190797">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="190797">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>190500</Part>
-      <Part>190497</Part>
-      <Part>190474</Part>
-      <Part>190501</Part>
-      <Part>190498</Part>
-      <Part>190499</Part>
-    </SetParts>
+  <Asset ID="193193" RV="Release" RT="Common">
+    <N>white animals</N>
+    <T ID="193193" I="data/ui/2kimages/main/3dicons/animals/icon_albinos_fennec.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Zoo">
+      <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+    </A>
+    <ISS>
+      <U V="-50%" C="BuildingUpgrade">
+        <T ID="2320" I="data/ui/2kimages/main/icons/icon_credits.png" />
+      </U>
+      <U V="+10%" C="CultureUpgrade">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="22051" />
+    <ET>
+      <ET>
+        <T ID="191561" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+        <B>
+          <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+          <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>191507</P>
+      <P>191106</P>
+      <P>191108</P>
+      <P>190452</P>
+      <P>193191</P>
+      <P>193192</P>
+    </SP>
   </Asset>
-  <Asset ID="193658" Release="Update 05" RarityType="Common">
-    <Name>orient gardens</Name>
-    <Text ID="193658">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/plants/icon_blue_lotus.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="BotanicGarden">
-      <Text ID="110935">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_botanic_garden.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade>
-        <Text ID="113322">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_session_moderate.png</Filename>
-          </Icon>
-        </Text>
-        <Additionals>
-          <Upgrade Category="FactoryUpgrade">
-            <Text ID="118000">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_options.png</Filename>
-              </Icon>
-            </Text>
-            <Value>+25%</Value>
-          </Upgrade>
-          <Upgrade Category="FactoryUpgrade">
-            <Text ID="1657926953">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_stance_attack.png</Filename>
-              </Icon>
-            </Text>
-            <Value></Value>
-          </Upgrade>
-        </Additionals>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="113395">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_session_southamerica.png</Filename>
-          </Icon>
-        </Text>
-        <Additionals>
-          <Upgrade Category="FactoryUpgrade">
-            <Text ID="118000">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_options.png</Filename>
-              </Icon>
-            </Text>
-            <Value>+25%</Value>
-          </Upgrade>
-          <Upgrade Category="FactoryUpgrade">
-            <Text ID="-2030050818">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_stance_attack.png</Filename>
-              </Icon>
-            </Text>
-            <Value></Value>
-          </Upgrade>
-        </Additionals>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="22334">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="100654">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_pepper.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="100654">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_pepper.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-      <Target>
-        <Text ID="1010329">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010329">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>114657</Part>
-      <Part>112735</Part>
-      <Part>111123</Part>
-      <Part>112736</Part>
-      <Part>111106</Part>
-      <Part>111109</Part>
-    </SetParts>
+  <Asset ID="193401" RV="Update 04" RT="Common">
+    <N>deep water</N>
+    <T ID="193401" I="data/ui/2kimages/main/3dicons/animals/icon_kraken.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Zoo">
+      <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+    </A>
+    <ISS>
+      <U V="">
+        <T ID="22227" I="data/ui/2kimages/main/icons/icon_favourite.png" />
+        <A>
+          <U V="+5">
+            <T ID="118005" />
+          </U>
+          <U V="+2">
+            <T ID="118006" />
+          </U>
+        </A>
+      </U>
+      <U>
+        <T ID="22231" I="data/ui/2kimages/main/icons/icon_zoo_2D.png" />
+        <A>
+          <U V="+5">
+            <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+          </U>
+        </A>
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="22236" />
+    <ET>
+      <ET>
+        <T ID="112084" I="data/ui/2kimages/main/3dicons/ships/icon_ship_diving_vessel.png" />
+        <B>
+          <T ID="112084" I="data/ui/2kimages/main/3dicons/ships/icon_ship_diving_vessel.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>112813</P>
+      <P>112815</P>
+      <P>190465</P>
+      <P>112811</P>
+      <P>112812</P>
+      <P>112476</P>
+    </SP>
   </Asset>
-  <Asset ID="193401" Release="Update 04" RarityType="Common">
-    <Name>deep water</Name>
-    <Text ID="193401">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/animals/icon_kraken.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="Zoo">
-      <Text ID="2349">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_zoo.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade>
-        <Text ID="22227">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_favourite.png</Filename>
-          </Icon>
-        </Text>
-        <Value></Value>
-        <Additionals>
-          <Upgrade>
-            <Text ID="118005">
-              <Icon />
-            </Text>
-            <Value>+5</Value>
-          </Upgrade>
-          <Upgrade>
-            <Text ID="118006">
-              <Icon />
-            </Text>
-            <Value>+2</Value>
-          </Upgrade>
-        </Additionals>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="22231">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_zoo_2D.png</Filename>
-          </Icon>
-        </Text>
-        <Additionals>
-          <Upgrade>
-            <Text ID="2349">
-              <Icon>
-                <Filename>data/ui/2kimages/main/3dicons/icon_zoo.png</Filename>
-              </Icon>
-            </Text>
-            <Value>+5</Value>
-          </Upgrade>
-        </Additionals>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="22236">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="112084">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_diving_vessel.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="112084">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/ships/icon_ship_diving_vessel.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>112813</Part>
-      <Part>112815</Part>
-      <Part>190465</Part>
-      <Part>112811</Part>
-      <Part>112812</Part>
-      <Part>112476</Part>
-    </SetParts>
+  <Asset ID="193658" RV="Update 05" RT="Common">
+    <N>orient gardens</N>
+    <T ID="193658" I="data/ui/2kimages/main/3dicons/plants/icon_blue_lotus.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="BotanicGarden">
+      <T ID="110935" I="data/ui/2kimages/main/3dicons/icon_botanic_garden.png" />
+    </A>
+    <ISS>
+      <U>
+        <T ID="113322" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+        <A>
+          <U V="+25%" C="FactoryUpgrade">
+            <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+          </U>
+          <U V="" C="FactoryUpgrade">
+            <T ID="1657926953" I="data/ui/2kimages/main/icons/icon_stance_attack.png" />
+          </U>
+        </A>
+      </U>
+      <U>
+        <T ID="113395" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+        <A>
+          <U V="+25%" C="FactoryUpgrade">
+            <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+          </U>
+          <U V="" C="FactoryUpgrade">
+            <T ID="-2030050818" I="data/ui/2kimages/main/icons/icon_stance_attack.png" />
+          </U>
+        </A>
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="22334" />
+    <ET>
+      <ET>
+        <T ID="100654" I="data/ui/2kimages/main/3dicons/icon_pepper.png" />
+        <B>
+          <T ID="100654" I="data/ui/2kimages/main/3dicons/icon_pepper.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="1010329" I="data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png" />
+        <B>
+          <T ID="1010329" I="data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>114657</P>
+      <P>112735</P>
+      <P>111123</P>
+      <P>112736</P>
+      <P>111106</P>
+      <P>111109</P>
+    </SP>
   </Asset>
-  <Asset ID="193653" Release="Update 05" RarityType="Common">
-    <Name>amazon river flora</Name>
-    <Text ID="193653">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/plants/icon_lianas.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="BotanicGarden">
-      <Text ID="110935">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_botanic_garden.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade>
-        <Text ID="113322">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_session_moderate.png</Filename>
-          </Icon>
-        </Text>
-        <Additionals>
-          <Upgrade Category="FactoryUpgrade">
-            <Text ID="118000">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_options.png</Filename>
-              </Icon>
-            </Text>
-            <Value>+25%</Value>
-          </Upgrade>
-          <Upgrade Category="FactoryUpgrade">
-            <Text ID="54949827">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_stance_attack.png</Filename>
-              </Icon>
-            </Text>
-            <Value></Value>
-          </Upgrade>
-        </Additionals>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="113395">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_session_southamerica.png</Filename>
-          </Icon>
-        </Text>
-        <Additionals>
-          <Upgrade Category="FactoryUpgrade">
-            <Text ID="118000">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_options.png</Filename>
-              </Icon>
-            </Text>
-            <Value>+25%</Value>
-          </Upgrade>
-          <Upgrade Category="FactoryUpgrade">
-            <Text ID="1430633440">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_stance_attack.png</Filename>
-              </Icon>
-            </Text>
-            <Value></Value>
-          </Upgrade>
-        </Additionals>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="22328">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="100655">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_grapes.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="100655">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_grapes.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-      <Target>
-        <Text ID="101263">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_banana.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="101263">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_banana.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>111120</Part>
-      <Part>112612</Part>
-      <Part>114658</Part>
-      <Part>112731</Part>
-      <Part>114381</Part>
-      <Part>112730</Part>
-    </SetParts>
+  <Asset ID="193653" RV="Update 05" RT="Common">
+    <N>amazon river flora</N>
+    <T ID="193653" I="data/ui/2kimages/main/3dicons/plants/icon_lianas.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="BotanicGarden">
+      <T ID="110935" I="data/ui/2kimages/main/3dicons/icon_botanic_garden.png" />
+    </A>
+    <ISS>
+      <U>
+        <T ID="113322" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+        <A>
+          <U V="+25%" C="FactoryUpgrade">
+            <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+          </U>
+          <U V="" C="FactoryUpgrade">
+            <T ID="54949827" I="data/ui/2kimages/main/icons/icon_stance_attack.png" />
+          </U>
+        </A>
+      </U>
+      <U>
+        <T ID="113395" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+        <A>
+          <U V="+25%" C="FactoryUpgrade">
+            <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+          </U>
+          <U V="" C="FactoryUpgrade">
+            <T ID="1430633440" I="data/ui/2kimages/main/icons/icon_stance_attack.png" />
+          </U>
+        </A>
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="22328" />
+    <ET>
+      <ET>
+        <T ID="100655" I="data/ui/2kimages/main/3dicons/icon_grapes.png" />
+        <B>
+          <T ID="100655" I="data/ui/2kimages/main/3dicons/icon_grapes.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="101263" I="data/ui/2kimages/main/3dicons/icon_banana.png" />
+        <B>
+          <T ID="101263" I="data/ui/2kimages/main/3dicons/icon_banana.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>111120</P>
+      <P>112612</P>
+      <P>114658</P>
+      <P>112731</P>
+      <P>114381</P>
+      <P>112730</P>
+    </SP>
   </Asset>
-  <Asset ID="193660" Release="Update 05" RarityType="Common">
-    <Name>sacred plants</Name>
-    <Text ID="193660">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/plants/icon_sacred_lotus.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="BotanicGarden">
-      <Text ID="110935">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_botanic_garden.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade Category="PassiveTradeGoodGenUpgrade">
-        <Text ID="12920">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_activate_trade.png</Filename>
-          </Icon>
-          <AdditionalInformation ID="2030850161" FontStyle="16">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_diplomacy_options_trade.png</Filename>
-            </Icon>
-          </AdditionalInformation>
-        </Text>
-        <Value>+100%</Value>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="22336">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="190797">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="190797">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="190797">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>111115</Part>
-      <Part>114387</Part>
-      <Part>114388</Part>
-      <Part>114389</Part>
-      <Part>111108</Part>
-      <Part>112728</Part>
-    </SetParts>
+  <Asset ID="193660" RV="Update 05" RT="Common">
+    <N>sacred plants</N>
+    <T ID="193660" I="data/ui/2kimages/main/3dicons/plants/icon_sacred_lotus.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="BotanicGarden">
+      <T ID="110935" I="data/ui/2kimages/main/3dicons/icon_botanic_garden.png" />
+    </A>
+    <ISS>
+      <U V="+100%" C="PassiveTradeGoodGenUpgrade">
+        <T ID="12920" I="data/ui/2kimages/main/icons/icon_activate_trade.png">
+          <AI ID="2030850161" I="data/ui/2kimages/main/icons/icon_diplomacy_options_trade.png" FS="16" />
+        </T>
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="22336" />
+    <ET>
+      <ET>
+        <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+          <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>111115</P>
+      <P>114387</P>
+      <P>114388</P>
+      <P>114389</P>
+      <P>111108</P>
+      <P>112728</P>
+    </SP>
   </Asset>
-  <Asset ID="193655" Release="Update 05" RarityType="Common">
-    <Name>sea shore</Name>
-    <Text ID="193655">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/plants/icon_great_star_coral.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="BotanicGarden">
-      <Text ID="110935">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_botanic_garden.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade Category="VisitorHarborUpgrade">
-        <Text ID="20603">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_add_slot_guild.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+10%</Value>
-      </Upgrade>
-      <Upgrade Category="CultureUpgrade">
-        <Text ID="145011">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+50</Value>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="22330">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="191563">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_visitor_harbour.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="100429">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_visitor_harbour.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="100429">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_visitor_harbour.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>111121</Part>
-      <Part>111122</Part>
-      <Part>112732</Part>
-      <Part>114656</Part>
-      <Part>111113</Part>
-      <Part>111107</Part>
-    </SetParts>
+  <Asset ID="193655" RV="Update 05" RT="Common">
+    <N>sea shore</N>
+    <T ID="193655" I="data/ui/2kimages/main/3dicons/plants/icon_great_star_coral.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="BotanicGarden">
+      <T ID="110935" I="data/ui/2kimages/main/3dicons/icon_botanic_garden.png" />
+    </A>
+    <ISS>
+      <U V="+10%" C="VisitorHarborUpgrade">
+        <T ID="20603" I="data/ui/2kimages/main/icons/icon_add_slot_guild.png" />
+      </U>
+      <U V="+50" C="CultureUpgrade">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="22330" />
+    <ET>
+      <ET>
+        <T ID="191563" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+        <B>
+          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>111121</P>
+      <P>111122</P>
+      <P>112732</P>
+      <P>114656</P>
+      <P>111113</P>
+      <P>111107</P>
+    </SP>
   </Asset>
-  <Asset ID="193662" Release="Update 05" RarityType="Common">
-    <Name>subalpine flora</Name>
-    <Text ID="193662">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/plants/icon_rocky_mountain_fir.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="BotanicGarden">
-      <Text ID="110935">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_botanic_garden.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade>
-        <Text ID="113322">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_session_moderate.png</Filename>
-          </Icon>
-        </Text>
-        <Additionals>
-          <Upgrade Category="FactoryUpgrade">
-            <Text ID="118000">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_options.png</Filename>
-              </Icon>
-            </Text>
-            <Value>+25%</Value>
-          </Upgrade>
-          <Upgrade Category="FactoryUpgrade">
-            <Text ID="1916591434">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_stance_attack.png</Filename>
-              </Icon>
-            </Text>
-            <Value></Value>
-          </Upgrade>
-        </Additionals>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="113395">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_session_southamerica.png</Filename>
-          </Icon>
-        </Text>
-        <Additionals>
-          <Upgrade Category="FactoryUpgrade">
-            <Text ID="118000">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_options.png</Filename>
-              </Icon>
-            </Text>
-            <Value>+25%</Value>
-          </Upgrade>
-          <Upgrade Category="FactoryUpgrade">
-            <Text ID="-1847906759">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_stance_attack.png</Filename>
-              </Icon>
-            </Text>
-            <Value></Value>
-          </Upgrade>
-        </Additionals>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="22338">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="1010558">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_fur.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010558">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_fur.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-      <Target>
-        <Text ID="1010333">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_caoutchouc.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010333">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_caoutchouc.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>111118</Part>
-      <Part>111116</Part>
-      <Part>112734</Part>
-    </SetParts>
+  <Asset ID="193662" RV="Update 05" RT="Common">
+    <N>subalpine flora</N>
+    <T ID="193662" I="data/ui/2kimages/main/3dicons/plants/icon_rocky_mountain_fir.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="BotanicGarden">
+      <T ID="110935" I="data/ui/2kimages/main/3dicons/icon_botanic_garden.png" />
+    </A>
+    <ISS>
+      <U>
+        <T ID="113322" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+        <A>
+          <U V="+25%" C="FactoryUpgrade">
+            <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+          </U>
+          <U V="" C="FactoryUpgrade">
+            <T ID="1916591434" I="data/ui/2kimages/main/icons/icon_stance_attack.png" />
+          </U>
+        </A>
+      </U>
+      <U>
+        <T ID="113395" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+        <A>
+          <U V="+25%" C="FactoryUpgrade">
+            <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+          </U>
+          <U V="" C="FactoryUpgrade">
+            <T ID="-1847906759" I="data/ui/2kimages/main/icons/icon_stance_attack.png" />
+          </U>
+        </A>
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="22338" />
+    <ET>
+      <ET>
+        <T ID="1010558" I="data/ui/2kimages/main/3dicons/icon_fur.png" />
+        <B>
+          <T ID="1010558" I="data/ui/2kimages/main/3dicons/icon_fur.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="1010333" I="data/ui/2kimages/main/3dicons/icon_caoutchouc.png" />
+        <B>
+          <T ID="1010333" I="data/ui/2kimages/main/3dicons/icon_caoutchouc.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>111118</P>
+      <P>111116</P>
+      <P>112734</P>
+    </SP>
   </Asset>
-  <Asset ID="193665" Release="Update 05" RarityType="Common">
-    <Name>andes</Name>
-    <Text ID="193665">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/plants/icon_frailejones.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="BotanicGarden">
-      <Text ID="110935">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_botanic_garden.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade>
-        <Text ID="113322">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_session_moderate.png</Filename>
-          </Icon>
-        </Text>
-        <Additionals>
-          <Upgrade Category="FactoryUpgrade">
-            <Text ID="118000">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_options.png</Filename>
-              </Icon>
-            </Text>
-            <Value>+25%</Value>
-          </Upgrade>
-          <Upgrade Category="FactoryUpgrade">
-            <Text ID="-1259946095">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_stance_attack.png</Filename>
-              </Icon>
-            </Text>
-            <Value></Value>
-          </Upgrade>
-        </Additionals>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="113395">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_session_southamerica.png</Filename>
-          </Icon>
-        </Text>
-        <Additionals>
-          <Upgrade Category="FactoryUpgrade">
-            <Text ID="118000">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_options.png</Filename>
-              </Icon>
-            </Text>
-            <Value>+25%</Value>
-          </Upgrade>
-          <Upgrade Category="FactoryUpgrade">
-            <Text ID="1849358547">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_stance_attack.png</Filename>
-              </Icon>
-            </Text>
-            <Value></Value>
-          </Upgrade>
-        </Additionals>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="22340">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="1010262">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_cereals_2.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010262">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_cereals_2.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-      <Target>
-        <Text ID="101251">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_coffee_beans.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="101251">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_coffee_beans.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>114383</Part>
-      <Part>111119</Part>
-      <Part>114385</Part>
-    </SetParts>
+  <Asset ID="193665" RV="Update 05" RT="Common">
+    <N>andes</N>
+    <T ID="193665" I="data/ui/2kimages/main/3dicons/plants/icon_frailejones.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="BotanicGarden">
+      <T ID="110935" I="data/ui/2kimages/main/3dicons/icon_botanic_garden.png" />
+    </A>
+    <ISS>
+      <U>
+        <T ID="113322" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+        <A>
+          <U V="+25%" C="FactoryUpgrade">
+            <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+          </U>
+          <U V="" C="FactoryUpgrade">
+            <T ID="-1259946095" I="data/ui/2kimages/main/icons/icon_stance_attack.png" />
+          </U>
+        </A>
+      </U>
+      <U>
+        <T ID="113395" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+        <A>
+          <U V="+25%" C="FactoryUpgrade">
+            <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+          </U>
+          <U V="" C="FactoryUpgrade">
+            <T ID="1849358547" I="data/ui/2kimages/main/icons/icon_stance_attack.png" />
+          </U>
+        </A>
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="22340" />
+    <ET>
+      <ET>
+        <T ID="1010262" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+        <B>
+          <T ID="1010262" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="101251" I="data/ui/2kimages/main/3dicons/icon_coffee_beans.png" />
+        <B>
+          <T ID="101251" I="data/ui/2kimages/main/3dicons/icon_coffee_beans.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>114383</P>
+      <P>111119</P>
+      <P>114385</P>
+    </SP>
   </Asset>
-  <Asset ID="193670" Release="Update 05" RarityType="Common">
-    <Name>herbs</Name>
-    <Text ID="193670">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/plants/icon_dandelion.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="BotanicGarden">
-      <Text ID="110935">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_botanic_garden.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade Category="BuildingUpgrade">
-        <Text ID="100583">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_hospital_2d.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+2</Value>
-      </Upgrade>
-      <Upgrade Category="BuildingUpgrade">
-        <Text ID="12014">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_forward.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+15%</Value>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="22353">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="190777">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010464">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_hospital.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010464">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_hospital.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>114539</Part>
-      <Part>114538</Part>
-      <Part>114542</Part>
-    </SetParts>
+  <Asset ID="193670" RV="Update 05" RT="Common">
+    <N>herbs</N>
+    <T ID="193670" I="data/ui/2kimages/main/3dicons/plants/icon_dandelion.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="BotanicGarden">
+      <T ID="110935" I="data/ui/2kimages/main/3dicons/icon_botanic_garden.png" />
+    </A>
+    <ISS>
+      <U V="+2" C="BuildingUpgrade">
+        <T ID="100583" I="data/ui/2kimages/main/icons/icon_hospital_2d.png" />
+      </U>
+      <U V="+15%" C="BuildingUpgrade">
+        <T ID="12014" I="data/ui/2kimages/main/icons/icon_forward.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="22353" />
+    <ET>
+      <ET>
+        <T ID="190777" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010464" I="data/ui/2kimages/main/3dicons/icon_hospital.png" />
+          <T ID="1010464" I="data/ui/2kimages/main/3dicons/icon_hospital.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>114539</P>
+      <P>114538</P>
+      <P>114542</P>
+    </SP>
   </Asset>
-  <Asset ID="193672" Release="Update 05" RarityType="Common">
-    <Name>spiritual</Name>
-    <Text ID="193672">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/plants/icon_jujube.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <Allocation ID="BotanicGarden">
-      <Text ID="110935">
-        <Icon>
-          <Filename>data/ui/2kimages/main/3dicons/icon_botanic_garden.png</Filename>
-        </Icon>
-      </Text>
-    </Allocation>
-    <ItemSocketSet>
-      <Upgrade>
-        <Text ID="113322">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_session_moderate.png</Filename>
-          </Icon>
-        </Text>
-        <Additionals>
-          <Upgrade Category="FactoryUpgrade">
-            <Text ID="118000">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_options.png</Filename>
-              </Icon>
-            </Text>
-            <Value>+25%</Value>
-          </Upgrade>
-          <Upgrade Category="FactoryUpgrade">
-            <Text ID="-1142615558">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_stance_attack.png</Filename>
-              </Icon>
-            </Text>
-            <Value></Value>
-          </Upgrade>
-        </Additionals>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="113395">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_session_southamerica.png</Filename>
-          </Icon>
-        </Text>
-        <Additionals>
-          <Upgrade Category="FactoryUpgrade">
-            <Text ID="118000">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_options.png</Filename>
-              </Icon>
-            </Text>
-            <Value>+25%</Value>
-          </Upgrade>
-          <Upgrade Category="FactoryUpgrade">
-            <Text ID="1345919903">
-              <Icon>
-                <Filename>data/ui/2kimages/main/icons/icon_stance_attack.png</Filename>
-              </Icon>
-            </Text>
-            <Value></Value>
-          </Upgrade>
-        </Additionals>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <Info ID="22355">
-      <Icon />
-    </Info>
-    <EffectTargets>
-      <Target>
-        <Text ID="1010264">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_hops.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010264">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_hops.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-      <Target>
-        <Text ID="1010330">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_tobacco.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010330">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_tobacco.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>114543</Part>
-      <Part>114661</Part>
-      <Part>114662</Part>
-      <Part>111110</Part>
-      <Part>112611</Part>
-      <Part>111117</Part>
-    </SetParts>
+  <Asset ID="193672" RV="Update 05" RT="Common">
+    <N>spiritual</N>
+    <T ID="193672" I="data/ui/2kimages/main/3dicons/plants/icon_jujube.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="BotanicGarden">
+      <T ID="110935" I="data/ui/2kimages/main/3dicons/icon_botanic_garden.png" />
+    </A>
+    <ISS>
+      <U>
+        <T ID="113322" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+        <A>
+          <U V="+25%" C="FactoryUpgrade">
+            <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+          </U>
+          <U V="" C="FactoryUpgrade">
+            <T ID="-1142615558" I="data/ui/2kimages/main/icons/icon_stance_attack.png" />
+          </U>
+        </A>
+      </U>
+      <U>
+        <T ID="113395" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+        <A>
+          <U V="+25%" C="FactoryUpgrade">
+            <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+          </U>
+          <U V="" C="FactoryUpgrade">
+            <T ID="1345919903" I="data/ui/2kimages/main/icons/icon_stance_attack.png" />
+          </U>
+        </A>
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="22355" />
+    <ET>
+      <ET>
+        <T ID="1010264" I="data/ui/2kimages/main/3dicons/icon_hops.png" />
+        <B>
+          <T ID="1010264" I="data/ui/2kimages/main/3dicons/icon_hops.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="1010330" I="data/ui/2kimages/main/3dicons/icon_tobacco.png" />
+        <B>
+          <T ID="1010330" I="data/ui/2kimages/main/3dicons/icon_tobacco.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>114543</P>
+      <P>114661</P>
+      <P>114662</P>
+      <P>111110</P>
+      <P>112611</P>
+      <P>111117</P>
+    </SP>
   </Asset>
-  <Asset ID="190108" Release="Release" RarityType="Common">
-    <Name>RealExistingSocialism</Name>
-    <Text ID="190108">
-      <Icon />
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <ItemSocketSet>
-      <Upgrade>
-        <Text ID="2322">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_house.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+10</Value>
-      </Upgrade>
-    </ItemSocketSet>
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <EffectTargets>
-      <Target>
-        <Text ID="190041">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_arrowpoint_right.png</Filename>
-          </Icon>
-        </Text>
-        <Buildings>
-          <Text ID="1010343">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010344">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010345">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010346">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-          <Text ID="1010347">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_resident.png</Filename>
-            </Icon>
-          </Text>
-        </Buildings>
-      </Target>
-    </EffectTargets>
-    <SetParts>
-      <Part>6000037</Part>
-      <Part>190040</Part>
-      <Part>190042</Part>
-    </SetParts>
+  <Asset ID="190108" RV="Release" RT="Common">
+    <N>RealExistingSocialism</N>
+    <T ID="190108" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <ISS>
+      <U V="+10">
+        <T ID="2322" I="data/ui/2kimages/main/icons/icon_house.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <ET>
+      <ET>
+        <T ID="190041" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010347" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>6000037</P>
+      <P>190040</P>
+      <P>190042</P>
+    </SP>
   </Asset>
-  <Asset ID="193399" Release="Update 04" RarityType="Common">
-    <Name>PlaceholderSet</Name>
-    <Text ID="193399">
-      <Icon />
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Item Set</ItemType>
-    <ItemSocketSet />
-    <GenericUpgrades />
-    <TradePrice />
-    <HiringFee />
-    <SetParts>
-      <Part>190072</Part>
-      <Part>190074</Part>
-      <Part>190075</Part>
-      <Part>190076</Part>
-      <Part>190077</Part>
-      <Part>190078</Part>
-    </SetParts>
+  <Asset ID="193399" RV="Update 04" RT="Common">
+    <N>PlaceholderSet</N>
+    <T ID="193399" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <ISS />
+    <GU />
+    <TP />
+    <HF />
+    <SP>
+      <P>190072</P>
+      <P>190074</P>
+      <P>190075</P>
+      <P>190076</P>
+      <P>190077</P>
+      <P>190078</P>
+    </SP>
   </Asset>
 </ItemSet>

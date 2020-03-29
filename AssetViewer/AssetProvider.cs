@@ -1,6 +1,5 @@
 ﻿using AssetViewer.Data;
 using AssetViewer.Extensions;
-using AssetViewer.Templates;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -12,7 +11,7 @@ namespace AssetViewer {
 
   public static class AssetProvider {
 
-    #region Properties
+    #region Public Properties
 
     public static Dictionary<int, TemplateAsset> Items { get; } = new Dictionary<int, TemplateAsset>();
     public static Dictionary<int, TemplateAsset> Buildings { get; } = new Dictionary<int, TemplateAsset>();
@@ -20,9 +19,9 @@ namespace AssetViewer {
     public static Dictionary<int, TemplateAsset> FestivalBuffs { get; } = new Dictionary<int, TemplateAsset>();
     public static Dictionary<int, Pool> Pools { get; } = new Dictionary<int, Pool>();
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Constructors
+    #region Public Constructors
 
     static AssetProvider() {
       using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.RewardPools.xml"))
@@ -49,6 +48,7 @@ namespace AssetViewer {
                 "AssetViewer.Resources.Assets.QuestItemMagistrate.xml",
                 "AssetViewer.Resources.Assets.StartExpeditionItem.xml",
                 "AssetViewer.Resources.Assets.QuestItem.xml",
+                "AssetViewer.Resources.Assets.ItemConstructionPlan.xml",
             };
 
       foreach (var str in items) {
@@ -114,6 +114,9 @@ namespace AssetViewer {
                 "AssetViewer.Resources.Assets.Warehouse.xml",
                 "AssetViewer.Resources.Assets.WorkAreaSlot.xml",
                 "AssetViewer.Resources.Assets.WorkforceConnector.xml",
+                "AssetViewer.Resources.Assets.Palace.xml",
+                "AssetViewer.Resources.Assets.PalaceMinistry.xml",
+                "AssetViewer.Resources.Assets.PalaceModule.xml",
       };
 
       foreach (var str in buildings) {
@@ -142,9 +145,9 @@ namespace AssetViewer {
       }
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
 
-    #region Methods
+    #region Public Methods
 
     public static IEnumerable<TemplateAsset> GetItemsById(this IEnumerable<int> ids) {
       return ids.SelectMany(l => AssetProvider.GetItemsById(l)).Distinct() ?? Enumerable.Empty<TemplateAsset>();
@@ -177,6 +180,6 @@ namespace AssetViewer {
       }
     }
 
-    #endregion Methods
+    #endregion Public Methods
   }
 }

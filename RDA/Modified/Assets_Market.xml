@@ -1,205 +1,99 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Market>
-  <Asset ID="114889" Release="Update 06" RarityType="Common">
-    <Name>service_arctic_01 (Canteen)</Name>
-    <Text ID="114889">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_canteen.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Building</ItemType>
-    <AssociatedRegions ID="160001">
-      <Icon>
-        <Filename>data/ui/2kimages/main/icons/icon_session_passage.png</Filename>
-      </Icon>
-    </AssociatedRegions>
-    <BuildCosts>
-      <Upgrade>
-        <Text ID="1010017">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-          </Icon>
-        </Text>
-        <Value>1000</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010196">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
-          </Icon>
-        </Text>
-        <Value>5</Value>
-      </Upgrade>
-    </BuildCosts>
-    <GenericUpgrades>
-      <Upgrade>
-        <Text ID="12504">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_warning_2.png</Filename>
-          </Icon>
-        </Text>
-        <Value>20 / 40</Value>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="11144">
-      <Icon />
-    </Info>
-    <Maintenance>
-      <MaintenanceCosts>
-        <Upgrade>
-          <Text ID="1010017">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-            </Icon>
-          </Text>
-          <Value>100 / 100</Value>
-        </Upgrade>
-      </MaintenanceCosts>
-    </Maintenance>
+  <Asset ID="114889" RV="Update 06" RT="Common">
+    <N>service_arctic_01 (Canteen)</N>
+    <T ID="114889" I="data/ui/2kimages/main/3dicons/icon_canteen.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
+    <BC>
+      <U V="1000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="5">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="20 / 40">
+        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11144" />
+    <M>
+      <MC>
+        <U V="100 / 100">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+      </MC>
+    </M>
   </Asset>
-  <Asset ID="101257" Release="Release" RarityType="Common">
-    <Name>service_colony01_01 (Marketplace)</Name>
-    <Text ID="101257">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_market.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Building</ItemType>
-    <AssociatedRegions ID="5000001">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
-      </Icon>
-    </AssociatedRegions>
-    <BuildCosts>
-      <Upgrade>
-        <Text ID="1010017">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-          </Icon>
-        </Text>
-        <Value>500</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010196">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
-          </Icon>
-        </Text>
-        <Value>10</Value>
-      </Upgrade>
-    </BuildCosts>
-    <GenericUpgrades>
-      <Upgrade>
-        <Text ID="12504">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_warning_2.png</Filename>
-          </Icon>
-        </Text>
-        <Value>35 / 70</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="12504">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_warning_2.png</Filename>
-          </Icon>
-        </Text>
-        <Value>35 / 70</Value>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="2976">
-      <Icon />
-    </Info>
-    <Maintenance>
-      <MaintenanceCosts>
-        <Upgrade>
-          <Text ID="1010017">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-            </Icon>
-          </Text>
-          <Value>20 / 20</Value>
-        </Upgrade>
-      </MaintenanceCosts>
-    </Maintenance>
+  <Asset ID="1010372" RV="Release" RT="Common">
+    <N>logistic_01 (Marketplace)</N>
+    <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="35 / 70">
+        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
+      </U>
+      <U V="35 / 70">
+        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="2976" />
+    <M>
+      <MC>
+        <U V="20 / 20">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+      </MC>
+    </M>
   </Asset>
-  <Asset ID="1010372" Release="Release" RarityType="Common">
-    <Name>logistic_01 (Marketplace)</Name>
-    <Text ID="101257">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_market.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Building</ItemType>
-    <AssociatedRegions ID="5000000">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
-      </Icon>
-    </AssociatedRegions>
-    <BuildCosts>
-      <Upgrade>
-        <Text ID="1010017">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-          </Icon>
-        </Text>
-        <Value>500</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010196">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
-          </Icon>
-        </Text>
-        <Value>10</Value>
-      </Upgrade>
-    </BuildCosts>
-    <GenericUpgrades>
-      <Upgrade>
-        <Text ID="12504">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_warning_2.png</Filename>
-          </Icon>
-        </Text>
-        <Value>35 / 70</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="12504">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_warning_2.png</Filename>
-          </Icon>
-        </Text>
-        <Value>35 / 70</Value>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="2976">
-      <Icon />
-    </Info>
-    <Maintenance>
-      <MaintenanceCosts>
-        <Upgrade>
-          <Text ID="1010017">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-            </Icon>
-          </Text>
-          <Value>20 / 20</Value>
-        </Upgrade>
-      </MaintenanceCosts>
-    </Maintenance>
+  <Asset ID="101257" RV="Release" RT="Common">
+    <N>service_colony01_01 (Marketplace)</N>
+    <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="35 / 70">
+        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
+      </U>
+      <U V="35 / 70">
+        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="2976" />
+    <M>
+      <MC>
+        <U V="20 / 20">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+      </MC>
+    </M>
   </Asset>
 </Market>

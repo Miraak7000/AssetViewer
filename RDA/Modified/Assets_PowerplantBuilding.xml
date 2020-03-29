@@ -1,247 +1,113 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PowerplantBuilding>
-  <Asset ID="117547" Release="Update 06" RarityType="Common" IsPausable="true">
-    <Name>electricity_03 (Gas Power Plant)</Name>
-    <Text ID="117547">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_electric_works_gas.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Building</ItemType>
-    <AssociatedRegions ID="5000000">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
-      </Icon>
-    </AssociatedRegions>
-    <BuildCosts>
-      <Upgrade>
-        <Text ID="1010017">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-          </Icon>
-        </Text>
-        <Value>75000</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010196">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
-          </Icon>
-        </Text>
-        <Value>40</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010205">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
-          </Icon>
-        </Text>
-        <Value>60</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010218">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
-          </Icon>
-        </Text>
-        <Value>60</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010207">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
-          </Icon>
-        </Text>
-        <Value>40</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010202">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png</Filename>
-          </Icon>
-        </Text>
-        <Value>40</Value>
-      </Upgrade>
-    </BuildCosts>
-    <GenericUpgrades>
-      <Upgrade>
-        <Text ID="12504">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_warning_2.png</Filename>
-          </Icon>
-        </Text>
-        <Value>42</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="12504">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_warning_2.png</Filename>
-          </Icon>
-        </Text>
-        <Value>42 / 42</Value>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="117550">
-      <Icon />
-    </Info>
-    <FactoryBase CycleTime="45">
-      <FactoryInputs>
-        <Upgrade>
-          <Text ID="112706">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_gas_red.png</Filename>
-            </Icon>
-          </Text>
-          <Value>1 / 10</Value>
-        </Upgrade>
-      </FactoryInputs>
-    </FactoryBase>
-    <Maintenance>
-      <MaintenanceCosts>
-        <Upgrade>
-          <Text ID="1010017">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-            </Icon>
-          </Text>
-          <Value>1200 / 600</Value>
-        </Upgrade>
-        <Upgrade>
-          <Text ID="1010117">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_resource_craftspeople.png</Filename>
-            </Icon>
-          </Text>
-          <Value>250</Value>
-        </Upgrade>
-      </MaintenanceCosts>
-    </Maintenance>
+  <Asset ID="100780" RV="Release" RT="Common" IP="true">
+    <N>electricity_02 (Oil Power Plant)</N>
+    <T ID="100780" I="data/ui/2kimages/main/3dicons/icon_electric_works_oil.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="25000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="30">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="50">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="40">
+        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="30">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="25">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="35">
+        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
+      </U>
+      <U V="35 / 35">
+        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="10946" />
+    <FB CT="5">
+      <FI>
+        <U V="1 / 100">
+          <T ID="1010566" I="data/ui/2kimages/main/3dicons/icon_oil.png" />
+        </U>
+      </FI>
+    </FB>
+    <M>
+      <MC>
+        <U V="400 / 200">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="150">
+          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
+        </U>
+      </MC>
+    </M>
   </Asset>
-  <Asset ID="100780" Release="Release" RarityType="Common" IsPausable="true">
-    <Name>electricity_02 (Oil Power Plant)</Name>
-    <Text ID="100780">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_electric_works_oil.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Building</ItemType>
-    <AssociatedRegions ID="5000000">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
-      </Icon>
-    </AssociatedRegions>
-    <BuildCosts>
-      <Upgrade>
-        <Text ID="1010017">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-          </Icon>
-        </Text>
-        <Value>25000</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010196">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
-          </Icon>
-        </Text>
-        <Value>30</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010205">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
-          </Icon>
-        </Text>
-        <Value>50</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010218">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
-          </Icon>
-        </Text>
-        <Value>40</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010207">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_glass_window_3.png</Filename>
-          </Icon>
-        </Text>
-        <Value>30</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010202">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png</Filename>
-          </Icon>
-        </Text>
-        <Value>25</Value>
-      </Upgrade>
-    </BuildCosts>
-    <GenericUpgrades>
-      <Upgrade>
-        <Text ID="12504">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_warning_2.png</Filename>
-          </Icon>
-        </Text>
-        <Value>35</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="12504">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_warning_2.png</Filename>
-          </Icon>
-        </Text>
-        <Value>35 / 35</Value>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="10946">
-      <Icon />
-    </Info>
-    <FactoryBase CycleTime="5">
-      <FactoryInputs>
-        <Upgrade>
-          <Text ID="1010566">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_oil.png</Filename>
-            </Icon>
-          </Text>
-          <Value>1 / 100</Value>
-        </Upgrade>
-      </FactoryInputs>
-    </FactoryBase>
-    <Maintenance>
-      <MaintenanceCosts>
-        <Upgrade>
-          <Text ID="1010017">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-            </Icon>
-          </Text>
-          <Value>400 / 200</Value>
-        </Upgrade>
-        <Upgrade>
-          <Text ID="1010117">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_resource_craftspeople.png</Filename>
-            </Icon>
-          </Text>
-          <Value>150</Value>
-        </Upgrade>
-      </MaintenanceCosts>
-    </Maintenance>
+  <Asset ID="117547" RV="Update 06" RT="Common" IP="true">
+    <N>electricity_03 (Gas Power Plant)</N>
+    <T ID="117547" I="data/ui/2kimages/main/3dicons/icon_electric_works_gas.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="75000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="40">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="60">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="60">
+        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="40">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="40">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="42">
+        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
+      </U>
+      <U V="42 / 42">
+        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="117550" />
+    <FB CT="45">
+      <FI>
+        <U V="1 / 10">
+          <T ID="112706" I="data/ui/2kimages/main/3dicons/icon_gas_red.png" />
+        </U>
+      </FI>
+    </FB>
+    <M>
+      <MC>
+        <U V="1200 / 600">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="250">
+          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
+        </U>
+      </MC>
+    </M>
   </Asset>
 </PowerplantBuilding>

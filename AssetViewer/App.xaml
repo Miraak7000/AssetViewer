@@ -8,8 +8,8 @@
   <Application.Resources>
     <ResourceDictionary>
       <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="FilterExpander.xaml" />
-        <ResourceDictionary Source="TreeViewItemStyle1.xaml" />
+        <ResourceDictionary Source="Controls/Parts/FilterExpander.xaml" />
+        <ResourceDictionary Source="Controls/Parts/FestivalTreeViewItemStyle.xaml" />
       </ResourceDictionary.MergedDictionaries>
       <DataTemplate DataType="{x:Type data:Description}">
         <Grid SnapsToDevicePixels="True">

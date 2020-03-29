@@ -1,5 +1,5 @@
 ﻿using AssetViewer.Data;
-using AssetViewer.Templates;
+using AssetViewer.Data;
 using System.Windows;
 using System.Windows.Controls;
 

@@ -166,7 +166,7 @@
             HorizontalContentAlignment="Stretch"
             Background="Transparent"
             BorderBrush="Transparent"
-            ItemContainerStyle="{DynamicResource TreeViewItemStyle1}"
+            ItemContainerStyle="{DynamicResource FestivalTreeViewItemStyle}"
             ItemsSource="{Binding Path=ItemsHolder.Items}"
             SelectedItemChanged="ListBoxItems_SelectedItemChanged">
             <TreeView.ItemTemplate>

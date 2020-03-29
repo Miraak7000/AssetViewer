@@ -1,5 +1,5 @@
 ﻿using AssetViewer.Comparer;
-using AssetViewer.Library;
+using AssetViewer.Data;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
@@ -23,7 +23,7 @@ namespace AssetViewer {
 
     #region Fields
 
-    public static Library.Languages Language { get; set; } = Library.Languages.English;
+    public static Data.Languages Language { get; set; } = Data.Languages.English;
     public static List<Languages> PossibleLanguages { get; } = new List<Languages>();
 
     #endregion Fields
@@ -42,52 +42,52 @@ namespace AssetViewer {
       }
       switch (CultureInfo.CurrentCulture.TwoLetterISOLanguageName) {
         case "pt":
-          Language = Library.Languages.Brazilian;
+          Language = Data.Languages.Brazilian;
           break;
 
         case "zh":
-          Language = Library.Languages.Chinese;
+          Language = Data.Languages.Chinese;
           break;
 
         case "en":
-          Language = Library.Languages.English;
+          Language = Data.Languages.English;
           break;
 
         case "fr":
-          Language = Library.Languages.French;
+          Language = Data.Languages.French;
           break;
 
         case "de":
-          Language = Library.Languages.German;
+          Language = Data.Languages.German;
           break;
 
         case "it":
-          Language = Library.Languages.Italian;
+          Language = Data.Languages.Italian;
           break;
 
         case "ja":
-          Language = Library.Languages.Japanese;
+          Language = Data.Languages.Japanese;
           break;
 
         case "ko":
-          Language = Library.Languages.Korean;
+          Language = Data.Languages.Korean;
           break;
 
         case "pl":
-          Language = Library.Languages.Polish;
+          Language = Data.Languages.Polish;
           break;
 
         case "ru":
-          Language = Library.Languages.Russian;
+          Language = Data.Languages.Russian;
           break;
 
         case "es":
-          Language = Library.Languages.Spanish;
+          Language = Data.Languages.Spanish;
           break;
         //case "pt": Language = Library.Languages.Portuguese; break;
         //case "zh	": Language = Library.Languages.Taiwanese; break;
         default:
-          Language = Library.Languages.English;
+          Language = Data.Languages.English;
           break;
       }
 
@@ -98,7 +98,7 @@ namespace AssetViewer {
       Descriptions.Clear();
       var resource = $"AssetViewer.Resources.Assets.Texts_{Language.ToString("G")}.xml";
       if (!Assembly.GetExecutingAssembly().GetManifestResourceNames().Contains(resource)) {
-        Language = Library.Languages.English;
+        Language = Data.Languages.English;
         resource = $"AssetViewer.Resources.Assets.Texts_{Language.ToString("G")}.xml";
       }
 

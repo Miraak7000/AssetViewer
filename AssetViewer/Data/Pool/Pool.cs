@@ -9,12 +9,12 @@ namespace AssetViewer.Data {
   [Serializable]
   [DesignerCategory("code")]
   [XmlType(AnonymousType = true)]
-  [XmlRoot(Namespace = "", IsNullable = false)]
+  [XmlRoot("P", Namespace = "", IsNullable = false)]
   public class Pool {
 
     #region Properties
-
-    [XmlArrayItem("Item", IsNullable = false)]
+    [XmlArray("IL")]
+    [XmlArrayItem("I", IsNullable = false)]
     public List<PoolItem> Items { get; set; }
 
     public IEnumerable<object> TrueItems => Items.Select(i => i.Item);
@@ -22,7 +22,7 @@ namespace AssetViewer.Data {
     [XmlAttribute]
     public int ID { get; set; }
 
-    [XmlAttribute]
+    [XmlAttribute("N")]
     public string Name { get; set; }
 
     #endregion Properties

@@ -1,191 +1,87 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <RepairCrane>
-  <Asset ID="1010525" Release="Release" RarityType="Common">
-    <Name>harbor_07 (Repair Crane)</Name>
-    <Text ID="1010525">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_repair_crane.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Building</ItemType>
-    <AssociatedRegions ID="5000000">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
-      </Icon>
-    </AssociatedRegions>
-    <BuildCosts>
-      <Upgrade>
-        <Text ID="1010017">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-          </Icon>
-        </Text>
-        <Value>2500</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010196">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
-          </Icon>
-        </Text>
-        <Value>15</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010205">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
-          </Icon>
-        </Text>
-        <Value>15</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010218">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
-          </Icon>
-        </Text>
-        <Value>25</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010190">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_influence.png</Filename>
-          </Icon>
-        </Text>
-        <Value>3</Value>
-      </Upgrade>
-    </BuildCosts>
-    <GenericUpgrades>
-      <Upgrade Category="RepairCrane">
-        <Text ID="12504">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_warning_2.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+20</Value>
-      </Upgrade>
-      <Upgrade Category="RepairCrane">
-        <Text ID="15196">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_morale.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+600</Value>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="3065">
-      <Icon />
-    </Info>
-    <Maintenance>
-      <MaintenanceCosts>
-        <Upgrade>
-          <Text ID="1010017">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-            </Icon>
-          </Text>
-          <Value>50 / 25</Value>
-        </Upgrade>
-      </MaintenanceCosts>
-    </Maintenance>
+  <Asset ID="1010525" RV="Release" RT="Common">
+    <N>harbor_07 (Repair Crane)</N>
+    <T ID="1010525" I="data/ui/2kimages/main/3dicons/icon_repair_crane.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="2500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="15">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="15">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="25">
+        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="3">
+        <T ID="1010190" I="data/ui/2kimages/main/icons/icon_influence.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="+20" C="RepairCrane">
+        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
+      </U>
+      <U V="+600" C="RepairCrane">
+        <T ID="15196" I="data/ui/2kimages/main/icons/icon_morale.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="3065" />
+    <M>
+      <MC>
+        <U V="50 / 25">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+      </MC>
+    </M>
   </Asset>
-  <Asset ID="101573" Release="Release" RarityType="Common">
-    <Name>harbor_colony01_07 (Repair Crane)</Name>
-    <Text ID="1010525">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_repair_crane.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Building</ItemType>
-    <AssociatedRegions ID="5000001">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</Filename>
-      </Icon>
-    </AssociatedRegions>
-    <BuildCosts>
-      <Upgrade>
-        <Text ID="1010017">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-          </Icon>
-        </Text>
-        <Value>500</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010196">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
-          </Icon>
-        </Text>
-        <Value>50</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010205">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_bricks.png</Filename>
-          </Icon>
-        </Text>
-        <Value>75</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010218">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_beams.png</Filename>
-          </Icon>
-        </Text>
-        <Value>0</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010190">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_influence.png</Filename>
-          </Icon>
-        </Text>
-        <Value>3</Value>
-      </Upgrade>
-    </BuildCosts>
-    <GenericUpgrades>
-      <Upgrade Category="RepairCrane">
-        <Text ID="12504">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_warning_2.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+20</Value>
-      </Upgrade>
-      <Upgrade Category="RepairCrane">
-        <Text ID="15196">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_morale.png</Filename>
-          </Icon>
-        </Text>
-        <Value>+600</Value>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="3065">
-      <Icon />
-    </Info>
-    <Maintenance>
-      <MaintenanceCosts>
-        <Upgrade>
-          <Text ID="1010017">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-            </Icon>
-          </Text>
-          <Value>50 / 25</Value>
-        </Upgrade>
-      </MaintenanceCosts>
-    </Maintenance>
+  <Asset ID="101573" RV="Release" RT="Common">
+    <N>harbor_colony01_07 (Repair Crane)</N>
+    <T ID="1010525" I="data/ui/2kimages/main/3dicons/icon_repair_crane.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="50">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="75">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="0">
+        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="3">
+        <T ID="1010190" I="data/ui/2kimages/main/icons/icon_influence.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="+20" C="RepairCrane">
+        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
+      </U>
+      <U V="+600" C="RepairCrane">
+        <T ID="15196" I="data/ui/2kimages/main/icons/icon_morale.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="3065" />
+    <M>
+      <MC>
+        <U V="50 / 25">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+      </MC>
+    </M>
   </Asset>
 </RepairCrane>

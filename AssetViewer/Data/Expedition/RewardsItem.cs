@@ -9,14 +9,14 @@ namespace AssetViewer.Data {
   [XmlType(AnonymousType = true)]
   public class RewardsItem {
 
-    #region Properties
+    #region Public Properties
 
     [XmlAttribute]
     public int ID { get; set; }
 
-    [XmlAttribute]
+    [XmlAttribute("A")]
     public int Amount { get; set; }
 
-    #endregion Properties
+    #endregion Public Properties
   }
 }

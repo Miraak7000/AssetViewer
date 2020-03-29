@@ -1,101 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HeavyFreeAreaBuilding_Arctic>
-  <Asset ID="114705" Release="Update 06" RarityType="Common" IsPausable="true">
-    <Name>heavy_arctic_01 (Coal Heavy Industry)</Name>
-    <Text ID="1010298">
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/icon_coal_burn.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity ID="118002">
-      <Icon />
-    </Rarity>
-    <ItemType>Building</ItemType>
-    <AssociatedRegions ID="160001">
-      <Icon>
-        <Filename>data/ui/2kimages/main/icons/icon_session_passage.png</Filename>
-      </Icon>
-    </AssociatedRegions>
-    <BuildCosts>
-      <Upgrade>
-        <Text ID="1010017">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-          </Icon>
-        </Text>
-        <Value>500</Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="1010196">
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/icon_wooden_planks.png</Filename>
-          </Icon>
-        </Text>
-        <Value>2</Value>
-      </Upgrade>
-    </BuildCosts>
-    <GenericUpgrades>
-      <Upgrade Category="Culture">
-        <Text ID="145011">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_attractiveness.png</Filename>
-          </Icon>
-        </Text>
-        <Value>0</Value>
-      </Upgrade>
-      <Upgrade Category="Culture">
-        <Text ID="11279">
-          <Icon>
-            <Filename>data/ui/2kimages/main/assets16/attractiveness/category_pollution.png</Filename>
-          </Icon>
-        </Text>
-        <Value></Value>
-      </Upgrade>
-      <Upgrade>
-        <Text ID="12504">
-          <Icon>
-            <Filename>data/ui/2kimages/main/icons/icon_warning_2.png</Filename>
-          </Icon>
-        </Text>
-        <Value>11</Value>
-      </Upgrade>
-    </GenericUpgrades>
-    <TradePrice />
-    <HiringFee />
-    <Info ID="11143">
-      <Icon />
-    </Info>
-    <FactoryBase>
-      <FactoryOutputs>
-        <Upgrade>
-          <Text ID="1010226">
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/icon_coal.png</Filename>
-            </Icon>
-          </Text>
-          <Value>1 / 4</Value>
-        </Upgrade>
-      </FactoryOutputs>
-    </FactoryBase>
-    <Maintenance>
-      <MaintenanceCosts>
-        <Upgrade>
-          <Text ID="1010017">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_resource_money_4.png</Filename>
-            </Icon>
-          </Text>
-          <Value>20 / 10</Value>
-        </Upgrade>
-        <Upgrade>
-          <Text ID="112653">
-            <Icon>
-              <Filename>data/ui/2kimages/main/icons/icon_ressource_explorer.png</Filename>
-            </Icon>
-          </Text>
-          <Value>10</Value>
-        </Upgrade>
-      </MaintenanceCosts>
-    </Maintenance>
+  <Asset ID="114705" RV="Update 06" RT="Common" IP="true">
+    <N>heavy_arctic_01 (Coal Heavy Industry)</N>
+    <T ID="1010298" I="data/ui/2kimages/main/3dicons/icon_coal_burn.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="2">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="0" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+      <U V="" C="Culture">
+        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
+      </U>
+      <U V="11">
+        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FO>
+        <U V="1 / 4">
+          <T ID="1010226" I="data/ui/2kimages/main/3dicons/icon_coal.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="20 / 10">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="10">
+          <T ID="112653" I="data/ui/2kimages/main/icons/icon_ressource_explorer.png" />
+        </U>
+      </MC>
+    </M>
   </Asset>
 </HeavyFreeAreaBuilding_Arctic>
