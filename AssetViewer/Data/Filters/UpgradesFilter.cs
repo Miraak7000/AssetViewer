@@ -15,9 +15,11 @@ namespace AssetViewer.Data.Filters {
           .Where(w =>
           (
           w.AllUpgrades.Any(l => l.Text?.Equals(SelectedValue) == true && 
+          (
           (l.Additionals?.Any(a => a.Text?.Equals(SelectedComparisonValue) == true) == true) ||
           (l.Text.AdditionalInformation?.Equals(SelectedComparisonValue) == true) ||
           CompareToUpgrade(l)
+          )
           )));
         }
         else if (Comparison == ValueComparisons.UnEqual) {
