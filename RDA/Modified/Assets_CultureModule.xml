@@ -1,5 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CultureModule>
+  <Asset ID="102561" RV="Release" RT="Common">
+    <N>culture_01_module_05_reptileshouse</N>
+    <T ID="102561" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="118026" />
+  </Asset>
   <Asset ID="1010477" RV="Release" RT="Common">
     <N>culture_01_module_01_seagull</N>
     <T ID="1010477" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
@@ -32,22 +48,6 @@
     <HF />
     <I ID="111085" />
   </Asset>
-  <Asset ID="102561" RV="Release" RT="Common">
-    <N>culture_01_module_05_reptileshouse</N>
-    <T ID="102561" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="118026" />
-  </Asset>
   <Asset ID="100454" RV="Release" RT="Common">
     <N>culture_02_module_06_empty</N>
     <T ID="100454" I="data/ui/2kimages/main/3dicons/icon_museum_module.png" />
@@ -64,9 +64,9 @@
     <HF />
     <I ID="11665" />
   </Asset>
-  <Asset ID="100812" RV="Release" RT="Common">
-    <N>culture_01_module_01_parrot</N>
-    <T ID="100812" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+  <Asset ID="102566" RV="Release" RT="Common">
+    <N>culture_01_module_05_fishhouse</N>
+    <T ID="102566" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
     <R ID="118002" />
     <IT>Module</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -80,9 +80,9 @@
     <HF />
     <I ID="118026" />
   </Asset>
-  <Asset ID="102566" RV="Release" RT="Common">
-    <N>culture_01_module_05_fishhouse</N>
-    <T ID="102566" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+  <Asset ID="100812" RV="Release" RT="Common">
+    <N>culture_01_module_01_parrot</N>
+    <T ID="100812" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
     <R ID="118002" />
     <IT>Module</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -256,22 +256,6 @@
     <HF />
     <I ID="11665" />
   </Asset>
-  <Asset ID="101985" RV="Release" RT="Common">
-    <N>culture_01_module_01_vulture</N>
-    <T ID="101985" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="118026" />
-  </Asset>
   <Asset ID="1010481" RV="Release" RT="Common">
     <N>culture_02_module_01_workshop</N>
     <T ID="1010481" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -287,6 +271,22 @@
     <TP />
     <HF />
     <I ID="11665" />
+  </Asset>
+  <Asset ID="101985" RV="Release" RT="Common">
+    <N>culture_01_module_01_vulture</N>
+    <T ID="101985" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="118026" />
   </Asset>
   <Asset ID="111096" RV="Update 05" RT="Common">
     <N>C03_M03_c_Jujube</N>
@@ -304,38 +304,6 @@
     <HF />
     <I ID="111085" />
   </Asset>
-  <Asset ID="101451" RV="Release" RT="Common">
-    <N>culture_02_module_01_workshop_greek</N>
-    <T ID="1010481" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11665" />
-  </Asset>
-  <Asset ID="101452" RV="Release" RT="Common">
-    <N>culture_02_module_01_workshop_celtic</N>
-    <T ID="1010481" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11665" />
-  </Asset>
   <Asset ID="100930" RV="Release" RT="Common">
     <N>culture_02_module_07c</N>
     <T ID="100928" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -352,9 +320,9 @@
     <HF />
     <I ID="11665" />
   </Asset>
-  <Asset ID="102014" RV="Release" RT="Common">
-    <N>culture_01_module_01_peacock</N>
-    <T ID="102014" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+  <Asset ID="101451" RV="Release" RT="Common">
+    <N>culture_02_module_01_workshop_greek</N>
+    <T ID="1010481" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     <R ID="118002" />
     <IT>Module</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -366,7 +334,7 @@
     <GU />
     <TP />
     <HF />
-    <I ID="118026" />
+    <I ID="11665" />
   </Asset>
   <Asset ID="100931" RV="Release" RT="Common">
     <N>culture_02_module_07d</N>
@@ -384,72 +352,8 @@
     <HF />
     <I ID="11665" />
   </Asset>
-  <Asset ID="101453" RV="Release" RT="Common">
-    <N>culture_02_module_01_workshop_inkas</N>
-    <T ID="1010481" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11665" />
-  </Asset>
   <Asset ID="111097" RV="Update 05" RT="Common">
     <N>C03_M03_d_PineTree</N>
-    <T ID="111094" I="data/ui/2kimages/main/3dicons/icon_botanic_garden_module.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="111085" />
-  </Asset>
-  <Asset ID="1010474" RV="Release" RT="Common">
-    <N>culture_01_module_02_wolf</N>
-    <T ID="1010474" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="118026" />
-  </Asset>
-  <Asset ID="101454" RV="Release" RT="Common">
-    <N>culture_02_module_01_workshop_prehistoric</N>
-    <T ID="1010481" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11665" />
-  </Asset>
-  <Asset ID="111098" RV="Update 05" RT="Common">
-    <N>C03_M03_e_JungleTree</N>
     <T ID="111094" I="data/ui/2kimages/main/3dicons/icon_botanic_garden_module.png" />
     <R ID="118002" />
     <IT>Module</IT>
@@ -480,25 +384,9 @@
     <HF />
     <I ID="11665" />
   </Asset>
-  <Asset ID="100813" RV="Release" RT="Common">
-    <N>culture_01_module_02_deer</N>
-    <T ID="100813" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="118026" />
-  </Asset>
-  <Asset ID="1010482" RV="Release" RT="Common">
-    <N>culture_02_module_02_library</N>
-    <T ID="1010482" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+  <Asset ID="101452" RV="Release" RT="Common">
+    <N>culture_02_module_01_workshop_celtic</N>
+    <T ID="1010481" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     <R ID="118002" />
     <IT>Module</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -512,8 +400,24 @@
     <HF />
     <I ID="11665" />
   </Asset>
-  <Asset ID="111099" RV="Update 05" RT="Common">
-    <N>C03_M03_f_AmazonTree</N>
+  <Asset ID="102014" RV="Release" RT="Common">
+    <N>culture_01_module_01_peacock</N>
+    <T ID="102014" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="118026" />
+  </Asset>
+  <Asset ID="111098" RV="Update 05" RT="Common">
+    <N>C03_M03_e_JungleTree</N>
     <T ID="111094" I="data/ui/2kimages/main/3dicons/icon_botanic_garden_module.png" />
     <R ID="118002" />
     <IT>Module</IT>
@@ -528,9 +432,9 @@
     <HF />
     <I ID="111085" />
   </Asset>
-  <Asset ID="101455" RV="Release" RT="Common">
-    <N>culture_02_module_02_library_greek</N>
-    <T ID="1010482" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+  <Asset ID="1010474" RV="Release" RT="Common">
+    <N>culture_01_module_02_wolf</N>
+    <T ID="1010474" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
     <R ID="118002" />
     <IT>Module</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -542,7 +446,7 @@
     <GU />
     <TP />
     <HF />
-    <I ID="11665" />
+    <I ID="118026" />
   </Asset>
   <Asset ID="100933" RV="Release" RT="Common">
     <N>culture_02_module_07f</N>
@@ -560,25 +464,9 @@
     <HF />
     <I ID="11665" />
   </Asset>
-  <Asset ID="111100" RV="Update 05" RT="Common">
-    <N>C03_M03_g_CocoTree</N>
-    <T ID="111094" I="data/ui/2kimages/main/3dicons/icon_botanic_garden_module.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="111085" />
-  </Asset>
-  <Asset ID="101456" RV="Release" RT="Common">
-    <N>culture_02_module_02_library_celtic</N>
-    <T ID="1010482" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+  <Asset ID="101453" RV="Release" RT="Common">
+    <N>culture_02_module_01_workshop_inkas</N>
+    <T ID="1010481" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     <R ID="118002" />
     <IT>Module</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -592,9 +480,9 @@
     <HF />
     <I ID="11665" />
   </Asset>
-  <Asset ID="100814" RV="Release" RT="Common">
-    <N>culture_01_module_02_bear</N>
-    <T ID="100814" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+  <Asset ID="100813" RV="Release" RT="Common">
+    <N>culture_01_module_02_deer</N>
+    <T ID="100813" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
     <R ID="118002" />
     <IT>Module</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -608,24 +496,8 @@
     <HF />
     <I ID="118026" />
   </Asset>
-  <Asset ID="101457" RV="Release" RT="Common">
-    <N>culture_02_module_02_library_inkas</N>
-    <T ID="1010482" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11665" />
-  </Asset>
-  <Asset ID="111101" RV="Update 05" RT="Common">
-    <N>C03_M03_h_PalmTree</N>
+  <Asset ID="111099" RV="Update 05" RT="Common">
+    <N>C03_M03_f_AmazonTree</N>
     <T ID="111094" I="data/ui/2kimages/main/3dicons/icon_botanic_garden_module.png" />
     <R ID="118002" />
     <IT>Module</IT>
@@ -656,25 +528,9 @@
     <HF />
     <I ID="11665" />
   </Asset>
-  <Asset ID="101986" RV="Release" RT="Common">
-    <N>culture_01_module_02_farm_small</N>
-    <T ID="101986" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="118026" />
-  </Asset>
-  <Asset ID="101458" RV="Release" RT="Common">
-    <N>culture_02_module_02_library_prehistoric</N>
-    <T ID="1010482" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+  <Asset ID="101454" RV="Release" RT="Common">
+    <N>culture_02_module_01_workshop_prehistoric</N>
+    <T ID="1010481" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     <R ID="118002" />
     <IT>Module</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -688,8 +544,24 @@
     <HF />
     <I ID="11665" />
   </Asset>
-  <Asset ID="111102" RV="Update 05" RT="Common">
-    <N>C03_M03_i_Rhododendron</N>
+  <Asset ID="100814" RV="Release" RT="Common">
+    <N>culture_01_module_02_bear</N>
+    <T ID="100814" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="118026" />
+  </Asset>
+  <Asset ID="111100" RV="Update 05" RT="Common">
+    <N>C03_M03_g_CocoTree</N>
     <T ID="111094" I="data/ui/2kimages/main/3dicons/icon_botanic_garden_module.png" />
     <R ID="118002" />
     <IT>Module</IT>
@@ -703,22 +575,6 @@
     <TP />
     <HF />
     <I ID="111085" />
-  </Asset>
-  <Asset ID="101987" RV="Release" RT="Common">
-    <N>culture_01_module_02_fox</N>
-    <T ID="1010474" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="118026" />
   </Asset>
   <Asset ID="100941" RV="Release" RT="Common">
     <N>culture_02_module_08b</N>
@@ -736,9 +592,9 @@
     <HF />
     <I ID="11665" />
   </Asset>
-  <Asset ID="1010483" RV="Release" RT="Common">
-    <N>culture_02_module_03_afterlife</N>
-    <T ID="1010483" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+  <Asset ID="1010482" RV="Release" RT="Common">
+    <N>culture_02_module_02_library</N>
+    <T ID="1010482" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     <R ID="118002" />
     <IT>Module</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -752,8 +608,24 @@
     <HF />
     <I ID="11665" />
   </Asset>
-  <Asset ID="114310" RV="Update 05" RT="Common">
-    <N>C03_M03_j_Ashoka</N>
+  <Asset ID="101986" RV="Release" RT="Common">
+    <N>culture_01_module_02_farm_small</N>
+    <T ID="101986" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="118026" />
+  </Asset>
+  <Asset ID="111101" RV="Update 05" RT="Common">
+    <N>C03_M03_h_PalmTree</N>
     <T ID="111094" I="data/ui/2kimages/main/3dicons/icon_botanic_garden_module.png" />
     <R ID="118002" />
     <IT>Module</IT>
@@ -784,6 +656,70 @@
     <HF />
     <I ID="11665" />
   </Asset>
+  <Asset ID="101455" RV="Release" RT="Common">
+    <N>culture_02_module_02_library_greek</N>
+    <T ID="1010482" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11665" />
+  </Asset>
+  <Asset ID="101987" RV="Release" RT="Common">
+    <N>culture_01_module_02_fox</N>
+    <T ID="1010474" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="118026" />
+  </Asset>
+  <Asset ID="111102" RV="Update 05" RT="Common">
+    <N>C03_M03_i_Rhododendron</N>
+    <T ID="111094" I="data/ui/2kimages/main/3dicons/icon_botanic_garden_module.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="111085" />
+  </Asset>
+  <Asset ID="101456" RV="Release" RT="Common">
+    <N>culture_02_module_02_library_celtic</N>
+    <T ID="1010482" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11665" />
+  </Asset>
   <Asset ID="101988" RV="Release" RT="Common">
     <N>culture_01_module_02_peacock</N>
     <T ID="1010474" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
@@ -800,9 +736,9 @@
     <HF />
     <I ID="118026" />
   </Asset>
-  <Asset ID="101459" RV="Release" RT="Common">
-    <N>culture_02_module_03_afterlife_greek</N>
-    <T ID="1010483" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+  <Asset ID="100943" RV="Release" RT="Common">
+    <N>culture_02_module_08d</N>
+    <T ID="100928" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     <R ID="118002" />
     <IT>Module</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -816,8 +752,8 @@
     <HF />
     <I ID="11665" />
   </Asset>
-  <Asset ID="114311" RV="Update 05" RT="Common">
-    <N>C03_M03_j_Wimba</N>
+  <Asset ID="114310" RV="Update 05" RT="Common">
+    <N>C03_M03_j_Ashoka</N>
     <T ID="111094" I="data/ui/2kimages/main/3dicons/icon_botanic_garden_module.png" />
     <R ID="118002" />
     <IT>Module</IT>
@@ -832,8 +768,24 @@
     <HF />
     <I ID="111085" />
   </Asset>
-  <Asset ID="100943" RV="Release" RT="Common">
-    <N>culture_02_module_08d</N>
+  <Asset ID="101457" RV="Release" RT="Common">
+    <N>culture_02_module_02_library_inkas</N>
+    <T ID="1010482" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11665" />
+  </Asset>
+  <Asset ID="100944" RV="Release" RT="Common">
+    <N>culture_02_module_08e</N>
     <T ID="100928" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     <R ID="118002" />
     <IT>Module</IT>
@@ -864,9 +816,9 @@
     <HF />
     <I ID="118026" />
   </Asset>
-  <Asset ID="101460" RV="Release" RT="Common">
-    <N>culture_02_module_03_afterlife_celtic</N>
-    <T ID="1010483" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+  <Asset ID="114311" RV="Update 05" RT="Common">
+    <N>C03_M03_j_Wimba</N>
+    <T ID="111094" I="data/ui/2kimages/main/3dicons/icon_botanic_garden_module.png" />
     <R ID="118002" />
     <IT>Module</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -878,27 +830,11 @@
     <GU />
     <TP />
     <HF />
-    <I ID="11665" />
-  </Asset>
-  <Asset ID="111104" RV="Update 05" RT="Common">
-    <N>C03_M06_empty</N>
-    <T ID="111104" I="data/ui/2kimages/main/3dicons/icon_botanic_garden_module.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="1793398348" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
     <I ID="111085" />
   </Asset>
-  <Asset ID="100944" RV="Release" RT="Common">
-    <N>culture_02_module_08e</N>
-    <T ID="100928" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+  <Asset ID="101458" RV="Release" RT="Common">
+    <N>culture_02_module_02_library_prehistoric</N>
+    <T ID="1010482" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     <R ID="118002" />
     <IT>Module</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -928,38 +864,6 @@
     <HF />
     <I ID="118026" />
   </Asset>
-  <Asset ID="101461" RV="Release" RT="Common">
-    <N>culture_02_module_03_afterlife_inkas</N>
-    <T ID="1010483" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11665" />
-  </Asset>
-  <Asset ID="113452" RV="Update 05" RT="Common">
-    <N>entertainment_musicpavillion_empty</N>
-    <T ID="114323" I="data/ui/2kimages/main/3dicons/icon_music_pavillion.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="1793398348" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="114585" />
-  </Asset>
   <Asset ID="100945" RV="Release" RT="Common">
     <N>culture_02_module_08f</N>
     <T ID="100928" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -976,8 +880,24 @@
     <HF />
     <I ID="11665" />
   </Asset>
-  <Asset ID="101462" RV="Release" RT="Common">
-    <N>culture_02_module_03_afterlife_prehistoric</N>
+  <Asset ID="111104" RV="Update 05" RT="Common">
+    <N>C03_M06_empty</N>
+    <T ID="111104" I="data/ui/2kimages/main/3dicons/icon_botanic_garden_module.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="1793398348" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="111085" />
+  </Asset>
+  <Asset ID="1010483" RV="Release" RT="Common">
+    <N>culture_02_module_03_afterlife</N>
     <T ID="1010483" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     <R ID="118002" />
     <IT>Module</IT>
@@ -1008,8 +928,40 @@
     <HF />
     <I ID="118026" />
   </Asset>
-  <Asset ID="112486" RV="Update 05" RT="Common">
-    <N>entertainment_musicpavillion_1701</N>
+  <Asset ID="112477" RV="Update 04" RT="Common">
+    <N>culture_01_module_07_kraken</N>
+    <T ID="112477" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="118026" />
+  </Asset>
+  <Asset ID="113763" RV="Update 04" RT="Common">
+    <N>culture_01_module_01_medium_fish</N>
+    <T ID="113763" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="118026" />
+  </Asset>
+  <Asset ID="113452" RV="Update 05" RT="Common">
+    <N>entertainment_musicpavillion_empty</N>
     <T ID="114323" I="data/ui/2kimages/main/3dicons/icon_music_pavillion.png" />
     <R ID="118002" />
     <IT>Module</IT>
@@ -1040,9 +992,25 @@
     <HF />
     <I ID="118026" />
   </Asset>
-  <Asset ID="112477" RV="Update 04" RT="Common">
-    <N>culture_01_module_07_kraken</N>
-    <T ID="112477" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+  <Asset ID="101459" RV="Release" RT="Common">
+    <N>culture_02_module_03_afterlife_greek</N>
+    <T ID="1010483" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11665" />
+  </Asset>
+  <Asset ID="113764" RV="Update 04" RT="Common">
+    <N>culture_01_module_01_small_fish</N>
+    <T ID="113764" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
     <R ID="118002" />
     <IT>Module</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -1055,6 +1023,38 @@
     <TP />
     <HF />
     <I ID="118026" />
+  </Asset>
+  <Asset ID="101460" RV="Release" RT="Common">
+    <N>culture_02_module_03_afterlife_celtic</N>
+    <T ID="1010483" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11665" />
+  </Asset>
+  <Asset ID="112486" RV="Update 05" RT="Common">
+    <N>entertainment_musicpavillion_1701</N>
+    <T ID="114323" I="data/ui/2kimages/main/3dicons/icon_music_pavillion.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="1793398348" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="114585" />
   </Asset>
   <Asset ID="101991" RV="Release" RT="Common">
     <N>culture_01_module_03_seal</N>
@@ -1072,25 +1072,9 @@
     <HF />
     <I ID="118026" />
   </Asset>
-  <Asset ID="113763" RV="Update 04" RT="Common">
-    <N>culture_01_module_01_medium_fish</N>
-    <T ID="113763" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="118026" />
-  </Asset>
-  <Asset ID="1010484" RV="Release" RT="Common">
-    <N>culture_02_module_04a</N>
-    <T ID="100928" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+  <Asset ID="112479" RV="Update 04" RT="Common">
+    <N>culture_02_module_09a_atlantiswall</N>
+    <T ID="112478" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     <R ID="118002" />
     <IT>Module</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -1104,25 +1088,9 @@
     <HF />
     <I ID="11665" />
   </Asset>
-  <Asset ID="114148" RV="Update 05" RT="Common">
-    <N>entertainment_musicpavillion_1404</N>
-    <T ID="114323" I="data/ui/2kimages/main/3dicons/icon_music_pavillion.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="1793398348" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="114585" />
-  </Asset>
-  <Asset ID="100917" RV="Release" RT="Common">
-    <N>culture_02_module_04b</N>
-    <T ID="100928" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+  <Asset ID="101461" RV="Release" RT="Common">
+    <N>culture_02_module_03_afterlife_inkas</N>
+    <T ID="1010483" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     <R ID="118002" />
     <IT>Module</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -1152,9 +1120,25 @@
     <HF />
     <I ID="118026" />
   </Asset>
-  <Asset ID="113764" RV="Update 04" RT="Common">
-    <N>culture_01_module_01_small_fish</N>
-    <T ID="113764" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+  <Asset ID="114148" RV="Update 05" RT="Common">
+    <N>entertainment_musicpavillion_1404</N>
+    <T ID="114323" I="data/ui/2kimages/main/3dicons/icon_music_pavillion.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="1793398348" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="114585" />
+  </Asset>
+  <Asset ID="112480" RV="Update 04" RT="Common">
+    <N>culture_02_module_09c_poseidontemple</N>
+    <T ID="112483" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     <R ID="118002" />
     <IT>Module</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -1166,11 +1150,11 @@
     <GU />
     <TP />
     <HF />
-    <I ID="118026" />
+    <I ID="11665" />
   </Asset>
-  <Asset ID="100918" RV="Release" RT="Common">
-    <N>culture_02_module_04c</N>
-    <T ID="100928" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+  <Asset ID="101462" RV="Release" RT="Common">
+    <N>culture_02_module_03_afterlife_prehistoric</N>
+    <T ID="1010483" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     <R ID="118002" />
     <IT>Module</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -1200,6 +1184,22 @@
     <HF />
     <I ID="118026" />
   </Asset>
+  <Asset ID="112481" RV="Update 04" RT="Common">
+    <N>culture_02_module_09d_columnsoflaws</N>
+    <T ID="112484" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11665" />
+  </Asset>
   <Asset ID="114149" RV="Update 05" RT="Common">
     <N>entertainment_musicpavillion_2070</N>
     <T ID="114323" I="data/ui/2kimages/main/3dicons/icon_music_pavillion.png" />
@@ -1216,24 +1216,8 @@
     <HF />
     <I ID="114585" />
   </Asset>
-  <Asset ID="112479" RV="Update 04" RT="Common">
-    <N>culture_02_module_09a_atlantiswall</N>
-    <T ID="112478" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11665" />
-  </Asset>
-  <Asset ID="100919" RV="Release" RT="Common">
-    <N>culture_02_module_04d</N>
+  <Asset ID="1010484" RV="Release" RT="Common">
+    <N>culture_02_module_04a</N>
     <T ID="100928" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     <R ID="118002" />
     <IT>Module</IT>
@@ -1264,9 +1248,9 @@
     <HF />
     <I ID="118026" />
   </Asset>
-  <Asset ID="112480" RV="Update 04" RT="Common">
-    <N>culture_02_module_09c_poseidontemple</N>
-    <T ID="112483" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+  <Asset ID="112482" RV="Update 04" RT="Common">
+    <N>culture_02_module_09b_orichalkstatue</N>
+    <T ID="112485" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     <R ID="118002" />
     <IT>Module</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -1296,8 +1280,8 @@
     <HF />
     <I ID="114585" />
   </Asset>
-  <Asset ID="100920" RV="Release" RT="Common">
-    <N>culture_02_module_04e</N>
+  <Asset ID="100917" RV="Release" RT="Common">
+    <N>culture_02_module_04b</N>
     <T ID="100928" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     <R ID="118002" />
     <IT>Module</IT>
@@ -1328,9 +1312,9 @@
     <HF />
     <I ID="118026" />
   </Asset>
-  <Asset ID="112481" RV="Update 04" RT="Common">
-    <N>culture_02_module_09d_columnsoflaws</N>
-    <T ID="112484" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+  <Asset ID="113376" RV="Update 04" RT="Common">
+    <N>culture_02_module_01_scepter</N>
+    <T ID="113376" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     <R ID="118002" />
     <IT>Module</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -1344,8 +1328,8 @@
     <HF />
     <I ID="11665" />
   </Asset>
-  <Asset ID="100921" RV="Release" RT="Common">
-    <N>culture_02_module_04f</N>
+  <Asset ID="100918" RV="Release" RT="Common">
+    <N>culture_02_module_04c</N>
     <T ID="100928" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     <R ID="118002" />
     <IT>Module</IT>
@@ -1392,9 +1376,9 @@
     <HF />
     <I ID="118026" />
   </Asset>
-  <Asset ID="112482" RV="Update 04" RT="Common">
-    <N>culture_02_module_09b_orichalkstatue</N>
-    <T ID="112485" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+  <Asset ID="111083" RV="Update 05" RT="Common">
+    <N>C03_M01_GlassHouse</N>
+    <T ID="111083" I="data/ui/2kimages/main/3dicons/icon_botanic_garden_module.png" />
     <R ID="118002" />
     <IT>Module</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -1406,10 +1390,10 @@
     <GU />
     <TP />
     <HF />
-    <I ID="11665" />
+    <I ID="111085" />
   </Asset>
-  <Asset ID="100922" RV="Release" RT="Common">
-    <N>culture_02_module_05a</N>
+  <Asset ID="100919" RV="Release" RT="Common">
+    <N>culture_02_module_04d</N>
     <T ID="100928" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     <R ID="118002" />
     <IT>Module</IT>
@@ -1456,9 +1440,9 @@
     <HF />
     <I ID="118026" />
   </Asset>
-  <Asset ID="113376" RV="Update 04" RT="Common">
-    <N>culture_02_module_01_scepter</N>
-    <T ID="113376" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+  <Asset ID="111086" RV="Update 05" RT="Common">
+    <N>C03_M02_a_BlueLotus</N>
+    <T ID="112610" I="data/ui/2kimages/main/3dicons/icon_botanic_garden_module.png" />
     <R ID="118002" />
     <IT>Module</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -1470,10 +1454,10 @@
     <GU />
     <TP />
     <HF />
-    <I ID="11665" />
+    <I ID="111085" />
   </Asset>
-  <Asset ID="100923" RV="Release" RT="Common">
-    <N>culture_02_module_05b</N>
+  <Asset ID="100920" RV="Release" RT="Common">
+    <N>culture_02_module_04e</N>
     <T ID="100928" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     <R ID="118002" />
     <IT>Module</IT>
@@ -1487,22 +1471,6 @@
     <TP />
     <HF />
     <I ID="11665" />
-  </Asset>
-  <Asset ID="114784" RV="Update 06" RT="Common">
-    <N>culture_01_module_01_icesheet02_polar bear</N>
-    <T ID="114783" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="118026" />
   </Asset>
   <Asset ID="101816" RV="Release" RT="Common">
     <N>culture_01_module_04_elephant</N>
@@ -1520,9 +1488,9 @@
     <HF />
     <I ID="118026" />
   </Asset>
-  <Asset ID="111083" RV="Update 05" RT="Common">
-    <N>C03_M01_GlassHouse</N>
-    <T ID="111083" I="data/ui/2kimages/main/3dicons/icon_botanic_garden_module.png" />
+  <Asset ID="111088" RV="Update 05" RT="Common">
+    <N>C03_M02_c_WhiteLotus</N>
+    <T ID="112610" I="data/ui/2kimages/main/3dicons/icon_botanic_garden_module.png" />
     <R ID="118002" />
     <IT>Module</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -1536,24 +1504,8 @@
     <HF />
     <I ID="111085" />
   </Asset>
-  <Asset ID="100924" RV="Release" RT="Common">
-    <N>culture_02_module_05c</N>
-    <T ID="100928" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11665" />
-  </Asset>
-  <Asset ID="114785" RV="Update 06" RT="Common">
-    <N>culture_01_module_01_icesheet03_narwhal</N>
+  <Asset ID="114784" RV="Update 06" RT="Common">
+    <N>culture_01_module_01_icesheet02_polar bear</N>
     <T ID="114783" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
     <R ID="118002" />
     <IT>Module</IT>
@@ -1568,8 +1520,8 @@
     <HF />
     <I ID="118026" />
   </Asset>
-  <Asset ID="100925" RV="Release" RT="Common">
-    <N>culture_02_module_05d</N>
+  <Asset ID="100921" RV="Release" RT="Common">
+    <N>culture_02_module_04f</N>
     <T ID="100928" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     <R ID="118002" />
     <IT>Module</IT>
@@ -1584,9 +1536,9 @@
     <HF />
     <I ID="11665" />
   </Asset>
-  <Asset ID="114786" RV="Update 06" RT="Common">
-    <N>culture_01_module_01_tundra01_muskox</N>
-    <T ID="114786" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+  <Asset ID="111087" RV="Update 05" RT="Common">
+    <N>C03_M02_b_DeepCorals</N>
+    <T ID="112610" I="data/ui/2kimages/main/3dicons/icon_botanic_garden_module.png" />
     <R ID="118002" />
     <IT>Module</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -1598,7 +1550,7 @@
     <GU />
     <TP />
     <HF />
-    <I ID="118026" />
+    <I ID="111085" />
   </Asset>
   <Asset ID="102016" RV="Release" RT="Common">
     <N>culture_01_module_04_crocodiles</N>
@@ -1616,6 +1568,54 @@
     <HF />
     <I ID="118026" />
   </Asset>
+  <Asset ID="114785" RV="Update 06" RT="Common">
+    <N>culture_01_module_01_icesheet03_narwhal</N>
+    <T ID="114783" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="118026" />
+  </Asset>
+  <Asset ID="100922" RV="Release" RT="Common">
+    <N>culture_02_module_05a</N>
+    <T ID="100928" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11665" />
+  </Asset>
+  <Asset ID="111089" RV="Update 05" RT="Common">
+    <N>C03_M02_d_RedLotus</N>
+    <T ID="112610" I="data/ui/2kimages/main/3dicons/icon_botanic_garden_module.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="111085" />
+  </Asset>
   <Asset ID="110255" RV="Release" RT="Common">
     <N>culture_01_module_04_waterbuffalo</N>
     <T ID="101810" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
@@ -1632,8 +1632,24 @@
     <HF />
     <I ID="118026" />
   </Asset>
-  <Asset ID="100926" RV="Release" RT="Common">
-    <N>culture_02_module_05e</N>
+  <Asset ID="114786" RV="Update 06" RT="Common">
+    <N>culture_01_module_01_tundra01_muskox</N>
+    <T ID="114786" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="118026" />
+  </Asset>
+  <Asset ID="100923" RV="Release" RT="Common">
+    <N>culture_02_module_05b</N>
     <T ID="100928" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     <R ID="118002" />
     <IT>Module</IT>
@@ -1648,8 +1664,8 @@
     <HF />
     <I ID="11665" />
   </Asset>
-  <Asset ID="111086" RV="Update 05" RT="Common">
-    <N>C03_M02_a_BlueLotus</N>
+  <Asset ID="111090" RV="Update 05" RT="Common">
+    <N>C03_M02_e_YellowLotus</N>
     <T ID="112610" I="data/ui/2kimages/main/3dicons/icon_botanic_garden_module.png" />
     <R ID="118002" />
     <IT>Module</IT>
@@ -1680,8 +1696,8 @@
     <HF />
     <I ID="118026" />
   </Asset>
-  <Asset ID="100927" RV="Release" RT="Common">
-    <N>culture_02_module_05f</N>
+  <Asset ID="100924" RV="Release" RT="Common">
+    <N>culture_02_module_05c</N>
     <T ID="100928" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     <R ID="118002" />
     <IT>Module</IT>
@@ -1712,8 +1728,8 @@
     <HF />
     <I ID="118026" />
   </Asset>
-  <Asset ID="111088" RV="Update 05" RT="Common">
-    <N>C03_M02_c_WhiteLotus</N>
+  <Asset ID="111091" RV="Update 05" RT="Common">
+    <N>C03_M02_f_Lilies</N>
     <T ID="112610" I="data/ui/2kimages/main/3dicons/icon_botanic_garden_module.png" />
     <R ID="118002" />
     <IT>Module</IT>
@@ -1760,169 +1776,9 @@
     <HF />
     <I ID="118026" />
   </Asset>
-  <Asset ID="111087" RV="Update 05" RT="Common">
-    <N>C03_M02_b_DeepCorals</N>
-    <T ID="112610" I="data/ui/2kimages/main/3dicons/icon_botanic_garden_module.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="111085" />
-  </Asset>
-  <Asset ID="102558" RV="Release" RT="Common">
-    <N>culture_01_module_05_insectshouse</N>
-    <T ID="102558" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="118026" />
-  </Asset>
-  <Asset ID="114789" RV="Update 06" RT="Common">
-    <N>culture_02_module_01a_men_inukshuk</N>
-    <T ID="114789" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11665" />
-  </Asset>
-  <Asset ID="111089" RV="Update 05" RT="Common">
-    <N>C03_M02_d_RedLotus</N>
-    <T ID="112610" I="data/ui/2kimages/main/3dicons/icon_botanic_garden_module.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="111085" />
-  </Asset>
-  <Asset ID="102559" RV="Release" RT="Common">
-    <N>culture_01_module_05_birdshouse</N>
-    <T ID="102559" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="118026" />
-  </Asset>
-  <Asset ID="114790" RV="Update 06" RT="Common">
-    <N>culture_02_module_01b_pyramids_inukshuk</N>
-    <T ID="114789" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11665" />
-  </Asset>
-  <Asset ID="111090" RV="Update 05" RT="Common">
-    <N>C03_M02_e_YellowLotus</N>
-    <T ID="112610" I="data/ui/2kimages/main/3dicons/icon_botanic_garden_module.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="111085" />
-  </Asset>
-  <Asset ID="102560" RV="Release" RT="Common">
-    <N>culture_01_module_05_mammalshouse</N>
-    <T ID="100645" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="118026" />
-  </Asset>
-  <Asset ID="114791" RV="Update 06" RT="Common">
-    <N>culture_02_module_02a_mammoth</N>
-    <T ID="114791" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11665" />
-  </Asset>
-  <Asset ID="111091" RV="Update 05" RT="Common">
-    <N>C03_M02_f_Lilies</N>
-    <T ID="112610" I="data/ui/2kimages/main/3dicons/icon_botanic_garden_module.png" />
-    <R ID="118002" />
-    <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="111085" />
-  </Asset>
-  <Asset ID="114792" RV="Update 06" RT="Common">
-    <N>culture_02_module_02b_shipwreck</N>
-    <T ID="114792" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+  <Asset ID="100925" RV="Release" RT="Common">
+    <N>culture_02_module_05d</N>
+    <T ID="100928" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     <R ID="118002" />
     <IT>Module</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -1952,9 +1808,41 @@
     <HF />
     <I ID="111085" />
   </Asset>
-  <Asset ID="114793" RV="Update 06" RT="Common">
-    <N>culture_02_module_02c_igloo</N>
-    <T ID="114793" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+  <Asset ID="114789" RV="Update 06" RT="Common">
+    <N>culture_02_module_01a_men_inukshuk</N>
+    <T ID="114789" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11665" />
+  </Asset>
+  <Asset ID="102558" RV="Release" RT="Common">
+    <N>culture_01_module_05_insectshouse</N>
+    <T ID="102558" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="118026" />
+  </Asset>
+  <Asset ID="100926" RV="Release" RT="Common">
+    <N>culture_02_module_05e</N>
+    <T ID="100928" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     <R ID="118002" />
     <IT>Module</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -1983,5 +1871,117 @@
     <TP />
     <HF />
     <I ID="111085" />
+  </Asset>
+  <Asset ID="114790" RV="Update 06" RT="Common">
+    <N>culture_02_module_01b_pyramids_inukshuk</N>
+    <T ID="114789" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11665" />
+  </Asset>
+  <Asset ID="102559" RV="Release" RT="Common">
+    <N>culture_01_module_05_birdshouse</N>
+    <T ID="102559" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="118026" />
+  </Asset>
+  <Asset ID="100927" RV="Release" RT="Common">
+    <N>culture_02_module_05f</N>
+    <T ID="100928" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11665" />
+  </Asset>
+  <Asset ID="114791" RV="Update 06" RT="Common">
+    <N>culture_02_module_02a_mammoth</N>
+    <T ID="114791" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11665" />
+  </Asset>
+  <Asset ID="102560" RV="Release" RT="Common">
+    <N>culture_01_module_05_mammalshouse</N>
+    <T ID="100645" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="118026" />
+  </Asset>
+  <Asset ID="114792" RV="Update 06" RT="Common">
+    <N>culture_02_module_02b_shipwreck</N>
+    <T ID="114792" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11665" />
+  </Asset>
+  <Asset ID="114793" RV="Update 06" RT="Common">
+    <N>culture_02_module_02c_igloo</N>
+    <T ID="114793" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    <R ID="118002" />
+    <IT>Module</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11665" />
   </Asset>
 </CultureModule>

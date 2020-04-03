@@ -1,60 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PowerplantBuilding>
-  <Asset ID="100780" RV="Release" RT="Common" IP="true">
-    <N>electricity_02 (Oil Power Plant)</N>
-    <T ID="100780" I="data/ui/2kimages/main/3dicons/icon_electric_works_oil.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="25000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="30">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="50">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="40">
-        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="30">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-      <U V="25">
-        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="35">
-        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
-      </U>
-      <U V="35 / 35">
-        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="10946" />
-    <FB CT="5">
-      <FI>
-        <U V="1 / 100">
-          <T ID="1010566" I="data/ui/2kimages/main/3dicons/icon_oil.png" />
-        </U>
-      </FI>
-    </FB>
-    <M>
-      <MC>
-        <U V="400 / 200">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="150">
-          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
   <Asset ID="117547" RV="Update 06" RT="Common" IP="true">
     <N>electricity_03 (Gas Power Plant)</N>
     <T ID="117547" I="data/ui/2kimages/main/3dicons/icon_electric_works_gas.png" />
@@ -105,6 +50,61 @@
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
         <U V="250">
+          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="100780" RV="Release" RT="Common" IP="true">
+    <N>electricity_02 (Oil Power Plant)</N>
+    <T ID="100780" I="data/ui/2kimages/main/3dicons/icon_electric_works_oil.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="25000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="30">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="50">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="40">
+        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="30">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="25">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="35">
+        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
+      </U>
+      <U V="35 / 35">
+        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="10946" />
+    <FB CT="5">
+      <FI>
+        <U V="1 / 100">
+          <T ID="1010566" I="data/ui/2kimages/main/3dicons/icon_oil.png" />
+        </U>
+      </FI>
+    </FB>
+    <M>
+      <MC>
+        <U V="400 / 200">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="150">
           <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
         </U>
       </MC>

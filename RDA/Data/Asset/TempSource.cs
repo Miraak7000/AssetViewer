@@ -147,20 +147,17 @@ namespace RDA.Data {
         case "A7_QuestLostCargo":
         case "A7_QuestExpedition":
         case "A7_QuestDivingBellSonar":
+        case "A7_QuestDivingBellTreasureMap":
           var questgiver = Source.XPathSelectElement("Values/Quest/QuestGiver")?.Value;
           if (questgiver != null) {
             this.Text = new Description(questgiver).InsertBefore("-").InsertBefore(new Description("2734"));
             foreach (var item in element.Details) {
               this.Details.Add((new Description(item.Asset.XPathSelectElement("Values/Standard/GUID").Value), item.Weight));
             }
-          }
-          break;
 
-        case "A7_QuestDivingBellTreasureMap":
-          questgiver = Source.XPathSelectElement("Values/Quest/QuestGiver")?.Value;
-          this.Text = new Description(questgiver ?? "113420").InsertBefore("-").InsertBefore(new Description("2734"));
-          foreach (var item in element.Details) {
-            this.Details.Add((new Description(item.Asset.XPathSelectElement("Values/Standard/GUID").Value), item.Weight));
+          }
+          else {
+
           }
           break;
 
@@ -177,7 +174,13 @@ namespace RDA.Data {
 
         case "Dive":
           this.Text = new Description("113420");
-          this.Details = element.Details.Select(i => (new Description("113420"), i.Weight)).ToList();
+          foreach (var item in element.Details) {
+            var desc = new Description(item.Asset.XPathSelectElement("Values/Standard/GUID").Value);
+            if (item.Asset.Element("Template").Value == "ItemWithUI") {
+              desc = desc.AppendInBraces(new Description(item.Asset.Descendants("TreasureSessionOrRegion").First().Value));
+            }
+            this.Details.Add((desc, item.Weight));
+          }
           break;
 
         case "Pickup":

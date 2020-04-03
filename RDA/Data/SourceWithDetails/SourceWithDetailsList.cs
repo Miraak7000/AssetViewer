@@ -65,6 +65,9 @@ namespace RDA.Data {
       if (questGiver != null) {
         old = this.FirstOrDefault(w => w.Source.XPathSelectElement("Values/Quest/QuestGiver")?.Value == questGiver);
       }
+      else if (element.Element("Template")?.Value == "Dive") {
+        old = this.FirstOrDefault(w => w.Source.Element("Template")?.Value == "Dive");
+      }
 
       //Tourism
       if (element.Element("Template")?.Value == "TourismFeature") {

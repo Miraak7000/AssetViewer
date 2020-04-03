@@ -1,25 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ActiveItem>
-  <Asset ID="190814" RV="Release" RT="Uncommon">
-    <N>WhiteFlagItem</N>
-    <T ID="190814" I="data/ui/2kimages/main/3dicons/icon_white_flag.png" />
-    <R ID="118003" />
-    <IT>Item</IT>
-    <A ID="Ship">
-      <T ID="2342" I="data/ui/2kimages/main/3dicons/icon_ship.png" />
-    </A>
-    <IAU>
-      <U V="" C="VehicleUpgrade">
-        <T ID="19538" I="data/ui/2kimages/main/icons/icon_claim_island.png">
-          <AI ID="19487" I="data/ui/2kimages/main/icons/icon_smiley.png" FS="16" />
-        </T>
-      </U>
-    </IAU>
-    <GU />
-    <TP />
-    <HF />
-    <S />
-  </Asset>
   <Asset ID="191513" RV="Release" RT="Uncommon">
     <N>BlockShare</N>
     <T ID="191513" I="data/ui/2kimages/main/icons/icon_bankrupt.png" />
@@ -29,11 +9,20 @@
       <T ID="4065" I="data/ui/2kimages/main/icons/icon_harbour.png" />
     </A>
     <IAU>
+      <U V="">
+        <T ID="20071" FS="16" />
+      </U>
       <U V="" C="KontorUpgrade">
         <T ID="15801" I="data/ui/2kimages/main/icons/icon_untick.png" />
       </U>
       <U V="" C="KontorUpgrade">
         <T ID="15802" I="data/ui/2kimages/main/icons/icon_untick.png" />
+      </U>
+      <U V="00:05:00">
+        <T ID="2423" I="data/ui/2kimages/main/3dicons/icon_time.png" FS="16" />
+      </U>
+      <U V="00:01:00">
+        <T ID="2424" I="data/ui/2kimages/main/icons/icon_wait_till_full.png" FS="16" />
       </U>
     </IAU>
     <GU />
@@ -41,19 +30,25 @@
     <HF />
     <S />
   </Asset>
-  <Asset ID="190988" RV="Release" RT="Uncommon">
-    <N>PirateFlag</N>
-    <T ID="190988" I="data/ui/2kimages/main/3dicons/icon_pirate_flag.png" />
+  <Asset ID="190814" RV="Release" RT="Uncommon">
+    <N>WhiteFlagItem</N>
+    <T ID="190814" I="data/ui/2kimages/main/3dicons/icon_white_flag.png" />
     <R ID="118003" />
     <IT>Item</IT>
     <A ID="Ship">
       <T ID="2342" I="data/ui/2kimages/main/3dicons/icon_ship.png" />
     </A>
     <IAU>
+      <U V="">
+        <T ID="20071" FS="16" />
+      </U>
       <U V="" C="VehicleUpgrade">
-        <T ID="17392" I="data/ui/2kimages/main/icons/icon_threat_melee_tint.png">
-          <AI ID="17393" I="data/ui/2kimages/main/icons/icon_smiley.png" FS="16" />
+        <T ID="19538" I="data/ui/2kimages/main/icons/icon_claim_island.png">
+          <AI ID="19487" I="data/ui/2kimages/main/icons/icon_smiley.png" FS="16" />
         </T>
+      </U>
+      <U V="00:30">
+        <T ID="2424" I="data/ui/2kimages/main/icons/icon_wait_till_full.png" FS="16" />
       </U>
     </IAU>
     <GU />
@@ -75,17 +70,25 @@
     <HF />
     <S />
   </Asset>
-  <Asset ID="190989" RV="Release" RT="Uncommon">
-    <N>GoTeam</N>
-    <T ID="190989" I="data/ui/2kimages/main/3dicons/icon_zebra.png" />
+  <Asset ID="190988" RV="Release" RT="Uncommon">
+    <N>PirateFlag</N>
+    <T ID="190988" I="data/ui/2kimages/main/3dicons/icon_pirate_flag.png" />
     <R ID="118003" />
     <IT>Item</IT>
     <A ID="Ship">
       <T ID="2342" I="data/ui/2kimages/main/3dicons/icon_ship.png" />
     </A>
     <IAU>
-      <U V="+75%" C="VehicleUpgrade">
-        <T ID="2339" I="data/ui/2kimages/main/icons/icon_forward.png" />
+      <U V="">
+        <T ID="20071" FS="16" />
+      </U>
+      <U V="" C="VehicleUpgrade">
+        <T ID="17392" I="data/ui/2kimages/main/icons/icon_threat_melee_tint.png">
+          <AI ID="17393" I="data/ui/2kimages/main/icons/icon_smiley.png" FS="16" />
+        </T>
+      </U>
+      <U V="00:05">
+        <T ID="2424" I="data/ui/2kimages/main/icons/icon_wait_till_full.png" FS="16" />
       </U>
     </IAU>
     <GU />
@@ -120,6 +123,33 @@
     <GU />
     <TP>6250</TP>
     <HF>25000</HF>
+    <S />
+  </Asset>
+  <Asset ID="190989" RV="Release" RT="Uncommon">
+    <N>GoTeam</N>
+    <T ID="190989" I="data/ui/2kimages/main/3dicons/icon_zebra.png" />
+    <R ID="118003" />
+    <IT>Item</IT>
+    <A ID="Ship">
+      <T ID="2342" I="data/ui/2kimages/main/3dicons/icon_ship.png" />
+    </A>
+    <IAU>
+      <U V="">
+        <T ID="20071" FS="16" />
+      </U>
+      <U V="+75%" C="VehicleUpgrade">
+        <T ID="2339" I="data/ui/2kimages/main/icons/icon_forward.png" />
+      </U>
+      <U V="00:30">
+        <T ID="2423" I="data/ui/2kimages/main/3dicons/icon_time.png" FS="16" />
+      </U>
+      <U V="00:30">
+        <T ID="2424" I="data/ui/2kimages/main/icons/icon_wait_till_full.png" FS="16" />
+      </U>
+    </IAU>
+    <GU />
+    <TP />
+    <HF />
     <S />
   </Asset>
   <Asset ID="192130" RV="Release" RT="Legendary">
@@ -166,8 +196,17 @@
       <T ID="2342" I="data/ui/2kimages/main/3dicons/icon_ship.png" />
     </A>
     <IAU>
+      <U V="">
+        <T ID="20071" FS="16" />
+      </U>
       <U V="+75%" C="VehicleUpgrade">
         <T ID="2339" I="data/ui/2kimages/main/icons/icon_forward.png" />
+      </U>
+      <U V="00:30">
+        <T ID="2423" I="data/ui/2kimages/main/3dicons/icon_time.png" FS="16" />
+      </U>
+      <U V="00:30">
+        <T ID="2424" I="data/ui/2kimages/main/icons/icon_wait_till_full.png" FS="16" />
       </U>
     </IAU>
     <GU />
@@ -222,8 +261,17 @@
       <T ID="2342" I="data/ui/2kimages/main/3dicons/icon_ship.png" />
     </A>
     <IAU>
+      <U V="">
+        <T ID="20071" FS="16" />
+      </U>
       <U V="-50%" C="VehicleUpgrade">
         <T ID="2339" I="data/ui/2kimages/main/icons/icon_forward.png" />
+      </U>
+      <U V="00:30">
+        <T ID="2423" I="data/ui/2kimages/main/3dicons/icon_time.png" FS="16" />
+      </U>
+      <U V="00:30">
+        <T ID="2424" I="data/ui/2kimages/main/icons/icon_wait_till_full.png" FS="16" />
       </U>
     </IAU>
     <GU />
@@ -239,7 +287,14 @@
     <A ID="Ship">
       <T ID="2342" I="data/ui/2kimages/main/3dicons/icon_ship.png" />
     </A>
-    <IAU />
+    <IAU>
+      <U V="">
+        <T ID="20071" FS="16" />
+      </U>
+      <U V="00:30">
+        <T ID="2424" I="data/ui/2kimages/main/icons/icon_wait_till_full.png" FS="16" />
+      </U>
+    </IAU>
     <GU />
     <TP />
     <HF />
@@ -291,6 +346,9 @@
       <T ID="112084" I="data/ui/2kimages/main/3dicons/ships/icon_ship_diving_vessel.png" />
     </A>
     <IAU>
+      <U V="">
+        <T ID="20071" FS="16" />
+      </U>
       <U V="">
         <T ID="113403" I="data/ui/2kimages/main/icons/icon_wifi.png">
           <AI ID="113404" I="data/ui/2kimages/main/icons/icon_wifi.png" FS="16" />
@@ -442,6 +500,9 @@
     </A>
     <IAU>
       <U V="">
+        <T ID="20071" FS="16" />
+      </U>
+      <U V="">
         <T ID="113403" I="data/ui/2kimages/main/icons/icon_wifi.png">
           <AI ID="113408" I="data/ui/2kimages/main/icons/icon_wifi.png" FS="16" />
         </T>
@@ -591,6 +652,9 @@
       <T ID="112084" I="data/ui/2kimages/main/3dicons/ships/icon_ship_diving_vessel.png" />
     </A>
     <IAU>
+      <U V="">
+        <T ID="20071" FS="16" />
+      </U>
       <U V="">
         <T ID="113403" I="data/ui/2kimages/main/icons/icon_wifi.png">
           <AI ID="113410" I="data/ui/2kimages/main/icons/icon_wifi.png" FS="16" />
@@ -769,11 +833,23 @@
     <HF>4100</HF>
     <I ID="19569" />
     <S>
-      <S ID="112084" N="Diving Vessel">
+      <S ID="115481" N="Naval Battles Map (Arctic)">
         <T ID="113420" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
         <DL>
-          <D W="10,035">
-            <T ID="113420" />
+          <D W="2,77">
+            <T ID="-944370941" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_passage_01.png" />
+          </D>
+          <D W="4,75">
+            <T ID="112084" I="data/ui/2kimages/main/3dicons/ships/icon_ship_diving_vessel.png" />
+          </D>
+          <D W="2,5">
+            <T ID="-1095254098" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_01.png" />
+          </D>
+          <D W="2,5">
+            <T ID="556561350" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_01.png" />
+          </D>
+          <D W="2,5">
+            <T ID="1180528641" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_01.png" />
           </D>
         </DL>
       </S>
@@ -1257,11 +1333,35 @@
     <HF>18600</HF>
     <I ID="19571" />
     <S>
-      <S ID="112084" N="Diving Vessel">
+      <S ID="115482" N="Merchant Sinking Sports Map (Arctic)">
         <T ID="113420" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
         <DL>
-          <D W="14,38">
-            <T ID="113420" />
+          <D W="2,12">
+            <T ID="-670973383" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_passage_02.png" />
+          </D>
+          <D W="2,77">
+            <T ID="-944370941" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_passage_01.png" />
+          </D>
+          <D W="4,75">
+            <T ID="112084" I="data/ui/2kimages/main/3dicons/ships/icon_ship_diving_vessel.png" />
+          </D>
+          <D W="2,22">
+            <T ID="307918812" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_02.png" />
+          </D>
+          <D W="2,22">
+            <T ID="-65922177" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_02.png" />
+          </D>
+          <D W="2,22">
+            <T ID="131485257" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_02.png" />
+          </D>
+          <D W="2,5">
+            <T ID="-1095254098" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_01.png" />
+          </D>
+          <D W="2,5">
+            <T ID="556561350" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_01.png" />
+          </D>
+          <D W="2,5">
+            <T ID="1180528641" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_01.png" />
           </D>
         </DL>
       </S>
@@ -1889,8 +1989,17 @@
       <T ID="2342" I="data/ui/2kimages/main/3dicons/icon_ship.png" />
     </A>
     <IAU>
+      <U V="">
+        <T ID="20071" FS="16" />
+      </U>
       <U V="+75%" C="VehicleUpgrade">
         <T ID="2339" I="data/ui/2kimages/main/icons/icon_forward.png" />
+      </U>
+      <U V="00:30">
+        <T ID="2423" I="data/ui/2kimages/main/3dicons/icon_time.png" FS="16" />
+      </U>
+      <U V="00:30">
+        <T ID="2424" I="data/ui/2kimages/main/icons/icon_wait_till_full.png" FS="16" />
       </U>
     </IAU>
     <GU />
@@ -1912,34 +2021,6 @@
         <T ID="800034" I="data/ui/2kimages/main/icons/icon_threat_crafting_tint.png" />
       </U>
     </EA>
-    <GU />
-    <TP>250</TP>
-    <HF>1000</HF>
-    <S />
-  </Asset>
-  <Asset ID="6000033" RV="Release" RT="Common">
-    <N>VehicleActionItem Tow</N>
-    <T ID="6000033" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
-    <R ID="118002" />
-    <IT>Item</IT>
-    <A ID="Ship">
-      <T ID="2342" I="data/ui/2kimages/main/3dicons/icon_ship.png" />
-    </A>
-    <IAU />
-    <GU />
-    <TP />
-    <HF />
-    <S />
-  </Asset>
-  <Asset ID="190579" RV="Release" RT="Quest">
-    <N>DynamiteItem (not in use)</N>
-    <T ID="190579" I="data/ui/2kimages/main/3dicons/icon_dynamite.png" />
-    <R ID="118007" />
-    <IT>Item</IT>
-    <A ID="Ship">
-      <T ID="2342" I="data/ui/2kimages/main/3dicons/icon_ship.png" />
-    </A>
-    <IAU />
     <GU />
     <TP>250</TP>
     <HF>1000</HF>
@@ -2788,6 +2869,34 @@
         </DL>
       </S>
     </S>
+  </Asset>
+  <Asset ID="6000033" RV="Release" RT="Common">
+    <N>VehicleActionItem Tow</N>
+    <T ID="6000033" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+    <R ID="118002" />
+    <IT>Item</IT>
+    <A ID="Ship">
+      <T ID="2342" I="data/ui/2kimages/main/3dicons/icon_ship.png" />
+    </A>
+    <IAU />
+    <GU />
+    <TP />
+    <HF />
+    <S />
+  </Asset>
+  <Asset ID="190579" RV="Release" RT="Quest">
+    <N>DynamiteItem (not in use)</N>
+    <T ID="190579" I="data/ui/2kimages/main/3dicons/icon_dynamite.png" />
+    <R ID="118007" />
+    <IT>Item</IT>
+    <A ID="Ship">
+      <T ID="2342" I="data/ui/2kimages/main/3dicons/icon_ship.png" />
+    </A>
+    <IAU />
+    <GU />
+    <TP>250</TP>
+    <HF>1000</HF>
+    <S />
   </Asset>
   <Asset ID="191833" RV="Release" RT="Rare">
     <N>Piston Steam Engine</N>
@@ -4171,11 +4280,35 @@
     <HF>26000</HF>
     <I ID="19795" />
     <S>
-      <S ID="112084" N="Diving Vessel">
+      <S ID="115482" N="Merchant Sinking Sports Map (Arctic)">
         <T ID="113420" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
         <DL>
-          <D W="14,38">
-            <T ID="113420" />
+          <D W="2,12">
+            <T ID="-670973383" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_passage_02.png" />
+          </D>
+          <D W="2,77">
+            <T ID="-944370941" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_passage_01.png" />
+          </D>
+          <D W="4,75">
+            <T ID="112084" I="data/ui/2kimages/main/3dicons/ships/icon_ship_diving_vessel.png" />
+          </D>
+          <D W="2,22">
+            <T ID="307918812" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_02.png" />
+          </D>
+          <D W="2,22">
+            <T ID="-65922177" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_02.png" />
+          </D>
+          <D W="2,22">
+            <T ID="131485257" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_02.png" />
+          </D>
+          <D W="2,5">
+            <T ID="-1095254098" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_01.png" />
+          </D>
+          <D W="2,5">
+            <T ID="556561350" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_01.png" />
+          </D>
+          <D W="2,5">
+            <T ID="1180528641" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_01.png" />
           </D>
         </DL>
       </S>
@@ -4958,11 +5091,47 @@
     <HF>87000</HF>
     <I ID="19796" />
     <S>
-      <S ID="112084" N="Diving Vessel">
+      <S ID="115483" N="Royal Shipwreck Map (Arctic)">
         <T ID="113420" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
         <DL>
-          <D W="20,64">
-            <T ID="113420" />
+          <D W="3,22">
+            <T ID="-2036187096" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_passage_03.png" />
+          </D>
+          <D W="2,12">
+            <T ID="-670973383" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_passage_02.png" />
+          </D>
+          <D W="2,77">
+            <T ID="-944370941" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_passage_01.png" />
+          </D>
+          <D W="4,75">
+            <T ID="112084" I="data/ui/2kimages/main/3dicons/ships/icon_ship_diving_vessel.png" />
+          </D>
+          <D W="3,03">
+            <T ID="-1700825124" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_03.png" />
+          </D>
+          <D W="3,03">
+            <T ID="1011534220" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_03.png" />
+          </D>
+          <D W="3,03">
+            <T ID="669222594" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_03.png" />
+          </D>
+          <D W="2,22">
+            <T ID="307918812" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_02.png" />
+          </D>
+          <D W="2,22">
+            <T ID="-65922177" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_02.png" />
+          </D>
+          <D W="2,22">
+            <T ID="131485257" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_02.png" />
+          </D>
+          <D W="2,5">
+            <T ID="-1095254098" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_01.png" />
+          </D>
+          <D W="2,5">
+            <T ID="556561350" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_01.png" />
+          </D>
+          <D W="2,5">
+            <T ID="1180528641" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_01.png" />
           </D>
         </DL>
       </S>
@@ -5748,11 +5917,35 @@
     <HF>260000</HF>
     <I ID="19797" />
     <S>
-      <S ID="112084" N="Diving Vessel">
+      <S ID="115483" N="Royal Shipwreck Map (Arctic)">
         <T ID="113420" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
         <DL>
-          <D W="15,36">
-            <T ID="113420" />
+          <D W="3,22">
+            <T ID="-2036187096" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_passage_03.png" />
+          </D>
+          <D W="2,12">
+            <T ID="-670973383" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_passage_02.png" />
+          </D>
+          <D W="4,75">
+            <T ID="112084" I="data/ui/2kimages/main/3dicons/ships/icon_ship_diving_vessel.png" />
+          </D>
+          <D W="3,03">
+            <T ID="-1700825124" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_03.png" />
+          </D>
+          <D W="3,03">
+            <T ID="1011534220" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_03.png" />
+          </D>
+          <D W="3,03">
+            <T ID="669222594" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_03.png" />
+          </D>
+          <D W="2,22">
+            <T ID="307918812" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_02.png" />
+          </D>
+          <D W="2,22">
+            <T ID="-65922177" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_02.png" />
+          </D>
+          <D W="2,22">
+            <T ID="131485257" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_02.png" />
           </D>
         </DL>
       </S>
@@ -6220,11 +6413,23 @@
     <HF>688000</HF>
     <I ID="19798" />
     <S>
-      <S ID="112084" N="Diving Vessel">
+      <S ID="115483" N="Royal Shipwreck Map (Arctic)">
         <T ID="113420" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
         <DL>
-          <D W="7,88">
-            <T ID="113420" />
+          <D W="3,22">
+            <T ID="-2036187096" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_passage_03.png" />
+          </D>
+          <D W="1,62">
+            <T ID="112084" I="data/ui/2kimages/main/3dicons/ships/icon_ship_diving_vessel.png" />
+          </D>
+          <D W="3,03">
+            <T ID="-1700825124" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_03.png" />
+          </D>
+          <D W="3,03">
+            <T ID="1011534220" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_03.png" />
+          </D>
+          <D W="3,03">
+            <T ID="669222594" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_03.png" />
           </D>
         </DL>
       </S>
@@ -6492,8 +6697,26 @@
       <S ID="112084" N="Diving Vessel">
         <T ID="113420" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
         <DL>
-          <D W="9,092">
-            <T ID="113420" />
+          <D W="3,84">
+            <T ID="112084" I="data/ui/2kimages/main/3dicons/ships/icon_ship_diving_vessel.png" />
+          </D>
+          <D W="3,03">
+            <T ID="-1700825124" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_03.png" />
+          </D>
+          <D W="3,03">
+            <T ID="1011534220" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_03.png" />
+          </D>
+          <D W="3,03">
+            <T ID="669222594" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_03.png" />
+          </D>
+          <D W="2,22">
+            <T ID="307918812" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_02.png" />
+          </D>
+          <D W="2,22">
+            <T ID="-65922177" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_02.png" />
+          </D>
+          <D W="2,22">
+            <T ID="131485257" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_02.png" />
           </D>
         </DL>
       </S>
@@ -6741,8 +6964,17 @@
       <S ID="112084" N="Diving Vessel">
         <T ID="113420" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
         <DL>
-          <D W="3,73">
-            <T ID="113420" />
+          <D W="0,7">
+            <T ID="112084" I="data/ui/2kimages/main/3dicons/ships/icon_ship_diving_vessel.png" />
+          </D>
+          <D W="3,03">
+            <T ID="-1700825124" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_03.png" />
+          </D>
+          <D W="3,03">
+            <T ID="1011534220" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_03.png" />
+          </D>
+          <D W="3,03">
+            <T ID="669222594" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_03.png" />
           </D>
         </DL>
       </S>
