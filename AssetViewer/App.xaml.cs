@@ -18,7 +18,7 @@ namespace AssetViewer {
     #region Properties
 
     public static Dictionary<int, string> Descriptions { get; } = new Dictionary<int, string>();
-
+    public static bool CountMode { get; set; }
     #endregion Properties
 
     #region Fields

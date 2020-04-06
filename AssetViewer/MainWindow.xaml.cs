@@ -10,7 +10,7 @@ namespace AssetViewer {
 
   public partial class MainWindow : Window {
 
-    #region Constructors
+    #region Public Constructors
 
     public MainWindow() {
       this.InitializeComponent();
@@ -19,15 +19,15 @@ namespace AssetViewer {
       ComboBoxLanguage.SelectionChanged += ComboBoxLanguage_OnSelectionChanged;
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
 
-    #region Events
+    #region Public Events
 
     public event Action<object, SelectionChangedEventArgs> OnLanguage_Changed;
 
-    #endregion Events
+    #endregion Public Events
 
-    #region Methods
+    #region Private Methods
 
     private void MainWindow_OnLoaded(Object sender, RoutedEventArgs e) {
       this.ComboBoxAsset.SelectedIndex = 0;
@@ -90,6 +90,6 @@ namespace AssetViewer {
       e.Handled = true;
     }
 
-    #endregion Methods
+    #endregion Private Methods
   }
 }

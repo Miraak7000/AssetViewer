@@ -541,14 +541,18 @@
                     </Grid.ColumnDefinitions>
                     <Grid.ToolTip>
                       <ToolTip DataContext="{Binding PlacementTarget.DataContext, RelativeSource={RelativeSource Self}}">
-                        <ItemsControl Grid.IsSharedSizeScope="True" Background="Transparent" BorderThickness="0" ItemsSource="{Binding Additionals}">
+                        <ItemsControl
+                          Background="Transparent"
+                          BorderThickness="0"
+                          Grid.IsSharedSizeScope="True"
+                          ItemsSource="{Binding Additionals}">
                           <ItemsControl.ItemTemplate>
                             <DataTemplate>
                               <Grid>
                                 <Grid.ColumnDefinitions>
-                                  <ColumnDefinition Width="Auto" SharedSizeGroup="percentage"/>
-                                  <ColumnDefinition Width="5"/>
-                                  <ColumnDefinition/>
+                                  <ColumnDefinition Width="Auto" SharedSizeGroup="percentage" />
+                                  <ColumnDefinition Width="5" />
+                                  <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
                                 <TextBlock
                                   Grid.Column="0"

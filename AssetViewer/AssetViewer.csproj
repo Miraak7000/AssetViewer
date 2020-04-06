@@ -54,6 +54,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -73,6 +74,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Command\AsyncRelayCommand.cs" />
+    <Compile Include="Command\CommandBase.cs" />
+    <Compile Include="Command\RelayCommand.cs" />
     <Compile Include="Comparer\RarityComparer.cs" />
     <Compile Include="Controls\ExpeditionEvents.xaml.cs">
       <DependentUpon>ExpeditionEvents.xaml</DependentUpon>
@@ -111,6 +115,10 @@
     <Compile Include="Converter\GuidToItemConverter.cs" />
     <Compile Include="Converter\RewardToItemConverter.cs" />
     <Compile Include="Converter\VisibilityConverter.cs" />
+    <Compile Include="Custom Controls\NumericUpDown\FontSizeConverter.cs" />
+    <Compile Include="Custom Controls\NumericUpDown\NumericUpDown.cs" />
+    <Compile Include="Custom Controls\NumericUpDown\SelectedCountChangedArgs.cs" />
+    <Compile Include="Custom Controls\NumericUpDown\ValueChangedEventHandler.cs" />
     <Compile Include="Data\Asset\Allocation.cs" />
     <Compile Include="Data\Description\Description.cs" />
     <Compile Include="Data\Description\DescriptionFontStyle.cs" />
@@ -239,6 +247,14 @@
     <Page Include="Controls\Parts\FestivalTreeViewItemStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="themes\generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="themes\NumericUpDown.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>

@@ -15,7 +15,7 @@ namespace AssetViewer.Controls {
   [SuppressMessage("ReSharper", "PossibleNullReferenceException"), SuppressMessage("ReSharper", "AssignNullToNotNullAttribute")]
   public partial class Monument : UserControl, INotifyPropertyChanged {
 
-    #region Properties
+    #region Public Properties
 
     public IEnumerable<TemplateAsset> Categories {
       get { return this.AssetCategory.AsEnumerable(); }
@@ -63,9 +63,9 @@ namespace AssetViewer.Controls {
       }
     }
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Constructors
+    #region Public Constructors
 
     public Monument() {
       this.InitializeComponent();
@@ -94,24 +94,24 @@ namespace AssetViewer.Controls {
       this.DataContext = this;
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
 
-    #region Events
+    #region Public Events
 
     public event PropertyChangedEventHandler PropertyChanged;
 
-    #endregion Events
+    #endregion Public Events
 
-    #region Fields
+    #region Private Fields
 
     private readonly List<TemplateAsset> AssetCategory;
     private readonly List<TemplateAsset> AssetEvent;
     private readonly List<TemplateAsset> AssetThreshold;
     private TemplateAsset selectedAsset;
 
-    #endregion Fields
+    #endregion Private Fields
 
-    #region Methods
+    #region Private Methods
 
     //private readonly List<TemplateAsset> AssetReward;
     private void Monument_OnLoaded(Object sender, RoutedEventArgs e) {
@@ -158,6 +158,6 @@ namespace AssetViewer.Controls {
       }
     }
 
-    #endregion Methods
+    #endregion Private Methods
   }
 }

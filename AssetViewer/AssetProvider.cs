@@ -1,10 +1,13 @@
 ﻿using AssetViewer.Data;
 using AssetViewer.Extensions;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.Caching;
 using System.Xml.Linq;
 
 namespace AssetViewer {
@@ -18,6 +21,8 @@ namespace AssetViewer {
     public static Dictionary<int, TemplateAsset> ItemSets { get; } = new Dictionary<int, TemplateAsset>();
     public static Dictionary<int, TemplateAsset> FestivalBuffs { get; } = new Dictionary<int, TemplateAsset>();
     public static Dictionary<int, Pool> Pools { get; } = new Dictionary<int, Pool>();
+
+    public static ObjectCache Cache { get; set; } = MemoryCache.Default;
 
     #endregion Public Properties
 
@@ -147,6 +152,12 @@ namespace AssetViewer {
 
     #endregion Public Constructors
 
+    #region Public Events
+
+    public static event Action<IEnumerable<TemplateAsset>> OnAssetCountChanged;
+
+    #endregion Public Events
+
     #region Public Methods
 
     public static IEnumerable<TemplateAsset> GetItemsById(this IEnumerable<int> ids) {
@@ -180,6 +191,34 @@ namespace AssetViewer {
       }
     }
 
+    public static void RaiseAssetCountChanged(TemplateAsset asset) {
+      var policy = new CacheItemPolicy {
+        RemovedCallback = (cera => OnAssetCountChanged?.Invoke((cera.CacheItem.Value as IEnumerable<TemplateAsset>).Distinct())),
+        SlidingExpiration = TimeSpan.FromMilliseconds(1500)
+        ,
+        AbsoluteExpiration = DateTimeOffset.MaxValue
+      };
+
+      Collection<TemplateAsset> list = null;
+      if (Cache.GetCacheItem("CountAssets") is CacheItem cacheItem) {
+        list = (Collection<TemplateAsset>)cacheItem.Value;
+        list.Add(asset);
+        //Cache.Set("CountAssets", list, policy);
+      }
+      else {
+        list = new Collection<TemplateAsset>();
+        list.Add(asset);
+        Cache.Set("CountAssets", list, policy);
+      }
+    }
+
     #endregion Public Methods
+
+    #region Private Methods
+
+    private static void ukz(CacheEntryUpdateArguments arguments) {
+    }
+
+    #endregion Private Methods
   }
 }
