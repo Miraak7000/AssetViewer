@@ -51,6 +51,9 @@
     <ManifestKeyFile>
     </ManifestKeyFile>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>AssetViewer.App</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -70,10 +73,10 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="App.xaml">
+    <Page Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </ApplicationDefinition>
+    </Page>
     <Compile Include="Command\AsyncRelayCommand.cs" />
     <Compile Include="Command\CommandBase.cs" />
     <Compile Include="Command\RelayCommand.cs" />
@@ -86,6 +89,9 @@
     </Compile>
     <Compile Include="Controls\CityFestival.xaml.cs">
       <DependentUpon>CityFestival.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\Parts\ExtendedFilters.xaml.cs">
       <DependentUpon>ExtendedFilters.xaml</DependentUpon>
@@ -165,6 +171,7 @@
     <Compile Include="Data\Asset\Upgrade.cs" />
     <Compile Include="Extensions\EnumBindingSourceExtension.cs" />
     <Compile Include="Extensions\TextBlockExtensions.cs" />
+    <Compile Include="Extensions\TreeViewMultipleSelection.cs" />
     <Compile Include="Extensions\XmlExtensions.cs" />
     <Compile Include="AssetProvider.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
@@ -185,6 +192,10 @@
     <Page Include="Controls\CityFestival.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\MainView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\Parts\ExtendedFilters.xaml">
       <SubType>Designer</SubType>

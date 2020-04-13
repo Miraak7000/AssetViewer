@@ -29,8 +29,8 @@ namespace AssetViewer.Controls {
     }
 
     public virtual ItemsHolder ItemsHolder { get; }
-    public string ResetButtonText => App.Descriptions[-1100];
-    public string AdvancedFiltersText => App.Descriptions[-1104];
+    public string ResetButtonText => AssetProvider.Descriptions[-1100];
+    public string AdvancedFiltersText => AssetProvider.Descriptions[-1104];
 
     #endregion Public Properties
 
@@ -108,20 +108,16 @@ namespace AssetViewer.Controls {
     }
 
     private void UserControl_Loaded(Object sender, RoutedEventArgs e) {
-      if (Application.Current.MainWindow is MainWindow main) {
-        main.OnLanguage_Changed += this.ComboBoxLanguage_SelectionChanged;
-      }
+      AssetProvider.OnLanguage_Changed += this.ComboBoxLanguage_SelectionChanged;
     }
 
-    private void ComboBoxLanguage_SelectionChanged(Object sender, SelectionChangedEventArgs e) {
+    private void ComboBoxLanguage_SelectionChanged() {
       ItemsHolder.RaiseLanguageChanged();
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(""));
     }
 
     private void UserControl_Unloaded(object sender, RoutedEventArgs e) {
-      if (Application.Current.MainWindow is MainWindow main) {
-        main.OnLanguage_Changed -= this.ComboBoxLanguage_SelectionChanged;
-      }
+      AssetProvider.OnLanguage_Changed -= this.ComboBoxLanguage_SelectionChanged;
     }
 
     #endregion Private Methods

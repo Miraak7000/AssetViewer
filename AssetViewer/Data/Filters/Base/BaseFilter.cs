@@ -60,7 +60,7 @@ namespace AssetViewer.Data.Filters {
 
     public List<TemplateAsset> SavedItems { get; set; }
 
-    public string Description => App.Descriptions[DescriptionID];
+    public string Description => AssetProvider.Descriptions[DescriptionID];
 
     object IFilter.SelectedValue => SelectedValue;
 

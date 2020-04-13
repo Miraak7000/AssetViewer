@@ -115,11 +115,11 @@ namespace AssetViewer.Controls {
 
     //private readonly List<TemplateAsset> AssetReward;
     private void Monument_OnLoaded(Object sender, RoutedEventArgs e) {
-      ((MainWindow)Application.Current.MainWindow).OnLanguage_Changed += this.ComboBoxLanguage_SelectionChanged;
+      AssetProvider.OnLanguage_Changed += this.ComboBoxLanguage_SelectionChanged;
       this.ComboBoxCategories.SelectedIndex = 0;
     }
 
-    private void ComboBoxLanguage_SelectionChanged(Object sender, SelectionChangedEventArgs e) {
+    private void ComboBoxLanguage_SelectionChanged() {
       this.ComboBoxCategories.SelectedItem = null;
       this.ComboBoxEvents.SelectedItem = null;
       this.ComboBoxThresholds.SelectedItem = null;
@@ -153,9 +153,7 @@ namespace AssetViewer.Controls {
     }
 
     private void UserControl_Unloaded(object sender, RoutedEventArgs e) {
-      if (Application.Current.MainWindow is MainWindow main) {
-        main.OnLanguage_Changed -= this.ComboBoxLanguage_SelectionChanged;
-      }
+      AssetProvider.OnLanguage_Changed -= this.ComboBoxLanguage_SelectionChanged;
     }
 
     #endregion Private Methods

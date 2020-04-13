@@ -37,7 +37,7 @@
         x:Name="nbAll"
         Grid.Column="1"
         Width="50"
-        Margin="10,0,0,5"
+        Margin="11,0,0,5"
         HorizontalAlignment="Left"
         Command="{Binding Source={x:Static local:ItemsBase.SelectedCountChangedCommand}}"
         CommandParameter="{Binding ElementName=lbItemsList, Path=SelectedItems}"
@@ -46,7 +46,7 @@
           <Style TargetType="AV:NumericUpDown">
             <Setter Property="Visibility" Value="Collapsed" />
             <Style.Triggers>
-              <DataTrigger Binding="{Binding Source={x:Static AV:App.CountMode}}" Value="True">
+              <DataTrigger Binding="{Binding Source={x:Static AV:AssetProvider.CountMode}}" Value="True">
                 <Setter Property="Visibility" Value="Visible" />
               </DataTrigger>
             </Style.Triggers>

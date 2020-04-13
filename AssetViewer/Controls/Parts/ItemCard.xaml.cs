@@ -66,67 +66,67 @@ namespace AssetViewer.Controls {
 
     public String AllocationText {
       get {
-        return App.Descriptions[-106];
+        return AssetProvider.Descriptions[-106];
       }
     }
 
     public String ExpeditionText {
       get {
-        return App.Descriptions[-1220];
+        return AssetProvider.Descriptions[-1220];
       }
     }
 
     public String TradeText {
       get {
-        return App.Descriptions[12725];
+        return AssetProvider.Descriptions[12725];
       }
     }
 
     public String HiringFeeText {
       get {
-        return App.Descriptions[21731];
+        return AssetProvider.Descriptions[21731];
       }
     }
 
     public String ItemSetText {
       get {
-        return App.Descriptions[-1221];
+        return AssetProvider.Descriptions[-1221];
       }
     }
 
     public String ItemTrasmutable {
       get {
-        return App.Descriptions[113817];
+        return AssetProvider.Descriptions[113817];
       }
     }
 
     public String ProductionText {
       get {
-        return App.Descriptions[100006];
+        return AssetProvider.Descriptions[100006];
       }
     }
 
     public String ConsumptionText {
       get {
-        return App.Descriptions[100007];
+        return AssetProvider.Descriptions[100007];
       }
     }
 
     public String BuildCostsText {
       get {
-        return App.Descriptions[100008];
+        return AssetProvider.Descriptions[100008];
       }
     }
 
     public String MaintenanceText {
       get {
-        return App.Descriptions[100409];
+        return AssetProvider.Descriptions[100409];
       }
     }
 
     public String UpgradeCostsText {
       get {
-        return App.Descriptions[2001775];
+        return AssetProvider.Descriptions[2001775];
       }
     }
 
@@ -171,18 +171,14 @@ namespace AssetViewer.Controls {
     }
 
     private void ItemCard_Unloaded(object sender, RoutedEventArgs e) {
-      if (Application.Current.MainWindow is MainWindow main) {
-        main.OnLanguage_Changed -= this.ComboBoxLanguage_SelectionChanged;
-      }
+      AssetProvider.OnLanguage_Changed -= this.ComboBoxLanguage_SelectionChanged;
     }
 
     private void ItemCard_Loaded(object sender, RoutedEventArgs e) {
-      if (Application.Current.MainWindow is MainWindow main) {
-        main.OnLanguage_Changed += this.ComboBoxLanguage_SelectionChanged;
-      }
+      AssetProvider.OnLanguage_Changed += this.ComboBoxLanguage_SelectionChanged;
     }
 
-    private void ComboBoxLanguage_SelectionChanged(object sender, SelectionChangedEventArgs e) {
+    private void ComboBoxLanguage_SelectionChanged() {
       mainGrid.DataContext = null;
       mainGrid.DataContext = this;
     }

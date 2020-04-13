@@ -2,6 +2,7 @@
   x:Class="AssetViewer.Controls.ItemSets"
   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:AV="clr-namespace:AssetViewer"
   xmlns:converter="clr-namespace:AssetViewer.Converter"
   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
   xmlns:dataContextNamespace="clr-namespace:AssetViewer.Controls;assembly=AssetViewer"
@@ -22,10 +23,11 @@
     <converter:RewardToItemConverter x:Key="RewardToItemConverter" />
   </UserControl.Resources>
 
-  <Grid Grid.Row="2">
+  <Grid>
     <Grid.RowDefinitions>
       <RowDefinition Height="Auto" />
       <RowDefinition Height="10" />
+      <RowDefinition Height="Auto" />
       <RowDefinition Height="*" />
     </Grid.RowDefinitions>
     <Border
@@ -152,7 +154,27 @@
           Text="{Binding AdvancedFiltersText}" />
       </Grid>
     </Border>
-    <Grid Grid.Row="2">
+    <!--<AV:NumericUpDown
+      x:Name="nbAll"
+      Grid.Row="2"
+      Width="50"
+      Margin="23,0,0,5"
+      HorizontalAlignment="Left"
+      Command="{Binding Source={x:Static local:ItemsBase.SelectedCountChangedCommand}}"
+      CommandParameter="{Binding ElementName=ListBoxItems, Path=SelectedItems}"
+      MinValue="0">
+      <AV:NumericUpDown.Style>
+        <Style TargetType="AV:NumericUpDown">
+          <Setter Property="Visibility" Value="Collapsed" />
+          <Style.Triggers>
+            <DataTrigger Binding="{Binding Source={x:Static AV:AssetProvider.CountMode}}" Value="True">
+              <Setter Property="Visibility" Value="Visible" />
+            </DataTrigger>
+          </Style.Triggers>
+        </Style>
+      </AV:NumericUpDown.Style>
+    </AV:NumericUpDown>-->
+    <Grid Grid.Row="3">
       <Grid.ColumnDefinitions>
         <ColumnDefinition Width="*" />
         <ColumnDefinition Width="10" />
@@ -169,22 +191,58 @@
             ItemContainerStyle="{DynamicResource FestivalTreeViewItemStyle}"
             ItemsSource="{Binding Path=ItemsHolder.Items}"
             SelectedItemChanged="ListBoxItems_SelectedItemChanged">
+            <!--<TreeView.Resources>
+              <Style x:Key="{x:Type TreeViewItem}" BasedOn="{StaticResource {x:Type TreeViewItem}}" TargetType="{x:Type TreeViewItem}">
+                <Style.Triggers>
+                  <Trigger Property="AV:TreeViewMultipleSelection.IsItemSelected" Value="True">
+                    <Setter Property="Background" Value="{x:Static SystemColors.HighlightBrush}" />
+                  </Trigger>
+                </Style.Triggers>
+              </Style>
+            </TreeView.Resources>-->
+            <!--<TreeView.Style>
+              <Style TargetType="TreeView">
+                <Style.Triggers>
+                  <DataTrigger Binding="{Binding Source={x:Static AV:AssetProvider.CountMode}}" Value="True">
+                    <Setter Property="AV:TreeViewMultipleSelection.IsMultipleSelection" Value="True" />
+                    <Setter Property="AV:TreeViewMultipleSelection.SelectedItems" Value="{Binding SelectedItems}" />
+                  </DataTrigger>
+                </Style.Triggers>
+              </Style>
+            </TreeView.Style>-->
             <TreeView.ItemTemplate>
               <HierarchicalDataTemplate ItemsSource="{Binding SetParts, Converter={StaticResource RewardToItemConverter}}">
                 <Grid MaxHeight="24">
                   <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="30" />
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="Auto" />
                   </Grid.ColumnDefinitions>
-                  <Image Grid.Column="0" HorizontalAlignment="Left" Source="{Binding Path=Text.Icon.Filename}" />
+                  <AV:NumericUpDown
+                    Grid.Column="0"
+                    Width="50"
+                    MinValue="0"
+                    Value="{Binding Path=Count, Mode=TwoWay}">
+                    <AV:NumericUpDown.Style>
+                      <Style TargetType="AV:NumericUpDown">
+                        <Setter Property="Visibility" Value="Collapsed" />
+                        <Style.Triggers>
+                          <DataTrigger Binding="{Binding Source={x:Static AV:AssetProvider.CountMode}}" Value="True">
+                            <Setter Property="Visibility" Value="Visible" />
+                          </DataTrigger>
+                        </Style.Triggers>
+                      </Style>
+                    </AV:NumericUpDown.Style>
+                  </AV:NumericUpDown>
+                  <Image Grid.Column="1" HorizontalAlignment="Left" Source="{Binding Path=Text.Icon.Filename}" />
                   <TextBlock
-                    Grid.Column="1"
+                    Grid.Column="2"
                     VerticalAlignment="Center"
                     Text="{Binding Path=Text}"
                     TextTrimming="CharacterEllipsis" />
                   <TextBlock
-                    Grid.Column="2"
+                    Grid.Column="3"
                     HorizontalAlignment="Right"
                     VerticalAlignment="Center"
                     FontSize="11"

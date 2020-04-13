@@ -28,7 +28,6 @@ namespace AssetViewer.Controls {
 
         var result = this.Assets.Single(w => w.ID == thirdParty.Item1).OfferingItems.Single(w => w.Progression == progression.Item1).Items.GetItemsById();
         return result.OrderBy(o => o.Text.CurrentLang);
-        ;
       }
     }
 
@@ -41,12 +40,12 @@ namespace AssetViewer.Controls {
     public IEnumerable<Tuple<Progression, String>> Progressions {
       get {
         return new[] {
-              new Tuple<Progression, String>(Progression.EarlyGame, App.Descriptions[-6]),
-              new Tuple<Progression, String>(Progression.EarlyMidGame, App.Descriptions[-7]),
-              new Tuple<Progression, String>(Progression.MidGame, App.Descriptions[-8]),
-              new Tuple<Progression, String>(Progression.LateMidGame, App.Descriptions[-9]),
-              new Tuple<Progression, String>(Progression.LateGame, App.Descriptions[-10]),
-              new Tuple<Progression, String>(Progression.EndGame, App.Descriptions[-11])
+              new Tuple<Progression, String>(Progression.EarlyGame, AssetProvider.Descriptions[-6]),
+              new Tuple<Progression, String>(Progression.EarlyMidGame, AssetProvider.Descriptions[-7]),
+              new Tuple<Progression, String>(Progression.MidGame, AssetProvider.Descriptions[-8]),
+              new Tuple<Progression, String>(Progression.LateMidGame, AssetProvider.Descriptions[-9]),
+              new Tuple<Progression, String>(Progression.LateGame, AssetProvider.Descriptions[-10]),
+              new Tuple<Progression, String>(Progression.EndGame, AssetProvider.Descriptions[-11])
             };
       }
     }
@@ -109,12 +108,12 @@ namespace AssetViewer.Controls {
     #region Methods
 
     private void ThirdParty_OnLoaded(Object sender, RoutedEventArgs e) {
-      ((MainWindow)Application.Current.MainWindow).OnLanguage_Changed += this.ComboBoxLanguage_SelectionChanged;
+      AssetProvider.OnLanguage_Changed += this.ComboBoxLanguage_SelectionChanged;
       this.ComboBoxThirdParty.SelectedIndex = 0;
       this.ComboBoxProgressions.SelectedIndex = 0;
     }
 
-    private void ComboBoxLanguage_SelectionChanged(Object sender, SelectionChangedEventArgs e) {
+    private void ComboBoxLanguage_SelectionChanged() {
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ThirdParties)));
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Progressions)));
       this.ComboBoxThirdParty.SelectedIndex = 0;
@@ -137,9 +136,7 @@ namespace AssetViewer.Controls {
     }
 
     private void UserControl_Unloaded(object sender, RoutedEventArgs e) {
-      if (Application.Current.MainWindow is MainWindow main) {
-        main.OnLanguage_Changed -= this.ComboBoxLanguage_SelectionChanged;
-      }
+      AssetProvider.OnLanguage_Changed -= this.ComboBoxLanguage_SelectionChanged;
     }
 
     #endregion Methods
