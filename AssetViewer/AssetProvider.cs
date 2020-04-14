@@ -2,7 +2,6 @@
 using AssetViewer.Extensions;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Globalization;
@@ -11,6 +10,7 @@ using System.Linq;
 using System.Reflection;
 using System.Runtime.Caching;
 using System.Runtime.CompilerServices;
+using System.Threading;
 using System.Xml.Linq;
 
 namespace AssetViewer {
@@ -104,23 +104,9 @@ namespace AssetViewer {
     }
 
     public static void RaiseAssetCountChanged(TemplateAsset asset) {
-      var policy = new CacheItemPolicy {
-        RemovedCallback = (cera => OnAssetCountChanged?.Invoke((cera.CacheItem.Value as IEnumerable<TemplateAsset>).Distinct())),
-        SlidingExpiration = TimeSpan.FromMilliseconds(1500)
-        ,
-        AbsoluteExpiration = DateTimeOffset.MaxValue
-      };
-
-      Collection<TemplateAsset> list = null;
-      if (Cache.GetCacheItem("CountAssets") is CacheItem cacheItem) {
-        list = (Collection<TemplateAsset>)cacheItem.Value;
-        list.Add(asset);
-        //Cache.Set("CountAssets", list, policy);
-      }
-      else {
-        list = new Collection<TemplateAsset>();
-        list.Add(asset);
-        Cache.Set("CountAssets", list, policy);
+      lock (LockChangedCountItems) {
+        ChangedCountItems.Add(asset);
+        Timer.Change(1000, Timeout.Infinite);
       }
     }
 
@@ -145,11 +131,22 @@ namespace AssetViewer {
 
     #region Private Fields
 
+    private static Timer Timer = new Timer(OnTimerTick);
+    private static object LockChangedCountItems = new HashSet<TemplateAsset>();
+    private static HashSet<TemplateAsset> ChangedCountItems = new HashSet<TemplateAsset>();
+
     private static Data.Languages language = Data.Languages.English;
 
     #endregion Private Fields
 
     #region Private Methods
+
+    private static void OnTimerTick(object state) {
+      lock (LockChangedCountItems) {
+        OnAssetCountChanged?.Invoke(ChangedCountItems);
+        ChangedCountItems.Clear();
+      }
+    }
 
     private static void NotifyStaticPropertyChanged([CallerMemberName]string propertyName = null) {
       StaticPropertyChanged?.Invoke(null, new PropertyChangedEventArgs(propertyName));

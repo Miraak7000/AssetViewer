@@ -178,7 +178,8 @@ namespace RDA {
             new Description("100409"),   //Unterhaltskosten
             new Description("12725"),    //Verkaufspreis
             new Description("21731"),    //Anheuerungskosten
-            new Description("20106")     //Stadtfest
+            new Description("20106"),     //Stadtfest
+            new Description("22440")     //Anzahl
           };
 
           foreach (var item in needed) {

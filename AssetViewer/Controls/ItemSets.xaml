@@ -228,6 +228,9 @@
                       <Style TargetType="AV:NumericUpDown">
                         <Setter Property="Visibility" Value="Collapsed" />
                         <Style.Triggers>
+                          <!--<DataTrigger Binding="{Binding Path=SetParts}" Value="{x:Null}">
+                            <Setter Property="Visibility" Value="Visible" />
+                          </DataTrigger>-->
                           <DataTrigger Binding="{Binding Source={x:Static AV:AssetProvider.CountMode}}" Value="True">
                             <Setter Property="Visibility" Value="Visible" />
                           </DataTrigger>

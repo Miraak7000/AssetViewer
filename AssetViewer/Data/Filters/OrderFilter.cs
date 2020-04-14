@@ -23,6 +23,9 @@ namespace AssetViewer.Data.Filters {
         }
         else if (SelectedValue.ID == 12725) {
           result = result.OrderBy(w => string.IsNullOrWhiteSpace(w.TradePrice) ? 0 : Int32.Parse(w.TradePrice ?? "0", NumberStyles.Any));
+        }    
+        else if (SelectedValue.ID == 22440) {
+          result = result.OrderByDescending(w => w.Count);
         }
       }
 
@@ -60,6 +63,9 @@ namespace AssetViewer.Data.Filters {
     #region Constructors
 
     public OrderFilter(ItemsHolder itemsHolder) : base(itemsHolder) {
+      if (AssetProvider.CountMode) {
+        values.Add(new Description(22440));
+      }
       CurrentValues = values;
       SelectedValue = values.FirstOrDefault();
     }
