@@ -143,7 +143,7 @@ namespace AssetViewer {
 
     private static void OnTimerTick(object state) {
       lock (LockChangedCountItems) {
-        OnAssetCountChanged?.Invoke(ChangedCountItems);
+        OnAssetCountChanged?.Invoke(ChangedCountItems.ToList());
         ChangedCountItems.Clear();
       }
     }
