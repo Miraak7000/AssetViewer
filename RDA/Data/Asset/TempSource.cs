@@ -229,31 +229,38 @@ namespace RDA.Data {
 
     #region Private Methods
 
-    private static Description GetDescriptionFromProgression(string progression) {
+    public static Description GetDescriptionFromProgression(string progression) {
       Description desc = null;
       switch (progression) {
         case "EarlyGame":
           desc = new Description("-6");
+          desc.AdditionalInformation = new Description("15000000").InsertBefore("0");
+
           break;
 
         case "EarlyMidGame":
           desc = new Description("-7");
+          desc.AdditionalInformation = new Description("15000001").InsertBefore("35");
           break;
 
         case "MidGame":
           desc = new Description("-8");
+          desc.AdditionalInformation = new Description("15000002").InsertBefore("1");
           break;
 
         case "LateMidGame":
           desc = new Description("-9");
+          desc.AdditionalInformation = new Description("15000003").InsertBefore("1");
           break;
 
         case "LateGame":
           desc = new Description("-10");
+          desc.AdditionalInformation = new Description("15000004").InsertBefore("1");
           break;
 
         case "EndGame":
           desc = new Description("-11");
+          desc.AdditionalInformation = new Description("22379").InsertBefore("20000");
           break;
 
         default:

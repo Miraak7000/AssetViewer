@@ -40,6 +40,49 @@
       <P>191094</P>
     </SP>
   </Asset>
+  <Asset ID="193403" RV="Update 04" RT="Common">
+    <N>luminescent creatures</N>
+    <T ID="193403" I="data/ui/2kimages/main/3dicons/animals/icon_glowfish_03.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Zoo">
+      <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+    </A>
+    <ISS>
+      <U V="+3" C="CultureUpgrade">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="22238" />
+    <ET>
+      <ET>
+        <T ID="1010349" I="data/ui/2kimages/main/3dicons/icon_pub.png" />
+        <B>
+          <T ID="1010349" I="data/ui/2kimages/main/3dicons/icon_pub.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="1010352" I="data/ui/2kimages/main/3dicons/icon_cabaret.png" />
+        <B>
+          <T ID="1010352" I="data/ui/2kimages/main/3dicons/icon_cabaret.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="1010355" I="data/ui/2kimages/main/3dicons/icon_club_house.png" />
+        <B>
+          <T ID="1010355" I="data/ui/2kimages/main/3dicons/icon_club_house.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>112816</P>
+      <P>112817</P>
+      <P>113905</P>
+    </SP>
+  </Asset>
   <Asset ID="191131" RV="Release" RT="Common">
     <N>vikings</N>
     <T ID="191131" I="data/ui/2kimages/main/3dicons/museum/icon_museum_viking_valkyrie_helmet.png" />
@@ -89,109 +132,6 @@
       <P>190493</P>
       <P>190516</P>
       <P>190470</P>
-    </SP>
-  </Asset>
-  <Asset ID="193403" RV="Update 04" RT="Common">
-    <N>luminescent creatures</N>
-    <T ID="193403" I="data/ui/2kimages/main/3dicons/animals/icon_glowfish_03.png" />
-    <R ID="118002" />
-    <IT>Item Set</IT>
-    <A ID="Zoo">
-      <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
-    </A>
-    <ISS>
-      <U V="+3" C="CultureUpgrade">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-    </ISS>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="22238" />
-    <ET>
-      <ET>
-        <T ID="1010349" I="data/ui/2kimages/main/3dicons/icon_pub.png" />
-        <B>
-          <T ID="1010349" I="data/ui/2kimages/main/3dicons/icon_pub.png" />
-        </B>
-      </ET>
-      <ET>
-        <T ID="1010352" I="data/ui/2kimages/main/3dicons/icon_cabaret.png" />
-        <B>
-          <T ID="1010352" I="data/ui/2kimages/main/3dicons/icon_cabaret.png" />
-        </B>
-      </ET>
-      <ET>
-        <T ID="1010355" I="data/ui/2kimages/main/3dicons/icon_club_house.png" />
-        <B>
-          <T ID="1010355" I="data/ui/2kimages/main/3dicons/icon_club_house.png" />
-        </B>
-      </ET>
-    </ET>
-    <SP>
-      <P>112816</P>
-      <P>112817</P>
-      <P>113905</P>
-    </SP>
-  </Asset>
-  <Asset ID="191115" RV="Release" RT="Common">
-    <N>boreal forests</N>
-    <T ID="191115" I="data/ui/2kimages/main/3dicons/animals/icon_moose.png" />
-    <R ID="118002" />
-    <IT>Item Set</IT>
-    <A ID="Zoo">
-      <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
-    </A>
-    <ISS>
-      <U V="" C="ResidenceUpgrade">
-        <T ID="21386" I="data/ui/2kimages/main/icons/icon_patrol.png" />
-        <A>
-          <U V="-5%">
-            <T ID="1010200" I="data/ui/2kimages/main/3dicons/icon_fish.png" />
-          </U>
-          <U V="-5%">
-            <T ID="1010213" I="data/ui/2kimages/main/3dicons/icon_bread.png" />
-          </U>
-          <U V="-5%">
-            <T ID="1010217" I="data/ui/2kimages/main/3dicons/icon_canned_goulash.png" />
-          </U>
-          <U V="-5%">
-            <T ID="1010238" I="data/ui/2kimages/main/3dicons/icon_meat_sausage.png" />
-          </U>
-          <U V="-5%">
-            <T ID="1010258" I="data/ui/2kimages/main/3dicons/icon_chocolate.png" />
-          </U>
-          <U V="-5%">
-            <T ID="120033" I="data/ui/2kimages/main/3dicons/icon_fried_bananas.png" />
-          </U>
-          <U V="-5%">
-            <T ID="120035" I="data/ui/2kimages/main/3dicons/icon_burrito.png" />
-          </U>
-        </A>
-      </U>
-    </ISS>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="15362" />
-    <ET>
-      <ET>
-        <T ID="190762" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
-        <B>
-          <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="1010347" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-        </B>
-      </ET>
-    </ET>
-    <SP>
-      <P>191072</P>
-      <P>191052</P>
-      <P>191083</P>
     </SP>
   </Asset>
   <Asset ID="191119" RV="Release" RT="Common">
@@ -292,36 +232,64 @@
       <P>190502</P>
     </SP>
   </Asset>
-  <Asset ID="191116" RV="Release" RT="Common">
-    <N>extinct animals</N>
-    <T ID="191116" I="data/ui/2kimages/main/3dicons/animals/icon_giant_deer.png" />
+  <Asset ID="191115" RV="Release" RT="Common">
+    <N>boreal forests</N>
+    <T ID="191115" I="data/ui/2kimages/main/3dicons/animals/icon_moose.png" />
     <R ID="118002" />
     <IT>Item Set</IT>
     <A ID="Zoo">
       <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
     </A>
     <ISS>
-      <U V="+5%" C="CultureUpgrade">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      <U V="" C="ResidenceUpgrade">
+        <T ID="21386" I="data/ui/2kimages/main/icons/icon_patrol.png" />
+        <A>
+          <U V="-5%">
+            <T ID="1010200" I="data/ui/2kimages/main/3dicons/icon_fish.png" />
+          </U>
+          <U V="-5%">
+            <T ID="1010213" I="data/ui/2kimages/main/3dicons/icon_bread.png" />
+          </U>
+          <U V="-5%">
+            <T ID="1010217" I="data/ui/2kimages/main/3dicons/icon_canned_goulash.png" />
+          </U>
+          <U V="-5%">
+            <T ID="1010238" I="data/ui/2kimages/main/3dicons/icon_meat_sausage.png" />
+          </U>
+          <U V="-5%">
+            <T ID="1010258" I="data/ui/2kimages/main/3dicons/icon_chocolate.png" />
+          </U>
+          <U V="-5%">
+            <T ID="120033" I="data/ui/2kimages/main/3dicons/icon_fried_bananas.png" />
+          </U>
+          <U V="-5%">
+            <T ID="120035" I="data/ui/2kimages/main/3dicons/icon_burrito.png" />
+          </U>
+        </A>
       </U>
     </ISS>
     <GU />
     <TP />
     <HF />
-    <I ID="15363" />
+    <I ID="15362" />
     <ET>
       <ET>
-        <T ID="191561" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+        <T ID="190762" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
         <B>
-          <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
-          <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+          <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010347" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
         </B>
       </ET>
     </ET>
     <SP>
-      <P>191107</P>
-      <P>191105</P>
-      <P>191104</P>
+      <P>191072</P>
+      <P>191052</P>
+      <P>191083</P>
     </SP>
   </Asset>
   <Asset ID="193773" RV="Update 06" RT="Common">
@@ -357,6 +325,46 @@
       <P>191086</P>
       <P>191076</P>
       <P>191075</P>
+    </SP>
+  </Asset>
+  <Asset ID="193657" RV="Update 05" RT="Common">
+    <N>marshes</N>
+    <T ID="193657" I="data/ui/2kimages/main/3dicons/plants/icon_lilies.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="BotanicGarden">
+      <T ID="110935" I="data/ui/2kimages/main/3dicons/icon_botanic_garden.png" />
+    </A>
+    <ISS>
+      <U V="+2" C="ResidenceUpgrade">
+        <T ID="12314" I="data/ui/2kimages/main/icons/icon_happy.png" />
+      </U>
+      <U V="-50%" C="IncidentInfectableUpgrade">
+        <T ID="12226" I="data/ui/2kimages/main/icons/icon_incident_diseases.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="22332" />
+    <ET>
+      <ET>
+        <T ID="190762" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010347" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>111112</P>
+      <P>111111</P>
+      <P>112733</P>
     </SP>
   </Asset>
   <Asset ID="191123" RV="Release" RT="Common">
@@ -460,6 +468,38 @@
       <P>190511</P>
     </SP>
   </Asset>
+  <Asset ID="191116" RV="Release" RT="Common">
+    <N>extinct animals</N>
+    <T ID="191116" I="data/ui/2kimages/main/3dicons/animals/icon_giant_deer.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Zoo">
+      <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+    </A>
+    <ISS>
+      <U V="+5%" C="CultureUpgrade">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="15363" />
+    <ET>
+      <ET>
+        <T ID="191561" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+        <B>
+          <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+          <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>191107</P>
+      <P>191105</P>
+      <P>191104</P>
+    </SP>
+  </Asset>
   <Asset ID="191122" RV="Release" RT="Common">
     <N>marine predators</N>
     <T ID="191122" I="data/ui/2kimages/main/3dicons/animals/icon_swordfish.png" />
@@ -508,6 +548,38 @@
       <P>190450</P>
       <P>191087</P>
       <P>191099</P>
+    </SP>
+  </Asset>
+  <Asset ID="191127" RV="Release" RT="Common">
+    <N>nazcan</N>
+    <T ID="191127" I="data/ui/2kimages/main/3dicons/museum/icon_mummy_nazcan.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Museum">
+      <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    </A>
+    <ISS>
+      <U V="+5%" C="VisitorHarborUpgrade">
+        <T ID="20603" I="data/ui/2kimages/main/icons/icon_add_slot_guild.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="15371" />
+    <ET>
+      <ET>
+        <T ID="191563" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+        <B>
+          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>190282</P>
+      <P>190473</P>
+      <P>190496</P>
     </SP>
   </Asset>
   <Asset ID="193405" RV="Update 04" RT="Common">
@@ -560,36 +632,48 @@
       <P>112824</P>
     </SP>
   </Asset>
-  <Asset ID="191127" RV="Release" RT="Common">
-    <N>nazcan</N>
-    <T ID="191127" I="data/ui/2kimages/main/3dicons/museum/icon_mummy_nazcan.png" />
+  <Asset ID="191118" RV="Release" RT="Common">
+    <N>amazonia</N>
+    <T ID="191118" I="data/ui/2kimages/main/3dicons/animals/icon_puerto_rican_amazon.png" />
     <R ID="118002" />
     <IT>Item Set</IT>
-    <A ID="Museum">
-      <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    <A ID="Zoo">
+      <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
     </A>
     <ISS>
-      <U V="+5%" C="VisitorHarborUpgrade">
-        <T ID="20603" I="data/ui/2kimages/main/icons/icon_add_slot_guild.png" />
+      <U V="+1" C="CultureUpgrade">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
       </U>
     </ISS>
     <GU />
     <TP />
     <HF />
-    <I ID="15371" />
+    <I ID="15365" />
     <ET>
       <ET>
-        <T ID="191563" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+        <T ID="191501" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
         <B>
-          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
-          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+          <T ID="1010349" I="data/ui/2kimages/main/3dicons/icon_pub.png" />
+          <T ID="1010360" I="data/ui/2kimages/main/3dicons/icon_school.png" />
+          <T ID="1010365" I="data/ui/2kimages/main/3dicons/icon_bank.png" />
+          <T ID="1010359" I="data/ui/2kimages/main/3dicons/icon_church.png" />
+          <T ID="1010352" I="data/ui/2kimages/main/3dicons/icon_cabaret.png" />
+          <T ID="1010353" I="data/ui/2kimages/main/3dicons/icon_university.png" />
+          <T ID="1010355" I="data/ui/2kimages/main/3dicons/icon_club_house.png" />
+          <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
+          <T ID="101258" I="data/ui/2kimages/main/3dicons/icon_church.png" />
+          <T ID="101259" I="data/ui/2kimages/main/3dicons/icon_box_arena.png" />
+          <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
         </B>
       </ET>
     </ET>
     <SP>
-      <P>190282</P>
-      <P>190473</P>
-      <P>190496</P>
+      <P>191091</P>
+      <P>191090</P>
+      <P>191080</P>
+      <P>190962</P>
+      <P>190004</P>
+      <P>191092</P>
     </SP>
   </Asset>
   <Asset ID="193408" RV="Update 04" RT="Common">
@@ -640,152 +724,6 @@
       <P>112825</P>
       <P>113472</P>
       <P>113473</P>
-    </SP>
-  </Asset>
-  <Asset ID="191118" RV="Release" RT="Common">
-    <N>amazonia</N>
-    <T ID="191118" I="data/ui/2kimages/main/3dicons/animals/icon_puerto_rican_amazon.png" />
-    <R ID="118002" />
-    <IT>Item Set</IT>
-    <A ID="Zoo">
-      <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
-    </A>
-    <ISS>
-      <U V="+1" C="CultureUpgrade">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-    </ISS>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="15365" />
-    <ET>
-      <ET>
-        <T ID="191501" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
-        <B>
-          <T ID="1010349" I="data/ui/2kimages/main/3dicons/icon_pub.png" />
-          <T ID="1010360" I="data/ui/2kimages/main/3dicons/icon_school.png" />
-          <T ID="1010365" I="data/ui/2kimages/main/3dicons/icon_bank.png" />
-          <T ID="1010359" I="data/ui/2kimages/main/3dicons/icon_church.png" />
-          <T ID="1010352" I="data/ui/2kimages/main/3dicons/icon_cabaret.png" />
-          <T ID="1010353" I="data/ui/2kimages/main/3dicons/icon_university.png" />
-          <T ID="1010355" I="data/ui/2kimages/main/3dicons/icon_club_house.png" />
-          <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
-          <T ID="101258" I="data/ui/2kimages/main/3dicons/icon_church.png" />
-          <T ID="101259" I="data/ui/2kimages/main/3dicons/icon_box_arena.png" />
-          <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
-        </B>
-      </ET>
-    </ET>
-    <SP>
-      <P>191091</P>
-      <P>191090</P>
-      <P>191080</P>
-      <P>190962</P>
-      <P>190004</P>
-      <P>191092</P>
-    </SP>
-  </Asset>
-  <Asset ID="191120" RV="Release" RT="Common">
-    <N>india</N>
-    <T ID="191120" I="data/ui/2kimages/main/3dicons/animals/icon_tiger.png" />
-    <R ID="118002" />
-    <IT>Item Set</IT>
-    <A ID="Zoo">
-      <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
-    </A>
-    <ISS>
-      <U V="+100%" C="PassiveTradeGoodGenUpgrade">
-        <T ID="12920" I="data/ui/2kimages/main/icons/icon_activate_trade.png">
-          <AI ID="-653518958" I="data/ui/2kimages/main/icons/icon_diplomacy_options_trade.png" FS="16" />
-        </T>
-      </U>
-    </ISS>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="15367" />
-    <ET>
-      <ET>
-        <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
-        <B>
-          <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
-          <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
-        </B>
-      </ET>
-    </ET>
-    <SP>
-      <P>191073</P>
-      <P>191506</P>
-      <P>191079</P>
-      <P>193190</P>
-      <P>191088</P>
-      <P>191112</P>
-    </SP>
-  </Asset>
-  <Asset ID="193774" RV="Update 06" RT="Common">
-    <N>inuit</N>
-    <T ID="193774" I="data/ui/2kimages/main/3dicons/specialists/icon_polar_5.png" />
-    <R ID="118002" />
-    <IT>Item Set</IT>
-    <A ID="Museum">
-      <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
-    </A>
-    <ISS>
-      <U V="" C="CultureUpgrade">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-        <A>
-          <U V="+20%">
-            <T ID="191115" I="data/ui/2kimages/main/3dicons/animals/icon_moose.png" />
-          </U>
-          <U V="+20%">
-            <T ID="191119" I="data/ui/2kimages/main/3dicons/animals/icon_polar_bear.png" />
-          </U>
-          <U V="+20%">
-            <T ID="193773" I="data/ui/2kimages/main/3dicons/animals/icon_reindeer.png" />
-          </U>
-          <U V="+20%">
-            <T ID="191131" I="data/ui/2kimages/main/3dicons/museum/icon_museum_viking_valkyrie_helmet.png" />
-          </U>
-          <U V="+20%">
-            <T ID="191123" I="data/ui/2kimages/main/3dicons/museum/icon_museum_celts_stonehenge.png" />
-          </U>
-          <U V="+20%">
-            <T ID="193774" I="data/ui/2kimages/main/3dicons/specialists/icon_polar_5.png" />
-          </U>
-          <U V="+20%">
-            <T ID="193776" I="data/ui/2kimages/main/3dicons/museum/icon_museum_mammoth.png" />
-          </U>
-          <U V="+20%">
-            <T ID="193662" I="data/ui/2kimages/main/3dicons/plants/icon_rocky_mountain_fir.png" />
-          </U>
-        </A>
-      </U>
-    </ISS>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="22677" />
-    <ET>
-      <ET>
-        <T ID="193666" I="data/ui/2kimages/main/icons/icon_attractiveness_group.png" />
-        <B>
-          <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
-          <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
-          <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
-          <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
-          <T ID="110935" I="data/ui/2kimages/main/3dicons/icon_botanic_garden.png" />
-          <T ID="110935" I="data/ui/2kimages/main/3dicons/icon_botanic_garden.png" />
-        </B>
-      </ET>
-    </ET>
-    <SP>
-      <P>115471</P>
-      <P>114796</P>
-      <P>114799</P>
-      <P>115472</P>
-      <P>114798</P>
-      <P>115473</P>
     </SP>
   </Asset>
   <Asset ID="191129" RV="Release" RT="Common">
@@ -857,44 +795,216 @@
       <P>190475</P>
     </SP>
   </Asset>
-  <Asset ID="193657" RV="Update 05" RT="Common">
-    <N>marshes</N>
-    <T ID="193657" I="data/ui/2kimages/main/3dicons/plants/icon_lilies.png" />
+  <Asset ID="191120" RV="Release" RT="Common">
+    <N>india</N>
+    <T ID="191120" I="data/ui/2kimages/main/3dicons/animals/icon_tiger.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Zoo">
+      <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+    </A>
+    <ISS>
+      <U V="+100%" C="PassiveTradeGoodGenUpgrade">
+        <T ID="12920" I="data/ui/2kimages/main/icons/icon_activate_trade.png">
+          <AI ID="-653518958" I="data/ui/2kimages/main/icons/icon_diplomacy_options_trade.png" FS="16" />
+        </T>
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="15367" />
+    <ET>
+      <ET>
+        <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+          <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>191073</P>
+      <P>191506</P>
+      <P>191079</P>
+      <P>193190</P>
+      <P>191088</P>
+      <P>191112</P>
+    </SP>
+  </Asset>
+  <Asset ID="193658" RV="Update 05" RT="Common">
+    <N>orient gardens</N>
+    <T ID="193658" I="data/ui/2kimages/main/3dicons/plants/icon_blue_lotus.png" />
     <R ID="118002" />
     <IT>Item Set</IT>
     <A ID="BotanicGarden">
       <T ID="110935" I="data/ui/2kimages/main/3dicons/icon_botanic_garden.png" />
     </A>
     <ISS>
-      <U V="+2" C="ResidenceUpgrade">
-        <T ID="12314" I="data/ui/2kimages/main/icons/icon_happy.png" />
+      <U>
+        <T ID="113322" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+        <A>
+          <U V="+25%" C="FactoryUpgrade">
+            <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+          </U>
+          <U V="" C="FactoryUpgrade">
+            <T ID="1657926953" I="data/ui/2kimages/main/icons/icon_stance_attack.png" />
+          </U>
+        </A>
       </U>
-      <U V="-50%" C="IncidentInfectableUpgrade">
-        <T ID="12226" I="data/ui/2kimages/main/icons/icon_incident_diseases.png" />
+      <U>
+        <T ID="113395" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+        <A>
+          <U V="+25%" C="FactoryUpgrade">
+            <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+          </U>
+          <U V="" C="FactoryUpgrade">
+            <T ID="-2030050818" I="data/ui/2kimages/main/icons/icon_stance_attack.png" />
+          </U>
+        </A>
       </U>
     </ISS>
     <GU />
     <TP />
     <HF />
-    <I ID="22332" />
+    <I ID="22334" />
     <ET>
       <ET>
-        <T ID="190762" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <T ID="100654" I="data/ui/2kimages/main/3dicons/icon_pepper.png" />
         <B>
-          <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="1010347" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="100654" I="data/ui/2kimages/main/3dicons/icon_pepper.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="1010329" I="data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png" />
+        <B>
+          <T ID="1010329" I="data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png" />
         </B>
       </ET>
     </ET>
     <SP>
-      <P>111112</P>
-      <P>111111</P>
-      <P>112733</P>
+      <P>114657</P>
+      <P>112735</P>
+      <P>111123</P>
+      <P>112736</P>
+      <P>111106</P>
+      <P>111109</P>
+    </SP>
+  </Asset>
+  <Asset ID="193774" RV="Update 06" RT="Common">
+    <N>inuit</N>
+    <T ID="193774" I="data/ui/2kimages/main/3dicons/specialists/icon_polar_5.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Museum">
+      <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    </A>
+    <ISS>
+      <U V="" C="CultureUpgrade">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+        <A>
+          <U V="+20%">
+            <T ID="191115" I="data/ui/2kimages/main/3dicons/animals/icon_moose.png" />
+          </U>
+          <U V="+20%">
+            <T ID="191119" I="data/ui/2kimages/main/3dicons/animals/icon_polar_bear.png" />
+          </U>
+          <U V="+20%">
+            <T ID="193773" I="data/ui/2kimages/main/3dicons/animals/icon_reindeer.png" />
+          </U>
+          <U V="+20%">
+            <T ID="191131" I="data/ui/2kimages/main/3dicons/museum/icon_museum_viking_valkyrie_helmet.png" />
+          </U>
+          <U V="+20%">
+            <T ID="191123" I="data/ui/2kimages/main/3dicons/museum/icon_museum_celts_stonehenge.png" />
+          </U>
+          <U V="+20%">
+            <T ID="193774" I="data/ui/2kimages/main/3dicons/specialists/icon_polar_5.png" />
+          </U>
+          <U V="+20%">
+            <T ID="193776" I="data/ui/2kimages/main/3dicons/museum/icon_museum_mammoth.png" />
+          </U>
+          <U V="+20%">
+            <T ID="193662" I="data/ui/2kimages/main/3dicons/plants/icon_rocky_mountain_fir.png" />
+          </U>
+        </A>
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="22677" />
+    <ET>
+      <ET>
+        <T ID="193666" I="data/ui/2kimages/main/icons/icon_attractiveness_group.png" />
+        <B>
+          <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+          <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+          <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
+          <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+          <T ID="110935" I="data/ui/2kimages/main/3dicons/icon_botanic_garden.png" />
+          <T ID="110935" I="data/ui/2kimages/main/3dicons/icon_botanic_garden.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>115471</P>
+      <P>114796</P>
+      <P>114799</P>
+      <P>115472</P>
+      <P>114798</P>
+      <P>115473</P>
+    </SP>
+  </Asset>
+  <Asset ID="191128" RV="Release" RT="Common">
+    <N>pirates</N>
+    <T ID="191128" I="data/ui/2kimages/main/3dicons/museum/icon_museum_sword_pirate_epic.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Museum">
+      <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    </A>
+    <ISS>
+      <U V="+3%" C="VehicleUpgrade">
+        <T ID="2339" I="data/ui/2kimages/main/icons/icon_forward.png" />
+      </U>
+      <U V="-5%" C="VehicleUpgrade">
+        <T ID="2320" I="data/ui/2kimages/main/icons/icon_credits.png" />
+      </U>
+      <U V="-10%" C="VehicleUpgrade">
+        <T ID="15262" I="data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="15373" />
+    <ET>
+      <ET>
+        <T ID="191458" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="100437" I="data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png" />
+          <T ID="100439" I="data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png" />
+          <T ID="100440" I="data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png" />
+          <T ID="100442" I="data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png" />
+          <T ID="100443" I="data/ui/2kimages/main/3dicons/ships/icon_ship_monitor.png" />
+          <T ID="101121" I="data/ui/2kimages/main/3dicons/ships/icon_ship_commandship.png" />
+          <T ID="102437" I="data/ui/2kimages/main/3dicons/ships/icon_ship_commandship.png" />
+          <T ID="102420" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_gunboat.png" />
+          <T ID="102421" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_frigatte.png" />
+          <T ID="102419" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_liner.png" />
+          <T ID="102422" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png" />
+          <T ID="102423" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_ship_monitor.png" />
+          <T ID="102425" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_battlecruiser.png" />
+          <T ID="102428" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_warship.png" />
+          <T ID="102427" I="data/ui/2kimages/main/3dicons/ships/icon_royal_liner.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>190545</P>
+      <P>190551</P>
+      <P>190476</P>
     </SP>
   </Asset>
   <Asset ID="191121" RV="Release" RT="Common">
@@ -986,6 +1096,87 @@
       <P>114794</P>
     </SP>
   </Asset>
+  <Asset ID="193660" RV="Update 05" RT="Common">
+    <N>sacred plants</N>
+    <T ID="193660" I="data/ui/2kimages/main/3dicons/plants/icon_sacred_lotus.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="BotanicGarden">
+      <T ID="110935" I="data/ui/2kimages/main/3dicons/icon_botanic_garden.png" />
+    </A>
+    <ISS>
+      <U V="+100%" C="PassiveTradeGoodGenUpgrade">
+        <T ID="12920" I="data/ui/2kimages/main/icons/icon_activate_trade.png">
+          <AI ID="2030850161" I="data/ui/2kimages/main/icons/icon_diplomacy_options_trade.png" FS="16" />
+        </T>
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="22336" />
+    <ET>
+      <ET>
+        <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+          <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>111115</P>
+      <P>114387</P>
+      <P>114388</P>
+      <P>114389</P>
+      <P>111108</P>
+      <P>112728</P>
+    </SP>
+  </Asset>
+  <Asset ID="191124" RV="Release" RT="Common">
+    <N>greek</N>
+    <T ID="191124" I="data/ui/2kimages/main/3dicons/museum/icon_scroll_anthology_myths.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="Museum">
+      <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+    </A>
+    <ISS>
+      <U V="-20%" C="BuildingUpgrade">
+        <T ID="2320" I="data/ui/2kimages/main/icons/icon_credits.png" />
+      </U>
+      <U V="+5" C="CultureUpgrade">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="15374" />
+    <ET>
+      <ET>
+        <T ID="1010352" I="data/ui/2kimages/main/3dicons/icon_cabaret.png" />
+        <B>
+          <T ID="1010352" I="data/ui/2kimages/main/3dicons/icon_cabaret.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="191562" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+        <B>
+          <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+          <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>190543</P>
+      <P>190513</P>
+      <P>190508</P>
+      <P>190485</P>
+      <P>190484</P>
+      <P>190509</P>
+    </SP>
+  </Asset>
   <Asset ID="191117" RV="Release" RT="Common">
     <N>ocean</N>
     <T ID="191117" I="data/ui/2kimages/main/3dicons/animals/icon_lionfish.png" />
@@ -1032,57 +1223,6 @@
       <P>190449</P>
     </SP>
   </Asset>
-  <Asset ID="191128" RV="Release" RT="Common">
-    <N>pirates</N>
-    <T ID="191128" I="data/ui/2kimages/main/3dicons/museum/icon_museum_sword_pirate_epic.png" />
-    <R ID="118002" />
-    <IT>Item Set</IT>
-    <A ID="Museum">
-      <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
-    </A>
-    <ISS>
-      <U V="+3%" C="VehicleUpgrade">
-        <T ID="2339" I="data/ui/2kimages/main/icons/icon_forward.png" />
-      </U>
-      <U V="-5%" C="VehicleUpgrade">
-        <T ID="2320" I="data/ui/2kimages/main/icons/icon_credits.png" />
-      </U>
-      <U V="-10%" C="VehicleUpgrade">
-        <T ID="15262" I="data/ui/2kimages/main/icons/icon_diplomacy_options_support_fleet.png" />
-      </U>
-    </ISS>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="15373" />
-    <ET>
-      <ET>
-        <T ID="191458" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
-        <B>
-          <T ID="100437" I="data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png" />
-          <T ID="100439" I="data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png" />
-          <T ID="100440" I="data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png" />
-          <T ID="100442" I="data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png" />
-          <T ID="100443" I="data/ui/2kimages/main/3dicons/ships/icon_ship_monitor.png" />
-          <T ID="101121" I="data/ui/2kimages/main/3dicons/ships/icon_ship_commandship.png" />
-          <T ID="102437" I="data/ui/2kimages/main/3dicons/ships/icon_ship_commandship.png" />
-          <T ID="102420" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_gunboat.png" />
-          <T ID="102421" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_frigatte.png" />
-          <T ID="102419" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_liner.png" />
-          <T ID="102422" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png" />
-          <T ID="102423" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_ship_monitor.png" />
-          <T ID="102425" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_battlecruiser.png" />
-          <T ID="102428" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_warship.png" />
-          <T ID="102427" I="data/ui/2kimages/main/3dicons/ships/icon_royal_liner.png" />
-        </B>
-      </ET>
-    </ET>
-    <SP>
-      <P>190545</P>
-      <P>190551</P>
-      <P>190476</P>
-    </SP>
-  </Asset>
   <Asset ID="193193" RV="Release" RT="Common">
     <N>white animals</N>
     <T ID="193193" I="data/ui/2kimages/main/3dicons/animals/icon_albinos_fennec.png" />
@@ -1121,48 +1261,41 @@
       <P>193192</P>
     </SP>
   </Asset>
-  <Asset ID="191124" RV="Release" RT="Common">
-    <N>greek</N>
-    <T ID="191124" I="data/ui/2kimages/main/3dicons/museum/icon_scroll_anthology_myths.png" />
+  <Asset ID="191126" RV="Release" RT="Common">
+    <N>mayan</N>
+    <T ID="191126" I="data/ui/2kimages/main/3dicons/museum/icon_mayan_glyphs.png" />
     <R ID="118002" />
     <IT>Item Set</IT>
     <A ID="Museum">
       <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     </A>
     <ISS>
-      <U V="-20%" C="BuildingUpgrade">
-        <T ID="2320" I="data/ui/2kimages/main/icons/icon_credits.png" />
-      </U>
-      <U V="+5" C="CultureUpgrade">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      <U V="+100%" C="PassiveTradeGoodGenUpgrade">
+        <T ID="12920" I="data/ui/2kimages/main/icons/icon_activate_trade.png">
+          <AI ID="306166239" I="data/ui/2kimages/main/icons/icon_diplomacy_options_trade.png" FS="16" />
+        </T>
       </U>
     </ISS>
     <GU />
     <TP />
     <HF />
-    <I ID="15374" />
+    <I ID="15375" />
     <ET>
       <ET>
-        <T ID="1010352" I="data/ui/2kimages/main/3dicons/icon_cabaret.png" />
+        <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
         <B>
-          <T ID="1010352" I="data/ui/2kimages/main/3dicons/icon_cabaret.png" />
-        </B>
-      </ET>
-      <ET>
-        <T ID="191562" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
-        <B>
-          <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
-          <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
+          <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+          <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
         </B>
       </ET>
     </ET>
     <SP>
-      <P>190543</P>
-      <P>190513</P>
-      <P>190508</P>
-      <P>190485</P>
-      <P>190484</P>
-      <P>190509</P>
+      <P>190500</P>
+      <P>190497</P>
+      <P>190474</P>
+      <P>190501</P>
+      <P>190498</P>
+      <P>190499</P>
     </SP>
   </Asset>
   <Asset ID="193401" RV="Update 04" RT="Common">
@@ -1213,102 +1346,6 @@
       <P>112811</P>
       <P>112812</P>
       <P>112476</P>
-    </SP>
-  </Asset>
-  <Asset ID="191126" RV="Release" RT="Common">
-    <N>mayan</N>
-    <T ID="191126" I="data/ui/2kimages/main/3dicons/museum/icon_mayan_glyphs.png" />
-    <R ID="118002" />
-    <IT>Item Set</IT>
-    <A ID="Museum">
-      <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
-    </A>
-    <ISS>
-      <U V="+100%" C="PassiveTradeGoodGenUpgrade">
-        <T ID="12920" I="data/ui/2kimages/main/icons/icon_activate_trade.png">
-          <AI ID="306166239" I="data/ui/2kimages/main/icons/icon_diplomacy_options_trade.png" FS="16" />
-        </T>
-      </U>
-    </ISS>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="15375" />
-    <ET>
-      <ET>
-        <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
-        <B>
-          <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
-          <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
-        </B>
-      </ET>
-    </ET>
-    <SP>
-      <P>190500</P>
-      <P>190497</P>
-      <P>190474</P>
-      <P>190501</P>
-      <P>190498</P>
-      <P>190499</P>
-    </SP>
-  </Asset>
-  <Asset ID="193658" RV="Update 05" RT="Common">
-    <N>orient gardens</N>
-    <T ID="193658" I="data/ui/2kimages/main/3dicons/plants/icon_blue_lotus.png" />
-    <R ID="118002" />
-    <IT>Item Set</IT>
-    <A ID="BotanicGarden">
-      <T ID="110935" I="data/ui/2kimages/main/3dicons/icon_botanic_garden.png" />
-    </A>
-    <ISS>
-      <U>
-        <T ID="113322" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-        <A>
-          <U V="+25%" C="FactoryUpgrade">
-            <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
-          </U>
-          <U V="" C="FactoryUpgrade">
-            <T ID="1657926953" I="data/ui/2kimages/main/icons/icon_stance_attack.png" />
-          </U>
-        </A>
-      </U>
-      <U>
-        <T ID="113395" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-        <A>
-          <U V="+25%" C="FactoryUpgrade">
-            <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
-          </U>
-          <U V="" C="FactoryUpgrade">
-            <T ID="-2030050818" I="data/ui/2kimages/main/icons/icon_stance_attack.png" />
-          </U>
-        </A>
-      </U>
-    </ISS>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="22334" />
-    <ET>
-      <ET>
-        <T ID="100654" I="data/ui/2kimages/main/3dicons/icon_pepper.png" />
-        <B>
-          <T ID="100654" I="data/ui/2kimages/main/3dicons/icon_pepper.png" />
-        </B>
-      </ET>
-      <ET>
-        <T ID="1010329" I="data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png" />
-        <B>
-          <T ID="1010329" I="data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png" />
-        </B>
-      </ET>
-    </ET>
-    <SP>
-      <P>114657</P>
-      <P>112735</P>
-      <P>111123</P>
-      <P>112736</P>
-      <P>111106</P>
-      <P>111109</P>
     </SP>
   </Asset>
   <Asset ID="193653" RV="Update 05" RT="Common">
@@ -1370,81 +1407,6 @@
       <P>112730</P>
     </SP>
   </Asset>
-  <Asset ID="193660" RV="Update 05" RT="Common">
-    <N>sacred plants</N>
-    <T ID="193660" I="data/ui/2kimages/main/3dicons/plants/icon_sacred_lotus.png" />
-    <R ID="118002" />
-    <IT>Item Set</IT>
-    <A ID="BotanicGarden">
-      <T ID="110935" I="data/ui/2kimages/main/3dicons/icon_botanic_garden.png" />
-    </A>
-    <ISS>
-      <U V="+100%" C="PassiveTradeGoodGenUpgrade">
-        <T ID="12920" I="data/ui/2kimages/main/icons/icon_activate_trade.png">
-          <AI ID="2030850161" I="data/ui/2kimages/main/icons/icon_diplomacy_options_trade.png" FS="16" />
-        </T>
-      </U>
-    </ISS>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="22336" />
-    <ET>
-      <ET>
-        <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
-        <B>
-          <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
-          <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
-        </B>
-      </ET>
-    </ET>
-    <SP>
-      <P>111115</P>
-      <P>114387</P>
-      <P>114388</P>
-      <P>114389</P>
-      <P>111108</P>
-      <P>112728</P>
-    </SP>
-  </Asset>
-  <Asset ID="193655" RV="Update 05" RT="Common">
-    <N>sea shore</N>
-    <T ID="193655" I="data/ui/2kimages/main/3dicons/plants/icon_great_star_coral.png" />
-    <R ID="118002" />
-    <IT>Item Set</IT>
-    <A ID="BotanicGarden">
-      <T ID="110935" I="data/ui/2kimages/main/3dicons/icon_botanic_garden.png" />
-    </A>
-    <ISS>
-      <U V="+10%" C="VisitorHarborUpgrade">
-        <T ID="20603" I="data/ui/2kimages/main/icons/icon_add_slot_guild.png" />
-      </U>
-      <U V="+50" C="CultureUpgrade">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-    </ISS>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="22330" />
-    <ET>
-      <ET>
-        <T ID="191563" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
-        <B>
-          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
-          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
-        </B>
-      </ET>
-    </ET>
-    <SP>
-      <P>111121</P>
-      <P>111122</P>
-      <P>112732</P>
-      <P>114656</P>
-      <P>111113</P>
-      <P>111107</P>
-    </SP>
-  </Asset>
   <Asset ID="193662" RV="Update 05" RT="Common">
     <N>subalpine flora</N>
     <T ID="193662" I="data/ui/2kimages/main/3dicons/plants/icon_rocky_mountain_fir.png" />
@@ -1499,6 +1461,44 @@
       <P>111118</P>
       <P>111116</P>
       <P>112734</P>
+    </SP>
+  </Asset>
+  <Asset ID="193655" RV="Update 05" RT="Common">
+    <N>sea shore</N>
+    <T ID="193655" I="data/ui/2kimages/main/3dicons/plants/icon_great_star_coral.png" />
+    <R ID="118002" />
+    <IT>Item Set</IT>
+    <A ID="BotanicGarden">
+      <T ID="110935" I="data/ui/2kimages/main/3dicons/icon_botanic_garden.png" />
+    </A>
+    <ISS>
+      <U V="+10%" C="VisitorHarborUpgrade">
+        <T ID="20603" I="data/ui/2kimages/main/icons/icon_add_slot_guild.png" />
+      </U>
+      <U V="+50" C="CultureUpgrade">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </ISS>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="22330" />
+    <ET>
+      <ET>
+        <T ID="191563" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+        <B>
+          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+        </B>
+      </ET>
+    </ET>
+    <SP>
+      <P>111121</P>
+      <P>111122</P>
+      <P>112732</P>
+      <P>114656</P>
+      <P>111113</P>
+      <P>111107</P>
     </SP>
   </Asset>
   <Asset ID="193665" RV="Update 05" RT="Common">

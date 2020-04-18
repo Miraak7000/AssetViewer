@@ -25,7 +25,7 @@
         <Style TargetType="ListBox">
           <Style.Triggers>
             <DataTrigger Binding="{Binding Source={x:Static AV:AssetProvider.CountMode}}" Value="True">
-              <Setter Property="SelectionMode" Value="Extended"/>
+              <Setter Property="SelectionMode" Value="Extended" />
             </DataTrigger>
           </Style.Triggers>
         </Style>
@@ -39,13 +39,18 @@
               <ColumnDefinition Width="*" />
               <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
-            <AV:NumericUpDown Grid.Column="0" MinValue="0"  Width="50" Value="{Binding Path=Count, Mode=TwoWay}">
+            <AV:NumericUpDown
+              Grid.Column="0"
+              Width="50"
+              MaxValue="9999"
+              MinValue="0"
+              Value="{Binding Path=Count, Mode=TwoWay}">
               <AV:NumericUpDown.Style>
                 <Style TargetType="AV:NumericUpDown">
-                  <Setter Property="Visibility" Value="Collapsed"/>
+                  <Setter Property="Visibility" Value="Collapsed" />
                   <Style.Triggers>
                     <DataTrigger Binding="{Binding Source={x:Static AV:AssetProvider.CountMode}}" Value="True">
-                      <Setter Property="Visibility" Value="Visible"/>
+                      <Setter Property="Visibility" Value="Visible" />
                     </DataTrigger>
                   </Style.Triggers>
                 </Style>

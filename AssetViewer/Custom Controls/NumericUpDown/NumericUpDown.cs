@@ -1,4 +1,5 @@
 ﻿using AssetViewer.Data;
+using System;
 using System.Collections;
 using System.Linq;
 using System.Windows;
@@ -15,23 +16,23 @@ namespace AssetViewer {
 
     #region Public Properties
 
-    public int MaxValue {
-      get { return (int)GetValue(MaxValueProperty); }
+    public uint MaxValue {
+      get { return (uint)GetValue(MaxValueProperty); }
       set { SetValue(MaxValueProperty, value); }
     }
 
-    public int MinValue {
-      get { return (int)GetValue(MinValueProperty); }
+    public uint MinValue {
+      get { return (uint)GetValue(MinValueProperty); }
       set { SetValue(MinValueProperty, value); }
     }
 
-    public int Increment {
-      get { return (int)GetValue(IncrementProperty); }
+    public uint Increment {
+      get { return (uint)GetValue(IncrementProperty); }
       set { SetValue(IncrementProperty, value); }
     }
 
-    public int Value {
-      get { return (int)GetValue(ValueProperty); }
+    public uint Value {
+      get { return (uint)GetValue(ValueProperty); }
       set { SetValue(ValueProperty, value); }
     }
 
@@ -54,16 +55,16 @@ namespace AssetViewer {
         typeof(ValueChangedEventHandler), typeof(NumericUpDown));
 
     public static readonly DependencyProperty MaxValueProperty =
-        DependencyProperty.Register("MaxValue", typeof(int), typeof(NumericUpDown), new FrameworkPropertyMetadata(int.MaxValue, maxValueChangedCallback, coerceMaxValueCallback));
+        DependencyProperty.Register("MaxValue", typeof(uint), typeof(NumericUpDown), new FrameworkPropertyMetadata(uint.MaxValue, maxValueChangedCallback, coerceMaxValueCallback));
 
     public static readonly DependencyProperty MinValueProperty =
-        DependencyProperty.Register("MinValue", typeof(int), typeof(NumericUpDown), new FrameworkPropertyMetadata(int.MinValue, minValueChangedCallback, coerceMinValueCallback));
+        DependencyProperty.Register("MinValue", typeof(uint), typeof(NumericUpDown), new FrameworkPropertyMetadata(uint.MinValue, minValueChangedCallback, coerceMinValueCallback));
 
     public static readonly DependencyProperty IncrementProperty =
-        DependencyProperty.Register("Increment", typeof(int), typeof(NumericUpDown), new FrameworkPropertyMetadata(1, null, coerceIncrementCallback));
+        DependencyProperty.Register("Increment", typeof(uint), typeof(NumericUpDown), new FrameworkPropertyMetadata(1U, null, coerceIncrementCallback));
 
     public static readonly DependencyProperty ValueProperty =
-        DependencyProperty.Register("Value", typeof(int), typeof(NumericUpDown), new FrameworkPropertyMetadata(0, valueChangedCallback, coerceValueCallback), validateValueCallback);
+        DependencyProperty.Register("Value", typeof(uint), typeof(NumericUpDown), new FrameworkPropertyMetadata(0U, valueChangedCallback, coerceValueCallback), validateValueCallback);
 
     public static readonly DependencyProperty CommandProperty =
       DependencyProperty.Register("Command", typeof(ICommand), typeof(NumericUpDown), new FrameworkPropertyMetadata((ICommand)null, new PropertyChangedCallback(OnCommandChanged)));
@@ -100,6 +101,7 @@ namespace AssetViewer {
         PART_TextBox = textBox;
         PART_TextBox.PreviewKeyDown += textBox_PreviewKeyDown;
         PART_TextBox.TextChanged += textBox_TextChanged;
+        PART_TextBox.LostFocus += textBox_LostFocus;
         PART_TextBox.Text = Value.ToString();
       }
       var PART_ButtonUp = GetTemplateChild("PART_ButtonUp") as ButtonBase;
@@ -127,7 +129,7 @@ namespace AssetViewer {
 
     private static object coerceMaxValueCallback(DependencyObject d, object value) {
       var minValue = ((NumericUpDown)d).MinValue;
-      if ((int)value < minValue)
+      if ((uint)value < minValue)
         return minValue;
 
       return value;
@@ -141,7 +143,7 @@ namespace AssetViewer {
 
     private static object coerceMinValueCallback(DependencyObject d, object value) {
       var maxValue = ((NumericUpDown)d).MaxValue;
-      if ((int)value > maxValue)
+      if ((uint)value > maxValue)
         return maxValue;
 
       return value;
@@ -156,7 +158,7 @@ namespace AssetViewer {
     private static object coerceIncrementCallback(DependencyObject d, object value) {
       var numericUpDown = ((NumericUpDown)d);
       var i = numericUpDown.MaxValue - numericUpDown.MinValue;
-      if ((int)value > i)
+      if ((uint)value > i)
         return i;
 
       return value;
@@ -166,36 +168,36 @@ namespace AssetViewer {
       var numericUpDown = (NumericUpDown)d;
       var control = d as NumericUpDown;
 
-      var ea = new ValueChangedEventArgs(NumericUpDown.ValueChangedEvent, d, (int)e.OldValue, (int)e.NewValue);
+      var ea = new ValueChangedEventArgs(NumericUpDown.ValueChangedEvent, d, (uint)e.OldValue, (uint)e.NewValue);
       numericUpDown.RaiseEvent(ea);
-      //if (ea.Handled) numericUpDown.Value = (int)e.OldValue;
+      //if (ea.Handled) numericUpDown.Value = (uint)e.OldValue;
       //else
       numericUpDown.PART_TextBox.Text = e.NewValue.ToString();
       var command = control?.Command;
-      var args = new SelectedCountChangedArgs { Count = (int)e.NewValue, Assets = (control?.CommandParameter as IList)?.OfType<TemplateAsset>() };
+      var args = new SelectedCountChangedArgs { Count = (uint)e.NewValue, Assets = (control?.CommandParameter as IList)?.OfType<TemplateAsset>() };
       if (command?.CanExecute(args) == true)
         command.Execute(args);
     }
 
     private static bool validateValueCallback(object value) {
-      var val = (int)value;
-      if (val > int.MinValue && val < int.MaxValue)
+      var val = (uint)value;
+      if (val >= uint.MinValue && val <= uint.MaxValue)
         return true;
       else
         return false;
     }
 
     private static object coerceValueCallback(DependencyObject d, object value) {
-      var val = (int)value;
+      var val = (uint)value;
       var minValue = ((NumericUpDown)d).MinValue;
       var maxValue = ((NumericUpDown)d).MaxValue;
-      int result;
+      uint result;
       if (val < minValue)
         result = minValue;
       else if (val > maxValue)
         result = maxValue;
       else
-        result = (int)value;
+        result = (uint)value;
 
       return result;
     }
@@ -215,13 +217,23 @@ namespace AssetViewer {
 
     private void textBox_TextChanged(object sender, TextChangedEventArgs e) {
       var index = PART_TextBox.CaretIndex;
-      int result;
-      if (!int.TryParse(PART_TextBox.Text, out result)) {
+      uint result;
+      if (!uint.TryParse(PART_TextBox.Text, out result)) {
         var changes = e.Changes.FirstOrDefault();
         PART_TextBox.Text = PART_TextBox.Text.Remove(changes.Offset, changes.AddedLength);
         PART_TextBox.CaretIndex = index > 0 ? index - changes.AddedLength : 0;
       }
-      else if (result < MaxValue && result > MinValue)
+      else if (result > MaxValue) {
+        Value = MaxValue;
+        PART_TextBox.Text = Value.ToString();
+        PART_TextBox.CaretIndex = PART_TextBox.Text.Length;
+      }
+      else if (result < MinValue) {
+        Value = MinValue;
+        PART_TextBox.Text = Value.ToString();
+        PART_TextBox.CaretIndex = PART_TextBox.Text.Length;
+      }
+      else if (result <= MaxValue && result >= MinValue)
         Value = result;
       else {
         PART_TextBox.Text = Value.ToString();
@@ -229,6 +241,11 @@ namespace AssetViewer {
       }
     }
 
+    private void textBox_LostFocus(object sender, RoutedEventArgs e) {
+      if (PART_TextBox.Text == string.Empty) {
+        PART_TextBox.Text = "0";
+      }
+    }
     #endregion Private Methods
   }
 }

@@ -78,9 +78,18 @@
           Grid.Row="1"
           Grid.Column="2"
           Height="22"
-          DisplayMemberPath="Item2"
           ItemsSource="{Binding Path=Progressions}"
-          SelectionChanged="ComboBoxProgressions_OnSelectionChanged" />
+          SelectionChanged="ComboBoxProgressions_OnSelectionChanged">
+          <ComboBox.ItemTemplate>
+            <DataTemplate>
+              <TextBlock>
+                <Run Text="{Binding Item2, Mode=OneWay}" />
+                <Run Text="-" />
+                <Run Text="{Binding Item2.AdditionalInformation, Mode=OneWay}" />
+              </TextBlock>
+            </DataTemplate>
+          </ComboBox.ItemTemplate>
+        </ComboBox>
       </Grid>
     </Border>
     <AV:NumericUpDown
@@ -91,6 +100,7 @@
       HorizontalAlignment="Left"
       Command="{Binding Source={x:Static local:ItemsBase.SelectedCountChangedCommand}}"
       CommandParameter="{Binding ElementName=ItemsList, Path=SelectedItems}"
+      MaxValue="9999"
       MinValue="0">
       <AV:NumericUpDown.Style>
         <Style TargetType="AV:NumericUpDown">

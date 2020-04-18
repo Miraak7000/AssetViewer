@@ -22,29 +22,6 @@
       </S>
     </S>
   </Asset>
-  <Asset ID="192228" RV="Release" RT="Narrative">
-    <N>Banner of La Corona</N>
-    <T ID="192228" I="data/ui/2kimages/main/3dicons/museum/icon_fabric_rare.png" />
-    <R ID="19850" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <I ID="19891" />
-    <S>
-      <S ID="84" N="Second_ai_09 (Vicente Silva)">
-        <T ID="-1608301314" I="data/ui/2kimages/main/profiles/ai_09.png" />
-        <DL>
-          <D W="2,5">
-            <T ID="84" I="data/ui/2kimages/main/profiles/ai_09.png" />
-          </D>
-        </DL>
-      </S>
-    </S>
-  </Asset>
   <Asset ID="192190" RV="Release" RT="Narrative">
     <N>Some uncommon seedling</N>
     <T ID="192190" I="data/ui/2kimages/main/3dicons/icon_fertile_lands.png" />
@@ -68,20 +45,6 @@
       </S>
     </S>
   </Asset>
-  <Asset ID="192318" RV="Release" RT="Narrative">
-    <N>Prototype turbine</N>
-    <T ID="192318" I="data/ui/2kimages/main/3dicons/machine_items/icon_turbine_1.png" />
-    <R ID="19850" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <I ID="19999" />
-    <S />
-  </Asset>
   <Asset ID="113104" RV="Update 04" RT="Quest">
     <N>QI_AnimalsNewWorld_Leg_Dummy</N>
     <T ID="113103" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png" />
@@ -104,9 +67,9 @@
       </S>
     </S>
   </Asset>
-  <Asset ID="192229" RV="Release" RT="Narrative">
-    <N>Disfunctional sea mine</N>
-    <T ID="192229" I="data/ui/2kimages/main/3dicons/icon_seamine.png" />
+  <Asset ID="192228" RV="Release" RT="Narrative">
+    <N>Banner of La Corona</N>
+    <T ID="192228" I="data/ui/2kimages/main/3dicons/museum/icon_fabric_rare.png" />
     <R ID="19850" />
     <IT>Character Item</IT>
     <A ID="NoneAllocation">
@@ -115,13 +78,49 @@
     <GU />
     <TP>25</TP>
     <HF>100</HF>
-    <I ID="19892" />
+    <I ID="19891" />
     <S>
       <S ID="84" N="Second_ai_09 (Vicente Silva)">
         <T ID="-1608301314" I="data/ui/2kimages/main/profiles/ai_09.png" />
         <DL>
           <D W="2,5">
             <T ID="84" I="data/ui/2kimages/main/profiles/ai_09.png" />
+          </D>
+        </DL>
+      </S>
+    </S>
+  </Asset>
+  <Asset ID="192318" RV="Release" RT="Narrative">
+    <N>Prototype turbine</N>
+    <T ID="192318" I="data/ui/2kimages/main/3dicons/machine_items/icon_turbine_1.png" />
+    <R ID="19850" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <I ID="19999" />
+    <S />
+  </Asset>
+  <Asset ID="113105" RV="Update 04" RT="Quest">
+    <N>QI_AnimalsSunkenWorld_Leg_Dummy</N>
+    <T ID="113103" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png" />
+    <R ID="118007" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <S>
+      <S ID="113196" N="Mythological Animal Hideout Map (Sunken World)">
+        <T ID="113420" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="100">
+            <T ID="-1124673143" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_03.png" />
           </D>
         </DL>
       </S>
@@ -150,8 +149,31 @@
       </S>
     </S>
   </Asset>
-  <Asset ID="113105" RV="Update 04" RT="Quest">
-    <N>QI_AnimalsSunkenWorld_Leg_Dummy</N>
+  <Asset ID="192229" RV="Release" RT="Narrative">
+    <N>Disfunctional sea mine</N>
+    <T ID="192229" I="data/ui/2kimages/main/3dicons/icon_seamine.png" />
+    <R ID="19850" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <I ID="19892" />
+    <S>
+      <S ID="84" N="Second_ai_09 (Vicente Silva)">
+        <T ID="-1608301314" I="data/ui/2kimages/main/profiles/ai_09.png" />
+        <DL>
+          <D W="2,5">
+            <T ID="84" I="data/ui/2kimages/main/profiles/ai_09.png" />
+          </D>
+        </DL>
+      </S>
+    </S>
+  </Asset>
+  <Asset ID="113106" RV="Update 04" RT="Quest">
+    <N>QI_Machines_Rare_Dummy</N>
     <T ID="113103" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png" />
     <R ID="118007" />
     <IT>Character Item</IT>
@@ -162,11 +184,17 @@
     <TP>25</TP>
     <HF>100</HF>
     <S>
-      <S ID="113196" N="Mythological Animal Hideout Map (Sunken World)">
+      <S ID="113199" N="Naval Battles Map (Sunken World)">
         <T ID="113420" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
         <DL>
           <D W="100">
-            <T ID="-1124673143" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_03.png" />
+            <T ID="1180528641" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_01.png" />
+          </D>
+          <D W="100">
+            <T ID="556561350" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_01.png" />
+          </D>
+          <D W="100">
+            <T ID="-1095254098" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_01.png" />
           </D>
         </DL>
       </S>
@@ -207,71 +235,6 @@
     <TP>25</TP>
     <HF>100</HF>
     <I ID="20001" />
-    <S />
-  </Asset>
-  <Asset ID="113106" RV="Update 04" RT="Quest">
-    <N>QI_Machines_Rare_Dummy</N>
-    <T ID="113103" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png" />
-    <R ID="118007" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <S>
-      <S ID="113199" N="Naval Battles Map (Sunken World)">
-        <T ID="113420" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
-        <DL>
-          <D W="100">
-            <T ID="1180528641" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_01.png" />
-          </D>
-          <D W="100">
-            <T ID="556561350" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_01.png" />
-          </D>
-          <D W="100">
-            <T ID="-1095254098" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_01.png" />
-          </D>
-        </DL>
-      </S>
-    </S>
-  </Asset>
-  <Asset ID="192230" RV="Release" RT="Narrative">
-    <N>George's ear trumpet</N>
-    <T ID="192230" I="data/ui/2kimages/main/3dicons/icon_brass_tube.png" />
-    <R ID="19850" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <I ID="19893" />
-    <S>
-      <S ID="81" N="Second_ai_04 (George Smith)">
-        <T ID="-1992475406" I="data/ui/2kimages/main/profiles/ai_04.png" />
-        <DL>
-          <D W="2,5">
-            <T ID="81" I="data/ui/2kimages/main/profiles/ai_04.png" />
-          </D>
-        </DL>
-      </S>
-    </S>
-  </Asset>
-  <Asset ID="192322" RV="Release" RT="Narrative">
-    <N>Alarm bell</N>
-    <T ID="192322" I="data/ui/2kimages/main/3dicons/machine_items/icon_factory_bell_3.png" />
-    <R ID="19850" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <I ID="20002" />
     <S />
   </Asset>
   <Asset ID="113109" RV="Update 04" RT="Quest">
@@ -325,9 +288,9 @@
       </S>
     </S>
   </Asset>
-  <Asset ID="192231" RV="Release" RT="Narrative">
-    <N>Quartz from the mines</N>
-    <T ID="192231" I="data/ui/2kimages/main/3dicons/icon_quartz_sand.png" />
+  <Asset ID="192322" RV="Release" RT="Narrative">
+    <N>Alarm bell</N>
+    <T ID="192322" I="data/ui/2kimages/main/3dicons/machine_items/icon_factory_bell_3.png" />
     <R ID="19850" />
     <IT>Character Item</IT>
     <A ID="NoneAllocation">
@@ -336,7 +299,21 @@
     <GU />
     <TP>25</TP>
     <HF>100</HF>
-    <I ID="19894" />
+    <I ID="20002" />
+    <S />
+  </Asset>
+  <Asset ID="192230" RV="Release" RT="Narrative">
+    <N>George's ear trumpet</N>
+    <T ID="192230" I="data/ui/2kimages/main/3dicons/icon_brass_tube.png" />
+    <R ID="19850" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <I ID="19893" />
     <S>
       <S ID="81" N="Second_ai_04 (George Smith)">
         <T ID="-1992475406" I="data/ui/2kimages/main/profiles/ai_04.png" />
@@ -390,9 +367,9 @@
     <I ID="20003" />
     <S />
   </Asset>
-  <Asset ID="192232" RV="Release" RT="Narrative">
-    <N>George's police badge</N>
-    <T ID="192232" I="data/ui/2kimages/main/3dicons/icon_security.png" />
+  <Asset ID="192231" RV="Release" RT="Narrative">
+    <N>Quartz from the mines</N>
+    <T ID="192231" I="data/ui/2kimages/main/3dicons/icon_quartz_sand.png" />
     <R ID="19850" />
     <IT>Character Item</IT>
     <A ID="NoneAllocation">
@@ -401,7 +378,7 @@
     <GU />
     <TP>25</TP>
     <HF>100</HF>
-    <I ID="19895" />
+    <I ID="19894" />
     <S>
       <S ID="81" N="Second_ai_04 (George Smith)">
         <T ID="-1992475406" I="data/ui/2kimages/main/profiles/ai_04.png" />
@@ -463,9 +440,9 @@
     <I ID="20004" />
     <S />
   </Asset>
-  <Asset ID="192233" RV="Release" RT="Narrative">
-    <N>George's sewing machine</N>
-    <T ID="192233" I="data/ui/2kimages/main/3dicons/icon_sewing_machine.png" />
+  <Asset ID="192232" RV="Release" RT="Narrative">
+    <N>George's police badge</N>
+    <T ID="192232" I="data/ui/2kimages/main/3dicons/icon_security.png" />
     <R ID="19850" />
     <IT>Character Item</IT>
     <A ID="NoneAllocation">
@@ -474,7 +451,7 @@
     <GU />
     <TP>25</TP>
     <HF>100</HF>
-    <I ID="19896" />
+    <I ID="19895" />
     <S>
       <S ID="81" N="Second_ai_04 (George Smith)">
         <T ID="-1992475406" I="data/ui/2kimages/main/profiles/ai_04.png" />
@@ -485,6 +462,19 @@
         </DL>
       </S>
     </S>
+  </Asset>
+  <Asset ID="113444" RV="Update 04" RT="Quest">
+    <N>QI_Sceptre_Stick_Dummy</N>
+    <T ID="113444" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png" />
+    <R ID="118007" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <S />
   </Asset>
   <Asset ID="192197" RV="Release" RT="Narrative">
     <N>Human Skull</N>
@@ -509,10 +499,10 @@
       </S>
     </S>
   </Asset>
-  <Asset ID="113444" RV="Update 04" RT="Quest">
-    <N>QI_Sceptre_Stick_Dummy</N>
-    <T ID="113444" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png" />
-    <R ID="118007" />
+  <Asset ID="192233" RV="Release" RT="Narrative">
+    <N>George's sewing machine</N>
+    <T ID="192233" I="data/ui/2kimages/main/3dicons/icon_sewing_machine.png" />
+    <R ID="19850" />
     <IT>Character Item</IT>
     <A ID="NoneAllocation">
       <T ID="-1230" />
@@ -520,7 +510,17 @@
     <GU />
     <TP>25</TP>
     <HF>100</HF>
-    <S />
+    <I ID="19896" />
+    <S>
+      <S ID="81" N="Second_ai_04 (George Smith)">
+        <T ID="-1992475406" I="data/ui/2kimages/main/profiles/ai_04.png" />
+        <DL>
+          <D W="2,5">
+            <T ID="81" I="data/ui/2kimages/main/profiles/ai_04.png" />
+          </D>
+        </DL>
+      </S>
+    </S>
   </Asset>
   <Asset ID="192325" RV="Release" RT="Narrative">
     <N>Tripod and camera</N>
@@ -585,29 +585,6 @@
     <HF>100</HF>
     <S />
   </Asset>
-  <Asset ID="192234" RV="Release" RT="Narrative">
-    <N>The old pirate's hat</N>
-    <T ID="192234" I="data/ui/2kimages/main/3dicons/museum/icon_museum_readbeard_skeletton.png" />
-    <R ID="19850" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <I ID="19897" />
-    <S>
-      <S ID="73" N="Third_party_03 (Anne Harlow)">
-        <T ID="1514529701" I="data/ui/2kimages/main/profiles/3rd_party_03.png" />
-        <DL>
-          <D W="2,5">
-            <T ID="73" I="data/ui/2kimages/main/profiles/3rd_party_03.png" />
-          </D>
-        </DL>
-      </S>
-    </S>
-  </Asset>
   <Asset ID="192199" RV="Release" RT="Narrative">
     <N>Alonso's tranquilizers</N>
     <T ID="192199" I="data/ui/2kimages/main/3dicons/machine_items/icon_vitamin_supplement_2.png" />
@@ -626,6 +603,29 @@
         <DL>
           <D W="2,5">
             <T ID="48" I="data/ui/2kimages/main/profiles/ai_08.png" />
+          </D>
+        </DL>
+      </S>
+    </S>
+  </Asset>
+  <Asset ID="192234" RV="Release" RT="Narrative">
+    <N>The old pirate's hat</N>
+    <T ID="192234" I="data/ui/2kimages/main/3dicons/museum/icon_museum_readbeard_skeletton.png" />
+    <R ID="19850" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <I ID="19897" />
+    <S>
+      <S ID="73" N="Third_party_03 (Anne Harlow)">
+        <T ID="1514529701" I="data/ui/2kimages/main/profiles/3rd_party_03.png" />
+        <DL>
+          <D W="2,5">
+            <T ID="73" I="data/ui/2kimages/main/profiles/3rd_party_03.png" />
           </D>
         </DL>
       </S>
@@ -708,29 +708,6 @@
     <HF>100</HF>
     <S />
   </Asset>
-  <Asset ID="192236" RV="Release" RT="Narrative">
-    <N>Anne's gramophone</N>
-    <T ID="192236" I="data/ui/2kimages/main/3dicons/icon_phonographs.png" />
-    <R ID="19850" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <I ID="19899" />
-    <S>
-      <S ID="73" N="Third_party_03 (Anne Harlow)">
-        <T ID="1514529701" I="data/ui/2kimages/main/profiles/3rd_party_03.png" />
-        <DL>
-          <D W="2,5">
-            <T ID="73" I="data/ui/2kimages/main/profiles/3rd_party_03.png" />
-          </D>
-        </DL>
-      </S>
-    </S>
-  </Asset>
   <Asset ID="192200" RV="Release" RT="Narrative">
     <N>Willie's Diary</N>
     <T ID="192200" I="data/ui/2kimages/main/3dicons/museum/icon_book_comon.png" />
@@ -749,6 +726,29 @@
         <DL>
           <D W="2,5">
             <T ID="80" I="data/ui/2kimages/main/profiles/ai_03.png" />
+          </D>
+        </DL>
+      </S>
+    </S>
+  </Asset>
+  <Asset ID="192236" RV="Release" RT="Narrative">
+    <N>Anne's gramophone</N>
+    <T ID="192236" I="data/ui/2kimages/main/3dicons/icon_phonographs.png" />
+    <R ID="19850" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <I ID="19899" />
+    <S>
+      <S ID="73" N="Third_party_03 (Anne Harlow)">
+        <T ID="1514529701" I="data/ui/2kimages/main/profiles/3rd_party_03.png" />
+        <DL>
+          <D W="2,5">
+            <T ID="73" I="data/ui/2kimages/main/profiles/3rd_party_03.png" />
           </D>
         </DL>
       </S>
@@ -781,29 +781,6 @@
     <HF>100</HF>
     <S />
   </Asset>
-  <Asset ID="192237" RV="Release" RT="Narrative">
-    <N>Message in a bottle</N>
-    <T ID="192237" I="data/ui/2kimages/main/3dicons/icon_drift_bottle.png" />
-    <R ID="19850" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <I ID="19900" />
-    <S>
-      <S ID="73" N="Third_party_03 (Anne Harlow)">
-        <T ID="1514529701" I="data/ui/2kimages/main/profiles/3rd_party_03.png" />
-        <DL>
-          <D W="2,5">
-            <T ID="73" I="data/ui/2kimages/main/profiles/3rd_party_03.png" />
-          </D>
-        </DL>
-      </S>
-    </S>
-  </Asset>
   <Asset ID="192201" RV="Release" RT="Narrative">
     <N>A barrel of gold</N>
     <T ID="192201" I="data/ui/2kimages/main/3dicons/icon_gold.png" />
@@ -822,6 +799,29 @@
         <DL>
           <D W="2,5">
             <T ID="80" I="data/ui/2kimages/main/profiles/ai_03.png" />
+          </D>
+        </DL>
+      </S>
+    </S>
+  </Asset>
+  <Asset ID="192237" RV="Release" RT="Narrative">
+    <N>Message in a bottle</N>
+    <T ID="192237" I="data/ui/2kimages/main/3dicons/icon_drift_bottle.png" />
+    <R ID="19850" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <I ID="19900" />
+    <S>
+      <S ID="73" N="Third_party_03 (Anne Harlow)">
+        <T ID="1514529701" I="data/ui/2kimages/main/profiles/3rd_party_03.png" />
+        <DL>
+          <D W="2,5">
+            <T ID="73" I="data/ui/2kimages/main/profiles/3rd_party_03.png" />
           </D>
         </DL>
       </S>
@@ -890,29 +890,6 @@
     <HF>100</HF>
     <S />
   </Asset>
-  <Asset ID="192238" RV="Release" RT="Narrative">
-    <N>Strange talisman</N>
-    <T ID="192238" I="data/ui/2kimages/main/3dicons/museum/icon_monkey_amulet.png" />
-    <R ID="19850" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <I ID="19901" />
-    <S>
-      <S ID="76" N="Third_party_04 (La Fortune)">
-        <T ID="1638667151" I="data/ui/2kimages/main/profiles/3rd_party_04.png" />
-        <DL>
-          <D W="2,5">
-            <T ID="76" I="data/ui/2kimages/main/profiles/3rd_party_04.png" />
-          </D>
-        </DL>
-      </S>
-    </S>
-  </Asset>
   <Asset ID="192203" RV="Release" RT="Narrative">
     <N>Wooden Box</N>
     <T ID="192203" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_3.png" />
@@ -931,6 +908,29 @@
         <DL>
           <D W="2,5">
             <T ID="80" I="data/ui/2kimages/main/profiles/ai_03.png" />
+          </D>
+        </DL>
+      </S>
+    </S>
+  </Asset>
+  <Asset ID="192238" RV="Release" RT="Narrative">
+    <N>Strange talisman</N>
+    <T ID="192238" I="data/ui/2kimages/main/3dicons/museum/icon_monkey_amulet.png" />
+    <R ID="19850" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <I ID="19901" />
+    <S>
+      <S ID="76" N="Third_party_04 (La Fortune)">
+        <T ID="1638667151" I="data/ui/2kimages/main/profiles/3rd_party_04.png" />
+        <DL>
+          <D W="2,5">
+            <T ID="76" I="data/ui/2kimages/main/profiles/3rd_party_04.png" />
           </D>
         </DL>
       </S>
@@ -1013,29 +1013,6 @@
     <HF>100</HF>
     <S />
   </Asset>
-  <Asset ID="192240" RV="Release" RT="Narrative">
-    <N>A child's letter</N>
-    <T ID="192240" I="data/ui/2kimages/main/3dicons/campaign/icon_letter_closed.png" />
-    <R ID="19850" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <I ID="19903" />
-    <S>
-      <S ID="76" N="Third_party_04 (La Fortune)">
-        <T ID="1638667151" I="data/ui/2kimages/main/profiles/3rd_party_04.png" />
-        <DL>
-          <D W="2,5">
-            <T ID="76" I="data/ui/2kimages/main/profiles/3rd_party_04.png" />
-          </D>
-        </DL>
-      </S>
-    </S>
-  </Asset>
   <Asset ID="192204" RV="Release" RT="Narrative">
     <N>Beryl's mink coat</N>
     <T ID="192204" I="data/ui/2kimages/main/3dicons/icon_fur_coats.png" />
@@ -1059,6 +1036,29 @@
       </S>
     </S>
   </Asset>
+  <Asset ID="192240" RV="Release" RT="Narrative">
+    <N>A child's letter</N>
+    <T ID="192240" I="data/ui/2kimages/main/3dicons/campaign/icon_letter_closed.png" />
+    <R ID="19850" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <I ID="19903" />
+    <S>
+      <S ID="76" N="Third_party_04 (La Fortune)">
+        <T ID="1638667151" I="data/ui/2kimages/main/profiles/3rd_party_04.png" />
+        <DL>
+          <D W="2,5">
+            <T ID="76" I="data/ui/2kimages/main/profiles/3rd_party_04.png" />
+          </D>
+        </DL>
+      </S>
+    </S>
+  </Asset>
   <Asset ID="192334" RV="Release" RT="Narrative">
     <N>A family recipe</N>
     <T ID="192334" I="data/ui/2kimages/main/3dicons/icon_tortilla.png" />
@@ -1072,6 +1072,29 @@
     <HF>100</HF>
     <I ID="20015" />
     <S />
+  </Asset>
+  <Asset ID="192205" RV="Release" RT="Narrative">
+    <N>Beryl's nail clippers</N>
+    <T ID="192205" I="data/ui/2kimages/main/3dicons/machine_items/icon_pruning_material_3.png" />
+    <R ID="19850" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <I ID="19870" />
+    <S>
+      <S ID="82" N="Second_ai_05 (Beryl O'Mara)">
+        <T ID="212207197" I="data/ui/2kimages/main/profiles/ai_05.png" />
+        <DL>
+          <D W="2,5">
+            <T ID="82" I="data/ui/2kimages/main/profiles/ai_05.png" />
+          </D>
+        </DL>
+      </S>
+    </S>
   </Asset>
   <Asset ID="192241" RV="Release" RT="Narrative">
     <N>Jean's little helper</N>
@@ -1096,9 +1119,9 @@
       </S>
     </S>
   </Asset>
-  <Asset ID="192205" RV="Release" RT="Narrative">
-    <N>Beryl's nail clippers</N>
-    <T ID="192205" I="data/ui/2kimages/main/3dicons/machine_items/icon_pruning_material_3.png" />
+  <Asset ID="192335" RV="Release" RT="Narrative">
+    <N>Grandmother's sewing machine</N>
+    <T ID="192335" I="data/ui/2kimages/main/3dicons/icon_sewing_machine.png" />
     <R ID="19850" />
     <IT>Character Item</IT>
     <A ID="NoneAllocation">
@@ -1107,17 +1130,8 @@
     <GU />
     <TP>25</TP>
     <HF>100</HF>
-    <I ID="19870" />
-    <S>
-      <S ID="82" N="Second_ai_05 (Beryl O'Mara)">
-        <T ID="212207197" I="data/ui/2kimages/main/profiles/ai_05.png" />
-        <DL>
-          <D W="2,5">
-            <T ID="82" I="data/ui/2kimages/main/profiles/ai_05.png" />
-          </D>
-        </DL>
-      </S>
-    </S>
+    <I ID="20016" />
+    <S />
   </Asset>
   <Asset ID="112857" RV="Update 04" RT="Quest">
     <N>QI_Scrap_Dummy</N>
@@ -1263,20 +1277,6 @@
       </S>
     </S>
   </Asset>
-  <Asset ID="192335" RV="Release" RT="Narrative">
-    <N>Grandmother's sewing machine</N>
-    <T ID="192335" I="data/ui/2kimages/main/3dicons/icon_sewing_machine.png" />
-    <R ID="19850" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <I ID="20016" />
-    <S />
-  </Asset>
   <Asset ID="192206" RV="Release" RT="Narrative">
     <N>Beryl's barrel</N>
     <T ID="192206" I="data/ui/2kimages/main/3dicons/icon_flotsam.png" />
@@ -1322,20 +1322,6 @@
       </S>
     </S>
   </Asset>
-  <Asset ID="192293" RV="Release" RT="Narrative">
-    <N>A tiny seedling</N>
-    <T ID="192293" I="data/ui/2kimages/main/3dicons/icon_fertile_lands.png" />
-    <R ID="19850" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <I ID="19977" />
-    <S />
-  </Asset>
   <Asset ID="192207" RV="Release" RT="Narrative">
     <N>A pot of hot coffee</N>
     <T ID="192207" I="data/ui/2kimages/main/3dicons/narative_item/icon_beryl_tea.png" />
@@ -1358,6 +1344,20 @@
         </DL>
       </S>
     </S>
+  </Asset>
+  <Asset ID="192293" RV="Release" RT="Narrative">
+    <N>A tiny seedling</N>
+    <T ID="192293" I="data/ui/2kimages/main/3dicons/icon_fertile_lands.png" />
+    <R ID="19850" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <I ID="19977" />
+    <S />
   </Asset>
   <Asset ID="116313" RV="Update 06" RT="Quest">
     <N>QI_ArtefactsArctic_Epic_Dummy</N>
@@ -1463,20 +1463,6 @@
       </S>
     </S>
   </Asset>
-  <Asset ID="192296" RV="Release" RT="Narrative">
-    <N>Warm loaf of bread</N>
-    <T ID="192296" I="data/ui/2kimages/main/3dicons/icon_bread.png" />
-    <R ID="19850" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <I ID="19979" />
-    <S />
-  </Asset>
   <Asset ID="192208" RV="Release" RT="Narrative">
     <N>Germ resistant soap</N>
     <T ID="192208" I="data/ui/2kimages/main/3dicons/icon_soap_2.png" />
@@ -1499,6 +1485,20 @@
         </DL>
       </S>
     </S>
+  </Asset>
+  <Asset ID="192296" RV="Release" RT="Narrative">
+    <N>Warm loaf of bread</N>
+    <T ID="192296" I="data/ui/2kimages/main/3dicons/icon_bread.png" />
+    <R ID="19850" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <I ID="19979" />
+    <S />
   </Asset>
   <Asset ID="116315" RV="Update 06" RT="Quest">
     <N>QI_AnimalsArctic_Rare_Dummy</N>
@@ -1545,20 +1545,6 @@
       </S>
     </S>
   </Asset>
-  <Asset ID="192297" RV="Release" RT="Narrative">
-    <N>Warm milk</N>
-    <T ID="192297" I="data/ui/2kimages/main/3dicons/icon_sheep_milk.png" />
-    <R ID="19850" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <I ID="19980" />
-    <S />
-  </Asset>
   <Asset ID="192209" RV="Release" RT="Narrative">
     <N>The Malching's family seal</N>
     <T ID="192209" I="data/ui/2kimages/main/3dicons/museum/icon_coin_uncommon.png" />
@@ -1582,6 +1568,20 @@
       </S>
     </S>
   </Asset>
+  <Asset ID="192297" RV="Release" RT="Narrative">
+    <N>Warm milk</N>
+    <T ID="192297" I="data/ui/2kimages/main/3dicons/icon_sheep_milk.png" />
+    <R ID="19850" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <I ID="19980" />
+    <S />
+  </Asset>
   <Asset ID="116316" RV="Update 06" RT="Quest">
     <N>QI_AnimalsArctic_Epic_Dummy</N>
     <T ID="113103" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png" />
@@ -1599,43 +1599,6 @@
         <DL>
           <D W="100">
             <T ID="-1285318255" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_passage_02.png" />
-          </D>
-        </DL>
-      </S>
-    </S>
-  </Asset>
-  <Asset ID="192298" RV="Release" RT="Narrative">
-    <N>Hot potatoes</N>
-    <T ID="192298" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
-    <R ID="19850" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <I ID="19981" />
-    <S />
-  </Asset>
-  <Asset ID="111190" RV="Update 03" RT="Narrative">
-    <N>Anarchist's Cookbook</N>
-    <T ID="111190" I="data/ui/2kimages/main/3dicons/narative_item/icon_mercier_cookbook.png" />
-    <R ID="19850" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <I ID="111194" />
-    <S>
-      <S ID="220" N="Second_ai_11 (Hugo Mercier)">
-        <T ID="-669181054" I="data/ui/2kimages/main/profiles/ai_11.png" />
-        <DL>
-          <D W="2,5">
-            <T ID="220" I="data/ui/2kimages/main/profiles/ai_11.png" />
           </D>
         </DL>
       </S>
@@ -1664,6 +1627,43 @@
       </S>
     </S>
   </Asset>
+  <Asset ID="111190" RV="Update 03" RT="Narrative">
+    <N>Anarchist's Cookbook</N>
+    <T ID="111190" I="data/ui/2kimages/main/3dicons/narative_item/icon_mercier_cookbook.png" />
+    <R ID="19850" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <I ID="111194" />
+    <S>
+      <S ID="220" N="Second_ai_11 (Hugo Mercier)">
+        <T ID="-669181054" I="data/ui/2kimages/main/profiles/ai_11.png" />
+        <DL>
+          <D W="2,5">
+            <T ID="220" I="data/ui/2kimages/main/profiles/ai_11.png" />
+          </D>
+        </DL>
+      </S>
+    </S>
+  </Asset>
+  <Asset ID="192298" RV="Release" RT="Narrative">
+    <N>Hot potatoes</N>
+    <T ID="192298" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
+    <R ID="19850" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <I ID="19981" />
+    <S />
+  </Asset>
   <Asset ID="116317" RV="Update 06" RT="Quest">
     <N>QI_AnimalsArctic_Leg_Dummy</N>
     <T ID="113103" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png" />
@@ -1681,6 +1681,29 @@
         <DL>
           <D W="100">
             <T ID="1047272024" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_passage_03.png" />
+          </D>
+        </DL>
+      </S>
+    </S>
+  </Asset>
+  <Asset ID="192212" RV="Release" RT="Narrative">
+    <N>Pointless bling-bling</N>
+    <T ID="192212" I="data/ui/2kimages/main/3dicons/museum/icon_museum_viking_nibelungen_ring.png" />
+    <R ID="19850" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <I ID="19876" />
+    <S>
+      <S ID="11" N="Second_ai_07 (Carl von Malching)">
+        <T ID="224919945" I="data/ui/2kimages/main/profiles/ai_07.png" />
+        <DL>
+          <D W="2,5">
+            <T ID="11" I="data/ui/2kimages/main/profiles/ai_07.png" />
           </D>
         </DL>
       </S>
@@ -1719,29 +1742,6 @@
       </S>
     </S>
   </Asset>
-  <Asset ID="192212" RV="Release" RT="Narrative">
-    <N>Pointless bling-bling</N>
-    <T ID="192212" I="data/ui/2kimages/main/3dicons/museum/icon_museum_viking_nibelungen_ring.png" />
-    <R ID="19850" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <I ID="19876" />
-    <S>
-      <S ID="11" N="Second_ai_07 (Carl von Malching)">
-        <T ID="224919945" I="data/ui/2kimages/main/profiles/ai_07.png" />
-        <DL>
-          <D W="2,5">
-            <T ID="11" I="data/ui/2kimages/main/profiles/ai_07.png" />
-          </D>
-        </DL>
-      </S>
-    </S>
-  </Asset>
   <Asset ID="116318" RV="Update 06" RT="Quest">
     <N>QI_MachinesArctic_Rare_Dummy</N>
     <T ID="113103" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png" />
@@ -1763,20 +1763,6 @@
         </DL>
       </S>
     </S>
-  </Asset>
-  <Asset ID="192300" RV="Release" RT="Narrative">
-    <N>Empty bottle</N>
-    <T ID="192300" I="data/ui/2kimages/main/3dicons/icon_beer_2.png" />
-    <R ID="19850" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <I ID="19983" />
-    <S />
   </Asset>
   <Asset ID="112951" RV="Update 04" RT="Quest">
     <N>QI_ArtefactsNewWorld_Rare_Dummy</N>
@@ -1800,6 +1786,20 @@
       </S>
     </S>
   </Asset>
+  <Asset ID="192300" RV="Release" RT="Narrative">
+    <N>Empty bottle</N>
+    <T ID="192300" I="data/ui/2kimages/main/3dicons/icon_beer_2.png" />
+    <R ID="19850" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <I ID="19983" />
+    <S />
+  </Asset>
   <Asset ID="116319" RV="Update 06" RT="Quest">
     <N>QI_MachinesArctic_Epic_Dummy</N>
     <T ID="113103" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png" />
@@ -1817,45 +1817,6 @@
         <DL>
           <D W="100">
             <T ID="-670973383" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_passage_02.png" />
-          </D>
-        </DL>
-      </S>
-    </S>
-  </Asset>
-  <Asset ID="192301" RV="Release" RT="Narrative">
-    <N>A box full of tools</N>
-    <T ID="192301" I="data/ui/2kimages/main/3dicons/military_items/ico_repair_toolset.png" />
-    <R ID="19850" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <I ID="19984" />
-    <S />
-  </Asset>
-  <Asset ID="112952" RV="Update 04" RT="Quest">
-    <N>QI_ArtefactsSunkenWorld_Rare_Dummy</N>
-    <T ID="113103" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png" />
-    <R ID="118007" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <S>
-      <S ID="113678" N="Old Nate Trust your dealer good">
-        <T ID="113420" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
-        <DL>
-          <D W="100">
-            <T ID="-1105750118" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_01.png" />
-          </D>
-          <D W="100">
-            <T ID="957124265" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_01.png" />
           </D>
         </DL>
       </S>
@@ -1884,6 +1845,45 @@
       </S>
     </S>
   </Asset>
+  <Asset ID="112952" RV="Update 04" RT="Quest">
+    <N>QI_ArtefactsSunkenWorld_Rare_Dummy</N>
+    <T ID="113103" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png" />
+    <R ID="118007" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <S>
+      <S ID="113678" N="Old Nate Trust your dealer good">
+        <T ID="113420" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="100">
+            <T ID="-1105750118" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_01.png" />
+          </D>
+          <D W="100">
+            <T ID="957124265" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_01.png" />
+          </D>
+        </DL>
+      </S>
+    </S>
+  </Asset>
+  <Asset ID="192301" RV="Release" RT="Narrative">
+    <N>A box full of tools</N>
+    <T ID="192301" I="data/ui/2kimages/main/3dicons/military_items/ico_repair_toolset.png" />
+    <R ID="19850" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <I ID="19984" />
+    <S />
+  </Asset>
   <Asset ID="116320" RV="Update 06" RT="Quest">
     <N>QI_MachinesArctic_Leg_Dummy</N>
     <T ID="113103" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png" />
@@ -1901,42 +1901,6 @@
         <DL>
           <D W="100">
             <T ID="-2036187096" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_passage_03.png" />
-          </D>
-        </DL>
-      </S>
-    </S>
-  </Asset>
-  <Asset ID="192302" RV="Release" RT="Narrative">
-    <N>Tomtom, the silent sea-gull</N>
-    <T ID="192302" I="data/ui/2kimages/main/3dicons/animals/icon_seagull.png" />
-    <R ID="19850" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <I ID="19985" />
-    <S />
-  </Asset>
-  <Asset ID="112954" RV="Update 04" RT="Quest">
-    <N>QI_ArtefactsOldWorld_Epic_Dummy</N>
-    <T ID="113103" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png" />
-    <R ID="118007" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <S>
-      <S ID="112934" N="Lost City Map (Old World)">
-        <T ID="113420" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
-        <DL>
-          <D W="100">
-            <T ID="1204230219" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_02.png" />
           </D>
         </DL>
       </S>
@@ -1965,6 +1929,42 @@
       </S>
     </S>
   </Asset>
+  <Asset ID="112954" RV="Update 04" RT="Quest">
+    <N>QI_ArtefactsOldWorld_Epic_Dummy</N>
+    <T ID="113103" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png" />
+    <R ID="118007" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <S>
+      <S ID="112934" N="Lost City Map (Old World)">
+        <T ID="113420" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="100">
+            <T ID="1204230219" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_02.png" />
+          </D>
+        </DL>
+      </S>
+    </S>
+  </Asset>
+  <Asset ID="192302" RV="Release" RT="Narrative">
+    <N>Tomtom, the silent sea-gull</N>
+    <T ID="192302" I="data/ui/2kimages/main/3dicons/animals/icon_seagull.png" />
+    <R ID="19850" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <I ID="19985" />
+    <S />
+  </Asset>
   <Asset ID="116716" RV="Update 06" RT="Quest">
     <N>QI_Treasure_ColdWorld_Dummy</N>
     <T ID="113103" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png" />
@@ -1977,42 +1977,6 @@
     <TP>25</TP>
     <HF>100</HF>
     <S />
-  </Asset>
-  <Asset ID="192303" RV="Release" RT="Narrative">
-    <N>A worker's gold</N>
-    <T ID="192303" I="data/ui/2kimages/main/3dicons/icon_coal_2.png" />
-    <R ID="19850" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <I ID="19986" />
-    <S />
-  </Asset>
-  <Asset ID="112955" RV="Update 04" RT="Quest">
-    <N>QI_ArtefactsNewWorld_Epic_Dummy</N>
-    <T ID="113103" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png" />
-    <R ID="118007" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <S>
-      <S ID="112938" N="Lost City Map (New World)">
-        <T ID="113420" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
-        <DL>
-          <D W="100">
-            <T ID="591135079" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_02.png" />
-          </D>
-        </DL>
-      </S>
-    </S>
   </Asset>
   <Asset ID="192215" RV="Release" RT="Narrative">
     <N>Artur's magnifying glass</N>
@@ -2037,6 +2001,42 @@
       </S>
     </S>
   </Asset>
+  <Asset ID="112955" RV="Update 04" RT="Quest">
+    <N>QI_ArtefactsNewWorld_Epic_Dummy</N>
+    <T ID="113103" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png" />
+    <R ID="118007" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <S>
+      <S ID="112938" N="Lost City Map (New World)">
+        <T ID="113420" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="100">
+            <T ID="591135079" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_02.png" />
+          </D>
+        </DL>
+      </S>
+    </S>
+  </Asset>
+  <Asset ID="192303" RV="Release" RT="Narrative">
+    <N>A worker's gold</N>
+    <T ID="192303" I="data/ui/2kimages/main/3dicons/icon_coal_2.png" />
+    <R ID="19850" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <I ID="19986" />
+    <S />
+  </Asset>
   <Asset ID="116717" RV="Update 06" RT="Quest">
     <N>QI_Scrap_Cold World_Dummy</N>
     <T ID="112518" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png" />
@@ -2049,42 +2049,6 @@
     <TP>25</TP>
     <HF>100</HF>
     <S />
-  </Asset>
-  <Asset ID="192304" RV="Release" RT="Narrative">
-    <N>A jar full of beer</N>
-    <T ID="192304" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
-    <R ID="19850" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <I ID="19987" />
-    <S />
-  </Asset>
-  <Asset ID="112956" RV="Update 04" RT="Quest">
-    <N>QI_ArtefactsSunkenWorld_Epic_Dummy</N>
-    <T ID="113103" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png" />
-    <R ID="118007" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <S>
-      <S ID="112939" N="Lost City Map (Sunken World)">
-        <T ID="113420" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
-        <DL>
-          <D W="100">
-            <T ID="1198691630" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_02.png" />
-          </D>
-        </DL>
-      </S>
-    </S>
   </Asset>
   <Asset ID="192216" RV="Release" RT="Narrative">
     <N>Artur's journal</N>
@@ -2108,6 +2072,42 @@
         </DL>
       </S>
     </S>
+  </Asset>
+  <Asset ID="112956" RV="Update 04" RT="Quest">
+    <N>QI_ArtefactsSunkenWorld_Epic_Dummy</N>
+    <T ID="113103" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png" />
+    <R ID="118007" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <S>
+      <S ID="112939" N="Lost City Map (Sunken World)">
+        <T ID="113420" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="100">
+            <T ID="1198691630" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_02.png" />
+          </D>
+        </DL>
+      </S>
+    </S>
+  </Asset>
+  <Asset ID="192304" RV="Release" RT="Narrative">
+    <N>A jar full of beer</N>
+    <T ID="192304" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+    <R ID="19850" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <I ID="19987" />
+    <S />
   </Asset>
   <Asset ID="116718" RV="Update 06" RT="Quest">
     <N>QI_Goods_Cold World_Dummy</N>
@@ -2157,9 +2157,9 @@
     <HF>100</HF>
     <S />
   </Asset>
-  <Asset ID="192306" RV="Release" RT="Narrative">
-    <N>A used pocket watch</N>
-    <T ID="192306" I="data/ui/2kimages/main/3dicons/icon_time.png" />
+  <Asset ID="192217" RV="Release" RT="Narrative">
+    <N>Jade dragon statue</N>
+    <T ID="192217" I="data/ui/2kimages/main/3dicons/narative_item/icon_jade.png" />
     <R ID="19850" />
     <IT>Character Item</IT>
     <A ID="NoneAllocation">
@@ -2168,13 +2168,13 @@
     <GU />
     <TP>25</TP>
     <HF>100</HF>
-    <I ID="19989" />
+    <I ID="19881" />
     <S>
-      <S ID="151018" N="RQ_Artisans_IMadeThis">
-        <T ID="1521030542" I="data/ui/2kimages/main/profiles/resident_tier03.png" />
+      <S ID="79" N="Second_ai_02 (Princess Qing)">
+        <T ID="-104297185" I="data/ui/2kimages/main/profiles/ai_02.png" />
         <DL>
-          <D W="9,09">
-            <T ID="151018" />
+          <D W="2,5">
+            <T ID="79" I="data/ui/2kimages/main/profiles/ai_02.png" />
           </D>
         </DL>
       </S>
@@ -2202,9 +2202,9 @@
       </S>
     </S>
   </Asset>
-  <Asset ID="192217" RV="Release" RT="Narrative">
-    <N>Jade dragon statue</N>
-    <T ID="192217" I="data/ui/2kimages/main/3dicons/narative_item/icon_jade.png" />
+  <Asset ID="192306" RV="Release" RT="Narrative">
+    <N>A used pocket watch</N>
+    <T ID="192306" I="data/ui/2kimages/main/3dicons/icon_time.png" />
     <R ID="19850" />
     <IT>Character Item</IT>
     <A ID="NoneAllocation">
@@ -2213,13 +2213,13 @@
     <GU />
     <TP>25</TP>
     <HF>100</HF>
-    <I ID="19881" />
+    <I ID="19989" />
     <S>
-      <S ID="79" N="Second_ai_02 (Princess Qing)">
-        <T ID="-104297185" I="data/ui/2kimages/main/profiles/ai_02.png" />
+      <S ID="151018" N="RQ_Artisans_IMadeThis">
+        <T ID="1521030542" I="data/ui/2kimages/main/profiles/resident_tier03.png" />
         <DL>
-          <D W="2,5">
-            <T ID="79" I="data/ui/2kimages/main/profiles/ai_02.png" />
+          <D W="9,09">
+            <T ID="151018" />
           </D>
         </DL>
       </S>
@@ -2237,42 +2237,6 @@
     <TP>25</TP>
     <HF>100</HF>
     <S />
-  </Asset>
-  <Asset ID="192307" RV="Release" RT="Narrative">
-    <N>A flask full of sleeping pills</N>
-    <T ID="192307" I="data/ui/2kimages/main/3dicons/machine_items/icon_vitamin_supplement_1.png" />
-    <R ID="19850" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <I ID="19990" />
-    <S />
-  </Asset>
-  <Asset ID="112959" RV="Update 04" RT="Quest">
-    <N>QI_ArtefactsSunkenWorld_Leg_Dummy</N>
-    <T ID="113103" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png" />
-    <R ID="118007" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <S>
-      <S ID="112941" N="Legendary Site Map (Sunken World)">
-        <T ID="113420" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
-        <DL>
-          <D W="100">
-            <T ID="1368130970" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_03.png" />
-          </D>
-        </DL>
-      </S>
-    </S>
   </Asset>
   <Asset ID="192219" RV="Release" RT="Narrative">
     <N>Oriental Fireworks</N>
@@ -2297,6 +2261,42 @@
       </S>
     </S>
   </Asset>
+  <Asset ID="112959" RV="Update 04" RT="Quest">
+    <N>QI_ArtefactsSunkenWorld_Leg_Dummy</N>
+    <T ID="113103" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png" />
+    <R ID="118007" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <S>
+      <S ID="112941" N="Legendary Site Map (Sunken World)">
+        <T ID="113420" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="100">
+            <T ID="1368130970" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_03.png" />
+          </D>
+        </DL>
+      </S>
+    </S>
+  </Asset>
+  <Asset ID="192307" RV="Release" RT="Narrative">
+    <N>A flask full of sleeping pills</N>
+    <T ID="192307" I="data/ui/2kimages/main/3dicons/machine_items/icon_vitamin_supplement_1.png" />
+    <R ID="19850" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <I ID="19990" />
+    <S />
+  </Asset>
   <Asset ID="117416" RV="Update 06" RT="Quest">
     <N>QI_ArcticItem_Dummy</N>
     <T ID="117416" I="data/ui/2kimages/main/3dicons/icon_airship_hangar.png" />
@@ -2310,9 +2310,9 @@
     <HF>100</HF>
     <S />
   </Asset>
-  <Asset ID="192308" RV="Release" RT="Narrative">
-    <N>A huge loud hailer</N>
-    <T ID="192308" I="data/ui/2kimages/main/3dicons/military_items/icon_loudspeaker.png" />
+  <Asset ID="192220" RV="Release" RT="Narrative">
+    <N>Qing's eyeglasses</N>
+    <T ID="192220" I="data/ui/2kimages/main/3dicons/machine_items/icon_precision_instruments_1.png" />
     <R ID="19850" />
     <IT>Character Item</IT>
     <A ID="NoneAllocation">
@@ -2321,13 +2321,13 @@
     <GU />
     <TP>25</TP>
     <HF>100</HF>
-    <I ID="19991" />
+    <I ID="19883" />
     <S>
-      <S ID="151018" N="RQ_Artisans_IMadeThis">
-        <T ID="1521030542" I="data/ui/2kimages/main/profiles/resident_tier03.png" />
+      <S ID="79" N="Second_ai_02 (Princess Qing)">
+        <T ID="-104297185" I="data/ui/2kimages/main/profiles/ai_02.png" />
         <DL>
-          <D W="9,09">
-            <T ID="151018" />
+          <D W="2,5">
+            <T ID="79" I="data/ui/2kimages/main/profiles/ai_02.png" />
           </D>
         </DL>
       </S>
@@ -2355,9 +2355,9 @@
       </S>
     </S>
   </Asset>
-  <Asset ID="192220" RV="Release" RT="Narrative">
-    <N>Qing's eyeglasses</N>
-    <T ID="192220" I="data/ui/2kimages/main/3dicons/machine_items/icon_precision_instruments_1.png" />
+  <Asset ID="192308" RV="Release" RT="Narrative">
+    <N>A huge loud hailer</N>
+    <T ID="192308" I="data/ui/2kimages/main/3dicons/military_items/icon_loudspeaker.png" />
     <R ID="19850" />
     <IT>Character Item</IT>
     <A ID="NoneAllocation">
@@ -2366,30 +2366,7 @@
     <GU />
     <TP>25</TP>
     <HF>100</HF>
-    <I ID="19883" />
-    <S>
-      <S ID="79" N="Second_ai_02 (Princess Qing)">
-        <T ID="-104297185" I="data/ui/2kimages/main/profiles/ai_02.png" />
-        <DL>
-          <D W="2,5">
-            <T ID="79" I="data/ui/2kimages/main/profiles/ai_02.png" />
-          </D>
-        </DL>
-      </S>
-    </S>
-  </Asset>
-  <Asset ID="192309" RV="Release" RT="Narrative">
-    <N>A pair of eyeglasses</N>
-    <T ID="192309" I="data/ui/2kimages/main/3dicons/icon_glasses.png" />
-    <R ID="19850" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <I ID="19992" />
+    <I ID="19991" />
     <S>
       <S ID="151018" N="RQ_Artisans_IMadeThis">
         <T ID="1521030542" I="data/ui/2kimages/main/profiles/resident_tier03.png" />
@@ -2419,6 +2396,29 @@
         <DL>
           <D W="2,5">
             <T ID="79" I="data/ui/2kimages/main/profiles/ai_02.png" />
+          </D>
+        </DL>
+      </S>
+    </S>
+  </Asset>
+  <Asset ID="192309" RV="Release" RT="Narrative">
+    <N>A pair of eyeglasses</N>
+    <T ID="192309" I="data/ui/2kimages/main/3dicons/icon_glasses.png" />
+    <R ID="19850" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <I ID="19992" />
+    <S>
+      <S ID="151018" N="RQ_Artisans_IMadeThis">
+        <T ID="1521030542" I="data/ui/2kimages/main/profiles/resident_tier03.png" />
+        <DL>
+          <D W="9,09">
+            <T ID="151018" />
           </D>
         </DL>
       </S>
@@ -2482,20 +2482,6 @@
       </S>
     </S>
   </Asset>
-  <Asset ID="192313" RV="Release" RT="Narrative">
-    <N>A very technical thing</N>
-    <T ID="192313" I="data/ui/2kimages/main/3dicons/machine_items/icon_drill_3.png" />
-    <R ID="19850" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <I ID="19995" />
-    <S />
-  </Asset>
   <Asset ID="192222" RV="Release" RT="Narrative">
     <N>Harlow family ring</N>
     <T ID="192222" I="data/ui/2kimages/main/3dicons/museum/icon_ring_rare.png" />
@@ -2519,6 +2505,20 @@
       </S>
     </S>
   </Asset>
+  <Asset ID="192313" RV="Release" RT="Narrative">
+    <N>A very technical thing</N>
+    <T ID="192313" I="data/ui/2kimages/main/3dicons/machine_items/icon_drill_3.png" />
+    <R ID="19850" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <I ID="19995" />
+    <S />
+  </Asset>
   <Asset ID="113100" RV="Update 04" RT="Quest">
     <N>QI_AnimalsOldWorld_Epic_Dummy</N>
     <T ID="113103" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png" />
@@ -2540,20 +2540,6 @@
         </DL>
       </S>
     </S>
-  </Asset>
-  <Asset ID="192314" RV="Release" RT="Narrative">
-    <N>Experimental arrangement</N>
-    <T ID="192314" I="data/ui/2kimages/main/3dicons/machine_items/icon_thermometer_3.png" />
-    <R ID="19850" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <I ID="19996" />
-    <S />
   </Asset>
   <Asset ID="192223" RV="Release" RT="Narrative">
     <N>Iron ball and chain</N>
@@ -2578,6 +2564,20 @@
       </S>
     </S>
   </Asset>
+  <Asset ID="192314" RV="Release" RT="Narrative">
+    <N>Experimental arrangement</N>
+    <T ID="192314" I="data/ui/2kimages/main/3dicons/machine_items/icon_thermometer_3.png" />
+    <R ID="19850" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <I ID="19996" />
+    <S />
+  </Asset>
   <Asset ID="113101" RV="Update 04" RT="Quest">
     <N>QI_AnimalsNewWorld_Epic_Dummy</N>
     <T ID="113103" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png" />
@@ -2599,20 +2599,6 @@
         </DL>
       </S>
     </S>
-  </Asset>
-  <Asset ID="192315" RV="Release" RT="Narrative">
-    <N>The journal of missed chances</N>
-    <T ID="192315" I="data/ui/2kimages/main/3dicons/icon_journal.png" />
-    <R ID="19850" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <I ID="19997" />
-    <S />
   </Asset>
   <Asset ID="192224" RV="Release" RT="Narrative">
     <N>Rope's end</N>
@@ -2637,6 +2623,20 @@
       </S>
     </S>
   </Asset>
+  <Asset ID="192315" RV="Release" RT="Narrative">
+    <N>The journal of missed chances</N>
+    <T ID="192315" I="data/ui/2kimages/main/3dicons/icon_journal.png" />
+    <R ID="19850" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <I ID="19997" />
+    <S />
+  </Asset>
   <Asset ID="113102" RV="Update 04" RT="Quest">
     <N>QI_AnimalsSunkenWorld_Epic_Dummy</N>
     <T ID="113103" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png" />
@@ -2658,20 +2658,6 @@
         </DL>
       </S>
     </S>
-  </Asset>
-  <Asset ID="192317" RV="Release" RT="Narrative">
-    <N>Broken generator</N>
-    <T ID="192317" I="data/ui/2kimages/main/3dicons/machine_items/icon_generator_1.png" />
-    <R ID="19850" />
-    <IT>Character Item</IT>
-    <A ID="NoneAllocation">
-      <T ID="-1230" />
-    </A>
-    <GU />
-    <TP>25</TP>
-    <HF>100</HF>
-    <I ID="19998" />
-    <S />
   </Asset>
   <Asset ID="192225" RV="Release" RT="Narrative">
     <N>Strange serum</N>
@@ -2695,6 +2681,20 @@
         </DL>
       </S>
     </S>
+  </Asset>
+  <Asset ID="192317" RV="Release" RT="Narrative">
+    <N>Broken generator</N>
+    <T ID="192317" I="data/ui/2kimages/main/3dicons/machine_items/icon_generator_1.png" />
+    <R ID="19850" />
+    <IT>Character Item</IT>
+    <A ID="NoneAllocation">
+      <T ID="-1230" />
+    </A>
+    <GU />
+    <TP>25</TP>
+    <HF>100</HF>
+    <I ID="19998" />
+    <S />
   </Asset>
   <Asset ID="192226" RV="Release" RT="Narrative">
     <N>A chest full of treasures</N>

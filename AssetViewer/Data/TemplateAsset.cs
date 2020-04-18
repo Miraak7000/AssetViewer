@@ -18,7 +18,7 @@ namespace AssetViewer.Data {
     public Description AssociatedRegions { get; set; }
     public string RarityType { get; set; }
 
-    public int Count {
+    public uint Count {
       get {
         return count;
       }
@@ -203,7 +203,7 @@ namespace AssetViewer.Data {
 
     #region Private Fields
 
-    private int count;
+    private uint count;
 
     #endregion Private Fields
   }

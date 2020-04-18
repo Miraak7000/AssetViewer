@@ -31,7 +31,7 @@ namespace AssetViewer {
 
     public static Data.Languages Language {
       get { return language; }
-      set { language = value; NotifyStaticPropertyChanged(); }
+      private set { language = value; NotifyStaticPropertyChanged(); }
     }
 
     #endregion Public Properties

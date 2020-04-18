@@ -41,6 +41,7 @@
         HorizontalAlignment="Left"
         Command="{Binding Source={x:Static local:ItemsBase.SelectedCountChangedCommand}}"
         CommandParameter="{Binding ElementName=lbItemsList, Path=SelectedItems}"
+        MaxValue="9999"
         MinValue="0">
         <AV:NumericUpDown.Style>
           <Style TargetType="AV:NumericUpDown">

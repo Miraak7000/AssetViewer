@@ -21,7 +21,7 @@ namespace AssetViewer.Controls {
     public IEnumerable<TemplateAsset> Items {
       get {
         var thirdParty = this.ComboBoxThirdParty.SelectedItem as Tuple<String, String>;
-        var progression = this.ComboBoxProgressions.SelectedItem as Tuple<Progression, String>;
+        var progression = this.ComboBoxProgressions.SelectedItem as Tuple<Progression, Description>;
         if (thirdParty == null || progression == null) {
           return Array.Empty<TemplateAsset>();
         }
@@ -37,16 +37,15 @@ namespace AssetViewer.Controls {
       }
     }
 
-    public IEnumerable<Tuple<Progression, String>> Progressions {
+    public IEnumerable<Tuple<Progression, Description>> Progressions {
       get {
-        return new[] {
-              new Tuple<Progression, String>(Progression.EarlyGame, AssetProvider.Descriptions[-6]),
-              new Tuple<Progression, String>(Progression.EarlyMidGame, AssetProvider.Descriptions[-7]),
-              new Tuple<Progression, String>(Progression.MidGame, AssetProvider.Descriptions[-8]),
-              new Tuple<Progression, String>(Progression.LateMidGame, AssetProvider.Descriptions[-9]),
-              new Tuple<Progression, String>(Progression.LateGame, AssetProvider.Descriptions[-10]),
-              new Tuple<Progression, String>(Progression.EndGame, AssetProvider.Descriptions[-11])
-            };
+        var thirdParty = this.ComboBoxThirdParty.SelectedItem as Tuple<String, String>;
+        if (thirdParty == null) {
+          return Array.Empty<Tuple<Progression, Description>>();
+        }
+
+        var result = this.Assets.Single(w => w.ID == thirdParty.Item1).OfferingItems.Select(oi => new Tuple<Progression, Description>(oi.Progression, oi.ProgressionDescription));
+        return result.OrderBy(o => o.Item1);
       }
     }
 
@@ -121,8 +120,10 @@ namespace AssetViewer.Controls {
     }
 
     private void ComboBoxThirdParty_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Items)));
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ImageThirdParty)));
+      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Progressions)));
+      this.ComboBoxProgressions.SelectedIndex = 0;
+      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Items)));
     }
 
     private void ComboBoxProgressions_OnSelectionChanged(Object sender, SelectionChangedEventArgs e) {

@@ -1,5 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Guildhouse>
+  <Asset ID="1010516" RV="Release" RT="Common">
+    <N>guild_house</N>
+    <T ID="2346" I="data/ui/2kimages/main/3dicons/icon_guildhouse.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="2500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="25">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="5">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="118031" />
+    <M>
+      <MC>
+        <U V="50 / 25">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
   <Asset ID="101284" RV="Release" RT="Common">
     <N>guild_house_colony01</N>
     <T ID="2346" I="data/ui/2kimages/main/3dicons/icon_guildhouse.png" />
@@ -24,38 +53,6 @@
     <M>
       <MC>
         <U V="50 / 25">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="112678" RV="Update 06" RT="Common">
-    <N>guild_house_arctic</N>
-    <T ID="115353" I="data/ui/2kimages/main/3dicons/icon_community_lodge.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
-    <BC>
-      <U V="2500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="25">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="0">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="10">
-        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="116498" />
-    <M>
-      <MC>
-        <U V="50 / 50">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
       </MC>
@@ -96,12 +93,12 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="1010516" RV="Release" RT="Common">
-    <N>guild_house</N>
-    <T ID="2346" I="data/ui/2kimages/main/3dicons/icon_guildhouse.png" />
+  <Asset ID="112678" RV="Update 06" RT="Common">
+    <N>guild_house_arctic</N>
+    <T ID="115353" I="data/ui/2kimages/main/3dicons/icon_community_lodge.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
     <BC>
       <U V="2500">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
@@ -109,17 +106,20 @@
       <U V="25">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
-      <U V="5">
+      <U V="0">
         <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="10">
+        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
       </U>
     </BC>
     <GU />
     <TP />
     <HF />
-    <I ID="118031" />
+    <I ID="116498" />
     <M>
       <MC>
-        <U V="50 / 25">
+        <U V="50 / 50">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
       </MC>

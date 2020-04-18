@@ -154,26 +154,6 @@
           Text="{Binding AdvancedFiltersText}" />
       </Grid>
     </Border>
-    <!--<AV:NumericUpDown
-      x:Name="nbAll"
-      Grid.Row="2"
-      Width="50"
-      Margin="23,0,0,5"
-      HorizontalAlignment="Left"
-      Command="{Binding Source={x:Static local:ItemsBase.SelectedCountChangedCommand}}"
-      CommandParameter="{Binding ElementName=ListBoxItems, Path=SelectedItems}"
-      MinValue="0">
-      <AV:NumericUpDown.Style>
-        <Style TargetType="AV:NumericUpDown">
-          <Setter Property="Visibility" Value="Collapsed" />
-          <Style.Triggers>
-            <DataTrigger Binding="{Binding Source={x:Static AV:AssetProvider.CountMode}}" Value="True">
-              <Setter Property="Visibility" Value="Visible" />
-            </DataTrigger>
-          </Style.Triggers>
-        </Style>
-      </AV:NumericUpDown.Style>
-    </AV:NumericUpDown>-->
     <Grid Grid.Row="3">
       <Grid.ColumnDefinitions>
         <ColumnDefinition Width="*" />
@@ -222,6 +202,7 @@
                   <AV:NumericUpDown
                     Grid.Column="0"
                     Width="50"
+                    MaxValue="9999"
                     MinValue="0"
                     Value="{Binding Path=Count, Mode=TwoWay}">
                     <AV:NumericUpDown.Style>

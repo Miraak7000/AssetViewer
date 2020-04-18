@@ -54,6 +54,63 @@
       </MC>
     </M>
   </Asset>
+  <Asset ID="1010299" RV="Release" RT="Common" IP="true">
+    <N>heavy_04 (Weapons Heavy Industry)</N>
+    <T ID="1010299" I="data/ui/2kimages/main/3dicons/icon_weapons.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="700">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="8">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="10">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="8">
+        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Culture">
+        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
+      </U>
+      <U V="-5" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+      <U>
+        <T ID="10604" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="90">
+      <FI>
+        <U V="1 / 4">
+          <T ID="1010219" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 1">
+          <T ID="1010221" I="data/ui/2kimages/main/3dicons/icon_weapons.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="150 / 75">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="50">
+          <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
   <Asset ID="1010282" RV="Release" RT="Common" IP="true">
     <N>heavy_09 (Brass Heavy Industry)</N>
     <T ID="1010282" I="data/ui/2kimages/main/3dicons/icon_brass.png" />
@@ -115,63 +172,6 @@
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
         <U V="25">
-          <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="1010299" RV="Release" RT="Common" IP="true">
-    <N>heavy_04 (Weapons Heavy Industry)</N>
-    <T ID="1010299" I="data/ui/2kimages/main/3dicons/icon_weapons.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="700">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="8">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="10">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="8">
-        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Culture">
-        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
-      </U>
-      <U V="-5" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-      <U>
-        <T ID="10604" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="90">
-      <FI>
-        <U V="1 / 4">
-          <T ID="1010219" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 1">
-          <T ID="1010221" I="data/ui/2kimages/main/3dicons/icon_weapons.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="150 / 75">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="50">
           <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
         </U>
       </MC>
