@@ -2,6 +2,7 @@
   x:Class="AssetViewer.Controls.Monument"
   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:AV="clr-namespace:AssetViewer"
   xmlns:converter="clr-namespace:AssetViewer.Converter"
   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
   xmlns:local="clr-namespace:AssetViewer.Controls"
@@ -28,78 +29,13 @@
         <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Path=Text}" />
       </Grid>
     </DataTemplate>
-    <DataTemplate x:Key="UpgradeTemplate">
-      <Grid SnapsToDevicePixels="True">
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="30" />
-          <ColumnDefinition Width="*" />
-          <ColumnDefinition Width="Auto" />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-          <RowDefinition Height="22" />
-          <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <Image
-          Grid.Row="0"
-          Grid.Column="0"
-          Width="18"
-          Height="18"
-          HorizontalAlignment="Left"
-          VerticalAlignment="Center"
-          Source="{Binding Path=Text.Icon.Filename}" />
-        <TextBlock
-          Grid.Row="0"
-          Grid.Column="1"
-          VerticalAlignment="Center"
-          Text="{Binding Path=Text}" />
-        <TextBlock
-          Grid.Row="0"
-          Grid.Column="2"
-          VerticalAlignment="Center"
-          Text="{Binding Path=Value}" />
-        <ItemsControl
-          Grid.Row="1"
-          Grid.Column="1"
-          Grid.ColumnSpan="2"
-          ItemsSource="{Binding Path=Additionals}">
-          <ItemsControl.ItemTemplate>
-            <DataTemplate>
-              <Grid>
-                <Grid.ColumnDefinitions>
-                  <ColumnDefinition Width="30" />
-                  <ColumnDefinition Width="*" />
-                  <ColumnDefinition Width="Auto" />
-                </Grid.ColumnDefinitions>
-                <Image
-                  Grid.Column="0"
-                  Width="18"
-                  Height="18"
-                  HorizontalAlignment="Left"
-                  VerticalAlignment="Center"
-                  Source="{Binding Path=Text.Icon.Filename}" />
-                <TextBlock
-                  Grid.Column="1"
-                  VerticalAlignment="Center"
-                  Foreground="#FFA49370"
-                  Text="{Binding Path=Text}"
-                  TextWrapping="Wrap" />
-                <TextBlock
-                  Grid.Column="2"
-                  VerticalAlignment="Center"
-                  Foreground="#FFA49370"
-                  Text="{Binding Path=Value}" />
-              </Grid>
-            </DataTemplate>
-          </ItemsControl.ItemTemplate>
-        </ItemsControl>
-      </Grid>
-    </DataTemplate>
   </UserControl.Resources>
 
   <Grid Grid.Row="2">
     <Grid.RowDefinitions>
       <RowDefinition Height="Auto" />
       <RowDefinition Height="10" />
+      <RowDefinition Height="Auto" />
       <RowDefinition Height="*" />
     </Grid.RowDefinitions>
     <Border
@@ -166,13 +102,37 @@
           SelectionChanged="ComboBoxThresholds_OnSelectionChanged" />
       </Grid>
     </Border>
-    <Grid Grid.Row="2">
+
+    <AV:NumericUpDown
+      x:Name="nbAll"
+      Grid.Row="2"
+      Width="50"
+      Margin="8,0,0,5"
+      HorizontalAlignment="Left"
+      Command="{Binding Source={x:Static local:ItemsBase.SelectedCountChangedCommand}}"
+      CommandParameter="{Binding ElementName=ItemsList, Path=SelectedItems}"
+      MaxValue="9999"
+      MinValue="0">
+      <AV:NumericUpDown.Style>
+        <Style TargetType="AV:NumericUpDown">
+          <Setter Property="Visibility" Value="Collapsed" />
+          <Style.Triggers>
+            <DataTrigger Binding="{Binding Source={x:Static AV:AssetProvider.CountMode}}" Value="True">
+              <Setter Property="Visibility" Value="Visible" />
+            </DataTrigger>
+          </Style.Triggers>
+        </Style>
+      </AV:NumericUpDown.Style>
+    </AV:NumericUpDown>
+
+
+    <Grid Grid.Row="3">
       <Grid.ColumnDefinitions>
         <ColumnDefinition Width="*" />
         <ColumnDefinition Width="10" />
         <ColumnDefinition Width="350" />
       </Grid.ColumnDefinitions>
-      <local:ItemList Grid.Column="0" ItemSource="{Binding Rewards}" />
+      <local:ItemList x:Name="ItemsList" Grid.Column="0" ItemSource="{Binding Rewards}" />
       <local:ItemCard Grid.Column="2" CanSwap="True" SelectedAsset="{Binding SelectedAsset}" />
     </Grid>
   </Grid>

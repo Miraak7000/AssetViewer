@@ -854,7 +854,22 @@ namespace RDA.Data {
         }
 
         if (element.Element("ActiveBuff")?.Value is string buff) {
+          if (ActionText == null) {
+            this.ItemActionUpgrades.Add(new Upgrade() { Text = new Description("20071", DescriptionFontStyle.Light), Value = element.Element("Charges")?.Value ?? "" });
+          }
+
           this.ItemActionUpgrades.AddRange(Assets.Buffs[buff].AllUpgrades.ToList());
+
+          if (element.Element("ActionDuration")?.Value != null) {
+            this.ItemActionUpgrades.Add(new Upgrade(element.Element("ActionDuration")));
+          }
+          if (element.Element("ActionCooldown")?.Value != null) {
+            this.ItemActionUpgrades.Add(new Upgrade(element.Element("ActionCooldown")));
+          }
+          if (element.Element("IsDestroyedAfterCooldown")?.Value != null) {
+            this.ItemActionUpgrades.Add(new Upgrade(element.Element("IsDestroyedAfterCooldown")));
+          }
+          return;
         }
 
         if (ActionText != null) {
@@ -1205,13 +1220,22 @@ namespace RDA.Data {
             case "A7_QuestDivingBellGeneric":
             case "A7_QuestDivingBellSonar":
             case "A7_QuestSelectObject":
-            case "A7_QuestDivingBellTreasureMap":
             case "A7_QuestNewspaperArticle":
             case "A7_QuestLostCargo":
             case "A7_QuestExpedition":
               if (!element.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
                 if (foundedElement.Name.LocalName.MatchOne("Reward")) {
                   result.AddSourceAsset(element, new HashSet<AssetWithWeight> { new AssetWithWeight(element) });
+                }
+              }
+              break;
+            case "A7_QuestDivingBellTreasureMap":
+              if (!element.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
+                if (foundedElement.Name.LocalName.MatchOne("Reward", "TreasureItem", "ScrapDummyItem")) {
+                  GetSources(Details, key).SaveSource(key).MergeResults(key, in result);
+                  if (result.Count == 0) {
+                    result.AddSourceAsset(element, new HashSet<AssetWithWeight> { new AssetWithWeight(element) });
+                  }
                 }
               }
               break;
@@ -1239,6 +1263,9 @@ namespace RDA.Data {
               else if (foundedElement.Name.LocalName == "Ressource" && foundedElement.Parent.Name.LocalName == "ActionAddResource") {
                 result.AddSourceAsset(element.GetProxyElement("Item"), new HashSet<AssetWithWeight> { new AssetWithWeight(element) });
               }
+              else if (foundedElement.Name.LocalName == "TreasureMapQuest") {
+                result.AddSourceAsset(element.GetProxyElement("Dive"), new HashSet<AssetWithWeight> { new AssetWithWeight(element) });
+              }
               break;
 
             case "TourismFeature":
@@ -1257,14 +1284,6 @@ namespace RDA.Data {
                 throw new NotImplementedException();
               }
               break;
-
-            case "ItemReplacementPool":
-              if (foundedElement.Name.LocalName != "ReplacementPool") {
-                break;
-              }
-              else {
-                goto case "SearchAgain";
-              }
 
             case "ExpeditionDecision":
             case "ExpeditionTrade":
@@ -1314,6 +1333,31 @@ namespace RDA.Data {
                 break;
               }
               goto case "SearchAgain";
+
+            case "ItemReplacementPool":
+              if (foundedElement.Name.LocalName != "ReplacementPool") {
+                break;
+              }
+              else {
+                if (foundedElement.Parent.Element("DummyItem").Value is string dummy) {
+                  //new ConcurrentBag<SourceWithDetailsList>(GetSources(Details, dummy).SaveSource(dummy).Concat(GetSources(Details, key))).MergeResults(dummy, result);
+                  switch (key) {
+                    case "193854": // DivingShipReplacementPool
+                      GetSources(Details, dummy).SaveSource(dummy).MergeResults(dummy, result);
+                      if (result.Count == 0) { // No Treasure map found?  Nevertheless Dive loot ???
+                        GetSources(Details, key).MergeResults(key, result);
+                      }
+                      break;
+                    case "193855": // AirShipReplacementPool
+                      GetSources(Details, key).SaveSource(key).MergeResults(key, result);
+                      break;
+                    default:
+                      throw new NotImplementedException();
+                      break;
+                  }
+                }
+                break;
+              }
 
             case "RewardPool":
             case "RewardItemPool":

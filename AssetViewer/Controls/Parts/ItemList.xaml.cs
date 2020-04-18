@@ -6,7 +6,7 @@ namespace AssetViewer.Controls {
 
   public partial class ItemList : UserControl {
 
-    #region Properties
+    #region Public Properties
 
     public IEnumerable ItemSource {
       get { return (IEnumerable)GetValue(ItemSourceProperty); }
@@ -18,9 +18,11 @@ namespace AssetViewer.Controls {
       set { SetValue(SelectedIndexProperty, value); }
     }
 
-    #endregion Properties
+    public IList SelectedItems => ListBoxItems.SelectedItems;
 
-    #region Fields
+    #endregion Public Properties
+
+    #region Public Fields
 
     public static readonly DependencyProperty ItemSourceProperty =
         DependencyProperty.Register("ItemSource", typeof(IEnumerable), typeof(ItemList), new PropertyMetadata(null));
@@ -28,14 +30,14 @@ namespace AssetViewer.Controls {
     public static readonly DependencyProperty SelectedIndexProperty =
         DependencyProperty.Register("SelectedIndex", typeof(int), typeof(ItemList), new PropertyMetadata(0));
 
-    #endregion Fields
+    #endregion Public Fields
 
-    #region Constructors
+    #region Public Constructors
 
     public ItemList() {
       InitializeComponent();
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
   }
 }

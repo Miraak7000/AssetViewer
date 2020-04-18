@@ -18,7 +18,7 @@ namespace AssetViewer.Data {
     public Icon Icon { get; set; }
 
     [XmlIgnore]
-    public virtual string CurrentLang => App.Descriptions[ID];
+    public virtual string CurrentLang => AssetProvider.Descriptions[ID];
 
     [XmlAttribute]
     public DescriptionFontStyle FontStyle { get; set; }

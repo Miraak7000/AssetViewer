@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Xml.Linq;
 
 namespace AssetViewer.Data {
 
-  public class TemplateAsset {
+  public class TemplateAsset : INotifyPropertyChanged {
 
     #region Public Properties
 
@@ -16,23 +18,27 @@ namespace AssetViewer.Data {
     public Description AssociatedRegions { get; set; }
     public string RarityType { get; set; }
 
+    public uint Count {
+      get {
+        return count;
+      }
+      set {
+        if (count != value) {
+          count = value;
+          RaisePropertyChanged(nameof(Count));
+          AssetProvider.RaiseAssetCountChanged(this);
+        }
+      }
+    }
+
     public Description Rarity { get; set; }
     public String ItemType { get; set; }
     public String ReleaseVersion { get; set; }
-
-
     public Allocation Allocation { get; set; }
-
-
     public List<EffectTarget> EffectTargets { get; set; }
-
     public IEnumerable<Description> EffectBuildings => EffectTargets?.SelectMany(e => e.Buildings).Distinct();
-
     public string EffectTargetInfo => new Description(-1210).CurrentLang + string.Join(", ", EffectTargets.Select(s => s.Text.CurrentLang));
     public Boolean HasEffectTargetInfo { get; set; }
-
-
-
     public List<Upgrade> PopulationUpgrades { get; set; }
     public List<Upgrade> ExpeditionAttributes { get; set; }
     public List<Upgrade> AttackableUpgrades { get; set; }
@@ -54,23 +60,12 @@ namespace AssetViewer.Data {
             )
             .SelectMany(l => (List<Upgrade>)l.GetValue(this) ?? Enumerable.Empty<Upgrade>());
 
-
     public List<Upgrade> ItemSets { get; set; }
-
-
     public String TradePrice { get; set; }
-
     public String HiringFee { get; set; }
-
-
     public Description Info { get; set; }
-
-
     public List<Upgrade> Sources { get; set; }
-
-
     public List<int> MonumentEvents { get; set; }
-
     public List<int> MonumentThresholds { get; set; }
     public List<int> MonumentRewards { get; set; }
     public List<Upgrade> ItemWithUI { get; }
@@ -191,5 +186,25 @@ namespace AssetViewer.Data {
     }
 
     #endregion Public Constructors
+
+    #region Public Events
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    #endregion Public Events
+
+    #region Public Methods
+
+    public void RaisePropertyChanged([CallerMemberName]string name = "") {
+      PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+    }
+
+    #endregion Public Methods
+
+    #region Private Fields
+
+    private uint count;
+
+    #endregion Private Fields
   }
 }

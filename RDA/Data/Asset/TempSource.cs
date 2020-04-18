@@ -147,20 +147,17 @@ namespace RDA.Data {
         case "A7_QuestLostCargo":
         case "A7_QuestExpedition":
         case "A7_QuestDivingBellSonar":
+        case "A7_QuestDivingBellTreasureMap":
           var questgiver = Source.XPathSelectElement("Values/Quest/QuestGiver")?.Value;
           if (questgiver != null) {
             this.Text = new Description(questgiver).InsertBefore("-").InsertBefore(new Description("2734"));
             foreach (var item in element.Details) {
               this.Details.Add((new Description(item.Asset.XPathSelectElement("Values/Standard/GUID").Value), item.Weight));
             }
-          }
-          break;
 
-        case "A7_QuestDivingBellTreasureMap":
-          questgiver = Source.XPathSelectElement("Values/Quest/QuestGiver")?.Value;
-          this.Text = new Description(questgiver ?? "113420").InsertBefore("-").InsertBefore(new Description("2734"));
-          foreach (var item in element.Details) {
-            this.Details.Add((new Description(item.Asset.XPathSelectElement("Values/Standard/GUID").Value), item.Weight));
+          }
+          else {
+
           }
           break;
 
@@ -177,7 +174,13 @@ namespace RDA.Data {
 
         case "Dive":
           this.Text = new Description("113420");
-          this.Details = element.Details.Select(i => (new Description("113420"), i.Weight)).ToList();
+          foreach (var item in element.Details) {
+            var desc = new Description(item.Asset.XPathSelectElement("Values/Standard/GUID").Value);
+            if (item.Asset.Element("Template").Value == "ItemWithUI") {
+              desc = desc.AppendInBraces(new Description(item.Asset.Descendants("TreasureSessionOrRegion").First().Value));
+            }
+            this.Details.Add((desc, item.Weight));
+          }
           break;
 
         case "Pickup":
@@ -226,31 +229,38 @@ namespace RDA.Data {
 
     #region Private Methods
 
-    private static Description GetDescriptionFromProgression(string progression) {
+    public static Description GetDescriptionFromProgression(string progression) {
       Description desc = null;
       switch (progression) {
         case "EarlyGame":
           desc = new Description("-6");
+          desc.AdditionalInformation = new Description("15000000").InsertBefore("0");
+
           break;
 
         case "EarlyMidGame":
           desc = new Description("-7");
+          desc.AdditionalInformation = new Description("15000001").InsertBefore("35");
           break;
 
         case "MidGame":
           desc = new Description("-8");
+          desc.AdditionalInformation = new Description("15000002").InsertBefore("1");
           break;
 
         case "LateMidGame":
           desc = new Description("-9");
+          desc.AdditionalInformation = new Description("15000003").InsertBefore("1");
           break;
 
         case "LateGame":
           desc = new Description("-10");
+          desc.AdditionalInformation = new Description("15000004").InsertBefore("1");
           break;
 
         case "EndGame":
           desc = new Description("-11");
+          desc.AdditionalInformation = new Description("22379").InsertBefore("20000");
           break;
 
         default:

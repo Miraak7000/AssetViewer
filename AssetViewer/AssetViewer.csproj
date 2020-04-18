@@ -51,9 +51,13 @@
     <ManifestKeyFile>
     </ManifestKeyFile>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>AssetViewer.App</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -69,10 +73,13 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="App.xaml">
+    <Page Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </ApplicationDefinition>
+    </Page>
+    <Compile Include="Command\AsyncRelayCommand.cs" />
+    <Compile Include="Command\CommandBase.cs" />
+    <Compile Include="Command\RelayCommand.cs" />
     <Compile Include="Comparer\RarityComparer.cs" />
     <Compile Include="Controls\ExpeditionEvents.xaml.cs">
       <DependentUpon>ExpeditionEvents.xaml</DependentUpon>
@@ -82,6 +89,9 @@
     </Compile>
     <Compile Include="Controls\CityFestival.xaml.cs">
       <DependentUpon>CityFestival.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\Parts\ExtendedFilters.xaml.cs">
       <DependentUpon>ExtendedFilters.xaml</DependentUpon>
@@ -111,6 +121,10 @@
     <Compile Include="Converter\GuidToItemConverter.cs" />
     <Compile Include="Converter\RewardToItemConverter.cs" />
     <Compile Include="Converter\VisibilityConverter.cs" />
+    <Compile Include="Custom Controls\NumericUpDown\FontSizeConverter.cs" />
+    <Compile Include="Custom Controls\NumericUpDown\NumericUpDown.cs" />
+    <Compile Include="Custom Controls\NumericUpDown\SelectedCountChangedArgs.cs" />
+    <Compile Include="Custom Controls\NumericUpDown\ValueChangedEventHandler.cs" />
     <Compile Include="Data\Asset\Allocation.cs" />
     <Compile Include="Data\Description\Description.cs" />
     <Compile Include="Data\Description\DescriptionFontStyle.cs" />
@@ -157,6 +171,7 @@
     <Compile Include="Data\Asset\Upgrade.cs" />
     <Compile Include="Extensions\EnumBindingSourceExtension.cs" />
     <Compile Include="Extensions\TextBlockExtensions.cs" />
+    <Compile Include="Extensions\TreeViewMultipleSelection.cs" />
     <Compile Include="Extensions\XmlExtensions.cs" />
     <Compile Include="AssetProvider.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
@@ -177,6 +192,10 @@
     <Page Include="Controls\CityFestival.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\MainView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\Parts\ExtendedFilters.xaml">
       <SubType>Designer</SubType>
@@ -239,6 +258,14 @@
     <Page Include="Controls\Parts\FestivalTreeViewItemStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="themes\generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="themes\NumericUpDown.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -2042,6 +2069,9 @@
     <Resource Include="Resources\data\ui\2kimages\main\profiles\resident_tier03_work.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\resident_tier04.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\resident_tier05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Assets\Texts_Russian.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

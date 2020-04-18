@@ -1,4 +1,5 @@
 ﻿using AssetViewer.Data.Filters;
+using System.Windows.Controls.Primitives;
 
 namespace AssetViewer.Controls {
 
@@ -16,6 +17,7 @@ namespace AssetViewer.Controls {
       this.InitializeComponent();
     }
 
-    #endregion Constructors
-  }
+        #endregion Constructors
+
+    }
 }

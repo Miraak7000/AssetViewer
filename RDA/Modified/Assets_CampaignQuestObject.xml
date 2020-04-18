@@ -1,14 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CampaignQuestObject>
-  <Asset ID="103074" RV="Release" RT="Common">
-    <N>Von Malching castle</N>
-    <T ID="103074" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <GU />
-    <TP />
-    <HF />
-  </Asset>
   <Asset ID="101399" RV="Release" RT="Common">
     <N>CQO_Ruins05_Optional_Fake</N>
     <T ID="101399" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
@@ -25,6 +16,15 @@
     <TP />
     <HF />
     <I ID="12935" />
+  </Asset>
+  <Asset ID="103074" RV="Release" RT="Common">
+    <N>Von Malching castle</N>
+    <T ID="103074" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <GU />
+    <TP />
+    <HF />
   </Asset>
   <Asset ID="101678" RV="Release" RT="Common">
     <N>CQO_WorkerRuins04_Fake</N>
@@ -60,23 +60,6 @@
     <HF />
     <I ID="12935" />
   </Asset>
-  <Asset ID="101679" RV="Release" RT="Common">
-    <N>CQO_WorkerRuins05</N>
-    <T ID="101679" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <GU>
-      <U V="-2" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-      <U V="" C="Culture">
-        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="13520" />
-  </Asset>
   <Asset ID="101533" RV="Release" RT="Common">
     <N>CQO_Ruins06_Optional_Fake</N>
     <T ID="101533" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
@@ -111,9 +94,43 @@
     <HF />
     <I ID="12739" />
   </Asset>
+  <Asset ID="101679" RV="Release" RT="Common">
+    <N>CQO_WorkerRuins05</N>
+    <T ID="101679" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <GU>
+      <U V="-2" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+      <U V="" C="Culture">
+        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="13520" />
+  </Asset>
   <Asset ID="101539" RV="Release" RT="Common">
     <N>CQO_RuinsC_Fake</N>
     <T ID="101539" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <GU>
+      <U V="-2" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+      <U V="" C="Culture">
+        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="12935" />
+  </Asset>
+  <Asset ID="101534" RV="Release" RT="Common">
+    <N>CQO_Ruins07_Optional_Fake</N>
+    <T ID="101534" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <GU>
@@ -145,9 +162,26 @@
     <HF />
     <I ID="12908" />
   </Asset>
-  <Asset ID="101534" RV="Release" RT="Common">
-    <N>CQO_Ruins07_Optional_Fake</N>
-    <T ID="101534" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
+  <Asset ID="101681" RV="Release" RT="Common">
+    <N>CQO_WorkerRuins06</N>
+    <T ID="101681" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <GU>
+      <U V="-2" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+      <U V="" C="Culture">
+        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="13521" />
+  </Asset>
+  <Asset ID="101535" RV="Release" RT="Common">
+    <N>CQO_Ruins08_Optional_Fake</N>
+    <T ID="101535" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <GU>
@@ -196,23 +230,6 @@
     <HF />
     <I ID="12935" />
   </Asset>
-  <Asset ID="101681" RV="Release" RT="Common">
-    <N>CQO_WorkerRuins06</N>
-    <T ID="101681" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <GU>
-      <U V="-2" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-      <U V="" C="Culture">
-        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="13521" />
-  </Asset>
   <Asset ID="101446" RV="Release" RT="Common">
     <N>CQO_Ruins03_Mandatory</N>
     <T ID="101446" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
@@ -230,26 +247,9 @@
     <HF />
     <I ID="12737" />
   </Asset>
-  <Asset ID="101535" RV="Release" RT="Common">
-    <N>CQO_Ruins08_Optional_Fake</N>
-    <T ID="101535" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <GU>
-      <U V="-2" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-      <U V="" C="Culture">
-        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="12935" />
-  </Asset>
-  <Asset ID="101541" RV="Release" RT="Common">
-    <N>CQO_RuinsE_Fake</N>
-    <T ID="101541" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
+  <Asset ID="101536" RV="Release" RT="Common">
+    <N>CQO_Ruins09_Optional_Fake</N>
+    <T ID="101536" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <GU>
@@ -281,26 +281,9 @@
     <HF />
     <I ID="12908" />
   </Asset>
-  <Asset ID="101342" RV="Release" RT="Common">
-    <N>CQO_Ruins04_Optional</N>
-    <T ID="101342" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <GU>
-      <U V="-2" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-      <U V="" C="Culture">
-        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="13510" />
-  </Asset>
-  <Asset ID="101536" RV="Release" RT="Common">
-    <N>CQO_Ruins09_Optional_Fake</N>
-    <T ID="101536" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
+  <Asset ID="101541" RV="Release" RT="Common">
+    <N>CQO_RuinsE_Fake</N>
+    <T ID="101541" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <GU>
@@ -314,6 +297,23 @@
     <TP />
     <HF />
     <I ID="12935" />
+  </Asset>
+  <Asset ID="101346" RV="Release" RT="Common">
+    <N>CQO_RuinsA</N>
+    <T ID="101346" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <GU>
+      <U V="-2" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+      <U V="" C="Culture">
+        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="12740" />
   </Asset>
   <Asset ID="101542" RV="Release" RT="Common">
     <N>CQO_RuinsF_Fake</N>
@@ -349,9 +349,9 @@
     <HF />
     <I ID="13522" />
   </Asset>
-  <Asset ID="101346" RV="Release" RT="Common">
-    <N>CQO_RuinsA</N>
-    <T ID="101346" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
+  <Asset ID="101342" RV="Release" RT="Common">
+    <N>CQO_Ruins04_Optional</N>
+    <T ID="101342" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <GU>
@@ -364,24 +364,7 @@
     </GU>
     <TP />
     <HF />
-    <I ID="12740" />
-  </Asset>
-  <Asset ID="101543" RV="Release" RT="Common">
-    <N>CQO_RuinsG_Fake</N>
-    <T ID="101543" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <GU>
-      <U V="-2" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-      <U V="" C="Culture">
-        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="12935" />
+    <I ID="13510" />
   </Asset>
   <Asset ID="101684" RV="Release" RT="Common">
     <N>CQO_WorkerRuins07_Fake</N>
@@ -400,23 +383,6 @@
     <HF />
     <I ID="12908" />
   </Asset>
-  <Asset ID="101343" RV="Release" RT="Common">
-    <N>CQO_Ruins05_Optional</N>
-    <T ID="101399" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <GU>
-      <U V="-2" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-      <U V="" C="Culture">
-        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="13511" />
-  </Asset>
   <Asset ID="101347" RV="Release" RT="Common">
     <N>CQO_RuinsB</N>
     <T ID="101538" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
@@ -434,9 +400,18 @@
     <HF />
     <I ID="12741" />
   </Asset>
-  <Asset ID="101544" RV="Release" RT="Common">
-    <N>CQO_RuinsH_Fake</N>
-    <T ID="101544" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
+  <Asset ID="110785" RV="Update 03" RT="Common">
+    <N>Cure by work - Mercier work camp</N>
+    <T ID="110785" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <GU />
+    <TP />
+    <HF />
+  </Asset>
+  <Asset ID="101543" RV="Release" RT="Common">
+    <N>CQO_RuinsG_Fake</N>
+    <T ID="101543" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <GU>
@@ -450,6 +425,23 @@
     <TP />
     <HF />
     <I ID="12935" />
+  </Asset>
+  <Asset ID="101343" RV="Release" RT="Common">
+    <N>CQO_Ruins05_Optional</N>
+    <T ID="101399" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <GU>
+      <U V="-2" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+      <U V="" C="Culture">
+        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="13511" />
   </Asset>
   <Asset ID="101348" RV="Release" RT="Common">
     <N>CQO_RuinsC</N>
@@ -468,18 +460,9 @@
     <HF />
     <I ID="12742" />
   </Asset>
-  <Asset ID="110785" RV="Update 03" RT="Common">
-    <N>Cure by work - Mercier work camp</N>
-    <T ID="110785" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <GU />
-    <TP />
-    <HF />
-  </Asset>
-  <Asset ID="101433" RV="Release" RT="Common">
-    <N>CQO_WorkerRuins01</N>
-    <T ID="101433" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
+  <Asset ID="101544" RV="Release" RT="Common">
+    <N>CQO_RuinsH_Fake</N>
+    <T ID="101544" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <GU>
@@ -492,7 +475,7 @@
     </GU>
     <TP />
     <HF />
-    <I ID="13516" />
+    <I ID="12935" />
   </Asset>
   <Asset ID="101417" RV="Release" RT="Common">
     <N>CQO_Ruins06_Optional</N>
@@ -528,8 +511,8 @@
     <HF />
     <I ID="12743" />
   </Asset>
-  <Asset ID="101434" RV="Release" RT="Common">
-    <N>CQO_WorkerRuins01_Fake</N>
+  <Asset ID="101433" RV="Release" RT="Common">
+    <N>CQO_WorkerRuins01</N>
     <T ID="101433" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
     <R ID="118002" />
     <IT>Building</IT>
@@ -543,17 +526,7 @@
     </GU>
     <TP />
     <HF />
-    <I ID="12908" />
-  </Asset>
-  <Asset ID="116946" RV="Update 06" RT="Common">
-    <N>ArcticQ102_Ruins01 FAKE</N>
-    <T ID="116946" I="data/ui/2kimages/main/3dicons/campaign/icon_abandoned_camp.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="117733" />
+    <I ID="13516" />
   </Asset>
   <Asset ID="101421" RV="Release" RT="Common">
     <N>CQO_Ruins07_Optional</N>
@@ -572,9 +545,9 @@
     <HF />
     <I ID="13513" />
   </Asset>
-  <Asset ID="101435" RV="Release" RT="Common">
-    <N>CQO_WorkerRuins02</N>
-    <T ID="101435" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
+  <Asset ID="101434" RV="Release" RT="Common">
+    <N>CQO_WorkerRuins01_Fake</N>
+    <T ID="101433" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <GU>
@@ -587,24 +560,7 @@
     </GU>
     <TP />
     <HF />
-    <I ID="13517" />
-  </Asset>
-  <Asset ID="101726" RV="Release" RT="Common">
-    <N>CQO_Ruins08_Optional</N>
-    <T ID="101535" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <GU>
-      <U V="-2" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-      <U V="" C="Culture">
-        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="13514" />
+    <I ID="12908" />
   </Asset>
   <Asset ID="101350" RV="Release" RT="Common">
     <N>CQO_RuinsE</N>
@@ -623,15 +579,39 @@
     <HF />
     <I ID="12744" />
   </Asset>
-  <Asset ID="116947" RV="Update 06" RT="Common">
-    <N>ArcticQ102_Ruins02 FAKE</N>
-    <T ID="116947" I="data/ui/2kimages/main/3dicons/campaign/icon_abandoned_camp.png" />
+  <Asset ID="101726" RV="Release" RT="Common">
+    <N>CQO_Ruins08_Optional</N>
+    <T ID="101535" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <GU />
+    <GU>
+      <U V="-2" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+      <U V="" C="Culture">
+        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
+      </U>
+    </GU>
     <TP />
     <HF />
-    <I ID="117735" />
+    <I ID="13514" />
+  </Asset>
+  <Asset ID="101435" RV="Release" RT="Common">
+    <N>CQO_WorkerRuins02</N>
+    <T ID="101435" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <GU>
+      <U V="-2" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+      <U V="" C="Culture">
+        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="13517" />
   </Asset>
   <Asset ID="101423" RV="Release" RT="Common">
     <N>CQO_Ruins09_Optional</N>
@@ -650,22 +630,15 @@
     <HF />
     <I ID="13515" />
   </Asset>
-  <Asset ID="101436" RV="Release" RT="Common">
-    <N>CQO_WorkerRuins02_Fake</N>
-    <T ID="101435" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
+  <Asset ID="116946" RV="Update 06" RT="Common">
+    <N>ArcticQ102_Ruins01 FAKE</N>
+    <T ID="116946" I="data/ui/2kimages/main/3dicons/campaign/icon_abandoned_camp.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <GU>
-      <U V="-2" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-      <U V="" C="Culture">
-        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
-      </U>
-    </GU>
+    <GU />
     <TP />
     <HF />
-    <I ID="12908" />
+    <I ID="117733" />
   </Asset>
   <Asset ID="101351" RV="Release" RT="Common">
     <N>CQO_RuinsF</N>
@@ -684,9 +657,104 @@
     <HF />
     <I ID="12745" />
   </Asset>
+  <Asset ID="116947" RV="Update 06" RT="Common">
+    <N>ArcticQ102_Ruins02 FAKE</N>
+    <T ID="116947" I="data/ui/2kimages/main/3dicons/campaign/icon_abandoned_camp.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="117735" />
+  </Asset>
+  <Asset ID="101352" RV="Release" RT="Common">
+    <N>CQO_RuinsG</N>
+    <T ID="101352" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <GU>
+      <U V="-2" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+      <U V="" C="Culture">
+        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="12746" />
+  </Asset>
+  <Asset ID="101436" RV="Release" RT="Common">
+    <N>CQO_WorkerRuins02_Fake</N>
+    <T ID="101435" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <GU>
+      <U V="-2" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+      <U V="" C="Culture">
+        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="12908" />
+  </Asset>
   <Asset ID="101397" RV="Release" RT="Common">
     <N>CQO_Ruins01_Mandatory_Fake</N>
     <T ID="101238" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <GU>
+      <U V="-2" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+      <U V="" C="Culture">
+        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="12935" />
+  </Asset>
+  <Asset ID="101360" RV="Release" RT="Common">
+    <N>CQO_RuinsH</N>
+    <T ID="101544" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <GU>
+      <U V="-2" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+      <U V="" C="Culture">
+        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="12747" />
+  </Asset>
+  <Asset ID="101449" RV="Release" RT="Common">
+    <N>CQO_Ruins02_Mandatory_Fake</N>
+    <T ID="101445" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <GU>
+      <U V="-2" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+      <U V="" C="Culture">
+        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="12935" />
+  </Asset>
+  <Asset ID="101537" RV="Release" RT="Common">
+    <N>CQO_RuinsA_Fake</N>
+    <T ID="101346" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <GU>
@@ -728,40 +796,6 @@
     <HF />
     <I ID="13518" />
   </Asset>
-  <Asset ID="101449" RV="Release" RT="Common">
-    <N>CQO_Ruins02_Mandatory_Fake</N>
-    <T ID="101445" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <GU>
-      <U V="-2" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-      <U V="" C="Culture">
-        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="12935" />
-  </Asset>
-  <Asset ID="101352" RV="Release" RT="Common">
-    <N>CQO_RuinsG</N>
-    <T ID="101352" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <GU>
-      <U V="-2" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-      <U V="" C="Culture">
-        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="12746" />
-  </Asset>
   <Asset ID="114373" RV="Update 06" RT="Common">
     <N>ArcticQ102_Ruins01</N>
     <T ID="116946" I="data/ui/2kimages/main/3dicons/campaign/icon_abandoned_camp.png" />
@@ -789,6 +823,16 @@
     <HF />
     <I ID="12935" />
   </Asset>
+  <Asset ID="116942" RV="Update 06" RT="Common">
+    <N>ArcticQ102_Ruins02</N>
+    <T ID="116947" I="data/ui/2kimages/main/3dicons/campaign/icon_abandoned_camp.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="117735" />
+  </Asset>
   <Asset ID="101438" RV="Release" RT="Common">
     <N>CQO_WorkerRuins03_Fake</N>
     <T ID="101438" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
@@ -806,70 +850,9 @@
     <HF />
     <I ID="12908" />
   </Asset>
-  <Asset ID="101360" RV="Release" RT="Common">
-    <N>CQO_RuinsH</N>
-    <T ID="101544" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <GU>
-      <U V="-2" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-      <U V="" C="Culture">
-        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="12747" />
-  </Asset>
   <Asset ID="101398" RV="Release" RT="Common">
     <N>CQO_Ruins04_Optional_Fake</N>
     <T ID="101342" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <GU>
-      <U V="-2" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-      <U V="" C="Culture">
-        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="12935" />
-  </Asset>
-  <Asset ID="101677" RV="Release" RT="Common">
-    <N>CQO_WorkerRuins04</N>
-    <T ID="101678" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <GU>
-      <U V="-2" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-      <U V="" C="Culture">
-        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="13519" />
-  </Asset>
-  <Asset ID="116942" RV="Update 06" RT="Common">
-    <N>ArcticQ102_Ruins02</N>
-    <T ID="116947" I="data/ui/2kimages/main/3dicons/campaign/icon_abandoned_camp.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="117735" />
-  </Asset>
-  <Asset ID="101537" RV="Release" RT="Common">
-    <N>CQO_RuinsA_Fake</N>
-    <T ID="101346" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <GU>
@@ -893,5 +876,22 @@
     <TP />
     <HF />
     <I ID="117734" />
+  </Asset>
+  <Asset ID="101677" RV="Release" RT="Common">
+    <N>CQO_WorkerRuins04</N>
+    <T ID="101678" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <GU>
+      <U V="-2" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+      <U V="" C="Culture">
+        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="13519" />
   </Asset>
 </CampaignQuestObject>

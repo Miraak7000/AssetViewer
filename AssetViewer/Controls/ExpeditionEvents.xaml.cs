@@ -58,16 +58,14 @@ namespace AssetViewer.Controls {
     #region Private Methods
 
     private void ExpeditionEvents_Unloaded(object sender, RoutedEventArgs e) {
-      if (Application.Current.MainWindow is MainWindow main) {
-        main.OnLanguage_Changed -= this.ComboBoxLanguage_SelectionChanged;
-      }
+      AssetProvider.OnLanguage_Changed -= this.ComboBoxLanguage_SelectionChanged;
     }
 
     private void ExpeditionEvents_Loaded(object sender, RoutedEventArgs e) {
-      ((MainWindow)Application.Current.MainWindow).OnLanguage_Changed += this.ComboBoxLanguage_SelectionChanged;
+      AssetProvider.OnLanguage_Changed += this.ComboBoxLanguage_SelectionChanged;
     }
 
-    private void ComboBoxLanguage_SelectionChanged(object sender, SelectionChangedEventArgs e) {
+    private void ComboBoxLanguage_SelectionChanged() {
       DataContext = null;
       DataContext = this;
       (this.FindResource("EventSource") as CollectionViewSource)?.View.Refresh();

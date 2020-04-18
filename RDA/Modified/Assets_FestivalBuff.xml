@@ -1,5 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <FestivalBuff>
+  <Asset ID="142453" RV="Release" RT="Common">
+    <N>ArtsFestivalPublicBuff</N>
+    <T ID="142453" I="data/ui/2kimages/main/3dicons/museum/icon_scroll_anthology_myths.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="142453" I="data/ui/2kimages/main/3dicons/museum/icon_scroll_anthology_myths.png" />
+    <GU>
+      <U V="+5" C="CultureUpgrade">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+      <U V="-50%" C="BuildingUpgrade">
+        <T ID="2320" I="data/ui/2kimages/main/icons/icon_credits.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="20113" I="data/ui/2kimages/main/3dicons/museum/icon_scroll_anthology_myths.png" />
+    <ET>
+      <ET>
+        <T ID="191501" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010349" I="data/ui/2kimages/main/3dicons/icon_pub.png" />
+          <T ID="1010360" I="data/ui/2kimages/main/3dicons/icon_school.png" />
+          <T ID="1010365" I="data/ui/2kimages/main/3dicons/icon_bank.png" />
+          <T ID="1010359" I="data/ui/2kimages/main/3dicons/icon_church.png" />
+          <T ID="1010352" I="data/ui/2kimages/main/3dicons/icon_cabaret.png" />
+          <T ID="1010353" I="data/ui/2kimages/main/3dicons/icon_university.png" />
+          <T ID="1010355" I="data/ui/2kimages/main/3dicons/icon_club_house.png" />
+          <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
+          <T ID="101258" I="data/ui/2kimages/main/3dicons/icon_church.png" />
+          <T ID="101259" I="data/ui/2kimages/main/3dicons/icon_box_arena.png" />
+          <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
+        </B>
+      </ET>
+    </ET>
+  </Asset>
   <Asset ID="141896" RV="Release" RT="Common">
     <N>BeerFestivalResidencesBuff</N>
     <T ID="141896" I="data/ui/2kimages/main/3dicons/icon_beer_2.png" />
@@ -42,42 +78,6 @@
           <T ID="1010347" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
           <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
           <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-        </B>
-      </ET>
-    </ET>
-  </Asset>
-  <Asset ID="142453" RV="Release" RT="Common">
-    <N>ArtsFestivalPublicBuff</N>
-    <T ID="142453" I="data/ui/2kimages/main/3dicons/museum/icon_scroll_anthology_myths.png" />
-    <R ID="118002" />
-    <IT />
-    <FN ID="142453" I="data/ui/2kimages/main/3dicons/museum/icon_scroll_anthology_myths.png" />
-    <GU>
-      <U V="+5" C="CultureUpgrade">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-      <U V="-50%" C="BuildingUpgrade">
-        <T ID="2320" I="data/ui/2kimages/main/icons/icon_credits.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="20113" I="data/ui/2kimages/main/3dicons/museum/icon_scroll_anthology_myths.png" />
-    <ET>
-      <ET>
-        <T ID="191501" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
-        <B>
-          <T ID="1010349" I="data/ui/2kimages/main/3dicons/icon_pub.png" />
-          <T ID="1010360" I="data/ui/2kimages/main/3dicons/icon_school.png" />
-          <T ID="1010365" I="data/ui/2kimages/main/3dicons/icon_bank.png" />
-          <T ID="1010359" I="data/ui/2kimages/main/3dicons/icon_church.png" />
-          <T ID="1010352" I="data/ui/2kimages/main/3dicons/icon_cabaret.png" />
-          <T ID="1010353" I="data/ui/2kimages/main/3dicons/icon_university.png" />
-          <T ID="1010355" I="data/ui/2kimages/main/3dicons/icon_club_house.png" />
-          <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
-          <T ID="101258" I="data/ui/2kimages/main/3dicons/icon_church.png" />
-          <T ID="101259" I="data/ui/2kimages/main/3dicons/icon_box_arena.png" />
-          <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
         </B>
       </ET>
     </ET>
@@ -169,6 +169,44 @@
       </ET>
     </ET>
   </Asset>
+  <Asset ID="142449" RV="Release" RT="Common">
+    <N>BeerFestivalProductionBuff</N>
+    <T ID="141896" I="data/ui/2kimages/main/3dicons/icon_beer_2.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="141896" I="data/ui/2kimages/main/3dicons/icon_beer_2.png" />
+    <GU>
+      <U V="-25%" C="BuildingUpgrade">
+        <T ID="12337" I="data/ui/2kimages/main/icons/icon_options.png" />
+      </U>
+      <U V="+50%" C="FactoryUpgrade">
+        <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="20111" I="data/ui/2kimages/main/3dicons/icon_beer_2.png" />
+    <ET>
+      <ET>
+        <T ID="192566" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+        <B>
+          <T ID="1010262" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+          <T ID="1010264" I="data/ui/2kimages/main/3dicons/icon_hops.png" />
+          <T ID="1010292" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+          <T ID="1010314" I="data/ui/2kimages/main/3dicons/icon_malt.png" />
+          <T ID="1010265" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
+          <T ID="1010294" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
+          <T ID="1010266" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+          <T ID="1010329" I="data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png" />
+          <T ID="1010340" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
+          <T ID="1010560" I="data/ui/2kimages/main/3dicons/icon_quartz_sand.png" />
+          <T ID="1010319" I="data/ui/2kimages/main/3dicons/icon_glass.png" />
+          <T ID="100659" I="data/ui/2kimages/main/3dicons/icon_champagne.png" />
+          <T ID="100655" I="data/ui/2kimages/main/3dicons/icon_grapes.png" />
+        </B>
+      </ET>
+    </ET>
+  </Asset>
   <Asset ID="111831" RV="Update 03" RT="Common">
     <N>AnarchyFestivalResidencesBuff</N>
     <T ID="111831" I="data/ui/2kimages/main/3dicons/icon_anarchist.png" />
@@ -243,44 +281,6 @@
       </ET>
     </ET>
   </Asset>
-  <Asset ID="142449" RV="Release" RT="Common">
-    <N>BeerFestivalProductionBuff</N>
-    <T ID="141896" I="data/ui/2kimages/main/3dicons/icon_beer_2.png" />
-    <R ID="118002" />
-    <IT />
-    <FN ID="141896" I="data/ui/2kimages/main/3dicons/icon_beer_2.png" />
-    <GU>
-      <U V="-25%" C="BuildingUpgrade">
-        <T ID="12337" I="data/ui/2kimages/main/icons/icon_options.png" />
-      </U>
-      <U V="+50%" C="FactoryUpgrade">
-        <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="20111" I="data/ui/2kimages/main/3dicons/icon_beer_2.png" />
-    <ET>
-      <ET>
-        <T ID="192566" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
-        <B>
-          <T ID="1010262" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
-          <T ID="1010264" I="data/ui/2kimages/main/3dicons/icon_hops.png" />
-          <T ID="1010292" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
-          <T ID="1010314" I="data/ui/2kimages/main/3dicons/icon_malt.png" />
-          <T ID="1010265" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
-          <T ID="1010294" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
-          <T ID="1010266" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
-          <T ID="1010329" I="data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png" />
-          <T ID="1010340" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
-          <T ID="1010560" I="data/ui/2kimages/main/3dicons/icon_quartz_sand.png" />
-          <T ID="1010319" I="data/ui/2kimages/main/3dicons/icon_glass.png" />
-          <T ID="100659" I="data/ui/2kimages/main/3dicons/icon_champagne.png" />
-          <T ID="100655" I="data/ui/2kimages/main/3dicons/icon_grapes.png" />
-        </B>
-      </ET>
-    </ET>
-  </Asset>
   <Asset ID="142432" RV="Update 06" RT="Common">
     <N>CommemorationFestivalResidencesBuff</N>
     <T ID="142456" I="data/ui/2kimages/main/3dicons/museum/icon_museum_sword_rare.png" />
@@ -313,39 +313,23 @@
       </ET>
     </ET>
   </Asset>
-  <Asset ID="142433" RV="Release" RT="Common">
-    <N>CarnivalFestivalResidencesBuff</N>
-    <T ID="142433" I="data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png" />
+  <Asset ID="142451" RV="Release" RT="Common">
+    <N>HarvestFestivalResidencesBuff</N>
+    <T ID="142451" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
     <R ID="118002" />
     <IT />
-    <FN ID="20110" I="data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png" />
-    <PU>
-      <U>
-        <T ID="12690" I="data/ui/2kimages/main/icons/icon_credits.png" />
-        <A>
-          <U V="+5">
-            <T ID="1010214" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
-          </U>
-          <U V="+5">
-            <T ID="1010216" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
-          </U>
-          <U V="+5">
-            <T ID="1010257" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
-          </U>
-          <U V="+5">
-            <T ID="120016" I="data/ui/2kimages/main/3dicons/icon_champagne.png" />
-          </U>
-        </A>
-      </U>
-    </PU>
+    <FN ID="142451" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
     <GU>
-      <U V="+40" C="ResidenceUpgrade">
+      <U V="+10" C="ResidenceUpgrade">
         <T ID="12314" I="data/ui/2kimages/main/icons/icon_happy.png" />
+      </U>
+      <U V="+10%" C="ResidenceUpgrade">
+        <T ID="12677" I="data/ui/2kimages/main/icons/icon_credits.png" />
       </U>
     </GU>
     <TP />
     <HF />
-    <I ID="20115" I="data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png" />
+    <I ID="20112" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
     <ET>
       <ET>
         <T ID="190762" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
@@ -479,23 +463,39 @@
       </ET>
     </ET>
   </Asset>
-  <Asset ID="142451" RV="Release" RT="Common">
-    <N>HarvestFestivalResidencesBuff</N>
-    <T ID="142451" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+  <Asset ID="142433" RV="Release" RT="Common">
+    <N>CarnivalFestivalResidencesBuff</N>
+    <T ID="142433" I="data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png" />
     <R ID="118002" />
     <IT />
-    <FN ID="142451" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
-    <GU>
-      <U V="+10" C="ResidenceUpgrade">
-        <T ID="12314" I="data/ui/2kimages/main/icons/icon_happy.png" />
+    <FN ID="20110" I="data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png" />
+    <PU>
+      <U>
+        <T ID="12690" I="data/ui/2kimages/main/icons/icon_credits.png" />
+        <A>
+          <U V="+5">
+            <T ID="1010214" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+          </U>
+          <U V="+5">
+            <T ID="1010216" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
+          </U>
+          <U V="+5">
+            <T ID="1010257" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
+          </U>
+          <U V="+5">
+            <T ID="120016" I="data/ui/2kimages/main/3dicons/icon_champagne.png" />
+          </U>
+        </A>
       </U>
-      <U V="+10%" C="ResidenceUpgrade">
-        <T ID="12677" I="data/ui/2kimages/main/icons/icon_credits.png" />
+    </PU>
+    <GU>
+      <U V="+40" C="ResidenceUpgrade">
+        <T ID="12314" I="data/ui/2kimages/main/icons/icon_happy.png" />
       </U>
     </GU>
     <TP />
     <HF />
-    <I ID="20112" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+    <I ID="20115" I="data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png" />
     <ET>
       <ET>
         <T ID="190762" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />

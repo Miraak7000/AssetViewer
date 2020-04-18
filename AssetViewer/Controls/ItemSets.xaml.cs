@@ -1,5 +1,6 @@
 ﻿using AssetViewer.Data.Filters;
 using AssetViewer.Data;
+using System.Collections;
 
 namespace AssetViewer.Controls {
 
@@ -26,6 +27,7 @@ namespace AssetViewer.Controls {
         SelectedAsset = asset;
       }
     }
+    public IList SelectedItems { get; set; }
 
     #endregion Methods
   }

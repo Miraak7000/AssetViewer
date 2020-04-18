@@ -93,6 +93,52 @@
       </MC>
     </M>
   </Asset>
+  <Asset ID="1010310" RV="Release" RT="Common" IP="true">
+    <N>coastal_02 (Niter Coast Building)</N>
+    <T ID="1010310" I="data/ui/2kimages/main/3dicons/icon_niter.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="12500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="20">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="16">
+        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </BC>
+    <GU>
+      <U>
+        <T ID="10604" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="120">
+      <FO>
+        <U V="1 / 1">
+          <T ID="1010232" I="data/ui/2kimages/main/3dicons/icon_niter.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="500 / 250">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="25">
+          <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
   <Asset ID="101268" RV="Release" RT="Common" IP="true">
     <N>factory_colony01_05 (Brick Factory)</N>
     <T ID="1010283" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
@@ -134,24 +180,81 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="1010310" RV="Release" RT="Common" IP="true">
-    <N>coastal_02 (Niter Coast Building)</N>
-    <T ID="1010310" I="data/ui/2kimages/main/3dicons/icon_niter.png" />
+  <Asset ID="1010323" RV="Release" RT="Common" IP="true">
+    <N>workshop_01 (High-Wheeler Workshop)</N>
+    <T ID="1010323" I="data/ui/2kimages/main/3dicons/icon_high_wheeler.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
     <BC>
-      <U V="12500">
+      <U V="42000">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
-      <U V="10">
+      <U V="8">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
-      <U V="20">
+      <U V="15">
         <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
       </U>
-      <U V="16">
+      <U V="12">
         <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="10">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="10">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+    </BC>
+    <GU>
+      <U>
+        <T ID="12508" I="data/ui/2kimages/main/icons/icon_electricity.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 6">
+          <T ID="1010255" I="data/ui/2kimages/main/3dicons/icon_caoutchouc.png" />
+        </U>
+        <U V="1 / 6">
+          <T ID="1010219" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="1010245" I="data/ui/2kimages/main/3dicons/icon_high_wheeler.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="1200 / 600">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="150">
+          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="1010560" RV="Release" RT="Common" IP="true">
+    <N>coastal_03 (Quartz Sand Coast Building)</N>
+    <T ID="1010560" I="data/ui/2kimages/main/3dicons/icon_quartz_sand.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="2000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="6">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="5">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
       </U>
     </BC>
     <GU>
@@ -162,16 +265,16 @@
     <TP />
     <HF />
     <I ID="11143" />
-    <FB CT="120">
+    <FB>
       <FO>
-        <U V="1 / 1">
-          <T ID="1010232" I="data/ui/2kimages/main/3dicons/icon_niter.png" />
+        <U V="1 / 4">
+          <T ID="1010228" I="data/ui/2kimages/main/3dicons/icon_quartz_sand.png" />
         </U>
       </FO>
     </FB>
     <M>
       <MC>
-        <U V="500 / 250">
+        <U V="120 / 60">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
         <U V="25">
@@ -237,66 +340,6 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="1010323" RV="Release" RT="Common" IP="true">
-    <N>workshop_01 (High-Wheeler Workshop)</N>
-    <T ID="1010323" I="data/ui/2kimages/main/3dicons/icon_high_wheeler.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="42000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="8">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="15">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="12">
-        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="10">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-      <U V="10">
-        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
-      </U>
-    </BC>
-    <GU>
-      <U>
-        <T ID="12508" I="data/ui/2kimages/main/icons/icon_electricity.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB>
-      <FI>
-        <U V="1 / 6">
-          <T ID="1010255" I="data/ui/2kimages/main/3dicons/icon_caoutchouc.png" />
-        </U>
-        <U V="1 / 6">
-          <T ID="1010219" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 4">
-          <T ID="1010245" I="data/ui/2kimages/main/3dicons/icon_high_wheeler.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="1200 / 600">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="150">
-          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
   <Asset ID="101415" RV="Release" RT="Common" IP="true">
     <N>factory_colony01_06 (Felt Maker)</N>
     <T ID="101415" I="data/ui/2kimages/main/3dicons/icon_felt.png" />
@@ -341,45 +384,62 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="1010560" RV="Release" RT="Common" IP="true">
-    <N>coastal_03 (Quartz Sand Coast Building)</N>
-    <T ID="1010560" I="data/ui/2kimages/main/3dicons/icon_quartz_sand.png" />
+  <Asset ID="1010324" RV="Release" RT="Common" IP="true">
+    <N>workshop_02 (Pocket Watch Workshop)</N>
+    <T ID="1010324" I="data/ui/2kimages/main/3dicons/icon_pocket_watch.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
     <BC>
-      <U V="2000">
+      <U V="48000">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
-      <U V="6">
+      <U V="8">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
-      <U V="5">
+      <U V="15">
         <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="12">
+        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="10">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="10">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
       </U>
     </BC>
     <GU>
       <U>
-        <T ID="10604" />
+        <T ID="12508" I="data/ui/2kimages/main/icons/icon_electricity.png" />
       </U>
     </GU>
     <TP />
     <HF />
     <I ID="11143" />
-    <FB>
-      <FO>
+    <FB CT="90">
+      <FI>
         <U V="1 / 4">
-          <T ID="1010228" I="data/ui/2kimages/main/3dicons/icon_quartz_sand.png" />
+          <T ID="1010241" I="data/ui/2kimages/main/3dicons/icon_glass.png" />
+        </U>
+        <U V="1 / 2">
+          <T ID="1010249" I="data/ui/2kimages/main/3dicons/icon_gold.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 1">
+          <T ID="1010246" I="data/ui/2kimages/main/3dicons/icon_pocket_watch.png" />
         </U>
       </FO>
     </FB>
     <M>
       <MC>
-        <U V="120 / 60">
+        <U V="1400 / 700">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
-        <U V="25">
-          <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
+        <U V="150">
+          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
         </U>
       </MC>
     </M>
@@ -476,62 +536,59 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="1010324" RV="Release" RT="Common" IP="true">
-    <N>workshop_02 (Pocket Watch Workshop)</N>
-    <T ID="1010324" I="data/ui/2kimages/main/3dicons/icon_pocket_watch.png" />
+  <Asset ID="1010284" RV="Release" RT="Common" IP="true">
+    <N>workshop_03 (Sewing Machines Factory)</N>
+    <T ID="1010284" I="data/ui/2kimages/main/3dicons/icon_sewing_machine.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
     <BC>
-      <U V="48000">
+      <U V="12000">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
-      <U V="8">
+      <U V="6">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
-      <U V="15">
+      <U V="10">
         <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
       </U>
-      <U V="12">
+      <U V="8">
         <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
       </U>
-      <U V="10">
+      <U V="8">
         <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-      <U V="10">
-        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
       </U>
     </BC>
     <GU>
       <U>
-        <T ID="12508" I="data/ui/2kimages/main/icons/icon_electricity.png" />
+        <T ID="10604" />
       </U>
     </GU>
     <TP />
     <HF />
     <I ID="11143" />
-    <FB CT="90">
+    <FB>
       <FI>
-        <U V="1 / 4">
-          <T ID="1010241" I="data/ui/2kimages/main/3dicons/icon_glass.png" />
+        <U V="1 / 8">
+          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
         </U>
-        <U V="1 / 2">
-          <T ID="1010249" I="data/ui/2kimages/main/3dicons/icon_gold.png" />
+        <U V="1 / 6">
+          <T ID="1010219" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
         </U>
       </FI>
       <FO>
-        <U V="1 / 1">
-          <T ID="1010246" I="data/ui/2kimages/main/3dicons/icon_pocket_watch.png" />
+        <U V="1 / 4">
+          <T ID="1010206" I="data/ui/2kimages/main/3dicons/icon_sewing_machine.png" />
         </U>
       </FO>
     </FB>
     <M>
       <MC>
-        <U V="1400 / 700">
+        <U V="500 / 250">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
         <U V="150">
-          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
+          <T ID="1010116" I="data/ui/2kimages/main/icons/icon_resource_merchants_2.png" />
         </U>
       </MC>
     </M>
@@ -593,6 +650,57 @@
       </MC>
     </M>
   </Asset>
+  <Asset ID="1010316" RV="Release" RT="Common" IP="true">
+    <N>food_07 (Sausage Maker)</N>
+    <T ID="1010316" I="data/ui/2kimages/main/3dicons/icon_meat_sausage.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="4">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="5">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U>
+        <T ID="10604" />
+      </U>
+      <U V="-5" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 6">
+          <T ID="1010199" I="data/ui/2kimages/main/3dicons/icon_pigs.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="1010238" I="data/ui/2kimages/main/3dicons/icon_meat_sausage.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="80 / 40">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="50">
+          <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
   <Asset ID="1010340" RV="Release" RT="Common" IP="true">
     <N>food_colony01_01 (Rum Maker)</N>
     <T ID="1010340" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
@@ -637,59 +745,62 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="1010284" RV="Release" RT="Common" IP="true">
-    <N>workshop_03 (Sewing Machines Factory)</N>
-    <T ID="1010284" I="data/ui/2kimages/main/3dicons/icon_sewing_machine.png" />
+  <Asset ID="1010326" RV="Release" RT="Common" IP="true">
+    <N>workshop_04 (Phonographs Workshop)</N>
+    <T ID="1010326" I="data/ui/2kimages/main/3dicons/icon_phonographs.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
     <BC>
-      <U V="12000">
+      <U V="60000">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
-      <U V="6">
+      <U V="10">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
-      <U V="10">
+      <U V="20">
         <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
       </U>
-      <U V="8">
+      <U V="16">
         <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
       </U>
-      <U V="8">
+      <U V="15">
         <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="15">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
       </U>
     </BC>
     <GU>
       <U>
-        <T ID="10604" />
+        <T ID="12508" I="data/ui/2kimages/main/icons/icon_electricity.png" />
       </U>
     </GU>
     <TP />
     <HF />
     <I ID="11143" />
-    <FB>
+    <FB CT="120">
       <FI>
-        <U V="1 / 8">
-          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+        <U V="1 / 3">
+          <T ID="1010242" I="data/ui/2kimages/main/3dicons/icon_inlay.png" />
         </U>
-        <U V="1 / 6">
-          <T ID="1010219" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
+        <U V="1 / 3">
+          <T ID="1010204" I="data/ui/2kimages/main/3dicons/icon_brass.png" />
         </U>
       </FI>
       <FO>
-        <U V="1 / 4">
-          <T ID="1010206" I="data/ui/2kimages/main/3dicons/icon_sewing_machine.png" />
+        <U V="1 / 1">
+          <T ID="1010248" I="data/ui/2kimages/main/3dicons/icon_phonographs.png" />
         </U>
       </FO>
     </FB>
     <M>
       <MC>
-        <U V="500 / 250">
+        <U V="1600 / 800">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
         <U V="150">
-          <T ID="1010116" I="data/ui/2kimages/main/icons/icon_resource_merchants_2.png" />
+          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
         </U>
       </MC>
     </M>
@@ -792,14 +903,14 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="1010326" RV="Release" RT="Common" IP="true">
-    <N>workshop_04 (Phonographs Workshop)</N>
-    <T ID="1010326" I="data/ui/2kimages/main/3dicons/icon_phonographs.png" />
+  <Asset ID="100659" RV="Release" RT="Common" IP="true">
+    <N>food_08 (Champagne Maker)</N>
+    <T ID="100659" I="data/ui/2kimages/main/3dicons/icon_champagne.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
     <BC>
-      <U V="60000">
+      <U V="35000">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
       <U V="10">
@@ -820,34 +931,34 @@
     </BC>
     <GU>
       <U>
-        <T ID="12508" I="data/ui/2kimages/main/icons/icon_electricity.png" />
+        <T ID="10604" />
       </U>
     </GU>
     <TP />
     <HF />
     <I ID="11143" />
-    <FB CT="120">
+    <FB>
       <FI>
-        <U V="1 / 3">
-          <T ID="1010242" I="data/ui/2kimages/main/3dicons/icon_inlay.png" />
+        <U V="1 / 6">
+          <T ID="120014" I="data/ui/2kimages/main/3dicons/icon_grapes.png" />
         </U>
-        <U V="1 / 3">
-          <T ID="1010204" I="data/ui/2kimages/main/3dicons/icon_brass.png" />
+        <U V="1 / 6">
+          <T ID="1010241" I="data/ui/2kimages/main/3dicons/icon_glass.png" />
         </U>
       </FI>
       <FO>
-        <U V="1 / 1">
-          <T ID="1010248" I="data/ui/2kimages/main/3dicons/icon_phonographs.png" />
+        <U V="1 / 4">
+          <T ID="120016" I="data/ui/2kimages/main/3dicons/icon_champagne.png" />
         </U>
       </FO>
     </FB>
     <M>
       <MC>
-        <U V="1600 / 800">
+        <U V="1000 / 500">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
         <U V="150">
-          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
+          <T ID="1010116" I="data/ui/2kimages/main/icons/icon_resource_merchants_2.png" />
         </U>
       </MC>
     </M>
@@ -897,57 +1008,6 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="1010316" RV="Release" RT="Common" IP="true">
-    <N>food_07 (Sausage Maker)</N>
-    <T ID="1010316" I="data/ui/2kimages/main/3dicons/icon_meat_sausage.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="4">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="5">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U>
-        <T ID="10604" />
-      </U>
-      <U V="-5" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="60">
-      <FI>
-        <U V="1 / 6">
-          <T ID="1010199" I="data/ui/2kimages/main/3dicons/icon_pigs.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 4">
-          <T ID="1010238" I="data/ui/2kimages/main/3dicons/icon_meat_sausage.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="80 / 40">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="50">
-          <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
   <Asset ID="101252" RV="Release" RT="Common" IP="true">
     <N>food_colony01_03 (Coffee Maker)</N>
     <T ID="101252" I="data/ui/2kimages/main/3dicons/icon_coffe_cup.png" />
@@ -988,48 +1048,6 @@
         </U>
         <U V="150">
           <T ID="1010367" I="data/ui/2kimages/main/icons/icon_ressource_worker_south_america.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="100451" RV="Release" RT="Common" IP="true">
-    <N>factory_03 (Timber Factory)</N>
-    <T ID="100451" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="100">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU>
-      <U>
-        <T ID="10604" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="15">
-      <FI>
-        <U V="1 / 8">
-          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 8">
-          <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="10 / 5">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="10">
-          <T ID="1010052" I="data/ui/2kimages/main/icons/icon_resource_farmer_2.png" />
         </U>
       </MC>
     </M>
@@ -1094,6 +1112,102 @@
       </MC>
     </M>
   </Asset>
+  <Asset ID="1010312" RV="Release" RT="Common" IP="true">
+    <N>processing_01 (Tallow Processing)</N>
+    <T ID="1010312" I="data/ui/2kimages/main/3dicons/icon_tallow.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="4">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="5">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="4">
+        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </BC>
+    <GU>
+      <U>
+        <T ID="10604" />
+      </U>
+      <U V="-5" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 6">
+          <T ID="1010199" I="data/ui/2kimages/main/3dicons/icon_pigs.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="1010234" I="data/ui/2kimages/main/3dicons/icon_tallow.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="40 / 20">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="40">
+          <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="100451" RV="Release" RT="Common" IP="true">
+    <N>factory_03 (Timber Factory)</N>
+    <T ID="100451" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="100">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU>
+      <U>
+        <T ID="10604" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="15">
+      <FI>
+        <U V="1 / 8">
+          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 8">
+          <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="10 / 5">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="10">
+          <T ID="1010052" I="data/ui/2kimages/main/icons/icon_resource_farmer_2.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
   <Asset ID="101264" RV="Release" RT="Common" IP="true">
     <N>food_colony01_04 (Fried Banana Maker)</N>
     <T ID="101264" I="data/ui/2kimages/main/3dicons/icon_fried_bananas.png" />
@@ -1138,30 +1252,21 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="100659" RV="Release" RT="Common" IP="true">
-    <N>food_08 (Champagne Maker)</N>
-    <T ID="100659" I="data/ui/2kimages/main/3dicons/icon_champagne.png" />
+  <Asset ID="1010313" RV="Release" RT="Common" IP="true">
+    <N>processing_02 (Flour Processing)</N>
+    <T ID="1010313" I="data/ui/2kimages/main/3dicons/icon_flour.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
     <BC>
-      <U V="35000">
+      <U V="500">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
-      <U V="10">
+      <U V="4">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
-      <U V="20">
+      <U V="5">
         <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="16">
-        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="15">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-      <U V="15">
-        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
       </U>
     </BC>
     <GU>
@@ -1175,25 +1280,22 @@
     <FB>
       <FI>
         <U V="1 / 6">
-          <T ID="120014" I="data/ui/2kimages/main/3dicons/icon_grapes.png" />
-        </U>
-        <U V="1 / 6">
-          <T ID="1010241" I="data/ui/2kimages/main/3dicons/icon_glass.png" />
+          <T ID="1010192" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
         </U>
       </FI>
       <FO>
         <U V="1 / 4">
-          <T ID="120016" I="data/ui/2kimages/main/3dicons/icon_champagne.png" />
+          <T ID="1010235" I="data/ui/2kimages/main/3dicons/icon_flour.png" />
         </U>
       </FO>
     </FB>
     <M>
       <MC>
-        <U V="1000 / 500">
+        <U V="50 / 25">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
-        <U V="150">
-          <T ID="1010116" I="data/ui/2kimages/main/icons/icon_resource_merchants_2.png" />
+        <U V="10">
+          <T ID="1010052" I="data/ui/2kimages/main/icons/icon_resource_farmer_2.png" />
         </U>
       </MC>
     </M>
@@ -1315,6 +1417,57 @@
       </MC>
     </M>
   </Asset>
+  <Asset ID="1010314" RV="Release" RT="Common" IP="true">
+    <N>processing_03 (Malt Processing)</N>
+    <T ID="1010314" I="data/ui/2kimages/main/3dicons/icon_malt.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="4">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="5">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="4">
+        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </BC>
+    <GU>
+      <U>
+        <T ID="10604" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 6">
+          <T ID="1010192" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="1010236" I="data/ui/2kimages/main/3dicons/icon_malt.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="150 / 75">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="25">
+          <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
   <Asset ID="101271" RV="Release" RT="Common" IP="true">
     <N>food_colony01_05 (Burrito Maker)</N>
     <T ID="101271" I="data/ui/2kimages/main/3dicons/icon_burrito.png" />
@@ -1358,161 +1511,6 @@
         </U>
         <U V="100">
           <T ID="1010367" I="data/ui/2kimages/main/icons/icon_ressource_worker_south_america.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="1010312" RV="Release" RT="Common" IP="true">
-    <N>processing_01 (Tallow Processing)</N>
-    <T ID="1010312" I="data/ui/2kimages/main/3dicons/icon_tallow.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="4">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="5">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="4">
-        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-    </BC>
-    <GU>
-      <U>
-        <T ID="10604" />
-      </U>
-      <U V="-5" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="60">
-      <FI>
-        <U V="1 / 6">
-          <T ID="1010199" I="data/ui/2kimages/main/3dicons/icon_pigs.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 4">
-          <T ID="1010234" I="data/ui/2kimages/main/3dicons/icon_tallow.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="40 / 20">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="40">
-          <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="1010317" RV="Release" RT="Common" IP="true">
-    <N>processing_colony01_01 (Sugar Processing)</N>
-    <T ID="1010317" I="data/ui/2kimages/main/3dicons/icon_salt.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="6">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB>
-      <FI>
-        <U V="1 / 6">
-          <T ID="1010251" I="data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 4">
-          <T ID="1010239" I="data/ui/2kimages/main/3dicons/icon_salt.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="10 / 5">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="50">
-          <T ID="1010367" I="data/ui/2kimages/main/icons/icon_ressource_worker_south_america.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="101250" RV="Release" RT="Common" IP="true">
-    <N>workshop_07 (Glasses Workshop)</N>
-    <T ID="101250" I="data/ui/2kimages/main/3dicons/icon_glasses.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="17000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="8">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="15">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="12">
-        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="10">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-      <U V="10">
-        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
-      </U>
-    </BC>
-    <GU>
-      <U>
-        <T ID="10604" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="90">
-      <FI>
-        <U V="1 / 4">
-          <T ID="1010241" I="data/ui/2kimages/main/3dicons/icon_glass.png" />
-        </U>
-        <U V="1 / 2">
-          <T ID="1010204" I="data/ui/2kimages/main/3dicons/icon_brass.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 1">
-          <T ID="120030" I="data/ui/2kimages/main/3dicons/icon_glasses.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="1000 / 500">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="100">
-          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
         </U>
       </MC>
     </M>
@@ -1577,21 +1575,78 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="1010313" RV="Release" RT="Common" IP="true">
-    <N>processing_02 (Flour Processing)</N>
-    <T ID="1010313" I="data/ui/2kimages/main/3dicons/icon_flour.png" />
+  <Asset ID="101250" RV="Release" RT="Common" IP="true">
+    <N>workshop_07 (Glasses Workshop)</N>
+    <T ID="101250" I="data/ui/2kimages/main/3dicons/icon_glasses.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
     <BC>
-      <U V="500">
+      <U V="17000">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
-      <U V="4">
+      <U V="8">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
-      <U V="5">
+      <U V="15">
         <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="12">
+        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="10">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="10">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+    </BC>
+    <GU>
+      <U>
+        <T ID="10604" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="90">
+      <FI>
+        <U V="1 / 4">
+          <T ID="1010241" I="data/ui/2kimages/main/3dicons/icon_glass.png" />
+        </U>
+        <U V="1 / 2">
+          <T ID="1010204" I="data/ui/2kimages/main/3dicons/icon_brass.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 1">
+          <T ID="120030" I="data/ui/2kimages/main/3dicons/icon_glasses.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="1000 / 500">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="100">
+          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="1010315" RV="Release" RT="Common" IP="true">
+    <N>processing_04 (Weavery)</N>
+    <T ID="1010315" I="data/ui/2kimages/main/3dicons/icon_working_cloth.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="400">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="2">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
     </BC>
     <GU>
@@ -1605,12 +1660,12 @@
     <FB>
       <FI>
         <U V="1 / 6">
-          <T ID="1010192" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+          <T ID="1010197" I="data/ui/2kimages/main/3dicons/icon_wool.png" />
         </U>
       </FI>
       <FO>
         <U V="1 / 4">
-          <T ID="1010235" I="data/ui/2kimages/main/3dicons/icon_flour.png" />
+          <T ID="1010237" I="data/ui/2kimages/main/3dicons/icon_working_cloth.png" />
         </U>
       </FO>
     </FB>
@@ -1619,85 +1674,8 @@
         <U V="50 / 25">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
-        <U V="10">
-          <T ID="1010052" I="data/ui/2kimages/main/icons/icon_resource_farmer_2.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="101266" RV="Release" RT="Common" IP="true">
-    <N>processing_colony01_02 (Poncho Maker)</N>
-    <T ID="101266" I="data/ui/2kimages/main/3dicons/icon_poncho.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="6">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB>
-      <FI>
-        <U V="1 / 6">
-          <T ID="120036" I="data/ui/2kimages/main/3dicons/icon_alpaca_wool.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 4">
-          <T ID="120043" I="data/ui/2kimages/main/3dicons/icon_poncho.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="15 / 8">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="30">
-          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="1010339" RV="Release" RT="Common" IP="true">
-    <N>coastal_colony01_01 (Pearls Coast Building)</N>
-    <T ID="1010339" I="data/ui/2kimages/main/3dicons/icon_pearls.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="8500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="90">
-      <FO>
-        <U V="1 / 1">
-          <T ID="1010256" I="data/ui/2kimages/main/3dicons/icon_pearls.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="25 / 13">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
         <U V="50">
-          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
+          <T ID="1010052" I="data/ui/2kimages/main/icons/icon_resource_farmer_2.png" />
         </U>
       </MC>
     </M>
@@ -1756,60 +1734,9 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="1010314" RV="Release" RT="Common" IP="true">
-    <N>processing_03 (Malt Processing)</N>
-    <T ID="1010314" I="data/ui/2kimages/main/3dicons/icon_malt.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="4">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="5">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="4">
-        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-    </BC>
-    <GU>
-      <U>
-        <T ID="10604" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB>
-      <FI>
-        <U V="1 / 6">
-          <T ID="1010192" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 4">
-          <T ID="1010236" I="data/ui/2kimages/main/3dicons/icon_malt.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="150 / 75">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="25">
-          <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="101262" RV="Release" RT="Common" IP="true">
-    <N>coastal_colony01_02 (Fish Coast Building)</N>
-    <T ID="101262" I="data/ui/2kimages/main/3dicons/icon_fishoil.png" />
+  <Asset ID="1010317" RV="Release" RT="Common" IP="true">
+    <N>processing_colony01_01 (Sugar Processing)</N>
+    <T ID="1010317" I="data/ui/2kimages/main/3dicons/icon_salt.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000001" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -1821,27 +1748,64 @@
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
     </BC>
-    <GU>
-      <U V="-5" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-    </GU>
+    <GU />
     <TP />
     <HF />
     <I ID="11143" />
     <FB>
+      <FI>
+        <U V="1 / 6">
+          <T ID="1010251" I="data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png" />
+        </U>
+      </FI>
       <FO>
         <U V="1 / 4">
-          <T ID="120042" I="data/ui/2kimages/main/3dicons/icon_fishoil.png" />
+          <T ID="1010239" I="data/ui/2kimages/main/3dicons/icon_salt.png" />
         </U>
       </FO>
     </FB>
     <M>
       <MC>
-        <U V="5 / 3">
+        <U V="10 / 5">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
-        <U V="15">
+        <U V="50">
+          <T ID="1010367" I="data/ui/2kimages/main/icons/icon_ressource_worker_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="1010339" RV="Release" RT="Common" IP="true">
+    <N>coastal_colony01_01 (Pearls Coast Building)</N>
+    <T ID="1010339" I="data/ui/2kimages/main/3dicons/icon_pearls.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="8500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="90">
+      <FO>
+        <U V="1 / 1">
+          <T ID="1010256" I="data/ui/2kimages/main/3dicons/icon_pearls.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="25 / 13">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="50">
           <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
         </U>
       </MC>
@@ -1891,6 +1855,300 @@
         </U>
         <U V="50">
           <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="101266" RV="Release" RT="Common" IP="true">
+    <N>processing_colony01_02 (Poncho Maker)</N>
+    <T ID="101266" I="data/ui/2kimages/main/3dicons/icon_poncho.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="6">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 6">
+          <T ID="120036" I="data/ui/2kimages/main/3dicons/icon_alpaca_wool.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="120043" I="data/ui/2kimages/main/3dicons/icon_poncho.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="15 / 8">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="30">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="101262" RV="Release" RT="Common" IP="true">
+    <N>coastal_colony01_02 (Fish Coast Building)</N>
+    <T ID="101262" I="data/ui/2kimages/main/3dicons/icon_fishoil.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="6">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="-5" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FO>
+        <U V="1 / 4">
+          <T ID="120042" I="data/ui/2kimages/main/3dicons/icon_fishoil.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="5 / 3">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="15">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="1010300" RV="Release" RT="Common" IP="true">
+    <N>processing_05 (Dynamite Processing)</N>
+    <T ID="1010300" I="data/ui/2kimages/main/3dicons/icon_dynamite.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="54000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="20">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="16">
+        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="15">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="15">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+    </BC>
+    <GU>
+      <U>
+        <T ID="10604" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 4">
+          <T ID="1010234" I="data/ui/2kimages/main/3dicons/icon_tallow.png" />
+        </U>
+        <U V="1 / 3">
+          <T ID="1010232" I="data/ui/2kimages/main/3dicons/icon_niter.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 2">
+          <T ID="190579" I="data/ui/2kimages/main/3dicons/icon_dynamite.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="1000 / 500">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="250">
+          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="1010289" RV="Release" RT="Common" IP="true">
+    <N>factory_10 (Chassis Factory)</N>
+    <T ID="1010289" I="data/ui/2kimages/main/3dicons/icon_chassis.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="55000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="20">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="16">
+        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="15">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="15">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+    </BC>
+    <GU>
+      <U>
+        <T ID="10604" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="120">
+      <FI>
+        <U V="1 / 8">
+          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+        </U>
+        <U V="1 / 2">
+          <T ID="1010255" I="data/ui/2kimages/main/3dicons/icon_caoutchouc.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 1">
+          <T ID="1010211" I="data/ui/2kimages/main/3dicons/icon_chassis.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="1200 / 600">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="150">
+          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="101303" RV="Release" RT="Common" IP="true">
+    <N>coastal_colony01_02 (Niter Coast Building)</N>
+    <T ID="1010310" I="data/ui/2kimages/main/3dicons/icon_niter.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="2500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="20">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="16">
+        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="120">
+      <FO>
+        <U V="1 / 1">
+          <T ID="1010232" I="data/ui/2kimages/main/3dicons/icon_niter.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="250 / 125">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="125">
+          <T ID="1010367" I="data/ui/2kimages/main/icons/icon_ressource_worker_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="1010319" RV="Release" RT="Common" IP="true">
+    <N>processing_06 (Glass Processing)</N>
+    <T ID="1010319" I="data/ui/2kimages/main/3dicons/icon_glass.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="5400">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="6">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="10">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="8">
+        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </BC>
+    <GU>
+      <U>
+        <T ID="10604" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 6">
+          <T ID="1010228" I="data/ui/2kimages/main/3dicons/icon_quartz_sand.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="1010241" I="data/ui/2kimages/main/3dicons/icon_glass.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="100 / 50">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="100">
+          <T ID="1010116" I="data/ui/2kimages/main/icons/icon_resource_merchants_2.png" />
         </U>
       </MC>
     </M>
@@ -1948,18 +2206,21 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="1010315" RV="Release" RT="Common" IP="true">
-    <N>processing_04 (Weavery)</N>
-    <T ID="1010315" I="data/ui/2kimages/main/3dicons/icon_working_cloth.png" />
+  <Asset ID="1010291" RV="Release" RT="Common" IP="true">
+    <N>food_01 (Bread Maker)</N>
+    <T ID="1010291" I="data/ui/2kimages/main/3dicons/icon_bread.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
     <BC>
-      <U V="400">
+      <U V="1000">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
-      <U V="2">
+      <U V="4">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="5">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
       </U>
     </BC>
     <GU>
@@ -1970,79 +2231,129 @@
     <TP />
     <HF />
     <I ID="11143" />
-    <FB>
+    <FB CT="60">
       <FI>
-        <U V="1 / 6">
-          <T ID="1010197" I="data/ui/2kimages/main/3dicons/icon_wool.png" />
+        <U V="1 / 4">
+          <T ID="1010235" I="data/ui/2kimages/main/3dicons/icon_flour.png" />
         </U>
       </FI>
       <FO>
-        <U V="1 / 4">
-          <T ID="1010237" I="data/ui/2kimages/main/3dicons/icon_working_cloth.png" />
+        <U V="1 / 2">
+          <T ID="1010213" I="data/ui/2kimages/main/3dicons/icon_bread.png" />
         </U>
       </FO>
     </FB>
     <M>
       <MC>
-        <U V="50 / 25">
+        <U V="60 / 30">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
         <U V="50">
-          <T ID="1010052" I="data/ui/2kimages/main/icons/icon_resource_farmer_2.png" />
+          <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
         </U>
       </MC>
     </M>
   </Asset>
-  <Asset ID="101303" RV="Release" RT="Common" IP="true">
-    <N>coastal_colony01_02 (Niter Coast Building)</N>
-    <T ID="1010310" I="data/ui/2kimages/main/3dicons/icon_niter.png" />
+  <Asset ID="101261" RV="Release" RT="Common" IP="true">
+    <N>factory_colony01_01 (Timber Factory)</N>
+    <T ID="100451" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000001" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
     <BC>
-      <U V="2500">
+      <U V="500">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="20">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="16">
-        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
       </U>
     </BC>
     <GU />
     <TP />
     <HF />
     <I ID="11143" />
-    <FB CT="120">
+    <FB CT="15">
+      <FI>
+        <U V="1 / 8">
+          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+        </U>
+      </FI>
       <FO>
-        <U V="1 / 1">
-          <T ID="1010232" I="data/ui/2kimages/main/3dicons/icon_niter.png" />
+        <U V="1 / 8">
+          <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
         </U>
       </FO>
     </FB>
     <M>
       <MC>
-        <U V="250 / 125">
+        <U V="10 / 5">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
-        <U V="125">
-          <T ID="1010367" I="data/ui/2kimages/main/icons/icon_ressource_worker_south_america.png" />
+        <U V="20">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
         </U>
       </MC>
     </M>
   </Asset>
-  <Asset ID="1010289" RV="Release" RT="Common" IP="true">
-    <N>factory_10 (Chassis Factory)</N>
-    <T ID="1010289" I="data/ui/2kimages/main/3dicons/icon_chassis.png" />
+  <Asset ID="1010292" RV="Release" RT="Common" IP="true">
+    <N>food_02 (Beer Maker)</N>
+    <T ID="1010292" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
     <BC>
-      <U V="55000">
+      <U V="1600">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="4">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="5">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="4">
+        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </BC>
+    <GU>
+      <U>
+        <T ID="10604" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 3">
+          <T ID="1010194" I="data/ui/2kimages/main/3dicons/icon_hops.png" />
+        </U>
+        <U V="1 / 4">
+          <T ID="1010236" I="data/ui/2kimages/main/3dicons/icon_malt.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 2">
+          <T ID="1010214" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="200 / 100">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="75">
+          <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="1010320" RV="Release" RT="Common" IP="true">
+    <N>processing_07 (Inlay Processing)</N>
+    <T ID="1010320" I="data/ui/2kimages/main/3dicons/icon_inlay.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="22000">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
       <U V="10">
@@ -2069,24 +2380,21 @@
     <TP />
     <HF />
     <I ID="11143" />
-    <FB CT="120">
+    <FB CT="60">
       <FI>
         <U V="1 / 8">
           <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
         </U>
-        <U V="1 / 2">
-          <T ID="1010255" I="data/ui/2kimages/main/3dicons/icon_caoutchouc.png" />
-        </U>
       </FI>
       <FO>
-        <U V="1 / 1">
-          <T ID="1010211" I="data/ui/2kimages/main/3dicons/icon_chassis.png" />
+        <U V="1 / 2">
+          <T ID="1010242" I="data/ui/2kimages/main/3dicons/icon_inlay.png" />
         </U>
       </FO>
     </FB>
     <M>
       <MC>
-        <U V="1200 / 600">
+        <U V="750 / 375">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
         <U V="150">
@@ -2158,152 +2466,6 @@
     <FB />
     <M />
   </Asset>
-  <Asset ID="1010300" RV="Release" RT="Common" IP="true">
-    <N>processing_05 (Dynamite Processing)</N>
-    <T ID="1010300" I="data/ui/2kimages/main/3dicons/icon_dynamite.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="54000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="20">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="16">
-        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="15">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-      <U V="15">
-        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
-      </U>
-    </BC>
-    <GU>
-      <U>
-        <T ID="10604" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="60">
-      <FI>
-        <U V="1 / 4">
-          <T ID="1010234" I="data/ui/2kimages/main/3dicons/icon_tallow.png" />
-        </U>
-        <U V="1 / 3">
-          <T ID="1010232" I="data/ui/2kimages/main/3dicons/icon_niter.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 2">
-          <T ID="190579" I="data/ui/2kimages/main/3dicons/icon_dynamite.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="1000 / 500">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="250">
-          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="101261" RV="Release" RT="Common" IP="true">
-    <N>factory_colony01_01 (Timber Factory)</N>
-    <T ID="100451" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="15">
-      <FI>
-        <U V="1 / 8">
-          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 8">
-          <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="10 / 5">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="20">
-          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="1010291" RV="Release" RT="Common" IP="true">
-    <N>food_01 (Bread Maker)</N>
-    <T ID="1010291" I="data/ui/2kimages/main/3dicons/icon_bread.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="1000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="4">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="5">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U>
-        <T ID="10604" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="60">
-      <FI>
-        <U V="1 / 4">
-          <T ID="1010235" I="data/ui/2kimages/main/3dicons/icon_flour.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 2">
-          <T ID="1010213" I="data/ui/2kimages/main/3dicons/icon_bread.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="60 / 30">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="50">
-          <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
   <Asset ID="101265" RV="Release" RT="Common" IP="true">
     <N>factory_colony01_02 (Sailcloth Factory)</N>
     <T ID="1010288" I="data/ui/2kimages/main/3dicons/icon_sail.png" />
@@ -2344,209 +2506,6 @@
         </U>
         <U V="20">
           <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="1010319" RV="Release" RT="Common" IP="true">
-    <N>processing_06 (Glass Processing)</N>
-    <T ID="1010319" I="data/ui/2kimages/main/3dicons/icon_glass.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="5400">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="6">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="10">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="8">
-        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-    </BC>
-    <GU>
-      <U>
-        <T ID="10604" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB>
-      <FI>
-        <U V="1 / 6">
-          <T ID="1010228" I="data/ui/2kimages/main/3dicons/icon_quartz_sand.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 4">
-          <T ID="1010241" I="data/ui/2kimages/main/3dicons/icon_glass.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="100 / 50">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="100">
-          <T ID="1010116" I="data/ui/2kimages/main/icons/icon_resource_merchants_2.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="1010292" RV="Release" RT="Common" IP="true">
-    <N>food_02 (Beer Maker)</N>
-    <T ID="1010292" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="1600">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="4">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="5">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="4">
-        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-    </BC>
-    <GU>
-      <U>
-        <T ID="10604" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="60">
-      <FI>
-        <U V="1 / 3">
-          <T ID="1010194" I="data/ui/2kimages/main/3dicons/icon_hops.png" />
-        </U>
-        <U V="1 / 4">
-          <T ID="1010236" I="data/ui/2kimages/main/3dicons/icon_malt.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 2">
-          <T ID="1010214" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="200 / 100">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="75">
-          <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="1010318" RV="Release" RT="Common" IP="true">
-    <N>factory_colony01_03 (Cotton Cloth Processing)</N>
-    <T ID="1010318" I="data/ui/2kimages/main/3dicons/icon_cotton_fur.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="6">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB>
-      <FI>
-        <U V="1 / 6">
-          <T ID="1010253" I="data/ui/2kimages/main/3dicons/icon_cotton.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 4">
-          <T ID="1010240" I="data/ui/2kimages/main/3dicons/icon_cotton_fur.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="10 / 5">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="10">
-          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="1010320" RV="Release" RT="Common" IP="true">
-    <N>processing_07 (Inlay Processing)</N>
-    <T ID="1010320" I="data/ui/2kimages/main/3dicons/icon_inlay.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="22000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="20">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="16">
-        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="15">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-      <U V="15">
-        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
-      </U>
-    </BC>
-    <GU>
-      <U>
-        <T ID="10604" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="60">
-      <FI>
-        <U V="1 / 8">
-          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 2">
-          <T ID="1010242" I="data/ui/2kimages/main/3dicons/icon_inlay.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="750 / 375">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="150">
-          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
         </U>
       </MC>
     </M>
@@ -2604,6 +2563,47 @@
         </U>
         <U V="150">
           <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="1010318" RV="Release" RT="Common" IP="true">
+    <N>factory_colony01_03 (Cotton Cloth Processing)</N>
+    <T ID="1010318" I="data/ui/2kimages/main/3dicons/icon_cotton_fur.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="6">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 6">
+          <T ID="1010253" I="data/ui/2kimages/main/3dicons/icon_cotton.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="1010240" I="data/ui/2kimages/main/3dicons/icon_cotton_fur.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="10 / 5">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="10">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
         </U>
       </MC>
     </M>
