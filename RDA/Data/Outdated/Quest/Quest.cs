@@ -2,17 +2,19 @@
 using System.Xml.Linq;
 
 namespace RDA.Data {
+
   public class Quest {
-    #region Properties
 
-    public String ID { get; set; }
-    public String Name { get; set; }
+    #region Public Properties
+
+    public string ID { get; set; }
+    public string Name { get; set; }
     public Description Text { get; set; }
-    public String QuestGiver { get; set; }
+    public string QuestGiver { get; set; }
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Constructors
+    #region Public Constructors
 
     public Quest(XElement asset) {
       foreach (var element in asset.Element("Values").Elements()) {
@@ -25,11 +27,11 @@ namespace RDA.Data {
             break;
 
           case "Standard":
-            this.ProcessElement_Standard(element);
+            ProcessElement_Standard(element);
             break;
 
           case "Quest":
-            this.ProcessElement_Quest(element);
+            ProcessElement_Quest(element);
             break;
 
           case "Reward":
@@ -43,29 +45,33 @@ namespace RDA.Data {
       }
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
 
-    #region Methods
+    #region Public Methods
 
     public XElement ToXml() {
       var result = new XElement("Q");
-      result.Add(new XAttribute("ID", this.ID));
-      result.Add(new XAttribute("N", this.Name));
-      result.Add(this.Text.ToXml("T"));
-      result.Add(new XAttribute("QG", this.QuestGiver));
+      result.Add(new XAttribute("ID", ID));
+      result.Add(new XAttribute("N", Name));
+      result.Add(Text.ToXml("T"));
+      result.Add(new XAttribute("QG", QuestGiver));
       return result;
     }
 
+    #endregion Public Methods
+
+    #region Private Methods
+
     private void ProcessElement_Standard(XElement element) {
-      this.ID = element.Element("GUID").Value;
-      this.Name = element.Element("Name").Value;
-      this.Text = new Description(element.Element("GUID").Value);
+      ID = element.Element("GUID").Value;
+      Name = element.Element("Name").Value;
+      Text = new Description(element.Element("GUID").Value);
     }
 
     private void ProcessElement_Quest(XElement element) {
-      this.QuestGiver = element.Element("QuestGiver").Value;
+      QuestGiver = element.Element("QuestGiver").Value;
     }
 
-    #endregion Methods
+    #endregion Private Methods
   }
 }

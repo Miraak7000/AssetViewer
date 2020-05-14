@@ -1,5 +1,4 @@
-﻿using System;
-using System.Xml.Linq;
+﻿using System.Xml.Linq;
 
 namespace RDA.Data {
 
@@ -8,7 +7,7 @@ namespace RDA.Data {
     #region Public Properties
 
     public Description Text { get; set; }
-    public String Value { get; set; }
+    public string Value { get; set; }
 
     #endregion Public Properties
 
@@ -16,13 +15,13 @@ namespace RDA.Data {
 
     public InputAmountUpgrade(XElement element) {
       var id = element.Element("Product").Value;
-      this.Text = new Description(id);
-      var value = (Int32?)Int32.Parse(element.Element("Amount")?.Value ?? "-1");
+      Text = new Description(id);
+      var value = (int?)int.Parse(element.Element("Amount")?.Value ?? "-1");
       if (value == null) {
-        this.Value = String.Empty;
+        Value = string.Empty;
       }
       else {
-        this.Value = value > 0 ? $"+{value}" : $"{value}";
+        Value = value > 0 ? $"+{value}" : $"{value}";
       }
     }
 
@@ -32,8 +31,8 @@ namespace RDA.Data {
 
     public XElement ToXml() {
       var result = new XElement("P");
-      result.Add(this.Text.ToXml("T"));
-      result.Add(new XAttribute("V", this.Value));
+      result.Add(Text.ToXml("T"));
+      result.Add(new XAttribute("V", Value));
       return result;
     }
 

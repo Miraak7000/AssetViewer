@@ -6,25 +6,25 @@ namespace AssetViewer.Data.Filters {
 
   public interface IFilter<T> : IFilter {
 
-    #region Properties
+    #region Public Properties
 
     new T SelectedValue { get; set; }
     new T SelectedComparisonValue { get; set; }
     new List<T> CurrentValues { get; }
     new List<T> ComparisonValues { get; }
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Methods
+    #region Public Methods
 
     new void RaisePropertyChanged([CallerMemberName] string name = "");
 
-    #endregion Methods
+    #endregion Public Methods
   }
 
   public interface IFilter {
 
-    #region Properties
+    #region Public Properties
 
     object SelectedValue { get; }
     Func<IEnumerable<TemplateAsset>, IEnumerable<TemplateAsset>> FilterFunc { get; }
@@ -37,9 +37,9 @@ namespace AssetViewer.Data.Filters {
     object SelectedComparisonValue { get; }
     List<TemplateAsset> SavedItems { get; set; }
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Methods
+    #region Public Methods
 
     void RaisePropertyChanged(string name);
 
@@ -49,6 +49,6 @@ namespace AssetViewer.Data.Filters {
 
     void SetCurrenValues();
 
-    #endregion Methods
+    #endregion Public Methods
   }
 }

@@ -10,15 +10,17 @@ namespace AssetViewer.Data {
   [XmlRoot(Namespace = "", ElementName = "S", IsNullable = false)]
   public class TourismStatus {
 
-    #region Properties
+    #region Public Properties
+
     [XmlElement("R")]
     public Description Requirement { get; set; }
+
     [XmlElement("T")]
     public Description Text { get; set; }
 
     [XmlAttribute("P")]
     public string Pool { get; set; }
 
-    #endregion Properties
+    #endregion Public Properties
   }
 }

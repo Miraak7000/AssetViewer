@@ -4,18 +4,18 @@ namespace AssetViewer.Controls {
 
   public partial class CityFestival : ItemsBase {
 
-    #region Properties
+    #region Public Properties
 
     public override ItemsHolder ItemsHolder { get; } = new ItemsHolderCityFestival();
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Constructors
+    #region Public Constructors
 
     public CityFestival() : base() {
-      this.InitializeComponent();
+      InitializeComponent();
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
   }
 }

@@ -1,15 +1,15 @@
-﻿using AssetViewer.Data;
-using System;
+﻿using System;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Data;
+using AssetViewer.Data;
 
 namespace AssetViewer.Converter {
 
   [ValueConversion(typeof(string), typeof(TemplateAsset))]
   public class GuidToItemConverter : IValueConverter {
 
-    #region Methods
+    #region Public Methods
 
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture) {
       if (value is string poolstring) {
@@ -25,6 +25,6 @@ namespace AssetViewer.Converter {
       throw new NotImplementedException();
     }
 
-    #endregion Methods
+    #endregion Public Methods
   }
 }

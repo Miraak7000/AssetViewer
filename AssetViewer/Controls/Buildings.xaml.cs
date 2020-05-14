@@ -4,18 +4,18 @@ namespace AssetViewer.Controls {
 
   public partial class Buildings : ItemsBase {
 
-    #region Properties
+    #region Public Properties
 
     public override ItemsHolder ItemsHolder { get; } = new ItemsHolderBuildings();
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Constructors
+    #region Public Constructors
 
     public Buildings() : base() {
-      this.InitializeComponent();
+      InitializeComponent();
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
   }
 }

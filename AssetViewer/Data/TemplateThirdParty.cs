@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Xml.Linq;
 
 namespace AssetViewer.Data {
@@ -8,8 +7,8 @@ namespace AssetViewer.Data {
 
     #region Public Properties
 
-    public String ID { get; set; }
-    public String Name { get; set; }
+    public string ID { get; set; }
+    public string Name { get; set; }
     public Description Text { get; set; }
     public List<OfferingItems> OfferingItems { get; set; }
 
@@ -18,13 +17,13 @@ namespace AssetViewer.Data {
     #region Public Constructors
 
     public TemplateThirdParty(XElement asset) {
-      this.ID = asset.Attribute("ID").Value;
-      this.Name = asset.Attribute("N").Value;
-      this.Text = new Description(asset.Element("T"));
-      this.OfferingItems = new List<OfferingItems>();
+      ID = asset.Attribute("ID").Value;
+      Name = asset.Attribute("N").Value;
+      Text = new Description(asset.Element("T"));
+      OfferingItems = new List<OfferingItems>();
       foreach (var progression in asset.Element("OI").Elements()) {
         var item = new OfferingItems(progression);
-        this.OfferingItems.Add(item);
+        OfferingItems.Add(item);
       }
     }
 

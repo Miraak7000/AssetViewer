@@ -11,9 +11,7 @@ using System.Xml.XPath;
 // ReSharper disable CoVariantArrayConversion
 namespace RDA.Data {
 
-  /// <summary>
-  /// World Fair
-  /// </summary>
+  /// <summary> World Fair </summary>
   public static class Monument {
 
     #region Public Methods

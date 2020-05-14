@@ -1,30 +1,29 @@
-﻿using AssetViewer.Data;
-using System;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using AssetViewer.Data;
 
 namespace AssetViewer.Controls {
 
   public partial class ItemCard : UserControl, INotifyPropertyChanged {
 
-    #region Properties
+    #region Public Properties
 
     public bool CanSwap {
-      get { return (bool)GetValue(CanSwapProperty); }
-      set { SetValue(CanSwapProperty, value); }
+      get => (bool)GetValue(CanSwapProperty);
+      set => SetValue(CanSwapProperty, value);
     }
 
     public TemplateAsset SelectedAsset {
-      get { return (TemplateAsset)GetValue(SelectedAssetProperty); }
-      set { SetValue(SelectedAssetProperty, value); }
+      get => (TemplateAsset)GetValue(SelectedAssetProperty);
+      set => SetValue(SelectedAssetProperty, value);
     }
 
     public LinearGradientBrush RarityBrush {
       get {
-        var selection = this.SelectedAsset?.RarityType ?? "Common";
+        var selection = SelectedAsset?.RarityType ?? "Common";
         switch (selection) {
           case "Uncommon":
             return new LinearGradientBrush(new GradientStopCollection {
@@ -64,85 +63,37 @@ namespace AssetViewer.Controls {
       }
     }
 
-    public String AllocationText {
-      get {
-        return AssetProvider.Descriptions[-106];
-      }
-    }
+    public string AllocationText => AssetProvider.Descriptions[-106];
 
-    public String ExpeditionText {
-      get {
-        return AssetProvider.Descriptions[-1220];
-      }
-    }
+    public string ExpeditionText => AssetProvider.Descriptions[-1220];
 
-    public String TradeText {
-      get {
-        return AssetProvider.Descriptions[12725];
-      }
-    }
+    public string TradeText => AssetProvider.Descriptions[12725];
 
-    public String HiringFeeText {
-      get {
-        return AssetProvider.Descriptions[21731];
-      }
-    }
+    public string HiringFeeText => AssetProvider.Descriptions[21731];
 
-    public String ItemSetText {
-      get {
-        return AssetProvider.Descriptions[-1221];
-      }
-    }
+    public string ItemSetText => AssetProvider.Descriptions[-1221];
 
-    public String ItemTrasmutable {
-      get {
-        return AssetProvider.Descriptions[113817];
-      }
-    }
+    public string ItemTrasmutable => AssetProvider.Descriptions[113817];
 
-    public String ProductionText {
-      get {
-        return AssetProvider.Descriptions[100006];
-      }
-    }
+    public string ProductionText => AssetProvider.Descriptions[100006];
 
-    public String ConsumptionText {
-      get {
-        return AssetProvider.Descriptions[100007];
-      }
-    }
+    public string ConsumptionText => AssetProvider.Descriptions[100007];
 
-    public String BuildCostsText {
-      get {
-        return AssetProvider.Descriptions[100008];
-      }
-    }
+    public string BuildCostsText => AssetProvider.Descriptions[100008];
 
-    public String MaintenanceText {
-      get {
-        return AssetProvider.Descriptions[100409];
-      }
-    }
+    public string MaintenanceText => AssetProvider.Descriptions[100409];
 
-    public String UpgradeCostsText {
-      get {
-        return AssetProvider.Descriptions[2001775];
-      }
-    }
+    public string UpgradeCostsText => AssetProvider.Descriptions[2001775];
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Fields
+    #region Public Events
 
-    public static readonly DependencyProperty CanSwapProperty =
-                                                    DependencyProperty.Register("CanSwap", typeof(bool), typeof(ItemCard), new PropertyMetadata(false));
+    public event PropertyChangedEventHandler PropertyChanged;
 
-    public static readonly DependencyProperty SelectedAssetProperty =
-        DependencyProperty.Register("SelectedAsset", typeof(TemplateAsset), typeof(ItemCard), new PropertyMetadata(null, OnSelectedAssetChanged));
+    #endregion Public Events
 
-    #endregion Fields
-
-    #region Constructors
+    #region Public Constructors
 
     public ItemCard() {
       InitializeComponent();
@@ -150,19 +101,27 @@ namespace AssetViewer.Controls {
       Unloaded += ItemCard_Unloaded;
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
 
-    #region Events
-
-    public event PropertyChangedEventHandler PropertyChanged;
-
-    #endregion Events
-
-    #region Methods
+    #region Public Methods
 
     public void RaisePropertyChanged([CallerMemberName]string name = "") {
       PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
     }
+
+    #endregion Public Methods
+
+    #region Public Fields
+
+    public static readonly DependencyProperty CanSwapProperty =
+                                                                DependencyProperty.Register(nameof(CanSwap), typeof(bool), typeof(ItemCard), new PropertyMetadata(false));
+
+    public static readonly DependencyProperty SelectedAssetProperty =
+        DependencyProperty.Register(nameof(SelectedAsset), typeof(TemplateAsset), typeof(ItemCard), new PropertyMetadata(null, OnSelectedAssetChanged));
+
+    #endregion Public Fields
+
+    #region Private Methods
 
     private static void OnSelectedAssetChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {
       if (d is ItemCard card) {
@@ -171,11 +130,11 @@ namespace AssetViewer.Controls {
     }
 
     private void ItemCard_Unloaded(object sender, RoutedEventArgs e) {
-      AssetProvider.OnLanguage_Changed -= this.ComboBoxLanguage_SelectionChanged;
+      AssetProvider.OnLanguage_Changed -= ComboBoxLanguage_SelectionChanged;
     }
 
     private void ItemCard_Loaded(object sender, RoutedEventArgs e) {
-      AssetProvider.OnLanguage_Changed += this.ComboBoxLanguage_SelectionChanged;
+      AssetProvider.OnLanguage_Changed += ComboBoxLanguage_SelectionChanged;
     }
 
     private void ComboBoxLanguage_SelectionChanged() {
@@ -183,17 +142,17 @@ namespace AssetViewer.Controls {
       mainGrid.DataContext = this;
     }
 
-    private void ButtonSwitch_Click(Object sender, RoutedEventArgs e) {
-      if (this.ItemFront.Visibility == Visibility.Visible) {
-        this.ItemFront.Visibility = Visibility.Collapsed;
-        this.ItemBack.Visibility = Visibility.Visible;
+    private void ButtonSwitch_Click(object sender, RoutedEventArgs e) {
+      if (ItemFront.Visibility == Visibility.Visible) {
+        ItemFront.Visibility = Visibility.Collapsed;
+        ItemBack.Visibility = Visibility.Visible;
       }
       else {
-        this.ItemBack.Visibility = Visibility.Collapsed;
-        this.ItemFront.Visibility = Visibility.Visible;
+        ItemBack.Visibility = Visibility.Collapsed;
+        ItemFront.Visibility = Visibility.Visible;
       }
     }
 
-    #endregion Methods
+    #endregion Private Methods
   }
 }

@@ -6,7 +6,7 @@ namespace AssetViewer.Data.Filters {
 
   public class TargetBuildingFilter : BaseFilter<Description> {
 
-    #region Properties
+    #region Public Properties
 
     public override Func<IEnumerable<TemplateAsset>, IEnumerable<TemplateAsset>> FilterFunc => result => {
       if (SelectedValue != null && SelectedValue.ID != 0) {
@@ -22,17 +22,17 @@ namespace AssetViewer.Data.Filters {
 
     public override int DescriptionID => -1102;
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Constructors
+    #region Public Constructors
 
     public TargetBuildingFilter(ItemsHolder itemsHolder) : base(itemsHolder) {
       ComparisonType = FilterType.Selection;
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
 
-    #region Methods
+    #region Public Methods
 
     public override void SetCurrenValues() {
       CurrentValues = ItemsHolder
@@ -46,6 +46,6 @@ namespace AssetViewer.Data.Filters {
          .ToList();
     }
 
-    #endregion Methods
+    #endregion Public Methods
   }
 }

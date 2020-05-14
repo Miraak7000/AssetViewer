@@ -19,7 +19,7 @@ namespace AssetViewer.Data {
 
     public Maintenance(XElement element) {
       if (element.Element("MC")?.HasElements ?? false) {
-        this.MaintenanceCosts = element.Element("MC").Elements().Select(s => new Upgrade(s)).ToList();
+        MaintenanceCosts = element.Element("MC").Elements().Select(s => new Upgrade(s)).ToList();
       }
     }
 

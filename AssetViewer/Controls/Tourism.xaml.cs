@@ -1,27 +1,25 @@
-﻿using AssetViewer.Data;
-using AssetViewer.Extensions;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Windows;
 using System.Windows.Controls;
 using System.Xml.Linq;
+using AssetViewer.Data;
+using AssetViewer.Extensions;
 
 namespace AssetViewer.Controls {
 
-  /// <summary>
-  /// Interaktionslogik für Tourism.xaml
-  /// </summary>
+  /// <summary> Interaktionslogik für Tourism.xaml </summary>
   public partial class Tourism : UserControl {
 
-    #region Properties
+    #region Public Properties
 
     public ObservableCollection<TourismStatus> TourismStati { get; } = new ObservableCollection<TourismStatus>();
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Constructors
+    #region Public Constructors
 
     public Tourism() {
       InitializeComponent();
@@ -38,16 +36,16 @@ namespace AssetViewer.Controls {
       DataContext = this;
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
 
-    #region Methods
+    #region Private Methods
 
     private void Tourism_Unloaded(object sender, RoutedEventArgs e) {
-      AssetProvider.OnLanguage_Changed -= this.ComboBoxLanguage_SelectionChanged;
+      AssetProvider.OnLanguage_Changed -= ComboBoxLanguage_SelectionChanged;
     }
 
     private void Tourism_Loaded(object sender, RoutedEventArgs e) {
-      AssetProvider.OnLanguage_Changed += this.ComboBoxLanguage_SelectionChanged;
+      AssetProvider.OnLanguage_Changed += ComboBoxLanguage_SelectionChanged;
       ListBoxStatis.SelectedIndex = 0;
       lbItemsList.SelectedIndex = 0;
     }
@@ -57,6 +55,6 @@ namespace AssetViewer.Controls {
       DataContext = this;
     }
 
-    #endregion Methods
+    #endregion Private Methods
   }
 }

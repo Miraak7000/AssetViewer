@@ -1,11 +1,11 @@
-﻿using RDA.Data;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.XPath;
+using RDA.Data;
 
 // ReSharper disable IdentifierTypo
 // ReSharper disable AssignNullToNotNullAttribute
@@ -21,7 +21,7 @@ namespace RDA {
     internal static void ExtractText() {
       foreach (Languages language in Enum.GetValues(typeof(Languages))) {
         var element = XDocument.Load(Program.PathRoot + $@"\Original\texts_{language.ToString("G").ToLower()}.xml").Root;
-        var result = new Dictionary<String, String>();
+        var result = new Dictionary<string, string>();
         // assets
         var values = element.XPathSelectElements("//Texts/Text");
         foreach (var value in values) {
@@ -33,7 +33,7 @@ namespace RDA {
           }
         }
         // finish
-        using (var xmlWriter = XmlWriter.Create($@"{Program.PathRoot}\Modified\Texts_{language.ToString("G")}.xml", new XmlWriterSettings() { Indent = true })) {
+        using (var xmlWriter = XmlWriter.Create($@"{Program.PathRoot}\Modified\Texts_{language:G}.xml", new XmlWriterSettings { Indent = true })) {
           xmlWriter.WriteStartElement("Texts");
           foreach (var item in result) {
             xmlWriter.WriteStartElement("Text");
@@ -45,11 +45,11 @@ namespace RDA {
       }
     }
 
-    internal static void ExtractTemplateNames(String path) {
+    internal static void ExtractTemplateNames(string path) {
       var element = XDocument.Load(path).Root;
       var result = element.XPathSelectElements("//Asset/Template").Select(s => s.Value).Distinct().OrderBy(o => o);
       // finish
-      using (var xmlWriter = XmlWriter.Create($@"{Program.PathRoot}\Modified\TemplateNames.xml", new XmlWriterSettings() { Indent = true })) {
+      using (var xmlWriter = XmlWriter.Create($@"{Program.PathRoot}\Modified\TemplateNames.xml", new XmlWriterSettings { Indent = true })) {
         xmlWriter.WriteStartElement("Templates");
         foreach (var item in result) {
           xmlWriter.WriteStartElement("Template");
@@ -70,7 +70,7 @@ namespace RDA {
         element.Value = name;
       }
       else {
-        element.Value = String.Empty;
+        element.Value = string.Empty;
       }
     }
 

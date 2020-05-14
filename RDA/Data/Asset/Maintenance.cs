@@ -27,7 +27,7 @@ namespace RDA.Data {
     public XElement ToXml() {
       var result = new XElement("M");
       if (MaintenanceCosts.Count > 0) {
-        result.Add(new XElement("MC", this.MaintenanceCosts.Select(s => s.ToXml())));
+        result.Add(new XElement("MC", MaintenanceCosts.Select(s => s.ToXml())));
       }
       return result;
     }

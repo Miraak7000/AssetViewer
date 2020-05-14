@@ -11,9 +11,11 @@ namespace AssetViewer.Data {
   [XmlRoot("EE", Namespace = "", IsNullable = false)]
   public class ExpeditionEvent {
 
-    #region Properties
+    #region Public Properties
+
     [XmlElement("N")]
     public Description Name { get; set; }
+
     [XmlArray("PL")]
     [XmlArrayItem("P", IsNullable = false)]
     public List<EventPath> Paths { get; set; }
@@ -21,6 +23,6 @@ namespace AssetViewer.Data {
     [XmlAttribute]
     public string ID { get; set; }
 
-    #endregion Properties
+    #endregion Public Properties
   }
 }

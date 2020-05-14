@@ -17,8 +17,8 @@ namespace RDA.Data {
     #region Public Constructors
 
     public OfferingItems(XElement asset) {
-      this.Progression = (Progression)Enum.Parse(typeof(Progression), asset.Name.LocalName);
-      this.ProgressionDescription = TempSource.GetDescriptionFromProgression(asset.Name.LocalName);
+      Progression = (Progression)Enum.Parse(typeof(Progression), asset.Name.LocalName);
+      ProgressionDescription = TempSource.GetDescriptionFromProgression(asset.Name.LocalName);
       var offeringItems = asset.XPathSelectElement("OfferingItems")?.Value ?? asset.XPathSelectElement("Pool")?.Value;
       if (offeringItems != null) {
         ItemPool = offeringItems;
@@ -31,8 +31,8 @@ namespace RDA.Data {
 
     public XElement ToXml() {
       var result = new XElement("OI");
-      result.Add(new XAttribute("P", this.Progression));    
-      result.Add(this.ProgressionDescription.ToXml("PD"));
+      result.Add(new XAttribute("P", Progression));
+      result.Add(ProgressionDescription.ToXml("PD"));
       if (ItemPool != null) {
         result.Add(new XAttribute("I", ItemPool));
       }

@@ -19,7 +19,7 @@ namespace RDA.Data {
     }
 
     public SourceWithDetails(XElement root, HashSet<AssetWithWeight> details) : this() {
-      Details = new HashSet<AssetWithWeight>(details.Select(d=> d.Copy()));
+      Details = new HashSet<AssetWithWeight>(details.Select(d => d.Copy()));
       Source = root;
     }
 

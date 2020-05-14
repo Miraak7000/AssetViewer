@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -11,38 +9,13 @@ namespace AssetViewer {
 
   public static class TreeViewMultipleSelection {
 
-    #region Public Fields
-
-    public static readonly DependencyProperty IsMultipleSelectionProperty =
-       DependencyProperty.RegisterAttached(
-           "IsMultipleSelection",
-           typeof(Boolean),
-           typeof(TreeViewMultipleSelection),
-           new PropertyMetadata(false, OnMultipleSelectionPropertyChanged));
-
-    public static readonly DependencyProperty IsItemSelectedProperty =
-        DependencyProperty.RegisterAttached(
-            "IsItemSelected",
-            typeof(Boolean),
-            typeof(TreeViewMultipleSelection),
-            new PropertyMetadata(false, OnIsItemSelectedPropertyChanged));
-
-    public static readonly DependencyProperty SelectedItemsProperty =
-       DependencyProperty.RegisterAttached(
-           "SelectedItems",
-           typeof(IList),
-           typeof(TreeViewMultipleSelection),
-           new PropertyMetadata());
-
-    #endregion Public Fields
-
     #region Public Methods
 
     public static bool GetIsMultipleSelection(TreeView element) {
       return (bool)element.GetValue(IsMultipleSelectionProperty);
     }
 
-    public static void SetIsMultipleSelection(TreeView element, Boolean value) {
+    public static void SetIsMultipleSelection(TreeView element, bool value) {
       element.SetValue(IsMultipleSelectionProperty, value);
     }
 
@@ -50,7 +23,7 @@ namespace AssetViewer {
       return (bool)element.GetValue(IsItemSelectedProperty);
     }
 
-    public static void SetIsItemSelected(TreeViewItem element, Boolean value) {
+    public static void SetIsItemSelected(TreeViewItem element, bool value) {
       element.SetValue(IsItemSelectedProperty, value);
     }
 
@@ -64,43 +37,52 @@ namespace AssetViewer {
 
     #endregion Public Methods
 
-    #region Private Fields
+    #region Public Fields
 
-    private static readonly DependencyProperty StartItemProperty =
+    public static readonly DependencyProperty IsMultipleSelectionProperty =
+                               DependencyProperty.RegisterAttached(
+           "IsMultipleSelection",
+           typeof(bool),
+           typeof(TreeViewMultipleSelection),
+           new PropertyMetadata(false, OnMultipleSelectionPropertyChanged));
+
+    public static readonly DependencyProperty IsItemSelectedProperty =
+        DependencyProperty.RegisterAttached(
+            "IsItemSelected",
+            typeof(bool),
+            typeof(TreeViewMultipleSelection),
+            new PropertyMetadata(false, OnIsItemSelectedPropertyChanged));
+
+    public static readonly DependencyProperty SelectedItemsProperty =
        DependencyProperty.RegisterAttached(
-           "StartItem",
-           typeof(TreeViewItem),
+           "SelectedItems",
+           typeof(IList),
            typeof(TreeViewMultipleSelection),
            new PropertyMetadata());
 
-    #endregion Private Fields
+    #endregion Public Fields
 
     #region Private Methods
 
     private static void OnMultipleSelectionPropertyChanged(DependencyObject d,
                                                              DependencyPropertyChangedEventArgs e) {
-      TreeView treeView = d as TreeView;
-
-      if (treeView != null) {
-        if (e.NewValue is bool) {
-          if ((bool)e.NewValue) {
-            treeView.AddHandler(TreeViewItem.MouseLeftButtonDownEvent,
-              new MouseButtonEventHandler(OnTreeViewItemClicked), true);
-          }
-          else {
-            treeView.RemoveHandler(TreeViewItem.MouseLeftButtonDownEvent,
-                 new MouseButtonEventHandler(OnTreeViewItemClicked));
-          }
+      if (d is TreeView treeView && e.NewValue is bool) {
+        if ((bool)e.NewValue) {
+          treeView.AddHandler(TreeViewItem.MouseLeftButtonDownEvent,
+            new MouseButtonEventHandler(OnTreeViewItemClicked), true);
+        }
+        else {
+          treeView.RemoveHandler(TreeViewItem.MouseLeftButtonDownEvent,
+               new MouseButtonEventHandler(OnTreeViewItemClicked));
         }
       }
     }
 
     private static void OnTreeViewItemClicked(object sender, MouseButtonEventArgs e) {
-      TreeViewItem treeViewItem = FindTreeViewItem(
+      var treeViewItem = FindTreeViewItem(
                                       e.OriginalSource as DependencyObject);
-      TreeView treeView = sender as TreeView;
 
-      if (treeViewItem != null && treeView != null) {
+      if (treeViewItem != null && sender is TreeView treeView) {
         if (Keyboard.Modifiers == ModifierKeys.Control) {
           SelectMultipleItemsRandomly(treeView, treeViewItem);
         }
@@ -118,8 +100,7 @@ namespace AssetViewer {
         return null;
       }
 
-      TreeViewItem treeViewItem = dependencyObject as TreeViewItem;
-      if (treeViewItem != null) {
+      if (dependencyObject is TreeViewItem treeViewItem) {
         return treeViewItem;
       }
 
@@ -137,20 +118,18 @@ namespace AssetViewer {
     private static void DeSelectAllItems(TreeView treeView,
                                                 TreeViewItem treeViewItem) {
       if (treeView != null) {
-        for (int i = 0; i < treeView.Items.Count; i++) {
-          TreeViewItem item = treeView.ItemContainerGenerator.
-                                     ContainerFromIndex(i) as TreeViewItem;
-          if (item != null) {
+        for (var i = 0; i < treeView.Items.Count; i++) {
+          if (treeView.ItemContainerGenerator.
+                                     ContainerFromIndex(i) is TreeViewItem item) {
             SetIsItemSelected(item, false);
             DeSelectAllItems(null, item);
           }
         }
       }
       else {
-        for (int i = 0; i < treeViewItem.Items.Count; i++) {
-          TreeViewItem item = treeViewItem.ItemContainerGenerator.
-                                     ContainerFromIndex(i) as TreeViewItem;
-          if (item != null) {
+        for (var i = 0; i < treeViewItem.Items.Count; i++) {
+          if (treeViewItem.ItemContainerGenerator.
+                                     ContainerFromIndex(i) is TreeViewItem item) {
             SetIsItemSelected(item, false);
             DeSelectAllItems(null, item);
           }
@@ -160,8 +139,8 @@ namespace AssetViewer {
 
     private static void OnIsItemSelectedPropertyChanged(DependencyObject d,
                                            DependencyPropertyChangedEventArgs e) {
-      TreeViewItem treeViewItem = d as TreeViewItem;
-      TreeView treeView = FindTreeView(treeViewItem);
+      var treeViewItem = d as TreeViewItem;
+      var treeView = FindTreeView(treeViewItem);
       if (treeViewItem != null && treeView != null) {
         var selectedItems = GetSelectedItems(treeView);
         if (selectedItems != null) {
@@ -180,8 +159,7 @@ namespace AssetViewer {
         return null;
       }
 
-      TreeView treeView = dependencyObject as TreeView;
-      if (treeView != null) {
+      if (dependencyObject is TreeView treeView) {
         return treeView;
       }
 
@@ -213,7 +191,7 @@ namespace AssetViewer {
 
     private static void SelectMultipleItemsContinuously(TreeView treeView,
                                                     TreeViewItem treeViewItem) {
-      TreeViewItem startItem = GetStartItem(treeView);
+      var startItem = GetStartItem(treeView);
       if (startItem != null) {
         if (startItem == treeViewItem) {
           SelectSingleItem(treeView, treeViewItem);
@@ -223,7 +201,7 @@ namespace AssetViewer {
         ICollection<TreeViewItem> allItems = new List<TreeViewItem>();
         GetAllItems(treeView, null, allItems);
         DeSelectAllItems(treeView, null);
-        bool isBetween = false;
+        var isBetween = false;
         foreach (var item in allItems) {
           if (item == treeViewItem || item == startItem) {
             // toggle to true if first element is found and back to false if last element is found
@@ -244,20 +222,18 @@ namespace AssetViewer {
     private static void GetAllItems(TreeView treeView, TreeViewItem treeViewItem,
                                    ICollection<TreeViewItem> allItems) {
       if (treeView != null) {
-        for (int i = 0; i < treeView.Items.Count; i++) {
-          TreeViewItem item = treeView.ItemContainerGenerator.
-                                     ContainerFromIndex(i) as TreeViewItem;
-          if (item != null) {
+        for (var i = 0; i < treeView.Items.Count; i++) {
+          if (treeView.ItemContainerGenerator.
+                                     ContainerFromIndex(i) is TreeViewItem item) {
             allItems.Add(item);
             GetAllItems(null, item, allItems);
           }
         }
       }
       else {
-        for (int i = 0; i < treeViewItem.Items.Count; i++) {
-          TreeViewItem item = treeViewItem.ItemContainerGenerator.
-                                     ContainerFromIndex(i) as TreeViewItem;
-          if (item != null) {
+        for (var i = 0; i < treeViewItem.Items.Count; i++) {
+          if (treeViewItem.ItemContainerGenerator.
+                                     ContainerFromIndex(i) is TreeViewItem item) {
             allItems.Add(item);
             GetAllItems(null, item, allItems);
           }
@@ -266,5 +242,16 @@ namespace AssetViewer {
     }
 
     #endregion Private Methods
+
+    #region Private Fields
+
+    private static readonly DependencyProperty StartItemProperty =
+                                                       DependencyProperty.RegisterAttached(
+           "StartItem",
+           typeof(TreeViewItem),
+           typeof(TreeViewMultipleSelection),
+           new PropertyMetadata());
+
+    #endregion Private Fields
   }
 }

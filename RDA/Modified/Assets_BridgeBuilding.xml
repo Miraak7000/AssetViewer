@@ -1,22 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BridgeBuilding>
-  <Asset ID="101328" RV="Release" RT="Common">
-    <N>Dirt Bridge</N>
-    <T ID="101328" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <BC>
-      <U V="1000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="20">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-  </Asset>
   <Asset ID="101384" RV="Release" RT="Common">
     <N>Rails Bridge</N>
     <T ID="101385" />
@@ -28,6 +11,23 @@
       </U>
       <U V="40">
         <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+  </Asset>
+  <Asset ID="101328" RV="Release" RT="Common">
+    <N>Dirt Bridge</N>
+    <T ID="101328" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <BC>
+      <U V="1000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="20">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
     </BC>
     <GU />

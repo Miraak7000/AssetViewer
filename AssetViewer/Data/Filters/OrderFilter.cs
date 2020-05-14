@@ -1,14 +1,14 @@
-﻿using AssetViewer.Comparer;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using AssetViewer.Comparer;
 
 namespace AssetViewer.Data.Filters {
 
   public class OrderFilter : BaseFilter<Description> {
 
-    #region Properties
+    #region Public Properties
 
     public override Func<IEnumerable<TemplateAsset>, IEnumerable<TemplateAsset>> FilterFunc => result => {
       if (SelectedValue != null && SelectedValue.ID != 0) {
@@ -22,8 +22,8 @@ namespace AssetViewer.Data.Filters {
           result = result.OrderBy(w => w.Rarity.ID, RarityComparer.Default);
         }
         else if (SelectedValue.ID == 12725) {
-          result = result.OrderBy(w => string.IsNullOrWhiteSpace(w.TradePrice) ? 0 : Int32.Parse(w.TradePrice ?? "0", NumberStyles.Any));
-        }    
+          result = result.OrderBy(w => string.IsNullOrWhiteSpace(w.TradePrice) ? 0 : int.Parse(w.TradePrice ?? "0", NumberStyles.Any));
+        }
         else if (SelectedValue.ID == 22440) {
           result = result.OrderByDescending(w => w.Count);
         }
@@ -35,9 +35,7 @@ namespace AssetViewer.Data.Filters {
     public override int DescriptionID => -1103;
 
     public override List<Description> CurrentValues {
-      get {
-        return currentValues;
-      }
+      get => currentValues;
       set {
         if (currentValues != value) {
           currentValues = value;
@@ -47,9 +45,7 @@ namespace AssetViewer.Data.Filters {
     }
 
     public override Description SelectedValue {
-      get {
-        return _selectedValue;
-      }
+      get => _selectedValue;
       set {
         if (!(_selectedValue?.Equals(value) ?? false)) {
           _selectedValue = value;
@@ -58,9 +54,9 @@ namespace AssetViewer.Data.Filters {
       }
     }
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Constructors
+    #region Public Constructors
 
     public OrderFilter(ItemsHolder itemsHolder) : base(itemsHolder) {
       if (AssetProvider.CountMode) {
@@ -70,9 +66,9 @@ namespace AssetViewer.Data.Filters {
       SelectedValue = values.FirstOrDefault();
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
 
-    #region Methods
+    #region Public Methods
 
     public override void ResetFilter() {
       CurrentValues = null;
@@ -81,9 +77,9 @@ namespace AssetViewer.Data.Filters {
       base.ResetFilter();
     }
 
-    #endregion Methods
+    #endregion Public Methods
 
-    #region Fields
+    #region Private Fields
 
     private readonly List<Description> values = new List<Description>{
       new Description(-1200),
@@ -94,6 +90,6 @@ namespace AssetViewer.Data.Filters {
     private Description _selectedValue;
     private List<Description> currentValues;
 
-    #endregion Fields
+    #endregion Private Fields
   }
 }

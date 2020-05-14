@@ -1,10 +1,9 @@
-﻿using RDA.Data;
-using System;
-using System.Collections.Concurrent;
+﻿using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
 using System.Xml.XPath;
+using RDA.Data;
 
 namespace RDA {
 
@@ -18,7 +17,7 @@ namespace RDA {
 
     #region Public Methods
 
-    public static XElement FindParentElement(this String id, string[] ParentTypes, List<String> previousIDs = null) {
+    public static XElement FindParentElement(this string id, string[] ParentTypes, List<string> previousIDs = null) {
       if (Events.ContainsKey(id)) {
         return Events[id];
       }
@@ -57,8 +56,9 @@ namespace RDA {
 
     public static XElement GetProxyElement(this XElement element, string proxyName) {
       var xRoot = new XElement("Proxy");
-      var xTemplate = new XElement("Template");
-      xTemplate.Value = proxyName;
+      var xTemplate = new XElement("Template") {
+        Value = proxyName
+      };
       xRoot.Add(xTemplate);
       xRoot.Add(element);
       xRoot.Add(new XElement("Values", element.XPathSelectElement("Values/Standard")));
@@ -104,7 +104,7 @@ namespace RDA {
       var afterdigitNumber = false;
       var pointIndex = chars.IndexOf(',');
       if (pointIndex >= 0) {
-        for (int i = pointIndex + 1; i < chars.Length; i++) {
+        for (var i = pointIndex + 1; i < chars.Length; i++) {
           if (chars[i] != '0') {
             if (afterdigitNumber) {
               return chars.Substring(0, i + 1);

@@ -1,27 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
 using System.Xml.XPath;
 
 namespace RDA.Data {
-  public class ThirdParty {
-    #region Properties
 
-    public String ID { get; set; }
-    public String Name { get; set; }
+  public class ThirdParty {
+
+    #region Public Properties
+
+    public string ID { get; set; }
+    public string Name { get; set; }
     public Description Text { get; set; }
     public List<OfferingItems> OfferingItems { get; set; }
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Constructors
+    #region Public Constructors
 
     public ThirdParty(XElement asset) {
-      this.ID = asset.XPathSelectElement("Values/Standard/GUID").Value;
-      this.Name = asset.XPathSelectElement("Values/Standard/Name").Value;
-      this.Text = new Description(this.ID);
-      this.OfferingItems = new List<OfferingItems>();
+      ID = asset.XPathSelectElement("Values/Standard/GUID").Value;
+      Name = asset.XPathSelectElement("Values/Standard/Name").Value;
+      Text = new Description(ID);
+      OfferingItems = new List<OfferingItems>();
       var progressions = asset.XPathSelectElements("Values/Trader/Progression/*");
       //Hugo
       if (ID == "220") {
@@ -29,23 +30,23 @@ namespace RDA.Data {
       }
       foreach (var progression in progressions) {
         var item = new OfferingItems(progression);
-        this.OfferingItems.Add(item);
+        OfferingItems.Add(item);
       }
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
 
-    #region Methods
+    #region Public Methods
 
     public XElement ToXml() {
       var result = new XElement("TP");
-      result.Add(new XAttribute("ID", this.ID));
-      result.Add(new XAttribute("N", this.Name));
-      result.Add(this.Text.ToXml("T"));
-      result.Add(new XElement("OI", this.OfferingItems.Select(s => s.ToXml())));
+      result.Add(new XAttribute("ID", ID));
+      result.Add(new XAttribute("N", Name));
+      result.Add(Text.ToXml("T"));
+      result.Add(new XElement("OI", OfferingItems.Select(s => s.ToXml())));
       return result;
     }
 
-    #endregion Methods
+    #endregion Public Methods
   }
 }

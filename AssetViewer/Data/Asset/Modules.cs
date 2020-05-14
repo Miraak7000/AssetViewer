@@ -18,7 +18,7 @@ namespace AssetViewer.Data {
     public Modules(XElement element) {
       Limit = element.Attribute("L")?.Value;
       if (element.Element("PM")?.HasElements ?? false) {
-        this.PossibleModules = element.Element("PM").Elements().Select(s => new Description(s)).ToList();
+        PossibleModules = element.Element("PM").Elements().Select(s => new Description(s)).ToList();
       }
     }
 

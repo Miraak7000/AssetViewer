@@ -4,7 +4,7 @@ namespace AssetViewer.Data {
 
   public class DummyDescription : Description, IEquatable<DummyDescription> {
 
-    #region Properties
+    #region Public Properties
 
     public override string CurrentLang => Value;
 
@@ -12,17 +12,17 @@ namespace AssetViewer.Data {
 
     public override int ID => GetHashCode();
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Constructors
+    #region Public Constructors
 
     public DummyDescription(string value) {
       Value = value;
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
 
-    #region Methods
+    #region Public Methods
 
     public bool Equals(DummyDescription other) {
       return Value.Equals(other?.Value);
@@ -32,6 +32,6 @@ namespace AssetViewer.Data {
       return Value.GetHashCode();
     }
 
-    #endregion Methods
+    #endregion Public Methods
   }
 }

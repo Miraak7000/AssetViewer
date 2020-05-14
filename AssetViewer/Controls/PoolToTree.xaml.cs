@@ -1,35 +1,35 @@
-﻿using AssetViewer.Data;
-using AssetViewer.Data;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
+using AssetViewer.Data;
 
 namespace AssetViewer.Controls {
 
   public partial class PoolToTree : UserControl {
 
-    #region Properties
+    #region Public Properties
 
     public bool IsExpanded { get; private set; }
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Constructors
+    #region Public Constructors
 
     public PoolToTree() {
       InitializeComponent();
       FillTreeView(190774);
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
 
-    #region Methods
+    #region Private Methods
 
     private void FillTreeView(int v) {
       if (AssetProvider.Pools.ContainsKey(v)) {
         var pool = AssetProvider.Pools[v];
-        var tvi = new TreeViewItem();
-        tvi.FontSize = 22;
-        tvi.Header = pool.ID + " -  " + pool.Name;
+        var tvi = new TreeViewItem {
+          FontSize = 22,
+          Header = pool.ID + " -  " + pool.Name
+        };
         trvMenu.Items.Add(tvi);
         AddMore(pool, tvi);
       }
@@ -38,9 +38,10 @@ namespace AssetViewer.Controls {
     private void AddMore(Pool pool, TreeViewItem tvi) {
       foreach (var item in pool.Items) {
         if (item.Weight > 0) {
-          var tvi2 = new TreeViewItem();
-          tvi2.FontSize = 22;
-          tvi2.Header = $"{item.Weight} - {item.ID} - {(item.Item is Pool p ? p.Name : (item.Item is TemplateAsset a ? a.Text.CurrentLang : null))}";
+          var tvi2 = new TreeViewItem {
+            FontSize = 22,
+            Header = $"{item.Weight} - {item.ID} - {(item.Item is Pool p ? p.Name : (item.Item is TemplateAsset a ? a.Text.CurrentLang : null))}"
+          };
           tvi.Items.Add(tvi2);
           if (item.Item is Pool po) {
             AddMore(po, tvi2);
@@ -51,8 +52,8 @@ namespace AssetViewer.Controls {
 
     private void Button_Click(object sender, RoutedEventArgs e) {
       if (!IsExpanded) {
-        foreach (var item in this.trvMenu.Items) {
-          var treeItem = this.trvMenu.ItemContainerGenerator.ContainerFromItem(item) as TreeViewItem;
+        foreach (var item in trvMenu.Items) {
+          var treeItem = trvMenu.ItemContainerGenerator.ContainerFromItem(item) as TreeViewItem;
           if (treeItem != null) {
             ExpandAll(treeItem, true);
           }
@@ -62,8 +63,8 @@ namespace AssetViewer.Controls {
         }
       }
       else {
-        foreach (var item in this.trvMenu.Items) {
-          var treeItem = this.trvMenu.ItemContainerGenerator.ContainerFromItem(item) as TreeViewItem;
+        foreach (var item in trvMenu.Items) {
+          var treeItem = trvMenu.ItemContainerGenerator.ContainerFromItem(item) as TreeViewItem;
           if (treeItem != null) {
             ExpandAll(treeItem, false);
           }
@@ -86,6 +87,6 @@ namespace AssetViewer.Controls {
       }
     }
 
-    #endregion Methods
+    #endregion Private Methods
   }
 }

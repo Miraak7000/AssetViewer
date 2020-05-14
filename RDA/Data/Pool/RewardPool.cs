@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
 using System.Xml.XPath;
@@ -7,22 +6,24 @@ using System.Xml.XPath;
 // ReSharper disable PossibleMultipleEnumeration
 // ReSharper disable PossibleNullReferenceException
 namespace RDA.Data {
+
   public class RewardPool {
-    #region Properties
 
-    public String ID { get; set; }
-    public Int32 Weight { get; set; }
-    public List<String> Items { get; set; }
+    #region Public Properties
 
-    #endregion Properties
+    public string ID { get; set; }
+    public int Weight { get; set; }
+    public List<string> Items { get; set; }
 
-    #region Constructors
+    #endregion Public Properties
 
-    public RewardPool(String id, Int32 weight) {
-      this.ID = id;
-      this.Weight = weight;
-      this.Items = new List<String>();
-      this.DiscoverItems(id);
+    #region Public Constructors
+
+    public RewardPool(string id, int weight) {
+      ID = id;
+      Weight = weight;
+      Items = new List<string>();
+      DiscoverItems(id);
       //var rewardItem = Assets.Original.XPathSelectElement($"//Asset[Values/Standard/GUID={id}]");
       //switch (rewardItem.Element("Template").Value) {
       //  case "QuestItem":
@@ -38,28 +39,32 @@ namespace RDA.Data {
       //}
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
 
-    #region Methods
+    #region Public Methods
 
-    public override String ToString() {
-      return $"{this.ID} - {this.Weight}";
+    public override string ToString() {
+      return $"{ID} - {Weight}";
     }
 
     public XElement ToXml() {
       var result = new XElement("RP");
-      result.Add(new XAttribute("ID", this.ID));
-      result.Add(new XAttribute("W", this.Weight));
-      result.Add(new XElement("I", this.Items.Select(s => new XElement("I", s))));
+      result.Add(new XAttribute("ID", ID));
+      result.Add(new XAttribute("W", Weight));
+      result.Add(new XElement("I", Items.Select(s => new XElement("I", s))));
       return result;
     }
 
-    private void DiscoverItems(String value) {
+    #endregion Public Methods
+
+    #region Private Methods
+
+    private void DiscoverItems(string value) {
       var asset = Assets.Original.XPathSelectElement($"//Asset[Values/Standard/GUID={value}]");
       switch (asset.Element("Template").Value) {
         case "RewardPool":
           foreach (var item in asset.XPathSelectElements("Values/RewardPool/ItemsPool/Item/ItemLink")) {
-            this.DiscoverItems(item.Value);
+            DiscoverItems(item.Value);
           }
           break;
 
@@ -77,8 +82,8 @@ namespace RDA.Data {
         case "ShipSpecialist":
         case "Product":
         case "VehicleItem":
-          if (!this.Items.Contains(value))
-            this.Items.Add(value);
+          if (!Items.Contains(value))
+            Items.Add(value);
           break;
 
         default:
@@ -87,6 +92,6 @@ namespace RDA.Data {
       }
     }
 
-    #endregion Methods
+    #endregion Private Methods
   }
 }

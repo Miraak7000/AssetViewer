@@ -8,7 +8,7 @@ namespace AssetViewer.Data.Filters {
 
   public abstract class ItemsHolder : INotifyPropertyChanged {
 
-    #region Properties
+    #region Public Properties
 
     public IFilter OrderFilter { get; }
     public List<TemplateAsset> Items { get; set; }
@@ -21,21 +21,21 @@ namespace AssetViewer.Data.Filters {
 
     public List<IFilter> AllFilters { get; set; } = new List<IFilter>();
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Events
+    #region Public Events
 
     public event PropertyChangedEventHandler PropertyChanged;
 
-    #endregion Events
+    #endregion Public Events
 
-    #region Methods
+    #region Public Methods
 
     public void UpdateUI(IFilter filter = null) {
       if (!IsRefreshingUi) {
         IsRefreshingUi = true;
         SetItems();
-        this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Items)));
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Items)));
         foreach (var item in StandardFilters.Values.Concat(CustomFilters.Select(cf => cf.SelectedFilter)).Except(new[] { filter })) {
           item.UpdateUI();
         }
@@ -56,12 +56,7 @@ namespace AssetViewer.Data.Filters {
       IEnumerable<TemplateAsset> result = null;
       foreach (var f in StandardFilters.Values.Concat(CustomFilters.Where(cf => cf.SelectedFilter != null).Select(cf => cf.SelectedFilter)).Except(new[] { filter })) {
         if (f.SavedItems != null) {
-          if (result == null) {
-            result = f.SavedItems;
-          }
-          else {
-            result = result.Intersect(f.SavedItems);
-          }
+          result = result == null ? f.SavedItems : result.Intersect(f.SavedItems);
         }
       }
       if (result == null) {
@@ -88,9 +83,9 @@ namespace AssetViewer.Data.Filters {
 
     public abstract FilterHolder CreateFilterHolder();
 
-    #endregion Methods
+    #endregion Public Methods
 
-    #region Constructors
+    #region Protected Constructors
 
     protected ItemsHolder(List<TemplateAsset> Base) {
       this.Base = Base;
@@ -98,6 +93,6 @@ namespace AssetViewer.Data.Filters {
       CustomFilters.Add(CreateFilterHolder());
     }
 
-    #endregion Constructors
+    #endregion Protected Constructors
   }
 }
