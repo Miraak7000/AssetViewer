@@ -50,7 +50,8 @@
         x:Name="ComboBoxLanguage"
         Grid.Column="4"
         ItemsSource="{Binding Source={x:Static av:AssetProvider.PossibleLanguages}}"
-        SelectedIndex="0" SelectedValue="{Binding Path=(av:AssetProvider.Language), Mode=OneWay}" />
+        SelectedIndex="0"
+        SelectedValue="{Binding Path=(av:AssetProvider.Language), Mode=OneWay}" />
     </Grid>
     <Grid Grid.Row="2">
       <ContentPresenter x:Name="Presenter" />

@@ -1,7 +1,7 @@
 ﻿namespace AssetViewer.Data {
 
-  using AssetViewer.Converter;
   using System.ComponentModel;
+  using AssetViewer.Converter;
 
   [TypeConverter(typeof(EnumDescriptionTypeConverter))]
   public enum Languages {

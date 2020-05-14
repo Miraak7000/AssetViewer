@@ -8,7 +8,7 @@ namespace AssetViewer.Data {
 
     #region Public Properties
 
-    public String Filename { get; set; }
+    public string Filename { get; set; }
 
     #endregion Public Properties
 
@@ -18,14 +18,14 @@ namespace AssetViewer.Data {
     }
 
     public Icon(XElement item) {
-      if (!String.IsNullOrEmpty(item.Attribute("F")?.Value)) {
-        this.Filename = $"/AssetViewer;component/Resources/{item.Attribute("F").Value}";
+      if (!string.IsNullOrEmpty(item.Attribute("F")?.Value)) {
+        Filename = $"/AssetViewer;component/Resources/{item.Attribute("F").Value}";
       }
     }
 
     public Icon(string filename) {
-      if (!String.IsNullOrEmpty(filename)) {
-        this.Filename = $"/AssetViewer;component/Resources/{filename}";
+      if (!string.IsNullOrEmpty(filename)) {
+        Filename = $"/AssetViewer;component/Resources/{filename}";
       }
     }
 

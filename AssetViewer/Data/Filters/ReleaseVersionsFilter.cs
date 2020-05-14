@@ -6,13 +6,13 @@ namespace AssetViewer.Data.Filters {
 
   public class ReleaseVersionsFilter : BaseFilter<string> {
 
-    #region Properties
+    #region Public Properties
 
     public override Func<IEnumerable<TemplateAsset>, IEnumerable<TemplateAsset>> FilterFunc => result => {
-      if (!String.IsNullOrEmpty(SelectedComparisonValue)) {
+      if (!string.IsNullOrEmpty(SelectedComparisonValue)) {
         return result.Where(w => CompareToReleaseVersion(w.ReleaseVersion));
       }
-      if (!String.IsNullOrEmpty(SelectedValue)) {
+      if (!string.IsNullOrEmpty(SelectedValue)) {
         if (Comparison == ValueComparisons.UnEqual) {
           return result.Where(w => w.ReleaseVersion != SelectedValue);
         }
@@ -26,18 +26,18 @@ namespace AssetViewer.Data.Filters {
 
     public override int DescriptionID => -1007;
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Constructors
+    #region Public Constructors
 
     public ReleaseVersionsFilter(ItemsHolder itemsHolder) : base(itemsHolder) {
       FilterType = FilterType.None;
       ComparisonType = FilterType.Selection;
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
 
-    #region Methods
+    #region Public Methods
 
     public override void SetCurrenValues() {
       ComparisonValues = ItemsHolder
@@ -49,6 +49,10 @@ namespace AssetViewer.Data.Filters {
          .OrderBy(o => o)
          .ToList();
     }
+
+    #endregion Public Methods
+
+    #region Private Methods
 
     private bool CompareToReleaseVersion(string l) {
       switch (Comparison) {
@@ -67,6 +71,6 @@ namespace AssetViewer.Data.Filters {
       return false;
     }
 
-    #endregion Methods
+    #endregion Private Methods
   }
 }

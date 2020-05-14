@@ -1,20 +1,13 @@
-﻿using AssetViewer.Data;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using AssetViewer.Data;
 
 namespace AssetViewer {
 
   public class TextBlockExtensions : DependencyObject {
 
-    #region Fields
-
-    public static readonly DependencyProperty DescFontStyle =
-        DependencyProperty.RegisterAttached(nameof(DescFontStyle), typeof(DescriptionFontStyle), typeof(TextBlockExtensions), new FrameworkPropertyMetadata(default(DescriptionFontStyle), OnFontStyleChanged));
-
-    #endregion Fields
-
-    #region Methods
+    #region Public Methods
 
     public static DescriptionFontStyle GetDescFontStyle(DependencyObject obj) {
       return (DescriptionFontStyle)obj.GetValue(DescFontStyle);
@@ -23,6 +16,17 @@ namespace AssetViewer {
     public static void SetDescFontStyle(DependencyObject obj, int value) {
       obj.SetValue(DescFontStyle, value);
     }
+
+    #endregion Public Methods
+
+    #region Public Fields
+
+    public static readonly DependencyProperty DescFontStyle =
+                DependencyProperty.RegisterAttached(nameof(DescFontStyle), typeof(DescriptionFontStyle), typeof(TextBlockExtensions), new FrameworkPropertyMetadata(default(DescriptionFontStyle), OnFontStyleChanged));
+
+    #endregion Public Fields
+
+    #region Private Methods
 
     private static void OnFontStyleChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {
       if (d is TextBlock textBlock && e.NewValue is DescriptionFontStyle style) {
@@ -52,6 +56,6 @@ namespace AssetViewer {
       }
     }
 
-    #endregion Methods
+    #endregion Private Methods
   }
 }

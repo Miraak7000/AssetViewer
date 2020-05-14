@@ -1,5 +1,4 @@
-﻿using System;
-using System.Xml.Linq;
+﻿using System.Xml.Linq;
 
 namespace RDA.Data {
 
@@ -8,15 +7,15 @@ namespace RDA.Data {
     #region Public Properties
 
     public Description Text { get; set; }
-    public String Value { get; set; }
+    public string Value { get; set; }
 
     #endregion Public Properties
 
     #region Public Constructors
 
-    public ReplacingWorkforce(String id) {
-      this.Text = new Description("20116").Replace("[AssetData([ItemAssetData([RefGuid]) ReplacingWorkforce]) Text]", new Description(id));
-      this.Value = String.Empty;
+    public ReplacingWorkforce(string id) {
+      Text = new Description("20116").Replace("[AssetData([ItemAssetData([RefGuid]) ReplacingWorkforce]) Text]", new Description(id));
+      Value = string.Empty;
     }
 
     #endregion Public Constructors
@@ -25,8 +24,8 @@ namespace RDA.Data {
 
     public XElement ToXml() {
       var result = new XElement("RW");
-      result.Add(this.Text.ToXml("T"));
-      result.Add(new XAttribute("V", this.Value));
+      result.Add(Text.ToXml("T"));
+      result.Add(new XAttribute("V", Value));
       return result;
     }
 

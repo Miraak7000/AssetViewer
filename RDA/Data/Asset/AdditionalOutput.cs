@@ -1,5 +1,4 @@
-﻿using System;
-using System.Xml.Linq;
+﻿using System.Xml.Linq;
 
 namespace RDA.Data {
 
@@ -9,7 +8,7 @@ namespace RDA.Data {
 
     public Icon Icon { get; set; }
     public Description Text { get; set; }
-    public String Value { get; set; }
+    public string Value { get; set; }
 
     #endregion Public Properties
 
@@ -19,18 +18,18 @@ namespace RDA.Data {
       var id = element.Element("Product").Value;
       var cycle = element.Element("AdditionalOutputCycle")?.Value;
       var amount = element.Element("Amount")?.Value;
-      this.Text = new Description(id);
+      Text = new Description(id);
       if (cycle != null && amount != null) {
-        this.Value = $"{cycle} / {amount}";
+        Value = $"{cycle} / {amount}";
       }
       else if (cycle != null) {
-        this.Value = $"{cycle}";
+        Value = $"{cycle}";
       }
       else if (amount != null) {
-        this.Value = $"{amount}";
+        Value = $"{amount}";
       }
       else {
-        this.Value = String.Empty;
+        Value = string.Empty;
       }
     }
 
@@ -40,8 +39,8 @@ namespace RDA.Data {
 
     public XElement ToXml() {
       var result = new XElement("AO");
-      result.Add(this.Text.ToXml("T"));
-      result.Add(new XAttribute("V", this.Value));
+      result.Add(Text.ToXml("T"));
+      result.Add(new XAttribute("V", Value));
       return result;
     }
 

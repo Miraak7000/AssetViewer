@@ -1,18 +1,19 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Linq;
 
 namespace RDA.Data {
-  public class Details : IEnumerable<XElement> {
-    #region Properties
 
-    public List<String> PreviousIDs { get; set; } = new List<string>();
+  public class Details : IEnumerable<XElement> {
+
+    #region Public Properties
+
+    public List<string> PreviousIDs { get; set; } = new List<string>();
     public HashSet<XElement> Items { get; set; } = new HashSet<XElement>();
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Constructors
+    #region Public Constructors
 
     public Details() {
     }
@@ -36,9 +37,9 @@ namespace RDA.Data {
       }
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
 
-    #region Methods
+    #region Public Methods
 
     public void Add(XElement item) {
       Items.Add(item);
@@ -52,6 +53,6 @@ namespace RDA.Data {
       return ((IEnumerable<XElement>)Items).GetEnumerator();
     }
 
-    #endregion Methods
+    #endregion Public Methods
   }
 }

@@ -6,7 +6,7 @@ namespace AssetViewer.Data.Filters {
 
   public class AvailableFilter : BaseFilter<bool> {
 
-    #region Properties
+    #region Public Properties
 
     public override Func<IEnumerable<TemplateAsset>, IEnumerable<TemplateAsset>> FilterFunc => result => {
       if (SelectedValue) {
@@ -18,22 +18,22 @@ namespace AssetViewer.Data.Filters {
 
     public override int DescriptionID => -1101;
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Constructors
+    #region Public Constructors
 
     public AvailableFilter(ItemsHolder itemsHolder) : base(itemsHolder) {
       FilterType = FilterType.Bool;
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
 
-    #region Methods
+    #region Public Methods
 
     public override void ResetFilter() {
       SelectedValue = true;
     }
 
-    #endregion Methods
+    #endregion Public Methods
   }
 }

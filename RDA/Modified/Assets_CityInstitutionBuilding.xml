@@ -26,35 +26,6 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="1010462" RV="Release" RT="Common">
-    <N>institution_01 (Police)</N>
-    <T ID="1010462" I="data/ui/2kimages/main/3dicons/icon_police.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="2500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="8">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="10">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="3788" />
-    <M>
-      <MC>
-        <U V="50 / 50">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
   <Asset ID="1010464" RV="Release" RT="Common">
     <N>institution_03 (Hospital)</N>
     <T ID="1010464" I="data/ui/2kimages/main/3dicons/icon_hospital.png" />
@@ -85,6 +56,35 @@
     <M>
       <MC>
         <U V="100 / 100">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="1010462" RV="Release" RT="Common">
+    <N>institution_01 (Police)</N>
+    <T ID="1010462" I="data/ui/2kimages/main/3dicons/icon_police.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="2500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="8">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="10">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="3788" />
+    <M>
+      <MC>
+        <U V="50 / 50">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
       </MC>
@@ -129,36 +129,30 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="101276" RV="Release" RT="Common">
-    <N>institution_colony01_03 (Hospital)</N>
-    <T ID="1010464" I="data/ui/2kimages/main/3dicons/icon_hospital.png" />
+  <Asset ID="101274" RV="Release" RT="Common">
+    <N>institution_colony01_01 (Police)</N>
+    <T ID="1010462" I="data/ui/2kimages/main/3dicons/icon_police.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000001" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
     <BC>
-      <U V="10000">
+      <U V="2500">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
-      <U V="12">
+      <U V="6">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
-      <U V="20">
+      <U V="0">
         <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="0">
-        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="0">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
       </U>
     </BC>
     <GU />
     <TP />
     <HF />
-    <I ID="3789" />
+    <I ID="3788" />
     <M>
       <MC>
-        <U V="100 / 100">
+        <U V="50 / 50">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
       </MC>
@@ -190,30 +184,36 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="101274" RV="Release" RT="Common">
-    <N>institution_colony01_01 (Police)</N>
-    <T ID="1010462" I="data/ui/2kimages/main/3dicons/icon_police.png" />
+  <Asset ID="101276" RV="Release" RT="Common">
+    <N>institution_colony01_03 (Hospital)</N>
+    <T ID="1010464" I="data/ui/2kimages/main/3dicons/icon_hospital.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000001" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
     <BC>
-      <U V="2500">
+      <U V="10000">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
-      <U V="6">
+      <U V="12">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
-      <U V="0">
+      <U V="20">
         <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="0">
+        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="0">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
       </U>
     </BC>
     <GU />
     <TP />
     <HF />
-    <I ID="3788" />
+    <I ID="3789" />
     <M>
       <MC>
-        <U V="50 / 50">
+        <U V="100 / 100">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
       </MC>

@@ -1,28 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Warehouse>
-  <Asset ID="101323" RV="Release" RT="Common">
-    <N>logistic_colony01_01 (Warehouse I)</N>
-    <T ID="1010371" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+  <Asset ID="420006" RV="Update 07" RT="Common">
+    <N>logistic_04 (Warehouse III)</N>
+    <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <UC>
-      <U V="2500">
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="10000">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
-      <U V="20">
+      <U V="30">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
-      <U V="20">
+      <U V="50">
         <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
       </U>
-    </UC>
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      <U V="40">
+        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
       </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      <U V="50">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
       </U>
     </BC>
     <GU />
@@ -31,12 +29,11 @@
     <I ID="2975" />
     <M>
       <MC>
-        <U V="10 / 20">
+        <U V="100 / 100">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
       </MC>
     </M>
-    <UT ID="-675514616" />
   </Asset>
   <Asset ID="1010371" RV="Release" RT="Common">
     <N>logistic_02 (Warehouse I)</N>
@@ -70,6 +67,44 @@
     <M>
       <MC>
         <U V="20 / 20">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+      </MC>
+    </M>
+    <UT ID="-675514616" />
+  </Asset>
+  <Asset ID="101323" RV="Release" RT="Common">
+    <N>logistic_colony01_01 (Warehouse I)</N>
+    <T ID="1010371" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <UC>
+      <U V="2500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="20">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="20">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </UC>
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="2975" />
+    <M>
+      <MC>
+        <U V="10 / 20">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
       </MC>
@@ -123,27 +158,29 @@
     </M>
     <UT ID="-842431209" />
   </Asset>
-  <Asset ID="420006" RV="Update 07" RT="Common">
-    <N>logistic_04 (Warehouse III)</N>
-    <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+  <Asset ID="112656" RV="Update 06" RT="Common">
+    <N>logistic_arctic_01 (Warehouse I)</N>
+    <T ID="1010371" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="10000">
+    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
+    <UC>
+      <U V="2500">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
-      <U V="30">
+      <U V="20">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
-      <U V="50">
+      <U V="0">
         <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
       </U>
-      <U V="40">
-        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+    </UC>
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
-      <U V="50">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      <U V="5">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
     </BC>
     <GU />
@@ -152,11 +189,12 @@
     <I ID="2975" />
     <M>
       <MC>
-        <U V="100 / 100">
+        <U V="20 / 20">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
       </MC>
     </M>
+    <UT ID="-675514616" />
   </Asset>
   <Asset ID="101324" RV="Release" RT="Common">
     <N>logistic_colony01_02 (Warehouse II)</N>
@@ -221,44 +259,6 @@
         </U>
       </MC>
     </M>
-  </Asset>
-  <Asset ID="112656" RV="Update 06" RT="Common">
-    <N>logistic_arctic_01 (Warehouse I)</N>
-    <T ID="1010371" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
-    <UC>
-      <U V="2500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="20">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="0">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-    </UC>
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="5">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="2975" />
-    <M>
-      <MC>
-        <U V="20 / 20">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-      </MC>
-    </M>
-    <UT ID="-675514616" />
   </Asset>
   <Asset ID="100516" RV="Release" RT="Common">
     <N>logistic_03 (Warehouse II)</N>

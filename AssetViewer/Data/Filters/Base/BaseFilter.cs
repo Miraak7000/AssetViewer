@@ -8,16 +8,14 @@ namespace AssetViewer.Data.Filters {
 
   public abstract class BaseFilter<T> : IFilter<T>, INotifyPropertyChanged {
 
-    #region Properties
+    #region Public Properties
 
     public FilterType FilterType { get; set; } = FilterType.Selection;
     public FilterType ComparisonType { get; set; }
     public abstract int DescriptionID { get; }
 
     public virtual T SelectedValue {
-      get {
-        return _selectedValue;
-      }
+      get => _selectedValue;
       set {
         if (!(_selectedValue?.Equals(value) ?? false) && value != null) {
           _selectedValue = value;
@@ -30,9 +28,7 @@ namespace AssetViewer.Data.Filters {
     }
 
     public T SelectedComparisonValue {
-      get {
-        return _selectedComparisonValue;
-      }
+      get => _selectedComparisonValue;
       set {
         if (!(_selectedComparisonValue?.Equals(value) ?? false) && value != null) {
           _selectedComparisonValue = value;
@@ -43,7 +39,7 @@ namespace AssetViewer.Data.Filters {
     }
 
     public ValueComparisons Comparison {
-      get { return comparison; }
+      get => comparison;
       set {
         if (comparison != value) {
           comparison = value;
@@ -74,18 +70,18 @@ namespace AssetViewer.Data.Filters {
 
     List<object> IFilter.ComparisonValues => ComparisonValues.Cast<object>().ToList();
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Events
+    #region Public Events
 
     public event PropertyChangedEventHandler PropertyChanged;
 
-    #endregion Events
+    #endregion Public Events
 
-    #region Methods
+    #region Public Methods
 
     public void UpdateSavedItems() {
-      SavedItems = FilterFunc(ItemsHolder.Base)?.ToList();
+      SavedItems = FilterFunc?.Invoke(ItemsHolder.Base)?.ToList();
     }
 
     public void RaisePropertyChanged([CallerMemberName]string name = "") {
@@ -137,23 +133,23 @@ namespace AssetViewer.Data.Filters {
     public virtual void SetCurrenValues() {
     }
 
-    #endregion Methods
+    #endregion Public Methods
 
-    #region Constructors
+    #region Protected Constructors
 
     protected BaseFilter(ItemsHolder itemsHolder) {
       ItemsHolder = itemsHolder;
       SetCurrenValues();
     }
 
-    #endregion Constructors
+    #endregion Protected Constructors
 
-    #region Fields
+    #region Private Fields
 
     private T _selectedValue;
     private T _selectedComparisonValue;
     private ValueComparisons comparison;
 
-    #endregion Fields
+    #endregion Private Fields
   }
 }

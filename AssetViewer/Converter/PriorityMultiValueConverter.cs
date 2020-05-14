@@ -9,13 +9,7 @@ namespace AssetViewer.Converter {
 
   public class PriorityMultiValueConverter : IMultiValueConverter {
 
-    #region Fields
-
-    public readonly static ImageSourceConverter imageConverter = new ImageSourceConverter();
-
-    #endregion Fields
-
-    #region Methods
+    #region Public Methods
 
     public object Convert(object[] values, Type targetType, object parameter, CultureInfo culture) {
       if (Array.Find(values, o => o != null && o != DependencyProperty.UnsetValue) is string path) {
@@ -28,6 +22,12 @@ namespace AssetViewer.Converter {
       throw new NotImplementedException();
     }
 
-    #endregion Methods
+    #endregion Public Methods
+
+    #region Public Fields
+
+    public readonly static ImageSourceConverter imageConverter = new ImageSourceConverter();
+
+    #endregion Public Fields
   }
 }

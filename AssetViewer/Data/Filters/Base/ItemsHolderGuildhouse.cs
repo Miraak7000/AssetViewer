@@ -4,7 +4,7 @@ namespace AssetViewer.Data.Filters {
 
   public class ItemsHolderGuildhouse : ItemsHolder {
 
-    #region Constructors
+    #region Public Constructors
 
     public ItemsHolderGuildhouse() : base(AssetProvider.Items.Values.ToList()) {
       StandardFilters.Add("Upgrades", new UpgradesFilter(this));
@@ -15,9 +15,9 @@ namespace AssetViewer.Data.Filters {
       StandardFilters.Add("TargetBuilding", new TargetBuildingFilter(this));
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
 
-    #region Methods
+    #region Public Methods
 
     public override FilterHolder CreateFilterHolder() {
       var holder = new FilterHolder();
@@ -35,6 +35,6 @@ namespace AssetViewer.Data.Filters {
       return holder;
     }
 
-    #endregion Methods
+    #endregion Public Methods
   }
 }

@@ -16,7 +16,7 @@ namespace RDA.Data {
     #region Public Constructors
 
     public Modules(XElement element) {
-      this.Limit = element.Descendants("Limit").FirstOrDefault()?.Value;
+      Limit = element.Descendants("Limit").FirstOrDefault()?.Value;
       foreach (var item in element.Descendants("ModuleGUID").Select(e => new Description(e.Value))) {
         PossibleModules.Add(item);
       }
@@ -28,11 +28,11 @@ namespace RDA.Data {
 
     public XElement ToXml() {
       var result = new XElement("Mo");
-      if (this.Limit != null) {
-        result.Add(new XAttribute("L", this.Limit));
+      if (Limit != null) {
+        result.Add(new XAttribute("L", Limit));
       }
       if (PossibleModules.Count > 0) {
-        result.Add(new XElement("PM", this.PossibleModules.Select(s => s.ToXml("M"))));
+        result.Add(new XElement("PM", PossibleModules.Select(s => s.ToXml("M"))));
       }
       return result;
     }

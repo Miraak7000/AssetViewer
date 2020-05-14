@@ -5,15 +5,15 @@ namespace AssetViewer.Converter {
 
   public class EnumDescriptionTypeConverter : EnumConverter {
 
-    #region Constructors
+    #region Public Constructors
 
     public EnumDescriptionTypeConverter(Type type)
         : base(type) {
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
 
-    #region Methods
+    #region Public Methods
 
     public override object ConvertTo(ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value, Type destinationType) {
       if (destinationType == typeof(string)) {
@@ -21,7 +21,7 @@ namespace AssetViewer.Converter {
           var fi = value.GetType().GetField(value.ToString());
           if (fi != null) {
             var attributes = (DescriptionAttribute[])fi.GetCustomAttributes(typeof(DescriptionAttribute), false);
-            return ((attributes.Length > 0) && (!String.IsNullOrEmpty(attributes[0].Description))) ? attributes[0].Description : value.ToString();
+            return ((attributes.Length > 0) && (!string.IsNullOrEmpty(attributes[0].Description))) ? attributes[0].Description : value.ToString();
           }
         }
 
@@ -31,6 +31,6 @@ namespace AssetViewer.Converter {
       return base.ConvertTo(context, culture, value, destinationType);
     }
 
-    #endregion Methods
+    #endregion Public Methods
   }
 }

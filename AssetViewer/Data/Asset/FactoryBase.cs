@@ -22,10 +22,10 @@ namespace AssetViewer.Data {
     public FactoryBase(XElement element) {
       CycleTime = element.Attribute("CT")?.Value;
       if (element.Element("FI")?.HasElements ?? false) {
-        this.FactoryInputs = element.Element("FI").Elements().Select(s => new Upgrade(s)).ToList();
+        FactoryInputs = element.Element("FI").Elements().Select(s => new Upgrade(s)).ToList();
       }
       if (element.Element("FO")?.HasElements ?? false) {
-        this.FactoryOutputs = element.Element("FO").Elements().Select(s => new Upgrade(s)).ToList();
+        FactoryOutputs = element.Element("FO").Elements().Select(s => new Upgrade(s)).ToList();
       }
     }
 

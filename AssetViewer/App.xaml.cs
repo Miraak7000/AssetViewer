@@ -1,10 +1,9 @@
-﻿using AssetViewer.Data;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Windows;
-                                                                                      
+using AssetViewer.Data;
+
 namespace AssetViewer {
 
   [SuppressMessage("ReSharper", "AssignNullToNotNullAttribute"), SuppressMessage("ReSharper", "PossibleNullReferenceException")]
@@ -25,7 +24,7 @@ namespace AssetViewer {
 
     #region Private Methods
 
-    private static void AssetProvider_OnAssetCountChanged(IEnumerable<TemplateAsset> obj) {
+    private static void AssetProvider_OnAssetCountChanged(IEnumerable<TemplateAsset> _) {
     }
 
     #endregion Private Methods

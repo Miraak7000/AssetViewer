@@ -10,11 +10,11 @@ namespace AssetViewer.Converter {
   [SuppressMessage("ReSharper", "AssignNullToNotNullAttribute"), SuppressMessage("ReSharper", "PossibleNullReferenceException")]
   public class VisibilityConverter : IValueConverter {
 
-    #region Methods
+    #region Public Methods
 
-    public Object Convert(Object value, Type targetType, Object parameter, CultureInfo culture) {
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture) {
       if (value is IEnumerable items) {
-        foreach (var item in items) {
+        foreach (var _ in items) {
           return Visibility.Visible;
         }
         return Visibility.Collapsed;
@@ -22,10 +22,10 @@ namespace AssetViewer.Converter {
       return value == null ? Visibility.Collapsed : Visibility.Visible;
     }
 
-    public Object ConvertBack(Object value, Type targetType, Object parameter, CultureInfo culture) {
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) {
       throw new NotImplementedException();
     }
 
-    #endregion Methods
+    #endregion Public Methods
   }
 }

@@ -6,12 +6,10 @@ namespace AssetViewer.Data.Filters {
 
   public class FilterHolder : INotifyPropertyChanged {
 
-    #region Properties
+    #region Public Properties
 
     public IFilter SelectedFilter {
-      get {
-        return _selectedFilter;
-      }
+      get => _selectedFilter;
       set {
         if (_selectedFilter != value) {
           _selectedFilter = value;
@@ -22,33 +20,33 @@ namespace AssetViewer.Data.Filters {
 
     public Collection<IFilter> Filters { get; } = new Collection<IFilter>();
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Constructors
+    #region Public Events
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    #endregion Public Events
+
+    #region Public Constructors
 
     public FilterHolder() {
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
 
-    #region Events
-
-    public event PropertyChangedEventHandler PropertyChanged;
-
-    #endregion Events
-
-    #region Methods
+    #region Public Methods
 
     public void RaisePropertyChanged([CallerMemberName]string name = "") {
       PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
     }
 
-    #endregion Methods
+    #endregion Public Methods
 
-    #region Fields
+    #region Private Fields
 
     private IFilter _selectedFilter;
 
-    #endregion Fields
+    #endregion Private Fields
   }
 }

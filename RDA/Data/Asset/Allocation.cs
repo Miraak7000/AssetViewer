@@ -7,52 +7,52 @@ namespace RDA.Data {
 
     #region Public Properties
 
-    public String ID { get; set; }
+    public string ID { get; set; }
     public Description Text { get; set; }
 
     #endregion Public Properties
 
     #region Public Constructors
 
-    public Allocation(String template, String value) {
+    public Allocation(string template, string value) {
       if (value == "None" || value == null) {
         switch (template) {
           case "TownhallItem":
-            this.ID = "TownHall";
-            this.Text = new Description(Assets.KeyToIdDict[ID]);
+            ID = "TownHall";
+            Text = new Description(Assets.KeyToIdDict[ID]);
             break;
 
           case "ShipSpecialist":
           case "VehicleItem":
           case "ActiveItem":
-            this.ID = "Ship";
-            this.Text = new Description(Assets.KeyToIdDict[ID]);
+            ID = "Ship";
+            Text = new Description(Assets.KeyToIdDict[ID]);
             break;
 
           case "GuildhouseItem":
-            this.ID = "GuildHouse";
-            this.Text = new Description(Assets.KeyToIdDict[ID]);
+            ID = "GuildHouse";
+            Text = new Description(Assets.KeyToIdDict[ID]);
             break;
 
           case "HarborOfficeItem":
-            this.ID = "HarborOffice";
-            this.Text = new Description(Assets.KeyToIdDict[ID]);
+            ID = "HarborOffice";
+            Text = new Description(Assets.KeyToIdDict[ID]);
             break;
 
           case "1010470":
           case "CultureItem":
-            this.ID = "Zoo";
-            this.Text = new Description(Assets.KeyToIdDict[ID]);
+            ID = "Zoo";
+            Text = new Description(Assets.KeyToIdDict[ID]);
             break;
 
           case "1010471":
-            this.ID = "Museum";
-            this.Text = new Description(Assets.KeyToIdDict[ID]);
+            ID = "Museum";
+            Text = new Description(Assets.KeyToIdDict[ID]);
             break;
 
           case "110935":
-            this.ID = "BotanicGarden";
-            this.Text = new Description(Assets.KeyToIdDict[ID]);
+            ID = "BotanicGarden";
+            Text = new Description(Assets.KeyToIdDict[ID]);
             break;
 
           case "QuestItem":
@@ -60,8 +60,8 @@ namespace RDA.Data {
           case "FluffItem":
           case "ItemWithUI":
           case "ItemConstructionPlan":
-            this.ID = "NoneAllocation";
-            this.Text = new Description("-1230");
+            ID = "NoneAllocation";
+            Text = new Description("-1230");
             break;
 
           default:
@@ -69,13 +69,13 @@ namespace RDA.Data {
         }
       }
       else {
-        this.ID = value;
-        this.Text = new Description(Assets.KeyToIdDict[value]);
+        ID = value;
+        Text = new Description(Assets.KeyToIdDict[value]);
         if (Assets.Icons.ContainsKey(value)) {
-          this.Text.Icon = new Icon(Assets.Icons[value]);
+          Text.Icon = new Icon(Assets.Icons[value]);
         }
         else if (Assets.KeyToIdDict.ContainsKey(value)) {
-          this.Text.Icon = new Description(Assets.KeyToIdDict[value]).Icon;
+          Text.Icon = new Description(Assets.KeyToIdDict[value]).Icon;
         }
       }
     }
@@ -86,8 +86,8 @@ namespace RDA.Data {
 
     public XElement ToXml() {
       var result = new XElement("A");
-      result.Add(new XAttribute("ID", this.ID));
-      result.Add(this.Text.ToXml("T"));
+      result.Add(new XAttribute("ID", ID));
+      result.Add(Text.ToXml("T"));
       return result;
     }
 

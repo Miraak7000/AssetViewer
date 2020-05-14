@@ -1,46 +1,51 @@
-﻿using System;
-using System.Xml.Linq;
+﻿using System.Xml.Linq;
 
 namespace RDA.Data {
-  public class QuestGiver {
-    #region Properties
 
-    public String ID { get; set; }
-    public String Name { get; set; }
+  public class QuestGiver {
+
+    #region Public Properties
+
+    public string ID { get; set; }
+    public string Name { get; set; }
     public Description Text { get; set; }
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Constructors
+    #region Public Constructors
 
     public QuestGiver(XElement asset) {
       foreach (var element in asset.Element("Values").Elements()) {
         switch (element.Name.LocalName) {
           case "Standard":
-            this.ProcessElement_Standard(element);
+            ProcessElement_Standard(element);
             break;
         }
       }
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
 
-    #region Methods
+    #region Public Methods
 
     public XElement ToXml() {
       var result = new XElement("QG");
-      result.Add(new XAttribute("ID", this.ID));
-      result.Add(new XElement("N", this.Name));
-      result.Add(this.Text.ToXml("T"));
+      result.Add(new XAttribute("ID", ID));
+      result.Add(new XElement("N", Name));
+      result.Add(Text.ToXml("T"));
       return result;
     }
 
+    #endregion Public Methods
+
+    #region Private Methods
+
     private void ProcessElement_Standard(XElement element) {
-      this.ID = element.Attribute("ID").Value;
-      this.Name = element.Attribute("N").Value;
-      this.Text = new Description(element.Element("ID").Value);
+      ID = element.Attribute("ID").Value;
+      Name = element.Attribute("N").Value;
+      Text = new Description(element.Element("ID").Value);
     }
 
-    #endregion Methods
+    #endregion Private Methods
   }
 }

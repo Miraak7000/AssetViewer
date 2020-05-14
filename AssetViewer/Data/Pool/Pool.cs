@@ -12,7 +12,8 @@ namespace AssetViewer.Data {
   [XmlRoot("P", Namespace = "", IsNullable = false)]
   public class Pool {
 
-    #region Properties
+    #region Public Properties
+
     [XmlArray("IL")]
     [XmlArrayItem("I", IsNullable = false)]
     public List<PoolItem> Items { get; set; }
@@ -25,6 +26,6 @@ namespace AssetViewer.Data {
     [XmlAttribute("N")]
     public string Name { get; set; }
 
-    #endregion Properties
+    #endregion Public Properties
   }
 }

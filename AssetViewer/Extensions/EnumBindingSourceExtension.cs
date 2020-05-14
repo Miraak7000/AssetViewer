@@ -5,14 +5,12 @@ namespace AssetViewer {
 
   public class EnumBindingSourceExtension : MarkupExtension {
 
-    #region Properties
+    #region Public Properties
 
     public Type EnumType {
-      get {
-        return this._enumType;
-      }
+      get => _enumType;
       set {
-        if (value != this._enumType) {
+        if (value != _enumType) {
           if (value != null) {
             var enumType = Nullable.GetUnderlyingType(value) ?? value;
             if (!enumType.IsEnum) {
@@ -20,35 +18,35 @@ namespace AssetViewer {
             }
           }
 
-          this._enumType = value;
+          _enumType = value;
         }
       }
     }
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Constructors
+    #region Public Constructors
 
     public EnumBindingSourceExtension() {
     }
 
     public EnumBindingSourceExtension(Type enumType) {
-      this.EnumType = enumType;
+      EnumType = enumType;
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
 
-    #region Methods
+    #region Public Methods
 
     public override object ProvideValue(IServiceProvider serviceProvider) {
-      if (this._enumType == null) {
+      if (_enumType == null) {
         throw new InvalidOperationException("The EnumType must be specified.");
       }
 
-      var actualEnumType = Nullable.GetUnderlyingType(this._enumType) ?? this._enumType;
+      var actualEnumType = Nullable.GetUnderlyingType(_enumType) ?? _enumType;
       var enumValues = Enum.GetValues(actualEnumType);
 
-      if (actualEnumType == this._enumType) {
+      if (actualEnumType == _enumType) {
         return enumValues;
       }
 
@@ -57,12 +55,12 @@ namespace AssetViewer {
       return tempArray;
     }
 
-    #endregion Methods
+    #endregion Public Methods
 
-    #region Fields
+    #region Private Fields
 
     private Type _enumType;
 
-    #endregion Fields
+    #endregion Private Fields
   }
 }

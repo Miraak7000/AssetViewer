@@ -5,21 +5,23 @@ using System.Linq;
 using System.Xml.Linq;
 
 namespace RDA.Data {
+
   public class Icon {
-    #region Properties
+
+    #region Public Properties
 
     public static string[] IgnoredDirectorys { get; set; } = new[] {
       $@"{Program.PathRoot}\Resources\data\ui\2kimages\main\3dicons\Temporary_Ornament",
       $@"{Program.PathRoot}\Resources\data\level_editor\random_slots_icons"
     };
 
-    public String Filename { get; set; }
+    public string Filename { get; set; }
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Constructors
+    #region Public Constructors
 
-    public Icon(String filename) {
+    public Icon(string filename) {
       var searchPath = Path.GetDirectoryName($@"{Program.PathRoot}\Resources\{filename}");
       var searchPattern = Path.GetFileNameWithoutExtension($@"{Program.PathRoot}\Resources\{filename}");
       if (IgnoredDirectorys.Contains(searchPath)) {
@@ -34,7 +36,7 @@ namespace RDA.Data {
         Debug.WriteLine($"Picture Missing: {searchPath} {searchPattern}");
         return;
       }
-      this.Filename = filename;
+      Filename = filename;
       var file = File.ReadAllBytes(fileNames[0]);
       // publish icon
       var targetPath = Path.GetDirectoryName($@"{Program.PathViewer}\Resources\{filename}");
@@ -49,16 +51,16 @@ namespace RDA.Data {
       }
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
 
-    #region Methods
+    #region Public Methods
 
     public XElement ToXml() {
       var result = new XElement("I");
-      result.Add(new XAttribute("F", this.Filename));
+      result.Add(new XAttribute("F", Filename));
       return result;
     }
 
-    #endregion Methods
+    #endregion Public Methods
   }
 }

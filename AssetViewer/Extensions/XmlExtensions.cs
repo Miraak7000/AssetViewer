@@ -8,7 +8,7 @@ namespace AssetViewer.Extensions {
 
   public static class XmlExtensions {
 
-    #region Methods
+    #region Public Methods
 
     public static XElement ToXElement<T>(this T obj, Func<T, XElement, XElement> modifyFunktion = null) {
       using (var memoryStream = new MemoryStream()) {
@@ -29,6 +29,6 @@ namespace AssetViewer.Extensions {
       return obj;
     }
 
-    #endregion Methods
+    #endregion Public Methods
   }
 }

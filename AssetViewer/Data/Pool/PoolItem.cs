@@ -10,7 +10,7 @@ namespace AssetViewer.Data {
   [XmlRoot("I")]
   public partial class PoolItem {
 
-    #region Properties
+    #region Public Properties
 
     [XmlAttribute]
     public int ID { get; set; }
@@ -32,6 +32,6 @@ namespace AssetViewer.Data {
       }
     }
 
-    #endregion Properties
+    #endregion Public Properties
   }
 }

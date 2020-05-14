@@ -1,9 +1,11 @@
-﻿using RDA.Data;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using RDA.Data;
 
 namespace RDA.Comparer {
+
   internal class BasicUpgradeComparer : IEqualityComparer<Upgrade> {
-    #region Methods
+
+    #region Public Methods
 
     public bool Equals(Upgrade x, Upgrade y) {
       return x?.Text.Equals(y?.Text) == true && x?.Value.Equals(y?.Value) == true;
@@ -13,6 +15,6 @@ namespace RDA.Comparer {
       return 0;
     }
 
-    #endregion Methods
+    #endregion Public Methods
   }
 }

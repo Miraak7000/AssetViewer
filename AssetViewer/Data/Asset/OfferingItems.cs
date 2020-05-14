@@ -16,10 +16,10 @@ namespace AssetViewer.Data {
     #region Public Constructors
 
     public OfferingItems(XElement asset) {
-      this.Progression = (Progression)Enum.Parse(typeof(Progression), asset.Attribute("P").Value);
-      this.ProgressionDescription = new Description(asset.Element("PD"));
+      Progression = (Progression)Enum.Parse(typeof(Progression), asset.Attribute("P").Value);
+      ProgressionDescription = new Description(asset.Element("PD"));
       if (asset.Attribute("I")?.Value is string str) {
-        this.Items = int.Parse(str);
+        Items = int.Parse(str);
       }
     }
 
