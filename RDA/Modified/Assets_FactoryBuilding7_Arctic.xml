@@ -48,18 +48,21 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="112666" RV="Update 06" RT="Common" IP="true">
-    <N>coastal_arctic_01 (Whale Coast Building)</N>
-    <T ID="112666" I="data/ui/2kimages/main/3dicons/icon_whale_oil_2.png" />
+  <Asset ID="112672" RV="Update 06" RT="Common" IP="true">
+    <N>factory_arctic_04 (Parka Factory)</N>
+    <T ID="112672" I="data/ui/2kimages/main/3dicons/icon_fur_parka.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
     <BC>
-      <U V="200">
+      <U V="2000">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
-      <U V="5">
+      <U V="10">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="4">
+        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
       </U>
     </BC>
     <GU>
@@ -70,20 +73,28 @@
     <TP />
     <HF />
     <I ID="11143" />
-    <FB CT="60">
+    <FB CT="90">
+      <FI>
+        <U V="1 / 4">
+          <T ID="112695" I="data/ui/2kimages/main/3dicons/icon_bear_fur.png" />
+        </U>
+        <U V="1 / 4">
+          <T ID="112696" I="data/ui/2kimages/main/3dicons/icon_seal_skin.png" />
+        </U>
+      </FI>
       <FO>
-        <U V="1 / 2">
-          <T ID="112699" I="data/ui/2kimages/main/3dicons/icon_whale_oil_2.png" />
+        <U V="1 / 1">
+          <T ID="112700" I="data/ui/2kimages/main/3dicons/icon_fur_parka.png" />
         </U>
       </FO>
     </FB>
     <M>
       <MC>
-        <U V="75 / 38">
+        <U V="350 / 175">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
-        <U V="30">
-          <T ID="112653" I="data/ui/2kimages/main/icons/icon_ressource_explorer.png" />
+        <U V="80">
+          <T ID="112654" I="data/ui/2kimages/main/icons/icon_ressource_technican.png" />
         </U>
       </MC>
     </M>
@@ -139,21 +150,18 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="112672" RV="Update 06" RT="Common" IP="true">
-    <N>factory_arctic_04 (Parka Factory)</N>
-    <T ID="112672" I="data/ui/2kimages/main/3dicons/icon_fur_parka.png" />
+  <Asset ID="112666" RV="Update 06" RT="Common" IP="true">
+    <N>coastal_arctic_01 (Whale Coast Building)</N>
+    <T ID="112666" I="data/ui/2kimages/main/3dicons/icon_whale_oil_2.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
     <BC>
-      <U V="2000">
+      <U V="200">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
-      <U V="10">
+      <U V="5">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="4">
-        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
       </U>
     </BC>
     <GU>
@@ -164,28 +172,20 @@
     <TP />
     <HF />
     <I ID="11143" />
-    <FB CT="90">
-      <FI>
-        <U V="1 / 4">
-          <T ID="112695" I="data/ui/2kimages/main/3dicons/icon_bear_fur.png" />
-        </U>
-        <U V="1 / 4">
-          <T ID="112696" I="data/ui/2kimages/main/3dicons/icon_seal_skin.png" />
-        </U>
-      </FI>
+    <FB CT="60">
       <FO>
-        <U V="1 / 1">
-          <T ID="112700" I="data/ui/2kimages/main/3dicons/icon_fur_parka.png" />
+        <U V="1 / 2">
+          <T ID="112699" I="data/ui/2kimages/main/3dicons/icon_whale_oil_2.png" />
         </U>
       </FO>
     </FB>
     <M>
       <MC>
-        <U V="350 / 175">
+        <U V="75 / 38">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
-        <U V="80">
-          <T ID="112654" I="data/ui/2kimages/main/icons/icon_ressource_technican.png" />
+        <U V="30">
+          <T ID="112653" I="data/ui/2kimages/main/icons/icon_ressource_explorer.png" />
         </U>
       </MC>
     </M>
@@ -273,54 +273,6 @@
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
         <U V="70">
-          <T ID="112653" I="data/ui/2kimages/main/icons/icon_ressource_explorer.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="112668" RV="Update 06" RT="Common" IP="true">
-    <N>food_arctic_01 (Pemmican)</N>
-    <T ID="112668" I="data/ui/2kimages/main/3dicons/icon_pemmican.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
-    <BC>
-      <U V="1000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="5">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U>
-        <T ID="116353" I="data/ui/2kimages/main/icons/icon_heating_center_2d.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="60">
-      <FI>
-        <U V="1 / 4">
-          <T ID="112699" I="data/ui/2kimages/main/3dicons/icon_whale_oil_2.png" />
-        </U>
-        <U V="1 / 4">
-          <T ID="112694" I="data/ui/2kimages/main/3dicons/icon_reindeer_meat.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 2">
-          <T ID="112705" I="data/ui/2kimages/main/3dicons/icon_pemmican.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="60 / 30">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="30">
           <T ID="112653" I="data/ui/2kimages/main/icons/icon_ressource_explorer.png" />
         </U>
       </MC>
@@ -414,6 +366,54 @@
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
         <U V="10">
+          <T ID="112653" I="data/ui/2kimages/main/icons/icon_ressource_explorer.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="112668" RV="Update 06" RT="Common" IP="true">
+    <N>food_arctic_01 (Pemmican)</N>
+    <T ID="112668" I="data/ui/2kimages/main/3dicons/icon_pemmican.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
+    <BC>
+      <U V="1000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="5">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U>
+        <T ID="116353" I="data/ui/2kimages/main/icons/icon_heating_center_2d.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 4">
+          <T ID="112699" I="data/ui/2kimages/main/3dicons/icon_whale_oil_2.png" />
+        </U>
+        <U V="1 / 4">
+          <T ID="112694" I="data/ui/2kimages/main/3dicons/icon_reindeer_meat.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 2">
+          <T ID="112705" I="data/ui/2kimages/main/3dicons/icon_pemmican.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="60 / 30">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="30">
           <T ID="112653" I="data/ui/2kimages/main/icons/icon_ressource_explorer.png" />
         </U>
       </MC>

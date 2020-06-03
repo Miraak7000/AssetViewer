@@ -146,6 +146,7 @@ namespace RDA.Data {
           case "Headquarter":
           case "PalaceMinistry":
           case "Palace":
+          case "BuffFactory":
             ItemType = "Building";
             break;
 
@@ -154,6 +155,7 @@ namespace RDA.Data {
           case "OrnamentalModule":
           case "Farmfield":
           case "PalaceModule":
+          case "AdditionalModule":
             ItemType = "Module";
             break;
 
@@ -250,6 +252,10 @@ namespace RDA.Data {
           case "CampaignBehaviour":
           case "HeatProvider":
           case "BuildingUnique":
+          case "Industrializable":
+          case "Electrifiable":
+          case "PalaceMonumentTracker":
+          case "BuffFactory":
           //Maybe usefull Building Informations
           case "InfluenceSource":
           //Building influence gain
@@ -304,6 +310,8 @@ namespace RDA.Data {
           case "RepairCrane":
           case "TrainStation":
           case "PowerplantUpgrade":
+          case "IndustrializableUpgrade":
+          case "Motorizable":
             ProcessElement_GenericUpgradeChilds(element, element.Name.LocalName);
             break;
 
@@ -556,7 +564,7 @@ namespace RDA.Data {
 
     private void ProcessElement_Building(XElement element) {
       if (element.Element("AssociatedRegions")?.Value is string str) {
-        var regions = str.Split(';').Select(s => new Description(Assets.KeyToIdDict[s]));
+        var regions = str.Replace("Meta", "").Split(new[] { ";" }, StringSplitOptions.RemoveEmptyEntries).Select(s => new Description(Assets.KeyToIdDict[s]));
         AssociatedRegions = Description.Join(regions, ", ");
       }
     }
@@ -1187,6 +1195,7 @@ namespace RDA.Data {
               }
               break;
 
+            case "Profile_3rdParty_NoTrader_NoProperty3rdParty":
             case "Profile_3rdParty_ItemCrafter":
             case "Profile_3rdParty":
             case "Profile_3rdParty_Pirate":
