@@ -1,13 +1,13 @@
-﻿using AssetViewer.Comparer;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using AssetViewer.Comparer;
 
 namespace AssetViewer.Data.Filters {
 
   public class RaritiesFilter : BaseFilter<Description> {
 
-    #region Properties
+    #region Public Properties
 
     public override Func<IEnumerable<TemplateAsset>, IEnumerable<TemplateAsset>> FilterFunc => result => {
       if (SelectedComparisonValue != null && SelectedComparisonValue.ID != 0) {
@@ -26,18 +26,18 @@ namespace AssetViewer.Data.Filters {
 
     public override int DescriptionID => -1023;
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Constructors
+    #region Public Constructors
 
     public RaritiesFilter(ItemsHolder itemsHolder) : base(itemsHolder) {
       ComparisonType = FilterType.Selection;
       FilterType = FilterType.None;
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
 
-    #region Methods
+    #region Public Methods
 
     public override void SetCurrenValues() {
       CurrentValues = ItemsHolder
@@ -59,6 +59,10 @@ namespace AssetViewer.Data.Filters {
          .ToList();
     }
 
+    #endregion Public Methods
+
+    #region Private Methods
+
     private bool CompareToRarity(int l) {
       switch (Comparison) {
         case ValueComparisons.Equals:
@@ -76,6 +80,6 @@ namespace AssetViewer.Data.Filters {
       return false;
     }
 
-    #endregion Methods
+    #endregion Private Methods
   }
 }

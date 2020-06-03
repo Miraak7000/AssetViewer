@@ -11,8 +11,8 @@ namespace RDA.Data {
 
     #region Public Properties
 
-    public String ID { get; set; }
-    public String Name { get; set; }
+    public string ID { get; set; }
+    public string Name { get; set; }
     public Description Text { get; set; }
     public List<(Description desc, double weight)> Details { get; set; } = new List<(Description, double)>();
 
@@ -22,11 +22,11 @@ namespace RDA.Data {
 
     public TempSource(SourceWithDetails element) {
       var Source = element.Source;
-      this.ID = Source.XPathSelectElement("Values/Standard/GUID").Value;
-      this.Name = Source.XPathSelectElement("Values/Standard/Name").Value;
+      ID = Source.XPathSelectElement("Values/Standard/GUID").Value;
+      Name = Source.XPathSelectElement("Values/Standard/Name").Value;
       switch (Source.Element("Template").Value) {
         case "TourismFeature":
-          this.Text = new Description("-4");
+          Text = new Description("-4");
           foreach (var item in element.Details) {
             var cityStatus = item.Asset.Element("Item")?.Element("CityLevel");
             if (cityStatus != null) {
@@ -53,12 +53,12 @@ namespace RDA.Data {
         case "ItemWithUI":
         case "MonumentEventReward":
         case "CollectablePicturePuzzle":
-          this.Text = new Description(Source.XPathSelectElement("Values/Standard/GUID").Value);
-          this.Details = element.Details.Select(d => (new Description(d.Asset.XPathSelectElement("Values/Standard/GUID").Value), d.Weight)).ToList();
+          Text = new Description(Source.XPathSelectElement("Values/Standard/GUID").Value);
+          Details = element.Details.Select(d => (new Description(d.Asset.XPathSelectElement("Values/Standard/GUID").Value), d.Weight)).ToList();
           break;
 
         case "Expedition":
-          this.Text = new Description(Source.XPathSelectElement("Values/Expedition/ExpeditionName").Value);
+          Text = new Description(Source.XPathSelectElement("Values/Expedition/ExpeditionName").Value);
           // Processing Details
           foreach (var item in element.Details) {
             // Detail points to Expedition
@@ -81,14 +81,22 @@ namespace RDA.Data {
                   difficulty = new Description("11031");
                   break;
               }
-              var desc = new Description("-5").AppendWithSpace("-->").AppendWithSpace(difficulty);
-              this.Details.Add((desc, item.Weight));
+
+              var desc = new Description("-5").AppendWithSpace("-->");
+
+              desc = desc.AppendWithSpace(difficulty);
+
+              if (item.Asset.XPathSelectElement("Values/Expedition/ExpeditionRegion")?.Value is string region) {
+                desc = desc.AppendWithSpace(new Description(Assets.ExpeditionRegionToIdDict[region]));
+              }
+
+              Details.Add((desc, item.Weight));
               continue;
             }
             // Detail points to Expedition Event
             else if (item.Asset.Element("Asset").Element("Template").Value == "ExpeditionEvent") {
               var desc = new Description(item.Asset.XPathSelectElement("Values/Standard/GUID").Value).AppendWithSpace(item.Asset.Element("Template").Value);
-              this.Details.Add((desc, item.Weight));
+              Details.Add((desc, item.Weight));
             }
             else {
               throw new NotImplementedException();
@@ -100,15 +108,15 @@ namespace RDA.Data {
         //case "Profile_3rdParty_Pirate":
         //case "HafenHugo":
         case "Harbor":
-          this.Text = new Description(Source.XPathSelectElement("Values/Standard/GUID").Value).InsertBefore("-").InsertBefore(new Description("11150"));
+          Text = new Description(Source.XPathSelectElement("Values/Standard/GUID").Value).InsertBefore("-").InsertBefore(new Description("11150"));
           foreach (var item in element.Details) {
             var desc = GetDescriptionFromProgression(item.Asset.Element("Template").Value);
-            this.Details.Add((desc, item.Weight));
+            Details.Add((desc, item.Weight));
           }
           break;
 
         case "TakeOver":
-          this.Text = new Description(Source.XPathSelectElement("Values/Standard/GUID").Value).InsertBefore("-").InsertBefore(new Description("10839"));
+          Text = new Description(Source.XPathSelectElement("Values/Standard/GUID").Value).InsertBefore("-").InsertBefore(new Description("10839"));
           foreach (var item in element.Details) {
             var details = item.Asset.Element("Template").Value.Split('#');
             var progression = GetDescriptionFromProgression(details[1]);
@@ -125,7 +133,7 @@ namespace RDA.Data {
               default:
                 throw new NotImplementedException();
             }
-            this.Details.Add((desc, item.Weight));
+            Details.Add((desc, item.Weight));
           }
           break;
 
@@ -150,54 +158,52 @@ namespace RDA.Data {
         case "A7_QuestDivingBellTreasureMap":
           var questgiver = Source.XPathSelectElement("Values/Quest/QuestGiver")?.Value;
           if (questgiver != null) {
-            this.Text = new Description(questgiver).InsertBefore("-").InsertBefore(new Description("2734"));
+            Text = new Description(questgiver).InsertBefore("-").InsertBefore(new Description("2734"));
             foreach (var item in element.Details) {
-              this.Details.Add((new Description(item.Asset.XPathSelectElement("Values/Standard/GUID").Value), item.Weight));
+              Details.Add((new Description(item.Asset.XPathSelectElement("Values/Standard/GUID").Value), item.Weight));
             }
-
           }
           else {
-
           }
           break;
 
         case "ShipDrop":
-          this.Text = new Description(element.Source.XPathSelectElement("Values/Standard/GUID").Value).InsertBefore("-").InsertBefore(new Description("-12"));
-          this.Details = element.Details.Select(d => (new Description(d.Asset.XPathSelectElement("Values/Standard/GUID").Value), d.Weight)).ToList();
+          Text = new Description(element.Source.XPathSelectElement("Values/Standard/GUID").Value).InsertBefore("-").InsertBefore(new Description("-12"));
+          Details = element.Details.Select(d => (new Description(d.Asset.XPathSelectElement("Values/Standard/GUID").Value), d.Weight)).ToList();
           break;
 
         case "Crafting":
-          this.Text = new Description(element.Source.XPathSelectElement("Values/Standard/GUID").Value).InsertBefore("-").InsertBefore(new Description("112529"));
-          this.Details = element.Details.Select(d => (new Description(d.Asset.XPathSelectElement("Values/Standard/GUID").Value).AppendInBraces(new Description(Assets
+          Text = new Description(element.Source.XPathSelectElement("Values/Standard/GUID").Value).InsertBefore("-").InsertBefore(new Description("112529"));
+          Details = element.Details.Select(d => (new Description(d.Asset.XPathSelectElement("Values/Standard/GUID").Value).AppendInBraces(new Description(Assets
             .KeyToIdDict[d.Asset.Element("Template").Value])), d.Weight)).ToList();
           break;
 
         case "Dive":
-          this.Text = new Description("113420");
+          Text = new Description("113420");
           foreach (var item in element.Details) {
             var desc = new Description(item.Asset.XPathSelectElement("Values/Standard/GUID").Value);
             if (item.Asset.Element("Template").Value == "ItemWithUI") {
               desc = desc.AppendInBraces(new Description(item.Asset.Descendants("TreasureSessionOrRegion").First().Value));
             }
-            this.Details.Add((desc, item.Weight));
+            Details.Add((desc, item.Weight));
           }
           break;
 
         case "Pickup":
-          this.Text = new Description("500334");
-          this.Details = element.Details.Select(i => (new Description("500334"), i.Weight)).ToList();
+          Text = new Description("500334");
+          Details = element.Details.Select(i => (new Description("500334"), i.Weight)).ToList();
           break;
 
         case "Item":
-          this.Text = new Description(Source.XPathSelectElement("Values/Standard/GUID").Value).InsertBefore("-").InsertBefore(new Description("-101"));
+          Text = new Description(Source.XPathSelectElement("Values/Standard/GUID").Value).InsertBefore("-").InsertBefore(new Description("-101"));
           break;
 
         default:
           Debug.WriteLine(Source.Element("Template").Value);
           throw new NotImplementedException();
       }
-      if (this.Text.Icon == null) {
-        this.Text.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_skull.png");
+      if (Text.Icon == null) {
+        Text.Icon = new Icon("data/ui/2kimages/main/3dicons/icon_skull.png");
       }
     }
 
@@ -205,14 +211,60 @@ namespace RDA.Data {
 
     #region Public Methods
 
+    public static Description GetDescriptionFromProgression(string progression) {
+      Description desc;
+      switch (progression) {
+        case "EarlyGame":
+          desc = new Description("-6") {
+            AdditionalInformation = new Description("15000000").InsertBefore("0")
+          };
+
+          break;
+
+        case "EarlyMidGame":
+          desc = new Description("-7") {
+            AdditionalInformation = new Description("15000001").InsertBefore("35")
+          };
+          break;
+
+        case "MidGame":
+          desc = new Description("-8") {
+            AdditionalInformation = new Description("15000002").InsertBefore("1")
+          };
+          break;
+
+        case "LateMidGame":
+          desc = new Description("-9") {
+            AdditionalInformation = new Description("15000003").InsertBefore("1")
+          };
+          break;
+
+        case "LateGame":
+          desc = new Description("-10") {
+            AdditionalInformation = new Description("15000004").InsertBefore("1")
+          };
+          break;
+
+        case "EndGame":
+          desc = new Description("-11") {
+            AdditionalInformation = new Description("22379").InsertBefore("20000")
+          };
+          break;
+
+        default:
+          throw new NotImplementedException();
+      }
+      return desc;
+    }
+
     public XElement ToXml() {
       var result = new XElement("S");
-      result.Add(new XAttribute("ID", this.ID));
-      result.Add(new XAttribute("N", this.Name));
-      result.Add(this.Text.ToXml("T"));
+      result.Add(new XAttribute("ID", ID));
+      result.Add(new XAttribute("N", Name));
+      result.Add(Text.ToXml("T"));
 
       var details = new XElement("DL");
-      foreach (var detail in this.Details) {
+      foreach (var detail in Details) {
         var xDetail = new XElement("D");
 
         xDetail.Add(detail.desc.ToXml("T"));
@@ -226,49 +278,5 @@ namespace RDA.Data {
     }
 
     #endregion Public Methods
-
-    #region Private Methods
-
-    public static Description GetDescriptionFromProgression(string progression) {
-      Description desc = null;
-      switch (progression) {
-        case "EarlyGame":
-          desc = new Description("-6");
-          desc.AdditionalInformation = new Description("15000000").InsertBefore("0");
-
-          break;
-
-        case "EarlyMidGame":
-          desc = new Description("-7");
-          desc.AdditionalInformation = new Description("15000001").InsertBefore("35");
-          break;
-
-        case "MidGame":
-          desc = new Description("-8");
-          desc.AdditionalInformation = new Description("15000002").InsertBefore("1");
-          break;
-
-        case "LateMidGame":
-          desc = new Description("-9");
-          desc.AdditionalInformation = new Description("15000003").InsertBefore("1");
-          break;
-
-        case "LateGame":
-          desc = new Description("-10");
-          desc.AdditionalInformation = new Description("15000004").InsertBefore("1");
-          break;
-
-        case "EndGame":
-          desc = new Description("-11");
-          desc.AdditionalInformation = new Description("22379").InsertBefore("20000");
-          break;
-
-        default:
-          throw new NotImplementedException();
-      }
-      return desc;
-    }
-
-    #endregion Private Methods
   }
 }

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Xml.Linq;
+﻿using System.Xml.Linq;
 
 namespace RDA.Data {
 
@@ -8,7 +7,7 @@ namespace RDA.Data {
     #region Public Properties
 
     public Description Text { get; set; }
-    public String Value { get; set; }
+    public string Value { get; set; }
 
     #endregion Public Properties
 
@@ -17,8 +16,8 @@ namespace RDA.Data {
     public ReplaceInput(XElement element) {
       var oldInput = new Description(element.Element("OldInput").Value);
       var newInput = new Description(element.Element("NewInput").Value);
-      this.Text = newInput.InsertBefore("=>").InsertBefore(oldInput);
-      this.Value = String.Empty;
+      Text = newInput.InsertBefore("=>").InsertBefore(oldInput);
+      Value = string.Empty;
     }
 
     #endregion Public Constructors
@@ -27,8 +26,8 @@ namespace RDA.Data {
 
     public XElement ToXml() {
       var result = new XElement("RI");
-      result.Add(this.Text.ToXml("T"));
-      result.Add(new XAttribute("V", this.Value));
+      result.Add(Text.ToXml("T"));
+      result.Add(new XAttribute("V", Value));
       return result;
     }
 

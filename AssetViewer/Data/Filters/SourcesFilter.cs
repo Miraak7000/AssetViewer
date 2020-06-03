@@ -6,7 +6,7 @@ namespace AssetViewer.Data.Filters {
 
   public class SourcesFilter : BaseFilter<Description> {
 
-    #region Properties
+    #region Public Properties
 
     public override Func<IEnumerable<TemplateAsset>, IEnumerable<TemplateAsset>> FilterFunc => result => {
       if (SelectedComparisonValue != null && SelectedComparisonValue.ID != 0) {
@@ -17,11 +17,10 @@ namespace AssetViewer.Data.Filters {
           else {
             return result.Where(w => w.Sources?.Where(s => s.Text.Equals(SelectedValue)).SelectMany(s => s.Additionals).Any(l => l.Text.Equals(SelectedComparisonValue)) == true);
           }
-
         }
         else {
           if (Comparison == ValueComparisons.UnEqual) {
-            return result.Where(w => w.Sources?.Any(l => !l.Additionals.Any(a=> a.Text.Equals(SelectedComparisonValue))) == true);
+            return result.Where(w => w.Sources?.Any(l => !l.Additionals.Any(a => a.Text.Equals(SelectedComparisonValue))) == true);
           }
           else {
             return result.Where(w => w.Sources?.SelectMany(s => s.Additionals).Any(l => l.Text.Equals(SelectedComparisonValue)) == true);
@@ -41,17 +40,17 @@ namespace AssetViewer.Data.Filters {
 
     public override int DescriptionID => -1005;
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Constructors
+    #region Public Constructors
 
     public SourcesFilter(ItemsHolder itemsHolder) : base(itemsHolder) {
       ComparisonType = FilterType.Selection;
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
 
-    #region Methods
+    #region Public Methods
 
     public override void SetCurrenValues() {
       CurrentValues = ItemsHolder
@@ -66,6 +65,10 @@ namespace AssetViewer.Data.Filters {
 
       ComparisonValues = GetComparisonValues();
     }
+
+    #endregion Public Methods
+
+    #region Private Methods
 
     private List<Description> GetComparisonValues() {
       if (SelectedValue == null || SelectedValue.ID == 0) {
@@ -95,6 +98,6 @@ namespace AssetViewer.Data.Filters {
       }
     }
 
-    #endregion Methods
+    #endregion Private Methods
   }
 }

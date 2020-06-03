@@ -6,7 +6,7 @@ namespace AssetViewer.Data.Filters {
 
   public class UpgradesFilter : BaseFilter<Description> {
 
-    #region Properties
+    #region Public Properties
 
     public override Func<IEnumerable<TemplateAsset>, IEnumerable<TemplateAsset>> FilterFunc => result => {
       if (SelectedValue != null && SelectedValue.ID != 0) {
@@ -14,7 +14,7 @@ namespace AssetViewer.Data.Filters {
           return result
           .Where(w =>
           (
-          w.AllUpgrades.Any(l => l.Text?.Equals(SelectedValue) == true && 
+          w.AllUpgrades.Any(l => l.Text?.Equals(SelectedValue) == true &&
           (
           (l.Additionals?.Any(a => a.Text?.Equals(SelectedComparisonValue) == true) == true) ||
           (l.Text.AdditionalInformation?.Equals(SelectedComparisonValue) == true) ||
@@ -34,17 +34,17 @@ namespace AssetViewer.Data.Filters {
 
     public override int DescriptionID => -1006;
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Constructors
+    #region Public Constructors
 
     public UpgradesFilter(ItemsHolder itemsHolder) : base(itemsHolder) {
       ComparisonType = FilterType.Selection;
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
 
-    #region Methods
+    #region Public Methods
 
     public override void SetCurrenValues() {
       var items = ItemsHolder.GetResultWithoutFilter(this).ToList();
@@ -82,8 +82,12 @@ namespace AssetViewer.Data.Filters {
       ComparisonValues = list.ToList();
     }
 
+    #endregion Public Methods
+
+    #region Private Methods
+
     private bool CompareToUpgrade(Upgrade l) {
-      if (float.TryParse(l.Value?.TrimEnd(' ', '%').Replace(":", "").Replace("/", "").Replace(" ", ""), out var x) && float.TryParse(this.SelectedComparisonValue.CurrentLang.TrimEnd(' ', '%').Replace(":", "").Replace("/", "").Replace(" ", ""), out var y)) {
+      if (float.TryParse(l.Value?.TrimEnd(' ', '%').Replace(":", "").Replace("/", "").Replace(" ", ""), out var x) && float.TryParse(SelectedComparisonValue.CurrentLang.TrimEnd(' ', '%').Replace(":", "").Replace("/", "").Replace(" ", ""), out var y)) {
         switch (Comparison) {
           case ValueComparisons.Equals:
             return x == y;
@@ -99,7 +103,7 @@ namespace AssetViewer.Data.Filters {
         }
       }
       else {
-        var stringCompare = l.Value?.CompareTo(this.SelectedValue.CurrentLang);
+        var stringCompare = l.Value?.CompareTo(SelectedValue.CurrentLang);
         switch (stringCompare) {
           case -1:
             return Comparison == ValueComparisons.LesserThan || Comparison == ValueComparisons.UnEqual;
@@ -114,6 +118,6 @@ namespace AssetViewer.Data.Filters {
       return false;
     }
 
-    #endregion Methods
+    #endregion Private Methods
   }
 }

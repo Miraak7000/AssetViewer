@@ -10,7 +10,7 @@ namespace AssetViewer.Data {
   [XmlType(AnonymousType = true)]
   public class Description : IEquatable<Description> {
 
-    #region Properties
+    #region Public Properties
 
     [XmlAttribute]
     public virtual int ID { get; set; }
@@ -25,29 +25,29 @@ namespace AssetViewer.Data {
 
     public Description AdditionalInformation { get; set; }
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Constructors
+    #region Public Constructors
 
     public Description() {
     }
 
     public Description(XElement item) {
-      this.ID = int.Parse(item.Attribute("ID").Value);
+      ID = int.Parse(item.Attribute("ID").Value);
       if (item.Attribute("I")?.Value is string icon) {
-        this.Icon = new Icon(icon);
+        Icon = new Icon(icon);
       }
-      this.FontStyle = item.Attribute("FS") == null ? default : (DescriptionFontStyle)Convert.ToInt32(item.Attribute("FS").Value);
-      this.AdditionalInformation = item.Element("AI")?.Value == null ? null : new Description(item.Element("AI"));
+      FontStyle = item.Attribute("FS") == null ? default : (DescriptionFontStyle)Convert.ToInt32(item.Attribute("FS").Value);
+      AdditionalInformation = item.Element("AI")?.Value == null ? null : new Description(item.Element("AI"));
     }
 
     public Description(int id) {
       ID = id;
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
 
-    #region Methods
+    #region Public Methods
 
     public override string ToString() {
       return CurrentLang;
@@ -61,6 +61,6 @@ namespace AssetViewer.Data {
       return ID.GetHashCode();
     }
 
-    #endregion Methods
+    #endregion Public Methods
   }
 }

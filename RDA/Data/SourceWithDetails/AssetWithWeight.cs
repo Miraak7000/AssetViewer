@@ -19,10 +19,14 @@ namespace RDA.Data {
       Weight = weight;
     }
 
+    #endregion Public Constructors
+
+    #region Public Methods
+
     public AssetWithWeight Copy() {
       return new AssetWithWeight(Asset, Weight);
     }
 
-    #endregion Public Constructors
+    #endregion Public Methods
   }
 }

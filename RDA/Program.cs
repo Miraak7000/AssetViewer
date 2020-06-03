@@ -1,5 +1,4 @@
-﻿using RDA.Data;
-using System;
+﻿using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -10,37 +9,32 @@ using System.Reflection;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.XPath;
+using RDA.Data;
 
 namespace RDA {
 
   [SuppressMessage("ReSharper", "PossibleNullReferenceException"), SuppressMessage("ReSharper", "AssignNullToNotNullAttribute")]
   internal static class Program {
 
-    #region Public Fields
-
-    public static readonly object ConsoleLock = new object();
-
-    #endregion Public Fields
-
     #region Public Constructors
 
     static Program() {
-      Program.PathViewer = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase).Replace(@"file:\", String.Empty)).Parent.Parent.Parent.FullName + @"\AssetViewer";
-      Program.PathRoot = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase).Replace(@"file:\", String.Empty)).Parent.Parent.FullName;
+      Program.PathViewer = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase).Replace(@"file:\", string.Empty)).Parent.Parent.Parent.FullName + @"\AssetViewer";
+      Program.PathRoot = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase).Replace(@"file:\", string.Empty)).Parent.Parent.FullName;
     }
 
     #endregion Public Constructors
 
     #region Public Methods
 
-    public static void Main(String[] _) {
+    public static void Main(string[] _) {
       // Helper  Obsolete
       //Helper.ExtractTextEnglish(Program.PathRoot + @"\Original\texts_english.xml");
       //Helper.ExtractTextGerman(Program.PathRoot + @"\Original\texts_german.xml");
       //Helper.ExtractText();
       //Helper.ExtractTemplateNames(Program.PathRoot + @"\Original\assets.xml");
 
-      Assets.Init("Update 07");
+      Assets.Init("Update 08");
 
       // World Fair
       Monument.Create();
@@ -122,10 +116,16 @@ namespace RDA {
 
     #endregion Public Methods
 
+    #region Public Fields
+
+    public static readonly object ConsoleLock = new object();
+
+    #endregion Public Fields
+
     #region Internal Fields
 
-    internal readonly static String PathRoot;
-    internal readonly static String PathViewer;
+    internal readonly static string PathRoot;
+    internal readonly static string PathViewer;
     internal static XDocument TextDE;
 
     #endregion Internal Fields
@@ -142,7 +142,7 @@ namespace RDA {
       ConsoleWriteHeadline("Save Descriptions");
       // Split Languages To single Files
       foreach (Languages language in Enum.GetValues(typeof(Languages))) {
-        using (var xmlWriter = XmlWriter.Create($@"{Program.PathRoot}\Modified\Texts_{language.ToString("G")}.xml", new XmlWriterSettings() { Indent = false })) {
+        using (var xmlWriter = XmlWriter.Create($@"{Program.PathRoot}\Modified\Texts_{language:G}.xml", new XmlWriterSettings { Indent = false })) {
           xmlWriter.WriteStartElement("Texts");
           var savedIDs = new HashSet<string>();
 
@@ -193,8 +193,8 @@ namespace RDA {
           }
 
           //Load Last Descriptions to make single file updates available
-          if (!resetOld && File.Exists($@"{Program.PathViewer}\Resources\Assets\Texts_{language.ToString("G")}.xml")) {
-            var doc = XDocument.Load($@"{Program.PathViewer}\Resources\Assets\Texts_{language.ToString("G")}.xml").Root;
+          if (!resetOld && File.Exists($@"{Program.PathViewer}\Resources\Assets\Texts_{language:G}.xml")) {
+            var doc = XDocument.Load($@"{Program.PathViewer}\Resources\Assets\Texts_{language:G}.xml").Root;
             foreach (var item in doc.Elements()) {
               if (!savedIDs.Contains(item.Attribute("ID").Value)) {
                 xmlWriter.WriteStartElement("Text");
@@ -207,14 +207,14 @@ namespace RDA {
         }
 
         // Copy Languages To Viewer
-        if (File.Exists($@"{Program.PathViewer}\Resources\Assets\Texts_{language.ToString("G")}.xml")) {
-          File.Delete($@"{Program.PathViewer}\Resources\Assets\Texts_{language.ToString("G")}.xml");
+        if (File.Exists($@"{Program.PathViewer}\Resources\Assets\Texts_{language:G}.xml")) {
+          File.Delete($@"{Program.PathViewer}\Resources\Assets\Texts_{language:G}.xml");
         }
-        File.Copy($@"{Program.PathRoot}\Modified\Texts_{language.ToString("G")}.xml", $@"{Program.PathViewer}\Resources\Assets\Texts_{language.ToString("G")}.xml");
+        File.Copy($@"{Program.PathRoot}\Modified\Texts_{language:G}.xml", $@"{Program.PathViewer}\Resources\Assets\Texts_{language:G}.xml");
       }
     }
 
-    private static void ProcessingItems(String template, bool findSources = true, Action<Asset> manipulate = null) {
+    private static void ProcessingItems(string template, bool findSources = true, Action<Asset> manipulate = null) {
       var result = new List<Asset>();
       var oldAssets = new Dictionary<string, XElement>();
       if (File.Exists($@"{Program.PathRoot}\Modified\Assets_{template}.xml")) {

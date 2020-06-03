@@ -1,10 +1,9 @@
-﻿using AssetViewer.Data;
-using AssetViewer.Data;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Data;
+using AssetViewer.Data;
 
 namespace AssetViewer.Converter {
 
@@ -13,7 +12,7 @@ namespace AssetViewer.Converter {
   [ValueConversion(typeof(RewardsItem), typeof(IEnumerable<TemplateAsset>))]
   public class RewardToItemConverter : IValueConverter {
 
-    #region Methods
+    #region Public Methods
 
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture) {
       if (value is RewardsItem item) {
@@ -41,6 +40,6 @@ namespace AssetViewer.Converter {
       throw new NotImplementedException();
     }
 
-    #endregion Methods
+    #endregion Public Methods
   }
 }

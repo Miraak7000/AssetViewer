@@ -1,6 +1,4 @@
-﻿using AssetViewer.Data;
-using AssetViewer.Extensions;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -12,6 +10,8 @@ using System.Runtime.Caching;
 using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Xml.Linq;
+using AssetViewer.Data;
+using AssetViewer.Extensions;
 
 namespace AssetViewer {
 
@@ -30,11 +30,21 @@ namespace AssetViewer {
     public static List<Languages> PossibleLanguages { get; } = new List<Languages>();
 
     public static Data.Languages Language {
-      get { return language; }
+      get => language;
       private set { language = value; NotifyStaticPropertyChanged(); }
     }
 
     #endregion Public Properties
+
+    #region Public Events
+
+    public static event EventHandler<PropertyChangedEventArgs> StaticPropertyChanged;
+
+    public static event Action<IEnumerable<TemplateAsset>> OnAssetCountChanged;
+
+    public static event Action OnLanguage_Changed;
+
+    #endregion Public Events
 
     #region Public Constructors
 
@@ -52,16 +62,6 @@ namespace AssetViewer {
 
     #endregion Public Constructors
 
-    #region Public Events
-
-    public static event EventHandler<PropertyChangedEventArgs> StaticPropertyChanged;
-
-    public static event Action<IEnumerable<TemplateAsset>> OnAssetCountChanged;
-
-    public static event Action OnLanguage_Changed;
-
-    #endregion Public Events
-
     #region Public Methods
 
     public static void SetLanguage(Languages lang) {
@@ -73,7 +73,7 @@ namespace AssetViewer {
     }
 
     public static IEnumerable<TemplateAsset> GetItemsById(this IEnumerable<int> ids) {
-      return ids.SelectMany(l => AssetProvider.GetItemsById(l)).Distinct() ?? Enumerable.Empty<TemplateAsset>();
+      return ids.SelectMany(l => GetItemsById(l)).Distinct() ?? Enumerable.Empty<TemplateAsset>();
     }
 
     public static IEnumerable<TemplateAsset> GetItemsById(this int id) {
@@ -112,10 +112,10 @@ namespace AssetViewer {
 
     public static void LoadLanguageFile() {
       Descriptions.Clear();
-      var resource = $"AssetViewer.Resources.Assets.Texts_{Language.ToString("G")}.xml";
+      var resource = $"AssetViewer.Resources.Assets.Texts_{Language:G}.xml";
       if (!Assembly.GetExecutingAssembly().GetManifestResourceNames().Contains(resource)) {
         Language = Data.Languages.English;
-        resource = $"AssetViewer.Resources.Assets.Texts_{Language.ToString("G")}.xml";
+        resource = $"AssetViewer.Resources.Assets.Texts_{Language:G}.xml";
       }
 
       using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(resource))
@@ -128,16 +128,6 @@ namespace AssetViewer {
     }
 
     #endregion Public Methods
-
-    #region Private Fields
-
-    private static Timer Timer = new Timer(OnTimerTick);
-    private static object LockChangedCountItems = new HashSet<TemplateAsset>();
-    private static HashSet<TemplateAsset> ChangedCountItems = new HashSet<TemplateAsset>();
-
-    private static Data.Languages language = Data.Languages.English;
-
-    #endregion Private Fields
 
     #region Private Methods
 
@@ -174,15 +164,16 @@ namespace AssetViewer {
 
     private static void LoadBuildungs() {
       var buildings = new[] {
+                "AssetViewer.Resources.Assets.AdditionalModule.xml",
+                "AssetViewer.Resources.Assets.BridgeBuilding.xml",
+                "AssetViewer.Resources.Assets.BuffFactory.xml",
                 "AssetViewer.Resources.Assets.BuildPermitBuilding.xml",
                 "AssetViewer.Resources.Assets.BuildPermitModules.xml",
-                "AssetViewer.Resources.Assets.CultureModule.xml",
-                "AssetViewer.Resources.Assets.OrnamentalModule.xml",
-                "AssetViewer.Resources.Assets.BridgeBuilding.xml",
                 "AssetViewer.Resources.Assets.CampaignQuestObject.xml",
                 "AssetViewer.Resources.Assets.CampaignUncleMansion.xml",
                 "AssetViewer.Resources.Assets.CityInstitutionBuilding.xml",
                 "AssetViewer.Resources.Assets.CultureBuilding.xml",
+                "AssetViewer.Resources.Assets.CultureModule.xml",
                 "AssetViewer.Resources.Assets.FactoryBuilding7.xml",
                 "AssetViewer.Resources.Assets.FactoryBuilding7_Arctic.xml",
                 "AssetViewer.Resources.Assets.FarmBuilding.xml",
@@ -209,6 +200,10 @@ namespace AssetViewer {
                 "AssetViewer.Resources.Assets.Monument_with_Shipyard.xml",
                 "AssetViewer.Resources.Assets.OilPumpBuilding.xml",
                 "AssetViewer.Resources.Assets.OrnamentalBuilding.xml",
+                "AssetViewer.Resources.Assets.OrnamentalModule.xml",
+                "AssetViewer.Resources.Assets.Palace.xml",
+                "AssetViewer.Resources.Assets.PalaceMinistry.xml",
+                "AssetViewer.Resources.Assets.PalaceModule.xml",
                 "AssetViewer.Resources.Assets.PowerplantBuilding.xml",
                 "AssetViewer.Resources.Assets.PublicServiceBuilding.xml",
                 "AssetViewer.Resources.Assets.QuestLighthouse.xml",
@@ -227,9 +222,6 @@ namespace AssetViewer {
                 "AssetViewer.Resources.Assets.Warehouse.xml",
                 "AssetViewer.Resources.Assets.WorkAreaSlot.xml",
                 "AssetViewer.Resources.Assets.WorkforceConnector.xml",
-                "AssetViewer.Resources.Assets.Palace.xml",
-                "AssetViewer.Resources.Assets.PalaceMinistry.xml",
-                "AssetViewer.Resources.Assets.PalaceModule.xml",
       };
 
       foreach (var str in buildings) {
@@ -338,15 +330,25 @@ namespace AssetViewer {
     }
 
     private static void LoadPosibleLanguages() {
-      foreach (var language in Enum.GetValues(typeof(Languages))) {
-        var lang = (Languages)language;
-        var resource = $"AssetViewer.Resources.Assets.Texts_{lang.ToString("G")}.xml";
+      foreach (var lang in Enum.GetValues(typeof(Languages))) {
+        var currLang = (Languages)lang;
+        var resource = $"AssetViewer.Resources.Assets.Texts_{currLang:G}.xml";
         if (Assembly.GetExecutingAssembly().GetManifestResourceNames().Contains(resource)) {
-          PossibleLanguages.Add(lang);
+          PossibleLanguages.Add(currLang);
         }
       }
     }
 
     #endregion Private Methods
+
+    #region Private Fields
+
+    private static readonly Timer Timer = new Timer(OnTimerTick);
+    private static readonly object LockChangedCountItems = new HashSet<TemplateAsset>();
+    private static readonly HashSet<TemplateAsset> ChangedCountItems = new HashSet<TemplateAsset>();
+
+    private static Data.Languages language = Data.Languages.English;
+
+    #endregion Private Fields
   }
 }

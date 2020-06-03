@@ -1,5 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <FreeAreaBuilding_Arctic>
+  <Asset ID="114703" RV="Update 06" RT="Common" IP="true">
+    <N>agriculture_arctic_01 (Timber Yard)</N>
+    <T ID="1010266" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
+    <BC>
+      <U V="100">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="9 / 80%">
+        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
+      </U>
+      <U>
+        <T ID="116353" I="data/ui/2kimages/main/icons/icon_heating_center_2d.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="15">
+      <FO>
+        <U V="1 / 8">
+          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="20 / 10">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="10">
+          <T ID="112653" I="data/ui/2kimages/main/icons/icon_ressource_explorer.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
   <Asset ID="112667" RV="Update 06" RT="Common" IP="true">
     <N>agriculture_arctic_02 (Caribou Hunter)</N>
     <T ID="112667" I="data/ui/2kimages/main/3dicons/icon_reindeer_meat.png" />
@@ -43,19 +83,22 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="114703" RV="Update 06" RT="Common" IP="true">
-    <N>agriculture_arctic_01 (Timber Yard)</N>
-    <T ID="1010266" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+  <Asset ID="116034" RV="Update 06" RT="Common" IP="true">
+    <N>agriculture_arctic_06 (Normal Fur Hunter)</N>
+    <T ID="116034" I="data/ui/2kimages/main/3dicons/icon_fur.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
     <BC>
-      <U V="100">
+      <U V="200">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="2">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
     </BC>
     <GU>
-      <U V="9 / 80%">
+      <U V="11">
         <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
       </U>
       <U>
@@ -68,16 +111,16 @@
     <FB CT="15">
       <FO>
         <U V="1 / 8">
-          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+          <T ID="1010209" I="data/ui/2kimages/main/3dicons/icon_fur.png" />
         </U>
       </FO>
     </FB>
     <M>
       <MC>
-        <U V="20 / 10">
+        <U V="50 / 25">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
-        <U V="10">
+        <U V="40">
           <T ID="112653" I="data/ui/2kimages/main/icons/icon_ressource_explorer.png" />
         </U>
       </MC>
@@ -118,49 +161,6 @@
     <M>
       <MC>
         <U V="90 / 45">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="40">
-          <T ID="112653" I="data/ui/2kimages/main/icons/icon_ressource_explorer.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="116034" RV="Update 06" RT="Common" IP="true">
-    <N>agriculture_arctic_06 (Normal Fur Hunter)</N>
-    <T ID="116034" I="data/ui/2kimages/main/3dicons/icon_fur.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
-    <BC>
-      <U V="200">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="2">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="11">
-        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
-      </U>
-      <U>
-        <T ID="116353" I="data/ui/2kimages/main/icons/icon_heating_center_2d.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="15">
-      <FO>
-        <U V="1 / 8">
-          <T ID="1010209" I="data/ui/2kimages/main/3dicons/icon_fur.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="50 / 25">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
         <U V="40">

@@ -4,20 +4,10 @@ using System.Windows.Controls;
 
 namespace AssetViewer.Controls {
 
-  /// <summary>
-  /// Interaktionslogik für ExtendedFilters.xaml
-  /// </summary>
+  /// <summary> Interaktionslogik für ExtendedFilters.xaml </summary>
   public partial class ExtendedFilters : UserControl {
 
-    #region Constructors
-
-    public ExtendedFilters() {
-      InitializeComponent();
-    }
-
-    #endregion Constructors
-
-    #region Events
+    #region Public Events
 
     public event Action<object, RoutedEventArgs> AddFilter_Click;
 
@@ -25,9 +15,17 @@ namespace AssetViewer.Controls {
 
     public event Action<object, EventArgs> SelectionChanged;
 
-    #endregion Events
+    #endregion Public Events
 
-    #region Methods
+    #region Public Constructors
+
+    public ExtendedFilters() {
+      InitializeComponent();
+    }
+
+    #endregion Public Constructors
+
+    #region Private Methods
 
     private void BtnAddFilter_Click(object sender, RoutedEventArgs e) {
       AddFilter_Click?.Invoke(sender, e);
@@ -41,6 +39,6 @@ namespace AssetViewer.Controls {
       RemoveFilter_Click?.Invoke(sender, e);
     }
 
-    #endregion Methods
+    #endregion Private Methods
   }
 }

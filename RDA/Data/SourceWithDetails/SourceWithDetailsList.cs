@@ -26,7 +26,7 @@ namespace RDA.Data {
     #region Public Methods
 
     public SourceWithDetailsList Copy() {
-      return new SourceWithDetailsList(this.Select(l => l.Copy())) { FollowingEvents = new HashSet<XElement>(this.FollowingEvents), ElementWeights = this.ElementWeights.ToDictionary(i => i.Key, i => i.Value) };
+      return new SourceWithDetailsList(this.Select(l => l.Copy())) { FollowingEvents = new HashSet<XElement>(FollowingEvents), ElementWeights = ElementWeights.ToDictionary(i => i.Key, i => i.Value) };
     }
 
     public void AddSourceAsset(XElement element, HashSet<AssetWithWeight> details = default) {
@@ -35,33 +35,33 @@ namespace RDA.Data {
       var questGiver = element.XPathSelectElement("Values/Quest/QuestGiver")?.Value;
 
       //Expedition
-      if (expeditionName != null) {
-        var expedition = this.FirstOrDefault(w => w.Source.XPathSelectElement("Values/Expedition/ExpeditionName")?.Value == expeditionName);
-        if (expedition?.Source == null) {
-          this.Add(new SourceWithDetails(element, details));
-        }
-        else {
-          foreach (var item in details) {
-            var itemID = item.Asset.XPathSelectElement("Values/Standard/GUID").Value;
-            var itemTemplate = item.Asset.Element("Template").Value;
+      //if (expeditionName != null) {
+      //  var expedition = this.FirstOrDefault(w => w.Source.XPathSelectElement("Values/Expedition/ExpeditionName")?.Value == expeditionName);
+      //  if (expedition?.Source == null) {
+      //    this.Add(new SourceWithDetails(element, details));
+      //  }
+      //  else {
+      //    foreach (var item in details) {
+      //      var itemID = item.Asset.XPathSelectElement("Values/Standard/GUID").Value;
+      //      var itemTemplate = item.Asset.Element("Template").Value;
 
-            if (expedition.Details.Any(i => i.Asset.XPathSelectElement("Values/Standard/GUID").Value == itemID && i.Asset.Element("Template").Value == itemTemplate)) {
-              continue;
-            }
-            if (item.Asset.Element("Template").Value == "Expedition") {
-              var subExpeditionName = item.Asset.XPathSelectElement("Values/Standard/Name")?.Value;
-              if (expedition.Details.Any(i => i.Asset.XPathSelectElement("Values/Standard/Name")?.Value == subExpeditionName)) {
-                continue;
-              }
-            }
+      // if (expedition.Details.Any(i => i.Asset.XPathSelectElement("Values/Standard/GUID").Value ==
+      // itemID && i.Asset.Element("Template").Value == itemTemplate)) { continue; } if
+      // (item.Asset.Element("Template").Value == "Expedition") { var subExpeditionName =
+      // item.Asset.XPathSelectElement("Values/Standard/Name")?.Value; if (expedition.Details.Any(i
+      // => i.Asset.XPathSelectElement("Values/Standard/Name")?.Value == subExpeditionName)) {
+      // continue; } }
 
-            expedition.Details.Add(item);
-          }
-        }
-        return;
-      }
+      //      expedition.Details.Add(item);
+      //    }
+      //  }
+      //  return;
+      //}
 
       var old = this.FirstOrDefault(l => l.Source.XPathSelectElement("Values/Standard/GUID").Value == assetID && l.Source.Element("Template").Value == element.Element("Template").Value);
+      if (expeditionName != null) {
+        old = this.FirstOrDefault(w => w.Source.XPathSelectElement("Values/Expedition/ExpeditionName")?.Value == expeditionName);
+      }
       if (questGiver != null) {
         old = this.FirstOrDefault(w => w.Source.XPathSelectElement("Values/Quest/QuestGiver")?.Value == questGiver);
       }
@@ -89,7 +89,7 @@ namespace RDA.Data {
           }
         }
         else {
-          this.Add(new SourceWithDetails(element, details));
+          Add(new SourceWithDetails(element, details));
         }
         return;
       }
@@ -108,16 +108,16 @@ namespace RDA.Data {
         }
       }
       else {
-        this.Add(new SourceWithDetails(element, details));
+        Add(new SourceWithDetails(element, details));
       }
     }
 
     public void AddSourceAsset(SourceWithDetailsList input) {
       foreach (var item in input) {
-        this.AddSourceAsset(item.Source, item.Details);
+        AddSourceAsset(item.Source, item.Details);
       }
       foreach (var item in input.FollowingEvents) {
-        this.FollowingEvents.Add(item);
+        FollowingEvents.Add(item);
       }
     }
 

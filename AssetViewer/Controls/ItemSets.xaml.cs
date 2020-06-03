@@ -1,34 +1,35 @@
-﻿using AssetViewer.Data.Filters;
+﻿using System.Collections;
 using AssetViewer.Data;
-using System.Collections;
+using AssetViewer.Data.Filters;
 
 namespace AssetViewer.Controls {
 
   public partial class ItemSets : ItemsBase {
 
-    #region Properties
+    #region Public Properties
 
     public override ItemsHolder ItemsHolder { get; } = new ItemsHolderItemSets();
 
-    #endregion Properties
+    public IList SelectedItems { get; set; }
 
-    #region Constructors
+    #endregion Public Properties
+
+    #region Public Constructors
 
     public ItemSets() : base() {
-      this.InitializeComponent();
+      InitializeComponent();
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
 
-    #region Methods
+    #region Private Methods
 
     private void ListBoxItems_SelectedItemChanged(object sender, System.Windows.RoutedPropertyChangedEventArgs<object> e) {
       if (e.NewValue is TemplateAsset asset) {
         SelectedAsset = asset;
       }
     }
-    public IList SelectedItems { get; set; }
 
-    #endregion Methods
+    #endregion Private Methods
   }
 }

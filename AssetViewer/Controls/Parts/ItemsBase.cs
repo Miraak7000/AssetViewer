@@ -1,11 +1,11 @@
-﻿using AssetViewer.Data;
-using AssetViewer.Data.Filters;
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Controls;
+using AssetViewer.Data;
+using AssetViewer.Data.Filters;
 using VAV;
 
 namespace AssetViewer.Controls {
@@ -17,9 +17,7 @@ namespace AssetViewer.Controls {
     public static RelayCommand<SelectedCountChangedArgs> SelectedCountChangedCommand { get; private set; }
 
     public TemplateAsset SelectedAsset {
-      get {
-        return selectedAsset;
-      }
+      get => selectedAsset;
       set {
         if (selectedAsset != value) {
           selectedAsset = value;
@@ -34,6 +32,12 @@ namespace AssetViewer.Controls {
 
     #endregion Public Properties
 
+    #region Public Events
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    #endregion Public Events
+
     #region Public Constructors
 
     static ItemsBase() {
@@ -45,12 +49,6 @@ namespace AssetViewer.Controls {
     }
 
     #endregion Public Constructors
-
-    #region Public Events
-
-    public event PropertyChangedEventHandler PropertyChanged;
-
-    #endregion Public Events
 
     #region Public Methods
 
@@ -80,12 +78,6 @@ namespace AssetViewer.Controls {
 
     #endregion Public Methods
 
-    #region Private Fields
-
-    private TemplateAsset selectedAsset;
-
-    #endregion Private Fields
-
     #region Private Methods
 
     private static bool CanSelectedCountChange(SelectedCountChangedArgs obj) {
@@ -102,24 +94,30 @@ namespace AssetViewer.Controls {
 
     private void Initialize() {
       ItemsHolder?.SetItems();
-      this.Loaded += UserControl_Loaded;
-      this.Unloaded += UserControl_Unloaded;
-      this.DataContext = this;
+      Loaded += UserControl_Loaded;
+      Unloaded += UserControl_Unloaded;
+      DataContext = this;
     }
 
-    private void UserControl_Loaded(Object sender, RoutedEventArgs e) {
-      AssetProvider.OnLanguage_Changed += this.ComboBoxLanguage_SelectionChanged;
+    private void UserControl_Loaded(object sender, RoutedEventArgs e) {
+      AssetProvider.OnLanguage_Changed += ComboBoxLanguage_SelectionChanged;
     }
 
     private void ComboBoxLanguage_SelectionChanged() {
       ItemsHolder.RaiseLanguageChanged();
-      this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(""));
+      PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(""));
     }
 
     private void UserControl_Unloaded(object sender, RoutedEventArgs e) {
-      AssetProvider.OnLanguage_Changed -= this.ComboBoxLanguage_SelectionChanged;
+      AssetProvider.OnLanguage_Changed -= ComboBoxLanguage_SelectionChanged;
     }
 
     #endregion Private Methods
+
+    #region Private Fields
+
+    private TemplateAsset selectedAsset;
+
+    #endregion Private Fields
   }
 }

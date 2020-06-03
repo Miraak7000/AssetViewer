@@ -6,9 +6,9 @@ namespace AssetViewer.Converter {
 
   public class GlobalDescriptionConverter : IValueConverter {
 
-    #region Methods
+    #region Public Methods
 
-    public Object Convert(Object value, Type targetType, Object parameter, CultureInfo culture) {
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture) {
       if (parameter is int idint) {
         return AssetProvider.Descriptions.TryGetValue(idint, out var str) ? str : null;
       }
@@ -18,10 +18,10 @@ namespace AssetViewer.Converter {
       return null;
     }
 
-    public Object ConvertBack(Object value, Type targetType, Object parameter, CultureInfo culture) {
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) {
       throw new NotImplementedException();
     }
 
-    #endregion Methods
+    #endregion Public Methods
   }
 }

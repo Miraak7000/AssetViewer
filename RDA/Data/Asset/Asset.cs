@@ -14,16 +14,16 @@ namespace RDA.Data {
     #region Public Properties
 
     public static ConcurrentDictionary<string, ConcurrentBag<SourceWithDetailsList>> SavedSources { get; set; } = new ConcurrentDictionary<string, ConcurrentBag<SourceWithDetailsList>>();
-    public String ID { get; set; }
-    public String Name { get; set; }
+    public string ID { get; set; }
+    public string Name { get; set; }
     public Description Text { get; set; }
     public Description UpgradeText { get; set; }
     public Description AssociatedRegions { get; set; }
     public string RarityType { get; private set; } = "Common";
     public Description Rarity { get; set; }
     public string ItemType { get; set; }
-    public String ReleaseVersion { get; set; } = "Release";
-    public String TradePrice { get; set; }
+    public string ReleaseVersion { get; set; } = "Release";
+    public string TradePrice { get; set; }
     public string HiringFee { get; private set; }
     public Description Info { get; set; }
     public Modules Modules { get; set; }
@@ -47,9 +47,9 @@ namespace RDA.Data {
     public List<Upgrade> ItemSets { get; set; }
     public List<TempSource> Sources { get; set; }
 
-    public List<String> MonumentEvents { get; set; }
-    public List<String> MonumentThresholds { get; set; }
-    public List<String> MonumentRewards { get; set; }
+    public List<string> MonumentEvents { get; set; }
+    public List<string> MonumentThresholds { get; set; }
+    public List<string> MonumentRewards { get; set; }
     public List<Upgrade> PopulationUpgrades { get; set; }
     public List<Upgrade> ExpeditionAttributes { get; set; }
     public List<Upgrade> DefenceUpgrades { get; set; }
@@ -69,10 +69,10 @@ namespace RDA.Data {
 
     #region Public Constructors
 
-    public Asset(XElement asset, Boolean findSources) {
+    public Asset(XElement asset, bool findSources) {
       //Set Item Typ
-      this.ItemType = asset.Element("Item")?.Element("ItemType")?.Value;
-      if (this.ItemType == "Normal" || this.ItemType == "None" || string.IsNullOrWhiteSpace(this.ItemType)) {
+      ItemType = asset.Element("Item")?.Element("ItemType")?.Value;
+      if (ItemType == "Normal" || ItemType == "None" || string.IsNullOrWhiteSpace(ItemType)) {
         switch (asset.Element("Template").Value) {
           case string s when s.EndsWith("Buff"):
           case "MonumentEventCategory":
@@ -91,7 +91,7 @@ namespace RDA.Data {
           case "ActiveItem":
           case "ShipSpecialist":
           case "ItemConstructionPlan":
-            this.ItemType = "Item";
+            ItemType = "Item";
             break;
 
           case "BuildPermitBuilding":
@@ -146,7 +146,8 @@ namespace RDA.Data {
           case "Headquarter":
           case "PalaceMinistry":
           case "Palace":
-            this.ItemType = "Building";
+          case "BuffFactory":
+            ItemType = "Building";
             break;
 
           case "BuildPermitModules":
@@ -154,32 +155,33 @@ namespace RDA.Data {
           case "OrnamentalModule":
           case "Farmfield":
           case "PalaceModule":
-            this.ItemType = "Module";
+          case "AdditionalModule":
+            ItemType = "Module";
             break;
 
           case "CultureItem":
-            this.ItemType = "Animal";
+            ItemType = "Animal";
             break;
 
           case "Product":
-            this.ItemType = "Product";
+            ItemType = "Product";
             break;
 
           case "FluffItem":
-            this.ItemType = "Character Item";
+            ItemType = "Character Item";
             break;
 
           case "ItemWithUI":
-            this.ItemType = "Document";
+            ItemType = "Document";
             break;
 
           case "QuestItem":
           case "QuestItemMagistrate":
-            this.ItemType = "Quest Item";
+            ItemType = "Quest Item";
             break;
 
           case "ItemSet":
-            this.ItemType = "Item Set";
+            ItemType = "Item Set";
             break;
 
           default:
@@ -250,6 +252,10 @@ namespace RDA.Data {
           case "CampaignBehaviour":
           case "HeatProvider":
           case "BuildingUnique":
+          case "Industrializable":
+          case "Electrifiable":
+          case "PalaceMonumentTracker":
+          case "BuffFactory":
           //Maybe usefull Building Informations
           case "InfluenceSource":
           //Building influence gain
@@ -263,19 +269,19 @@ namespace RDA.Data {
             break;
 
           case "Standard":
-            this.ProcessElement_Standard(element);
+            ProcessElement_Standard(element);
             break;
 
           case "Item":
-            this.ProcessElement_Item(element);
+            ProcessElement_Item(element);
             break;
 
           case "ItemEffect":
-            this.ProcessElement_ItemEffect(element);
+            ProcessElement_ItemEffect(element);
             break;
 
           case "Building": //Building category, Terrain
-            this.ProcessElement_Building(element);
+            ProcessElement_Building(element);
             break;
 
           case "FactoryUpgrade":
@@ -304,131 +310,133 @@ namespace RDA.Data {
           case "RepairCrane":
           case "TrainStation":
           case "PowerplantUpgrade":
-            this.ProcessElement_GenericUpgradeChilds(element, element.Name.LocalName);
+          case "IndustrializableUpgrade":
+          case "Motorizable":
+            ProcessElement_GenericUpgradeChilds(element, element.Name.LocalName);
             break;
 
           case "PassiveTradeGoodGenUpgrade":
           //Buildings
           case "Residence7":
-            this.ProcessElement_GenericUpgradeElement(element, element.Name.LocalName);
+            ProcessElement_GenericUpgradeElement(element, element.Name.LocalName);
             break;
 
           //Non Generics
           case "PopulationUpgrade":
-            this.ProcessElement_PopulationUpgrade(element);
+            ProcessElement_PopulationUpgrade(element);
             break;
 
           case "ExpeditionAttribute":
-            this.ProcessElement_ExpeditionAttribute(element);
+            ProcessElement_ExpeditionAttribute(element);
             break;
 
           case "AttackerUpgrade":
-            this.ProcessElement_AttackerUpgrade(element);
+            ProcessElement_AttackerUpgrade(element);
             break;
 
           case "AttackableUpgrade":
-            this.ProcessElement_AttackableUpgrade(element);
+            ProcessElement_AttackableUpgrade(element);
             break;
 
           case "ProjectileUpgrade":
-            this.ProcessElement_ProjectileUpgrade(element);
+            ProcessElement_ProjectileUpgrade(element);
             break;
 
           case "ItemAction":
-            this.ProcessElement_ItemActions(element);
+            ProcessElement_ItemActions(element);
             break;
 
           case "MonumentEventCategory":
-            this.ProcessElement_MonumentEventCategory(element);
+            ProcessElement_MonumentEventCategory(element);
             break;
 
           case "MonumentEvent":
-            this.ProcessElement_MonumentEvent(element);
+            ProcessElement_MonumentEvent(element);
             break;
 
           case "Ornament":
-            this.Info = element.Element("OrnamentDescritpion") == null ? null : new Description(element.Element("OrnamentDescritpion").Value);
+            Info = element.Element("OrnamentDescritpion") == null ? null : new Description(element.Element("OrnamentDescritpion").Value);
             break;
 
           case "Reward":
-            this.ProcessElement_MonumentEventReward(element);
+            ProcessElement_MonumentEventReward(element);
             break;
 
           case "DivingBellUpgrade":
-            this.ProcessElement_DivingBellUpgrade(element);
+            ProcessElement_DivingBellUpgrade(element);
             break;
 
           case "CraftableItem":
-            this.ProcessElement_CraftableItem(element);
+            ProcessElement_CraftableItem(element);
             break;
 
           case "ItemWithUI":
-            this.ProcessElement_ItemWithUI(element);
+            ProcessElement_ItemWithUI(element);
             break;
 
           case "ItemStartExpedition":
-            this.ProcessElement_ItemStartExpedition(element);
+            ProcessElement_ItemStartExpedition(element);
             break;
 
           case "ItemSocketSet":
-            this.ProcessElement_ItemSocketSet(element);
+            ProcessElement_ItemSocketSet(element);
             break;
 
           //Buildings
           case "Upgradable":
-            this.ProcessElement_Upgradable(element);
+            ProcessElement_Upgradable(element);
             break;
 
           case "Cost":
-            this.ProcessElement_Cost(element);
+            ProcessElement_Cost(element);
             break;
 
           case "Pausable":
-            this.ProcessElement_Pausable(element);
+            ProcessElement_Pausable(element);
             break;
 
           case "FactoryBase":
-            this.FactoryBase = new FactoryBase(element);
+            FactoryBase = new FactoryBase(element);
             break;
 
           case "ModuleOwner":
-            this.Modules = new Modules(element);
+            Modules = new Modules(element);
             break;
 
           case "Maintenance":
-            this.Maintenance = new Maintenance(element);
+            Maintenance = new Maintenance(element);
             break;
 
           case "Electric":
-            this.ProcessElement_Electric(element);
+            ProcessElement_Electric(element);
             break;
 
           case "PublicService":
-            this.ProcessElement_PublicService(element);
+            ProcessElement_PublicService(element);
             break;
 
           case "Powerplant":
-            this.ProcessElement_Powerplant(element);
+            ProcessElement_Powerplant(element);
             break;
 
           case "Market":
-            this.ProcessElement_Market(element);
+            ProcessElement_Market(element);
             break;
 
           case "Heated":
-            this.ProcessElement_Heated(element);
+            ProcessElement_Heated(element);
             break;
 
           case "Warehouse":
-            this.ProcessElement_Warehouse(element);
+            ProcessElement_Warehouse(element);
             break;
 
           case "FreeAreaProductivity":
-            this.ProcessElement_FreeAreaProductivity(element);
+            ProcessElement_FreeAreaProductivity(element);
             break;
 
           case "Monument":
-            this.ProcessElement_Monument(element);
+            ProcessElement_Monument(element);
             break;
 
           default:
@@ -438,9 +446,11 @@ namespace RDA.Data {
         }
       }
       if (findSources) {
-        var results = this.FindSources(this.ID);
+        var results = FindSources(ID, asset);
+
+        FilterOutRegions(asset, results);
         var sources = results.MergeResults(ID.ToString());
-        this.Sources = sources.Select(s => new TempSource(s)).ToList();
+        Sources = sources.Select(s => new TempSource(s)).ToList();
       }
     }
 
@@ -450,22 +460,22 @@ namespace RDA.Data {
 
     public XElement ToXml() {
       var result = new XElement("Asset");
-      result.Add(new XAttribute("ID", this.ID));
-      result.Add(new XAttribute("RV", this.ReleaseVersion));
-      result.Add(new XElement("N", this.Name));
-      result.Add(this.Text.ToXml("T"));
-      result.Add(this.Rarity == null ? new Description(Assets.KeyToIdDict["Common"]).ToXml("R") : this.Rarity.ToXml("R"));
+      result.Add(new XAttribute("ID", ID));
+      result.Add(new XAttribute("RV", ReleaseVersion));
+      result.Add(new XElement("N", Name));
+      result.Add(Text.ToXml("T"));
+      result.Add(Rarity == null ? new Description(Assets.KeyToIdDict["Common"]).ToXml("R") : Rarity.ToXml("R"));
       result.Add(new XAttribute("RT", RarityType));
-      result.Add(new XElement("IT", this.ItemType));
+      result.Add(new XElement("IT", ItemType));
 
-      if (this.FestivalName != null) {
-        result.Add(this.FestivalName.ToXml("FN"));
+      if (FestivalName != null) {
+        result.Add(FestivalName.ToXml("FN"));
       }
-      if (this.Allocation != null) {
-        result.Add(this.Allocation.ToXml());
+      if (Allocation != null) {
+        result.Add(Allocation.ToXml());
       }
-      if (this.AssociatedRegions != null) {
-        result.Add(this.AssociatedRegions.ToXml("AR"));
+      if (AssociatedRegions != null) {
+        result.Add(AssociatedRegions.ToXml("AR"));
       }
 
       var type = typeof(Asset);
@@ -473,7 +483,7 @@ namespace RDA.Data {
         if (item.GetValue(this) != null) {
           var builder = new StringBuilder();
           foreach (var character in item.Name) {
-            if (Char.IsUpper(character)) {
+            if (char.IsUpper(character)) {
               builder.Append(character);
             }
           }
@@ -481,132 +491,162 @@ namespace RDA.Data {
         }
       }
 
-      result.Add(new XElement("TP", this.TradePrice));
-      result.Add(new XElement("HF", this.HiringFee));
+      result.Add(new XElement("TP", TradePrice));
+      result.Add(new XElement("HF", HiringFee));
 
-      if (this.Info != null)
-        result.Add(this.Info.ToXml("I"));
-      if (this.FactoryBase != null)
-        result.Add(this.FactoryBase.ToXml());
-      if (this.Maintenance != null)
-        result.Add(this.Maintenance.ToXml());
-      if (this.UpgradeText != null)
-        result.Add(this.UpgradeText.ToXml("UT"));
-      if (this.Modules != null)
-        result.Add(this.Modules.ToXml());
-      if (this.IsPausable)
+      if (Info != null)
+        result.Add(Info.ToXml("I"));
+      if (FactoryBase != null)
+        result.Add(FactoryBase.ToXml());
+      if (Maintenance != null)
+        result.Add(Maintenance.ToXml());
+      if (UpgradeText != null)
+        result.Add(UpgradeText.ToXml("UT"));
+      if (Modules != null)
+        result.Add(Modules.ToXml());
+      if (IsPausable)
         result.Add(new XAttribute("IP", true));
 
-      if (this.EffectTargets != null)
-        result.Add(new XElement("ET", this.EffectTargets.Select(s => s.ToXml())));
-      if (this.Sources != null)
-        result.Add(new XElement("S", this.Sources?.Select(s => s.ToXml())));
+      if (EffectTargets != null)
+        result.Add(new XElement("ET", EffectTargets.Select(s => s.ToXml())));
+      if (Sources != null)
+        result.Add(new XElement("S", Sources?.Select(s => s.ToXml())));
 
-      if (this.MonumentEvents != null)
-        result.Add(new XElement("ME", this.MonumentEvents?.Select(s => new XElement("E", s))));
-      if (this.MonumentThresholds != null)
-        result.Add(new XElement("MT", this.MonumentThresholds?.Select(s => new XElement("T", s))));
-      if (this.MonumentRewards != null)
-        result.Add(new XElement("MR", this.MonumentRewards?.Select(s => new XElement("R", s))));
-      if (this.SetParts != null)
-        result.Add(new XElement("SP", this.SetParts?.Select(s => new XElement("P", s))));
+      if (MonumentEvents != null)
+        result.Add(new XElement("ME", MonumentEvents?.Select(s => new XElement("E", s))));
+      if (MonumentThresholds != null)
+        result.Add(new XElement("MT", MonumentThresholds?.Select(s => new XElement("T", s))));
+      if (MonumentRewards != null)
+        result.Add(new XElement("MR", MonumentRewards?.Select(s => new XElement("R", s))));
+      if (SetParts != null)
+        result.Add(new XElement("SP", SetParts?.Select(s => new XElement("P", s))));
       return result;
     }
 
-    public override String ToString() {
-      return $"{this.ID} - {this.Name}";
+    public override string ToString() {
+      return $"{ID} - {Name}";
     }
 
     #endregion Public Methods
 
     #region Private Methods
 
+    private static void FilterOutRegions(XElement asset, ConcurrentBag<SourceWithDetailsList> results) {
+      //Region Filter
+      var toDelete = new List<SourceWithDetails>();
+      foreach (var sourceWithDetails in results) {
+        foreach (var expedition in sourceWithDetails.Where(r => r.Source.Element("Template").Value == "Expedition")) {
+          expedition.Details.RemoveWhere(d => RegionFilter(d, asset));
+          if (expedition.Details.Count == 0) {
+            toDelete.Add(expedition);
+          }
+        }
+        foreach (var item in toDelete) {
+          sourceWithDetails.Remove(item);
+        }
+      }
+    }
+
+    private static bool RegionFilter(AssetWithWeight assetWithWeight, XElement asset) {
+      var region = assetWithWeight.Asset.XPathSelectElement("Values/Expedition/ExpeditionRegion")?.Value ?? "None";
+      var difficulty = assetWithWeight.Asset.XPathSelectElement("Values/Expedition/ExpeditionDifficulty")?.Value ?? "Easy";
+
+      var assetRegions = asset.XPathSelectElement("Values/ExpeditionAttribute/ItemRegions")?.Value ?? "None";
+      var assetDiffs = asset.XPathSelectElement("Values/ExpeditionAttribute/ItemDifficulties")?.Value ?? "None";
+      if (assetRegions == "None" || (assetRegions.Contains(region) && (assetDiffs == "None" || assetDiffs.Contains(difficulty)))) {
+        return false;
+      }
+      return true;
+
+      //return !((asset.XPathSelectElement("Values/ExpeditionAttribute/ItemRegions")?.Value.Contains(region) ?? true) &&
+      //    (asset.XPathSelectElement("Values/ExpeditionAttribute/ItemDifficulties")?.Value.Contains(difficulty) ?? true));
+    }
+
     private void ProcessElement_Building(XElement element) {
       if (element.Element("AssociatedRegions")?.Value is string str) {
-        var regions = str.Split(';').Select(s => new Description(Assets.KeyToIdDict[s]));
+        var regions = str.Replace("Meta", "").Split(new[] { ";" }, StringSplitOptions.RemoveEmptyEntries).Select(s => new Description(Assets.KeyToIdDict[s]));
         AssociatedRegions = Description.Join(regions, ", ");
       }
     }
 
     private void ProcessElement_Monument(XElement element) {
       if ((element.Element("UpgradeTarget")?.Value ?? "0") != "0") {
-        this.UpgradeText = new Description("10580").Remove("&lt;br/&gt;[AssetData([Conditions QuestCondition Context]) Text] [Conditions QuestCondition CurrentAmount]/[Conditions QuestCondition Amount]");
-        this.UpgradeText.AppendWithSpace(new Description(element.Element("UpgradeTarget").Value));
+        UpgradeText = new Description("10580").Remove("&lt;br/&gt;[AssetData([Conditions QuestCondition Context]) Text] [Conditions QuestCondition CurrentAmount]/[Conditions QuestCondition Amount]");
+        UpgradeText.AppendWithSpace(new Description(element.Element("UpgradeTarget").Value));
       }
     }
 
     private void ProcessElement_Heated(XElement element) {
       if (element.Element("RequiresHeat")?.Value == "1") {
-        this.GenericUpgrades.Add(new Upgrade { Text = new Description("116353") });
+        GenericUpgrades.Add(new Upgrade { Text = new Description("116353") });
       }
     }
 
     private void ProcessElement_FreeAreaProductivity(XElement element) {
-      var radius = "";
       if (element.Element("InfluenceRadius")?.Value is string value) {
-        radius = value;
+        var radius = value;
         if (element.Element("NeededAreaPercent")?.Value is string needed) {
           radius += $" / {needed}%";
         }
-        this.GenericUpgrades.Add(new Upgrade { Text = new Description("12504"), Value = radius });
+        GenericUpgrades.Add(new Upgrade { Text = new Description("12504"), Value = radius });
       }
     }
 
     private void ProcessElement_Warehouse(XElement element) {
       if (element.Element("WarehouseStorage")?.Element("StorageMax")?.Value is string value && value != "0") {
-        this.GenericUpgrades.Add(new Upgrade { Text = new Description("22426"), Value = "+" + value });
+        GenericUpgrades.Add(new Upgrade { Text = new Description("22426"), Value = "+" + value });
       }
     }
 
     private void ProcessElement_ItemSocketSet(XElement element) {
-      this.ItemSocketSet = new List<Upgrade>();
+      ItemSocketSet = new List<Upgrade>();
       if (element.Element("SetBuff")?.Value is string buff) {
-        this.ItemSocketSet.AddRange(Assets.Buffs[buff].AllUpgrades.ToList());
-        this.EffectTargets = Assets.Buffs[buff].EffectTargets;
+        ItemSocketSet.AddRange(Assets.Buffs[buff].AllUpgrades.ToList());
+        EffectTargets = Assets.Buffs[buff].EffectTargets;
       }
       else if (element.Element("RegionSetBuff") is XElement regionBuffs) {
-        this.EffectTargets = new List<EffectTarget>();
+        EffectTargets = new List<EffectTarget>();
         foreach (var region in regionBuffs.Elements()) {
           switch (region.Name.LocalName) {
             case "Moderate":
-              this.ItemSocketSet.Add(new Upgrade { Text = new Description("113322"), Additionals = Assets.Buffs[region.Element("SetBuff").Value].AllUpgrades.ToList() });
+              ItemSocketSet.Add(new Upgrade { Text = new Description("113322"), Additionals = Assets.Buffs[region.Element("SetBuff").Value].AllUpgrades.ToList() });
               break;
 
             case "Colony01":
-              this.ItemSocketSet.Add(new Upgrade { Text = new Description("113395"), Additionals = Assets.Buffs[region.Element("SetBuff").Value].AllUpgrades.ToList() });
+              ItemSocketSet.Add(new Upgrade { Text = new Description("113395"), Additionals = Assets.Buffs[region.Element("SetBuff").Value].AllUpgrades.ToList() });
               break;
 
             default:
               throw new NotImplementedException();
           }
-          this.EffectTargets.AddRange(Assets.Buffs[region.Element("SetBuff").Value].EffectTargets);
+          EffectTargets.AddRange(Assets.Buffs[region.Element("SetBuff").Value].EffectTargets);
         }
       }
       var allocation = Assets.Original.Descendants("Asset")
-        .FirstOrDefault(a => a.Descendants("Set").Any(s => s.Value == this.ID));
+        .FirstOrDefault(a => a.Descendants("Set").Any(s => s.Value == ID));
       if (allocation != null) {
-        this.Allocation = new Allocation(allocation.XPathSelectElement("Values/Standard/GUID").Value, null);
+        Allocation = new Allocation(allocation.XPathSelectElement("Values/Standard/GUID").Value, null);
       }
     }
 
     private void ProcessElement_Standard(XElement element) {
-      this.ID = element.Element("GUID").Value;
-      this.Name = element.Element("Name").Value;
-      this.Text = new Description(element.Element("GUID").Value);
-      this.Info = element.Element("InfoDescription") == null ? null : new Description(element.Element("InfoDescription").Value);
+      ID = element.Element("GUID").Value;
+      Name = element.Element("Name").Value;
+      Text = new Description(element.Element("GUID").Value);
+      Info = element.Element("InfoDescription") == null ? null : new Description(element.Element("InfoDescription").Value);
     }
 
     private void ProcessElement_Item(XElement element) {
-      this.RarityType = element.Element("Rarity")?.Value ?? "Common";
-      this.Rarity = element.Element("Rarity") == null ? new Description("118002") : new Description(Assets.GetDescriptionID(element.Element("Rarity").Value));
-      this.Allocation = new Allocation(element.Parent.Parent.Element("Template").Value, element.Element("Allocation")?.Value);
+      RarityType = element.Element("Rarity")?.Value ?? "Common";
+      Rarity = element.Element("Rarity") == null ? new Description("118002") : new Description(Assets.GetDescriptionID(element.Element("Rarity").Value));
+      Allocation = new Allocation(element.Parent.Parent.Element("Template").Value, element.Element("Allocation")?.Value);
       if (element.Element("Allocation") == null) {
-        element.Add(new XElement("Allocation", this.Allocation.ID));
+        element.Add(new XElement("Allocation", Allocation.ID));
       }
-      this.TradePrice = element.Element("TradePrice") == null ? null : (Int32.Parse(element.Element("TradePrice").Value) / 4).ToString();
-      this.HiringFee = element.Element("TradePrice") == null ? null : (Int32.Parse(element.Element("TradePrice").Value)).ToString();
+      TradePrice = element.Element("TradePrice") == null ? null : (int.Parse(element.Element("TradePrice").Value) / 4).ToString();
+      HiringFee = element.Element("TradePrice") == null ? null : (int.Parse(element.Element("TradePrice").Value)).ToString();
       if (element.Element("ItemSet") != null) {
-        this.ItemSets = new List<Upgrade> {
+        ItemSets = new List<Upgrade> {
           new Upgrade(element.Element("ItemSet"))
         };
       }
@@ -617,7 +657,7 @@ namespace RDA.Data {
         if (element.Element("EffectTargets") == null)
           throw new NotImplementedException();
         if (element.Element("EffectTargets").HasElements) {
-          this.EffectTargets = new List<EffectTarget>();
+          EffectTargets = new List<EffectTarget>();
           foreach (var item in element.Element("EffectTargets").Elements()) {
             EffectTargets.Add(new EffectTarget(item));
           }
@@ -626,61 +666,62 @@ namespace RDA.Data {
     }
 
     private void ProcessElement_GenericUpgradeElement(XElement element, string category) {
-      if (element.Value != "")
-        switch (element.Name.LocalName) {
-          case "PublicServiceNoSatisfactionDistance":
-          case "ChangeModule":
-          case "ForcedFeedbackVariation":
-          case "AdditionalModuleSoundLoop":
-          case "HideBuff":
-          case "ReplaceAssemblyOptions":
-          case "HealBuildingsPerMinuteUpgrade":
-          case "OverrideIncidentAttractiveness":
-          case "RiotInfluenceUpgrade":
-          case "FireInfluenceUpgrade":
-          case "IllnessInfluenceUpgrade":
-          case "DistanceUpgrade":
-          //case "WorkerUnit":
-          //case "MaxWorkerAmount":
-          //case "WorkerPause":
-          //case "PlantTreePercent":
-          //case "CutTree":
-          case "WayTime":
-          case "NeededAreaPercent":
-          //case "FreeAreaType":
-          case "CultureType":  //maybe Implement
-          case "CultureSpawnGroup":
-          case "Sets":
-          case "SetPages":
-          case "UndiscoveredSet":
-          case "ModuleListHeader":
-          case "OpenSetPages":
-          case "CultureMoodImage":
-          case "MinLoadingTime":
-          case "ProjectileAsset":
-          case "ProjectileCount":
-          case "AccuracyBase":
-          case "AccuracyIncreaseOverDistance":
-          case "AccuracySpeedDecay":
-          case "TargetAngleVariation":
-          case "ShootingTracking":
-          case "TurretExplosionEffectAsset":
-          case "MuzzleEffectAssets":
-          case "Turrets":
-          case "AttackRangeApproachPercentage":
-          case "EmitProjectileTimeAfterStartAnimation":
-          case "AccuracyByDistance":
-          case "HealBuildingsPerMinute":
-          case "InitializeForestMinTreeAreaPercent":
+      if (string.IsNullOrEmpty(element.Value))
+        return;
+      switch (element.Name.LocalName) {
+        case "PublicServiceNoSatisfactionDistance":
+        case "ChangeModule":
+        case "ForcedFeedbackVariation":
+        case "AdditionalModuleSoundLoop":
+        case "HideBuff":
+        case "ReplaceAssemblyOptions":
+        case "HealBuildingsPerMinuteUpgrade":
+        case "OverrideIncidentAttractiveness":
+        case "RiotInfluenceUpgrade":
+        case "FireInfluenceUpgrade":
+        case "IllnessInfluenceUpgrade":
+        case "DistanceUpgrade":
+        //case "WorkerUnit":
+        //case "MaxWorkerAmount":
+        //case "WorkerPause":
+        //case "PlantTreePercent":
+        //case "CutTree":
+        case "WayTime":
+        case "NeededAreaPercent":
+        //case "FreeAreaType":
+        case "CultureType":  //maybe Implement
+        case "CultureSpawnGroup":
+        case "Sets":
+        case "SetPages":
+        case "UndiscoveredSet":
+        case "ModuleListHeader":
+        case "OpenSetPages":
+        case "CultureMoodImage":
+        case "MinLoadingTime":
+        case "ProjectileAsset":
+        case "ProjectileCount":
+        case "AccuracyBase":
+        case "AccuracyIncreaseOverDistance":
+        case "AccuracySpeedDecay":
+        case "TargetAngleVariation":
+        case "ShootingTracking":
+        case "TurretExplosionEffectAsset":
+        case "MuzzleEffectAssets":
+        case "Turrets":
+        case "AttackRangeApproachPercentage":
+        case "EmitProjectileTimeAfterStartAnimation":
+        case "AccuracyByDistance":
+        case "HealBuildingsPerMinute":
+        case "InitializeForestMinTreeAreaPercent":
 
-          //Ministary buffs (maybe todo)
-          case "ElectricityRangeUpgrade":
-            break;
+        //Ministary buffs (maybe todo)
+        case "ElectricityRangeUpgrade":
+          break;
 
-          default:
-            this.GenericUpgrades.Add(new Upgrade(element) { Category = category });
-            break;
-        }
+        default:
+          GenericUpgrades.Add(new Upgrade(element) { Category = category });
+          break;
+      }
     }
 
     private void ProcessElement_GenericUpgradeChilds(XElement element, string category) {
@@ -693,55 +734,57 @@ namespace RDA.Data {
 
     private void ProcessElement_Upgradable(XElement element) {
       if (element.HasElements && (element.Element("NextGUID")?.Value ?? "0") != "0") {
-        this.UpgradeText = new Description("10580").Remove("&lt;br/&gt;[AssetData([Conditions QuestCondition Context]) Text] [Conditions QuestCondition CurrentAmount]/[Conditions QuestCondition Amount]");
-        this.UpgradeText.AppendWithSpace(new Description(element.Element("NextGUID").Value));
+        UpgradeText = new Description("10580").Remove("&lt;br/&gt;[AssetData([Conditions QuestCondition Context]) Text] [Conditions QuestCondition CurrentAmount]/[Conditions QuestCondition Amount]");
+        UpgradeText.AppendWithSpace(new Description(element.Element("NextGUID").Value));
 
-        this.UpgradeCosts = new List<Upgrade>();
+        UpgradeCosts = new List<Upgrade>();
         foreach (var item in element.Descendants("Item").Where(i => i.Element("Amount")?.Value != null)) {
-          this.UpgradeCosts.Add(new Upgrade() { Text = new Description(item.Element("Ingredient").Value), Value = item.Element("Amount").Value });
+          UpgradeCosts.Add(new Upgrade { Text = new Description(item.Element("Ingredient").Value), Value = item.Element("Amount").Value });
         }
       }
     }
 
     private void ProcessElement_Cost(XElement element) {
       if (element.HasElements) {
-        this.BuildCosts = new List<Upgrade>();
+        BuildCosts = new List<Upgrade>();
         foreach (var item in element.Descendants("Item").Where(i => i.Element("Amount")?.Value != null)) {
           if (item.Element("Ingredient")?.Value is string value) {
-            this.BuildCosts.Add(new Upgrade() { Text = new Description(value), Value = item.Element("Amount").Value });
+            BuildCosts.Add(new Upgrade { Text = new Description(value), Value = item.Element("Amount").Value });
           }
           else {
             var index = element.Element("Costs").Elements().ToList().IndexOf(item);
             var ingedient = Assets.DefaultValues["Cost"].Element("Costs").Elements().ElementAt(index).Element("Ingredient").Value;
-            this.BuildCosts.Add(new Upgrade() { Text = new Description(ingedient), Value = item.Element("Amount").Value });
+            BuildCosts.Add(new Upgrade { Text = new Description(ingedient), Value = item.Element("Amount").Value });
           }
         }
         if (element.Element("InfluenceCostPoints")?.Value is string influencecost) {
-          this.BuildCosts.Add(new Upgrade() { Text = new Description("1010190"), Value = influencecost });
+          BuildCosts.Add(new Upgrade { Text = new Description("1010190"), Value = influencecost });
         }
       }
     }
 
     private void ProcessElement_Pausable(XElement element) {
       if (element.Element("CanPauseManually")?.Value == "1") {
-        this.IsPausable = true;
+        IsPausable = true;
       }
     }
 
     private void ProcessElement_PopulationUpgrade(XElement element) {
       if (element.HasElements) {
-        this.PopulationUpgrades = new List<Upgrade>();
+        PopulationUpgrades = new List<Upgrade>();
         foreach (var item in element.Elements()) {
           switch (item.Name.LocalName) {
             case "InputBenefitModifier":
               var buffs = item.Elements("Item").SelectMany(e => e.Elements().Where(ele => ele.Name.LocalName != "Product"));
               foreach (var buffname in buffs.Select(b => b.Name.LocalName).Distinct()) {
-                var firstBuff = new Upgrade(buffs.FirstOrDefault(b => b.Name.LocalName == buffname));
-                firstBuff.Additionals = new List<Upgrade>();
-                firstBuff.Value = null;
+                var firstBuff = new Upgrade(buffs.FirstOrDefault(b => b.Name.LocalName == buffname)) {
+                  Additionals = new List<Upgrade>(),
+                  Value = null
+                };
                 foreach (var buff in buffs.Where(b => b.Name.LocalName == buffname)) {
-                  var secBuff = new Upgrade(buff);
-                  secBuff.Text = new Description(buff.Parent.Element("Product").Value);
+                  var secBuff = new Upgrade(buff) {
+                    Text = new Description(buff.Parent.Element("Product").Value)
+                  };
                   firstBuff.Additionals.Add(secBuff);
                 }
                 PopulationUpgrades.Add(firstBuff);
@@ -749,7 +792,7 @@ namespace RDA.Data {
               break;
 
             default:
-              this.PopulationUpgrades.Add(new Upgrade(item));
+              PopulationUpgrades.Add(new Upgrade(item));
               break;
           }
         }
@@ -760,13 +803,13 @@ namespace RDA.Data {
       if (element.HasElements) {
         var attributes = element.XPathSelectElements("ExpeditionAttributes/Item").Where(w => w.HasElements).ToArray();
         if (attributes.Length > 0) {
-          this.ExpeditionAttributes = new List<Upgrade>();
+          ExpeditionAttributes = new List<Upgrade>();
           foreach (var attribute in attributes) {
             if (attribute.Element("Attribute") == null)
               continue;
             if (attribute.Element("Attribute").Value == "PerkEntertainer")
               continue;
-            this.ExpeditionAttributes.Add(new Upgrade(attribute.Element("Attribute").Value, attribute.Element("Amount")?.Value));
+            ExpeditionAttributes.Add(new Upgrade(attribute.Element("Attribute").Value, attribute.Element("Amount")?.Value));
           }
         }
       }
@@ -774,16 +817,16 @@ namespace RDA.Data {
 
     private void ProcessElement_AttackerUpgrade(XElement element) {
       if (element.HasElements) {
-        this.AttackerUpgrades = new List<Upgrade>();
+        AttackerUpgrades = new List<Upgrade>();
         var projektile = element.Element("UseProjectile");
         if (projektile != null) {
-          this.AttackerUpgrades.Add(new Upgrade(projektile));
+          AttackerUpgrades.Add(new Upgrade(projektile));
           var Projectile = Assets
             .Original
             .Descendants("Asset")
             .FirstOrDefault(a => a.XPathSelectElement($"Values/Standard/GUID")?.Value == projektile.Value);
           if (Projectile.XPathSelectElement("Values/Exploder/InnerDamage")?.Value is string damage && damage != "0") {
-            this.AttackerUpgrades.Add(new Upgrade() { Text = new Description("20621"), Value = damage });
+            AttackerUpgrades.Add(new Upgrade { Text = new Description("20621"), Value = damage });
           }
         }
         foreach (var item in element.Elements().Except(new[] { projektile })) {
@@ -794,7 +837,7 @@ namespace RDA.Data {
             continue;
           if (item.Name.LocalName == "DamageFactor") {
             foreach (var factor in item.Elements()) {
-              this.AttackerUpgrades.Add(new Upgrade(factor));
+              AttackerUpgrades.Add(new Upgrade(factor));
             }
             continue;
           }
@@ -802,24 +845,24 @@ namespace RDA.Data {
           if (upgrade.Text == null) {
             continue;
           }
-          this.AttackerUpgrades.Add(upgrade);
+          AttackerUpgrades.Add(upgrade);
         }
       }
     }
 
     private void ProcessElement_AttackableUpgrade(XElement element) {
       if (element.HasElements) {
-        this.DefenceUpgrades = new List<Upgrade>();
+        DefenceUpgrades = new List<Upgrade>();
         foreach (var item in element.Elements()) {
           switch (item.Name.LocalName) {
             case "DamageReceiveFactor":
               foreach (var subItem in item.Elements()) {
-                this.DefenceUpgrades.Add(new Upgrade(subItem));
+                DefenceUpgrades.Add(new Upgrade(subItem));
               }
               break;
 
             default:
-              this.DefenceUpgrades.Add(new Upgrade(item));
+              DefenceUpgrades.Add(new Upgrade(item));
               break;
           }
         }
@@ -837,50 +880,50 @@ namespace RDA.Data {
         var itemAction = element.Element("ItemAction")?.Value ?? "NOACTION";
         Description ActionText = null;
 
-        this.ItemActionUpgrades = new List<Upgrade>();
+        ItemActionUpgrades = new List<Upgrade>();
 
         if (element.Element("ActionDescription")?.Value is string desc) {
           ActionText = new Description(desc, DescriptionFontStyle.Light);
         }
 
         if (ActionText != null) {
-          this.ItemActionUpgrades.Add(new Upgrade() { Text = ActionText, Value = element.Element("Charges")?.Value ?? "" });
+          ItemActionUpgrades.Add(new Upgrade { Text = ActionText, Value = element.Element("Charges")?.Value ?? "" });
         }
 
         if (itemAction == "KAMIKAZE") {
-          this.ItemActionUpgrades.Add(new Upgrade() { Text = new Description("21347") { AdditionalInformation = new Description("21348", DescriptionFontStyle.Light) } });
-          this.ItemActionUpgrades.Add(new Upgrade() { Text = new Description("21353") });
+          ItemActionUpgrades.Add(new Upgrade { Text = new Description("21347") { AdditionalInformation = new Description("21348", DescriptionFontStyle.Light) } });
+          ItemActionUpgrades.Add(new Upgrade { Text = new Description("21353") });
           return;
         }
 
         if (element.Element("ActiveBuff")?.Value is string buff) {
           if (ActionText == null) {
-            this.ItemActionUpgrades.Add(new Upgrade() { Text = new Description("20071", DescriptionFontStyle.Light), Value = element.Element("Charges")?.Value ?? "" });
+            ItemActionUpgrades.Add(new Upgrade { Text = new Description("20071", DescriptionFontStyle.Light), Value = element.Element("Charges")?.Value ?? "" });
           }
 
-          this.ItemActionUpgrades.AddRange(Assets.Buffs[buff].AllUpgrades.ToList());
+          ItemActionUpgrades.AddRange(Assets.Buffs[buff].AllUpgrades.ToList());
 
           if (element.Element("ActionDuration")?.Value != null) {
-            this.ItemActionUpgrades.Add(new Upgrade(element.Element("ActionDuration")));
+            ItemActionUpgrades.Add(new Upgrade(element.Element("ActionDuration")));
           }
           if (element.Element("ActionCooldown")?.Value != null) {
-            this.ItemActionUpgrades.Add(new Upgrade(element.Element("ActionCooldown")));
+            ItemActionUpgrades.Add(new Upgrade(element.Element("ActionCooldown")));
           }
           if (element.Element("IsDestroyedAfterCooldown")?.Value != null) {
-            this.ItemActionUpgrades.Add(new Upgrade(element.Element("IsDestroyedAfterCooldown")));
+            ItemActionUpgrades.Add(new Upgrade(element.Element("IsDestroyedAfterCooldown")));
           }
           return;
         }
 
         if (ActionText != null) {
           if (element.Element("ActionDuration")?.Value != null) {
-            this.ItemActionUpgrades.Add(new Upgrade(element.Element("ActionDuration")));
+            ItemActionUpgrades.Add(new Upgrade(element.Element("ActionDuration")));
           }
           if (element.Element("ActionCooldown")?.Value != null) {
-            this.ItemActionUpgrades.Add(new Upgrade(element.Element("ActionCooldown")));
+            ItemActionUpgrades.Add(new Upgrade(element.Element("ActionCooldown")));
           }
           if (element.Element("IsDestroyedAfterCooldown")?.Value != null) {
-            this.ItemActionUpgrades.Add(new Upgrade(element.Element("IsDestroyedAfterCooldown")));
+            ItemActionUpgrades.Add(new Upgrade(element.Element("IsDestroyedAfterCooldown")));
           }
         }
       }
@@ -888,37 +931,37 @@ namespace RDA.Data {
 
     private void ProcessElement_MonumentEventCategory(XElement element) {
       if (element.HasElements) {
-        this.MonumentEvents = element.XPathSelectElements("Events/Item/Event").Select(s => s.Value).ToList();
+        MonumentEvents = element.XPathSelectElements("Events/Item/Event").Select(s => s.Value).ToList();
       }
     }
 
     private void ProcessElement_MonumentEvent(XElement element) {
       if (element.HasElements) {
-        this.MonumentThresholds = element.XPathSelectElements("RewardThresholds/Item/Reward").Select(s => s.Value).ToList();
+        MonumentThresholds = element.XPathSelectElements("RewardThresholds/Item/Reward").Select(s => s.Value).ToList();
       }
     }
 
     private void ProcessElement_MonumentEventReward(XElement element) {
       if (element.HasElements) {
-        this.MonumentRewards = element.XPathSelectElements("RewardAssets/Item/Reward").Select(s => s.Value).ToList();
+        MonumentRewards = element.XPathSelectElements("RewardAssets/Item/Reward").Select(s => s.Value).ToList();
       }
     }
 
     private void ProcessElement_CraftableItem(XElement element) {
       if (element.HasElements) {
-        this.CraftableItemUpgrades = new List<Upgrade>();
+        CraftableItemUpgrades = new List<Upgrade>();
         foreach (var item in element.Element("CraftingCosts").Elements()) {
-          this.CraftableItemUpgrades.Add(new Upgrade() { Text = new Description(item.Element("Product").Value), Value = item.Element("Amount").Value });
+          CraftableItemUpgrades.Add(new Upgrade { Text = new Description(item.Element("Product").Value), Value = item.Element("Amount").Value });
         }
       }
     }
 
     private void ProcessElement_Electric(XElement element) {
       if (element.Element("MandatoryElectricity")?.Value == "1") {
-        this.GenericUpgrades.Add(new Upgrade() { Text = new Description("12508") });
+        GenericUpgrades.Add(new Upgrade { Text = new Description("12508") });
       }
       else if (element.Element("ProductivityBoost")?.Value != "0" && element.Element("BoostedByElectricity")?.Value != "0") {
-        this.GenericUpgrades.Add(new Upgrade() { Text = new Description("10604") });
+        GenericUpgrades.Add(new Upgrade { Text = new Description("10604") });
       }
     }
 
@@ -951,7 +994,7 @@ namespace RDA.Data {
 
     private void ProcessElement_DivingBellUpgrade(XElement element) {
       if (element.HasElements) {
-        this.DivingBellUpgrades = new List<Upgrade>();
+        DivingBellUpgrades = new List<Upgrade>();
         foreach (var item in element.Elements()) {
           if (item.Name.LocalName == "AllocationWeightUpgrade") {
             var results = new Dictionary<string, Upgrade>();
@@ -976,14 +1019,14 @@ namespace RDA.Data {
                   break;
               }
               if (results.ContainsKey(key)) {
-                results[key].Additionals.Add(new Upgrade() { Text = new Description(Assets.KeyToIdDict[AllocationWeight.Name.LocalName]), Value = $"+{AllocationWeight.Element("AdditionalWeight").Value}" });
+                results[key].Additionals.Add(new Upgrade { Text = new Description(Assets.KeyToIdDict[AllocationWeight.Name.LocalName]), Value = $"+{AllocationWeight.Element("AdditionalWeight").Value}" });
               }
               else {
                 results.Add(key,
-                  new Upgrade() {
+                  new Upgrade {
                     Text = new Description(key),
                     Additionals = new List<Upgrade>{
-                      new Upgrade() {
+                      new Upgrade {
                         Text = new Description(Assets.KeyToIdDict[AllocationWeight.Name.LocalName]),
                         Value = $"+{AllocationWeight.Element("AdditionalWeight").Value}"
                       }
@@ -992,11 +1035,11 @@ namespace RDA.Data {
               }
             }
             foreach (var result in results.Values) {
-              this.DivingBellUpgrades.Add(result);
+              DivingBellUpgrades.Add(result);
             }
           }
           else {
-            this.DivingBellUpgrades.Add(new Upgrade(item));
+            DivingBellUpgrades.Add(new Upgrade(item));
           }
         }
       }
@@ -1004,9 +1047,9 @@ namespace RDA.Data {
 
     private void ProcessElement_ItemStartExpedition(XElement element) {
       if (element.HasElements) {
-        this.ItemStartExpedition = new List<Upgrade>();
+        ItemStartExpedition = new List<Upgrade>();
         foreach (var item in element.Elements()) {
-          this.ItemStartExpedition.Add(new Upgrade {
+          ItemStartExpedition.Add(new Upgrade {
             Text = new Description("2637"),
             Additionals = new List<Upgrade> {
               new Upgrade {
@@ -1021,11 +1064,11 @@ namespace RDA.Data {
       if (element.HasElements) {
         var actions = element.XPathSelectElement("ItemActions/Values/ActionList/Actions")?.Elements("Item")?.Select(a => a.Element("Action"));
         if (actions != null) {
-          this.ItemWithUI = new List<Upgrade>();
+          ItemWithUI = new List<Upgrade>();
           foreach (var action in actions) {
             switch (action.Element("Template").Value) {
               case "ActionStartTreasureMapQuest":
-                this.ItemWithUI.Add(new Upgrade(action));
+                ItemWithUI.Add(new Upgrade(action));
                 break;
 
               case "ActionAddResource":
@@ -1042,17 +1085,16 @@ namespace RDA.Data {
               default:
                 Debug.WriteLine(action.Element("Template").Value);
                 throw new NotImplementedException();
-                break;
             }
           }
         }
       }
     }
 
-    private ConcurrentBag<SourceWithDetailsList> FindSources(String id, Details mainDetails = default) {
+    private ConcurrentBag<SourceWithDetailsList> FindSources(string id, XElement asset, Details mainDetails = default) {
       mainDetails = (mainDetails == default) ? new Details() : mainDetails;
       mainDetails.PreviousIDs.Add(id);
-      var mainResult = new SourceWithDetailsList();
+      //var mainResult = new SourceWithDetailsList();
       var resultstoadd = new ConcurrentBag<SourceWithDetailsList>();
       var links = Assets.Original.XPathSelectElements($"//*[text()={id} and not(self::GUID)]").ToArray();
       if (links.Length > 0) {
@@ -1068,15 +1110,15 @@ namespace RDA.Data {
 
           //Ignores
           if (foundedElement.Name.LocalName is string foundedName &&
-            (foundedName.MatchOne("BaseAssetGUID", "Icon", "ItemUsed", "TradePrice", "GenPool", "NotificationIcon", "ReplacingWorkforce", "ProductFilter"))) {
+            foundedName.MatchOne("BaseAssetGUID", "Icon", "ItemUsed", "TradePrice", "GenPool", "NotificationIcon", "ReplacingWorkforce", "ProductFilter")) {
             continue;
           }
           if (foundedElement.Parent?.Parent?.Name.LocalName is string gparent &&
-            (gparent.MatchOne("Costs", "UpgradeCost", "CraftingCosts", "Maintenances", "StoredProducts", "UnlockAssets"))) {
+            gparent.MatchOne("Costs", "UpgradeCost", "CraftingCosts", "Maintenances", "StoredProducts", "UnlockAssets")) {
             continue;
           }
           if (foundedElement.Parent?.Parent?.Parent?.Name.LocalName is string ggParent &&
-            (ggParent.MatchOne("FactoryBase", "Sellable", "PublicService"))) {
+            ggParent.MatchOne("FactoryBase", "Sellable", "PublicService")) {
             continue;
           }
 
@@ -1153,6 +1195,7 @@ namespace RDA.Data {
               }
               break;
 
+            case "Profile_3rdParty_NoTrader_NoProperty3rdParty":
             case "Profile_3rdParty_ItemCrafter":
             case "Profile_3rdParty":
             case "Profile_3rdParty_Pirate":
@@ -1229,10 +1272,11 @@ namespace RDA.Data {
                 }
               }
               break;
+
             case "A7_QuestDivingBellTreasureMap":
               if (!element.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
                 if (foundedElement.Name.LocalName.MatchOne("Reward", "TreasureItem", "ScrapDummyItem")) {
-                  GetSources(Details, key).SaveSource(key).MergeResults(key, in result);
+                  GetSources(Details, key, asset).SaveSource(key).MergeResults(key, in result);
                   if (result.Count == 0) {
                     result.AddSourceAsset(element, new HashSet<AssetWithWeight> { new AssetWithWeight(element) });
                   }
@@ -1288,10 +1332,12 @@ namespace RDA.Data {
             case "ExpeditionDecision":
             case "ExpeditionTrade":
               if (foundedElement.Name.LocalName.MatchOne("Reward", "Product", "Item")) {
-                var tempresults = GetSources(Details, key);
+                var tempresults = GetSources(Details, key, asset);
+
+                //Inject Expedition Events
                 foreach (var sourceWithDetails in tempresults) {
-                  if (sourceWithDetails.FollowingEvents.Count > 0) {
-                    foreach (var expedition in sourceWithDetails.Where(r => r.Source.Element("Template").Value == "Expedition")) {
+                  foreach (var expedition in sourceWithDetails.Where(r => r.Source.Element("Template").Value == "Expedition")) {
+                    if (sourceWithDetails.FollowingEvents.Count > 0) {
                       expedition.Details.Clear();
                       foreach (var item in sourceWithDetails.FollowingEvents) {
                         var path = element.XPathSelectElement("Values/Standard/Name").Value.Split(' ').Last();
@@ -1343,17 +1389,18 @@ namespace RDA.Data {
                   //new ConcurrentBag<SourceWithDetailsList>(GetSources(Details, dummy).SaveSource(dummy).Concat(GetSources(Details, key))).MergeResults(dummy, result);
                   switch (key) {
                     case "193854": // DivingShipReplacementPool
-                      GetSources(Details, dummy).SaveSource(dummy).MergeResults(dummy, result);
+                      GetSources(Details, dummy, asset).SaveSource(dummy).MergeResults(dummy, result);
                       if (result.Count == 0) { // No Treasure map found?  Nevertheless Dive loot ???
-                        GetSources(Details, key).MergeResults(key, result);
+                        GetSources(Details, key, asset).MergeResults(key, result);
                       }
                       break;
+
                     case "193855": // AirShipReplacementPool
-                      GetSources(Details, key).SaveSource(key).MergeResults(key, result);
+                      GetSources(Details, key, asset).SaveSource(key).MergeResults(key, result);
                       break;
+
                     default:
                       throw new NotImplementedException();
-                      break;
                   }
                 }
                 break;
@@ -1375,7 +1422,7 @@ namespace RDA.Data {
             case "A7_QuestSubQuest":
             case "ProductList":
             case "SearchAgain":
-              GetSources(Details, key).SaveSource(key).MergeResults(key, in result);
+              GetSources(Details, key, asset).SaveSource(key).MergeResults(key, in result);
               break;
 
             default:
@@ -1393,14 +1440,9 @@ namespace RDA.Data {
       return resultstoadd;
     }
 
-    private ConcurrentBag<SourceWithDetailsList> GetSources(Details Details, string key) {
+    private ConcurrentBag<SourceWithDetailsList> GetSources(Details Details, string key, XElement asset) {
       ConcurrentBag<SourceWithDetailsList> tempresult = null;
-      if (SavedSources.TryGetValue(key, out var saved)) {
-        tempresult = new ConcurrentBag<SourceWithDetailsList>(saved.Select(i => i.Copy()));
-      }
-      else {
-        tempresult = new ConcurrentBag<SourceWithDetailsList>(FindSources(key, Details).Select(i => i.Copy()));
-      }
+      tempresult = new ConcurrentBag<SourceWithDetailsList>(SavedSources.TryGetValue(key, out var saved) ? saved.Select(i => i.Copy()) : FindSources(key, asset, Details).Select(i => i.Copy()));
 
       return tempresult;
     }

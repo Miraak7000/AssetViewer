@@ -7,7 +7,7 @@ namespace AssetViewer {
     #region Public Constructors
 
     public MainWindow() {
-      this.InitializeComponent();
+      InitializeComponent();
     }
 
     #endregion Public Constructors

@@ -1,24 +1,23 @@
-﻿using System;
-using System.Xml.Linq;
+﻿using System.Xml.Linq;
 
 namespace AssetViewer.Data {
 
   public class Allocation {
 
-    #region Properties
+    #region Public Properties
 
-    public String ID { get; set; }
+    public string ID { get; set; }
     public Description Text { get; set; }
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Constructors
+    #region Public Constructors
 
     public Allocation(XElement item) {
-      this.ID = item.Attribute("ID")?.Value;
-      this.Text = new Description(item.Element("T"));
+      ID = item.Attribute("ID")?.Value;
+      Text = new Description(item.Element("T"));
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
   }
 }

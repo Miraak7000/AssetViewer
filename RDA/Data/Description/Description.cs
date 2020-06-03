@@ -5,10 +5,12 @@ using System.Web;
 using System.Xml.Linq;
 
 namespace RDA.Data {
-  public class Description : IEquatable<Description> {
-    #region Properties
 
-    public String ID { get; set; }
+  public class Description : IEquatable<Description> {
+
+    #region Public Properties
+
+    public string ID { get; set; }
 
     public Dictionary<Languages, string> Languages { get; set; } = new Dictionary<Languages, string>();
 
@@ -16,18 +18,12 @@ namespace RDA.Data {
     public DescriptionFontStyle FontStyle { get; set; }
     public Description AdditionalInformation { get; set; }
 
-    #endregion Properties
+    #endregion Public Properties
 
-    #region Fields
+    #region Public Constructors
 
-    public static readonly Dictionary<string, Description> GlobalDescriptions = new Dictionary<string, Description>();
-
-    #endregion Fields
-
-    #region Constructors
-
-    public Description(String id, DescriptionFontStyle fontStyle = default) {
-      this.ID = id;
+    public Description(string id, DescriptionFontStyle fontStyle = default) {
+      ID = id;
       if (Assets.Descriptions.TryGetValue(id, out var languages)) {
         foreach (var item in languages) {
           Languages.Add(item.Key, item.Value);
@@ -42,14 +38,14 @@ namespace RDA.Data {
         Languages.Add(Data.Languages.English, id);
       }
       if (Assets.Icons.ContainsKey(id)) {
-        this.Icon = new Icon(Assets.Icons[id]);
+        Icon = new Icon(Assets.Icons[id]);
       }
-      this.FontStyle = fontStyle;
+      FontStyle = fontStyle;
     }
 
-    #endregion Constructors
+    #endregion Public Constructors
 
-    #region Methods
+    #region Public Methods
 
     public Description InsertBefore(Description description) {
       foreach (var item in Languages.ToArray()) {
@@ -107,7 +103,7 @@ namespace RDA.Data {
       return this;
     }
 
-    public Description Remove(String value) {
+    public Description Remove(string value) {
       foreach (var item in Languages.ToArray()) {
         Languages[item.Key] = item.Value.Replace(HttpUtility.HtmlDecode(value), "");
       }
@@ -115,7 +111,7 @@ namespace RDA.Data {
       return this;
     }
 
-    public Description Replace(String oldValue, Description newValue) {
+    public Description Replace(string oldValue, Description newValue) {
       foreach (var item in Languages.ToArray()) {
         Languages[item.Key] = item.Value.Replace(HttpUtility.HtmlDecode(oldValue), newValue.Languages.TryGetValue(item.Key, out var value) ? value : newValue.Languages.First().Value);
       }
@@ -123,19 +119,27 @@ namespace RDA.Data {
       return this;
     }
 
-    public Description Replace(String oldValue, IEnumerable<Description> newValue, Func<IEnumerable<string>, string> format) {
+    public Description Replace(string oldValue, IEnumerable<Description> newValue, Func<IEnumerable<string>, string> format) {
       foreach (var item in Languages.ToArray()) {
-        Languages[item.Key] = item.Value.Replace(HttpUtility.HtmlDecode(oldValue), format(newValue.Select(v => v.Languages.TryGetValue(item.Key, out var value) ? value : v.Languages.First().Value)));
+        Languages[item.Key] = item.Value.Replace(HttpUtility.HtmlDecode(oldValue), format?.Invoke(newValue.Select(v => v.Languages.TryGetValue(item.Key, out var value) ? value : v.Languages.First().Value)));
       }
       SetNewId();
       return this;
     }
 
-    public XElement ToXml(String name) {
-      this.ID = GetOrCheckExistenz();
+    public Description Trim() {
+      foreach (var item in Languages.ToArray()) {
+        Languages[item.Key] = item.Value.Trim();
+      }
+      SetNewId();
+      return this;
+    }
+
+    public XElement ToXml(string name) {
+      ID = GetOrCheckExistenz();
       var result = new XElement(name);
-      result.Add(new XAttribute("ID", this.ID));
-      if (this.Icon?.Filename is string icon) {
+      result.Add(new XAttribute("ID", ID));
+      if (Icon?.Filename is string icon) {
         result.Add(new XAttribute("I", icon));
       }
       if (FontStyle != default) {
@@ -149,16 +153,26 @@ namespace RDA.Data {
     }
 
     public void SetNewId() {
-      ID = this.Languages.First().Value.GetHashCode().ToString();
+      ID = Languages.First().Value.GetHashCode().ToString();
     }
 
-    public override String ToString() {
-      return this.Languages.First().Value;
+    public override string ToString() {
+      return Languages.First().Value;
     }
 
     public bool Equals(Description other) {
-      return ID == other.ID && this.Languages.First().Value == other.Languages.First().Value && Icon.Filename == other.Icon.Filename;
+      return ID == other.ID && Languages.First().Value == other.Languages.First().Value && Icon.Filename == other.Icon.Filename;
     }
+
+    #endregion Public Methods
+
+    #region Public Fields
+
+    public static readonly Dictionary<string, Description> GlobalDescriptions = new Dictionary<string, Description>();
+
+    #endregion Public Fields
+
+    #region Internal Methods
 
     internal static Description Join(IEnumerable<Description> regions, string seperator) {
       if (regions?.Any() == true) {
@@ -171,17 +185,21 @@ namespace RDA.Data {
       return null;
     }
 
+    #endregion Internal Methods
+
+    #region Private Methods
+
     private string GetOrCheckExistenz() {
-      if (GlobalDescriptions.TryGetValue(this.Languages.First().Value, out var value)) {
+      if (GlobalDescriptions.TryGetValue(Languages.First().Value, out var value)) {
         return value.ID;
       }
       else {
-        GlobalDescriptions.Add(this.Languages.First().Value, this);
+        GlobalDescriptions.Add(Languages.First().Value, this);
 
         return ID;
       }
     }
 
-    #endregion Methods
+    #endregion Private Methods
   }
 }

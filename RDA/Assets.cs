@@ -1,6 +1,4 @@
-﻿using RDA.Data;
-using RDA.Services;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -8,6 +6,8 @@ using System.Web;
 using System.Web.Script.Serialization;
 using System.Xml.Linq;
 using System.Xml.XPath;
+using RDA.Data;
+using RDA.Services;
 
 namespace RDA {
 
@@ -66,6 +66,7 @@ namespace RDA {
     internal readonly static Dictionary<string, Asset> Buffs = new Dictionary<string, Asset>();
     internal readonly static Dictionary<string, string> Icons = new Dictionary<string, string>();
     internal readonly static Dictionary<string, string> KeyToIdDict = new Dictionary<string, string>();
+    internal readonly static Dictionary<string, string> ExpeditionRegionToIdDict = new Dictionary<string, string>();
     internal static string Version = "Release";
 
     #endregion Internal Fields
@@ -81,7 +82,7 @@ namespace RDA {
     }
 
     private static int InheritDepth(this XElement ele) {
-      int depth = 0;
+      var depth = 0;
       var search = ele.Element("BaseAssetGUID")?.Value;
       while (search != null) {
         var founded = Original.Descendants("Asset").FirstOrDefault(a => a.XPathSelectElement("Values/Standard/GUID")?.Value == search);
@@ -156,9 +157,9 @@ namespace RDA {
       Program.ConsoleWriteHeadline("Load Custom Descriptions");
       var js = new JavaScriptSerializer();
       foreach (Languages language in Enum.GetValues(typeof(Languages))) {
-        var filepath = Program.PathRoot + $@"\Modified\LanguageFiles\Texts_Custom_{language.ToString("G")}.json";
+        var filepath = Program.PathRoot + $@"\Modified\LanguageFiles\Texts_Custom_{language:G}.json";
         if (File.Exists(filepath)) {
-          dynamic dic = js.Deserialize<dynamic>(File.ReadAllText(filepath));
+          var dic = js.Deserialize<dynamic>(File.ReadAllText(filepath));
           foreach (var item in dic) {
             if (CustomDescriptions.ContainsKey(item.Key)) {
               CustomDescriptions[item.Key].Add(language, item.Value);
@@ -228,9 +229,9 @@ namespace RDA {
        .Element("ExpeditionFeature");
 
       //ExpeditionRegions
-      //foreach (var item in asset.Element("ExpeditionRegions").Elements()) {
-      //  KeyToIdDict.Add(item.Name.LocalName, item.Element("Region").Value);
-      //}
+      foreach (var item in asset.Element("ExpeditionRegions").Elements()) {
+        ExpeditionRegionToIdDict.Add(item.Name.LocalName, item.Element("Region").Value);
+      }
 
       //AttributeNames
       foreach (var item in asset.Element("AttributeNames").Elements()) {
@@ -257,6 +258,7 @@ namespace RDA {
       KeyToIdDict.Add("ResidentsUpgrade", "2322");
       KeyToIdDict.Add("StressUpgrade", "2323");
       KeyToIdDict.Add("ProvideElectricity", "12485");
+      KeyToIdDict.Add("ProvideIndustrialization", "12485");
       KeyToIdDict.Add("TaxModifierInPercent", "12677");
       KeyToIdDict.Add("WorkforceModifierInPercent", "12676");
       KeyToIdDict.Add("MaxHitpointsUpgrade", "2333");
@@ -341,6 +343,9 @@ namespace RDA {
       KeyToIdDict.Add("ProductivityBoostUpgrade", "118000");
       KeyToIdDict.Add("StorageCapacityModifier", "23231");
       KeyToIdDict.Add("SocketCountUpgrade", "269364");
+      KeyToIdDict.Add("ElectricityBoostUpgrade", "23266");
+      KeyToIdDict.Add("Tractor", "269841");
+      KeyToIdDict.Add("Silo", "269957");
 
       //Override Allocation Tradeship
       KeyToIdDict["Tradeship"] = "12006";

@@ -1,6 +1,7 @@
 ﻿using System;
 
 namespace RDA.Data {
+
   [Flags]
   public enum DescriptionFontStyle {
     Regular = 0,
