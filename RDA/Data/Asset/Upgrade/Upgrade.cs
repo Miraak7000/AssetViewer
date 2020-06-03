@@ -420,6 +420,8 @@ namespace RDA.Data {
         case "AttractivenessPerSetUpgrade":
         case "SocketCountUpgrade":
         case "ProductivityBoostUpgrade":
+        case "ProvideIndustrialization":
+        case "ElectricityBoostUpgrade":
           break;
 
         case "AdditionalHappiness":
@@ -471,6 +473,12 @@ namespace RDA.Data {
           Additionals = new List<Upgrade> {
             new Upgrade { Text = new Description(element.Element("PopulationLevel7").Value), Value = element.Element("ResidentMax").Value }
           };
+          break;
+        case "IndustrializationRangeUpgrade":
+          Text = new Description("249983").Remove("+[ItemAssetData([ToolOneHelper ForwardedEffectGuidOrSelf([RefGuid])]) AdditionalServiceRange]").Trim();
+          break;
+        case "MotorizableType":
+          Text = new Description(Assets.KeyToIdDict[element.Value]);
           break;
 
         default:

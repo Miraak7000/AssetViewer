@@ -127,6 +127,14 @@ namespace RDA.Data {
       return this;
     }
 
+    public Description Trim() {
+      foreach (var item in Languages.ToArray()) {
+        Languages[item.Key] = item.Value.Trim();
+      }
+      SetNewId();
+      return this;
+    }
+
     public XElement ToXml(string name) {
       ID = GetOrCheckExistenz();
       var result = new XElement(name);

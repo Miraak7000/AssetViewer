@@ -258,6 +258,7 @@ namespace RDA {
       KeyToIdDict.Add("ResidentsUpgrade", "2322");
       KeyToIdDict.Add("StressUpgrade", "2323");
       KeyToIdDict.Add("ProvideElectricity", "12485");
+      KeyToIdDict.Add("ProvideIndustrialization", "12485");
       KeyToIdDict.Add("TaxModifierInPercent", "12677");
       KeyToIdDict.Add("WorkforceModifierInPercent", "12676");
       KeyToIdDict.Add("MaxHitpointsUpgrade", "2333");
@@ -342,6 +343,9 @@ namespace RDA {
       KeyToIdDict.Add("ProductivityBoostUpgrade", "118000");
       KeyToIdDict.Add("StorageCapacityModifier", "23231");
       KeyToIdDict.Add("SocketCountUpgrade", "269364");
+      KeyToIdDict.Add("ElectricityBoostUpgrade", "23266");
+      KeyToIdDict.Add("Tractor", "269841");
+      KeyToIdDict.Add("Silo", "269957");
 
       //Override Allocation Tradeship
       KeyToIdDict["Tradeship"] = "12006";

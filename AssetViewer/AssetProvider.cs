@@ -164,15 +164,16 @@ namespace AssetViewer {
 
     private static void LoadBuildungs() {
       var buildings = new[] {
+                "AssetViewer.Resources.Assets.AdditionalModule.xml",
+                "AssetViewer.Resources.Assets.BridgeBuilding.xml",
+                "AssetViewer.Resources.Assets.BuffFactory.xml",
                 "AssetViewer.Resources.Assets.BuildPermitBuilding.xml",
                 "AssetViewer.Resources.Assets.BuildPermitModules.xml",
-                "AssetViewer.Resources.Assets.CultureModule.xml",
-                "AssetViewer.Resources.Assets.OrnamentalModule.xml",
-                "AssetViewer.Resources.Assets.BridgeBuilding.xml",
                 "AssetViewer.Resources.Assets.CampaignQuestObject.xml",
                 "AssetViewer.Resources.Assets.CampaignUncleMansion.xml",
                 "AssetViewer.Resources.Assets.CityInstitutionBuilding.xml",
                 "AssetViewer.Resources.Assets.CultureBuilding.xml",
+                "AssetViewer.Resources.Assets.CultureModule.xml",
                 "AssetViewer.Resources.Assets.FactoryBuilding7.xml",
                 "AssetViewer.Resources.Assets.FactoryBuilding7_Arctic.xml",
                 "AssetViewer.Resources.Assets.FarmBuilding.xml",
@@ -199,6 +200,10 @@ namespace AssetViewer {
                 "AssetViewer.Resources.Assets.Monument_with_Shipyard.xml",
                 "AssetViewer.Resources.Assets.OilPumpBuilding.xml",
                 "AssetViewer.Resources.Assets.OrnamentalBuilding.xml",
+                "AssetViewer.Resources.Assets.OrnamentalModule.xml",
+                "AssetViewer.Resources.Assets.Palace.xml",
+                "AssetViewer.Resources.Assets.PalaceMinistry.xml",
+                "AssetViewer.Resources.Assets.PalaceModule.xml",
                 "AssetViewer.Resources.Assets.PowerplantBuilding.xml",
                 "AssetViewer.Resources.Assets.PublicServiceBuilding.xml",
                 "AssetViewer.Resources.Assets.QuestLighthouse.xml",
@@ -217,9 +222,6 @@ namespace AssetViewer {
                 "AssetViewer.Resources.Assets.Warehouse.xml",
                 "AssetViewer.Resources.Assets.WorkAreaSlot.xml",
                 "AssetViewer.Resources.Assets.WorkforceConnector.xml",
-                "AssetViewer.Resources.Assets.Palace.xml",
-                "AssetViewer.Resources.Assets.PalaceMinistry.xml",
-                "AssetViewer.Resources.Assets.PalaceModule.xml",
       };
 
       foreach (var str in buildings) {
