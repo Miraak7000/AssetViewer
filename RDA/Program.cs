@@ -73,12 +73,12 @@ namespace RDA {
       //Third Party
       Program.ProcessingThirdParty();
 
-      //// Quests
-      ////Program.QuestGiver();   //Obsolete
-      ////Program.Quests();       //Obsolete
+      // Quests
+      //Program.QuestGiver();   //Obsolete
+      //Program.Quests();       //Obsolete
 
-      //// Expeditions
-      ////Program.Expeditions(); //Obsolete
+      // Expeditions
+      //Program.Expeditions(); //Obsolete
       Program.ProcessingExpeditionEvents();
 
       ////Tourism
@@ -86,7 +86,7 @@ namespace RDA {
 
       //Save Descriptions
       //Set True for fully new Set of Descriptions.
-      Program.SaveDescriptions(true);
+      Program.SaveDescriptions(false);
     }
 
     public static void ConsoleWriteGUID(string str) {
@@ -447,7 +447,7 @@ namespace RDA {
             decicions.AsParallel().ForAll(decicion =>
             {
                 ConsoleWriteGUID(decicion.XPathSelectElement("Values/Standard/GUID").Value + " - " + count++);
-                var events = VerasFindExpeditionEvents(decicion.XPathSelectElement("Values/Standard/GUID").Value, new Details { decicion });
+        foreach(var events in VerasFindExpeditionEvents(decicion.XPathSelectElement("Values/Standard/GUID").Value, new HashSet<String>(), new Details { decicion }))
                 foreach (var item in events)
                 {
                     if (ResultEvents.ContainsKey(item.Source))
@@ -460,9 +460,13 @@ namespace RDA {
                     }
                 }
             });
+
             var document = new XDocument();
             document.Add(new XElement(template));
-            document.Root.Add(ResultEvents.Select(s => ToXml(s)));
+      document.Root.Add(ResultEvents.GroupBy(f => f.Key.XPathSelectElement("Values/Standard/Name").Value)
+          .Select(g => g.First())
+          .OrderBy(s => { var str = ("000" + s.Value.Count); return str.Substring(str.Length - 4) + " " + s.Key.XPathSelectElement("Values/Standard/GUID").Value; })
+          .Select(s => ToXml(s)));
             document.SaveIndent($@"{Program.PathRoot}\Modified\Assets_{template}.xml");
             document.SaveIndent($@"{Program.PathViewer}\Resources\Assets\{template}.xml");
 
@@ -585,12 +589,13 @@ namespace RDA {
             }
 
             //local method Find Expedition Events
-            SourceWithDetailsList VerasFindExpeditionEvents(string id, Details mainDetails = default, SourceWithDetailsList inResult = default)
+            List<SourceWithDetailsList> VerasFindExpeditionEvents(string id, HashSet<string> visitedEvents = default, Details mainDetails = default)
             {
                 mainDetails = (mainDetails == default) ? new Details() : mainDetails;
                 mainDetails.PreviousIDs.Add(id);
-                var mainResult = inResult ?? new SourceWithDetailsList();
-                var resultstoadd = new ConcurrentBag<SourceWithDetailsList>();
+                var mainResult = new List<SourceWithDetailsList>();
+
+                visitedEvents.Add(id);
 
                 if (!Assets.References.ContainsKey(id))
                 {
@@ -606,7 +611,6 @@ namespace RDA {
                             continue;
 
                         var Details = new Details(mainDetails);
-                        var result = mainResult.Copy();
                         var key = asset.XPathSelectElement("Values/Standard/GUID").Value;
                         if (asset.Element("Template") == null || mainDetails.PreviousIDs.Contains(key))
                         {
@@ -666,7 +670,8 @@ namespace RDA {
                                 goto case "SearchAgain";
                             case "SearchAgain":
                                 Details.Add(asset);
-                                VerasFindExpeditionEvents(key, Details, result);
+                                //if (!visitedEvents.Contains(key))
+                                    mainResult.AddRange(VerasFindExpeditionEvents(key, visitedEvents, Details).AsEnumerable());
                                 break;
 
                             case "ExpeditionEvent":
@@ -674,7 +679,10 @@ namespace RDA {
                                 {
                                     break;
                                 }
-                                result.AddSourceAsset(asset, new HashSet<AssetWithWeight>(Details.Items.Select(i => new AssetWithWeight(i))));
+
+                                var sList = new SourceWithDetailsList();
+                                sList.AddSourceAsset(asset, new HashSet<AssetWithWeight>(Details.Items.Select(i => new AssetWithWeight(i))));
+                                mainResult.Add(sList);
                                 break;
 
                             default:
@@ -682,17 +690,9 @@ namespace RDA {
                                 //ignore
                                 break;
                         }
-                        resultstoadd.Add(result);
                     }
                 }
 
-                //});
-
-
-                foreach (var item in resultstoadd)
-                {
-                    mainResult.AddSourceAsset(item);
-                }
                 return mainResult;
             }
         }
