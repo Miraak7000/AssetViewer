@@ -1096,46 +1096,49 @@ namespace RDA.Data {
       mainDetails.PreviousIDs.Add(id);
       //var mainResult = new SourceWithDetailsList();
       var resultstoadd = new ConcurrentBag<SourceWithDetailsList>();
-      var links = Assets.Original.XPathSelectElements($"//*[text()={id} and not(self::GUID)]").ToArray();
-      if (links.Length > 0) {
-        //links.AsParallel().ForAll(link => {
-        foreach (var link2 in/* new[] { link }*/ links) {
-          var element = link2;
-          var foundedElement = element;
+            if (!Assets.References.ContainsKey(id))
+            {
+                return resultstoadd;
+            }
+            var cachedLinks = Assets.References[id];
 
-          //Weight 0
-          if (element.Parent.Element("Weight")?.Value == "0") {
+            foreach (var referencingAsset in cachedLinks)
+            {
+                foreach (var reference in referencingAsset.Descendants())
+                {
+
+                    if ("GUID".Equals(reference.Name.LocalName) || !id.Equals(reference.Value) || reference.HasElements)
+                        continue;
+
+                    //Weight 0
+                    if (reference.Parent.Element("Weight")?.Value == "0") {
             continue;
           }
 
           //Ignores
-          if (foundedElement.Name.LocalName is string foundedName &&
+          if (reference.Name.LocalName is string foundedName &&
             foundedName.MatchOne("BaseAssetGUID", "Icon", "ItemUsed", "TradePrice", "GenPool", "NotificationIcon", "ReplacingWorkforce", "ProductFilter")) {
             continue;
           }
-          if (foundedElement.Parent?.Parent?.Name.LocalName is string gparent &&
+          if (reference.Parent?.Parent?.Name.LocalName is string gparent &&
             gparent.MatchOne("Costs", "UpgradeCost", "CraftingCosts", "Maintenances", "StoredProducts", "UnlockAssets")) {
             continue;
           }
-          if (foundedElement.Parent?.Parent?.Parent?.Name.LocalName is string ggParent &&
+          if (reference.Parent?.Parent?.Parent?.Name.LocalName is string ggParent &&
             ggParent.MatchOne("FactoryBase", "Sellable", "PublicService")) {
             continue;
           }
 
-          //Search Parent Asset
-          while (element.Name.LocalName != "Asset" || !element.HasElements) {
-            element = element.Parent;
-          }
 
           var Details = new Details(mainDetails);
           var result = new SourceWithDetailsList();
-          var key = element.XPathSelectElement("Values/Standard/GUID").Value;
+          var key = referencingAsset.XPathSelectElement("Values/Standard/GUID").Value;
 
           if (Details.PreviousIDs.Contains(key)) {
             continue;
           }
 
-          switch (element.Element("Template").Value) {
+          switch (referencingAsset.Element("Template").Value) {
             case "AssetPool":
             case "TutorialQuest":
             case "SettlementRightsFeature":
@@ -1186,12 +1189,12 @@ namespace RDA.Data {
               break;
 
             case "Expedition":
-              if (!element.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
-                if (!foundedElement.Name.LocalName.MatchOne("FillEventPool", "Reward", "EventOrEventPool")) {
+              if (!referencingAsset.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
+                if (!reference.Name.LocalName.MatchOne("FillEventPool", "Reward", "EventOrEventPool")) {
                   break;
                 }
 
-                result.AddSourceAsset(element, new HashSet<AssetWithWeight> { new AssetWithWeight(element) });
+                result.AddSourceAsset(referencingAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
               }
               break;
 
@@ -1203,40 +1206,40 @@ namespace RDA.Data {
               if (key.MatchOne("199", "200", "240", "117422")) {
                 break;
               }
-              if (!element.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
-                if (foundedElement.Name.LocalName.MatchOne("ShipDropRewardPool")) {
-                  result.AddSourceAsset(element.GetProxyElement("ShipDrop"), new HashSet<AssetWithWeight> { new AssetWithWeight(element) });
+              if (!referencingAsset.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
+                if (reference.Name.LocalName.MatchOne("ShipDropRewardPool")) {
+                  result.AddSourceAsset(referencingAsset.GetProxyElement("ShipDrop"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
                   break;
                 }
 
-                if (foundedElement.Name.LocalName == "OfferingItems" ||
-                  foundedElement.Parent.Parent.Name.LocalName.MatchOne("ShipsForSale", "GoodSets")) {
-                  var oldParent = foundedElement.Parent;
-                  var parent = foundedElement.Parent;
+                if (reference.Name.LocalName == "OfferingItems" ||
+                  reference.Parent.Parent.Name.LocalName.MatchOne("ShipsForSale", "GoodSets")) {
+                  var oldParent = reference.Parent;
+                  var parent = reference.Parent;
                   while (parent.Name.LocalName != "Progression") {
                     oldParent = parent;
                     parent = parent.Parent;
                   }
 
-                  result.AddSourceAsset(element.GetProxyElement("Harbor"), new HashSet<AssetWithWeight> { new AssetWithWeight(element.GetProxyElement(oldParent.Name.LocalName)) });
+                  result.AddSourceAsset(referencingAsset.GetProxyElement("Harbor"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset.GetProxyElement(oldParent.Name.LocalName)) });
                   break;
                 }
 
-                if (foundedElement.Name.LocalName == "Pool" && foundedElement.Parent.Parent.Name.LocalName == "ItemPools") {
-                  result.AddSourceAsset(element.GetProxyElement("Harbor"), new HashSet<AssetWithWeight> { new AssetWithWeight(element.GetProxyElement(foundedElement.Parent.Name.LocalName)) });
+                if (reference.Name.LocalName == "Pool" && reference.Parent.Parent.Name.LocalName == "ItemPools") {
+                  result.AddSourceAsset(referencingAsset.GetProxyElement("Harbor"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset.GetProxyElement(reference.Parent.Name.LocalName)) });
                   break;
                 }
 
-                if (foundedElement.Name.LocalName.MatchOne("MainIslandRewardPool", "SecondaryIslandRewardPool")) {
-                  result.AddSourceAsset(element.GetProxyElement("TakeOver"), new HashSet<AssetWithWeight> { new AssetWithWeight(element.GetProxyElement($"{foundedElement.Name.LocalName}#{foundedElement.Parent.Name}")) });
+                if (reference.Name.LocalName.MatchOne("MainIslandRewardPool", "SecondaryIslandRewardPool")) {
+                  result.AddSourceAsset(referencingAsset.GetProxyElement("TakeOver"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset.GetProxyElement($"{reference.Name.LocalName}#{reference.Parent.Name}")) });
                   break;
                 }
 
-                if (foundedElement.Name.LocalName == "Item" && foundedElement.Parent.Parent.Name.LocalName == "CraftableItems") {
-                  result.AddSourceAsset(element.GetProxyElement("Crafting"), new HashSet<AssetWithWeight> { new AssetWithWeight(element.GetProxyElement(foundedElement.Parent.Parent.Parent.Name.LocalName)) });
+                if (reference.Name.LocalName == "Item" && reference.Parent.Parent.Name.LocalName == "CraftableItems") {
+                  result.AddSourceAsset(referencingAsset.GetProxyElement("Crafting"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset.GetProxyElement(reference.Parent.Parent.Parent.Name.LocalName)) });
                   break;
                 }
-                if (foundedElement.Name.LocalName.MatchOne("ItemPool", "Product", "Good")) {
+                if (reference.Name.LocalName.MatchOne("ItemPool", "Product", "Good")) {
                   break;
                 }
                 else {
@@ -1266,19 +1269,19 @@ namespace RDA.Data {
             case "A7_QuestNewspaperArticle":
             case "A7_QuestLostCargo":
             case "A7_QuestExpedition":
-              if (!element.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
-                if (foundedElement.Name.LocalName.MatchOne("Reward")) {
-                  result.AddSourceAsset(element, new HashSet<AssetWithWeight> { new AssetWithWeight(element) });
+              if (!referencingAsset.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
+                if (reference.Name.LocalName.MatchOne("Reward")) {
+                  result.AddSourceAsset(referencingAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
                 }
               }
               break;
 
             case "A7_QuestDivingBellTreasureMap":
-              if (!element.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
-                if (foundedElement.Name.LocalName.MatchOne("Reward", "TreasureItem", "ScrapDummyItem")) {
+              if (!referencingAsset.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
+                if (reference.Name.LocalName.MatchOne("Reward", "TreasureItem", "ScrapDummyItem")) {
                   GetSources(Details, key, asset).SaveSource(key).MergeResults(key, in result);
                   if (result.Count == 0) {
-                    result.AddSourceAsset(element, new HashSet<AssetWithWeight> { new AssetWithWeight(element) });
+                    result.AddSourceAsset(referencingAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
                   }
                 }
               }
@@ -1289,40 +1292,40 @@ namespace RDA.Data {
               if (key == "113710") {
                 break;
               }
-              if (foundedElement.Name.LocalName == "ItemReplacementPools") {
-                result.AddSourceAsset(element.GetProxyElement("Dive"), new HashSet<AssetWithWeight> { new AssetWithWeight(element) });
+              if (reference.Name.LocalName == "ItemReplacementPools") {
+                result.AddSourceAsset(referencingAsset.GetProxyElement("Dive"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
               }
               break;
 
             case "AirShip":
-              if (foundedElement.Name.LocalName == "ItemReplacementPools") {
-                result.AddSourceAsset(element.GetProxyElement("Pickup"), new HashSet<AssetWithWeight> { new AssetWithWeight(element) });
+              if (reference.Name.LocalName == "ItemReplacementPools") {
+                result.AddSourceAsset(referencingAsset.GetProxyElement("Pickup"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
               }
               break;
 
             case "ItemWithUI":
-              if (foundedElement.Name.LocalName == "NewItem") {
-                result.AddSourceAsset(element, new HashSet<AssetWithWeight> { new AssetWithWeight(element) });
+              if (reference.Name.LocalName == "NewItem") {
+                result.AddSourceAsset(referencingAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
               }
-              else if (foundedElement.Name.LocalName == "Ressource" && foundedElement.Parent.Name.LocalName == "ActionAddResource") {
-                result.AddSourceAsset(element.GetProxyElement("Item"), new HashSet<AssetWithWeight> { new AssetWithWeight(element) });
+              else if (reference.Name.LocalName == "Ressource" && reference.Parent.Name.LocalName == "ActionAddResource") {
+                result.AddSourceAsset(referencingAsset.GetProxyElement("Item"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
               }
-              else if (foundedElement.Name.LocalName == "TreasureMapQuest") {
-                result.AddSourceAsset(element.GetProxyElement("Dive"), new HashSet<AssetWithWeight> { new AssetWithWeight(element) });
+              else if (reference.Name.LocalName == "TreasureMapQuest") {
+                result.AddSourceAsset(referencingAsset.GetProxyElement("Dive"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
               }
               break;
 
             case "TourismFeature":
-              if (foundedElement.Name.LocalName == "Pool") {
-                var pool = foundedElement.Parent;
-                result.AddSourceAsset(element, new HashSet<AssetWithWeight> { new AssetWithWeight(pool.GetProxyElement(foundedElement.Parent.Parent.Parent.Name.LocalName)) });
+              if (reference.Name.LocalName == "Pool") {
+                var pool = reference.Parent;
+                result.AddSourceAsset(referencingAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(pool.GetProxyElement(reference.Parent.Parent.Parent.Name.LocalName)) });
               }
               break;
 
             case "CultureBuff":
             case "HarborOfficeItem":
-              if (foundedElement.Name.LocalName == "OverrideSpecialistPool") {
-                result.AddSourceAsset(Assets.TourismAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(element) });
+              if (reference.Name.LocalName == "OverrideSpecialistPool") {
+                result.AddSourceAsset(Assets.TourismAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
               }
               else {
                 throw new NotImplementedException();
@@ -1331,7 +1334,7 @@ namespace RDA.Data {
 
             case "ExpeditionDecision":
             case "ExpeditionTrade":
-              if (foundedElement.Name.LocalName.MatchOne("Reward", "Product", "Item")) {
+              if (reference.Name.LocalName.MatchOne("Reward", "Product", "Item")) {
                 var tempresults = GetSources(Details, key, asset);
 
                 //Inject Expedition Events
@@ -1340,7 +1343,7 @@ namespace RDA.Data {
                     if (sourceWithDetails.FollowingEvents.Count > 0) {
                       expedition.Details.Clear();
                       foreach (var item in sourceWithDetails.FollowingEvents) {
-                        var path = element.XPathSelectElement("Values/Standard/Name").Value.Split(' ').Last();
+                        var path = referencingAsset.XPathSelectElement("Values/Standard/Name").Value.Split(' ').Last();
                         expedition.Details.Add(new AssetWithWeight(item.GetProxyElement(path)));
                       }
                     }
@@ -1350,42 +1353,42 @@ namespace RDA.Data {
 
                 break;
               }
-              else if (!foundedElement.Name.LocalName.MatchOne("Option", "FollowupSuccessOption", "FollowupFailOrCancelOption", "InsertEvent")) {
+              else if (!reference.Name.LocalName.MatchOne("Option", "FollowupSuccessOption", "FollowupFailOrCancelOption", "InsertEvent")) {
                 break;
               }
               goto case "SearchAgain";
 
             case "ExpeditionOption":
             case "ExpeditionMapOption":
-              if (foundedElement.Name.LocalName != "Decision") {
+              if (reference.Name.LocalName != "Decision") {
                 break;
               }
               goto case "SearchAgain";
 
             case "ExpeditionEvent":
-              if (foundedElement.Name.LocalName != "StartDecision") {
+              if (reference.Name.LocalName != "StartDecision") {
                 break;
               }
 
-              result.FollowingEvents.Add(element);
+              result.FollowingEvents.Add(referencingAsset);
 
               goto case "SearchAgain";
 
             case "ExpeditionBribe":
-              if (foundedElement.Name.LocalName == "Item") {
+              if (reference.Name.LocalName == "Item") {
                 break;
               }
-              if (!foundedElement.Name.LocalName.MatchOne("FollowupSuccessOption", "FollowupFailOrCancelOption")) {
+              if (!reference.Name.LocalName.MatchOne("FollowupSuccessOption", "FollowupFailOrCancelOption")) {
                 break;
               }
               goto case "SearchAgain";
 
             case "ItemReplacementPool":
-              if (foundedElement.Name.LocalName != "ReplacementPool") {
+              if (reference.Name.LocalName != "ReplacementPool") {
                 break;
               }
               else {
-                if (foundedElement.Parent.Element("DummyItem").Value is string dummy) {
+                if (reference.Parent.Element("DummyItem").Value is string dummy) {
                   //new ConcurrentBag<SourceWithDetailsList>(GetSources(Details, dummy).SaveSource(dummy).Concat(GetSources(Details, key))).MergeResults(dummy, result);
                   switch (key) {
                     case "193854": // DivingShipReplacementPool
@@ -1408,7 +1411,7 @@ namespace RDA.Data {
 
             case "RewardPool":
             case "RewardItemPool":
-              var itemList = foundedElement.Parent.Parent.Elements().ToList();
+              var itemList = reference.Parent.Parent.Elements().ToList();
               var weightSum = itemList.Sum(item => item.Element("Weight")?.Value is string str ? double.Parse(str) : 1.0F);
 
               foreach (var item in itemList.Where(i => i.Element("ItemLink")?.Value != null).ToLookup(i => i.Element("ItemLink").Value)) {
@@ -1427,7 +1430,7 @@ namespace RDA.Data {
 
             default:
               //throw new NotImplementedException(element.Element("Template").Value);
-              Debug.WriteLine(element.Element("Template").Value);
+              Debug.WriteLine(referencingAsset.Element("Template").Value);
               break;
           }
           if (result.Any()) {

@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.Script.Serialization;
+using System.Xml;
 using System.Xml.Linq;
 using System.Xml.XPath;
 using RDA.Data;
@@ -34,6 +37,7 @@ namespace RDA {
       LoadDefaultValues();
       Program.ConsoleWriteHeadline("Load Asset.xml");
 
+      SolveAllReferences();
       SolveXmlInheritance();
       LoadDescriptions();
       LoadCustomDescriptions();
@@ -62,7 +66,11 @@ namespace RDA {
 
     internal readonly static Dictionary<string, Dictionary<Languages, string>> CustomDescriptions = new Dictionary<string, Dictionary<Languages, string>>();
 
-    internal readonly static Dictionary<string, string> TourismThresholds = new Dictionary<string, string>();
+    internal readonly static Dictionary<string, HashSet<XElement>> References = new Dictionary<string, HashSet<XElement>>();
+
+    internal readonly static Dictionary<string, XElement> GUIDs = new Dictionary<string, XElement>();
+
+        internal readonly static Dictionary<string, string> TourismThresholds = new Dictionary<string, string>();
     internal readonly static Dictionary<string, Asset> Buffs = new Dictionary<string, Asset>();
     internal readonly static Dictionary<string, string> Icons = new Dictionary<string, string>();
     internal readonly static Dictionary<string, string> KeyToIdDict = new Dictionary<string, string>();
@@ -85,13 +93,47 @@ namespace RDA {
       var depth = 0;
       var search = ele.Element("BaseAssetGUID")?.Value;
       while (search != null) {
-        var founded = Original.Descendants("Asset").FirstOrDefault(a => a.XPathSelectElement("Values/Standard/GUID")?.Value == search);
-        if (founded != null) {
+        if (!Assets.GUIDs.ContainsKey(search))
+          throw new Exception($"Asset GUID not found {search}");
+
+        var found = Assets.GUIDs[search];
+        if (found != null) {
           depth++;
-          search = founded.Element("BaseAssetGUID")?.Value;
+          search = found.Element("BaseAssetGUID")?.Value;
         }
       }
       return depth;
+    }
+
+    private static void SolveAllReferences()
+    {
+            Program.ConsoleWriteHeadline("Solve All References");
+            Regex rgx = new Regex("\\A\\d\\d\\d+\\Z");
+
+            foreach (var node in Original.Descendants())
+            {
+                var asset = node;
+                while (asset.Parent != null && 
+                    (!asset.Name.LocalName.Equals("Asset") || !asset.HasElements))
+                    asset = asset.Parent;
+
+                if ("GUID".Equals(node.Name.LocalName) &&
+                    node == asset.XPathSelectElement("Values/Standard/GUID"))
+                {
+                    GUIDs.Add(node.Value, asset);
+                }
+                else if (!node.HasElements && rgx.IsMatch(node.Value))
+                {
+                   if (asset.Name != "Asset")
+                        continue;
+
+                    if (References.ContainsKey(node.Value))
+                        References[node.Value].Add(asset);
+                    else
+                        References.Add(node.Value, new HashSet<XElement> { asset });
+                 }
+            }
+
     }
 
     private static void SolveXmlInheritance() {
@@ -100,7 +142,10 @@ namespace RDA {
       foreach (var item in InheritHelper) {
         var baseGuid = item.Element("BaseAssetGUID")?.Value;
         if (baseGuid != null) {
-          var baseAsset = Original.Descendants("Asset").FirstOrDefault(a => a.XPathSelectElement("Values/Standard/GUID")?.Value == baseGuid);
+          if (!Assets.GUIDs.ContainsKey(baseGuid))
+            throw new Exception($"Asset GUID not found {baseGuid}");
+
+          var baseAsset = Assets.GUIDs[baseGuid];
           if (baseAsset != null) {
             item.AddStandardValues(baseAsset);
           }
@@ -362,8 +407,7 @@ namespace RDA {
 
     private static void SetBuffs() {
       Program.ConsoleWriteHeadline("Setting up Buffs");
-      var buffs = Original
-         .Descendants("Asset")
+      var buffs = GUIDs.Values
          .Where(l => l.Element("Template")?.Value.EndsWith("Buff") ?? false)
          .Select(l => new Asset(l, false));
       foreach (var item in buffs) {

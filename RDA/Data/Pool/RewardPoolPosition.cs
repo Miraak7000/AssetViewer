@@ -21,7 +21,7 @@ namespace RDA.Data {
     public RewardPoolPosition(XElement element) {
       ID = element.Element("Reward").Value;
       RewardPool = new List<RewardPool>();
-      var rewardItems = Assets.Original.XPathSelectElements($"//Asset[Values/Standard/GUID={element.Element("Reward").Value}]/Values/RewardPool/ItemsPool/Item");
+      var rewardItems = Assets.GUIDs[element.Element("Reward").Value].XPathSelectElements($"/Values/RewardPool/ItemsPool/Item");
       foreach (var rewardItem in rewardItems) {
         var weight = rewardItem.Element("Weight") == null ? 1 : int.Parse(rewardItem.Element("Weight").Value);
         if (weight == 0)
