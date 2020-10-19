@@ -134,6 +134,8 @@ namespace RDA {
 
     private static void ProcessingBuildings() {
       foreach (var item in Assets.Original.Descendants("Asset").Where(a => a.XPathSelectElement("Values/Building") != null).Select(a => a.Element("Template").Value).Distinct()) {
+        if (item.Equals("QuestObjectHarborBuildingAttacker"))
+          continue;
         ProcessingItems(item, false);
       }
     }
@@ -215,7 +217,7 @@ namespace RDA {
     }
 
     private static void ProcessingItems(string template, bool findSources = true, Action<Asset> manipulate = null) {
-      var result = new List<Asset>();
+      var result = new ConcurrentBag<Asset>();
       var oldAssets = new Dictionary<string, XElement>();
       if (File.Exists($@"{Program.PathRoot}\Modified\Assets_{template}.xml")) {
         var doc = XDocument.Load($@"{Program.PathRoot}\Modified\Assets_{template}.xml");
