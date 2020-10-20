@@ -43,9 +43,9 @@ namespace RDA {
       LoadCustomDescriptions();
       SetTextDictionarys();
       SetIcons();
-      SetTourismThresholds();
+      //SetTourismThresholds();
 
-      TourismAsset = Original.Descendants("Asset").First(a => a.Element("Template")?.Value == "TourismFeature");
+      //TourismAsset = Original.Descendants("Asset").First(a => a.Element("Template")?.Value == "TourismFeature");
 
       SetBuffs();
     }

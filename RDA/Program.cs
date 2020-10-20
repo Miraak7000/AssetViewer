@@ -82,7 +82,7 @@ namespace RDA {
       //Program.ProcessingExpeditionEvents();
 
       ////Tourism
-      Program.ProcessingTourism();
+      //Program.ProcessingTourism();
 
       Program.ProcessingBuffs();
 
@@ -221,9 +221,29 @@ namespace RDA {
         private static void ProcessingBuffs()
         {
             var template = "Buffs";
+            var oldAssets = new Dictionary<string, XElement>();
+
+            if (File.Exists($@"{Program.PathRoot}\Modified\Assets_{template}.xml"))
+            {
+                var doc = XDocument.Load($@"{Program.PathRoot}\Modified\Assets_{template}.xml");
+                oldAssets = doc.Root.Elements().ToDictionary(e => e.Attribute("ID").Value);
+            }
+
+            foreach (var item in Assets.Buffs.Values)
+            {
+                if (oldAssets.ContainsKey(item.ID))
+                {
+                    item.ReleaseVersion = oldAssets[item.ID].Attribute("Release")?.Value ?? oldAssets[item.ID].Attribute("RV")?.Value ?? "Release";
+                }
+                else
+                {
+                    item.ReleaseVersion = Assets.Version;
+                }
+            }
+
             var document = new XDocument();
             document.Add(new XElement(template));
-            document.Root.Add(Assets.Buffs.Values.Select(s => s.ToXml()));
+            document.Root.Add(Assets.Buffs.Values. Select(s => s.ToXml()));
             document.Save($@"{Program.PathRoot}\Modified\Assets_{template}.xml");
             document.SaveIndent($@"{Program.PathViewer}\Resources\Assets\{template}.xml");
         }
