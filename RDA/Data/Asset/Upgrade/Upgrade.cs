@@ -277,14 +277,14 @@ namespace RDA.Data {
           var Projectile = Assets
             .Original
             .Descendants("Asset")
-            .FirstOrDefault(a => a.XPathSelectElement($"Values/Standard/GUID")?.Value == element.Value);
+            .FirstOrDefault(a => a.XPathSelectElement("Values/Standard/GUID")?.Value == element.Value);
 
           var infodesc = Projectile.XPathSelectElement("Values/Standard/InfoDescription")?.Value;
           if (infodesc == null) {
-            Text = new Description(element.Parent.Parent.XPathSelectElement($"Standard/GUID").Value);
+            Text = new Description(element.Parent.Parent.XPathSelectElement("Standard/GUID").Value);
             break;
           }
-          var infodescAsset = Assets.Original.Descendants("Asset").FirstOrDefault(a => a.XPathSelectElement($"Values/Standard/GUID")?.Value == infodesc);
+          var infodescAsset = Assets.Original.Descendants("Asset").FirstOrDefault(a => a.XPathSelectElement("Values/Standard/GUID")?.Value == infodesc);
           if (infodescAsset != null) {
             Text = new Description(infodescAsset.XPathSelectElement("Values/Standard/InfoDescription").Value) {
               AdditionalInformation = new Description(infodescAsset.XPathSelectElement("Values/Standard/GUID").Value, DescriptionFontStyle.Light)

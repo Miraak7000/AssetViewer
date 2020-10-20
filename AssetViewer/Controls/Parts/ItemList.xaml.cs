@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
@@ -22,10 +21,12 @@ namespace AssetViewer.Controls {
       get => (int)GetValue(SelectedIndexProperty);
       set => SetValue(SelectedIndexProperty, value);
     }
+
     public ICommand CopyToClipboardCommand {
       get => (ICommand)GetValue(CopyToClipboardCommandProperty);
       set => SetValue(CopyToClipboardCommandProperty, value);
     }
+
     public IList SelectedItems => ListBoxItems.SelectedItems;
 
     #endregion Public Properties
