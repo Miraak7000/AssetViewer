@@ -96,6 +96,9 @@
     <Compile Include="Command\CommandBase.cs" />
     <Compile Include="Command\RelayCommand.cs" />
     <Compile Include="Comparer\RarityComparer.cs" />
+    <Compile Include="Controls\AllBuffs.xaml.cs">
+      <DependentUpon>AllBuffs.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\ExpeditionEvents.xaml.cs">
       <DependentUpon>ExpeditionEvents.xaml</DependentUpon>
     </Compile>
@@ -151,6 +154,7 @@
     <Compile Include="Data\Expedition\ExpeditionEvent.cs" />
     <Compile Include="Data\Expedition\RewardsItem.cs" />
     <Compile Include="Data\Asset\FactoryBase.cs" />
+    <Compile Include="Data\Filters\Base\ItemsHolderAllBuffs.cs" />
     <Compile Include="Data\Filters\Base\ItemsHolderCityFestival.cs" />
     <Compile Include="Data\Filters\Base\ItemsHolderItemSets.cs" />
     <Compile Include="Data\Filters\BuildableFilter.cs" />
@@ -196,6 +200,9 @@
     </Compile>
     <Compile Include="Data\TemplateAsset.cs" />
     <Compile Include="Data\TemplateThirdParty.cs" />
+    <Page Include="Controls\AllBuffs.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\ExpeditionEvents.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -289,6 +296,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\Assets\Buffs.xml" />
+    <Resource Include="Resources\Assets\CityInstitutionBuilding_Africa.xml" />
+    <Resource Include="Resources\Assets\ResearchCenter.xml" />
+    <Resource Include="Resources\Assets\ResidenceBuilding7_BuildPermit.xml" />
+    <Resource Include="Resources\Assets\WorkAreaRiverBuilding.xml" />
+    <Resource Include="Resources\Assets\WorkAreaRiverSlot.xml" />
     <Resource Include="Resources\AssetViewer.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -2096,6 +2109,112 @@
     <Resource Include="Resources\data\ui\2kimages\main\profiles\resident_tier03_work.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\resident_tier04.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\resident_tier05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Assets\ActiveItem.xml" />
+    <Resource Include="Resources\Assets\AdditionalModule.xml" />
+    <Resource Include="Resources\Assets\BridgeBuilding.xml" />
+    <Resource Include="Resources\Assets\BuffFactory.xml" />
+    <Resource Include="Resources\Assets\BuildPermitBuilding.xml" />
+    <Resource Include="Resources\Assets\BuildPermitModules.xml" />
+    <Resource Include="Resources\Assets\CampaignQuestObject.xml" />
+    <Resource Include="Resources\Assets\CampaignUncleMansion.xml" />
+    <Resource Include="Resources\Assets\CityInstitutionBuilding.xml" />
+    <Resource Include="Resources\Assets\CultureBuilding.xml" />
+    <Resource Include="Resources\Assets\CultureItem.xml" />
+    <Resource Include="Resources\Assets\CultureModule.xml" />
+    <Resource Include="Resources\Assets\ExpeditionEvents.xml" />
+    <Resource Include="Resources\Assets\FactoryBuilding7.xml" />
+    <Resource Include="Resources\Assets\FactoryBuilding7_Arctic.xml" />
+    <Resource Include="Resources\Assets\FarmBuilding.xml" />
+    <Resource Include="Resources\Assets\FarmBuilding_Arctic.xml" />
+    <Resource Include="Resources\Assets\Farmfield.xml" />
+    <Resource Include="Resources\Assets\FestivalBuff.xml" />
+    <Resource Include="Resources\Assets\FluffItem.xml" />
+    <Resource Include="Resources\Assets\FreeAreaBuilding.xml" />
+    <Resource Include="Resources\Assets\FreeAreaBuilding_Arctic.xml" />
+    <Resource Include="Resources\Assets\Guildhouse.xml" />
+    <Resource Include="Resources\Assets\GuildhouseItem.xml" />
+    <Resource Include="Resources\Assets\HarborBuildingAttacker.xml" />
+    <Resource Include="Resources\Assets\HarborDepot.xml" />
+    <Resource Include="Resources\Assets\HarborLandingStage7.xml" />
+    <Resource Include="Resources\Assets\HarborOffice.xml" />
+    <Resource Include="Resources\Assets\HarborOfficeItem.xml" />
+    <Resource Include="Resources\Assets\HarborPropObject.xml" />
+    <Resource Include="Resources\Assets\HarborWarehouse7.xml" />
+    <Resource Include="Resources\Assets\HarborWarehouseSlot7.xml" />
+    <Resource Include="Resources\Assets\HarborWarehouseStrategic.xml" />
+    <Resource Include="Resources\Assets\Heater_Arctic.xml" />
+    <Resource Include="Resources\Assets\HeavyFactoryBuilding.xml" />
+    <Resource Include="Resources\Assets\HeavyFreeAreaBuilding.xml" />
+    <Resource Include="Resources\Assets\HeavyFreeAreaBuilding_Arctic.xml" />
+    <Resource Include="Resources\Assets\ItemConstructionPlan.xml" />
+    <Resource Include="Resources\Assets\ItemCrafterBuilding.xml" />
+    <Resource Include="Resources\Assets\ItemSet.xml" />
+    <Resource Include="Resources\Assets\ItemSpecialAction.xml" />
+    <Resource Include="Resources\Assets\ItemSpecialActionVisualEffect.xml" />
+    <Resource Include="Resources\Assets\ItemWithUI.xml" />
+    <Resource Include="Resources\Assets\Market.xml" />
+    <Resource Include="Resources\Assets\Monument.xml" />
+    <Resource Include="Resources\Assets\MonumentCategory.xml" />
+    <Resource Include="Resources\Assets\MonumentEvent.xml" />
+    <Resource Include="Resources\Assets\MonumentThreshold.xml" />
+    <Resource Include="Resources\Assets\Monument_with_Shipyard.xml" />
+    <Resource Include="Resources\Assets\OilPumpBuilding.xml" />
+    <Resource Include="Resources\Assets\OrnamentalBuilding.xml" />
+    <Resource Include="Resources\Assets\OrnamentalModule.xml" />
+    <Resource Include="Resources\Assets\Palace.xml" />
+    <Resource Include="Resources\Assets\PalaceMinistry.xml" />
+    <Resource Include="Resources\Assets\PalaceModule.xml" />
+    <Resource Include="Resources\Assets\PowerplantBuilding.xml" />
+    <Resource Include="Resources\Assets\Product.xml" />
+    <Resource Include="Resources\Assets\PublicServiceBuilding.xml" />
+    <Resource Include="Resources\Assets\QuestItem.xml" />
+    <Resource Include="Resources\Assets\QuestItemMagistrate.xml" />
+    <Resource Include="Resources\Assets\QuestLighthouse.xml" />
+    <Resource Include="Resources\Assets\RepairCrane.xml" />
+    <Resource Include="Resources\Assets\ResidenceBuilding7.xml" />
+    <Resource Include="Resources\Assets\ResidenceBuilding7_Arctic.xml" />
+    <Resource Include="Resources\Assets\RewardPools.xml" />
+    <Resource Include="Resources\Assets\ShipSpecialist.xml" />
+    <Resource Include="Resources\Assets\Shipyard.xml" />
+    <Resource Include="Resources\Assets\SimpleBuilding.xml" />
+    <Resource Include="Resources\Assets\Slot.xml" />
+    <Resource Include="Resources\Assets\SlotFactoryBuilding7.xml" />
+    <Resource Include="Resources\Assets\SlotFactoryBuilding7_Arctic.xml" />
+    <Resource Include="Resources\Assets\StartExpeditionItem.xml" />
+    <Resource Include="Resources\Assets\Street.xml" />
+    <Resource Include="Resources\Assets\StreetBuilding.xml" />
+    <Resource Include="Resources\Assets\Texts_Chinese.xml" />
+    <Resource Include="Resources\Assets\Texts_English.xml" />
+    <Resource Include="Resources\Assets\Texts_French.xml" />
+    <Resource Include="Resources\Assets\Texts_German.xml" />
+    <Resource Include="Resources\Assets\Texts_Italian.xml" />
+    <Resource Include="Resources\Assets\Texts_Korean.xml" />
+    <Resource Include="Resources\Assets\Texts_Russian.xml" />
+    <Resource Include="Resources\Assets\ThirdParty.xml" />
+    <Resource Include="Resources\Assets\Tourism.xml" />
+    <Resource Include="Resources\Assets\TownhallItem.xml" />
+    <Resource Include="Resources\Assets\VehicleItem.xml" />
+    <Resource Include="Resources\Assets\VisitorPier.xml" />
+    <Resource Include="Resources\Assets\VisualBuilding_NoLogic.xml" />
+    <Resource Include="Resources\Assets\Warehouse.xml" />
+    <Resource Include="Resources\Assets\WorkAreaSlot.xml" />
+    <Resource Include="Resources\Assets\WorkforceConnector.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Assets\FactoryBuilding7_BuildPermit.xml" />
+    <Resource Include="Resources\Assets\FertilizerBaseBuilding.xml" />
+    <Resource Include="Resources\Assets\FertilizerBaseModule.xml" />
+    <Resource Include="Resources\Assets\HarborLandingStage7_BuildPermit.xml" />
+    <Resource Include="Resources\Assets\IrrigationPropagationSource.xml" />
+    <Resource Include="Resources\Assets\QuestObjectInfectable.xml" />
+    <Resource Include="Resources\Assets\Texts_Brazilian.xml" />
+    <Resource Include="Resources\Assets\Texts_Japanese.xml" />
+    <Resource Include="Resources\Assets\Texts_Polish.xml" />
+    <Resource Include="Resources\Assets\Texts_Portuguese.xml" />
+    <Resource Include="Resources\Assets\Texts_Spanish.xml" />
+    <Resource Include="Resources\Assets\Texts_Taiwanese.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

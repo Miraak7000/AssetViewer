@@ -23,7 +23,8 @@ namespace AssetViewer {
     public static Dictionary<int, TemplateAsset> Buildings { get; } = new Dictionary<int, TemplateAsset>();
     public static Dictionary<int, TemplateAsset> ItemSets { get; } = new Dictionary<int, TemplateAsset>();
     public static Dictionary<int, TemplateAsset> FestivalBuffs { get; } = new Dictionary<int, TemplateAsset>();
-    public static Dictionary<int, Pool> Pools { get; } = new Dictionary<int, Pool>();
+        public static Dictionary<int, TemplateAsset> AllBuffs { get; } = new Dictionary<int, TemplateAsset>();
+        public static Dictionary<int, Pool> Pools { get; } = new Dictionary<int, Pool>();
     public static ObjectCache Cache { get; set; } = MemoryCache.Default;
     public static Dictionary<int, string> Descriptions { get; } = new Dictionary<int, string>();
     public static bool CountMode { get; set; }
@@ -58,6 +59,7 @@ namespace AssetViewer {
       LoadBuildungs();
       LoadItemSets();
       LoadFestivals();
+      LoadAllBuffs();
     }
 
     #endregion Public Constructors
@@ -122,6 +124,14 @@ namespace AssetViewer {
       using (var reader = new StreamReader(stream)) {
         var document = XDocument.Parse(reader.ReadToEnd()).Root;
         foreach (var item in document.Elements()) {
+                    try
+                    {
+                        int.Parse(item.Attribute("ID").Value);
+                    }catch(Exception e)
+                    {
+                        Console.WriteLine(e.Message);
+                        continue;
+                    }
           Descriptions.Add(int.Parse(item.Attribute("ID").Value), item.Value);
         }
       }
@@ -152,7 +162,20 @@ namespace AssetViewer {
       }
     }
 
-    private static void LoadItemSets() {
+        private static void LoadAllBuffs()
+        {
+            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.Buffs.xml"))
+            using (var reader = new StreamReader(stream))
+            {
+                var document = XDocument.Parse(reader.ReadToEnd()).Root;
+                foreach (var item in document.Elements().Select(s => new TemplateAsset(s)))
+                {
+                    AllBuffs.Add(item.ID, item);
+                }
+            }
+        }
+
+        private static void LoadItemSets() {
       using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.ItemSet.xml"))
       using (var reader = new StreamReader(stream)) {
         var document = XDocument.Parse(reader.ReadToEnd()).Root;

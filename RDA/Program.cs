@@ -79,10 +79,12 @@ namespace RDA {
 
       // Expeditions
       //Program.Expeditions(); //Obsolete
-      Program.ProcessingExpeditionEvents();
+      //Program.ProcessingExpeditionEvents();
 
       ////Tourism
       Program.ProcessingTourism();
+
+      Program.ProcessingBuffs();
 
       //Save Descriptions
       //Set True for fully new Set of Descriptions.
@@ -216,7 +218,17 @@ namespace RDA {
       }
     }
 
-    private static void ProcessingItems(string template, bool findSources = true, Action<Asset> manipulate = null) {
+        private static void ProcessingBuffs()
+        {
+            var template = "Buffs";
+            var document = new XDocument();
+            document.Add(new XElement(template));
+            document.Root.Add(Assets.Buffs.Values.Select(s => s.ToXml()));
+            document.Save($@"{Program.PathRoot}\Modified\Assets_{template}.xml");
+            document.SaveIndent($@"{Program.PathViewer}\Resources\Assets\{template}.xml");
+        }
+
+        private static void ProcessingItems(string template, bool findSources = true, Action<Asset> manipulate = null) {
       var result = new ConcurrentBag<Asset>();
       var oldAssets = new Dictionary<string, XElement>();
       if (File.Exists($@"{Program.PathRoot}\Modified\Assets_{template}.xml")) {
