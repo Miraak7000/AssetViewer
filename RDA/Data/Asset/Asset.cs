@@ -1247,10 +1247,20 @@ namespace RDA.Data
 
       if (Assets.ResearchableItems.ContainsKey(id))
       {
-        var researchCenterId = "118940";
         var result = new SourceWithDetailsList();
-        result.AddSourceAsset(Assets.GUIDs[researchCenterId], new HashSet<AssetWithWeight> { new AssetWithWeight(Assets.GUIDs[Assets.ResearchableItems[id]]) });
+        var details = Assets.ResearchableItems[id];
+        result.AddSourceAsset(details.Source, details.Details);
         resultstoadd.Add(result);
+      }
+      else
+      {
+        var item = asset.XPathSelectElement("Values/Item");
+        if (item != null && (item.Element("Rarity") == null || "Common".Equals(item.Element("Rarity").Value)))
+        {
+          var result = new SourceWithDetailsList();
+          result.AddSourceAsset(Assets.GUIDs["118940"]);
+          resultstoadd.Add(result);
+        }
       }
 
       if (!Assets.References.ContainsKey(id))

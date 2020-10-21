@@ -81,7 +81,7 @@ namespace RDA
 
     internal readonly static Dictionary<string, Asset> Buffs = new Dictionary<string, Asset>();
 
-    internal readonly static Dictionary<string, string> ResearchableItems = new Dictionary<string, string>();
+    internal readonly static Dictionary<string, SourceWithDetails> ResearchableItems = new Dictionary<string, SourceWithDetails>();
 
     internal readonly static Dictionary<string, string> Icons = new Dictionary<string, string>();
     internal readonly static Dictionary<string, string> KeyToIdDict = new Dictionary<string, string>();
@@ -162,33 +162,39 @@ namespace RDA
       if (research == null)
         throw new Exception("Research Feature with GUID 120244 nof found");
 
-      var pools = research.XPathSelectElements("Values/ResearchFeature/ResearchFields/*/Subcategories/Item/Subcategory").ToList();
+      var categories = research.XPathSelectElements("Values/ResearchFeature/ResearchFields/*/Subcategories/Item/Subcategory").ToList();
+      var researchCenter = Assets.GUIDs["118940"];
 
 
-
-      foreach (var pool in pools)
+      foreach (var categoryId in categories)
       {
-        var category = pool.XPathSelectElement("../../..").Name.LocalName;
+        var name = categoryId.XPathSelectElement("../../..").Name.LocalName;
 
         string categoryDescription;
-        switch (category)
+        switch (name)
         {
           case "Culture": categoryDescription = "124266"; break;
           case "Technology": categoryDescription = "124268"; break;
           case "Talent": categoryDescription = "124269"; break;
           default:
-            Debug.WriteLine(category);
+            Debug.WriteLine(categoryId);
             throw new NotImplementedException();
         }
 
-        processResearchPool(pool.Value, categoryDescription);
+        var details = new HashSet<AssetWithWeight>();
+        details.Add(new AssetWithWeight(GUIDs[GUIDs[categoryId.Value].XPathSelectElement("Values/ResearchSubcategory/ItemCardDescription/Headline").Value], 1));
+
+        var sourceWDetails = new SourceWithDetails(researchCenter, details);
+
+        foreach (var pool in GUIDs[categoryId.Value].XPathSelectElements("Values/ResearchSubcategory/RecipePool/Item/Pool"))
+          processResearchPool(pool.Value, sourceWDetails.Copy(), new AssetWithWeight(GUIDs[categoryDescription], double.NaN));
       }
 
 
     }
 
 
-    private static void processResearchPool(string id, string categoryDescription)
+    private static void processResearchPool(string id, SourceWithDetails parentDetails, AssetWithWeight parentCategory)
     {
       XElement poolOrAsset;
       GUIDs.TryGetValue(id, out poolOrAsset);
@@ -196,7 +202,7 @@ namespace RDA
       if (poolOrAsset == null)
         return;
 
-      var pools = poolOrAsset.XPathSelectElements("Values/ResearchSubcategory/RecipePool/Item/Pool | Values/AssetPool/AssetList/Item/Asset | Values/RewardPool/ItemsPool/Item/ItemLink").ToList();
+      var pools = poolOrAsset.XPathSelectElements("Values/AssetPool/AssetList/Item/Asset | Values/RewardPool/ItemsPool/Item/ItemLink").ToList();
 
       if (pools.Count == 0)
       {
@@ -204,17 +210,37 @@ namespace RDA
         {// ignore empty reward pools
 
           if (!ResearchableItems.ContainsKey(id))
-            ResearchableItems.Add(id, categoryDescription);
-        }
+          {
+
+            var details = parentDetails.Copy();
+            details.Details.Add(parentCategory);
+            ResearchableItems.Add(id, details);
+          }
+          else
+          {
+            foreach(var d in ResearchableItems[id].Details)
+            {
+              d.Weight += parentDetails.Details.First().Weight;
+            }
+          }
+         }
       }
+
+      var itemList = pools.Select(p => p.XPathSelectElement("../Probability | ../Weight"));
+      var weightSum = itemList.Sum(item => item?.Value is string str ? double.Parse(str) : 1.0F);
 
       foreach (var pool in pools)
       {
         var prob = pool.XPathSelectElement("../Probability | ../Weight");
         if (prob != null && (prob.Value == "" || prob.Value == "0"))
-          return;
+          continue;
 
-        processResearchPool(pool.Value, categoryDescription);
+        var details = parentDetails.Copy();
+
+            details.Details.First().Weight *= (prob?.Value is string str ? double.Parse(str) : 1.0F) / weightSum;
+
+
+        processResearchPool(pool.Value, details, parentCategory);
       }
     }
 

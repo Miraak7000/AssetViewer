@@ -83,7 +83,7 @@ namespace RDA
 
       // Expeditions
       //Program.Expeditions(); //Obsolete
-      //Program.ProcessingExpeditionEvents();
+      Program.ProcessingExpeditionEvents();
 
       ////Tourism
       //Program.ProcessingTourism();
