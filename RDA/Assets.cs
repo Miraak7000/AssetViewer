@@ -88,6 +88,20 @@ namespace RDA
     internal readonly static Dictionary<string, string> ExpeditionRegionToIdDict = new Dictionary<string, string>();
     internal static string Version = "Release";
 
+    internal readonly static HashSet<string> templatesResearchableItems = new HashSet<string> {
+
+                "GuildhouseItem",
+                "HarborOfficeItem",
+                "TownhallItem",
+                "VehicleItem",
+                "ShipSpecialist",
+                "CultureItem",
+                "ItemSpecialAction",
+                "ActiveItem",
+                "ItemSpecialActionVisualEffect",
+
+  };
+
     #endregion Internal Fields
 
     #region Private Methods

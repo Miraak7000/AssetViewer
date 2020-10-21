@@ -1255,7 +1255,9 @@ namespace RDA.Data
       else
       {
         var item = asset.XPathSelectElement("Values/Item");
-        if (item != null && (item.Element("Rarity") == null || "Common".Equals(item.Element("Rarity").Value)))
+        var template = asset.Element("Template").Value;
+        if (item != null && (item.Element("Rarity") == null || "Common".Equals(item.Element("Rarity").Value)) &&
+          Assets.templatesResearchableItems.Contains(template))
         {
           var result = new SourceWithDetailsList();
           result.AddSourceAsset(Assets.GUIDs["118940"]);
