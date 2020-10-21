@@ -44,7 +44,7 @@
         <TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=-130}" />
         <TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=-1221}" />
         <TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=20106}" />
-        <TextBlock Text="Buffs" />
+        <TextBlock Text="{Binding Converter={StaticResource Description}, ConverterParameter=2363}" />
         <!--<TextBlock Text="Eli Lootpool" />-->
       </ComboBox>
       <ComboBox
