@@ -198,6 +198,11 @@ namespace RDA.Data {
           Text = new Description(Source.XPathSelectElement("Values/Standard/GUID").Value).InsertBefore("-").InsertBefore(new Description("-101"));
           break;
 
+        case "ResearchCenter":
+          Text = new Description(Source.XPathSelectElement("Values/Standard/GUID").Value);
+          Details = element.Details.Select(i => (new Description(i.Asset.XPathSelectElement("Values/Standard/GUID").Value), i.Weight)).ToList();
+          break;
+
         default:
           Debug.WriteLine(Source.Element("Template").Value);
           throw new NotImplementedException();
