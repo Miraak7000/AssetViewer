@@ -269,7 +269,7 @@ namespace RDA.Data {
         case "GoodConsumptionUpgrade":
           Additionals = new List<Upgrade>();
           foreach (var item in element.Elements("Item")) {
-            Additionals.Add(new Upgrade { Text = new Description(item.Element("ProvidedNeed").Value), Value = (item.Element("AmountInPercent").Value.StartsWith("-") ? "" : "+") + $"{item.Element("AmountInPercent").Value}%" });
+            Additionals.Add(new Upgrade { Text = new Description(item.Element("ProvidedNeed").Value), Value = ((item.Element("AmountInPercent")?.Value?.StartsWith("-") ?? false) ? "" : "+") + $"{item.Element("AmountInPercent")?.Value ?? "100"}%" });
           }
           break;
 
@@ -277,14 +277,14 @@ namespace RDA.Data {
           var Projectile = Assets
             .Original
             .Descendants("Asset")
-            .FirstOrDefault(a => a.XPathSelectElement($"Values/Standard/GUID")?.Value == element.Value);
+            .FirstOrDefault(a => a.XPathSelectElement("Values/Standard/GUID")?.Value == element.Value);
 
           var infodesc = Projectile.XPathSelectElement("Values/Standard/InfoDescription")?.Value;
           if (infodesc == null) {
-            Text = new Description(element.Parent.Parent.XPathSelectElement($"Standard/GUID").Value);
+            Text = new Description(element.Parent.Parent.XPathSelectElement("Standard/GUID").Value);
             break;
           }
-          var infodescAsset = Assets.Original.Descendants("Asset").FirstOrDefault(a => a.XPathSelectElement($"Values/Standard/GUID")?.Value == infodesc);
+          var infodescAsset = Assets.Original.Descendants("Asset").FirstOrDefault(a => a.XPathSelectElement("Values/Standard/GUID")?.Value == infodesc);
           if (infodescAsset != null) {
             Text = new Description(infodescAsset.XPathSelectElement("Values/Standard/InfoDescription").Value) {
               AdditionalInformation = new Description(infodescAsset.XPathSelectElement("Values/Standard/GUID").Value, DescriptionFontStyle.Light)
@@ -422,6 +422,7 @@ namespace RDA.Data {
         case "ProductivityBoostUpgrade":
         case "ProvideIndustrialization":
         case "ElectricityBoostUpgrade":
+        case "PipeCapacityUpgrade":
           break;
 
         case "AdditionalHappiness":
@@ -440,6 +441,7 @@ namespace RDA.Data {
         case "HealPerMinute":
         case "MaxTrainCount":
         case "StorageCapacityModifier":
+        case "AdditionalResearch":
           value = int.Parse(element.Value);
           break;
 

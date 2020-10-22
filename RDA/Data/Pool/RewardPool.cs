@@ -60,7 +60,7 @@ namespace RDA.Data {
     #region Private Methods
 
     private void DiscoverItems(string value) {
-      var asset = Assets.Original.XPathSelectElement($"//Asset[Values/Standard/GUID={value}]");
+      var asset = Assets.GUIDs[value];
       switch (asset.Element("Template").Value) {
         case "RewardPool":
           foreach (var item in asset.XPathSelectElements("Values/RewardPool/ItemsPool/Item/ItemLink")) {

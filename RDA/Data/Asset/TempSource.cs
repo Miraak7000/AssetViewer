@@ -156,6 +156,8 @@ namespace RDA.Data {
         case "A7_QuestExpedition":
         case "A7_QuestDivingBellSonar":
         case "A7_QuestDivingBellTreasureMap":
+        case "A7_QuestDecision":
+        case "A7_QuestSmugglerWOScanners":
           var questgiver = Source.XPathSelectElement("Values/Quest/QuestGiver")?.Value;
           if (questgiver != null) {
             Text = new Description(questgiver).InsertBefore("-").InsertBefore(new Description("2734"));
@@ -196,6 +198,18 @@ namespace RDA.Data {
 
         case "Item":
           Text = new Description(Source.XPathSelectElement("Values/Standard/GUID").Value).InsertBefore("-").InsertBefore(new Description("-101"));
+          break;
+
+        case "ResearchSubcategory":
+          Text = new Description("118940");
+          foreach (var item in element.Details) {
+            var desc = new Description(item.Asset.Descendants("Headline").First().Value);
+            Details.Add((desc, item.Weight));
+          }
+          break;
+
+        case "ResearchFeature":
+          Text = new Description("118940");
           break;
 
         default:

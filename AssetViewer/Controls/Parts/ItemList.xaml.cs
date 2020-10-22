@@ -1,6 +1,10 @@
 ﻿using System.Collections;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
+using AssetViewer.Data;
+using VAV;
 
 namespace AssetViewer.Controls {
 
@@ -18,6 +22,11 @@ namespace AssetViewer.Controls {
       set => SetValue(SelectedIndexProperty, value);
     }
 
+    public ICommand CopyToClipboardCommand {
+      get => (ICommand)GetValue(CopyToClipboardCommandProperty);
+      set => SetValue(CopyToClipboardCommandProperty, value);
+    }
+
     public IList SelectedItems => ListBoxItems.SelectedItems;
 
     #endregion Public Properties
@@ -26,6 +35,7 @@ namespace AssetViewer.Controls {
 
     public ItemList() {
       InitializeComponent();
+      CopyToClipboardCommand = new RelayCommand(OnCopyToClipboard);
     }
 
     #endregion Public Constructors
@@ -38,6 +48,17 @@ namespace AssetViewer.Controls {
     public static readonly DependencyProperty SelectedIndexProperty =
         DependencyProperty.Register("SelectedIndex", typeof(int), typeof(ItemList), new PropertyMetadata(0));
 
+    public static readonly DependencyProperty CopyToClipboardCommandProperty =
+    DependencyProperty.Register("CopyToClipboardCommand", typeof(ICommand), typeof(ItemList), new PropertyMetadata(null));
+
     #endregion Public Fields
+
+    #region Private Methods
+
+    private void OnCopyToClipboard() {
+      Clipboard.SetText(string.Join((","), ListBoxItems.Items.OfType<TemplateAsset>().Select(a => $"{a.ID} {a.Text.CurrentLang}")));
+    }
+
+    #endregion Private Methods
   }
 }

@@ -17,7 +17,7 @@
         <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
       </U>
       <U V="80">
-        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
       </U>
       <U V="75">
         <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
@@ -29,7 +29,7 @@
     <GU>
       <U V="" C="Shipyard">
         <T ID="12693" I="data/ui/2kimages/main/icons/icon_sail_shipyard_2d.png">
-          <AI ID="-1339866593" I="data/ui/2kimages/main/icons/icon_trade.png" FS="16" />
+          <AI ID="-849909344" I="data/ui/2kimages/main/icons/icon_trade.png" FS="16" />
         </T>
       </U>
     </GU>
@@ -43,44 +43,6 @@
         </U>
         <U V="200">
           <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="1010520" RV="Release" RT="Common">
-    <N>harbor_02 (Sailing Shipyard)</N>
-    <T ID="1010520" I="data/ui/2kimages/main/3dicons/icon_sail_shipyard.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="10000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="20">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="25">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Shipyard">
-        <T ID="12693" I="data/ui/2kimages/main/icons/icon_sail_shipyard_2d.png">
-          <AI ID="-96302628" I="data/ui/2kimages/main/icons/icon_trade.png" FS="16" />
-        </T>
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="1090" />
-    <M>
-      <MC>
-        <U V="100 / 50">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="100">
-          <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
         </U>
       </MC>
     </M>
@@ -119,6 +81,44 @@
         </U>
         <U V="100">
           <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="1010520" RV="Release" RT="Common">
+    <N>harbor_02 (Sailing Shipyard)</N>
+    <T ID="1010520" I="data/ui/2kimages/main/3dicons/icon_sail_shipyard.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="10000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="20">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="25">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Shipyard">
+        <T ID="12693" I="data/ui/2kimages/main/icons/icon_sail_shipyard_2d.png">
+          <AI ID="-96302628" I="data/ui/2kimages/main/icons/icon_trade.png" FS="16" />
+        </T>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="1090" />
+    <M>
+      <MC>
+        <U V="100 / 50">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="100">
+          <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
         </U>
       </MC>
     </M>

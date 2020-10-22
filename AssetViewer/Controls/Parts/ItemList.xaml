@@ -21,6 +21,9 @@
       ItemsSource="{Binding ElementName=userControl, Path=ItemSource}"
       SelectedIndex="{Binding ElementName=userControl, Path=SelectedIndex}"
       SelectedItem="{Binding Path=SelectedAsset}">
+      <ListBox.InputBindings>
+        <KeyBinding Key="C" Command="{Binding ElementName=userControl, Path=CopyToClipboardCommand}" Modifiers="Ctrl" />
+      </ListBox.InputBindings>
       <ListBox.Style>
         <Style TargetType="ListBox">
           <Style.Triggers>

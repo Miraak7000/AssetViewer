@@ -67,6 +67,10 @@ namespace AssetViewer.Controls {
             break;
 
           case 8:
+            Presenter.Content = new AllBuffs();
+            break;
+
+          case 9:
             Presenter.Content = new PoolToTree();
             break;
 

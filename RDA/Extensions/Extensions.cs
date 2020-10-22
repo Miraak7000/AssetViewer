@@ -24,25 +24,29 @@ namespace RDA {
       XElement result = null;
       previousIDs = previousIDs ?? new List<string>();
       previousIDs.Add(id);
-      var links = Assets.Original.XPathSelectElements($"//*[text()={id} and not(self::GUID) and not(self::InsertEvent)]").ToArray();
-      if (links.Length > 0) {
-        for (var i = 0; i < links.Length; i++) {
-          var element = links[i];
-          while (element.Name.LocalName != "Asset" || !element.HasElements) {
-            element = element.Parent;
-          }
-          if (element.Element("Template") == null) {
+
+      var cachedLinks = Assets.References.ContainsKey(id) ? Assets.References[id] : new HashSet<XElement>();
+
+      foreach (var asset in cachedLinks) {
+        foreach (var reference in asset.Descendants()) {
+          if ("GUID".Equals(reference.Name.LocalName) || !id.Equals(reference.Value) || reference.HasElements)
+            continue;
+
+          if ("InsertEvent".Equals(reference.Name))
+            continue;
+
+          if (asset.Element("Template") == null) {
             continue;
           }
 
-          if (previousIDs.Contains(element.XPathSelectElement("Values/Standard/GUID").Value)) {
+          if (previousIDs.Contains(asset.XPathSelectElement("Values/Standard/GUID").Value)) {
             continue;
           }
 
-          if (ParentTypes.Contains(element.Element("Template").Value)) {
-            return element;
+          if (ParentTypes.Contains(asset.Element("Template").Value)) {
+            return asset;
           }
-          result = FindParentElement(element.XPathSelectElement("Values/Standard/GUID").Value, ParentTypes, previousIDs);
+          result = FindParentElement(asset.XPathSelectElement("Values/Standard/GUID").Value, ParentTypes, previousIDs);
           if (result != null) {
             break;
           }
