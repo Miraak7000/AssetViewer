@@ -78,9 +78,13 @@ namespace RDA.Data {
       ExpeditionRegion = element.Element("ExpeditionRegion")?.Value;
       FillEventPool = element.Element("FillEventPool")?.Value;
       if (element.Element("Reward") != null) {
-        var rewardAssets = Assets.Original.XPathSelectElements($"//Asset[Values/Standard/GUID={element.Element("Reward").Value}]/Values/Reward/RewardAssets/Item");
-        Rewards = new List<RewardPoolPosition>();
-        foreach (var rewardAsset in rewardAssets) {
+
+                XElement asset;
+                var id = element.Element("Reward").Value;
+                Assets.GUIDs.TryGetValue(id, out asset);
+               
+        foreach (var rewardAsset in asset.XPathSelectElements($"/Values/Reward/RewardAssets/Item"))
+        {
           var position = new RewardPoolPosition(rewardAsset);
           var amount = rewardAsset.Element("Amount")?.Value ?? "1";
           switch (amount) {

@@ -480,6 +480,10 @@ namespace RDA.Data {
         case "MotorizableType":
           Text = new Description(Assets.KeyToIdDict[element.Value]);
           break;
+        case "PipeCapacityUpgrade":
+          Text = new Description("127395");
+          value = int.Parse(element.Value);
+          break;
 
         default:
           throw new NotImplementedException(element.Name.LocalName);

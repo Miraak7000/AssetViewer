@@ -33,7 +33,14 @@ namespace AssetViewer.Data {
     }
 
     public Description(XElement item) {
-      ID = int.Parse(item.Attribute("ID").Value);
+            var id = item.Attribute("ID").Value;
+            try
+            {
+                ID = int.Parse(id);
+            } catch(Exception e)
+            {
+                Console.Error.WriteLine(e.Message);
+            }
       if (item.Attribute("I")?.Value is string icon) {
         Icon = new Icon(icon);
       }

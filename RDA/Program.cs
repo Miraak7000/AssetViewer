@@ -11,14 +11,17 @@ using System.Xml.Linq;
 using System.Xml.XPath;
 using RDA.Data;
 
-namespace RDA {
+namespace RDA
+{
 
   [SuppressMessage("ReSharper", "PossibleNullReferenceException"), SuppressMessage("ReSharper", "AssignNullToNotNullAttribute")]
-  internal static class Program {
+  internal static class Program
+  {
 
     #region Public Constructors
 
-    static Program() {
+    static Program()
+    {
       Program.PathViewer = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase).Replace(@"file:\", string.Empty)).Parent.Parent.Parent.FullName + @"\AssetViewer";
       Program.PathRoot = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase).Replace(@"file:\", string.Empty)).Parent.Parent.FullName;
     }
@@ -27,7 +30,8 @@ namespace RDA {
 
     #region Public Methods
 
-    public static void Main(string[] _) {
+    public static void Main(string[] _)
+    {
       // Helper  Obsolete
       //Helper.ExtractTextEnglish(Program.PathRoot + @"\Original\texts_english.xml");
       //Helper.ExtractTextGerman(Program.PathRoot + @"\Original\texts_german.xml");
@@ -73,44 +77,53 @@ namespace RDA {
       //Third Party
       Program.ProcessingThirdParty();
 
-      //// Quests
-      ////Program.QuestGiver();   //Obsolete
-      ////Program.Quests();       //Obsolete
+      // Quests
+      //Program.QuestGiver();   //Obsolete
+      //Program.Quests();       //Obsolete
 
-      //// Expeditions
-      ////Program.Expeditions(); //Obsolete
+      // Expeditions
+      //Program.Expeditions(); //Obsolete
       Program.ProcessingExpeditionEvents();
 
       ////Tourism
-      Program.ProcessingTourism();
+      //Program.ProcessingTourism();
+
+      Program.ProcessingBuffs();
 
       //Save Descriptions
       //Set True for fully new Set of Descriptions.
-      Program.SaveDescriptions(true);
+      Program.SaveDescriptions(false);
     }
 
-    public static void ConsoleWriteGUID(string str) {
-      lock (ConsoleLock) {
-        if (Console.CursorLeft != 0) {
+    public static void ConsoleWriteGUID(string str)
+    {
+      lock (ConsoleLock)
+      {
+        if (Console.CursorLeft != 0)
+        {
           var currentleft = Console.CursorLeft;
           Console.SetCursorPosition(0, Console.CursorTop);
           Console.Write(str);
           Console.Write(new string(' ', Math.Abs(currentleft - Console.CursorLeft)));
         }
-        else {
+        else
+        {
           Console.Write(str);
         }
       }
     }
 
-    public static void ConsoleWriteHeadline(string str) {
-      if (Console.CursorLeft != 0) {
+    public static void ConsoleWriteHeadline(string str)
+    {
+      if (Console.CursorLeft != 0)
+      {
         Console.WriteLine("");
       }
       Console.WriteLine(str);
     }
 
-    public static void SaveIndent(this XDocument doc, string path) {
+    public static void SaveIndent(this XDocument doc, string path)
+    {
       doc.Save(path, SaveOptions.DisableFormatting);
     }
 
@@ -132,23 +145,32 @@ namespace RDA {
 
     #region Private Methods
 
-    private static void ProcessingBuildings() {
-      foreach (var item in Assets.Original.Descendants("Asset").Where(a => a.XPathSelectElement("Values/Building") != null).Select(a => a.Element("Template").Value).Distinct()) {
+    private static void ProcessingBuildings()
+    {
+      foreach (var item in Assets.Original.Descendants("Asset").Where(a => a.XPathSelectElement("Values/Building") != null).Select(a => a.Element("Template").Value).Distinct())
+      {
+        if (item.Equals("QuestObjectHarborBuildingAttacker"))
+          continue;
         ProcessingItems(item, false);
       }
     }
 
-    private static void SaveDescriptions(bool resetOld = false) {
+    private static void SaveDescriptions(bool resetOld = false)
+    {
       ConsoleWriteHeadline("Save Descriptions");
       // Split Languages To single Files
-      foreach (Languages language in Enum.GetValues(typeof(Languages))) {
-        using (var xmlWriter = XmlWriter.Create($@"{Program.PathRoot}\Modified\Texts_{language:G}.xml", new XmlWriterSettings { Indent = false })) {
+      foreach (Languages language in Enum.GetValues(typeof(Languages)))
+      {
+        using (var xmlWriter = XmlWriter.Create($@"{Program.PathRoot}\Modified\Texts_{language:G}.xml", new XmlWriterSettings { Indent = false }))
+        {
           xmlWriter.WriteStartElement("Texts");
           var savedIDs = new HashSet<string>();
 
           //Custom Descriptions
-          foreach (var item in Assets.CustomDescriptions) {
-            if (!savedIDs.Contains(item.Key)) {
+          foreach (var item in Assets.CustomDescriptions)
+          {
+            if (!savedIDs.Contains(item.Key))
+            {
               xmlWriter.WriteStartElement("Text");
               xmlWriter.WriteAttributeString("ID", item.Key);
               xmlWriter.WriteValue(item.Value.TryGetValue(language, out var value) ? value : item.Value.First().Value);
@@ -157,8 +179,10 @@ namespace RDA {
             }
           }
           //Global Descriptions
-          foreach (var item in Description.GlobalDescriptions.Values) {
-            if (!savedIDs.Contains(item.ID)) {
+          foreach (var item in Description.GlobalDescriptions.Values)
+          {
+            if (!savedIDs.Contains(item.ID))
+            {
               xmlWriter.WriteStartElement("Text");
               xmlWriter.WriteAttributeString("ID", item.ID);
               xmlWriter.WriteValue(item.Languages.TryGetValue(language, out var value) ? value : item.Languages.First().Value);
@@ -179,11 +203,14 @@ namespace RDA {
             new Description("12725"),    //Verkaufspreis
             new Description("21731"),    //Anheuerungskosten
             new Description("20106"),     //Stadtfest
-            new Description("22440")     //Anzahl
+            new Description("22440"),     //Anzahl
+            new Description("2363")      //Effekte
           };
 
-          foreach (var item in needed) {
-            if (!savedIDs.Contains(item.ID)) {
+          foreach (var item in needed)
+          {
+            if (!savedIDs.Contains(item.ID))
+            {
               xmlWriter.WriteStartElement("Text");
               xmlWriter.WriteAttributeString("ID", item.ID);
               xmlWriter.WriteValue(item.Languages.TryGetValue(language, out var value) ? value : item.Languages.First().Value);
@@ -193,10 +220,13 @@ namespace RDA {
           }
 
           //Load Last Descriptions to make single file updates available
-          if (!resetOld && File.Exists($@"{Program.PathViewer}\Resources\Assets\Texts_{language:G}.xml")) {
+          if (!resetOld && File.Exists($@"{Program.PathViewer}\Resources\Assets\Texts_{language:G}.xml"))
+          {
             var doc = XDocument.Load($@"{Program.PathViewer}\Resources\Assets\Texts_{language:G}.xml").Root;
-            foreach (var item in doc.Elements()) {
-              if (!savedIDs.Contains(item.Attribute("ID").Value)) {
+            foreach (var item in doc.Elements())
+            {
+              if (!savedIDs.Contains(item.Attribute("ID").Value))
+              {
                 xmlWriter.WriteStartElement("Text");
                 xmlWriter.WriteAttributeString("ID", item.Attribute("ID").Value);
                 xmlWriter.WriteValue(item.Value);
@@ -207,30 +237,66 @@ namespace RDA {
         }
 
         // Copy Languages To Viewer
-        if (File.Exists($@"{Program.PathViewer}\Resources\Assets\Texts_{language:G}.xml")) {
+        if (File.Exists($@"{Program.PathViewer}\Resources\Assets\Texts_{language:G}.xml"))
+        {
           File.Delete($@"{Program.PathViewer}\Resources\Assets\Texts_{language:G}.xml");
         }
         File.Copy($@"{Program.PathRoot}\Modified\Texts_{language:G}.xml", $@"{Program.PathViewer}\Resources\Assets\Texts_{language:G}.xml");
       }
     }
 
-    private static void ProcessingItems(string template, bool findSources = true, Action<Asset> manipulate = null) {
-      var result = new List<Asset>();
+        private static void ProcessingBuffs()
+        {
+            var template = "Buffs";
+            var oldAssets = new Dictionary<string, XElement>();
+
+            if (File.Exists($@"{Program.PathRoot}\Modified\Assets_{template}.xml"))
+            {
+                var doc = XDocument.Load($@"{Program.PathRoot}\Modified\Assets_{template}.xml");
+                oldAssets = doc.Root.Elements().ToDictionary(e => e.Attribute("ID").Value);
+            }
+
+            foreach (var item in Assets.Buffs.Values)
+            {
+                if (oldAssets.ContainsKey(item.ID))
+                {
+                    item.ReleaseVersion = oldAssets[item.ID].Attribute("Release")?.Value ?? oldAssets[item.ID].Attribute("RV")?.Value ?? "Release";
+                }
+                else
+                {
+                    item.ReleaseVersion = Assets.Version;
+                }
+            }
+
+            var document = new XDocument();
+            document.Add(new XElement(template));
+            document.Root.Add(Assets.Buffs.Values. Select(s => s.ToXml()));
+            document.Save($@"{Program.PathRoot}\Modified\Assets_{template}.xml");
+            document.SaveIndent($@"{Program.PathViewer}\Resources\Assets\{template}.xml");
+        }
+
+        private static void ProcessingItems(string template, bool findSources = true, Action<Asset> manipulate = null) {
+      var result = new ConcurrentBag<Asset>();
       var oldAssets = new Dictionary<string, XElement>();
-      if (File.Exists($@"{Program.PathRoot}\Modified\Assets_{template}.xml")) {
+      if (File.Exists($@"{Program.PathRoot}\Modified\Assets_{template}.xml"))
+      {
         var doc = XDocument.Load($@"{Program.PathRoot}\Modified\Assets_{template}.xml");
         oldAssets = doc.Root.Elements().ToDictionary(e => e.Attribute("ID").Value);
       }
       var assets = Assets.Original.XPathSelectElements($"//Asset[Template='{template}']").ToList();
       ConsoleWriteHeadline(template + "  Total: " + assets.Count);
       var count = 1;
-      assets.AsParallel().ForAll(asset => {
-        ConsoleWriteGUID(asset.XPathSelectElement("Values/Standard/GUID").Value + " - " + count++);
+      assets.AsParallel().ForAll(asset =>
+      {
+        var id = asset.XPathSelectElement("Values/Standard/GUID").Value;
+        ConsoleWriteGUID(id + " - " + count++);
         var item = new Asset(asset, findSources);
-        if (oldAssets.ContainsKey(item.ID)) {
+        if (oldAssets.ContainsKey(item.ID))
+        {
           item.ReleaseVersion = oldAssets[item.ID].Attribute("Release")?.Value ?? oldAssets[item.ID].Attribute("RV")?.Value ?? "Release";
         }
-        else {
+        else
+        {
           item.ReleaseVersion = Assets.Version;
         }
         manipulate?.Invoke(item);
@@ -243,8 +309,10 @@ namespace RDA {
       document.SaveIndent($@"{Program.PathViewer}\Resources\Assets\{template}.xml");
     }
 
-    private static void ProcessingItemSets() {
-      ProcessingItems("ItemSet", false, asset => {
+    private static void ProcessingItemSets()
+    {
+      ProcessingItems("ItemSet", false, asset =>
+      {
         asset.SetParts = Assets
               .Original
               .Descendants("Asset")
@@ -253,8 +321,10 @@ namespace RDA {
       });
     }
 
-    private static void ProcessingFestivalBuffs() {
-      ProcessingItems("FestivalBuff", false, asset => {
+    private static void ProcessingFestivalBuffs()
+    {
+      ProcessingItems("FestivalBuff", false, asset =>
+      {
         asset.FestivalName = Assets
               .Original
               .Descendants("Effect")
@@ -264,24 +334,29 @@ namespace RDA {
       });
     }
 
-    private static void ProcessingThirdParty() {
+    private static void ProcessingThirdParty()
+    {
       ConsoleWriteHeadline("Processing Third Party");
       var result = new List<ThirdParty>();
 
+      XElement assetHugo;
+      Assets.GUIDs.TryGetValue("220", out assetHugo);
       var assets = Assets
          .Original
          .XPathSelectElements($"//Asset[Template='Profile_3rdParty' or Template='Profile_3rdParty_Pirate']")
-         .Concat(new[] { Assets.Original.Descendants("Asset").FirstOrDefault(a => a.XPathSelectElement("Values/Standard/GUID")?.Value == "220") })
+         .Concat(new[] { assetHugo })
          .Concat(Assets.Original.XPathSelectElements($"//Asset[Template='Profile_3rdParty_ItemCrafter']"))
          .AsParallel();
 
-      assets.ForAll((asset) => {
+      assets.ForAll((asset) =>
+      {
         if (!asset.XPathSelectElements("Values/Trader/Progression/*/OfferingItems").Any() && !asset.XPathSelectElements("Values/ConstructionAI/ItemTradeConfig/ItemPools/*/Pool").Any())
           return;
         ConsoleWriteGUID(asset.XPathSelectElement("Values/Standard/GUID").Value);
         var item = new ThirdParty(asset);
         //Exclude Isabel Campain
-        if (item.ID != "199" && item.ID != "200" && item.ID != "240" && item.ID != "117422") {
+        if (item.ID != "199" && item.ID != "200" && item.ID != "240" && item.ID != "117422")
+        {
           result.Add(item);
         }
       });
@@ -292,12 +367,15 @@ namespace RDA {
       document.SaveIndent($@"{Program.PathViewer}\Resources\Assets\ThirdParty.xml");
     }
 
-    private static void QuestGiver() {
+    private static void QuestGiver()
+    {
       var result = new List<QuestGiver>();
       var questGivers = Assets.Original.XPathSelectElements("//Asset[Template='Quest']/Values/Quest/QuestGiver").Select(s => s.Value).Distinct().ToList();
-      questGivers.ForEach((id) => {
+      questGivers.ForEach((id) =>
+      {
         ConsoleWriteGUID(id);
-        var questGiver = Assets.Original.XPathSelectElement($"//Asset[Values/Standard/GUID={id}]");
+        XElement questGiver;
+        Assets.GUIDs.TryGetValue(id, out questGiver);
         var item = new QuestGiver(questGiver);
         result.Add(item);
       });
@@ -306,10 +384,12 @@ namespace RDA {
       document.Root.Add(result.Select(s => s.ToXml()));
     }
 
-    private static void Quests() {
+    private static void Quests()
+    {
       var result = new List<Quest>();
       var assets = Assets.Original.XPathSelectElements("//Asset[Template='Quest']").ToList();
-      assets.ForEach((asset) => {
+      assets.ForEach((asset) =>
+      {
         ConsoleWriteGUID(asset.XPathSelectElement("Values/Standard/GUID").Value);
         var item = new Quest(asset);
         result.Add(item);
@@ -319,15 +399,18 @@ namespace RDA {
       document.Root.Add(result.Select(s => s.ToXml()));
     }
 
-    private static void Expeditions() {
+    private static void Expeditions()
+    {
       var result = new List<Expedition>();
       var assets = Assets.Original.XPathSelectElements("//Asset[Template='Expedition']").AsParallel();
-      assets.ForAll((asset) => {
+      assets.ForAll((asset) =>
+      {
         if (asset.XPathSelectElement("Values/Standard/Name").Value.Contains("Test"))
           return;
         ConsoleWriteGUID(asset.XPathSelectElement("Values/Standard/GUID").Value);
         var item = new Expedition(asset);
-        if (item.Rewards.SelectMany(s => s.RewardPool).SelectMany(s => s.Items).Any()) {
+        if (item.Rewards.SelectMany(s => s.RewardPool).SelectMany(s => s.Items).Any())
+        {
           result.Add(item);
         }
       });
@@ -338,7 +421,8 @@ namespace RDA {
       document.SaveIndent($@"{Program.PathViewer}\Resources\Assets\Expeditions.xml");
     }
 
-    private static void ProcessingRewardPools() {
+    private static void ProcessingRewardPools()
+    {
       ConsoleWriteHeadline("Processing Reward Pools");
       var xRewardPools = new XElement("RP");
 
@@ -347,17 +431,21 @@ namespace RDA {
          .XPathSelectElements($"//Asset[Template='RewardPool']")
          .Concat(Assets.Original.XPathSelectElements($"//Asset[Template='RewardItemPool']"))
          .ToList();
-      foreach (var RewardPool in RewardItemPoolsAssets) {
+      foreach (var RewardPool in RewardItemPoolsAssets)
+      {
         var xPool = new XElement("P");
         xRewardPools.Add(xPool);
         xPool.Add(new XAttribute("ID", RewardPool.XPathSelectElement("Values/Standard/GUID").Value));
         xPool.Add(new XAttribute("N", RewardPool.XPathSelectElement("Values/Standard/Name").Value));
-        if (RewardPool.XPathSelectElement("Values/RewardPool/ItemsPool")?.HasElements ?? false) {
+        if (RewardPool.XPathSelectElement("Values/RewardPool/ItemsPool")?.HasElements ?? false)
+        {
           var xItems = new XElement("IL");
           xPool.Add(xItems);
-          foreach (var item in RewardPool.XPathSelectElements("Values/RewardPool/ItemsPool/Item")) {
+          foreach (var item in RewardPool.XPathSelectElements("Values/RewardPool/ItemsPool/Item"))
+          {
             var itemId = item.XPathSelectElement("ItemLink")?.Value ?? item.XPathSelectElement("ItemGroup")?.Value;
-            if (itemId != null) {
+            if (itemId != null)
+            {
               var xItem = new XElement("I");
               xItems.Add(xItem);
               xItem.Add(new XAttribute("ID", itemId));
@@ -371,17 +459,21 @@ namespace RDA {
       var ResourcePoolAssets = Assets.Original
          .XPathSelectElements($"//Asset[Template='ResourcePool']")
          .ToList();
-      foreach (var ResourcePool in ResourcePoolAssets) {
+      foreach (var ResourcePool in ResourcePoolAssets)
+      {
         var xPool = new XElement("P");
         xRewardPools.Add(xPool);
         xPool.Add(new XAttribute("ID", ResourcePool.XPathSelectElement("Values/Standard/GUID").Value));
         xPool.Add(new XAttribute("N", ResourcePool.XPathSelectElement("Values/Standard/Name").Value));
-        if (ResourcePool.XPathSelectElement("Values/ResourceRewardPool/PossibleRewards")?.HasElements ?? false) {
+        if (ResourcePool.XPathSelectElement("Values/ResourceRewardPool/PossibleRewards")?.HasElements ?? false)
+        {
           var xItems = new XElement("I");
           xPool.Add(xItems);
-          foreach (var item in ResourcePool.XPathSelectElements("Values/ResourceRewardPool/PossibleRewards/Item")) {
+          foreach (var item in ResourcePool.XPathSelectElements("Values/ResourceRewardPool/PossibleRewards/Item"))
+          {
             var itemId = item.XPathSelectElement("Resource")?.Value;
-            if (itemId != null) {
+            if (itemId != null)
+            {
               var xItem = new XElement("I");
               xItems.Add(xItem);
               xItem.Add(new XAttribute("ID", itemId));
@@ -399,17 +491,21 @@ namespace RDA {
          .Descendants("Group")
          .Where(g => g.Element("GUID") != null))
          .ToList();
-      foreach (var AssetGroup in AssetGroups) {
+      foreach (var AssetGroup in AssetGroups)
+      {
         var childAssets = AssetGroup.Descendants("Asset").Where(a => a.XPathSelectElement("Values/Item") != null || a.XPathSelectElement("Values/Product") != null);
-        if (childAssets.Any()) {
+        if (childAssets.Any())
+        {
           var xPool = new XElement("P");
           xRewardPools.Add(xPool);
           xPool.Add(new XAttribute("ID", AssetGroup.Element("GUID").Value));
           var xItems = new XElement("I");
           xPool.Add(xItems);
-          foreach (var item in childAssets) {
+          foreach (var item in childAssets)
+          {
             var itemId = item.XPathSelectElement("Values/Standard/GUID")?.Value;
-            if (itemId != null) {
+            if (itemId != null)
+            {
               var xItem = new XElement("I");
               xItems.Add(xItem);
               xItem.Add(new XAttribute("ID", itemId));
@@ -424,7 +520,8 @@ namespace RDA {
       document.SaveIndent($@"{Program.PathViewer}\Resources\Assets\RewardPools.xml");
     }
 
-    private static void ProcessingExpeditionEvents() {
+    private static void ProcessingExpeditionEvents()
+    {
       const string template = "ExpeditionEvents";
       var ResultEvents = new ConcurrentDictionary<XElement, ConcurrentBag<HashSet<AssetWithWeight>>>();
       var count = 1;
@@ -437,32 +534,42 @@ namespace RDA {
       decicions.AddRange(Assets.Original.XPathSelectElements("//Asset[Template='ExpeditionTrade']"));
       ConsoleWriteHeadline(template + "  Total: " + decicions.Count);
 
-      decicions.AsParallel().ForAll(decicion => {
+      decicions.AsParallel().ForAll(decicion =>
+      {
         ConsoleWriteGUID(decicion.XPathSelectElement("Values/Standard/GUID").Value + " - " + count++);
-        var events = VerasFindExpeditionEvents(decicion.XPathSelectElement("Values/Standard/GUID").Value, new Details { decicion });
-        foreach (var item in events) {
-          if (ResultEvents.ContainsKey(item.Source)) {
-            ResultEvents[item.Source].Add(item.Details);
+        foreach (var events in VerasFindExpeditionEvents(decicion.XPathSelectElement("Values/Standard/GUID").Value, new HashSet<String>(), new Details { decicion }))
+          foreach (var item in events)
+          {
+            if (ResultEvents.ContainsKey(item.Source))
+            {
+              ResultEvents[item.Source].Add(item.Details);
+            }
+            else
+            {
+              ResultEvents.TryAdd(item.Source, new ConcurrentBag<HashSet<AssetWithWeight>> { item.Details });
+            }
           }
-          else {
-            ResultEvents.TryAdd(item.Source, new ConcurrentBag<HashSet<AssetWithWeight>> { item.Details });
-          }
-        }
       });
+
       var document = new XDocument();
       document.Add(new XElement(template));
-      document.Root.Add(ResultEvents.Select(s => ToXml(s)));
+      document.Root.Add(ResultEvents.GroupBy(f => f.Key.XPathSelectElement("Values/Standard/Name").Value)
+          .Select(g => g.First())
+          .OrderBy(s => { var str = ("000" + s.Value.Count); return str.Substring(str.Length - 4) + " " + s.Key.XPathSelectElement("Values/Standard/GUID").Value; })
+          .Select(s => ToXml(s)));
       document.SaveIndent($@"{Program.PathRoot}\Modified\Assets_{template}.xml");
       document.SaveIndent($@"{Program.PathViewer}\Resources\Assets\{template}.xml");
 
       //local method ExpeditionEvents ToXml
-      XElement ToXml(KeyValuePair<XElement, ConcurrentBag<HashSet<AssetWithWeight>>> events) {
+      XElement ToXml(KeyValuePair<XElement, ConcurrentBag<HashSet<AssetWithWeight>>> events)
+      {
         var xRoot = new XElement("EE");
         xRoot.Add(new XAttribute("ID", events.Key.XPathSelectElement("Values/Standard/GUID").Value));
         xRoot.Add(new Description(events.Key.XPathSelectElement("Values/Standard/GUID").Value).ToXml("N"));
         var xPaths = new XElement("PL");
         xRoot.Add(xPaths);
-        foreach (var path in events.Value) {
+        foreach (var path in events.Value)
+        {
           var xPath = new XElement("P");
           xPaths.Add(xPath);
           xPath.Add(new XAttribute("ID", path.First().Asset.XPathSelectElement("Values/Standard/Name").Value.Split(' ').Last()));
@@ -470,35 +577,45 @@ namespace RDA {
           var xRewards = new XElement("R");
           xPath.Add(xRewards);
           var rewards = path.First().Asset.XPathSelectElements("Values/Reward/RewardAssets/Item");
-          if (rewards.Any()) {
-            foreach (var reward in rewards) {
+          if (rewards.Any())
+          {
+            foreach (var reward in rewards)
+            {
               var xReward = new XElement("I");
               xRewards.Add(xReward);
               xReward.Add(new XAttribute("ID", reward.XPathSelectElement("Reward").Value));
-              if (reward.XPathSelectElement("Amount") != null) {
+              if (reward.XPathSelectElement("Amount") != null)
+              {
                 xReward.Add(new XAttribute("A", reward.XPathSelectElement("Amount").Value));
               }
             }
           }
-          else {
+          else
+          {
             var Products = path.First().Asset.XPathSelectElements("Values/ExpeditionTrade/AvailableGoods/Item");
-            if (Products.Any()) {
-              foreach (var Product in Products) {
+            if (Products.Any())
+            {
+              foreach (var Product in Products)
+              {
                 var xReward = new XElement("I");
                 xRewards.Add(xReward);
                 xReward.Add(new XAttribute("ID", Product.Element("Product").Value));
-                if (Product.Element("Amount")?.Value is string value) {
+                if (Product.Element("Amount")?.Value is string value)
+                {
                   xReward.Add(new XAttribute("A", value));
                 }
               }
             }
             var Items = path.First().Asset.XPathSelectElements("Values/ExpeditionTrade/AvailableItems/Item");
-            if (Items.Any()) {
-              foreach (var Item in Items) {
+            if (Items.Any())
+            {
+              foreach (var Item in Items)
+              {
                 var xReward = new XElement("I");
                 xRewards.Add(xReward);
                 xReward.Add(new XAttribute("ID", Item.Element("Item").Value));
-                if (Item.Element("Amount")?.Value is string value) {
+                if (Item.Element("Amount")?.Value is string value)
+                {
                   xReward.Add(new XAttribute("A", value));
                 }
               }
@@ -507,39 +624,50 @@ namespace RDA {
 
           var xOptions = new XElement("OL");
           xPath.Add(xOptions);
-          foreach (var option in path) {
+          foreach (var option in path)
+          {
             if (option.Asset.XPathSelectElement("Template").Value == "ExpeditionOption" ||
-                option.Asset.XPathSelectElement("Template").Value == "ExpeditionMapOption") {
+                option.Asset.XPathSelectElement("Template").Value == "ExpeditionMapOption")
+            {
               var xOption = new XElement("O");
               xOptions.AddFirst(xOption);
               xOption.Add(new XAttribute("ID", option.Asset.XPathSelectElement("Values/Standard/GUID").Value));
               var text = new Description(option.Asset.XPathSelectElement("Values/Standard/GUID").Value);
-              if (text.Languages[Data.Languages.English] == "Confirm") {
+              if (text.Languages[Data.Languages.English] == "Confirm")
+              {
                 text = new Description("145001");
               }
-              else if (text.Languages[Data.Languages.English] == "Cancel") {
+              else if (text.Languages[Data.Languages.English] == "Cancel")
+              {
                 text = new Description("145002");
               }
               xOption.Add(text.ToXml("T"));
-              if (option.Asset.XPathSelectElement("Values/ExpeditionOption/OptionAttribute")?.Value != null) {
+              if (option.Asset.XPathSelectElement("Values/ExpeditionOption/OptionAttribute")?.Value != null)
+              {
                 xOption.Add(new Description(Assets.KeyToIdDict[option.Asset.XPathSelectElement("Values/ExpeditionOption/OptionAttribute").Value]).ToXml("OA"));
               }
-              if (option.Asset.XPathSelectElement("Values/ExpeditionOption/Requirements")?.HasElements == true) {
+              if (option.Asset.XPathSelectElement("Values/ExpeditionOption/Requirements")?.HasElements == true)
+              {
                 var xRequirements = new XElement("R");
                 xOption.Add(xRequirements);
-                foreach (var requirement in option.Asset.XPathSelectElements("Values/ExpeditionOption/Requirements/Item")) {
+                foreach (var requirement in option.Asset.XPathSelectElements("Values/ExpeditionOption/Requirements/Item"))
+                {
                   var xItem = new XElement("I");
                   xRequirements.Add(xItem);
-                  if (requirement.XPathSelectElement("NeededAttribute")?.Value != null) {
+                  if (requirement.XPathSelectElement("NeededAttribute")?.Value != null)
+                  {
                     xItem.Add(new Description(Assets.KeyToIdDict[requirement.XPathSelectElement("NeededAttribute").Value]).ToXml("NA"));
                   }
-                  if (requirement.XPathSelectElement("ItemOrProduct")?.Value != null) {
+                  if (requirement.XPathSelectElement("ItemOrProduct")?.Value != null)
+                  {
                     xItem.Add(new XAttribute("ID", requirement.XPathSelectElement("ItemOrProduct").Value));
                   }
-                  if (requirement.XPathSelectElement("Amount")?.Value != null) {
+                  if (requirement.XPathSelectElement("Amount")?.Value != null)
+                  {
                     xItem.Add(new XAttribute("A", requirement.XPathSelectElement("Amount").Value));
                   }
-                  if (requirement.XPathSelectElement("ItemGroup")?.Value != null) {
+                  if (requirement.XPathSelectElement("ItemGroup")?.Value != null)
+                  {
                     xItem.Add(new XAttribute("ID", requirement.XPathSelectElement("ItemGroup").Value));
                   }
                 }
@@ -551,27 +679,35 @@ namespace RDA {
       }
 
       //local method Find Expedition Events
-      SourceWithDetailsList VerasFindExpeditionEvents(string id, Details mainDetails = default, SourceWithDetailsList inResult = default) {
+      List<SourceWithDetailsList> VerasFindExpeditionEvents(string id, HashSet<string> visitedEvents = default, Details mainDetails = default)
+      {
         mainDetails = (mainDetails == default) ? new Details() : mainDetails;
         mainDetails.PreviousIDs.Add(id);
-        var mainResult = inResult ?? new SourceWithDetailsList();
-        var resultstoadd = new ConcurrentBag<SourceWithDetailsList>();
-        var links = Assets.Original.XPathSelectElements($"//*[text()={id} and not(self::GUID)]").ToArray();
-        if (links.Length > 0) {
-          //links.AsParallel().ForAll(link => {
-          foreach (var link2 in/* new[] { link }*/ links) {
-            var element = link2;
-            var foundedElement = element;
-            while (element.Name.LocalName != "Asset" || !element.HasElements) {
-              element = element.Parent;
-            }
+        var mainResult = new List<SourceWithDetailsList>();
+
+        visitedEvents.Add(id);
+
+        if (!Assets.References.ContainsKey(id))
+        {
+          return mainResult;
+        }
+        var cachedLinks = Assets.References[id];
+
+        foreach (var asset in cachedLinks)
+        {
+          foreach (var reference in asset.Descendants())
+          {
+            if ("GUID".Equals(reference.Name.LocalName) || !id.Equals(reference.Value) || reference.HasElements)
+              continue;
+
             var Details = new Details(mainDetails);
-            var result = mainResult.Copy();
-            var key = element.XPathSelectElement("Values/Standard/GUID").Value;
-            if (element.Element("Template") == null || mainDetails.PreviousIDs.Contains(key)) {
+            var key = asset.XPathSelectElement("Values/Standard/GUID").Value;
+            if (asset.Element("Template") == null || mainDetails.PreviousIDs.Contains(key))
+            {
               continue;
             }
-            switch (element.Element("Template").Value) {
+            switch (asset.Element("Template").Value)
+            {
               case "GuildhouseItem":
                 //Ignore
                 break;
@@ -582,71 +718,82 @@ namespace RDA {
 
               case "ExpeditionDecision":
               case "ExpeditionTrade":
-                if (foundedElement.Name.LocalName == "Reward" ||
-                  foundedElement.Name.LocalName == "Product" ||
-                  foundedElement.Name.LocalName == "Item") {
+                if (reference.Name.LocalName == "Reward" ||
+                  reference.Name.LocalName == "Product" ||
+                  reference.Name.LocalName == "Item")
+                {
                   goto case "SearchAgain";
                 }
-                else if (foundedElement.Name.LocalName != "Option" &&
-                  foundedElement.Name.LocalName != "FollowupSuccessOption" &&
-                  foundedElement.Name.LocalName != "FollowupFailOrCancelOption" &&
-                  foundedElement.Name.LocalName != "InsertEvent") {
+                else if (reference.Name.LocalName != "Option" &&
+                  reference.Name.LocalName != "FollowupSuccessOption" &&
+                  reference.Name.LocalName != "FollowupFailOrCancelOption" &&
+                  reference.Name.LocalName != "InsertEvent")
+                {
                   break;
                 }
                 goto case "SearchAgain";
 
               case "ExpeditionMapOption":
               case "ExpeditionOption":
-                if (foundedElement.Name.LocalName == "ItemOrProduct") {
+                if (reference.Name.LocalName == "ItemOrProduct")
+                {
                   break;
                 }
-                if (foundedElement.Name.LocalName != "Decision") {
+                if (reference.Name.LocalName != "Decision")
+                {
                   break;
                 }
+                var name = asset.XPathSelectElement("Values/Standard/Name").Value;
+                if (name == "Continue option")
+                  break;
                 goto case "SearchAgain";
               case "ExpeditionBribe":
-                if (foundedElement.Name.LocalName == "Item") {
+                if (reference.Name.LocalName == "Item")
+                {
                   break;
                 }
-                if (foundedElement.Name.LocalName != "FollowupSuccessOption" &&
-                  foundedElement.Name.LocalName != "FollowupFailOrCancelOption") {
+                if (reference.Name.LocalName != "FollowupSuccessOption" &&
+                  reference.Name.LocalName != "FollowupFailOrCancelOption")
+                {
                   break;
                 }
                 goto case "SearchAgain";
               case "SearchAgain":
-                Details.Add(element);
-                VerasFindExpeditionEvents(key, Details, result);
+                Details.Add(asset);
+                //if (!visitedEvents.Contains(key))
+                mainResult.AddRange(VerasFindExpeditionEvents(key, visitedEvents, Details).AsEnumerable());
                 break;
 
               case "ExpeditionEvent":
-                if (foundedElement.Name.LocalName != "StartDecision") {
+                if (reference.Name.LocalName != "StartDecision")
+                {
                   break;
                 }
-                result.AddSourceAsset(element, new HashSet<AssetWithWeight>(Details.Items.Select(i => new AssetWithWeight(i))));
+
+                var sList = new SourceWithDetailsList();
+                sList.AddSourceAsset(asset, new HashSet<AssetWithWeight>(Details.Items.Select(i => new AssetWithWeight(i))));
+                mainResult.Add(sList);
                 break;
 
               default:
-                Debug.WriteLine(element.Element("Template").Value);
+                Debug.WriteLine(asset.Element("Template").Value);
                 //ignore
                 break;
             }
-            resultstoadd.Add(result);
           }
-          //});
         }
 
-        foreach (var item in resultstoadd) {
-          mainResult.AddSourceAsset(item);
-        }
         return mainResult;
       }
     }
 
-    private static void ProcessingTourism() {
+    private static void ProcessingTourism()
+    {
       ConsoleWriteHeadline("Processing Tourism");
       var TourismAsset = Assets.Original.Descendants("Asset").FirstOrDefault(l => l.Element("Template")?.Value == "TourismFeature");
       var xRoot = new XElement("CL");
-      foreach (var pool in TourismAsset.Descendants("SpecialistPools").FirstOrDefault()?.Elements()) {
+      foreach (var pool in TourismAsset.Descendants("SpecialistPools").FirstOrDefault()?.Elements())
+      {
         var id = pool.Element("CityLevel").Value;
         var xStatus = new XElement("S");
         xRoot.Add(xStatus);
@@ -656,21 +803,24 @@ namespace RDA {
         //xStatus.Add(new Description(Assets.TourismThresholds[id].Element("CityStatusFluff").Value).ToXml("Text"));
       }
 
-      foreach (var pool in TourismAsset.Descendants("UnlockablePools").SelectMany(p => p.Elements())) {
+      foreach (var pool in TourismAsset.Descendants("UnlockablePools").SelectMany(p => p.Elements()))
+      {
         var xStatus = new XElement("S");
         xRoot.Add(xStatus);
         xStatus.Add(new XElement(new Description(pool.Element("UnlockingSpecialist").Value).ToXml("R")));
         xStatus.Add(new XAttribute("P", pool.Element("Pool").Value));
       }
 
-      foreach (var pool in TourismAsset.Descendants("SpecialistPoolsThroughSets").SelectMany(p => p.Elements())) {
+      foreach (var pool in TourismAsset.Descendants("SpecialistPoolsThroughSets").SelectMany(p => p.Elements()))
+      {
         var xStatus = new XElement("S");
         xRoot.Add(xStatus);
         xStatus.Add(new XElement(new Description(pool.Element("UnlockingSetBuff").Value).ToXml("R")));
         xStatus.Add(new XAttribute("P", pool.Element("Pool").Value));
       }
 
-      foreach (var pool in Assets.Original.Descendants("Asset").Where(a => a.Descendants("OverrideSpecialistPool").Any())) {
+      foreach (var pool in Assets.Original.Descendants("Asset").Where(a => a.Descendants("OverrideSpecialistPool").Any()))
+      {
         var xStatus = new XElement("S");
         xRoot.Add(xStatus);
         xStatus.Add(new XElement(new Description(pool.XPathSelectElement("Values/Standard/GUID").Value).ToXml("R")));

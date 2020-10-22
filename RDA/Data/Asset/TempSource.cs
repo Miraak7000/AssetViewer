@@ -198,6 +198,31 @@ namespace RDA.Data {
           Text = new Description(Source.XPathSelectElement("Values/Standard/GUID").Value).InsertBefore("-").InsertBefore(new Description("-101"));
           break;
 
+        case "ResearchCenter":
+          Text = new Description(Source.XPathSelectElement("Values/Standard/GUID").Value);
+          var descr = Text;
+          double Weight = 1;
+
+          if (element.Details.Count != 0)
+          {
+
+            AssetWithWeight parent = null, child = null;
+            foreach (var detail in element.Details)
+              if (Double.IsNaN(detail.Weight))
+                parent = detail;
+              else
+                child = detail;
+
+            descr = new Description(child.Asset.XPathSelectElement("Values/Standard/GUID").Value)
+              .InsertBefore("-")
+              .InsertBefore(new Description(parent.Asset.XPathSelectElement("Values/Standard/GUID").Value));
+
+            Weight = child.Weight;
+          }
+          Details.Add((descr, Weight));
+          
+          break;
+
         default:
           Debug.WriteLine(Source.Element("Template").Value);
           throw new NotImplementedException();

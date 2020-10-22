@@ -30,6 +30,9 @@ namespace RDA.Data {
     }
 
     public void AddSourceAsset(XElement element, HashSet<AssetWithWeight> details = default) {
+      if (details == default)
+        details = new HashSet<AssetWithWeight>();
+
       var assetID = element.XPathSelectElement("Values/Standard/GUID").Value;
       var expeditionName = element.XPathSelectElement("Values/Expedition/ExpeditionName")?.Value;
       var questGiver = element.XPathSelectElement("Values/Quest/QuestGiver")?.Value;
