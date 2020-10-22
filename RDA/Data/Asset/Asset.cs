@@ -1519,7 +1519,7 @@ namespace RDA.Data {
 
             default:
               Debug.WriteLine(referencingAsset.Element("Template").Value);
-              //throw new NotImplementedException(referencingAsset.Element("Template").Value);
+              throw new NotImplementedException(referencingAsset.Element("Template").Value);
               break;
           }
           if (result.Any()) {
