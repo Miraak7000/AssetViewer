@@ -27,10 +27,8 @@ namespace RDA {
 
       var cachedLinks = Assets.References.ContainsKey(id) ? Assets.References[id] : new HashSet<XElement>();
 
-      foreach (var asset in cachedLinks)
-      {
-        foreach (var reference in asset.Descendants())
-        {
+      foreach (var asset in cachedLinks) {
+        foreach (var reference in asset.Descendants()) {
           if ("GUID".Equals(reference.Name.LocalName) || !id.Equals(reference.Value) || reference.HasElements)
             continue;
 

@@ -15,10 +15,11 @@ namespace RDA.Data {
     #region Public Constructors
 
     public AdditionalOutput(XElement element) {
-      var id = element.Element("Product").Value;
+      var id = element.Element("Product")?.Value;
       var cycle = element.Element("AdditionalOutputCycle")?.Value;
       var amount = element.Element("Amount")?.Value;
-      Text = new Description(id);
+      id = id ?? "20466";
+      Text = new Description(id).Remove("[ItemAssetData([AreaManager AreaFestival BuffGuids AT(0) Text]) AdditionalOutputProductsFormatted()]");
       if (cycle != null && amount != null) {
         Value = $"{cycle} / {amount}";
       }

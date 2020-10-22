@@ -296,12 +296,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Assets\Buffs.xml" />
-    <Resource Include="Resources\Assets\CityInstitutionBuilding_Africa.xml" />
-    <Resource Include="Resources\Assets\ResearchCenter.xml" />
-    <Resource Include="Resources\Assets\ResidenceBuilding7_BuildPermit.xml" />
-    <Resource Include="Resources\Assets\WorkAreaRiverBuilding.xml" />
-    <Resource Include="Resources\Assets\WorkAreaRiverSlot.xml" />
+    <EmbeddedResource Include="Resources\Assets\Buffs.xml" />
+    <EmbeddedResource Include="Resources\Assets\CityInstitutionBuilding_Africa.xml" />
+    <EmbeddedResource Include="Resources\Assets\ResearchCenter.xml" />
+    <EmbeddedResource Include="Resources\Assets\ResidenceBuilding7_BuildPermit.xml" />
+    <EmbeddedResource Include="Resources\Assets\WorkAreaRiverBuilding.xml" />
+    <EmbeddedResource Include="Resources\Assets\WorkAreaRiverSlot.xml" />
     <Resource Include="Resources\AssetViewer.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -335,17 +335,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\Assets\ThirdParty.xml" />
-    <EmbeddedResource Include="Resources\Assets\Tourism.xml" />
-    <EmbeddedResource Include="Resources\Assets\TownhallItem.xml" />
-    <EmbeddedResource Include="Resources\Assets\VehicleItem.xml" />
-    <EmbeddedResource Include="Resources\Assets\VisitorPier.xml" />
-    <EmbeddedResource Include="Resources\Assets\VisualBuilding_NoLogic.xml" />
-    <EmbeddedResource Include="Resources\Assets\Warehouse.xml" />
-    <EmbeddedResource Include="Resources\Assets\WorkAreaSlot.xml" />
-    <EmbeddedResource Include="Resources\Assets\WorkforceConnector.xml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\Assets\ActiveItem.xml" />
@@ -422,8 +411,6 @@
     <EmbeddedResource Include="Resources\Assets\StartExpeditionItem.xml" />
     <EmbeddedResource Include="Resources\Assets\Street.xml" />
     <EmbeddedResource Include="Resources\Assets\StreetBuilding.xml" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\Assets\Texts_Chinese.xml" />
     <EmbeddedResource Include="Resources\Assets\Texts_English.xml" />
     <EmbeddedResource Include="Resources\Assets\Texts_French.xml" />
@@ -431,6 +418,43 @@
     <EmbeddedResource Include="Resources\Assets\Texts_Italian.xml" />
     <EmbeddedResource Include="Resources\Assets\Texts_Korean.xml" />
     <EmbeddedResource Include="Resources\Assets\Texts_Russian.xml" />
+    <EmbeddedResource Include="Resources\Assets\ThirdParty.xml" />
+    <EmbeddedResource Include="Resources\Assets\Tourism.xml" />
+    <EmbeddedResource Include="Resources\Assets\TownhallItem.xml" />
+    <EmbeddedResource Include="Resources\Assets\VehicleItem.xml" />
+    <EmbeddedResource Include="Resources\Assets\VisitorPier.xml" />
+    <EmbeddedResource Include="Resources\Assets\VisualBuilding_NoLogic.xml" />
+    <EmbeddedResource Include="Resources\Assets\Warehouse.xml" />
+    <EmbeddedResource Include="Resources\Assets\WorkAreaSlot.xml" />
+    <EmbeddedResource Include="Resources\Assets\WorkforceConnector.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Assets\FactoryBuilding7_BuildPermit.xml" />
+    <EmbeddedResource Include="Resources\Assets\FertilizerBaseBuilding.xml" />
+    <EmbeddedResource Include="Resources\Assets\FertilizerBaseModule.xml" />
+    <EmbeddedResource Include="Resources\Assets\HarborLandingStage7_BuildPermit.xml" />
+    <EmbeddedResource Include="Resources\Assets\IrrigationPropagationSource.xml" />
+    <EmbeddedResource Include="Resources\Assets\Texts_Brazilian.xml" />
+    <EmbeddedResource Include="Resources\Assets\Texts_Japanese.xml" />
+    <EmbeddedResource Include="Resources\Assets\Texts_Polish.xml" />
+    <EmbeddedResource Include="Resources\Assets\Texts_Portuguese.xml" />
+    <EmbeddedResource Include="Resources\Assets\Texts_Spanish.xml" />
+    <EmbeddedResource Include="Resources\Assets\Texts_Taiwanese.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 und x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Assets\QuestObjectHarborBuildingAttacker.xml" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\data\ui\2kimages\fpp\icons\icon_plus.png" />
@@ -956,6 +980,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_visitor_harbour.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_waha_desher_buff.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_warehouse.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_water_drop.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_water_pump.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_weapons.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_whale_oil_2.png" />
@@ -1419,7 +1444,6 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\africa\icon_well_01.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\africa\icon_well_02.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\beta_reward_2x2.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\celebration_ornament_01.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\christmas_carousel.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\christmas_park_props_system_02_corner.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\christmas_park_props_system_02_cross.png" />
@@ -1465,21 +1489,13 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\colony_sa\col_props_1x1_14_back.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\colony_sa\cultural_props_1x1_05_front.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\colony_sa\cultural_props_1x1_06_back.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc02\icon_attraction_booth_01.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc02\icon_attraction_booth_02.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc02\icon_balloon_seller.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc02\icon_barrel_organ_player.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc02\icon_cotton_candy.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc02\icon_entrance_gate_01.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc02\icon_ferris_wheel.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc02\icon_food_stand_01.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc02\icon_food_stand_02.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc02\icon_food_stand_03.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc02\icon_ice_cream.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc02\icon_painter.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc02\icon_picture_wall.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc02\icon_roller_coaster.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc02\icon_strongman.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc02\icon_ticket_house.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cultural_props_1x1_02.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cultural_props_1x1_03.png" />
@@ -1512,7 +1528,6 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_ornament_botanica03.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_propaganda_flag_03.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_propaganda_tower_01.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_seasonal_advertisement_halloween.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_twitch_advertisement_anarchy.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_twitch_advertisement_annoholic.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_twitch_advertisement_announion.png" />
@@ -1520,8 +1535,6 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_twitch_advertisement_northwestpassage.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_twitch_advertisement_seatofpowers.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_twitch_advertisement_sunkentreasures.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_twitch_billboard_brightharvest.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_twitch_billboard_landoflions.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_twitch_column_annoholic.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_twitch_flag_annoholic.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_twitch_flag_announion.png" />
@@ -2197,6 +2210,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\treasure_map\item_treasuremap_st_03.png" />
     <Resource Include="Resources\data\ui\2kimages\main\assets16\attractiveness\category_pollution.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\achievement\icon_achievement_category_military.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\africa_expedition\icon_olispo.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_activate_trade.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_add_slot_guild.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_arrowpoint_right.png" />
@@ -2240,7 +2254,9 @@
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_incident_fire_01.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_influence.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_itemsockets_02.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_kontor3.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_load_ships.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_marketplace_2d.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_morale_01.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_morale_loss.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_museum_2d.png" />
@@ -2249,6 +2265,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_plus.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_police_2d.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_ranger_station_2d.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_research_resource.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_resource_craftspeople.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_resource_farmer_2.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_resource_industrialists.png" />
@@ -2261,6 +2278,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_ressource_worker_south_america.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_riot.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_sail_shipyard_2d.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_session_landoflions.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_session_moderate.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_session_passage.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_session_southamerica.png" />
@@ -2289,6 +2307,9 @@
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_warning_2.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_warning_debuff_ship.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_wifi.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_workforce_elders.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_workforce_scholars.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_workforce_sheperds.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_zoo_2D.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\notification_icons\icon_incident_fire_outline.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\ship_info\icon_accuracy.png" />
@@ -2305,6 +2326,8 @@
     <Resource Include="Resources\data\ui\2kimages\main\profiles\3rd_party_07.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\3rd_party_08.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\3rd_party_09.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\profiles\3rd_party_11.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\profiles\3rd_party_13.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\advisor_01.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\advisor_02.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\ai_01.png" />
@@ -2321,6 +2344,9 @@
     <Resource Include="Resources\data\ui\2kimages\main\profiles\campaign_portrait_pyrophorian.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\enemy_01.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\enemy_02.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\profiles\icon_resident_elder.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\profiles\icon_resident_scholars.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\profiles\icon_resident_sheperd.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\inuit_trader.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\lady_faithful.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\missing_captain.png" />
@@ -2332,229 +2358,9 @@
     <Resource Include="Resources\data\ui\2kimages\main\profiles\resident_tier03_work.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\resident_tier04.png" />
     <Resource Include="Resources\data\ui\2kimages\main\profiles\resident_tier05.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Assets\ActiveItem.xml" />
-    <Resource Include="Resources\Assets\AdditionalModule.xml" />
-    <Resource Include="Resources\Assets\BridgeBuilding.xml" />
-    <Resource Include="Resources\Assets\BuffFactory.xml" />
-    <Resource Include="Resources\Assets\BuildPermitBuilding.xml" />
-    <Resource Include="Resources\Assets\BuildPermitModules.xml" />
-    <Resource Include="Resources\Assets\CampaignQuestObject.xml" />
-    <Resource Include="Resources\Assets\CampaignUncleMansion.xml" />
-    <Resource Include="Resources\Assets\CityInstitutionBuilding.xml" />
-    <Resource Include="Resources\Assets\CultureBuilding.xml" />
-    <Resource Include="Resources\Assets\CultureItem.xml" />
-    <Resource Include="Resources\Assets\CultureModule.xml" />
-    <Resource Include="Resources\Assets\ExpeditionEvents.xml" />
-    <Resource Include="Resources\Assets\FactoryBuilding7.xml" />
-    <Resource Include="Resources\Assets\FactoryBuilding7_Arctic.xml" />
-    <Resource Include="Resources\Assets\FarmBuilding.xml" />
-    <Resource Include="Resources\Assets\FarmBuilding_Arctic.xml" />
-    <Resource Include="Resources\Assets\Farmfield.xml" />
-    <Resource Include="Resources\Assets\FestivalBuff.xml" />
-    <Resource Include="Resources\Assets\FluffItem.xml" />
-    <Resource Include="Resources\Assets\FreeAreaBuilding.xml" />
-    <Resource Include="Resources\Assets\FreeAreaBuilding_Arctic.xml" />
-    <Resource Include="Resources\Assets\Guildhouse.xml" />
-    <Resource Include="Resources\Assets\GuildhouseItem.xml" />
-    <Resource Include="Resources\Assets\HarborBuildingAttacker.xml" />
-    <Resource Include="Resources\Assets\HarborDepot.xml" />
-    <Resource Include="Resources\Assets\HarborLandingStage7.xml" />
-    <Resource Include="Resources\Assets\HarborOffice.xml" />
-    <Resource Include="Resources\Assets\HarborOfficeItem.xml" />
-    <Resource Include="Resources\Assets\HarborPropObject.xml" />
-    <Resource Include="Resources\Assets\HarborWarehouse7.xml" />
-    <Resource Include="Resources\Assets\HarborWarehouseSlot7.xml" />
-    <Resource Include="Resources\Assets\HarborWarehouseStrategic.xml" />
-    <Resource Include="Resources\Assets\Heater_Arctic.xml" />
-    <Resource Include="Resources\Assets\HeavyFactoryBuilding.xml" />
-    <Resource Include="Resources\Assets\HeavyFreeAreaBuilding.xml" />
-    <Resource Include="Resources\Assets\HeavyFreeAreaBuilding_Arctic.xml" />
-    <Resource Include="Resources\Assets\ItemConstructionPlan.xml" />
-    <Resource Include="Resources\Assets\ItemCrafterBuilding.xml" />
-    <Resource Include="Resources\Assets\ItemSet.xml" />
-    <Resource Include="Resources\Assets\ItemSpecialAction.xml" />
-    <Resource Include="Resources\Assets\ItemSpecialActionVisualEffect.xml" />
-    <Resource Include="Resources\Assets\ItemWithUI.xml" />
-    <Resource Include="Resources\Assets\Market.xml" />
-    <Resource Include="Resources\Assets\Monument.xml" />
-    <Resource Include="Resources\Assets\MonumentCategory.xml" />
-    <Resource Include="Resources\Assets\MonumentEvent.xml" />
-    <Resource Include="Resources\Assets\MonumentThreshold.xml" />
-    <Resource Include="Resources\Assets\Monument_with_Shipyard.xml" />
-    <Resource Include="Resources\Assets\OilPumpBuilding.xml" />
-    <Resource Include="Resources\Assets\OrnamentalBuilding.xml" />
-    <Resource Include="Resources\Assets\OrnamentalModule.xml" />
-    <Resource Include="Resources\Assets\Palace.xml" />
-    <Resource Include="Resources\Assets\PalaceMinistry.xml" />
-    <Resource Include="Resources\Assets\PalaceModule.xml" />
-    <Resource Include="Resources\Assets\PowerplantBuilding.xml" />
-    <Resource Include="Resources\Assets\Product.xml" />
-    <Resource Include="Resources\Assets\PublicServiceBuilding.xml" />
-    <Resource Include="Resources\Assets\QuestItem.xml" />
-    <Resource Include="Resources\Assets\QuestItemMagistrate.xml" />
-    <Resource Include="Resources\Assets\QuestLighthouse.xml" />
-    <Resource Include="Resources\Assets\RepairCrane.xml" />
-    <Resource Include="Resources\Assets\ResidenceBuilding7.xml" />
-    <Resource Include="Resources\Assets\ResidenceBuilding7_Arctic.xml" />
-    <Resource Include="Resources\Assets\RewardPools.xml" />
-    <Resource Include="Resources\Assets\ShipSpecialist.xml" />
-    <Resource Include="Resources\Assets\Shipyard.xml" />
-    <Resource Include="Resources\Assets\SimpleBuilding.xml" />
-    <Resource Include="Resources\Assets\Slot.xml" />
-    <Resource Include="Resources\Assets\SlotFactoryBuilding7.xml" />
-    <Resource Include="Resources\Assets\SlotFactoryBuilding7_Arctic.xml" />
-    <Resource Include="Resources\Assets\StartExpeditionItem.xml" />
-    <Resource Include="Resources\Assets\Street.xml" />
-    <Resource Include="Resources\Assets\StreetBuilding.xml" />
-    <Resource Include="Resources\Assets\Texts_Chinese.xml" />
-    <Resource Include="Resources\Assets\Texts_English.xml" />
-    <Resource Include="Resources\Assets\Texts_French.xml" />
-    <Resource Include="Resources\Assets\Texts_German.xml" />
-    <Resource Include="Resources\Assets\Texts_Italian.xml" />
-    <Resource Include="Resources\Assets\Texts_Korean.xml" />
-    <Resource Include="Resources\Assets\Texts_Russian.xml" />
-    <Resource Include="Resources\Assets\ThirdParty.xml" />
-    <Resource Include="Resources\Assets\Tourism.xml" />
-    <Resource Include="Resources\Assets\TownhallItem.xml" />
-    <Resource Include="Resources\Assets\VehicleItem.xml" />
-    <Resource Include="Resources\Assets\VisitorPier.xml" />
-    <Resource Include="Resources\Assets\VisualBuilding_NoLogic.xml" />
-    <Resource Include="Resources\Assets\Warehouse.xml" />
-    <Resource Include="Resources\Assets\WorkAreaSlot.xml" />
-    <Resource Include="Resources\Assets\WorkforceConnector.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Assets\FactoryBuilding7_BuildPermit.xml" />
-    <Resource Include="Resources\Assets\FertilizerBaseBuilding.xml" />
-    <Resource Include="Resources\Assets\FertilizerBaseModule.xml" />
-    <Resource Include="Resources\Assets\HarborLandingStage7_BuildPermit.xml" />
-    <Resource Include="Resources\Assets\IrrigationPropagationSource.xml" />
-    <Resource Include="Resources\Assets\QuestObjectInfectable.xml" />
-    <Resource Include="Resources\Assets\Texts_Brazilian.xml" />
-    <Resource Include="Resources\Assets\Texts_Japanese.xml" />
-    <Resource Include="Resources\Assets\Texts_Polish.xml" />
-    <Resource Include="Resources\Assets\Texts_Portuguese.xml" />
-    <Resource Include="Resources\Assets\Texts_Spanish.xml" />
-    <Resource Include="Resources\Assets\Texts_Taiwanese.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
-      <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.6 %28x86 und x64%29</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\Assets\ThirdParty.xml" />
-    <EmbeddedResource Include="Resources\Assets\Tourism.xml" />
-    <EmbeddedResource Include="Resources\Assets\TownhallItem.xml" />
-    <EmbeddedResource Include="Resources\Assets\VehicleItem.xml" />
-    <EmbeddedResource Include="Resources\Assets\VisitorPier.xml" />
-    <EmbeddedResource Include="Resources\Assets\VisualBuilding_NoLogic.xml" />
-    <EmbeddedResource Include="Resources\Assets\Warehouse.xml" />
-    <EmbeddedResource Include="Resources\Assets\WorkAreaSlot.xml" />
-    <EmbeddedResource Include="Resources\Assets\WorkforceConnector.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\Assets\ActiveItem.xml" />
-    <EmbeddedResource Include="Resources\Assets\AdditionalModule.xml" />
-    <EmbeddedResource Include="Resources\Assets\BridgeBuilding.xml" />
-    <EmbeddedResource Include="Resources\Assets\BuffFactory.xml" />
-    <EmbeddedResource Include="Resources\Assets\BuildPermitBuilding.xml" />
-    <EmbeddedResource Include="Resources\Assets\BuildPermitModules.xml" />
-    <EmbeddedResource Include="Resources\Assets\CampaignQuestObject.xml" />
-    <EmbeddedResource Include="Resources\Assets\CampaignUncleMansion.xml" />
-    <EmbeddedResource Include="Resources\Assets\CityInstitutionBuilding.xml" />
-    <EmbeddedResource Include="Resources\Assets\CultureBuilding.xml" />
-    <EmbeddedResource Include="Resources\Assets\CultureItem.xml" />
-    <EmbeddedResource Include="Resources\Assets\CultureModule.xml" />
-    <EmbeddedResource Include="Resources\Assets\ExpeditionEvents.xml" />
-    <EmbeddedResource Include="Resources\Assets\FactoryBuilding7.xml" />
-    <EmbeddedResource Include="Resources\Assets\FactoryBuilding7_Arctic.xml" />
-    <EmbeddedResource Include="Resources\Assets\FarmBuilding.xml" />
-    <EmbeddedResource Include="Resources\Assets\FarmBuilding_Arctic.xml" />
-    <EmbeddedResource Include="Resources\Assets\Farmfield.xml" />
-    <EmbeddedResource Include="Resources\Assets\FestivalBuff.xml" />
-    <EmbeddedResource Include="Resources\Assets\FluffItem.xml" />
-    <EmbeddedResource Include="Resources\Assets\FreeAreaBuilding.xml" />
-    <EmbeddedResource Include="Resources\Assets\FreeAreaBuilding_Arctic.xml" />
-    <EmbeddedResource Include="Resources\Assets\Guildhouse.xml" />
-    <EmbeddedResource Include="Resources\Assets\GuildhouseItem.xml" />
-    <EmbeddedResource Include="Resources\Assets\HarborBuildingAttacker.xml" />
-    <EmbeddedResource Include="Resources\Assets\HarborDepot.xml" />
-    <EmbeddedResource Include="Resources\Assets\HarborLandingStage7.xml" />
-    <EmbeddedResource Include="Resources\Assets\HarborOffice.xml" />
-    <EmbeddedResource Include="Resources\Assets\HarborOfficeItem.xml" />
-    <EmbeddedResource Include="Resources\Assets\HarborPropObject.xml" />
-    <EmbeddedResource Include="Resources\Assets\HarborWarehouse7.xml" />
-    <EmbeddedResource Include="Resources\Assets\HarborWarehouseSlot7.xml" />
-    <EmbeddedResource Include="Resources\Assets\HarborWarehouseStrategic.xml" />
-    <EmbeddedResource Include="Resources\Assets\Heater_Arctic.xml" />
-    <EmbeddedResource Include="Resources\Assets\HeavyFactoryBuilding.xml" />
-    <EmbeddedResource Include="Resources\Assets\HeavyFreeAreaBuilding.xml" />
-    <EmbeddedResource Include="Resources\Assets\HeavyFreeAreaBuilding_Arctic.xml" />
-    <EmbeddedResource Include="Resources\Assets\ItemConstructionPlan.xml" />
-    <EmbeddedResource Include="Resources\Assets\ItemCrafterBuilding.xml" />
-    <EmbeddedResource Include="Resources\Assets\ItemSet.xml" />
-    <EmbeddedResource Include="Resources\Assets\ItemSpecialAction.xml" />
-    <EmbeddedResource Include="Resources\Assets\ItemSpecialActionVisualEffect.xml" />
-    <EmbeddedResource Include="Resources\Assets\ItemWithUI.xml" />
-    <EmbeddedResource Include="Resources\Assets\Market.xml" />
-    <EmbeddedResource Include="Resources\Assets\Monument.xml" />
-    <EmbeddedResource Include="Resources\Assets\MonumentCategory.xml" />
-    <EmbeddedResource Include="Resources\Assets\MonumentEvent.xml" />
-    <EmbeddedResource Include="Resources\Assets\MonumentThreshold.xml" />
-    <EmbeddedResource Include="Resources\Assets\Monument_with_Shipyard.xml" />
-    <EmbeddedResource Include="Resources\Assets\OilPumpBuilding.xml" />
-    <EmbeddedResource Include="Resources\Assets\OrnamentalBuilding.xml" />
-    <EmbeddedResource Include="Resources\Assets\OrnamentalModule.xml" />
-    <EmbeddedResource Include="Resources\Assets\Palace.xml" />
-    <EmbeddedResource Include="Resources\Assets\PalaceMinistry.xml" />
-    <EmbeddedResource Include="Resources\Assets\PalaceModule.xml" />
-    <EmbeddedResource Include="Resources\Assets\PowerplantBuilding.xml" />
-    <EmbeddedResource Include="Resources\Assets\Product.xml" />
-    <EmbeddedResource Include="Resources\Assets\PublicServiceBuilding.xml" />
-    <EmbeddedResource Include="Resources\Assets\QuestItem.xml" />
-    <EmbeddedResource Include="Resources\Assets\QuestItemMagistrate.xml" />
-    <EmbeddedResource Include="Resources\Assets\QuestLighthouse.xml" />
-    <EmbeddedResource Include="Resources\Assets\RepairCrane.xml" />
-    <EmbeddedResource Include="Resources\Assets\ResidenceBuilding7.xml" />
-    <EmbeddedResource Include="Resources\Assets\ResidenceBuilding7_Arctic.xml" />
-    <EmbeddedResource Include="Resources\Assets\RewardPools.xml" />
-    <EmbeddedResource Include="Resources\Assets\ShipSpecialist.xml" />
-    <EmbeddedResource Include="Resources\Assets\Shipyard.xml" />
-    <EmbeddedResource Include="Resources\Assets\SimpleBuilding.xml" />
-    <EmbeddedResource Include="Resources\Assets\Slot.xml" />
-    <EmbeddedResource Include="Resources\Assets\SlotFactoryBuilding7.xml" />
-    <EmbeddedResource Include="Resources\Assets\SlotFactoryBuilding7_Arctic.xml" />
-    <EmbeddedResource Include="Resources\Assets\StartExpeditionItem.xml" />
-    <EmbeddedResource Include="Resources\Assets\Street.xml" />
-    <EmbeddedResource Include="Resources\Assets\StreetBuilding.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\Assets\Texts_Chinese.xml" />
-    <EmbeddedResource Include="Resources\Assets\Texts_English.xml" />
-    <EmbeddedResource Include="Resources\Assets\Texts_French.xml" />
-    <EmbeddedResource Include="Resources\Assets\Texts_German.xml" />
-    <EmbeddedResource Include="Resources\Assets\Texts_Italian.xml" />
-    <EmbeddedResource Include="Resources\Assets\Texts_Korean.xml" />
-    <EmbeddedResource Include="Resources\Assets\Texts_Russian.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\data\ui\2kimages\main\icons\africa_expedition\icon_olispo.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_kontor3.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_marketplace_2d.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\profiles\3rd_party_13.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\profiles\icon_resident_elder.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\profiles\icon_resident_scholars.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\profiles\icon_resident_sheperd.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\profiles\storry_island_portrait_01.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\profiles\storry_island_portrait_02.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\profiles\storry_island_portrait_03.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

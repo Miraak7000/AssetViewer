@@ -269,7 +269,7 @@ namespace RDA.Data {
         case "GoodConsumptionUpgrade":
           Additionals = new List<Upgrade>();
           foreach (var item in element.Elements("Item")) {
-            Additionals.Add(new Upgrade { Text = new Description(item.Element("ProvidedNeed").Value), Value = (item.Element("AmountInPercent").Value.StartsWith("-") ? "" : "+") + $"{item.Element("AmountInPercent").Value}%" });
+            Additionals.Add(new Upgrade { Text = new Description(item.Element("ProvidedNeed").Value), Value = ((item.Element("AmountInPercent")?.Value?.StartsWith("-") ?? false) ? "" : "+") + $"{item.Element("AmountInPercent")?.Value ?? "100"}%" });
           }
           break;
 
@@ -422,6 +422,7 @@ namespace RDA.Data {
         case "ProductivityBoostUpgrade":
         case "ProvideIndustrialization":
         case "ElectricityBoostUpgrade":
+        case "PipeCapacityUpgrade":
           break;
 
         case "AdditionalHappiness":
@@ -440,6 +441,7 @@ namespace RDA.Data {
         case "HealPerMinute":
         case "MaxTrainCount":
         case "StorageCapacityModifier":
+        case "AdditionalResearch":
           value = int.Parse(element.Value);
           break;
 
@@ -479,10 +481,6 @@ namespace RDA.Data {
           break;
         case "MotorizableType":
           Text = new Description(Assets.KeyToIdDict[element.Value]);
-          break;
-        case "PipeCapacityUpgrade":
-          Text = new Description("127395");
-          value = int.Parse(element.Value);
           break;
 
         default:

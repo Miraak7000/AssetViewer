@@ -1,75 +1,84 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Street>
-  <Asset ID="101409" RV="Release" RT="Common">
-    <N>RailsNonblockingDeko</N>
-    <T ID="101409" />
+  <Asset ID="101308" RV="Release" RT="Common">
+    <N>Simple Street Colony01</N>
+    <T ID="101308" I="data/ui/2kimages/main/3dicons/icon_street01.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="10">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="12750" />
+  </Asset>
+  <Asset ID="101588" RV="Release" RT="Common">
+    <N>Stone Bridge Groundplate</N>
+    <T ID="101588" I="data/ui/2kimages/main/3dicons/ornament_placeholders/porte.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="1793398348" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC />
-    <GU />
-    <TP />
-    <HF />
-  </Asset>
-  <Asset ID="101339" RV="Release" RT="Common">
-    <N>Quay System Colony01</N>
-    <T ID="101339" I="data/ui/2kimages/main/3dicons/icon_quay.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
     <BC>
-      <U V="20">
+      <U V="100">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="0">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
       </U>
     </BC>
     <GU />
     <TP />
     <HF />
-    <I ID="12752" />
   </Asset>
-  <Asset ID="102460" RV="Release" RT="Common">
-    <N>Quay System Colony01 Base</N>
-    <T ID="101339" I="data/ui/2kimages/main/3dicons/icon_quay.png" />
+  <Asset ID="101385" RV="Release" RT="Common">
+    <N>Rails Bridge Groundplate</N>
+    <T ID="101385" I="data/ui/2kimages/main/3dicons/ornament_placeholders/porte.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="12752" />
-  </Asset>
-  <Asset ID="1010567" RV="Release" RT="Common">
-    <N>Quay System</N>
-    <T ID="101339" I="data/ui/2kimages/main/3dicons/icon_quay.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
+    <AR ID="1793398348" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
     <BC>
-      <U V="5">
+      <U V="100">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="1">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
       </U>
     </BC>
     <GU />
     <TP />
     <HF />
-    <I ID="12752" />
   </Asset>
-  <Asset ID="102459" RV="Release" RT="Common">
-    <N>Quay System Colony01 Base Invisible</N>
-    <T ID="101339" I="data/ui/2kimages/main/3dicons/icon_quay.png" />
+  <Asset ID="101383" RV="Release" RT="Common">
+    <N>Dirt Bridge Groundplate</N>
+    <T ID="101383" I="data/ui/2kimages/main/3dicons/ornament_placeholders/porte.png" />
     <R ID="118002" />
     <IT>Building</IT>
+    <AR ID="1793398348" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="100">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
     <GU />
     <TP />
     <HF />
-    <I ID="12752" />
   </Asset>
-  <Asset ID="101064" RV="Release" RT="Common">
-    <N>BasePlateFenceHidden</N>
-    <T ID="101064" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+  <Asset ID="102512" RV="Release" RT="Common">
+    <N>BasePlateFenceAgriculture10</N>
+    <T ID="102512" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="100">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+  </Asset>
+  <Asset ID="102511" RV="Release" RT="Common">
+    <N>BasePlateFenceAgriculture09</N>
+    <T ID="102512" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -84,7 +93,7 @@
   </Asset>
   <Asset ID="102510" RV="Release" RT="Common">
     <N>BasePlateFenceAgriculture08</N>
-    <T ID="102510" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+    <T ID="102512" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -97,29 +106,9 @@
     <TP />
     <HF />
   </Asset>
-  <Asset ID="100446" RV="Release" RT="Common">
-    <N>Quay System Base</N>
-    <T ID="101339" I="data/ui/2kimages/main/3dicons/icon_quay.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="12752" />
-  </Asset>
-  <Asset ID="101008" RV="Release" RT="Common">
-    <N>Quay System Base Invisible</N>
-    <T ID="101339" I="data/ui/2kimages/main/3dicons/icon_quay.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="12752" />
-  </Asset>
-  <Asset ID="102511" RV="Release" RT="Common">
-    <N>BasePlateFenceAgriculture09</N>
-    <T ID="102510" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+  <Asset ID="102509" RV="Release" RT="Common">
+    <N>BasePlateFenceAgriculture07</N>
+    <T ID="102512" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -132,25 +121,9 @@
     <TP />
     <HF />
   </Asset>
-  <Asset ID="112113" RV="Update 06" RT="Common">
-    <N>Snow Street</N>
-    <T ID="112113" I="data/ui/2kimages/main/3dicons/icon_snow_street.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
-    <BC>
-      <U V="10">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="12750" />
-  </Asset>
-  <Asset ID="101058" RV="Release" RT="Common">
-    <N>BasePlateFenceAgriculture04</N>
-    <T ID="102510" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+  <Asset ID="102508" RV="Release" RT="Common">
+    <N>BasePlateFenceAgriculture06</N>
+    <T ID="102512" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -163,27 +136,9 @@
     <TP />
     <HF />
   </Asset>
-  <Asset ID="113459" RV="Update 06" RT="Common">
-    <N>Quay System Colony03</N>
-    <T ID="101339" I="data/ui/2kimages/main/3dicons/icon_quay.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <BC>
-      <U V="5">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="1">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="12752" />
-  </Asset>
-  <Asset ID="102512" RV="Release" RT="Common">
-    <N>BasePlateFenceAgriculture10</N>
-    <T ID="102510" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+  <Asset ID="102507" RV="Release" RT="Common">
+    <N>BasePlateFenceAgriculture05</N>
+    <T ID="102512" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -196,25 +151,9 @@
     <TP />
     <HF />
   </Asset>
-  <Asset ID="1000178" RV="Release" RT="Common">
-    <N>Dirt Street</N>
-    <T ID="101064" I="data/ui/2kimages/main/3dicons/icon_street01.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="10">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="12750" />
-  </Asset>
-  <Asset ID="101200" RV="Release" RT="Common">
-    <N>BasePlateFenceAgriculture01</N>
-    <T ID="102510" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+  <Asset ID="101202" RV="Release" RT="Common">
+    <N>BasePlateFenceAgricultureTest3</N>
+    <T ID="102512" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -226,20 +165,10 @@
     <GU />
     <TP />
     <HF />
-  </Asset>
-  <Asset ID="114826" RV="Update 06" RT="Common">
-    <N>Quay System Colony03 Base</N>
-    <T ID="101339" I="data/ui/2kimages/main/3dicons/icon_quay.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="12752" />
   </Asset>
   <Asset ID="101201" RV="Release" RT="Common">
     <N>BasePlateFenceAgriculture03</N>
-    <T ID="102510" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+    <T ID="102512" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
@@ -252,15 +181,119 @@
     <TP />
     <HF />
   </Asset>
-  <Asset ID="113478" RV="Update 06" RT="Common">
-    <N>Quay System Colony03 Invisible</N>
-    <T ID="101339" I="data/ui/2kimages/main/3dicons/icon_quay.png" />
+  <Asset ID="101200" RV="Release" RT="Common">
+    <N>BasePlateFenceAgriculture01</N>
+    <T ID="102512" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
     <R ID="118002" />
     <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="100">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
     <GU />
     <TP />
     <HF />
-    <I ID="12752" />
+  </Asset>
+  <Asset ID="101058" RV="Release" RT="Common">
+    <N>BasePlateFenceAgriculture04</N>
+    <T ID="102512" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="100">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+  </Asset>
+  <Asset ID="101064" RV="Release" RT="Common">
+    <N>BasePlateFenceHidden</N>
+    <T ID="101308" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="100">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+  </Asset>
+  <Asset ID="101409" RV="Release" RT="Common">
+    <N>RailsNonblockingDeko</N>
+    <T ID="101409" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="-1112970167" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC />
+    <GU />
+    <TP />
+    <HF />
+  </Asset>
+  <Asset ID="1010584" RV="Release" RT="Common">
+    <N>RailsUnderBuilding</N>
+    <T ID="1010584" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="1793398348" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC />
+    <GU />
+    <TP />
+    <HF />
+    <I ID="10947" />
+  </Asset>
+  <Asset ID="1010183" RV="Release" RT="Common">
+    <N>Crossing Rails-FastStreet</N>
+    <T ID="1010183" I="data/ui/2kimages/main/3dicons/icon_railway.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="1793398348" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC />
+    <GU />
+    <TP />
+    <HF />
+    <I ID="10947" />
+  </Asset>
+  <Asset ID="1010165" RV="Release" RT="Common">
+    <N>Crossing Rails-Street</N>
+    <T ID="1010183" I="data/ui/2kimages/main/3dicons/icon_railway.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="1793398348" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC />
+    <GU />
+    <TP />
+    <HF />
+    <I ID="10947" />
+  </Asset>
+  <Asset ID="1010136" RV="Release" RT="Common">
+    <N>Rails</N>
+    <T ID="1010136" I="data/ui/2kimages/main/3dicons/icon_railway.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="1793398348" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="200">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="1">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="1">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="10947" />
   </Asset>
   <Asset ID="1010035" RV="Release" RT="Common">
     <N>Stone Street</N>
@@ -281,178 +314,12 @@
     <HF />
     <I ID="12751" />
   </Asset>
-  <Asset ID="101383" RV="Release" RT="Common">
-    <N>Dirt Bridge Groundplate</N>
-    <T ID="101383" I="data/ui/2kimages/main/3dicons/ornament_placeholders/porte.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="1793398348" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="100">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-  </Asset>
-  <Asset ID="116631" RV="Update 06" RT="Common">
-    <N>BasePlateFenceAgriculturePassage</N>
-    <T ID="102510" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+  <Asset ID="1000178" RV="Release" RT="Common">
+    <N>Dirt Street</N>
+    <T ID="101308" I="data/ui/2kimages/main/3dicons/icon_street01.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="100">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-  </Asset>
-  <Asset ID="101202" RV="Release" RT="Common">
-    <N>BasePlateFenceAgricultureTest3</N>
-    <T ID="102510" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="100">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-  </Asset>
-  <Asset ID="1010136" RV="Release" RT="Common">
-    <N>Rails</N>
-    <T ID="1010136" I="data/ui/2kimages/main/3dicons/icon_railway.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="1793398348" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="200">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="1">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="1">
-        <T ID="1010218" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="10947" />
-  </Asset>
-  <Asset ID="101385" RV="Release" RT="Common">
-    <N>Rails Bridge Groundplate</N>
-    <T ID="101385" I="data/ui/2kimages/main/3dicons/ornament_placeholders/porte.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="1793398348" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="100">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-  </Asset>
-  <Asset ID="102507" RV="Release" RT="Common">
-    <N>BasePlateFenceAgriculture05</N>
-    <T ID="102510" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="100">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-  </Asset>
-  <Asset ID="1010165" RV="Release" RT="Common">
-    <N>RailsCrossing</N>
-    <T ID="1010165" I="data/ui/2kimages/main/3dicons/icon_railway.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="1793398348" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC />
-    <GU />
-    <TP />
-    <HF />
-    <I ID="10947" />
-  </Asset>
-  <Asset ID="102508" RV="Release" RT="Common">
-    <N>BasePlateFenceAgriculture06</N>
-    <T ID="102510" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="100">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-  </Asset>
-  <Asset ID="101588" RV="Release" RT="Common">
-    <N>Stone Bridge Groundplate</N>
-    <T ID="101588" I="data/ui/2kimages/main/3dicons/ornament_placeholders/porte.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="1793398348" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="100">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-  </Asset>
-  <Asset ID="1010183" RV="Release" RT="Common">
-    <N>RailsCrossingFast</N>
-    <T ID="1010165" I="data/ui/2kimages/main/3dicons/icon_railway.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="1793398348" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC />
-    <GU />
-    <TP />
-    <HF />
-    <I ID="10947" />
-  </Asset>
-  <Asset ID="102509" RV="Release" RT="Common">
-    <N>BasePlateFenceAgriculture07</N>
-    <T ID="102510" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="100">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-  </Asset>
-  <Asset ID="101308" RV="Release" RT="Common">
-    <N>Simple Street Colony01</N>
-    <T ID="101064" I="data/ui/2kimages/main/3dicons/icon_street01.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
     <BC>
       <U V="10">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
@@ -463,17 +330,196 @@
     <HF />
     <I ID="12750" />
   </Asset>
-  <Asset ID="1010584" RV="Release" RT="Common">
-    <N>RailsUnderBuilding</N>
-    <T ID="1010584" />
+  <Asset ID="101008" RV="Release" RT="Common">
+    <N>Quay System Base Invisible</N>
+    <T ID="101008" I="data/ui/2kimages/main/3dicons/icon_quay.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <AR ID="1793398348" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <GU />
+    <TP />
+    <HF />
+    <I ID="12752" />
+  </Asset>
+  <Asset ID="100446" RV="Release" RT="Common">
+    <N>Quay System Base</N>
+    <T ID="101008" I="data/ui/2kimages/main/3dicons/icon_quay.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="12752" />
+  </Asset>
+  <Asset ID="1010567" RV="Release" RT="Common">
+    <N>Quay System</N>
+    <T ID="101008" I="data/ui/2kimages/main/3dicons/icon_quay.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <BC>
+      <U V="5">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="1">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="12752" />
+  </Asset>
+  <Asset ID="273698" RV="Update 09" RT="Common">
+    <N>AF | Crossing Rails-FastStreet</N>
+    <T ID="1010183" I="data/ui/2kimages/main/3dicons/icon_railway.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
     <BC />
     <GU />
     <TP />
     <HF />
     <I ID="10947" />
+  </Asset>
+  <Asset ID="273697" RV="Update 09" RT="Common">
+    <N>AF | Crossing Rails-Street</N>
+    <T ID="1010183" I="data/ui/2kimages/main/3dicons/icon_railway.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC />
+    <GU />
+    <TP />
+    <HF />
+    <I ID="10947" />
+  </Asset>
+  <Asset ID="119035" RV="Update 09" RT="Common">
+    <N>AF | Rails</N>
+    <T ID="1010136" I="data/ui/2kimages/main/3dicons/icon_railway.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="200">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="1">
+        <T ID="114356" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
+      </U>
+      <U V="1">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="10947" />
+  </Asset>
+  <Asset ID="116631" RV="Update 06" RT="Common">
+    <N>BasePlateFenceAgriculturePassage</N>
+    <T ID="102512" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="100">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+  </Asset>
+  <Asset ID="113478" RV="Update 06" RT="Common">
+    <N>Quay System Colony03 Invisible</N>
+    <T ID="101008" I="data/ui/2kimages/main/3dicons/icon_quay.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="12752" />
+  </Asset>
+  <Asset ID="114826" RV="Update 06" RT="Common">
+    <N>Quay System Colony03 Base</N>
+    <T ID="101008" I="data/ui/2kimages/main/3dicons/icon_quay.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="12752" />
+  </Asset>
+  <Asset ID="113459" RV="Update 06" RT="Common">
+    <N>Quay System Colony03</N>
+    <T ID="101008" I="data/ui/2kimages/main/3dicons/icon_quay.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <BC>
+      <U V="5">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="1">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="12752" />
+  </Asset>
+  <Asset ID="112113" RV="Update 06" RT="Common">
+    <N>Snow Street</N>
+    <T ID="112113" I="data/ui/2kimages/main/3dicons/icon_snow_street.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
+    <BC>
+      <U V="10">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="12750" />
+  </Asset>
+  <Asset ID="102459" RV="Release" RT="Common">
+    <N>Quay System Colony01 Base Invisible</N>
+    <T ID="101008" I="data/ui/2kimages/main/3dicons/icon_quay.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="12752" />
+  </Asset>
+  <Asset ID="102460" RV="Release" RT="Common">
+    <N>Quay System Colony01 Base</N>
+    <T ID="101008" I="data/ui/2kimages/main/3dicons/icon_quay.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="12752" />
+  </Asset>
+  <Asset ID="101339" RV="Release" RT="Common">
+    <N>Quay System Colony01</N>
+    <T ID="101008" I="data/ui/2kimages/main/3dicons/icon_quay.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <BC>
+      <U V="20">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="0">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="12752" />
   </Asset>
   <Asset ID="101309" RV="Release" RT="Common">
     <N>Fast Street Colony01</N>
@@ -493,5 +539,189 @@
     <TP />
     <HF />
     <I ID="12751" />
+  </Asset>
+  <Asset ID="117681" RV="Update 09" RT="Common">
+    <N>BasePlateFenceAgricultureAfrica3</N>
+    <T ID="117681" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="100">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+  </Asset>
+  <Asset ID="117680" RV="Update 09" RT="Common">
+    <N>BasePlateFenceAgricultureAfrica2</N>
+    <T ID="117681" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="100">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+  </Asset>
+  <Asset ID="117650" RV="Update 09" RT="Common">
+    <N>BasePlateFenceAgricultureAfrica1</N>
+    <T ID="117681" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <BC>
+      <U V="100">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+  </Asset>
+  <Asset ID="117731" RV="Update 09" RT="Common">
+    <N>Quay System Base Invisible (Africa)</N>
+    <T ID="101008" I="data/ui/2kimages/main/3dicons/icon_quay.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC />
+    <GU />
+    <TP />
+    <HF />
+    <I ID="12752" />
+  </Asset>
+  <Asset ID="117730" RV="Update 09" RT="Common">
+    <N>Quay System Base Africa</N>
+    <T ID="101008" I="data/ui/2kimages/main/3dicons/icon_quay.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC />
+    <GU />
+    <TP />
+    <HF />
+    <I ID="12752" />
+  </Asset>
+  <Asset ID="117729" RV="Update 09" RT="Common">
+    <N>Quay System Africa</N>
+    <T ID="101008" I="data/ui/2kimages/main/3dicons/icon_quay.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="5">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="1">
+        <T ID="114356" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
+      </U>
+      <U V="0">
+        <T ID="114402" I="data/ui/2kimages/main/3dicons/goods_africa/icon_mud_bricks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="12752" />
+  </Asset>
+  <Asset ID="114523" RV="Update 09" RT="Common">
+    <N>AF | Dirt Street</N>
+    <T ID="114523" I="data/ui/2kimages/main/3dicons/icon_street_africa.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="10">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="12750" />
+  </Asset>
+  <Asset ID="119029" RV="Update 09" RT="Common">
+    <N>AF | Fast Street</N>
+    <T ID="1010035" I="data/ui/2kimages/main/3dicons/icon_brick_street_africa.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="50">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="1">
+        <T ID="114402" I="data/ui/2kimages/main/3dicons/goods_africa/icon_mud_bricks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="12751" />
+  </Asset>
+  <Asset ID="127913" RV="Update 09" RT="Common">
+    <N>Crossing Canal-FastStreet</N>
+    <T ID="127913" I="data/ui/2kimages/main/3dicons/ornaments/christmas_park_props_system_02_cross.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="20">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+  </Asset>
+  <Asset ID="117786" RV="Update 09" RT="Common">
+    <N>Crossing Canal-Street</N>
+    <T ID="127913" I="data/ui/2kimages/main/3dicons/ornaments/christmas_park_props_system_02_cross.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="20">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+  </Asset>
+  <Asset ID="112842" RV="Update 09" RT="Common">
+    <N>Canal</N>
+    <T ID="112842" I="data/ui/2kimages/main/3dicons/icon_canal.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="20">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="124829" />
+  </Asset>
+  <Asset ID="273699" RV="Update 09" RT="Common">
+    <N>AF | Crossing Rails-Pipe</N>
+    <T ID="1010183" I="data/ui/2kimages/main/3dicons/icon_railway.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC />
+    <GU />
+    <TP />
+    <HF />
+    <I ID="10947" />
   </Asset>
 </Street>

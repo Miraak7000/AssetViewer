@@ -156,6 +156,8 @@ namespace RDA.Data {
         case "A7_QuestExpedition":
         case "A7_QuestDivingBellSonar":
         case "A7_QuestDivingBellTreasureMap":
+        case "A7_QuestDecision":
+        case "A7_QuestSmugglerWOScanners":
           var questgiver = Source.XPathSelectElement("Values/Quest/QuestGiver")?.Value;
           if (questgiver != null) {
             Text = new Description(questgiver).InsertBefore("-").InsertBefore(new Description("2734"));
@@ -198,29 +200,16 @@ namespace RDA.Data {
           Text = new Description(Source.XPathSelectElement("Values/Standard/GUID").Value).InsertBefore("-").InsertBefore(new Description("-101"));
           break;
 
-        case "ResearchCenter":
-          Text = new Description(Source.XPathSelectElement("Values/Standard/GUID").Value);
-          var descr = Text;
-          double Weight = 1;
-
-          if (element.Details.Count != 0)
-          {
-
-            AssetWithWeight parent = null, child = null;
-            foreach (var detail in element.Details)
-              if (Double.IsNaN(detail.Weight))
-                parent = detail;
-              else
-                child = detail;
-
-            descr = new Description(child.Asset.XPathSelectElement("Values/Standard/GUID").Value)
-              .InsertBefore("-")
-              .InsertBefore(new Description(parent.Asset.XPathSelectElement("Values/Standard/GUID").Value));
-
-            Weight = child.Weight;
+        case "ResearchSubcategory":
+          Text = new Description("118940");
+          foreach (var item in element.Details) {
+            var desc = new Description(item.Asset.Descendants("Headline").First().Value);
+            Details.Add((desc, item.Weight));
           }
-          Details.Add((descr, Weight));
-          
+          break;
+
+        case "ResearchFeature":
+          Text = new Description("118940");
           break;
 
         default:

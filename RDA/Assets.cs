@@ -1,34 +1,29 @@
 ﻿using System;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.Script.Serialization;
-using System.Xml;
 using System.Xml.Linq;
 using System.Xml.XPath;
 using RDA.Data;
 using RDA.Services;
 
-namespace RDA
-{
+namespace RDA {
 
-  public static class Assets
-  {
+  public static class Assets {
 
     #region Public Properties
 
-    public static XElement TourismAsset { get; private set; }
+    public static XElement TourismFeatureAsset { get; private set; }
+    public static XElement ResearchFeatureAsset { get; private set; }
 
     #endregion Public Properties
 
     #region Public Constructors
 
-    static Assets()
-    {
+    static Assets() {
       Original = XmlLoader.LoadXml(Program.PathRoot + @"\Original\assets.xml");
     }
 
@@ -36,28 +31,26 @@ namespace RDA
 
     #region Public Methods
 
-    public static void Init(string version = "Release")
-    {
+    public static void Init(string version = "Release") {
       Version = version;
       LoadDefaultValues();
       Program.ConsoleWriteHeadline("Load Asset.xml");
 
       SolveAllReferences();
       SolveXmlInheritance();
-      CacheResearchableItems();
       LoadDescriptions();
       LoadCustomDescriptions();
       SetTextDictionarys();
       SetIcons();
-      //SetTourismThresholds();
+      SetTourismThresholds();
 
-      //TourismAsset = Original.Descendants("Asset").First(a => a.Element("Template")?.Value == "TourismFeature");
+      TourismFeatureAsset = GUIDs["2001173"];
+      ResearchFeatureAsset = GUIDs["120244"];
 
       SetBuffs();
     }
 
-    public static string GetDescriptionID(string id)
-    {
+    public static string GetDescriptionID(string id) {
       return KeyToIdDict[id];
     }
 
@@ -106,28 +99,23 @@ namespace RDA
 
     #region Private Methods
 
-    private static void LoadDefaultValues()
-    {
+    private static void LoadDefaultValues() {
       Program.ConsoleWriteHeadline("Load Standart Values");
       var xml = XmlLoader.LoadXml(Program.PathRoot + @"\Original\properties.xml");
-      foreach (var item in xml.Descendants("DefaultValues").SelectMany(dv => dv.Elements()))
-      {
+      foreach (var item in xml.Descendants("DefaultValues").SelectMany(dv => dv.Elements())) {
         DefaultValues.Add(item.Name.LocalName, item);
       }
     }
 
-    private static int InheritDepth(this XElement ele)
-    {
+    private static int InheritDepth(this XElement ele) {
       var depth = 0;
       var search = ele.Element("BaseAssetGUID")?.Value;
-      while (search != null)
-      {
+      while (search != null) {
         if (!Assets.GUIDs.ContainsKey(search))
           throw new Exception($"Asset GUID not found {search}");
 
         var found = Assets.GUIDs[search];
-        if (found != null)
-        {
+        if (found != null) {
           depth++;
           search = found.Element("BaseAssetGUID")?.Value;
         }
@@ -135,25 +123,21 @@ namespace RDA
       return depth;
     }
 
-    private static void SolveAllReferences()
-    {
+    private static void SolveAllReferences() {
       Program.ConsoleWriteHeadline("Solve All References");
       Regex rgx = new Regex("\\A\\d\\d\\d+\\Z");
 
-      foreach (var node in Original.Descendants())
-      {
+      foreach (var node in Original.Descendants()) {
         var asset = node;
         while (asset.Parent != null &&
             (!asset.Name.LocalName.Equals("Asset") || !asset.HasElements))
           asset = asset.Parent;
 
         if ("GUID".Equals(node.Name.LocalName) &&
-            node == asset.XPathSelectElement("Values/Standard/GUID"))
-        {
+            node == asset.XPathSelectElement("Values/Standard/GUID")) {
           GUIDs.Add(node.Value, asset);
         }
-        else if (!node.HasElements && rgx.IsMatch(node.Value))
-        {
+        else if (!node.HasElements && rgx.IsMatch(node.Value)) {
           if (asset.Name != "Asset")
             continue;
 
@@ -166,132 +150,75 @@ namespace RDA
 
     }
 
-    private static void CacheResearchableItems()
-    {
-
-      Program.ConsoleWriteHeadline("Cache Researchable Items");
-
-      XElement research;
-      GUIDs.TryGetValue("120244", out research);
-      if (research == null)
-        throw new Exception("Research Feature with GUID 120244 nof found");
-
-      var categories = research.XPathSelectElements("Values/ResearchFeature/ResearchFields/*/Subcategories/Item/Subcategory").ToList();
-      var researchCenter = Assets.GUIDs["118940"];
-
-
-      foreach (var categoryId in categories)
-      {
-        var name = categoryId.XPathSelectElement("../../..").Name.LocalName;
-
-        string categoryDescription;
-        switch (name)
-        {
-          case "Culture": categoryDescription = "124266"; break;
-          case "Technology": categoryDescription = "124268"; break;
-          case "Talent": categoryDescription = "124269"; break;
-          default:
-            Debug.WriteLine(categoryId);
-            throw new NotImplementedException();
-        }
-
-        var details = new HashSet<AssetWithWeight>();
-        details.Add(new AssetWithWeight(GUIDs[GUIDs[categoryId.Value].XPathSelectElement("Values/ResearchSubcategory/ItemCardDescription/Headline").Value], 1));
-
-        var sourceWDetails = new SourceWithDetails(researchCenter, details);
-
-        foreach (var pool in GUIDs[categoryId.Value].XPathSelectElements("Values/ResearchSubcategory/RecipePool/Item/Pool"))
-          processResearchPool(pool.Value, sourceWDetails.Copy(), new AssetWithWeight(GUIDs[categoryDescription], double.NaN));
-      }
-
-
-    }
-
-
-    private static void processResearchPool(string id, SourceWithDetails parentDetails, AssetWithWeight parentCategory)
-    {
-      XElement poolOrAsset;
-      GUIDs.TryGetValue(id, out poolOrAsset);
+    private static void processResearchPool(string id, SourceWithDetails parentDetails, AssetWithWeight parentCategory) {
+      GUIDs.TryGetValue(id, out var poolOrAsset);
 
       if (poolOrAsset == null)
         return;
 
       var pools = poolOrAsset.XPathSelectElements("Values/AssetPool/AssetList/Item/Asset | Values/RewardPool/ItemsPool/Item/ItemLink").ToList();
 
-      if (pools.Count == 0)
-      {
-        if (!"RewardPool".Equals(poolOrAsset.XPathSelectElement("Template").Value))
-        {// ignore empty reward pools
+      if (pools.Count == 0) {
+        if (!"RewardPool".Equals(poolOrAsset.XPathSelectElement("Template").Value)) {// ignore empty reward pools
 
-          if (!ResearchableItems.ContainsKey(id))
-          {
+          if (!ResearchableItems.ContainsKey(id)) {
 
             var details = parentDetails.Copy();
             details.Details.Add(parentCategory);
             ResearchableItems.Add(id, details);
           }
-          else
-          {
-            foreach(var d in ResearchableItems[id].Details)
-            {
+          else {
+            foreach (var d in ResearchableItems[id].Details) {
               d.Weight += parentDetails.Details.First().Weight;
             }
           }
-         }
+        }
       }
 
       var itemList = pools.Select(p => p.XPathSelectElement("../Probability | ../Weight"));
       var weightSum = itemList.Sum(item => item?.Value is string str ? double.Parse(str) : 1.0F);
 
-      foreach (var pool in pools)
-      {
+      foreach (var pool in pools) {
         var prob = pool.XPathSelectElement("../Probability | ../Weight");
         if (prob != null && (prob.Value == "" || prob.Value == "0"))
           continue;
 
         var details = parentDetails.Copy();
 
-            details.Details.First().Weight *= (prob?.Value is string str ? double.Parse(str) : 1.0F) / weightSum;
+        details.Details.First().Weight *= (prob?.Value is string str ? double.Parse(str) : 1.0F) / weightSum;
 
 
         processResearchPool(pool.Value, details, parentCategory);
       }
     }
 
-    private static void SolveXmlInheritance()
-    {
+    private static void SolveXmlInheritance() {
       Program.ConsoleWriteHeadline("Solve Xml Inheritance");
       var InheritHelper = Original.Descendants("Asset").OrderBy(a => a.InheritDepth()).ToArray();
-      foreach (var item in InheritHelper)
-      {
+      foreach (var item in InheritHelper) {
         var baseGuid = item.Element("BaseAssetGUID")?.Value;
-        if (baseGuid != null)
-        {
+        if (baseGuid != null) {
           if (!Assets.GUIDs.ContainsKey(baseGuid))
             throw new Exception($"Asset GUID not found {baseGuid}");
 
           var baseAsset = Assets.GUIDs[baseGuid];
-          if (baseAsset != null)
-          {
+          if (baseAsset != null) {
             item.AddStandardValues(baseAsset);
           }
         }
       }
     }
 
-    private static void LoadDescriptions()
-    {
+    private static void LoadDescriptions() {
       Program.ConsoleWriteHeadline("Load Descriptions");
-      foreach (Languages language in Enum.GetValues(typeof(Languages)))
-      {
+      foreach (Languages language in Enum.GetValues(typeof(Languages))) {
         var dic = XDocument
             .Load(Program.PathRoot + $@"\Original\texts_{language.ToString("G").ToLower()}.xml")
             .Root
             .Element("Texts")
             .Elements()
             .ToDictionary(k => k.Element("GUID").Value, e => e.Element("Text").Value);
-        foreach (var item in dic)
-        {
+        foreach (var item in dic) {
           var str = item.Value;
           //Delete some trash
           var removes = new[] {
@@ -304,52 +231,41 @@ namespace RDA
             "<b>",
             "</b>",
           };
-          foreach (var remove in removes)
-          {
+          foreach (var remove in removes) {
             str = str.Replace(remove, "");
           }
 
           // walkaround to fix the problem that rarity "common" and "uncommon" are translated to the
           // same Chinese word
-          if (language == Languages.Chinese && item.Key == "118002" && str == "普通")
-          {
+          if (language == Languages.Chinese && item.Key == "118002" && str == "普通") {
             str = "普通（白色）";
           }
-          if (language == Languages.Chinese && item.Key == "118003" && str == "普通")
-          {
+          if (language == Languages.Chinese && item.Key == "118003" && str == "普通") {
             str = "普通（绿色）";
           }
 
-          if (Descriptions.ContainsKey(item.Key))
-          {
+          if (Descriptions.ContainsKey(item.Key)) {
             Descriptions[item.Key].Add(language, str);
           }
-          else
-          {
+          else {
             Descriptions.Add(item.Key, new Dictionary<Languages, string> { { language, str } });
           }
         }
       }
     }
 
-    private static void LoadCustomDescriptions()
-    {
+    private static void LoadCustomDescriptions() {
       Program.ConsoleWriteHeadline("Load Custom Descriptions");
       var js = new JavaScriptSerializer();
-      foreach (Languages language in Enum.GetValues(typeof(Languages)))
-      {
+      foreach (Languages language in Enum.GetValues(typeof(Languages))) {
         var filepath = Program.PathRoot + $@"\Modified\LanguageFiles\Texts_Custom_{language:G}.json";
-        if (File.Exists(filepath))
-        {
+        if (File.Exists(filepath)) {
           var dic = js.Deserialize<dynamic>(File.ReadAllText(filepath));
-          foreach (var item in dic)
-          {
-            if (CustomDescriptions.ContainsKey(item.Key))
-            {
+          foreach (var item in dic) {
+            if (CustomDescriptions.ContainsKey(item.Key)) {
               CustomDescriptions[item.Key].Add(language, item.Value);
             }
-            else
-            {
+            else {
               CustomDescriptions.Add(item.Key, new Dictionary<Languages, string> { { language, item.Value } });
             }
           }
@@ -357,8 +273,7 @@ namespace RDA
       }
     }
 
-    private static void SetIcons()
-    {
+    private static void SetIcons() {
       Program.ConsoleWriteHeadline("Setting up Icons");
       var asset = Original
          .Descendants("Asset")
@@ -366,10 +281,8 @@ namespace RDA
          .Element("Values")
          .Element("ItemConfig");
       //AllocationIcons
-      foreach (var item in asset.Element("AllocationIcons").Elements())
-      {
-        if (item.Element("AllocationIcon")?.Value is string val)
-        {
+      foreach (var item in asset.Element("AllocationIcons").Elements()) {
+        if (item.Element("AllocationIcon")?.Value is string val) {
           Icons[item.Element("Allocation").Value] = val;
         }
       }
@@ -378,8 +291,7 @@ namespace RDA
         .Descendants("Asset")
         .Where(a => a.XPathSelectElement("Values/Text/LocaText")?.HasElements == true && a.XPathSelectElement("Values/Standard/IconFilename")?.Value != null).Select(e => e.Element("Values").Element("Standard"));
       //TextIcons
-      foreach (var item in texts)
-      {
+      foreach (var item in texts) {
         Icons[item.Element("GUID").Value] = item.Element("IconFilename").Value;
       }
 
@@ -391,8 +303,7 @@ namespace RDA
       Icons.Add("15797", "data/ui/2kimages/main/icons/icon_generic_expedition.png");  //PerkFeMale
     }
 
-    private static void SetTextDictionarys()
-    {
+    private static void SetTextDictionarys() {
       Program.ConsoleWriteHeadline("Setting up Descriptions");
       var asset = Original
          .Descendants("Asset")
@@ -400,18 +311,15 @@ namespace RDA
          .Element("Values")
          .Element("ItemConfig");
       //RarityText
-      foreach (var item in asset.Element("RarityText").Elements())
-      {
+      foreach (var item in asset.Element("RarityText").Elements()) {
         KeyToIdDict.Add(item.Name.LocalName, item.Element("Text").Value);
       }
       //ExclusiveGroupText
-      foreach (var item in asset.Element("ExclusiveGroupText").Elements())
-      {
+      foreach (var item in asset.Element("ExclusiveGroupText").Elements()) {
         KeyToIdDict.Add(item.Name.LocalName, item.Element("Text").Value);
       }
       //ExclusiveGroupText
-      foreach (var item in asset.Element("AllocationText").Elements())
-      {
+      foreach (var item in asset.Element("AllocationText").Elements()) {
         KeyToIdDict.Add(item.Name.LocalName, item.Element("Text").Value);
       }
 
@@ -422,14 +330,12 @@ namespace RDA
        .Element("ExpeditionFeature");
 
       //ExpeditionRegions
-      foreach (var item in asset.Element("ExpeditionRegions").Elements())
-      {
+      foreach (var item in asset.Element("ExpeditionRegions").Elements()) {
         ExpeditionRegionToIdDict.Add(item.Name.LocalName, item.Element("Region").Value);
       }
 
       //AttributeNames
-      foreach (var item in asset.Element("AttributeNames").Elements())
-      {
+      foreach (var item in asset.Element("AttributeNames").Elements()) {
         KeyToIdDict.Add(item.Name.LocalName, item.Element("Name").Value);
       }
 
@@ -541,30 +447,29 @@ namespace RDA
       KeyToIdDict.Add("ElectricityBoostUpgrade", "23266");
       KeyToIdDict.Add("Tractor", "269841");
       KeyToIdDict.Add("Silo", "269957");
+      KeyToIdDict.Add("IrrigationCapacityUpgrade", "127395");
+      KeyToIdDict.Add("AdditionalResearch", "127425");
+      KeyToIdDict.Add("PipeCapacityUpgrade", "127395");
 
       //Override Allocation Tradeship
       KeyToIdDict["Tradeship"] = "12006";
     }
 
-    private static void SetTourismThresholds()
-    {
+    private static void SetTourismThresholds() {
       Program.ConsoleWriteHeadline("Setting up Tourism");
       var AttractivenessFeature = Original.Descendants("Asset").FirstOrDefault(l => l.Element("Template")?.Value == "AttractivenessFeature");
       var CityStatis = AttractivenessFeature.XPathSelectElement("Values/AttractivenessFeature/AttractivenessLevel").Elements().ToList();
-      foreach (var stati in CityStatis)
-      {
+      foreach (var stati in CityStatis) {
         TourismThresholds.Add(stati.Name.LocalName, stati.Element("AttractivenessThreshold").Value);
       }
     }
 
-    private static void SetBuffs()
-    {
+    private static void SetBuffs() {
       Program.ConsoleWriteHeadline("Setting up Buffs");
       var buffs = GUIDs.Values
          .Where(l => l.Element("Template")?.Value.EndsWith("Buff") ?? false)
          .Select(l => new Asset(l, false));
-      foreach (var item in buffs)
-      {
+      foreach (var item in buffs) {
         Buffs[item.ID] = item;
       }
     }

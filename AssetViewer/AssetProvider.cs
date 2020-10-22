@@ -14,7 +14,6 @@ using AssetViewer.Data;
 using AssetViewer.Extensions;
 
 namespace AssetViewer {
-
   public static class AssetProvider {
 
     #region Public Properties
@@ -23,8 +22,8 @@ namespace AssetViewer {
     public static Dictionary<int, TemplateAsset> Buildings { get; } = new Dictionary<int, TemplateAsset>();
     public static Dictionary<int, TemplateAsset> ItemSets { get; } = new Dictionary<int, TemplateAsset>();
     public static Dictionary<int, TemplateAsset> FestivalBuffs { get; } = new Dictionary<int, TemplateAsset>();
-        public static Dictionary<int, TemplateAsset> AllBuffs { get; } = new Dictionary<int, TemplateAsset>();
-        public static Dictionary<int, Pool> Pools { get; } = new Dictionary<int, Pool>();
+    public static Dictionary<int, TemplateAsset> AllBuffs { get; } = new Dictionary<int, TemplateAsset>();
+    public static Dictionary<int, Pool> Pools { get; } = new Dictionary<int, Pool>();
     public static ObjectCache Cache { get; set; } = MemoryCache.Default;
     public static Dictionary<int, string> Descriptions { get; } = new Dictionary<int, string>();
     public static bool CountMode { get; set; }
@@ -124,15 +123,9 @@ namespace AssetViewer {
       using (var reader = new StreamReader(stream)) {
         var document = XDocument.Parse(reader.ReadToEnd()).Root;
         foreach (var item in document.Elements()) {
-                    try
-                    {
-                        int.Parse(item.Attribute("ID").Value);
-                    }catch(Exception e)
-                    {
-                        Console.WriteLine(e.Message);
-                        continue;
-                    }
-          Descriptions.Add(int.Parse(item.Attribute("ID").Value), item.Value);
+          if (int.TryParse(item.Attribute("ID")?.Value, out var id)) {
+            Descriptions.Add(id, item.Value);
+          }
         }
       }
     }
@@ -148,7 +141,7 @@ namespace AssetViewer {
       }
     }
 
-    private static void NotifyStaticPropertyChanged([CallerMemberName]string propertyName = null) {
+    private static void NotifyStaticPropertyChanged([CallerMemberName] string propertyName = null) {
       StaticPropertyChanged?.Invoke(null, new PropertyChangedEventArgs(propertyName));
     }
 
@@ -162,20 +155,17 @@ namespace AssetViewer {
       }
     }
 
-        private static void LoadAllBuffs()
-        {
-            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.Buffs.xml"))
-            using (var reader = new StreamReader(stream))
-            {
-                var document = XDocument.Parse(reader.ReadToEnd()).Root;
-                foreach (var item in document.Elements().Select(s => new TemplateAsset(s)))
-                {
-                    AllBuffs.Add(item.ID, item);
-                }
-            }
+    private static void LoadAllBuffs() {
+      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.Buffs.xml"))
+      using (var reader = new StreamReader(stream)) {
+        var document = XDocument.Parse(reader.ReadToEnd()).Root;
+        foreach (var item in document.Elements().Select(s => new TemplateAsset(s))) {
+          AllBuffs.Add(item.ID, item);
         }
+      }
+    }
 
-        private static void LoadItemSets() {
+    private static void LoadItemSets() {
       using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AssetViewer.Resources.Assets.ItemSet.xml"))
       using (var reader = new StreamReader(stream)) {
         var document = XDocument.Parse(reader.ReadToEnd()).Root;
@@ -195,19 +185,24 @@ namespace AssetViewer {
                 "AssetViewer.Resources.Assets.CampaignQuestObject.xml",
                 "AssetViewer.Resources.Assets.CampaignUncleMansion.xml",
                 "AssetViewer.Resources.Assets.CityInstitutionBuilding.xml",
+                "AssetViewer.Resources.Assets.CityInstitutionBuilding_Africa.xml",
                 "AssetViewer.Resources.Assets.CultureBuilding.xml",
                 "AssetViewer.Resources.Assets.CultureModule.xml",
                 "AssetViewer.Resources.Assets.FactoryBuilding7.xml",
                 "AssetViewer.Resources.Assets.FactoryBuilding7_Arctic.xml",
+                "AssetViewer.Resources.Assets.FactoryBuilding7_BuildPermit.xml",
                 "AssetViewer.Resources.Assets.FarmBuilding.xml",
                 "AssetViewer.Resources.Assets.FarmBuilding_Arctic.xml",
                 "AssetViewer.Resources.Assets.Farmfield.xml",
+                "AssetViewer.Resources.Assets.FertilizerBaseBuilding.xml",
+                "AssetViewer.Resources.Assets.FertilizerBaseModule.xml",
                 "AssetViewer.Resources.Assets.FreeAreaBuilding.xml",
                 "AssetViewer.Resources.Assets.FreeAreaBuilding_Arctic.xml",
                 "AssetViewer.Resources.Assets.Guildhouse.xml",
                 "AssetViewer.Resources.Assets.HarborBuildingAttacker.xml",
                 "AssetViewer.Resources.Assets.HarborDepot.xml",
                 "AssetViewer.Resources.Assets.HarborLandingStage7.xml",
+                "AssetViewer.Resources.Assets.HarborLandingStage7_BuildPermit.xml",
                 "AssetViewer.Resources.Assets.HarborOffice.xml",
                 "AssetViewer.Resources.Assets.HarborPropObject.xml",
                 "AssetViewer.Resources.Assets.HarborWarehouse7.xml",
@@ -217,6 +212,7 @@ namespace AssetViewer {
                 "AssetViewer.Resources.Assets.HeavyFactoryBuilding.xml",
                 "AssetViewer.Resources.Assets.HeavyFreeAreaBuilding.xml",
                 "AssetViewer.Resources.Assets.HeavyFreeAreaBuilding_Arctic.xml",
+                "AssetViewer.Resources.Assets.IrrigationPropagationSource.xml",
                 "AssetViewer.Resources.Assets.ItemCrafterBuilding.xml",
                 "AssetViewer.Resources.Assets.Market.xml",
                 "AssetViewer.Resources.Assets.Monument.xml",
@@ -230,9 +226,12 @@ namespace AssetViewer {
                 "AssetViewer.Resources.Assets.PowerplantBuilding.xml",
                 "AssetViewer.Resources.Assets.PublicServiceBuilding.xml",
                 "AssetViewer.Resources.Assets.QuestLighthouse.xml",
+                "AssetViewer.Resources.Assets.QuestObjectHarborBuildingAttacker.xml",
                 "AssetViewer.Resources.Assets.RepairCrane.xml",
+                "AssetViewer.Resources.Assets.ResearchCenter.xml",
                 "AssetViewer.Resources.Assets.ResidenceBuilding7.xml",
                 "AssetViewer.Resources.Assets.ResidenceBuilding7_Arctic.xml",
+                "AssetViewer.Resources.Assets.ResidenceBuilding7_BuildPermit.xml",
                 "AssetViewer.Resources.Assets.Shipyard.xml",
                 "AssetViewer.Resources.Assets.SimpleBuilding.xml",
                 "AssetViewer.Resources.Assets.Slot.xml",
