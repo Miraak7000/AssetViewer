@@ -12,7 +12,8 @@ namespace RDA.Data {
 
     public static string[] IgnoredDirectorys { get; set; } = new[] {
       $@"{Program.PathRoot}\Resources\data\ui\2kimages\main\3dicons\Temporary_Ornament",
-      $@"{Program.PathRoot}\Resources\data\level_editor\random_slots_icons"
+      $@"{Program.PathRoot}\Resources\data\level_editor\random_slots_icons",
+      $@"{Program.PathRoot}\Resources\data\ui\2kimages\main\3dicons\ornaments\preorder_ornament_s03"
     };
 
     public string Filename { get; set; }

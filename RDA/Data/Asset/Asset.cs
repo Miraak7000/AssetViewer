@@ -159,6 +159,8 @@ namespace RDA.Data {
           case "WorkAreaRiverSlot":
           case "QuestObjectInfectable":
           case "QuestObjectHarborBuildingAttacker":
+          case "DocklandMain":
+          case "HarborOrnament":
             ItemType = "Building";
             break;
 
@@ -169,6 +171,11 @@ namespace RDA.Data {
           case "PalaceModule":
           case "AdditionalModule":
           case "FertilizerBaseModule":
+          case "DocklandPierModule":
+          case "DocklandItemModule":
+          case "DocklandModule":
+          case "DocklandStorageModule":
+          case "DocklandModuleRepair":
             ItemType = "Module";
             break;
 
@@ -273,8 +280,10 @@ namespace RDA.Data {
           case "Electrifiable":
           case "PalaceMonumentTracker":
           case "BuffFactory":
+          case "Dockland":
           //Maybe usefull Building Informations
           case "InfluenceSource":
+          case "BusActivation":
           //Building influence gain
           case "EffectForward":
           case "MonumentUpgrade":
@@ -1244,6 +1253,10 @@ namespace RDA.Data {
             case "UplayProduct":
             case "ProductStorageList":
             case "IrrigationUpgrade":
+            case "TradeContractFeature": //export import update 10
+            case "PaMSy_Base":
+            case "MaintenanceBarConfig":
+            case "FeatureUnlock":
               // ignore
               break;
 
