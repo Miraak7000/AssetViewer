@@ -161,6 +161,15 @@ namespace RDA.Data {
           case "QuestObjectHarborBuildingAttacker":
           case "DocklandMain":
           case "HarborOrnament":
+          case "ResidenceBuilding":
+          case "PublicServiceBuildingWithBus":
+          case "ResidenceBuilding7_Colony":
+          case "Restaurant":
+          case "TowerRestaurant":
+          case "Multifactory":
+          case "FreeAreaRecipeBuilding":
+          case "Busstop":
+          case "ResidenceBuilding7_Hotel":
             ItemType = "Building";
             break;
 
@@ -205,7 +214,8 @@ namespace RDA.Data {
             break;
 
           default:
-            Debug.WriteLine(asset.Element("Template").Value);
+            Debug.WriteLine(asset.Element("Template").Value); 
+            
             throw new NotImplementedException(asset.Element("Template").Value);
             break;
         }
@@ -281,9 +291,11 @@ namespace RDA.Data {
           case "PalaceMonumentTracker":
           case "BuffFactory":
           case "Dockland":
+          case "Nameable":
           //Maybe usefull Building Informations
           case "InfluenceSource":
           case "BusActivation":
+          case "RecipeBuilding":
           //Building influence gain
           case "EffectForward":
           case "MonumentUpgrade":
@@ -292,6 +304,8 @@ namespace RDA.Data {
           case "Palace":
             //Ministary stuff
 
+          case "FloorStackOwner": //Update 11 nothing inside
+          case "BusStop": //Costs
             break;
 
           case "Standard":
@@ -769,6 +783,7 @@ namespace RDA.Data {
         case "InitializeForestMinTreeAreaPercent":
         case "AllowExclusiveTrading":
         case "WeaponActivationTime":
+        case "Feedback_AllowSpawnAtEntrance":
 
         //Ministary buffs (maybe todo)
         case "ElectricityRangeUpgrade":
@@ -1191,7 +1206,7 @@ namespace RDA.Data {
 
           //Ignores
           if (reference.Name.LocalName is string foundedName &&
-            foundedName.MatchOne("BaseAssetGUID", "Icon", "ItemUsed", "TradePrice", "GenPool", "NotificationIcon", "ReplacingWorkforce", "ProductFilter")) {
+            foundedName.MatchOne("BaseAssetGUID", "Icon", "ItemUsed", "TradePrice", "GenPool", "NotificationIcon", "ReplacingWorkforce", "ProductFilter", "BusNeed", "LineID")) {
             continue;
           }
           if (reference.Parent?.Parent?.Name.LocalName is string gparent &&
@@ -1257,6 +1272,8 @@ namespace RDA.Data {
             case "PaMSy_Base":
             case "MaintenanceBarConfig":
             case "FeatureUnlock":
+            case "GoodValueBalancing":  //Update 11
+            case "Busstop":  //Update 11
               // ignore
               break;
 

@@ -9,7 +9,18 @@
       <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     </A>
     <ISS>
-      <U V="+2" C="CultureUpgrade">
+      <U V="+5%" C="FactoryUpgrade">
+        <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+      </U>
+      <U V="" C="FactoryUpgrade">
+        <T ID="20074" I="data/ui/2kimages/fpp/icons/icon_plus.png" />
+        <AO>
+          <AO V="10 / 1">
+            <T ID="849355765" I="data/ui/2kimages/main/icons/icon_options.png" />
+          </AO>
+        </AO>
+      </U>
+      <U V="+5" C="CultureUpgrade">
         <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
       </U>
     </ISS>
@@ -62,10 +73,10 @@
       <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     </A>
     <ISS>
-      <U V="+2" C="ResidenceUpgrade">
+      <U V="+10" C="ResidenceUpgrade">
         <T ID="12314" I="data/ui/2kimages/main/icons/icon_happy.png" />
       </U>
-      <U V="+5%" C="ResidenceUpgrade">
+      <U V="+10%" C="ResidenceUpgrade">
         <T ID="12677" I="data/ui/2kimages/main/icons/icon_credits.png" />
       </U>
     </ISS>
@@ -121,7 +132,7 @@
     <I ID="15376" />
     <ET>
       <ET>
-        <T ID="191458" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <T ID="191458" I="data/ui/2kimages/main/icons/icon_threat_melee_tint.png" />
         <B>
           <T ID="100437" I="data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png" />
           <T ID="100439" I="data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png" />
@@ -174,7 +185,7 @@
     <I ID="15375" />
     <ET>
       <ET>
-        <T ID="193897" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <T ID="193897" I="data/ui/2kimages/main/3dicons/icon_pier.png" />
         <B>
           <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
           <T ID="100519" I="data/ui/2kimages/main/3dicons/icon_pier.png" />
@@ -272,7 +283,7 @@
     <I ID="15373" />
     <ET>
       <ET>
-        <T ID="191458" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <T ID="191458" I="data/ui/2kimages/main/icons/icon_threat_melee_tint.png" />
         <B>
           <T ID="100437" I="data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png" />
           <T ID="100439" I="data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png" />
@@ -310,8 +321,11 @@
       <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
     </A>
     <ISS>
-      <U V="+5%" C="FactoryUpgrade">
+      <U V="+10%" C="FactoryUpgrade">
         <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+      </U>
+      <U V="-5%" C="BuildingUpgrade">
+        <T ID="2320" I="data/ui/2kimages/main/icons/icon_credits.png" />
       </U>
       <U V="-5%" C="BuildingUpgrade">
         <T ID="12337" I="data/ui/2kimages/main/icons/icon_build_menu.png" />
@@ -402,6 +416,7 @@
         <B>
           <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
           <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+          <T ID="133890" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
         </B>
       </ET>
     </ET>
@@ -489,6 +504,7 @@
         <B>
           <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
           <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+          <T ID="133890" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
         </B>
       </ET>
     </ET>
@@ -692,7 +708,7 @@
     <I ID="22336" />
     <ET>
       <ET>
-        <T ID="193897" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <T ID="193897" I="data/ui/2kimages/main/3dicons/icon_pier.png" />
         <B>
           <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
           <T ID="100519" I="data/ui/2kimages/main/3dicons/icon_pier.png" />
@@ -843,6 +859,7 @@
         <B>
           <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
           <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+          <T ID="133890" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
         </B>
       </ET>
     </ET>
@@ -948,7 +965,7 @@
         </B>
       </ET>
       <ET>
-        <T ID="193778" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <T ID="193778" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
         <B>
           <T ID="1010292" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
           <T ID="1010294" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
@@ -1013,7 +1030,7 @@
     <I ID="22677" />
     <ET>
       <ET>
-        <T ID="193666" I="data/ui/2kimages/main/icons/icon_attractiveness_group.png" />
+        <T ID="193666" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
         <B>
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -1057,7 +1074,7 @@
     <I ID="22242" />
     <ET>
       <ET>
-        <T ID="191458" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <T ID="191458" I="data/ui/2kimages/main/icons/icon_threat_melee_tint.png" />
         <B>
           <T ID="100437" I="data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png" />
           <T ID="100439" I="data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png" />
@@ -1241,7 +1258,7 @@
       <U V="-50%" C="BuildingUpgrade">
         <T ID="2320" I="data/ui/2kimages/main/icons/icon_credits.png" />
       </U>
-      <U V="+10%" C="CultureUpgrade">
+      <U V="+20%" C="CultureUpgrade">
         <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
       </U>
     </ISS>
@@ -1278,6 +1295,9 @@
     <ISS>
       <U V="+2" C="ResidenceUpgrade">
         <T ID="12314" I="data/ui/2kimages/main/icons/icon_happy.png" />
+      </U>
+      <U V="+2" C="CultureUpgrade">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
       </U>
     </ISS>
     <GU />
@@ -1377,7 +1397,7 @@
     <I ID="15367" />
     <ET>
       <ET>
-        <T ID="193897" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <T ID="193897" I="data/ui/2kimages/main/3dicons/icon_pier.png" />
         <B>
           <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
           <T ID="100519" I="data/ui/2kimages/main/3dicons/icon_pier.png" />
@@ -1409,7 +1429,7 @@
       <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
     </A>
     <ISS>
-      <U V="+1" C="CultureUpgrade">
+      <U V="+30" C="CultureUpgrade">
         <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
       </U>
     </ISS>
@@ -1419,23 +1439,17 @@
     <I ID="15365" />
     <ET>
       <ET>
-        <T ID="191501" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <T ID="2346" I="data/ui/2kimages/main/3dicons/icon_guildhouse.png" />
         <B>
-          <T ID="1010349" I="data/ui/2kimages/main/3dicons/icon_pub.png" />
-          <T ID="1010351" I="data/ui/2kimages/main/3dicons/icon_school.png" />
-          <T ID="1010356" I="data/ui/2kimages/main/3dicons/icon_bank.png" />
-          <T ID="1010359" I="data/ui/2kimages/main/3dicons/icon_church.png" />
-          <T ID="1010352" I="data/ui/2kimages/main/3dicons/icon_cabaret.png" />
-          <T ID="1010353" I="data/ui/2kimages/main/3dicons/icon_university.png" />
-          <T ID="1010355" I="data/ui/2kimages/main/3dicons/icon_club_house.png" />
-          <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
-          <T ID="101258" I="data/ui/2kimages/main/3dicons/icon_church.png" />
-          <T ID="101259" I="data/ui/2kimages/main/3dicons/icon_box_arena.png" />
-          <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
-          <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_bazaar.png" />
-          <T ID="114519" I="data/ui/2kimages/main/3dicons/icon_music_plaza.png" />
-          <T ID="114520" I="data/ui/2kimages/main/3dicons/icon_monastery.png" />
-          <T ID="118736" I="data/ui/2kimages/main/3dicons/icon_radio_station.png" />
+          <T ID="2346" I="data/ui/2kimages/main/3dicons/icon_guildhouse.png" />
+          <T ID="2346" I="data/ui/2kimages/main/3dicons/icon_guildhouse.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="2346" I="data/ui/2kimages/main/3dicons/icon_guildhouse.png" />
+        <B>
+          <T ID="2346" I="data/ui/2kimages/main/3dicons/icon_guildhouse.png" />
+          <T ID="2346" I="data/ui/2kimages/main/3dicons/icon_guildhouse.png" />
         </B>
       </ET>
     </ET>
@@ -1457,13 +1471,13 @@
       <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
     </A>
     <ISS>
-      <U V="+5%" C="FactoryUpgrade">
+      <U V="+10%" C="FactoryUpgrade">
         <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
       </U>
       <U V="-10%" C="BuildingUpgrade">
         <T ID="2320" I="data/ui/2kimages/main/icons/icon_credits.png" />
       </U>
-      <U V="-10%" C="BuildingUpgrade">
+      <U V="-5%" C="BuildingUpgrade">
         <T ID="12337" I="data/ui/2kimages/main/icons/icon_build_menu.png" />
       </U>
     </ISS>
@@ -1473,23 +1487,16 @@
     <I ID="15364" />
     <ET>
       <ET>
-        <T ID="190779" I="data/ui/2kimages/main/3dicons/icon_fish.png" />
+        <T ID="193400" I="data/ui/2kimages/main/3dicons/icon_rich_sea.png" />
         <B>
           <T ID="1010278" I="data/ui/2kimages/main/3dicons/icon_fish.png" />
-          <T ID="101262" I="data/ui/2kimages/main/3dicons/icon_fishoil.png" />
-          <T ID="118729" I="data/ui/2kimages/main/3dicons/goods_africa/icon_seafood.png" />
-        </B>
-      </ET>
-      <ET>
-        <T ID="1010339" I="data/ui/2kimages/main/3dicons/icon_pearls.png" />
-        <B>
+          <T ID="1010310" I="data/ui/2kimages/main/3dicons/icon_niter.png" />
+          <T ID="1010560" I="data/ui/2kimages/main/3dicons/icon_quartz_sand.png" />
           <T ID="1010339" I="data/ui/2kimages/main/3dicons/icon_pearls.png" />
-        </B>
-      </ET>
-      <ET>
-        <T ID="101262" I="data/ui/2kimages/main/3dicons/icon_fishoil.png" />
-        <B>
           <T ID="101262" I="data/ui/2kimages/main/3dicons/icon_fishoil.png" />
+          <T ID="1010310" I="data/ui/2kimages/main/3dicons/icon_niter.png" />
+          <T ID="114440" I="data/ui/2kimages/main/3dicons/goods_africa/icon_salt.png" />
+          <T ID="118729" I="data/ui/2kimages/main/3dicons/goods_africa/icon_seafood.png" />
         </B>
       </ET>
     </ET>
@@ -1508,7 +1515,7 @@
       <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
     </A>
     <ISS>
-      <U V="+5%" C="CultureUpgrade">
+      <U V="+10%" C="CultureUpgrade">
         <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
       </U>
     </ISS>
@@ -1658,7 +1665,7 @@
     <I ID="124912" />
     <ET>
       <ET>
-        <T ID="193897" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <T ID="193897" I="data/ui/2kimages/main/3dicons/icon_pier.png" />
         <B>
           <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
           <T ID="100519" I="data/ui/2kimages/main/3dicons/icon_pier.png" />
@@ -1792,7 +1799,7 @@
         </B>
       </ET>
       <ET>
-        <T ID="2346" I="data/ui/2kimages/main/3dicons/icon_townhall.png" />
+        <T ID="2346" I="data/ui/2kimages/main/3dicons/icon_guildhouse.png" />
         <B>
           <T ID="2346" I="data/ui/2kimages/main/3dicons/icon_guildhouse.png" />
           <T ID="2346" I="data/ui/2kimages/main/3dicons/icon_guildhouse.png" />
@@ -1958,7 +1965,7 @@
     <I ID="124202" />
     <ET>
       <ET>
-        <T ID="193400" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <T ID="193400" I="data/ui/2kimages/main/3dicons/icon_rich_sea.png" />
         <B>
           <T ID="1010278" I="data/ui/2kimages/main/3dicons/icon_fish.png" />
           <T ID="1010310" I="data/ui/2kimages/main/3dicons/icon_niter.png" />
@@ -2004,7 +2011,7 @@
     <I ID="124201" />
     <ET>
       <ET>
-        <T ID="190775" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <T ID="190775" I="data/ui/2kimages/main/3dicons/icon_fire_house.png" />
         <B>
           <T ID="1010463" I="data/ui/2kimages/main/3dicons/icon_fire_house.png" />
           <T ID="1010463" I="data/ui/2kimages/main/3dicons/icon_fire_house.png" />
@@ -2099,7 +2106,7 @@
     <I ID="22353" />
     <ET>
       <ET>
-        <T ID="190777" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <T ID="190777" I="data/ui/2kimages/main/3dicons/icon_hospital.png" />
         <B>
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/icon_hospital.png" />
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/icon_hospital.png" />

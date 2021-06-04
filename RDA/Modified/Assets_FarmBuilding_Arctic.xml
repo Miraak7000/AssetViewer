@@ -1,17 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <FarmBuilding_Arctic>
-  <Asset ID="112682" RV="Update 06" RT="Common" IP="true">
-    <N>agriculture_arctic_05 (Husky Farm)</N>
-    <T ID="112682" I="data/ui/2kimages/main/3dicons/animals/icon_husky.png" />
+  <Asset ID="112690" RV="Update 06" RT="Common" IP="true">
+    <N>mining_arctic_01 (Gas Mine)</N>
+    <T ID="112690" I="data/ui/2kimages/main/3dicons/icon_gas_red.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
     <BC>
-      <U V="3000">
+      <U V="8000">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
       <U V="20">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="5">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
       </U>
     </BC>
     <GU>
@@ -22,26 +25,26 @@
     <TP />
     <HF />
     <I ID="11143" />
-    <FB CT="120">
+    <FB CT="270">
       <FO>
         <U V="1 / 1">
-          <T ID="112698" I="data/ui/2kimages/main/3dicons/animals/icon_husky.png" />
+          <T ID="112706" I="data/ui/2kimages/main/3dicons/icon_gas_red.png" />
         </U>
       </FO>
     </FB>
     <M>
       <MC>
-        <U V="150 / 75">
+        <U V="1000 / 500">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
-        <U V="80">
+        <U V="250">
           <T ID="112654" I="data/ui/2kimages/main/icons/icon_ressource_technican.png" />
         </U>
       </MC>
     </M>
-    <Mo L="4">
+    <Mo>
       <PM>
-        <M ID="112683" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+        <M ID="113751" I="data/ui/2kimages/main/3dicons/icon_gas_red.png" />
       </PM>
     </Mo>
   </Asset>
@@ -90,21 +93,18 @@
       </PM>
     </Mo>
   </Asset>
-  <Asset ID="112690" RV="Update 06" RT="Common" IP="true">
-    <N>mining_arctic_01 (Gas Mine)</N>
-    <T ID="112690" I="data/ui/2kimages/main/3dicons/icon_gas_red.png" />
+  <Asset ID="112682" RV="Update 06" RT="Common" IP="true">
+    <N>agriculture_arctic_05 (Husky Farm)</N>
+    <T ID="112682" I="data/ui/2kimages/main/3dicons/animals/icon_husky.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
     <BC>
-      <U V="8000">
+      <U V="3000">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
       <U V="20">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="5">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
       </U>
     </BC>
     <GU>
@@ -115,26 +115,26 @@
     <TP />
     <HF />
     <I ID="11143" />
-    <FB CT="270">
+    <FB CT="120">
       <FO>
         <U V="1 / 1">
-          <T ID="112706" I="data/ui/2kimages/main/3dicons/icon_gas_red.png" />
+          <T ID="112698" I="data/ui/2kimages/main/3dicons/animals/icon_husky.png" />
         </U>
       </FO>
     </FB>
     <M>
       <MC>
-        <U V="1000 / 500">
+        <U V="150 / 75">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
-        <U V="250">
+        <U V="80">
           <T ID="112654" I="data/ui/2kimages/main/icons/icon_ressource_technican.png" />
         </U>
       </MC>
     </M>
-    <Mo>
+    <Mo L="4">
       <PM>
-        <M ID="113751" I="data/ui/2kimages/main/3dicons/icon_gas_red.png" />
+        <M ID="112683" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
       </PM>
     </Mo>
   </Asset>

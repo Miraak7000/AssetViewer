@@ -229,7 +229,6 @@ namespace AssetViewer {
                 "AssetViewer.Resources.Assets.QuestObjectHarborBuildingAttacker.xml",
                 "AssetViewer.Resources.Assets.RepairCrane.xml",
                 "AssetViewer.Resources.Assets.ResearchCenter.xml",
-                "AssetViewer.Resources.Assets.ResidenceBuilding7.xml",
                 "AssetViewer.Resources.Assets.ResidenceBuilding7_Arctic.xml",
                 "AssetViewer.Resources.Assets.ResidenceBuilding7_BuildPermit.xml",
                 "AssetViewer.Resources.Assets.Shipyard.xml",
@@ -244,9 +243,27 @@ namespace AssetViewer {
                 "AssetViewer.Resources.Assets.Warehouse.xml",
                 "AssetViewer.Resources.Assets.WorkAreaSlot.xml",
                 "AssetViewer.Resources.Assets.WorkforceConnector.xml",
+                "AssetViewer.Resources.Assets.Busstop.xml",
+                "AssetViewer.Resources.Assets.DocklandItemModule.xml",
+                "AssetViewer.Resources.Assets.DocklandMain.xml",
+                "AssetViewer.Resources.Assets.DocklandModule.xml",
+                "AssetViewer.Resources.Assets.DocklandModuleRepair.xml",
+                "AssetViewer.Resources.Assets.DocklandPierModule.xml",
+                "AssetViewer.Resources.Assets.DocklandStorageModule.xml",
+                "AssetViewer.Resources.Assets.FreeAreaRecipeBuilding.xml",
+                "AssetViewer.Resources.Assets.QuestObjectInfectable.xml",
+                "AssetViewer.Resources.Assets.HarborOrnament.xml",
+                "AssetViewer.Resources.Assets.Multifactory.xml",
+                "AssetViewer.Resources.Assets.PublicServiceBuildingWithBus.xml",
+                "AssetViewer.Resources.Assets.ResidenceBuilding.xml",
+                "AssetViewer.Resources.Assets.ResidenceBuilding7_Colony.xml",
+                "AssetViewer.Resources.Assets.ResidenceBuilding7_Hotel.xml",
+                "AssetViewer.Resources.Assets.Restaurant.xml",
+                "AssetViewer.Resources.Assets.TowerRestaurant.xml",
       };
 
       foreach (var str in buildings) {
+        Debug.WriteLine(str);
         using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(str))
         using (var reader = new StreamReader(stream)) {
           var document = XDocument.Parse(reader.ReadToEnd()).Root;
