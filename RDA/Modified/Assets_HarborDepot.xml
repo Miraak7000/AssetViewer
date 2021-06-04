@@ -1,80 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HarborDepot>
-  <Asset ID="100782" RV="Release" RT="Common">
-    <N>harbor_13 (Coal Storage)</N>
-    <T ID="100782" I="data/ui/2kimages/main/3dicons/icon_coal_storage.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="2500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="8">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="15">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="12">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="10">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-      <U V="10">
-        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="+200">
-        <T ID="22426" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="10950" />
-    <M>
-      <MC>
-        <U V="10 / 10">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="1010519" RV="Release" RT="Common">
-    <N>harbor_01 (Depot)</N>
-    <T ID="1010519" I="data/ui/2kimages/main/3dicons/icon_depot.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC>
-      <U V="2500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="10">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="+50">
-        <T ID="22426" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="2981" />
-    <M>
-      <MC>
-        <U V="20 / 20">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
   <Asset ID="117870" RV="Update 09" RT="Common">
     <N>depot_africa</N>
     <T ID="1010519" I="data/ui/2kimages/main/3dicons/icon_depot.png" />
@@ -155,7 +80,7 @@
     <T ID="1010519" I="data/ui/2kimages/main/3dicons/icon_depot.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
     <BC>
       <U V="2500">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
@@ -188,7 +113,7 @@
     <T ID="100784" I="data/ui/2kimages/main/3dicons/icon_oil_storage.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
     <BC>
       <U V="8000">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
@@ -220,6 +145,81 @@
     <M>
       <MC>
         <U V="50 / 50">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="100782" RV="Release" RT="Common">
+    <N>harbor_13 (Coal Storage)</N>
+    <T ID="100782" I="data/ui/2kimages/main/3dicons/icon_coal_storage.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="2500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="8">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="15">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="12">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="10">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="10">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="+200">
+        <T ID="22426" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="10950" />
+    <M>
+      <MC>
+        <U V="10 / 10">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="1010519" RV="Release" RT="Common">
+    <N>harbor_01 (Depot)</N>
+    <T ID="1010519" I="data/ui/2kimages/main/3dicons/icon_depot.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="2500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="10">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="+50">
+        <T ID="22426" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="2981" />
+    <M>
+      <MC>
+        <U V="20 / 20">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
       </MC>
@@ -263,7 +263,7 @@
     <T ID="100784" I="data/ui/2kimages/main/3dicons/icon_oil_storage.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
     <BC>
       <U V="8000">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />

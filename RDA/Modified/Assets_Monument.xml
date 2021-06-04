@@ -1,20 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Monument>
-  <Asset ID="101951" RV="Release" RT="Common">
-    <N>CourtOfJustice_01_01</N>
-    <T ID="101951" I="data/ui/2kimages/main/3dicons/campaign/icon_court_of_justice.png" />
+  <Asset ID="1010491" RV="Release" RT="Common">
+    <N>monument_01_03</N>
+    <T ID="1010491" I="data/ui/2kimages/main/3dicons/icon_world_fair_2.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
     <BC>
-      <U V="50000">
+      <U V="300000">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
-      <U V="100">
+      <U V="250">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
-      <U V="80">
+      <U V="500">
         <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="310">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="450">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="300">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+      <U V="300">
+        <T ID="1010231" I="data/ui/2kimages/main/3dicons/icon_cement.png" />
+      </U>
+      <U V="150">
+        <T ID="1010224" I="data/ui/2kimages/main/3dicons/icon_steam_machine.png" />
+      </U>
+      <U V="150">
+        <T ID="174240728" I="data/ui/2kimages/main/3dicons/icon_inlay.png" />
       </U>
     </BC>
     <GU />
@@ -23,22 +41,181 @@
     <I ID="100027" />
     <FB CT="60">
       <FI>
-        <U V="10 / 100">
+        <U V="10 / 300">
+          <T ID="1010243" I="data/ui/2kimages/main/3dicons/icon_carbon_filament.png" />
+        </U>
+        <U V="5 / 150">
+          <T ID="1010208" I="data/ui/2kimages/main/3dicons/icon_light_bulb.png" />
+        </U>
+        <U V="10 / 300">
+          <T ID="1010255" I="data/ui/2kimages/main/3dicons/icon_caoutchouc.png" />
+        </U>
+      </FI>
+    </FB>
+    <M>
+      <MC>
+        <U V="2000">
+          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
+        </U>
+      </MC>
+    </M>
+    <UT ID="2034961775" />
+  </Asset>
+  <Asset ID="101336" RV="Release" RT="Common">
+    <N>monument_01_02</N>
+    <T ID="101336" I="data/ui/2kimages/main/3dicons/icon_world_fair_2.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="300000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="250">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="500">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="310">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="150">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="300">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+      <U V="300">
+        <T ID="1010231" I="data/ui/2kimages/main/3dicons/icon_cement.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="100027" />
+    <FB CT="60">
+      <FI>
+        <U V="10 / 300">
+          <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+        </U>
+        <U V="5 / 150">
+          <T ID="1010224" I="data/ui/2kimages/main/3dicons/icon_steam_machine.png" />
+        </U>
+        <U V="5 / 150">
+          <T ID="174240728" I="data/ui/2kimages/main/3dicons/icon_inlay.png" />
+        </U>
+      </FI>
+    </FB>
+    <M>
+      <MC>
+        <U V="1500">
+          <T ID="1010116" I="data/ui/2kimages/main/icons/icon_resource_merchants_2.png" />
+        </U>
+      </MC>
+    </M>
+    <UT ID="-1752827957" />
+  </Asset>
+  <Asset ID="1010490" RV="Release" RT="Common">
+    <N>monument_01_01</N>
+    <T ID="1010490" I="data/ui/2kimages/main/3dicons/icon_world_fair_2.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="300000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="250">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="200">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="160">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="150">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="150">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="100027" />
+    <FB CT="60">
+      <FI>
+        <U V="5 / 150">
+          <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+        </U>
+        <U V="5 / 150">
+          <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+        </U>
+        <U V="10 / 300">
+          <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+        </U>
+      </FI>
+    </FB>
+    <M>
+      <MC>
+        <U V="1000">
+          <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
+        </U>
+      </MC>
+    </M>
+    <UT ID="-458491787" />
+  </Asset>
+  <Asset ID="1010489" RV="Release" RT="Common">
+    <N>monument_01_00</N>
+    <T ID="1010489" I="data/ui/2kimages/main/3dicons/icon_world_fair_2.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="300000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="100">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="200">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="160">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="150">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="150">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="100027" />
+    <FB CT="60">
+      <FI>
+        <U V="5 / 150">
           <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
         </U>
-        <U V="5 / 50">
-          <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+        <U V="10 / 300">
+          <T ID="1010231" I="data/ui/2kimages/main/3dicons/icon_cement.png" />
         </U>
       </FI>
     </FB>
     <M>
       <MC>
         <U V="500">
-          <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
+          <T ID="1010052" I="data/ui/2kimages/main/icons/icon_resource_farmer_2.png" />
         </U>
       </MC>
     </M>
-    <UT ID="-501356459" />
+    <UT ID="661871586" />
   </Asset>
   <Asset ID="101135" RV="Release" RT="Common">
     <N>CO_Tunnel_Final</N>
@@ -145,11 +322,45 @@
   </Asset>
   <Asset ID="1010492" RV="Release" RT="Common">
     <N>monument_01_04</N>
-    <T ID="1010492" I="data/ui/2kimages/main/3dicons/icon_world_fair_2.png" />
+    <T ID="133536" I="data/ui/2kimages/main/3dicons/icon_world_fair_2.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC />
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="300000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="250">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="500">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="310">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="450">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="300">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+      <U V="300">
+        <T ID="1010231" I="data/ui/2kimages/main/3dicons/icon_cement.png" />
+      </U>
+      <U V="150">
+        <T ID="1010224" I="data/ui/2kimages/main/3dicons/icon_steam_machine.png" />
+      </U>
+      <U V="150">
+        <T ID="174240728" I="data/ui/2kimages/main/3dicons/icon_inlay.png" />
+      </U>
+      <U V="300">
+        <T ID="1010243" I="data/ui/2kimages/main/3dicons/icon_carbon_filament.png" />
+      </U>
+      <U V="300">
+        <T ID="1010255" I="data/ui/2kimages/main/3dicons/icon_caoutchouc.png" />
+      </U>
+    </BC>
     <GU>
       <U V="+150" C="Culture">
         <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
@@ -161,63 +372,12 @@
     <FB />
     <M />
   </Asset>
-  <Asset ID="1010491" RV="Release" RT="Common">
-    <N>monument_01_03</N>
-    <T ID="1010491" I="data/ui/2kimages/main/3dicons/icon_world_fair_2.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC />
-    <GU />
-    <TP />
-    <HF />
-    <I ID="100027" />
-    <FB CT="60">
-      <FI>
-        <U V="10 / 300">
-          <T ID="-545295425" I="data/ui/2kimages/main/3dicons/icon_carbon_filament.png" />
-        </U>
-        <U V="5 / 150">
-          <T ID="1010208" I="data/ui/2kimages/main/3dicons/icon_light_bulb.png" />
-        </U>
-        <U V="10 / 300">
-          <T ID="1010255" I="data/ui/2kimages/main/3dicons/icon_caoutchouc.png" />
-        </U>
-      </FI>
-    </FB>
-    <M>
-      <MC>
-        <U V="2000">
-          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
-        </U>
-      </MC>
-    </M>
-    <UT ID="2034961775" />
-  </Asset>
-  <Asset ID="101952" RV="Release" RT="Common">
-    <N>CourtOfJustice_01_04</N>
-    <T ID="101952" I="data/ui/2kimages/main/3dicons/campaign/icon_court_of_justice.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC />
-    <GU>
-      <U V="+100" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="15535" />
-    <FB />
-    <M />
-  </Asset>
   <Asset ID="102035" RV="Release" RT="Common">
     <N>CourtOfJustice_01_03</N>
     <T ID="102035" I="data/ui/2kimages/main/3dicons/campaign/icon_court_of_justice.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
     <BC />
     <GU />
     <TP />
@@ -247,7 +407,7 @@
     <T ID="101953" I="data/ui/2kimages/main/3dicons/campaign/icon_court_of_justice.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
     <BC />
     <GU />
     <TP />
@@ -272,96 +432,21 @@
     </M>
     <UT ID="-673862289" />
   </Asset>
-  <Asset ID="101336" RV="Release" RT="Common">
-    <N>monument_01_02</N>
-    <T ID="101336" I="data/ui/2kimages/main/3dicons/icon_world_fair_2.png" />
+  <Asset ID="101951" RV="Release" RT="Common">
+    <N>CourtOfJustice_01_01</N>
+    <T ID="101951" I="data/ui/2kimages/main/3dicons/campaign/icon_court_of_justice.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC />
-    <GU />
-    <TP />
-    <HF />
-    <I ID="100027" />
-    <FB CT="60">
-      <FI>
-        <U V="10 / 300">
-          <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-        </U>
-        <U V="5 / 150">
-          <T ID="1010224" I="data/ui/2kimages/main/3dicons/icon_steam_machine.png" />
-        </U>
-        <U V="5 / 150">
-          <T ID="174240728" I="data/ui/2kimages/main/3dicons/icon_inlay.png" />
-        </U>
-      </FI>
-    </FB>
-    <M>
-      <MC>
-        <U V="1500">
-          <T ID="1010116" I="data/ui/2kimages/main/icons/icon_resource_merchants_2.png" />
-        </U>
-      </MC>
-    </M>
-    <UT ID="-1752827957" />
-  </Asset>
-  <Asset ID="1010490" RV="Release" RT="Common">
-    <N>monument_01_01</N>
-    <T ID="1010490" I="data/ui/2kimages/main/3dicons/icon_world_fair_2.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
-    <BC />
-    <GU />
-    <TP />
-    <HF />
-    <I ID="100027" />
-    <FB CT="60">
-      <FI>
-        <U V="5 / 150">
-          <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
-        </U>
-        <U V="5 / 150">
-          <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-        </U>
-        <U V="10 / 300">
-          <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-        </U>
-      </FI>
-    </FB>
-    <M>
-      <MC>
-        <U V="1000">
-          <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
-        </U>
-      </MC>
-    </M>
-    <UT ID="-458491787" />
-  </Asset>
-  <Asset ID="1010489" RV="Release" RT="Common">
-    <N>monument_01_00</N>
-    <T ID="1010489" I="data/ui/2kimages/main/3dicons/icon_world_fair_2.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
     <BC>
-      <U V="300000">
+      <U V="50000">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
       <U V="100">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
-      <U V="200">
+      <U V="80">
         <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="160">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="150">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-      <U V="150">
-        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
       </U>
     </BC>
     <GU />
@@ -370,21 +455,134 @@
     <I ID="100027" />
     <FB CT="60">
       <FI>
-        <U V="5 / 150">
+        <U V="10 / 100">
           <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
         </U>
-        <U V="10 / 300">
-          <T ID="1010231" I="data/ui/2kimages/main/3dicons/icon_cement.png" />
+        <U V="5 / 50">
+          <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
         </U>
       </FI>
     </FB>
     <M>
       <MC>
         <U V="500">
-          <T ID="1010052" I="data/ui/2kimages/main/icons/icon_resource_farmer_2.png" />
+          <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
         </U>
       </MC>
     </M>
-    <UT ID="661871586" />
+    <UT ID="-501356459" />
+  </Asset>
+  <Asset ID="132766" RV="Update 11" RT="Common">
+    <N>Tourist_monument_01</N>
+    <T ID="132766" I="data/ui/2kimages/main/3dicons/icon_eiffel_tower.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="100000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="110">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="40">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="30">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="30">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="30">
+        <T ID="1010231" I="data/ui/2kimages/main/3dicons/icon_cement.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="133587" />
+    <FB CT="60">
+      <FI>
+        <U V="2 / 60">
+          <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+        </U>
+        <U V="5 / 150">
+          <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+        </U>
+      </FI>
+    </FB>
+    <M>
+      <MC>
+        <U V="500">
+          <T ID="1010116" I="data/ui/2kimages/main/icons/icon_resource_merchants_2.png" />
+        </U>
+      </MC>
+    </M>
+    <UT ID="-348877566" />
+  </Asset>
+  <Asset ID="132765" RV="Update 11" RT="Common">
+    <N>Tourist_monument_00</N>
+    <T ID="132765" I="data/ui/2kimages/main/3dicons/icon_eiffel_tower.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="100000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="50">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="40">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="30">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="30">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="133587" />
+    <FB CT="60">
+      <FI>
+        <U V="2 / 60">
+          <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+        </U>
+        <U V="1 / 30">
+          <T ID="1010231" I="data/ui/2kimages/main/3dicons/icon_cement.png" />
+        </U>
+      </FI>
+    </FB>
+    <M>
+      <MC>
+        <U V="300">
+          <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
+        </U>
+      </MC>
+    </M>
+    <UT ID="-893164920" />
+  </Asset>
+  <Asset ID="101952" RV="Release" RT="Common">
+    <N>CourtOfJustice_01_04</N>
+    <T ID="101952" I="data/ui/2kimages/main/3dicons/campaign/icon_court_of_justice.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC />
+    <GU>
+      <U V="+100" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="15535" />
+    <FB />
+    <M />
   </Asset>
 </Monument>
