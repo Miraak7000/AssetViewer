@@ -350,6 +350,15 @@ namespace RDA {
       KeyToIdDict.Add("PerkFemale", "15798");
       KeyToIdDict.Add("PerkMale", "15797");
       KeyToIdDict.Add("PerkSteamShip", "15795");
+      KeyToIdDict.Add("PerkFormerPirate", "3930");
+      KeyToIdDict.Add("PerkDiver", "3931");
+      KeyToIdDict.Add("PerkZoologist", "9998");
+      KeyToIdDict.Add("PerkPolyglot", "12266");
+      KeyToIdDict.Add("PerkHypnotist", "3929");
+      KeyToIdDict.Add("PerkAnthropologist", "3928");
+      KeyToIdDict.Add("PerkJackOfAllTraits", "12260");
+      KeyToIdDict.Add("PerkArcheologist", "12262");
+
       KeyToIdDict.Add("AttractivenessUpgrade", "145011");
       KeyToIdDict.Add("MaintenanceUpgrade", "2320");
       KeyToIdDict.Add("WorkforceAmountUpgrade", "12337");
@@ -412,7 +421,6 @@ namespace RDA {
       KeyToIdDict.Add("IncidentFireIncreaseUpgrade", "12225");
       KeyToIdDict.Add("IncidentExplosionIncreaseUpgrade", "21489");
       KeyToIdDict.Add("GoodConsumptionUpgrade", "21386");
-
       KeyToIdDict.Add("LoadingSpeedUpgrade", "15197");
       KeyToIdDict.Add("ActionDuration", "2423");
       KeyToIdDict.Add("ActionCooldown", "2424");

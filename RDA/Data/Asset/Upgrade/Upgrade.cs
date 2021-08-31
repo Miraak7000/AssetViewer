@@ -29,7 +29,7 @@ namespace RDA.Data {
 
     public Upgrade(XElement element) {
       var isPercent = element.Element("Percental")?.Value == "1";
-      var value = element.Element("Value") == null ? null : (int?)int.Parse(element.Element("Value").Value);
+      float? value = element.Element("Value") == null ? null : (float?)float.Parse(element.Element("Value").Value);
       var factor = 1;
       if (Assets.KeyToIdDict.ContainsKey(element.Name.LocalName)) {
         Text = new Description(Assets.KeyToIdDict[element.Name.LocalName]);
@@ -60,7 +60,7 @@ namespace RDA.Data {
             .Elements("Item")
             .Select(i => new Description(i.Element("ItemLink").Value));
           Text.AdditionalInformation.Replace("[ItemAssetData([RefGuid]) GoodGenerationPoolFormatted]", items, (s) => string.Join(", ", s));
-          value = Convert.ToInt32(element.Element("GenProbability").Value);
+          value = Convert.ToSingle(element.Element("GenProbability").Value);
           isPercent = true;
           break;
 
@@ -225,7 +225,7 @@ namespace RDA.Data {
 
         case "ActiveTradePriceInPercent":
           if (value == null && !element.HasElements) {
-            value = int.Parse(element.Value);
+            value = Single.Parse(element.Value);
             if (value < 100) {
               value = -(100 - value);
             }
@@ -248,7 +248,7 @@ namespace RDA.Data {
 
         case "AttackSpeedUpgrade":
           if (value == null) {
-            value = element.Value == null ? null : (int?)int.Parse(element.Value);
+            value = element.Value == null ? null : (int?)Single.Parse(element.Value);
           }
           isPercent = true;
           break;
@@ -317,19 +317,19 @@ namespace RDA.Data {
 
         case "Building":
           Text = new Description("17394");
-          value = Convert.ToInt32((decimal.Parse(element.Element("Factor").Value, System.Globalization.CultureInfo.InvariantCulture) * 100) - 100);
+          value = Convert.ToSingle((decimal.Parse(element.Element("Factor").Value, System.Globalization.CultureInfo.InvariantCulture) * 100) - 100);
           isPercent = true;
           break;
 
         case "SailShip":
           Text = new Description("17395");
-          value = Convert.ToInt32((decimal.Parse(element.Element("Factor").Value, System.Globalization.CultureInfo.InvariantCulture) * 100) - 100);
+          value = Convert.ToSingle((decimal.Parse(element.Element("Factor").Value, System.Globalization.CultureInfo.InvariantCulture) * 100) - 100);
           isPercent = true;
           break;
 
         case "SteamShip":
           Text = new Description("17396");
-          value = Convert.ToInt32((decimal.Parse(element.Element("Factor").Value, System.Globalization.CultureInfo.InvariantCulture) * 100) - 100);
+          value = Convert.ToSingle((decimal.Parse(element.Element("Factor").Value, System.Globalization.CultureInfo.InvariantCulture) * 100) - 100);
           isPercent = true;
           break;
 
@@ -354,7 +354,7 @@ namespace RDA.Data {
         case "Cannon":
         case "BigBertha":
         case "Torpedo":
-          value = -Convert.ToInt32(100M - (100M * decimal.Parse(element.Element("Factor").Value, CultureInfo.InvariantCulture)));
+          value = -Convert.ToSingle(100f - (100f * float.Parse(element.Element("Factor").Value, CultureInfo.InvariantCulture)));
           isPercent = true;
           break;
 
@@ -363,7 +363,7 @@ namespace RDA.Data {
         case "ConstructionCostInPercent":
         case "TaxModifierInPercent":
         case "WorkforceModifierInPercent":
-          value = int.Parse(element.Value);
+          value = float.Parse(element.Value);
           isPercent = true;
           break;
 
@@ -442,7 +442,7 @@ namespace RDA.Data {
         case "MaxTrainCount":
         case "StorageCapacityModifier":
         case "AdditionalResearch":
-          value = int.Parse(element.Value);
+          value = float.Parse(element.Value);
           break;
 
         case "OverrideSpecialistPool":

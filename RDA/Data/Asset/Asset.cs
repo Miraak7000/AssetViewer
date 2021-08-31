@@ -170,6 +170,10 @@ namespace RDA.Data {
           case "FreeAreaRecipeBuilding":
           case "Busstop":
           case "ResidenceBuilding7_Hotel":
+          case "CultureBuildingColony":
+          case "VisitorPierColony":
+          case "Mall":
+          case "ResidenceBuilding-Unique":
             ItemType = "Building";
             break;
 
@@ -1274,6 +1278,10 @@ namespace RDA.Data {
             case "FeatureUnlock":
             case "GoodValueBalancing":  //Update 11
             case "Busstop":  //Update 11
+            case "ResidenceBuilding":  //Update 12
+            case "TowerRestaurant":  //Update 12
+            case "ObjectmenuResidenceScene":  //Update 12
+            case "Mall":  //Update 12
               // ignore
               break;
 

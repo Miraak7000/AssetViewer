@@ -34,6 +34,9 @@ namespace RDA.Data {
           return;
         }
         //throw new NotImplementedException();
+
+      }
+      if (fileNames.Length == 0) {
         Debug.WriteLine($"Picture Missing: {searchPath} {searchPattern}");
         return;
       }

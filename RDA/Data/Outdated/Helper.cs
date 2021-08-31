@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Xml;
@@ -42,6 +43,14 @@ namespace RDA {
             xmlWriter.WriteEndElement();
           }
         }
+      }
+    }
+
+    internal static void ExtractItemTemplates(string path) {
+      var element = XDocument.Load(path).Root;
+      foreach (var item in Assets.Original.Descendants("Asset").Where(a => a.XPathSelectElement("Values/Item") != null).Select(a => a.Element("Template")?.Value).Distinct()) {
+        Debug.WriteLine(item);
+
       }
     }
 

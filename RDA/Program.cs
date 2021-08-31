@@ -33,8 +33,9 @@ namespace RDA {
       //Helper.ExtractTextGerman(Program.PathRoot + @"\Original\texts_german.xml");
       //Helper.ExtractText();
       //Helper.ExtractTemplateNames(Program.PathRoot + @"\Original\assets.xml");
+      //Helper.ExtractItemTemplates(Program.PathRoot + @"\Original\assets.xml");
 
-      Assets.Init("Update 11");
+      Assets.Init("Update 12");
 
       // World Fair
       Monument.Create();
