@@ -1,368 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <FarmBuilding>
-  <Asset ID="100655" RV="Release" RT="Common" IP="true">
-    <N>agriculture_10 (Vineyard)</N>
-    <T ID="100655" I="data/ui/2kimages/main/3dicons/icon_grapes.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="8000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Motorizable">
-        <T ID="269841" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="120">
-      <FO>
-        <U V="1 / 1">
-          <T ID="120014" I="data/ui/2kimages/main/3dicons/icon_grapes.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="200 / 100">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="10">
-          <T ID="1010052" I="data/ui/2kimages/main/icons/icon_resource_farmer_2.png" />
-        </U>
-      </MC>
-    </M>
-    <Mo L="128">
-      <PM>
-        <M ID="100657" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
-      </PM>
-    </Mo>
-  </Asset>
-  <Asset ID="100654" RV="Release" RT="Common" IP="true">
-    <N>agriculture_11 (Bell Pepper Farm)</N>
-    <T ID="100654" I="data/ui/2kimages/main/3dicons/icon_pepper.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="2000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="6">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Motorizable">
-        <T ID="269841" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="120">
-      <FO>
-        <U V="1 / 1">
-          <T ID="1010198" I="data/ui/2kimages/main/3dicons/icon_pepper.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="100 / 50">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="10">
-          <T ID="1010052" I="data/ui/2kimages/main/icons/icon_resource_farmer_2.png" />
-        </U>
-      </MC>
-    </M>
-    <Mo L="108">
-      <PM>
-        <M ID="100656" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
-      </PM>
-    </Mo>
-  </Asset>
-  <Asset ID="1010269" RV="Release" RT="Common" IP="true">
-    <N>agriculture_08 (Pig Farm)</N>
-    <T ID="1010269" I="data/ui/2kimages/main/3dicons/icon_pigs.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="4">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="-3" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-      <U V="" C="Motorizable">
-        <T ID="269957" I="data/ui/2kimages/main/3dicons/icon_silo.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="60">
-      <FO>
-        <U V="1 / 4">
-          <T ID="1010199" I="data/ui/2kimages/main/3dicons/icon_pigs.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="40 / 20">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="30">
-          <T ID="1010052" I="data/ui/2kimages/main/icons/icon_resource_farmer_2.png" />
-        </U>
-      </MC>
-    </M>
-    <Mo L="5">
-      <PM>
-        <M ID="1010277" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
-      </PM>
-    </Mo>
-  </Asset>
-  <Asset ID="1010267" RV="Release" RT="Common" IP="true">
-    <N>agriculture_06 (Sheep Farm)</N>
-    <T ID="1010267" I="data/ui/2kimages/main/3dicons/icon_wool.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="100">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="2">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Motorizable">
-        <T ID="269957" I="data/ui/2kimages/main/3dicons/icon_silo.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB>
-      <FO>
-        <U V="1 / 4">
-          <T ID="1010197" I="data/ui/2kimages/main/3dicons/icon_wool.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="20 / 10">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="10">
-          <T ID="1010052" I="data/ui/2kimages/main/icons/icon_resource_farmer_2.png" />
-        </U>
-      </MC>
-    </M>
-    <Mo L="3">
-      <PM>
-        <M ID="1010275" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
-      </PM>
-    </Mo>
-  </Asset>
-  <Asset ID="1010265" RV="Release" RT="Common" IP="true">
-    <N>agriculture_04 (Potato Farm)</N>
-    <T ID="1010265" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="100">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="2">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Motorizable">
-        <T ID="269841" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB>
-      <FO>
-        <U V="1 / 4">
-          <T ID="-539228491" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="20 / 10">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="20">
-          <T ID="1010052" I="data/ui/2kimages/main/icons/icon_resource_farmer_2.png" />
-        </U>
-      </MC>
-    </M>
-    <Mo L="72">
-      <PM>
-        <M ID="1010273" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
-      </PM>
-    </Mo>
-  </Asset>
-  <Asset ID="1010264" RV="Release" RT="Common" IP="true">
-    <N>agriculture_03 (Hop Farm)</N>
-    <T ID="1010264" I="data/ui/2kimages/main/3dicons/icon_hops.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="4">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Motorizable">
-        <T ID="269841" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="90">
-      <FO>
-        <U V="1 / 1">
-          <T ID="-1906822974" I="data/ui/2kimages/main/3dicons/icon_hops.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="20 / 10">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="20">
-          <T ID="1010052" I="data/ui/2kimages/main/icons/icon_resource_farmer_2.png" />
-        </U>
-      </MC>
-    </M>
-    <Mo L="96">
-      <PM>
-        <M ID="1010272" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
-      </PM>
-    </Mo>
-  </Asset>
-  <Asset ID="1010263" RV="Release" RT="Common" IP="true">
-    <N>agriculture_02 (Cattle Farm)</N>
-    <T ID="1010263" I="data/ui/2kimages/main/3dicons/icon_meat_raw.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="2000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="6">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Motorizable">
-        <T ID="269957" I="data/ui/2kimages/main/3dicons/icon_silo.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="120">
-      <FO>
-        <U V="1 / 1">
-          <T ID="1010193" I="data/ui/2kimages/main/3dicons/icon_meat_raw.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="50 / 25">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="20">
-          <T ID="1010052" I="data/ui/2kimages/main/icons/icon_resource_farmer_2.png" />
-        </U>
-      </MC>
-    </M>
-    <Mo L="4">
-      <PM>
-        <M ID="1010271" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
-      </PM>
-    </Mo>
-  </Asset>
-  <Asset ID="1010262" RV="Release" RT="Common" IP="true">
-    <N>agriculture_01 (Grain Farm)</N>
-    <T ID="1010262" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="4">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Motorizable">
-        <T ID="269841" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="60">
-      <FO>
-        <U V="1 / 2">
-          <T ID="-774067498" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="20 / 10">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="20">
-          <T ID="1010052" I="data/ui/2kimages/main/icons/icon_resource_farmer_2.png" />
-        </U>
-      </MC>
-    </M>
-    <Mo L="144">
-      <PM>
-        <M ID="1010270" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
-      </PM>
-    </Mo>
-  </Asset>
   <Asset ID="114439" RV="Update 09" RT="Common" IP="true">
     <N>animal_colony02_02 (Sanga Farm)</N>
     <T ID="114439" I="data/ui/2kimages/main/3dicons/goods_africa/icon_watusi.png" />
@@ -675,6 +312,369 @@
     <Mo L="144">
       <PM>
         <M ID="114488" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+      </PM>
+    </Mo>
+  </Asset>
+  <Asset ID="100655" RV="Release" RT="Common" IP="true">
+    <N>agriculture_10 (Vineyard)</N>
+    <T ID="100655" I="data/ui/2kimages/main/3dicons/icon_grapes.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="8000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Motorizable">
+        <T ID="269841" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="120">
+      <FO>
+        <U V="1 / 1">
+          <T ID="-1193497903" I="data/ui/2kimages/main/3dicons/icon_grapes.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="200 / 100">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="10">
+          <T ID="1010052" I="data/ui/2kimages/main/icons/icon_resource_farmer_2.png" />
+        </U>
+      </MC>
+    </M>
+    <Mo L="128">
+      <PM>
+        <M ID="100657" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+      </PM>
+    </Mo>
+  </Asset>
+  <Asset ID="100654" RV="Release" RT="Common" IP="true">
+    <N>agriculture_11 (Bell Pepper Farm)</N>
+    <T ID="100654" I="data/ui/2kimages/main/3dicons/icon_pepper.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="2000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="6">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Motorizable">
+        <T ID="269841" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="120">
+      <FO>
+        <U V="1 / 1">
+          <T ID="-1309502485" I="data/ui/2kimages/main/3dicons/icon_pepper.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="100 / 50">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="10">
+          <T ID="1010052" I="data/ui/2kimages/main/icons/icon_resource_farmer_2.png" />
+        </U>
+      </MC>
+    </M>
+    <Mo L="108">
+      <PM>
+        <M ID="100656" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+      </PM>
+    </Mo>
+  </Asset>
+  <Asset ID="1010269" RV="Release" RT="Common" IP="true">
+    <N>agriculture_08 (Pig Farm)</N>
+    <T ID="1010269" I="data/ui/2kimages/main/3dicons/icon_pigs.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="4">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="-3" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+      <U V="" C="Motorizable">
+        <T ID="269957" I="data/ui/2kimages/main/3dicons/icon_silo.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FO>
+        <U V="1 / 4">
+          <T ID="1010199" I="data/ui/2kimages/main/3dicons/icon_pigs.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="40 / 20">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="30">
+          <T ID="1010052" I="data/ui/2kimages/main/icons/icon_resource_farmer_2.png" />
+        </U>
+      </MC>
+    </M>
+    <Mo L="5">
+      <PM>
+        <M ID="1010277" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+      </PM>
+    </Mo>
+  </Asset>
+  <Asset ID="1010267" RV="Release" RT="Common" IP="true">
+    <N>agriculture_06 (Sheep Farm)</N>
+    <T ID="1010267" I="data/ui/2kimages/main/3dicons/icon_wool.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="100">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="2">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Motorizable">
+        <T ID="269957" I="data/ui/2kimages/main/3dicons/icon_silo.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FO>
+        <U V="1 / 4">
+          <T ID="1010197" I="data/ui/2kimages/main/3dicons/icon_wool.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="20 / 10">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="10">
+          <T ID="1010052" I="data/ui/2kimages/main/icons/icon_resource_farmer_2.png" />
+        </U>
+      </MC>
+    </M>
+    <Mo L="3">
+      <PM>
+        <M ID="1010275" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+      </PM>
+    </Mo>
+  </Asset>
+  <Asset ID="1010265" RV="Release" RT="Common" IP="true">
+    <N>agriculture_04 (Potato Farm)</N>
+    <T ID="1010265" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="100">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="2">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Motorizable">
+        <T ID="269841" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FO>
+        <U V="1 / 4">
+          <T ID="-539228491" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="20 / 10">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="20">
+          <T ID="1010052" I="data/ui/2kimages/main/icons/icon_resource_farmer_2.png" />
+        </U>
+      </MC>
+    </M>
+    <Mo L="72">
+      <PM>
+        <M ID="1010273" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+      </PM>
+    </Mo>
+  </Asset>
+  <Asset ID="1010264" RV="Release" RT="Common" IP="true">
+    <N>agriculture_03 (Hop Farm)</N>
+    <T ID="1010264" I="data/ui/2kimages/main/3dicons/icon_hops.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="4">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Motorizable">
+        <T ID="269841" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="90">
+      <FO>
+        <U V="1 / 1">
+          <T ID="-1906822974" I="data/ui/2kimages/main/3dicons/icon_hops.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="20 / 10">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="20">
+          <T ID="1010052" I="data/ui/2kimages/main/icons/icon_resource_farmer_2.png" />
+        </U>
+      </MC>
+    </M>
+    <Mo L="96">
+      <PM>
+        <M ID="1010272" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+      </PM>
+    </Mo>
+  </Asset>
+  <Asset ID="1010263" RV="Release" RT="Common" IP="true">
+    <N>agriculture_02 (Cattle Farm)</N>
+    <T ID="1010263" I="data/ui/2kimages/main/3dicons/icon_meat_raw.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="2000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="6">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Motorizable">
+        <T ID="269957" I="data/ui/2kimages/main/3dicons/icon_silo.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="120">
+      <FO>
+        <U V="1 / 1">
+          <T ID="1010193" I="data/ui/2kimages/main/3dicons/icon_meat_raw.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="50 / 25">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="20">
+          <T ID="1010052" I="data/ui/2kimages/main/icons/icon_resource_farmer_2.png" />
+        </U>
+      </MC>
+    </M>
+    <Mo L="4">
+      <PM>
+        <M ID="1010271" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+      </PM>
+    </Mo>
+  </Asset>
+  <Asset ID="1010262" RV="Release" RT="Common" IP="true">
+    <N>agriculture_01 (Grain Farm)</N>
+    <T ID="1010262" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="4">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Motorizable">
+        <T ID="269841" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FO>
+        <U V="1 / 2">
+          <T ID="-774067498" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="20 / 10">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="20">
+          <T ID="1010052" I="data/ui/2kimages/main/icons/icon_resource_farmer_2.png" />
+        </U>
+      </MC>
+    </M>
+    <Mo L="144">
+      <PM>
+        <M ID="1010270" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
       </PM>
     </Mo>
   </Asset>
@@ -1070,7 +1070,7 @@
     <FB CT="60">
       <FO>
         <U V="1 / 2">
-          <T ID="120031" I="data/ui/2kimages/main/3dicons/icon_coffee_beans.png" />
+          <T ID="190946" I="data/ui/2kimages/main/3dicons/icon_coffee_beans.png" />
         </U>
       </FO>
     </FB>
@@ -1250,7 +1250,7 @@
     <FB CT="120">
       <FO>
         <U V="1 / 1">
-          <T ID="1010252" I="data/ui/2kimages/main/3dicons/icon_tobacco.png" />
+          <T ID="1401891502" I="data/ui/2kimages/main/3dicons/icon_tobacco.png" />
         </U>
       </FO>
     </FB>
