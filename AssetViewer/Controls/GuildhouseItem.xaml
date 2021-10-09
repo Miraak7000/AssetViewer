@@ -242,7 +242,18 @@
         Grid.Column="1"
         Margin="10,0,0,0"
         VerticalAlignment="Center"
-        Text="{Binding Converter={StaticResource Description}, ConverterParameter=-10000}" />
+        Text="{Binding Converter={StaticResource Description}, ConverterParameter=-10000}">
+        <TextBlock.Style>
+          <Style TargetType="TextBlock">
+            <Setter Property="Visibility" Value="Collapsed" />
+            <Style.Triggers>
+              <DataTrigger Binding="{Binding Source={x:Static AV:AssetProvider.CountMode}}" Value="True">
+                <Setter Property="Visibility" Value="Visible" />
+              </DataTrigger>
+            </Style.Triggers>
+          </Style>
+        </TextBlock.Style>
+      </TextBlock>
       <AV:NumericUpDown
         x:Name="nbRerollCosts"
         Grid.Column="2"
