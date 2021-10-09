@@ -183,7 +183,8 @@ namespace RDA {
             new Description("21731"),    //Anheuerungskosten
             new Description("20106"),     //Stadtfest
             new Description("22440"),     //Anzahl
-            new Description("2363")      //Effekte
+            new Description("2363"),      //Effekte
+            new Description("3963").AppendInBraces("max.").Append(": ").ChangeID("-10000")   //Reroll Costs (max.)
           };
 
           foreach (var item in needed) {

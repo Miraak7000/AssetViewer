@@ -767,6 +767,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_drugstore.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_dynamite.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_eiffel_tower.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_electricity.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_electric_works_gas.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_electric_works_oil.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_farmfield_module.png" />
@@ -1554,6 +1555,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_ornament_botanica03.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_propaganda_flag_03.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_propaganda_tower_01.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_seasonal_advertisement_halloween.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_twitch_advertisement_anarchy.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_twitch_advertisement_annoholic.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\icon_twitch_advertisement_announion.png" />
@@ -1648,6 +1650,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\park_props_system_1x1_temperateforest.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\preorder_statue_back.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\santa_chair.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\seasonal_advertiser_billboard.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\tourism\cherry_tree_01.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\tourism\cherry_tree_02.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\tourism\flower_bed_straight_purple.png" />
@@ -2320,6 +2323,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_favourite.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_fire_brigade_2d.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_forward.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_gasoline_3d_outline.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_generic_expedition.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_go_to.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_guildhouse_2d.png" />
@@ -2348,6 +2352,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_research_resource.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_resource_craftspeople.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_resource_farmer_2.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_resource_industrialists.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_resource_merchants_2.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_resource_money_4.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_resource_worker_2.png" />
@@ -2387,6 +2392,7 @@
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_warning_debuff_ship.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_wifi.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_workforce_elders.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_workforce_scholars.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_workforce_sheperds.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_workforce_tourists.png" />
     <Resource Include="Resources\data\ui\2kimages\main\icons\icon_zoo_2D.png" />
@@ -2641,10 +2647,9 @@
     <EmbeddedResource Include="Resources\Assets\VisitorPierColony.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_electricity.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_gasoline_3d_outline.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_resource_industrialists.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\icons\icon_workforce_scholars.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\preorder_ornament_s03\icon_dlc_ornament_kiosk.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\preorder_ornament_s03\icon_dlc_ornament_statue_anchor.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\preorder_ornament_s03\icon_dlc_ornament_statue_skyscraper.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

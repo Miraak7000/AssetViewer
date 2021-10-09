@@ -213,27 +213,57 @@
           Text="{Binding AdvancedFiltersText}" />
       </Grid>
     </Border>
-    <AV:NumericUpDown
-      x:Name="nbAll"
-      Grid.Row="2"
-      Width="50"
-      Margin="8,0,0,5"
-      HorizontalAlignment="Left"
-      Command="{Binding Source={x:Static local:ItemsBase.SelectedCountChangedCommand}}"
-      CommandParameter="{Binding ElementName=ItemsList, Path=SelectedItems}"
-      MaxValue="9999"
-      MinValue="0">
-      <AV:NumericUpDown.Style>
-        <Style TargetType="AV:NumericUpDown">
-          <Setter Property="Visibility" Value="Collapsed" />
-          <Style.Triggers>
-            <DataTrigger Binding="{Binding Source={x:Static AV:AssetProvider.CountMode}}" Value="True">
-              <Setter Property="Visibility" Value="Visible" />
-            </DataTrigger>
-          </Style.Triggers>
-        </Style>
-      </AV:NumericUpDown.Style>
-    </AV:NumericUpDown>
+    <Grid Grid.Row="2" Margin="8,0,0,5">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition />
+      </Grid.ColumnDefinitions>
+      <AV:NumericUpDown
+        x:Name="nbAll"
+        Width="50"
+        HorizontalAlignment="Left"
+        Command="{Binding Source={x:Static local:ItemsBase.SelectedCountChangedCommand}}"
+        CommandParameter="{Binding ElementName=ItemsList, Path=SelectedItems}"
+        MaxValue="9999"
+        MinValue="0">
+        <AV:NumericUpDown.Style>
+          <Style TargetType="AV:NumericUpDown">
+            <Setter Property="Visibility" Value="Collapsed" />
+            <Style.Triggers>
+              <DataTrigger Binding="{Binding Source={x:Static AV:AssetProvider.CountMode}}" Value="True">
+                <Setter Property="Visibility" Value="Visible" />
+              </DataTrigger>
+            </Style.Triggers>
+          </Style>
+        </AV:NumericUpDown.Style>
+      </AV:NumericUpDown>
+      <TextBlock
+        Grid.Column="1"
+        Margin="10,0,0,0"
+        VerticalAlignment="Center"
+        Text="{Binding Converter={StaticResource Description}, ConverterParameter=-10000}" />
+      <AV:NumericUpDown
+        x:Name="nbRerollCosts"
+        Grid.Column="2"
+        Width="Auto"
+        MinWidth="100"
+        HorizontalAlignment="Left"
+        MaxValue="2147483647"
+        MinValue="0"
+        Value="{Binding Mode=TwoWay, Path=(AV:AssetProvider.MaxRerollCosts)}">
+        <AV:NumericUpDown.Style>
+          <Style TargetType="AV:NumericUpDown">
+            <Setter Property="Visibility" Value="Collapsed" />
+            <Style.Triggers>
+              <DataTrigger Binding="{Binding Source={x:Static AV:AssetProvider.CountMode}}" Value="True">
+                <Setter Property="Visibility" Value="Visible" />
+              </DataTrigger>
+            </Style.Triggers>
+          </Style>
+        </AV:NumericUpDown.Style>
+      </AV:NumericUpDown>
+    </Grid>
     <Grid Grid.Row="3">
       <Grid.ColumnDefinitions>
         <ColumnDefinition Width="*" />

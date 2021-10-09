@@ -361,11 +361,15 @@ namespace RDA.Data {
         case "ModuleLimitPercent":
         case "ConstructionTimeInPercent":
         case "ConstructionCostInPercent":
-        case "TaxModifierInPercent":
         case "WorkforceModifierInPercent":
           value = float.Parse(element.Value);
           isPercent = true;
           break;
+
+        case "TaxModifierInPercent":
+          var val = float.Parse(element.Value);
+          Value = val > 0 ? $"+{val}%" : $"{val}%";
+          return;
 
         case "IgnoreWeightFactorUpgrade":
         case "IgnoreDamageFactorUpgrade":

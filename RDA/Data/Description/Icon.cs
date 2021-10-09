@@ -10,10 +10,10 @@ namespace RDA.Data {
 
     #region Public Properties
 
-    public static string[] IgnoredDirectorys { get; set; } = new[] {
-      $@"{Program.PathRoot}\Resources\data\ui\2kimages\main\3dicons\Temporary_Ornament",
+    public static string[] IgnoredDirectorys { get; set; } = new string[] {
       $@"{Program.PathRoot}\Resources\data\level_editor\random_slots_icons",
-      $@"{Program.PathRoot}\Resources\data\ui\2kimages\main\3dicons\ornaments\preorder_ornament_s03"
+      //$@"{Program.PathRoot}\Resources\data\ui\2kimages\main\3dicons\Temporary_Ornament",
+      //$@"{Program.PathRoot}\Resources\data\ui\2kimages\main\3dicons\ornaments\preorder_ornament_s03"
     };
 
     public string Filename { get; set; }
@@ -29,13 +29,6 @@ namespace RDA.Data {
         return;
       }
       var fileNames = Directory.GetFiles(searchPath, $"{searchPattern}??.png", SearchOption.TopDirectoryOnly);
-      if (fileNames.Length != 1) {
-        if (searchPattern.Contains("seasonal")) {
-          return;
-        }
-        //throw new NotImplementedException();
-
-      }
       if (fileNames.Length == 0) {
         Debug.WriteLine($"Picture Missing: {searchPath} {searchPattern}");
         return;

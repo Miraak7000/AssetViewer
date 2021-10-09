@@ -26,12 +26,16 @@ namespace AssetViewer {
     public static Dictionary<int, Pool> Pools { get; } = new Dictionary<int, Pool>();
     public static ObjectCache Cache { get; set; } = MemoryCache.Default;
     public static Dictionary<int, string> Descriptions { get; } = new Dictionary<int, string>();
-    public static bool CountMode { get; set; }
+    public static bool CountMode { get; set; } = true;
     public static List<Languages> PossibleLanguages { get; } = new List<Languages>();
 
     public static Data.Languages Language {
       get => language;
       private set { language = value; NotifyStaticPropertyChanged(); }
+    }
+    public static int MaxRerollCosts {
+      get => maxRerollCosts;
+      set { maxRerollCosts = value; NotifyStaticPropertyChanged(); }
     }
 
     #endregion Public Properties
@@ -391,6 +395,7 @@ namespace AssetViewer {
     private static readonly HashSet<TemplateAsset> ChangedCountItems = new HashSet<TemplateAsset>();
 
     private static Data.Languages language = Data.Languages.English;
+    private static int maxRerollCosts;
 
     #endregion Private Fields
   }
