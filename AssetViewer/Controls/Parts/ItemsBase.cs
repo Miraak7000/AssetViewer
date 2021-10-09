@@ -54,7 +54,7 @@ namespace AssetViewer.Controls {
 
     public void BtnResetFilters_Click(object sender, RoutedEventArgs e) => ItemsHolder.ResetFilters();
 
-    public void RaisePropertyChanged([CallerMemberName]string name = "") {
+    public void RaisePropertyChanged([CallerMemberName] string name = "") {
       PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
     }
 
@@ -74,6 +74,11 @@ namespace AssetViewer.Controls {
       if (!ItemsHolder.IsRefreshingUi && SelectedAsset == null) {
         SelectedAsset = ItemsHolder.Items.FirstOrDefault();
       }
+    }
+
+    public virtual void ComboBoxLanguage_SelectionChanged() {
+      ItemsHolder.RaiseLanguageChanged();
+      PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(""));
     }
 
     #endregion Public Methods
@@ -101,11 +106,6 @@ namespace AssetViewer.Controls {
 
     private void UserControl_Loaded(object sender, RoutedEventArgs e) {
       AssetProvider.OnLanguage_Changed += ComboBoxLanguage_SelectionChanged;
-    }
-
-    private void ComboBoxLanguage_SelectionChanged() {
-      ItemsHolder.RaiseLanguageChanged();
-      PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(""));
     }
 
     private void UserControl_Unloaded(object sender, RoutedEventArgs e) {

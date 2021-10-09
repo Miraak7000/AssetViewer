@@ -17,5 +17,15 @@ namespace AssetViewer.Controls {
     }
 
     #endregion Public Constructors
+
+    #region Public Methods
+
+    public override void ComboBoxLanguage_SelectionChanged() {
+      base.ComboBoxLanguage_SelectionChanged();
+      DataContext = null;
+      DataContext = this;
+    }
+
+    #endregion Public Methods
   }
 }

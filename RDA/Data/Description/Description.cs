@@ -103,6 +103,14 @@ namespace RDA.Data {
       return this;
     }
 
+    public Description AppendInBraces(string description) {
+      foreach (var item in Languages.ToArray()) {
+        Languages[item.Key] = $"{item.Value} ({description})";
+      }
+      SetNewId();
+      return this;
+    }
+
     public Description Remove(string value) {
       foreach (var item in Languages.ToArray()) {
         Languages[item.Key] = item.Value.Replace(HttpUtility.HtmlDecode(value), "");
@@ -132,6 +140,11 @@ namespace RDA.Data {
         Languages[item.Key] = item.Value.Trim();
       }
       SetNewId();
+      return this;
+    }
+
+    public Description ChangeID(string Id) {
+      ID = Id;
       return this;
     }
 
