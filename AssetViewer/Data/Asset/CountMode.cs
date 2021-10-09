@@ -3,6 +3,7 @@
 namespace AssetViewer.Data.Asset {
 
   using System.ComponentModel;
+  using System.Linq;
   using System.Runtime.CompilerServices;
 
   public class CountMode : INotifyPropertyChanged {
@@ -23,7 +24,20 @@ namespace AssetViewer.Data.Asset {
         if (count != value) {
           count = value;
           RaisePropertyChanged(nameof(Count));
-          AssetProvider.RaiseAssetCountChanged(asset);
+          if (!asset.SetParts?.Any() ?? true) {
+            AssetProvider.RaiseAssetCountChanged(asset);
+          }
+        }
+        if (asset.SetParts?.Any() ?? false) {
+          try {
+            var parts = AssetProvider.GetItemsById(asset.SetParts.Select(p => int.Parse(p)));
+            foreach (var part in parts) {
+              part.CountMode.Count = count;
+            }
+          }
+          catch (System.Exception) {
+          }
+
         }
       }
     }
