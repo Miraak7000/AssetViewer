@@ -37,7 +37,6 @@ namespace AssetViewer.Data.Asset {
           }
           catch (System.Exception) {
           }
-
         }
       }
     }

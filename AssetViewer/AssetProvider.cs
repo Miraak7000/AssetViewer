@@ -37,9 +37,9 @@ namespace AssetViewer {
       get => maxRerollCosts;
       set {
         if (value != maxRerollCosts) {
-        maxRerollCosts = value; 
-          NotifyStaticPropertyChanged(); 
-          OnRerollCostsChanged(maxRerollCosts);
+          maxRerollCosts = value;
+          NotifyStaticPropertyChanged();
+          OnRerollCostsChanged?.Invoke(maxRerollCosts);
 
         }
       }
