@@ -148,7 +148,43 @@
           FlowDirection="RightToLeft"
           IsChecked="{Binding ItemsHolder.StandardFilters[Available].SelectedValue}"
           Unchecked="ComboBox_SelectionChanged">
+          <CheckBox.Style>
+            <Style TargetType="CheckBox">
+              <Style.Setters>
+                <Setter Property="Visibility" Value="Hidden" />
+              </Style.Setters>
+              <Style.Triggers>
+                <DataTrigger Binding="{Binding Source={x:Static AV:AssetProvider.CountMode}}" Value="False">
+                  <Setter Property="Visibility" Value="Visible" />
+                </DataTrigger>
+              </Style.Triggers>
+            </Style>
+          </CheckBox.Style>
           <TextBlock FlowDirection="LeftToRight" Text="{Binding ItemsHolder.StandardFilters[Available].Description}" />
+        </CheckBox>
+        <CheckBox
+          x:Name="cbOnlyRollable"
+          Grid.Row="3"
+          Grid.Column="4"
+          HorizontalAlignment="Center"
+          VerticalAlignment="Center"
+          Checked="ComboBox_SelectionChanged"
+          FlowDirection="RightToLeft"
+          IsChecked="{Binding ItemsHolder.StandardFilters[Rollable].SelectedValue}"
+          Unchecked="ComboBox_SelectionChanged">
+          <CheckBox.Style>
+            <Style TargetType="CheckBox">
+              <Style.Setters>
+                <Setter Property="Visibility" Value="Hidden" />
+              </Style.Setters>
+              <Style.Triggers>
+                <DataTrigger Binding="{Binding Source={x:Static AV:AssetProvider.CountMode}}" Value="True">
+                  <Setter Property="Visibility" Value="Visible" />
+                </DataTrigger>
+              </Style.Triggers>
+            </Style>
+          </CheckBox.Style>
+          <TextBlock FlowDirection="LeftToRight" Text="{Binding ItemsHolder.StandardFilters[Rollable].Description}" />
         </CheckBox>
         <Button
           x:Name="btnResetFilters"
@@ -204,8 +240,14 @@
         <ColumnDefinition Width="10" />
         <ColumnDefinition Width="350" />
       </Grid.ColumnDefinitions>
-      <local:ItemList x:Name="ItemsList" Grid.Column="0" ItemSource="{Binding ItemsHolder.Items}" />
-      <local:ItemCard Grid.Column="2" CanSwap="True" SelectedAsset="{Binding SelectedAsset}" />
+      <local:ItemList
+        x:Name="ItemsList"
+        Grid.Column="0"
+        ItemSource="{Binding ItemsHolder.Items}" />
+      <local:ItemCard
+        Grid.Column="2"
+        CanSwap="True"
+        SelectedAsset="{Binding SelectedAsset}" />
     </Grid>
   </Grid>
 </local:ItemsBase>

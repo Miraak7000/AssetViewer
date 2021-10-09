@@ -29,7 +29,6 @@ namespace RDA.Data {
     public Modules Modules { get; set; }
     public bool IsPausable { get; set; }
     public bool IsResearchable { get; set; }
-
     public Allocation Allocation { get; set; }
 
     public Maintenance Maintenance { get; private set; }
@@ -218,8 +217,8 @@ namespace RDA.Data {
             break;
 
           default:
-            Debug.WriteLine(asset.Element("Template").Value); 
-            
+            Debug.WriteLine(asset.Element("Template").Value);
+
             throw new NotImplementedException(asset.Element("Template").Value);
             break;
         }
@@ -306,7 +305,7 @@ namespace RDA.Data {
           case "InfluenceSourceUpgrade":
           case "PalaceMinistry":
           case "Palace":
-            //Ministary stuff
+          //Ministary stuff
 
           case "FloorStackOwner": //Update 11 nothing inside
           case "BusStop": //Costs
@@ -526,7 +525,9 @@ namespace RDA.Data {
       result.Add(Rarity == null ? new Description(Assets.KeyToIdDict["Common"]).ToXml("R") : Rarity.ToXml("R"));
       result.Add(new XAttribute("RT", RarityType));
       result.Add(new XElement("IT", ItemType));
-
+      if (Sources?.Any(s => s.IsRollable) ?? false) {
+        result.Add(new XAttribute("IR", true));
+      }
       if (FestivalName != null) {
         result.Add(FestivalName.ToXml("FN"));
       }
@@ -1323,13 +1324,13 @@ namespace RDA.Data {
                     oldParent = parent;
                     parent = parent.Parent;
                   }
-
-                  result.AddSourceAsset(referencingAsset.GetProxyElement("Harbor"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset.GetProxyElement(oldParent.Name.LocalName)) });
+                  var isRollable = reference.Name.LocalName == "OfferingItems";
+                  result.AddSourceAsset(referencingAsset.GetProxyElement("Harbor"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset.GetProxyElement(oldParent.Name.LocalName)) }, isRollable);
                   break;
                 }
 
                 if (reference.Name.LocalName == "Pool" && reference.Parent.Parent.Name.LocalName == "ItemPools") {
-                  result.AddSourceAsset(referencingAsset.GetProxyElement("Harbor"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset.GetProxyElement(reference.Parent.Name.LocalName)) });
+                  result.AddSourceAsset(referencingAsset.GetProxyElement("Harbor"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset.GetProxyElement(reference.Parent.Name.LocalName)) }, true);
                   break;
                 }
 

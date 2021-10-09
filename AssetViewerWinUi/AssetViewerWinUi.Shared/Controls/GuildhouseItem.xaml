@@ -1,0 +1,211 @@
+﻿<local:ItemsBase
+  x:Class="AssetViewer.Controls.GuildhouseItem"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:AV="clr-namespace:AssetViewer"
+  xmlns:converter="clr-namespace:AssetViewer.Converter"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:local="clr-namespace:AssetViewer.Controls"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  x:Name="userControl"
+  d:DataContext="{d:DesignInstance local:GuildhouseItem}"
+  d:DesignHeight="450"
+  d:DesignWidth="836.864"
+  FontSize="13"
+  SnapsToDevicePixels="True"
+  mc:Ignorable="d">
+
+  <UserControl.Resources>
+    <BooleanToVisibilityConverter x:Key="BooleanToVisibility" />
+    <converter:GlobalDescriptionConverter x:Key="Description" />
+    <converter:VisibilityConverter x:Key="VisibilityConverter" />
+  </UserControl.Resources>
+
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="10" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <Border
+      Grid.Row="0"
+      BorderBrush="#FF554628"
+      BorderThickness="1"
+      CornerRadius="5">
+      <Grid Margin="5">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="200" />
+          <ColumnDefinition Width="5" />
+          <ColumnDefinition Width="200" />
+          <ColumnDefinition Width="5" />
+          <ColumnDefinition Width="200" />
+          <ColumnDefinition Width="5" />
+          <ColumnDefinition Width="200" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="18" />
+          <RowDefinition Height="22" />
+          <RowDefinition Height="18" />
+          <RowDefinition Height="22" />
+          <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TextBlock
+          Grid.Row="0"
+          Grid.Column="0"
+          Margin="0,0,5,0"
+          VerticalAlignment="Center"
+          Text="{Binding Path=ItemsHolder.StandardFilters[Rarities].Description}" />
+
+        <TextBlock
+          Grid.Row="0"
+          Grid.Column="2"
+          Margin="0,0,5,0"
+          VerticalAlignment="Center"
+          Text="{Binding ItemsHolder.StandardFilters[Equipped].Description}" />
+
+        <TextBlock
+          Grid.Row="0"
+          Grid.Column="4"
+          Margin="0,0,5,0"
+          VerticalAlignment="Center"
+          Text="{Binding ItemsHolder.StandardFilters[Upgrades].Description}" />
+        <TextBlock
+          Grid.Row="0"
+          Grid.Column="6"
+          Margin="0,0,5,0"
+          VerticalAlignment="Center"
+          Text="{Binding ItemsHolder.StandardFilters[TargetBuilding].Description}" />
+        <ComboBox
+          x:Name="ComboBoxRarities"
+          Grid.Row="1"
+          Grid.Column="0"
+          Height="22"
+          DisplayMemberPath="CurrentLang"
+          ItemsSource="{Binding Path=ItemsHolder.StandardFilters[Rarities].CurrentValues}"
+          SelectedItem="{Binding Path=ItemsHolder.StandardFilters[Rarities].SelectedValue}"
+          SelectionChanged="ComboBox_SelectionChanged" />
+        <ComboBox
+          x:Name="ComboBoxEquipped"
+          Grid.Row="1"
+          Grid.Column="2"
+          Height="22"
+          Margin="0"
+          DisplayMemberPath="CurrentLang"
+          ItemsSource="{Binding ItemsHolder.StandardFilters[Equipped].CurrentValues}"
+          SelectedItem="{Binding ItemsHolder.StandardFilters[Equipped].SelectedValue}"
+          SelectionChanged="ComboBox_SelectionChanged" />
+        <ComboBox
+          x:Name="ComboBoxUpgrades"
+          Grid.Row="1"
+          Grid.Column="4"
+          Height="22"
+          DisplayMemberPath="CurrentLang"
+          ItemsSource="{Binding ItemsHolder.StandardFilters[Upgrades].CurrentValues}"
+          SelectedItem="{Binding ItemsHolder.StandardFilters[Upgrades].SelectedValue}"
+          SelectionChanged="ComboBox_SelectionChanged" />
+        <ComboBox
+          Grid.Row="1"
+          Grid.Column="6"
+          Height="22"
+          DisplayMemberPath="CurrentLang"
+          ItemsSource="{Binding ItemsHolder.StandardFilters[TargetBuilding].CurrentValues}"
+          SelectedItem="{Binding ItemsHolder.StandardFilters[TargetBuilding].SelectedValue}"
+          SelectionChanged="ComboBox_SelectionChanged" />
+        <TextBlock
+          Grid.Row="2"
+          Grid.Column="0"
+          Margin="0,0,5,0"
+          VerticalAlignment="Center"
+          Text="{Binding Path=ItemsHolder.StandardFilters[SearchText].Description}" />
+        <TextBlock
+          Grid.Row="2"
+          Grid.Column="2"
+          Margin="0,0,5,0"
+          VerticalAlignment="Center"
+          Text="{Binding ItemsHolder.OrderFilter.Description}" />
+        <TextBox
+          Grid.Row="3"
+          Grid.Column="0"
+          SourceUpdated="ComboBox_SelectionChanged"
+          Text="{Binding NotifyOnSourceUpdated=True, Path=ItemsHolder.StandardFilters[SearchText].SelectedValue, UpdateSourceTrigger=PropertyChanged, Delay=100}" />
+        <ComboBox
+          x:Name="ComboBoxTargets"
+          Grid.Row="3"
+          Grid.Column="2"
+          Height="22"
+          DisplayMemberPath="CurrentLang"
+          ItemsSource="{Binding ItemsHolder.OrderFilter.CurrentValues}"
+          SelectedItem="{Binding ItemsHolder.OrderFilter.SelectedValue}"
+          SelectionChanged="ComboBox_SelectionChanged" />
+        <CheckBox
+          x:Name="cbOnlyAvailable"
+          Grid.Row="3"
+          Grid.Column="4"
+          HorizontalAlignment="Center"
+          VerticalAlignment="Center"
+          Checked="ComboBox_SelectionChanged"
+          FlowDirection="RightToLeft"
+          IsChecked="{Binding ItemsHolder.StandardFilters[Available].SelectedValue}"
+          Unchecked="ComboBox_SelectionChanged">
+          <TextBlock FlowDirection="LeftToRight" Text="{Binding ItemsHolder.StandardFilters[Available].Description}" />
+        </CheckBox>
+        <Button
+          x:Name="btnResetFilters"
+          Grid.Row="3"
+          Grid.Column="6"
+          Margin="5,1"
+          Padding="0"
+          Click="BtnResetFilters_Click"
+          Content="{Binding ResetButtonText, ElementName=userControl}" />
+        <local:ExtendedFilters
+          Grid.Row="4"
+          Grid.Column="0"
+          Grid.ColumnSpan="7"
+          AddFilter_Click="BtnAddFilter_Click"
+          RemoveFilter_Click="BtnRemoveFilter_Click"
+          SelectionChanged="ComboBox_SelectionChanged" />
+        <TextBlock
+          Grid.Row="4"
+          Grid.Column="0"
+          Grid.ColumnSpan="7"
+          Height="22"
+          Margin="21,0,0,0"
+          Padding="9,3,0,0"
+          HorizontalAlignment="Stretch"
+          VerticalAlignment="Top"
+          Text="{Binding AdvancedFiltersText}" />
+      </Grid>
+    </Border>
+    <AV:NumericUpDown
+      x:Name="nbAll"
+      Grid.Row="2"
+      Width="50"
+      Margin="8,0,0,5"
+      HorizontalAlignment="Left"
+      Command="{Binding Source={x:Static local:ItemsBase.SelectedCountChangedCommand}}"
+      CommandParameter="{Binding ElementName=ItemsList, Path=SelectedItems}"
+      MaxValue="9999"
+      MinValue="0">
+      <AV:NumericUpDown.Style>
+        <Style TargetType="AV:NumericUpDown">
+          <Setter Property="Visibility" Value="Collapsed" />
+          <Style.Triggers>
+            <DataTrigger Binding="{Binding Source={x:Static AV:AssetProvider.CountMode}}" Value="True">
+              <Setter Property="Visibility" Value="Visible" />
+            </DataTrigger>
+          </Style.Triggers>
+        </Style>
+      </AV:NumericUpDown.Style>
+    </AV:NumericUpDown>
+    <Grid Grid.Row="3">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="10" />
+        <ColumnDefinition Width="350" />
+      </Grid.ColumnDefinitions>
+      <local:ItemList x:Name="ItemsList" Grid.Column="0" ItemSource="{Binding ItemsHolder.Items}" />
+      <local:ItemCard Grid.Column="2" CanSwap="True" SelectedAsset="{Binding SelectedAsset}" />
+    </Grid>
+  </Grid>
+</local:ItemsBase>

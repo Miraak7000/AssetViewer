@@ -1,23 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BridgeBuilding>
-  <Asset ID="117654" RV="Update 09" RT="Common">
-    <N>Dirt Bridge Africa</N>
-    <T ID="117654" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="22146" />
-    <BC>
-      <U V="1000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="20">
-        <T ID="114356" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-  </Asset>
   <Asset ID="101384" RV="Release" RT="Common">
     <N>Rails Bridge</N>
     <T ID="101385" />
@@ -37,7 +19,7 @@
   </Asset>
   <Asset ID="101328" RV="Release" RT="Common">
     <N>Dirt Bridge</N>
-    <T ID="117654" />
+    <T ID="101328" />
     <R ID="118002" />
     <IT>Building</IT>
     <BC>
@@ -46,6 +28,24 @@
       </U>
       <U V="20">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+  </Asset>
+  <Asset ID="122988" RV="Update 09" RT="Common">
+    <N>Stone Bridge Africa</N>
+    <T ID="101588" I="data/ui/2kimages/main/3dicons/icon_street01.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="2000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="20">
+        <T ID="114402" I="data/ui/2kimages/main/3dicons/goods_africa/icon_mud_bricks.png" />
       </U>
     </BC>
     <GU />
@@ -69,18 +69,18 @@
     <TP />
     <HF />
   </Asset>
-  <Asset ID="122988" RV="Update 09" RT="Common">
-    <N>Stone Bridge Africa</N>
-    <T ID="101588" I="data/ui/2kimages/main/3dicons/icon_street01.png" />
+  <Asset ID="117654" RV="Update 09" RT="Common">
+    <N>Dirt Bridge Africa</N>
+    <T ID="101328" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="22146" />
     <BC>
-      <U V="2000">
+      <U V="1000">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
       <U V="20">
-        <T ID="114402" I="data/ui/2kimages/main/3dicons/goods_africa/icon_mud_bricks.png" />
+        <T ID="114356" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
       </U>
     </BC>
     <GU />

@@ -29,7 +29,7 @@ namespace RDA.Data {
       return new SourceWithDetailsList(this.Select(l => l.Copy())) { FollowingEvents = new HashSet<XElement>(FollowingEvents), ElementWeights = ElementWeights.ToDictionary(i => i.Key, i => i.Value) };
     }
 
-    public void AddSourceAsset(XElement element, HashSet<AssetWithWeight> details = default) {
+    public void AddSourceAsset(XElement element, HashSet<AssetWithWeight> details = default, bool isRollable = false) {
       if (details == default)
         details = new HashSet<AssetWithWeight>();
 
@@ -92,7 +92,7 @@ namespace RDA.Data {
           }
         }
         else {
-          Add(new SourceWithDetails(element, details));
+          Add(new SourceWithDetails(element, details, isRollable));
         }
         return;
       }
@@ -111,13 +111,13 @@ namespace RDA.Data {
         }
       }
       else {
-        Add(new SourceWithDetails(element, details));
+        Add(new SourceWithDetails(element, details, isRollable));
       }
     }
 
     public void AddSourceAsset(SourceWithDetailsList input) {
       foreach (var item in input) {
-        AddSourceAsset(item.Source, item.Details);
+        AddSourceAsset(item.Source, item.Details, item.IsRollable);
       }
       foreach (var item in input.FollowingEvents) {
         FollowingEvents.Add(item);

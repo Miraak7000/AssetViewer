@@ -1,0 +1,138 @@
+﻿<UserControl
+  x:Class="AssetViewer.Controls.Monument"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:AV="clr-namespace:AssetViewer"
+  xmlns:converter="clr-namespace:AssetViewer.Converter"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:local="clr-namespace:AssetViewer.Controls"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  d:DesignHeight="450"
+  d:DesignWidth="800"
+  FontSize="13"
+  Loaded="Monument_OnLoaded"
+  SnapsToDevicePixels="True"
+  Unloaded="UserControl_Unloaded"
+  mc:Ignorable="d">
+
+  <UserControl.Resources>
+    <BooleanToVisibilityConverter x:Key="BooleanToVisibility" />
+    <converter:GlobalDescriptionConverter x:Key="Description" />
+    <converter:VisibilityConverter x:Key="VisibilityConverter" />
+    <DataTemplate x:Key="SelectableTemplate">
+      <Grid MaxHeight="30">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="30" />
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="0" HorizontalAlignment="Left" Source="{Binding Path=Text.Icon.Filename}" />
+        <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Path=Text}" />
+      </Grid>
+    </DataTemplate>
+  </UserControl.Resources>
+
+  <Grid Grid.Row="2">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="10" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <Border
+      Grid.Row="0"
+      BorderBrush="#FF554628"
+      BorderThickness="1"
+      CornerRadius="5">
+      <Grid Margin="5">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="225" />
+          <ColumnDefinition Width="5" />
+          <ColumnDefinition Width="300" />
+          <ColumnDefinition Width="5" />
+          <ColumnDefinition Width="225" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="18" />
+          <RowDefinition Height="22" />
+        </Grid.RowDefinitions>
+
+        <TextBlock
+          Grid.Row="0"
+          Grid.Column="0"
+          Margin="0,0,5,0"
+          VerticalAlignment="Center"
+          Text="{Binding Converter={StaticResource Description}, ConverterParameter=-107}" />
+
+        <TextBlock
+          Grid.Row="0"
+          Grid.Column="2"
+          Margin="0,0,5,0"
+          VerticalAlignment="Center"
+          Text="{Binding Converter={StaticResource Description}, ConverterParameter=-108}" />
+
+        <TextBlock
+          Grid.Row="0"
+          Grid.Column="4"
+          Margin="0,0,5,0"
+          VerticalAlignment="Center"
+          Text="{Binding Converter={StaticResource Description}, ConverterParameter=-109}" />
+        <ComboBox
+          x:Name="ComboBoxCategories"
+          Grid.Row="1"
+          Grid.Column="0"
+          Height="22"
+          ItemTemplate="{StaticResource SelectableTemplate}"
+          ItemsSource="{Binding Path=Categories}"
+          SelectionChanged="ComboBoxCategories_OnSelectionChanged" />
+        <ComboBox
+          x:Name="ComboBoxEvents"
+          Grid.Row="1"
+          Grid.Column="2"
+          Height="22"
+          ItemTemplate="{StaticResource SelectableTemplate}"
+          ItemsSource="{Binding Path=Events}"
+          SelectionChanged="ComboBoxEvents_OnSelectionChanged" />
+        <ComboBox
+          x:Name="ComboBoxThresholds"
+          Grid.Row="1"
+          Grid.Column="4"
+          Height="22"
+          ItemTemplate="{StaticResource SelectableTemplate}"
+          ItemsSource="{Binding Path=Thresholds}"
+          SelectionChanged="ComboBoxThresholds_OnSelectionChanged" />
+      </Grid>
+    </Border>
+
+    <AV:NumericUpDown
+      x:Name="nbAll"
+      Grid.Row="2"
+      Width="50"
+      Margin="8,0,0,5"
+      HorizontalAlignment="Left"
+      Command="{Binding Source={x:Static local:ItemsBase.SelectedCountChangedCommand}}"
+      CommandParameter="{Binding ElementName=ItemsList, Path=SelectedItems}"
+      MaxValue="9999"
+      MinValue="0">
+      <AV:NumericUpDown.Style>
+        <Style TargetType="AV:NumericUpDown">
+          <Setter Property="Visibility" Value="Collapsed" />
+          <Style.Triggers>
+            <DataTrigger Binding="{Binding Source={x:Static AV:AssetProvider.CountMode}}" Value="True">
+              <Setter Property="Visibility" Value="Visible" />
+            </DataTrigger>
+          </Style.Triggers>
+        </Style>
+      </AV:NumericUpDown.Style>
+    </AV:NumericUpDown>
+
+    <Grid Grid.Row="3">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="10" />
+        <ColumnDefinition Width="350" />
+      </Grid.ColumnDefinitions>
+      <local:ItemList x:Name="ItemsList" Grid.Column="0" ItemSource="{Binding Rewards}" />
+      <local:ItemCard Grid.Column="2" CanSwap="True" SelectedAsset="{Binding SelectedAsset}" />
+    </Grid>
+  </Grid>
+</UserControl>

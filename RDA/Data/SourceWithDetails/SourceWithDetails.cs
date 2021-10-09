@@ -10,17 +10,19 @@ namespace RDA.Data {
 
     public XElement Source { get; set; }
     public HashSet<AssetWithWeight> Details { get; set; }
+    public bool IsRollable { get; set; }
 
     #endregion Public Properties
 
     #region Public Constructors
 
-    public SourceWithDetails(SourceWithDetails other) : this(other.Source, other.Details) {
+    public SourceWithDetails(SourceWithDetails other) : this(other.Source, other.Details, other.IsRollable) {
     }
 
-    public SourceWithDetails(XElement root, HashSet<AssetWithWeight> details) : this() {
+    public SourceWithDetails(XElement root, HashSet<AssetWithWeight> details, bool isRollable = false) : this() {
       Details = new HashSet<AssetWithWeight>(details.Select(d => d.Copy()));
       Source = root;
+      IsRollable = isRollable;
     }
 
     public SourceWithDetails() {

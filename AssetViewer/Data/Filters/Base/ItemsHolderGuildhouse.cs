@@ -9,7 +9,12 @@ namespace AssetViewer.Data.Filters {
     public ItemsHolderGuildhouse() : base(AssetProvider.Items.Values.ToList()) {
       StandardFilters.Add("Upgrades", new UpgradesFilter(this));
       StandardFilters.Add("Rarities", new RaritiesFilter(this));
-      StandardFilters.Add("Available", new AvailableFilter(this) { SelectedValue = true });
+      if (!AssetProvider.CountMode) {
+        StandardFilters.Add("Available", new AvailableFilter(this) { SelectedValue = true });
+      }
+      else {
+        StandardFilters.Add("Rollable", new RollableFilter(this) { SelectedValue = true });
+      }
       StandardFilters.Add("Equipped", new EquippedFilter(this));
       StandardFilters.Add("SearchText", new SearchTextFilter(this));
       StandardFilters.Add("TargetBuilding", new TargetBuildingFilter(this));
@@ -32,6 +37,12 @@ namespace AssetViewer.Data.Filters {
       holder.Filters.Add(new EquippedFilter(this));
       holder.Filters.Add(new SearchTextFilter(this));
       holder.Filters.Add(new TargetBuildingFilter(this));
+      if (AssetProvider.CountMode) {
+        holder.Filters.Add(new AvailableFilter(this) { SelectedValue = true });
+      }
+      else {
+        holder.Filters.Add(new RollableFilter(this) { SelectedValue = true });
+      }
       return holder;
     }
 
