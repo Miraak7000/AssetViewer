@@ -26,7 +26,7 @@ namespace AssetViewer {
     public static Dictionary<int, Pool> Pools { get; } = new Dictionary<int, Pool>();
     public static ObjectCache Cache { get; set; } = MemoryCache.Default;
     public static Dictionary<int, string> Descriptions { get; } = new Dictionary<int, string>();
-    public static bool CountMode { get; set; } = true;
+    public static bool CountMode { get; set; }
     public static List<Languages> PossibleLanguages { get; } = new List<Languages>();
 
     public static Data.Languages Language {
