@@ -25,7 +25,7 @@ namespace AssetViewer.Data.Filters {
           result = result.OrderBy(w => string.IsNullOrWhiteSpace(w.TradePrice) ? 0 : int.Parse(w.TradePrice ?? "0", NumberStyles.Any));
         }
         else if (SelectedValue.ID == 22440) {
-          result = result.OrderByDescending(w => w.Count);
+          result = result.OrderByDescending(w => w.CountMode.Count);
         }
       }
 

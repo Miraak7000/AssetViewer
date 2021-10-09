@@ -10,7 +10,10 @@
   d:DesignHeight="450"
   d:DesignWidth="800"
   mc:Ignorable="d">
-  <Border BorderBrush="#FF554628" BorderThickness="1" CornerRadius="5">
+  <Border
+    BorderBrush="#FF554628"
+    BorderThickness="1"
+    CornerRadius="5">
     <ListBox
       x:Name="ListBoxItems"
       HorizontalContentAlignment="Stretch"
@@ -22,7 +25,10 @@
       SelectedIndex="{Binding ElementName=userControl, Path=SelectedIndex}"
       SelectedItem="{Binding Path=SelectedAsset}">
       <ListBox.InputBindings>
-        <KeyBinding Key="C" Command="{Binding ElementName=userControl, Path=CopyToClipboardCommand}" Modifiers="Ctrl" />
+        <KeyBinding
+          Key="C"
+          Command="{Binding ElementName=userControl, Path=CopyToClipboardCommand}"
+          Modifiers="Ctrl" />
       </ListBox.InputBindings>
       <ListBox.Style>
         <Style TargetType="ListBox">
@@ -47,7 +53,7 @@
               Width="50"
               MaxValue="9999"
               MinValue="0"
-              Value="{Binding Path=Count, Mode=TwoWay}">
+              Value="{Binding Path=CountMode.Count, Mode=TwoWay}">
               <AV:NumericUpDown.Style>
                 <Style TargetType="AV:NumericUpDown">
                   <Setter Property="Visibility" Value="Collapsed" />
@@ -59,7 +65,10 @@
                 </Style>
               </AV:NumericUpDown.Style>
             </AV:NumericUpDown>
-            <Image Grid.Column="1" HorizontalAlignment="Left" Source="{Binding Path=Text.Icon.Filename}" />
+            <Image
+              Grid.Column="1"
+              HorizontalAlignment="Left"
+              Source="{Binding Path=Text.Icon.Filename}" />
             <TextBlock
               Grid.Column="2"
               VerticalAlignment="Center"

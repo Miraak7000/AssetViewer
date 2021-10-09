@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Xml.Linq;
+using AssetViewer.Data.Asset;
 
 namespace AssetViewer.Data {
 
@@ -16,18 +17,7 @@ namespace AssetViewer.Data {
     public Description UpgradeText { get; set; }
     public Description AssociatedRegions { get; set; }
     public string RarityType { get; set; }
-
-    public uint Count {
-      get => count;
-      set {
-        if (count != value) {
-          count = value;
-          RaisePropertyChanged(nameof(Count));
-          AssetProvider.RaiseAssetCountChanged(this);
-        }
-      }
-    }
-
+    public CountMode CountMode { get; set; }
     public Description Rarity { get; set; }
     public string ItemType { get; set; }
     public string ReleaseVersion { get; set; }
@@ -78,6 +68,7 @@ namespace AssetViewer.Data {
     public FactoryBase FactoryBase { get; } = new FactoryBase();
     public List<string> SetParts { get; }
     public Description FestivalName { get; }
+    public bool IsRollable { get; private set; }
 
     #endregion Public Properties
 
@@ -90,6 +81,7 @@ namespace AssetViewer.Data {
     #region Public Constructors
 
     public TemplateAsset(XElement asset) {
+      CountMode = new CountMode(this);
       ID = int.Parse(asset.Attribute("ID").Value);
       Name = asset.Element("N").Value;
       Text = new Description(asset.Element("T"));
@@ -99,6 +91,9 @@ namespace AssetViewer.Data {
       EffectTargets = asset.Element("ET")?.Elements().Select(s => new EffectTarget(s)).ToList() ?? new List<EffectTarget>();
       ReleaseVersion = asset.Attribute("RV")?.Value;
       IsPausable = asset.Attribute("IP")?.Value;
+      if (asset.Attribute("IR") != null) {
+        IsRollable = true;
+      }       
       if (asset.Element("FN") != null) {
         FestivalName = new Description(asset.Element("FN"));
       }

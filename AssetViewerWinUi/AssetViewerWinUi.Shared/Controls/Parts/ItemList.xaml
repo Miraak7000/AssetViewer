@@ -1,0 +1,79 @@
+﻿<UserControl
+  x:Class="AssetViewer.Controls.ItemList"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:AV="clr-namespace:AssetViewer"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:local="clr-namespace:AssetViewer.Controls"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  x:Name="userControl"
+  d:DesignHeight="450"
+  d:DesignWidth="800"
+  mc:Ignorable="d">
+  <Border BorderBrush="#FF554628" BorderThickness="1" CornerRadius="5">
+    <ListBox
+      x:Name="ListBoxItems"
+      HorizontalContentAlignment="Stretch"
+      x:FieldModifier="public"
+      Background="Transparent"
+      BorderBrush="Transparent"
+      IsSynchronizedWithCurrentItem="True"
+      ItemsSource="{Binding ElementName=userControl, Path=ItemSource}"
+      SelectedIndex="{Binding ElementName=userControl, Path=SelectedIndex}"
+      SelectedItem="{Binding Path=SelectedAsset}">
+      <ListBox.InputBindings>
+        <KeyBinding Key="C" Command="{Binding ElementName=userControl, Path=CopyToClipboardCommand}" Modifiers="Ctrl" />
+      </ListBox.InputBindings>
+      <ListBox.Style>
+        <Style TargetType="ListBox">
+          <Style.Triggers>
+            <DataTrigger Binding="{Binding Source={x:Static AV:AssetProvider.CountMode}}" Value="True">
+              <Setter Property="SelectionMode" Value="Extended" />
+            </DataTrigger>
+          </Style.Triggers>
+        </Style>
+      </ListBox.Style>
+      <ListBox.ItemTemplate>
+        <DataTemplate>
+          <Grid MaxHeight="24">
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="Auto" />
+              <ColumnDefinition Width="30" />
+              <ColumnDefinition Width="*" />
+              <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <AV:NumericUpDown
+              Grid.Column="0"
+              Width="50"
+              MaxValue="9999"
+              MinValue="0"
+              Value="{Binding Path=Count, Mode=TwoWay}">
+              <AV:NumericUpDown.Style>
+                <Style TargetType="AV:NumericUpDown">
+                  <Setter Property="Visibility" Value="Collapsed" />
+                  <Style.Triggers>
+                    <DataTrigger Binding="{Binding Source={x:Static AV:AssetProvider.CountMode}}" Value="True">
+                      <Setter Property="Visibility" Value="Visible" />
+                    </DataTrigger>
+                  </Style.Triggers>
+                </Style>
+              </AV:NumericUpDown.Style>
+            </AV:NumericUpDown>
+            <Image Grid.Column="1" HorizontalAlignment="Left" Source="{Binding Path=Text.Icon.Filename}" />
+            <TextBlock
+              Grid.Column="2"
+              VerticalAlignment="Center"
+              Text="{Binding Path=Text}"
+              TextTrimming="CharacterEllipsis" />
+            <TextBlock
+              Grid.Column="3"
+              HorizontalAlignment="Right"
+              VerticalAlignment="Center"
+              FontSize="11"
+              Text="{Binding Path=ID}" />
+          </Grid>
+        </DataTemplate>
+      </ListBox.ItemTemplate>
+    </ListBox>
+  </Border>
+</UserControl>

@@ -15,6 +15,7 @@ namespace RDA.Data {
     public string Name { get; set; }
     public Description Text { get; set; }
     public List<(Description desc, double weight)> Details { get; set; } = new List<(Description, double)>();
+    public bool IsRollable { get; set; }
 
     #endregion Public Properties
 
@@ -24,6 +25,7 @@ namespace RDA.Data {
       var Source = element.Source;
       ID = Source.XPathSelectElement("Values/Standard/GUID").Value;
       Name = Source.XPathSelectElement("Values/Standard/Name").Value;
+      IsRollable = element.IsRollable;
       switch (Source.Element("Template").Value) {
         case "TourismFeature":
           Text = new Description("-4");
@@ -113,6 +115,7 @@ namespace RDA.Data {
             var desc = GetDescriptionFromProgression(item.Asset.Element("Template").Value);
             Details.Add((desc, item.Weight));
           }
+
           break;
 
         case "TakeOver":

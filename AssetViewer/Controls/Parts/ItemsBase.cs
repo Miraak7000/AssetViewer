@@ -87,7 +87,7 @@ namespace AssetViewer.Controls {
     private static void ExecuteSelectedCountChanged(SelectedCountChangedArgs obj) {
       if (obj.Assets != null) {
         foreach (var asset in obj.Assets) {
-          asset.Count = obj.Count;
+          asset.CountMode.Count = obj.Count;
         }
       }
     }
