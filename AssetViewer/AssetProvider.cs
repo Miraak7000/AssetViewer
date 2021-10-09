@@ -26,7 +26,7 @@ namespace AssetViewer {
     public static Dictionary<int, Pool> Pools { get; } = new Dictionary<int, Pool>();
     public static ObjectCache Cache { get; set; } = MemoryCache.Default;
     public static Dictionary<int, string> Descriptions { get; } = new Dictionary<int, string>();
-    public static bool CountMode { get; set; }
+    public static bool CountMode { get; set; } = true;
     public static List<Languages> PossibleLanguages { get; } = new List<Languages>();
 
     public static Data.Languages Language {
@@ -35,7 +35,14 @@ namespace AssetViewer {
     }
     public static int MaxRerollCosts {
       get => maxRerollCosts;
-      set { maxRerollCosts = value; NotifyStaticPropertyChanged(); }
+      set {
+        if (value != maxRerollCosts) {
+        maxRerollCosts = value; 
+          NotifyStaticPropertyChanged(); 
+          OnRerollCostsChanged(maxRerollCosts);
+
+        }
+      }
     }
 
     #endregion Public Properties
@@ -45,6 +52,7 @@ namespace AssetViewer {
     public static event EventHandler<PropertyChangedEventArgs> StaticPropertyChanged;
 
     public static event Action<IEnumerable<TemplateAsset>> OnAssetCountChanged;
+    public static event Action<int> OnRerollCostsChanged;
 
     public static event Action OnLanguage_Changed;
 
