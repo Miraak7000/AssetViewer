@@ -48,7 +48,7 @@ namespace RDA {
 
     internal static void ExtractItemTemplates(string path) {
       var element = XDocument.Load(path).Root;
-      foreach (var item in Assets.Original.Descendants("Asset").Where(a => a.XPathSelectElement("Values/Item") != null).Select(a => a.Element("Template")?.Value).Distinct()) {
+      foreach (var item in Assets.All.Descendants("Asset").Where(a => a.XPathSelectElement("Values/Item") != null).Select(a => a.Element("Template")?.Value).Distinct()) {
         Debug.WriteLine(item);
 
       }
@@ -215,7 +215,7 @@ namespace RDA {
       // EffectTargets
       foreach (var effectTarget in item.XPathSelectElements("Values/ItemEffect/EffectTargets/Item")) {
         var effectTargetGuid = effectTarget.Element("GUID").Value;
-        textEN = Assets.Original.XPathSelectElement($"//Asset/Values/Standard[GUID={effectTargetGuid}]/../Text/LocaText/English/Text").Value;
+        textEN = Assets.All.XPathSelectElement($"//Asset/Values/Standard[GUID={effectTargetGuid}]/../Text/LocaText/English/Text").Value;
         textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={effectTargetGuid}]/Text").Value;
         effectTarget.Add(new XElement("Description"));
         effectTarget.XPathSelectElement("Description").Add(new XElement("EN"));

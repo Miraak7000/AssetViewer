@@ -173,6 +173,10 @@ namespace RDA.Data {
           case "VisitorPierColony":
           case "Mall":
           case "ResidenceBuilding-Unique":
+          case "ItemCrafterHarbor":
+          case "FreeAreaBuilding_BuildPermit":
+          case "FarmBuilding_BuildPermit":
+          case "ScenarioRuin":
             ItemType = "Building";
             break;
 
@@ -196,6 +200,7 @@ namespace RDA.Data {
             break;
 
           case "Product":
+          case "Resource":
             ItemType = "Product";
             break;
 
@@ -219,7 +224,7 @@ namespace RDA.Data {
           default:
             Debug.WriteLine(asset.Element("Template").Value);
 
-            throw new NotImplementedException(asset.Element("Template").Value);
+           throw new NotImplementedException(asset.Element("Template").Value);
             break;
         }
       }
@@ -261,6 +266,7 @@ namespace RDA.Data {
           case "DistributionUpgrade":
           case "DistributionCenterMarker":
           case "ItemConstructionPlan":
+          case "MonoCulture":
           // Todo: needs to implemented
 
           case "Product":
@@ -357,12 +363,16 @@ namespace RDA.Data {
           case "IndustrializableUpgrade":
           case "Motorizable":
           case "ResearchCenter":
+          case "ResourceUpgrade":
+          case "EcoSystemProviderUpgrade":
             ProcessElement_GenericUpgradeChilds(element, element.Name.LocalName);
             break;
 
           case "PassiveTradeGoodGenUpgrade":
           //Buildings
           case "Residence7":
+          case "EcoSystemUpgrade":
+          case "EcoSystemProvider":
             ProcessElement_GenericUpgradeElement(element, element.Name.LocalName);
             break;
 
@@ -494,8 +504,8 @@ namespace RDA.Data {
 
           default:
             Debug.WriteLine(element.Name.LocalName);
-            throw new NotImplementedException(element.Name.LocalName);
-            break;
+            //throw new NotImplementedException(element.Name.LocalName);
+            break; 
         }
       }
       if (findSources) {
@@ -694,7 +704,7 @@ namespace RDA.Data {
           EffectTargets.AddRange(Assets.Buffs[region.Element("SetBuff").Value].EffectTargets);
         }
       }
-      var allocation = Assets.Original.Descendants("Asset")
+      var allocation = Assets.All.Descendants("Asset")
         .FirstOrDefault(a => a.Descendants("Set").Any(s => s.Value == ID));
       if (allocation != null) {
         Allocation = new Allocation(allocation.XPathSelectElement("Values/Standard/GUID").Value, null);
@@ -731,7 +741,7 @@ namespace RDA.Data {
           throw new NotImplementedException();
         if (element.Element("EffectTargets").HasElements) {
           EffectTargets = new List<EffectTarget>();
-          foreach (var item in element.Element("EffectTargets").Elements()) {
+          foreach (var item in element.Element("EffectTargets").Elements()?.Where(e=> !string.IsNullOrWhiteSpace(e.Value))) {
             EffectTargets.Add(new EffectTarget(item));
           }
         }
@@ -898,7 +908,7 @@ namespace RDA.Data {
         if (projektile != null) {
           AttackerUpgrades.Add(new Upgrade(projektile));
           var Projectile = Assets
-            .Original
+            .All
             .Descendants("Asset")
             .FirstOrDefault(a => a.XPathSelectElement($"Values/Standard/GUID")?.Value == projektile.Value);
           if (Projectile.XPathSelectElement("Values/Exploder/InnerDamage")?.Value is string damage && damage != "0") {
@@ -1026,7 +1036,7 @@ namespace RDA.Data {
     private void ProcessElement_CraftableItem(XElement element) {
       if (element.HasElements) {
         CraftableItemUpgrades = new List<Upgrade>();
-        foreach (var item in element.Element("CraftingCosts").Elements()) {
+        foreach (var item in element.Element("CraftingCosts").Elements()?.Where(e=> e.Element("Product") != null)) {
           CraftableItemUpgrades.Add(new Upgrade { Text = new Description(item.Element("Product").Value), Value = item.Element("Amount").Value });
         }
       }
@@ -1211,7 +1221,7 @@ namespace RDA.Data {
 
           //Ignores
           if (reference.Name.LocalName is string foundedName &&
-            foundedName.MatchOne("BaseAssetGUID", "Icon", "ItemUsed", "TradePrice", "GenPool", "NotificationIcon", "ReplacingWorkforce", "ProductFilter", "BusNeed", "LineID")) {
+            foundedName.MatchOne("BaseAssetGUID", "Icon", "ItemUsed", "TradePrice", "GenPool", "NotificationIcon", "ReplacingWorkforce", "ProductFilter", "BusNeed", "LineID", "PosX", "Context", "ProductionOutputInfotip", "UnlockNeeded")) {
             continue;
           }
           if (reference.Parent?.Parent?.Name.LocalName is string gparent &&
@@ -1283,6 +1293,9 @@ namespace RDA.Data {
             case "TowerRestaurant":  //Update 12
             case "ObjectmenuResidenceScene":  //Update 12
             case "Mall":  //Update 12
+            case "ScenarioInformationInternal":  //Update 13
+            case "MonumentScene":  //Update 13
+            case "ScenarioRuin":  //Update 13
               // ignore
               break;
 
@@ -1307,6 +1320,7 @@ namespace RDA.Data {
             case "Profile_3rdParty":
             case "Profile_3rdParty_Pirate":
             case "Profile_2ndParty":
+            case "Profile_3rdParty_ItemCrafter-NoTrader":
               if (key.MatchOne("199", "200", "240", "117422")) {
                 break;
               }
@@ -1500,6 +1514,13 @@ namespace RDA.Data {
                 break;
               }
               goto case "SearchAgain";
+            
+            case "QuestObject":
+            case "Collectable":
+              if (reference.Parent?.Parent?.Parent?.Name.LocalName != "ActionAddGoodsToItemContainer") {
+                break;
+              }
+              goto case "SearchAgain";
 
             case "ItemReplacementPool":
               if (reference.Name.LocalName != "ReplacementPool") {
@@ -1558,7 +1579,7 @@ namespace RDA.Data {
 
             default:
               Debug.WriteLine(referencingAsset.Element("Template").Value);
-              throw new NotImplementedException(referencingAsset.Element("Template").Value);
+              //throw new NotImplementedException(referencingAsset.Element("Template").Value);
               break;
           }
           if (result.Any()) {

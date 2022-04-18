@@ -28,7 +28,7 @@ namespace RDA.Data {
 
     private static void MonumentEventCategory() {
       var result = new List<Asset>();
-      var monumentCategories = Assets.Original.XPathSelectElements("//Asset[Template='MonumentEventCategory']").ToArray();
+      var monumentCategories = Assets.All.XPathSelectElements("//Asset[Template='MonumentEventCategory']").ToArray();
       Program.ConsoleWriteHeadline("Create Monument");
       foreach (var monumentCategory in monumentCategories) {
         Program.ConsoleWriteGUID(monumentCategory.XPathSelectElement("Values/Standard/GUID").Value);
@@ -44,7 +44,7 @@ namespace RDA.Data {
 
     private static void MonumentEvent() {
       var result = new List<Asset>();
-      var monumentEvents = Assets.Original.XPathSelectElements("//Asset[Template='MonumentEvent']").ToArray();
+      var monumentEvents = Assets.All.XPathSelectElements("//Asset[Template='MonumentEvent']").ToArray();
       foreach (var monumentEvent in monumentEvents) {
         Program.ConsoleWriteGUID(monumentEvent.XPathSelectElement("Values/Standard/GUID").Value);
         var asset = new Asset(monumentEvent, false);
@@ -59,7 +59,7 @@ namespace RDA.Data {
 
     private static void MonumentThreshold() {
       var result = new List<Asset>();
-      var monumentEvents = Assets.Original.XPathSelectElements("//Asset[Template='MonumentEventReward']").ToArray();
+      var monumentEvents = Assets.All.XPathSelectElements("//Asset[Template='MonumentEventReward']").ToArray();
       foreach (var monumentEvent in monumentEvents) {
         Program.ConsoleWriteGUID(monumentEvent.XPathSelectElement("Values/Standard/GUID").Value);
         var asset = new Asset(monumentEvent, false);

@@ -1,5 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Product>
+  <Asset ID="133891" RV="Update 11" RT="Common">
+    <N>Pier_Need</N>
+    <T ID="133890" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+    <R ID="118002" />
+    <IT>Product</IT>
+    <GU />
+    <TP />
+    <HF />
+    <S />
+  </Asset>
+  <Asset ID="132723" RV="Update 11" RT="Common">
+    <N>Tourist Workforce</N>
+    <T ID="132723" I="data/ui/2kimages/main/icons/icon_workforce_tourists.png" />
+    <R ID="118002" />
+    <IT>Product</IT>
+    <GU />
+    <TP />
+    <HF />
+    <S />
+  </Asset>
+  <Asset ID="119392" RV="Update 09" RT="Common">
+    <N>Research</N>
+    <T ID="119392" I="data/ui/2kimages/main/icons/icon_research_resource.png" />
+    <R ID="118002" />
+    <IT>Product</IT>
+    <GU />
+    <TP />
+    <HF />
+    <S />
+  </Asset>
   <Asset ID="114431" RV="Update 09" RT="Common">
     <N>Telephones</N>
     <T ID="114431" I="data/ui/2kimages/main/3dicons/goods_africa/icon_telephones.png" />
@@ -816,7 +846,7 @@
   </Asset>
   <Asset ID="112702" RV="Update 06" RT="Common">
     <N>oil lamps</N>
-    <T ID="112702" I="data/ui/2kimages/main/3dicons/icon_oil_lamps.png" />
+    <T ID="1620242856" I="data/ui/2kimages/main/3dicons/icon_oil_lamps.png" />
     <R ID="118002" />
     <IT>Product</IT>
     <EA>
@@ -1067,41 +1097,77 @@
     <I ID="117254" />
     <S />
   </Asset>
-  <Asset ID="112694" RV="Update 06" RT="Common">
-    <N>caribou meat</N>
-    <T ID="112694" I="data/ui/2kimages/main/3dicons/icon_reindeer_meat.png" />
+  <Asset ID="798" RV="Update 13" RT="Common">
+    <N>Tools</N>
+    <T ID="798" I="data/ui/2kimages/main/3dicons/icon_tools.png" />
     <R ID="118002" />
     <IT>Product</IT>
     <GU />
     <TP />
     <HF />
-    <I ID="117248" />
+    <I ID="143127" />
+    <S />
+  </Asset>
+  <Asset ID="24305" RV="Update 13" RT="Common">
+    <N>FakeProductPureWater</N>
+    <T ID="24305" I="data/ui/2kimages/main/3dicons/scenario/ecobalance/icon_pollution_water.png" />
+    <R ID="118002" />
+    <IT>Product</IT>
+    <GU />
+    <TP />
+    <HF />
+    <S />
+  </Asset>
+  <Asset ID="24320" RV="Update 13" RT="Common">
+    <N>Herbarium</N>
+    <T ID="24320" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_herbarium.png" />
+    <R ID="118002" />
+    <IT>Product</IT>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="24321" />
     <S>
-      <S ID="237" N="Third_party_11 (Inuit)">
-        <T ID="1592191673" I="data/ui/2kimages/main/profiles/inuit_trader.png" />
+      <S ID="143024" N="RQBonus_Maya_Gift">
+        <T ID="1671761163" I="data/ui/2kimages/main/profiles/resident_colony_tier02_work.png" />
         <DL>
           <D W="100">
-            <T ID="-11">
-              <AI ID="-910786917" />
-            </T>
+            <T ID="143024" />
           </D>
           <D W="100">
-            <T ID="-10">
-              <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
-            </T>
+            <T ID="143023" />
           </D>
           <D W="100">
-            <T ID="-9">
-              <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
-            </T>
+            <T ID="143022" />
+          </D>
+          <D W="100">
+            <T ID="143020" />
+          </D>
+          <D W="100">
+            <T ID="143019" />
+          </D>
+          <D W="100">
+            <T ID="139999" />
+          </D>
+          <D W="100">
+            <T ID="139998" />
+          </D>
+          <D W="100">
+            <T ID="139997" />
+          </D>
+          <D W="100">
+            <T ID="139996" />
+          </D>
+          <D W="100">
+            <T ID="139995" />
           </D>
         </DL>
       </S>
     </S>
   </Asset>
-  <Asset ID="114890" RV="Update 06" RT="Common">
-    <N>canteen</N>
-    <T ID="114890" I="data/ui/2kimages/main/3dicons/icon_canteen.png" />
+  <Asset ID="24187" RV="Update 13" RT="Common">
+    <N>FakeProductTree</N>
+    <T ID="24187" I="data/ui/2kimages/main/3dicons/ornaments/regrowing_trees/icon_leaf_fir_trees.png" />
     <R ID="118002" />
     <IT>Product</IT>
     <GU />
@@ -1297,7 +1363,7 @@
     <GU />
     <TP />
     <HF />
-    <I ID="134617" />
+    <I ID="23961" />
     <S />
   </Asset>
   <Asset ID="135130" RV="Update 12" RT="Common">
@@ -1308,7 +1374,7 @@
     <GU />
     <TP />
     <HF />
-    <I ID="134617" />
+    <I ID="23960" />
     <S />
   </Asset>
   <Asset ID="135186" RV="Update 12" RT="Common">
@@ -1319,7 +1385,7 @@
     <GU />
     <TP />
     <HF />
-    <I ID="134617" />
+    <I ID="23962" />
     <S />
   </Asset>
   <Asset ID="135231" RV="Update 12" RT="Common">
@@ -1330,7 +1396,7 @@
     <GU />
     <TP />
     <HF />
-    <I ID="134617" />
+    <I ID="23966" />
     <S />
   </Asset>
   <Asset ID="135232" RV="Update 12" RT="Common">
@@ -1341,7 +1407,7 @@
     <GU />
     <TP />
     <HF />
-    <I ID="134617" />
+    <I ID="23982" />
     <S />
   </Asset>
   <Asset ID="135233" RV="Update 12" RT="Common">
@@ -1357,7 +1423,7 @@
     <GU />
     <TP />
     <HF />
-    <I ID="134617" />
+    <I ID="23983" />
     <S />
   </Asset>
   <Asset ID="135234" RV="Update 12" RT="Common">
@@ -1373,7 +1439,7 @@
     <GU />
     <TP />
     <HF />
-    <I ID="134617" />
+    <I ID="23984" />
     <S />
   </Asset>
   <Asset ID="135129" RV="Update 12" RT="Common">
@@ -1384,7 +1450,7 @@
     <GU />
     <TP />
     <HF />
-    <I ID="134617" />
+    <I ID="23959" />
     <S />
   </Asset>
   <Asset ID="135087" RV="Update 12" RT="Common">
@@ -1400,7 +1466,7 @@
     <GU />
     <TP />
     <HF />
-    <I ID="134617" />
+    <I ID="23957" />
     <S />
   </Asset>
   <Asset ID="135086" RV="Update 12" RT="Common">
@@ -1416,7 +1482,7 @@
     <GU />
     <TP />
     <HF />
-    <I ID="134617" />
+    <I ID="23956" />
     <S />
   </Asset>
   <Asset ID="135230" RV="Update 12" RT="Common">
@@ -1427,7 +1493,7 @@
     <GU />
     <TP />
     <HF />
-    <I ID="134617" />
+    <I ID="23964" />
     <S />
   </Asset>
   <Asset ID="135229" RV="Update 12" RT="Common">
@@ -1443,7 +1509,7 @@
     <GU />
     <TP />
     <HF />
-    <I ID="134617" />
+    <I ID="23965" />
     <S />
   </Asset>
   <Asset ID="134623" RV="Update 12" RT="Common">
@@ -1459,7 +1525,7 @@
     <GU />
     <TP />
     <HF />
-    <I ID="134617" />
+    <I ID="23963" />
     <S />
   </Asset>
   <Asset ID="134616" RV="Update 11" RT="Common">
@@ -1690,29 +1756,41 @@
     <HF />
     <S />
   </Asset>
-  <Asset ID="133891" RV="Update 11" RT="Common">
-    <N>Pier_Need</N>
-    <T ID="133890" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+  <Asset ID="112694" RV="Update 06" RT="Common">
+    <N>caribou meat</N>
+    <T ID="112694" I="data/ui/2kimages/main/3dicons/icon_reindeer_meat.png" />
     <R ID="118002" />
     <IT>Product</IT>
     <GU />
     <TP />
     <HF />
-    <S />
+    <I ID="117248" />
+    <S>
+      <S ID="237" N="Third_party_11 (Inuit)">
+        <T ID="1592191673" I="data/ui/2kimages/main/profiles/inuit_trader.png" />
+        <DL>
+          <D W="100">
+            <T ID="-11">
+              <AI ID="-910786917" />
+            </T>
+          </D>
+          <D W="100">
+            <T ID="-10">
+              <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
+            </T>
+          </D>
+          <D W="100">
+            <T ID="-9">
+              <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
+            </T>
+          </D>
+        </DL>
+      </S>
+    </S>
   </Asset>
-  <Asset ID="132723" RV="Update 11" RT="Common">
-    <N>Tourist Workforce</N>
-    <T ID="132723" I="data/ui/2kimages/main/icons/icon_workforce_tourists.png" />
-    <R ID="118002" />
-    <IT>Product</IT>
-    <GU />
-    <TP />
-    <HF />
-    <S />
-  </Asset>
-  <Asset ID="119392" RV="Update 09" RT="Common">
-    <N>Research</N>
-    <T ID="119392" I="data/ui/2kimages/main/icons/icon_research_resource.png" />
+  <Asset ID="114890" RV="Update 06" RT="Common">
+    <N>canteen</N>
+    <T ID="114890" I="data/ui/2kimages/main/3dicons/icon_canteen.png" />
     <R ID="118002" />
     <IT>Product</IT>
     <GU />
@@ -3679,7 +3757,7 @@
   </Asset>
   <Asset ID="120037" RV="Release" RT="Common">
     <N>bombin</N>
-    <T ID="471784778" I="data/ui/2kimages/main/3dicons/icon_bowler_hat.png" />
+    <T ID="-1395336335" I="data/ui/2kimages/main/3dicons/icon_bowler_hat.png" />
     <R ID="118002" />
     <IT>Product</IT>
     <GU />
@@ -3946,7 +4024,7 @@
   </Asset>
   <Asset ID="1010256" RV="Release" RT="Common">
     <N>pearls</N>
-    <T ID="-1619153473" I="data/ui/2kimages/main/3dicons/icon_pearls.png" />
+    <T ID="1010256" I="data/ui/2kimages/main/3dicons/icon_pearls.png" />
     <R ID="118002" />
     <IT>Product</IT>
     <GU />
@@ -6306,7 +6384,7 @@
   </Asset>
   <Asset ID="120030" RV="Release" RT="Common">
     <N>glasses</N>
-    <T ID="1718878864" I="data/ui/2kimages/main/3dicons/icon_glasses.png" />
+    <T ID="395861680" I="data/ui/2kimages/main/3dicons/icon_glasses.png" />
     <R ID="118002" />
     <IT>Product</IT>
     <GU />
@@ -12430,6 +12508,22 @@
     <HF />
     <I ID="11737" />
     <S>
+      <S ID="139672" N="Quest_Go-to_Boat">
+        <T ID="1554540769" I="data/ui/2kimages/main/profiles/resident_colony_tier01_work.png" />
+        <DL>
+          <D W="100">
+            <T ID="139672" />
+          </D>
+        </DL>
+      </S>
+      <S ID="139342" N="Delivery_5tWood">
+        <T ID="187083400" I="data/ui/2kimages/main/profiles/campaign_portrait_09.png" />
+        <DL>
+          <D W="100">
+            <T ID="139342" />
+          </D>
+        </DL>
+      </S>
       <S ID="112084" N="Diving Vessel">
         <T ID="113420" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
         <DL>
@@ -13531,7 +13625,7 @@
   </Asset>
   <Asset ID="1010356" RV="Release" RT="Common">
     <N>bank</N>
-    <T ID="1010365" I="data/ui/2kimages/main/3dicons/icon_bank.png" />
+    <T ID="1010356" I="data/ui/2kimages/main/3dicons/icon_bank.png" />
     <R ID="118002" />
     <IT>Product</IT>
     <GU />
