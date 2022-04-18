@@ -215,6 +215,11 @@ namespace RDA.Data {
           Text = new Description("118940");
           break;
 
+        case "FactoryOutputs":
+          Text = new Description("11989");
+          Details = element.Details.Select(d => (new Description(d.Asset.XPathSelectElement("Values/Standard/GUID").Value), d.Weight)).ToList();
+          break;
+
         default:
           Debug.WriteLine(Source.Element("Template").Value);
           throw new NotImplementedException();

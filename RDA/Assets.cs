@@ -26,9 +26,11 @@ namespace RDA {
     static Assets() {
       BaseGame = XmlLoader.LoadXml(Program.PathRoot + @"\Original\assets.xml");
       Eden_Burning = XmlLoader.LoadSzenarioXml(Program.PathRoot + @"\Original\Eden Burning\assets.xml", GameTypes.Eden_Burning);
+      Seasons_of_Silver = XmlLoader.LoadSzenarioXml(Program.PathRoot + @"\Original\Seasons of Silver\assets.xml", GameTypes.Seasons_of_Silver);
       All = new XElement("Root");
       All.Add(BaseGame);
       All.Add(Eden_Burning);
+      All.Add(Seasons_of_Silver);
     }
 
     #endregion Public Constructors
@@ -65,6 +67,7 @@ namespace RDA {
     internal readonly static XElement BaseGame;
     internal readonly static XElement All;
     internal readonly static XElement Eden_Burning;
+    internal readonly static XElement Seasons_of_Silver;
 
     internal readonly static Dictionary<string, XElement> DefaultValues = new Dictionary<string, XElement>();
 
@@ -472,6 +475,7 @@ namespace RDA {
       KeyToIdDict.Add("FiniteResourceRegrowFactorUpgrade", "861");
       KeyToIdDict.Add("FiniteResourceRegrowIntervalUpgrade", "862");
       KeyToIdDict.Add("MaxDynamicFillCapacityUpgrade", "25204");
+      KeyToIdDict.Add("MaxWorkerAmountUpgrade", "24047");
 
       //Override Allocation Tradeship
       KeyToIdDict["Tradeship"] = "12006";

@@ -11,5 +11,6 @@ namespace RDA.Data {
   public enum GameTypes {
     Anno_1800 = 15210,
     Eden_Burning = 882,
+    Seasons_of_Silver = 25160,
   }
 }

@@ -42,17 +42,17 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="1010298" RV="Release" RT="Common" IP="true">
-    <N>heavy_03 (Coal Heavy Industry)</N>
+  <Asset ID="24860" RV="Update 14" RT="Common" IP="true">
+    <N>Scenario02 heavy_03 (Coal Heavy Industry)</N>
     <T ID="1010298" I="data/ui/2kimages/main/3dicons/icon_coal_burn.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
     <BC>
-      <U V="500">
+      <U V="200">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
-      <U V="4">
+      <U V="10">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
       <U V="5">
@@ -73,7 +73,7 @@
     <TP />
     <HF />
     <I ID="11143" />
-    <FB>
+    <FB CT="60">
       <FO>
         <U V="1 / 4">
           <T ID="1010226" I="data/ui/2kimages/main/3dicons/icon_coal.png" />
@@ -86,7 +86,7 @@
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
         <U V="10">
-          <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
+          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
         </U>
       </MC>
     </M>
@@ -147,17 +147,17 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="24860" RV="Update 14" RT="Common" IP="true">
-    <N>Scenario02 heavy_03 (Coal Heavy Industry)</N>
+  <Asset ID="1010298" RV="Release" RT="Common" IP="true">
+    <N>heavy_03 (Coal Heavy Industry)</N>
     <T ID="1010298" I="data/ui/2kimages/main/3dicons/icon_coal_burn.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
     <BC>
-      <U V="200">
+      <U V="500">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
-      <U V="10">
+      <U V="4">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
       <U V="5">
@@ -178,7 +178,7 @@
     <TP />
     <HF />
     <I ID="11143" />
-    <FB CT="60">
+    <FB>
       <FO>
         <U V="1 / 4">
           <T ID="1010226" I="data/ui/2kimages/main/3dicons/icon_coal.png" />
@@ -191,7 +191,7 @@
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
         <U V="10">
-          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
+          <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
         </U>
       </MC>
     </M>

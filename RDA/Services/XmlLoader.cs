@@ -30,7 +30,7 @@ namespace RDA.Services {
       }
       return null;
     }
-    
+
     public static XElement LoadSzenarioXml(string path, GameTypes gameType = GameTypes.Anno_1800) {
       if (File.Exists(path)) {
         var root = XDocument.Load(path).Root;
@@ -39,8 +39,13 @@ namespace RDA.Services {
           var templates = XDocument.Load(info.FullName).Root.Descendants("Template").ToLookup(t => t.Element("Name")?.Value ?? "trash");
           foreach (var asset in root.Descendants("Asset").ToArray()) {
             if (asset.XPathSelectElement("Values/Standard/GUID")?.Value == null) {
-              asset.Remove();
-              continue;
+              if (asset.XPathSelectElement("ScenarioBaseAssetGUID")?.Value != null) {
+                asset.XPathSelectElement("Values/Standard").Add(new XElement("GUID", $"{gameType.ToString()}-{asset.XPathSelectElement("ScenarioBaseAssetGUID").Value}"));
+              }
+              //else {
+              //  asset.Remove();
+              //}
+              //continue;
             }
             asset.Add(new XAttribute("GameType", (int)gameType));
             if (templates.Contains(asset.Element("Template")?.Value ?? "")) {

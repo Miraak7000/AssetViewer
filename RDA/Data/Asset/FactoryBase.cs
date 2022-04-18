@@ -23,7 +23,7 @@ namespace RDA.Data {
       if (element.Element("FactoryInputs") != null) {
         FactoryInputs = new List<Upgrade>();
         foreach (var item in element.Element("FactoryInputs").Elements("Item")) {
-          FactoryInputs.Add(new Upgrade { Text = new Description(item.Element("Product").Value), Value = $"{item.Element("Amount").Value} / {item.Element("StorageAmount").Value}" });
+          FactoryInputs.Add(new Upgrade { Text = new Description(item.Element("Product").Value), Value = $"{item.Element("Amount")?.Value ?? "1"} / {item.Element("StorageAmount")?.Value ?? "1"}" });
         }
       }
       if (element.Element("FactoryOutputs") != null) {

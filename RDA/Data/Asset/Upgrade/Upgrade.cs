@@ -433,6 +433,7 @@ namespace RDA.Data {
         case "FiniteResourceRegrowFactorUpgrade":
         case "FiniteResourceRegrowIntervalUpgrade":
         case "DeltaValueUpgrade":
+        case "MaxWorkerAmountUpgrade":
           break;
 
         case "AdditionalHappiness":

@@ -231,7 +231,7 @@ namespace RDA.Data {
           default:
             Debug.WriteLine(asset.Element("Template").Value);
 
-           throw new NotImplementedException(asset.Element("Template").Value);
+            throw new NotImplementedException(asset.Element("Template").Value);
             break;
         }
       }
@@ -514,7 +514,7 @@ namespace RDA.Data {
           default:
             Debug.WriteLine(element.Name.LocalName);
             throw new NotImplementedException(element.Name.LocalName);
-            break; 
+            break;
         }
       }
       if (findSources) {
@@ -750,7 +750,7 @@ namespace RDA.Data {
           throw new NotImplementedException();
         if (element.Element("EffectTargets").HasElements) {
           EffectTargets = new List<EffectTarget>();
-          foreach (var item in element.Element("EffectTargets").Elements()?.Where(e=> !string.IsNullOrWhiteSpace(e.Value))) {
+          foreach (var item in element.XPathSelectElements("EffectTargets/Item/GUID")?.Where(e => !string.IsNullOrWhiteSpace(e.Value))) {
             EffectTargets.Add(new EffectTarget(item));
           }
         }
@@ -872,6 +872,9 @@ namespace RDA.Data {
             case "InputBenefitModifier":
               var buffs = item.Elements("Item").SelectMany(e => e.Elements().Where(ele => ele.Name.LocalName != "Product"));
               foreach (var buffname in buffs.Select(b => b.Name.LocalName).Distinct()) {
+                if (buffname == "VectorElement") {
+                  continue;
+                }
                 var firstBuff = new Upgrade(buffs.FirstOrDefault(b => b.Name.LocalName == buffname)) {
                   Additionals = new List<Upgrade>(),
                   Value = null
@@ -1045,7 +1048,7 @@ namespace RDA.Data {
     private void ProcessElement_CraftableItem(XElement element) {
       if (element.HasElements) {
         CraftableItemUpgrades = new List<Upgrade>();
-        foreach (var item in element.Element("CraftingCosts").Elements()?.Where(e=> e.Element("Product") != null)) {
+        foreach (var item in element.Element("CraftingCosts").Elements()?.Where(e => e.Element("Product") != null)) {
           CraftableItemUpgrades.Add(new Upgrade { Text = new Description(item.Element("Product").Value), Value = item.Element("Amount").Value });
         }
       }
@@ -1232,15 +1235,15 @@ namespace RDA.Data {
           if (reference.Name.LocalName is string foundedName &&
             foundedName.MatchOne("BaseAssetGUID", "Icon", "ItemUsed", "TradePrice", "GenPool", "NotificationIcon",
             "ReplacingWorkforce", "ProductFilter", "BusNeed", "LineID", "PosX", "Context", "ProductionOutputInfotip",
-            "UnlockNeeded", "TextOverride", "MedalObjectiveIcon", "UpgradeTarget")) {
+            "UnlockNeeded", "TextOverride", "MedalObjectiveIcon", "UpgradeTarget", "ScenarioBaseAssetGUID")) {
             continue;
           }
           if (reference.Parent?.Parent?.Name.LocalName is string gparent &&
-            gparent.MatchOne("Costs", "UpgradeCost", "CraftingCosts", "Maintenances", "StoredProducts", "UnlockAssets")) {
+            gparent.MatchOne("Costs", "UpgradeCost", "CraftingCosts", "Maintenances", "StoredProducts", "UnlockAssets", "FactoryInputs")) {
             continue;
           }
           if (reference.Parent?.Parent?.Parent?.Name.LocalName is string ggParent &&
-            ggParent.MatchOne("FactoryBase", "Sellable", "PublicService")) {
+            ggParent.MatchOne("Sellable", "PublicService")) {
             continue;
           }
 
@@ -1252,348 +1255,352 @@ namespace RDA.Data {
             continue;
           }
 
-          switch (referencingAsset.Element("Template").Value) {
-            //case "AssetPool":
-            case "TutorialQuest":
-            case "SettlementRightsFeature":
-            case "GuildhouseItem":
-            case "MonumentEvent":
-            case "MainQuest":
-            case "WarShip":
-            case "ExpeditionFeature":
-            case "FestivalBuff":
-            case "TownhallItem":
-            case "PopulationLevel7":
-            case "NeedsSatisfactionNews":
-            case "ProductFilter":
-            case "PlayerCounterContextPool":
-            case "PublicServiceBuilding":
-            case "Market":
-            case "GuildhouseBuff":
-            case "TriggerQuest":
-            case "TradeRouteFeature":
-            case "HarborWarehouse7":
-            case "DifficultyBalancing":
-            case "RewardConfig":
-            case "UplayAction":
-            case "NewspaperArticle":
-            case "WorkforceNewsTracker":
-            case "InfluenceTitleBuff":
-            case "WorkforceMenu":
-            case "TownhallBuff":
-            case "AudioText":
-            case "TradeShip":
-            case "Achievement":
-            case "Audio":
-            case "WorkforceSliderNewsTracker":
-            case "ChannelTarget":
-            case "Region":
-            case "KeywordFilter":
-            case "ObjectmenuCommuterHarbourScene":
-            case "IslandBarScene":
-            case "UplayProduct":
-            case "ProductStorageList":
-            case "IrrigationUpgrade":
-            case "TradeContractFeature": //export import update 10
-            case "PaMSy_Base":
-            case "MaintenanceBarConfig":
-            case "FeatureUnlock":
-            case "GoodValueBalancing":  //Update 11
-            case "Busstop":  //Update 11
-            case "ResidenceBuilding":  //Update 12
-            case "TowerRestaurant":  //Update 12
-            case "ObjectmenuResidenceScene":  //Update 12
-            case "Mall":  //Update 12
-            case "ScenarioInformationInternal":  //Update 13
-            case "MonumentScene":  //Update 13
-            case "ScenarioRuin":  //Update 13
-            case "ResourceBarScene":  //Update 14
-              // ignore
-              break;
-
-            case "TriggerCampaign":
-            case "Trigger":
-            case "PassiveTradeFeature":
-              //Todo?
-              break;
-
-            case "Expedition":
-              if (!referencingAsset.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
-                if (!reference.Name.LocalName.MatchOne("FillEventPool", "Reward", "EventOrEventPool")) {
-                  break;
-                }
-
-                result.AddSourceAsset(referencingAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
-              }
-              break;
-
-            case "Profile_3rdParty_NoTrader_NoProperty3rdParty":
-            case "Profile_3rdParty_ItemCrafter":
-            case "Profile_3rdParty":
-            case "Profile_3rdParty_Pirate":
-            case "Profile_2ndParty":
-            case "Profile_3rdParty_ItemCrafter-NoTrader":
-              if (key.MatchOne("199", "200", "240", "117422")) {
+          if (reference.Parent?.Parent?.Name.LocalName == "FactoryOutputs") {
+            result.AddSourceAsset(referencingAsset.GetProxyElement("FactoryOutputs"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
+          }
+          else
+            switch (referencingAsset.Element("Template").Value) {
+              //case "AssetPool":
+              case "TutorialQuest":
+              case "SettlementRightsFeature":
+              case "GuildhouseItem":
+              case "MonumentEvent":
+              case "MainQuest":
+              case "WarShip":
+              case "ExpeditionFeature":
+              case "FestivalBuff":
+              case "TownhallItem":
+              case "PopulationLevel7":
+              case "NeedsSatisfactionNews":
+              case "ProductFilter":
+              case "PlayerCounterContextPool":
+              case "PublicServiceBuilding":
+              case "Market":
+              case "GuildhouseBuff":
+              case "TriggerQuest":
+              case "TradeRouteFeature":
+              case "HarborWarehouse7":
+              case "DifficultyBalancing":
+              case "RewardConfig":
+              case "UplayAction":
+              case "NewspaperArticle":
+              case "WorkforceNewsTracker":
+              case "InfluenceTitleBuff":
+              case "WorkforceMenu":
+              case "TownhallBuff":
+              case "AudioText":
+              case "TradeShip":
+              case "Achievement":
+              case "Audio":
+              case "WorkforceSliderNewsTracker":
+              case "ChannelTarget":
+              case "Region":
+              case "KeywordFilter":
+              case "ObjectmenuCommuterHarbourScene":
+              case "IslandBarScene":
+              case "UplayProduct":
+              case "ProductStorageList":
+              case "IrrigationUpgrade":
+              case "TradeContractFeature": //export import update 10
+              case "PaMSy_Base":
+              case "MaintenanceBarConfig":
+              case "FeatureUnlock":
+              case "GoodValueBalancing":  //Update 11
+              case "Busstop":  //Update 11
+              case "ResidenceBuilding":  //Update 12
+              case "TowerRestaurant":  //Update 12
+              case "ObjectmenuResidenceScene":  //Update 12
+              case "Mall":  //Update 12
+              case "ScenarioInformationInternal":  //Update 13
+              case "MonumentScene":  //Update 13
+              case "ScenarioRuin":  //Update 13
+              case "ResourceBarScene":  //Update 14
+                                        // ignore
                 break;
-              }
-              if (!referencingAsset.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
-                if (reference.Name.LocalName.MatchOne("ShipDropRewardPool")) {
-                  result.AddSourceAsset(referencingAsset.GetProxyElement("ShipDrop"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
-                  break;
-                }
 
-                if (reference.Name.LocalName == "OfferingItems" ||
-                  reference.Parent.Parent.Name.LocalName.MatchOne("ShipsForSale", "GoodSets")) {
-                  var oldParent = reference.Parent;
-                  var parent = reference.Parent;
-                  while (parent.Name.LocalName != "Progression") {
-                    oldParent = parent;
-                    parent = parent.Parent;
+              case "TriggerCampaign":
+              case "Trigger":
+              case "PassiveTradeFeature":
+                //Todo?
+                break;
+
+              case "Expedition":
+                if (!referencingAsset.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
+                  if (!reference.Name.LocalName.MatchOne("FillEventPool", "Reward", "EventOrEventPool")) {
+                    break;
                   }
-                  var isRollable = reference.Name.LocalName == "OfferingItems";
-                  result.AddSourceAsset(referencingAsset.GetProxyElement("Harbor"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset.GetProxyElement(oldParent.Name.LocalName)) }, isRollable);
-                  break;
-                }
 
-                if (reference.Name.LocalName == "Pool" && reference.Parent.Parent.Name.LocalName == "ItemPools") {
-                  result.AddSourceAsset(referencingAsset.GetProxyElement("Harbor"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset.GetProxyElement(reference.Parent.Name.LocalName)) }, true);
-                  break;
+                  result.AddSourceAsset(referencingAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
                 }
+                break;
 
-                if (reference.Name.LocalName.MatchOne("MainIslandRewardPool", "SecondaryIslandRewardPool")) {
-                  result.AddSourceAsset(referencingAsset.GetProxyElement("TakeOver"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset.GetProxyElement($"{reference.Name.LocalName}#{reference.Parent.Name}")) });
+              case "Profile_3rdParty_NoTrader_NoProperty3rdParty":
+              case "Profile_3rdParty_ItemCrafter":
+              case "Profile_3rdParty":
+              case "Profile_3rdParty_Pirate":
+              case "Profile_2ndParty":
+              case "Profile_3rdParty_ItemCrafter-NoTrader":
+                if (key.MatchOne("199", "200", "240", "117422")) {
                   break;
                 }
+                if (!referencingAsset.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
+                  if (reference.Name.LocalName.MatchOne("ShipDropRewardPool")) {
+                    result.AddSourceAsset(referencingAsset.GetProxyElement("ShipDrop"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
+                    break;
+                  }
 
-                if (reference.Name.LocalName == "Item" && reference.Parent.Parent.Name.LocalName == "CraftableItems") {
-                  result.AddSourceAsset(referencingAsset.GetProxyElement("Crafting"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset.GetProxyElement(reference.Parent.Parent.Parent.Name.LocalName)) });
+                  if (reference.Name.LocalName == "OfferingItems" ||
+                    reference.Parent.Parent.Name.LocalName.MatchOne("ShipsForSale", "GoodSets")) {
+                    var oldParent = reference.Parent;
+                    var parent = reference.Parent;
+                    while (parent.Name.LocalName != "Progression") {
+                      oldParent = parent;
+                      parent = parent.Parent;
+                    }
+                    var isRollable = reference.Name.LocalName == "OfferingItems";
+                    result.AddSourceAsset(referencingAsset.GetProxyElement("Harbor"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset.GetProxyElement(oldParent.Name.LocalName)) }, isRollable);
+                    break;
+                  }
+
+                  if (reference.Name.LocalName == "Pool" && reference.Parent.Parent.Name.LocalName == "ItemPools") {
+                    result.AddSourceAsset(referencingAsset.GetProxyElement("Harbor"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset.GetProxyElement(reference.Parent.Name.LocalName)) }, true);
+                    break;
+                  }
+
+                  if (reference.Name.LocalName.MatchOne("MainIslandRewardPool", "SecondaryIslandRewardPool")) {
+                    result.AddSourceAsset(referencingAsset.GetProxyElement("TakeOver"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset.GetProxyElement($"{reference.Name.LocalName}#{reference.Parent.Name}")) });
+                    break;
+                  }
+
+                  if (reference.Name.LocalName == "Item" && reference.Parent.Parent.Name.LocalName == "CraftableItems") {
+                    result.AddSourceAsset(referencingAsset.GetProxyElement("Crafting"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset.GetProxyElement(reference.Parent.Parent.Parent.Name.LocalName)) });
+                    break;
+                  }
+                  if (reference.Name.LocalName.MatchOne("ItemPool", "Product", "Good")) {
+                    break;
+                  }
+                  else {
+                    throw new NotImplementedException();
+                  }
+                }
+                else {
                   break;
                 }
-                if (reference.Name.LocalName.MatchOne("ItemPool", "Product", "Good")) {
+              case "A7_QuestEscortObject":
+              case "A7_QuestDeliveryObject":
+              case "A7_QuestDestroyObjects":
+              case "A7_QuestPickupObject":
+              case "A7_QuestFollowShip":
+              case "A7_QuestPhotography":
+              case "A7_QuestStatusQuo":
+              case "A7_QuestItemUsage":
+              case "A7_QuestSustain":
+              case "A7_QuestPicturePuzzleObject":
+              case "Quest":
+              case "CollectablePicturePuzzle":
+              case "MonumentEventReward":
+              case "A7_QuestSmuggler":
+              case "A7_QuestDivingBellGeneric":
+              case "A7_QuestDivingBellSonar":
+              case "A7_QuestSelectObject":
+              case "A7_QuestNewspaperArticle":
+              case "A7_QuestLostCargo":
+              case "A7_QuestExpedition":
+              case "A7_QuestDecision":
+              case "A7_QuestSmugglerWOScanners":
+                if (!referencingAsset.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
+                  if (reference.Name.LocalName.MatchOne("Reward")) {
+                    result.AddSourceAsset(referencingAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
+                  }
+                }
+                break;
+
+              case "A7_QuestDivingBellTreasureMap":
+                if (!referencingAsset.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
+                  if (reference.Name.LocalName.MatchOne("Reward", "TreasureItem", "ScrapDummyItem")) {
+                    GetSources(Details, key, asset).SaveSource(key).MergeResults(key, in result);
+                    if (result.Count == 0) {
+                      result.AddSourceAsset(referencingAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
+                    }
+                  }
+                }
+                break;
+
+              case "DivingBellShip":
+                //Ignore second divingbellship. its for a quest
+                if (key == "113710") {
                   break;
+                }
+                if (reference.Name.LocalName == "ItemReplacementPools") {
+                  result.AddSourceAsset(referencingAsset.GetProxyElement("Dive"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
+                }
+                break;
+
+              case "AirShip":
+                if (reference.Name.LocalName == "ItemReplacementPools") {
+                  result.AddSourceAsset(referencingAsset.GetProxyElement("Pickup"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
+                }
+                break;
+
+              case "ItemWithUI":
+                if (reference.Name.LocalName == "NewItem") {
+                  result.AddSourceAsset(referencingAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
+                }
+                else if (reference.Name.LocalName == "Ressource" && reference.Parent.Name.LocalName == "ActionAddResource") {
+                  result.AddSourceAsset(referencingAsset.GetProxyElement("Item"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
+                }
+                else if (reference.Name.LocalName == "TreasureMapQuest") {
+                  result.AddSourceAsset(referencingAsset.GetProxyElement("Dive"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
+                }
+                break;
+
+              case "TourismFeature":
+                if (reference.Name.LocalName == "Pool") {
+                  var pool = reference.Parent;
+                  result.AddSourceAsset(referencingAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(pool.GetProxyElement(reference.Parent.Parent.Parent.Name.LocalName)) });
+                }
+                break;
+
+              case "CultureBuff":
+              case "HarborOfficeItem":
+                if (reference.Name.LocalName == "OverrideSpecialistPool") {
+                  result.AddSourceAsset(Assets.TourismFeatureAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
                 }
                 else {
                   throw new NotImplementedException();
                 }
-              }
-              else {
                 break;
-              }
-            case "A7_QuestEscortObject":
-            case "A7_QuestDeliveryObject":
-            case "A7_QuestDestroyObjects":
-            case "A7_QuestPickupObject":
-            case "A7_QuestFollowShip":
-            case "A7_QuestPhotography":
-            case "A7_QuestStatusQuo":
-            case "A7_QuestItemUsage":
-            case "A7_QuestSustain":
-            case "A7_QuestPicturePuzzleObject":
-            case "Quest":
-            case "CollectablePicturePuzzle":
-            case "MonumentEventReward":
-            case "A7_QuestSmuggler":
-            case "A7_QuestDivingBellGeneric":
-            case "A7_QuestDivingBellSonar":
-            case "A7_QuestSelectObject":
-            case "A7_QuestNewspaperArticle":
-            case "A7_QuestLostCargo":
-            case "A7_QuestExpedition":
-            case "A7_QuestDecision":
-            case "A7_QuestSmugglerWOScanners":
-              if (!referencingAsset.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
-                if (reference.Name.LocalName.MatchOne("Reward")) {
+
+              case "ResearchSubcategory":
+                if (reference.Name.LocalName == "Pool") {
                   result.AddSourceAsset(referencingAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
                 }
-              }
-              break;
-
-            case "A7_QuestDivingBellTreasureMap":
-              if (!referencingAsset.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
-                if (reference.Name.LocalName.MatchOne("Reward", "TreasureItem", "ScrapDummyItem")) {
-                  GetSources(Details, key, asset).SaveSource(key).MergeResults(key, in result);
-                  if (result.Count == 0) {
-                    result.AddSourceAsset(referencingAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
-                  }
-                }
-              }
-              break;
-
-            case "DivingBellShip":
-              //Ignore second divingbellship. its for a quest
-              if (key == "113710") {
                 break;
-              }
-              if (reference.Name.LocalName == "ItemReplacementPools") {
-                result.AddSourceAsset(referencingAsset.GetProxyElement("Dive"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
-              }
-              break;
 
-            case "AirShip":
-              if (reference.Name.LocalName == "ItemReplacementPools") {
-                result.AddSourceAsset(referencingAsset.GetProxyElement("Pickup"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
-              }
-              break;
+              case "ResearchFeature":
+                if (reference.Name.LocalName == "CommonRecipesBlacklist") {
+                  IsResearchable = false;
+                }
+                break;
 
-            case "ItemWithUI":
-              if (reference.Name.LocalName == "NewItem") {
-                result.AddSourceAsset(referencingAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
-              }
-              else if (reference.Name.LocalName == "Ressource" && reference.Parent.Name.LocalName == "ActionAddResource") {
-                result.AddSourceAsset(referencingAsset.GetProxyElement("Item"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
-              }
-              else if (reference.Name.LocalName == "TreasureMapQuest") {
-                result.AddSourceAsset(referencingAsset.GetProxyElement("Dive"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
-              }
-              break;
+              case "ExpeditionDecision":
+              case "ExpeditionTrade":
+                if (reference.Name.LocalName.MatchOne("Reward", "Product", "Item")) {
+                  var tempresults = GetSources(Details, key, asset);
 
-            case "TourismFeature":
-              if (reference.Name.LocalName == "Pool") {
-                var pool = reference.Parent;
-                result.AddSourceAsset(referencingAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(pool.GetProxyElement(reference.Parent.Parent.Parent.Name.LocalName)) });
-              }
-              break;
-
-            case "CultureBuff":
-            case "HarborOfficeItem":
-              if (reference.Name.LocalName == "OverrideSpecialistPool") {
-                result.AddSourceAsset(Assets.TourismFeatureAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
-              }
-              else {
-                throw new NotImplementedException();
-              }
-              break;
-
-            case "ResearchSubcategory":
-              if (reference.Name.LocalName == "Pool") {
-                result.AddSourceAsset(referencingAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
-              }
-              break;
-
-            case "ResearchFeature":
-              if (reference.Name.LocalName == "CommonRecipesBlacklist") {
-                IsResearchable = false;
-              }
-              break;
-
-            case "ExpeditionDecision":
-            case "ExpeditionTrade":
-              if (reference.Name.LocalName.MatchOne("Reward", "Product", "Item")) {
-                var tempresults = GetSources(Details, key, asset);
-
-                //Inject Expedition Events
-                foreach (var sourceWithDetails in tempresults) {
-                  foreach (var expedition in sourceWithDetails.Where(r => r.Source.Element("Template").Value == "Expedition")) {
-                    if (sourceWithDetails.FollowingEvents.Count > 0) {
-                      expedition.Details.Clear();
-                      foreach (var item in sourceWithDetails.FollowingEvents) {
-                        var path = referencingAsset.XPathSelectElement("Values/Standard/Name").Value.Split(' ').Last();
-                        expedition.Details.Add(new AssetWithWeight(item.GetProxyElement(path)));
+                  //Inject Expedition Events
+                  foreach (var sourceWithDetails in tempresults) {
+                    foreach (var expedition in sourceWithDetails.Where(r => r.Source.Element("Template").Value == "Expedition")) {
+                      if (sourceWithDetails.FollowingEvents.Count > 0) {
+                        expedition.Details.Clear();
+                        foreach (var item in sourceWithDetails.FollowingEvents) {
+                          var path = referencingAsset.XPathSelectElement("Values/Standard/Name").Value.Split(' ').Last();
+                          expedition.Details.Add(new AssetWithWeight(item.GetProxyElement(path)));
+                        }
                       }
                     }
                   }
+                  tempresults.SaveSource(key).MergeResults(key, in result);
+
+                  break;
                 }
-                tempresults.SaveSource(key).MergeResults(key, in result);
+                else if (!reference.Name.LocalName.MatchOne("Option", "FollowupSuccessOption", "FollowupFailOrCancelOption", "InsertEvent")) {
+                  break;
+                }
+                goto case "SearchAgain";
 
-                break;
-              }
-              else if (!reference.Name.LocalName.MatchOne("Option", "FollowupSuccessOption", "FollowupFailOrCancelOption", "InsertEvent")) {
-                break;
-              }
-              goto case "SearchAgain";
+              case "ExpeditionOption":
+              case "ExpeditionMapOption":
+                if (reference.Name.LocalName != "Decision") {
+                  break;
+                }
+                goto case "SearchAgain";
 
-            case "ExpeditionOption":
-            case "ExpeditionMapOption":
-              if (reference.Name.LocalName != "Decision") {
-                break;
-              }
-              goto case "SearchAgain";
+              case "ExpeditionEvent":
+                if (reference.Name.LocalName != "StartDecision") {
+                  break;
+                }
 
-            case "ExpeditionEvent":
-              if (reference.Name.LocalName != "StartDecision") {
-                break;
-              }
+                result.FollowingEvents.Add(referencingAsset);
 
-              result.FollowingEvents.Add(referencingAsset);
+                goto case "SearchAgain";
 
-              goto case "SearchAgain";
+              case "ExpeditionBribe":
+                if (reference.Name.LocalName == "Item") {
+                  break;
+                }
+                if (!reference.Name.LocalName.MatchOne("FollowupSuccessOption", "FollowupFailOrCancelOption")) {
+                  break;
+                }
+                goto case "SearchAgain";
 
-            case "ExpeditionBribe":
-              if (reference.Name.LocalName == "Item") {
-                break;
-              }
-              if (!reference.Name.LocalName.MatchOne("FollowupSuccessOption", "FollowupFailOrCancelOption")) {
-                break;
-              }
-              goto case "SearchAgain";
-            
-            case "QuestObject":
-            case "Collectable":
-              if (reference.Parent?.Parent?.Parent?.Name.LocalName != "ActionAddGoodsToItemContainer") {
-                break;
-              }
-              goto case "SearchAgain";
+              case "QuestObject":
+              case "Collectable":
+                if (reference.Parent?.Parent?.Parent?.Name.LocalName != "ActionAddGoodsToItemContainer") {
+                  break;
+                }
+                goto case "SearchAgain";
 
-            case "ItemReplacementPool":
-              if (reference.Name.LocalName != "ReplacementPool") {
-                break;
-              }
-              else {
-                if (reference.Parent.Element("DummyItem").Value is string dummy) {
-                  //new ConcurrentBag<SourceWithDetailsList>(GetSources(Details, dummy).SaveSource(dummy).Concat(GetSources(Details, key))).MergeResults(dummy, result);
-                  switch (key) {
-                    case "193854": // DivingShipReplacementPool
-                      GetSources(Details, dummy, asset).SaveSource(dummy).MergeResults(dummy, result);
-                      if (result.Count == 0) { // No Treasure map found?  Nevertheless Dive loot ???
-                        GetSources(Details, key, asset).MergeResults(key, result);
-                      }
-                      break;
+              case "ItemReplacementPool":
+                if (reference.Name.LocalName != "ReplacementPool") {
+                  break;
+                }
+                else {
+                  if (reference.Parent.Element("DummyItem").Value is string dummy) {
+                    //new ConcurrentBag<SourceWithDetailsList>(GetSources(Details, dummy).SaveSource(dummy).Concat(GetSources(Details, key))).MergeResults(dummy, result);
+                    switch (key) {
+                      case "193854": // DivingShipReplacementPool
+                        GetSources(Details, dummy, asset).SaveSource(dummy).MergeResults(dummy, result);
+                        if (result.Count == 0) { // No Treasure map found?  Nevertheless Dive loot ???
+                          GetSources(Details, key, asset).MergeResults(key, result);
+                        }
+                        break;
 
-                    case "193855": // AirShipReplacementPool
-                      GetSources(Details, key, asset).SaveSource(key).MergeResults(key, result);
-                      break;
+                      case "193855": // AirShipReplacementPool
+                        GetSources(Details, key, asset).SaveSource(key).MergeResults(key, result);
+                        break;
 
-                    default:
-                      throw new NotImplementedException();
+                      default:
+                        throw new NotImplementedException();
+                    }
                   }
+                  break;
                 }
+
+              case "RewardPool":
+              case "RewardItemPool":
+                var itemListRewards = reference.Parent.Parent.Elements().ToList();
+                var weightSumRewards = itemListRewards.Sum(item => (item.Element("Weight")?.Value is string str) ? double.Parse(str) : 1.0F);
+
+                foreach (var item in itemListRewards.Where(i => i.Element("ItemLink")?.Value != null).ToLookup(i => i.Element("ItemLink").Value)) {
+                  result.ElementWeights.Add(item.Key, item.Sum(i => (i.Element("Weight")?.Value is string str ? double.Parse(str) : 1.0F) / weightSumRewards));
+                }
+
+                goto case "SearchAgain";
+
+              case "AssetPool":
+                var itemListAssets = reference.Parent.Parent.Elements().ToList();
+                var weightSumAssets = itemListAssets.Sum(item => (item.Element("Probability")?.Value is string str) ? double.Parse(str) : 1.0F);
+
+                foreach (var item in itemListAssets.Where(i => i.Element("Asset")?.Value != null).ToLookup(i => i.Element("Asset").Value)) {
+                  result.ElementWeights.Add(item.Key, item.Sum(i => (i.Element("Probability")?.Value is string str ? double.Parse(str) : 1.0F) / weightSumAssets));
+                }
+
+                goto case "SearchAgain";
+
+              case "ExpeditionEventPool":
+              case "ResourcePool":
+              case "A7_QuestSubQuest":
+              case "ProductList":
+              case "SearchAgain":
+                GetSources(Details, key, asset).SaveSource(key).MergeResults(key, in result);
                 break;
-              }
 
-            case "RewardPool":
-            case "RewardItemPool":
-              var itemListRewards = reference.Parent.Parent.Elements().ToList();
-              var weightSumRewards = itemListRewards.Sum(item => (item.Element("Weight")?.Value is string str) ? double.Parse(str) : 1.0F);
-
-              foreach (var item in itemListRewards.Where(i => i.Element("ItemLink")?.Value != null).ToLookup(i => i.Element("ItemLink").Value)) {
-                result.ElementWeights.Add(item.Key, item.Sum(i => (i.Element("Weight")?.Value is string str ? double.Parse(str) : 1.0F) / weightSumRewards));
-              }
-
-              goto case "SearchAgain";
-
-            case "AssetPool":
-              var itemListAssets = reference.Parent.Parent.Elements().ToList();
-              var weightSumAssets = itemListAssets.Sum(item => (item.Element("Probability")?.Value is string str) ? double.Parse(str) : 1.0F);
-
-              foreach (var item in itemListAssets.Where(i => i.Element("Asset")?.Value != null).ToLookup(i => i.Element("Asset").Value)) {
-                result.ElementWeights.Add(item.Key, item.Sum(i => (i.Element("Probability")?.Value is string str ? double.Parse(str) : 1.0F) / weightSumAssets));
-              }
-
-              goto case "SearchAgain";
-
-            case "ExpeditionEventPool":
-            case "ResourcePool":
-            case "A7_QuestSubQuest":
-            case "ProductList":
-            case "SearchAgain":
-              GetSources(Details, key, asset).SaveSource(key).MergeResults(key, in result);
-              break;
-
-            default:
-              Debug.WriteLine(referencingAsset.Element("Template").Value);
-              throw new NotImplementedException(referencingAsset.Element("Template").Value);
-              break;
-          }
+              default:
+                Debug.WriteLine(referencingAsset.Element("Template").Value);
+                throw new NotImplementedException(referencingAsset.Element("Template").Value);
+                break;
+            }
           if (result.Any()) {
             resultstoadd.Add(result);
           }
