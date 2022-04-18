@@ -35,7 +35,7 @@ namespace RDA {
       //Helper.ExtractTemplateNames(Program.PathRoot + @"\Original\assets.xml");
       //Helper.ExtractItemTemplates(Program.PathRoot + @"\Original\assets.xml");
 
-      Assets.Init("Update 12");
+      Assets.Init("Update 13");
 
       // World Fair
       Monument.Create();
@@ -129,14 +129,15 @@ namespace RDA {
 
     internal readonly static string PathRoot;
     internal readonly static string PathViewer;
-    internal static XDocument TextDE;
+
+    public static XDocument TextDE { get; }
 
     #endregion Internal Fields
 
     #region Private Methods
 
     private static void ProcessingBuildings() {
-      foreach (var item in Assets.Original.Descendants("Asset").Where(a => a.XPathSelectElement("Values/Building") != null).Select(a => a.Element("Template").Value).Distinct()) {
+      foreach (var item in Assets.All.Descendants("Asset").Where(a => a.XPathSelectElement("Values/Building") != null).Select(a => a.Element("Template").Value).Distinct()) {
         ProcessingItems(item, false);
       }
     }
@@ -251,7 +252,7 @@ namespace RDA {
         var doc = XDocument.Load($@"{Program.PathRoot}\Modified\Assets_{template}.xml");
         oldAssets = doc.Root.Elements().ToDictionary(e => e.Attribute("ID").Value);
       }
-      var assets = Assets.Original.XPathSelectElements($"//Asset[Template='{template}']").ToList();
+      var assets = Assets.All.XPathSelectElements($"//Asset[Template='{template}']").ToList();
       ConsoleWriteHeadline(template + "  Total: " + assets.Count);
       var count = 1;
       assets.AsParallel().ForAll(asset => {
@@ -277,7 +278,7 @@ namespace RDA {
     private static void ProcessingItemSets() {
       ProcessingItems("ItemSet", false, asset => {
         asset.SetParts = Assets
-              .Original
+              .All
               .Descendants("Asset")
               .Where(a => a.XPathSelectElement("Values/Item/ItemSet")?.Value == asset.ID)
               .Select(a => a.XPathSelectElement("Values/Standard/GUID").Value);
@@ -287,7 +288,7 @@ namespace RDA {
     private static void ProcessingFestivalBuffs() {
       ProcessingItems("FestivalBuff", false, asset => {
         asset.FestivalName = Assets
-              .Original
+              .All
               .Descendants("Effect")
               .Where(a => a?.Value == asset.ID)
               .Select(a => new Description(a.Parent.Parent.Parent.Element("FestivalName").Value))
@@ -301,10 +302,10 @@ namespace RDA {
 
       Assets.GUIDs.TryGetValue("220", out var assetHugo);
       var assets = Assets
-         .Original
+         .All
          .XPathSelectElements($"//Asset[Template='Profile_3rdParty' or Template='Profile_3rdParty_Pirate']")
          .Concat(new[] { assetHugo })
-         .Concat(Assets.Original.XPathSelectElements($"//Asset[Template='Profile_3rdParty_ItemCrafter']"))
+         .Concat(Assets.All.XPathSelectElements($"//Asset[Template='Profile_3rdParty_ItemCrafter']"))
          .AsParallel();
 
       assets.ForAll((asset) => {
@@ -326,7 +327,7 @@ namespace RDA {
 
     private static void QuestGiver() {
       var result = new List<QuestGiver>();
-      var questGivers = Assets.Original.XPathSelectElements("//Asset[Template='Quest']/Values/Quest/QuestGiver").Select(s => s.Value).Distinct().ToList();
+      var questGivers = Assets.All.XPathSelectElements("//Asset[Template='Quest']/Values/Quest/QuestGiver").Select(s => s.Value).Distinct().ToList();
       questGivers.ForEach((id) => {
         ConsoleWriteGUID(id);
         Assets.GUIDs.TryGetValue(id, out var questGiver);
@@ -340,7 +341,7 @@ namespace RDA {
 
     private static void Quests() {
       var result = new List<Quest>();
-      var assets = Assets.Original.XPathSelectElements("//Asset[Template='Quest']").ToList();
+      var assets = Assets.All.XPathSelectElements("//Asset[Template='Quest']").ToList();
       assets.ForEach((asset) => {
         ConsoleWriteGUID(asset.XPathSelectElement("Values/Standard/GUID").Value);
         var item = new Quest(asset);
@@ -353,7 +354,7 @@ namespace RDA {
 
     private static void Expeditions() {
       var result = new List<Expedition>();
-      var assets = Assets.Original.XPathSelectElements("//Asset[Template='Expedition']").AsParallel();
+      var assets = Assets.All.XPathSelectElements("//Asset[Template='Expedition']").AsParallel();
       assets.ForAll((asset) => {
         if (asset.XPathSelectElement("Values/Standard/Name").Value.Contains("Test"))
           return;
@@ -375,9 +376,9 @@ namespace RDA {
       var xRewardPools = new XElement("RP");
 
       //RewardPool and RewardItemPool
-      var RewardItemPoolsAssets = Assets.Original
+      var RewardItemPoolsAssets = Assets.All
          .XPathSelectElements($"//Asset[Template='RewardPool']")
-         .Concat(Assets.Original.XPathSelectElements($"//Asset[Template='RewardItemPool']"))
+         .Concat(Assets.All.XPathSelectElements($"//Asset[Template='RewardItemPool']"))
          .ToList();
       foreach (var RewardPool in RewardItemPoolsAssets) {
         var xPool = new XElement("P");
@@ -400,7 +401,7 @@ namespace RDA {
       }
 
       //ResourcePool
-      var ResourcePoolAssets = Assets.Original
+      var ResourcePoolAssets = Assets.All
          .XPathSelectElements($"//Asset[Template='ResourcePool']")
          .ToList();
       foreach (var ResourcePool in ResourcePoolAssets) {
@@ -424,10 +425,10 @@ namespace RDA {
       }
 
       //AssetGroups
-      var AssetGroups = Assets.Original
+      var AssetGroups = Assets.BaseGame
         .Descendants("Groups")
         .Where(g => g.Element("GUID") != null)
-        .Concat(Assets.Original
+        .Concat(Assets.BaseGame
          .Descendants("Group")
          .Where(g => g.Element("GUID") != null))
          .ToList();
@@ -461,12 +462,12 @@ namespace RDA {
       var ResultEvents = new ConcurrentDictionary<XElement, ConcurrentBag<HashSet<AssetWithWeight>>>();
       var count = 1;
 
-      var decicions = Assets.Original
+      var decicions = Assets.All
           .XPathSelectElements("//Asset[Template='ExpeditionDecision']")
           .Where(f => f.XPathSelectElement("Values/Reward/RewardAssets")?.Elements("Item").Any(r => r.Element("Reward")?.Value != null) ?? false)
           .ToList();
 
-      decicions.AddRange(Assets.Original.XPathSelectElements("//Asset[Template='ExpeditionTrade']"));
+      decicions.AddRange(Assets.All.XPathSelectElements("//Asset[Template='ExpeditionTrade']"));
       ConsoleWriteHeadline(template + "  Total: " + decicions.Count);
 
       decicions.AsParallel().ForAll(decicion => {
@@ -685,7 +686,7 @@ namespace RDA {
 
     private static void ProcessingTourism() {
       ConsoleWriteHeadline("Processing Tourism");
-      var TourismAsset = Assets.Original.Descendants("Asset").FirstOrDefault(l => l.Element("Template")?.Value == "TourismFeature");
+      var TourismAsset = Assets.All.Descendants("Asset").FirstOrDefault(l => l.Element("Template")?.Value == "TourismFeature");
       var xRoot = new XElement("CL");
       foreach (var pool in TourismAsset.Descendants("SpecialistPools").FirstOrDefault()?.Elements()) {
         var id = pool.Element("CityLevel").Value;
@@ -711,7 +712,7 @@ namespace RDA {
         xStatus.Add(new XAttribute("P", pool.Element("Pool").Value));
       }
 
-      foreach (var pool in Assets.Original.Descendants("Asset").Where(a => a.Descendants("OverrideSpecialistPool").Any())) {
+      foreach (var pool in Assets.All.Descendants("Asset").Where(a => a.Descendants("OverrideSpecialistPool").Any())) {
         var xStatus = new XElement("S");
         xRoot.Add(xStatus);
         xStatus.Add(new XElement(new Description(pool.XPathSelectElement("Values/Standard/GUID").Value).ToXml("R")));

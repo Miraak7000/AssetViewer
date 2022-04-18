@@ -503,5 +503,20 @@
     <Resource Include="Resources\google-drive-logo.png" />
     <Resource Include="Resources\icon_traderoutes.png" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Assets\FarmBuilding_BuildPermit.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Assets\FreeAreaBuilding_BuildPermit.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Assets\ItemCrafterHarbor.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Assets\Resource.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Assets\ScenarioRuin.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

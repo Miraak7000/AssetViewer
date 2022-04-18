@@ -18,7 +18,7 @@ namespace RDA.Data {
 
     public EffectTarget(XElement element) {
       Text = new Description(element.Value);
-      var asset = Assets.Original.Descendants("Asset").FirstOrDefault(a => a
+      var asset = Assets.All.Descendants("Asset").FirstOrDefault(a => a
          .XPathSelectElement("Values/Standard/GUID")?
          .Value == element.Value);
       //Building

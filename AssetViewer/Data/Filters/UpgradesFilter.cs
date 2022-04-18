@@ -48,6 +48,13 @@ namespace AssetViewer.Data.Filters {
 
     public override void SetCurrenValues() {
       var items = ItemsHolder.GetResultWithoutFilter(this).ToList();
+      //foreach (var item in items) {
+      //  foreach (var u in item.AllUpgrades) {
+      //    if (u.Text?.CurrentLang == null) {
+
+      //    }
+      //  }
+      //}
       CurrentValues = items
          .SelectMany(s => s.AllUpgrades)
          .Select(s => s.Text)

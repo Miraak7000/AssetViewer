@@ -24,7 +24,11 @@ namespace RDA {
     #region Public Constructors
 
     static Assets() {
-      Original = XmlLoader.LoadXml(Program.PathRoot + @"\Original\assets.xml");
+      BaseGame = XmlLoader.LoadXml(Program.PathRoot + @"\Original\assets.xml");
+      Eden_Burning = XmlLoader.LoadSzenarioXml(Program.PathRoot + @"\Original\Eden Burning\assets.xml", GameTypes.Eden_Burning);
+      All = new XElement("Root");
+      All.Add(BaseGame);
+      All.Add(Eden_Burning);
     }
 
     #endregion Public Constructors
@@ -58,7 +62,9 @@ namespace RDA {
 
     #region Internal Fields
 
-    internal readonly static XElement Original;
+    internal readonly static XElement BaseGame;
+    internal readonly static XElement All;
+    internal readonly static XElement Eden_Burning;
 
     internal readonly static Dictionary<string, XElement> DefaultValues = new Dictionary<string, XElement>();
 
@@ -127,11 +133,12 @@ namespace RDA {
       Program.ConsoleWriteHeadline("Solve All References");
       Regex rgx = new Regex("\\A\\d\\d\\d+\\Z");
 
-      foreach (var node in Original.Descendants()) {
+      foreach (var node in All.Descendants()) {
         var asset = node;
         while (asset.Parent != null &&
-            (!asset.Name.LocalName.Equals("Asset") || !asset.HasElements))
+            (!asset.Name.LocalName.Equals("Asset") || !asset.HasElements)) {
           asset = asset.Parent;
+        }
 
         if ("GUID".Equals(node.Name.LocalName) &&
             node == asset.XPathSelectElement("Values/Standard/GUID")) {
@@ -194,9 +201,9 @@ namespace RDA {
 
     private static void SolveXmlInheritance() {
       Program.ConsoleWriteHeadline("Solve Xml Inheritance");
-      var InheritHelper = Original.Descendants("Asset").OrderBy(a => a.InheritDepth()).ToArray();
+      var InheritHelper = All.Descendants("Asset").OrderBy(a => a.InheritDepth()).ToArray();
       foreach (var item in InheritHelper) {
-        var baseGuid = item.Element("BaseAssetGUID")?.Value;
+        var baseGuid = item.Element("BaseAssetGUID")?.Value ?? item.Element("ScenarioBaseAssetGUID")?.Value;
         if (baseGuid != null) {
           if (!Assets.GUIDs.ContainsKey(baseGuid))
             throw new Exception($"Asset GUID not found {baseGuid}");
@@ -252,6 +259,11 @@ namespace RDA {
           }
         }
       }
+
+      //Text Overrides
+      foreach (var asset in All.Descendants("Asset").Where(a => a.XPathSelectElement("Values/Text/TextOverride")?.Value != null)) {
+        Descriptions[asset.XPathSelectElement("Values/Standard/GUID").Value] = Descriptions[asset.XPathSelectElement("Values/Text/TextOverride").Value];
+      }
     }
 
     private static void LoadCustomDescriptions() {
@@ -275,7 +287,7 @@ namespace RDA {
 
     private static void SetIcons() {
       Program.ConsoleWriteHeadline("Setting up Icons");
-      var asset = Original
+      var asset = All
          .Descendants("Asset")
          .FirstOrDefault(a => a.Element("Template")?.Value == "ItemBalancing")?
          .Element("Values")
@@ -287,7 +299,7 @@ namespace RDA {
         }
       }
 
-      var texts = Original
+      var texts = All
         .Descendants("Asset")
         .Where(a => a.XPathSelectElement("Values/Text/LocaText")?.HasElements == true && a.XPathSelectElement("Values/Standard/IconFilename")?.Value != null).Select(e => e.Element("Values").Element("Standard"));
       //TextIcons
@@ -305,7 +317,7 @@ namespace RDA {
 
     private static void SetTextDictionarys() {
       Program.ConsoleWriteHeadline("Setting up Descriptions");
-      var asset = Original
+      var asset = All
          .Descendants("Asset")
          .FirstOrDefault(a => a.Element("Template")?.Value == "ItemBalancing")?
          .Element("Values")
@@ -323,7 +335,7 @@ namespace RDA {
         KeyToIdDict.Add(item.Name.LocalName, item.Element("Text").Value);
       }
 
-      asset = Original
+      asset = All
        .Descendants("Asset")
        .FirstOrDefault(a => a.Element("Template")?.Value == "ExpeditionFeature")?
        .Element("Values")
@@ -458,6 +470,15 @@ namespace RDA {
       KeyToIdDict.Add("IrrigationCapacityUpgrade", "127395");
       KeyToIdDict.Add("AdditionalResearch", "127425");
       KeyToIdDict.Add("PipeCapacityUpgrade", "127395");
+      KeyToIdDict.Add("AirRegenerationUpgrade100", "138790");
+      KeyToIdDict.Add("Air", "138790");
+      KeyToIdDict.Add("SoilRegenerationUpgrade100", "138789");
+      KeyToIdDict.Add("Soil", "138789");
+      KeyToIdDict.Add("WaterRegenerationUpgrade100", "138788");
+      KeyToIdDict.Add("Water", "138788");
+      KeyToIdDict.Add("DeltaValueUpgrade", "24080");
+      KeyToIdDict.Add("FiniteResourceRegrowFactorUpgrade", "861");
+      KeyToIdDict.Add("FiniteResourceRegrowIntervalUpgrade", "862");
 
       //Override Allocation Tradeship
       KeyToIdDict["Tradeship"] = "12006";
@@ -465,7 +486,7 @@ namespace RDA {
 
     private static void SetTourismThresholds() {
       Program.ConsoleWriteHeadline("Setting up Tourism");
-      var AttractivenessFeature = Original.Descendants("Asset").FirstOrDefault(l => l.Element("Template")?.Value == "AttractivenessFeature");
+      var AttractivenessFeature = All.Descendants("Asset").FirstOrDefault(l => l.Element("Template")?.Value == "AttractivenessFeature");
       var CityStatis = AttractivenessFeature.XPathSelectElement("Values/AttractivenessFeature/AttractivenessLevel").Elements().ToList();
       foreach (var stati in CityStatis) {
         TourismThresholds.Add(stati.Name.LocalName, stati.Element("AttractivenessThreshold").Value);

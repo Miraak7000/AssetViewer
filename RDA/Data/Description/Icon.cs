@@ -23,6 +23,12 @@ namespace RDA.Data {
     #region Public Constructors
 
     public Icon(string filename) {
+      //bugfix
+      if (filename == "data/ui/2kimages/main/3dicons/ecobalance/icon_pollution_soil.png") {
+        filename = "data/ui/2kimages/main/3dicons/scenario/ecobalance/icon_pollution_soil.png";
+      }
+
+
       var searchPath = Path.GetDirectoryName($@"{Program.PathRoot}\Resources\{filename}");
       var searchPattern = Path.GetFileNameWithoutExtension($@"{Program.PathRoot}\Resources\{filename}");
       if (IgnoredDirectorys.Contains(searchPath)) {

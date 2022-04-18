@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Assets.cs" />
     <Compile Include="Comparer\BasicUpgradeComparer.cs" />
+    <Compile Include="Data\Asset\GameTypes.cs" />
     <Compile Include="Data\Description\DescriptionFontStyle.cs" />
     <Compile Include="Data\Asset\EffectTarget.cs" />
     <Compile Include="Data\Asset\Maintenance.cs" />
@@ -121,6 +122,8 @@
     <Content Include="Original\assets10.xml" />
     <Content Include="Original\assets11.xml" />
     <Content Include="Original\assets12.xml" />
+    <Content Include="Original\Eden Burning\assets.xml" />
+    <Content Include="Original\Eden Burning\templates.xml" />
     <Content Include="Resources\data\**" />
     <None Include="App.config" />
     <Content Include="Modified\Assets_ActiveItem.xml" />
