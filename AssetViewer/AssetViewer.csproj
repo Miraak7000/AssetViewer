@@ -332,7 +332,6 @@
     <EmbeddedResource Include="Resources\Assets\ActiveItem.xml" />
     <EmbeddedResource Include="Resources\Assets\AdditionalModule.xml" />
     <EmbeddedResource Include="Resources\Assets\BridgeBuilding.xml" />
-    <EmbeddedResource Include="Resources\Assets\BuffFactory.xml" />
     <EmbeddedResource Include="Resources\Assets\BuildPermitBuilding.xml" />
     <EmbeddedResource Include="Resources\Assets\BuildPermitModules.xml" />
     <EmbeddedResource Include="Resources\Assets\CampaignQuestObject.xml" />
@@ -516,7 +515,13 @@
     <EmbeddedResource Include="Resources\Assets\Resource.xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Assets\ScenarioRuin.xml" />
+    <EmbeddedResource Include="Resources\Assets\BuffFactoryCulture.xml" />
+    <EmbeddedResource Include="Resources\Assets\BuffFactoryModule.xml" />
+    <EmbeddedResource Include="Resources\Assets\Hacienda.xml" />
+    <EmbeddedResource Include="Resources\Assets\IrrigationPropagationSourceNoSlot.xml" />
+    <EmbeddedResource Include="Resources\Assets\ItemWithUICrafting.xml" />
+    <EmbeddedResource Include="Resources\Assets\RecipeFarm.xml" />
+    <EmbeddedResource Include="Resources\Assets\ScenarioRuinEco.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
