@@ -429,6 +429,10 @@ namespace RDA.Data {
         case "ProvideIndustrialization":
         case "ElectricityBoostUpgrade":
         case "PipeCapacityUpgrade":
+        case "MaxDynamicFillCapacityUpgrade":
+        case "FiniteResourceRegrowFactorUpgrade":
+        case "FiniteResourceRegrowIntervalUpgrade":
+        case "DeltaValueUpgrade":
           break;
 
         case "AdditionalHappiness":
@@ -516,6 +520,10 @@ namespace RDA.Data {
           Additionals.Add(upgrade);
           break;
 
+        default:
+          Debug.WriteLine(element.Name.LocalName);
+          throw new NotImplementedException(element.Name.LocalName);
+          break;
       }
       
       if (value == null) {

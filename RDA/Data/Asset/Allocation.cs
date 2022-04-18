@@ -60,6 +60,7 @@ namespace RDA.Data {
           case "FluffItem":
           case "ItemWithUI":
           case "ItemConstructionPlan":
+          case "ItemWithUICrafting":
             ID = "NoneAllocation";
             Text = new Description("-1230");
             break;

@@ -26,7 +26,7 @@ namespace AssetViewer {
     public static Dictionary<int, Pool> Pools { get; } = new Dictionary<int, Pool>();
     public static ObjectCache Cache { get; set; } = MemoryCache.Default;
     public static Dictionary<int, string> Descriptions { get; } = new Dictionary<int, string>();
-    public static bool CountMode { get; set; } = true;
+    public static bool CountMode { get; set; } = false;
     public static List<Languages> PossibleLanguages { get; } = new List<Languages>();
 
     public static Data.Languages Language {
@@ -191,7 +191,8 @@ namespace AssetViewer {
       var buildings = new[] {
                 "AssetViewer.Resources.Assets.AdditionalModule.xml",
                 "AssetViewer.Resources.Assets.BridgeBuilding.xml",
-                "AssetViewer.Resources.Assets.BuffFactory.xml",
+                "AssetViewer.Resources.Assets.BuffFactoryCulture.xml",
+                "AssetViewer.Resources.Assets.BuffFactoryModule.xml",
                 "AssetViewer.Resources.Assets.BuildPermitBuilding.xml",
                 "AssetViewer.Resources.Assets.BuildPermitModules.xml",
                 "AssetViewer.Resources.Assets.Busstop.xml",
@@ -222,6 +223,7 @@ namespace AssetViewer {
                 "AssetViewer.Resources.Assets.FreeAreaBuilding_BuildPermit.xml",
                 "AssetViewer.Resources.Assets.FreeAreaRecipeBuilding.xml",
                 "AssetViewer.Resources.Assets.Guildhouse.xml",
+                "AssetViewer.Resources.Assets.Hacienda.xml",
                 "AssetViewer.Resources.Assets.HarborBuildingAttacker.xml",
                 "AssetViewer.Resources.Assets.HarborDepot.xml",
                 "AssetViewer.Resources.Assets.HarborLandingStage7.xml",
@@ -237,6 +239,7 @@ namespace AssetViewer {
                 "AssetViewer.Resources.Assets.HeavyFreeAreaBuilding.xml",
                 "AssetViewer.Resources.Assets.HeavyFreeAreaBuilding_Arctic.xml",
                 "AssetViewer.Resources.Assets.IrrigationPropagationSource.xml",
+                "AssetViewer.Resources.Assets.IrrigationPropagationSourceNoSlot.xml",
                 "AssetViewer.Resources.Assets.ItemCrafterBuilding.xml",
                 "AssetViewer.Resources.Assets.ItemCrafterHarbor.xml",
                 "AssetViewer.Resources.Assets.Mall.xml",
@@ -256,6 +259,7 @@ namespace AssetViewer {
                 "AssetViewer.Resources.Assets.QuestLighthouse.xml",
                 "AssetViewer.Resources.Assets.QuestObjectHarborBuildingAttacker.xml",
                 "AssetViewer.Resources.Assets.QuestObjectInfectable.xml",
+                "AssetViewer.Resources.Assets.RecipeFarm.xml",
                 "AssetViewer.Resources.Assets.RepairCrane.xml",
                 "AssetViewer.Resources.Assets.ResearchCenter.xml",
                 "AssetViewer.Resources.Assets.ResidenceBuilding.xml",
@@ -266,7 +270,7 @@ namespace AssetViewer {
                 "AssetViewer.Resources.Assets.ResidenceBuilding-Unique.xml",
                 "AssetViewer.Resources.Assets.Resource.xml",
                 "AssetViewer.Resources.Assets.Restaurant.xml",
-                "AssetViewer.Resources.Assets.ScenarioRuin.xml",
+                "AssetViewer.Resources.Assets.ScenarioRuinEco.xml",
                 "AssetViewer.Resources.Assets.Shipyard.xml",
                 "AssetViewer.Resources.Assets.SimpleBuilding.xml",
                 "AssetViewer.Resources.Assets.Slot.xml",
@@ -308,6 +312,7 @@ namespace AssetViewer {
                 "AssetViewer.Resources.Assets.ActiveItem.xml",
                 "AssetViewer.Resources.Assets.ItemSpecialActionVisualEffect.xml",
                 "AssetViewer.Resources.Assets.ItemWithUI.xml",
+                "AssetViewer.Resources.Assets.ItemWithUICrafting.xml",
                 "AssetViewer.Resources.Assets.FluffItem.xml",
                 "AssetViewer.Resources.Assets.QuestItemMagistrate.xml",
                 "AssetViewer.Resources.Assets.StartExpeditionItem.xml",

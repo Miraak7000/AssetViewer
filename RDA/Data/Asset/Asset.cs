@@ -91,6 +91,7 @@ namespace RDA.Data {
           case "ActiveItem":
           case "ShipSpecialist":
           case "ItemConstructionPlan":
+          case "ItemWithUICrafting":
             ItemType = "Item";
             break;
 
@@ -177,6 +178,11 @@ namespace RDA.Data {
           case "FreeAreaBuilding_BuildPermit":
           case "FarmBuilding_BuildPermit":
           case "ScenarioRuin":
+          case "IrrigationPropagationSourceNoSlot":
+          case "RecipeFarm":
+          case "BuffFactoryCulture":
+          case "Hacienda":
+          case "ScenarioRuinEco":
             ItemType = "Building";
             break;
 
@@ -192,6 +198,7 @@ namespace RDA.Data {
           case "DocklandModule":
           case "DocklandStorageModule":
           case "DocklandModuleRepair":
+          case "BuffFactoryModule":
             ItemType = "Module";
             break;
 
@@ -253,6 +260,7 @@ namespace RDA.Data {
           case "CommandQueue":
           case "WorkforceConnector":
           case "WorkAreaPath":
+          case "Audio":
           // ignore this nodes
 
           case "UpgradeList":
@@ -267,6 +275,7 @@ namespace RDA.Data {
           case "DistributionCenterMarker":
           case "ItemConstructionPlan":
           case "MonoCulture":
+          case "Hacienda": //Update 14
           // Todo: needs to implemented
 
           case "Product":
@@ -504,7 +513,7 @@ namespace RDA.Data {
 
           default:
             Debug.WriteLine(element.Name.LocalName);
-            //throw new NotImplementedException(element.Name.LocalName);
+            throw new NotImplementedException(element.Name.LocalName);
             break; 
         }
       }
@@ -1221,7 +1230,9 @@ namespace RDA.Data {
 
           //Ignores
           if (reference.Name.LocalName is string foundedName &&
-            foundedName.MatchOne("BaseAssetGUID", "Icon", "ItemUsed", "TradePrice", "GenPool", "NotificationIcon", "ReplacingWorkforce", "ProductFilter", "BusNeed", "LineID", "PosX", "Context", "ProductionOutputInfotip", "UnlockNeeded")) {
+            foundedName.MatchOne("BaseAssetGUID", "Icon", "ItemUsed", "TradePrice", "GenPool", "NotificationIcon",
+            "ReplacingWorkforce", "ProductFilter", "BusNeed", "LineID", "PosX", "Context", "ProductionOutputInfotip",
+            "UnlockNeeded", "TextOverride", "MedalObjectiveIcon", "UpgradeTarget")) {
             continue;
           }
           if (reference.Parent?.Parent?.Name.LocalName is string gparent &&
@@ -1296,6 +1307,7 @@ namespace RDA.Data {
             case "ScenarioInformationInternal":  //Update 13
             case "MonumentScene":  //Update 13
             case "ScenarioRuin":  //Update 13
+            case "ResourceBarScene":  //Update 14
               // ignore
               break;
 
@@ -1579,7 +1591,7 @@ namespace RDA.Data {
 
             default:
               Debug.WriteLine(referencingAsset.Element("Template").Value);
-              //throw new NotImplementedException(referencingAsset.Element("Template").Value);
+              throw new NotImplementedException(referencingAsset.Element("Template").Value);
               break;
           }
           if (result.Any()) {

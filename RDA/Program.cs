@@ -35,7 +35,7 @@ namespace RDA {
       //Helper.ExtractTemplateNames(Program.PathRoot + @"\Original\assets.xml");
       //Helper.ExtractItemTemplates(Program.PathRoot + @"\Original\assets.xml");
 
-      Assets.Init("Update 13");
+      Assets.Init("Update 14");
 
       // World Fair
       Monument.Create();
@@ -56,6 +56,7 @@ namespace RDA {
       Program.ProcessingItems("StartExpeditionItem");
       Program.ProcessingItems("QuestItem");
       Program.ProcessingItems("ItemConstructionPlan");
+      Program.ProcessingItems("ItemWithUICrafting");
 
       Program.ProcessingItems("Product");
 

@@ -301,7 +301,8 @@ namespace RDA {
 
       var texts = All
         .Descendants("Asset")
-        .Where(a => a.XPathSelectElement("Values/Text/LocaText")?.HasElements == true && a.XPathSelectElement("Values/Standard/IconFilename")?.Value != null).Select(e => e.Element("Values").Element("Standard"));
+        .Where(a => a.XPathSelectElement("Values/Text")?.HasElements == true && a.XPathSelectElement("Values/Standard/IconFilename")?.Value != null).Select(e => e.Element("Values").Element("Standard"));
+        //.Where(a => a.XPathSelectElement("Values/Text/LocaText")?.HasElements == true && a.XPathSelectElement("Values/Standard/IconFilename")?.Value != null).Select(e => e.Element("Values").Element("Standard"));
       //TextIcons
       foreach (var item in texts) {
         Icons[item.Element("GUID").Value] = item.Element("IconFilename").Value;
@@ -362,15 +363,6 @@ namespace RDA {
       KeyToIdDict.Add("PerkFemale", "15798");
       KeyToIdDict.Add("PerkMale", "15797");
       KeyToIdDict.Add("PerkSteamShip", "15795");
-      KeyToIdDict.Add("PerkFormerPirate", "3930");
-      KeyToIdDict.Add("PerkDiver", "3931");
-      KeyToIdDict.Add("PerkZoologist", "9998");
-      KeyToIdDict.Add("PerkPolyglot", "12266");
-      KeyToIdDict.Add("PerkHypnotist", "3929");
-      KeyToIdDict.Add("PerkAnthropologist", "3928");
-      KeyToIdDict.Add("PerkJackOfAllTraits", "12260");
-      KeyToIdDict.Add("PerkArcheologist", "12262");
-
       KeyToIdDict.Add("AttractivenessUpgrade", "145011");
       KeyToIdDict.Add("MaintenanceUpgrade", "2320");
       KeyToIdDict.Add("WorkforceAmountUpgrade", "12337");
@@ -479,6 +471,7 @@ namespace RDA {
       KeyToIdDict.Add("DeltaValueUpgrade", "24080");
       KeyToIdDict.Add("FiniteResourceRegrowFactorUpgrade", "861");
       KeyToIdDict.Add("FiniteResourceRegrowIntervalUpgrade", "862");
+      KeyToIdDict.Add("MaxDynamicFillCapacityUpgrade", "25204");
 
       //Override Allocation Tradeship
       KeyToIdDict["Tradeship"] = "12006";

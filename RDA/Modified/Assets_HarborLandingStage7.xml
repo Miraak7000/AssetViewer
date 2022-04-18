@@ -1,68 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HarborLandingStage7>
-  <Asset ID="116030" RV="Update 06" RT="Common">
-    <N>harbor_arctic_03 (Pier)</N>
-    <T ID="100519" I="data/ui/2kimages/main/3dicons/icon_pier.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
-    <UC>
-      <U V="20000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="30">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="50">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="30">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="20">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-      <U V="30">
-        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
-      </U>
-    </UC>
-    <BC>
-      <U V="2500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="30">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="50">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="10">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="40">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="+1" C="LoadingPier">
-        <T ID="15250" />
-      </U>
-      <U V="+2" C="LoadingPier">
-        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="2980" />
-    <M>
-      <MC>
-        <U V="50 / 25">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-      </MC>
-    </M>
-    <UT ID="604168909" />
-  </Asset>
   <Asset ID="101344" RV="Release" RT="Common">
     <N>harbor_colony01_08 (Pier)</N>
     <T ID="100519" I="data/ui/2kimages/main/3dicons/icon_pier.png" />
@@ -103,6 +40,69 @@
         <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
       </U>
       <U V="0">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="+1" C="LoadingPier">
+        <T ID="15250" />
+      </U>
+      <U V="+2" C="LoadingPier">
+        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="2980" />
+    <M>
+      <MC>
+        <U V="50 / 25">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+      </MC>
+    </M>
+    <UT ID="604168909" />
+  </Asset>
+  <Asset ID="116030" RV="Update 06" RT="Common">
+    <N>harbor_arctic_03 (Pier)</N>
+    <T ID="100519" I="data/ui/2kimages/main/3dicons/icon_pier.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
+    <UC>
+      <U V="20000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="30">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="50">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="30">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="20">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="30">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+    </UC>
+    <BC>
+      <U V="2500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="30">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="50">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="10">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="40">
         <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
       </U>
     </BC>

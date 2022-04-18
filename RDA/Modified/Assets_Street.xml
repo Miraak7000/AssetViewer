@@ -1,5 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Street>
+  <Asset ID="117650" RV="Update 09" RT="Common">
+    <N>BasePlateFenceAgricultureAfrica1</N>
+    <T ID="117650" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC />
+    <GU />
+    <TP />
+    <HF />
+  </Asset>
   <Asset ID="117731" RV="Update 09" RT="Common">
     <N>Quay System Base Invisible (Africa)</N>
     <T ID="117731" I="data/ui/2kimages/main/3dicons/icon_quay.png" />
@@ -201,16 +212,13 @@
     <TP />
     <HF />
   </Asset>
-  <Asset ID="113459" RV="Update 06" RT="Common">
-    <N>Quay System Colony03</N>
-    <T ID="117731" I="data/ui/2kimages/main/3dicons/icon_quay.png" />
+  <Asset ID="101202" RV="Release" RT="Common">
+    <N>BasePlateFenceAgricultureTest3</N>
+    <T ID="116631" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <BC>
-      <U V="5">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC />
     <GU />
     <TP />
     <HF />
@@ -283,7 +291,7 @@
   </Asset>
   <Asset ID="1010584" RV="Release" RT="Common">
     <N>RailsUnderBuilding</N>
-    <T ID="1010584" />
+    <T ID="1010584" I="data/ui/2kimages/main/3dicons/icon_railway.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="1793398348" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
@@ -398,6 +406,20 @@
   </Asset>
   <Asset ID="1010567" RV="Release" RT="Common">
     <N>Quay System</N>
+    <T ID="117731" I="data/ui/2kimages/main/3dicons/icon_quay.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <BC>
+      <U V="5">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+  </Asset>
+  <Asset ID="113459" RV="Update 06" RT="Common">
+    <N>Quay System Colony03</N>
     <T ID="117731" I="data/ui/2kimages/main/3dicons/icon_quay.png" />
     <R ID="118002" />
     <IT>Building</IT>
@@ -589,17 +611,6 @@
     <TP />
     <HF />
   </Asset>
-  <Asset ID="101202" RV="Release" RT="Common">
-    <N>BasePlateFenceAgricultureTest3</N>
-    <T ID="116631" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC />
-    <GU />
-    <TP />
-    <HF />
-  </Asset>
   <Asset ID="454" RV="Update 13" RT="Common">
     <N>Shrub System</N>
     <T ID="454" I="data/ui/2kimages/main/3dicons/ornaments/cosmetic_dlc05/icon_enclosed_greenery.png" />
@@ -705,6 +716,17 @@
     <TP />
     <HF />
   </Asset>
+  <Asset ID="24774" RV="Update 14" RT="Common">
+    <N>Courtyard Groundplate</N>
+    <T ID="24774" I="data/ui/2kimages/main/3dicons/ornament_placeholders/porte.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="1793398348" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC />
+    <GU />
+    <TP />
+    <HF />
+  </Asset>
   <Asset ID="131865" RV="Update 10" RT="Common">
     <N>Quay Street SA</N>
     <T ID="117731" I="data/ui/2kimages/main/3dicons/icon_quay.png" />
@@ -773,7 +795,7 @@
   </Asset>
   <Asset ID="117681" RV="Update 09" RT="Common">
     <N>BasePlateFenceAgricultureAfrica3</N>
-    <T ID="117681" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+    <T ID="117650" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
@@ -784,18 +806,7 @@
   </Asset>
   <Asset ID="117680" RV="Update 09" RT="Common">
     <N>BasePlateFenceAgricultureAfrica2</N>
-    <T ID="117681" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC />
-    <GU />
-    <TP />
-    <HF />
-  </Asset>
-  <Asset ID="117650" RV="Update 09" RT="Common">
-    <N>BasePlateFenceAgricultureAfrica1</N>
-    <T ID="117681" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+    <T ID="117650" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
