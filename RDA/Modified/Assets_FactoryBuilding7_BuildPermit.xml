@@ -1,5 +1,50 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <FactoryBuilding7_BuildPermit>
+  <Asset ID="24304" RV="Update 13" RT="Common" IP="true">
+    <N>coastal_02 (Water Purifier)</N>
+    <T ID="994" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="1000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="4">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="EcoSystemProvider">
+        <T ID="24225" />
+        <A>
+          <U V="+30">
+            <T ID="138788" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FO>
+        <U V="0 / 1">
+          <T ID="138788" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="100 / 50">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="50">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
   <Asset ID="24652" RV="Update 13" RT="Common" IP="true">
     <N>Water Purifier</N>
     <T ID="1010278" I="data/ui/2kimages/main/3dicons/icon_fish.png" />
@@ -19,7 +64,7 @@
         <T ID="24225" />
         <A>
           <U V="-7">
-            <T ID="24305" />
+            <T ID="138788" />
           </U>
         </A>
       </U>
@@ -41,107 +86,6 @@
         </U>
         <U V="25">
           <T ID="1010052" I="data/ui/2kimages/main/icons/icon_resource_farmer_2.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="24304" RV="Update 13" RT="Common" IP="true">
-    <N>coastal_02 (Water Purifier)</N>
-    <T ID="24304" I="data/ui/2kimages/main/3dicons/scenario/icon_water_filter.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="1000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="4">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="EcoSystemProvider">
-        <T ID="24225" />
-        <A>
-          <U V="+30">
-            <T ID="24305" />
-          </U>
-        </A>
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="60">
-      <FO>
-        <U V="0 / 1">
-          <T ID="24305" I="data/ui/2kimages/main/3dicons/scenario/ecobalance/icon_pollution_water.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="100 / 50">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="50">
-          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="124739" RV="Update 09" RT="Common" IP="true">
-    <N>alternative_production_03 (Moderate Cotton Cloth Processing)</N>
-    <T ID="124739" I="data/ui/2kimages/main/3dicons/icon_cotton_fur.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="12000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="45">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="30">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="10">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="10">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-      <U V="5">
-        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="60">
-      <FI>
-        <U V="1 / 6">
-          <T ID="1010197" I="data/ui/2kimages/main/3dicons/icon_wool.png" />
-        </U>
-        <U V="1 / 6">
-          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 4">
-          <T ID="1010240" I="data/ui/2kimages/main/3dicons/icon_cotton_fur.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="3300 / 1650">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="140">
-          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
         </U>
       </MC>
     </M>
@@ -247,6 +191,62 @@
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
         <U V="150">
+          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="124739" RV="Update 09" RT="Common" IP="true">
+    <N>alternative_production_03 (Moderate Cotton Cloth Processing)</N>
+    <T ID="124739" I="data/ui/2kimages/main/3dicons/icon_cotton_fur.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="12000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="45">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="30">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="10">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="10">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="5">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 6">
+          <T ID="1010197" I="data/ui/2kimages/main/3dicons/icon_wool.png" />
+        </U>
+        <U V="1 / 6">
+          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="1010240" I="data/ui/2kimages/main/3dicons/icon_cotton_fur.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="3300 / 1650">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="140">
           <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
         </U>
       </MC>

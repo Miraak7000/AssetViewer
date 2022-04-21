@@ -16,14 +16,14 @@ namespace AssetViewer.Controls {
 
     public PoolToTree() {
       InitializeComponent();
-      FillTreeView(190774);
+      FillTreeView("190774");
     }
 
     #endregion Public Constructors
 
     #region Private Methods
 
-    private void FillTreeView(int v) {
+    private void FillTreeView(string v) {
       if (AssetProvider.Pools.ContainsKey(v)) {
         var pool = AssetProvider.Pools[v];
         var tvi = new TreeViewItem {

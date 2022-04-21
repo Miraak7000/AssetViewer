@@ -33,8 +33,8 @@ namespace RDA.Data {
       var isPercent = element.Element("Percental")?.Value == "1";
       float? value = element.Element("Value") == null ? null : (float?)float.Parse(element.Element("Value").Value);
       var factor = 1;
-      if (Assets.KeyToIdDict.ContainsKey(element.Name.LocalName)) {
-        Text = new Description(Assets.KeyToIdDict[element.Name.LocalName]);
+      if (Assets.TryGetDescriptionID(element.Name.LocalName, out var text)) {
+        Text = new Description(text);
       }
 
       switch (element.Name.LocalName) {
@@ -54,10 +54,7 @@ namespace RDA.Data {
         case "PassiveTradeGoodGenUpgrade":
           Text.AdditionalInformation = new Description("20327", DescriptionFontStyle.Light);
           var genpool = element.Element("GenPool").Value;
-          var items = Assets
-            .All
-            .Descendants("Asset")
-            .FirstOrDefault(a => a.XPathSelectElement("Values/Standard/GUID")?.Value == genpool)?
+          var items = Assets.GUIDs[genpool]?
             .XPathSelectElement("Values/RewardPool/ItemsPool")
             .Elements("Item")
             .Select(i => new Description(i.Element("ItemLink").Value));
@@ -276,20 +273,17 @@ namespace RDA.Data {
           break;
 
         case "UseProjectile":
-          var Projectile = Assets
-            .All
-            .Descendants("Asset")
-            .FirstOrDefault(a => a.XPathSelectElement("Values/Standard/GUID")?.Value == element.Value);
+          var Projectile = Assets.GUIDs[element.Value];
 
           var infodesc = Projectile.XPathSelectElement("Values/Standard/InfoDescription")?.Value;
           if (infodesc == null) {
             Text = new Description(element.Parent.Parent.XPathSelectElement("Standard/GUID").Value);
             break;
           }
-          var infodescAsset = Assets.All.Descendants("Asset").FirstOrDefault(a => a.XPathSelectElement("Values/Standard/GUID")?.Value == infodesc);
+          var infodescAsset = Assets.GUIDs[infodesc];
           if (infodescAsset != null) {
             Text = new Description(infodescAsset.XPathSelectElement("Values/Standard/InfoDescription").Value) {
-              AdditionalInformation = new Description(infodescAsset.XPathSelectElement("Values/Standard/GUID").Value, DescriptionFontStyle.Light)
+              AdditionalInformation = new Description(infodescAsset, DescriptionFontStyle.Light)
             };
           }
           break;
@@ -468,7 +462,7 @@ namespace RDA.Data {
               //this.Additionals.Add(new Upgrade() { Text = new Description("None", "None"), Value = $"+{item.Element("AdditionalWeight").Value}" });
             }
             else {
-              Additionals.Add(new Upgrade { Text = new Description(Assets.KeyToIdDict[item.Name.LocalName]), Value = $"+{item.Element("AdditionalWeight").Value}" });
+              Additionals.Add(new Upgrade { Text = new Description(Assets.GetDescriptionID(item.Name.LocalName)), Value = $"+{item.Element("AdditionalWeight").Value}" });
             }
           }
           break;
@@ -493,7 +487,7 @@ namespace RDA.Data {
           break;
 
         case "MotorizableType":
-          Text = new Description(Assets.KeyToIdDict[element.Value]);
+          Text = new Description(Assets.GetDescriptionID(element.Value));
           break;
 
         case "EcoSystemUpgrade":
@@ -503,7 +497,7 @@ namespace RDA.Data {
             var va = int.Parse(item.Element("Value").Value) / 100;
             var u = new Upgrade {
               Value = va > 0 ? $"+{va}" : $"{va}",
-              Text = new Description(Assets.KeyToIdDict[item.Name.LocalName])
+              Text = new Description(Assets.GetDescriptionID(item.Name.LocalName))
             };
             Additionals.Add(u);
           }
@@ -516,7 +510,7 @@ namespace RDA.Data {
           var v = int.Parse((element.Element("DeltaValue") != null ? element.Element("DeltaValue").Value : "0"));
           var upgrade = new Upgrade {
             Value = v > 0 ? $"+{v}" : $"{v}",
-            Text = new Description(Assets.KeyToIdDict[(element.Element("AffectedQuality") != null ? element.Element("AffectedQuality").Value : "Water")])
+            Text = new Description(Assets.GetDescriptionID((element.Element("AffectedQuality") != null ? element.Element("AffectedQuality").Value : "Water")))
           };
           Additionals.Add(upgrade);
           break;

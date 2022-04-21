@@ -19,40 +19,40 @@ namespace RDA.Data {
         switch (template) {
           case "TownhallItem":
             ID = "TownHall";
-            Text = new Description(Assets.KeyToIdDict[ID]);
+            Text = new Description(Assets.GetDescriptionID(ID));
             break;
 
           case "ShipSpecialist":
           case "VehicleItem":
           case "ActiveItem":
             ID = "Ship";
-            Text = new Description(Assets.KeyToIdDict[ID]);
+            Text = new Description(Assets.GetDescriptionID(ID));
             break;
 
           case "GuildhouseItem":
             ID = "GuildHouse";
-            Text = new Description(Assets.KeyToIdDict[ID]);
+            Text = new Description(Assets.GetDescriptionID(ID));
             break;
 
           case "HarborOfficeItem":
             ID = "HarborOffice";
-            Text = new Description(Assets.KeyToIdDict[ID]);
+            Text = new Description(Assets.GetDescriptionID(ID));
             break;
 
           case "1010470":
           case "CultureItem":
             ID = "Zoo";
-            Text = new Description(Assets.KeyToIdDict[ID]);
+            Text = new Description(Assets.GetDescriptionID(ID));
             break;
 
           case "1010471":
             ID = "Museum";
-            Text = new Description(Assets.KeyToIdDict[ID]);
+            Text = new Description(Assets.GetDescriptionID(ID));
             break;
 
           case "110935":
             ID = "BotanicGarden";
-            Text = new Description(Assets.KeyToIdDict[ID]);
+            Text = new Description(Assets.GetDescriptionID(ID));
             break;
 
           case "QuestItem":
@@ -71,12 +71,12 @@ namespace RDA.Data {
       }
       else {
         ID = value;
-        Text = new Description(Assets.KeyToIdDict[value]);
+        Text = new Description(Assets.GetDescriptionID(value));
         if (Assets.Icons.ContainsKey(value)) {
           Text.Icon = new Icon(Assets.Icons[value]);
         }
-        else if (Assets.KeyToIdDict.ContainsKey(value)) {
-          Text.Icon = new Description(Assets.KeyToIdDict[value]).Icon;
+        else if (Assets.TryGetDescriptionID(value, out var icon)) {
+          Text.Icon = new Description(icon).Icon;
         }
       }
     }

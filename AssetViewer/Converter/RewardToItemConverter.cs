@@ -21,17 +21,17 @@ namespace AssetViewer.Converter {
       else if (value is IEnumerable<RewardsItem> rewards) {
         return rewards.SelectMany(l => l.ID.GetItemsById().OrderBy(k => k.Text.CurrentLang));
       }
-      else if (value is IEnumerable<int> ints) {
+      else if (value is IEnumerable<string> ints) {
         return ints.SelectMany(l => l.GetItemsById().OrderBy(k => k.Text.CurrentLang));
       }
       else if (value is IEnumerable<string> strings) {
-        return strings.Select(s => int.Parse(s)).SelectMany(l => l.GetItemsById().OrderBy(k => k.Text.CurrentLang));
+        return strings.Select(s => s).SelectMany(l => l.GetItemsById().OrderBy(k => k.Text.CurrentLang));
       }
-      else if (value is int poolint) {
+      else if (value is string poolint) {
         return poolint.GetItemsById().OrderBy(k => k.Text.CurrentLang);
       }
       else if (value is string poolstring) {
-        return int.Parse(poolstring).GetItemsById().OrderBy(k => k.Text.CurrentLang);
+        return poolstring.GetItemsById().OrderBy(k => k.Text.CurrentLang);
       }
       return null;
     }

@@ -13,9 +13,9 @@ namespace AssetViewer.Converter {
 
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture) {
       if (value is string poolstring) {
-        return int.Parse(poolstring).GetItemsById().FirstOrDefault();
+        return poolstring.GetItemsById().FirstOrDefault();
       }
-      if (value is int poolint) {
+      if (value is string poolint) {
         return poolint.GetItemsById().FirstOrDefault();
       }
       return null;

@@ -34,7 +34,7 @@ namespace RDA.Data {
             if (cityStatus != null) {
               var desc = new Description("145011")
                 .InsertBefore(Assets.TourismThresholds[cityStatus.Value])
-                .AppendInBraces(new Description(Assets.KeyToIdDict[item.Asset.Element("Template").Value]));
+                .AppendInBraces(new Description(Assets.GetDescriptionID(item.Asset.Element("Template").Value)));
               Details.Add((desc, item.Weight));
             }
             else if (item.Asset.Element("Item")?.Element("UnlockingSpecialist") != null) {
@@ -44,7 +44,7 @@ namespace RDA.Data {
               Details.Add((new Description(item.Asset.Element("Item").Element("UnlockingSetBuff").Value), item.Weight));
             }
             else if (item.Asset.Element("Template")?.Value == "HarborOfficeItem" || item.Asset.Element("Template")?.Value == "CultureBuff") {
-              Details.Add((new Description(item.Asset.XPathSelectElement("Values/Standard/GUID").Value), item.Weight));
+              Details.Add((new Description(item.Asset), item.Weight));
             }
             else {
               throw new NotImplementedException();
@@ -55,8 +55,8 @@ namespace RDA.Data {
         case "ItemWithUI":
         case "MonumentEventReward":
         case "CollectablePicturePuzzle":
-          Text = new Description(Source.XPathSelectElement("Values/Standard/GUID").Value);
-          Details = element.Details.Select(d => (new Description(d.Asset.XPathSelectElement("Values/Standard/GUID").Value), d.Weight)).ToList();
+          Text = new Description(Source);
+          Details = element.Details.Select(d => (new Description(d.Asset), d.Weight)).ToList();
           break;
 
         case "Expedition":
@@ -97,7 +97,7 @@ namespace RDA.Data {
             }
             // Detail points to Expedition Event
             else if (item.Asset.Element("Asset").Element("Template").Value == "ExpeditionEvent") {
-              var desc = new Description(item.Asset.XPathSelectElement("Values/Standard/GUID").Value).AppendWithSpace(item.Asset.Element("Template").Value);
+              var desc = new Description(item.Asset).AppendWithSpace(item.Asset.Element("Template").Value);
               Details.Add((desc, item.Weight));
             }
             else {
@@ -110,7 +110,7 @@ namespace RDA.Data {
         //case "Profile_3rdParty_Pirate":
         //case "HafenHugo":
         case "Harbor":
-          Text = new Description(Source.XPathSelectElement("Values/Standard/GUID").Value).InsertBefore("-").InsertBefore(new Description("11150"));
+          Text = new Description(Source).InsertBefore("-").InsertBefore(new Description("11150"));
           foreach (var item in element.Details) {
             var desc = GetDescriptionFromProgression(item.Asset.Element("Template").Value);
             Details.Add((desc, item.Weight));
@@ -119,7 +119,7 @@ namespace RDA.Data {
           break;
 
         case "TakeOver":
-          Text = new Description(Source.XPathSelectElement("Values/Standard/GUID").Value).InsertBefore("-").InsertBefore(new Description("10839"));
+          Text = new Description(Source).InsertBefore("-").InsertBefore(new Description("10839"));
           foreach (var item in element.Details) {
             var details = item.Asset.Element("Template").Value.Split('#');
             var progression = GetDescriptionFromProgression(details[1]);
@@ -165,7 +165,7 @@ namespace RDA.Data {
           if (questgiver != null) {
             Text = new Description(questgiver).InsertBefore("-").InsertBefore(new Description("2734"));
             foreach (var item in element.Details) {
-              Details.Add((new Description(item.Asset.XPathSelectElement("Values/Standard/GUID").Value), item.Weight));
+              Details.Add((new Description(item.Asset), item.Weight));
             }
           }
           else {
@@ -173,20 +173,20 @@ namespace RDA.Data {
           break;
 
         case "ShipDrop":
-          Text = new Description(element.Source.XPathSelectElement("Values/Standard/GUID").Value).InsertBefore("-").InsertBefore(new Description("-12"));
-          Details = element.Details.Select(d => (new Description(d.Asset.XPathSelectElement("Values/Standard/GUID").Value), d.Weight)).ToList();
+          Text = new Description(element.Source).InsertBefore("-").InsertBefore(new Description("-12"));
+          Details = element.Details.Select(d => (new Description(d.Asset), d.Weight)).ToList();
           break;
 
         case "Crafting":
-          Text = new Description(element.Source.XPathSelectElement("Values/Standard/GUID").Value).InsertBefore("-").InsertBefore(new Description("112529"));
-          Details = element.Details.Select(d => (new Description(d.Asset.XPathSelectElement("Values/Standard/GUID").Value).AppendInBraces(new Description(Assets
-            .KeyToIdDict[d.Asset.Element("Template").Value])), d.Weight)).ToList();
+          Text = new Description(element.Source).InsertBefore("-").InsertBefore(new Description("112529"));
+          Details = element.Details.Select(d => (new Description(d.Asset).AppendInBraces(new Description(Assets
+            .GetDescriptionID(d.Asset.Element("Template").Value))), d.Weight)).ToList();
           break;
 
         case "Dive":
           Text = new Description("113420");
           foreach (var item in element.Details) {
-            var desc = new Description(item.Asset.XPathSelectElement("Values/Standard/GUID").Value);
+            var desc = new Description(item.Asset);
             if (item.Asset.Element("Template").Value == "ItemWithUI") {
               desc = desc.AppendInBraces(new Description(item.Asset.Descendants("TreasureSessionOrRegion").First().Value));
             }
@@ -200,7 +200,7 @@ namespace RDA.Data {
           break;
 
         case "Item":
-          Text = new Description(Source.XPathSelectElement("Values/Standard/GUID").Value).InsertBefore("-").InsertBefore(new Description("-101"));
+          Text = new Description(Source).InsertBefore("-").InsertBefore(new Description("-101"));
           break;
 
         case "ResearchSubcategory":
@@ -217,7 +217,7 @@ namespace RDA.Data {
 
         case "FactoryOutputs":
           Text = new Description("11989");
-          Details = element.Details.Select(d => (new Description(d.Asset.XPathSelectElement("Values/Standard/GUID").Value), d.Weight)).ToList();
+          Details = element.Details.Select(d => (new Description(d.Asset), d.Weight)).ToList();
           break;
 
         default:

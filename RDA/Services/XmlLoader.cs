@@ -40,12 +40,8 @@ namespace RDA.Services {
           foreach (var asset in root.Descendants("Asset").ToArray()) {
             if (asset.XPathSelectElement("Values/Standard/GUID")?.Value == null) {
               if (asset.XPathSelectElement("ScenarioBaseAssetGUID")?.Value != null) {
-                asset.XPathSelectElement("Values/Standard").Add(new XElement("GUID", $"{gameType.ToString()}-{asset.XPathSelectElement("ScenarioBaseAssetGUID").Value}"));
+                asset.XPathSelectElement("Values/Standard").Add(new XElement("AVGUID", $"{asset.XPathSelectElement("ScenarioBaseAssetGUID").Value} ({gameType.ToString()})"));
               }
-              //else {
-              //  asset.Remove();
-              //}
-              //continue;
             }
             asset.Add(new XAttribute("GameType", (int)gameType));
             if (templates.Contains(asset.Element("Template")?.Value ?? "")) {

@@ -30,7 +30,7 @@ namespace AssetViewer.Data.Asset {
         }
         if (asset.SetParts?.Any() ?? false) {
           try {
-            var parts = AssetProvider.GetItemsById(asset.SetParts.Select(p => int.Parse(p)));
+            var parts = AssetProvider.GetItemsById(asset.SetParts.Select(p => p));
             foreach (var part in parts) {
               part.CountMode.Count = count;
             }

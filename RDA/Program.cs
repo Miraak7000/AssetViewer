@@ -498,7 +498,7 @@ namespace RDA {
       XElement ToXml(KeyValuePair<XElement, ConcurrentBag<HashSet<AssetWithWeight>>> events) {
         var xRoot = new XElement("EE");
         xRoot.Add(new XAttribute("ID", events.Key.XPathSelectElement("Values/Standard/GUID").Value));
-        xRoot.Add(new Description(events.Key.XPathSelectElement("Values/Standard/GUID").Value).ToXml("N"));
+        xRoot.Add(new Description(events.Key).ToXml("N"));
         var xPaths = new XElement("PL");
         xRoot.Add(xPaths);
         foreach (var path in events.Value) {
@@ -552,7 +552,7 @@ namespace RDA {
               var xOption = new XElement("O");
               xOptions.AddFirst(xOption);
               xOption.Add(new XAttribute("ID", option.Asset.XPathSelectElement("Values/Standard/GUID").Value));
-              var text = new Description(option.Asset.XPathSelectElement("Values/Standard/GUID").Value);
+              var text = new Description(option.Asset);
               if (text.Languages[Data.Languages.English] == "Confirm") {
                 text = new Description("145001");
               }
@@ -561,7 +561,7 @@ namespace RDA {
               }
               xOption.Add(text.ToXml("T"));
               if (option.Asset.XPathSelectElement("Values/ExpeditionOption/OptionAttribute")?.Value != null) {
-                xOption.Add(new Description(Assets.KeyToIdDict[option.Asset.XPathSelectElement("Values/ExpeditionOption/OptionAttribute").Value]).ToXml("OA"));
+                xOption.Add(new Description(Assets.GetDescriptionID(option.Asset.XPathSelectElement("Values/ExpeditionOption/OptionAttribute").Value)).ToXml("OA"));
               }
               if (option.Asset.XPathSelectElement("Values/ExpeditionOption/Requirements")?.HasElements == true) {
                 var xRequirements = new XElement("R");
@@ -570,7 +570,7 @@ namespace RDA {
                   var xItem = new XElement("I");
                   xRequirements.Add(xItem);
                   if (requirement.XPathSelectElement("NeededAttribute")?.Value != null) {
-                    xItem.Add(new Description(Assets.KeyToIdDict[requirement.XPathSelectElement("NeededAttribute").Value]).ToXml("NA"));
+                    xItem.Add(new Description(Assets.GetDescriptionID(requirement.XPathSelectElement("NeededAttribute").Value)).ToXml("NA"));
                   }
                   if (requirement.XPathSelectElement("ItemOrProduct")?.Value != null) {
                     xItem.Add(new XAttribute("ID", requirement.XPathSelectElement("ItemOrProduct").Value));
@@ -716,7 +716,7 @@ namespace RDA {
       foreach (var pool in Assets.All.Descendants("Asset").Where(a => a.Descendants("OverrideSpecialistPool").Any())) {
         var xStatus = new XElement("S");
         xRoot.Add(xStatus);
-        xStatus.Add(new XElement(new Description(pool.XPathSelectElement("Values/Standard/GUID").Value).ToXml("R")));
+        xStatus.Add(new XElement(new Description(pool).ToXml("R")));
         xStatus.Add(new XAttribute("P", pool.Descendants("OverrideSpecialistPool").First().Value));
       }
 

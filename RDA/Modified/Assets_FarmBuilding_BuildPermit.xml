@@ -1,5 +1,61 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <FarmBuilding_BuildPermit>
+  <Asset ID="Eden_Burning-24658" RV="Update 14" RT="Common" IP="true">
+    <N>Aquafarm</N>
+    <T ID="972" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="4">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="0" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+      <U V="" C="Motorizable">
+        <T ID="269957" I="data/ui/2kimages/main/3dicons/icon_silo.png" />
+      </U>
+      <U V="" C="EcoSystemProvider">
+        <T ID="24225" />
+        <A>
+          <U V="+5">
+            <T ID="138789" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="120">
+      <FO>
+        <U V="1 / 4">
+          <T ID="1010200" I="data/ui/2kimages/main/3dicons/icon_fish.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="100 / 50">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="50">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
+        </U>
+      </MC>
+    </M>
+    <Mo L="5">
+      <PM>
+        <M ID="1010277" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+      </PM>
+    </Mo>
+  </Asset>
   <Asset ID="24658" RV="Update 13" RT="Common" IP="true">
     <N>Aquafarm</N>
     <T ID="1010269" I="data/ui/2kimages/main/3dicons/icon_pigs.png" />

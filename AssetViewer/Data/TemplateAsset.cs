@@ -11,7 +11,7 @@ namespace AssetViewer.Data {
 
     #region Public Properties
 
-    public int ID { get; set; }
+    public string ID { get; set; }
     public string Name { get; set; }
     public Description Text { get; set; }
     public Description UpgradeText { get; set; }
@@ -52,9 +52,9 @@ namespace AssetViewer.Data {
     public string HiringFee { get; set; }
     public Description Info { get; set; }
     public List<Upgrade> Sources { get; set; }
-    public List<int> MonumentEvents { get; set; }
-    public List<int> MonumentThresholds { get; set; }
-    public List<int> MonumentRewards { get; set; }
+    public List<string> MonumentEvents { get; set; }
+    public List<string> MonumentThresholds { get; set; }
+    public List<string> MonumentRewards { get; set; }
     public List<Upgrade> ItemWithUI { get; }
     public List<Upgrade> ItemStartExpedition { get; }
     public List<Upgrade> Building { get; }
@@ -82,7 +82,7 @@ namespace AssetViewer.Data {
 
     public TemplateAsset(XElement asset) {
       CountMode = new CountMode(this);
-      ID = int.Parse(asset.Attribute("ID").Value);
+      ID = asset.Attribute("ID").Value;
       Name = asset.Element("N").Value;
       Text = new Description(asset.Element("T"));
       RarityType = asset.Attribute("RT").Value;
@@ -151,13 +151,13 @@ namespace AssetViewer.Data {
         Sources = asset.Element("S").Elements().Select(s => new Upgrade(s)).ToList();
       }
       if (asset.Element("ME") != null) {
-        MonumentEvents = asset.Element("ME").Elements().Select(s => int.Parse(s.Value)).ToList();
+        MonumentEvents = asset.Element("ME").Elements().Select(s => s.Value).ToList();
       }
       if (asset.Element("MT") != null) {
-        MonumentThresholds = asset.Element("MT").Elements().Select(s => int.Parse(s.Value)).ToList();
+        MonumentThresholds = asset.Element("MT").Elements().Select(s => s.Value).ToList();
       }
       if (asset.Element("MR") != null) {
-        MonumentRewards = asset.Element("MR").Elements().Select(s => int.Parse(s.Value)).ToList();
+        MonumentRewards = asset.Element("MR").Elements().Select(s => s.Value).ToList();
       }
       if (asset.Element("SP") != null) {
         SetParts = asset.Element("SP").Elements().Select(s => s.Value).ToList();

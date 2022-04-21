@@ -327,7 +327,7 @@ namespace RDA.Data {
             break;
 
           case "Standard":
-            ProcessElement_Standard(element);
+            ProcessElement_Standard(asset);
             break;
 
           case "Item":
@@ -541,7 +541,7 @@ namespace RDA.Data {
       result.Add(new XAttribute("RV", ReleaseVersion));
       result.Add(new XElement("N", Name));
       result.Add(Text.ToXml("T"));
-      result.Add(Rarity == null ? new Description(Assets.KeyToIdDict["Common"]).ToXml("R") : Rarity.ToXml("R"));
+      result.Add(Rarity == null ? new Description(Assets.GetDescriptionID("Common")).ToXml("R") : Rarity.ToXml("R"));
       result.Add(new XAttribute("RT", RarityType));
       result.Add(new XElement("IT", ItemType));
       if (Sources?.Any(s => s.IsRollable) ?? false) {
@@ -643,7 +643,7 @@ namespace RDA.Data {
 
     private void ProcessElement_Building(XElement element) {
       if (element.Element("AssociatedRegions")?.Value is string str) {
-        var regions = str.Replace("Meta", "").Split(new[] { ";" }, StringSplitOptions.RemoveEmptyEntries).Select(s => new Description(Assets.KeyToIdDict[s]));
+        var regions = str.Replace("Meta", "").Split(new[] { ";" }, StringSplitOptions.RemoveEmptyEntries).Select(s => new Description(Assets.GetDescriptionID(s)));
         AssociatedRegions = Description.Join(regions, ", ");
       }
     }
@@ -721,10 +721,10 @@ namespace RDA.Data {
     }
 
     private void ProcessElement_Standard(XElement element) {
-      ID = element.Element("GUID").Value;
-      Name = element.Element("Name").Value;
-      Text = new Description(element.Element("GUID").Value);
-      Info = element.Element("InfoDescription") == null ? null : new Description(element.Element("InfoDescription").Value);
+      ID = element.XPathSelectElement("Values/Standard/GUID").Value;
+      Name = element.XPathSelectElement("Values/Standard/Name").Value;
+      Text = new Description(element);
+      Info = element.XPathSelectElement("Values/Standard/InfoDescription") == null ? null : new Description(element.XPathSelectElement("Values/Standard/InfoDescription").Value);
     }
 
     private void ProcessElement_Item(XElement element) {
@@ -919,10 +919,7 @@ namespace RDA.Data {
         var projektile = element.Element("UseProjectile");
         if (projektile != null) {
           AttackerUpgrades.Add(new Upgrade(projektile));
-          var Projectile = Assets
-            .All
-            .Descendants("Asset")
-            .FirstOrDefault(a => a.XPathSelectElement($"Values/Standard/GUID")?.Value == projektile.Value);
+          var Projectile = Assets.GUIDs[projektile.Value];
           if (Projectile.XPathSelectElement("Values/Exploder/InnerDamage")?.Value is string damage && damage != "0") {
             AttackerUpgrades.Add(new Upgrade { Text = new Description("20621"), Value = damage });
           }
@@ -1117,7 +1114,7 @@ namespace RDA.Data {
                   break;
               }
               if (results.ContainsKey(key)) {
-                results[key].Additionals.Add(new Upgrade { Text = new Description(Assets.KeyToIdDict[AllocationWeight.Name.LocalName]), Value = $"+{AllocationWeight.Element("AdditionalWeight").Value}" });
+                results[key].Additionals.Add(new Upgrade { Text = new Description(Assets.GetDescriptionID(AllocationWeight.Name.LocalName)), Value = $"+{AllocationWeight.Element("AdditionalWeight").Value}" });
               }
               else {
                 results.Add(key,
@@ -1125,7 +1122,7 @@ namespace RDA.Data {
                     Text = new Description(key),
                     Additionals = new List<Upgrade>{
                       new Upgrade {
-                        Text = new Description(Assets.KeyToIdDict[AllocationWeight.Name.LocalName]),
+                        Text = new Description(Assets.GetDescriptionID(AllocationWeight.Name.LocalName)),
                         Value = $"+{AllocationWeight.Element("AdditionalWeight").Value}"
                       }
                     }

@@ -24,7 +24,7 @@ namespace RDA.Data {
     public ItemSet(XElement asset) {
       ID = asset.XPathSelectElement("Values/Standard/GUID").Value;
       Name = asset.XPathSelectElement("Values/Standard/Name").Value;
-      Text = new Description(asset.XPathSelectElement("Values/Standard/GUID").Value);
+      Text = new Description(asset);
       Info = new Description(asset.XPathSelectElement("Values/Standard/InfoDescription").Value);
     }
 

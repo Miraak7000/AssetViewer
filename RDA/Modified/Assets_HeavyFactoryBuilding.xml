@@ -1,5 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HeavyFactoryBuilding>
+  <Asset ID="1010299" RV="Release" RT="Common" IP="true">
+    <N>heavy_04 (Weapons Heavy Industry)</N>
+    <T ID="1010299" I="data/ui/2kimages/main/3dicons/icon_weapons.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="700">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="8">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="10">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="8">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Culture">
+        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
+      </U>
+      <U V="-5" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="90">
+      <FI>
+        <U V="1 / 4">
+          <T ID="1010219" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 1">
+          <T ID="1010221" I="data/ui/2kimages/main/3dicons/icon_weapons.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="150 / 75">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="50">
+          <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
   <Asset ID="1010297" RV="Release" RT="Common" IP="true">
     <N>heavy_02 (Steel Heavy Industry)</N>
     <T ID="1010297" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
@@ -105,6 +159,60 @@
       </MC>
     </M>
   </Asset>
+  <Asset ID="Eden_Burning-1010297" RV="Update 14" RT="Common" IP="true">
+    <N>heavy_02 (Steel Heavy Industry)</N>
+    <T ID="Eden_Burning-1010297" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="4">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="5">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Culture">
+        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
+      </U>
+      <U V="-5" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 8">
+          <T ID="1010227" I="data/ui/2kimages/main/3dicons/icon_iron.png" />
+        </U>
+        <U V="1 / 6">
+          <T ID="1010226" I="data/ui/2kimages/main/3dicons/icon_coal.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="1010219" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="100 / 50">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="100">
+          <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
   <Asset ID="773" RV="Update 13" RT="Common">
     <N>heavy_colony01_02 (Steel Heavy Industry)</N>
     <T ID="1010296" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
@@ -166,29 +274,29 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="1010282" RV="Release" RT="Common" IP="true">
-    <N>heavy_09 (Brass Heavy Industry)</N>
-    <T ID="1010282" I="data/ui/2kimages/main/3dicons/icon_brass.png" />
+  <Asset ID="1010302" RV="Release" RT="Common" IP="true">
+    <N>heavy_07 (Steam Motors Heavy Industry)</N>
+    <T ID="1010302" I="data/ui/2kimages/main/3dicons/icon_steam_machine.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
     <BC>
-      <U V="17000">
+      <U V="75000">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
-      <U V="8">
+      <U V="16">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
-      <U V="15">
+      <U V="30">
         <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
       </U>
-      <U V="12">
+      <U V="24">
         <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
       </U>
-      <U V="10">
+      <U V="20">
         <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
       </U>
-      <U V="10">
+      <U V="20">
         <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
       </U>
     </BC>
@@ -203,28 +311,28 @@
     <TP />
     <HF />
     <I ID="11143" />
-    <FB CT="60">
+    <FB CT="90">
       <FI>
         <U V="1 / 4">
-          <T ID="-1120497334" I="data/ui/2kimages/main/3dicons/icon_tin_ore.png" />
+          <T ID="1010219" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
         </U>
-        <U V="1 / 4">
-          <T ID="-378802926" I="data/ui/2kimages/main/3dicons/icon_copper.png" />
+        <U V="1 / 2">
+          <T ID="1010204" I="data/ui/2kimages/main/3dicons/icon_brass.png" />
         </U>
       </FI>
       <FO>
-        <U V="1 / 2">
-          <T ID="1010204" I="data/ui/2kimages/main/3dicons/icon_brass.png" />
+        <U V="1 / 1">
+          <T ID="1010224" I="data/ui/2kimages/main/3dicons/icon_steam_machine.png" />
         </U>
       </FO>
     </FB>
     <M>
       <MC>
-        <U V="250 / 125">
+        <U V="1800 / 900">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
-        <U V="25">
-          <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
+        <U V="250">
+          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
         </U>
       </MC>
     </M>
@@ -292,55 +400,64 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="1010299" RV="Release" RT="Common" IP="true">
-    <N>heavy_04 (Weapons Heavy Industry)</N>
-    <T ID="1010299" I="data/ui/2kimages/main/3dicons/icon_weapons.png" />
+  <Asset ID="1010282" RV="Release" RT="Common" IP="true">
+    <N>heavy_09 (Brass Heavy Industry)</N>
+    <T ID="1010282" I="data/ui/2kimages/main/3dicons/icon_brass.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
     <BC>
-      <U V="700">
+      <U V="17000">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
       <U V="8">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
-      <U V="10">
+      <U V="15">
         <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
       </U>
-      <U V="8">
+      <U V="12">
         <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="10">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="10">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
       </U>
     </BC>
     <GU>
+      <U V="-10" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
       <U V="" C="Culture">
         <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
-      </U>
-      <U V="-5" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
       </U>
     </GU>
     <TP />
     <HF />
     <I ID="11143" />
-    <FB CT="90">
+    <FB CT="60">
       <FI>
         <U V="1 / 4">
-          <T ID="1010219" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
+          <T ID="-1120497334" I="data/ui/2kimages/main/3dicons/icon_tin_ore.png" />
+        </U>
+        <U V="1 / 4">
+          <T ID="-378802926" I="data/ui/2kimages/main/3dicons/icon_copper.png" />
         </U>
       </FI>
       <FO>
-        <U V="1 / 1">
-          <T ID="1010221" I="data/ui/2kimages/main/3dicons/icon_weapons.png" />
+        <U V="1 / 2">
+          <T ID="1010204" I="data/ui/2kimages/main/3dicons/icon_brass.png" />
         </U>
       </FO>
     </FB>
     <M>
       <MC>
-        <U V="150 / 75">
+        <U V="250 / 125">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
-        <U V="50">
+        <U V="25">
           <T ID="1010115" I="data/ui/2kimages/main/icons/icon_resource_worker_2.png" />
         </U>
       </MC>
@@ -404,69 +521,6 @@
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
         <U V="500">
-          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="1010302" RV="Release" RT="Common" IP="true">
-    <N>heavy_07 (Steam Motors Heavy Industry)</N>
-    <T ID="1010302" I="data/ui/2kimages/main/3dicons/icon_steam_machine.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="75000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="16">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="30">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="24">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="20">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-      <U V="20">
-        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="-10" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-      <U V="" C="Culture">
-        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="90">
-      <FI>
-        <U V="1 / 4">
-          <T ID="1010219" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
-        </U>
-        <U V="1 / 2">
-          <T ID="1010204" I="data/ui/2kimages/main/3dicons/icon_brass.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 1">
-          <T ID="1010224" I="data/ui/2kimages/main/3dicons/icon_steam_machine.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="1800 / 900">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="250">
           <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
         </U>
       </MC>

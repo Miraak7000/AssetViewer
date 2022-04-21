@@ -1,5 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TowerRestaurant>
+  <Asset ID="133933" RV="Update 11" RT="Common" IP="true">
+    <N>Tourist_monument_03 (Mer and Foret)</N>
+    <T ID="133933" I="data/ui/2kimages/main/3dicons/recipes/icon_homarde_lit_de_terrorir.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC />
+    <GU>
+      <U V="+250" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="133587" />
+    <FB CT="120">
+      <FI>
+        <U V="1 / 10">
+          <T ID="118728" I="data/ui/2kimages/main/3dicons/goods_africa/icon_seafood.png" />
+        </U>
+        <U V="1 / 10">
+          <T ID="114357" I="data/ui/2kimages/main/3dicons/goods_africa/icon_watusi.png" />
+        </U>
+        <U V="1 / 10">
+          <T ID="-539228491" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
+        </U>
+        <U V="1 / 10">
+          <T ID="114369" I="data/ui/2kimages/main/3dicons/goods_africa/icon_spices.png" />
+        </U>
+      </FI>
+    </FB>
+    <M>
+      <MC>
+        <U V="500">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="200">
+          <T ID="132723" I="data/ui/2kimages/main/icons/icon_workforce_tourists.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
   <Asset ID="133932" RV="Update 11" RT="Common" IP="true">
     <N>Tourist_monument_03 (Age of Exploration)</N>
     <T ID="133932" I="data/ui/2kimages/main/3dicons/recipes/icon_age_of_exploration.png" />
@@ -24,7 +66,7 @@
           <T ID="-539228491" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
         </U>
         <U V="1 / 10">
-          <T ID="-1309502485" I="data/ui/2kimages/main/3dicons/icon_pepper.png" />
+          <T ID="1010198" I="data/ui/2kimages/main/3dicons/icon_pepper.png" />
         </U>
         <U V="1 / 10">
           <T ID="1010193" I="data/ui/2kimages/main/3dicons/icon_meat_raw.png" />
@@ -84,55 +126,6 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="132770" RV="Update 11" RT="Common">
-    <N>Tourist_monument_02_blank (restaurant)</N>
-    <T ID="132770" I="data/ui/2kimages/main/3dicons/icon_eiffel_tower.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="100000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="110">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="40">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="180">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="30">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-      <U V="60">
-        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
-      </U>
-      <U V="30">
-        <T ID="1010231" I="data/ui/2kimages/main/3dicons/icon_cement.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="+250" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="133587" />
-    <FB CT="120" />
-    <M>
-      <MC>
-        <U V="500">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="200">
-          <T ID="132723" I="data/ui/2kimages/main/icons/icon_workforce_tourists.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
   <Asset ID="133930" RV="Update 11" RT="Common" IP="true">
     <N>Tourist_monument_03 (Trifle Tower)</N>
     <T ID="133930" I="data/ui/2kimages/main/3dicons/recipes/icon_trifle_tower.png" />
@@ -157,7 +150,7 @@
           <T ID="1010213" I="data/ui/2kimages/main/3dicons/icon_bread.png" />
         </U>
         <U V="1 / 10">
-          <T ID="-1193497903" I="data/ui/2kimages/main/3dicons/icon_grapes.png" />
+          <T ID="120014" I="data/ui/2kimages/main/3dicons/icon_grapes.png" />
         </U>
         <U V="1 / 10">
           <T ID="1178495192" I="data/ui/2kimages/main/3dicons/icon_salt.png" />
@@ -217,13 +210,35 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="133933" RV="Update 11" RT="Common" IP="true">
-    <N>Tourist_monument_03 (Mer and Foret)</N>
-    <T ID="133933" I="data/ui/2kimages/main/3dicons/recipes/icon_homarde_lit_de_terrorir.png" />
+  <Asset ID="132770" RV="Update 11" RT="Common">
+    <N>Tourist_monument_02_blank (restaurant)</N>
+    <T ID="132770" I="data/ui/2kimages/main/3dicons/icon_eiffel_tower.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC />
+    <BC>
+      <U V="100000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="110">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="40">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="180">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="30">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="60">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+      <U V="30">
+        <T ID="1010231" I="data/ui/2kimages/main/3dicons/icon_cement.png" />
+      </U>
+    </BC>
     <GU>
       <U V="+250" C="Culture">
         <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
@@ -232,22 +247,7 @@
     <TP />
     <HF />
     <I ID="133587" />
-    <FB CT="120">
-      <FI>
-        <U V="1 / 10">
-          <T ID="118728" I="data/ui/2kimages/main/3dicons/goods_africa/icon_seafood.png" />
-        </U>
-        <U V="1 / 10">
-          <T ID="114357" I="data/ui/2kimages/main/3dicons/goods_africa/icon_watusi.png" />
-        </U>
-        <U V="1 / 10">
-          <T ID="-539228491" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
-        </U>
-        <U V="1 / 10">
-          <T ID="114369" I="data/ui/2kimages/main/3dicons/goods_africa/icon_spices.png" />
-        </U>
-      </FI>
-    </FB>
+    <FB CT="120" />
     <M>
       <MC>
         <U V="500">

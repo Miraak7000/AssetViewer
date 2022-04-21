@@ -18,12 +18,12 @@ namespace AssetViewer {
 
     #region Public Properties
 
-    public static Dictionary<int, TemplateAsset> Items { get; } = new Dictionary<int, TemplateAsset>();
-    public static Dictionary<int, TemplateAsset> Buildings { get; } = new Dictionary<int, TemplateAsset>();
-    public static Dictionary<int, TemplateAsset> ItemSets { get; } = new Dictionary<int, TemplateAsset>();
-    public static Dictionary<int, TemplateAsset> FestivalBuffs { get; } = new Dictionary<int, TemplateAsset>();
-    public static Dictionary<int, TemplateAsset> AllBuffs { get; } = new Dictionary<int, TemplateAsset>();
-    public static Dictionary<int, Pool> Pools { get; } = new Dictionary<int, Pool>();
+    public static Dictionary<string, TemplateAsset> Items { get; } = new Dictionary<string, TemplateAsset>();
+    public static Dictionary<string, TemplateAsset> Buildings { get; } = new Dictionary<string, TemplateAsset>();
+    public static Dictionary<string, TemplateAsset> ItemSets { get; } = new Dictionary<string, TemplateAsset>();
+    public static Dictionary<string, TemplateAsset> FestivalBuffs { get; } = new Dictionary<string, TemplateAsset>();
+    public static Dictionary<string, TemplateAsset> AllBuffs { get; } = new Dictionary<string, TemplateAsset>();
+    public static Dictionary<string, Pool> Pools { get; } = new Dictionary<string, Pool>();
     public static ObjectCache Cache { get; set; } = MemoryCache.Default;
     public static Dictionary<int, string> Descriptions { get; } = new Dictionary<int, string>();
     public static bool CountMode { get; set; } = false;
@@ -85,16 +85,16 @@ namespace AssetViewer {
       }
     }
 
-    public static IEnumerable<TemplateAsset> GetItemsById(this IEnumerable<int> ids) {
+    public static IEnumerable<TemplateAsset> GetItemsById(this IEnumerable<string> ids) {
       return ids.SelectMany(l => GetItemsById(l)).Distinct() ?? Enumerable.Empty<TemplateAsset>();
     }
 
-    public static IEnumerable<TemplateAsset> GetItemsById(this int id) {
+    public static IEnumerable<TemplateAsset> GetItemsById(this string id) {
       foreach (var item in SearchItems(id).Distinct()) {
         yield return item;
       }
 
-      IEnumerable<TemplateAsset> SearchItems(int searchid) {
+      IEnumerable<TemplateAsset> SearchItems(string searchid) {
         if (Items.ContainsKey(searchid)) {
           yield return Items[searchid];
         }

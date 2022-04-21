@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Guildhouse>
-  <Asset ID="101285" RV="Release" RT="Common">
-    <N>town hall_colony01</N>
+  <Asset ID="117859" RV="Update 09" RT="Common">
+    <N>town_hall_africa</N>
     <T ID="2347" I="data/ui/2kimages/main/3dicons/icon_townhall.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <AR ID="22146" />
     <BC>
       <U V="2500">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
       <U V="25">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+        <T ID="114356" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
       </U>
       <U V="25">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+        <T ID="114402" I="data/ui/2kimages/main/3dicons/goods_africa/icon_mud_bricks.png" />
       </U>
       <U V="0">
         <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
@@ -27,6 +27,35 @@
     <TP />
     <HF />
     <I ID="11421" />
+    <M>
+      <MC>
+        <U V="50 / 25">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="117858" RV="Update 09" RT="Common">
+    <N>guild_house_africa</N>
+    <T ID="2346" I="data/ui/2kimages/main/3dicons/icon_guildhouse.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="2500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="25">
+        <T ID="114356" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
+      </U>
+      <U V="0">
+        <T ID="114402" I="data/ui/2kimages/main/3dicons/goods_africa/icon_mud_bricks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="118031" />
     <M>
       <MC>
         <U V="50 / 25">
@@ -56,41 +85,6 @@
     <TP />
     <HF />
     <I ID="118031" />
-    <M>
-      <MC>
-        <U V="50 / 25">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="117859" RV="Update 09" RT="Common">
-    <N>town_hall_africa</N>
-    <T ID="2347" I="data/ui/2kimages/main/3dicons/icon_townhall.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="22146" />
-    <BC>
-      <U V="2500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="25">
-        <T ID="114356" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
-      </U>
-      <U V="25">
-        <T ID="114402" I="data/ui/2kimages/main/3dicons/goods_africa/icon_mud_bricks.png" />
-      </U>
-      <U V="0">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="0">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11421" />
     <M>
       <MC>
         <U V="50 / 25">
@@ -163,21 +157,56 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="117858" RV="Update 09" RT="Common">
-    <N>guild_house_africa</N>
-    <T ID="2346" I="data/ui/2kimages/main/3dicons/icon_guildhouse.png" />
+  <Asset ID="Eden_Burning-101285" RV="Update 14" RT="Common">
+    <N>town hall_colony01</N>
+    <T ID="Eden_Burning-101285" I="data/ui/2kimages/main/3dicons/icon_townhall.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <AR ID="22146" />
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
     <BC>
       <U V="2500">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
-      <U V="25">
-        <T ID="114356" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="5">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
       </U>
       <U V="0">
-        <T ID="114402" I="data/ui/2kimages/main/3dicons/goods_africa/icon_mud_bricks.png" />
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="0">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11421" />
+    <M>
+      <MC>
+        <U V="50 / 25">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Eden_Burning-101284" RV="Update 14" RT="Common">
+    <N>guild_house_colony01</N>
+    <T ID="Eden_Burning-101284" I="data/ui/2kimages/main/3dicons/icon_guildhouse.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="2500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="5">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
       </U>
     </BC>
     <GU />
@@ -219,6 +248,41 @@
     <M>
       <MC>
         <U V="50 / 50">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="101285" RV="Release" RT="Common">
+    <N>town hall_colony01</N>
+    <T ID="2347" I="data/ui/2kimages/main/3dicons/icon_townhall.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="2500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="25">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="25">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="0">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="0">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11421" />
+    <M>
+      <MC>
+        <U V="50 / 25">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
       </MC>

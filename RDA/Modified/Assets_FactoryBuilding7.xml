@@ -1,5 +1,430 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <FactoryBuilding7>
+  <Asset ID="1010339" RV="Release" RT="Common" IP="true">
+    <N>coastal_colony01_01 (Pearls Coast Building)</N>
+    <T ID="1010339" I="data/ui/2kimages/main/3dicons/icon_pearls.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="8500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="90">
+      <FO>
+        <U V="1 / 1">
+          <T ID="-1619153473" I="data/ui/2kimages/main/3dicons/icon_pearls.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="25 / 13">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="50">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="101250" RV="Release" RT="Common" IP="true">
+    <N>workshop_07 (Glasses Workshop)</N>
+    <T ID="101250" I="data/ui/2kimages/main/3dicons/icon_glasses.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="17000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="8">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="15">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="12">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="10">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="10">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="90">
+      <FI>
+        <U V="1 / 4">
+          <T ID="1010241" I="data/ui/2kimages/main/3dicons/icon_glass.png" />
+        </U>
+        <U V="1 / 2">
+          <T ID="1010204" I="data/ui/2kimages/main/3dicons/icon_brass.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 1">
+          <T ID="395861680" I="data/ui/2kimages/main/3dicons/icon_glasses.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="1000 / 500">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="100">
+          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="1010328" RV="Release" RT="Common" IP="true">
+    <N>workshop_06 (Jewelry Workshop)</N>
+    <T ID="1010328" I="data/ui/2kimages/main/3dicons/icon_jewelry.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="33000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="20">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="16">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="15">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="15">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 6">
+          <T ID="-1619153473" I="data/ui/2kimages/main/3dicons/icon_pearls.png" />
+        </U>
+        <U V="1 / 6">
+          <T ID="1010249" I="data/ui/2kimages/main/3dicons/icon_gold.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="-1171489292" I="data/ui/2kimages/main/3dicons/icon_jewelry.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="2500 / 1250">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="150">
+          <T ID="1010116" I="data/ui/2kimages/main/icons/icon_resource_merchants_2.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="1010327" RV="Release" RT="Common" IP="true">
+    <N>workshop_05 (Gold Workshop)</N>
+    <T ID="1010327" I="data/ui/2kimages/main/3dicons/icon_gold.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="27000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="8">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="15">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="12">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="10">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="10">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 4">
+          <T ID="1010226" I="data/ui/2kimages/main/3dicons/icon_coal.png" />
+        </U>
+        <U V="1 / 3">
+          <T ID="925986485" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 2">
+          <T ID="1010249" I="data/ui/2kimages/main/3dicons/icon_gold.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="750 / 375">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="125">
+          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="1010326" RV="Release" RT="Common" IP="true">
+    <N>workshop_04 (Phonographs Workshop)</N>
+    <T ID="1010326" I="data/ui/2kimages/main/3dicons/icon_phonographs.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="60000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="20">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="16">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="15">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="15">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="120">
+      <FI>
+        <U V="1 / 3">
+          <T ID="174240728" I="data/ui/2kimages/main/3dicons/icon_inlay.png" />
+        </U>
+        <U V="1 / 3">
+          <T ID="1010204" I="data/ui/2kimages/main/3dicons/icon_brass.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 1">
+          <T ID="1010248" I="data/ui/2kimages/main/3dicons/icon_phonographs.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="1600 / 800">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="150">
+          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="1010284" RV="Release" RT="Common" IP="true">
+    <N>workshop_03 (Sewing Machines Factory)</N>
+    <T ID="1010284" I="data/ui/2kimages/main/3dicons/icon_sewing_machine.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="12000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="6">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="10">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="8">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="8">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 8">
+          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+        </U>
+        <U V="1 / 6">
+          <T ID="1010219" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="1010206" I="data/ui/2kimages/main/3dicons/icon_sewing_machine.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="500 / 250">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="150">
+          <T ID="1010116" I="data/ui/2kimages/main/icons/icon_resource_merchants_2.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="1010324" RV="Release" RT="Common" IP="true">
+    <N>workshop_02 (Pocket Watch Workshop)</N>
+    <T ID="1010324" I="data/ui/2kimages/main/3dicons/icon_pocket_watch.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="48000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="8">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="15">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="12">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="10">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="10">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="90">
+      <FI>
+        <U V="1 / 4">
+          <T ID="1010241" I="data/ui/2kimages/main/3dicons/icon_glass.png" />
+        </U>
+        <U V="1 / 2">
+          <T ID="1010249" I="data/ui/2kimages/main/3dicons/icon_gold.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 1">
+          <T ID="1010246" I="data/ui/2kimages/main/3dicons/icon_pocket_watch.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="1400 / 700">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="150">
+          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="1010323" RV="Release" RT="Common" IP="true">
+    <N>workshop_01 (High-Wheeler Workshop)</N>
+    <T ID="1010323" I="data/ui/2kimages/main/3dicons/icon_high_wheeler.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="42000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="8">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="15">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="12">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="10">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="10">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 6">
+          <T ID="1010219" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
+        </U>
+        <U V="1 / 6">
+          <T ID="1010255" I="data/ui/2kimages/main/3dicons/icon_caoutchouc.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="1010245" I="data/ui/2kimages/main/3dicons/icon_high_wheeler.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="1200 / 600">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="150">
+          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
   <Asset ID="1010321" RV="Release" RT="Common" IP="true">
     <N>processing_08 (Carbon Filament Processing)</N>
     <T ID="1010321" I="data/ui/2kimages/main/3dicons/icon_carbon_filament.png" />
@@ -434,7 +859,7 @@
     <FB>
       <FI>
         <U V="1 / 6">
-          <T ID="-1193497903" I="data/ui/2kimages/main/3dicons/icon_grapes.png" />
+          <T ID="120014" I="data/ui/2kimages/main/3dicons/icon_grapes.png" />
         </U>
         <U V="1 / 6">
           <T ID="1010241" I="data/ui/2kimages/main/3dicons/icon_glass.png" />
@@ -632,7 +1057,7 @@
           <T ID="1010193" I="data/ui/2kimages/main/3dicons/icon_meat_raw.png" />
         </U>
         <U V="1 / 3">
-          <T ID="-1309502485" I="data/ui/2kimages/main/3dicons/icon_pepper.png" />
+          <T ID="1010198" I="data/ui/2kimages/main/3dicons/icon_pepper.png" />
         </U>
       </FI>
       <FO>
@@ -840,7 +1265,7 @@
       </FI>
       <FO>
         <U V="1 / 4">
-          <T ID="411240543" I="data/ui/2kimages/main/3dicons/icon_sail.png" />
+          <T ID="1010210" I="data/ui/2kimages/main/3dicons/icon_sail.png" />
         </U>
       </FO>
     </FB>
@@ -1323,9 +1748,1629 @@
       </MC>
     </M>
   </Asset>
+  <Asset ID="Seasons_of_Silver-24857" RV="Update 14" RT="Common" IP="true">
+    <N>SilverMint</N>
+    <T ID="Seasons_of_Silver-24857" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_silver_coin_good.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="2500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="25">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="35">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="120">
+      <FI>
+        <U V="1 / 3">
+          <T ID="24850" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_silver_smelter.png" />
+        </U>
+        <U V="1 / 3">
+          <T ID="1010255" I="data/ui/2kimages/main/3dicons/icon_caoutchouc.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 2">
+          <T ID="24851" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_silver_coin_good.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="50 / 25">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="150">
+          <T ID="1010367" I="data/ui/2kimages/main/icons/icon_ressource_worker_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Seasons_of_Silver-24856" RV="Update 14" RT="Common" IP="true">
+    <N>SilverSmelter</N>
+    <T ID="Seasons_of_Silver-24856" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_silver_smelter.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="900">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="30">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="25">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="120">
+      <FI>
+        <U V="1 / 3">
+          <T ID="24846" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_cyanide_leacher.png" />
+        </U>
+        <U V="1 / 3">
+          <T ID="24821" I="data/ui/2kimages/main/3dicons/machine_items/icon_fertilizer_1.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 2">
+          <T ID="24850" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_silver_smelter.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="50 / 25">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="80">
+          <T ID="1010367" I="data/ui/2kimages/main/icons/icon_ressource_worker_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Seasons_of_Silver-24820" RV="Update 14" RT="Common" IP="true">
+    <N>factory_Scenario02_01(Coke)</N>
+    <T ID="Seasons_of_Silver-24820" I="data/ui/2kimages/main/3dicons/machine_items/icon_fertilizer_1.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="750">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="20">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="15">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="15">
+      <FI>
+        <U V="1 / 3">
+          <T ID="1010226" I="data/ui/2kimages/main/3dicons/icon_coal.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 6">
+          <T ID="24821" I="data/ui/2kimages/main/3dicons/machine_items/icon_fertilizer_1.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="150 / 75">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="60">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Seasons_of_Silver-24825" RV="Update 14" RT="Common" IP="true">
+    <N>factory_Scenario02_02(Gum)</N>
+    <T ID="Seasons_of_Silver-24825" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_bubble_gum.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="1250">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="25">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="35">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 3">
+          <T ID="1010255" I="data/ui/2kimages/main/3dicons/icon_caoutchouc.png" />
+        </U>
+        <U V="1 / 3">
+          <T ID="1178495192" I="data/ui/2kimages/main/3dicons/icon_salt.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 2">
+          <T ID="24824" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_bubble_gum.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="50 / 25">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="35">
+          <T ID="1010367" I="data/ui/2kimages/main/icons/icon_ressource_worker_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Seasons_of_Silver-114441" RV="Update 14" RT="Common" IP="true">
+    <N>intermediate_colony02_01 (Linen Mill)</N>
+    <T ID="Seasons_of_Silver-114441" I="data/ui/2kimages/main/3dicons/goods_africa/icon_linen_fabric.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="6">
+        <T ID="114356" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 6">
+          <T ID="114365" I="data/ui/2kimages/main/3dicons/goods_africa/icon_linen_farm.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="114391" I="data/ui/2kimages/main/3dicons/goods_africa/icon_linen_fabric.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="20 / 10">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="25">
+          <T ID="114340" I="data/ui/2kimages/main/icons/icon_workforce_sheperds.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Seasons_of_Silver-1010278" RV="Update 14" RT="Common" IP="true">
+    <N>coastal_01 (Fish Coast Building)</N>
+    <T ID="Seasons_of_Silver-1010278" I="data/ui/2kimages/main/3dicons/icon_fish.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="100">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="2">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FO>
+        <U V="1 / 4">
+          <T ID="1010200" I="data/ui/2kimages/main/3dicons/icon_fish.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="40 / 20">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="25">
+          <T ID="1010052" I="data/ui/2kimages/main/icons/icon_resource_farmer_2.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Seasons_of_Silver-1010342" RV="Update 14" RT="Common" IP="true">
+    <N>workshop_colony01_01 (Cigars Workshop)</N>
+    <T ID="Seasons_of_Silver-1010342" I="data/ui/2kimages/main/3dicons/icon_cigars.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="2150">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="20">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 6">
+          <T ID="174240728" I="data/ui/2kimages/main/3dicons/icon_inlay.png" />
+        </U>
+        <U V="1 / 6">
+          <T ID="1401891502" I="data/ui/2kimages/main/3dicons/icon_tobacco.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="1173055208" I="data/ui/2kimages/main/3dicons/icon_cigars.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="250 / 125">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="175">
+          <T ID="1010367" I="data/ui/2kimages/main/icons/icon_ressource_worker_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Seasons_of_Silver-101296" RV="Update 14" RT="Common" IP="true">
+    <N>processing_colony01_03 (Inlay Processing)</N>
+    <T ID="Seasons_of_Silver-101296" I="data/ui/2kimages/main/3dicons/icon_inlay.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="775">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="20">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="0">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="0">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="0">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 8">
+          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 2">
+          <T ID="174240728" I="data/ui/2kimages/main/3dicons/icon_inlay.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="100 / 50">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="100">
+          <T ID="1010367" I="data/ui/2kimages/main/icons/icon_ressource_worker_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Seasons_of_Silver-101266" RV="Update 14" RT="Common" IP="true">
+    <N>processing_colony01_02 (Poncho Maker)</N>
+    <T ID="Seasons_of_Silver-101266" I="data/ui/2kimages/main/3dicons/icon_poncho.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="6">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 6">
+          <T ID="114391" I="data/ui/2kimages/main/3dicons/goods_africa/icon_linen_fabric.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="620397185" I="data/ui/2kimages/main/3dicons/icon_poncho.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="15 / 8">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="30">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Seasons_of_Silver-1010317" RV="Update 14" RT="Common" IP="true">
+    <N>processing_colony01_01 (Sugar Processing)</N>
+    <T ID="Seasons_of_Silver-1010317" I="data/ui/2kimages/main/3dicons/icon_salt.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="450">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="6">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 6">
+          <T ID="1010251" I="data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="1178495192" I="data/ui/2kimages/main/3dicons/icon_salt.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="10 / 5">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="50">
+          <T ID="1010367" I="data/ui/2kimages/main/icons/icon_ressource_worker_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Seasons_of_Silver-101271" RV="Update 14" RT="Common" IP="true">
+    <N>food_colony01_05 (Burrito Maker)</N>
+    <T ID="Seasons_of_Silver-101271" I="data/ui/2kimages/main/3dicons/icon_burrito.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="890">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="3">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="2">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 6">
+          <T ID="1010193" I="data/ui/2kimages/main/3dicons/icon_meat_raw.png" />
+        </U>
+        <U V="1 / 6">
+          <T ID="120034" I="data/ui/2kimages/main/3dicons/icon_corn.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="120035" I="data/ui/2kimages/main/3dicons/icon_burrito.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="70 / 35">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="30">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Seasons_of_Silver-101264" RV="Update 14" RT="Common" IP="true">
+    <N>food_colony01_04 (Fried Banana Maker)</N>
+    <T ID="24873" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="2">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 6">
+          <T ID="1010200" I="data/ui/2kimages/main/3dicons/icon_fish.png" />
+        </U>
+        <U V="1 / 6">
+          <T ID="114369" I="data/ui/2kimages/main/3dicons/goods_africa/icon_spices.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="120033" I="data/ui/2kimages/main/3dicons/icon_fried_bananas.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="15 / 8">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="95">
+          <T ID="1010367" I="data/ui/2kimages/main/icons/icon_ressource_worker_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Seasons_of_Silver-101252" RV="Update 14" RT="Common" IP="true">
+    <N>food_colony01_03 (Coffee Maker)</N>
+    <T ID="Seasons_of_Silver-101252" I="data/ui/2kimages/main/3dicons/icon_coffe_cup.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="1750">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="5">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="3">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 6">
+          <T ID="1654733499" I="data/ui/2kimages/main/3dicons/icon_coffee_beans.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="120032" I="data/ui/2kimages/main/3dicons/icon_coffe_cup.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="150 / 75">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="150">
+          <T ID="1010367" I="data/ui/2kimages/main/icons/icon_ressource_worker_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Seasons_of_Silver-1010340" RV="Update 14" RT="Common" IP="true">
+    <N>food_colony01_01 (Rum Maker)</N>
+    <T ID="Seasons_of_Silver-1010340" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="950">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="6">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 8">
+          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+        </U>
+        <U V="1 / 6">
+          <T ID="1010251" I="data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="1010257" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="50 / 25">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="30">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Seasons_of_Silver-101273" RV="Update 14" RT="Common" IP="true">
+    <N>factory_colony01_07 (Bombin Maker)</N>
+    <T ID="Seasons_of_Silver-101273" I="data/ui/2kimages/main/3dicons/icon_bowler_hat.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="1750">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="3">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="2">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 6">
+          <T ID="1010240" I="data/ui/2kimages/main/3dicons/icon_cotton_fur.png" />
+        </U>
+        <U V="1 / 6">
+          <T ID="120044" I="data/ui/2kimages/main/3dicons/icon_felt.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="120037" I="data/ui/2kimages/main/3dicons/icon_bowler_hat.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="50 / 25">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="20">
+          <T ID="1010367" I="data/ui/2kimages/main/icons/icon_ressource_worker_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Seasons_of_Silver-101415" RV="Update 14" RT="Common" IP="true">
+    <N>factory_colony01_06 (Felt Maker)</N>
+    <T ID="Seasons_of_Silver-101415" I="data/ui/2kimages/main/3dicons/icon_felt.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="900">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="3">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="2">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 6">
+          <T ID="536801393" I="data/ui/2kimages/main/3dicons/icon_alpaca_wool.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="120044" I="data/ui/2kimages/main/3dicons/icon_felt.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="10 / 5">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="10">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Seasons_of_Silver-101268" RV="Update 14" RT="Common" IP="true">
+    <N>factory_colony01_05 (Brick Factory)</N>
+    <T ID="Seasons_of_Silver-101268" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="950">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="8">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 4">
+          <T ID="1010201" I="data/ui/2kimages/main/3dicons/icon_clay.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 2">
+          <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="20 / 10">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="25">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Seasons_of_Silver-1010318" RV="Update 14" RT="Common" IP="true">
+    <N>factory_colony01_03 (Cotton Cloth Processing)</N>
+    <T ID="114441" I="data/ui/2kimages/main/3dicons/goods_africa/icon_linen_fabric.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="350">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="6">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 6">
+          <T ID="114365" I="data/ui/2kimages/main/3dicons/goods_africa/icon_linen_farm.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="114391" I="data/ui/2kimages/main/3dicons/goods_africa/icon_linen_fabric.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="10 / 5">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="10">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Seasons_of_Silver-101265" RV="Update 14" RT="Common" IP="true">
+    <N>factory_colony01_02 (Sailcloth Factory)</N>
+    <T ID="Seasons_of_Silver-101265" I="data/ui/2kimages/main/3dicons/icon_sail.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="550">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="8">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="0">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 6">
+          <T ID="114391" I="data/ui/2kimages/main/3dicons/goods_africa/icon_linen_fabric.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="1010210" I="data/ui/2kimages/main/3dicons/icon_sail.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="15 / 8">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="20">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Seasons_of_Silver-101261" RV="Update 14" RT="Common" IP="true">
+    <N>factory_colony01_01 (Timber Factory)</N>
+    <T ID="Seasons_of_Silver-101261" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="300">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="EcoSystemProvider">
+        <T ID="24225" />
+        <A>
+          <U V="+1">
+            <T ID="138790" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="15">
+      <FI>
+        <U V="1 / 8">
+          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 8">
+          <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="10 / 5">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="20">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Seasons_of_Silver-101303" RV="Update 14" RT="Common" IP="true">
+    <N>coastal_colony01_02 (Niter Coast Building)</N>
+    <T ID="Seasons_of_Silver-101303" I="data/ui/2kimages/main/3dicons/icon_niter.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="900">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="25">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="0">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="30">
+      <FO>
+        <U V="1 / 3">
+          <T ID="1010232" I="data/ui/2kimages/main/3dicons/icon_niter.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="270 / 135">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="80">
+          <T ID="1010367" I="data/ui/2kimages/main/icons/icon_ressource_worker_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Seasons_of_Silver-101262" RV="Update 14" RT="Common" IP="true">
+    <N>coastal_colony01_02 (Fish Coast Building)</N>
+    <T ID="1010278" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="6">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="-5" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+      <U V="" C="EcoSystemProvider">
+        <T ID="24225" />
+        <A>
+          <U V="-5">
+            <T ID="138788" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FO>
+        <U V="1 / 4">
+          <T ID="1010200" I="data/ui/2kimages/main/3dicons/icon_fish.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="5 / 3">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="15">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Eden_Burning-1010340" RV="Update 14" RT="Common" IP="true">
+    <N>food_colony01_01 (Atole Maker)</N>
+    <T ID="978" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="2500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="6">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="EcoSystemProvider">
+        <T ID="24225" />
+        <A>
+          <U V="0">
+            <T ID="138790" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 8">
+          <T ID="120034" I="data/ui/2kimages/main/3dicons/icon_corn.png" />
+        </U>
+        <U V="1 / 6">
+          <T ID="1010251" I="data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="1010257" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="50 / 25">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="30">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Eden_Burning-101252" RV="Update 14" RT="Common" IP="true">
+    <N>food_colony01_03 (Drip Coffee Pot Maker)</N>
+    <T ID="975" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="9000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="5">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="3">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="EcoSystemProvider">
+        <T ID="24225" />
+        <A>
+          <U V="0">
+            <T ID="138790" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 6">
+          <T ID="1654733499" I="data/ui/2kimages/main/3dicons/icon_coffee_beans.png" />
+        </U>
+        <U V="1 / 6">
+          <T ID="1010227" I="data/ui/2kimages/main/3dicons/icon_iron.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="120032" I="data/ui/2kimages/main/3dicons/icon_coffe_cup.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="150 / 75">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="150">
+          <T ID="1010367" I="data/ui/2kimages/main/icons/icon_ressource_worker_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Eden_Burning-101271" RV="Update 14" RT="Common" IP="true">
+    <N>food_colony01_05 (Burrito Maker)</N>
+    <T ID="Eden_Burning-101271" I="data/ui/2kimages/main/3dicons/icon_burrito.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="4500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="3">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="2">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="EcoSystemProvider">
+        <T ID="24225" />
+        <A>
+          <U V="0">
+            <T ID="138790" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 6">
+          <T ID="1010193" I="data/ui/2kimages/main/3dicons/icon_meat_raw.png" />
+        </U>
+        <U V="1 / 6">
+          <T ID="120034" I="data/ui/2kimages/main/3dicons/icon_corn.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="120035" I="data/ui/2kimages/main/3dicons/icon_burrito.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="100 / 50">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="100">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Eden_Burning-101266" RV="Update 14" RT="Common" IP="true">
+    <N>processing_colony01_02 (Work Cloth Maker)</N>
+    <T ID="982" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="5">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="EcoSystemProvider">
+        <T ID="24225" />
+        <A>
+          <U V="0">
+            <T ID="138790" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 6">
+          <T ID="536801393" I="data/ui/2kimages/main/3dicons/icon_alpaca_wool.png" />
+        </U>
+        <U V="1 / 6">
+          <T ID="1010193" I="data/ui/2kimages/main/3dicons/icon_meat_raw.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="620397185" I="data/ui/2kimages/main/3dicons/icon_poncho.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="15 / 8">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="30">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Eden_Burning-1010342" RV="Update 14" RT="Common" IP="true">
+    <N>workshop_colony01_01 (Cigars Workshop)</N>
+    <T ID="Eden_Burning-1010342" I="data/ui/2kimages/main/3dicons/icon_cigars.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="2500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="20">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 6">
+          <T ID="174240728" I="data/ui/2kimages/main/3dicons/icon_inlay.png" />
+        </U>
+        <U V="1 / 6">
+          <T ID="1401891502" I="data/ui/2kimages/main/3dicons/icon_tobacco.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="1173055208" I="data/ui/2kimages/main/3dicons/icon_cigars.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="250 / 125">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="175">
+          <T ID="1010367" I="data/ui/2kimages/main/icons/icon_ressource_worker_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Eden_Burning-101415" RV="Update 14" RT="Common" IP="true">
+    <N>factory_colony01_06 (Felt Maker)</N>
+    <T ID="Eden_Burning-101415" I="data/ui/2kimages/main/3dicons/icon_felt.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="2500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="5">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="2">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="EcoSystemProvider">
+        <T ID="24225" />
+        <A>
+          <U V="0">
+            <T ID="138790" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 6">
+          <T ID="536801393" I="data/ui/2kimages/main/3dicons/icon_alpaca_wool.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="120044" I="data/ui/2kimages/main/3dicons/icon_felt.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="10 / 5">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="10">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Eden_Burning-101268" RV="Update 14" RT="Common" IP="true">
+    <N>factory_colony01_05 (Brick Factory)</N>
+    <T ID="Eden_Burning-101268" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="2500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="6">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="EcoSystemProvider">
+        <T ID="24225" />
+        <A>
+          <U V="-5">
+            <T ID="138790" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 4">
+          <T ID="1010201" I="data/ui/2kimages/main/3dicons/icon_clay.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 2">
+          <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="20 / 10">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="50">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Eden_Burning-101273" RV="Update 14" RT="Common" IP="true">
+    <N>factory_colony01_07 (Fedora Maker)</N>
+    <T ID="976" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="9000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="3">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="2">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="EcoSystemProvider">
+        <T ID="24225" />
+        <A>
+          <U V="0">
+            <T ID="138790" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 6">
+          <T ID="133095" I="data/ui/2kimages/main/3dicons/icon_coconut.png" />
+        </U>
+        <U V="1 / 6">
+          <T ID="120044" I="data/ui/2kimages/main/3dicons/icon_felt.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 4">
+          <T ID="120037" I="data/ui/2kimages/main/3dicons/icon_bowler_hat.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="50 / 25">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="20">
+          <T ID="1010367" I="data/ui/2kimages/main/icons/icon_ressource_worker_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Eden_Burning-101261" RV="Update 14" RT="Common" IP="true">
+    <N>factory_colony01_01 (Timber Factory)</N>
+    <T ID="Eden_Burning-101261" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="EcoSystemProvider">
+        <T ID="24225" />
+        <A>
+          <U V="-1">
+            <T ID="138790" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="15">
+      <FI>
+        <U V="1 / 8">
+          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 8">
+          <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="10 / 5">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="20">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Eden_Burning-1010321" RV="Update 14" RT="Common" IP="true">
+    <N>processing_08 (Tools)</N>
+    <T ID="Eden_Burning-1010321" I="data/ui/2kimages/main/3dicons/icon_tools.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="30000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="8">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="15">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="12">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="10">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="10">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="EcoSystemProvider">
+        <T ID="24225" />
+        <A>
+          <U V="+10">
+            <T ID="138790" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 4">
+          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+        </U>
+        <U V="1 / 1">
+          <T ID="1010227" I="data/ui/2kimages/main/3dicons/icon_iron.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 2">
+          <T ID="984" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="725 / 367">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="150">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Eden_Burning-1010280" RV="Update 14" RT="Common" IP="true">
+    <N>factory_01 (Concrete Factory)</N>
+    <T ID="Eden_Burning-1010280" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="15000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="20">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="30">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="24">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="25">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="EcoSystemProvider">
+        <T ID="24225" />
+        <A>
+          <U V="-15">
+            <T ID="138790" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 3">
+          <T ID="1010231" I="data/ui/2kimages/main/3dicons/icon_cement.png" />
+        </U>
+        <U V="1 / 4">
+          <T ID="1010219" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 2">
+          <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="400 / 200">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="75">
+          <T ID="1010367" I="data/ui/2kimages/main/icons/icon_ressource_worker_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="Eden_Burning-1010278" RV="Update 14" RT="Common" IP="true">
+    <N>coastal_01 (Fish Coast Building)</N>
+    <T ID="Eden_Burning-1010278" I="data/ui/2kimages/main/3dicons/icon_fish.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="100">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="2">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="EcoSystemProvider">
+        <T ID="24225" />
+        <A>
+          <U V="-2">
+            <T ID="138788" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FO>
+        <U V="1 / 8">
+          <T ID="1010200" I="data/ui/2kimages/main/3dicons/icon_fish.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="40 / 20">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="25">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
   <Asset ID="795" RV="Update 13" RT="Common">
     <N>factory_colony01_09 (Tools Factory)</N>
-    <T ID="795" I="data/ui/2kimages/main/3dicons/icon_tools.png" />
+    <T ID="974" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
@@ -1363,7 +3408,7 @@
       </FI>
       <FO>
         <U V="1 / 4">
-          <T ID="798" I="data/ui/2kimages/main/3dicons/icon_tools.png" />
+          <T ID="984" />
         </U>
       </FO>
     </FB>
@@ -1441,7 +3486,7 @@
   </Asset>
   <Asset ID="776" RV="Update 13" RT="Common">
     <N>processing_colony01_04 (Electric Cable Processing)</N>
-    <T ID="776" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_electric_cable_2.png" />
+    <T ID="979" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
@@ -2805,7 +4850,7 @@
       </FI>
       <FO>
         <U V="5 / 100">
-          <T ID="24837" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
+          <T ID="270042" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
         </U>
       </FO>
     </FB>
@@ -2881,7 +4926,7 @@
       </FI>
       <FO>
         <U V="1 / 20">
-          <T ID="24837" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
+          <T ID="270042" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
         </U>
       </FO>
     </FB>
@@ -2934,7 +4979,7 @@
       </FI>
       <FO>
         <U V="1 / 20">
-          <T ID="24837" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
+          <T ID="270042" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
         </U>
       </FO>
     </FB>
@@ -2987,7 +5032,7 @@
       </FI>
       <FO>
         <U V="1 / 20">
-          <T ID="24837" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
+          <T ID="270042" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
         </U>
       </FO>
     </FB>
@@ -3311,7 +5356,7 @@
     <FB>
       <FI>
         <U V="1 / 6">
-          <T ID="190946" I="data/ui/2kimages/main/3dicons/icon_coffee_beans.png" />
+          <T ID="1654733499" I="data/ui/2kimages/main/3dicons/icon_coffee_beans.png" />
         </U>
       </FI>
       <FO>
@@ -3451,7 +5496,7 @@
       </FI>
       <FO>
         <U V="1 / 4">
-          <T ID="-1395336335" I="data/ui/2kimages/main/3dicons/icon_bowler_hat.png" />
+          <T ID="120037" I="data/ui/2kimages/main/3dicons/icon_bowler_hat.png" />
         </U>
       </FO>
     </FB>
@@ -3621,7 +5666,7 @@
       </FI>
       <FO>
         <U V="1 / 4">
-          <T ID="411240543" I="data/ui/2kimages/main/3dicons/icon_sail.png" />
+          <T ID="1010210" I="data/ui/2kimages/main/3dicons/icon_sail.png" />
         </U>
       </FO>
     </FB>
@@ -3747,7 +5792,7 @@
         <T ID="24225" />
         <A>
           <U V="-5">
-            <T ID="24305" />
+            <T ID="138788" />
           </U>
         </A>
       </U>
@@ -3769,431 +5814,6 @@
         </U>
         <U V="15">
           <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="1010339" RV="Release" RT="Common" IP="true">
-    <N>coastal_colony01_01 (Pearls Coast Building)</N>
-    <T ID="1010339" I="data/ui/2kimages/main/3dicons/icon_pearls.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="8500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="90">
-      <FO>
-        <U V="1 / 1">
-          <T ID="-1619153473" I="data/ui/2kimages/main/3dicons/icon_pearls.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="25 / 13">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="50">
-          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="101250" RV="Release" RT="Common" IP="true">
-    <N>workshop_07 (Glasses Workshop)</N>
-    <T ID="101250" I="data/ui/2kimages/main/3dicons/icon_glasses.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="17000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="8">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="15">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="12">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="10">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-      <U V="10">
-        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="90">
-      <FI>
-        <U V="1 / 4">
-          <T ID="1010241" I="data/ui/2kimages/main/3dicons/icon_glass.png" />
-        </U>
-        <U V="1 / 2">
-          <T ID="1010204" I="data/ui/2kimages/main/3dicons/icon_brass.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 1">
-          <T ID="395861680" I="data/ui/2kimages/main/3dicons/icon_glasses.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="1000 / 500">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="100">
-          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="1010328" RV="Release" RT="Common" IP="true">
-    <N>workshop_06 (Jewelry Workshop)</N>
-    <T ID="1010328" I="data/ui/2kimages/main/3dicons/icon_jewelry.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="33000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="20">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="16">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="15">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-      <U V="15">
-        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB>
-      <FI>
-        <U V="1 / 6">
-          <T ID="-1619153473" I="data/ui/2kimages/main/3dicons/icon_pearls.png" />
-        </U>
-        <U V="1 / 6">
-          <T ID="1010249" I="data/ui/2kimages/main/3dicons/icon_gold.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 4">
-          <T ID="-1171489292" I="data/ui/2kimages/main/3dicons/icon_jewelry.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="2500 / 1250">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="150">
-          <T ID="1010116" I="data/ui/2kimages/main/icons/icon_resource_merchants_2.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="1010327" RV="Release" RT="Common" IP="true">
-    <N>workshop_05 (Gold Workshop)</N>
-    <T ID="1010327" I="data/ui/2kimages/main/3dicons/icon_gold.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="27000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="8">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="15">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="12">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="10">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-      <U V="10">
-        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="60">
-      <FI>
-        <U V="1 / 4">
-          <T ID="1010226" I="data/ui/2kimages/main/3dicons/icon_coal.png" />
-        </U>
-        <U V="1 / 3">
-          <T ID="925986485" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 2">
-          <T ID="1010249" I="data/ui/2kimages/main/3dicons/icon_gold.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="750 / 375">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="125">
-          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="1010326" RV="Release" RT="Common" IP="true">
-    <N>workshop_04 (Phonographs Workshop)</N>
-    <T ID="1010326" I="data/ui/2kimages/main/3dicons/icon_phonographs.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="60000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="20">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="16">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="15">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-      <U V="15">
-        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="120">
-      <FI>
-        <U V="1 / 3">
-          <T ID="174240728" I="data/ui/2kimages/main/3dicons/icon_inlay.png" />
-        </U>
-        <U V="1 / 3">
-          <T ID="1010204" I="data/ui/2kimages/main/3dicons/icon_brass.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 1">
-          <T ID="432075107" I="data/ui/2kimages/main/3dicons/icon_phonographs.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="1600 / 800">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="150">
-          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="1010284" RV="Release" RT="Common" IP="true">
-    <N>workshop_03 (Sewing Machines Factory)</N>
-    <T ID="1010284" I="data/ui/2kimages/main/3dicons/icon_sewing_machine.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="12000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="6">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="10">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="8">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="8">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB>
-      <FI>
-        <U V="1 / 8">
-          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
-        </U>
-        <U V="1 / 6">
-          <T ID="1010219" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 4">
-          <T ID="1010206" I="data/ui/2kimages/main/3dicons/icon_sewing_machine.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="500 / 250">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="150">
-          <T ID="1010116" I="data/ui/2kimages/main/icons/icon_resource_merchants_2.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="1010324" RV="Release" RT="Common" IP="true">
-    <N>workshop_02 (Pocket Watch Workshop)</N>
-    <T ID="1010324" I="data/ui/2kimages/main/3dicons/icon_pocket_watch.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="48000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="8">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="15">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="12">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="10">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-      <U V="10">
-        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="90">
-      <FI>
-        <U V="1 / 4">
-          <T ID="1010241" I="data/ui/2kimages/main/3dicons/icon_glass.png" />
-        </U>
-        <U V="1 / 2">
-          <T ID="1010249" I="data/ui/2kimages/main/3dicons/icon_gold.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 1">
-          <T ID="1417594573" I="data/ui/2kimages/main/3dicons/icon_pocket_watch.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="1400 / 700">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="150">
-          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="1010323" RV="Release" RT="Common" IP="true">
-    <N>workshop_01 (High-Wheeler Workshop)</N>
-    <T ID="1010323" I="data/ui/2kimages/main/3dicons/icon_high_wheeler.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="42000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="8">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="15">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="12">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="10">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-      <U V="10">
-        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB>
-      <FI>
-        <U V="1 / 6">
-          <T ID="1010219" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
-        </U>
-        <U V="1 / 6">
-          <T ID="1010255" I="data/ui/2kimages/main/3dicons/icon_caoutchouc.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 4">
-          <T ID="1010245" I="data/ui/2kimages/main/3dicons/icon_high_wheeler.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="1200 / 600">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="150">
-          <T ID="1010117" I="data/ui/2kimages/main/icons/icon_resource_craftspeople.png" />
         </U>
       </MC>
     </M>

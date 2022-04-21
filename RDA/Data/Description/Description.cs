@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Xml.Linq;
+using System.Xml.XPath;
 
 namespace RDA.Data {
 
@@ -21,8 +22,20 @@ namespace RDA.Data {
     #endregion Public Properties
 
     #region Public Constructors
+    public Description(XElement asset, DescriptionFontStyle fontStyle = default) {
+      ID = asset.XPathSelectElement("Values/Text/TextOverride")?.Value ?? asset.XPathSelectElement("Values/Standard/GUID").Value;
+      SetDescription(ID, fontStyle, asset.XPathSelectElement("Values/Standard/GUID").Value);
+    }
 
     public Description(string id, DescriptionFontStyle fontStyle = default) {
+      ID = id;
+      if (Assets.GUIDs.TryGetValue(id, out XElement asset)) {
+        ID = asset.XPathSelectElement("Values/Text/TextOverride")?.Value ?? asset.XPathSelectElement("Values/Standard/GUID").Value;
+      }
+      SetDescription(ID, fontStyle, id);
+    }
+
+    private void SetDescription(string id, DescriptionFontStyle fontStyle, string iconId) {
       ID = id;
       if (Assets.Descriptions.TryGetValue(id, out var languages)) {
         foreach (var item in languages) {
@@ -38,7 +51,7 @@ namespace RDA.Data {
         Languages.Add(Data.Languages.English, id);
       }
       if (Assets.Icons.ContainsKey(id)) {
-        Icon = new Icon(Assets.Icons[id]);
+        Icon = new Icon(Assets.Icons[iconId]);
       }
       FontStyle = fontStyle;
     }

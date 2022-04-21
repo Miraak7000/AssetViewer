@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -42,8 +43,8 @@ namespace RDA {
       LoadDefaultValues();
       Program.ConsoleWriteHeadline("Load Asset.xml");
 
-      SolveAllReferences();
       SolveXmlInheritance();
+      SolveAllReferences();
       LoadDescriptions();
       LoadCustomDescriptions();
       SetTextDictionarys();
@@ -58,6 +59,10 @@ namespace RDA {
 
     public static string GetDescriptionID(string id) {
       return KeyToIdDict[id];
+    }
+
+    public static bool TryGetDescriptionID(string id, out string value) {
+      return KeyToIdDict.TryGetValue(id, out value);
     }
 
     #endregion Public Methods
@@ -86,7 +91,7 @@ namespace RDA {
     internal readonly static Dictionary<string, SourceWithDetails> ResearchableItems = new Dictionary<string, SourceWithDetails>();
 
     internal readonly static Dictionary<string, string> Icons = new Dictionary<string, string>();
-    internal readonly static Dictionary<string, string> KeyToIdDict = new Dictionary<string, string>();
+    private readonly static Dictionary<string, string> KeyToIdDict = new Dictionary<string, string>();
     internal readonly static Dictionary<string, string> ExpeditionRegionToIdDict = new Dictionary<string, string>();
     internal static string Version = "Release";
 
@@ -118,15 +123,12 @@ namespace RDA {
 
     private static int InheritDepth(this XElement ele) {
       var depth = 0;
-      var search = ele.Element("BaseAssetGUID")?.Value;
+      var search = ele.Element("BaseAssetGUID")?.Value ?? ele.Element("ScenarioBaseAssetGUID")?.Value;
       while (search != null) {
-        if (!Assets.GUIDs.ContainsKey(search))
-          throw new Exception($"Asset GUID not found {search}");
-
-        var found = Assets.GUIDs[search];
+        var found = Assets.All.Descendants("Asset").FirstOrDefault(a=> a.XPathSelectElement("Values/Standard/GUID")?.Value == search);
         if (found != null) {
           depth++;
-          search = found.Element("BaseAssetGUID")?.Value;
+          search = found.Element("BaseAssetGUID")?.Value ?? found.Element("ScenarioBaseAssetGUID")?.Value;
         }
       }
       return depth;
@@ -144,7 +146,7 @@ namespace RDA {
         }
 
         if ("GUID".Equals(node.Name.LocalName) &&
-            node == asset.XPathSelectElement("Values/Standard/GUID")) {
+            (node == asset.XPathSelectElement("Values/Standard/GUID") || node == asset.XPathSelectElement("Values/Standard/GUID"))) {
           GUIDs.Add(node.Value, asset);
         }
         else if (!node.HasElements && rgx.IsMatch(node.Value)) {
@@ -157,7 +159,6 @@ namespace RDA {
             References.Add(node.Value, new HashSet<XElement> { asset });
         }
       }
-
     }
 
     private static void processResearchPool(string id, SourceWithDetails parentDetails, AssetWithWeight parentCategory) {
@@ -208,10 +209,7 @@ namespace RDA {
       foreach (var item in InheritHelper) {
         var baseGuid = item.Element("BaseAssetGUID")?.Value ?? item.Element("ScenarioBaseAssetGUID")?.Value;
         if (baseGuid != null) {
-          if (!Assets.GUIDs.ContainsKey(baseGuid))
-            throw new Exception($"Asset GUID not found {baseGuid}");
-
-          var baseAsset = Assets.GUIDs[baseGuid];
+          var baseAsset = Assets.All.Descendants("Asset").FirstOrDefault(a => a.XPathSelectElement("Values/Standard/GUID")?.Value == baseGuid); ;
           if (baseAsset != null) {
             item.AddStandardValues(baseAsset);
           }
@@ -261,11 +259,6 @@ namespace RDA {
             Descriptions.Add(item.Key, new Dictionary<Languages, string> { { language, str } });
           }
         }
-      }
-
-      //Text Overrides
-      foreach (var asset in All.Descendants("Asset").Where(a => a.XPathSelectElement("Values/Text/TextOverride")?.Value != null)) {
-        Descriptions[asset.XPathSelectElement("Values/Standard/GUID").Value] = Descriptions[asset.XPathSelectElement("Values/Text/TextOverride").Value];
       }
     }
 

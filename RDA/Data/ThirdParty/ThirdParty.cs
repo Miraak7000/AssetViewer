@@ -21,7 +21,7 @@ namespace RDA.Data {
     public ThirdParty(XElement asset) {
       ID = asset.XPathSelectElement("Values/Standard/GUID").Value;
       Name = asset.XPathSelectElement("Values/Standard/Name").Value;
-      Text = new Description(ID);
+      Text = new Description(asset);
       OfferingItems = new List<OfferingItems>();
       var progressions = asset.XPathSelectElements("Values/Trader/Progression/*");
       //Hugo

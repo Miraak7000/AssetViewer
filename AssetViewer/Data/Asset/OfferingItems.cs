@@ -9,7 +9,7 @@ namespace AssetViewer.Data {
 
     public Progression Progression { get; set; }
     public Description ProgressionDescription { get; set; }
-    public int Items { get; set; }
+    public string Items { get; set; }
 
     #endregion Public Properties
 
@@ -19,7 +19,7 @@ namespace AssetViewer.Data {
       Progression = (Progression)Enum.Parse(typeof(Progression), asset.Attribute("P").Value);
       ProgressionDescription = new Description(asset.Element("PD"));
       if (asset.Attribute("I")?.Value is string str) {
-        Items = int.Parse(str);
+        Items = str;
       }
     }
 
