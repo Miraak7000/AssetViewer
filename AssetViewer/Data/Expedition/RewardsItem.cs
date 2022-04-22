@@ -12,7 +12,7 @@ namespace AssetViewer.Data {
     #region Public Properties
 
     [XmlAttribute]
-    public int ID { get; set; }
+    public string ID { get; set; }
 
     [XmlAttribute("A")]
     public int Amount { get; set; }

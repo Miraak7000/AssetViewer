@@ -13,9 +13,9 @@ namespace RDA.Data {
 
     #region Public Constructors
 
-    public InputAmountUpgrade(XElement element) {
+    public InputAmountUpgrade(XElement element, GameTypes gameType) {
       var id = element.Element("Product").Value;
-      Text = new Description(id);
+      Text = new Description(id, gameType);
       var value = (int?)int.Parse(element.Element("Amount")?.Value ?? "-1");
       if (value == null) {
         Value = string.Empty;

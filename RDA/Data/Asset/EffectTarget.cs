@@ -16,11 +16,9 @@ namespace RDA.Data {
 
     #region Public Constructors
 
-    public EffectTarget(XElement element) {
-      Text = new Description(element.Value);
-      var asset = Assets.All.Descendants("Asset").FirstOrDefault(a => a
-         .XPathSelectElement("Values/Standard/GUID")?
-         .Value == element.Value);
+    public EffectTarget(XElement element, GameTypes gameType) {
+      Text = new Description(element.Value, gameType);
+      var asset = Assets.GUIDs[element.Value, gameType];
       //Building
 
       //BuidlingPool
@@ -30,11 +28,12 @@ namespace RDA.Data {
       if (buildings != null) {
         Buildings = buildings
         .Where(a => Assets.Descriptions.ContainsKey(a.Value))
-        .Select(a => new Description(a.Value))
+        .Select(a => new Description(a.Value, gameType))
+        .Where(a=> a.Languages.Any())
         .ToList();
       }
       else {
-        Buildings.Add(new Description(asset.XPathSelectElement("Values/Standard/GUID").Value));
+        Buildings.Add(new Description(asset));
       }
     }
 

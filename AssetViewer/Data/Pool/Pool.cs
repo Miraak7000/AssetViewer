@@ -21,7 +21,7 @@ namespace AssetViewer.Data {
     public IEnumerable<object> TrueItems => Items.Select(i => i.Item);
 
     [XmlAttribute]
-    public int ID { get; set; }
+    public string ID { get; set; }
 
     [XmlAttribute("N")]
     public string Name { get; set; }

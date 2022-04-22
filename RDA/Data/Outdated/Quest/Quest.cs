@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Xml.Linq;
+using System.Xml.XPath;
 
 namespace RDA.Data {
 
@@ -27,7 +28,7 @@ namespace RDA.Data {
             break;
 
           case "Standard":
-            ProcessElement_Standard(element);
+            ProcessElement_Standard(asset);
             break;
 
           case "Quest":
@@ -63,9 +64,9 @@ namespace RDA.Data {
     #region Private Methods
 
     private void ProcessElement_Standard(XElement element) {
-      ID = element.Element("GUID").Value;
-      Name = element.Element("Name").Value;
-      Text = new Description(element.Element("GUID").Value);
+      ID = element.XPathSelectElement("Values/Standard/GUID").Value;
+      Name = element.XPathSelectElement("Values/Standard/Name").Value;
+      Text = new Description(element);
     }
 
     private void ProcessElement_Quest(XElement element) {

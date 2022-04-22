@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -26,9 +27,11 @@ namespace RDA {
     static Assets() {
       BaseGame = XmlLoader.LoadXml(Program.PathRoot + @"\Original\assets.xml");
       Eden_Burning = XmlLoader.LoadSzenarioXml(Program.PathRoot + @"\Original\Eden Burning\assets.xml", GameTypes.Eden_Burning);
+      Seasons_of_Silver = XmlLoader.LoadSzenarioXml(Program.PathRoot + @"\Original\Seasons of Silver\assets.xml", GameTypes.Seasons_of_Silver);
       All = new XElement("Root");
       All.Add(BaseGame);
       All.Add(Eden_Burning);
+      All.Add(Seasons_of_Silver);
     }
 
     #endregion Public Constructors
@@ -40,22 +43,26 @@ namespace RDA {
       LoadDefaultValues();
       Program.ConsoleWriteHeadline("Load Asset.xml");
 
-      SolveAllReferences();
       SolveXmlInheritance();
+      SolveAllReferences();
       LoadDescriptions();
       LoadCustomDescriptions();
       SetTextDictionarys();
       SetIcons();
       SetTourismThresholds();
 
-      TourismFeatureAsset = GUIDs["2001173"];
-      ResearchFeatureAsset = GUIDs["120244"];
+      TourismFeatureAsset = GUIDs["2001173", GameTypes.Anno_1800];
+      ResearchFeatureAsset = GUIDs["120244", GameTypes.Anno_1800];
 
       SetBuffs();
     }
 
     public static string GetDescriptionID(string id) {
       return KeyToIdDict[id];
+    }
+
+    public static bool TryGetDescriptionID(string id, out string value) {
+      return KeyToIdDict.TryGetValue(id, out value);
     }
 
     #endregion Public Methods
@@ -65,6 +72,7 @@ namespace RDA {
     internal readonly static XElement BaseGame;
     internal readonly static XElement All;
     internal readonly static XElement Eden_Burning;
+    internal readonly static XElement Seasons_of_Silver;
 
     internal readonly static Dictionary<string, XElement> DefaultValues = new Dictionary<string, XElement>();
 
@@ -74,7 +82,7 @@ namespace RDA {
 
     internal readonly static Dictionary<string, HashSet<XElement>> References = new Dictionary<string, HashSet<XElement>>();
 
-    internal readonly static Dictionary<string, XElement> GUIDs = new Dictionary<string, XElement>();
+    internal readonly static GUIDList GUIDs = new GUIDList();
 
     internal readonly static Dictionary<string, string> TourismThresholds = new Dictionary<string, string>();
 
@@ -82,8 +90,8 @@ namespace RDA {
 
     internal readonly static Dictionary<string, SourceWithDetails> ResearchableItems = new Dictionary<string, SourceWithDetails>();
 
-    internal readonly static Dictionary<string, string> Icons = new Dictionary<string, string>();
-    internal readonly static Dictionary<string, string> KeyToIdDict = new Dictionary<string, string>();
+    internal readonly static IconList Icons = new IconList();
+    private readonly static Dictionary<string, string> KeyToIdDict = new Dictionary<string, string>();
     internal readonly static Dictionary<string, string> ExpeditionRegionToIdDict = new Dictionary<string, string>();
     internal static string Version = "Release";
 
@@ -115,15 +123,12 @@ namespace RDA {
 
     private static int InheritDepth(this XElement ele) {
       var depth = 0;
-      var search = ele.Element("BaseAssetGUID")?.Value;
+      var search = ele.Element("BaseAssetGUID")?.Value ?? ele.Element("ScenarioBaseAssetGUID")?.Value;
       while (search != null) {
-        if (!Assets.GUIDs.ContainsKey(search))
-          throw new Exception($"Asset GUID not found {search}");
-
-        var found = Assets.GUIDs[search];
+        var found = Assets.All.Descendants("Asset").FirstOrDefault(a=> a.XPathSelectElement("Values/Standard/GUID")?.Value == search);
         if (found != null) {
           depth++;
-          search = found.Element("BaseAssetGUID")?.Value;
+          search = found.Element("BaseAssetGUID")?.Value ?? found.Element("ScenarioBaseAssetGUID")?.Value;
         }
       }
       return depth;
@@ -141,7 +146,7 @@ namespace RDA {
         }
 
         if ("GUID".Equals(node.Name.LocalName) &&
-            node == asset.XPathSelectElement("Values/Standard/GUID")) {
+            (node == asset.XPathSelectElement("Values/Standard/GUID") || node == asset.XPathSelectElement("Values/Standard/GUID"))) {
           GUIDs.Add(node.Value, asset);
         }
         else if (!node.HasElements && rgx.IsMatch(node.Value)) {
@@ -154,50 +159,49 @@ namespace RDA {
             References.Add(node.Value, new HashSet<XElement> { asset });
         }
       }
-
     }
 
-    private static void processResearchPool(string id, SourceWithDetails parentDetails, AssetWithWeight parentCategory) {
-      GUIDs.TryGetValue(id, out var poolOrAsset);
+    //private static void processResearchPool(string id, SourceWithDetails parentDetails, AssetWithWeight parentCategory) {
+    //  GUIDs.TryGetValue(id, out var poolOrAsset);
 
-      if (poolOrAsset == null)
-        return;
+    //  if (poolOrAsset == null)
+    //    return;
 
-      var pools = poolOrAsset.XPathSelectElements("Values/AssetPool/AssetList/Item/Asset | Values/RewardPool/ItemsPool/Item/ItemLink").ToList();
+    //  var pools = poolOrAsset.XPathSelectElements("Values/AssetPool/AssetList/Item/Asset | Values/RewardPool/ItemsPool/Item/ItemLink").ToList();
 
-      if (pools.Count == 0) {
-        if (!"RewardPool".Equals(poolOrAsset.XPathSelectElement("Template").Value)) {// ignore empty reward pools
+    //  if (pools.Count == 0) {
+    //    if (!"RewardPool".Equals(poolOrAsset.XPathSelectElement("Template").Value)) {// ignore empty reward pools
 
-          if (!ResearchableItems.ContainsKey(id)) {
+    //      if (!ResearchableItems.ContainsKey(id)) {
 
-            var details = parentDetails.Copy();
-            details.Details.Add(parentCategory);
-            ResearchableItems.Add(id, details);
-          }
-          else {
-            foreach (var d in ResearchableItems[id].Details) {
-              d.Weight += parentDetails.Details.First().Weight;
-            }
-          }
-        }
-      }
+    //        var details = parentDetails.Copy();
+    //        details.Details.Add(parentCategory);
+    //        ResearchableItems.Add(id, details);
+    //      }
+    //      else {
+    //        foreach (var d in ResearchableItems[id].Details) {
+    //          d.Weight += parentDetails.Details.First().Weight;
+    //        }
+    //      }
+    //    }
+    //  }
 
-      var itemList = pools.Select(p => p.XPathSelectElement("../Probability | ../Weight"));
-      var weightSum = itemList.Sum(item => item?.Value is string str ? double.Parse(str) : 1.0F);
+    //  var itemList = pools.Select(p => p.XPathSelectElement("../Probability | ../Weight"));
+    //  var weightSum = itemList.Sum(item => item?.Value is string str ? double.Parse(str) : 1.0F);
 
-      foreach (var pool in pools) {
-        var prob = pool.XPathSelectElement("../Probability | ../Weight");
-        if (prob != null && (prob.Value == "" || prob.Value == "0"))
-          continue;
+    //  foreach (var pool in pools) {
+    //    var prob = pool.XPathSelectElement("../Probability | ../Weight");
+    //    if (prob != null && (prob.Value == "" || prob.Value == "0"))
+    //      continue;
 
-        var details = parentDetails.Copy();
+    //    var details = parentDetails.Copy();
 
-        details.Details.First().Weight *= (prob?.Value is string str ? double.Parse(str) : 1.0F) / weightSum;
+    //    details.Details.First().Weight *= (prob?.Value is string str ? double.Parse(str) : 1.0F) / weightSum;
 
 
-        processResearchPool(pool.Value, details, parentCategory);
-      }
-    }
+    //    processResearchPool(pool.Value, details, parentCategory);
+    //  }
+    //}
 
     private static void SolveXmlInheritance() {
       Program.ConsoleWriteHeadline("Solve Xml Inheritance");
@@ -205,10 +209,7 @@ namespace RDA {
       foreach (var item in InheritHelper) {
         var baseGuid = item.Element("BaseAssetGUID")?.Value ?? item.Element("ScenarioBaseAssetGUID")?.Value;
         if (baseGuid != null) {
-          if (!Assets.GUIDs.ContainsKey(baseGuid))
-            throw new Exception($"Asset GUID not found {baseGuid}");
-
-          var baseAsset = Assets.GUIDs[baseGuid];
+          var baseAsset = Assets.All.Descendants("Asset").FirstOrDefault(a => a.XPathSelectElement("Values/Standard/GUID")?.Value == baseGuid); ;
           if (baseAsset != null) {
             item.AddStandardValues(baseAsset);
           }
@@ -259,11 +260,6 @@ namespace RDA {
           }
         }
       }
-
-      //Text Overrides
-      foreach (var asset in All.Descendants("Asset").Where(a => a.XPathSelectElement("Values/Text/TextOverride")?.Value != null)) {
-        Descriptions[asset.XPathSelectElement("Values/Standard/GUID").Value] = Descriptions[asset.XPathSelectElement("Values/Text/TextOverride").Value];
-      }
     }
 
     private static void LoadCustomDescriptions() {
@@ -287,33 +283,39 @@ namespace RDA {
 
     private static void SetIcons() {
       Program.ConsoleWriteHeadline("Setting up Icons");
-      var asset = All
-         .Descendants("Asset")
-         .FirstOrDefault(a => a.Element("Template")?.Value == "ItemBalancing")?
-         .Element("Values")
-         .Element("ItemConfig");
+
       //AllocationIcons
-      foreach (var item in asset.Element("AllocationIcons").Elements()) {
-        if (item.Element("AllocationIcon")?.Value is string val) {
-          Icons[item.Element("Allocation").Value] = val;
+      var assets = All
+         .Descendants("Asset")
+         .Where(a => a.Element("Template")?.Value == "ItemBalancing");
+
+      foreach (var asset in assets) {
+        var gameType = (GameTypes)Enum.Parse(typeof(GameTypes), asset.Attribute("GameType").Value);
+        var itemconfig = asset.Element("Values").Element("ItemConfig");
+        foreach (var item in itemconfig.Element("AllocationIcons").Elements()) {
+          if (item.Element("AllocationIcon")?.Value is string val) {
+            Icons.Add(item.Element("Allocation").Value, gameType, val);
+          }
         }
       }
-
-      var texts = All
+         
+      assets = All
         .Descendants("Asset")
-        .Where(a => a.XPathSelectElement("Values/Text")?.HasElements == true && a.XPathSelectElement("Values/Standard/IconFilename")?.Value != null).Select(e => e.Element("Values").Element("Standard"));
+        .Where(a =>/* a.XPathSelectElement("Values/Text")?.HasElements == true &&*/ a.XPathSelectElement("Values/Standard/IconFilename")?.Value != null)/*.Select(e => e.Element("Values").Element("Standard"))*/;
+        //.Where(a => a.XPathSelectElement("Values/Text")?.HasElements == true && a.XPathSelectElement("Values/Standard/IconFilename")?.Value != null).Select(e => e.Element("Values").Element("Standard"));
         //.Where(a => a.XPathSelectElement("Values/Text/LocaText")?.HasElements == true && a.XPathSelectElement("Values/Standard/IconFilename")?.Value != null).Select(e => e.Element("Values").Element("Standard"));
       //TextIcons
-      foreach (var item in texts) {
-        Icons[item.Element("GUID").Value] = item.Element("IconFilename").Value;
+      foreach (var asset in assets) {
+        var gameType = (GameTypes)Enum.Parse(typeof(GameTypes), asset.Attribute("GameType").Value);
+        Icons.Add(asset.XPathSelectElement("Values/Standard/GUID").Value, gameType, asset.XPathSelectElement("Values/Standard/IconFilename").Value);
       }
 
-      Icons.Add("Ship", "data/ui/2kimages/main/3dicons/icon_ship.png");
-      Icons.Add("Warship", "data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png");
-      Icons.Add("RadiusBuilding", "data/ui/2kimages/main/3dicons/icon_guildhouse.png");
-      Icons.Add("12508", "data/ui/2kimages/main/icons/icon_electricity.png");         //Need Elektrizität
-      Icons.Add("15798", "data/ui/2kimages/main/icons/icon_generic_expedition.png");  //PerkMale
-      Icons.Add("15797", "data/ui/2kimages/main/icons/icon_generic_expedition.png");  //PerkFeMale
+      Icons.Add("Ship", GameTypes.Anno_1800, "data/ui/2kimages/main/3dicons/icon_ship.png");
+      Icons.Add("Warship", GameTypes.Anno_1800, "data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png");
+      Icons.Add("RadiusBuilding", GameTypes.Anno_1800, "data/ui/2kimages/main/3dicons/icon_guildhouse.png");
+      Icons.Add("12508", GameTypes.Anno_1800, "data/ui/2kimages/main/icons/icon_electricity.png");         //Need Elektrizität
+      Icons.Add("15798", GameTypes.Anno_1800, "data/ui/2kimages/main/icons/icon_generic_expedition.png");  //PerkMale
+      Icons.Add("15797", GameTypes.Anno_1800, "data/ui/2kimages/main/icons/icon_generic_expedition.png");  //PerkFeMale
     }
 
     private static void SetTextDictionarys() {
@@ -472,6 +474,7 @@ namespace RDA {
       KeyToIdDict.Add("FiniteResourceRegrowFactorUpgrade", "861");
       KeyToIdDict.Add("FiniteResourceRegrowIntervalUpgrade", "862");
       KeyToIdDict.Add("MaxDynamicFillCapacityUpgrade", "25204");
+      KeyToIdDict.Add("MaxWorkerAmountUpgrade", "24047");
 
       //Override Allocation Tradeship
       KeyToIdDict["Tradeship"] = "12006";

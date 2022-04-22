@@ -173,20 +173,20 @@ namespace RDA {
           }
           //Descriptions needed by the Viewer
           var needed = new[] {
-            new Description("113817"),   //Kosten für Umwandlung
-            new Description("12723"),    //Baukosten  100008
-            new Description("100006"),   //Produktion
-            new Description("100007"),   //Verbrauch
-            new Description("100008"),   //Baukosten
-            new Description("3109"),     //Reparieren
-            new Description("2001775"),  //Ausbauen
-            new Description("100409"),   //Unterhaltskosten
-            new Description("12725"),    //Verkaufspreis
-            new Description("21731"),    //Anheuerungskosten
-            new Description("20106"),     //Stadtfest
-            new Description("22440"),     //Anzahl
-            new Description("2363"),      //Effekte
-            new Description("3963").AppendInBraces("max.").Append(": ").ChangeID("-10000")   //Reroll Costs (max.)
+            new Description("113817", GameTypes.Anno_1800),   //Kosten für Umwandlung
+            new Description("12723", GameTypes.Anno_1800),    //Baukosten  100008
+            new Description("100006", GameTypes.Anno_1800),   //Produktion
+            new Description("100007", GameTypes.Anno_1800),   //Verbrauch
+            new Description("100008", GameTypes.Anno_1800),   //Baukosten
+            new Description("3109", GameTypes.Anno_1800),     //Reparieren
+            new Description("2001775", GameTypes.Anno_1800),  //Ausbauen
+            new Description("100409", GameTypes.Anno_1800),   //Unterhaltskosten
+            new Description("12725", GameTypes.Anno_1800),    //Verkaufspreis
+            new Description("21731", GameTypes.Anno_1800),    //Anheuerungskosten
+            new Description("20106", GameTypes.Anno_1800),     //Stadtfest
+            new Description("22440", GameTypes.Anno_1800),     //Anzahl
+            new Description("2363", GameTypes.Anno_1800),      //Effekte
+            new Description("3963", GameTypes.Anno_1800).AppendInBraces("max.").Append(": ").ChangeID("-10000")   //Reroll Costs (max.)
           };
 
           foreach (var item in needed) {
@@ -292,7 +292,7 @@ namespace RDA {
               .All
               .Descendants("Effect")
               .Where(a => a?.Value == asset.ID)
-              .Select(a => new Description(a.Parent.Parent.Parent.Element("FestivalName").Value))
+              .Select(a => new Description(a.Parent.Parent.Parent.Element("FestivalName").Value, GameTypes.Anno_1800))
               .FirstOrDefault();
       });
     }
@@ -301,7 +301,7 @@ namespace RDA {
       ConsoleWriteHeadline("Processing Third Party");
       var result = new List<ThirdParty>();
 
-      Assets.GUIDs.TryGetValue("220", out var assetHugo);
+      Assets.GUIDs.TryGetValue("220", out var assetHugo, GameTypes.Anno_1800);
       var assets = Assets
          .All
          .XPathSelectElements($"//Asset[Template='Profile_3rdParty' or Template='Profile_3rdParty_Pirate']")
@@ -326,32 +326,32 @@ namespace RDA {
       document.SaveIndent($@"{Program.PathViewer}\Resources\Assets\ThirdParty.xml");
     }
 
-    private static void QuestGiver() {
-      var result = new List<QuestGiver>();
-      var questGivers = Assets.All.XPathSelectElements("//Asset[Template='Quest']/Values/Quest/QuestGiver").Select(s => s.Value).Distinct().ToList();
-      questGivers.ForEach((id) => {
-        ConsoleWriteGUID(id);
-        Assets.GUIDs.TryGetValue(id, out var questGiver);
-        var item = new QuestGiver(questGiver);
-        result.Add(item);
-      });
-      var document = new XDocument();
-      document.Add(new XElement("QuestGivers"));
-      document.Root.Add(result.Select(s => s.ToXml()));
-    }
+    //private static void QuestGiver() {
+    //  var result = new List<QuestGiver>();
+    //  var questGivers = Assets.All.XPathSelectElements("//Asset[Template='Quest']/Values/Quest/QuestGiver").Select(s => s.Value).Distinct().ToList();
+    //  questGivers.ForEach((id) => {
+    //    ConsoleWriteGUID(id);
+    //    Assets.GUIDs.TryGetValue(id, out var questGiver);
+    //    var item = new QuestGiver(questGiver);
+    //    result.Add(item);
+    //  });
+    //  var document = new XDocument();
+    //  document.Add(new XElement("QuestGivers"));
+    //  document.Root.Add(result.Select(s => s.ToXml()));
+    //}
 
-    private static void Quests() {
-      var result = new List<Quest>();
-      var assets = Assets.All.XPathSelectElements("//Asset[Template='Quest']").ToList();
-      assets.ForEach((asset) => {
-        ConsoleWriteGUID(asset.XPathSelectElement("Values/Standard/GUID").Value);
-        var item = new Quest(asset);
-        result.Add(item);
-      });
-      var document = new XDocument();
-      document.Add(new XElement("Quests"));
-      document.Root.Add(result.Select(s => s.ToXml()));
-    }
+    //private static void Quests() {
+    //  var result = new List<Quest>();
+    //  var assets = Assets.All.XPathSelectElements("//Asset[Template='Quest']").ToList();
+    //  assets.ForEach((asset) => {
+    //    ConsoleWriteGUID(asset.XPathSelectElement("Values/Standard/GUID").Value);
+    //    var item = new Quest(asset);
+    //    result.Add(item);
+    //  });
+    //  var document = new XDocument();
+    //  document.Add(new XElement("Quests"));
+    //  document.Root.Add(result.Select(s => s.ToXml()));
+    //}
 
     private static void Expeditions() {
       var result = new List<Expedition>();
@@ -498,7 +498,7 @@ namespace RDA {
       XElement ToXml(KeyValuePair<XElement, ConcurrentBag<HashSet<AssetWithWeight>>> events) {
         var xRoot = new XElement("EE");
         xRoot.Add(new XAttribute("ID", events.Key.XPathSelectElement("Values/Standard/GUID").Value));
-        xRoot.Add(new Description(events.Key.XPathSelectElement("Values/Standard/GUID").Value).ToXml("N"));
+        xRoot.Add(new Description(events.Key).ToXml("N"));
         var xPaths = new XElement("PL");
         xRoot.Add(xPaths);
         foreach (var path in events.Value) {
@@ -552,16 +552,16 @@ namespace RDA {
               var xOption = new XElement("O");
               xOptions.AddFirst(xOption);
               xOption.Add(new XAttribute("ID", option.Asset.XPathSelectElement("Values/Standard/GUID").Value));
-              var text = new Description(option.Asset.XPathSelectElement("Values/Standard/GUID").Value);
+              var text = new Description(option.Asset);
               if (text.Languages[Data.Languages.English] == "Confirm") {
-                text = new Description("145001");
+                text = new Description("145001", GameTypes.Anno_1800);
               }
               else if (text.Languages[Data.Languages.English] == "Cancel") {
-                text = new Description("145002");
+                text = new Description("145002", GameTypes.Anno_1800);
               }
               xOption.Add(text.ToXml("T"));
               if (option.Asset.XPathSelectElement("Values/ExpeditionOption/OptionAttribute")?.Value != null) {
-                xOption.Add(new Description(Assets.KeyToIdDict[option.Asset.XPathSelectElement("Values/ExpeditionOption/OptionAttribute").Value]).ToXml("OA"));
+                xOption.Add(new Description(Assets.GetDescriptionID(option.Asset.XPathSelectElement("Values/ExpeditionOption/OptionAttribute").Value), GameTypes.Anno_1800).ToXml("OA"));
               }
               if (option.Asset.XPathSelectElement("Values/ExpeditionOption/Requirements")?.HasElements == true) {
                 var xRequirements = new XElement("R");
@@ -570,7 +570,7 @@ namespace RDA {
                   var xItem = new XElement("I");
                   xRequirements.Add(xItem);
                   if (requirement.XPathSelectElement("NeededAttribute")?.Value != null) {
-                    xItem.Add(new Description(Assets.KeyToIdDict[requirement.XPathSelectElement("NeededAttribute").Value]).ToXml("NA"));
+                    xItem.Add(new Description(Assets.GetDescriptionID(requirement.XPathSelectElement("NeededAttribute").Value), GameTypes.Anno_1800).ToXml("NA"));
                   }
                   if (requirement.XPathSelectElement("ItemOrProduct")?.Value != null) {
                     xItem.Add(new XAttribute("ID", requirement.XPathSelectElement("ItemOrProduct").Value));
@@ -693,7 +693,7 @@ namespace RDA {
         var id = pool.Element("CityLevel").Value;
         var xStatus = new XElement("S");
         xRoot.Add(xStatus);
-        var desc = new Description("145011").InsertBefore(Assets.TourismThresholds[id]);
+        var desc = new Description("145011", GameTypes.Anno_1800).InsertBefore(Assets.TourismThresholds[id]);
         xStatus.Add(new XAttribute("P", pool.Element("Pool").Value));
         xStatus.Add(desc.ToXml("R"));
         //xStatus.Add(new Description(Assets.TourismThresholds[id].Element("CityStatusFluff").Value).ToXml("Text"));
@@ -702,21 +702,21 @@ namespace RDA {
       foreach (var pool in TourismAsset.Descendants("UnlockablePools").SelectMany(p => p.Elements())) {
         var xStatus = new XElement("S");
         xRoot.Add(xStatus);
-        xStatus.Add(new XElement(new Description(pool.Element("UnlockingSpecialist").Value).ToXml("R")));
+        xStatus.Add(new XElement(new Description(pool.Element("UnlockingSpecialist").Value, GameTypes.Anno_1800).ToXml("R")));
         xStatus.Add(new XAttribute("P", pool.Element("Pool").Value));
       }
 
       foreach (var pool in TourismAsset.Descendants("SpecialistPoolsThroughSets").SelectMany(p => p.Elements())) {
         var xStatus = new XElement("S");
         xRoot.Add(xStatus);
-        xStatus.Add(new XElement(new Description(pool.Element("UnlockingSetBuff").Value).ToXml("R")));
+        xStatus.Add(new XElement(new Description(pool.Element("UnlockingSetBuff").Value, GameTypes.Anno_1800).ToXml("R")));
         xStatus.Add(new XAttribute("P", pool.Element("Pool").Value));
       }
 
       foreach (var pool in Assets.All.Descendants("Asset").Where(a => a.Descendants("OverrideSpecialistPool").Any())) {
         var xStatus = new XElement("S");
         xRoot.Add(xStatus);
-        xStatus.Add(new XElement(new Description(pool.XPathSelectElement("Values/Standard/GUID").Value).ToXml("R")));
+        xStatus.Add(new XElement(new Description(pool).ToXml("R")));
         xStatus.Add(new XAttribute("P", pool.Descendants("OverrideSpecialistPool").First().Value));
       }
 

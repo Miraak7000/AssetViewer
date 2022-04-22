@@ -1,5 +1,388 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ItemSpecialActionVisualEffect>
+  <Asset ID="191969" RV="Release" RT="Common" IR="true">
+    <N>Black Powder Fireworks</N>
+    <T ID="191969" I="data/ui/2kimages/main/3dicons/consumables/icon_fireworks_1.png" />
+    <R ID="118002" />
+    <IT>Item</IT>
+    <A ID="TownHall">
+      <T ID="2347" I="data/ui/2kimages/main/icons/icon_house.png" />
+    </A>
+    <IAU>
+      <U V="">
+        <T ID="20071" FS="16" />
+      </U>
+      <U V="+7" C="ResidenceUpgrade">
+        <T ID="12314" I="data/ui/2kimages/main/icons/icon_happy.png" />
+      </U>
+      <U V="00:30:00">
+        <T ID="2423" I="data/ui/2kimages/main/3dicons/icon_time.png" FS="16" />
+      </U>
+      <U V="">
+        <T ID="2421" I="data/ui/2kimages/main/icons/icon_untick.png" FS="16" />
+      </U>
+    </IAU>
+    <EA>
+      <U V="1">
+        <T ID="800004" I="data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png" />
+      </U>
+      <U V="2">
+        <T ID="800029" I="data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png" />
+      </U>
+    </EA>
+    <GU />
+    <TP>875</TP>
+    <HF>3500</HF>
+    <I ID="19566" />
+    <ET>
+      <ET>
+        <T ID="190762" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010347" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="114436" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
+          <T ID="194018" />
+          <T ID="24792" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_jornalero.png" />
+          <T ID="24793" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_obrera.png" />
+        </B>
+      </ET>
+    </ET>
+    <S>
+      <S ID="151029" N="RQ_Worker_Oliver">
+        <T ID="1749551055" I="data/ui/2kimages/main/profiles/portrait_icons_0014_resident_tier02.png" />
+        <DL>
+          <D W="6">
+            <T ID="151029" />
+          </D>
+        </DL>
+      </S>
+      <S ID="80" N="Second_ai_03 (Willie Wibblesock)">
+        <T ID="2050890057" I="data/ui/2kimages/main/profiles/ai_03.png" />
+        <DL>
+          <D W="1,56">
+            <T ID="80" I="data/ui/2kimages/main/profiles/ai_03.png" />
+          </D>
+        </DL>
+      </S>
+      <S ID="150399" N="Comeback King - Willie">
+        <T ID="-202254027" I="data/ui/2kimages/main/profiles/ai_03.png" />
+        <DL>
+          <D W="1,66">
+            <T ID="150399" />
+          </D>
+          <D W="1,66">
+            <T ID="150403" />
+          </D>
+          <D W="1,66">
+            <T ID="150404" />
+          </D>
+          <D W="1,66">
+            <T ID="150405" />
+          </D>
+          <D W="1,66">
+            <T ID="150406" />
+          </D>
+          <D W="1,66">
+            <T ID="150407" />
+          </D>
+          <D W="1,66">
+            <T ID="150408" />
+          </D>
+          <D W="1,66">
+            <T ID="150409" />
+          </D>
+          <D W="1,66">
+            <T ID="152396" />
+          </D>
+          <D W="1,66">
+            <T ID="152397" />
+          </D>
+          <D W="1,66">
+            <T ID="150415" />
+          </D>
+          <D W="1,66">
+            <T ID="150434" />
+          </D>
+          <D W="1,66">
+            <T ID="152684" />
+          </D>
+          <D W="1,66">
+            <T ID="150417" />
+          </D>
+          <D W="1,66">
+            <T ID="150423" />
+          </D>
+          <D W="1,66">
+            <T ID="150424" />
+          </D>
+          <D W="1,66">
+            <T ID="150425" />
+          </D>
+          <D W="1,66">
+            <T ID="150426" />
+          </D>
+          <D W="1,66">
+            <T ID="150433" />
+          </D>
+          <D W="1,66">
+            <T ID="150436" />
+          </D>
+          <D W="1,66">
+            <T ID="150437" />
+          </D>
+          <D W="1,66">
+            <T ID="152398" />
+          </D>
+          <D W="1,66">
+            <T ID="152652" />
+          </D>
+          <D W="1,66">
+            <T ID="152559" />
+          </D>
+          <D W="1,66">
+            <T ID="152561" />
+          </D>
+          <D W="1,66">
+            <T ID="152561" />
+          </D>
+          <D W="1,66">
+            <T ID="152563" />
+          </D>
+          <D W="1,66">
+            <T ID="152565" />
+          </D>
+          <D W="1,66">
+            <T ID="152566" />
+          </D>
+          <D W="2,38">
+            <T ID="150410" />
+          </D>
+          <D W="2,38">
+            <T ID="150427" />
+          </D>
+          <D W="2,38">
+            <T ID="152394" />
+          </D>
+          <D W="2,38">
+            <T ID="152395" />
+          </D>
+        </DL>
+      </S>
+      <S ID="80" N="Second_ai_03 (Willie Wibblesock)">
+        <T ID="-1318665365" I="data/ui/2kimages/main/profiles/ai_03.png" />
+        <DL>
+          <D W="5">
+            <T ID="1888403404" />
+          </D>
+          <D W="5">
+            <T ID="-6123924" />
+          </D>
+          <D W="5">
+            <T ID="-708827951" />
+          </D>
+          <D W="5">
+            <T ID="-2119299811" />
+          </D>
+          <D W="5">
+            <T ID="1800545910" />
+          </D>
+          <D W="5">
+            <T ID="-732355511" />
+          </D>
+          <D W="5">
+            <T ID="-563866922" />
+          </D>
+          <D W="5">
+            <T ID="-1852486986" />
+          </D>
+          <D W="5">
+            <T ID="685998752" />
+          </D>
+          <D W="5">
+            <T ID="1501673774" />
+          </D>
+          <D W="5">
+            <T ID="1718348902" />
+          </D>
+          <D W="5">
+            <T ID="-462634376" />
+          </D>
+        </DL>
+      </S>
+      <S ID="78" N="Third_party_08 (Madame Kahina)">
+        <T ID="-1574342061" I="data/ui/2kimages/main/profiles/3rd_party_08.png" />
+        <DL>
+          <D W="11,66">
+            <T ID="-6">
+              <AI ID="64127250" I="data/ui/2kimages/main/3dicons/resident/icon_resident_farmer.png" />
+            </T>
+          </D>
+          <D W="8,33">
+            <T ID="-7">
+              <AI ID="1952258737" I="data/ui/2kimages/main/3dicons/resident/icon_resident_worker.png" />
+            </T>
+          </D>
+          <D W="1,66">
+            <T ID="-8">
+              <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
+            </T>
+          </D>
+          <D W="1,38">
+            <T ID="-9">
+              <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
+            </T>
+          </D>
+          <D W="1,11">
+            <T ID="-10">
+              <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
+            </T>
+          </D>
+          <D W="0,83">
+            <T ID="-11">
+              <AI ID="-910786917" />
+            </T>
+          </D>
+        </DL>
+      </S>
+      <S ID="77" N="Third_party_06 (Old Nate)">
+        <T ID="-1939944159" I="data/ui/2kimages/main/profiles/3rd_party_06.png" />
+        <DL>
+          <D W="2,5">
+            <T ID="-6">
+              <AI ID="64127250" I="data/ui/2kimages/main/3dicons/resident/icon_resident_farmer.png" />
+            </T>
+          </D>
+          <D W="1,78">
+            <T ID="-7">
+              <AI ID="1952258737" I="data/ui/2kimages/main/3dicons/resident/icon_resident_worker.png" />
+            </T>
+          </D>
+          <D W="0,71">
+            <T ID="-8">
+              <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
+            </T>
+          </D>
+          <D W="0,59">
+            <T ID="-9">
+              <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
+            </T>
+          </D>
+          <D W="0,43">
+            <T ID="-10">
+              <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
+            </T>
+          </D>
+          <D W="0,34">
+            <T ID="-11">
+              <AI ID="-910786917" />
+            </T>
+          </D>
+        </DL>
+      </S>
+      <S ID="150352" N="Maintaining Contacts - Kahina - ON HOLD - till Story changes">
+        <T ID="-13435679" I="data/ui/2kimages/main/profiles/3rd_party_08.png" />
+        <DL>
+          <D W="0,14">
+            <T ID="150352" />
+          </D>
+          <D W="0,14">
+            <T ID="150373" />
+          </D>
+          <D W="0,14">
+            <T ID="150374" />
+          </D>
+          <D W="0,14">
+            <T ID="150376" />
+          </D>
+          <D W="0,14">
+            <T ID="152531" />
+          </D>
+          <D W="0,14">
+            <T ID="150357" />
+          </D>
+          <D W="0,14">
+            <T ID="150377" />
+          </D>
+          <D W="0,14">
+            <T ID="150380" />
+          </D>
+          <D W="0,14">
+            <T ID="152535" />
+          </D>
+          <D W="0,14">
+            <T ID="153044" />
+          </D>
+          <D W="0,21">
+            <T ID="150375" />
+          </D>
+          <D W="0,21">
+            <T ID="150366" />
+          </D>
+          <D W="0,21">
+            <T ID="152533" />
+          </D>
+        </DL>
+      </S>
+      <S ID="150969" N="RQ_Artisans_PeerGynt">
+        <T ID="1521030542" I="data/ui/2kimages/main/profiles/resident_tier03.png" />
+        <DL>
+          <D W="0,48">
+            <T ID="150969" />
+          </D>
+          <D W="0,48">
+            <T ID="150970" />
+          </D>
+          <D W="0,48">
+            <T ID="150979" />
+          </D>
+          <D W="0,48">
+            <T ID="151847" />
+          </D>
+          <D W="0,48">
+            <T ID="150981" />
+          </D>
+          <D W="0,48">
+            <T ID="150982" />
+          </D>
+          <D W="0,48">
+            <T ID="150986" />
+          </D>
+          <D W="0,48">
+            <T ID="150987" />
+          </D>
+          <D W="0,48">
+            <T ID="150988" />
+          </D>
+          <D W="0,48">
+            <T ID="150989" />
+          </D>
+          <D W="0,48">
+            <T ID="151034" />
+          </D>
+          <D W="0,48">
+            <T ID="151035" />
+          </D>
+          <D W="0,48">
+            <T ID="151036" />
+          </D>
+          <D W="0,48">
+            <T ID="151037" />
+          </D>
+        </DL>
+      </S>
+      <S ID="120244" N="ResearchFeature">
+        <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
+        <DL />
+      </S>
+    </S>
+  </Asset>
   <Asset ID="191970" RV="Release" RT="Uncommon" IR="true">
     <N>Colored Fireworks</N>
     <T ID="191970" I="data/ui/2kimages/main/3dicons/consumables/icon_fireworks_2.png" />
@@ -504,389 +887,6 @@
             <T ID="124380" />
           </D>
         </DL>
-      </S>
-    </S>
-  </Asset>
-  <Asset ID="191969" RV="Release" RT="Common" IR="true">
-    <N>Black Powder Fireworks</N>
-    <T ID="191969" I="data/ui/2kimages/main/3dicons/consumables/icon_fireworks_1.png" />
-    <R ID="118002" />
-    <IT>Item</IT>
-    <A ID="TownHall">
-      <T ID="2347" I="data/ui/2kimages/main/icons/icon_house.png" />
-    </A>
-    <IAU>
-      <U V="">
-        <T ID="20071" FS="16" />
-      </U>
-      <U V="+7" C="ResidenceUpgrade">
-        <T ID="12314" I="data/ui/2kimages/main/icons/icon_happy.png" />
-      </U>
-      <U V="00:30:00">
-        <T ID="2423" I="data/ui/2kimages/main/3dicons/icon_time.png" FS="16" />
-      </U>
-      <U V="">
-        <T ID="2421" I="data/ui/2kimages/main/icons/icon_untick.png" FS="16" />
-      </U>
-    </IAU>
-    <EA>
-      <U V="1">
-        <T ID="800004" I="data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png" />
-      </U>
-      <U V="2">
-        <T ID="800029" I="data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png" />
-      </U>
-    </EA>
-    <GU />
-    <TP>875</TP>
-    <HF>3500</HF>
-    <I ID="19566" />
-    <ET>
-      <ET>
-        <T ID="190762" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
-        <B>
-          <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="1010347" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="114436" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
-          <T ID="194018" />
-          <T ID="24792" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_jornalero.png" />
-          <T ID="24793" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_obrera.png" />
-        </B>
-      </ET>
-    </ET>
-    <S>
-      <S ID="151029" N="RQ_Worker_Oliver">
-        <T ID="1749551055" I="data/ui/2kimages/main/profiles/portrait_icons_0014_resident_tier02.png" />
-        <DL>
-          <D W="6">
-            <T ID="151029" />
-          </D>
-        </DL>
-      </S>
-      <S ID="80" N="Second_ai_03 (Willie Wibblesock)">
-        <T ID="2050890057" I="data/ui/2kimages/main/profiles/ai_03.png" />
-        <DL>
-          <D W="1,56">
-            <T ID="80" I="data/ui/2kimages/main/profiles/ai_03.png" />
-          </D>
-        </DL>
-      </S>
-      <S ID="150399" N="Comeback King - Willie">
-        <T ID="-202254027" I="data/ui/2kimages/main/profiles/ai_03.png" />
-        <DL>
-          <D W="1,66">
-            <T ID="150399" />
-          </D>
-          <D W="1,66">
-            <T ID="150403" />
-          </D>
-          <D W="1,66">
-            <T ID="150404" />
-          </D>
-          <D W="1,66">
-            <T ID="150405" />
-          </D>
-          <D W="1,66">
-            <T ID="150406" />
-          </D>
-          <D W="1,66">
-            <T ID="150407" />
-          </D>
-          <D W="1,66">
-            <T ID="150408" />
-          </D>
-          <D W="1,66">
-            <T ID="150409" />
-          </D>
-          <D W="1,66">
-            <T ID="152396" />
-          </D>
-          <D W="1,66">
-            <T ID="152397" />
-          </D>
-          <D W="1,66">
-            <T ID="150415" />
-          </D>
-          <D W="1,66">
-            <T ID="150434" />
-          </D>
-          <D W="1,66">
-            <T ID="152684" />
-          </D>
-          <D W="1,66">
-            <T ID="150417" />
-          </D>
-          <D W="1,66">
-            <T ID="150423" />
-          </D>
-          <D W="1,66">
-            <T ID="150424" />
-          </D>
-          <D W="1,66">
-            <T ID="150425" />
-          </D>
-          <D W="1,66">
-            <T ID="150426" />
-          </D>
-          <D W="1,66">
-            <T ID="150433" />
-          </D>
-          <D W="1,66">
-            <T ID="150436" />
-          </D>
-          <D W="1,66">
-            <T ID="150437" />
-          </D>
-          <D W="1,66">
-            <T ID="152398" />
-          </D>
-          <D W="1,66">
-            <T ID="152652" />
-          </D>
-          <D W="1,66">
-            <T ID="152559" />
-          </D>
-          <D W="1,66">
-            <T ID="152561" />
-          </D>
-          <D W="1,66">
-            <T ID="152561" />
-          </D>
-          <D W="1,66">
-            <T ID="152563" />
-          </D>
-          <D W="1,66">
-            <T ID="152565" />
-          </D>
-          <D W="1,66">
-            <T ID="152566" />
-          </D>
-          <D W="2,38">
-            <T ID="150410" />
-          </D>
-          <D W="2,38">
-            <T ID="150427" />
-          </D>
-          <D W="2,38">
-            <T ID="152394" />
-          </D>
-          <D W="2,38">
-            <T ID="152395" />
-          </D>
-        </DL>
-      </S>
-      <S ID="80" N="Second_ai_03 (Willie Wibblesock)">
-        <T ID="-1318665365" I="data/ui/2kimages/main/profiles/ai_03.png" />
-        <DL>
-          <D W="5">
-            <T ID="1888403404" />
-          </D>
-          <D W="5">
-            <T ID="-6123924" />
-          </D>
-          <D W="5">
-            <T ID="-708827951" />
-          </D>
-          <D W="5">
-            <T ID="-2119299811" />
-          </D>
-          <D W="5">
-            <T ID="1800545910" />
-          </D>
-          <D W="5">
-            <T ID="-732355511" />
-          </D>
-          <D W="5">
-            <T ID="-563866922" />
-          </D>
-          <D W="5">
-            <T ID="-1852486986" />
-          </D>
-          <D W="5">
-            <T ID="685998752" />
-          </D>
-          <D W="5">
-            <T ID="1501673774" />
-          </D>
-          <D W="5">
-            <T ID="1718348902" />
-          </D>
-          <D W="5">
-            <T ID="-462634376" />
-          </D>
-        </DL>
-      </S>
-      <S ID="78" N="Third_party_08 (Madame Kahina)">
-        <T ID="-1574342061" I="data/ui/2kimages/main/profiles/3rd_party_08.png" />
-        <DL>
-          <D W="11,66">
-            <T ID="-6">
-              <AI ID="64127250" I="data/ui/2kimages/main/3dicons/resident/icon_resident_farmer.png" />
-            </T>
-          </D>
-          <D W="8,33">
-            <T ID="-7">
-              <AI ID="1952258737" I="data/ui/2kimages/main/3dicons/resident/icon_resident_worker.png" />
-            </T>
-          </D>
-          <D W="1,66">
-            <T ID="-8">
-              <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
-            </T>
-          </D>
-          <D W="1,38">
-            <T ID="-9">
-              <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
-            </T>
-          </D>
-          <D W="1,11">
-            <T ID="-10">
-              <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
-            </T>
-          </D>
-          <D W="0,83">
-            <T ID="-11">
-              <AI ID="-910786917" />
-            </T>
-          </D>
-        </DL>
-      </S>
-      <S ID="77" N="Third_party_06 (Old Nate)">
-        <T ID="-1939944159" I="data/ui/2kimages/main/profiles/3rd_party_06.png" />
-        <DL>
-          <D W="2,5">
-            <T ID="-6">
-              <AI ID="64127250" I="data/ui/2kimages/main/3dicons/resident/icon_resident_farmer.png" />
-            </T>
-          </D>
-          <D W="1,78">
-            <T ID="-7">
-              <AI ID="1952258737" I="data/ui/2kimages/main/3dicons/resident/icon_resident_worker.png" />
-            </T>
-          </D>
-          <D W="0,71">
-            <T ID="-8">
-              <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
-            </T>
-          </D>
-          <D W="0,59">
-            <T ID="-9">
-              <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
-            </T>
-          </D>
-          <D W="0,43">
-            <T ID="-10">
-              <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
-            </T>
-          </D>
-          <D W="0,34">
-            <T ID="-11">
-              <AI ID="-910786917" />
-            </T>
-          </D>
-        </DL>
-      </S>
-      <S ID="150352" N="Maintaining Contacts - Kahina - ON HOLD - till Story changes">
-        <T ID="-13435679" I="data/ui/2kimages/main/profiles/3rd_party_08.png" />
-        <DL>
-          <D W="0,14">
-            <T ID="150352" />
-          </D>
-          <D W="0,14">
-            <T ID="150373" />
-          </D>
-          <D W="0,14">
-            <T ID="150374" />
-          </D>
-          <D W="0,14">
-            <T ID="150376" />
-          </D>
-          <D W="0,14">
-            <T ID="152531" />
-          </D>
-          <D W="0,14">
-            <T ID="150357" />
-          </D>
-          <D W="0,14">
-            <T ID="150377" />
-          </D>
-          <D W="0,14">
-            <T ID="150380" />
-          </D>
-          <D W="0,14">
-            <T ID="152535" />
-          </D>
-          <D W="0,14">
-            <T ID="153044" />
-          </D>
-          <D W="0,21">
-            <T ID="150375" />
-          </D>
-          <D W="0,21">
-            <T ID="150366" />
-          </D>
-          <D W="0,21">
-            <T ID="152533" />
-          </D>
-        </DL>
-      </S>
-      <S ID="150969" N="RQ_Artisans_PeerGynt">
-        <T ID="1521030542" I="data/ui/2kimages/main/profiles/resident_tier03.png" />
-        <DL>
-          <D W="0,48">
-            <T ID="150969" />
-          </D>
-          <D W="0,48">
-            <T ID="150970" />
-          </D>
-          <D W="0,48">
-            <T ID="150979" />
-          </D>
-          <D W="0,48">
-            <T ID="151847" />
-          </D>
-          <D W="0,48">
-            <T ID="150981" />
-          </D>
-          <D W="0,48">
-            <T ID="150982" />
-          </D>
-          <D W="0,48">
-            <T ID="150986" />
-          </D>
-          <D W="0,48">
-            <T ID="150987" />
-          </D>
-          <D W="0,48">
-            <T ID="150988" />
-          </D>
-          <D W="0,48">
-            <T ID="150989" />
-          </D>
-          <D W="0,48">
-            <T ID="151034" />
-          </D>
-          <D W="0,48">
-            <T ID="151035" />
-          </D>
-          <D W="0,48">
-            <T ID="151036" />
-          </D>
-          <D W="0,48">
-            <T ID="151037" />
-          </D>
-        </DL>
-      </S>
-      <S ID="120244" N="ResearchFeature">
-        <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
-        <DL />
       </S>
     </S>
   </Asset>

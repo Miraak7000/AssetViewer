@@ -14,45 +14,45 @@ namespace RDA.Data {
 
     #region Public Constructors
 
-    public Allocation(string template, string value) {
+    public Allocation(string template, string value, GameTypes gameType) {
       if (value == "None" || value == null) {
         switch (template) {
           case "TownhallItem":
             ID = "TownHall";
-            Text = new Description(Assets.KeyToIdDict[ID]);
+            Text = new Description(Assets.GetDescriptionID(ID), gameType);
             break;
 
           case "ShipSpecialist":
           case "VehicleItem":
           case "ActiveItem":
             ID = "Ship";
-            Text = new Description(Assets.KeyToIdDict[ID]);
+            Text = new Description(Assets.GetDescriptionID(ID), gameType);
             break;
 
           case "GuildhouseItem":
             ID = "GuildHouse";
-            Text = new Description(Assets.KeyToIdDict[ID]);
+            Text = new Description(Assets.GetDescriptionID(ID), gameType);
             break;
 
           case "HarborOfficeItem":
             ID = "HarborOffice";
-            Text = new Description(Assets.KeyToIdDict[ID]);
+            Text = new Description(Assets.GetDescriptionID(ID), gameType);
             break;
 
           case "1010470":
           case "CultureItem":
             ID = "Zoo";
-            Text = new Description(Assets.KeyToIdDict[ID]);
+            Text = new Description(Assets.GetDescriptionID(ID), gameType);
             break;
 
           case "1010471":
             ID = "Museum";
-            Text = new Description(Assets.KeyToIdDict[ID]);
+            Text = new Description(Assets.GetDescriptionID(ID), gameType);
             break;
 
           case "110935":
             ID = "BotanicGarden";
-            Text = new Description(Assets.KeyToIdDict[ID]);
+            Text = new Description(Assets.GetDescriptionID(ID), gameType);
             break;
 
           case "QuestItem":
@@ -62,7 +62,7 @@ namespace RDA.Data {
           case "ItemConstructionPlan":
           case "ItemWithUICrafting":
             ID = "NoneAllocation";
-            Text = new Description("-1230");
+            Text = new Description("-1230", gameType);
             break;
 
           default:
@@ -71,12 +71,12 @@ namespace RDA.Data {
       }
       else {
         ID = value;
-        Text = new Description(Assets.KeyToIdDict[value]);
-        if (Assets.Icons.ContainsKey(value)) {
-          Text.Icon = new Icon(Assets.Icons[value]);
+        Text = new Description(Assets.GetDescriptionID(value), gameType);
+        if (Assets.Icons.TryGetValue(value, out var icon, gameType)) {
+          Text.Icon = new Icon(icon);
         }
-        else if (Assets.KeyToIdDict.ContainsKey(value)) {
-          Text.Icon = new Description(Assets.KeyToIdDict[value]).Icon;
+        else if (Assets.TryGetDescriptionID(value, out var id)) {
+          Text.Icon = new Description(id, gameType).Icon;
         }
       }
     }

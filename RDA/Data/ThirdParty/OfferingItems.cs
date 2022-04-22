@@ -16,9 +16,9 @@ namespace RDA.Data {
 
     #region Public Constructors
 
-    public OfferingItems(XElement asset) {
+    public OfferingItems(XElement asset, GameTypes gameType) {
       Progression = (Progression)Enum.Parse(typeof(Progression), asset.Name.LocalName);
-      ProgressionDescription = TempSource.GetDescriptionFromProgression(asset.Name.LocalName);
+      ProgressionDescription = TempSource.GetDescriptionFromProgression(asset.Name.LocalName, gameType);
       var offeringItems = asset.XPathSelectElement("OfferingItems")?.Value ?? asset.XPathSelectElement("Pool")?.Value;
       if (offeringItems != null) {
         ItemPool = offeringItems;

@@ -11,6 +11,7 @@ namespace RDA.Data {
 
     #region Public Properties
 
+    public GameTypes GameType { get; set; }
     public string ID { get; set; }
     public int Weight { get; set; }
     public List<string> Items { get; set; }
@@ -19,11 +20,12 @@ namespace RDA.Data {
 
     #region Public Constructors
 
-    public RewardPool(string id, int weight) {
+    public RewardPool(string id, int weight, GameTypes gameType) {
+      GameType = gameType;
       ID = id;
       Weight = weight;
       Items = new List<string>();
-      DiscoverItems(id);
+      DiscoverItems(id, gameType);
       //var rewardItem = Assets.Original.XPathSelectElement($"//Asset[Values/Standard/GUID={id}]");
       //switch (rewardItem.Element("Template").Value) {
       //  case "QuestItem":
@@ -59,12 +61,12 @@ namespace RDA.Data {
 
     #region Private Methods
 
-    private void DiscoverItems(string value) {
-      var asset = Assets.GUIDs[value];
+    private void DiscoverItems(string value, GameTypes gameType) {
+      var asset = Assets.GUIDs[value, gameType];
       switch (asset.Element("Template").Value) {
         case "RewardPool":
           foreach (var item in asset.XPathSelectElements("Values/RewardPool/ItemsPool/Item/ItemLink")) {
-            DiscoverItems(item.Value);
+            DiscoverItems(item.Value, gameType);
           }
           break;
 

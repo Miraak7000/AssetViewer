@@ -10,7 +10,7 @@ namespace AssetViewer.Data {
 
     #region Public Properties
 
-    public int ID { get; set; }
+    public string ID { get; set; }
     public string Name { get; set; }
     public Description Text { get; set; }
     public Description UpgradeText { get; set; }
@@ -90,7 +90,7 @@ namespace AssetViewer.Data {
     #region Public Constructors
 
     public TemplateAsset(XElement asset) {
-      ID = int.Parse(asset.Attribute("ID").Value);
+      ID = asset.Attribute("ID").Value;
       Name = asset.Element("N").Value;
       Text = new Description(asset.Element("T"));
       RarityType = asset.Attribute("RT").Value;

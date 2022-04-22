@@ -14,7 +14,9 @@ namespace RDA.Data {
     #region Public Properties
 
     public static ConcurrentDictionary<string, ConcurrentBag<SourceWithDetailsList>> SavedSources { get; set; } = new ConcurrentDictionary<string, ConcurrentBag<SourceWithDetailsList>>();
+    public GameTypes GameType { get; set; }
     public string ID { get; set; }
+    public string AVID { get; set; }
     public string Name { get; set; }
     public Description Text { get; set; }
     public Description UpgradeText { get; set; }
@@ -70,6 +72,9 @@ namespace RDA.Data {
     #region Public Constructors
 
     public Asset(XElement asset, bool findSources) {
+      Enum.TryParse<GameTypes>(asset.Attribute("GameType").Value, out var gameType);
+      GameType = gameType;
+      AVID = asset.XPathSelectElement("Values/Standard/AVGUID")?.Value;
       //Set Item Typ
       ItemType = asset.Element("Item")?.Element("ItemType")?.Value;
       if (ItemType == "Normal" || ItemType == "None" || string.IsNullOrWhiteSpace(ItemType)) {
@@ -231,7 +236,7 @@ namespace RDA.Data {
           default:
             Debug.WriteLine(asset.Element("Template").Value);
 
-           throw new NotImplementedException(asset.Element("Template").Value);
+            throw new NotImplementedException(asset.Element("Template").Value);
             break;
         }
       }
@@ -327,7 +332,7 @@ namespace RDA.Data {
             break;
 
           case "Standard":
-            ProcessElement_Standard(element);
+            ProcessElement_Standard(asset);
             break;
 
           case "Item":
@@ -419,7 +424,7 @@ namespace RDA.Data {
             break;
 
           case "Ornament":
-            Info = element.Element("OrnamentDescritpion") == null ? null : new Description(element.Element("OrnamentDescritpion").Value);
+            Info = element.Element("OrnamentDescritpion") == null ? null : new Description(element.Element("OrnamentDescritpion").Value, GameType);
             break;
 
           case "Reward":
@@ -460,15 +465,15 @@ namespace RDA.Data {
             break;
 
           case "FactoryBase":
-            FactoryBase = new FactoryBase(element);
+            FactoryBase = new FactoryBase(element, GameType);
             break;
 
           case "ModuleOwner":
-            Modules = new Modules(element);
+            Modules = new Modules(element, GameType);
             break;
 
           case "Maintenance":
-            Maintenance = new Maintenance(element);
+            Maintenance = new Maintenance(element, GameType);
             break;
 
           case "Electric":
@@ -514,7 +519,7 @@ namespace RDA.Data {
           default:
             Debug.WriteLine(element.Name.LocalName);
             throw new NotImplementedException(element.Name.LocalName);
-            break; 
+            break;
         }
       }
       if (findSources) {
@@ -527,7 +532,7 @@ namespace RDA.Data {
           sources.AddSourceAsset(Assets.ResearchFeatureAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(Assets.ResearchFeatureAsset) });
         }
 
-        Sources = sources.Select(s => new TempSource(s)).ToList();
+        Sources = sources.Select(s => new TempSource(s, GameType)).ToList();
       }
     }
 
@@ -537,11 +542,11 @@ namespace RDA.Data {
 
     public XElement ToXml() {
       var result = new XElement("Asset");
-      result.Add(new XAttribute("ID", ID));
+      result.Add(new XAttribute("ID", AVID ?? ID));
       result.Add(new XAttribute("RV", ReleaseVersion));
       result.Add(new XElement("N", Name));
       result.Add(Text.ToXml("T"));
-      result.Add(Rarity == null ? new Description(Assets.KeyToIdDict["Common"]).ToXml("R") : Rarity.ToXml("R"));
+      result.Add(Rarity == null ? new Description(Assets.GetDescriptionID("Common"), GameType).ToXml("R") : Rarity.ToXml("R"));
       result.Add(new XAttribute("RT", RarityType));
       result.Add(new XElement("IT", ItemType));
       if (Sources?.Any(s => s.IsRollable) ?? false) {
@@ -643,33 +648,33 @@ namespace RDA.Data {
 
     private void ProcessElement_Building(XElement element) {
       if (element.Element("AssociatedRegions")?.Value is string str) {
-        var regions = str.Replace("Meta", "").Split(new[] { ";" }, StringSplitOptions.RemoveEmptyEntries).Select(s => new Description(Assets.KeyToIdDict[s]));
-        AssociatedRegions = Description.Join(regions, ", ");
+        var regions = str.Replace("Meta", "").Split(new[] { ";" }, StringSplitOptions.RemoveEmptyEntries).Select(s => new Description(Assets.GetDescriptionID(s), GameType));
+        AssociatedRegions = Description.Join(regions, ", ", GameType);
       }
     }
 
     private void ProcessElement_Monument(XElement element) {
       if ((element.Element("UpgradeTarget")?.Value ?? "0") != "0") {
-        UpgradeText = new Description("10580").Remove("&lt;br/&gt;[AssetData([Conditions QuestCondition Context]) Text] [Conditions QuestCondition CurrentAmount]/[Conditions QuestCondition Amount]");
-        UpgradeText.AppendWithSpace(new Description(element.Element("UpgradeTarget").Value));
+        UpgradeText = new Description("10580", GameType).Remove("&lt;br/&gt;[AssetData([Conditions QuestCondition Context]) Text] [Conditions QuestCondition CurrentAmount]/[Conditions QuestCondition Amount]");
+        UpgradeText.AppendWithSpace(new Description(element.Element("UpgradeTarget").Value, GameType));
       }
     }
 
     private void ProcessElement_ModuleIrrigation(XElement element) {
       if ((element.Element("RequiresIrrigation")?.Value ?? "0") != "0") {
-        GenericUpgrades.Add(new Upgrade { Text = new Description("117782") });
+        GenericUpgrades.Add(new Upgrade { Text = new Description("117782", GameType) });
       }
     }
 
     private void ProcessElement_IrrigationSource(XElement element) {
       if (element.Element("PipeFillCapacity")?.Value is string value) {
-        GenericUpgrades.Add(new Upgrade { Text = new Description("124958"), Value = value });
+        GenericUpgrades.Add(new Upgrade { Text = new Description("124958", GameType), Value = value });
       }
     }
 
     private void ProcessElement_Heated(XElement element) {
       if (element.Element("RequiresHeat")?.Value == "1") {
-        GenericUpgrades.Add(new Upgrade { Text = new Description("116353") });
+        GenericUpgrades.Add(new Upgrade { Text = new Description("116353", GameType) });
       }
     }
 
@@ -679,13 +684,13 @@ namespace RDA.Data {
         if (element.Element("NeededAreaPercent")?.Value is string needed) {
           radius += $" / {needed}%";
         }
-        GenericUpgrades.Add(new Upgrade { Text = new Description("12504"), Value = radius });
+        GenericUpgrades.Add(new Upgrade { Text = new Description("12504", GameType), Value = radius });
       }
     }
 
     private void ProcessElement_Warehouse(XElement element) {
       if (element.Element("WarehouseStorage")?.Element("StorageMax")?.Value is string value && value != "0") {
-        GenericUpgrades.Add(new Upgrade { Text = new Description("22426"), Value = "+" + value });
+        GenericUpgrades.Add(new Upgrade { Text = new Description("22426", GameType), Value = "+" + value });
       }
     }
 
@@ -700,11 +705,11 @@ namespace RDA.Data {
         foreach (var region in regionBuffs.Elements()) {
           switch (region.Name.LocalName) {
             case "Moderate":
-              ItemSocketSet.Add(new Upgrade { Text = new Description("113322"), Additionals = Assets.Buffs[region.Element("SetBuff").Value].AllUpgrades.ToList() });
+              ItemSocketSet.Add(new Upgrade { Text = new Description("113322", GameType), Additionals = Assets.Buffs[region.Element("SetBuff").Value].AllUpgrades.ToList() });
               break;
 
             case "Colony01":
-              ItemSocketSet.Add(new Upgrade { Text = new Description("113395"), Additionals = Assets.Buffs[region.Element("SetBuff").Value].AllUpgrades.ToList() });
+              ItemSocketSet.Add(new Upgrade { Text = new Description("113395", GameType), Additionals = Assets.Buffs[region.Element("SetBuff").Value].AllUpgrades.ToList() });
               break;
 
             default:
@@ -716,21 +721,21 @@ namespace RDA.Data {
       var allocation = Assets.All.Descendants("Asset")
         .FirstOrDefault(a => a.Descendants("Set").Any(s => s.Value == ID));
       if (allocation != null) {
-        Allocation = new Allocation(allocation.XPathSelectElement("Values/Standard/GUID").Value, null);
+        Allocation = new Allocation(allocation.XPathSelectElement("Values/Standard/GUID").Value, null, GameType);
       }
     }
 
     private void ProcessElement_Standard(XElement element) {
-      ID = element.Element("GUID").Value;
-      Name = element.Element("Name").Value;
-      Text = new Description(element.Element("GUID").Value);
-      Info = element.Element("InfoDescription") == null ? null : new Description(element.Element("InfoDescription").Value);
+      ID = element.XPathSelectElement("Values/Standard/GUID").Value;
+      Name = element.XPathSelectElement("Values/Standard/Name").Value;
+      Text = new Description(element);
+      Info = element.XPathSelectElement("Values/Standard/InfoDescription") == null ? null : new Description(element.XPathSelectElement("Values/Standard/InfoDescription").Value, GameType);
     }
 
     private void ProcessElement_Item(XElement element) {
       RarityType = element.Element("Rarity")?.Value ?? "Common";
-      Rarity = element.Element("Rarity") == null ? new Description("118002") : new Description(Assets.GetDescriptionID(element.Element("Rarity").Value));
-      Allocation = new Allocation(element.Parent.Parent.Element("Template").Value, element.Element("Allocation")?.Value);
+      Rarity = element.Element("Rarity") == null ? new Description("118002", GameType) : new Description(Assets.GetDescriptionID(element.Element("Rarity").Value), GameType);
+      Allocation = new Allocation(element.Parent.Parent.Element("Template").Value, element.Element("Allocation")?.Value, GameType);
       IsResearchable = RarityType == "Common";
       if (element.Element("Allocation") == null) {
         element.Add(new XElement("Allocation", Allocation.ID));
@@ -739,7 +744,7 @@ namespace RDA.Data {
       HiringFee = element.Element("TradePrice") == null ? null : (int.Parse(element.Element("TradePrice").Value)).ToString();
       if (element.Element("ItemSet") != null) {
         ItemSets = new List<Upgrade> {
-          new Upgrade(element.Element("ItemSet"))
+          new Upgrade(element.Element("ItemSet"), GameType)
         };
       }
     }
@@ -750,8 +755,8 @@ namespace RDA.Data {
           throw new NotImplementedException();
         if (element.Element("EffectTargets").HasElements) {
           EffectTargets = new List<EffectTarget>();
-          foreach (var item in element.Element("EffectTargets").Elements()?.Where(e=> !string.IsNullOrWhiteSpace(e.Value))) {
-            EffectTargets.Add(new EffectTarget(item));
+          foreach (var item in element.XPathSelectElements("EffectTargets/Item/GUID")?.Where(e => !string.IsNullOrWhiteSpace(e.Value))) {
+            EffectTargets.Add(new EffectTarget(item, GameType));
           }
         }
       }
@@ -814,7 +819,7 @@ namespace RDA.Data {
           break;
 
         default:
-          GenericUpgrades.Add(new Upgrade(element) { Category = category });
+          GenericUpgrades.Add(new Upgrade(element, GameType) { Category = category });
           break;
       }
     }
@@ -829,12 +834,12 @@ namespace RDA.Data {
 
     private void ProcessElement_Upgradable(XElement element) {
       if (element.HasElements && (element.Element("NextGUID")?.Value ?? "0") != "0") {
-        UpgradeText = new Description("10580").Remove("&lt;br/&gt;[AssetData([Conditions QuestCondition Context]) Text] [Conditions QuestCondition CurrentAmount]/[Conditions QuestCondition Amount]");
-        UpgradeText.AppendWithSpace(new Description(element.Element("NextGUID").Value));
+        UpgradeText = new Description("10580", GameType).Remove("&lt;br/&gt;[AssetData([Conditions QuestCondition Context]) Text] [Conditions QuestCondition CurrentAmount]/[Conditions QuestCondition Amount]");
+        UpgradeText.AppendWithSpace(new Description(element.Element("NextGUID").Value, GameType));
 
         UpgradeCosts = new List<Upgrade>();
         foreach (var item in element.Descendants("Item").Where(i => i.Element("Amount")?.Value != null)) {
-          UpgradeCosts.Add(new Upgrade { Text = new Description(item.Element("Ingredient").Value), Value = item.Element("Amount").Value });
+          UpgradeCosts.Add(new Upgrade { Text = new Description(item.Element("Ingredient").Value, GameType), Value = item.Element("Amount").Value });
         }
       }
     }
@@ -844,16 +849,16 @@ namespace RDA.Data {
         BuildCosts = new List<Upgrade>();
         foreach (var item in element.Descendants("Item").Where(i => i.Element("Amount")?.Value != null)) {
           if (item.Element("Ingredient")?.Value is string value) {
-            BuildCosts.Add(new Upgrade { Text = new Description(value), Value = item.Element("Amount").Value });
+            BuildCosts.Add(new Upgrade { Text = new Description(value, GameType), Value = item.Element("Amount").Value });
           }
           else {
             var index = element.Element("Costs").Elements().ToList().IndexOf(item);
             var ingedient = Assets.DefaultValues["Cost"].Element("Costs").Elements().ElementAt(index).Element("Ingredient").Value;
-            BuildCosts.Add(new Upgrade { Text = new Description(ingedient), Value = item.Element("Amount").Value });
+            BuildCosts.Add(new Upgrade { Text = new Description(ingedient, GameType), Value = item.Element("Amount").Value });
           }
         }
         if (element.Element("InfluenceCostPoints")?.Value is string influencecost) {
-          BuildCosts.Add(new Upgrade { Text = new Description("1010190"), Value = influencecost });
+          BuildCosts.Add(new Upgrade { Text = new Description("1010190", GameType), Value = influencecost });
         }
       }
     }
@@ -872,13 +877,16 @@ namespace RDA.Data {
             case "InputBenefitModifier":
               var buffs = item.Elements("Item").SelectMany(e => e.Elements().Where(ele => ele.Name.LocalName != "Product"));
               foreach (var buffname in buffs.Select(b => b.Name.LocalName).Distinct()) {
-                var firstBuff = new Upgrade(buffs.FirstOrDefault(b => b.Name.LocalName == buffname)) {
+                if (buffname == "VectorElement") {
+                  continue;
+                }
+                var firstBuff = new Upgrade(buffs.FirstOrDefault(b => b.Name.LocalName == buffname), GameType) {
                   Additionals = new List<Upgrade>(),
                   Value = null
                 };
                 foreach (var buff in buffs.Where(b => b.Name.LocalName == buffname)) {
-                  var secBuff = new Upgrade(buff) {
-                    Text = new Description(buff.Parent.Element("Product").Value)
+                  var secBuff = new Upgrade(buff, GameType) {
+                    Text = new Description(buff.Parent.Element("Product").Value, GameType)
                   };
                   firstBuff.Additionals.Add(secBuff);
                 }
@@ -887,7 +895,7 @@ namespace RDA.Data {
               break;
 
             default:
-              PopulationUpgrades.Add(new Upgrade(item));
+              PopulationUpgrades.Add(new Upgrade(item, GameType));
               break;
           }
         }
@@ -904,7 +912,7 @@ namespace RDA.Data {
               continue;
             if (attribute.Element("Attribute").Value == "PerkEntertainer")
               continue;
-            ExpeditionAttributes.Add(new Upgrade(attribute.Element("Attribute").Value, attribute.Element("Amount")?.Value));
+            ExpeditionAttributes.Add(new Upgrade(attribute.Element("Attribute").Value, attribute.Element("Amount")?.Value, GameType));
           }
         }
       }
@@ -915,13 +923,10 @@ namespace RDA.Data {
         AttackerUpgrades = new List<Upgrade>();
         var projektile = element.Element("UseProjectile");
         if (projektile != null) {
-          AttackerUpgrades.Add(new Upgrade(projektile));
-          var Projectile = Assets
-            .All
-            .Descendants("Asset")
-            .FirstOrDefault(a => a.XPathSelectElement($"Values/Standard/GUID")?.Value == projektile.Value);
+          AttackerUpgrades.Add(new Upgrade(projektile, GameType));
+          var Projectile = Assets.GUIDs[projektile.Value, GameType];
           if (Projectile.XPathSelectElement("Values/Exploder/InnerDamage")?.Value is string damage && damage != "0") {
-            AttackerUpgrades.Add(new Upgrade { Text = new Description("20621"), Value = damage });
+            AttackerUpgrades.Add(new Upgrade { Text = new Description("20621", GameType), Value = damage });
           }
         }
         foreach (var item in element.Elements().Except(new[] { projektile })) {
@@ -932,11 +937,11 @@ namespace RDA.Data {
             continue;
           if (item.Name.LocalName == "DamageFactor") {
             foreach (var factor in item.Elements()) {
-              AttackerUpgrades.Add(new Upgrade(factor));
+              AttackerUpgrades.Add(new Upgrade(factor, GameType));
             }
             continue;
           }
-          var upgrade = new Upgrade(item);
+          var upgrade = new Upgrade(item, GameType);
           if (upgrade.Text == null) {
             continue;
           }
@@ -952,12 +957,12 @@ namespace RDA.Data {
           switch (item.Name.LocalName) {
             case "DamageReceiveFactor":
               foreach (var subItem in item.Elements()) {
-                DefenceUpgrades.Add(new Upgrade(subItem));
+                DefenceUpgrades.Add(new Upgrade(subItem, GameType));
               }
               break;
 
             default:
-              DefenceUpgrades.Add(new Upgrade(item));
+              DefenceUpgrades.Add(new Upgrade(item, GameType));
               break;
           }
         }
@@ -978,7 +983,7 @@ namespace RDA.Data {
         ItemActionUpgrades = new List<Upgrade>();
 
         if (element.Element("ActionDescription")?.Value is string desc) {
-          ActionText = new Description(desc, DescriptionFontStyle.Light);
+          ActionText = new Description(desc, GameType, DescriptionFontStyle.Light);
         }
 
         if (ActionText != null) {
@@ -986,39 +991,39 @@ namespace RDA.Data {
         }
 
         if (itemAction == "KAMIKAZE") {
-          ItemActionUpgrades.Add(new Upgrade { Text = new Description("21347") { AdditionalInformation = new Description("21348", DescriptionFontStyle.Light) } });
-          ItemActionUpgrades.Add(new Upgrade { Text = new Description("21353") });
+          ItemActionUpgrades.Add(new Upgrade { Text = new Description("21347", GameType) { AdditionalInformation = new Description("21348", GameType, DescriptionFontStyle.Light) } });
+          ItemActionUpgrades.Add(new Upgrade { Text = new Description("21353", GameType) });
           return;
         }
 
         if (element.Element("ActiveBuff")?.Value is string buff) {
           if (ActionText == null) {
-            ItemActionUpgrades.Add(new Upgrade { Text = new Description("20071", DescriptionFontStyle.Light), Value = element.Element("Charges")?.Value ?? "" });
+            ItemActionUpgrades.Add(new Upgrade { Text = new Description("20071", GameType, DescriptionFontStyle.Light), Value = element.Element("Charges")?.Value ?? "" });
           }
 
           ItemActionUpgrades.AddRange(Assets.Buffs[buff].AllUpgrades.ToList());
 
           if (element.Element("ActionDuration")?.Value != null) {
-            ItemActionUpgrades.Add(new Upgrade(element.Element("ActionDuration")));
+            ItemActionUpgrades.Add(new Upgrade(element.Element("ActionDuration"), GameType));
           }
           if (element.Element("ActionCooldown")?.Value != null) {
-            ItemActionUpgrades.Add(new Upgrade(element.Element("ActionCooldown")));
+            ItemActionUpgrades.Add(new Upgrade(element.Element("ActionCooldown"), GameType));
           }
           if (element.Element("IsDestroyedAfterCooldown")?.Value != null) {
-            ItemActionUpgrades.Add(new Upgrade(element.Element("IsDestroyedAfterCooldown")));
+            ItemActionUpgrades.Add(new Upgrade(element.Element("IsDestroyedAfterCooldown"), GameType));
           }
           return;
         }
 
         if (ActionText != null) {
           if (element.Element("ActionDuration")?.Value != null) {
-            ItemActionUpgrades.Add(new Upgrade(element.Element("ActionDuration")));
+            ItemActionUpgrades.Add(new Upgrade(element.Element("ActionDuration"), GameType));
           }
           if (element.Element("ActionCooldown")?.Value != null) {
-            ItemActionUpgrades.Add(new Upgrade(element.Element("ActionCooldown")));
+            ItemActionUpgrades.Add(new Upgrade(element.Element("ActionCooldown"), GameType));
           }
           if (element.Element("IsDestroyedAfterCooldown")?.Value != null) {
-            ItemActionUpgrades.Add(new Upgrade(element.Element("IsDestroyedAfterCooldown")));
+            ItemActionUpgrades.Add(new Upgrade(element.Element("IsDestroyedAfterCooldown"), GameType));
           }
         }
       }
@@ -1045,18 +1050,18 @@ namespace RDA.Data {
     private void ProcessElement_CraftableItem(XElement element) {
       if (element.HasElements) {
         CraftableItemUpgrades = new List<Upgrade>();
-        foreach (var item in element.Element("CraftingCosts").Elements()?.Where(e=> e.Element("Product") != null)) {
-          CraftableItemUpgrades.Add(new Upgrade { Text = new Description(item.Element("Product").Value), Value = item.Element("Amount").Value });
+        foreach (var item in element.Element("CraftingCosts").Elements()?.Where(e => e.Element("Product") != null)) {
+          CraftableItemUpgrades.Add(new Upgrade { Text = new Description(item.Element("Product").Value, GameType), Value = item.Element("Amount").Value });
         }
       }
     }
 
     private void ProcessElement_Electric(XElement element) {
       if (element.Element("MandatoryElectricity")?.Value == "1") {
-        GenericUpgrades.Add(new Upgrade { Text = new Description("12508") });
+        GenericUpgrades.Add(new Upgrade { Text = new Description("12508", GameType) });
       }
       else if (element.Element("ProductivityBoost")?.Value != "0" && element.Element("BoostedByElectricity")?.Value != "0") {
-        GenericUpgrades.Add(new Upgrade { Text = new Description("10604") });
+        GenericUpgrades.Add(new Upgrade { Text = new Description("10604", GameType) });
       }
     }
 
@@ -1066,14 +1071,14 @@ namespace RDA.Data {
         if (element.Element("NoSatisfactionDistance")?.Value is string max) {
           radius += $" / {max}";
         }
-        GenericUpgrades.Add(new Upgrade { Text = new Description("12504"), Value = radius });
+        GenericUpgrades.Add(new Upgrade { Text = new Description("12504", GameType), Value = radius });
       }
     }
 
     private void ProcessElement_Powerplant(XElement element) {
       if (element.HasElements && element.Element("ElectricityDistance")?.Value is string value) {
         var radius = value;
-        GenericUpgrades.Add(new Upgrade { Text = new Description("12504"), Value = radius });
+        GenericUpgrades.Add(new Upgrade { Text = new Description("12504", GameType), Value = radius });
       }
     }
 
@@ -1083,7 +1088,7 @@ namespace RDA.Data {
         if (element.Element("NoSupplyDistance")?.Value is string max) {
           radius += $" / {max}";
         }
-        GenericUpgrades.Add(new Upgrade { Text = new Description("12504"), Value = radius });
+        GenericUpgrades.Add(new Upgrade { Text = new Description("12504", GameType), Value = radius });
       }
     }
 
@@ -1114,15 +1119,15 @@ namespace RDA.Data {
                   break;
               }
               if (results.ContainsKey(key)) {
-                results[key].Additionals.Add(new Upgrade { Text = new Description(Assets.KeyToIdDict[AllocationWeight.Name.LocalName]), Value = $"+{AllocationWeight.Element("AdditionalWeight").Value}" });
+                results[key].Additionals.Add(new Upgrade { Text = new Description(Assets.GetDescriptionID(AllocationWeight.Name.LocalName), GameType), Value = $"+{AllocationWeight.Element("AdditionalWeight").Value}" });
               }
               else {
                 results.Add(key,
                   new Upgrade {
-                    Text = new Description(key),
+                    Text = new Description(key, GameType),
                     Additionals = new List<Upgrade>{
                       new Upgrade {
-                        Text = new Description(Assets.KeyToIdDict[AllocationWeight.Name.LocalName]),
+                        Text = new Description(Assets.GetDescriptionID(AllocationWeight.Name.LocalName), GameType),
                         Value = $"+{AllocationWeight.Element("AdditionalWeight").Value}"
                       }
                     }
@@ -1134,7 +1139,7 @@ namespace RDA.Data {
             }
           }
           else {
-            DivingBellUpgrades.Add(new Upgrade(item));
+            DivingBellUpgrades.Add(new Upgrade(item, GameType));
           }
         }
       }
@@ -1145,10 +1150,10 @@ namespace RDA.Data {
         ItemStartExpedition = new List<Upgrade>();
         foreach (var item in element.Elements()) {
           ItemStartExpedition.Add(new Upgrade {
-            Text = new Description("2637"),
+            Text = new Description("2637", GameType),
             Additionals = new List<Upgrade> {
               new Upgrade {
-                Text = new Description(element.Value)}
+                Text = new Description(element.Value, GameType)}
             }
           });
         }
@@ -1163,7 +1168,7 @@ namespace RDA.Data {
           foreach (var action in actions) {
             switch (action.Element("Template").Value) {
               case "ActionStartTreasureMapQuest":
-                ItemWithUI.Add(new Upgrade(action));
+                ItemWithUI.Add(new Upgrade(action, GameType));
                 break;
 
               case "ActionAddResource":
@@ -1232,15 +1237,15 @@ namespace RDA.Data {
           if (reference.Name.LocalName is string foundedName &&
             foundedName.MatchOne("BaseAssetGUID", "Icon", "ItemUsed", "TradePrice", "GenPool", "NotificationIcon",
             "ReplacingWorkforce", "ProductFilter", "BusNeed", "LineID", "PosX", "Context", "ProductionOutputInfotip",
-            "UnlockNeeded", "TextOverride", "MedalObjectiveIcon", "UpgradeTarget")) {
+            "UnlockNeeded", "TextOverride", "MedalObjectiveIcon", "UpgradeTarget", "ScenarioBaseAssetGUID")) {
             continue;
           }
           if (reference.Parent?.Parent?.Name.LocalName is string gparent &&
-            gparent.MatchOne("Costs", "UpgradeCost", "CraftingCosts", "Maintenances", "StoredProducts", "UnlockAssets")) {
+            gparent.MatchOne("Costs", "UpgradeCost", "CraftingCosts", "Maintenances", "StoredProducts", "UnlockAssets", "FactoryInputs")) {
             continue;
           }
           if (reference.Parent?.Parent?.Parent?.Name.LocalName is string ggParent &&
-            ggParent.MatchOne("FactoryBase", "Sellable", "PublicService")) {
+            ggParent.MatchOne("Sellable", "PublicService")) {
             continue;
           }
 
@@ -1252,348 +1257,352 @@ namespace RDA.Data {
             continue;
           }
 
-          switch (referencingAsset.Element("Template").Value) {
-            //case "AssetPool":
-            case "TutorialQuest":
-            case "SettlementRightsFeature":
-            case "GuildhouseItem":
-            case "MonumentEvent":
-            case "MainQuest":
-            case "WarShip":
-            case "ExpeditionFeature":
-            case "FestivalBuff":
-            case "TownhallItem":
-            case "PopulationLevel7":
-            case "NeedsSatisfactionNews":
-            case "ProductFilter":
-            case "PlayerCounterContextPool":
-            case "PublicServiceBuilding":
-            case "Market":
-            case "GuildhouseBuff":
-            case "TriggerQuest":
-            case "TradeRouteFeature":
-            case "HarborWarehouse7":
-            case "DifficultyBalancing":
-            case "RewardConfig":
-            case "UplayAction":
-            case "NewspaperArticle":
-            case "WorkforceNewsTracker":
-            case "InfluenceTitleBuff":
-            case "WorkforceMenu":
-            case "TownhallBuff":
-            case "AudioText":
-            case "TradeShip":
-            case "Achievement":
-            case "Audio":
-            case "WorkforceSliderNewsTracker":
-            case "ChannelTarget":
-            case "Region":
-            case "KeywordFilter":
-            case "ObjectmenuCommuterHarbourScene":
-            case "IslandBarScene":
-            case "UplayProduct":
-            case "ProductStorageList":
-            case "IrrigationUpgrade":
-            case "TradeContractFeature": //export import update 10
-            case "PaMSy_Base":
-            case "MaintenanceBarConfig":
-            case "FeatureUnlock":
-            case "GoodValueBalancing":  //Update 11
-            case "Busstop":  //Update 11
-            case "ResidenceBuilding":  //Update 12
-            case "TowerRestaurant":  //Update 12
-            case "ObjectmenuResidenceScene":  //Update 12
-            case "Mall":  //Update 12
-            case "ScenarioInformationInternal":  //Update 13
-            case "MonumentScene":  //Update 13
-            case "ScenarioRuin":  //Update 13
-            case "ResourceBarScene":  //Update 14
-              // ignore
-              break;
-
-            case "TriggerCampaign":
-            case "Trigger":
-            case "PassiveTradeFeature":
-              //Todo?
-              break;
-
-            case "Expedition":
-              if (!referencingAsset.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
-                if (!reference.Name.LocalName.MatchOne("FillEventPool", "Reward", "EventOrEventPool")) {
-                  break;
-                }
-
-                result.AddSourceAsset(referencingAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
-              }
-              break;
-
-            case "Profile_3rdParty_NoTrader_NoProperty3rdParty":
-            case "Profile_3rdParty_ItemCrafter":
-            case "Profile_3rdParty":
-            case "Profile_3rdParty_Pirate":
-            case "Profile_2ndParty":
-            case "Profile_3rdParty_ItemCrafter-NoTrader":
-              if (key.MatchOne("199", "200", "240", "117422")) {
+          if (reference.Parent?.Parent?.Name.LocalName == "FactoryOutputs") {
+            result.AddSourceAsset(referencingAsset.GetProxyElement("FactoryOutputs"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
+          }
+          else
+            switch (referencingAsset.Element("Template").Value) {
+              //case "AssetPool":
+              case "TutorialQuest":
+              case "SettlementRightsFeature":
+              case "GuildhouseItem":
+              case "MonumentEvent":
+              case "MainQuest":
+              case "WarShip":
+              case "ExpeditionFeature":
+              case "FestivalBuff":
+              case "TownhallItem":
+              case "PopulationLevel7":
+              case "NeedsSatisfactionNews":
+              case "ProductFilter":
+              case "PlayerCounterContextPool":
+              case "PublicServiceBuilding":
+              case "Market":
+              case "GuildhouseBuff":
+              case "TriggerQuest":
+              case "TradeRouteFeature":
+              case "HarborWarehouse7":
+              case "DifficultyBalancing":
+              case "RewardConfig":
+              case "UplayAction":
+              case "NewspaperArticle":
+              case "WorkforceNewsTracker":
+              case "InfluenceTitleBuff":
+              case "WorkforceMenu":
+              case "TownhallBuff":
+              case "AudioText":
+              case "TradeShip":
+              case "Achievement":
+              case "Audio":
+              case "WorkforceSliderNewsTracker":
+              case "ChannelTarget":
+              case "Region":
+              case "KeywordFilter":
+              case "ObjectmenuCommuterHarbourScene":
+              case "IslandBarScene":
+              case "UplayProduct":
+              case "ProductStorageList":
+              case "IrrigationUpgrade":
+              case "TradeContractFeature": //export import update 10
+              case "PaMSy_Base":
+              case "MaintenanceBarConfig":
+              case "FeatureUnlock":
+              case "GoodValueBalancing":  //Update 11
+              case "Busstop":  //Update 11
+              case "ResidenceBuilding":  //Update 12
+              case "TowerRestaurant":  //Update 12
+              case "ObjectmenuResidenceScene":  //Update 12
+              case "Mall":  //Update 12
+              case "ScenarioInformationInternal":  //Update 13
+              case "MonumentScene":  //Update 13
+              case "ScenarioRuin":  //Update 13
+              case "ResourceBarScene":  //Update 14
+                                        // ignore
                 break;
-              }
-              if (!referencingAsset.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
-                if (reference.Name.LocalName.MatchOne("ShipDropRewardPool")) {
-                  result.AddSourceAsset(referencingAsset.GetProxyElement("ShipDrop"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
-                  break;
-                }
 
-                if (reference.Name.LocalName == "OfferingItems" ||
-                  reference.Parent.Parent.Name.LocalName.MatchOne("ShipsForSale", "GoodSets")) {
-                  var oldParent = reference.Parent;
-                  var parent = reference.Parent;
-                  while (parent.Name.LocalName != "Progression") {
-                    oldParent = parent;
-                    parent = parent.Parent;
+              case "TriggerCampaign":
+              case "Trigger":
+              case "PassiveTradeFeature":
+                //Todo?
+                break;
+
+              case "Expedition":
+                if (!referencingAsset.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
+                  if (!reference.Name.LocalName.MatchOne("FillEventPool", "Reward", "EventOrEventPool")) {
+                    break;
                   }
-                  var isRollable = reference.Name.LocalName == "OfferingItems";
-                  result.AddSourceAsset(referencingAsset.GetProxyElement("Harbor"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset.GetProxyElement(oldParent.Name.LocalName)) }, isRollable);
-                  break;
-                }
 
-                if (reference.Name.LocalName == "Pool" && reference.Parent.Parent.Name.LocalName == "ItemPools") {
-                  result.AddSourceAsset(referencingAsset.GetProxyElement("Harbor"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset.GetProxyElement(reference.Parent.Name.LocalName)) }, true);
-                  break;
+                  result.AddSourceAsset(referencingAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
                 }
+                break;
 
-                if (reference.Name.LocalName.MatchOne("MainIslandRewardPool", "SecondaryIslandRewardPool")) {
-                  result.AddSourceAsset(referencingAsset.GetProxyElement("TakeOver"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset.GetProxyElement($"{reference.Name.LocalName}#{reference.Parent.Name}")) });
+              case "Profile_3rdParty_NoTrader_NoProperty3rdParty":
+              case "Profile_3rdParty_ItemCrafter":
+              case "Profile_3rdParty":
+              case "Profile_3rdParty_Pirate":
+              case "Profile_2ndParty":
+              case "Profile_3rdParty_ItemCrafter-NoTrader":
+                if (key.MatchOne("199", "200", "240", "117422")) {
                   break;
                 }
+                if (!referencingAsset.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
+                  if (reference.Name.LocalName.MatchOne("ShipDropRewardPool")) {
+                    result.AddSourceAsset(referencingAsset.GetProxyElement("ShipDrop"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
+                    break;
+                  }
 
-                if (reference.Name.LocalName == "Item" && reference.Parent.Parent.Name.LocalName == "CraftableItems") {
-                  result.AddSourceAsset(referencingAsset.GetProxyElement("Crafting"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset.GetProxyElement(reference.Parent.Parent.Parent.Name.LocalName)) });
+                  if (reference.Name.LocalName == "OfferingItems" ||
+                    reference.Parent.Parent.Name.LocalName.MatchOne("ShipsForSale", "GoodSets")) {
+                    var oldParent = reference.Parent;
+                    var parent = reference.Parent;
+                    while (parent.Name.LocalName != "Progression") {
+                      oldParent = parent;
+                      parent = parent.Parent;
+                    }
+                    var isRollable = reference.Name.LocalName == "OfferingItems";
+                    result.AddSourceAsset(referencingAsset.GetProxyElement("Harbor"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset.GetProxyElement(oldParent.Name.LocalName)) }, isRollable);
+                    break;
+                  }
+
+                  if (reference.Name.LocalName == "Pool" && reference.Parent.Parent.Name.LocalName == "ItemPools") {
+                    result.AddSourceAsset(referencingAsset.GetProxyElement("Harbor"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset.GetProxyElement(reference.Parent.Name.LocalName)) }, true);
+                    break;
+                  }
+
+                  if (reference.Name.LocalName.MatchOne("MainIslandRewardPool", "SecondaryIslandRewardPool")) {
+                    result.AddSourceAsset(referencingAsset.GetProxyElement("TakeOver"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset.GetProxyElement($"{reference.Name.LocalName}#{reference.Parent.Name}")) });
+                    break;
+                  }
+
+                  if (reference.Name.LocalName == "Item" && reference.Parent.Parent.Name.LocalName == "CraftableItems") {
+                    result.AddSourceAsset(referencingAsset.GetProxyElement("Crafting"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset.GetProxyElement(reference.Parent.Parent.Parent.Name.LocalName)) });
+                    break;
+                  }
+                  if (reference.Name.LocalName.MatchOne("ItemPool", "Product", "Good")) {
+                    break;
+                  }
+                  else {
+                    throw new NotImplementedException();
+                  }
+                }
+                else {
                   break;
                 }
-                if (reference.Name.LocalName.MatchOne("ItemPool", "Product", "Good")) {
+              case "A7_QuestEscortObject":
+              case "A7_QuestDeliveryObject":
+              case "A7_QuestDestroyObjects":
+              case "A7_QuestPickupObject":
+              case "A7_QuestFollowShip":
+              case "A7_QuestPhotography":
+              case "A7_QuestStatusQuo":
+              case "A7_QuestItemUsage":
+              case "A7_QuestSustain":
+              case "A7_QuestPicturePuzzleObject":
+              case "Quest":
+              case "CollectablePicturePuzzle":
+              case "MonumentEventReward":
+              case "A7_QuestSmuggler":
+              case "A7_QuestDivingBellGeneric":
+              case "A7_QuestDivingBellSonar":
+              case "A7_QuestSelectObject":
+              case "A7_QuestNewspaperArticle":
+              case "A7_QuestLostCargo":
+              case "A7_QuestExpedition":
+              case "A7_QuestDecision":
+              case "A7_QuestSmugglerWOScanners":
+                if (!referencingAsset.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
+                  if (reference.Name.LocalName.MatchOne("Reward")) {
+                    result.AddSourceAsset(referencingAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
+                  }
+                }
+                break;
+
+              case "A7_QuestDivingBellTreasureMap":
+                if (!referencingAsset.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
+                  if (reference.Name.LocalName.MatchOne("Reward", "TreasureItem", "ScrapDummyItem")) {
+                    GetSources(Details, key, asset).SaveSource(key).MergeResults(key, in result);
+                    if (result.Count == 0) {
+                      result.AddSourceAsset(referencingAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
+                    }
+                  }
+                }
+                break;
+
+              case "DivingBellShip":
+                //Ignore second divingbellship. its for a quest
+                if (key == "113710") {
                   break;
+                }
+                if (reference.Name.LocalName == "ItemReplacementPools") {
+                  result.AddSourceAsset(referencingAsset.GetProxyElement("Dive"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
+                }
+                break;
+
+              case "AirShip":
+                if (reference.Name.LocalName == "ItemReplacementPools") {
+                  result.AddSourceAsset(referencingAsset.GetProxyElement("Pickup"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
+                }
+                break;
+
+              case "ItemWithUI":
+                if (reference.Name.LocalName == "NewItem") {
+                  result.AddSourceAsset(referencingAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
+                }
+                else if (reference.Name.LocalName == "Ressource" && reference.Parent.Name.LocalName == "ActionAddResource") {
+                  result.AddSourceAsset(referencingAsset.GetProxyElement("Item"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
+                }
+                else if (reference.Name.LocalName == "TreasureMapQuest") {
+                  result.AddSourceAsset(referencingAsset.GetProxyElement("Dive"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
+                }
+                break;
+
+              case "TourismFeature":
+                if (reference.Name.LocalName == "Pool") {
+                  var pool = reference.Parent;
+                  result.AddSourceAsset(referencingAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(pool.GetProxyElement(reference.Parent.Parent.Parent.Name.LocalName)) });
+                }
+                break;
+
+              case "CultureBuff":
+              case "HarborOfficeItem":
+                if (reference.Name.LocalName == "OverrideSpecialistPool") {
+                  result.AddSourceAsset(Assets.TourismFeatureAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
                 }
                 else {
                   throw new NotImplementedException();
                 }
-              }
-              else {
                 break;
-              }
-            case "A7_QuestEscortObject":
-            case "A7_QuestDeliveryObject":
-            case "A7_QuestDestroyObjects":
-            case "A7_QuestPickupObject":
-            case "A7_QuestFollowShip":
-            case "A7_QuestPhotography":
-            case "A7_QuestStatusQuo":
-            case "A7_QuestItemUsage":
-            case "A7_QuestSustain":
-            case "A7_QuestPicturePuzzleObject":
-            case "Quest":
-            case "CollectablePicturePuzzle":
-            case "MonumentEventReward":
-            case "A7_QuestSmuggler":
-            case "A7_QuestDivingBellGeneric":
-            case "A7_QuestDivingBellSonar":
-            case "A7_QuestSelectObject":
-            case "A7_QuestNewspaperArticle":
-            case "A7_QuestLostCargo":
-            case "A7_QuestExpedition":
-            case "A7_QuestDecision":
-            case "A7_QuestSmugglerWOScanners":
-              if (!referencingAsset.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
-                if (reference.Name.LocalName.MatchOne("Reward")) {
+
+              case "ResearchSubcategory":
+                if (reference.Name.LocalName == "Pool") {
                   result.AddSourceAsset(referencingAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
                 }
-              }
-              break;
-
-            case "A7_QuestDivingBellTreasureMap":
-              if (!referencingAsset.XPathSelectElement("Values/Standard/Name").Value.Contains("Test")) {
-                if (reference.Name.LocalName.MatchOne("Reward", "TreasureItem", "ScrapDummyItem")) {
-                  GetSources(Details, key, asset).SaveSource(key).MergeResults(key, in result);
-                  if (result.Count == 0) {
-                    result.AddSourceAsset(referencingAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
-                  }
-                }
-              }
-              break;
-
-            case "DivingBellShip":
-              //Ignore second divingbellship. its for a quest
-              if (key == "113710") {
                 break;
-              }
-              if (reference.Name.LocalName == "ItemReplacementPools") {
-                result.AddSourceAsset(referencingAsset.GetProxyElement("Dive"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
-              }
-              break;
 
-            case "AirShip":
-              if (reference.Name.LocalName == "ItemReplacementPools") {
-                result.AddSourceAsset(referencingAsset.GetProxyElement("Pickup"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
-              }
-              break;
+              case "ResearchFeature":
+                if (reference.Name.LocalName == "CommonRecipesBlacklist") {
+                  IsResearchable = false;
+                }
+                break;
 
-            case "ItemWithUI":
-              if (reference.Name.LocalName == "NewItem") {
-                result.AddSourceAsset(referencingAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
-              }
-              else if (reference.Name.LocalName == "Ressource" && reference.Parent.Name.LocalName == "ActionAddResource") {
-                result.AddSourceAsset(referencingAsset.GetProxyElement("Item"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
-              }
-              else if (reference.Name.LocalName == "TreasureMapQuest") {
-                result.AddSourceAsset(referencingAsset.GetProxyElement("Dive"), new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
-              }
-              break;
+              case "ExpeditionDecision":
+              case "ExpeditionTrade":
+                if (reference.Name.LocalName.MatchOne("Reward", "Product", "Item")) {
+                  var tempresults = GetSources(Details, key, asset);
 
-            case "TourismFeature":
-              if (reference.Name.LocalName == "Pool") {
-                var pool = reference.Parent;
-                result.AddSourceAsset(referencingAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(pool.GetProxyElement(reference.Parent.Parent.Parent.Name.LocalName)) });
-              }
-              break;
-
-            case "CultureBuff":
-            case "HarborOfficeItem":
-              if (reference.Name.LocalName == "OverrideSpecialistPool") {
-                result.AddSourceAsset(Assets.TourismFeatureAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
-              }
-              else {
-                throw new NotImplementedException();
-              }
-              break;
-
-            case "ResearchSubcategory":
-              if (reference.Name.LocalName == "Pool") {
-                result.AddSourceAsset(referencingAsset, new HashSet<AssetWithWeight> { new AssetWithWeight(referencingAsset) });
-              }
-              break;
-
-            case "ResearchFeature":
-              if (reference.Name.LocalName == "CommonRecipesBlacklist") {
-                IsResearchable = false;
-              }
-              break;
-
-            case "ExpeditionDecision":
-            case "ExpeditionTrade":
-              if (reference.Name.LocalName.MatchOne("Reward", "Product", "Item")) {
-                var tempresults = GetSources(Details, key, asset);
-
-                //Inject Expedition Events
-                foreach (var sourceWithDetails in tempresults) {
-                  foreach (var expedition in sourceWithDetails.Where(r => r.Source.Element("Template").Value == "Expedition")) {
-                    if (sourceWithDetails.FollowingEvents.Count > 0) {
-                      expedition.Details.Clear();
-                      foreach (var item in sourceWithDetails.FollowingEvents) {
-                        var path = referencingAsset.XPathSelectElement("Values/Standard/Name").Value.Split(' ').Last();
-                        expedition.Details.Add(new AssetWithWeight(item.GetProxyElement(path)));
+                  //Inject Expedition Events
+                  foreach (var sourceWithDetails in tempresults) {
+                    foreach (var expedition in sourceWithDetails.Where(r => r.Source.Element("Template").Value == "Expedition")) {
+                      if (sourceWithDetails.FollowingEvents.Count > 0) {
+                        expedition.Details.Clear();
+                        foreach (var item in sourceWithDetails.FollowingEvents) {
+                          var path = referencingAsset.XPathSelectElement("Values/Standard/Name").Value.Split(' ').Last();
+                          expedition.Details.Add(new AssetWithWeight(item.GetProxyElement(path)));
+                        }
                       }
                     }
                   }
+                  tempresults.SaveSource(key).MergeResults(key, in result);
+
+                  break;
                 }
-                tempresults.SaveSource(key).MergeResults(key, in result);
+                else if (!reference.Name.LocalName.MatchOne("Option", "FollowupSuccessOption", "FollowupFailOrCancelOption", "InsertEvent")) {
+                  break;
+                }
+                goto case "SearchAgain";
 
-                break;
-              }
-              else if (!reference.Name.LocalName.MatchOne("Option", "FollowupSuccessOption", "FollowupFailOrCancelOption", "InsertEvent")) {
-                break;
-              }
-              goto case "SearchAgain";
+              case "ExpeditionOption":
+              case "ExpeditionMapOption":
+                if (reference.Name.LocalName != "Decision") {
+                  break;
+                }
+                goto case "SearchAgain";
 
-            case "ExpeditionOption":
-            case "ExpeditionMapOption":
-              if (reference.Name.LocalName != "Decision") {
-                break;
-              }
-              goto case "SearchAgain";
+              case "ExpeditionEvent":
+                if (reference.Name.LocalName != "StartDecision") {
+                  break;
+                }
 
-            case "ExpeditionEvent":
-              if (reference.Name.LocalName != "StartDecision") {
-                break;
-              }
+                result.FollowingEvents.Add(referencingAsset);
 
-              result.FollowingEvents.Add(referencingAsset);
+                goto case "SearchAgain";
 
-              goto case "SearchAgain";
+              case "ExpeditionBribe":
+                if (reference.Name.LocalName == "Item") {
+                  break;
+                }
+                if (!reference.Name.LocalName.MatchOne("FollowupSuccessOption", "FollowupFailOrCancelOption")) {
+                  break;
+                }
+                goto case "SearchAgain";
 
-            case "ExpeditionBribe":
-              if (reference.Name.LocalName == "Item") {
-                break;
-              }
-              if (!reference.Name.LocalName.MatchOne("FollowupSuccessOption", "FollowupFailOrCancelOption")) {
-                break;
-              }
-              goto case "SearchAgain";
-            
-            case "QuestObject":
-            case "Collectable":
-              if (reference.Parent?.Parent?.Parent?.Name.LocalName != "ActionAddGoodsToItemContainer") {
-                break;
-              }
-              goto case "SearchAgain";
+              case "QuestObject":
+              case "Collectable":
+                if (reference.Parent?.Parent?.Parent?.Name.LocalName != "ActionAddGoodsToItemContainer") {
+                  break;
+                }
+                goto case "SearchAgain";
 
-            case "ItemReplacementPool":
-              if (reference.Name.LocalName != "ReplacementPool") {
-                break;
-              }
-              else {
-                if (reference.Parent.Element("DummyItem").Value is string dummy) {
-                  //new ConcurrentBag<SourceWithDetailsList>(GetSources(Details, dummy).SaveSource(dummy).Concat(GetSources(Details, key))).MergeResults(dummy, result);
-                  switch (key) {
-                    case "193854": // DivingShipReplacementPool
-                      GetSources(Details, dummy, asset).SaveSource(dummy).MergeResults(dummy, result);
-                      if (result.Count == 0) { // No Treasure map found?  Nevertheless Dive loot ???
-                        GetSources(Details, key, asset).MergeResults(key, result);
-                      }
-                      break;
+              case "ItemReplacementPool":
+                if (reference.Name.LocalName != "ReplacementPool") {
+                  break;
+                }
+                else {
+                  if (reference.Parent.Element("DummyItem").Value is string dummy) {
+                    //new ConcurrentBag<SourceWithDetailsList>(GetSources(Details, dummy).SaveSource(dummy).Concat(GetSources(Details, key))).MergeResults(dummy, result);
+                    switch (key) {
+                      case "193854": // DivingShipReplacementPool
+                        GetSources(Details, dummy, asset).SaveSource(dummy).MergeResults(dummy, result);
+                        if (result.Count == 0) { // No Treasure map found?  Nevertheless Dive loot ???
+                          GetSources(Details, key, asset).MergeResults(key, result);
+                        }
+                        break;
 
-                    case "193855": // AirShipReplacementPool
-                      GetSources(Details, key, asset).SaveSource(key).MergeResults(key, result);
-                      break;
+                      case "193855": // AirShipReplacementPool
+                        GetSources(Details, key, asset).SaveSource(key).MergeResults(key, result);
+                        break;
 
-                    default:
-                      throw new NotImplementedException();
+                      default:
+                        throw new NotImplementedException();
+                    }
                   }
+                  break;
                 }
+
+              case "RewardPool":
+              case "RewardItemPool":
+                var itemListRewards = reference.Parent.Parent.Elements().ToList();
+                var weightSumRewards = itemListRewards.Sum(item => (item.Element("Weight")?.Value is string str) ? double.Parse(str) : 1.0F);
+
+                foreach (var item in itemListRewards.Where(i => i.Element("ItemLink")?.Value != null).ToLookup(i => i.Element("ItemLink").Value)) {
+                  result.ElementWeights.Add(item.Key, item.Sum(i => (i.Element("Weight")?.Value is string str ? double.Parse(str) : 1.0F) / weightSumRewards));
+                }
+
+                goto case "SearchAgain";
+
+              case "AssetPool":
+                var itemListAssets = reference.Parent.Parent.Elements().ToList();
+                var weightSumAssets = itemListAssets.Sum(item => (item.Element("Probability")?.Value is string str) ? double.Parse(str) : 1.0F);
+
+                foreach (var item in itemListAssets.Where(i => i.Element("Asset")?.Value != null).ToLookup(i => i.Element("Asset").Value)) {
+                  result.ElementWeights.Add(item.Key, item.Sum(i => (i.Element("Probability")?.Value is string str ? double.Parse(str) : 1.0F) / weightSumAssets));
+                }
+
+                goto case "SearchAgain";
+
+              case "ExpeditionEventPool":
+              case "ResourcePool":
+              case "A7_QuestSubQuest":
+              case "ProductList":
+              case "SearchAgain":
+                GetSources(Details, key, asset).SaveSource(key).MergeResults(key, in result);
                 break;
-              }
 
-            case "RewardPool":
-            case "RewardItemPool":
-              var itemListRewards = reference.Parent.Parent.Elements().ToList();
-              var weightSumRewards = itemListRewards.Sum(item => (item.Element("Weight")?.Value is string str) ? double.Parse(str) : 1.0F);
-
-              foreach (var item in itemListRewards.Where(i => i.Element("ItemLink")?.Value != null).ToLookup(i => i.Element("ItemLink").Value)) {
-                result.ElementWeights.Add(item.Key, item.Sum(i => (i.Element("Weight")?.Value is string str ? double.Parse(str) : 1.0F) / weightSumRewards));
-              }
-
-              goto case "SearchAgain";
-
-            case "AssetPool":
-              var itemListAssets = reference.Parent.Parent.Elements().ToList();
-              var weightSumAssets = itemListAssets.Sum(item => (item.Element("Probability")?.Value is string str) ? double.Parse(str) : 1.0F);
-
-              foreach (var item in itemListAssets.Where(i => i.Element("Asset")?.Value != null).ToLookup(i => i.Element("Asset").Value)) {
-                result.ElementWeights.Add(item.Key, item.Sum(i => (i.Element("Probability")?.Value is string str ? double.Parse(str) : 1.0F) / weightSumAssets));
-              }
-
-              goto case "SearchAgain";
-
-            case "ExpeditionEventPool":
-            case "ResourcePool":
-            case "A7_QuestSubQuest":
-            case "ProductList":
-            case "SearchAgain":
-              GetSources(Details, key, asset).SaveSource(key).MergeResults(key, in result);
-              break;
-
-            default:
-              Debug.WriteLine(referencingAsset.Element("Template").Value);
-              throw new NotImplementedException(referencingAsset.Element("Template").Value);
-              break;
-          }
+              default:
+                Debug.WriteLine(referencingAsset.Element("Template").Value);
+                throw new NotImplementedException(referencingAsset.Element("Template").Value);
+                break;
+            }
           if (result.Any()) {
             resultstoadd.Add(result);
           }

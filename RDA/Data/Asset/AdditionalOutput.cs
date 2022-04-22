@@ -14,12 +14,12 @@ namespace RDA.Data {
 
     #region Public Constructors
 
-    public AdditionalOutput(XElement element) {
+    public AdditionalOutput(XElement element, GameTypes gameType) {
       var id = element.Element("Product")?.Value;
       var cycle = element.Element("AdditionalOutputCycle")?.Value;
       var amount = element.Element("Amount")?.Value;
       id = id ?? "20466";
-      Text = new Description(id).Remove("[ItemAssetData([AreaManager AreaFestival BuffGuids AT(0) Text]) AdditionalOutputProductsFormatted()]");
+      Text = new Description(id, gameType).Remove("[ItemAssetData([AreaManager AreaFestival BuffGuids AT(0) Text]) AdditionalOutputProductsFormatted()]");
       if (cycle != null && amount != null) {
         Value = $"{cycle} / {amount}";
       }

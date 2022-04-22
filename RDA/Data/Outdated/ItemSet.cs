@@ -1,4 +1,5 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Xml;
 using System.Xml.Linq;
@@ -22,10 +23,11 @@ namespace RDA.Data {
     #region Public Constructors
 
     public ItemSet(XElement asset) {
+      Enum.TryParse<GameTypes>(asset.Attribute("GameType").Value, out var gameType);
       ID = asset.XPathSelectElement("Values/Standard/GUID").Value;
       Name = asset.XPathSelectElement("Values/Standard/Name").Value;
-      Text = new Description(asset.XPathSelectElement("Values/Standard/GUID").Value);
-      Info = new Description(asset.XPathSelectElement("Values/Standard/InfoDescription").Value);
+      Text = new Description(asset);
+      Info = new Description(asset.XPathSelectElement("Values/Standard/InfoDescription").Value, gameType);
     }
 
     #endregion Public Constructors
