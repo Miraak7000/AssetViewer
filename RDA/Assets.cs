@@ -476,6 +476,16 @@ namespace RDA {
       KeyToIdDict.Add("MaxDynamicFillCapacityUpgrade", "25204");
       KeyToIdDict.Add("MaxWorkerAmountUpgrade", "24047");
 
+      // Not nessesarry with update 14
+      //KeyToIdDict.Add("PerkFormerPirate", "3930");
+      //KeyToIdDict.Add("PerkDiver", "3931");
+      //KeyToIdDict.Add("PerkZoologist", "9998");
+      //KeyToIdDict.Add("PerkPolyglot", "12266");
+      //KeyToIdDict.Add("PerkHypnotist", "3929");
+      //KeyToIdDict.Add("PerkAnthropologist", "3928");
+      //KeyToIdDict.Add("PerkJackOfAllTraits", "12260");
+      //KeyToIdDict.Add("PerkArcheologist", "12262");
+
       //Override Allocation Tradeship
       KeyToIdDict["Tradeship"] = "12006";
     }
