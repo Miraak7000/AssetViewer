@@ -11,6 +11,7 @@ namespace RDA.Data {
 
     #region Public Properties
 
+    public GameTypes GameType { get; set; }
     public string ID { get; set; }
     public string Name { get; set; }
     public Description Text { get; set; }
@@ -23,6 +24,8 @@ namespace RDA.Data {
     #region Public Constructors
 
     public Expedition(XElement asset) {
+      Enum.TryParse<GameTypes>(asset.Attribute("GameType").Value, out var gameType);
+      GameType = gameType;
       foreach (var element in asset.Element("Values").Elements()) {
         switch (element.Name.LocalName) {
           case "Locked":
@@ -35,7 +38,7 @@ namespace RDA.Data {
             break;
 
           case "Expedition":
-            ProcessElement_Expedition(element);
+            ProcessElement_Expedition(element, gameType);
             break;
 
           default:
@@ -73,19 +76,19 @@ namespace RDA.Data {
       Name = element.Element("Name").Value;
     }
 
-    private void ProcessElement_Expedition(XElement element) {
-      Text = new Description(element.Element("ExpeditionName").Value);
+    private void ProcessElement_Expedition(XElement element, GameTypes gameType) {
+      Text = new Description(element.Element("ExpeditionName").Value, GameType);
       ExpeditionRegion = element.Element("ExpeditionRegion")?.Value;
       FillEventPool = element.Element("FillEventPool")?.Value;
       if (element.Element("Reward") != null) {
 
                 XElement asset;
                 var id = element.Element("Reward").Value;
-                Assets.GUIDs.TryGetValue(id, out asset);
+                Assets.GUIDs.TryGetValue(id, out asset, gameType);
                
         foreach (var rewardAsset in asset.XPathSelectElements($"/Values/Reward/RewardAssets/Item"))
         {
-          var position = new RewardPoolPosition(rewardAsset);
+          var position = new RewardPoolPosition(rewardAsset, GameType);
           var amount = rewardAsset.Element("Amount")?.Value ?? "1";
           switch (amount) {
             case "3":

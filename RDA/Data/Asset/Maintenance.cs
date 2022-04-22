@@ -14,9 +14,9 @@ namespace RDA.Data {
 
     #region Public Constructors
 
-    public Maintenance(XElement element) {
+    public Maintenance(XElement element, GameTypes gameType) {
       foreach (var item in element.Descendants("Item")) {
-        MaintenanceCosts.Add(new Upgrade { Text = new Description(item.Element("Product").Value), Value = (item.Element("Amount")?.Value ?? "0") + (item.Element("InactiveAmount")?.Value == null ? "" : $" / {item.Element("InactiveAmount").Value}") });
+        MaintenanceCosts.Add(new Upgrade { Text = new Description(item.Element("Product").Value, gameType), Value = (item.Element("Amount")?.Value ?? "0") + (item.Element("InactiveAmount")?.Value == null ? "" : $" / {item.Element("InactiveAmount").Value}") });
       }
     }
 

@@ -16,7 +16,7 @@ namespace RDA.Data {
 
     #region Public Constructors
 
-    public FactoryBase(XElement element) {
+    public FactoryBase(XElement element, GameTypes gameType) {
       if (element.Element("CycleTime")?.Value is string time) {
         CycleTime = time;
       }
@@ -26,13 +26,13 @@ namespace RDA.Data {
           if (item.Element("Product") == null) {
             continue;
           }
-          FactoryInputs.Add(new Upgrade { Text = new Description(item.Element("Product").Value), Value = $"{item.Element("Amount")?.Value ?? "1"} / {item.Element("StorageAmount")?.Value ?? "1"}" });
+          FactoryInputs.Add(new Upgrade { Text = new Description(item.Element("Product").Value, gameType), Value = $"{item.Element("Amount")?.Value ?? "1"} / {item.Element("StorageAmount")?.Value ?? "1"}" });
         }
       }
       if (element.Element("FactoryOutputs") != null) {
         FactoryOutputs = new List<Upgrade>();
         foreach (var item in element.Element("FactoryOutputs").Elements("Item")) {
-          FactoryOutputs.Add(new Upgrade { Text = new Description(item.Element("Product").Value), Value = $"{item.Element("Amount")?.Value ?? "1"} / {item.Element("StorageAmount").Value}" });
+          FactoryOutputs.Add(new Upgrade { Text = new Description(item.Element("Product").Value, gameType), Value = $"{item.Element("Amount")?.Value ?? "1"} / {item.Element("StorageAmount").Value}" });
         }
       }
     }

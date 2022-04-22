@@ -21,27 +21,27 @@ namespace RDA.Data {
 
     #region Public Constructors
 
-    public TempSource(SourceWithDetails element) {
+    public TempSource(SourceWithDetails element, GameTypes gameType) {
       var Source = element.Source;
       ID = Source.XPathSelectElement("Values/Standard/GUID").Value;
       Name = Source.XPathSelectElement("Values/Standard/Name").Value;
       IsRollable = element.IsRollable;
       switch (Source.Element("Template").Value) {
         case "TourismFeature":
-          Text = new Description("-4");
+          Text = new Description("-4", gameType);
           foreach (var item in element.Details) {
             var cityStatus = item.Asset.Element("Item")?.Element("CityLevel");
             if (cityStatus != null) {
-              var desc = new Description("145011")
+              var desc = new Description("145011", gameType)
                 .InsertBefore(Assets.TourismThresholds[cityStatus.Value])
-                .AppendInBraces(new Description(Assets.GetDescriptionID(item.Asset.Element("Template").Value)));
+                .AppendInBraces(new Description(Assets.GetDescriptionID(item.Asset.Element("Template").Value), gameType));
               Details.Add((desc, item.Weight));
             }
             else if (item.Asset.Element("Item")?.Element("UnlockingSpecialist") != null) {
-              Details.Add((new Description(item.Asset.Element("Item").Element("UnlockingSpecialist").Value), item.Weight));
+              Details.Add((new Description(item.Asset.Element("Item").Element("UnlockingSpecialist").Value, gameType), item.Weight));
             }
             else if (item.Asset.Element("Item")?.Element("UnlockingSetBuff") != null) {
-              Details.Add((new Description(item.Asset.Element("Item").Element("UnlockingSetBuff").Value), item.Weight));
+              Details.Add((new Description(item.Asset.Element("Item").Element("UnlockingSetBuff").Value, gameType), item.Weight));
             }
             else if (item.Asset.Element("Template")?.Value == "HarborOfficeItem" || item.Asset.Element("Template")?.Value == "CultureBuff") {
               Details.Add((new Description(item.Asset), item.Weight));
@@ -60,7 +60,7 @@ namespace RDA.Data {
           break;
 
         case "Expedition":
-          Text = new Description(Source.XPathSelectElement("Values/Expedition/ExpeditionName").Value);
+          Text = new Description(Source.XPathSelectElement("Values/Expedition/ExpeditionName").Value, gameType);
           // Processing Details
           foreach (var item in element.Details) {
             // Detail points to Expedition
@@ -68,28 +68,28 @@ namespace RDA.Data {
               Description difficulty = null;
               switch (item.Asset.XPathSelectElement("Values/Expedition/ExpeditionDifficulty")?.Value) {
                 case "Easy":
-                  difficulty = new Description("11031");
+                  difficulty = new Description("11031", gameType);
                   break;
 
                 case "Average":
-                  difficulty = new Description("11032");
+                  difficulty = new Description("11032", gameType);
                   break;
 
                 case "Hard":
-                  difficulty = new Description("11033");
+                  difficulty = new Description("11033", gameType);
                   break;
 
                 default:
-                  difficulty = new Description("11031");
+                  difficulty = new Description("11031", gameType);
                   break;
               }
 
-              var desc = new Description("-5").AppendWithSpace("-->");
+              var desc = new Description("-5", gameType).AppendWithSpace("-->");
 
               desc = desc.AppendWithSpace(difficulty);
 
               if (item.Asset.XPathSelectElement("Values/Expedition/ExpeditionRegion")?.Value is string region) {
-                desc = desc.AppendWithSpace(new Description(Assets.ExpeditionRegionToIdDict[region]));
+                desc = desc.AppendWithSpace(new Description(Assets.ExpeditionRegionToIdDict[region], gameType));
               }
 
               Details.Add((desc, item.Weight));
@@ -110,27 +110,27 @@ namespace RDA.Data {
         //case "Profile_3rdParty_Pirate":
         //case "HafenHugo":
         case "Harbor":
-          Text = new Description(Source).InsertBefore("-").InsertBefore(new Description("11150"));
+          Text = new Description(Source).InsertBefore("-").InsertBefore(new Description("11150", gameType));
           foreach (var item in element.Details) {
-            var desc = GetDescriptionFromProgression(item.Asset.Element("Template").Value);
+            var desc = GetDescriptionFromProgression(item.Asset.Element("Template").Value, gameType);
             Details.Add((desc, item.Weight));
           }
 
           break;
 
         case "TakeOver":
-          Text = new Description(Source).InsertBefore("-").InsertBefore(new Description("10839"));
+          Text = new Description(Source).InsertBefore("-").InsertBefore(new Description("10839", gameType));
           foreach (var item in element.Details) {
             var details = item.Asset.Element("Template").Value.Split('#');
-            var progression = GetDescriptionFromProgression(details[1]);
+            var progression = GetDescriptionFromProgression(details[1], gameType);
             Description desc = null;
             switch (details[0]) {
               case "MainIslandRewardPool":
-                desc = new Description("-1240").AppendWithSpace(progression);
+                desc = new Description("-1240", gameType).AppendWithSpace(progression);
                 break;
 
               case "SecondaryIslandRewardPool":
-                desc = new Description("-1241").AppendWithSpace(progression);
+                desc = new Description("-1241", gameType).AppendWithSpace(progression);
                 break;
 
               default:
@@ -163,7 +163,7 @@ namespace RDA.Data {
         case "A7_QuestSmugglerWOScanners":
           var questgiver = Source.XPathSelectElement("Values/Quest/QuestGiver")?.Value;
           if (questgiver != null) {
-            Text = new Description(questgiver).InsertBefore("-").InsertBefore(new Description("2734"));
+            Text = new Description(questgiver, gameType).InsertBefore("-").InsertBefore(new Description("2734", gameType));
             foreach (var item in element.Details) {
               Details.Add((new Description(item.Asset), item.Weight));
             }
@@ -173,50 +173,50 @@ namespace RDA.Data {
           break;
 
         case "ShipDrop":
-          Text = new Description(element.Source).InsertBefore("-").InsertBefore(new Description("-12"));
+          Text = new Description(element.Source).InsertBefore("-").InsertBefore(new Description("-12", gameType));
           Details = element.Details.Select(d => (new Description(d.Asset), d.Weight)).ToList();
           break;
 
         case "Crafting":
-          Text = new Description(element.Source).InsertBefore("-").InsertBefore(new Description("112529"));
+          Text = new Description(element.Source).InsertBefore("-").InsertBefore(new Description("112529", gameType));
           Details = element.Details.Select(d => (new Description(d.Asset).AppendInBraces(new Description(Assets
-            .GetDescriptionID(d.Asset.Element("Template").Value))), d.Weight)).ToList();
+            .GetDescriptionID(d.Asset.Element("Template").Value), gameType)), d.Weight)).ToList();
           break;
 
         case "Dive":
-          Text = new Description("113420");
+          Text = new Description("113420", gameType);
           foreach (var item in element.Details) {
             var desc = new Description(item.Asset);
             if (item.Asset.Element("Template").Value == "ItemWithUI") {
-              desc = desc.AppendInBraces(new Description(item.Asset.Descendants("TreasureSessionOrRegion").First().Value));
+              desc = desc.AppendInBraces(new Description(item.Asset.Descendants("TreasureSessionOrRegion").First().Value, gameType));
             }
             Details.Add((desc, item.Weight));
           }
           break;
 
         case "Pickup":
-          Text = new Description("500334");
-          Details = element.Details.Select(i => (new Description("500334"), i.Weight)).ToList();
+          Text = new Description("500334", gameType);
+          Details = element.Details.Select(i => (new Description("500334", gameType), i.Weight)).ToList();
           break;
 
         case "Item":
-          Text = new Description(Source).InsertBefore("-").InsertBefore(new Description("-101"));
+          Text = new Description(Source).InsertBefore("-").InsertBefore(new Description("-101", gameType));
           break;
 
         case "ResearchSubcategory":
-          Text = new Description("118940");
+          Text = new Description("118940", gameType);
           foreach (var item in element.Details) {
-            var desc = new Description(item.Asset.Descendants("Headline").First().Value);
+            var desc = new Description(item.Asset.Descendants("Headline").First().Value, gameType);
             Details.Add((desc, item.Weight));
           }
           break;
 
         case "ResearchFeature":
-          Text = new Description("118940");
+          Text = new Description("118940", gameType);
           break;
 
         case "FactoryOutputs":
-          Text = new Description("11989");
+          Text = new Description("11989", gameType);
           Details = element.Details.Select(d => (new Description(d.Asset), d.Weight)).ToList();
           break;
 
@@ -233,43 +233,43 @@ namespace RDA.Data {
 
     #region Public Methods
 
-    public static Description GetDescriptionFromProgression(string progression) {
+    public static Description GetDescriptionFromProgression(string progression, GameTypes gameType) {
       Description desc;
       switch (progression) {
         case "EarlyGame":
-          desc = new Description("-6") {
-            AdditionalInformation = new Description("15000000").InsertBefore("0")
+          desc = new Description("-6", gameType) {
+            AdditionalInformation = new Description("15000000", gameType).InsertBefore("0")
           };
 
           break;
 
         case "EarlyMidGame":
-          desc = new Description("-7") {
-            AdditionalInformation = new Description("15000001").InsertBefore("35")
+          desc = new Description("-7", gameType) {
+            AdditionalInformation = new Description("15000001", gameType).InsertBefore("35")
           };
           break;
 
         case "MidGame":
-          desc = new Description("-8") {
-            AdditionalInformation = new Description("15000002").InsertBefore("1")
+          desc = new Description("-8", gameType) {
+            AdditionalInformation = new Description("15000002", gameType).InsertBefore("1")
           };
           break;
 
         case "LateMidGame":
-          desc = new Description("-9") {
-            AdditionalInformation = new Description("15000003").InsertBefore("1")
+          desc = new Description("-9", gameType) {
+            AdditionalInformation = new Description("15000003", gameType).InsertBefore("1")
           };
           break;
 
         case "LateGame":
-          desc = new Description("-10") {
-            AdditionalInformation = new Description("15000004").InsertBefore("1")
+          desc = new Description("-10", gameType) {
+            AdditionalInformation = new Description("15000004", gameType).InsertBefore("1")
           };
           break;
 
         case "EndGame":
-          desc = new Description("-11") {
-            AdditionalInformation = new Description("22379").InsertBefore("20000")
+          desc = new Description("-11", gameType) {
+            AdditionalInformation = new Description("22379", gameType).InsertBefore("20000")
           };
           break;
 

@@ -13,8 +13,8 @@ namespace RDA.Data {
 
     #region Public Constructors
 
-    public ReplacingWorkforce(string id) {
-      Text = new Description("20116").Replace("[AssetData([ItemAssetData([RefGuid]) ReplacingWorkforce]) Text]", new Description(id));
+    public ReplacingWorkforce(string id, GameTypes gameType) {
+      Text = new Description("20116", gameType).Replace("[AssetData([ItemAssetData([RefGuid]) ReplacingWorkforce]) Text]", new Description(id, gameType));
       Value = string.Empty;
     }
 

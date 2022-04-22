@@ -23,19 +23,20 @@ namespace RDA.Data {
 
     #region Public Constructors
     public Description(XElement asset, DescriptionFontStyle fontStyle = default) {
-      ID = asset.XPathSelectElement("Values/Text/TextOverride")?.Value ?? asset.XPathSelectElement("Values/Standard/GUID").Value;
-      SetDescription(ID, fontStyle, asset.XPathSelectElement("Values/Standard/GUID").Value);
+      var tempAsset = asset.DescendantsAndSelf().FirstOrDefault(i => i.Name.LocalName == "Asset");
+      ID = tempAsset.XPathSelectElement("Values/Text/TextOverride")?.Value ?? tempAsset.XPathSelectElement("Values/Standard/GUID").Value;
+      SetDescription(ID, fontStyle, tempAsset.XPathSelectElement("Values/Standard/GUID").Value, (GameTypes)Enum.Parse(typeof(GameTypes), tempAsset.Attribute("GameType").Value));
     }
 
-    public Description(string id, DescriptionFontStyle fontStyle = default) {
+    public Description(string id, GameTypes gameType, DescriptionFontStyle fontStyle = default) {
       ID = id;
-      if (Assets.GUIDs.TryGetValue(id, out XElement asset)) {
+      if (Assets.GUIDs.TryGetValue(id, out XElement asset, gameType)) {
         ID = asset.XPathSelectElement("Values/Text/TextOverride")?.Value ?? asset.XPathSelectElement("Values/Standard/GUID").Value;
       }
-      SetDescription(ID, fontStyle, id);
+      SetDescription(ID, fontStyle, id, gameType);
     }
 
-    private void SetDescription(string id, DescriptionFontStyle fontStyle, string iconId) {
+    private void SetDescription(string id, DescriptionFontStyle fontStyle, string iconId, GameTypes gameType) {
       ID = id;
       if (Assets.Descriptions.TryGetValue(id, out var languages)) {
         foreach (var item in languages) {
@@ -50,8 +51,8 @@ namespace RDA.Data {
       else {
         Languages.Add(Data.Languages.English, id);
       }
-      if (Assets.Icons.ContainsKey(id)) {
-        Icon = new Icon(Assets.Icons[iconId]);
+      if (Assets.Icons.TryGetValue(iconId, out var icon, gameType)) {
+        Icon = new Icon(icon);
       }
       FontStyle = fontStyle;
     }
@@ -200,9 +201,9 @@ namespace RDA.Data {
 
     #region Internal Methods
 
-    internal static Description Join(IEnumerable<Description> regions, string seperator) {
+    internal static Description Join(IEnumerable<Description> regions, string seperator, GameTypes gameType) {
       if (regions?.Any() == true) {
-        var desc = new Description(regions.First().ID);
+        var desc = new Description(regions.First().ID, gameType);
         foreach (var item in regions.Skip(1)) {
           desc.Append(seperator).Append(item);
         }

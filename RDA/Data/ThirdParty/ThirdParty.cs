@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
 using System.Xml.XPath;
@@ -23,13 +24,14 @@ namespace RDA.Data {
       Name = asset.XPathSelectElement("Values/Standard/Name").Value;
       Text = new Description(asset);
       OfferingItems = new List<OfferingItems>();
+      Enum.TryParse<GameTypes>(asset.Attribute("GameType").Value, out var gameType);
       var progressions = asset.XPathSelectElements("Values/Trader/Progression/*");
       //Hugo
       if (ID == "220") {
         progressions = asset.XPathSelectElements("Values/ConstructionAI/ItemTradeConfig/ItemPools")?.Elements();
       }
       foreach (var progression in progressions) {
-        var item = new OfferingItems(progression);
+        var item = new OfferingItems(progression, gameType);
         OfferingItems.Add(item);
       }
     }

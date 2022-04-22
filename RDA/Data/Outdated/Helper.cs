@@ -110,7 +110,7 @@ namespace RDA {
       item.XPathSelectElement("Values/Text").Remove();
       // ornament
       var ornamentGuid = item.XPathSelectElement("Values/Ornament/OrnamentDescritpion").Value;
-      textEN = Assets.GUIDs[ornamentGuid].XPathSelectElement("/Values/Text/LocaText/English/Text").Value;
+      textEN = Assets.GUIDs[ornamentGuid, GameTypes.Anno_1800].XPathSelectElement("/Values/Text/LocaText/English/Text").Value;
       textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={ornamentGuid}]/Text").Value;
       item.XPathSelectElement("Values/Description/EN").Add(new XElement("Long", textEN));
       item.XPathSelectElement("Values/Description/DE").Add(new XElement("Long", textDE));
@@ -138,7 +138,7 @@ namespace RDA {
       item.XPathSelectElement("Values/Text").Remove();
       // info
       var infoGuid = item.XPathSelectElement("Values/Standard/InfoDescription").Value;
-      textEN = Assets.GUIDs[infoGuid].XPathSelectElement("/Values/Text/LocaText/English/Text").Value;
+      textEN = Assets.GUIDs[infoGuid, GameTypes.Anno_1800].XPathSelectElement("/Values/Text/LocaText/English/Text").Value;
       textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={infoGuid}]/Text").Value;
       item.XPathSelectElement("Values/Description/EN").Add(new XElement("Long", textEN));
       item.XPathSelectElement("Values/Description/DE").Add(new XElement("Long", textDE));
@@ -146,7 +146,7 @@ namespace RDA {
       // EffectTargets
       foreach (var effectTarget in item.XPathSelectElements("Values/ItemEffect/EffectTargets/Item")) {
         var effectTargetGuid = effectTarget.Element("GUID").Value;
-        textEN = Assets.GUIDs[effectTargetGuid].XPathSelectElement($"/Values/Text/LocaText/English/Text").Value;
+        textEN = Assets.GUIDs[effectTargetGuid, GameTypes.Anno_1800].XPathSelectElement($"/Values/Text/LocaText/English/Text").Value;
         textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={effectTargetGuid}]/Text").Value;
         effectTarget.Add(new XElement("Description"));
         effectTarget.XPathSelectElement("Description").Add(new XElement("EN"));
@@ -177,7 +177,7 @@ namespace RDA {
       item.XPathSelectElement("Values/Text").Remove();
       // info
       var infoGuid = item.XPathSelectElement("Values/Standard/InfoDescription").Value;
-      textEN = Assets.GUIDs[infoGuid].XPathSelectElement("/Values/Text/LocaText/English/Text").Value;
+      textEN = Assets.GUIDs[infoGuid, GameTypes.Anno_1800].XPathSelectElement("/Values/Text/LocaText/English/Text").Value;
       textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={infoGuid}]/Text").Value;
       item.XPathSelectElement("Values/Description/EN").Add(new XElement("Long", textEN));
       item.XPathSelectElement("Values/Description/DE").Add(new XElement("Long", textDE));
@@ -207,7 +207,7 @@ namespace RDA {
       item.XPathSelectElement("Values/Text").Remove();
       // info
       var infoGuid = item.XPathSelectElement("Values/Standard/InfoDescription").Value;
-      textEN = Assets.GUIDs[infoGuid].XPathSelectElement($"/Values/Text/LocaText/English/Text").Value;
+      textEN = Assets.GUIDs[infoGuid, GameTypes.Anno_1800].XPathSelectElement($"/Values/Text/LocaText/English/Text").Value;
       textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={infoGuid}]/Text").Value;
       item.XPathSelectElement("Values/Description/EN").Add(new XElement("Long", textEN));
       item.XPathSelectElement("Values/Description/DE").Add(new XElement("Long", textDE));
@@ -247,7 +247,7 @@ namespace RDA {
       item.XPathSelectElement("Values/Text").Remove();
       // info
       var infoGuid = item.XPathSelectElement("Values/Standard/InfoDescription").Value;
-      textEN = Assets.GUIDs[infoGuid].XPathSelectElement($"/Values/Text/LocaText/English/Text").Value;
+      textEN = Assets.GUIDs[infoGuid, GameTypes.Anno_1800].XPathSelectElement($"/Values/Text/LocaText/English/Text").Value;
       textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={infoGuid}]/Text").Value;
       item.XPathSelectElement("Values/Description/EN").Add(new XElement("Long", textEN));
       item.XPathSelectElement("Values/Description/DE").Add(new XElement("Long", textDE));
@@ -276,7 +276,7 @@ namespace RDA {
       item.XPathSelectElement("Values/Text").Remove();
       // info
       var infoGuid = item.XPathSelectElement("Values/Standard/InfoDescription").Value;
-      textEN = Assets.GUIDs[infoGuid].XPathSelectElement($"/Values/Text/LocaText/English/Text").Value;
+      textEN = Assets.GUIDs[infoGuid, GameTypes.Anno_1800].XPathSelectElement($"/Values/Text/LocaText/English/Text").Value;
       textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={infoGuid}]/Text").Value;
       item.XPathSelectElement("Values/Description/EN").Add(new XElement("Long", textEN));
       item.XPathSelectElement("Values/Description/DE").Add(new XElement("Long", textDE));

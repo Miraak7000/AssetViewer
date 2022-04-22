@@ -29,12 +29,12 @@ namespace RDA.Data {
     public Upgrade() {
     }
 
-    public Upgrade(XElement element) {
+    public Upgrade(XElement element, GameTypes gameType) {
       var isPercent = element.Element("Percental")?.Value == "1";
       float? value = element.Element("Value") == null ? null : (float?)float.Parse(element.Element("Value").Value);
       var factor = 1;
       if (Assets.TryGetDescriptionID(element.Name.LocalName, out var text)) {
-        Text = new Description(text);
+        Text = new Description(text, gameType);
       }
 
       switch (element.Name.LocalName) {
@@ -42,8 +42,8 @@ namespace RDA.Data {
           switch (element.Element("Template").Value) {
             case "ActionStartTreasureMapQuest":
               Additionals = new List<Upgrade>();
-              Text = new Description("2734").AppendWithSpace("-").AppendWithSpace(new Description(element.XPathSelectElement("Values/ActionStartTreasureMapQuest/TreasureSessionOrRegion").Value));
-              Additionals.Add(new Upgrade { Text = new Description(element.XPathSelectElement("Values/ActionStartTreasureMapQuest/TreasureMapQuest").Value) });
+              Text = new Description("2734", gameType).AppendWithSpace("-").AppendWithSpace(new Description(element.XPathSelectElement("Values/ActionStartTreasureMapQuest/TreasureSessionOrRegion").Value, gameType));
+              Additionals.Add(new Upgrade { Text = new Description(element.XPathSelectElement("Values/ActionStartTreasureMapQuest/TreasureMapQuest").Value, gameType) });
               break;
 
             default:
@@ -52,31 +52,31 @@ namespace RDA.Data {
           break;
 
         case "PassiveTradeGoodGenUpgrade":
-          Text.AdditionalInformation = new Description("20327", DescriptionFontStyle.Light);
+          Text.AdditionalInformation = new Description("20327", gameType, DescriptionFontStyle.Light);
           var genpool = element.Element("GenPool").Value;
-          var items = Assets.GUIDs[genpool]?
+          var items = Assets.GUIDs[genpool, gameType]?
             .XPathSelectElement("Values/RewardPool/ItemsPool")
             .Elements("Item")
-            .Select(i => new Description(i.Element("ItemLink").Value));
+            .Select(i => new Description(i.Element("ItemLink").Value, gameType));
           Text.AdditionalInformation.Replace("[ItemAssetData([RefGuid]) GoodGenerationPoolFormatted]", items, (s) => string.Join(", ", s));
           value = Convert.ToSingle(element.Element("GenProbability").Value);
           isPercent = true;
           break;
 
         case "AddAssemblyOptions":
-          Text.AdditionalInformation = new Description("20325", DescriptionFontStyle.Light);
-          var descs = element.Elements("Item").Select(i => new Description(i.Element("NewOption").Value));
+          Text.AdditionalInformation = new Description("20325", gameType, DescriptionFontStyle.Light);
+          var descs = element.Elements("Item").Select(i => new Description(i.Element("NewOption").Value, gameType));
           Text.AdditionalInformation.Replace("[ItemAssetData([RefGuid]) AddAssemblyOptionsFormatted]", descs, (s) => string.Join(", ", s));
           break;
 
         case "AssemblyOptions":
-          Text.AdditionalInformation = new Description("20325", DescriptionFontStyle.Light);
-          descs = element.Descendants("Vehicle").Select(i => new Description(i.Value));
+          Text.AdditionalInformation = new Description("20325", gameType, DescriptionFontStyle.Light);
+          descs = element.Descendants("Vehicle").Select(i => new Description(i.Value, gameType));
           Text.AdditionalInformation.Replace("[ItemAssetData([RefGuid]) AddAssemblyOptionsFormatted]", descs, (s) => string.Join(", ", s));
           break;
 
         case "MoraleDamage":
-          Text.AdditionalInformation = new Description("21586", DescriptionFontStyle.Light);
+          Text.AdditionalInformation = new Description("21586", gameType, DescriptionFontStyle.Light);
           break;
 
         case "HitpointDamage":
@@ -85,30 +85,30 @@ namespace RDA.Data {
             case "SailShip":
             case "Warship":
             case "SteamShip":
-              Text.AdditionalInformation = new Description("21585", DescriptionFontStyle.Light);
+              Text.AdditionalInformation = new Description("21585", gameType, DescriptionFontStyle.Light);
               break;
 
             default:
-              Text.AdditionalInformation = new Description("21589", DescriptionFontStyle.Light);
+              Text.AdditionalInformation = new Description("21589", gameType, DescriptionFontStyle.Light);
               break;
           }
           break;
 
         case "SpecialUnitHappinessThresholdUpgrade":
-          Text.AdditionalInformation = new Description("21584", DescriptionFontStyle.Light);
+          Text.AdditionalInformation = new Description("21584", gameType, DescriptionFontStyle.Light);
           var target = element.Parent.Parent.Element("ItemEffect").Element("EffectTargets").Elements().FirstOrDefault()?.Element("GUID").Value;
           Description unit = null;
           switch (target) {
             case "190777": //Hospital
-              unit = new Description("100584");
+              unit = new Description("100584", gameType);
               break;
 
             case "190776": //Police Station
-              unit = new Description("100582");
+              unit = new Description("100582", gameType);
               break;
 
             case "190775": //Fire Station
-              unit = new Description("100580");
+              unit = new Description("100580", gameType);
               break;
             //case "112669": //Polar Station
             //  unit = new Description("114896");
@@ -122,18 +122,18 @@ namespace RDA.Data {
 
         case "ItemSet":
         case "ProvidedNeed":
-          Text = new Description(element.Value);
+          Text = new Description(element.Value, gameType);
           break;
 
         case "HappinessIgnoresMorale":
-          Text.AdditionalInformation = new Description("20326", DescriptionFontStyle.Light);
+          Text.AdditionalInformation = new Description("20326", gameType, DescriptionFontStyle.Light);
           break;
 
         case "ChangedSupplyValueUpgrade":
-          Text = new Description("12649");
+          Text = new Description("12649", gameType);
           Additionals = new List<Upgrade>();
           foreach (var item in element.Elements("Item")) {
-            Additionals.Add(new Upgrade { Text = new Description(item.Element("Need").Value), Value = (item.Element("AmountInPercent").Value.StartsWith("-") ? "" : "+") + $"{item.Element("AmountInPercent").Value}%" });
+            Additionals.Add(new Upgrade { Text = new Description(item.Element("Need").Value, gameType), Value = (item.Element("AmountInPercent").Value.StartsWith("-") ? "" : "+") + $"{item.Element("AmountInPercent").Value}%" });
           }
           break;
 
@@ -141,20 +141,20 @@ namespace RDA.Data {
           target = element.Parent.Parent.Element("ItemEffect").Element("EffectTargets").Elements().FirstOrDefault()?.Element("GUID").Value;
           switch (target) {
             case "190777": //Hospital
-              Text = new Description("12012");
+              Text = new Description("12012", gameType);
               break;
 
             case "190776": //Police Station
-              Text = new Description("21509");
+              Text = new Description("21509", gameType);
               break;
 
             case "112669": //Polar Station
-              Text = new Description("22983");
+              Text = new Description("22983", gameType);
               break;
 
             case "190775": //Fire Station
             case "1010463": //Fire Department
-              Text = new Description("21508");
+              Text = new Description("21508", gameType);
               break;
 
             default:
@@ -175,20 +175,20 @@ namespace RDA.Data {
 
           switch (target) {
             case "190777": //Hospital
-              Text = new Description("100583");
+              Text = new Description("100583", gameType);
               break;
 
             case "190776": //Police Station
-              Text = new Description("100581");
+              Text = new Description("100581", gameType);
               break;
 
             case "112669": //Polar Station
-              Text = new Description("114895");
+              Text = new Description("114895", gameType);
               break;
 
             case "190775": //Fire Station
             case "1010463": //Fire Department
-              Text = new Description("100579");
+              Text = new Description("100579", gameType);
               break;
 
             default:
@@ -199,26 +199,26 @@ namespace RDA.Data {
         case "AdditionalOutput":
           AdditionalOutputs = new List<AdditionalOutput>();
           foreach (var item in element.Elements()) {
-            AdditionalOutputs.Add(new AdditionalOutput(item));
+            AdditionalOutputs.Add(new AdditionalOutput(item, gameType));
           }
           break;
 
         case "ReplaceInputs":
           ReplaceInputs = new List<ReplaceInput>();
           foreach (var item in element.Elements()) {
-            ReplaceInputs.Add(new ReplaceInput(item));
+            ReplaceInputs.Add(new ReplaceInput(item, gameType));
           }
           break;
 
         case "InputAmountUpgrade":
           InputAmountUpgrades = new List<InputAmountUpgrade>();
           foreach (var item in element.Elements()) {
-            InputAmountUpgrades.Add(new InputAmountUpgrade(item));
+            InputAmountUpgrades.Add(new InputAmountUpgrade(item, gameType));
           }
           break;
 
         case "AddedFertility":
-          Text = new Description("21371").Replace("[AssetData([ItemAssetData([RefGuid]) AddedFertility]) Text]", new Description(element.Value));
+          Text = new Description("21371", gameType).Replace("[AssetData([ItemAssetData([RefGuid]) AddedFertility]) Text]", new Description(element.Value, gameType));
 
           break;
 
@@ -237,12 +237,12 @@ namespace RDA.Data {
 
         case "ActivateWhiteFlag":
           Text.Icon = new Icon("data/ui/2kimages/main/icons/icon_claim_island.png");
-          Text.AdditionalInformation = new Description("19487", DescriptionFontStyle.Light);
+          Text.AdditionalInformation = new Description("19487", gameType, DescriptionFontStyle.Light);
           break;
 
         case "ActivatePirateFlag":
           Text.Icon = new Icon("data/ui/2kimages/main/icons/icon_threat_melee_tint.png");
-          Text.AdditionalInformation = new Description("17393", DescriptionFontStyle.Light);
+          Text.AdditionalInformation = new Description("17393", gameType, DescriptionFontStyle.Light);
           break;
 
         case "AttackSpeedUpgrade":
@@ -253,14 +253,14 @@ namespace RDA.Data {
           break;
 
         case "SelfHealPausedTimeIfAttackedUpgrade":
-          Text.AdditionalInformation = new Description("21590", DescriptionFontStyle.Light);
+          Text.AdditionalInformation = new Description("21590", gameType, DescriptionFontStyle.Light);
           value = value == -100 ? null : value;
           break;
 
         case "NeedProvideNeedUpgrade":
-          var SubstituteNeeds = element.Descendants("SubstituteNeed").Select(i => new Description(i.Value));
-          var ProvidedNeeds = element.Descendants("ProvidedNeed").Select(i => new Description(i.Value));
-          Text.AdditionalInformation = new Description("20323", DescriptionFontStyle.Light);
+          var SubstituteNeeds = element.Descendants("SubstituteNeed").Select(i => new Description(i.Value, gameType));
+          var ProvidedNeeds = element.Descendants("ProvidedNeed").Select(i => new Description(i.Value, gameType));
+          Text.AdditionalInformation = new Description("20323", gameType, DescriptionFontStyle.Light);
           Text.AdditionalInformation.Replace("[ItemAssetData([RefGuid]) AllSubstituteNeedsFormatted]", SubstituteNeeds, s => string.Join(", ", s.Distinct()));
           Text.AdditionalInformation.Replace("[ItemAssetData([RefGuid]) AllProvidedNeedsFormatted]", ProvidedNeeds, s => string.Join(", ", s.Distinct()));
           break;
@@ -268,21 +268,21 @@ namespace RDA.Data {
         case "GoodConsumptionUpgrade":
           Additionals = new List<Upgrade>();
           foreach (var item in element.Elements("Item").Where(e => e.HasElements)) {
-            Additionals.Add(new Upgrade { Text = new Description(item.Element("ProvidedNeed").Value), Value = ((item.Element("AmountInPercent")?.Value?.StartsWith("-") ?? false) ? "" : "+") + $"{item.Element("AmountInPercent")?.Value ?? "100"}%" });
+            Additionals.Add(new Upgrade { Text = new Description(item.Element("ProvidedNeed").Value, gameType), Value = ((item.Element("AmountInPercent")?.Value?.StartsWith("-") ?? false) ? "" : "+") + $"{item.Element("AmountInPercent")?.Value ?? "100"}%" });
           }
           break;
 
         case "UseProjectile":
-          var Projectile = Assets.GUIDs[element.Value];
+          var Projectile = Assets.GUIDs[element.Value, gameType];
 
           var infodesc = Projectile.XPathSelectElement("Values/Standard/InfoDescription")?.Value;
           if (infodesc == null) {
-            Text = new Description(element.Parent.Parent.XPathSelectElement("Standard/GUID").Value);
+            Text = new Description(element.Parent.Parent.XPathSelectElement("Standard/GUID").Value, gameType);
             break;
           }
-          var infodescAsset = Assets.GUIDs[infodesc];
+          var infodescAsset = Assets.GUIDs[infodesc, gameType];
           if (infodescAsset != null) {
-            Text = new Description(infodescAsset.XPathSelectElement("Values/Standard/InfoDescription").Value) {
+            Text = new Description(infodescAsset.XPathSelectElement("Values/Standard/InfoDescription").Value, gameType) {
               AdditionalInformation = new Description(infodescAsset, DescriptionFontStyle.Light)
             };
           }
@@ -290,7 +290,7 @@ namespace RDA.Data {
 
         case "ActionDuration":
           Text.FontStyle = DescriptionFontStyle.Light;
-          Text.Languages = new Description("3898").Languages;
+          Text.Languages = new Description("3898", gameType).Languages;
           Value = TimeSpan.FromMilliseconds(Convert.ToInt64(element.Value)).ToString("hh':'mm':'ss");
           while (Value.StartsWith("00:00:")) {
             Value = Value.Remove(0, 3);
@@ -299,7 +299,7 @@ namespace RDA.Data {
 
         case "ActionCooldown":
           Text.FontStyle = DescriptionFontStyle.Light;
-          Text.Languages = new Description("3899").Languages;
+          Text.Languages = new Description("3899", gameType).Languages;
           Value = TimeSpan.FromMilliseconds(Convert.ToInt64(element.Value)).ToString("hh':'mm':'ss");
           while (Value.StartsWith("00:00:")) {
             Value = Value.Remove(0, 3);
@@ -308,29 +308,29 @@ namespace RDA.Data {
 
         case "IsDestroyedAfterCooldown":
           Text.FontStyle = DescriptionFontStyle.Light;
-          Text.Languages = new Description("2421").Remove("&lt;font color='0xff817f87'&gt;").Remove("&lt;/font&gt;").Languages;
+          Text.Languages = new Description("2421", gameType).Remove("&lt;font color='0xff817f87'&gt;").Remove("&lt;/font&gt;").Languages;
           break;
 
         case "Building":
-          Text = new Description("17394");
+          Text = new Description("17394", gameType);
           value = Convert.ToSingle((decimal.Parse(element.Element("Factor").Value, System.Globalization.CultureInfo.InvariantCulture) * 100) - 100);
           isPercent = true;
           break;
 
         case "SailShip":
-          Text = new Description("17395");
+          Text = new Description("17395", gameType);
           value = Convert.ToSingle((decimal.Parse(element.Element("Factor").Value, System.Globalization.CultureInfo.InvariantCulture) * 100) - 100);
           isPercent = true;
           break;
 
         case "SteamShip":
-          Text = new Description("17396");
+          Text = new Description("17396", gameType);
           value = Convert.ToSingle((decimal.Parse(element.Element("Factor").Value, System.Globalization.CultureInfo.InvariantCulture) * 100) - 100);
           isPercent = true;
           break;
 
         case "ReplacingWorkforce":
-          ReplacingWorkforce = new ReplacingWorkforce(element.Value);
+          ReplacingWorkforce = new ReplacingWorkforce(element.Value, gameType);
           break;
 
         case "BaseDamageUpgrade":
@@ -451,53 +451,53 @@ namespace RDA.Data {
           break;
 
         case "OverrideSpecialistPool":
-          Text.AdditionalInformation = new Description("269571", DescriptionFontStyle.Light);
+          Text.AdditionalInformation = new Description("269571", gameType, DescriptionFontStyle.Light);
           break;
 
         case "RarityWeightUpgrade":
           Additionals = new List<Upgrade>();
-          Text = new Description("22227");
+          Text = new Description("22227", gameType);
           foreach (var item in element.Elements()) {
             if (item.Name.LocalName == "None") {
               //this.Additionals.Add(new Upgrade() { Text = new Description("None", "None"), Value = $"+{item.Element("AdditionalWeight").Value}" });
             }
             else {
-              Additionals.Add(new Upgrade { Text = new Description(Assets.GetDescriptionID(item.Name.LocalName)), Value = $"+{item.Element("AdditionalWeight").Value}" });
+              Additionals.Add(new Upgrade { Text = new Description(Assets.GetDescriptionID(item.Name.LocalName), gameType), Value = $"+{item.Element("AdditionalWeight").Value}" });
             }
           }
           break;
 
         case "ItemSetUpgrade":
           Additionals = new List<Upgrade>();
-          Text = new Description("145011");
+          Text = new Description("145011", gameType);
           foreach (var item in element.Elements()) {
-            Additionals.Add(new Upgrade { Text = new Description(item.Element("ItemSet").Value), Value = $"+{item.Element("AttractivenessUpgradePercent").Value}%" });
+            Additionals.Add(new Upgrade { Text = new Description(item.Element("ItemSet").Value, gameType), Value = $"+{item.Element("AttractivenessUpgradePercent").Value}%" });
           }
           break;
 
         case "Residence7":
-          Text = new Description("22379");
+          Text = new Description("22379", gameType);
           Additionals = new List<Upgrade> {
-            new Upgrade { Text = new Description(element.Element("PopulationLevel7").Value), Value = element.Element("ResidentMax").Value }
+            new Upgrade { Text = new Description(element.Element("PopulationLevel7").Value, gameType), Value = element.Element("ResidentMax").Value }
           };
           break;
 
         case "IndustrializationRangeUpgrade":
-          Text = new Description("249983").Remove("+[ItemAssetData([ToolOneHelper ForwardedEffectGuidOrSelf([RefGuid])]) AdditionalServiceRange]").Trim();
+          Text = new Description("249983", gameType).Remove("+[ItemAssetData([ToolOneHelper ForwardedEffectGuidOrSelf([RefGuid])]) AdditionalServiceRange]").Trim();
           break;
 
         case "MotorizableType":
-          Text = new Description(Assets.GetDescriptionID(element.Value));
+          Text = new Description(Assets.GetDescriptionID(element.Value), gameType);
           break;
 
         case "EcoSystemUpgrade":
           Additionals = new List<Upgrade>();
-          Text = new Description("861");
+          Text = new Description("861", gameType);
           foreach (var item in element.Elements()) {
             var va = int.Parse(item.Element("Value").Value) / 100;
             var u = new Upgrade {
               Value = va > 0 ? $"+{va}" : $"{va}",
-              Text = new Description(Assets.GetDescriptionID(item.Name.LocalName))
+              Text = new Description(Assets.GetDescriptionID(item.Name.LocalName), gameType)
             };
             Additionals.Add(u);
           }
@@ -506,11 +506,11 @@ namespace RDA.Data {
 
         case "EcoSystemProvider":
           Additionals = new List<Upgrade>();
-          Text = new Description("24225");
+          Text = new Description("24225", gameType);
           var v = int.Parse((element.Element("DeltaValue") != null ? element.Element("DeltaValue").Value : "0"));
           var upgrade = new Upgrade {
             Value = v > 0 ? $"+{v}" : $"{v}",
-            Text = new Description(Assets.GetDescriptionID((element.Element("AffectedQuality") != null ? element.Element("AffectedQuality").Value : "Water")))
+            Text = new Description(Assets.GetDescriptionID((element.Element("AffectedQuality") != null ? element.Element("AffectedQuality").Value : "Water")), gameType)
           };
           Additionals.Add(upgrade);
           break;
@@ -534,9 +534,9 @@ namespace RDA.Data {
       }
     }
 
-    public Upgrade(string key, string amount) {
+    public Upgrade(string key, string amount, GameTypes gameType) {
       var value = amount == null ? null : (int?)int.Parse(amount);
-      Text = new Description(Assets.GetDescriptionID(key));
+      Text = new Description(Assets.GetDescriptionID(key), gameType);
       switch (key) {
         case "PerkFormerPirate":
         case "PerkDiver":
@@ -549,7 +549,7 @@ namespace RDA.Data {
         case "PerkMale":
         case "PerkFemale":
           value = null;
-          Text = Text.InsertBefore(new Description("-1"));
+          Text = Text.InsertBefore(new Description("-1", gameType));
           break;
 
         default:

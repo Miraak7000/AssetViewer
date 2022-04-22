@@ -18,15 +18,15 @@ namespace RDA.Data {
 
     #region Public Constructors
 
-    public RewardPoolPosition(XElement element) {
+    public RewardPoolPosition(XElement element, GameTypes gameType) {
       ID = element.Element("Reward").Value;
       RewardPool = new List<RewardPool>();
-      var rewardItems = Assets.GUIDs[element.Element("Reward").Value].XPathSelectElements($"/Values/RewardPool/ItemsPool/Item");
+      var rewardItems = Assets.GUIDs[element.Element("Reward").Value, gameType].XPathSelectElements($"/Values/RewardPool/ItemsPool/Item");
       foreach (var rewardItem in rewardItems) {
         var weight = rewardItem.Element("Weight") == null ? 1 : int.Parse(rewardItem.Element("Weight").Value);
         if (weight == 0)
           continue;
-        RewardPool.Add(new RewardPool(rewardItem.Element("ItemLink").Value, weight));
+        RewardPool.Add(new RewardPool(rewardItem.Element("ItemLink").Value, weight, gameType));
       }
       RewardPool = RewardPool.OrderByDescending(o => o.Weight).ToList();
     }

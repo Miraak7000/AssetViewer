@@ -13,9 +13,9 @@ namespace RDA.Data {
 
     #region Public Constructors
 
-    public ReplaceInput(XElement element) {
-      var oldInput = new Description(element.Element("OldInput").Value);
-      var newInput = new Description(element.Element("NewInput").Value);
+    public ReplaceInput(XElement element, GameTypes gameType) {
+      var oldInput = new Description(element.Element("OldInput").Value, gameType);
+      var newInput = new Description(element.Element("NewInput").Value, gameType);
       Text = newInput.InsertBefore("=>").InsertBefore(oldInput);
       Value = string.Empty;
     }

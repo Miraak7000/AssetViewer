@@ -15,9 +15,9 @@ namespace RDA.Data {
 
     #region Public Constructors
 
-    public Modules(XElement element) {
+    public Modules(XElement element, GameTypes gameType) {
       Limit = element.Descendants("Limit").FirstOrDefault()?.Value;
-      foreach (var item in element.Descendants("ModuleGUID").Select(e => new Description(e.Value))) {
+      foreach (var item in element.Descendants("ModuleGUID").Select(e => new Description(e.Value, gameType))) {
         PossibleModules.Add(item);
       }
     }
