@@ -180,6 +180,138 @@
       </MC>
     </M>
   </Asset>
+  <Asset ID="101259 (Seasons_of_Silver)" RV="Release" RT="Common">
+    <N>service_colony01_03 (Boxing Arena)</N>
+    <T ID="101259" I="data/ui/2kimages/main/3dicons/icon_box_arena.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="5400">
+        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
+      </U>
+      <U V="20">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="25">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="30 / 60">
+        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11144" />
+    <M>
+      <MC>
+        <U V="100 / 50">
+          <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="101258 (Seasons_of_Silver)" RV="Release" RT="Common">
+    <N>service_colony01_02 (Chapel)</N>
+    <T ID="101258" I="data/ui/2kimages/main/3dicons/icon_church.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="500">
+        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="0">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="30 / 60">
+        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11144" />
+    <M>
+      <MC>
+        <U V="10 / 5">
+          <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="101259 (Eden_Burning)" RV="Release" RT="Common">
+    <N>service_colony01_03 (Water Pump)</N>
+    <T ID="114544" I="data/ui/2kimages/main/3dicons/scenario/icon_aqua_well.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="0">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="20 / 40">
+        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11144" />
+    <M>
+      <MC>
+        <U V="100 / 50">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="101258 (Eden_Burning)" RV="Release" RT="Common">
+    <N>service_colony01_02 (Chapel)</N>
+    <T ID="101258" I="data/ui/2kimages/main/3dicons/icon_church.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="0">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="20 / 40">
+        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11144" />
+    <M>
+      <MC>
+        <U V="10 / 5">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
   <Asset ID="118736" RV="Update 09" RT="Common">
     <N>service_moderate_LoL_01 (Radio Station)</N>
     <T ID="118736" I="data/ui/2kimages/main/3dicons/icon_radio_station.png" />
@@ -313,138 +445,6 @@
     <M>
       <MC>
         <U V="75 / 75">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="101259 (Seasons_of_Silver)" RV="Release" RT="Common">
-    <N>service_colony01_03 (Boxing Arena)</N>
-    <T ID="101259" I="data/ui/2kimages/main/3dicons/icon_box_arena.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="22146" />
-    <BC>
-      <U V="5400">
-        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
-      </U>
-      <U V="20">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="25">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="30 / 60">
-        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11144" />
-    <M>
-      <MC>
-        <U V="100 / 50">
-          <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="101258 (Seasons_of_Silver)" RV="Release" RT="Common">
-    <N>service_colony01_02 (Chapel)</N>
-    <T ID="101258" I="data/ui/2kimages/main/3dicons/icon_church.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="22146" />
-    <BC>
-      <U V="500">
-        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="0">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="30 / 60">
-        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11144" />
-    <M>
-      <MC>
-        <U V="10 / 5">
-          <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="101259 (Eden_Burning)" RV="Release" RT="Common">
-    <N>service_colony01_03 (Water Pump)</N>
-    <T ID="114544" I="data/ui/2kimages/main/3dicons/scenario/icon_aqua_well.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="0">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="20 / 40">
-        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11144" />
-    <M>
-      <MC>
-        <U V="100 / 50">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="101258 (Eden_Burning)" RV="Release" RT="Common">
-    <N>service_colony01_02 (Chapel)</N>
-    <T ID="101258" I="data/ui/2kimages/main/3dicons/icon_church.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="0">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="20 / 40">
-        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11144" />
-    <M>
-      <MC>
-        <U V="10 / 5">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
       </MC>
