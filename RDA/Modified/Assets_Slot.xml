@@ -1,6 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Slot>
-  <Asset ID="101061 (Seasons_of_Silver)" RV="Release" RT="Common">
+  <Asset ID="1010501 (Eden_Burning)" RV="Release" RT="Common">
+    <N>mining_02_slot (Iron Mine Slot)</N>
+    <T ID="1010501" I="data/ui/2kimages/main/3dicons/icon_iron.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11880" />
+  </Asset>
+  <Asset ID="1010500 (Eden_Burning)" RV="Release" RT="Common">
+    <N>mining_01_slot (Coal Mine Slot)</N>
+    <T ID="1010500" I="data/ui/2kimages/main/3dicons/icon_coal_2.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11880" />
+  </Asset>
+  <Asset ID="101061 (Eden_Burning)" RV="Release" RT="Common">
     <N>mining_03_slot (Clay Pit Slot)</N>
     <T ID="101061" I="data/ui/2kimages/main/3dicons/icon_clay.png" />
     <R ID="118002" />
@@ -11,67 +33,45 @@
     <HF />
     <I ID="12655" />
   </Asset>
-  <Asset ID="1010507 (Seasons_of_Silver)" RV="Release" RT="Common">
-    <N>mining_08_slot (Gold Ore Mine)</N>
-    <T ID="24842" I="data/ui/2kimages/main/3dicons/icon_ironore.png" />
+  <Asset ID="129382" RV="Update 09" RT="Common">
+    <N>Riverslot</N>
+    <T ID="129382" I="data/ui/2kimages/main/3dicons/icon_riverslot.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <AR ID="22146" />
     <GU />
     <TP />
     <HF />
-    <I ID="11880" />
+    <I ID="12655" />
   </Asset>
-  <Asset ID="101062 (Seasons_of_Silver)" RV="Release" RT="Common">
-    <N>heavy_colony01_01_slot (Oil Pump Slot)</N>
-    <T ID="101062" I="data/ui/2kimages/main/3dicons/icon_oil.png" />
+  <Asset ID="117741" RV="Update 09" RT="Common">
+    <N>Riverslot</N>
+    <T ID="129382" I="data/ui/2kimages/main/3dicons/icon_riverslot.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <AR ID="-1112970167" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <AR ID="22146" />
     <GU />
     <TP />
     <HF />
-    <I ID="12656" />
+    <I ID="12655" />
   </Asset>
-  <Asset ID="101062 (Eden_Burning)" RV="Release" RT="Common">
-    <N>heavy_colony01_01_slot (Oil Pump Slot)</N>
-    <T ID="101062" I="data/ui/2kimages/main/3dicons/icon_oil.png" />
+  <Asset ID="129024" RV="Update 09" RT="Common">
+    <N>Oasis_Riverslot</N>
+    <T ID="129382" I="data/ui/2kimages/main/3dicons/icon_riverslot.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <AR ID="1793398348" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <AR ID="22146" />
     <GU />
     <TP />
     <HF />
-    <I ID="12656" />
+    <I ID="12655" />
   </Asset>
-  <Asset ID="102498 (Eden_Burning)" RV="Release" RT="Common">
-    <N>heavy_01_01_slot (Oil Pump Slot)</N>
-    <T ID="102498" I="data/ui/2kimages/main/3dicons/icon_oil.png" />
+  <Asset ID="116037" RV="Update 06" RT="Common">
+    <N>random slot mining arctic</N>
+    <T ID="116037" />
     <R ID="118002" />
     <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <GU />
-    <TP />
-    <HF />
-    <I ID="12656" />
-  </Asset>
-  <Asset ID="1010505 (Eden_Burning)" RV="Release" RT="Common">
-    <N>mining_06_slot (Cement Mine Slot)</N>
-    <T ID="1010505" I="data/ui/2kimages/main/3dicons/icon_cement.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11880" />
-  </Asset>
-  <Asset ID="1010504 (Eden_Burning)" RV="Release" RT="Common">
-    <N>mining_05_slot (Copper Mine Slot)</N>
-    <T ID="1010504" I="data/ui/2kimages/main/3dicons/icon_copper.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
     <GU />
     <TP />
     <HF />
@@ -165,83 +165,6 @@
     <HF />
     <I ID="11880" />
   </Asset>
-  <Asset ID="1010501 (Eden_Burning)" RV="Release" RT="Common">
-    <N>mining_02_slot (Iron Mine Slot)</N>
-    <T ID="1010501" I="data/ui/2kimages/main/3dicons/icon_iron.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11880" />
-  </Asset>
-  <Asset ID="1010500 (Eden_Burning)" RV="Release" RT="Common">
-    <N>mining_01_slot (Coal Mine Slot)</N>
-    <T ID="1010500" I="data/ui/2kimages/main/3dicons/icon_coal_2.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11880" />
-  </Asset>
-  <Asset ID="101061 (Eden_Burning)" RV="Release" RT="Common">
-    <N>mining_03_slot (Clay Pit Slot)</N>
-    <T ID="101061" I="data/ui/2kimages/main/3dicons/icon_clay.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="1793398348" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <GU />
-    <TP />
-    <HF />
-    <I ID="12655" />
-  </Asset>
-  <Asset ID="129382" RV="Update 09" RT="Common">
-    <N>Riverslot</N>
-    <T ID="129382" I="data/ui/2kimages/main/3dicons/icon_riverslot.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="22146" />
-    <GU />
-    <TP />
-    <HF />
-    <I ID="12655" />
-  </Asset>
-  <Asset ID="117741" RV="Update 09" RT="Common">
-    <N>Riverslot</N>
-    <T ID="129382" I="data/ui/2kimages/main/3dicons/icon_riverslot.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="22146" />
-    <GU />
-    <TP />
-    <HF />
-    <I ID="12655" />
-  </Asset>
-  <Asset ID="129024" RV="Update 09" RT="Common">
-    <N>Oasis_Riverslot</N>
-    <T ID="129382" I="data/ui/2kimages/main/3dicons/icon_riverslot.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="22146" />
-    <GU />
-    <TP />
-    <HF />
-    <I ID="12655" />
-  </Asset>
-  <Asset ID="116037" RV="Update 06" RT="Common">
-    <N>random slot mining arctic</N>
-    <T ID="116037" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11880" />
-  </Asset>
   <Asset ID="113750" RV="Update 04" RT="Common">
     <N>random slot gas arctic</N>
     <T ID="113750" />
@@ -325,5 +248,82 @@
     <TP />
     <HF />
     <I ID="12656" />
+  </Asset>
+  <Asset ID="101061 (Seasons_of_Silver)" RV="Release" RT="Common">
+    <N>mining_03_slot (Clay Pit Slot)</N>
+    <T ID="101061" I="data/ui/2kimages/main/3dicons/icon_clay.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="1793398348" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <GU />
+    <TP />
+    <HF />
+    <I ID="12655" />
+  </Asset>
+  <Asset ID="1010507 (Seasons_of_Silver)" RV="Release" RT="Common">
+    <N>mining_08_slot (Gold Ore Mine)</N>
+    <T ID="24842" I="data/ui/2kimages/main/3dicons/icon_ironore.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11880" />
+  </Asset>
+  <Asset ID="101062 (Seasons_of_Silver)" RV="Release" RT="Common">
+    <N>heavy_colony01_01_slot (Oil Pump Slot)</N>
+    <T ID="101062" I="data/ui/2kimages/main/3dicons/icon_oil.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="-1112970167" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <GU />
+    <TP />
+    <HF />
+    <I ID="12656" />
+  </Asset>
+  <Asset ID="101062 (Eden_Burning)" RV="Release" RT="Common">
+    <N>heavy_colony01_01_slot (Oil Pump Slot)</N>
+    <T ID="101062" I="data/ui/2kimages/main/3dicons/icon_oil.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="1793398348" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <GU />
+    <TP />
+    <HF />
+    <I ID="12656" />
+  </Asset>
+  <Asset ID="102498 (Eden_Burning)" RV="Release" RT="Common">
+    <N>heavy_01_01_slot (Oil Pump Slot)</N>
+    <T ID="102498" I="data/ui/2kimages/main/3dicons/icon_oil.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <GU />
+    <TP />
+    <HF />
+    <I ID="12656" />
+  </Asset>
+  <Asset ID="1010505 (Eden_Burning)" RV="Release" RT="Common">
+    <N>mining_06_slot (Cement Mine Slot)</N>
+    <T ID="1010505" I="data/ui/2kimages/main/3dicons/icon_cement.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11880" />
+  </Asset>
+  <Asset ID="1010504 (Eden_Burning)" RV="Release" RT="Common">
+    <N>mining_05_slot (Copper Mine Slot)</N>
+    <T ID="1010504" I="data/ui/2kimages/main/3dicons/icon_copper.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11880" />
   </Asset>
 </Slot>
