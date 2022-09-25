@@ -40,5 +40,6 @@ namespace AssetViewer.Controls {
     }
 
     #endregion Private Methods
+
   }
 }

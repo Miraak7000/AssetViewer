@@ -1,5 +1,211 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HarborWarehouse7>
+  <Asset ID="116035" RV="Update 06" RT="Common">
+    <N>Third_party_09</N>
+    <T ID="116035" I="data/ui/2kimages/main/3dicons/icon_kontor.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <GU>
+      <U V="+50">
+        <T ID="22426" />
+      </U>
+      <U V="+1" C="LoadingPier">
+        <T ID="15250" />
+      </U>
+      <U V="+10" C="LoadingPier">
+        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
+      </U>
+      <U V="+12" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+72" C="Attacker">
+        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
+      </U>
+      <U V="+72" C="Attacker">
+        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <M />
+  </Asset>
+  <Asset ID="116004" RV="Update 06" RT="Common">
+    <N>kontor_airship_arctic_03</N>
+    <T ID="116004" I="data/ui/2kimages/main/3dicons/icon_airship_landing_plattform.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
+    <BC>
+      <U V="22500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="45">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="0">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="33">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="20">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="+250">
+        <T ID="22426" />
+      </U>
+      <U V="+2" C="LoadingPier">
+        <T ID="15250" />
+      </U>
+      <U V="+5" C="LoadingPier">
+        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
+      </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="2977" />
+    <M />
+  </Asset>
+  <Asset ID="116003" RV="Update 06" RT="Common">
+    <N>kontor_airship_arctic_02</N>
+    <T ID="116004" I="data/ui/2kimages/main/3dicons/icon_airship_landing_plattform.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
+    <UC>
+      <U V="10000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="20">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="0">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="15">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="20">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+    </UC>
+    <BC>
+      <U V="12500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="25">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="0">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="18">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="+150">
+        <T ID="22426" />
+      </U>
+      <U V="+2" C="LoadingPier">
+        <T ID="15250" />
+      </U>
+      <U V="+3" C="LoadingPier">
+        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
+      </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="2977" />
+    <M />
+    <UT ID="-1320184241" />
+  </Asset>
+  <Asset ID="112726" RV="Update 06" RT="Common">
+    <N>kontor_airship_arctic_01</N>
+    <T ID="116004" I="data/ui/2kimages/main/3dicons/icon_airship_landing_plattform.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
+    <UC>
+      <U V="2500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="15">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="0">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="10">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </UC>
+    <BC>
+      <U V="10000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="8">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="+75">
+        <T ID="22426" />
+      </U>
+      <U V="+2" C="LoadingPier">
+        <T ID="15250" />
+      </U>
+      <U V="+2" C="LoadingPier">
+        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
+      </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="2977" />
+    <M />
+    <UT ID="-1320184241" />
+  </Asset>
   <Asset ID="112867" RV="Update 06" RT="Common">
     <N>kontor_imperial_arctic_03</N>
     <T ID="114628" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
@@ -33,17 +239,17 @@
       <U V="+5" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -98,17 +304,17 @@
       <U V="+3" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -158,17 +364,17 @@
       <U V="+2" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -210,17 +416,17 @@
       <U V="+5" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -275,17 +481,17 @@
       <U V="+3" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -335,17 +541,17 @@
       <U V="+2" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -369,14 +575,14 @@
       <U V="+10" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+12" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
       <U V="+72" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+72" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+12" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -401,11 +607,11 @@
       <U V="0" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
-      <U V="+72" C="Attacker">
-        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
       <U V="+12" C="Attacker">
         <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+72" C="Attacker">
+        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
       </U>
     </GU>
     <TP />
@@ -427,14 +633,14 @@
       <U V="+10" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+12" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
       <U V="+72" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+72" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+12" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -457,14 +663,14 @@
       <U V="+10" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+12" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
       <U V="+72" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+72" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+12" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -487,14 +693,14 @@
       <U V="+10" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+12" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
       <U V="+72" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+72" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+12" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -517,14 +723,14 @@
       <U V="+10" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+12" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
       <U V="+72" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+72" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+12" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -547,14 +753,14 @@
       <U V="+10" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+12" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
       <U V="+72" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+72" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+12" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -577,784 +783,14 @@
       <U V="+10" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
-      <U V="+72" C="Attacker">
-        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
-      </U>
-      <U V="+72" C="Attacker">
-        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
       <U V="+12" C="Attacker">
         <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="2977" />
-    <M />
-  </Asset>
-  <Asset ID="101295 (Seasons_of_Silver)" RV="Release" RT="Common">
-    <N>kontor_imperial_colony01_03</N>
-    <T ID="114628" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="22146" />
-    <BC>
-      <U V="15000">
-        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
-      </U>
-      <U V="35">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="40">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="28">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="0">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="+250">
-        <T ID="22426" />
-      </U>
-      <U V="+2" C="LoadingPier">
-        <T ID="15250" />
-      </U>
-      <U V="+5" C="LoadingPier">
-        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
-      </U>
-      <U V="+92" C="Attacker">
+      <U V="+72" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
-      <U V="+92" C="Attacker">
+      <U V="+72" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="2977" />
-    <M />
-  </Asset>
-  <Asset ID="101294 (Seasons_of_Silver)" RV="Release" RT="Common">
-    <N>kontor_imperial_colony01_02</N>
-    <T ID="114627" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="22146" />
-    <UC>
-      <U V="2500">
-        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
-      </U>
-      <U V="20">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="35">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="20">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="20">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-    </UC>
-    <BC>
-      <U V="5000">
-        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
-      </U>
-      <U V="20">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="15">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="8">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="+150">
-        <T ID="22426" />
-      </U>
-      <U V="+2" C="LoadingPier">
-        <T ID="15250" />
-      </U>
-      <U V="+3" C="LoadingPier">
-        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
-      </U>
-      <U V="+92" C="Attacker">
-        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
-      </U>
-      <U V="+92" C="Attacker">
-        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="2977" />
-    <M />
-    <UT ID="-1122791298" />
-  </Asset>
-  <Asset ID="101293 (Seasons_of_Silver)" RV="Release" RT="Common">
-    <N>kontor_imperial_colony01_01</N>
-    <T ID="114626" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="22146" />
-    <UC>
-      <U V="2500">
-        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="15">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-    </UC>
-    <BC>
-      <U V="12000">
-        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="20">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="8">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="+75">
-        <T ID="22426" />
-      </U>
-      <U V="+2" C="LoadingPier">
-        <T ID="15250" />
-      </U>
-      <U V="+2" C="LoadingPier">
-        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
-      </U>
-      <U V="+92" C="Attacker">
-        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
-      </U>
-      <U V="+92" C="Attacker">
-        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="2977" />
-    <M />
-    <UT ID="46520267" />
-  </Asset>
-  <Asset ID="101292 (Seasons_of_Silver)" RV="Release" RT="Common">
-    <N>kontor_main_colony01_03</N>
-    <T ID="114628" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="22146" />
-    <BC>
-      <U V="15000">
-        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
-      </U>
-      <U V="35">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="40">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="28">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="0">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="+250">
-        <T ID="22426" />
-      </U>
-      <U V="+2" C="LoadingPier">
-        <T ID="15250" />
-      </U>
-      <U V="+5" C="LoadingPier">
-        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
-      </U>
-      <U V="+92" C="Attacker">
-        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
-      </U>
-      <U V="+92" C="Attacker">
-        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="2977" />
-    <M />
-  </Asset>
-  <Asset ID="101291 (Seasons_of_Silver)" RV="Release" RT="Common">
-    <N>kontor_main_colony01_02</N>
-    <T ID="114627" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="22146" />
-    <UC>
-      <U V="2500">
-        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
-      </U>
-      <U V="20">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="35">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="20">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="20">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-    </UC>
-    <BC>
-      <U V="5000">
-        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
-      </U>
-      <U V="20">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="15">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="8">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="+150">
-        <T ID="22426" />
-      </U>
-      <U V="+2" C="LoadingPier">
-        <T ID="15250" />
-      </U>
-      <U V="+3" C="LoadingPier">
-        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
-      </U>
-      <U V="+92" C="Attacker">
-        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
-      </U>
-      <U V="+92" C="Attacker">
-        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="2977" />
-    <M />
-    <UT ID="-1122791298" />
-  </Asset>
-  <Asset ID="101290 (Seasons_of_Silver)" RV="Release" RT="Common">
-    <N>kontor_main_colony01_01</N>
-    <T ID="114626" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="22146" />
-    <UC>
-      <U V="2500">
-        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
-      </U>
-      <U V="20">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="35">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-    </UC>
-    <BC>
-      <U V="12000">
-        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="20">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="0">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="+75">
-        <T ID="22426" />
-      </U>
-      <U V="+2" C="LoadingPier">
-        <T ID="15250" />
-      </U>
-      <U V="+2" C="LoadingPier">
-        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
-      </U>
-      <U V="+92" C="Attacker">
-        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
-      </U>
-      <U V="+92" C="Attacker">
-        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="2977" />
-    <M />
-    <UT ID="46520267" />
-  </Asset>
-  <Asset ID="101292 (Eden_Burning)" RV="Release" RT="Common">
-    <N>kontor_main_colony01_03</N>
-    <T ID="114628" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="15000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="35">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="40">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="28">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="0">
-        <T ID="989" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_electric_cable_2.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="+2000">
-        <T ID="22426" />
-      </U>
-      <U V="+2" C="LoadingPier">
-        <T ID="15250" />
-      </U>
-      <U V="+5" C="LoadingPier">
-        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
-      </U>
-      <U V="+92" C="Attacker">
-        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
-      </U>
-      <U V="+92" C="Attacker">
-        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="2977" />
-    <M />
-  </Asset>
-  <Asset ID="101291 (Eden_Burning)" RV="Release" RT="Common">
-    <N>kontor_main_colony01_02</N>
-    <T ID="114627" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <UC>
-      <U V="10000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="15">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="25">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="20">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="20">
-        <T ID="989" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_electric_cable_2.png" />
-      </U>
-    </UC>
-    <BC>
-      <U V="5000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="20">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="15">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="8">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="+1000">
-        <T ID="22426" />
-      </U>
-      <U V="+2" C="LoadingPier">
-        <T ID="15250" />
-      </U>
-      <U V="+3" C="LoadingPier">
-        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
-      </U>
-      <U V="+92" C="Attacker">
-        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
-      </U>
-      <U V="+92" C="Attacker">
-        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="2977" />
-    <M />
-    <UT ID="-1122791298" />
-  </Asset>
-  <Asset ID="101290 (Eden_Burning)" RV="Release" RT="Common">
-    <N>kontor_main_colony01_01</N>
-    <T ID="114626" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <UC>
-      <U V="2500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="15">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-    </UC>
-    <BC>
-      <U V="2500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="8">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="+500">
-        <T ID="22426" />
-      </U>
-      <U V="+2" C="LoadingPier">
-        <T ID="15250" />
-      </U>
-      <U V="+2" C="LoadingPier">
-        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
-      </U>
-      <U V="+92" C="Attacker">
-        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
-      </U>
-      <U V="+92" C="Attacker">
-        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="2977" />
-    <M />
-    <UT ID="46520267" />
-  </Asset>
-  <Asset ID="101295 (Eden_Burning)" RV="Release" RT="Common">
-    <N>kontor_imperial_colony01_03</N>
-    <T ID="114628" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="15000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="35">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="40">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="28">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="0">
-        <T ID="989" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_electric_cable_2.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="+2000">
-        <T ID="22426" />
-      </U>
-      <U V="+2" C="LoadingPier">
-        <T ID="15250" />
-      </U>
-      <U V="+5" C="LoadingPier">
-        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
-      </U>
-      <U V="+92" C="Attacker">
-        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
-      </U>
-      <U V="+92" C="Attacker">
-        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="2977" />
-    <M />
-  </Asset>
-  <Asset ID="101294 (Eden_Burning)" RV="Release" RT="Common">
-    <N>kontor_imperial_colony01_02</N>
-    <T ID="114627" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <UC>
-      <U V="10000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="15">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="25">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="20">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="20">
-        <T ID="989" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_electric_cable_2.png" />
-      </U>
-    </UC>
-    <BC>
-      <U V="5000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="20">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="15">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="8">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="+1000">
-        <T ID="22426" />
-      </U>
-      <U V="+2" C="LoadingPier">
-        <T ID="15250" />
-      </U>
-      <U V="+3" C="LoadingPier">
-        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
-      </U>
-      <U V="+92" C="Attacker">
-        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
-      </U>
-      <U V="+92" C="Attacker">
-        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="2977" />
-    <M />
-    <UT ID="-1122791298" />
-  </Asset>
-  <Asset ID="101293 (Eden_Burning)" RV="Release" RT="Common">
-    <N>kontor_imperial_colony01_01</N>
-    <T ID="114626" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <UC>
-      <U V="2500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="15">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-    </UC>
-    <BC>
-      <U V="2500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="8">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="+500">
-        <T ID="22426" />
-      </U>
-      <U V="+2" C="LoadingPier">
-        <T ID="15250" />
-      </U>
-      <U V="+2" C="LoadingPier">
-        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
-      </U>
-      <U V="+92" C="Attacker">
-        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
-      </U>
-      <U V="+92" C="Attacker">
-        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="2977" />
-    <M />
-    <UT ID="46520267" />
-  </Asset>
-  <Asset ID="131065" RV="Update 09" RT="Common">
-    <N>Third_party_14 Kontor (Nomads on Blake's island)</N>
-    <T ID="131065" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="22146" />
-    <GU>
-      <U V="+150">
-        <T ID="22426" />
-      </U>
-      <U V="+2" C="LoadingPier">
-        <T ID="15250" />
-      </U>
-      <U V="+10" C="LoadingPier">
-        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
-      </U>
-      <U V="+92" C="Attacker">
-        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
-      </U>
-      <U V="+92" C="Attacker">
-        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="2977" />
-    <M />
-  </Asset>
-  <Asset ID="119425" RV="Update 09" RT="Common">
-    <N>Third_party_02 Kontor (Blake)</N>
-    <T ID="119425" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="22146" />
-    <GU>
-      <U V="+150">
-        <T ID="22426" />
-      </U>
-      <U V="+2" C="LoadingPier">
-        <T ID="15250" />
-      </U>
-      <U V="+10" C="LoadingPier">
-        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
-      </U>
-      <U V="+92" C="Attacker">
-        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
-      </U>
-      <U V="+92" C="Attacker">
-        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -1395,17 +831,17 @@
       <U V="+5" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -1460,17 +896,17 @@
       <U V="+3" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -1517,17 +953,17 @@
       <U V="+2" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -1569,17 +1005,17 @@
       <U V="+5" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -1634,17 +1070,17 @@
       <U V="+3" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -1691,17 +1127,17 @@
       <U V="+2" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -1746,17 +1182,17 @@
       <U V="+5" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -1817,17 +1253,17 @@
       <U V="+5" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -1883,17 +1319,17 @@
       <U V="+3" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -1940,17 +1376,17 @@
       <U V="+2" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -1995,17 +1431,17 @@
       <U V="+5" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -2066,17 +1502,17 @@
       <U V="+5" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -2132,17 +1568,17 @@
       <U V="+3" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -2189,17 +1625,17 @@
       <U V="+2" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -2207,6 +1643,277 @@
     <I ID="2977" />
     <M />
     <UT ID="46520267" />
+  </Asset>
+  <Asset ID="101295 (Eden_Burning)" RV="Release" RT="Common">
+    <N>kontor_imperial_colony01_03</N>
+    <T ID="114628" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="15000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="35">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="40">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="28">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="0">
+        <T ID="989" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_electric_cable_2.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="+2000">
+        <T ID="22426" />
+      </U>
+      <U V="+2" C="LoadingPier">
+        <T ID="15250" />
+      </U>
+      <U V="+5" C="LoadingPier">
+        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
+      </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="2977" />
+    <M />
+  </Asset>
+  <Asset ID="101294 (Eden_Burning)" RV="Release" RT="Common">
+    <N>kontor_imperial_colony01_02</N>
+    <T ID="114627" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <UC>
+      <U V="10000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="15">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="25">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="20">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="20">
+        <T ID="989" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_electric_cable_2.png" />
+      </U>
+    </UC>
+    <BC>
+      <U V="5000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="20">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="15">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="8">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="+1000">
+        <T ID="22426" />
+      </U>
+      <U V="+2" C="LoadingPier">
+        <T ID="15250" />
+      </U>
+      <U V="+3" C="LoadingPier">
+        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
+      </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="2977" />
+    <M />
+    <UT ID="-1122791298" />
+  </Asset>
+  <Asset ID="101293 (Eden_Burning)" RV="Release" RT="Common">
+    <N>kontor_imperial_colony01_01</N>
+    <T ID="114626" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <UC>
+      <U V="2500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="15">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </UC>
+    <BC>
+      <U V="2500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="8">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="+500">
+        <T ID="22426" />
+      </U>
+      <U V="+2" C="LoadingPier">
+        <T ID="15250" />
+      </U>
+      <U V="+2" C="LoadingPier">
+        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
+      </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="2977" />
+    <M />
+    <UT ID="46520267" />
+  </Asset>
+  <Asset ID="2533" RV="Update 15" RT="Common">
+    <N>dlc11_scenario03_airship_nate_kontor</N>
+    <T ID="101117" I="data/ui/2kimages/main/3dicons/icon_kontor.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <GU>
+      <U V="+10">
+        <T ID="22426" />
+      </U>
+      <U V="+1" C="LoadingPier">
+        <T ID="15250" />
+      </U>
+      <U V="+10" C="LoadingPier">
+        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
+      </U>
+      <U V="+12" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+72" C="Attacker">
+        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
+      </U>
+      <U V="+72" C="Attacker">
+        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <M />
+  </Asset>
+  <Asset ID="131065" RV="Update 09" RT="Common">
+    <N>Third_party_14 Kontor (Nomads on Blake's island)</N>
+    <T ID="131065" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <GU>
+      <U V="+150">
+        <T ID="22426" />
+      </U>
+      <U V="+2" C="LoadingPier">
+        <T ID="15250" />
+      </U>
+      <U V="+10" C="LoadingPier">
+        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
+      </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="2977" />
+    <M />
+  </Asset>
+  <Asset ID="119425" RV="Update 09" RT="Common">
+    <N>Third_party_02 Kontor (Blake)</N>
+    <T ID="119425" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <GU>
+      <U V="+150">
+        <T ID="22426" />
+      </U>
+      <U V="+2" C="LoadingPier">
+        <T ID="15250" />
+      </U>
+      <U V="+10" C="LoadingPier">
+        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
+      </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="2977" />
+    <M />
   </Asset>
   <Asset ID="119409" RV="Update 09" RT="Common">
     <N>Third_party_10 Kontor (Ketema)</N>
@@ -2223,14 +1930,14 @@
       <U V="+10" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+12" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
       <U V="+72" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+72" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+12" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -2253,14 +1960,14 @@
       <U V="+10" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+12" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
       <U V="+72" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+72" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+12" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -2283,14 +1990,14 @@
       <U V="+10" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+12" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
       <U V="+72" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+72" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+12" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -2313,14 +2020,14 @@
       <U V="+10" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+12" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
       <U V="+72" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+72" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+12" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -2361,17 +2068,17 @@
       <U V="+5" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -2426,17 +2133,17 @@
       <U V="+3" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -2486,17 +2193,17 @@
       <U V="+2" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -2538,17 +2245,17 @@
       <U V="+5" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -2603,17 +2310,17 @@
       <U V="+3" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -2663,17 +2370,17 @@
       <U V="+2" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -2682,55 +2389,26 @@
     <M />
     <UT ID="46520267" />
   </Asset>
-  <Asset ID="116035" RV="Update 06" RT="Common">
-    <N>Third_party_09</N>
-    <T ID="116035" I="data/ui/2kimages/main/3dicons/icon_kontor.png" />
+  <Asset ID="101295 (A_Clash_of_Couriers)" RV="Release" RT="Common">
+    <N>kontor_imperial_colony01_03</N>
+    <T ID="114628" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <GU>
-      <U V="+50">
-        <T ID="22426" />
-      </U>
-      <U V="+1" C="LoadingPier">
-        <T ID="15250" />
-      </U>
-      <U V="+10" C="LoadingPier">
-        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
-      </U>
-      <U V="+72" C="Attacker">
-        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
-      </U>
-      <U V="+72" C="Attacker">
-        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+12" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <M />
-  </Asset>
-  <Asset ID="116004" RV="Update 06" RT="Common">
-    <N>kontor_airship_arctic_03</N>
-    <T ID="116004" I="data/ui/2kimages/main/3dicons/icon_airship_landing_plattform.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
     <BC>
-      <U V="22500">
+      <U V="15000">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
-      <U V="45">
+      <U V="35">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
-      <U V="0">
+      <U V="40">
         <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
       </U>
-      <U V="33">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      <U V="28">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams_1.png" />
       </U>
-      <U V="20">
+      <U V="0">
         <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
       </U>
     </BC>
@@ -2744,17 +2422,17 @@
       <U V="+5" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
-      </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
       </U>
     </GU>
     <TP />
@@ -2762,23 +2440,374 @@
     <I ID="2977" />
     <M />
   </Asset>
-  <Asset ID="116003" RV="Update 06" RT="Common">
-    <N>kontor_airship_arctic_02</N>
-    <T ID="116004" I="data/ui/2kimages/main/3dicons/icon_airship_landing_plattform.png" />
+  <Asset ID="101294 (A_Clash_of_Couriers)" RV="Release" RT="Common">
+    <N>kontor_imperial_colony01_02</N>
+    <T ID="114627" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
     <UC>
       <U V="10000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="15">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="25">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="20">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams_1.png" />
+      </U>
+      <U V="0">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+    </UC>
+    <BC>
+      <U V="5000">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
       <U V="20">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
-      <U V="0">
+      <U V="15">
         <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
       </U>
+      <U V="8">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams_1.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="+150">
+        <T ID="22426" />
+      </U>
+      <U V="+2" C="LoadingPier">
+        <T ID="15250" />
+      </U>
+      <U V="+3" C="LoadingPier">
+        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
+      </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="2977" />
+    <M />
+    <UT ID="-1122791298" />
+  </Asset>
+  <Asset ID="101293 (A_Clash_of_Couriers)" RV="Release" RT="Common">
+    <N>kontor_imperial_colony01_01</N>
+    <T ID="114626" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <UC>
+      <U V="2500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
       <U V="15">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </UC>
+    <BC>
+      <U V="2500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="8">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams_1.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="+75">
+        <T ID="22426" />
+      </U>
+      <U V="+2" C="LoadingPier">
+        <T ID="15250" />
+      </U>
+      <U V="+2" C="LoadingPier">
+        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
+      </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="2977" />
+    <M />
+    <UT ID="46520267" />
+  </Asset>
+  <Asset ID="101292 (A_Clash_of_Couriers)" RV="Release" RT="Common">
+    <N>kontor_main_colony01_03</N>
+    <T ID="114628" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="15000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="35">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="40">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="28">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams_1.png" />
+      </U>
+      <U V="0">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="+250">
+        <T ID="22426" />
+      </U>
+      <U V="+2" C="LoadingPier">
+        <T ID="15250" />
+      </U>
+      <U V="+5" C="LoadingPier">
+        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
+      </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="2977" />
+    <M />
+  </Asset>
+  <Asset ID="101291 (A_Clash_of_Couriers)" RV="Release" RT="Common">
+    <N>kontor_main_colony01_02</N>
+    <T ID="114627" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <UC>
+      <U V="10000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="15">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="25">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="20">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams_1.png" />
+      </U>
+      <U V="0">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+    </UC>
+    <BC>
+      <U V="5000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="20">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="15">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="8">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams_1.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="+150">
+        <T ID="22426" />
+      </U>
+      <U V="+2" C="LoadingPier">
+        <T ID="15250" />
+      </U>
+      <U V="+3" C="LoadingPier">
+        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
+      </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="2977" />
+    <M />
+    <UT ID="-1122791298" />
+  </Asset>
+  <Asset ID="101290 (A_Clash_of_Couriers)" RV="Release" RT="Common">
+    <N>kontor_main_colony01_01</N>
+    <T ID="114626" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <UC>
+      <U V="2500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="15">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </UC>
+    <BC>
+      <U V="2500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="8">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams_1.png" />
+      </U>
+      <U V="1">
+        <T ID="2038" I="data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="+75">
+        <T ID="22426" />
+      </U>
+      <U V="+2" C="LoadingPier">
+        <T ID="15250" />
+      </U>
+      <U V="+2" C="LoadingPier">
+        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
+      </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="2977" />
+    <M />
+    <UT ID="46520267" />
+  </Asset>
+  <Asset ID="101295 (Seasons_of_Silver)" RV="Release" RT="Common">
+    <N>kontor_imperial_colony01_03</N>
+    <T ID="114628" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="15000">
+        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
+      </U>
+      <U V="35">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="40">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="28">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="0">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="+250">
+        <T ID="22426" />
+      </U>
+      <U V="+2" C="LoadingPier">
+        <T ID="15250" />
+      </U>
+      <U V="+5" C="LoadingPier">
+        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
+      </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="2977" />
+    <M />
+  </Asset>
+  <Asset ID="101294 (Seasons_of_Silver)" RV="Release" RT="Common">
+    <N>kontor_imperial_colony01_02</N>
+    <T ID="114627" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <UC>
+      <U V="2500">
+        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
+      </U>
+      <U V="20">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="35">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="20">
         <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
       </U>
       <U V="20">
@@ -2786,16 +2815,16 @@
       </U>
     </UC>
     <BC>
-      <U V="12500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      <U V="5000">
+        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
       </U>
-      <U V="25">
+      <U V="20">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
-      <U V="0">
+      <U V="15">
         <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
       </U>
-      <U V="18">
+      <U V="8">
         <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
       </U>
     </BC>
@@ -2809,51 +2838,51 @@
       <U V="+3" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
       </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-      <U V="+150" C="Attacker">
-        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
-      </U>
     </GU>
     <TP />
     <HF />
     <I ID="2977" />
     <M />
-    <UT ID="-1320184241" />
+    <UT ID="-1122791298" />
   </Asset>
-  <Asset ID="112726" RV="Update 06" RT="Common">
-    <N>kontor_airship_arctic_01</N>
-    <T ID="116004" I="data/ui/2kimages/main/3dicons/icon_airship_landing_plattform.png" />
+  <Asset ID="101293 (Seasons_of_Silver)" RV="Release" RT="Common">
+    <N>kontor_imperial_colony01_01</N>
+    <T ID="114626" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
+    <AR ID="22146" />
     <UC>
       <U V="2500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="15">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="0">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
       </U>
       <U V="10">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="15">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
       </U>
     </UC>
     <BC>
-      <U V="10000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      <U V="12000">
+        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
       </U>
       <U V="10">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="20">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
       </U>
       <U V="8">
         <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
@@ -2869,23 +2898,374 @@
       <U V="+2" C="LoadingPier">
         <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
       <U V="+92" C="Attacker">
         <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
       </U>
       <U V="+92" C="Attacker">
         <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
       </U>
-      <U V="+50" C="Attacker">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+    </GU>
+    <TP />
+    <HF />
+    <I ID="2977" />
+    <M />
+    <UT ID="46520267" />
+  </Asset>
+  <Asset ID="101292 (Seasons_of_Silver)" RV="Release" RT="Common">
+    <N>kontor_main_colony01_03</N>
+    <T ID="114628" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="15000">
+        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
+      </U>
+      <U V="35">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="40">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="28">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="0">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="+250">
+        <T ID="22426" />
+      </U>
+      <U V="+2" C="LoadingPier">
+        <T ID="15250" />
+      </U>
+      <U V="+5" C="LoadingPier">
+        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
       </U>
       <U V="+150" C="Attacker">
         <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
       </U>
     </GU>
     <TP />
     <HF />
     <I ID="2977" />
     <M />
-    <UT ID="-1320184241" />
+  </Asset>
+  <Asset ID="101291 (Seasons_of_Silver)" RV="Release" RT="Common">
+    <N>kontor_main_colony01_02</N>
+    <T ID="114627" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <UC>
+      <U V="2500">
+        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
+      </U>
+      <U V="20">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="35">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="20">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="20">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+    </UC>
+    <BC>
+      <U V="5000">
+        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
+      </U>
+      <U V="20">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="15">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="8">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="+150">
+        <T ID="22426" />
+      </U>
+      <U V="+2" C="LoadingPier">
+        <T ID="15250" />
+      </U>
+      <U V="+3" C="LoadingPier">
+        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
+      </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="2977" />
+    <M />
+    <UT ID="-1122791298" />
+  </Asset>
+  <Asset ID="101290 (Seasons_of_Silver)" RV="Release" RT="Common">
+    <N>kontor_main_colony01_01</N>
+    <T ID="114626" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <UC>
+      <U V="2500">
+        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
+      </U>
+      <U V="20">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="35">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </UC>
+    <BC>
+      <U V="12000">
+        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="20">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="0">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="+75">
+        <T ID="22426" />
+      </U>
+      <U V="+2" C="LoadingPier">
+        <T ID="15250" />
+      </U>
+      <U V="+2" C="LoadingPier">
+        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
+      </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="2977" />
+    <M />
+    <UT ID="46520267" />
+  </Asset>
+  <Asset ID="101292 (Eden_Burning)" RV="Release" RT="Common">
+    <N>kontor_main_colony01_03</N>
+    <T ID="114628" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="15000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="35">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="40">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="28">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="0">
+        <T ID="989" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_electric_cable_2.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="+2000">
+        <T ID="22426" />
+      </U>
+      <U V="+2" C="LoadingPier">
+        <T ID="15250" />
+      </U>
+      <U V="+5" C="LoadingPier">
+        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
+      </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="2977" />
+    <M />
+  </Asset>
+  <Asset ID="101291 (Eden_Burning)" RV="Release" RT="Common">
+    <N>kontor_main_colony01_02</N>
+    <T ID="114627" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <UC>
+      <U V="10000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="15">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="25">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="20">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="20">
+        <T ID="989" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_electric_cable_2.png" />
+      </U>
+    </UC>
+    <BC>
+      <U V="5000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="20">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="15">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="8">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="+1000">
+        <T ID="22426" />
+      </U>
+      <U V="+2" C="LoadingPier">
+        <T ID="15250" />
+      </U>
+      <U V="+3" C="LoadingPier">
+        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
+      </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="2977" />
+    <M />
+    <UT ID="-1122791298" />
+  </Asset>
+  <Asset ID="101290 (Eden_Burning)" RV="Release" RT="Common">
+    <N>kontor_main_colony01_01</N>
+    <T ID="114626" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <UC>
+      <U V="2500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="15">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </UC>
+    <BC>
+      <U V="2500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="8">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="+500">
+        <T ID="22426" />
+      </U>
+      <U V="+2" C="LoadingPier">
+        <T ID="15250" />
+      </U>
+      <U V="+2" C="LoadingPier">
+        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
+      </U>
+      <U V="+150" C="Attacker">
+        <T ID="2334" I="data/ui/2kimages/main/icons/ship_info/icon_damage.png" />
+      </U>
+      <U V="+50" C="Attacker">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="12021" I="data/ui/2kimages/main/icons/icon_diplomacy_options_war.png" />
+      </U>
+      <U V="+92" C="Attacker">
+        <T ID="15266" I="data/ui/2kimages/main/icons/icon_go_to.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="2977" />
+    <M />
+    <UT ID="46520267" />
   </Asset>
 </HarborWarehouse7>

@@ -21,7 +21,7 @@ namespace RDA.Data {
       id = id ?? "20466";
       Text = new Description(id, gameType).Remove("[ItemAssetData([AreaManager AreaFestival BuffGuids AT(0) Text]) AdditionalOutputProductsFormatted()]");
       if (cycle != null && amount != null) {
-        Value = $"{cycle} / {amount}";
+        Value = $"{amount} / {cycle}";
       }
       else if (cycle != null) {
         Value = $"{cycle}";

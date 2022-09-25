@@ -188,6 +188,10 @@ namespace RDA.Data {
           case "BuffFactoryCulture":
           case "Hacienda":
           case "ScenarioRuinEco":
+          case "AirshipPlatform":
+          case "PostBoxBuildingWithDepot":
+          case "PostBoxBuildingWithPublicService":
+          case "AirshipPlatformCliff":
             ItemType = "Building";
             break;
 
@@ -204,6 +208,10 @@ namespace RDA.Data {
           case "DocklandStorageModule":
           case "DocklandModuleRepair":
           case "BuffFactoryModule":
+          case "AirshipPlatformModuleItemTransfer":
+          case "AirshipPlatformPostModule":
+          case "AirshipPlatformModuleWorkforceTransfer":
+          case "AirshipPostFreeModule":
             ItemType = "Module";
             break;
 
@@ -329,6 +337,8 @@ namespace RDA.Data {
 
           case "FloorStackOwner": //Update 11 nothing inside
           case "BusStop": //Costs
+          case "MetaItemStorageAccess": 
+          case "Postbox": 
             break;
 
           case "Standard":
@@ -379,6 +389,7 @@ namespace RDA.Data {
           case "ResearchCenter":
           case "ResourceUpgrade":
           case "EcoSystemProviderUpgrade":
+          //case "Postbox":
             ProcessElement_GenericUpgradeChilds(element, element.Name.LocalName);
             break;
 
@@ -751,9 +762,7 @@ namespace RDA.Data {
 
     private void ProcessElement_ItemEffect(XElement element) {
       if (element.HasElements) {
-        if (element.Element("EffectTargets") == null)
-          throw new NotImplementedException();
-        if (element.Element("EffectTargets").HasElements) {
+        if (element.Element("EffectTargets")?.HasElements == true) {
           EffectTargets = new List<EffectTarget>();
           foreach (var item in element.XPathSelectElements("EffectTargets/Item/GUID")?.Where(e => !string.IsNullOrWhiteSpace(e.Value))) {
             EffectTargets.Add(new EffectTarget(item, GameType));
@@ -813,9 +822,14 @@ namespace RDA.Data {
         case "AllowExclusiveTrading":
         case "WeaponActivationTime":
         case "Feedback_AllowSpawnAtEntrance":
+        case "ShowInStatisticScreen":
+        case "AdditionalTabData":
+        case "AfricaOnlyWeaponActivationTime":
 
         //Ministary buffs (maybe todo)
         case "ElectricityRangeUpgrade":
+        case "BasicAttackType": //tells what kind of stuff it can attack
+        case "AssemblyFilter": //tells what kind of stuff it can attack
           break;
 
         default:
@@ -1168,6 +1182,7 @@ namespace RDA.Data {
           foreach (var action in actions) {
             switch (action.Element("Template").Value) {
               case "ActionStartTreasureMapQuest":
+              case "ActionStartQuest":
                 ItemWithUI.Add(new Upgrade(action, GameType));
                 break;
 
@@ -1234,10 +1249,15 @@ namespace RDA.Data {
           }
 
           //Ignores
+          if (reference.Parent?.Name.LocalName is string rparent &&
+              rparent.MatchOne("SequenceIDs") ){
+            continue;
+          }
           if (reference.Name.LocalName is string foundedName &&
             foundedName.MatchOne("BaseAssetGUID", "Icon", "ItemUsed", "TradePrice", "GenPool", "NotificationIcon",
             "ReplacingWorkforce", "ProductFilter", "BusNeed", "LineID", "PosX", "Context", "ProductionOutputInfotip",
-            "UnlockNeeded", "TextOverride", "MedalObjectiveIcon", "UpgradeTarget", "ScenarioBaseAssetGUID")) {
+            "UnlockNeeded", "TextOverride", "MedalObjectiveIcon", "UpgradeTarget", "ScenarioBaseAssetGUID", "drunkenwalk02", 
+            "MaximumHitPoints", "ItemReplacementPools", "PosY", "BasePrice", "StorageCapacityModifier", "ConsumedNeed")) {
             continue;
           }
           if (reference.Parent?.Parent?.Name.LocalName is string gparent &&
@@ -1245,7 +1265,7 @@ namespace RDA.Data {
             continue;
           }
           if (reference.Parent?.Parent?.Parent?.Name.LocalName is string ggParent &&
-            ggParent.MatchOne("Sellable", "PublicService")) {
+            ggParent.MatchOne("Sellable", "PublicService", "Distribution", "EconomyFeature7")) {
             continue;
           }
 
@@ -1318,6 +1338,8 @@ namespace RDA.Data {
               case "ScenarioRuin":  //Update 13
               case "ResourceBarScene":  //Update 14
                                         // ignore
+              case "ScenarioWorkshopItem":
+
                 break;
 
               case "TriggerCampaign":

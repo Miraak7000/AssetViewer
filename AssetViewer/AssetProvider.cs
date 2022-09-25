@@ -190,7 +190,14 @@ namespace AssetViewer {
     private static void LoadBuildungs() {
       var buildings = new[] {
                 "AssetViewer.Resources.Assets.AdditionalModule.xml",
+                "AssetViewer.Resources.Assets.AirshipPlatform.xml",
+                "AssetViewer.Resources.Assets.AirshipPlatformCliff.xml",
+                "AssetViewer.Resources.Assets.AirshipPlatformModuleItemTransfer.xml",
+                "AssetViewer.Resources.Assets.AirshipPlatformModuleWorkforceTransfer.xml",
+                "AssetViewer.Resources.Assets.AirshipPlatformPostModule.xml",
+                "AssetViewer.Resources.Assets.AirshipPostFreeModule.xml",
                 "AssetViewer.Resources.Assets.BridgeBuilding.xml",
+                //"AssetViewer.Resources.Assets.BuffFactory.xml",
                 "AssetViewer.Resources.Assets.BuffFactoryCulture.xml",
                 "AssetViewer.Resources.Assets.BuffFactoryModule.xml",
                 "AssetViewer.Resources.Assets.BuildPermitBuilding.xml",
@@ -253,6 +260,8 @@ namespace AssetViewer {
                 "AssetViewer.Resources.Assets.Palace.xml",
                 "AssetViewer.Resources.Assets.PalaceMinistry.xml",
                 "AssetViewer.Resources.Assets.PalaceModule.xml",
+                "AssetViewer.Resources.Assets.PostBoxBuildingWithDepot.xml",
+                "AssetViewer.Resources.Assets.PostBoxBuildingWithPublicService.xml",
                 "AssetViewer.Resources.Assets.PowerplantBuilding.xml",
                 "AssetViewer.Resources.Assets.PublicServiceBuilding.xml",
                 "AssetViewer.Resources.Assets.PublicServiceBuildingWithBus.xml",

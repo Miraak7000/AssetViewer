@@ -28,10 +28,12 @@ namespace RDA {
       BaseGame = XmlLoader.LoadXml(Program.PathRoot + @"\Original\assets.xml");
       Eden_Burning = XmlLoader.LoadSzenarioXml(Program.PathRoot + @"\Original\Eden Burning\assets.xml", GameTypes.Eden_Burning);
       Seasons_of_Silver = XmlLoader.LoadSzenarioXml(Program.PathRoot + @"\Original\Seasons of Silver\assets.xml", GameTypes.Seasons_of_Silver);
+      A_Clash_of_Couriers = XmlLoader.LoadSzenarioXml(Program.PathRoot + @"\Original\A Clash of Couriers\assets.xml", GameTypes.A_Clash_of_Couriers);
       All = new XElement("Root");
       All.Add(BaseGame);
       All.Add(Eden_Burning);
       All.Add(Seasons_of_Silver);
+      All.Add(A_Clash_of_Couriers);
     }
 
     #endregion Public Constructors
@@ -73,6 +75,7 @@ namespace RDA {
     internal readonly static XElement All;
     internal readonly static XElement Eden_Burning;
     internal readonly static XElement Seasons_of_Silver;
+    internal readonly static XElement A_Clash_of_Couriers;
 
     internal readonly static Dictionary<string, XElement> DefaultValues = new Dictionary<string, XElement>();
 
@@ -129,6 +132,12 @@ namespace RDA {
         if (found != null) {
           depth++;
           search = found.Element("BaseAssetGUID")?.Value ?? found.Element("ScenarioBaseAssetGUID")?.Value;
+        }
+        else {
+          if (search == "2281") {
+            break;
+          }
+          throw new NotImplementedException($"Parent asset not found with id {search}");
         }
       }
       return depth;

@@ -27,5 +27,6 @@ namespace AssetViewer.Controls {
     }
 
     #endregion Public Methods
+
   }
 }

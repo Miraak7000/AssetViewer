@@ -107,6 +107,7 @@ namespace AssetViewer.Data.Filters {
         else {
           _selectedValue = item;
         }
+
         RaisePropertyChanged(nameof(SelectedValue));
       }
 
@@ -122,6 +123,7 @@ namespace AssetViewer.Data.Filters {
         else {
           _selectedComparisonValue = compitem;
         }
+
         RaisePropertyChanged(nameof(SelectedComparisonValue));
       }
     }
