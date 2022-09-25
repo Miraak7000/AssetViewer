@@ -45,6 +45,11 @@ namespace RDA.Data {
               Text = new Description("2734", gameType).AppendWithSpace("-").AppendWithSpace(new Description(element.XPathSelectElement("Values/ActionStartTreasureMapQuest/TreasureSessionOrRegion").Value, gameType));
               Additionals.Add(new Upgrade { Text = new Description(element.XPathSelectElement("Values/ActionStartTreasureMapQuest/TreasureMapQuest").Value, gameType) });
               break;
+            case "ActionStartQuest":
+              Additionals = new List<Upgrade>();
+              Text = new Description("2734", gameType).AppendWithSpace("-").AppendWithSpace(new Description(element.XPathSelectElement("Values/ActionStartQuest/QuestSession").Value, gameType));
+              Additionals.Add(new Upgrade { Text = new Description(element.XPathSelectElement("Values/ActionStartQuest/Quest").Value, gameType) });
+              break;
 
             default:
               break;
@@ -515,12 +520,26 @@ namespace RDA.Data {
           Additionals.Add(upgrade);
           break;
 
+        //case "ProductivityFactorByResidents":
+        //  Text = new Description("22379", gameType).AppendInBraces(new Description( , gameType));
+        //  Value
+        //  Additionals = new List<Upgrade>();
+        //  foreach (var item in element.Elements("Item").Where(e => e.HasElements)) {
+        //    var o = int.Parse((element.Element("DeltaValue") != null ? element.Element("DeltaValue").Value : "0"));
+        //    var rmf = new Upgrade {
+        //      Value = v > 0 ? $"+{v}" : $"{v}",
+        //      Text = new Description(Assets.GetDescriptionID((element.Element("AffectedQuality") != null ? element.Element("AffectedQuality").Value : "Water")), gameType)
+        //    };
+        //    Additionals.Add(rmf);
+        //}
+        //  break;
+
         default:
           Debug.WriteLine(element.Name.LocalName);
           throw new NotImplementedException(element.Name.LocalName);
           break;
       }
-      
+
       if (value == null) {
         Value = string.Empty;
       }

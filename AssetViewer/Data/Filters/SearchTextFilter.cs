@@ -9,16 +9,7 @@ namespace AssetViewer.Data.Filters {
     #region Public Properties
 
     public override Func<IEnumerable<TemplateAsset>, IEnumerable<TemplateAsset>> FilterFunc => result => {
-      if (!string.IsNullOrEmpty(SelectedValue)) {
-        if (Comparison == ValueComparisons.UnEqual) {
-          return result.Where(w => !w.ID.ToString().StartsWith(SelectedValue, StringComparison.InvariantCultureIgnoreCase) || w.Text.CurrentLang.IndexOf(SelectedValue, StringComparison.CurrentCultureIgnoreCase) == -1);
-        }
-        else {
-          return result.Where(w => w.ID.ToString().StartsWith(SelectedValue, StringComparison.InvariantCultureIgnoreCase) || w.Text.CurrentLang.IndexOf(SelectedValue, StringComparison.CurrentCultureIgnoreCase) >= 0);
-        }
-      }
-
-      return null;
+      return FilterItems(result, SelectedValue);
     };
 
     public override int DescriptionID => -1004;
@@ -27,8 +18,11 @@ namespace AssetViewer.Data.Filters {
       get => _selectedValue;
       set {
         if (!(_selectedValue?.Equals(value) ?? false)) {
-          _selectedValue = value;
-          UpdateSavedItems();
+          //_oldValue = _selectedValue;
+          if ((value != null && string.IsNullOrWhiteSpace(value)) || _possibilities == null || (FilterItems(_possibilities, value)?.Any() ?? false)) {
+            _selectedValue = value;
+            UpdateSavedItems();
+          }
           RaisePropertyChanged();
         }
       }
@@ -44,9 +38,46 @@ namespace AssetViewer.Data.Filters {
 
     #endregion Public Constructors
 
+    #region Public Methods
+
+    public override void SetCurrenValues() {
+      _possibilities = ItemsHolder.GetResultWithoutFilter(this).ToList();
+    }
+
+    #endregion Public Methods
+
+    #region Private Methods
+
+    private IEnumerable<TemplateAsset> FilterItems(IEnumerable<TemplateAsset> result, string selectedValue) {
+      if (!string.IsNullOrEmpty(selectedValue)) {
+        if (Comparison == ValueComparisons.UnEqual) {
+          var res = result.Where(w => !w.ID.ToString().StartsWith(selectedValue, StringComparison.InvariantCultureIgnoreCase) || w.Text.CurrentLang.IndexOf(selectedValue, StringComparison.CurrentCultureIgnoreCase) == -1);
+          //if (!res.Any()) {
+          //  _selectedValue = _oldValue;
+          //  return result.Where(w => !w.ID.ToString().StartsWith(_oldValue, StringComparison.InvariantCultureIgnoreCase) || w.Text.CurrentLang.IndexOf(_oldValue, StringComparison.CurrentCultureIgnoreCase) == -1); ;
+          //}
+          return res;
+        }
+        else {
+          var res = result.Where(w => w.ID.ToString().StartsWith(selectedValue, StringComparison.InvariantCultureIgnoreCase) || w.Text.CurrentLang.IndexOf(selectedValue, StringComparison.CurrentCultureIgnoreCase) >= 0);
+          //if (!res.Any()) {
+          //  _selectedValue = _oldValue;
+          //  return result.Where(w => w.ID.ToString().StartsWith(_oldValue, StringComparison.InvariantCultureIgnoreCase) || w.Text.CurrentLang.IndexOf(_oldValue, StringComparison.CurrentCultureIgnoreCase) >= 0);
+          //}
+          return res;
+        }
+      }
+
+      return null;
+    }
+
+    #endregion Private Methods
+
     #region Private Fields
 
     private string _selectedValue;
+    private string _oldValue = string.Empty;
+    private List<TemplateAsset> _possibilities;
 
     #endregion Private Fields
   }

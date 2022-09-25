@@ -33,6 +33,7 @@ namespace RDA {
       All.Add(BaseGame);
       All.Add(Eden_Burning);
       All.Add(Seasons_of_Silver);
+      All.Add(A_Clash_of_Couriers);
     }
 
     #endregion Public Constructors
@@ -131,6 +132,12 @@ namespace RDA {
         if (found != null) {
           depth++;
           search = found.Element("BaseAssetGUID")?.Value ?? found.Element("ScenarioBaseAssetGUID")?.Value;
+        }
+        else {
+          if (search == "2281") {
+            break;
+          }
+          throw new NotImplementedException($"Parent asset not found with id {search}");
         }
       }
       return depth;

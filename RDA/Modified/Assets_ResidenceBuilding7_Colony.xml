@@ -1,5 +1,61 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ResidenceBuilding7_Colony>
+  <Asset ID="101255 (Eden_Burning)" RV="Update 11" RT="Common">
+    <N>residence_colony01_tier02</N>
+    <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="3">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Residence7">
+        <T ID="22379" />
+        <A>
+          <U V="20">
+            <T ID="15000006" I="data/ui/2kimages/main/3dicons/resident/icon_resident_obrera.png" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="163059" />
+  </Asset>
+  <Asset ID="101254 (Eden_Burning)" RV="Update 11" RT="Common">
+    <N>residence_colony01_tier01</N>
+    <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <UC>
+      <U V="2">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </UC>
+    <BC>
+      <U V="1">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Residence7">
+        <T ID="22379" />
+        <A>
+          <U V="10">
+            <T ID="15000005" I="data/ui/2kimages/main/3dicons/resident/icon_resident_jornalero.png" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="163059" />
+    <UT ID="1313381114" />
+  </Asset>
   <Asset ID="24793" RV="Update 14" RT="Common">
     <N>Hacienda residence module tier02</N>
     <T ID="24793" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_obrera.png" />
@@ -71,28 +127,53 @@
     <HF />
     <I ID="163059" />
   </Asset>
-  <Asset ID="24793 (Seasons_of_Silver)" RV="Update 14" RT="Common">
-    <N>Hacienda residence module tier02</N>
-    <T ID="24793" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_obrera.png" />
+  <Asset ID="114436" RV="Update 11" RT="Common">
+    <N>residence_colony02_tier01</N>
+    <T ID="114436" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <AR ID="-593215646" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <AR ID="22146" />
+    <UC>
+      <U V="2">
+        <T ID="114356" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
+      </U>
+    </UC>
     <BC>
-      <U V="200">
-        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
-      </U>
-      <U V="6">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="3">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      <U V="1">
+        <T ID="114356" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
       </U>
     </BC>
     <GU>
       <U V="" C="Residence7">
         <T ID="22379" />
         <A>
-          <U V="45">
+          <U V="10">
+            <T ID="114329" I="data/ui/2kimages/main/3dicons/resident/icon_resident_sheperd.png" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="163059" />
+    <UT ID="1971679011" />
+  </Asset>
+  <Asset ID="101255" RV="Update 11" RT="Common">
+    <N>residence_colony01_tier02</N>
+    <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="3">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Residence7">
+        <T ID="22379" />
+        <A>
+          <U V="20">
             <T ID="15000006" I="data/ui/2kimages/main/3dicons/resident/icon_resident_obrera.png" />
           </U>
         </A>
@@ -101,6 +182,37 @@
     <TP />
     <HF />
     <I ID="163059" />
+  </Asset>
+  <Asset ID="101254" RV="Update 11" RT="Common">
+    <N>residence_colony01_tier01</N>
+    <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <UC>
+      <U V="2">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </UC>
+    <BC>
+      <U V="1">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Residence7">
+        <T ID="22379" />
+        <A>
+          <U V="10">
+            <T ID="15000005" I="data/ui/2kimages/main/3dicons/resident/icon_resident_jornalero.png" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="163059" />
+    <UT ID="1313381114" />
   </Asset>
   <Asset ID="24792 (Seasons_of_Silver)" RV="Update 14" RT="Common">
     <N>Hacienda residence module tier01</N>
@@ -189,7 +301,7 @@
     <I ID="163059" />
     <UT ID="1313381114" />
   </Asset>
-  <Asset ID="101255 (Eden_Burning)" RV="Update 11" RT="Common">
+  <Asset ID="101255 (A_Clash_of_Couriers)" RV="Update 11" RT="Common">
     <N>residence_colony01_tier02</N>
     <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
     <R ID="118002" />
@@ -214,7 +326,7 @@
     <HF />
     <I ID="163059" />
   </Asset>
-  <Asset ID="101254 (Eden_Burning)" RV="Update 11" RT="Common">
+  <Asset ID="101254 (A_Clash_of_Couriers)" RV="Update 11" RT="Common">
     <N>residence_colony01_tier01</N>
     <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
     <R ID="118002" />
@@ -245,53 +357,28 @@
     <I ID="163059" />
     <UT ID="1313381114" />
   </Asset>
-  <Asset ID="114436" RV="Update 11" RT="Common">
-    <N>residence_colony02_tier01</N>
-    <T ID="114436" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+  <Asset ID="24793 (Seasons_of_Silver)" RV="Update 14" RT="Common">
+    <N>Hacienda residence module tier02</N>
+    <T ID="24793" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_obrera.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <AR ID="22146" />
-    <UC>
-      <U V="2">
-        <T ID="114356" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
-      </U>
-    </UC>
+    <AR ID="-593215646" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
     <BC>
-      <U V="1">
-        <T ID="114356" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
+      <U V="200">
+        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
       </U>
-    </BC>
-    <GU>
-      <U V="" C="Residence7">
-        <T ID="22379" />
-        <A>
-          <U V="10">
-            <T ID="114329" I="data/ui/2kimages/main/3dicons/resident/icon_resident_sheperd.png" />
-          </U>
-        </A>
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="163059" />
-    <UT ID="1971679011" />
-  </Asset>
-  <Asset ID="101255" RV="Update 11" RT="Common">
-    <N>residence_colony01_tier02</N>
-    <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="3">
+      <U V="6">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
+      <U V="3">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
     </BC>
     <GU>
       <U V="" C="Residence7">
         <T ID="22379" />
         <A>
-          <U V="20">
+          <U V="45">
             <T ID="15000006" I="data/ui/2kimages/main/3dicons/resident/icon_resident_obrera.png" />
           </U>
         </A>
@@ -300,36 +387,5 @@
     <TP />
     <HF />
     <I ID="163059" />
-  </Asset>
-  <Asset ID="101254" RV="Update 11" RT="Common">
-    <N>residence_colony01_tier01</N>
-    <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <UC>
-      <U V="2">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </UC>
-    <BC>
-      <U V="1">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Residence7">
-        <T ID="22379" />
-        <A>
-          <U V="10">
-            <T ID="15000005" I="data/ui/2kimages/main/3dicons/resident/icon_resident_jornalero.png" />
-          </U>
-        </A>
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="163059" />
-    <UT ID="1313381114" />
   </Asset>
 </ResidenceBuilding7_Colony>

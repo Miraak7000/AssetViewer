@@ -74,13 +74,14 @@
                     </Style>
                   </ComboBox.Style>
                 </ComboBox>
-                <TextBox Text="{Binding SelectedFilter.SelectedValue, UpdateSourceTrigger=PropertyChanged, Delay=100}" TextChanged="ComboBox_SelectionChanged">
+                <TextBox SourceUpdated="ComboBox_SelectionChanged">
                   <TextBox.Style>
                     <Style TargetType="TextBox">
                       <Setter Property="Visibility" Value="Collapsed" />
                       <Style.Triggers>
                         <DataTrigger Binding="{Binding SelectedFilter.FilterType}" Value="{x:Static filter:FilterType.Text}">
                           <Setter Property="Visibility" Value="Visible" />
+                          <Setter Property="Text" Value="{Binding Path=SelectedFilter.SelectedValue, NotifyOnSourceUpdated=True, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Delay=100}" />
                         </DataTrigger>
                       </Style.Triggers>
                     </Style>
@@ -89,7 +90,6 @@
                 <CheckBox
                   HorizontalAlignment="Center"
                   Checked="ComboBox_SelectionChanged"
-                  IsChecked="{Binding SelectedFilter.SelectedValue}"
                   Unchecked="ComboBox_SelectionChanged">
                   <CheckBox.Style>
                     <Style TargetType="CheckBox">
@@ -97,6 +97,7 @@
                       <Style.Triggers>
                         <DataTrigger Binding="{Binding SelectedFilter.FilterType}" Value="{x:Static filter:FilterType.Bool}">
                           <Setter Property="Visibility" Value="Visible" />
+                          <Setter Property="IsChecked" Value="{Binding SelectedFilter.SelectedValue}"/>
                         </DataTrigger>
                       </Style.Triggers>
                     </Style>
@@ -149,7 +150,6 @@
                 <CheckBox
                   HorizontalAlignment="Center"
                   Checked="ComboBox_SelectionChanged"
-                  IsChecked="{Binding SelectedFilter.SelectedValue}"
                   Unchecked="ComboBox_SelectionChanged">
                   <CheckBox.Style>
                     <Style TargetType="CheckBox">
@@ -157,6 +157,7 @@
                       <Style.Triggers>
                         <DataTrigger Binding="{Binding SelectedFilter.ComparisonType}" Value="{x:Static filter:FilterType.Bool}">
                           <Setter Property="Visibility" Value="Visible" />
+                          <Setter Property="IsChecked" Value="{Binding SelectedFilter.SelectedValue}" />
                         </DataTrigger>
                       </Style.Triggers>
                     </Style>

@@ -34,8 +34,8 @@ namespace AssetViewer.Data {
       if (item.Element("RI") != null) {
         Additionals = item.Element("RI").Elements().Select(s => new Upgrade(s)).ToList();
       }
-      if (item.Element("IAU") != null) {
-        Additionals = item.Element("IAU").Elements().Select(s => new Upgrade(s)).ToList();
+      if (item.Element("IAUp") != null) {
+        Additionals = item.Element("IAUp").Elements().Select(s => new Upgrade(s)).ToList();
       }
       if (item.Element("RW") != null) {
         Additionals = item.Element("RW").Elements().Select(s => new Upgrade(s)).ToList();
