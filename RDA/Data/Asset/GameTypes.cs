@@ -13,5 +13,6 @@ namespace RDA.Data {
     Eden_Burning = 882,
     Seasons_of_Silver = 25160,
     A_Clash_of_Couriers = 100253,
+    Pride_and_Peddlers = 6390,
   }
 }

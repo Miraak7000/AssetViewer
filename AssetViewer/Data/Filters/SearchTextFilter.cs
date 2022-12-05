@@ -17,10 +17,11 @@ namespace AssetViewer.Data.Filters {
     public override string SelectedValue {
       get => _selectedValue;
       set {
-        if (!(_selectedValue?.Equals(value) ?? false)) {
+        var tempval = value.Trim();
+        if (!(_selectedValue?.Equals(tempval) ?? false)) {
           //_oldValue = _selectedValue;
-          if ((value != null && string.IsNullOrWhiteSpace(value)) || _possibilities == null || (FilterItems(_possibilities, value)?.Any() ?? false)) {
-            _selectedValue = value;
+          if ((tempval != null && string.IsNullOrWhiteSpace(tempval)) || _possibilities == null || (FilterItems(_possibilities, tempval)?.Any() ?? false)) {
+            _selectedValue = tempval;
             UpdateSavedItems();
           }
           RaisePropertyChanged();
