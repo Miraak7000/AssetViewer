@@ -192,6 +192,11 @@ namespace RDA.Data {
           case "PostBoxBuildingWithDepot":
           case "PostBoxBuildingWithPublicService":
           case "AirshipPlatformCliff":
+          case "PublicServiceBuildingWithMusicInfluencer":
+          case "FarmBuilding_Electrifiable":
+          case "CityInstitutionBuildingHeated":
+          case "CityInstitutionBuildingAdvanced":
+          case "MonumentColony":
             ItemType = "Building";
             break;
 
@@ -212,6 +217,7 @@ namespace RDA.Data {
           case "AirshipPlatformPostModule":
           case "AirshipPlatformModuleWorkforceTransfer":
           case "AirshipPostFreeModule":
+          case "FactoryModuleElectric":
             ItemType = "Module";
             break;
 
@@ -339,6 +345,7 @@ namespace RDA.Data {
           case "BusStop": //Costs
           case "MetaItemStorageAccess": 
           case "Postbox": 
+          case "MusicInfluencer": 
             break;
 
           case "Standard":
@@ -526,6 +533,10 @@ namespace RDA.Data {
           case "IrrigationSource":
             ProcessElement_IrrigationSource(element);
             break;
+          
+          //case "Season":
+          //  ProcessElement_Season(element);
+          //  break;
 
           default:
             Debug.WriteLine(element.Name.LocalName);
@@ -825,6 +836,7 @@ namespace RDA.Data {
         case "ShowInStatisticScreen":
         case "AdditionalTabData":
         case "AfricaOnlyWeaponActivationTime":
+        case "Feedback_AllowSpawnAtEntranceComing":
 
         //Ministary buffs (maybe todo)
         case "ElectricityRangeUpgrade":
@@ -1174,6 +1186,54 @@ namespace RDA.Data {
       }
     }
 
+    //private void ProcessElement_Season(XElement element) {
+    //  if (element.HasElements) {
+    //    foreach (var item in element.Elements()) {
+    //      switch (item.Name.LocalName) {
+    //        case "SeasonNameText":
+    //          Name = item.Value;
+    //          break;
+    //        case "SeasonTypeText":
+    //          Text = new Description(item.Value, GameType); 
+    //          break;
+    //        case "SeasonDuration":
+
+    //          break;
+    //        case "SeasonEffects":
+    //          EffectTargets =
+
+    //            if (element.HasElements) {
+    //            if (element.Element("EffectTargets")?.HasElements == true) {
+    //              EffectTargets = new List<EffectTarget>();
+    //              foreach (var item in element.XPathSelectElements("EffectTargets/Item/GUID")?.Where(e => !string.IsNullOrWhiteSpace(e.Value))) {
+    //                EffectTargets.Add(new EffectTarget(item, GameType));
+    //              }
+    //            }
+    //          }
+    //          break;
+    //        case "TradeEffects":
+
+    //          break;
+    //        case "SeasonFluffText":
+    //          Info = new Description(item.Value, GameType);
+    //          break;
+    //        case "SeasonEffects":
+
+    //          break;
+
+    //        //ignore
+    //        case "VisualEffectConfiguration":
+    //        case "TimerProgressColor":
+    //        case "BackgroundColor":
+    //          break;
+    //        default:
+    //          throw new NotImplementedException(item.Name.LocalName);
+    //          break;
+    //      }
+    //    }
+    //  }
+    //}
+
     private void ProcessElement_ItemWithUI(XElement element) {
       if (element.HasElements) {
         var actions = element.XPathSelectElement("ItemActions/Values/ActionList/Actions")?.Elements("Item")?.Select(a => a.Element("Action"));
@@ -1186,6 +1246,9 @@ namespace RDA.Data {
                 ItemWithUI.Add(new Upgrade(action, GameType));
                 break;
 
+              case "ActionTriggerTextBook":
+                ItemWithUI.Add(new Upgrade(action, GameType));
+                break;
               case "ActionAddResource":
                 //Todo: new with update 05 maybe implement. (dokuments that becomes deko buildings)
                 break;
@@ -1194,6 +1257,13 @@ namespace RDA.Data {
               case "ActionRegisterTrigger":
               case "ActionNotification":
               case "ActionReplaceItem":
+              case "ActionEndQuest":
+              case "ActionSpawnObjects":
+              case "ActionUnlockAsset":
+              case "ActionPlaySound":
+              case "ActionSetWeather":
+              case "ActionPlayMovie":
+              
                 //Ignore
                 break;
 
@@ -1257,7 +1327,8 @@ namespace RDA.Data {
             foundedName.MatchOne("BaseAssetGUID", "Icon", "ItemUsed", "TradePrice", "GenPool", "NotificationIcon",
             "ReplacingWorkforce", "ProductFilter", "BusNeed", "LineID", "PosX", "Context", "ProductionOutputInfotip",
             "UnlockNeeded", "TextOverride", "MedalObjectiveIcon", "UpgradeTarget", "ScenarioBaseAssetGUID", "drunkenwalk02", 
-            "MaximumHitPoints", "ItemReplacementPools", "PosY", "BasePrice", "StorageCapacityModifier", "ConsumedNeed")) {
+            "MaximumHitPoints", "ItemReplacementPools", "PosY", "BasePrice", "StorageCapacityModifier", "ConsumedNeed", "PublicService",
+            "ForceIcon", "NeedSatisfactionProduct")) {
             continue;
           }
           if (reference.Parent?.Parent?.Name.LocalName is string gparent &&
@@ -1339,6 +1410,8 @@ namespace RDA.Data {
               case "ResourceBarScene":  //Update 14
                                         // ignore
               case "ScenarioWorkshopItem":
+              case "TriggerScenarioProject": //Update 16 Szenario Milestone maybe implement source
+              case "Season": //Update 16 
 
                 break;
 
@@ -1364,6 +1437,8 @@ namespace RDA.Data {
               case "Profile_3rdParty_Pirate":
               case "Profile_2ndParty":
               case "Profile_3rdParty_ItemCrafter-NoTrader":
+              case "Profile_3rdParty-PlayerCounter":
+              case "Profile_3rdParty-PlayerCounterPirate":
                 if (key.MatchOne("199", "200", "240", "117422")) {
                   break;
                 }
@@ -1422,6 +1497,7 @@ namespace RDA.Data {
               case "A7_QuestPicturePuzzleObject":
               case "Quest":
               case "CollectablePicturePuzzle":
+              case "CollectablePicturePuzzleWithPropRemoval":
               case "MonumentEventReward":
               case "A7_QuestSmuggler":
               case "A7_QuestDivingBellGeneric":
@@ -1622,7 +1698,7 @@ namespace RDA.Data {
 
               default:
                 Debug.WriteLine(referencingAsset.Element("Template").Value);
-                throw new NotImplementedException(referencingAsset.Element("Template").Value);
+                //throw new NotImplementedException(referencingAsset.Element("Template").Value);
                 break;
             }
           if (result.Any()) {

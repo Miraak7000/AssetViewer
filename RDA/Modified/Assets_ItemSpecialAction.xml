@@ -1,5 +1,831 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ItemSpecialAction>
+  <Asset ID="191925" RV="Release" RT="Common" IR="true">
+    <N>Bag of Money</N>
+    <T ID="191925" I="data/ui/2kimages/main/3dicons/consumables/icon_moneybag_common.png" />
+    <R ID="118002" />
+    <IT>Item</IT>
+    <A ID="GuildHouse">
+      <T ID="2346" I="data/ui/2kimages/main/icons/icon_guild_2D.png" />
+    </A>
+    <IAU>
+      <U V="">
+        <T ID="20071" FS="16" />
+      </U>
+      <U V="-40%" C="IncidentInfectableUpgrade">
+        <T ID="12227" I="data/ui/2kimages/main/icons/icon_riot.png" />
+      </U>
+      <U V="00:50:00">
+        <T ID="2423" I="data/ui/2kimages/main/3dicons/icon_time.png" FS="16" />
+      </U>
+      <U V="">
+        <T ID="2421" I="data/ui/2kimages/main/icons/icon_untick.png" FS="16" />
+      </U>
+    </IAU>
+    <EA>
+      <U V="4">
+        <T ID="800029" I="data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png" />
+      </U>
+    </EA>
+    <GU />
+    <TP>1250</TP>
+    <HF>5000</HF>
+    <I ID="19552" />
+    <ET>
+      <ET>
+        <T ID="6000018" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010262" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+          <T ID="1010263" I="data/ui/2kimages/main/3dicons/icon_meat_raw.png" />
+          <T ID="1010264" I="data/ui/2kimages/main/3dicons/icon_hops.png" />
+          <T ID="1010265" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
+          <T ID="1010266" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+          <T ID="1010267" I="data/ui/2kimages/main/3dicons/icon_wool.png" />
+          <T ID="1010269" I="data/ui/2kimages/main/3dicons/icon_pigs.png" />
+          <T ID="1010558" I="data/ui/2kimages/main/3dicons/icon_fur.png" />
+          <T ID="100655" I="data/ui/2kimages/main/3dicons/icon_grapes.png" />
+          <T ID="100654" I="data/ui/2kimages/main/3dicons/icon_pepper.png" />
+          <T ID="1010278" I="data/ui/2kimages/main/3dicons/icon_fish.png" />
+          <T ID="1010310" I="data/ui/2kimages/main/3dicons/icon_niter.png" />
+          <T ID="1010560" I="data/ui/2kimages/main/3dicons/icon_quartz_sand.png" />
+          <T ID="1010280" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+          <T ID="1010281" I="data/ui/2kimages/main/3dicons/icon_soap_2.png" />
+          <T ID="100451" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+          <T ID="1010283" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+          <T ID="1010284" I="data/ui/2kimages/main/3dicons/icon_sewing_machine.png" />
+          <T ID="1010286" I="data/ui/2kimages/main/3dicons/icon_light_bulb.png" />
+          <T ID="1010285" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+          <T ID="1010288" I="data/ui/2kimages/main/3dicons/icon_sail.png" />
+          <T ID="1010289" I="data/ui/2kimages/main/3dicons/icon_chassis.png" />
+          <T ID="100416" I="data/ui/2kimages/main/3dicons/icon_clay.png" />
+          <T ID="1010291" I="data/ui/2kimages/main/3dicons/icon_bread.png" />
+          <T ID="1010292" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+          <T ID="1010293" I="data/ui/2kimages/main/3dicons/icon_goulash_01.png" />
+          <T ID="1010295" I="data/ui/2kimages/main/3dicons/icon_canned_goulash.png" />
+          <T ID="1010294" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
+          <T ID="1010316" I="data/ui/2kimages/main/3dicons/icon_meat_sausage.png" />
+          <T ID="100659" I="data/ui/2kimages/main/3dicons/icon_champagne.png" />
+          <T ID="1010296" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+          <T ID="1010297" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
+          <T ID="1010298" I="data/ui/2kimages/main/3dicons/icon_coal_burn.png" />
+          <T ID="1010299" I="data/ui/2kimages/main/3dicons/icon_weapons.png" />
+          <T ID="1010301" I="data/ui/2kimages/main/3dicons/icon_advanced_weaponry.png" />
+          <T ID="1010302" I="data/ui/2kimages/main/3dicons/icon_steam_machine.png" />
+          <T ID="1010303" I="data/ui/2kimages/main/3dicons/icon_steam_carriage.png" />
+          <T ID="1010282" I="data/ui/2kimages/main/3dicons/icon_brass.png" />
+          <T ID="101331" I="data/ui/2kimages/main/3dicons/icon_oil.png" />
+          <T ID="1010304" I="data/ui/2kimages/main/3dicons/icon_coal_2.png" />
+          <T ID="1010305" I="data/ui/2kimages/main/3dicons/icon_iron.png" />
+          <T ID="1010307" I="data/ui/2kimages/main/3dicons/icon_tin_ore.png" />
+          <T ID="1010308" I="data/ui/2kimages/main/3dicons/icon_copper.png" />
+          <T ID="1010309" I="data/ui/2kimages/main/3dicons/icon_cement.png" />
+          <T ID="1010311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
+          <T ID="1010312" I="data/ui/2kimages/main/3dicons/icon_tallow.png" />
+          <T ID="1010313" I="data/ui/2kimages/main/3dicons/icon_flour.png" />
+          <T ID="1010314" I="data/ui/2kimages/main/3dicons/icon_malt.png" />
+          <T ID="1010315" I="data/ui/2kimages/main/3dicons/icon_working_cloth.png" />
+          <T ID="1010300" I="data/ui/2kimages/main/3dicons/icon_dynamite.png" />
+          <T ID="1010319" I="data/ui/2kimages/main/3dicons/icon_glass.png" />
+          <T ID="1010320" I="data/ui/2kimages/main/3dicons/icon_inlay.png" />
+          <T ID="1010321" I="data/ui/2kimages/main/3dicons/icon_carbon_filament.png" />
+          <T ID="1010323" I="data/ui/2kimages/main/3dicons/icon_high_wheeler.png" />
+          <T ID="1010324" I="data/ui/2kimages/main/3dicons/icon_pocket_watch.png" />
+          <T ID="1010325" I="data/ui/2kimages/main/3dicons/icon_fur_coats.png" />
+          <T ID="1010326" I="data/ui/2kimages/main/3dicons/icon_phonographs.png" />
+          <T ID="1010327" I="data/ui/2kimages/main/3dicons/icon_gold.png" />
+          <T ID="1010328" I="data/ui/2kimages/main/3dicons/icon_jewelry.png" />
+          <T ID="101250" I="data/ui/2kimages/main/3dicons/icon_glasses.png" />
+          <T ID="1010329" I="data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png" />
+          <T ID="1010330" I="data/ui/2kimages/main/3dicons/icon_tobacco.png" />
+          <T ID="1010331" I="data/ui/2kimages/main/3dicons/icon_cotton.png" />
+          <T ID="1010332" I="data/ui/2kimages/main/3dicons/icon_cocoa.png" />
+          <T ID="1010333" I="data/ui/2kimages/main/3dicons/icon_caoutchouc.png" />
+          <T ID="1010266" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+          <T ID="101251" I="data/ui/2kimages/main/3dicons/icon_coffee_beans.png" />
+          <T ID="101263" I="data/ui/2kimages/main/3dicons/icon_banana.png" />
+          <T ID="1010263" I="data/ui/2kimages/main/3dicons/icon_meat_raw.png" />
+          <T ID="101270" I="data/ui/2kimages/main/3dicons/icon_corn.png" />
+          <T ID="101272" I="data/ui/2kimages/main/3dicons/icon_alpaca_wool.png" />
+          <T ID="1010342" I="data/ui/2kimages/main/3dicons/icon_cigars.png" />
+          <T ID="1010339" I="data/ui/2kimages/main/3dicons/icon_pearls.png" />
+          <T ID="101262" I="data/ui/2kimages/main/3dicons/icon_fishoil.png" />
+          <T ID="1010310" I="data/ui/2kimages/main/3dicons/icon_niter.png" />
+          <T ID="100451" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+          <T ID="1010288" I="data/ui/2kimages/main/3dicons/icon_sail.png" />
+          <T ID="1010318" I="data/ui/2kimages/main/3dicons/icon_cotton_fur.png" />
+          <T ID="100416" I="data/ui/2kimages/main/3dicons/icon_clay.png" />
+          <T ID="1010283" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+          <T ID="101415" I="data/ui/2kimages/main/3dicons/icon_felt.png" />
+          <T ID="101273" I="data/ui/2kimages/main/3dicons/icon_bowler_hat.png" />
+          <T ID="1010340" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
+          <T ID="1010341" I="data/ui/2kimages/main/3dicons/icon_chocolate.png" />
+          <T ID="101252" I="data/ui/2kimages/main/3dicons/icon_coffe_cup.png" />
+          <T ID="101264" I="data/ui/2kimages/main/3dicons/icon_fried_bananas.png" />
+          <T ID="101271" I="data/ui/2kimages/main/3dicons/icon_burrito.png" />
+          <T ID="101331" I="data/ui/2kimages/main/3dicons/icon_oil.png" />
+          <T ID="1010317" I="data/ui/2kimages/main/3dicons/icon_salt.png" />
+          <T ID="101266" I="data/ui/2kimages/main/3dicons/icon_poncho.png" />
+          <T ID="1010320" I="data/ui/2kimages/main/3dicons/icon_inlay.png" />
+          <T ID="1010342" I="data/ui/2kimages/main/3dicons/icon_cigars.png" />
+          <T ID="100780" I="data/ui/2kimages/main/3dicons/icon_electric_works_oil.png" />
+          <T ID="117547" I="data/ui/2kimages/main/3dicons/icon_electric_works_gas.png" />
+          <T ID="101311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
+          <T ID="118571" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
+          <T ID="118571" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
+          <T ID="122963" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
+          <T ID="114441" I="data/ui/2kimages/main/3dicons/goods_africa/icon_linen_fabric.png" />
+          <T ID="114466" I="data/ui/2kimages/main/3dicons/goods_africa/icon_traditional_clothing.png" />
+          <T ID="114440" I="data/ui/2kimages/main/3dicons/goods_africa/icon_salt.png" />
+          <T ID="114444" I="data/ui/2kimages/main/3dicons/goods_africa/icon_dried_meat.png" />
+          <T ID="114468" I="data/ui/2kimages/main/3dicons/goods_africa/icon_hibiscus_tea.png" />
+          <T ID="117743" I="data/ui/2kimages/main/3dicons/icon_clay.png" />
+          <T ID="114467" I="data/ui/2kimages/main/3dicons/goods_africa/icon_mud_bricks.png" />
+          <T ID="118725" I="data/ui/2kimages/main/3dicons/goods_africa/icon_ceramics.png" />
+          <T ID="114469" I="data/ui/2kimages/main/3dicons/goods_africa/icon_tapestries.png" />
+          <T ID="114459" I="data/ui/2kimages/main/3dicons/goods_africa/icon_teff_flour.png" />
+          <T ID="118729" I="data/ui/2kimages/main/3dicons/goods_africa/icon_seafood.png" />
+          <T ID="114471" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wat_stew.png" />
+          <T ID="114472" I="data/ui/2kimages/main/3dicons/goods_africa/icon_tobacco_pipes.png" />
+          <T ID="117744" I="data/ui/2kimages/main/3dicons/goods_africa/icon_paper.png" />
+          <T ID="114470" I="data/ui/2kimages/main/3dicons/goods_africa/icon_scriptures.png" />
+          <T ID="114461" I="data/ui/2kimages/main/3dicons/goods_africa/icon_candles.png" />
+          <T ID="114464" I="data/ui/2kimages/main/3dicons/goods_africa/icon_lanterns.png" />
+          <T ID="118733" I="data/ui/2kimages/main/3dicons/goods_africa/icon_leather_shoes.png" />
+          <T ID="118734" I="data/ui/2kimages/main/3dicons/goods_africa/icon_suits.png" />
+          <T ID="118735" I="data/ui/2kimages/main/3dicons/goods_africa/icon_telephones.png" />
+          <T ID="124738" I="data/ui/2kimages/main/3dicons/icon_coffe_cup.png" />
+          <T ID="124737" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
+          <T ID="124739" I="data/ui/2kimages/main/3dicons/icon_cotton_fur.png" />
+          <T ID="118571" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
+          <T ID="114452" I="data/ui/2kimages/main/3dicons/goods_africa/icon_spices.png" />
+          <T ID="114450" I="data/ui/2kimages/main/3dicons/goods_africa/icon_teff_grass.png" />
+          <T ID="114447" I="data/ui/2kimages/main/3dicons/goods_africa/icon_hibiscus_farm.png" />
+          <T ID="114451" I="data/ui/2kimages/main/3dicons/goods_africa/icon_indigo.png" />
+          <T ID="114456" I="data/ui/2kimages/main/3dicons/goods_africa/icon_goat_milk.png" />
+          <T ID="114448" I="data/ui/2kimages/main/3dicons/goods_africa/icon_linen_farm.png" />
+          <T ID="114439" I="data/ui/2kimages/main/3dicons/goods_africa/icon_watusi.png" />
+          <T ID="114453" I="data/ui/2kimages/main/3dicons/goods_africa/icon_beeswax.png" />
+          <T ID="25894" />
+          <T ID="435" />
+          <T ID="24805" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_fertiliser.png" />
+          <T ID="5457" I="data/ui/2kimages/main/3dicons/production_goods/icon_nandu_leather.png" />
+          <T ID="5463" I="data/ui/2kimages/main/3dicons/production_goods/icon_herbs_with_flower.png" />
+          <T ID="5814" I="data/ui/2kimages/main/3dicons/production_goods/icon_orchid.png" />
+          <T ID="1010297" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
+          <T ID="1010284" I="data/ui/2kimages/main/3dicons/icon_sewing_machine.png" />
+          <T ID="6279" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_electric_cable_3.png" />
+          <T ID="5458" I="data/ui/2kimages/main/3dicons/production_goods/icon_jalea.png" />
+          <T ID="5459" I="data/ui/2kimages/main/3dicons/production_goods/icon_icecream_cone.png" />
+          <T ID="6594" I="data/ui/2kimages/main/3dicons/production_goods/icon_mezcal.png" />
+          <T ID="5658" I="data/ui/2kimages/main/3dicons/production_goods/icon_scooter.png" />
+          <T ID="5659" I="data/ui/2kimages/main/3dicons/production_goods/icon_motor.png" />
+          <T ID="5862" I="data/ui/2kimages/main/3dicons/production_goods/icon_ventilator.png" />
+          <T ID="1010305" I="data/ui/2kimages/main/3dicons/icon_iron.png" />
+          <T ID="1010311" I="data/ui/2kimages/main/3dicons/production_goods/icon_minerals.png" />
+          <T ID="5657" I="data/ui/2kimages/main/3dicons/production_goods/icon_perfume.png" />
+          <T ID="5879" I="data/ui/2kimages/main/3dicons/production_goods/icon_ballsports.png" />
+          <T ID="5933" I="data/ui/2kimages/main/3dicons/production_goods/icon_costumes.png" />
+          <T ID="5828" I="data/ui/2kimages/main/3dicons/production_goods/icon_film_role.png" />
+          <T ID="6630" I="data/ui/2kimages/main/3dicons/recipes/icon_police_equipment.png" />
+          <T ID="6629" I="data/ui/2kimages/main/3dicons/production_goods/icon_extinguisher.png" />
+          <T ID="6631" I="data/ui/2kimages/main/3dicons/production_goods/icon_medicine.png" />
+          <T ID="5462" I="data/ui/2kimages/main/3dicons/production_goods/icon_pigments.png" />
+          <T ID="6006" I="data/ui/2kimages/main/3dicons/scenario/icon_dam_a.png" />
+          <T ID="7919" I="data/ui/2kimages/main/3dicons/production_goods/icon_squid.png" />
+          <T ID="1308" I="data/ui/2kimages/main/3dicons/icon_bauxit.png" />
+          <T ID="1353" I="data/ui/2kimages/main/3dicons/icon_helium.png" />
+        </B>
+      </ET>
+    </ET>
+    <S>
+      <S ID="129237" N="Naval Battles Angereb Map (Africa)">
+        <T ID="113420" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="7,69">
+            <T ID="1954620342" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_enbesa.png" />
+          </D>
+          <D W="2,5">
+            <T ID="-1095254098" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_01.png" />
+          </D>
+          <D W="2,5">
+            <T ID="556561350" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_01.png" />
+          </D>
+          <D W="2,5">
+            <T ID="1180528641" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_01.png" />
+          </D>
+        </DL>
+      </S>
+      <S ID="80" N="Second_ai_03 (Willie Wibblesock)">
+        <T ID="2050890057" I="data/ui/2kimages/main/profiles/ai_03.png" />
+        <DL>
+          <D W="1,56">
+            <T ID="80" I="data/ui/2kimages/main/profiles/ai_03.png" />
+          </D>
+        </DL>
+      </S>
+      <S ID="150399" N="Comeback King - Willie">
+        <T ID="-202254027" I="data/ui/2kimages/main/profiles/ai_03.png" />
+        <DL>
+          <D W="1,66">
+            <T ID="150399" />
+          </D>
+          <D W="1,66">
+            <T ID="150403" />
+          </D>
+          <D W="1,66">
+            <T ID="150404" />
+          </D>
+          <D W="1,66">
+            <T ID="150405" />
+          </D>
+          <D W="1,66">
+            <T ID="150406" />
+          </D>
+          <D W="1,66">
+            <T ID="150407" />
+          </D>
+          <D W="1,66">
+            <T ID="150408" />
+          </D>
+          <D W="1,66">
+            <T ID="150409" />
+          </D>
+          <D W="1,66">
+            <T ID="152396" />
+          </D>
+          <D W="1,66">
+            <T ID="152397" />
+          </D>
+          <D W="1,66">
+            <T ID="150415" />
+          </D>
+          <D W="1,66">
+            <T ID="150434" />
+          </D>
+          <D W="1,66">
+            <T ID="152684" />
+          </D>
+          <D W="1,66">
+            <T ID="150417" />
+          </D>
+          <D W="1,66">
+            <T ID="150423" />
+          </D>
+          <D W="1,66">
+            <T ID="150424" />
+          </D>
+          <D W="1,66">
+            <T ID="150425" />
+          </D>
+          <D W="1,66">
+            <T ID="150426" />
+          </D>
+          <D W="1,66">
+            <T ID="150433" />
+          </D>
+          <D W="1,66">
+            <T ID="150436" />
+          </D>
+          <D W="1,66">
+            <T ID="150437" />
+          </D>
+          <D W="1,66">
+            <T ID="152398" />
+          </D>
+          <D W="1,66">
+            <T ID="152652" />
+          </D>
+          <D W="1,66">
+            <T ID="152559" />
+          </D>
+          <D W="1,66">
+            <T ID="152561" />
+          </D>
+          <D W="1,66">
+            <T ID="152561" />
+          </D>
+          <D W="1,66">
+            <T ID="152563" />
+          </D>
+          <D W="1,66">
+            <T ID="152565" />
+          </D>
+          <D W="1,66">
+            <T ID="152566" />
+          </D>
+          <D W="2,38">
+            <T ID="150410" />
+          </D>
+          <D W="2,38">
+            <T ID="150427" />
+          </D>
+          <D W="2,38">
+            <T ID="152394" />
+          </D>
+          <D W="2,38">
+            <T ID="152395" />
+          </D>
+        </DL>
+      </S>
+      <S ID="80" N="Second_ai_03 (Willie Wibblesock)">
+        <T ID="-1318665365" I="data/ui/2kimages/main/profiles/ai_03.png" />
+        <DL>
+          <D W="5">
+            <T ID="1888403404" />
+          </D>
+          <D W="5">
+            <T ID="-6123924" />
+          </D>
+          <D W="5">
+            <T ID="-708827951" />
+          </D>
+          <D W="5">
+            <T ID="-2119299811" />
+          </D>
+          <D W="5">
+            <T ID="1800545910" />
+          </D>
+          <D W="5">
+            <T ID="-732355511" />
+          </D>
+          <D W="5">
+            <T ID="-563866922" />
+          </D>
+          <D W="5">
+            <T ID="-1852486986" />
+          </D>
+          <D W="5">
+            <T ID="685998752" />
+          </D>
+          <D W="5">
+            <T ID="1501673774" />
+          </D>
+          <D W="5">
+            <T ID="1718348902" />
+          </D>
+          <D W="5">
+            <T ID="-462634376" />
+          </D>
+        </DL>
+      </S>
+      <S ID="73" N="Third_party_03 (Anne Harlow)">
+        <T ID="-2142036734" I="data/ui/2kimages/main/profiles/3rd_party_03.png" />
+        <DL>
+          <D W="1,75">
+            <T ID="-6">
+              <AI ID="64127250" I="data/ui/2kimages/main/3dicons/resident/icon_resident_farmer.png" />
+            </T>
+          </D>
+          <D W="1,25">
+            <T ID="-7">
+              <AI ID="1952258737" I="data/ui/2kimages/main/3dicons/resident/icon_resident_worker.png" />
+            </T>
+          </D>
+          <D W="0,75">
+            <T ID="-8">
+              <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
+            </T>
+          </D>
+          <D W="0,62">
+            <T ID="-9">
+              <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
+            </T>
+          </D>
+          <D W="0,5">
+            <T ID="-10">
+              <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
+            </T>
+          </D>
+          <D W="0,37">
+            <T ID="-11">
+              <AI ID="-910786917" />
+            </T>
+          </D>
+        </DL>
+      </S>
+      <S ID="82" N="Second_ai_05 (Beryl O'Mara)">
+        <T ID="212207197" I="data/ui/2kimages/main/profiles/ai_05.png" />
+        <DL>
+          <D W="0,22">
+            <T ID="82" I="data/ui/2kimages/main/profiles/ai_05.png" />
+          </D>
+        </DL>
+      </S>
+      <S ID="150525" N="Deliver Champagne - Beryl">
+        <T ID="-856527857" I="data/ui/2kimages/main/profiles/ai_05.png" />
+        <DL>
+          <D W="0,29">
+            <T ID="150525" />
+          </D>
+          <D W="0,29">
+            <T ID="150526" />
+          </D>
+          <D W="0,29">
+            <T ID="150527" />
+          </D>
+          <D W="0,29">
+            <T ID="150528" />
+          </D>
+          <D W="0,29">
+            <T ID="150529" />
+          </D>
+          <D W="0,29">
+            <T ID="152493" />
+          </D>
+          <D W="0,29">
+            <T ID="152494" />
+          </D>
+          <D W="0,29">
+            <T ID="150535" />
+          </D>
+          <D W="0,29">
+            <T ID="150536" />
+          </D>
+          <D W="0,29">
+            <T ID="150537" />
+          </D>
+          <D W="0,29">
+            <T ID="150538" />
+          </D>
+          <D W="0,29">
+            <T ID="150539" />
+          </D>
+          <D W="0,29">
+            <T ID="150540" />
+          </D>
+          <D W="0,29">
+            <T ID="152497" />
+          </D>
+          <D W="0,29">
+            <T ID="152499" />
+          </D>
+          <D W="0,29">
+            <T ID="152500" />
+          </D>
+          <D W="0,29">
+            <T ID="150547" />
+          </D>
+          <D W="0,29">
+            <T ID="150548" />
+          </D>
+          <D W="0,29">
+            <T ID="152501" />
+          </D>
+          <D W="0,29">
+            <T ID="150558" />
+          </D>
+          <D W="0,29">
+            <T ID="152504" />
+          </D>
+          <D W="0,29">
+            <T ID="152510" />
+          </D>
+          <D W="0,29">
+            <T ID="152496" />
+          </D>
+          <D W="0,29">
+            <T ID="152973" />
+          </D>
+          <D W="0,29">
+            <T ID="152974" />
+          </D>
+          <D W="0,29">
+            <T ID="152549" />
+          </D>
+          <D W="0,29">
+            <T ID="152550" />
+          </D>
+          <D W="0,29">
+            <T ID="152552" />
+          </D>
+          <D W="0,44">
+            <T ID="152498" />
+          </D>
+          <D W="0,44">
+            <T ID="152508" />
+          </D>
+          <D W="0,44">
+            <T ID="152514" />
+          </D>
+          <D W="0,44">
+            <T ID="152520" />
+          </D>
+        </DL>
+      </S>
+      <S ID="82" N="Second_ai_05 (Beryl O'Mara)">
+        <T ID="831072714" I="data/ui/2kimages/main/profiles/ai_05.png" />
+        <DL>
+          <D W="0,88">
+            <T ID="1888403404" />
+          </D>
+          <D W="0,88">
+            <T ID="-6123924" />
+          </D>
+          <D W="0,88">
+            <T ID="-708827951" />
+          </D>
+          <D W="0,88">
+            <T ID="-2119299811" />
+          </D>
+          <D W="0,88">
+            <T ID="1800545910" />
+          </D>
+          <D W="0,88">
+            <T ID="-732355511" />
+          </D>
+          <D W="0,88">
+            <T ID="-563866922" />
+          </D>
+          <D W="0,88">
+            <T ID="-1852486986" />
+          </D>
+          <D W="0,88">
+            <T ID="685998752" />
+          </D>
+          <D W="0,88">
+            <T ID="1501673774" />
+          </D>
+          <D W="0,88">
+            <T ID="1718348902" />
+          </D>
+          <D W="0,88">
+            <T ID="-462634376" />
+          </D>
+        </DL>
+      </S>
+      <S ID="11" N="Second_ai_07 (Carl von Malching)">
+        <T ID="224919945" I="data/ui/2kimages/main/profiles/ai_07.png" />
+        <DL>
+          <D W="0,13">
+            <T ID="11" I="data/ui/2kimages/main/profiles/ai_07.png" />
+          </D>
+        </DL>
+      </S>
+      <S ID="150479" N="Deliver Brick-A-Brac - Malching">
+        <T ID="976990812" I="data/ui/2kimages/main/profiles/ai_07.png" />
+        <DL>
+          <D W="0,17">
+            <T ID="150479" />
+          </D>
+          <D W="0,17">
+            <T ID="150122" />
+          </D>
+          <D W="0,17">
+            <T ID="150121" />
+          </D>
+          <D W="0,17">
+            <T ID="150182" />
+          </D>
+          <D W="0,17">
+            <T ID="150185" />
+          </D>
+          <D W="0,17">
+            <T ID="150186" />
+          </D>
+          <D W="0,17">
+            <T ID="150072" />
+          </D>
+          <D W="0,17">
+            <T ID="150068" />
+          </D>
+          <D W="0,17">
+            <T ID="152586" />
+          </D>
+          <D W="0,17">
+            <T ID="152587" />
+          </D>
+          <D W="0,17">
+            <T ID="150067" />
+          </D>
+          <D W="0,17">
+            <T ID="150137" />
+          </D>
+          <D W="0,17">
+            <T ID="150135" />
+          </D>
+          <D W="0,17">
+            <T ID="150138" />
+          </D>
+          <D W="0,17">
+            <T ID="150081" />
+          </D>
+          <D W="0,17">
+            <T ID="150167" />
+          </D>
+          <D W="0,17">
+            <T ID="150150" />
+          </D>
+          <D W="0,17">
+            <T ID="153026" />
+          </D>
+          <D W="0,17">
+            <T ID="150200" />
+          </D>
+          <D W="0,17">
+            <T ID="152596" />
+          </D>
+          <D W="0,17">
+            <T ID="153217" />
+          </D>
+          <D W="0,17">
+            <T ID="152599" />
+          </D>
+          <D W="0,17">
+            <T ID="152602" />
+          </D>
+          <D W="0,17">
+            <T ID="152604" />
+          </D>
+          <D W="0,17">
+            <T ID="152878" />
+          </D>
+          <D W="0,17">
+            <T ID="152605" />
+          </D>
+          <D W="0,26">
+            <T ID="150181" />
+          </D>
+          <D W="0,26">
+            <T ID="153026" />
+          </D>
+          <D W="0,26">
+            <T ID="152589" />
+          </D>
+          <D W="0,26">
+            <T ID="152589" />
+          </D>
+          <D W="0,26">
+            <T ID="150201" />
+          </D>
+          <D W="0,26">
+            <T ID="152591" />
+          </D>
+          <D W="0,26">
+            <T ID="152594" />
+          </D>
+          <D W="0,26">
+            <T ID="152595" />
+          </D>
+        </DL>
+      </S>
+      <S ID="11" N="Second_ai_07 (Carl von Malching)">
+        <T ID="1760552810" I="data/ui/2kimages/main/profiles/ai_07.png" />
+        <DL>
+          <D W="0,53">
+            <T ID="1888403404" />
+          </D>
+          <D W="0,53">
+            <T ID="-6123924" />
+          </D>
+          <D W="0,53">
+            <T ID="-708827951" />
+          </D>
+          <D W="0,53">
+            <T ID="-2119299811" />
+          </D>
+          <D W="0,53">
+            <T ID="1800545910" />
+          </D>
+          <D W="0,53">
+            <T ID="-732355511" />
+          </D>
+          <D W="0,53">
+            <T ID="-563866922" />
+          </D>
+          <D W="0,53">
+            <T ID="-1852486986" />
+          </D>
+          <D W="0,53">
+            <T ID="685998752" />
+          </D>
+          <D W="0,53">
+            <T ID="1501673774" />
+          </D>
+          <D W="0,53">
+            <T ID="1718348902" />
+          </D>
+          <D W="0,53">
+            <T ID="-462634376" />
+          </D>
+        </DL>
+      </S>
+      <S ID="73" N="Third_party_03 (Anne Harlow)">
+        <T ID="1514529701" I="data/ui/2kimages/main/profiles/3rd_party_03.png" />
+        <DL>
+          <D W="0,19">
+            <T ID="73" I="data/ui/2kimages/main/profiles/3rd_party_03.png" />
+          </D>
+        </DL>
+      </S>
+      <S ID="150622" N="Farewell Drinks - Anne Harlow">
+        <T ID="1169735448" I="data/ui/2kimages/main/profiles/3rd_party_03.png" />
+        <DL>
+          <D W="0,25">
+            <T ID="150622" />
+          </D>
+          <D W="0,25">
+            <T ID="150651" />
+          </D>
+          <D W="0,25">
+            <T ID="150652" />
+          </D>
+          <D W="0,25">
+            <T ID="152228" />
+          </D>
+          <D W="0,25">
+            <T ID="150762" />
+          </D>
+          <D W="0,25">
+            <T ID="152234" />
+          </D>
+          <D W="0,25">
+            <T ID="150623" />
+          </D>
+          <D W="0,25">
+            <T ID="152232" />
+          </D>
+          <D W="0,25">
+            <T ID="152239" />
+          </D>
+          <D W="0,25">
+            <T ID="152242" />
+          </D>
+          <D W="0,25">
+            <T ID="150624" />
+          </D>
+          <D W="0,25">
+            <T ID="152248" />
+          </D>
+          <D W="0,25">
+            <T ID="152448" />
+          </D>
+          <D W="0,25">
+            <T ID="152253" />
+          </D>
+          <D W="0,25">
+            <T ID="152354" />
+          </D>
+          <D W="0,25">
+            <T ID="152168" />
+          </D>
+          <D W="0,25">
+            <T ID="152171" />
+          </D>
+          <D W="0,25">
+            <T ID="152175" />
+          </D>
+          <D W="0,38">
+            <T ID="152169" />
+          </D>
+          <D W="0,38">
+            <T ID="152238" />
+          </D>
+          <D W="0,38">
+            <T ID="152244" />
+          </D>
+          <D W="0,38">
+            <T ID="152207" />
+          </D>
+        </DL>
+      </S>
+      <S ID="151534" N="RQ_Investors_Newspaper">
+        <T ID="-238382587" I="data/ui/2kimages/main/profiles/resident_tier05.png" />
+        <DL>
+          <D W="1,66">
+            <T ID="151534" />
+          </D>
+          <D W="1,66">
+            <T ID="151538" />
+          </D>
+          <D W="1,66">
+            <T ID="151539" />
+          </D>
+          <D W="1,66">
+            <T ID="151547" />
+          </D>
+          <D W="1,66">
+            <T ID="151548" />
+          </D>
+          <D W="1,66">
+            <T ID="151549" />
+          </D>
+          <D W="1,66">
+            <T ID="151552" />
+          </D>
+          <D W="1,66">
+            <T ID="151554" />
+          </D>
+          <D W="1,66">
+            <T ID="151556" />
+          </D>
+        </DL>
+      </S>
+      <S ID="120244" N="ResearchFeature">
+        <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
+        <DL />
+      </S>
+    </S>
+  </Asset>
   <Asset ID="191924" RV="Release" RT="Rare" IR="true">
     <N>Huge Alcohol Crate</N>
     <T ID="191924" I="data/ui/2kimages/main/3dicons/consumables/icon_alcohol_bag_3.png" />
@@ -52,8 +878,10 @@
           <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
           <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
           <T ID="194018" />
-          <T ID="24792" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_jornalero.png" />
-          <T ID="24793" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_obrera.png" />
+          <T ID="24792" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_jornalero.png" />
+          <T ID="24793" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_obrera.png" />
+          <T ID="5405" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="6086" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_artista.png" />
         </B>
       </ET>
     </ET>
@@ -773,8 +1601,10 @@
           <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
           <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
           <T ID="194018" />
-          <T ID="24792" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_jornalero.png" />
-          <T ID="24793" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_obrera.png" />
+          <T ID="24792" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_jornalero.png" />
+          <T ID="24793" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_obrera.png" />
+          <T ID="5405" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="6086" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_artista.png" />
         </B>
       </ET>
     </ET>
@@ -1466,8 +2296,10 @@
           <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
           <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
           <T ID="194018" />
-          <T ID="24792" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_jornalero.png" />
-          <T ID="24793" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_obrera.png" />
+          <T ID="24792" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_jornalero.png" />
+          <T ID="24793" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_obrera.png" />
+          <T ID="5405" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="6086" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_artista.png" />
         </B>
       </ET>
     </ET>
@@ -2079,7 +2911,7 @@
           <T ID="1010342" I="data/ui/2kimages/main/3dicons/icon_cigars.png" />
           <T ID="100780" I="data/ui/2kimages/main/3dicons/icon_electric_works_oil.png" />
           <T ID="117547" I="data/ui/2kimages/main/3dicons/icon_electric_works_gas.png" />
-          <T ID="1010311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
+          <T ID="101311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
           <T ID="118571" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
           <T ID="118571" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
           <T ID="122963" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
@@ -2117,7 +2949,33 @@
           <T ID="114453" I="data/ui/2kimages/main/3dicons/goods_africa/icon_beeswax.png" />
           <T ID="25894" />
           <T ID="435" />
-          <T ID="24805" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_fertiliser.png" />
+          <T ID="24805" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_fertiliser.png" />
+          <T ID="5457" I="data/ui/2kimages/main/3dicons/production_goods/icon_nandu_leather.png" />
+          <T ID="5463" I="data/ui/2kimages/main/3dicons/production_goods/icon_herbs_with_flower.png" />
+          <T ID="5814" I="data/ui/2kimages/main/3dicons/production_goods/icon_orchid.png" />
+          <T ID="1010297" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
+          <T ID="1010284" I="data/ui/2kimages/main/3dicons/icon_sewing_machine.png" />
+          <T ID="6279" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_electric_cable_3.png" />
+          <T ID="5458" I="data/ui/2kimages/main/3dicons/production_goods/icon_jalea.png" />
+          <T ID="5459" I="data/ui/2kimages/main/3dicons/production_goods/icon_icecream_cone.png" />
+          <T ID="6594" I="data/ui/2kimages/main/3dicons/production_goods/icon_mezcal.png" />
+          <T ID="5658" I="data/ui/2kimages/main/3dicons/production_goods/icon_scooter.png" />
+          <T ID="5659" I="data/ui/2kimages/main/3dicons/production_goods/icon_motor.png" />
+          <T ID="5862" I="data/ui/2kimages/main/3dicons/production_goods/icon_ventilator.png" />
+          <T ID="1010305" I="data/ui/2kimages/main/3dicons/icon_iron.png" />
+          <T ID="1010311" I="data/ui/2kimages/main/3dicons/production_goods/icon_minerals.png" />
+          <T ID="5657" I="data/ui/2kimages/main/3dicons/production_goods/icon_perfume.png" />
+          <T ID="5879" I="data/ui/2kimages/main/3dicons/production_goods/icon_ballsports.png" />
+          <T ID="5933" I="data/ui/2kimages/main/3dicons/production_goods/icon_costumes.png" />
+          <T ID="5828" I="data/ui/2kimages/main/3dicons/production_goods/icon_film_role.png" />
+          <T ID="6630" I="data/ui/2kimages/main/3dicons/recipes/icon_police_equipment.png" />
+          <T ID="6629" I="data/ui/2kimages/main/3dicons/production_goods/icon_extinguisher.png" />
+          <T ID="6631" I="data/ui/2kimages/main/3dicons/production_goods/icon_medicine.png" />
+          <T ID="5462" I="data/ui/2kimages/main/3dicons/production_goods/icon_pigments.png" />
+          <T ID="6006" I="data/ui/2kimages/main/3dicons/scenario/icon_dam_a.png" />
+          <T ID="7919" I="data/ui/2kimages/main/3dicons/production_goods/icon_squid.png" />
+          <T ID="1308" I="data/ui/2kimages/main/3dicons/icon_bauxit.png" />
+          <T ID="1353" I="data/ui/2kimages/main/3dicons/icon_helium.png" />
         </B>
       </ET>
     </ET>
@@ -2811,7 +3669,7 @@
           <T ID="1010342" I="data/ui/2kimages/main/3dicons/icon_cigars.png" />
           <T ID="100780" I="data/ui/2kimages/main/3dicons/icon_electric_works_oil.png" />
           <T ID="117547" I="data/ui/2kimages/main/3dicons/icon_electric_works_gas.png" />
-          <T ID="1010311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
+          <T ID="101311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
           <T ID="118571" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
           <T ID="118571" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
           <T ID="122963" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
@@ -2849,7 +3707,33 @@
           <T ID="114453" I="data/ui/2kimages/main/3dicons/goods_africa/icon_beeswax.png" />
           <T ID="25894" />
           <T ID="435" />
-          <T ID="24805" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_fertiliser.png" />
+          <T ID="24805" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_fertiliser.png" />
+          <T ID="5457" I="data/ui/2kimages/main/3dicons/production_goods/icon_nandu_leather.png" />
+          <T ID="5463" I="data/ui/2kimages/main/3dicons/production_goods/icon_herbs_with_flower.png" />
+          <T ID="5814" I="data/ui/2kimages/main/3dicons/production_goods/icon_orchid.png" />
+          <T ID="1010297" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
+          <T ID="1010284" I="data/ui/2kimages/main/3dicons/icon_sewing_machine.png" />
+          <T ID="6279" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_electric_cable_3.png" />
+          <T ID="5458" I="data/ui/2kimages/main/3dicons/production_goods/icon_jalea.png" />
+          <T ID="5459" I="data/ui/2kimages/main/3dicons/production_goods/icon_icecream_cone.png" />
+          <T ID="6594" I="data/ui/2kimages/main/3dicons/production_goods/icon_mezcal.png" />
+          <T ID="5658" I="data/ui/2kimages/main/3dicons/production_goods/icon_scooter.png" />
+          <T ID="5659" I="data/ui/2kimages/main/3dicons/production_goods/icon_motor.png" />
+          <T ID="5862" I="data/ui/2kimages/main/3dicons/production_goods/icon_ventilator.png" />
+          <T ID="1010305" I="data/ui/2kimages/main/3dicons/icon_iron.png" />
+          <T ID="1010311" I="data/ui/2kimages/main/3dicons/production_goods/icon_minerals.png" />
+          <T ID="5657" I="data/ui/2kimages/main/3dicons/production_goods/icon_perfume.png" />
+          <T ID="5879" I="data/ui/2kimages/main/3dicons/production_goods/icon_ballsports.png" />
+          <T ID="5933" I="data/ui/2kimages/main/3dicons/production_goods/icon_costumes.png" />
+          <T ID="5828" I="data/ui/2kimages/main/3dicons/production_goods/icon_film_role.png" />
+          <T ID="6630" I="data/ui/2kimages/main/3dicons/recipes/icon_police_equipment.png" />
+          <T ID="6629" I="data/ui/2kimages/main/3dicons/production_goods/icon_extinguisher.png" />
+          <T ID="6631" I="data/ui/2kimages/main/3dicons/production_goods/icon_medicine.png" />
+          <T ID="5462" I="data/ui/2kimages/main/3dicons/production_goods/icon_pigments.png" />
+          <T ID="6006" I="data/ui/2kimages/main/3dicons/scenario/icon_dam_a.png" />
+          <T ID="7919" I="data/ui/2kimages/main/3dicons/production_goods/icon_squid.png" />
+          <T ID="1308" I="data/ui/2kimages/main/3dicons/icon_bauxit.png" />
+          <T ID="1353" I="data/ui/2kimages/main/3dicons/icon_helium.png" />
         </B>
       </ET>
     </ET>
@@ -3530,7 +4414,7 @@
           <T ID="1010342" I="data/ui/2kimages/main/3dicons/icon_cigars.png" />
           <T ID="100780" I="data/ui/2kimages/main/3dicons/icon_electric_works_oil.png" />
           <T ID="117547" I="data/ui/2kimages/main/3dicons/icon_electric_works_gas.png" />
-          <T ID="1010311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
+          <T ID="101311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
           <T ID="118571" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
           <T ID="118571" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
           <T ID="122963" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
@@ -3568,7 +4452,33 @@
           <T ID="114453" I="data/ui/2kimages/main/3dicons/goods_africa/icon_beeswax.png" />
           <T ID="25894" />
           <T ID="435" />
-          <T ID="24805" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_fertiliser.png" />
+          <T ID="24805" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_fertiliser.png" />
+          <T ID="5457" I="data/ui/2kimages/main/3dicons/production_goods/icon_nandu_leather.png" />
+          <T ID="5463" I="data/ui/2kimages/main/3dicons/production_goods/icon_herbs_with_flower.png" />
+          <T ID="5814" I="data/ui/2kimages/main/3dicons/production_goods/icon_orchid.png" />
+          <T ID="1010297" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
+          <T ID="1010284" I="data/ui/2kimages/main/3dicons/icon_sewing_machine.png" />
+          <T ID="6279" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_electric_cable_3.png" />
+          <T ID="5458" I="data/ui/2kimages/main/3dicons/production_goods/icon_jalea.png" />
+          <T ID="5459" I="data/ui/2kimages/main/3dicons/production_goods/icon_icecream_cone.png" />
+          <T ID="6594" I="data/ui/2kimages/main/3dicons/production_goods/icon_mezcal.png" />
+          <T ID="5658" I="data/ui/2kimages/main/3dicons/production_goods/icon_scooter.png" />
+          <T ID="5659" I="data/ui/2kimages/main/3dicons/production_goods/icon_motor.png" />
+          <T ID="5862" I="data/ui/2kimages/main/3dicons/production_goods/icon_ventilator.png" />
+          <T ID="1010305" I="data/ui/2kimages/main/3dicons/icon_iron.png" />
+          <T ID="1010311" I="data/ui/2kimages/main/3dicons/production_goods/icon_minerals.png" />
+          <T ID="5657" I="data/ui/2kimages/main/3dicons/production_goods/icon_perfume.png" />
+          <T ID="5879" I="data/ui/2kimages/main/3dicons/production_goods/icon_ballsports.png" />
+          <T ID="5933" I="data/ui/2kimages/main/3dicons/production_goods/icon_costumes.png" />
+          <T ID="5828" I="data/ui/2kimages/main/3dicons/production_goods/icon_film_role.png" />
+          <T ID="6630" I="data/ui/2kimages/main/3dicons/recipes/icon_police_equipment.png" />
+          <T ID="6629" I="data/ui/2kimages/main/3dicons/production_goods/icon_extinguisher.png" />
+          <T ID="6631" I="data/ui/2kimages/main/3dicons/production_goods/icon_medicine.png" />
+          <T ID="5462" I="data/ui/2kimages/main/3dicons/production_goods/icon_pigments.png" />
+          <T ID="6006" I="data/ui/2kimages/main/3dicons/scenario/icon_dam_a.png" />
+          <T ID="7919" I="data/ui/2kimages/main/3dicons/production_goods/icon_squid.png" />
+          <T ID="1308" I="data/ui/2kimages/main/3dicons/icon_bauxit.png" />
+          <T ID="1353" I="data/ui/2kimages/main/3dicons/icon_helium.png" />
         </B>
       </ET>
     </ET>
@@ -5830,8 +6740,11 @@
           <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
           <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
           <T ID="194018" />
-          <T ID="24792" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_jornalero.png" />
-          <T ID="24793" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_obrera.png" />
+          <T ID="24792" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_jornalero.png" />
+          <T ID="24793" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_obrera.png" />
+          <T ID="6086" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_artista.png" />
+          <T ID="5405" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="6086" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_artista.png" />
         </B>
       </ET>
     </ET>
@@ -13935,13 +14848,57 @@
     <I ID="19181" />
     <S />
   </Asset>
+  <Asset ID="105630" RV="Update 16" RT="Quest">
+    <N>QI Horn</N>
+    <T ID="105630" I="data/ui/2kimages/main/3dicons/machine_items/icon_fog_horn.png" />
+    <R ID="118007" />
+    <IT>Item</IT>
+    <A ID="AarhantShip">
+      <T ID="105636" I="data/ui/2kimages/main/3dicons/icon_lateen_sails.png" />
+    </A>
+    <IAU>
+      <U V="">
+        <T ID="105637" FS="16" />
+      </U>
+      <U V="00:03">
+        <T ID="2423" I="data/ui/2kimages/main/3dicons/icon_time.png" FS="16" />
+      </U>
+    </IAU>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="105635" />
+    <S />
+  </Asset>
+  <Asset ID="105522" RV="Update 16" RT="Quest">
+    <N>QI Fishing Net</N>
+    <T ID="105522" I="data/ui/2kimages/main/3dicons/machine_items/icon_fishernet_2.png" />
+    <R ID="118007" />
+    <IT>Item</IT>
+    <A ID="AarhantShip">
+      <T ID="105636" I="data/ui/2kimages/main/3dicons/icon_lateen_sails.png" />
+    </A>
+    <IAU>
+      <U V="">
+        <T ID="105524" FS="16" />
+      </U>
+      <U V="">
+        <T ID="2421" I="data/ui/2kimages/main/icons/icon_untick.png" FS="16" />
+      </U>
+    </IAU>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="105523" />
+    <S />
+  </Asset>
   <Asset ID="102178" RV="Update 15" RT="Epic">
     <N>S03 Lost Item 4</N>
     <T ID="102178" I="data/ui/2kimages/main/3dicons/consumables/icon_moneybag_common.png" />
     <R ID="118005" />
     <IT>Item</IT>
-    <A ID="GuildHouse">
-      <T ID="2346" I="data/ui/2kimages/main/icons/icon_guild_2D.png" />
+    <A ID="TownHall">
+      <T ID="2347" I="data/ui/2kimages/main/icons/icon_house.png" />
     </A>
     <IAU>
       <U V="">
@@ -15250,9 +16207,11 @@
           <T ID="1010307" I="data/ui/2kimages/main/3dicons/icon_tin_ore.png" />
           <T ID="1010308" I="data/ui/2kimages/main/3dicons/icon_copper.png" />
           <T ID="1010311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
-          <T ID="1010311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
+          <T ID="101311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
           <T ID="1353" I="data/ui/2kimages/main/3dicons/icon_helium.png" />
           <T ID="1308" I="data/ui/2kimages/main/3dicons/icon_bauxit.png" />
+          <T ID="1010311" I="data/ui/2kimages/main/3dicons/production_goods/icon_minerals.png" />
+          <T ID="1010305" I="data/ui/2kimages/main/3dicons/icon_iron.png" />
         </B>
       </ET>
     </ET>
@@ -15436,9 +16395,11 @@
           <T ID="1010307" I="data/ui/2kimages/main/3dicons/icon_tin_ore.png" />
           <T ID="1010308" I="data/ui/2kimages/main/3dicons/icon_copper.png" />
           <T ID="1010311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
-          <T ID="1010311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
+          <T ID="101311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
           <T ID="1353" I="data/ui/2kimages/main/3dicons/icon_helium.png" />
           <T ID="1308" I="data/ui/2kimages/main/3dicons/icon_bauxit.png" />
+          <T ID="1010311" I="data/ui/2kimages/main/3dicons/production_goods/icon_minerals.png" />
+          <T ID="1010305" I="data/ui/2kimages/main/3dicons/icon_iron.png" />
         </B>
       </ET>
     </ET>
@@ -15619,9 +16580,11 @@
           <T ID="1010307" I="data/ui/2kimages/main/3dicons/icon_tin_ore.png" />
           <T ID="1010308" I="data/ui/2kimages/main/3dicons/icon_copper.png" />
           <T ID="1010311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
-          <T ID="1010311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
+          <T ID="101311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
           <T ID="1353" I="data/ui/2kimages/main/3dicons/icon_helium.png" />
           <T ID="1308" I="data/ui/2kimages/main/3dicons/icon_bauxit.png" />
+          <T ID="1010311" I="data/ui/2kimages/main/3dicons/production_goods/icon_minerals.png" />
+          <T ID="1010305" I="data/ui/2kimages/main/3dicons/icon_iron.png" />
         </B>
       </ET>
     </ET>
@@ -18482,9 +19445,11 @@
           <T ID="1010307" I="data/ui/2kimages/main/3dicons/icon_tin_ore.png" />
           <T ID="1010308" I="data/ui/2kimages/main/3dicons/icon_copper.png" />
           <T ID="1010311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
-          <T ID="1010311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
+          <T ID="101311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
           <T ID="1353" I="data/ui/2kimages/main/3dicons/icon_helium.png" />
           <T ID="1308" I="data/ui/2kimages/main/3dicons/icon_bauxit.png" />
+          <T ID="1010311" I="data/ui/2kimages/main/3dicons/production_goods/icon_minerals.png" />
+          <T ID="1010305" I="data/ui/2kimages/main/3dicons/icon_iron.png" />
         </B>
       </ET>
     </ET>
@@ -18738,9 +19703,11 @@
           <T ID="1010307" I="data/ui/2kimages/main/3dicons/icon_tin_ore.png" />
           <T ID="1010308" I="data/ui/2kimages/main/3dicons/icon_copper.png" />
           <T ID="1010311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
-          <T ID="1010311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
+          <T ID="101311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
           <T ID="1353" I="data/ui/2kimages/main/3dicons/icon_helium.png" />
           <T ID="1308" I="data/ui/2kimages/main/3dicons/icon_bauxit.png" />
+          <T ID="1010311" I="data/ui/2kimages/main/3dicons/production_goods/icon_minerals.png" />
+          <T ID="1010305" I="data/ui/2kimages/main/3dicons/icon_iron.png" />
         </B>
       </ET>
     </ET>
@@ -20645,7 +21612,7 @@
     <I ID="110964" />
     <ET>
       <ET>
-        <T ID="191454" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <T ID="191454" I="data/ui/2kimages/main/icons/icon_shipsymbol.png" />
         <B>
           <T ID="101121" I="data/ui/2kimages/main/3dicons/ships/icon_ship_commandship.png" />
           <T ID="100437" I="data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png" />
@@ -20728,8 +21695,10 @@
           <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
           <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
           <T ID="194018" />
-          <T ID="24792" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_jornalero.png" />
-          <T ID="24793" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_obrera.png" />
+          <T ID="24792" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_jornalero.png" />
+          <T ID="24793" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_obrera.png" />
+          <T ID="5405" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="6086" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_artista.png" />
         </B>
       </ET>
     </ET>
@@ -21269,8 +22238,10 @@
           <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
           <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
           <T ID="194018" />
-          <T ID="24792" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_jornalero.png" />
-          <T ID="24793" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_obrera.png" />
+          <T ID="24792" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_jornalero.png" />
+          <T ID="24793" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_obrera.png" />
+          <T ID="5405" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="6086" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_artista.png" />
         </B>
       </ET>
     </ET>
@@ -21778,8 +22749,10 @@
           <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
           <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
           <T ID="194018" />
-          <T ID="24792" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_jornalero.png" />
-          <T ID="24793" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_obrera.png" />
+          <T ID="24792" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_jornalero.png" />
+          <T ID="24793" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_obrera.png" />
+          <T ID="5405" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="6086" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_artista.png" />
         </B>
       </ET>
     </ET>
@@ -22320,8 +23293,10 @@
           <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
           <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
           <T ID="194018" />
-          <T ID="24792" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_jornalero.png" />
-          <T ID="24793" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_obrera.png" />
+          <T ID="24792" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_jornalero.png" />
+          <T ID="24793" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_obrera.png" />
+          <T ID="5405" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="6086" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_artista.png" />
         </B>
       </ET>
     </ET>
@@ -22827,8 +23802,10 @@
           <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
           <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
           <T ID="194018" />
-          <T ID="24792" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_jornalero.png" />
-          <T ID="24793" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_obrera.png" />
+          <T ID="24792" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_jornalero.png" />
+          <T ID="24793" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_obrera.png" />
+          <T ID="5405" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="6086" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_artista.png" />
         </B>
       </ET>
     </ET>
@@ -23331,8 +24308,10 @@
           <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
           <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
           <T ID="194018" />
-          <T ID="24792" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_jornalero.png" />
-          <T ID="24793" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_obrera.png" />
+          <T ID="24792" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_jornalero.png" />
+          <T ID="24793" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_obrera.png" />
+          <T ID="5405" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="6086" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_artista.png" />
         </B>
       </ET>
     </ET>
@@ -23843,8 +24822,10 @@
           <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
           <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
           <T ID="194018" />
-          <T ID="24792" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_jornalero.png" />
-          <T ID="24793" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_obrera.png" />
+          <T ID="24792" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_jornalero.png" />
+          <T ID="24793" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_obrera.png" />
+          <T ID="5405" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="6086" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_artista.png" />
         </B>
       </ET>
     </ET>
@@ -24356,8 +25337,10 @@
           <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
           <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
           <T ID="194018" />
-          <T ID="24792" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_jornalero.png" />
-          <T ID="24793" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_obrera.png" />
+          <T ID="24792" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_jornalero.png" />
+          <T ID="24793" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_obrera.png" />
+          <T ID="5405" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="6086" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_artista.png" />
         </B>
       </ET>
     </ET>
@@ -24894,9 +25877,11 @@
           <T ID="1010307" I="data/ui/2kimages/main/3dicons/icon_tin_ore.png" />
           <T ID="1010308" I="data/ui/2kimages/main/3dicons/icon_copper.png" />
           <T ID="1010311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
-          <T ID="1010311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
+          <T ID="101311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
           <T ID="1353" I="data/ui/2kimages/main/3dicons/icon_helium.png" />
           <T ID="1308" I="data/ui/2kimages/main/3dicons/icon_bauxit.png" />
+          <T ID="1010311" I="data/ui/2kimages/main/3dicons/production_goods/icon_minerals.png" />
+          <T ID="1010305" I="data/ui/2kimages/main/3dicons/icon_iron.png" />
         </B>
       </ET>
     </ET>
@@ -25562,9 +26547,11 @@
           <T ID="1010307" I="data/ui/2kimages/main/3dicons/icon_tin_ore.png" />
           <T ID="1010308" I="data/ui/2kimages/main/3dicons/icon_copper.png" />
           <T ID="1010311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
-          <T ID="1010311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
+          <T ID="101311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
           <T ID="1353" I="data/ui/2kimages/main/3dicons/icon_helium.png" />
           <T ID="1308" I="data/ui/2kimages/main/3dicons/icon_bauxit.png" />
+          <T ID="1010311" I="data/ui/2kimages/main/3dicons/production_goods/icon_minerals.png" />
+          <T ID="1010305" I="data/ui/2kimages/main/3dicons/icon_iron.png" />
         </B>
       </ET>
     </ET>
@@ -33485,17 +34472,17 @@
               <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
             </T>
           </D>
-          <D W="2,58">
+          <D W="2,56">
             <T ID="-9">
               <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
             </T>
           </D>
-          <D W="3,25">
+          <D W="3,22">
             <T ID="-10">
               <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
             </T>
           </D>
-          <D W="3,84">
+          <D W="3,78">
             <T ID="-11">
               <AI ID="-910786917" />
             </T>
@@ -33999,17 +34986,17 @@
               <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
             </T>
           </D>
-          <D W="2,29">
+          <D W="2,27">
             <T ID="-9">
               <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
             </T>
           </D>
-          <D W="1,62">
+          <D W="1,61">
             <T ID="-10">
               <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
             </T>
           </D>
-          <D W="1,025">
+          <D W="1,01">
             <T ID="-11">
               <AI ID="-910786917" />
             </T>
@@ -35073,7 +36060,7 @@
           <T ID="190779" I="data/ui/2kimages/main/3dicons/icon_fish.png" />
           <T ID="190783" I="data/ui/2kimages/main/3dicons/icon_small_shipyard.png" />
           <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
-          <T ID="191443" I="data/ui/2kimages/main/icons/icon_threat_melee_tint.png" />
+          <T ID="191443" I="data/ui/2kimages/main/icons/achievement/icon_achievement_category_military.png" />
           <T ID="4065" I="data/ui/2kimages/main/3dicons/icon_harbour_kontor.png" />
           <T ID="1010519" I="data/ui/2kimages/main/3dicons/icon_depot.png" />
           <T ID="1010525" I="data/ui/2kimages/main/3dicons/icon_repair_crane.png" />
@@ -35127,6 +36114,8 @@
           <T ID="1010519" I="data/ui/2kimages/main/3dicons/icon_docklands_module_depot.png" />
           <T ID="1010525" I="data/ui/2kimages/main/3dicons/icon_docklands_module_crane.png" />
           <T ID="131778" I="data/ui/2kimages/main/3dicons/icon_docklands_module_speed.png" />
+          <T ID="2968" I="data/ui/2kimages/main/3dicons/military_building/icon_flack_tower.png" />
+          <T ID="7919" I="data/ui/2kimages/main/3dicons/production_goods/icon_squid.png" />
         </B>
       </ET>
     </ET>
@@ -35328,17 +36317,17 @@
               <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
             </T>
           </D>
-          <D W="2,29">
+          <D W="2,27">
             <T ID="-9">
               <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
             </T>
           </D>
-          <D W="1,62">
+          <D W="1,61">
             <T ID="-10">
               <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
             </T>
           </D>
-          <D W="1,025">
+          <D W="1,01">
             <T ID="-11">
               <AI ID="-910786917" />
             </T>
@@ -35833,7 +36822,7 @@
           <T ID="190779" I="data/ui/2kimages/main/3dicons/icon_fish.png" />
           <T ID="190783" I="data/ui/2kimages/main/3dicons/icon_small_shipyard.png" />
           <T ID="190797" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
-          <T ID="191443" I="data/ui/2kimages/main/icons/icon_threat_melee_tint.png" />
+          <T ID="191443" I="data/ui/2kimages/main/icons/achievement/icon_achievement_category_military.png" />
           <T ID="4065" I="data/ui/2kimages/main/3dicons/icon_harbour_kontor.png" />
           <T ID="1010519" I="data/ui/2kimages/main/3dicons/icon_depot.png" />
           <T ID="1010525" I="data/ui/2kimages/main/3dicons/icon_repair_crane.png" />
@@ -35887,6 +36876,8 @@
           <T ID="1010519" I="data/ui/2kimages/main/3dicons/icon_docklands_module_depot.png" />
           <T ID="1010525" I="data/ui/2kimages/main/3dicons/icon_docklands_module_crane.png" />
           <T ID="131778" I="data/ui/2kimages/main/3dicons/icon_docklands_module_speed.png" />
+          <T ID="2968" I="data/ui/2kimages/main/3dicons/military_building/icon_flack_tower.png" />
+          <T ID="7919" I="data/ui/2kimages/main/3dicons/production_goods/icon_squid.png" />
         </B>
       </ET>
     </ET>
@@ -35929,17 +36920,17 @@
               <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
             </T>
           </D>
-          <D W="1,43">
+          <D W="1,42">
             <T ID="-9">
               <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
             </T>
           </D>
-          <D W="1,084">
+          <D W="1,075">
             <T ID="-10">
               <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
             </T>
           </D>
-          <D W="0,76">
+          <D W="0,75">
             <T ID="-11">
               <AI ID="-910786917" />
             </T>
@@ -44749,7 +45740,7 @@
           <T ID="1010342" I="data/ui/2kimages/main/3dicons/icon_cigars.png" />
           <T ID="100780" I="data/ui/2kimages/main/3dicons/icon_electric_works_oil.png" />
           <T ID="117547" I="data/ui/2kimages/main/3dicons/icon_electric_works_gas.png" />
-          <T ID="1010311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
+          <T ID="101311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
           <T ID="118571" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
           <T ID="118571" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
           <T ID="122963" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
@@ -44787,7 +45778,33 @@
           <T ID="114453" I="data/ui/2kimages/main/3dicons/goods_africa/icon_beeswax.png" />
           <T ID="25894" />
           <T ID="435" />
-          <T ID="24805" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_fertiliser.png" />
+          <T ID="24805" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_fertiliser.png" />
+          <T ID="5457" I="data/ui/2kimages/main/3dicons/production_goods/icon_nandu_leather.png" />
+          <T ID="5463" I="data/ui/2kimages/main/3dicons/production_goods/icon_herbs_with_flower.png" />
+          <T ID="5814" I="data/ui/2kimages/main/3dicons/production_goods/icon_orchid.png" />
+          <T ID="1010297" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
+          <T ID="1010284" I="data/ui/2kimages/main/3dicons/icon_sewing_machine.png" />
+          <T ID="6279" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_electric_cable_3.png" />
+          <T ID="5458" I="data/ui/2kimages/main/3dicons/production_goods/icon_jalea.png" />
+          <T ID="5459" I="data/ui/2kimages/main/3dicons/production_goods/icon_icecream_cone.png" />
+          <T ID="6594" I="data/ui/2kimages/main/3dicons/production_goods/icon_mezcal.png" />
+          <T ID="5658" I="data/ui/2kimages/main/3dicons/production_goods/icon_scooter.png" />
+          <T ID="5659" I="data/ui/2kimages/main/3dicons/production_goods/icon_motor.png" />
+          <T ID="5862" I="data/ui/2kimages/main/3dicons/production_goods/icon_ventilator.png" />
+          <T ID="1010305" I="data/ui/2kimages/main/3dicons/icon_iron.png" />
+          <T ID="1010311" I="data/ui/2kimages/main/3dicons/production_goods/icon_minerals.png" />
+          <T ID="5657" I="data/ui/2kimages/main/3dicons/production_goods/icon_perfume.png" />
+          <T ID="5879" I="data/ui/2kimages/main/3dicons/production_goods/icon_ballsports.png" />
+          <T ID="5933" I="data/ui/2kimages/main/3dicons/production_goods/icon_costumes.png" />
+          <T ID="5828" I="data/ui/2kimages/main/3dicons/production_goods/icon_film_role.png" />
+          <T ID="6630" I="data/ui/2kimages/main/3dicons/recipes/icon_police_equipment.png" />
+          <T ID="6629" I="data/ui/2kimages/main/3dicons/production_goods/icon_extinguisher.png" />
+          <T ID="6631" I="data/ui/2kimages/main/3dicons/production_goods/icon_medicine.png" />
+          <T ID="5462" I="data/ui/2kimages/main/3dicons/production_goods/icon_pigments.png" />
+          <T ID="6006" I="data/ui/2kimages/main/3dicons/scenario/icon_dam_a.png" />
+          <T ID="7919" I="data/ui/2kimages/main/3dicons/production_goods/icon_squid.png" />
+          <T ID="1308" I="data/ui/2kimages/main/3dicons/icon_bauxit.png" />
+          <T ID="1353" I="data/ui/2kimages/main/3dicons/icon_helium.png" />
         </B>
       </ET>
     </ET>
@@ -45737,7 +46754,7 @@
           <T ID="1010342" I="data/ui/2kimages/main/3dicons/icon_cigars.png" />
           <T ID="100780" I="data/ui/2kimages/main/3dicons/icon_electric_works_oil.png" />
           <T ID="117547" I="data/ui/2kimages/main/3dicons/icon_electric_works_gas.png" />
-          <T ID="1010311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
+          <T ID="101311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
           <T ID="118571" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
           <T ID="118571" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
           <T ID="122963" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
@@ -45775,7 +46792,33 @@
           <T ID="114453" I="data/ui/2kimages/main/3dicons/goods_africa/icon_beeswax.png" />
           <T ID="25894" />
           <T ID="435" />
-          <T ID="24805" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_fertiliser.png" />
+          <T ID="24805" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_fertiliser.png" />
+          <T ID="5457" I="data/ui/2kimages/main/3dicons/production_goods/icon_nandu_leather.png" />
+          <T ID="5463" I="data/ui/2kimages/main/3dicons/production_goods/icon_herbs_with_flower.png" />
+          <T ID="5814" I="data/ui/2kimages/main/3dicons/production_goods/icon_orchid.png" />
+          <T ID="1010297" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
+          <T ID="1010284" I="data/ui/2kimages/main/3dicons/icon_sewing_machine.png" />
+          <T ID="6279" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_electric_cable_3.png" />
+          <T ID="5458" I="data/ui/2kimages/main/3dicons/production_goods/icon_jalea.png" />
+          <T ID="5459" I="data/ui/2kimages/main/3dicons/production_goods/icon_icecream_cone.png" />
+          <T ID="6594" I="data/ui/2kimages/main/3dicons/production_goods/icon_mezcal.png" />
+          <T ID="5658" I="data/ui/2kimages/main/3dicons/production_goods/icon_scooter.png" />
+          <T ID="5659" I="data/ui/2kimages/main/3dicons/production_goods/icon_motor.png" />
+          <T ID="5862" I="data/ui/2kimages/main/3dicons/production_goods/icon_ventilator.png" />
+          <T ID="1010305" I="data/ui/2kimages/main/3dicons/icon_iron.png" />
+          <T ID="1010311" I="data/ui/2kimages/main/3dicons/production_goods/icon_minerals.png" />
+          <T ID="5657" I="data/ui/2kimages/main/3dicons/production_goods/icon_perfume.png" />
+          <T ID="5879" I="data/ui/2kimages/main/3dicons/production_goods/icon_ballsports.png" />
+          <T ID="5933" I="data/ui/2kimages/main/3dicons/production_goods/icon_costumes.png" />
+          <T ID="5828" I="data/ui/2kimages/main/3dicons/production_goods/icon_film_role.png" />
+          <T ID="6630" I="data/ui/2kimages/main/3dicons/recipes/icon_police_equipment.png" />
+          <T ID="6629" I="data/ui/2kimages/main/3dicons/production_goods/icon_extinguisher.png" />
+          <T ID="6631" I="data/ui/2kimages/main/3dicons/production_goods/icon_medicine.png" />
+          <T ID="5462" I="data/ui/2kimages/main/3dicons/production_goods/icon_pigments.png" />
+          <T ID="6006" I="data/ui/2kimages/main/3dicons/scenario/icon_dam_a.png" />
+          <T ID="7919" I="data/ui/2kimages/main/3dicons/production_goods/icon_squid.png" />
+          <T ID="1308" I="data/ui/2kimages/main/3dicons/icon_bauxit.png" />
+          <T ID="1353" I="data/ui/2kimages/main/3dicons/icon_helium.png" />
         </B>
       </ET>
     </ET>
@@ -46568,806 +47611,6 @@
             <T ID="151556" />
           </D>
         </DL>
-      </S>
-    </S>
-  </Asset>
-  <Asset ID="191925" RV="Release" RT="Common" IR="true">
-    <N>Bag of Money</N>
-    <T ID="191925" I="data/ui/2kimages/main/3dicons/consumables/icon_moneybag_common.png" />
-    <R ID="118002" />
-    <IT>Item</IT>
-    <A ID="GuildHouse">
-      <T ID="2346" I="data/ui/2kimages/main/icons/icon_guild_2D.png" />
-    </A>
-    <IAU>
-      <U V="">
-        <T ID="20071" FS="16" />
-      </U>
-      <U V="-40%" C="IncidentInfectableUpgrade">
-        <T ID="12227" I="data/ui/2kimages/main/icons/icon_riot.png" />
-      </U>
-      <U V="00:50:00">
-        <T ID="2423" I="data/ui/2kimages/main/3dicons/icon_time.png" FS="16" />
-      </U>
-      <U V="">
-        <T ID="2421" I="data/ui/2kimages/main/icons/icon_untick.png" FS="16" />
-      </U>
-    </IAU>
-    <EA>
-      <U V="4">
-        <T ID="800029" I="data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png" />
-      </U>
-    </EA>
-    <GU />
-    <TP>1250</TP>
-    <HF>5000</HF>
-    <I ID="19552" />
-    <ET>
-      <ET>
-        <T ID="6000018" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
-        <B>
-          <T ID="1010262" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
-          <T ID="1010263" I="data/ui/2kimages/main/3dicons/icon_meat_raw.png" />
-          <T ID="1010264" I="data/ui/2kimages/main/3dicons/icon_hops.png" />
-          <T ID="1010265" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
-          <T ID="1010266" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
-          <T ID="1010267" I="data/ui/2kimages/main/3dicons/icon_wool.png" />
-          <T ID="1010269" I="data/ui/2kimages/main/3dicons/icon_pigs.png" />
-          <T ID="1010558" I="data/ui/2kimages/main/3dicons/icon_fur.png" />
-          <T ID="100655" I="data/ui/2kimages/main/3dicons/icon_grapes.png" />
-          <T ID="100654" I="data/ui/2kimages/main/3dicons/icon_pepper.png" />
-          <T ID="1010278" I="data/ui/2kimages/main/3dicons/icon_fish.png" />
-          <T ID="1010310" I="data/ui/2kimages/main/3dicons/icon_niter.png" />
-          <T ID="1010560" I="data/ui/2kimages/main/3dicons/icon_quartz_sand.png" />
-          <T ID="1010280" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
-          <T ID="1010281" I="data/ui/2kimages/main/3dicons/icon_soap_2.png" />
-          <T ID="100451" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-          <T ID="1010283" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-          <T ID="1010284" I="data/ui/2kimages/main/3dicons/icon_sewing_machine.png" />
-          <T ID="1010286" I="data/ui/2kimages/main/3dicons/icon_light_bulb.png" />
-          <T ID="1010285" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-          <T ID="1010288" I="data/ui/2kimages/main/3dicons/icon_sail.png" />
-          <T ID="1010289" I="data/ui/2kimages/main/3dicons/icon_chassis.png" />
-          <T ID="100416" I="data/ui/2kimages/main/3dicons/icon_clay.png" />
-          <T ID="1010291" I="data/ui/2kimages/main/3dicons/icon_bread.png" />
-          <T ID="1010292" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
-          <T ID="1010293" I="data/ui/2kimages/main/3dicons/icon_goulash_01.png" />
-          <T ID="1010295" I="data/ui/2kimages/main/3dicons/icon_canned_goulash.png" />
-          <T ID="1010294" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
-          <T ID="1010316" I="data/ui/2kimages/main/3dicons/icon_meat_sausage.png" />
-          <T ID="100659" I="data/ui/2kimages/main/3dicons/icon_champagne.png" />
-          <T ID="1010296" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-          <T ID="1010297" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
-          <T ID="1010298" I="data/ui/2kimages/main/3dicons/icon_coal_burn.png" />
-          <T ID="1010299" I="data/ui/2kimages/main/3dicons/icon_weapons.png" />
-          <T ID="1010301" I="data/ui/2kimages/main/3dicons/icon_advanced_weaponry.png" />
-          <T ID="1010302" I="data/ui/2kimages/main/3dicons/icon_steam_machine.png" />
-          <T ID="1010303" I="data/ui/2kimages/main/3dicons/icon_steam_carriage.png" />
-          <T ID="1010282" I="data/ui/2kimages/main/3dicons/icon_brass.png" />
-          <T ID="101331" I="data/ui/2kimages/main/3dicons/icon_oil.png" />
-          <T ID="1010304" I="data/ui/2kimages/main/3dicons/icon_coal_2.png" />
-          <T ID="1010305" I="data/ui/2kimages/main/3dicons/icon_iron.png" />
-          <T ID="1010307" I="data/ui/2kimages/main/3dicons/icon_tin_ore.png" />
-          <T ID="1010308" I="data/ui/2kimages/main/3dicons/icon_copper.png" />
-          <T ID="1010309" I="data/ui/2kimages/main/3dicons/icon_cement.png" />
-          <T ID="1010311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
-          <T ID="1010312" I="data/ui/2kimages/main/3dicons/icon_tallow.png" />
-          <T ID="1010313" I="data/ui/2kimages/main/3dicons/icon_flour.png" />
-          <T ID="1010314" I="data/ui/2kimages/main/3dicons/icon_malt.png" />
-          <T ID="1010315" I="data/ui/2kimages/main/3dicons/icon_working_cloth.png" />
-          <T ID="1010300" I="data/ui/2kimages/main/3dicons/icon_dynamite.png" />
-          <T ID="1010319" I="data/ui/2kimages/main/3dicons/icon_glass.png" />
-          <T ID="1010320" I="data/ui/2kimages/main/3dicons/icon_inlay.png" />
-          <T ID="1010321" I="data/ui/2kimages/main/3dicons/icon_carbon_filament.png" />
-          <T ID="1010323" I="data/ui/2kimages/main/3dicons/icon_high_wheeler.png" />
-          <T ID="1010324" I="data/ui/2kimages/main/3dicons/icon_pocket_watch.png" />
-          <T ID="1010325" I="data/ui/2kimages/main/3dicons/icon_fur_coats.png" />
-          <T ID="1010326" I="data/ui/2kimages/main/3dicons/icon_phonographs.png" />
-          <T ID="1010327" I="data/ui/2kimages/main/3dicons/icon_gold.png" />
-          <T ID="1010328" I="data/ui/2kimages/main/3dicons/icon_jewelry.png" />
-          <T ID="101250" I="data/ui/2kimages/main/3dicons/icon_glasses.png" />
-          <T ID="1010329" I="data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png" />
-          <T ID="1010330" I="data/ui/2kimages/main/3dicons/icon_tobacco.png" />
-          <T ID="1010331" I="data/ui/2kimages/main/3dicons/icon_cotton.png" />
-          <T ID="1010332" I="data/ui/2kimages/main/3dicons/icon_cocoa.png" />
-          <T ID="1010333" I="data/ui/2kimages/main/3dicons/icon_caoutchouc.png" />
-          <T ID="1010266" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
-          <T ID="101251" I="data/ui/2kimages/main/3dicons/icon_coffee_beans.png" />
-          <T ID="101263" I="data/ui/2kimages/main/3dicons/icon_banana.png" />
-          <T ID="1010263" I="data/ui/2kimages/main/3dicons/icon_meat_raw.png" />
-          <T ID="101270" I="data/ui/2kimages/main/3dicons/icon_corn.png" />
-          <T ID="101272" I="data/ui/2kimages/main/3dicons/icon_alpaca_wool.png" />
-          <T ID="1010342" I="data/ui/2kimages/main/3dicons/icon_cigars.png" />
-          <T ID="1010339" I="data/ui/2kimages/main/3dicons/icon_pearls.png" />
-          <T ID="101262" I="data/ui/2kimages/main/3dicons/icon_fishoil.png" />
-          <T ID="1010310" I="data/ui/2kimages/main/3dicons/icon_niter.png" />
-          <T ID="100451" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-          <T ID="1010288" I="data/ui/2kimages/main/3dicons/icon_sail.png" />
-          <T ID="1010318" I="data/ui/2kimages/main/3dicons/icon_cotton_fur.png" />
-          <T ID="100416" I="data/ui/2kimages/main/3dicons/icon_clay.png" />
-          <T ID="1010283" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-          <T ID="101415" I="data/ui/2kimages/main/3dicons/icon_felt.png" />
-          <T ID="101273" I="data/ui/2kimages/main/3dicons/icon_bowler_hat.png" />
-          <T ID="1010340" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
-          <T ID="1010341" I="data/ui/2kimages/main/3dicons/icon_chocolate.png" />
-          <T ID="101252" I="data/ui/2kimages/main/3dicons/icon_coffe_cup.png" />
-          <T ID="101264" I="data/ui/2kimages/main/3dicons/icon_fried_bananas.png" />
-          <T ID="101271" I="data/ui/2kimages/main/3dicons/icon_burrito.png" />
-          <T ID="101331" I="data/ui/2kimages/main/3dicons/icon_oil.png" />
-          <T ID="1010317" I="data/ui/2kimages/main/3dicons/icon_salt.png" />
-          <T ID="101266" I="data/ui/2kimages/main/3dicons/icon_poncho.png" />
-          <T ID="1010320" I="data/ui/2kimages/main/3dicons/icon_inlay.png" />
-          <T ID="1010342" I="data/ui/2kimages/main/3dicons/icon_cigars.png" />
-          <T ID="100780" I="data/ui/2kimages/main/3dicons/icon_electric_works_oil.png" />
-          <T ID="117547" I="data/ui/2kimages/main/3dicons/icon_electric_works_gas.png" />
-          <T ID="1010311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
-          <T ID="118571" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
-          <T ID="118571" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
-          <T ID="122963" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
-          <T ID="114441" I="data/ui/2kimages/main/3dicons/goods_africa/icon_linen_fabric.png" />
-          <T ID="114466" I="data/ui/2kimages/main/3dicons/goods_africa/icon_traditional_clothing.png" />
-          <T ID="114440" I="data/ui/2kimages/main/3dicons/goods_africa/icon_salt.png" />
-          <T ID="114444" I="data/ui/2kimages/main/3dicons/goods_africa/icon_dried_meat.png" />
-          <T ID="114468" I="data/ui/2kimages/main/3dicons/goods_africa/icon_hibiscus_tea.png" />
-          <T ID="117743" I="data/ui/2kimages/main/3dicons/icon_clay.png" />
-          <T ID="114467" I="data/ui/2kimages/main/3dicons/goods_africa/icon_mud_bricks.png" />
-          <T ID="118725" I="data/ui/2kimages/main/3dicons/goods_africa/icon_ceramics.png" />
-          <T ID="114469" I="data/ui/2kimages/main/3dicons/goods_africa/icon_tapestries.png" />
-          <T ID="114459" I="data/ui/2kimages/main/3dicons/goods_africa/icon_teff_flour.png" />
-          <T ID="118729" I="data/ui/2kimages/main/3dicons/goods_africa/icon_seafood.png" />
-          <T ID="114471" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wat_stew.png" />
-          <T ID="114472" I="data/ui/2kimages/main/3dicons/goods_africa/icon_tobacco_pipes.png" />
-          <T ID="117744" I="data/ui/2kimages/main/3dicons/goods_africa/icon_paper.png" />
-          <T ID="114470" I="data/ui/2kimages/main/3dicons/goods_africa/icon_scriptures.png" />
-          <T ID="114461" I="data/ui/2kimages/main/3dicons/goods_africa/icon_candles.png" />
-          <T ID="114464" I="data/ui/2kimages/main/3dicons/goods_africa/icon_lanterns.png" />
-          <T ID="118733" I="data/ui/2kimages/main/3dicons/goods_africa/icon_leather_shoes.png" />
-          <T ID="118734" I="data/ui/2kimages/main/3dicons/goods_africa/icon_suits.png" />
-          <T ID="118735" I="data/ui/2kimages/main/3dicons/goods_africa/icon_telephones.png" />
-          <T ID="124738" I="data/ui/2kimages/main/3dicons/icon_coffe_cup.png" />
-          <T ID="124737" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
-          <T ID="124739" I="data/ui/2kimages/main/3dicons/icon_cotton_fur.png" />
-          <T ID="118571" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
-          <T ID="114452" I="data/ui/2kimages/main/3dicons/goods_africa/icon_spices.png" />
-          <T ID="114450" I="data/ui/2kimages/main/3dicons/goods_africa/icon_teff_grass.png" />
-          <T ID="114447" I="data/ui/2kimages/main/3dicons/goods_africa/icon_hibiscus_farm.png" />
-          <T ID="114451" I="data/ui/2kimages/main/3dicons/goods_africa/icon_indigo.png" />
-          <T ID="114456" I="data/ui/2kimages/main/3dicons/goods_africa/icon_goat_milk.png" />
-          <T ID="114448" I="data/ui/2kimages/main/3dicons/goods_africa/icon_linen_farm.png" />
-          <T ID="114439" I="data/ui/2kimages/main/3dicons/goods_africa/icon_watusi.png" />
-          <T ID="114453" I="data/ui/2kimages/main/3dicons/goods_africa/icon_beeswax.png" />
-          <T ID="25894" />
-          <T ID="435" />
-          <T ID="24805" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_fertiliser.png" />
-        </B>
-      </ET>
-    </ET>
-    <S>
-      <S ID="129237" N="Naval Battles Angereb Map (Africa)">
-        <T ID="113420" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
-        <DL>
-          <D W="7,69">
-            <T ID="1954620342" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_enbesa.png" />
-          </D>
-          <D W="2,5">
-            <T ID="-1095254098" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_oldworld_01.png" />
-          </D>
-          <D W="2,5">
-            <T ID="556561350" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_newworld_01.png" />
-          </D>
-          <D W="2,5">
-            <T ID="1180528641" I="data/ui/2kimages/main/3dicons/treasure_map/item_treasuremap_st_01.png" />
-          </D>
-        </DL>
-      </S>
-      <S ID="80" N="Second_ai_03 (Willie Wibblesock)">
-        <T ID="2050890057" I="data/ui/2kimages/main/profiles/ai_03.png" />
-        <DL>
-          <D W="1,56">
-            <T ID="80" I="data/ui/2kimages/main/profiles/ai_03.png" />
-          </D>
-        </DL>
-      </S>
-      <S ID="150399" N="Comeback King - Willie">
-        <T ID="-202254027" I="data/ui/2kimages/main/profiles/ai_03.png" />
-        <DL>
-          <D W="1,66">
-            <T ID="150399" />
-          </D>
-          <D W="1,66">
-            <T ID="150403" />
-          </D>
-          <D W="1,66">
-            <T ID="150404" />
-          </D>
-          <D W="1,66">
-            <T ID="150405" />
-          </D>
-          <D W="1,66">
-            <T ID="150406" />
-          </D>
-          <D W="1,66">
-            <T ID="150407" />
-          </D>
-          <D W="1,66">
-            <T ID="150408" />
-          </D>
-          <D W="1,66">
-            <T ID="150409" />
-          </D>
-          <D W="1,66">
-            <T ID="152396" />
-          </D>
-          <D W="1,66">
-            <T ID="152397" />
-          </D>
-          <D W="1,66">
-            <T ID="150415" />
-          </D>
-          <D W="1,66">
-            <T ID="150434" />
-          </D>
-          <D W="1,66">
-            <T ID="152684" />
-          </D>
-          <D W="1,66">
-            <T ID="150417" />
-          </D>
-          <D W="1,66">
-            <T ID="150423" />
-          </D>
-          <D W="1,66">
-            <T ID="150424" />
-          </D>
-          <D W="1,66">
-            <T ID="150425" />
-          </D>
-          <D W="1,66">
-            <T ID="150426" />
-          </D>
-          <D W="1,66">
-            <T ID="150433" />
-          </D>
-          <D W="1,66">
-            <T ID="150436" />
-          </D>
-          <D W="1,66">
-            <T ID="150437" />
-          </D>
-          <D W="1,66">
-            <T ID="152398" />
-          </D>
-          <D W="1,66">
-            <T ID="152652" />
-          </D>
-          <D W="1,66">
-            <T ID="152559" />
-          </D>
-          <D W="1,66">
-            <T ID="152561" />
-          </D>
-          <D W="1,66">
-            <T ID="152561" />
-          </D>
-          <D W="1,66">
-            <T ID="152563" />
-          </D>
-          <D W="1,66">
-            <T ID="152565" />
-          </D>
-          <D W="1,66">
-            <T ID="152566" />
-          </D>
-          <D W="2,38">
-            <T ID="150410" />
-          </D>
-          <D W="2,38">
-            <T ID="150427" />
-          </D>
-          <D W="2,38">
-            <T ID="152394" />
-          </D>
-          <D W="2,38">
-            <T ID="152395" />
-          </D>
-        </DL>
-      </S>
-      <S ID="80" N="Second_ai_03 (Willie Wibblesock)">
-        <T ID="-1318665365" I="data/ui/2kimages/main/profiles/ai_03.png" />
-        <DL>
-          <D W="5">
-            <T ID="1888403404" />
-          </D>
-          <D W="5">
-            <T ID="-6123924" />
-          </D>
-          <D W="5">
-            <T ID="-708827951" />
-          </D>
-          <D W="5">
-            <T ID="-2119299811" />
-          </D>
-          <D W="5">
-            <T ID="1800545910" />
-          </D>
-          <D W="5">
-            <T ID="-732355511" />
-          </D>
-          <D W="5">
-            <T ID="-563866922" />
-          </D>
-          <D W="5">
-            <T ID="-1852486986" />
-          </D>
-          <D W="5">
-            <T ID="685998752" />
-          </D>
-          <D W="5">
-            <T ID="1501673774" />
-          </D>
-          <D W="5">
-            <T ID="1718348902" />
-          </D>
-          <D W="5">
-            <T ID="-462634376" />
-          </D>
-        </DL>
-      </S>
-      <S ID="73" N="Third_party_03 (Anne Harlow)">
-        <T ID="-2142036734" I="data/ui/2kimages/main/profiles/3rd_party_03.png" />
-        <DL>
-          <D W="1,75">
-            <T ID="-6">
-              <AI ID="64127250" I="data/ui/2kimages/main/3dicons/resident/icon_resident_farmer.png" />
-            </T>
-          </D>
-          <D W="1,25">
-            <T ID="-7">
-              <AI ID="1952258737" I="data/ui/2kimages/main/3dicons/resident/icon_resident_worker.png" />
-            </T>
-          </D>
-          <D W="0,75">
-            <T ID="-8">
-              <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
-            </T>
-          </D>
-          <D W="0,62">
-            <T ID="-9">
-              <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
-            </T>
-          </D>
-          <D W="0,5">
-            <T ID="-10">
-              <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
-            </T>
-          </D>
-          <D W="0,37">
-            <T ID="-11">
-              <AI ID="-910786917" />
-            </T>
-          </D>
-        </DL>
-      </S>
-      <S ID="82" N="Second_ai_05 (Beryl O'Mara)">
-        <T ID="212207197" I="data/ui/2kimages/main/profiles/ai_05.png" />
-        <DL>
-          <D W="0,22">
-            <T ID="82" I="data/ui/2kimages/main/profiles/ai_05.png" />
-          </D>
-        </DL>
-      </S>
-      <S ID="150525" N="Deliver Champagne - Beryl">
-        <T ID="-856527857" I="data/ui/2kimages/main/profiles/ai_05.png" />
-        <DL>
-          <D W="0,29">
-            <T ID="150525" />
-          </D>
-          <D W="0,29">
-            <T ID="150526" />
-          </D>
-          <D W="0,29">
-            <T ID="150527" />
-          </D>
-          <D W="0,29">
-            <T ID="150528" />
-          </D>
-          <D W="0,29">
-            <T ID="150529" />
-          </D>
-          <D W="0,29">
-            <T ID="152493" />
-          </D>
-          <D W="0,29">
-            <T ID="152494" />
-          </D>
-          <D W="0,29">
-            <T ID="150535" />
-          </D>
-          <D W="0,29">
-            <T ID="150536" />
-          </D>
-          <D W="0,29">
-            <T ID="150537" />
-          </D>
-          <D W="0,29">
-            <T ID="150538" />
-          </D>
-          <D W="0,29">
-            <T ID="150539" />
-          </D>
-          <D W="0,29">
-            <T ID="150540" />
-          </D>
-          <D W="0,29">
-            <T ID="152497" />
-          </D>
-          <D W="0,29">
-            <T ID="152499" />
-          </D>
-          <D W="0,29">
-            <T ID="152500" />
-          </D>
-          <D W="0,29">
-            <T ID="150547" />
-          </D>
-          <D W="0,29">
-            <T ID="150548" />
-          </D>
-          <D W="0,29">
-            <T ID="152501" />
-          </D>
-          <D W="0,29">
-            <T ID="150558" />
-          </D>
-          <D W="0,29">
-            <T ID="152504" />
-          </D>
-          <D W="0,29">
-            <T ID="152510" />
-          </D>
-          <D W="0,29">
-            <T ID="152496" />
-          </D>
-          <D W="0,29">
-            <T ID="152973" />
-          </D>
-          <D W="0,29">
-            <T ID="152974" />
-          </D>
-          <D W="0,29">
-            <T ID="152549" />
-          </D>
-          <D W="0,29">
-            <T ID="152550" />
-          </D>
-          <D W="0,29">
-            <T ID="152552" />
-          </D>
-          <D W="0,44">
-            <T ID="152498" />
-          </D>
-          <D W="0,44">
-            <T ID="152508" />
-          </D>
-          <D W="0,44">
-            <T ID="152514" />
-          </D>
-          <D W="0,44">
-            <T ID="152520" />
-          </D>
-        </DL>
-      </S>
-      <S ID="82" N="Second_ai_05 (Beryl O'Mara)">
-        <T ID="831072714" I="data/ui/2kimages/main/profiles/ai_05.png" />
-        <DL>
-          <D W="0,88">
-            <T ID="1888403404" />
-          </D>
-          <D W="0,88">
-            <T ID="-6123924" />
-          </D>
-          <D W="0,88">
-            <T ID="-708827951" />
-          </D>
-          <D W="0,88">
-            <T ID="-2119299811" />
-          </D>
-          <D W="0,88">
-            <T ID="1800545910" />
-          </D>
-          <D W="0,88">
-            <T ID="-732355511" />
-          </D>
-          <D W="0,88">
-            <T ID="-563866922" />
-          </D>
-          <D W="0,88">
-            <T ID="-1852486986" />
-          </D>
-          <D W="0,88">
-            <T ID="685998752" />
-          </D>
-          <D W="0,88">
-            <T ID="1501673774" />
-          </D>
-          <D W="0,88">
-            <T ID="1718348902" />
-          </D>
-          <D W="0,88">
-            <T ID="-462634376" />
-          </D>
-        </DL>
-      </S>
-      <S ID="11" N="Second_ai_07 (Carl von Malching)">
-        <T ID="224919945" I="data/ui/2kimages/main/profiles/ai_07.png" />
-        <DL>
-          <D W="0,13">
-            <T ID="11" I="data/ui/2kimages/main/profiles/ai_07.png" />
-          </D>
-        </DL>
-      </S>
-      <S ID="150479" N="Deliver Brick-A-Brac - Malching">
-        <T ID="976990812" I="data/ui/2kimages/main/profiles/ai_07.png" />
-        <DL>
-          <D W="0,17">
-            <T ID="150479" />
-          </D>
-          <D W="0,17">
-            <T ID="150122" />
-          </D>
-          <D W="0,17">
-            <T ID="150121" />
-          </D>
-          <D W="0,17">
-            <T ID="150182" />
-          </D>
-          <D W="0,17">
-            <T ID="150185" />
-          </D>
-          <D W="0,17">
-            <T ID="150186" />
-          </D>
-          <D W="0,17">
-            <T ID="150072" />
-          </D>
-          <D W="0,17">
-            <T ID="150068" />
-          </D>
-          <D W="0,17">
-            <T ID="152586" />
-          </D>
-          <D W="0,17">
-            <T ID="152587" />
-          </D>
-          <D W="0,17">
-            <T ID="150067" />
-          </D>
-          <D W="0,17">
-            <T ID="150137" />
-          </D>
-          <D W="0,17">
-            <T ID="150135" />
-          </D>
-          <D W="0,17">
-            <T ID="150138" />
-          </D>
-          <D W="0,17">
-            <T ID="150081" />
-          </D>
-          <D W="0,17">
-            <T ID="150167" />
-          </D>
-          <D W="0,17">
-            <T ID="150150" />
-          </D>
-          <D W="0,17">
-            <T ID="153026" />
-          </D>
-          <D W="0,17">
-            <T ID="150200" />
-          </D>
-          <D W="0,17">
-            <T ID="152596" />
-          </D>
-          <D W="0,17">
-            <T ID="153217" />
-          </D>
-          <D W="0,17">
-            <T ID="152599" />
-          </D>
-          <D W="0,17">
-            <T ID="152602" />
-          </D>
-          <D W="0,17">
-            <T ID="152604" />
-          </D>
-          <D W="0,17">
-            <T ID="152878" />
-          </D>
-          <D W="0,17">
-            <T ID="152605" />
-          </D>
-          <D W="0,26">
-            <T ID="150181" />
-          </D>
-          <D W="0,26">
-            <T ID="153026" />
-          </D>
-          <D W="0,26">
-            <T ID="152589" />
-          </D>
-          <D W="0,26">
-            <T ID="152589" />
-          </D>
-          <D W="0,26">
-            <T ID="150201" />
-          </D>
-          <D W="0,26">
-            <T ID="152591" />
-          </D>
-          <D W="0,26">
-            <T ID="152594" />
-          </D>
-          <D W="0,26">
-            <T ID="152595" />
-          </D>
-        </DL>
-      </S>
-      <S ID="11" N="Second_ai_07 (Carl von Malching)">
-        <T ID="1760552810" I="data/ui/2kimages/main/profiles/ai_07.png" />
-        <DL>
-          <D W="0,53">
-            <T ID="1888403404" />
-          </D>
-          <D W="0,53">
-            <T ID="-6123924" />
-          </D>
-          <D W="0,53">
-            <T ID="-708827951" />
-          </D>
-          <D W="0,53">
-            <T ID="-2119299811" />
-          </D>
-          <D W="0,53">
-            <T ID="1800545910" />
-          </D>
-          <D W="0,53">
-            <T ID="-732355511" />
-          </D>
-          <D W="0,53">
-            <T ID="-563866922" />
-          </D>
-          <D W="0,53">
-            <T ID="-1852486986" />
-          </D>
-          <D W="0,53">
-            <T ID="685998752" />
-          </D>
-          <D W="0,53">
-            <T ID="1501673774" />
-          </D>
-          <D W="0,53">
-            <T ID="1718348902" />
-          </D>
-          <D W="0,53">
-            <T ID="-462634376" />
-          </D>
-        </DL>
-      </S>
-      <S ID="73" N="Third_party_03 (Anne Harlow)">
-        <T ID="1514529701" I="data/ui/2kimages/main/profiles/3rd_party_03.png" />
-        <DL>
-          <D W="0,19">
-            <T ID="73" I="data/ui/2kimages/main/profiles/3rd_party_03.png" />
-          </D>
-        </DL>
-      </S>
-      <S ID="150622" N="Farewell Drinks - Anne Harlow">
-        <T ID="1169735448" I="data/ui/2kimages/main/profiles/3rd_party_03.png" />
-        <DL>
-          <D W="0,25">
-            <T ID="150622" />
-          </D>
-          <D W="0,25">
-            <T ID="150651" />
-          </D>
-          <D W="0,25">
-            <T ID="150652" />
-          </D>
-          <D W="0,25">
-            <T ID="152228" />
-          </D>
-          <D W="0,25">
-            <T ID="150762" />
-          </D>
-          <D W="0,25">
-            <T ID="152234" />
-          </D>
-          <D W="0,25">
-            <T ID="150623" />
-          </D>
-          <D W="0,25">
-            <T ID="152232" />
-          </D>
-          <D W="0,25">
-            <T ID="152239" />
-          </D>
-          <D W="0,25">
-            <T ID="152242" />
-          </D>
-          <D W="0,25">
-            <T ID="150624" />
-          </D>
-          <D W="0,25">
-            <T ID="152248" />
-          </D>
-          <D W="0,25">
-            <T ID="152448" />
-          </D>
-          <D W="0,25">
-            <T ID="152253" />
-          </D>
-          <D W="0,25">
-            <T ID="152354" />
-          </D>
-          <D W="0,25">
-            <T ID="152168" />
-          </D>
-          <D W="0,25">
-            <T ID="152171" />
-          </D>
-          <D W="0,25">
-            <T ID="152175" />
-          </D>
-          <D W="0,38">
-            <T ID="152169" />
-          </D>
-          <D W="0,38">
-            <T ID="152238" />
-          </D>
-          <D W="0,38">
-            <T ID="152244" />
-          </D>
-          <D W="0,38">
-            <T ID="152207" />
-          </D>
-        </DL>
-      </S>
-      <S ID="151534" N="RQ_Investors_Newspaper">
-        <T ID="-238382587" I="data/ui/2kimages/main/profiles/resident_tier05.png" />
-        <DL>
-          <D W="1,66">
-            <T ID="151534" />
-          </D>
-          <D W="1,66">
-            <T ID="151538" />
-          </D>
-          <D W="1,66">
-            <T ID="151539" />
-          </D>
-          <D W="1,66">
-            <T ID="151547" />
-          </D>
-          <D W="1,66">
-            <T ID="151548" />
-          </D>
-          <D W="1,66">
-            <T ID="151549" />
-          </D>
-          <D W="1,66">
-            <T ID="151552" />
-          </D>
-          <D W="1,66">
-            <T ID="151554" />
-          </D>
-          <D W="1,66">
-            <T ID="151556" />
-          </D>
-        </DL>
-      </S>
-      <S ID="120244" N="ResearchFeature">
-        <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
-        <DL />
       </S>
     </S>
   </Asset>

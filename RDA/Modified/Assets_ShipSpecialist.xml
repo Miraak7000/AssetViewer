@@ -1,5 +1,1897 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ShipSpecialist>
+  <Asset ID="191450 (Pride_and_Peddlers)" RV="Release" RT="Epic" IR="true">
+    <N>Ship Master</N>
+    <T ID="191450" I="data/ui/2kimages/main/3dicons/specialists/systemic/icon_captain_402.png" />
+    <R ID="118005" />
+    <IT>Item</IT>
+    <A ID="Ship">
+      <T ID="2342" I="data/ui/2kimages/main/3dicons/icon_ship.png" />
+    </A>
+    <IAU />
+    <EA>
+      <U V="">
+        <T ID="-481309083" I="data/ui/2kimages/main/icons/icon_generic_expedition.png" />
+      </U>
+      <U V="40">
+        <T ID="800033" I="data/ui/2kimages/main/icons/icon_threat_navigation_tint.png" />
+      </U>
+      <U V="20">
+        <T ID="800032" I="data/ui/2kimages/main/icons/icon_threat_melee_tint.png" />
+      </U>
+      <U V="10">
+        <T ID="800004" I="data/ui/2kimages/main/icons/icon_threat_navalbattle_tint.png" />
+      </U>
+    </EA>
+    <DU>
+      <U V="0">
+        <T ID="15195" I="data/ui/2kimages/main/icons/ship_info/icon_hitpoints.png" />
+      </U>
+    </DU>
+    <GU>
+      <U V="+35" C="VehicleUpgrade">
+        <T ID="2339" I="data/ui/2kimages/main/icons/icon_forward.png" />
+      </U>
+    </GU>
+    <TP>75350</TP>
+    <HF>301400</HF>
+    <I ID="19822" />
+    <S>
+      <S ID="29" N="Third_party_05 (Isabel Sarmento)">
+        <T ID="351925916" I="data/ui/2kimages/main/profiles/3rd_party_05.png" />
+        <DL>
+          <D W="9,09">
+            <T ID="-6">
+              <AI ID="64127250" I="data/ui/2kimages/main/3dicons/resident/icon_resident_farmer.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-7">
+              <AI ID="1952258737" I="data/ui/2kimages/main/3dicons/resident/icon_resident_worker.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-8">
+              <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-9">
+              <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-10">
+              <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-11">
+              <AI ID="-910786917" />
+            </T>
+          </D>
+        </DL>
+      </S>
+      <S ID="800103" N="Archeological Expedition Easy">
+        <T ID="11629" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,33">
+            <T ID="1185265828" />
+          </D>
+          <D W="0,33">
+            <T ID="1532288712" />
+          </D>
+          <D W="0,33">
+            <T ID="-41689400" />
+          </D>
+          <D W="0,33">
+            <T ID="-1886779138" />
+          </D>
+          <D W="0,33">
+            <T ID="2004903631" />
+          </D>
+          <D W="0,33">
+            <T ID="-1886779105" />
+          </D>
+          <D W="0,33">
+            <T ID="-1346153992" />
+          </D>
+        </DL>
+      </S>
+      <S ID="800214" N="Zoological Expedition Easy">
+        <T ID="11630" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,33">
+            <T ID="1185265828" />
+          </D>
+          <D W="0,33">
+            <T ID="1532288712" />
+          </D>
+          <D W="0,33">
+            <T ID="-41689400" />
+          </D>
+          <D W="0,33">
+            <T ID="-1886779138" />
+          </D>
+          <D W="0,33">
+            <T ID="2004903631" />
+          </D>
+          <D W="0,33">
+            <T ID="-1886779105" />
+          </D>
+          <D W="0,33">
+            <T ID="-1346153992" />
+          </D>
+        </DL>
+      </S>
+      <S ID="800399" N="Rescue Mission Easy">
+        <T ID="11631" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,33">
+            <T ID="1185265828" />
+          </D>
+          <D W="0,33">
+            <T ID="1532288712" />
+          </D>
+          <D W="0,33">
+            <T ID="-41689400" />
+          </D>
+          <D W="0,33">
+            <T ID="-1886779138" />
+          </D>
+          <D W="0,33">
+            <T ID="2004903631" />
+          </D>
+          <D W="0,33">
+            <T ID="-1886779105" />
+          </D>
+          <D W="0,33">
+            <T ID="-1346153992" />
+          </D>
+          <D W="0,85">
+            <T ID="931407378" />
+          </D>
+          <D W="0,85">
+            <T ID="-530512009" />
+          </D>
+          <D W="0,85">
+            <T ID="-1217557132" />
+          </D>
+          <D W="0,85">
+            <T ID="393417032" />
+          </D>
+          <D W="0,85">
+            <T ID="924011950" />
+          </D>
+          <D W="0,85">
+            <T ID="940704723" />
+          </D>
+          <D W="0,37">
+            <T ID="979796546" />
+          </D>
+          <D W="0,37">
+            <T ID="145140579" />
+          </D>
+          <D W="0,37">
+            <T ID="-2111819775" />
+          </D>
+          <D W="0,37">
+            <T ID="-39288608" />
+          </D>
+          <D W="0,37">
+            <T ID="555973510" />
+          </D>
+          <D W="0,37">
+            <T ID="-1216694644" />
+          </D>
+        </DL>
+      </S>
+      <S ID="800403" N="Pirate Hunt Easy">
+        <T ID="11632" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,33">
+            <T ID="1185265828" />
+          </D>
+          <D W="0,33">
+            <T ID="1532288712" />
+          </D>
+          <D W="0,33">
+            <T ID="-41689400" />
+          </D>
+          <D W="0,33">
+            <T ID="-1886779138" />
+          </D>
+          <D W="0,33">
+            <T ID="2004903631" />
+          </D>
+          <D W="0,33">
+            <T ID="-1886779105" />
+          </D>
+          <D W="0,33">
+            <T ID="-1346153992" />
+          </D>
+        </DL>
+      </S>
+      <S ID="803812" N="Botanical Expedition Hard">
+        <T ID="114257" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,33">
+            <T ID="1185265828" />
+          </D>
+          <D W="0,33">
+            <T ID="1532288712" />
+          </D>
+          <D W="0,33">
+            <T ID="-41689400" />
+          </D>
+          <D W="0,33">
+            <T ID="-1886779138" />
+          </D>
+          <D W="0,33">
+            <T ID="2004903631" />
+          </D>
+          <D W="0,33">
+            <T ID="-1886779105" />
+          </D>
+          <D W="0,33">
+            <T ID="-1346153992" />
+          </D>
+        </DL>
+      </S>
+      <S ID="800777" N="Discovery South America Sandbox">
+        <T ID="11634" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,33">
+            <T ID="1185265828" />
+          </D>
+          <D W="0,33">
+            <T ID="1532288712" />
+          </D>
+          <D W="0,33">
+            <T ID="-41689400" />
+          </D>
+          <D W="0,33">
+            <T ID="-1886779138" />
+          </D>
+          <D W="0,33">
+            <T ID="2004903631" />
+          </D>
+          <D W="0,33">
+            <T ID="-1886779105" />
+          </D>
+          <D W="0,33">
+            <T ID="-1346153992" />
+          </D>
+        </DL>
+      </S>
+      <S ID="803519" N="Discovery Sunken Treasures Multiplayer">
+        <T ID="22262" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,33">
+            <T ID="1185265828" />
+          </D>
+          <D W="0,33">
+            <T ID="1532288712" />
+          </D>
+          <D W="0,33">
+            <T ID="-41689400" />
+          </D>
+          <D W="0,33">
+            <T ID="-1886779138" />
+          </D>
+          <D W="0,33">
+            <T ID="2004903631" />
+          </D>
+          <D W="0,33">
+            <T ID="-1886779105" />
+          </D>
+          <D W="0,33">
+            <T ID="-1346153992" />
+          </D>
+        </DL>
+      </S>
+      <S ID="804041" N="Discovery Arctic The Passage Multiplayer">
+        <T ID="114111" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,33">
+            <T ID="1185265828" />
+          </D>
+          <D W="0,33">
+            <T ID="1532288712" />
+          </D>
+          <D W="0,33">
+            <T ID="-41689400" />
+          </D>
+          <D W="0,33">
+            <T ID="-1886779138" />
+          </D>
+          <D W="0,33">
+            <T ID="2004903631" />
+          </D>
+          <D W="0,33">
+            <T ID="-1886779105" />
+          </D>
+          <D W="0,33">
+            <T ID="-1346153992" />
+          </D>
+        </DL>
+      </S>
+      <S ID="804153" N="Discovery Land of Lions Multiplayer">
+        <T ID="119860" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,33">
+            <T ID="1185265828" />
+          </D>
+          <D W="0,33">
+            <T ID="1532288712" />
+          </D>
+          <D W="0,33">
+            <T ID="-41689400" />
+          </D>
+          <D W="0,33">
+            <T ID="-1886779138" />
+          </D>
+          <D W="0,33">
+            <T ID="2004903631" />
+          </D>
+          <D W="0,33">
+            <T ID="-1886779105" />
+          </D>
+          <D W="0,33">
+            <T ID="-1346153992" />
+          </D>
+        </DL>
+      </S>
+      <S ID="150131" N="Destroy Criminal Ship - Jailor">
+        <T ID="1018335761" I="data/ui/2kimages/main/profiles/3rd_party_07.png" />
+        <DL>
+          <D W="0,054">
+            <T ID="150131" />
+          </D>
+          <D W="0,054">
+            <T ID="152453" />
+          </D>
+          <D W="0,054">
+            <T ID="152454" />
+          </D>
+        </DL>
+      </S>
+      <S ID="46" N="Third_party_07 (Eli Bleakworth)">
+        <T ID="-2055248715" I="data/ui/2kimages/main/profiles/3rd_party_07.png" />
+        <DL>
+          <D W="0,061">
+            <T ID="-8">
+              <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
+            </T>
+          </D>
+          <D W="0,051">
+            <T ID="-9">
+              <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
+            </T>
+          </D>
+          <D W="0,096">
+            <T ID="-10">
+              <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
+            </T>
+          </D>
+          <D W="0,13">
+            <T ID="-11">
+              <AI ID="-910786917" />
+            </T>
+          </D>
+        </DL>
+      </S>
+      <S ID="76" N="Third_party_04 (La Fortune)">
+        <T ID="1205039976" I="data/ui/2kimages/main/profiles/3rd_party_04.png" />
+        <DL>
+          <D W="0,15">
+            <T ID="-8">
+              <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
+            </T>
+          </D>
+          <D W="0,15">
+            <T ID="-9">
+              <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
+            </T>
+          </D>
+          <D W="0,31">
+            <T ID="-10">
+              <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
+            </T>
+          </D>
+          <D W="0,46">
+            <T ID="-11">
+              <AI ID="-910786917" />
+            </T>
+          </D>
+        </DL>
+      </S>
+      <S ID="84" N="Second_ai_09 (Vicente Silva)">
+        <T ID="-1608301314" I="data/ui/2kimages/main/profiles/ai_09.png" />
+        <DL>
+          <D W="0,083">
+            <T ID="84" I="data/ui/2kimages/main/profiles/ai_09.png" />
+          </D>
+        </DL>
+      </S>
+      <S ID="151155" N="Down with Anne Harlow 3 - Vicente">
+        <T ID="-1858726192" I="data/ui/2kimages/main/profiles/ai_09.png" />
+        <DL>
+          <D W="0,16">
+            <T ID="151155" />
+          </D>
+          <D W="0,16">
+            <T ID="152039" />
+          </D>
+          <D W="0,16">
+            <T ID="152418" />
+          </D>
+          <D W="0,16">
+            <T ID="152420" />
+          </D>
+          <D W="0,16">
+            <T ID="152424" />
+          </D>
+          <D W="0,16">
+            <T ID="151153" />
+          </D>
+          <D W="0,16">
+            <T ID="152045" />
+          </D>
+        </DL>
+      </S>
+      <S ID="84" N="Second_ai_09 (Vicente Silva)">
+        <T ID="1659598321" I="data/ui/2kimages/main/profiles/ai_09.png" />
+        <DL>
+          <D W="0,33">
+            <T ID="1888403404" />
+          </D>
+          <D W="0,33">
+            <T ID="-6123924" />
+          </D>
+          <D W="0,33">
+            <T ID="-708827951" />
+          </D>
+          <D W="0,33">
+            <T ID="-2119299811" />
+          </D>
+          <D W="0,33">
+            <T ID="1800545910" />
+          </D>
+          <D W="0,33">
+            <T ID="-732355511" />
+          </D>
+          <D W="0,33">
+            <T ID="-563866922" />
+          </D>
+          <D W="0,33">
+            <T ID="-1852486986" />
+          </D>
+          <D W="0,33">
+            <T ID="685998752" />
+          </D>
+          <D W="0,33">
+            <T ID="1501673774" />
+          </D>
+          <D W="0,33">
+            <T ID="1718348902" />
+          </D>
+          <D W="0,33">
+            <T ID="-462634376" />
+          </D>
+        </DL>
+      </S>
+      <S ID="73" N="Third_party_03 (Anne Harlow)">
+        <T ID="1514529701" I="data/ui/2kimages/main/profiles/3rd_party_03.png" />
+        <DL>
+          <D W="0,089">
+            <T ID="73" I="data/ui/2kimages/main/profiles/3rd_party_03.png" />
+          </D>
+        </DL>
+      </S>
+      <S ID="152169" N="Smuggle Out of prison - Anne Harlow">
+        <T ID="1169735448" I="data/ui/2kimages/main/profiles/3rd_party_03.png" />
+        <DL>
+          <D W="0,17">
+            <T ID="152169" />
+          </D>
+          <D W="0,17">
+            <T ID="152238" />
+          </D>
+          <D W="0,17">
+            <T ID="152244" />
+          </D>
+          <D W="0,17">
+            <T ID="152207" />
+          </D>
+        </DL>
+      </S>
+      <S ID="76" N="Third_party_04 (La Fortune)">
+        <T ID="1638667151" I="data/ui/2kimages/main/profiles/3rd_party_04.png" />
+        <DL>
+          <D W="0,092">
+            <T ID="76" I="data/ui/2kimages/main/profiles/3rd_party_04.png" />
+          </D>
+        </DL>
+      </S>
+      <S ID="152928" N="Pickup Delaying Death - Jean LaFortune">
+        <T ID="1368805180" I="data/ui/2kimages/main/profiles/3rd_party_04.png" />
+        <DL>
+          <D W="0,18">
+            <T ID="152448" />
+          </D>
+        </DL>
+      </S>
+      <S ID="114897" N="RQ_Explorer_Flour">
+        <T ID="342677313" I="data/ui/2kimages/main/3dicons/resident/icon_resident_colony03_tier01.png" />
+        <DL>
+          <D W="0,33">
+            <T ID="114897" />
+          </D>
+          <D W="0,33">
+            <T ID="114899" />
+          </D>
+          <D W="0,33">
+            <T ID="114900" />
+          </D>
+          <D W="0,33">
+            <T ID="114901" />
+          </D>
+          <D W="0,33">
+            <T ID="114902" />
+          </D>
+          <D W="0,33">
+            <T ID="114906" />
+          </D>
+          <D W="0,33">
+            <T ID="114906" />
+          </D>
+          <D W="0,33">
+            <T ID="114906" />
+          </D>
+          <D W="0,33">
+            <T ID="114906" />
+          </D>
+          <D W="0,33">
+            <T ID="114906" />
+          </D>
+          <D W="0,33">
+            <T ID="114903" />
+          </D>
+          <D W="0,33">
+            <T ID="114916" />
+          </D>
+          <D W="0,33">
+            <T ID="114916" />
+          </D>
+          <D W="0,33">
+            <T ID="114916" />
+          </D>
+          <D W="0,33">
+            <T ID="114920" />
+          </D>
+          <D W="0,33">
+            <T ID="115075" />
+          </D>
+          <D W="0,33">
+            <T ID="115177" />
+          </D>
+          <D W="0,33">
+            <T ID="115178" />
+          </D>
+          <D W="0,33">
+            <T ID="115178" />
+          </D>
+          <D W="0,33">
+            <T ID="114924" />
+          </D>
+        </DL>
+      </S>
+      <S ID="2001173" N="TourismBalancing">
+        <T ID="-4" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,27">
+            <T ID="1703148138" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="0,27">
+            <T ID="-2056815631" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="0,55">
+            <T ID="-2147389148" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="0,55">
+            <T ID="1994846891" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="0,83">
+            <T ID="-126534115" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="0,83">
+            <T ID="-492970828" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="0,97">
+            <T ID="-2132631248" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="0,97">
+            <T ID="1696284615" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="1,11">
+            <T ID="1812534605" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="1,11">
+            <T ID="2070189780" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="1,25">
+            <T ID="803560827" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="1,25">
+            <T ID="927653634" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="1,38">
+            <T ID="-691270125" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="1,38">
+            <T ID="-1746096982" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="1,52">
+            <T ID="-611486377" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="1,52">
+            <T ID="-1077537810" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="1,52">
+            <T ID="-1869374569" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="1,52">
+            <T ID="-1888019170" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="1,38">
+            <T ID="-655814303" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="1,38">
+            <T ID="-254897432" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="1,25">
+            <T ID="1964163970" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="1,25">
+            <T ID="810902041" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+        </DL>
+      </S>
+      <S ID="123215" N="ResearchCategoryHarbourTalent">
+        <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
+        <DL>
+          <D W="2,91">
+            <T ID="127670" />
+          </D>
+        </DL>
+      </S>
+    </S>
+  </Asset>
+  <Asset ID="191620 (Pride_and_Peddlers)" RV="Release" RT="Rare" IR="true">
+    <N>Exporter</N>
+    <T ID="191620" I="data/ui/2kimages/main/3dicons/specialists/systemic/icon_normaldress_303.png" />
+    <R ID="118004" />
+    <IT>Item</IT>
+    <A ID="Ship">
+      <T ID="2342" I="data/ui/2kimages/main/3dicons/icon_ship.png" />
+    </A>
+    <EA>
+      <U V="">
+        <T ID="-481309083" I="data/ui/2kimages/main/icons/icon_generic_expedition.png" />
+      </U>
+      <U V="15">
+        <T ID="800029" I="data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png" />
+      </U>
+    </EA>
+    <GU>
+      <U V="-5%" C="TradeShipUpgrade">
+        <T ID="15198" I="data/ui/2kimages/main/icons/icon_credits_2d.png" />
+      </U>
+      <U V="+45%" C="TradeShipUpgrade">
+        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
+      </U>
+    </GU>
+    <TP>20325</TP>
+    <HF>81300</HF>
+    <I ID="20023" />
+    <S>
+      <S ID="6101" N="Sceanrio04_Trader_Yaosca_Profile">
+        <T ID="-1517661892" I="data/ui/2kimages/main/profiles/yaosca.png" />
+        <DL>
+          <D W="9,09">
+            <T ID="-6">
+              <AI ID="64127250" I="data/ui/2kimages/main/3dicons/resident/icon_resident_farmer.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-7">
+              <AI ID="1952258737" I="data/ui/2kimages/main/3dicons/resident/icon_resident_worker.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-8">
+              <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-9">
+              <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-10">
+              <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-11">
+              <AI ID="-910786917" />
+            </T>
+          </D>
+        </DL>
+      </S>
+      <S ID="150969" N="RQ_Artisans_PeerGynt">
+        <T ID="1521030542" I="data/ui/2kimages/main/profiles/resident_tier03.png" />
+        <DL>
+          <D W="0,52">
+            <T ID="150969" />
+          </D>
+          <D W="0,52">
+            <T ID="150970" />
+          </D>
+          <D W="0,52">
+            <T ID="150979" />
+          </D>
+          <D W="0,52">
+            <T ID="151847" />
+          </D>
+          <D W="0,52">
+            <T ID="150981" />
+          </D>
+          <D W="0,52">
+            <T ID="150982" />
+          </D>
+          <D W="0,52">
+            <T ID="150986" />
+          </D>
+          <D W="0,52">
+            <T ID="150987" />
+          </D>
+          <D W="0,52">
+            <T ID="150988" />
+          </D>
+          <D W="0,52">
+            <T ID="150989" />
+          </D>
+          <D W="0,52">
+            <T ID="151034" />
+          </D>
+          <D W="0,52">
+            <T ID="151035" />
+          </D>
+          <D W="0,52">
+            <T ID="151036" />
+          </D>
+          <D W="0,52">
+            <T ID="151037" />
+          </D>
+        </DL>
+      </S>
+      <S ID="800103" N="Archeological Expedition Easy">
+        <T ID="11629" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,66">
+            <T ID="1185265828" />
+          </D>
+          <D W="0,66">
+            <T ID="1532288712" />
+          </D>
+          <D W="0,66">
+            <T ID="-41689400" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779138" />
+          </D>
+          <D W="0,66">
+            <T ID="2004903631" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779105" />
+          </D>
+          <D W="0,66">
+            <T ID="-1346153992" />
+          </D>
+        </DL>
+      </S>
+      <S ID="800214" N="Zoological Expedition Easy">
+        <T ID="11630" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,66">
+            <T ID="1185265828" />
+          </D>
+          <D W="0,66">
+            <T ID="1532288712" />
+          </D>
+          <D W="0,66">
+            <T ID="-41689400" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779138" />
+          </D>
+          <D W="0,66">
+            <T ID="2004903631" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779105" />
+          </D>
+          <D W="0,66">
+            <T ID="-1346153992" />
+          </D>
+        </DL>
+      </S>
+      <S ID="800399" N="Rescue Mission Easy">
+        <T ID="11631" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,66">
+            <T ID="1185265828" />
+          </D>
+          <D W="0,66">
+            <T ID="1532288712" />
+          </D>
+          <D W="0,66">
+            <T ID="-41689400" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779138" />
+          </D>
+          <D W="0,66">
+            <T ID="2004903631" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779105" />
+          </D>
+          <D W="0,66">
+            <T ID="-1346153992" />
+          </D>
+          <D W="0,64">
+            <T ID="-1704301278" />
+          </D>
+          <D W="0,64">
+            <T ID="-1071370460" />
+          </D>
+          <D W="0,64">
+            <T ID="-1882575001" />
+          </D>
+          <D W="0,64">
+            <T ID="1699887384" />
+          </D>
+          <D W="0,64">
+            <T ID="747202150" />
+          </D>
+          <D W="0,64">
+            <T ID="1518588172" />
+          </D>
+          <D W="0,19">
+            <T ID="931407378" />
+          </D>
+          <D W="0,19">
+            <T ID="-530512009" />
+          </D>
+          <D W="0,19">
+            <T ID="-1217557132" />
+          </D>
+          <D W="0,19">
+            <T ID="393417032" />
+          </D>
+          <D W="0,19">
+            <T ID="924011950" />
+          </D>
+          <D W="0,19">
+            <T ID="940704723" />
+          </D>
+        </DL>
+      </S>
+      <S ID="800403" N="Pirate Hunt Easy">
+        <T ID="11632" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,66">
+            <T ID="1185265828" />
+          </D>
+          <D W="0,66">
+            <T ID="1532288712" />
+          </D>
+          <D W="0,66">
+            <T ID="-41689400" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779138" />
+          </D>
+          <D W="0,66">
+            <T ID="2004903631" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779105" />
+          </D>
+          <D W="0,66">
+            <T ID="-1346153992" />
+          </D>
+        </DL>
+      </S>
+      <S ID="803812" N="Botanical Expedition Hard">
+        <T ID="114257" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,66">
+            <T ID="1185265828" />
+          </D>
+          <D W="0,66">
+            <T ID="1532288712" />
+          </D>
+          <D W="0,66">
+            <T ID="-41689400" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779138" />
+          </D>
+          <D W="0,66">
+            <T ID="2004903631" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779105" />
+          </D>
+          <D W="0,66">
+            <T ID="-1346153992" />
+          </D>
+        </DL>
+      </S>
+      <S ID="800777" N="Discovery South America Sandbox">
+        <T ID="11634" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,66">
+            <T ID="1185265828" />
+          </D>
+          <D W="0,66">
+            <T ID="1532288712" />
+          </D>
+          <D W="0,66">
+            <T ID="-41689400" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779138" />
+          </D>
+          <D W="0,66">
+            <T ID="2004903631" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779105" />
+          </D>
+          <D W="0,66">
+            <T ID="-1346153992" />
+          </D>
+        </DL>
+      </S>
+      <S ID="803519" N="Discovery Sunken Treasures Multiplayer">
+        <T ID="22262" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,66">
+            <T ID="1185265828" />
+          </D>
+          <D W="0,66">
+            <T ID="1532288712" />
+          </D>
+          <D W="0,66">
+            <T ID="-41689400" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779138" />
+          </D>
+          <D W="0,66">
+            <T ID="2004903631" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779105" />
+          </D>
+          <D W="0,66">
+            <T ID="-1346153992" />
+          </D>
+        </DL>
+      </S>
+      <S ID="804041" N="Discovery Arctic The Passage Multiplayer">
+        <T ID="114111" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,66">
+            <T ID="1185265828" />
+          </D>
+          <D W="0,66">
+            <T ID="1532288712" />
+          </D>
+          <D W="0,66">
+            <T ID="-41689400" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779138" />
+          </D>
+          <D W="0,66">
+            <T ID="2004903631" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779105" />
+          </D>
+          <D W="0,66">
+            <T ID="-1346153992" />
+          </D>
+        </DL>
+      </S>
+      <S ID="804153" N="Discovery Land of Lions Multiplayer">
+        <T ID="119860" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,66">
+            <T ID="1185265828" />
+          </D>
+          <D W="0,66">
+            <T ID="1532288712" />
+          </D>
+          <D W="0,66">
+            <T ID="-41689400" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779138" />
+          </D>
+          <D W="0,66">
+            <T ID="2004903631" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779105" />
+          </D>
+          <D W="0,66">
+            <T ID="-1346153992" />
+          </D>
+        </DL>
+      </S>
+      <S ID="150110" N="Deliver Pocket Watches - Jailor">
+        <T ID="1018335761" I="data/ui/2kimages/main/profiles/3rd_party_07.png" />
+        <DL>
+          <D W="0,054">
+            <T ID="150110" />
+          </D>
+          <D W="0,054">
+            <T ID="150117" />
+          </D>
+          <D W="0,054">
+            <T ID="150123" />
+          </D>
+          <D W="0,054">
+            <T ID="150142" />
+          </D>
+          <D W="0,054">
+            <T ID="150176" />
+          </D>
+          <D W="0,054">
+            <T ID="150177" />
+          </D>
+          <D W="0,054">
+            <T ID="150112" />
+          </D>
+          <D W="0,054">
+            <T ID="150133" />
+          </D>
+          <D W="0,054">
+            <T ID="150193" />
+          </D>
+          <D W="0,054">
+            <T ID="152441" />
+          </D>
+          <D W="0,054">
+            <T ID="150113" />
+          </D>
+          <D W="0,054">
+            <T ID="150153" />
+          </D>
+          <D W="0,054">
+            <T ID="150157" />
+          </D>
+          <D W="0,054">
+            <T ID="150158" />
+          </D>
+          <D W="0,054">
+            <T ID="150183" />
+          </D>
+          <D W="0,054">
+            <T ID="150187" />
+          </D>
+          <D W="0,054">
+            <T ID="150191" />
+          </D>
+          <D W="0,054">
+            <T ID="152442" />
+          </D>
+          <D W="0,054">
+            <T ID="152443" />
+          </D>
+          <D W="0,054">
+            <T ID="152449" />
+          </D>
+          <D W="0,054">
+            <T ID="152450" />
+          </D>
+          <D W="0,054">
+            <T ID="152577" />
+          </D>
+          <D W="0,054">
+            <T ID="152578" />
+          </D>
+          <D W="0,054">
+            <T ID="152579" />
+          </D>
+          <D W="0,054">
+            <T ID="152580" />
+          </D>
+          <D W="0,1">
+            <T ID="150131" />
+          </D>
+          <D W="0,1">
+            <T ID="152453" />
+          </D>
+          <D W="0,1">
+            <T ID="152454" />
+          </D>
+        </DL>
+      </S>
+      <S ID="46" N="Third_party_07 (Eli Bleakworth)">
+        <T ID="-2055248715" I="data/ui/2kimages/main/profiles/3rd_party_07.png" />
+        <DL>
+          <D W="0,16">
+            <T ID="-7">
+              <AI ID="1952258737" I="data/ui/2kimages/main/3dicons/resident/icon_resident_worker.png" />
+            </T>
+          </D>
+          <D W="0,22">
+            <T ID="-8">
+              <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
+            </T>
+          </D>
+          <D W="0,37">
+            <T ID="-9">
+              <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
+            </T>
+          </D>
+          <D W="0,47">
+            <T ID="-10">
+              <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
+            </T>
+          </D>
+          <D W="0,56">
+            <T ID="-11">
+              <AI ID="-910786917" />
+            </T>
+          </D>
+        </DL>
+      </S>
+      <S ID="150352" N="Maintaining Contacts - Kahina - ON HOLD - till Story changes">
+        <T ID="-13435679" I="data/ui/2kimages/main/profiles/3rd_party_08.png" />
+        <DL>
+          <D W="0,058">
+            <T ID="150352" />
+          </D>
+          <D W="0,058">
+            <T ID="150373" />
+          </D>
+          <D W="0,058">
+            <T ID="150374" />
+          </D>
+          <D W="0,058">
+            <T ID="150376" />
+          </D>
+          <D W="0,058">
+            <T ID="152531" />
+          </D>
+          <D W="0,058">
+            <T ID="150357" />
+          </D>
+          <D W="0,058">
+            <T ID="150377" />
+          </D>
+          <D W="0,058">
+            <T ID="150380" />
+          </D>
+          <D W="0,058">
+            <T ID="152535" />
+          </D>
+          <D W="0,058">
+            <T ID="153044" />
+          </D>
+          <D W="0,11">
+            <T ID="150375" />
+          </D>
+          <D W="0,11">
+            <T ID="150366" />
+          </D>
+          <D W="0,11">
+            <T ID="152533" />
+          </D>
+        </DL>
+      </S>
+      <S ID="2001173" N="TourismBalancing">
+        <T ID="-4" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,27">
+            <T ID="-1796673935" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="0,27">
+            <T ID="-1231792075" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="0,55">
+            <T ID="-1072269047" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="0,55">
+            <T ID="-1815144544" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="0,83">
+            <T ID="1703148138" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="0,83">
+            <T ID="-2056815631" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="1,11">
+            <T ID="-2147389148" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="1,11">
+            <T ID="1994846891" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="1,25">
+            <T ID="-126534115" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="1,25">
+            <T ID="-492970828" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="1,25">
+            <T ID="-2132631248" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="1,25">
+            <T ID="1696284615" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="0,97">
+            <T ID="1812534605" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="0,97">
+            <T ID="2070189780" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="0,69">
+            <T ID="803560827" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="0,69">
+            <T ID="927653634" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="0,41">
+            <T ID="-691270125" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="0,41">
+            <T ID="-1746096982" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="0,13">
+            <T ID="-611486377" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="0,13">
+            <T ID="-1077537810" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+        </DL>
+      </S>
+      <S ID="123215" N="ResearchCategoryHarbourTalent">
+        <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
+        <DL>
+          <D W="2,91">
+            <T ID="127670" />
+          </D>
+        </DL>
+      </S>
+    </S>
+  </Asset>
+  <Asset ID="191615 (Pride_and_Peddlers)" RV="Release" RT="Common" IR="true">
+    <N>Salesperson</N>
+    <T ID="191615" I="data/ui/2kimages/main/3dicons/specialists/systemic/icon_bartender_813.png" />
+    <R ID="118002" />
+    <IT>Item</IT>
+    <A ID="Ship">
+      <T ID="2342" I="data/ui/2kimages/main/3dicons/icon_ship.png" />
+    </A>
+    <EA>
+      <U V="">
+        <T ID="-481309083" I="data/ui/2kimages/main/icons/icon_generic_expedition.png" />
+      </U>
+      <U V="5">
+        <T ID="800029" I="data/ui/2kimages/main/icons/icon_diplomacy_option_negotiate.png" />
+      </U>
+    </EA>
+    <GU>
+      <U V="+15%" C="TradeShipUpgrade">
+        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
+      </U>
+    </GU>
+    <TP>1250</TP>
+    <HF>5000</HF>
+    <I ID="20018" />
+    <S>
+      <S ID="6101" N="Sceanrio04_Trader_Yaosca_Profile">
+        <T ID="-1517661892" I="data/ui/2kimages/main/profiles/yaosca.png" />
+        <DL>
+          <D W="9,09">
+            <T ID="-6">
+              <AI ID="64127250" I="data/ui/2kimages/main/3dicons/resident/icon_resident_farmer.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-7">
+              <AI ID="1952258737" I="data/ui/2kimages/main/3dicons/resident/icon_resident_worker.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-8">
+              <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-9">
+              <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-10">
+              <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-11">
+              <AI ID="-910786917" />
+            </T>
+          </D>
+        </DL>
+      </S>
+      <S ID="151632" N="RQ_Obreros_JungleBook">
+        <T ID="-622065990" I="data/ui/2kimages/main/profiles/resident_colony_tier02.png" />
+        <DL>
+          <D W="2,058">
+            <T ID="151632" />
+          </D>
+          <D W="2,058">
+            <T ID="150276" />
+          </D>
+          <D W="2,058">
+            <T ID="151640" />
+          </D>
+          <D W="2,058">
+            <T ID="151633" />
+          </D>
+          <D W="2,058">
+            <T ID="151634" />
+          </D>
+          <D W="2,058">
+            <T ID="151635" />
+          </D>
+          <D W="2,058">
+            <T ID="151643" />
+          </D>
+          <D W="2,058">
+            <T ID="151637" />
+          </D>
+          <D W="2,058">
+            <T ID="151645" />
+          </D>
+          <D W="2,058">
+            <T ID="151646" />
+          </D>
+          <D W="2,058">
+            <T ID="151636" />
+          </D>
+          <D W="2,058">
+            <T ID="151647" />
+          </D>
+          <D W="2,058">
+            <T ID="151649" />
+          </D>
+          <D W="2,058">
+            <T ID="151650" />
+          </D>
+        </DL>
+      </S>
+      <S ID="151483" N="RQ_Jornaleros_Coco">
+        <T ID="230835706" I="data/ui/2kimages/main/profiles/resident_colony_tier01.png" />
+        <DL>
+          <D W="1,093">
+            <T ID="151483" />
+          </D>
+          <D W="1,093">
+            <T ID="151484" />
+          </D>
+          <D W="1,093">
+            <T ID="151485" />
+          </D>
+          <D W="1,093">
+            <T ID="151486" />
+          </D>
+          <D W="1,093">
+            <T ID="151485" />
+          </D>
+          <D W="1,093">
+            <T ID="151496" />
+          </D>
+          <D W="1,093">
+            <T ID="151497" />
+          </D>
+          <D W="1,093">
+            <T ID="151498" />
+          </D>
+          <D W="1,093">
+            <T ID="151499" />
+          </D>
+          <D W="1,093">
+            <T ID="151500" />
+          </D>
+          <D W="1,093">
+            <T ID="151501" />
+          </D>
+          <D W="1,093">
+            <T ID="151502" />
+          </D>
+          <D W="1,093">
+            <T ID="151503" />
+          </D>
+        </DL>
+      </S>
+      <S ID="800103" N="Archeological Expedition Easy">
+        <T ID="11629" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,66">
+            <T ID="1185265828" />
+          </D>
+          <D W="0,66">
+            <T ID="1532288712" />
+          </D>
+          <D W="0,66">
+            <T ID="-41689400" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779138" />
+          </D>
+          <D W="0,66">
+            <T ID="2004903631" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779105" />
+          </D>
+          <D W="0,66">
+            <T ID="-1346153992" />
+          </D>
+        </DL>
+      </S>
+      <S ID="800214" N="Zoological Expedition Easy">
+        <T ID="11630" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,66">
+            <T ID="1185265828" />
+          </D>
+          <D W="0,66">
+            <T ID="1532288712" />
+          </D>
+          <D W="0,66">
+            <T ID="-41689400" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779138" />
+          </D>
+          <D W="0,66">
+            <T ID="2004903631" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779105" />
+          </D>
+          <D W="0,66">
+            <T ID="-1346153992" />
+          </D>
+        </DL>
+      </S>
+      <S ID="800399" N="Rescue Mission Easy">
+        <T ID="11631" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,66">
+            <T ID="1185265828" />
+          </D>
+          <D W="0,66">
+            <T ID="1532288712" />
+          </D>
+          <D W="0,66">
+            <T ID="-41689400" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779138" />
+          </D>
+          <D W="0,66">
+            <T ID="2004903631" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779105" />
+          </D>
+          <D W="0,66">
+            <T ID="-1346153992" />
+          </D>
+        </DL>
+      </S>
+      <S ID="800403" N="Pirate Hunt Easy">
+        <T ID="11632" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,66">
+            <T ID="1185265828" />
+          </D>
+          <D W="0,66">
+            <T ID="1532288712" />
+          </D>
+          <D W="0,66">
+            <T ID="-41689400" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779138" />
+          </D>
+          <D W="0,66">
+            <T ID="2004903631" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779105" />
+          </D>
+          <D W="0,66">
+            <T ID="-1346153992" />
+          </D>
+        </DL>
+      </S>
+      <S ID="803812" N="Botanical Expedition Hard">
+        <T ID="114257" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,66">
+            <T ID="1185265828" />
+          </D>
+          <D W="0,66">
+            <T ID="1532288712" />
+          </D>
+          <D W="0,66">
+            <T ID="-41689400" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779138" />
+          </D>
+          <D W="0,66">
+            <T ID="2004903631" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779105" />
+          </D>
+          <D W="0,66">
+            <T ID="-1346153992" />
+          </D>
+        </DL>
+      </S>
+      <S ID="800777" N="Discovery South America Sandbox">
+        <T ID="11634" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,66">
+            <T ID="1185265828" />
+          </D>
+          <D W="0,66">
+            <T ID="1532288712" />
+          </D>
+          <D W="0,66">
+            <T ID="-41689400" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779138" />
+          </D>
+          <D W="0,66">
+            <T ID="2004903631" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779105" />
+          </D>
+          <D W="0,66">
+            <T ID="-1346153992" />
+          </D>
+        </DL>
+      </S>
+      <S ID="803519" N="Discovery Sunken Treasures Multiplayer">
+        <T ID="22262" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,66">
+            <T ID="1185265828" />
+          </D>
+          <D W="0,66">
+            <T ID="1532288712" />
+          </D>
+          <D W="0,66">
+            <T ID="-41689400" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779138" />
+          </D>
+          <D W="0,66">
+            <T ID="2004903631" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779105" />
+          </D>
+          <D W="0,66">
+            <T ID="-1346153992" />
+          </D>
+        </DL>
+      </S>
+      <S ID="804041" N="Discovery Arctic The Passage Multiplayer">
+        <T ID="114111" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,66">
+            <T ID="1185265828" />
+          </D>
+          <D W="0,66">
+            <T ID="1532288712" />
+          </D>
+          <D W="0,66">
+            <T ID="-41689400" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779138" />
+          </D>
+          <D W="0,66">
+            <T ID="2004903631" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779105" />
+          </D>
+          <D W="0,66">
+            <T ID="-1346153992" />
+          </D>
+        </DL>
+      </S>
+      <S ID="804153" N="Discovery Land of Lions Multiplayer">
+        <T ID="119860" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="0,66">
+            <T ID="1185265828" />
+          </D>
+          <D W="0,66">
+            <T ID="1532288712" />
+          </D>
+          <D W="0,66">
+            <T ID="-41689400" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779138" />
+          </D>
+          <D W="0,66">
+            <T ID="2004903631" />
+          </D>
+          <D W="0,66">
+            <T ID="-1886779105" />
+          </D>
+          <D W="0,66">
+            <T ID="-1346153992" />
+          </D>
+        </DL>
+      </S>
+      <S ID="150110" N="Deliver Pocket Watches - Jailor">
+        <T ID="1018335761" I="data/ui/2kimages/main/profiles/3rd_party_07.png" />
+        <DL>
+          <D W="0,26">
+            <T ID="150110" />
+          </D>
+          <D W="0,26">
+            <T ID="150117" />
+          </D>
+          <D W="0,26">
+            <T ID="150123" />
+          </D>
+          <D W="0,26">
+            <T ID="150142" />
+          </D>
+          <D W="0,26">
+            <T ID="150176" />
+          </D>
+          <D W="0,26">
+            <T ID="150177" />
+          </D>
+          <D W="0,26">
+            <T ID="150112" />
+          </D>
+          <D W="0,26">
+            <T ID="150133" />
+          </D>
+          <D W="0,26">
+            <T ID="150193" />
+          </D>
+          <D W="0,26">
+            <T ID="152441" />
+          </D>
+          <D W="0,26">
+            <T ID="150113" />
+          </D>
+          <D W="0,26">
+            <T ID="150153" />
+          </D>
+          <D W="0,26">
+            <T ID="150157" />
+          </D>
+          <D W="0,26">
+            <T ID="150158" />
+          </D>
+          <D W="0,26">
+            <T ID="150183" />
+          </D>
+          <D W="0,26">
+            <T ID="150187" />
+          </D>
+          <D W="0,26">
+            <T ID="150191" />
+          </D>
+          <D W="0,26">
+            <T ID="152442" />
+          </D>
+          <D W="0,26">
+            <T ID="152443" />
+          </D>
+          <D W="0,26">
+            <T ID="152449" />
+          </D>
+          <D W="0,26">
+            <T ID="152450" />
+          </D>
+          <D W="0,26">
+            <T ID="152577" />
+          </D>
+          <D W="0,26">
+            <T ID="152578" />
+          </D>
+          <D W="0,26">
+            <T ID="152579" />
+          </D>
+          <D W="0,26">
+            <T ID="152580" />
+          </D>
+          <D W="0,4">
+            <T ID="150131" />
+          </D>
+          <D W="0,4">
+            <T ID="152453" />
+          </D>
+          <D W="0,4">
+            <T ID="152454" />
+          </D>
+        </DL>
+      </S>
+      <S ID="46" N="Third_party_07 (Eli Bleakworth)">
+        <T ID="-2055248715" I="data/ui/2kimages/main/profiles/3rd_party_07.png" />
+        <DL>
+          <D W="1,1">
+            <T ID="-6">
+              <AI ID="64127250" I="data/ui/2kimages/main/3dicons/resident/icon_resident_farmer.png" />
+            </T>
+          </D>
+          <D W="0,72">
+            <T ID="-7">
+              <AI ID="1952258737" I="data/ui/2kimages/main/3dicons/resident/icon_resident_worker.png" />
+            </T>
+          </D>
+          <D W="0,39">
+            <T ID="-8">
+              <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
+            </T>
+          </D>
+          <D W="0,27">
+            <T ID="-9">
+              <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
+            </T>
+          </D>
+          <D W="0,2">
+            <T ID="-10">
+              <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
+            </T>
+          </D>
+          <D W="0,14">
+            <T ID="-11">
+              <AI ID="-910786917" />
+            </T>
+          </D>
+        </DL>
+      </S>
+      <S ID="150352" N="Maintaining Contacts - Kahina - ON HOLD - till Story changes">
+        <T ID="-13435679" I="data/ui/2kimages/main/profiles/3rd_party_08.png" />
+        <DL>
+          <D W="0,14">
+            <T ID="150352" />
+          </D>
+          <D W="0,14">
+            <T ID="150373" />
+          </D>
+          <D W="0,14">
+            <T ID="150374" />
+          </D>
+          <D W="0,14">
+            <T ID="150376" />
+          </D>
+          <D W="0,14">
+            <T ID="152531" />
+          </D>
+          <D W="0,14">
+            <T ID="150357" />
+          </D>
+          <D W="0,14">
+            <T ID="150377" />
+          </D>
+          <D W="0,14">
+            <T ID="150380" />
+          </D>
+          <D W="0,14">
+            <T ID="152535" />
+          </D>
+          <D W="0,14">
+            <T ID="153044" />
+          </D>
+          <D W="0,21">
+            <T ID="150375" />
+          </D>
+          <D W="0,21">
+            <T ID="150366" />
+          </D>
+          <D W="0,21">
+            <T ID="152533" />
+          </D>
+        </DL>
+      </S>
+      <S ID="2001173" N="TourismBalancing">
+        <T ID="-4" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
+        <DL>
+          <D W="2,59">
+            <T ID="-1874371229" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="2,59">
+            <T ID="-897790243" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="2,037">
+            <T ID="1744802837" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="2,037">
+            <T ID="1789329305" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="1,48">
+            <T ID="2116732588" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="1,48">
+            <T ID="-2133439818" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="1,29">
+            <T ID="-1796673935" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="1,29">
+            <T ID="-1231792075" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="1,11">
+            <T ID="-1072269047" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="1,11">
+            <T ID="-1815144544" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="0,74">
+            <T ID="1703148138" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="0,74">
+            <T ID="-2056815631" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="0,37">
+            <T ID="-2147389148" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+          <D W="0,37">
+            <T ID="1994846891" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+          </D>
+        </DL>
+      </S>
+      <S ID="120244" N="ResearchFeature">
+        <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
+        <DL />
+      </S>
+    </S>
+  </Asset>
   <Asset ID="118103" RV="Update 09" RT="Epic">
     <N>Imam</N>
     <T ID="118103" I="data/ui/2kimages/main/3dicons/specialists/africa/icon_innkeeper_1a.png" />
@@ -265,7 +2157,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="1">
+          <D W="0,9">
             <T ID="127670" />
           </D>
         </DL>
@@ -458,7 +2350,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="4,77">
+          <D W="4,37">
             <T ID="127670" />
           </D>
         </DL>
@@ -649,7 +2541,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="4,77">
+          <D W="4,37">
             <T ID="127670" />
           </D>
         </DL>
@@ -894,7 +2786,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="9,54">
+          <D W="8,75">
             <T ID="127670" />
           </D>
         </DL>
@@ -1938,7 +3830,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="1,59">
+          <D W="1,45">
             <T ID="127670" />
           </D>
         </DL>
@@ -2572,7 +4464,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="3,18">
+          <D W="2,91">
             <T ID="127670" />
           </D>
         </DL>
@@ -3036,7 +4928,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="1,59">
+          <D W="1,45">
             <T ID="127670" />
           </D>
         </DL>
@@ -3532,7 +5424,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="0,25">
+          <D W="0,22">
             <T ID="127670" />
           </D>
         </DL>
@@ -3962,7 +5854,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="0,25">
+          <D W="0,22">
             <T ID="127670" />
           </D>
         </DL>
@@ -4392,7 +6284,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="0,25">
+          <D W="0,22">
             <T ID="127670" />
           </D>
         </DL>
@@ -4856,7 +6748,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="1,59">
+          <D W="1,45">
             <T ID="127670" />
           </D>
         </DL>
@@ -5335,7 +7227,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="1,59">
+          <D W="1,45">
             <T ID="127670" />
           </D>
         </DL>
@@ -5767,7 +7659,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="1,59">
+          <D W="1,45">
             <T ID="127670" />
           </D>
         </DL>
@@ -5802,6 +7694,41 @@
     <HF>81300</HF>
     <I ID="20023" />
     <S>
+      <S ID="6101" N="Sceanrio04_Trader_Yaosca_Profile">
+        <T ID="-1517661892" I="data/ui/2kimages/main/profiles/yaosca.png" />
+        <DL>
+          <D W="9,09">
+            <T ID="-6">
+              <AI ID="64127250" I="data/ui/2kimages/main/3dicons/resident/icon_resident_farmer.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-7">
+              <AI ID="1952258737" I="data/ui/2kimages/main/3dicons/resident/icon_resident_worker.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-8">
+              <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-9">
+              <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-10">
+              <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-11">
+              <AI ID="-910786917" />
+            </T>
+          </D>
+        </DL>
+      </S>
       <S ID="150969" N="RQ_Artisans_PeerGynt">
         <T ID="1521030542" I="data/ui/2kimages/main/profiles/resident_tier03.png" />
         <DL>
@@ -6350,7 +8277,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="3,18">
+          <D W="2,91">
             <T ID="127670" />
           </D>
         </DL>
@@ -6999,7 +8926,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="3,18">
+          <D W="2,91">
             <T ID="127670" />
           </D>
         </DL>
@@ -9094,6 +11021,41 @@
     <HF>5000</HF>
     <I ID="20018" />
     <S>
+      <S ID="6101" N="Sceanrio04_Trader_Yaosca_Profile">
+        <T ID="-1517661892" I="data/ui/2kimages/main/profiles/yaosca.png" />
+        <DL>
+          <D W="9,09">
+            <T ID="-6">
+              <AI ID="64127250" I="data/ui/2kimages/main/3dicons/resident/icon_resident_farmer.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-7">
+              <AI ID="1952258737" I="data/ui/2kimages/main/3dicons/resident/icon_resident_worker.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-8">
+              <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-9">
+              <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-10">
+              <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-11">
+              <AI ID="-910786917" />
+            </T>
+          </D>
+        </DL>
+      </S>
       <S ID="151632" N="RQ_Obreros_JungleBook">
         <T ID="-622065990" I="data/ui/2kimages/main/profiles/resident_colony_tier02.png" />
         <DL>
@@ -10220,7 +12182,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="0,14">
+          <D W="0,12">
             <T ID="127670" />
           </D>
         </DL>
@@ -10827,7 +12789,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="0,14">
+          <D W="0,12">
             <T ID="127670" />
           </D>
         </DL>
@@ -11411,7 +13373,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="0,14">
+          <D W="0,12">
             <T ID="127670" />
           </D>
         </DL>
@@ -11964,7 +13926,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="0,14">
+          <D W="0,12">
             <T ID="127670" />
           </D>
         </DL>
@@ -12491,7 +14453,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="0,14">
+          <D W="0,12">
             <T ID="127670" />
           </D>
         </DL>
@@ -13185,7 +15147,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="1,9">
+          <D W="1,75">
             <T ID="127670" />
           </D>
         </DL>
@@ -13881,7 +15843,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="1,9">
+          <D W="1,75">
             <T ID="127670" />
           </D>
         </DL>
@@ -14447,7 +16409,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="1,9">
+          <D W="1,75">
             <T ID="127670" />
           </D>
         </DL>
@@ -15169,7 +17131,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="1,9">
+          <D W="1,75">
             <T ID="127670" />
           </D>
         </DL>
@@ -16119,7 +18081,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="2,38">
+          <D W="2,18">
             <T ID="127670" />
           </D>
         </DL>
@@ -17175,7 +19137,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="2,38">
+          <D W="2,18">
             <T ID="127670" />
           </D>
         </DL>
@@ -18076,7 +20038,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="2,38">
+          <D W="2,18">
             <T ID="127670" />
           </D>
         </DL>
@@ -22190,7 +24152,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="0,33">
+          <D W="0,3">
             <T ID="127670" />
           </D>
         </DL>
@@ -22862,7 +24824,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="0,33">
+          <D W="0,3">
             <T ID="127670" />
           </D>
         </DL>
@@ -23405,7 +25367,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="0,33">
+          <D W="0,3">
             <T ID="127670" />
           </D>
         </DL>
@@ -23449,6 +25411,41 @@
     <HF>301400</HF>
     <I ID="19822" />
     <S>
+      <S ID="29" N="Third_party_05 (Isabel Sarmento)">
+        <T ID="351925916" I="data/ui/2kimages/main/profiles/3rd_party_05.png" />
+        <DL>
+          <D W="9,09">
+            <T ID="-6">
+              <AI ID="64127250" I="data/ui/2kimages/main/3dicons/resident/icon_resident_farmer.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-7">
+              <AI ID="1952258737" I="data/ui/2kimages/main/3dicons/resident/icon_resident_worker.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-8">
+              <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-9">
+              <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-10">
+              <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
+            </T>
+          </D>
+          <D W="9,09">
+            <T ID="-11">
+              <AI ID="-910786917" />
+            </T>
+          </D>
+        </DL>
+      </S>
       <S ID="800103" N="Archeological Expedition Easy">
         <T ID="11629" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
         <DL>
@@ -24038,7 +26035,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="3,18">
+          <D W="2,91">
             <T ID="127670" />
           </D>
         </DL>
@@ -24766,7 +26763,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="3,18">
+          <D W="2,91">
             <T ID="127670" />
           </D>
         </DL>
@@ -25789,7 +27786,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="4,77">
+          <D W="4,37">
             <T ID="127670" />
           </D>
         </DL>
@@ -26782,7 +28779,7 @@
       <S ID="123215" N="ResearchCategoryHarbourTalent">
         <T ID="118940" I="data/ui/2kimages/main/3dicons/icon_research_center.png" />
         <DL>
-          <D W="4,77">
+          <D W="4,37">
             <T ID="127670" />
           </D>
         </DL>

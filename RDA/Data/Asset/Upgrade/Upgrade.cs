@@ -47,8 +47,19 @@ namespace RDA.Data {
               break;
             case "ActionStartQuest":
               Additionals = new List<Upgrade>();
-              Text = new Description("2734", gameType).AppendWithSpace("-").AppendWithSpace(new Description(element.XPathSelectElement("Values/ActionStartQuest/QuestSession").Value, gameType));
+              if (element.XPathSelectElement("Values/ActionStartQuest/UseCurrentSession")?.Value == "1" ) {
+                Text = new Description("2734", gameType).AppendWithSpace("-").AppendWithSpace(new Description("6510", gameType));
+              }
+              else {
+                Text = new Description("2734", gameType).AppendWithSpace("-").AppendWithSpace(new Description(element.XPathSelectElement("Values/ActionStartQuest/QuestSession").Value, gameType));
+              }
               Additionals.Add(new Upgrade { Text = new Description(element.XPathSelectElement("Values/ActionStartQuest/Quest").Value, gameType) });
+              break;
+
+            case "ActionTriggerTextBook":
+              Additionals = new List<Upgrade>();
+              Text = new Description("4162", gameType).Append(":");
+              Additionals.Add(new Upgrade { Text = new Description(element.XPathSelectElement("Values/ActionTriggerTextBook/Text").Value, gameType) });
               break;
 
             default:
@@ -183,6 +194,7 @@ namespace RDA.Data {
               Text = new Description("100583", gameType);
               break;
 
+            case "8905": //all Advanced Police stations
             case "190776": //Police Station
               Text = new Description("100581", gameType);
               break;

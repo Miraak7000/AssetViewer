@@ -24,8 +24,8 @@ namespace AssetViewer.Controls {
           return Array.Empty<TemplateAsset>();
         }
 
-        var result = Assets.Single(w => w.ID == thirdParty.Item1).OfferingItems.Single(w => w.Progression == progression.Item1).Items.GetItemsById();
-        return result.OrderBy(o => o.Text.CurrentLang);
+        var result = Assets.Single(w => w.ID == thirdParty.Item1).OfferingItems.Single(w => w.Progression == progression.Item1).Items?.GetItemsById();
+        return result?.OrderBy(o => o.Text.CurrentLang);
       }
     }
 

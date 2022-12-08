@@ -2,7 +2,7 @@
 <BuffFactoryCulture>
   <Asset ID="24805" RV="Update 14" RT="Common" IP="true">
     <N>Hacienda fertilizer module</N>
-    <T ID="24805" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_fertiliser.png" />
+    <T ID="24805" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_fertiliser.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
@@ -20,9 +20,6 @@
     <GU>
       <U V="-15" C="Culture">
         <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-      <U V="" C="Culture">
-        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
       </U>
     </GU>
     <TP />
@@ -46,7 +43,55 @@
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
         <U V="30">
-          <T ID="1010366" I="data/ui/2kimages/main/icons/icon_ressource_farmer_south_america.png" />
+          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="24805 (Pride_and_Peddlers)" RV="Update 14" RT="Common" IP="true">
+    <N>Hacienda fertilizer module</N>
+    <T ID="24805" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_fertiliser.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="5000">
+        <T ID="6063" I="data/ui/2kimages/main/icons/icon_resource_money_1.png" />
+      </U>
+      <U V="20">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="5">
+        <T ID="1010224" I="data/ui/2kimages/main/3dicons/icon_steam_machine.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="-15" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FI>
+        <U V="1 / 5">
+          <T ID="24807" I="data/ui/2kimages/main/3dicons/icon_dung.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 5">
+          <T ID="-293868584" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_fertilizer_good.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="50 / 25">
+          <T ID="6063" I="data/ui/2kimages/main/icons/icon_resource_money_1.png" />
+        </U>
+        <U V="30">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
         </U>
       </MC>
     </M>

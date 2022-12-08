@@ -29,11 +29,13 @@ namespace RDA {
       Eden_Burning = XmlLoader.LoadSzenarioXml(Program.PathRoot + @"\Original\Eden Burning\assets.xml", GameTypes.Eden_Burning);
       Seasons_of_Silver = XmlLoader.LoadSzenarioXml(Program.PathRoot + @"\Original\Seasons of Silver\assets.xml", GameTypes.Seasons_of_Silver);
       A_Clash_of_Couriers = XmlLoader.LoadSzenarioXml(Program.PathRoot + @"\Original\A Clash of Couriers\assets.xml", GameTypes.A_Clash_of_Couriers);
+      Pride_and_Peddlers = XmlLoader.LoadSzenarioXml(Program.PathRoot + @"\Original\Pride and Peddlers\assets.xml", GameTypes.Pride_and_Peddlers);
       All = new XElement("Root");
       All.Add(BaseGame);
       All.Add(Eden_Burning);
       All.Add(Seasons_of_Silver);
       All.Add(A_Clash_of_Couriers);
+      All.Add(Pride_and_Peddlers);
     }
 
     #endregion Public Constructors
@@ -76,6 +78,7 @@ namespace RDA {
     internal readonly static XElement Eden_Burning;
     internal readonly static XElement Seasons_of_Silver;
     internal readonly static XElement A_Clash_of_Couriers;
+    internal readonly static XElement Pride_and_Peddlers;
 
     internal readonly static Dictionary<string, XElement> DefaultValues = new Dictionary<string, XElement>();
 

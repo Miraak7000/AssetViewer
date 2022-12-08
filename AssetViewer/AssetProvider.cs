@@ -197,7 +197,7 @@ namespace AssetViewer {
                 "AssetViewer.Resources.Assets.AirshipPlatformPostModule.xml",
                 "AssetViewer.Resources.Assets.AirshipPostFreeModule.xml",
                 "AssetViewer.Resources.Assets.BridgeBuilding.xml",
-                //"AssetViewer.Resources.Assets.BuffFactory.xml",
+                "AssetViewer.Resources.Assets.BuffFactory.xml",
                 "AssetViewer.Resources.Assets.BuffFactoryCulture.xml",
                 "AssetViewer.Resources.Assets.BuffFactoryModule.xml",
                 "AssetViewer.Resources.Assets.BuildPermitBuilding.xml",
@@ -207,6 +207,8 @@ namespace AssetViewer {
                 "AssetViewer.Resources.Assets.CampaignUncleMansion.xml",
                 "AssetViewer.Resources.Assets.CityInstitutionBuilding.xml",
                 "AssetViewer.Resources.Assets.CityInstitutionBuilding_Africa.xml",
+                "AssetViewer.Resources.Assets.CityInstitutionBuildingAdvanced.xml",
+                "AssetViewer.Resources.Assets.CityInstitutionBuildingHeated.xml",
                 "AssetViewer.Resources.Assets.CultureBuilding.xml",
                 "AssetViewer.Resources.Assets.CultureBuildingColony.xml",
                 "AssetViewer.Resources.Assets.CultureModule.xml",
@@ -219,9 +221,11 @@ namespace AssetViewer {
                 "AssetViewer.Resources.Assets.FactoryBuilding7.xml",
                 "AssetViewer.Resources.Assets.FactoryBuilding7_Arctic.xml",
                 "AssetViewer.Resources.Assets.FactoryBuilding7_BuildPermit.xml",
+                "AssetViewer.Resources.Assets.FactoryModuleElectric.xml",
                 "AssetViewer.Resources.Assets.FarmBuilding.xml",
                 "AssetViewer.Resources.Assets.FarmBuilding_Arctic.xml",
                 "AssetViewer.Resources.Assets.FarmBuilding_BuildPermit.xml",
+                "AssetViewer.Resources.Assets.FarmBuilding_Electrifiable.xml",
                 "AssetViewer.Resources.Assets.Farmfield.xml",
                 "AssetViewer.Resources.Assets.FertilizerBaseBuilding.xml",
                 "AssetViewer.Resources.Assets.FertilizerBaseModule.xml",
@@ -253,6 +257,7 @@ namespace AssetViewer {
                 "AssetViewer.Resources.Assets.Market.xml",
                 "AssetViewer.Resources.Assets.Monument.xml",
                 "AssetViewer.Resources.Assets.Monument_with_Shipyard.xml",
+                "AssetViewer.Resources.Assets.MonumentColony.xml",
                 "AssetViewer.Resources.Assets.Multifactory.xml",
                 "AssetViewer.Resources.Assets.OilPumpBuilding.xml",
                 "AssetViewer.Resources.Assets.OrnamentalBuilding.xml",
@@ -265,6 +270,7 @@ namespace AssetViewer {
                 "AssetViewer.Resources.Assets.PowerplantBuilding.xml",
                 "AssetViewer.Resources.Assets.PublicServiceBuilding.xml",
                 "AssetViewer.Resources.Assets.PublicServiceBuildingWithBus.xml",
+                "AssetViewer.Resources.Assets.PublicServiceBuildingWithMusicInfluencer.xml",
                 "AssetViewer.Resources.Assets.QuestLighthouse.xml",
                 "AssetViewer.Resources.Assets.QuestObjectHarborBuildingAttacker.xml",
                 "AssetViewer.Resources.Assets.QuestObjectInfectable.xml",
@@ -279,6 +285,7 @@ namespace AssetViewer {
                 "AssetViewer.Resources.Assets.ResidenceBuilding-Unique.xml",
                 "AssetViewer.Resources.Assets.Resource.xml",
                 "AssetViewer.Resources.Assets.Restaurant.xml",
+                //"AssetViewer.Resources.Assets.ScenarioRuin.xml",
                 "AssetViewer.Resources.Assets.ScenarioRuinEco.xml",
                 "AssetViewer.Resources.Assets.Shipyard.xml",
                 "AssetViewer.Resources.Assets.SimpleBuilding.xml",
@@ -302,7 +309,14 @@ namespace AssetViewer {
         using (var reader = new StreamReader(stream)) {
           var document = XDocument.Parse(reader.ReadToEnd()).Root;
           foreach (var item in document.Elements().Select(s => new TemplateAsset(s))) {
-            Buildings.Add(item.ID, item);
+            try {
+              Buildings.Add(item.ID, item);
+            }
+            catch (Exception e) {
+
+              Debug.WriteLine("Double Building Key: " + item.ID);
+              throw;
+            }
           }
         }
       }
@@ -345,7 +359,14 @@ namespace AssetViewer {
       using (var reader = new StreamReader(stream)) {
         var document = XDocument.Parse(reader.ReadToEnd()).Root;
         foreach (var item in document.Elements().Select(s => s.FromXElement<Pool>())) {
-          Pools.Add(item.ID, item);
+          try {
+
+            Pools.Add(item.ID, item);
+          }
+          catch (Exception e) {
+
+            Debug.WriteLine("Double Pool Key: " + item.ID);
+          }
         }
       }
     }

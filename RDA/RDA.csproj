@@ -144,12 +144,14 @@
     <Content Include="Original\assets13.xml" />
     <Content Include="Original\assets14.3.xml" />
     <Content Include="Original\assets14.xml" />
+    <Content Include="Original\assets15.xml" />
     <Content Include="Original\Eden Burning\assets.xml" />
     <Content Include="Original\Eden Burning\assets13.xml" />
     <Content Include="Original\Eden Burning\templates.xml" />
+    <Content Include="Original\Pride and Peddlers\assets.xml" />
+    <Content Include="Original\Pride and Peddlers\templates.xml" />
     <Content Include="Original\Seasons of Silver\assets.xml" />
     <Content Include="Original\Seasons of Silver\templates.xml" />
-    <Content Include="Resources\data\**" />
     <None Include="App.config" />
     <Content Include="Modified\Assets_ActiveItem.xml" />
     <Content Include="Modified\Assets_BridgeBuilding.xml" />
@@ -233,7 +235,6 @@
     <Content Include="Modified\LanguageFiles\Texts_Custom_Chinese.json" />
     <Content Include="Modified\LanguageFiles\Texts_Custom_Russian.json" />
     <None Include="packages.config" />
-    <None Include="Resources\data\ui\2kimages\main\assets\bg_statistics_negative_0.png.colors" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Original\assets.xml" />
@@ -297,6 +298,9 @@
     <Content Include="Original\texts_russian.xml" />
     <Content Include="Original\texts_spanish.xml" />
     <Content Include="Original\texts_taiwanese.xml" />
+  </ItemGroup>
+  <ItemGroup>
+	  <Content Include="Resources\**" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

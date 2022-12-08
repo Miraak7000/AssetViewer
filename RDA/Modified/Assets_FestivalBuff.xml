@@ -1,241 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <FestivalBuff>
-  <Asset ID="142925" RV="Update 09" RT="Common">
-    <N>HarvestFestivalAfricaProdBuff</N>
-    <T ID="142925" I="data/ui/2kimages/main/3dicons/goods_africa/icon_teff_grass.png" />
-    <R ID="118002" />
-    <IT />
-    <FN ID="142925" I="data/ui/2kimages/main/3dicons/goods_africa/icon_teff_grass.png" />
-    <GU>
-      <U V="-100%" C="BuildingUpgrade">
-        <T ID="2320" I="data/ui/2kimages/main/icons/icon_credits.png" />
-      </U>
-      <U V="+100%" C="FactoryUpgrade">
-        <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="129654" />
-    <ET>
-      <ET>
-        <T ID="193959" I="data/ui/2kimages/main/icons/icon_session_landoflions.png" />
-        <B>
-          <T ID="114456" I="data/ui/2kimages/main/3dicons/goods_africa/icon_goat_milk.png" />
-          <T ID="114439" I="data/ui/2kimages/main/3dicons/goods_africa/icon_watusi.png" />
-          <T ID="114440" I="data/ui/2kimages/main/3dicons/goods_africa/icon_salt.png" />
-          <T ID="114444" I="data/ui/2kimages/main/3dicons/goods_africa/icon_dried_meat.png" />
-          <T ID="114447" I="data/ui/2kimages/main/3dicons/goods_africa/icon_hibiscus_farm.png" />
-          <T ID="114468" I="data/ui/2kimages/main/3dicons/goods_africa/icon_hibiscus_tea.png" />
-          <T ID="114452" I="data/ui/2kimages/main/3dicons/goods_africa/icon_spices.png" />
-          <T ID="114450" I="data/ui/2kimages/main/3dicons/goods_africa/icon_teff_grass.png" />
-          <T ID="114459" I="data/ui/2kimages/main/3dicons/goods_africa/icon_teff_flour.png" />
-          <T ID="118729" I="data/ui/2kimages/main/3dicons/goods_africa/icon_seafood.png" />
-          <T ID="114471" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wat_stew.png" />
-        </B>
-      </ET>
-    </ET>
-  </Asset>
-  <Asset ID="142924" RV="Update 09" RT="Common">
-    <N>HarvestFestivalAfricaResBuff</N>
-    <T ID="142925" I="data/ui/2kimages/main/3dicons/goods_africa/icon_teff_grass.png" />
-    <R ID="118002" />
-    <IT />
-    <FN ID="142925" I="data/ui/2kimages/main/3dicons/goods_africa/icon_teff_grass.png" />
-    <GU>
-      <U V="+20" C="ResidenceUpgrade">
-        <T ID="12314" I="data/ui/2kimages/main/icons/icon_happy.png" />
-      </U>
-      <U V="+25%" C="ResidenceUpgrade">
-        <T ID="12677" I="data/ui/2kimages/main/icons/icon_credits.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="129654" />
-    <ET>
-      <ET>
-        <T ID="190762" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
-        <B>
-          <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="1010347" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="114436" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
-          <T ID="194018" />
-          <T ID="24792" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_jornalero.png" />
-          <T ID="24793" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_obrera.png" />
-        </B>
-      </ET>
-    </ET>
-  </Asset>
-  <Asset ID="142923" RV="Update 09" RT="Common">
-    <N>SpiritualFestivalAfricaProdBuff</N>
-    <T ID="142923" I="data/ui/2kimages/main/3dicons/goods_africa/icon_scriptures.png" />
-    <R ID="118002" />
-    <IT />
-    <FN ID="142923" I="data/ui/2kimages/main/3dicons/goods_africa/icon_scriptures.png" />
-    <GU>
-      <U V="" C="FactoryUpgrade">
-        <T ID="20074" I="data/ui/2kimages/fpp/icons/icon_plus.png" />
-        <AO>
-          <AO V="1 / 2">
-            <T ID="117702" I="data/ui/2kimages/main/3dicons/goods_africa/icon_paper.png" />
-          </AO>
-          <AO V="1 / 3">
-            <T ID="114390" I="data/ui/2kimages/main/3dicons/goods_africa/icon_hibiscus_tea.png" />
-          </AO>
-          <AO V="1 / 4">
-            <T ID="114414" I="data/ui/2kimages/main/3dicons/goods_africa/icon_tobacco_pipes.png" />
-          </AO>
-        </AO>
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="129653" />
-    <ET>
-      <ET>
-        <T ID="114470" I="data/ui/2kimages/main/3dicons/goods_africa/icon_scriptures.png" />
-        <B>
-          <T ID="114470" I="data/ui/2kimages/main/3dicons/goods_africa/icon_scriptures.png" />
-        </B>
-      </ET>
-    </ET>
-  </Asset>
-  <Asset ID="142919" RV="Update 09" RT="Common">
-    <N>SpiritualFestivalAfricaResBuff</N>
-    <T ID="142923" I="data/ui/2kimages/main/3dicons/goods_africa/icon_scriptures.png" />
-    <R ID="118002" />
-    <IT />
-    <FN ID="142923" I="data/ui/2kimages/main/3dicons/goods_africa/icon_scriptures.png" />
-    <GU>
-      <U V="+30" C="ResidenceUpgrade">
-        <T ID="12314" I="data/ui/2kimages/main/icons/icon_happy.png" />
-      </U>
-      <U V="" C="ResidenceUpgrade">
-        <T ID="21386" I="data/ui/2kimages/main/icons/icon_patrol.png" />
-        <A>
-          <U V="-100%">
-            <T ID="114404" I="data/ui/2kimages/main/3dicons/goods_africa/icon_tapestries.png" />
-          </U>
-          <U V="-100%">
-            <T ID="1954366639" I="data/ui/2kimages/main/3dicons/goods_africa/icon_scriptures.png" />
-          </U>
-          <U V="-100%">
-            <T ID="1049246201" I="data/ui/2kimages/main/3dicons/goods_africa/icon_lanterns.png" />
-          </U>
-        </A>
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="129653" />
-    <ET>
-      <ET>
-        <T ID="190762" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
-        <B>
-          <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="1010347" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="114436" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
-          <T ID="194018" />
-          <T ID="24792" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_jornalero.png" />
-          <T ID="24793" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_obrera.png" />
-        </B>
-      </ET>
-    </ET>
-  </Asset>
-  <Asset ID="142462" RV="Release" RT="Common">
-    <N>CarnivalFestivalVisitorsBuff</N>
-    <T ID="142462" I="data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png" />
-    <R ID="118002" />
-    <IT />
-    <FN ID="20110" I="data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png" />
-    <GU>
-      <U V="+100%" C="VisitorHarborUpgrade">
-        <T ID="20603" I="data/ui/2kimages/main/icons/icon_add_slot_guild.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="20115" I="data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png" />
-    <ET>
-      <ET>
-        <T ID="191563" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
-        <B>
-          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
-          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
-          <T ID="133890" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
-        </B>
-      </ET>
-    </ET>
-  </Asset>
-  <Asset ID="142433" RV="Release" RT="Common">
-    <N>CarnivalFestivalResidencesBuff</N>
-    <T ID="142433" I="data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png" />
-    <R ID="118002" />
-    <IT />
-    <FN ID="20110" I="data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png" />
-    <PU>
-      <U>
-        <T ID="12690" I="data/ui/2kimages/main/icons/icon_credits.png" />
-        <A>
-          <U V="+5">
-            <T ID="1010214" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
-          </U>
-          <U V="+5">
-            <T ID="1010216" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
-          </U>
-          <U V="+5">
-            <T ID="1010257" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
-          </U>
-          <U V="+5">
-            <T ID="120016" I="data/ui/2kimages/main/3dicons/icon_champagne.png" />
-          </U>
-        </A>
-      </U>
-    </PU>
-    <GU>
-      <U V="+40" C="ResidenceUpgrade">
-        <T ID="12314" I="data/ui/2kimages/main/icons/icon_happy.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="20115" I="data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png" />
-    <ET>
-      <ET>
-        <T ID="190762" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
-        <B>
-          <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="1010347" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="114436" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-          <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
-          <T ID="194018" />
-          <T ID="24792" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_jornalero.png" />
-          <T ID="24793" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_obrera.png" />
-        </B>
-      </ET>
-    </ET>
-  </Asset>
   <Asset ID="142519" RV="Release" RT="Common">
     <N>CommemorationFestivalShipyardBuff</N>
     <T ID="142519" I="data/ui/2kimages/main/3dicons/museum/icon_museum_sword_rare.png" />
@@ -296,6 +60,7 @@
           <T ID="907" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_seamines.png" />
           <T ID="907" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_seamines.png" />
           <T ID="906" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_bomb_b.png" />
+          <T ID="6630" I="data/ui/2kimages/main/3dicons/recipes/icon_police_equipment.png" />
         </B>
       </ET>
     </ET>
@@ -332,8 +97,10 @@
           <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
           <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
           <T ID="194018" />
-          <T ID="24792" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_jornalero.png" />
-          <T ID="24793" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_obrera.png" />
+          <T ID="24792" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_jornalero.png" />
+          <T ID="24793" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_obrera.png" />
+          <T ID="5405" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="6086" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_artista.png" />
         </B>
       </ET>
     </ET>
@@ -392,7 +159,7 @@
         <B>
           <T ID="1010349" I="data/ui/2kimages/main/3dicons/icon_pub.png" />
           <T ID="1010351" I="data/ui/2kimages/main/3dicons/icon_school.png" />
-          <T ID="1010356" I="data/ui/2kimages/main/3dicons/icon_bank.png" />
+          <T ID="1010365" I="data/ui/2kimages/main/3dicons/icon_bank.png" />
           <T ID="1010359" I="data/ui/2kimages/main/3dicons/icon_church.png" />
           <T ID="1010352" I="data/ui/2kimages/main/3dicons/icon_cabaret.png" />
           <T ID="1010353" I="data/ui/2kimages/main/3dicons/icon_university.png" />
@@ -405,6 +172,9 @@
           <T ID="114519" I="data/ui/2kimages/main/3dicons/icon_music_plaza.png" />
           <T ID="114520" I="data/ui/2kimages/main/3dicons/icon_monastery.png" />
           <T ID="118736" I="data/ui/2kimages/main/3dicons/icon_radio_station.png" />
+          <T ID="5840" I="data/ui/2kimages/main/3dicons/public_building/icon_samba_school.png" />
+          <T ID="6018" I="data/ui/2kimages/main/3dicons/public_building/icon_cinema.png" />
+          <T ID="6264" I="data/ui/2kimages/main/3dicons/public_building/icon_beach.png" />
         </B>
       </ET>
     </ET>
@@ -467,6 +237,8 @@
           <T ID="114452" I="data/ui/2kimages/main/3dicons/goods_africa/icon_spices.png" />
           <T ID="114453" I="data/ui/2kimages/main/3dicons/goods_africa/icon_beeswax.png" />
           <T ID="25894" />
+          <T ID="5463" I="data/ui/2kimages/main/3dicons/production_goods/icon_herbs_with_flower.png" />
+          <T ID="5814" I="data/ui/2kimages/main/3dicons/production_goods/icon_orchid.png" />
         </B>
       </ET>
     </ET>
@@ -503,8 +275,10 @@
           <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
           <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
           <T ID="194018" />
-          <T ID="24792" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_jornalero.png" />
-          <T ID="24793" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_obrera.png" />
+          <T ID="24792" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_jornalero.png" />
+          <T ID="24793" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_obrera.png" />
+          <T ID="5405" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="6086" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_artista.png" />
         </B>
       </ET>
     </ET>
@@ -545,6 +319,9 @@
           <T ID="100655" I="data/ui/2kimages/main/3dicons/icon_grapes.png" />
           <T ID="25064" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
           <T ID="24801" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
+          <T ID="6594" I="data/ui/2kimages/main/3dicons/production_goods/icon_mezcal.png" />
+          <T ID="25350" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
+          <T ID="25126" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_atole.png" />
         </B>
       </ET>
     </ET>
@@ -595,8 +372,305 @@
           <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
           <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
           <T ID="194018" />
-          <T ID="24792" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_jornalero.png" />
-          <T ID="24793" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_obrera.png" />
+          <T ID="24792" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_jornalero.png" />
+          <T ID="24793" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_obrera.png" />
+          <T ID="5405" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="6086" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_artista.png" />
+        </B>
+      </ET>
+    </ET>
+  </Asset>
+  <Asset ID="6937" RV="Update 16" RT="Common">
+    <N>RegionalBuff2</N>
+    <T ID="7273" I="data\ui\2kimages\main\3dicons\icon_world_championship.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="7273" />
+    <GU>
+      <U V="+20" C="ResidenceUpgrade">
+        <T ID="12314" I="data/ui/2kimages/main/icons/icon_happy.png" />
+      </U>
+      <U V="+25%" C="ResidenceUpgrade">
+        <T ID="12677" I="data/ui/2kimages/main/icons/icon_credits.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="7744" />
+    <ET>
+      <ET>
+        <T ID="190762" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010347" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="114436" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
+          <T ID="194018" />
+          <T ID="24792" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_jornalero.png" />
+          <T ID="24793" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_obrera.png" />
+          <T ID="5405" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="6086" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_artista.png" />
+        </B>
+      </ET>
+    </ET>
+  </Asset>
+  <Asset ID="6936" RV="Update 16" RT="Common">
+    <N>RegionalBuff1</N>
+    <T ID="7273" I="data\ui\2kimages\main\3dicons\icon_world_championship.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="7273" />
+    <GU>
+      <U V="+20" C="ResidenceUpgrade">
+        <T ID="12314" I="data/ui/2kimages/main/icons/icon_happy.png" />
+      </U>
+      <U V="+25%" C="ResidenceUpgrade">
+        <T ID="12677" I="data/ui/2kimages/main/icons/icon_credits.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="7744" />
+    <ET>
+      <ET>
+        <T ID="190762" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010347" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="114436" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
+          <T ID="194018" />
+          <T ID="24792" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_jornalero.png" />
+          <T ID="24793" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_obrera.png" />
+          <T ID="5405" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="6086" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_artista.png" />
+        </B>
+      </ET>
+    </ET>
+  </Asset>
+  <Asset ID="6935" RV="Update 16" RT="Common">
+    <N>LocalBuff5</N>
+    <T ID="7272" I="data\ui\2kimages\main\3dicons\icon_world_championship.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="7273" />
+    <GU>
+      <U V="-25%" C="BuildingUpgrade">
+        <T ID="12337" I="data/ui/2kimages/main/icons/icon_build_menu.png" />
+      </U>
+      <U V="+50%" C="FactoryUpgrade">
+        <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="7743" />
+    <ET>
+      <ET>
+        <T ID="192566" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+        <B>
+          <T ID="1010262" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+          <T ID="1010264" I="data/ui/2kimages/main/3dicons/icon_hops.png" />
+          <T ID="1010292" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+          <T ID="1010314" I="data/ui/2kimages/main/3dicons/icon_malt.png" />
+          <T ID="1010265" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
+          <T ID="1010294" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
+          <T ID="1010266" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+          <T ID="1010329" I="data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png" />
+          <T ID="1010340" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
+          <T ID="1010560" I="data/ui/2kimages/main/3dicons/icon_quartz_sand.png" />
+          <T ID="1010319" I="data/ui/2kimages/main/3dicons/icon_glass.png" />
+          <T ID="100659" I="data/ui/2kimages/main/3dicons/icon_champagne.png" />
+          <T ID="100655" I="data/ui/2kimages/main/3dicons/icon_grapes.png" />
+          <T ID="25064" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+          <T ID="24801" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
+          <T ID="6594" I="data/ui/2kimages/main/3dicons/production_goods/icon_mezcal.png" />
+          <T ID="25350" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
+          <T ID="25126" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_atole.png" />
+        </B>
+      </ET>
+    </ET>
+  </Asset>
+  <Asset ID="6934" RV="Update 16" RT="Common">
+    <N>LocalBuff4</N>
+    <T ID="7272" I="data\ui\2kimages\main\3dicons\icon_world_championship.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="7272" />
+    <GU>
+      <U V="-25%" C="BuildingUpgrade">
+        <T ID="12337" I="data/ui/2kimages/main/icons/icon_build_menu.png" />
+      </U>
+      <U V="+50%" C="FactoryUpgrade">
+        <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="7743" />
+    <ET>
+      <ET>
+        <T ID="192566" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+        <B>
+          <T ID="1010262" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+          <T ID="1010264" I="data/ui/2kimages/main/3dicons/icon_hops.png" />
+          <T ID="1010292" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+          <T ID="1010314" I="data/ui/2kimages/main/3dicons/icon_malt.png" />
+          <T ID="1010265" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
+          <T ID="1010294" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
+          <T ID="1010266" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+          <T ID="1010329" I="data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png" />
+          <T ID="1010340" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
+          <T ID="1010560" I="data/ui/2kimages/main/3dicons/icon_quartz_sand.png" />
+          <T ID="1010319" I="data/ui/2kimages/main/3dicons/icon_glass.png" />
+          <T ID="100659" I="data/ui/2kimages/main/3dicons/icon_champagne.png" />
+          <T ID="100655" I="data/ui/2kimages/main/3dicons/icon_grapes.png" />
+          <T ID="25064" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+          <T ID="24801" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
+          <T ID="6594" I="data/ui/2kimages/main/3dicons/production_goods/icon_mezcal.png" />
+          <T ID="25350" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
+          <T ID="25126" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_atole.png" />
+        </B>
+      </ET>
+    </ET>
+  </Asset>
+  <Asset ID="6933" RV="Update 16" RT="Common">
+    <N>LocalBuff3</N>
+    <T ID="7272" I="data\ui\2kimages\main\3dicons\icon_world_championship.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="7272" />
+    <GU>
+      <U V="-25%" C="BuildingUpgrade">
+        <T ID="12337" I="data/ui/2kimages/main/icons/icon_build_menu.png" />
+      </U>
+      <U V="+50%" C="FactoryUpgrade">
+        <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="7743" />
+    <ET>
+      <ET>
+        <T ID="192566" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+        <B>
+          <T ID="1010262" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+          <T ID="1010264" I="data/ui/2kimages/main/3dicons/icon_hops.png" />
+          <T ID="1010292" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+          <T ID="1010314" I="data/ui/2kimages/main/3dicons/icon_malt.png" />
+          <T ID="1010265" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
+          <T ID="1010294" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
+          <T ID="1010266" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+          <T ID="1010329" I="data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png" />
+          <T ID="1010340" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
+          <T ID="1010560" I="data/ui/2kimages/main/3dicons/icon_quartz_sand.png" />
+          <T ID="1010319" I="data/ui/2kimages/main/3dicons/icon_glass.png" />
+          <T ID="100659" I="data/ui/2kimages/main/3dicons/icon_champagne.png" />
+          <T ID="100655" I="data/ui/2kimages/main/3dicons/icon_grapes.png" />
+          <T ID="25064" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+          <T ID="24801" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
+          <T ID="6594" I="data/ui/2kimages/main/3dicons/production_goods/icon_mezcal.png" />
+          <T ID="25350" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
+          <T ID="25126" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_atole.png" />
+        </B>
+      </ET>
+    </ET>
+  </Asset>
+  <Asset ID="6932" RV="Update 16" RT="Common">
+    <N>LocalBuff2</N>
+    <T ID="7272" I="data\ui\2kimages\main\3dicons\icon_world_championship.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="7272" />
+    <GU>
+      <U V="-25%" C="BuildingUpgrade">
+        <T ID="12337" I="data/ui/2kimages/main/icons/icon_build_menu.png" />
+      </U>
+      <U V="+50%" C="FactoryUpgrade">
+        <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="7743" />
+    <ET>
+      <ET>
+        <T ID="192566" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+        <B>
+          <T ID="1010262" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+          <T ID="1010264" I="data/ui/2kimages/main/3dicons/icon_hops.png" />
+          <T ID="1010292" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+          <T ID="1010314" I="data/ui/2kimages/main/3dicons/icon_malt.png" />
+          <T ID="1010265" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
+          <T ID="1010294" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
+          <T ID="1010266" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+          <T ID="1010329" I="data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png" />
+          <T ID="1010340" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
+          <T ID="1010560" I="data/ui/2kimages/main/3dicons/icon_quartz_sand.png" />
+          <T ID="1010319" I="data/ui/2kimages/main/3dicons/icon_glass.png" />
+          <T ID="100659" I="data/ui/2kimages/main/3dicons/icon_champagne.png" />
+          <T ID="100655" I="data/ui/2kimages/main/3dicons/icon_grapes.png" />
+          <T ID="25064" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+          <T ID="24801" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
+          <T ID="6594" I="data/ui/2kimages/main/3dicons/production_goods/icon_mezcal.png" />
+          <T ID="25350" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
+          <T ID="25126" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_atole.png" />
+        </B>
+      </ET>
+    </ET>
+  </Asset>
+  <Asset ID="6931" RV="Update 16" RT="Common">
+    <N>LocalBuff1</N>
+    <T ID="7272" I="data\ui\2kimages\main\3dicons\icon_world_championship.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="7272" />
+    <GU>
+      <U V="-25%" C="BuildingUpgrade">
+        <T ID="12337" I="data/ui/2kimages/main/icons/icon_build_menu.png" />
+      </U>
+      <U V="+50%" C="FactoryUpgrade">
+        <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="7743" />
+    <ET>
+      <ET>
+        <T ID="192566" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+        <B>
+          <T ID="1010262" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+          <T ID="1010264" I="data/ui/2kimages/main/3dicons/icon_hops.png" />
+          <T ID="1010292" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+          <T ID="1010314" I="data/ui/2kimages/main/3dicons/icon_malt.png" />
+          <T ID="1010265" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
+          <T ID="1010294" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
+          <T ID="1010266" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+          <T ID="1010329" I="data/ui/2kimages/main/3dicons/icon_cane_sugar_1.png" />
+          <T ID="1010340" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
+          <T ID="1010560" I="data/ui/2kimages/main/3dicons/icon_quartz_sand.png" />
+          <T ID="1010319" I="data/ui/2kimages/main/3dicons/icon_glass.png" />
+          <T ID="100659" I="data/ui/2kimages/main/3dicons/icon_champagne.png" />
+          <T ID="100655" I="data/ui/2kimages/main/3dicons/icon_grapes.png" />
+          <T ID="25064" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+          <T ID="24801" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
+          <T ID="6594" I="data/ui/2kimages/main/3dicons/production_goods/icon_mezcal.png" />
+          <T ID="25350" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
+          <T ID="25126" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_atole.png" />
         </B>
       </ET>
     </ET>
@@ -714,7 +788,7 @@
           <T ID="101266" I="data/ui/2kimages/main/3dicons/icon_poncho.png" />
           <T ID="1010320" I="data/ui/2kimages/main/3dicons/icon_inlay.png" />
           <T ID="1010342" I="data/ui/2kimages/main/3dicons/icon_cigars.png" />
-          <T ID="1010311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
+          <T ID="101311" I="data/ui/2kimages/main/3dicons/icon_gold_ore.png" />
           <T ID="118571" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
           <T ID="118571" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
           <T ID="122963" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
@@ -752,7 +826,7 @@
           <T ID="114444" I="data/ui/2kimages/main/3dicons/goods_africa/icon_dried_meat.png" />
           <T ID="25894" />
           <T ID="435" />
-          <T ID="24805" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_fertiliser.png" />
+          <T ID="24805" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_fertiliser.png" />
           <T ID="4670" />
           <T ID="4671" />
           <T ID="1418" I="data/ui/2kimages/main/3dicons/icon_industrial_lubricant_a.png" />
@@ -760,6 +834,7 @@
           <T ID="835" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
           <T ID="1353" I="data/ui/2kimages/main/3dicons/icon_helium.png" />
           <T ID="1308" I="data/ui/2kimages/main/3dicons/icon_bauxit.png" />
+          <T ID="7746" />
         </B>
       </ET>
     </ET>
@@ -810,8 +885,10 @@
           <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
           <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
           <T ID="194018" />
-          <T ID="24792" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_jornalero.png" />
-          <T ID="24793" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_obrera.png" />
+          <T ID="24792" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_jornalero.png" />
+          <T ID="24793" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_obrera.png" />
+          <T ID="5405" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="6086" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_artista.png" />
         </B>
       </ET>
     </ET>
@@ -942,8 +1019,497 @@
           <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
           <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
           <T ID="194018" />
-          <T ID="24792" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_jornalero.png" />
-          <T ID="24793" I="data/ui/2kimages/main/3dicons/icon_hacienda_module_obrera.png" />
+          <T ID="24792" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_jornalero.png" />
+          <T ID="24793" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_obrera.png" />
+          <T ID="5405" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="6086" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_artista.png" />
+        </B>
+      </ET>
+    </ET>
+  </Asset>
+  <Asset ID="142925" RV="Update 09" RT="Common">
+    <N>HarvestFestivalAfricaProdBuff</N>
+    <T ID="142925" I="data/ui/2kimages/main/3dicons/goods_africa/icon_teff_grass.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="142925" I="data/ui/2kimages/main/3dicons/goods_africa/icon_teff_grass.png" />
+    <GU>
+      <U V="-100%" C="BuildingUpgrade">
+        <T ID="2320" I="data/ui/2kimages/main/icons/icon_credits.png" />
+      </U>
+      <U V="+100%" C="FactoryUpgrade">
+        <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="129654" />
+    <ET>
+      <ET>
+        <T ID="193959" I="data/ui/2kimages/main/icons/icon_session_landoflions.png" />
+        <B>
+          <T ID="114456" I="data/ui/2kimages/main/3dicons/goods_africa/icon_goat_milk.png" />
+          <T ID="114439" I="data/ui/2kimages/main/3dicons/goods_africa/icon_watusi.png" />
+          <T ID="114440" I="data/ui/2kimages/main/3dicons/goods_africa/icon_salt.png" />
+          <T ID="114444" I="data/ui/2kimages/main/3dicons/goods_africa/icon_dried_meat.png" />
+          <T ID="114447" I="data/ui/2kimages/main/3dicons/goods_africa/icon_hibiscus_farm.png" />
+          <T ID="114468" I="data/ui/2kimages/main/3dicons/goods_africa/icon_hibiscus_tea.png" />
+          <T ID="114452" I="data/ui/2kimages/main/3dicons/goods_africa/icon_spices.png" />
+          <T ID="114450" I="data/ui/2kimages/main/3dicons/goods_africa/icon_teff_grass.png" />
+          <T ID="114459" I="data/ui/2kimages/main/3dicons/goods_africa/icon_teff_flour.png" />
+          <T ID="118729" I="data/ui/2kimages/main/3dicons/goods_africa/icon_seafood.png" />
+          <T ID="114471" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wat_stew.png" />
+        </B>
+      </ET>
+    </ET>
+  </Asset>
+  <Asset ID="142924" RV="Update 09" RT="Common">
+    <N>HarvestFestivalAfricaResBuff</N>
+    <T ID="142925" I="data/ui/2kimages/main/3dicons/goods_africa/icon_teff_grass.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="142925" I="data/ui/2kimages/main/3dicons/goods_africa/icon_teff_grass.png" />
+    <GU>
+      <U V="+20" C="ResidenceUpgrade">
+        <T ID="12314" I="data/ui/2kimages/main/icons/icon_happy.png" />
+      </U>
+      <U V="+25%" C="ResidenceUpgrade">
+        <T ID="12677" I="data/ui/2kimages/main/icons/icon_credits.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="129654" />
+    <ET>
+      <ET>
+        <T ID="190762" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010347" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="114436" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
+          <T ID="194018" />
+          <T ID="24792" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_jornalero.png" />
+          <T ID="24793" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_obrera.png" />
+          <T ID="5405" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="6086" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_artista.png" />
+        </B>
+      </ET>
+    </ET>
+  </Asset>
+  <Asset ID="142923" RV="Update 09" RT="Common">
+    <N>SpiritualFestivalAfricaProdBuff</N>
+    <T ID="142923" I="data/ui/2kimages/main/3dicons/goods_africa/icon_scriptures.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="142923" I="data/ui/2kimages/main/3dicons/goods_africa/icon_scriptures.png" />
+    <GU>
+      <U V="" C="FactoryUpgrade">
+        <T ID="20074" I="data/ui/2kimages/fpp/icons/icon_plus.png" />
+        <AO>
+          <AO V="1 / 2">
+            <T ID="117702" I="data/ui/2kimages/main/3dicons/goods_africa/icon_paper.png" />
+          </AO>
+          <AO V="1 / 3">
+            <T ID="114390" I="data/ui/2kimages/main/3dicons/goods_africa/icon_hibiscus_tea.png" />
+          </AO>
+          <AO V="1 / 4">
+            <T ID="114414" I="data/ui/2kimages/main/3dicons/goods_africa/icon_tobacco_pipes.png" />
+          </AO>
+        </AO>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="129653" />
+    <ET>
+      <ET>
+        <T ID="114470" I="data/ui/2kimages/main/3dicons/goods_africa/icon_scriptures.png" />
+        <B>
+          <T ID="114470" I="data/ui/2kimages/main/3dicons/goods_africa/icon_scriptures.png" />
+        </B>
+      </ET>
+    </ET>
+  </Asset>
+  <Asset ID="142919" RV="Update 09" RT="Common">
+    <N>SpiritualFestivalAfricaResBuff</N>
+    <T ID="142923" I="data/ui/2kimages/main/3dicons/goods_africa/icon_scriptures.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="142923" I="data/ui/2kimages/main/3dicons/goods_africa/icon_scriptures.png" />
+    <GU>
+      <U V="+30" C="ResidenceUpgrade">
+        <T ID="12314" I="data/ui/2kimages/main/icons/icon_happy.png" />
+      </U>
+      <U V="" C="ResidenceUpgrade">
+        <T ID="21386" I="data/ui/2kimages/main/icons/icon_patrol.png" />
+        <A>
+          <U V="-100%">
+            <T ID="114404" I="data/ui/2kimages/main/3dicons/goods_africa/icon_tapestries.png" />
+          </U>
+          <U V="-100%">
+            <T ID="1954366639" I="data/ui/2kimages/main/3dicons/goods_africa/icon_scriptures.png" />
+          </U>
+          <U V="-100%">
+            <T ID="1049246201" I="data/ui/2kimages/main/3dicons/goods_africa/icon_lanterns.png" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="129653" />
+    <ET>
+      <ET>
+        <T ID="190762" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010347" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="114436" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
+          <T ID="194018" />
+          <T ID="24792" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_jornalero.png" />
+          <T ID="24793" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_obrera.png" />
+          <T ID="5405" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="6086" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_artista.png" />
+        </B>
+      </ET>
+    </ET>
+  </Asset>
+  <Asset ID="142462" RV="Release" RT="Common">
+    <N>CarnivalFestivalVisitorsBuff</N>
+    <T ID="142462" I="data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="20110" I="data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png" />
+    <GU>
+      <U V="+100%" C="VisitorHarborUpgrade">
+        <T ID="20603" I="data/ui/2kimages/main/icons/icon_add_slot_guild.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="20115" I="data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png" />
+    <ET>
+      <ET>
+        <T ID="191563" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+        <B>
+          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+          <T ID="133890" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+        </B>
+      </ET>
+    </ET>
+  </Asset>
+  <Asset ID="142433" RV="Release" RT="Common">
+    <N>CarnivalFestivalResidencesBuff</N>
+    <T ID="142433" I="data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="20110" I="data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png" />
+    <PU>
+      <U>
+        <T ID="12690" I="data/ui/2kimages/main/icons/icon_credits.png" />
+        <A>
+          <U V="+5">
+            <T ID="1010214" I="data/ui/2kimages/main/3dicons/icon_beer.png" />
+          </U>
+          <U V="+5">
+            <T ID="1010216" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
+          </U>
+          <U V="+5">
+            <T ID="1010257" I="data/ui/2kimages/main/3dicons/icon_rum_barrel.png" />
+          </U>
+          <U V="+5">
+            <T ID="120016" I="data/ui/2kimages/main/3dicons/icon_champagne.png" />
+          </U>
+        </A>
+      </U>
+    </PU>
+    <GU>
+      <U V="+40" C="ResidenceUpgrade">
+        <T ID="12314" I="data/ui/2kimages/main/icons/icon_happy.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="20115" I="data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png" />
+    <ET>
+      <ET>
+        <T ID="190762" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010347" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="114436" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
+          <T ID="194018" />
+          <T ID="24792" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_jornalero.png" />
+          <T ID="24793" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_obrera.png" />
+          <T ID="5405" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="6086" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_artista.png" />
+        </B>
+      </ET>
+    </ET>
+  </Asset>
+  <Asset ID="6945" RV="Update 16" RT="Common">
+    <N>WorldBuff5</N>
+    <T ID="7274" I="data\ui\2kimages\main\3dicons\icon_world_championship.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="7274" />
+    <GU>
+      <U V="+100%" C="VisitorHarborUpgrade">
+        <T ID="20603" I="data/ui/2kimages/main/icons/icon_add_slot_guild.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="7745" />
+    <ET>
+      <ET>
+        <T ID="191563" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+        <B>
+          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+          <T ID="133890" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+        </B>
+      </ET>
+    </ET>
+  </Asset>
+  <Asset ID="6944" RV="Update 16" RT="Common">
+    <N>WorldBuff4</N>
+    <T ID="7274" I="data\ui\2kimages\main\3dicons\icon_world_championship.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="7274" />
+    <GU>
+      <U V="+100%" C="VisitorHarborUpgrade">
+        <T ID="20603" I="data/ui/2kimages/main/icons/icon_add_slot_guild.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="7745" />
+    <ET>
+      <ET>
+        <T ID="191563" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+        <B>
+          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+          <T ID="133890" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+        </B>
+      </ET>
+    </ET>
+  </Asset>
+  <Asset ID="6943" RV="Update 16" RT="Common">
+    <N>WorldBuff3</N>
+    <T ID="7274" I="data\ui\2kimages\main\3dicons\icon_world_championship.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="7274" />
+    <GU>
+      <U V="+100%" C="VisitorHarborUpgrade">
+        <T ID="20603" I="data/ui/2kimages/main/icons/icon_add_slot_guild.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="7745" />
+    <ET>
+      <ET>
+        <T ID="191563" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+        <B>
+          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+          <T ID="133890" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+        </B>
+      </ET>
+    </ET>
+  </Asset>
+  <Asset ID="6942" RV="Update 16" RT="Common">
+    <N>WorldBuff2</N>
+    <T ID="7274" I="data\ui\2kimages\main\3dicons\icon_world_championship.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="7274" />
+    <GU>
+      <U V="+100%" C="VisitorHarborUpgrade">
+        <T ID="20603" I="data/ui/2kimages/main/icons/icon_add_slot_guild.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="7745" />
+    <ET>
+      <ET>
+        <T ID="191563" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+        <B>
+          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+          <T ID="133890" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+        </B>
+      </ET>
+    </ET>
+  </Asset>
+  <Asset ID="6941" RV="Update 16" RT="Common">
+    <N>WorldBuff1</N>
+    <T ID="7274" I="data\ui\2kimages\main\3dicons\icon_world_championship.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="7274" />
+    <GU>
+      <U V="+100%" C="VisitorHarborUpgrade">
+        <T ID="20603" I="data/ui/2kimages/main/icons/icon_add_slot_guild.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="7745" />
+    <ET>
+      <ET>
+        <T ID="191563" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+        <B>
+          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+          <T ID="100429" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+          <T ID="133890" I="data/ui/2kimages/main/3dicons/icon_visitor_harbour.png" />
+        </B>
+      </ET>
+    </ET>
+  </Asset>
+  <Asset ID="6940" RV="Update 16" RT="Common">
+    <N>RegionalBuff5</N>
+    <T ID="7273" I="data\ui\2kimages\main\3dicons\icon_world_championship.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="7273" />
+    <GU>
+      <U V="+20" C="ResidenceUpgrade">
+        <T ID="12314" I="data/ui/2kimages/main/icons/icon_happy.png" />
+      </U>
+      <U V="+25%" C="ResidenceUpgrade">
+        <T ID="12677" I="data/ui/2kimages/main/icons/icon_credits.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="7744" />
+    <ET>
+      <ET>
+        <T ID="190762" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010347" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="114436" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
+          <T ID="194018" />
+          <T ID="24792" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_jornalero.png" />
+          <T ID="24793" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_obrera.png" />
+          <T ID="5405" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="6086" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_artista.png" />
+        </B>
+      </ET>
+    </ET>
+  </Asset>
+  <Asset ID="6939" RV="Update 16" RT="Common">
+    <N>RegionalBuff4</N>
+    <T ID="7273" I="data\ui\2kimages\main\3dicons\icon_world_championship.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="7273" />
+    <GU>
+      <U V="+20" C="ResidenceUpgrade">
+        <T ID="12314" I="data/ui/2kimages/main/icons/icon_happy.png" />
+      </U>
+      <U V="+25%" C="ResidenceUpgrade">
+        <T ID="12677" I="data/ui/2kimages/main/icons/icon_credits.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="7744" />
+    <ET>
+      <ET>
+        <T ID="190762" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010347" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="114436" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
+          <T ID="194018" />
+          <T ID="24792" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_jornalero.png" />
+          <T ID="24793" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_obrera.png" />
+          <T ID="5405" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="6086" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_artista.png" />
+        </B>
+      </ET>
+    </ET>
+  </Asset>
+  <Asset ID="6938" RV="Update 16" RT="Common">
+    <N>RegionalBuff3</N>
+    <T ID="7273" I="data\ui\2kimages\main\3dicons\icon_world_championship.png" />
+    <R ID="118002" />
+    <IT />
+    <FN ID="7273" />
+    <GU>
+      <U V="+20" C="ResidenceUpgrade">
+        <T ID="12314" I="data/ui/2kimages/main/icons/icon_happy.png" />
+      </U>
+      <U V="+25%" C="ResidenceUpgrade">
+        <T ID="12677" I="data/ui/2kimages/main/icons/icon_credits.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="7744" />
+    <ET>
+      <ET>
+        <T ID="190762" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
+        <B>
+          <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="1010347" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101254" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="101255" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="114436" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="114437" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="114445" I="data/ui/2kimages/main/3dicons/icon_residence_scholars.png" />
+          <T ID="194018" />
+          <T ID="24792" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_jornalero.png" />
+          <T ID="24793" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_obrera.png" />
+          <T ID="5405" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+          <T ID="6086" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_artista.png" />
         </B>
       </ET>
     </ET>
