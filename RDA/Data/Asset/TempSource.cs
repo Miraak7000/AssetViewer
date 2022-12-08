@@ -55,6 +55,7 @@ namespace RDA.Data {
         case "ItemWithUI":
         case "MonumentEventReward":
         case "CollectablePicturePuzzle":
+        case "CollectablePicturePuzzleWithPropRemoval":
           Text = new Description(Source);
           Details = element.Details.Select(d => (new Description(d.Asset), d.Weight)).ToList();
           break;

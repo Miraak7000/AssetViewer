@@ -60,6 +60,8 @@ namespace RDA {
 
       Program.ProcessingItems("Product");
 
+      //Program.ProcessingItems("Season", false);
+
       //Buildings
       Program.ProcessingBuildings();
 
@@ -86,6 +88,7 @@ namespace RDA {
       //Tourism
       Program.ProcessingTourism();
 
+      //Effekts
       Program.ProcessingBuffs();
 
       //Save Descriptions

@@ -1,8 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BuffFactory>
-  <Asset ID="269848" RV="Update 08" RT="Common" IP="true">
-    <N>colony01_tractor_module_01 (Tractor)</N>
-    <T ID="269848" I="data/ui/2kimages/main/3dicons/icon_tractor.png" />
+  <Asset ID="6264 (Pride_and_Peddlers)" RV="Update 16" RT="Common" IP="true">
+    <N>DLC12 Beach</N>
+    <T ID="6264" I="data/ui/2kimages/main/3dicons/public_building/icon_beach.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="5000">
+        <T ID="6063" I="data/ui/2kimages/main/icons/icon_resource_money_1.png" />
+      </U>
+      <U V="25">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11144" />
+    <FB CT="180" />
+    <M>
+      <MC>
+        <U V="670">
+          <T ID="6063" I="data/ui/2kimages/main/icons/icon_resource_money_1.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="6264" RV="Update 16" RT="Common" IP="true">
+    <N>DLC12 Beach</N>
+    <T ID="6264" I="data/ui/2kimages/main/3dicons/public_building/icon_beach.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
@@ -10,396 +37,134 @@
       <U V="5000">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
-      <U V="20">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="10">
-        <T ID="1010224" I="data/ui/2kimages/main/3dicons/icon_steam_machine.png" />
+      <U V="25">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
     </BC>
     <GU />
     <TP />
     <HF />
-    <I ID="269959" />
-    <FB CT="300">
-      <FI>
-        <U V="1 / 10">
-          <T ID="270042" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
+    <I ID="11144" />
+    <FB CT="180" />
+    <M>
+      <MC>
+        <U V="670">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
-      </FI>
-    </FB>
-    <M />
+      </MC>
+    </M>
   </Asset>
-  <Asset ID="269957" RV="Update 08" RT="Common" IP="true">
-    <N>Silo (Grain)</N>
-    <T ID="269957" I="data/ui/2kimages/main/3dicons/icon_silo.png" />
+  <Asset ID="5840" RV="Update 16" RT="Common" IP="true">
+    <N>DLC12 Samba School</N>
+    <T ID="5840" I="data/ui/2kimages/main/3dicons/public_building/icon_samba_school.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
     <BC>
-      <U V="1000">
+      <U V="5600">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
       <U V="20">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
-      <U V="10">
+      <U V="25">
         <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
       </U>
     </BC>
     <GU />
     <TP />
     <HF />
-    <I ID="269961" />
-    <FB CT="300">
+    <I ID="11144" />
+    <FB CT="120">
       <FI>
-        <U V="1 / 5">
-          <T ID="-774067498" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+        <U V="1 / 6">
+          <T ID="5389" I="data/ui/2kimages/main/3dicons/production_goods/icon_costumes.png" />
         </U>
       </FI>
     </FB>
-    <M />
+    <M>
+      <MC>
+        <U V="100">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="15">
+          <T ID="5406" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_artista.png" />
+        </U>
+      </MC>
+    </M>
   </Asset>
-  <Asset ID="269839" RV="Update 08" RT="Common" IP="true">
-    <N>tractor_module_02 (Harvester)</N>
-    <T ID="269848" I="data/ui/2kimages/main/3dicons/icon_tractor.png" />
+  <Asset ID="7314" RV="Update 16" RT="Common" IP="true">
+    <N>Sceanrio04 FuelCrane</N>
+    <T ID="7314" I="data/ui/2kimages/main/3dicons/icon_docklands_module_speed.png" />
     <R ID="118002" />
     <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
     <BC>
-      <U V="5000">
+      <U V="1200">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
       <U V="20">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
-      <U V="10">
-        <T ID="1010224" I="data/ui/2kimages/main/3dicons/icon_steam_machine.png" />
+      <U V="27">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
       </U>
     </BC>
     <GU />
     <TP />
     <HF />
-    <I ID="269959" />
-    <FB CT="300">
-      <FI>
-        <U V="1 / 10">
-          <T ID="270042" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
-        </U>
-      </FI>
-    </FB>
-    <M />
-  </Asset>
-  <Asset ID="269837" RV="Update 08" RT="Common" IP="true">
-    <N>tractor_module_01 (Tractor)</N>
-    <T ID="269848" I="data/ui/2kimages/main/3dicons/icon_tractor.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="5000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="20">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="10">
-        <T ID="1010224" I="data/ui/2kimages/main/3dicons/icon_steam_machine.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="269959" />
-    <FB CT="300">
-      <FI>
-        <U V="1 / 10">
-          <T ID="270042" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
-        </U>
-      </FI>
-    </FB>
-    <M />
-  </Asset>
-  <Asset ID="270041" RV="Update 08" RT="Common" IP="true">
-    <N>tractor_module_01 (GASOLINE TEST)</N>
-    <T ID="270041" I="data/ui/2kimages/main/3dicons/icon_om_tractor.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="5000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="20">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="10">
-        <T ID="1010224" I="data/ui/2kimages/main/3dicons/icon_steam_machine.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="269959" />
     <FB>
       <FI>
-        <U V="1 / 10">
-          <T ID="270042" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
-        </U>
-      </FI>
-    </FB>
-    <M />
-  </Asset>
-  <Asset ID="119025" RV="Update 09" RT="Common" IP="true">
-    <N>africa_silo (Teff)</N>
-    <T ID="269957" I="data/ui/2kimages/main/3dicons/icon_silo.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="22146" />
-    <BC>
-      <U V="1000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="20">
-        <T ID="114356" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
-      </U>
-      <U V="10">
-        <T ID="114402" I="data/ui/2kimages/main/3dicons/goods_africa/icon_mud_bricks.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="124838" />
-    <FB CT="300">
-      <FI>
         <U V="1 / 5">
-          <T ID="114367" I="data/ui/2kimages/main/3dicons/goods_africa/icon_teff_grass.png" />
+          <T ID="13002301" I="data/ui/2kimages/main/3dicons/icon_tallow.png" />
         </U>
       </FI>
     </FB>
-    <M />
-  </Asset>
-  <Asset ID="119027" RV="Update 09" RT="Common" IP="true">
-    <N>africa_tractor_module_02 (Harvester)</N>
-    <T ID="269848" I="data/ui/2kimages/main/3dicons/icon_tractor.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="22146" />
-    <BC>
-      <U V="5000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="20">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="10">
-        <T ID="1010224" I="data/ui/2kimages/main/3dicons/icon_steam_machine.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="269959" />
-    <FB CT="300">
-      <FI>
-        <U V="1 / 10">
-          <T ID="270042" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
+    <M>
+      <MC>
+        <U V="40 / 20">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
-      </FI>
-    </FB>
-    <M />
-  </Asset>
-  <Asset ID="119026" RV="Update 09" RT="Common" IP="true">
-    <N>africa_tractor_module_01 (Tractor)</N>
-    <T ID="269848" I="data/ui/2kimages/main/3dicons/icon_tractor.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="22146" />
-    <BC>
-      <U V="5000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="20">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="10">
-        <T ID="1010224" I="data/ui/2kimages/main/3dicons/icon_steam_machine.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="269959" />
-    <FB CT="300">
-      <FI>
-        <U V="1 / 10">
-          <T ID="270042" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
+        <U V="15">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
         </U>
-      </FI>
-    </FB>
-    <M />
+      </MC>
+    </M>
   </Asset>
-  <Asset ID="269958" RV="Update 08" RT="Common" IP="true">
-    <N>Silo (Corn)</N>
-    <T ID="269957" I="data/ui/2kimages/main/3dicons/icon_silo.png" />
+  <Asset ID="6018" RV="Update 16" RT="Common" IP="true">
+    <N>DLC12 Cinema</N>
+    <T ID="6018" I="data/ui/2kimages/main/3dicons/public_building/icon_cinema.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
     <BC>
-      <U V="1000">
+      <U V="5000">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
-      <U V="20">
+      <U V="25">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
-      <U V="10">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
     </BC>
     <GU />
     <TP />
     <HF />
-    <I ID="270142" />
-    <FB CT="300">
+    <I ID="11144" />
+    <FB CT="180">
       <FI>
-        <U V="1 / 5">
-          <T ID="120034" I="data/ui/2kimages/main/3dicons/icon_corn.png" />
+        <U V="1 / 6">
+          <T ID="5392" I="data/ui/2kimages/main/3dicons/production_goods/icon_film_role.png" />
         </U>
       </FI>
     </FB>
-    <M />
-  </Asset>
-  <Asset ID="269849" RV="Update 08" RT="Common" IP="true">
-    <N>colony01_tractor_module_02 (Harvester)</N>
-    <T ID="269848" I="data/ui/2kimages/main/3dicons/icon_tractor.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="5000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="20">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="10">
-        <T ID="1010224" I="data/ui/2kimages/main/3dicons/icon_steam_machine.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="269959" />
-    <FB CT="300">
-      <FI>
-        <U V="1 / 10">
-          <T ID="270042" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
+    <M>
+      <MC>
+        <U V="100">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
-      </FI>
-    </FB>
-    <M />
-  </Asset>
-  <Asset ID="269958 (Eden_Burning)" RV="Update 08" RT="Common" IP="true">
-    <N>Silo (Corn)</N>
-    <T ID="269957" I="data/ui/2kimages/main/3dicons/icon_silo.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="1000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="20">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="0">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="270142" />
-    <FB CT="300">
-      <FI>
-        <U V="1 / 5">
-          <T ID="120034" I="data/ui/2kimages/main/3dicons/icon_corn.png" />
+        <U V="30">
+          <T ID="5406" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_artista.png" />
         </U>
-      </FI>
-    </FB>
-    <M />
-  </Asset>
-  <Asset ID="269849 (Eden_Burning)" RV="Update 08" RT="Common" IP="true">
-    <N>colony01_tractor_module_02 (Harvester)</N>
-    <T ID="269848" I="data/ui/2kimages/main/3dicons/icon_tractor.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="5000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="10">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="20">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="10">
-        <T ID="1010224" I="data/ui/2kimages/main/3dicons/icon_steam_machine.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="269959" />
-    <FB CT="240">
-      <FI>
-        <U V="1 / 10">
-          <T ID="270042" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
-        </U>
-      </FI>
-    </FB>
-    <M />
-  </Asset>
-  <Asset ID="269848 (Eden_Burning)" RV="Update 08" RT="Common" IP="true">
-    <N>colony01_tractor_module_01 (Tractor)</N>
-    <T ID="269848" I="data/ui/2kimages/main/3dicons/icon_tractor.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="5000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="10">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="20">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="0">
-        <T ID="1010224" I="data/ui/2kimages/main/3dicons/icon_steam_machine.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="269959" />
-    <FB CT="240">
-      <FI>
-        <U V="1 / 10">
-          <T ID="270042" I="data/ui/2kimages/main/3dicons/icon_gasoline.png" />
-        </U>
-      </FI>
-    </FB>
-    <M />
+      </MC>
+    </M>
   </Asset>
 </BuffFactory>

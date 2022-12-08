@@ -39,42 +39,9 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="1010359" RV="Release" RT="Common">
-    <N>service_04 (Church)</N>
-    <T ID="1010359" I="data/ui/2kimages/main/3dicons/icon_church.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="2500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="20">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="25">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="40 / 80">
-        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11144" />
-    <M>
-      <MC>
-        <U V="50 / 25">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
   <Asset ID="1010365" RV="Release" RT="Common">
     <N>service_03 (Bank)</N>
-    <T ID="1010356" I="data/ui/2kimages/main/3dicons/icon_bank.png" />
+    <T ID="1010365" I="data/ui/2kimages/main/3dicons/icon_bank.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
@@ -226,9 +193,6 @@
       <U V="10">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
-      <U V="0">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
     </BC>
     <GU>
       <U V="30 / 60">
@@ -292,9 +256,6 @@
       <U V="10">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
-      <U V="0">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
     </BC>
     <GU>
       <U V="20 / 40">
@@ -307,6 +268,143 @@
     <M>
       <MC>
         <U V="10 / 5">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="100767" RV="Release" RT="Common">
+    <N>CQO_Uncle_Edvards_Church</N>
+    <T ID="100767" I="data/ui/2kimages/main/3dicons/icon_church.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <BC>
+      <U V="1250">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="20">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="20">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="40 / 80">
+        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11144" />
+    <M>
+      <MC>
+        <U V="50 / 50">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="101259" RV="Release" RT="Common">
+    <N>service_colony01_03 (Boxing Arena)</N>
+    <T ID="101259" I="data/ui/2kimages/main/3dicons/icon_box_arena.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="5400">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="20">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="25">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="30 / 60">
+        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11144" />
+    <M>
+      <MC>
+        <U V="100 / 50">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="101258" RV="Release" RT="Common">
+    <N>service_colony01_02 (Chapel)</N>
+    <T ID="101258" I="data/ui/2kimages/main/3dicons/icon_church.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="30 / 60">
+        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11144" />
+    <M>
+      <MC>
+        <U V="10 / 5">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="1010364" RV="Release" RT="Common">
+    <N>service_09 (Club House)</N>
+    <T ID="1010355" I="data/ui/2kimages/main/3dicons/icon_club_house.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="50000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="50">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="100">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="80">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="75">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="75">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="35 / 70">
+        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11144" />
+    <M>
+      <MC>
+        <U V="350 / 175">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
       </MC>
@@ -435,7 +533,7 @@
       </U>
     </BC>
     <GU>
-      <U V="25 / 50">
+      <U V="32 / 52">
         <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
       </U>
     </GU>
@@ -445,146 +543,6 @@
     <M>
       <MC>
         <U V="75 / 75">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="100767" RV="Release" RT="Common">
-    <N>CQO_Uncle_Edvards_Church</N>
-    <T ID="100767" I="data/ui/2kimages/main/3dicons/icon_church.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <BC>
-      <U V="1250">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="20">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="20">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="40 / 80">
-        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11144" />
-    <M>
-      <MC>
-        <U V="50 / 50">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="101259" RV="Release" RT="Common">
-    <N>service_colony01_03 (Boxing Arena)</N>
-    <T ID="101259" I="data/ui/2kimages/main/3dicons/icon_box_arena.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="5400">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="20">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="25">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="30 / 60">
-        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11144" />
-    <M>
-      <MC>
-        <U V="100 / 50">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="101258" RV="Release" RT="Common">
-    <N>service_colony01_02 (Chapel)</N>
-    <T ID="101258" I="data/ui/2kimages/main/3dicons/icon_church.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="0">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="30 / 60">
-        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11144" />
-    <M>
-      <MC>
-        <U V="10 / 5">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="1010364" RV="Release" RT="Common">
-    <N>service_09 (Club House)</N>
-    <T ID="1010355" I="data/ui/2kimages/main/3dicons/icon_club_house.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="50000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="50">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="100">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="80">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="75">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-      <U V="75">
-        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="35 / 70">
-        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11144" />
-    <M>
-      <MC>
-        <U V="350 / 175">
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
       </MC>
