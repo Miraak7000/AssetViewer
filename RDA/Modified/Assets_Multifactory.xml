@@ -7,14 +7,17 @@
     <IT>Building</IT>
     <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
     <BC>
-      <U V="9000">
+      <U V="42000">
         <T ID="6063" I="data/ui/2kimages/main/icons/icon_resource_money_1.png" />
       </U>
-      <U V="5">
+      <U V="10">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
-      <U V="3">
+      <U V="20">
         <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="45">
+        <T ID="343771831" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
       </U>
     </BC>
     <GU>
@@ -440,14 +443,17 @@
     <IT>Building</IT>
     <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
     <BC>
-      <U V="9000">
+      <U V="42000">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
-      <U V="5">
+      <U V="10">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
-      <U V="3">
+      <U V="20">
         <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="45">
+        <T ID="343771831" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
       </U>
     </BC>
     <GU>
@@ -601,6 +607,694 @@
       </MC>
     </M>
   </Asset>
+  <Asset ID="6630" RV="Update 16" RT="Common" IP="true">
+    <N>DLC12 Lab Cuffs</N>
+    <T ID="6630" I="data/ui/2kimages/main/3dicons/recipes/icon_police_equipment.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="42000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="20">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="45">
+        <T ID="343771831" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Culture">
+        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
+      </U>
+      <U V="-10" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="132783" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 5">
+          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+        </U>
+        <U V="1 / 5">
+          <T ID="1010219" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
+        </U>
+        <U V="1 / 5">
+          <T ID="1010240" I="data/ui/2kimages/main/3dicons/icon_cotton_fur.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 10">
+          <T ID="5394" I="data/ui/2kimages/main/3dicons/recipes/icon_police_equipment.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="600 / 300">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="300">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="5828" RV="Update 16" RT="Common" IP="true">
+    <N>Multifactory_SA_Chemical_Film</N>
+    <T ID="5828" I="data/ui/2kimages/main/3dicons/production_goods/icon_film_role.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="65000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="30">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="45">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Culture">
+        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
+      </U>
+      <U V="-10" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="132783" />
+    <FB CT="120">
+      <FI>
+        <U V="1 / 5">
+          <T ID="1010232" I="data/ui/2kimages/main/3dicons/icon_niter.png" />
+        </U>
+        <U V="1 / 5">
+          <T ID="135150" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_celluloid.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 10">
+          <T ID="5392" I="data/ui/2kimages/main/3dicons/production_goods/icon_film_role.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="800 / 400">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="125">
+          <T ID="1010367" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_obrero.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="915" RV="Update 15" RT="Common" IP="true">
+    <N>Multifactory_Magazin(DropGoods)_SA_WaterDrop</N>
+    <T ID="915" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_water.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="42000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="20">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="45">
+        <T ID="343771831" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Culture">
+        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
+      </U>
+      <U V="-10" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="132783" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 5">
+          <T ID="138788" I="data/ui/2kimages/main/3dicons/icon_rich_sea_2.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 10">
+          <T ID="850" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_water.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="600 / 300">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="300">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="916" RV="Update 15" RT="Common" IP="true">
+    <N>Multifactory_Magazin(DropGoods)_SA_Care Packages</N>
+    <T ID="916" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_care_packages.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="42000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="20">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="45">
+        <T ID="343771831" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Culture">
+        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
+      </U>
+      <U V="-10" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="132783" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 5">
+          <T ID="1010217" I="data/ui/2kimages/main/3dicons/icon_canned_goulash.png" />
+        </U>
+        <U V="1 / 5">
+          <T ID="1010258" I="data/ui/2kimages/main/3dicons/icon_chocolate.png" />
+        </U>
+        <U V="1 / 5">
+          <T ID="1010216" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 10">
+          <T ID="849" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_care_packages.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="600 / 300">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="300">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="908" RV="Update 15" RT="Common" IP="true">
+    <N>Multifactory_Magazin(DropGoods)_SA_Flyers</N>
+    <T ID="908" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_pamphlets.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="42000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="20">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="45">
+        <T ID="343771831" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Culture">
+        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
+      </U>
+      <U V="-10" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="132783" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 5">
+          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+        </U>
+        <U V="1 / 5">
+          <T ID="1182383988" I="data/ui/2kimages/main/3dicons/icon_cotton.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 10">
+          <T ID="848" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_pamphlets.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="600 / 300">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="300">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="907" RV="Update 15" RT="Common" IP="true">
+    <N>Multifactory_Magazin(DropGoods)_SA_SeaMines</N>
+    <T ID="907" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_seamines.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="42000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="20">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="45">
+        <T ID="343771831" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Culture">
+        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
+      </U>
+      <U V="-10" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="132783" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 5">
+          <T ID="-378802926" I="data/ui/2kimages/main/3dicons/icon_copper.png" />
+        </U>
+        <U V="1 / 5">
+          <T ID="1010222" I="data/ui/2kimages/main/3dicons/icon_dynamite.png" />
+        </U>
+        <U V="1 / 5">
+          <T ID="1010219" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 10">
+          <T ID="847" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_seamines.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="600 / 300">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="300">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="906" RV="Update 15" RT="Common" IP="true">
+    <N>Multifactory_Magazin(DropGoods)_SA_Bombs</N>
+    <T ID="906" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_bomb_b.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="42000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="20">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="45">
+        <T ID="343771831" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Culture">
+        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
+      </U>
+      <U V="-10" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="132783" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 5">
+          <T ID="1010232" I="data/ui/2kimages/main/3dicons/icon_niter.png" />
+        </U>
+        <U V="1 / 5">
+          <T ID="1010222" I="data/ui/2kimages/main/3dicons/icon_dynamite.png" />
+        </U>
+        <U V="1 / 5">
+          <T ID="1010219" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 10">
+          <T ID="846" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_bomb_b.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="600 / 300">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="300">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="905" RV="Update 15" RT="Common">
+    <N>Multifactory_Magazin(DropGoods)_SA_Blank</N>
+    <T ID="905" I="data/ui/2kimages/main/3dicons/consumables/icon_ship_repair_2.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="42000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="20">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="45">
+        <T ID="343771831" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="-10" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="132783" />
+    <FB CT="60" />
+    <M>
+      <MC>
+        <U V="600 / 300">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="300">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="937" RV="Update 15" RT="Common" IP="true">
+    <N>Multifactory_Magazin(DropGoods)_Moderate_WaterDrop</N>
+    <T ID="915" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_water.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="42000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="20">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="16">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="35">
+        <T ID="343771831" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Culture">
+        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
+      </U>
+      <U V="-10" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="132783" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 5">
+          <T ID="138788" I="data/ui/2kimages/main/3dicons/icon_rich_sea_2.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 10">
+          <T ID="850" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_water.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="600 / 300">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="550">
+          <T ID="1010115" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_worker.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="936" RV="Update 15" RT="Common" IP="true">
+    <N>Multifactory_Magazin(DropGoods)_Moderate_Care Packages</N>
+    <T ID="916" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_care_packages.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="42000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="20">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="16">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="35">
+        <T ID="343771831" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Culture">
+        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
+      </U>
+      <U V="-10" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="132783" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 5">
+          <T ID="1010217" I="data/ui/2kimages/main/3dicons/icon_canned_goulash.png" />
+        </U>
+        <U V="1 / 5">
+          <T ID="1010258" I="data/ui/2kimages/main/3dicons/icon_chocolate.png" />
+        </U>
+        <U V="1 / 5">
+          <T ID="1010216" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 10">
+          <T ID="849" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_care_packages.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="600 / 300">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="550">
+          <T ID="1010115" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_worker.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="935" RV="Update 15" RT="Common" IP="true">
+    <N>Multifactory_Magazin(DropGoods)_Moderate_Flyers</N>
+    <T ID="908" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_pamphlets.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="42000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="20">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="16">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="35">
+        <T ID="343771831" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Culture">
+        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
+      </U>
+      <U V="-10" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="132783" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 5">
+          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+        </U>
+        <U V="1 / 5">
+          <T ID="1182383988" I="data/ui/2kimages/main/3dicons/icon_cotton.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 10">
+          <T ID="848" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_pamphlets.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="600 / 300">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="550">
+          <T ID="1010115" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_worker.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="934" RV="Update 15" RT="Common" IP="true">
+    <N>Multifactory_Magazin(DropGoods)_Moderate_SeaMines</N>
+    <T ID="907" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_seamines.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="42000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="20">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="16">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="35">
+        <T ID="343771831" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Culture">
+        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
+      </U>
+      <U V="-10" C="Culture">
+        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="132783" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 5">
+          <T ID="-378802926" I="data/ui/2kimages/main/3dicons/icon_copper.png" />
+        </U>
+        <U V="1 / 5">
+          <T ID="1010222" I="data/ui/2kimages/main/3dicons/icon_dynamite.png" />
+        </U>
+        <U V="1 / 5">
+          <T ID="1010219" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 10">
+          <T ID="847" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_seamines.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="600 / 300">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="550">
+          <T ID="1010115" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_worker.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
   <Asset ID="924" RV="Update 15" RT="Common" IP="true">
     <N>Multifactory_Magazin(DropGoods)_Moderate_Bombs</N>
     <T ID="906" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_bomb_b.png" />
@@ -666,7 +1360,7 @@
   </Asset>
   <Asset ID="923" RV="Update 15" RT="Common">
     <N>Multifactory_Magazin(DropGoods)_Moderate_Blank</N>
-    <T ID="923" I="data/ui/2kimages/main/3dicons/consumables/icon_ship_repair_2.png" />
+    <T ID="905" I="data/ui/2kimages/main/3dicons/consumables/icon_ship_repair_2.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
@@ -1233,694 +1927,6 @@
         </U>
         <U V="350">
           <T ID="1010116" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_artisan.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="6630" RV="Update 16" RT="Common" IP="true">
-    <N>DLC12 Lab Cuffs</N>
-    <T ID="6630" I="data/ui/2kimages/main/3dicons/recipes/icon_police_equipment.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="42000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="20">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="45">
-        <T ID="343771831" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Culture">
-        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
-      </U>
-      <U V="-10" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="132783" />
-    <FB CT="60">
-      <FI>
-        <U V="1 / 5">
-          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
-        </U>
-        <U V="1 / 5">
-          <T ID="1010219" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
-        </U>
-        <U V="1 / 5">
-          <T ID="1010240" I="data/ui/2kimages/main/3dicons/icon_cotton_fur.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 10">
-          <T ID="5394" I="data/ui/2kimages/main/3dicons/recipes/icon_police_equipment.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="600 / 300">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="300">
-          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="5828" RV="Update 16" RT="Common" IP="true">
-    <N>Multifactory_SA_Chemical_Film</N>
-    <T ID="5828" I="data/ui/2kimages/main/3dicons/production_goods/icon_film_role.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="65000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="30">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="45">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Culture">
-        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
-      </U>
-      <U V="-10" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="132783" />
-    <FB CT="120">
-      <FI>
-        <U V="1 / 5">
-          <T ID="1010232" I="data/ui/2kimages/main/3dicons/icon_niter.png" />
-        </U>
-        <U V="1 / 5">
-          <T ID="135150" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_celluloid.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 10">
-          <T ID="5392" I="data/ui/2kimages/main/3dicons/production_goods/icon_film_role.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="800 / 400">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="125">
-          <T ID="1010367" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_obrero.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="915" RV="Update 15" RT="Common" IP="true">
-    <N>Multifactory_Magazin(DropGoods)_SA_WaterDrop</N>
-    <T ID="915" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_water.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="42000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="20">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="45">
-        <T ID="343771831" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Culture">
-        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
-      </U>
-      <U V="-10" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="132783" />
-    <FB CT="60">
-      <FI>
-        <U V="1 / 5">
-          <T ID="138788" I="data/ui/2kimages/main/3dicons/icon_rich_sea_2.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 10">
-          <T ID="850" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_water.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="600 / 300">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="300">
-          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="916" RV="Update 15" RT="Common" IP="true">
-    <N>Multifactory_Magazin(DropGoods)_SA_Care Packages</N>
-    <T ID="916" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_care_packages.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="42000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="20">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="45">
-        <T ID="343771831" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Culture">
-        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
-      </U>
-      <U V="-10" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="132783" />
-    <FB CT="60">
-      <FI>
-        <U V="1 / 5">
-          <T ID="1010217" I="data/ui/2kimages/main/3dicons/icon_canned_goulash.png" />
-        </U>
-        <U V="1 / 5">
-          <T ID="1010258" I="data/ui/2kimages/main/3dicons/icon_chocolate.png" />
-        </U>
-        <U V="1 / 5">
-          <T ID="1010216" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 10">
-          <T ID="849" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_care_packages.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="600 / 300">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="300">
-          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="908" RV="Update 15" RT="Common" IP="true">
-    <N>Multifactory_Magazin(DropGoods)_SA_Flyers</N>
-    <T ID="908" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_pamphlets.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="42000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="20">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="45">
-        <T ID="343771831" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Culture">
-        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
-      </U>
-      <U V="-10" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="132783" />
-    <FB CT="60">
-      <FI>
-        <U V="1 / 5">
-          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
-        </U>
-        <U V="1 / 5">
-          <T ID="1182383988" I="data/ui/2kimages/main/3dicons/icon_cotton.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 10">
-          <T ID="848" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_pamphlets.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="600 / 300">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="300">
-          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="907" RV="Update 15" RT="Common" IP="true">
-    <N>Multifactory_Magazin(DropGoods)_SA_SeaMines</N>
-    <T ID="907" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_seamines.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="42000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="20">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="45">
-        <T ID="343771831" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Culture">
-        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
-      </U>
-      <U V="-10" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="132783" />
-    <FB CT="60">
-      <FI>
-        <U V="1 / 5">
-          <T ID="-378802926" I="data/ui/2kimages/main/3dicons/icon_copper.png" />
-        </U>
-        <U V="1 / 5">
-          <T ID="1010222" I="data/ui/2kimages/main/3dicons/icon_dynamite.png" />
-        </U>
-        <U V="1 / 5">
-          <T ID="1010219" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 10">
-          <T ID="847" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_seamines.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="600 / 300">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="300">
-          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="906" RV="Update 15" RT="Common" IP="true">
-    <N>Multifactory_Magazin(DropGoods)_SA_Bombs</N>
-    <T ID="906" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_bomb_b.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="42000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="20">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="45">
-        <T ID="343771831" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Culture">
-        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
-      </U>
-      <U V="-10" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="132783" />
-    <FB CT="60">
-      <FI>
-        <U V="1 / 5">
-          <T ID="1010232" I="data/ui/2kimages/main/3dicons/icon_niter.png" />
-        </U>
-        <U V="1 / 5">
-          <T ID="1010222" I="data/ui/2kimages/main/3dicons/icon_dynamite.png" />
-        </U>
-        <U V="1 / 5">
-          <T ID="1010219" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 10">
-          <T ID="846" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_bomb_b.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="600 / 300">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="300">
-          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="905" RV="Update 15" RT="Common">
-    <N>Multifactory_Magazin(DropGoods)_SA_Blank</N>
-    <T ID="923" I="data/ui/2kimages/main/3dicons/consumables/icon_ship_repair_2.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="42000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="20">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="45">
-        <T ID="343771831" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="-10" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="132783" />
-    <FB CT="60" />
-    <M>
-      <MC>
-        <U V="600 / 300">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="300">
-          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="937" RV="Update 15" RT="Common" IP="true">
-    <N>Multifactory_Magazin(DropGoods)_Moderate_WaterDrop</N>
-    <T ID="915" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_water.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="42000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="20">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="16">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="35">
-        <T ID="343771831" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Culture">
-        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
-      </U>
-      <U V="-10" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="132783" />
-    <FB CT="60">
-      <FI>
-        <U V="1 / 5">
-          <T ID="138788" I="data/ui/2kimages/main/3dicons/icon_rich_sea_2.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 10">
-          <T ID="850" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_water.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="600 / 300">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="550">
-          <T ID="1010115" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_worker.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="936" RV="Update 15" RT="Common" IP="true">
-    <N>Multifactory_Magazin(DropGoods)_Moderate_Care Packages</N>
-    <T ID="916" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_care_packages.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="42000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="20">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="16">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="35">
-        <T ID="343771831" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Culture">
-        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
-      </U>
-      <U V="-10" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="132783" />
-    <FB CT="60">
-      <FI>
-        <U V="1 / 5">
-          <T ID="1010217" I="data/ui/2kimages/main/3dicons/icon_canned_goulash.png" />
-        </U>
-        <U V="1 / 5">
-          <T ID="1010258" I="data/ui/2kimages/main/3dicons/icon_chocolate.png" />
-        </U>
-        <U V="1 / 5">
-          <T ID="1010216" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 10">
-          <T ID="849" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_care_packages.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="600 / 300">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="550">
-          <T ID="1010115" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_worker.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="935" RV="Update 15" RT="Common" IP="true">
-    <N>Multifactory_Magazin(DropGoods)_Moderate_Flyers</N>
-    <T ID="908" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_pamphlets.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="42000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="20">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="16">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="35">
-        <T ID="343771831" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Culture">
-        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
-      </U>
-      <U V="-10" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="132783" />
-    <FB CT="60">
-      <FI>
-        <U V="1 / 5">
-          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
-        </U>
-        <U V="1 / 5">
-          <T ID="1182383988" I="data/ui/2kimages/main/3dicons/icon_cotton.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 10">
-          <T ID="848" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_pamphlets.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="600 / 300">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="550">
-          <T ID="1010115" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_worker.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="934" RV="Update 15" RT="Common" IP="true">
-    <N>Multifactory_Magazin(DropGoods)_Moderate_SeaMines</N>
-    <T ID="907" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_seamines.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="42000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="20">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="16">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="35">
-        <T ID="343771831" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Culture">
-        <T ID="11279" I="data/ui/2kimages/main/assets16/attractiveness/category_pollution.png" />
-      </U>
-      <U V="-10" C="Culture">
-        <T ID="145011" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="132783" />
-    <FB CT="60">
-      <FI>
-        <U V="1 / 5">
-          <T ID="-378802926" I="data/ui/2kimages/main/3dicons/icon_copper.png" />
-        </U>
-        <U V="1 / 5">
-          <T ID="1010222" I="data/ui/2kimages/main/3dicons/icon_dynamite.png" />
-        </U>
-        <U V="1 / 5">
-          <T ID="1010219" I="data/ui/2kimages/main/3dicons/icon_steel.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 10">
-          <T ID="847" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_seamines.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="600 / 300">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="550">
-          <T ID="1010115" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_worker.png" />
         </U>
       </MC>
     </M>

@@ -1,50 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <FactoryBuilding7_BuildPermit>
-  <Asset ID="24652" RV="Update 13" RT="Common" IP="true">
-    <N>Water Purifier</N>
-    <T ID="1010278" I="data/ui/2kimages/main/3dicons/icon_fish.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="100">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="2">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="EcoSystemProvider">
-        <T ID="24225" />
-        <A>
-          <U V="-7">
-            <T ID="138788" />
-          </U>
-        </A>
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB>
-      <FO>
-        <U V="1 / 4">
-          <T ID="1010200" I="data/ui/2kimages/main/3dicons/icon_fish.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="40 / 20">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="25">
-          <T ID="1010052" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_farmer.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
   <Asset ID="24304" RV="Update 13" RT="Common" IP="true">
     <N>coastal_02 (Water Purifier)</N>
     <T ID="994" I="data/ui/2kimages/main/3dicons/scenario/icon_water_filter.png" />
@@ -248,6 +203,51 @@
         </U>
         <U V="150">
           <T ID="1010117" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_engineer.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="24652" RV="Update 13" RT="Common" IP="true">
+    <N>Water Purifier</N>
+    <T ID="1010278" I="data/ui/2kimages/main/3dicons/icon_fish.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="100">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="2">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="EcoSystemProvider">
+        <T ID="24225" />
+        <A>
+          <U V="-7">
+            <T ID="138788" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FO>
+        <U V="1 / 4">
+          <T ID="1010200" I="data/ui/2kimages/main/3dicons/icon_fish.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="40 / 20">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="25">
+          <T ID="1010052" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_farmer.png" />
         </U>
       </MC>
     </M>

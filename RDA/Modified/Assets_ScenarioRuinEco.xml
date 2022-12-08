@@ -145,6 +145,102 @@
     </M>
     <UT ID="-975261578" />
   </Asset>
+  <Asset ID="138761 (Eden_Burning)" RV="Update 14" RT="Common">
+    <N>Barracks</N>
+    <T ID="24504" I="data/ui/2kimages/main/3dicons/campaign/icon_pyrphorian.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <BC />
+    <GU>
+      <U V="" C="EcoSystemProvider">
+        <T ID="24225" />
+        <A>
+          <U V="-9">
+            <T ID="138789" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="0" />
+    <FB CT="1200" />
+    <M>
+      <MC>
+        <U V="300">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
+        </U>
+      </MC>
+    </M>
+    <UT ID="-975261578" />
+  </Asset>
+  <Asset ID="137943 (Eden_Burning)" RV="Update 14" RT="Common">
+    <N>Test_Ruin</N>
+    <T ID="137943" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <BC />
+    <GU />
+    <TP />
+    <HF />
+    <I ID="0" />
+    <FB CT="45" />
+    <M>
+      <MC>
+        <U V="200">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="137943" RV="Update 14" RT="Common">
+    <N>Test_RuinTBD</N>
+    <T ID="137943" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <BC />
+    <GU />
+    <TP />
+    <HF />
+    <I ID="0" />
+    <FB CT="45" />
+    <M>
+      <MC>
+        <U V="200">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="138780" RV="Update 14" RT="Common">
+    <N>Ruins general small 02</N>
+    <T ID="24501" I="data/ui/2kimages/main/3dicons/scenario/ecobalance/icon_pollution_soil.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <BC />
+    <GU>
+      <U V="" C="EcoSystemProvider">
+        <T ID="24225" />
+        <A>
+          <U V="-3">
+            <T ID="138789" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="0" />
+    <FB CT="300" />
+    <M>
+      <MC>
+        <U V="75">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
+        </U>
+      </MC>
+    </M>
+    <UT ID="-975261578" />
+  </Asset>
   <Asset ID="138779" RV="Update 14" RT="Common">
     <N>Ruins general small 01</N>
     <T ID="24500" I="data/ui/2kimages/main/3dicons/scenario/ecobalance/icon_pollution_water.png" />
@@ -371,102 +467,6 @@
     <M>
       <MC>
         <U V="150">
-          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
-        </U>
-      </MC>
-    </M>
-    <UT ID="-975261578" />
-  </Asset>
-  <Asset ID="138761 (Eden_Burning)" RV="Update 14" RT="Common">
-    <N>Barracks</N>
-    <T ID="24504" I="data/ui/2kimages/main/3dicons/campaign/icon_pyrphorian.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <BC />
-    <GU>
-      <U V="" C="EcoSystemProvider">
-        <T ID="24225" />
-        <A>
-          <U V="-9">
-            <T ID="138789" />
-          </U>
-        </A>
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="0" />
-    <FB CT="1200" />
-    <M>
-      <MC>
-        <U V="300">
-          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
-        </U>
-      </MC>
-    </M>
-    <UT ID="-975261578" />
-  </Asset>
-  <Asset ID="137943 (Eden_Burning)" RV="Update 14" RT="Common">
-    <N>Test_Ruin</N>
-    <T ID="137943" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <BC />
-    <GU />
-    <TP />
-    <HF />
-    <I ID="0" />
-    <FB CT="45" />
-    <M>
-      <MC>
-        <U V="200">
-          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="137943" RV="Update 14" RT="Common">
-    <N>Test_RuinTBD</N>
-    <T ID="137943" I="data/ui/2kimages/main/3dicons/icon_ruin_settlement.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <BC />
-    <GU />
-    <TP />
-    <HF />
-    <I ID="0" />
-    <FB CT="45" />
-    <M>
-      <MC>
-        <U V="200">
-          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="138780" RV="Update 14" RT="Common">
-    <N>Ruins general small 02</N>
-    <T ID="24501" I="data/ui/2kimages/main/3dicons/scenario/ecobalance/icon_pollution_soil.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <BC />
-    <GU>
-      <U V="" C="EcoSystemProvider">
-        <T ID="24225" />
-        <A>
-          <U V="-3">
-            <T ID="138789" />
-          </U>
-        </A>
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="0" />
-    <FB CT="300" />
-    <M>
-      <MC>
-        <U V="75">
           <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
         </U>
       </MC>

@@ -41,51 +41,6 @@
       </PM>
     </Mo>
   </Asset>
-  <Asset ID="962 (A_Clash_of_Couriers)" RV="Update 15" RT="Common">
-    <N>airship landing platform</N>
-    <T ID="962" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_southamerica.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="20000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="60">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="60">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="45">
-        <T ID="343771831" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="+1" C="LoadingPier">
-        <T ID="15250" />
-      </U>
-      <U V="+2" C="LoadingPier">
-        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="2977" />
-    <M>
-      <MC>
-        <U V="450 / 225">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-      </MC>
-    </M>
-    <Mo L="1">
-      <PM>
-        <M ID="964" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_items.png" />
-        <M ID="4259" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_post.png" />
-      </PM>
-    </Mo>
-  </Asset>
   <Asset ID="963" RV="Update 15" RT="Common">
     <N>airship landing platform colony01</N>
     <T ID="962" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_southamerica.png" />
@@ -126,7 +81,7 @@
     </M>
     <Mo L="1">
       <PM>
-        <M ID="964" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_items.png" />
+        <M ID="2274" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_items.png" />
         <M ID="4259" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_post.png" />
         <M ID="967" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_workforce.png" />
       </PM>
@@ -172,7 +127,7 @@
     </M>
     <Mo L="1">
       <PM>
-        <M ID="964" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_items.png" />
+        <M ID="2274" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_items.png" />
         <M ID="4259" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_post.png" />
       </PM>
     </Mo>
@@ -220,9 +175,54 @@
     </M>
     <Mo L="1">
       <PM>
-        <M ID="964" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_items.png" />
+        <M ID="2274" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_items.png" />
         <M ID="4259" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_post.png" />
         <M ID="967" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_workforce.png" />
+      </PM>
+    </Mo>
+  </Asset>
+  <Asset ID="962 (A_Clash_of_Couriers)" RV="Update 15" RT="Common">
+    <N>airship landing platform</N>
+    <T ID="962" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_southamerica.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="20000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="60">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="60">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="45">
+        <T ID="343771831" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="+1" C="LoadingPier">
+        <T ID="15250" />
+      </U>
+      <U V="+2" C="LoadingPier">
+        <T ID="15197" I="data/ui/2kimages/main/icons/icon_load_ships.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="2977" />
+    <M>
+      <MC>
+        <U V="450 / 225">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+      </MC>
+    </M>
+    <Mo L="1">
+      <PM>
+        <M ID="2274" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_items.png" />
+        <M ID="4259" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_post.png" />
       </PM>
     </Mo>
   </Asset>
