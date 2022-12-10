@@ -17,7 +17,7 @@ namespace AssetViewer.Data.Filters {
     public override string SelectedValue {
       get => _selectedValue;
       set {
-        var tempval = value.Trim();
+        var tempval = value?.Trim();
         if (!(_selectedValue?.Equals(tempval) ?? false)) {
           //_oldValue = _selectedValue;
           if ((tempval != null && string.IsNullOrWhiteSpace(tempval)) || _possibilities == null || (FilterItems(_possibilities, tempval)?.Any() ?? false)) {
