@@ -307,9 +307,8 @@ namespace RDA {
       Assets.GUIDs.TryGetValue("220", out var assetHugo, GameTypes.Anno_1800);
       var assets = Assets
          .All
-         .XPathSelectElements($"//Asset[Template='Profile_3rdParty' or Template='Profile_3rdParty_Pirate']")
+         .XPathSelectElements($"//Asset[Template='Profile_3rdParty' or Template='Profile_3rdParty_Pirate' or Template='Profile_3rdParty_ItemCrafter' or Template='Profile_3rdParty-PlayerCounter']")
          .Concat(new[] { assetHugo })
-         .Concat(Assets.All.XPathSelectElements($"//Asset[Template='Profile_3rdParty_ItemCrafter']"))
          .AsParallel();
 
       assets.ForAll((asset) => {

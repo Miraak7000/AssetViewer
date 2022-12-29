@@ -218,6 +218,105 @@
       </MC>
     </M>
   </Asset>
+  <Asset ID="112668" RV="Update 06" RT="Common" IP="true">
+    <N>food_arctic_01 (Pemmican)</N>
+    <T ID="112668" I="data/ui/2kimages/main/3dicons/icon_pemmican.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
+    <BC>
+      <U V="1000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="5">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U>
+        <T ID="116353" I="data/ui/2kimages/main/icons/icon_heating_center_2d.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 4">
+          <T ID="112699" I="data/ui/2kimages/main/3dicons/icon_whale_oil_2.png" />
+        </U>
+        <U V="1 / 4">
+          <T ID="112694" I="data/ui/2kimages/main/3dicons/icon_reindeer_meat.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 2">
+          <T ID="112705" I="data/ui/2kimages/main/3dicons/icon_pemmican.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="60 / 30">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="30">
+          <T ID="112653" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_explorer.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="112680" RV="Update 06" RT="Common" IP="true">
+    <N>factory_arctic_06 (Husky Sled Factory)</N>
+    <T ID="112680" I="data/ui/2kimages/main/3dicons/icon_sled.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
+    <BC>
+      <U V="5000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="20">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="6">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </BC>
+    <GU>
+      <U>
+        <T ID="116353" I="data/ui/2kimages/main/icons/icon_heating_center_2d.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FI>
+        <U V="1 / 4">
+          <T ID="112698" I="data/ui/2kimages/main/3dicons/animals/icon_husky.png" />
+        </U>
+        <U V="1 / 4">
+          <T ID="112704" I="data/ui/2kimages/main/3dicons/icon_sled_frame.png" />
+        </U>
+      </FI>
+      <FO>
+        <U V="1 / 2">
+          <T ID="112703" I="data/ui/2kimages/main/3dicons/icon_sled.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="650 / 325">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="100">
+          <T ID="112654" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_technician.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
   <Asset ID="112681" RV="Update 06" RT="Common" IP="true">
     <N>factory_arctic_05 (Sled Frame Factory)</N>
     <T ID="112681" I="data/ui/2kimages/main/3dicons/icon_sled_frame.png" />
@@ -315,105 +414,6 @@
           <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
         <U V="80">
-          <T ID="112654" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_technician.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="112668" RV="Update 06" RT="Common" IP="true">
-    <N>food_arctic_01 (Pemmican)</N>
-    <T ID="112668" I="data/ui/2kimages/main/3dicons/icon_pemmican.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
-    <BC>
-      <U V="1000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="5">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U>
-        <T ID="116353" I="data/ui/2kimages/main/icons/icon_heating_center_2d.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="60">
-      <FI>
-        <U V="1 / 4">
-          <T ID="112699" I="data/ui/2kimages/main/3dicons/icon_whale_oil_2.png" />
-        </U>
-        <U V="1 / 4">
-          <T ID="112694" I="data/ui/2kimages/main/3dicons/icon_reindeer_meat.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 2">
-          <T ID="112705" I="data/ui/2kimages/main/3dicons/icon_pemmican.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="60 / 30">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="30">
-          <T ID="112653" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_explorer.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="112680" RV="Update 06" RT="Common" IP="true">
-    <N>factory_arctic_06 (Husky Sled Factory)</N>
-    <T ID="112680" I="data/ui/2kimages/main/3dicons/icon_sled.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
-    <BC>
-      <U V="5000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="20">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="6">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-    </BC>
-    <GU>
-      <U>
-        <T ID="116353" I="data/ui/2kimages/main/icons/icon_heating_center_2d.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="60">
-      <FI>
-        <U V="1 / 4">
-          <T ID="112698" I="data/ui/2kimages/main/3dicons/animals/icon_husky.png" />
-        </U>
-        <U V="1 / 4">
-          <T ID="112704" I="data/ui/2kimages/main/3dicons/icon_sled_frame.png" />
-        </U>
-      </FI>
-      <FO>
-        <U V="1 / 2">
-          <T ID="112703" I="data/ui/2kimages/main/3dicons/icon_sled.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="650 / 325">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="100">
           <T ID="112654" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_technician.png" />
         </U>
       </MC>

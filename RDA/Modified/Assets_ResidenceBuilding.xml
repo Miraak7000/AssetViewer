@@ -1,139 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ResidenceBuilding>
-  <Asset ID="601883" RV="Update 12" RT="Common">
-    <N>residence_tier05_level02</N>
-    <T ID="601883" I="data/ui/2kimages/main/3dicons/icon_dlc_high_life_128.png" />
+  <Asset ID="1010346" RV="Update 11" RT="Common">
+    <N>residence_tier04</N>
+    <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="2000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="50">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="19">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="37">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="25">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-      <U V="13">
-        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
-      </U>
+    <UC>
       <U V="10">
-        <T ID="134623" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_elevator.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Residence7">
-        <T ID="22379" />
-        <A>
-          <U V="100">
-            <T ID="15000004" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
-          </U>
-        </A>
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="163059" />
-    <M>
-      <MC>
-        <U V="2700 / 1350">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="601882" RV="Update 12" RT="Common">
-    <N>residence_tier05_level01</N>
-    <T ID="601882" I="data/ui/2kimages/main/3dicons/icon_dlc_high_life_128.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="1000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="40">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
-      <U V="14">
+      <U V="4">
         <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
       </U>
-      <U V="22">
+      <U V="3">
         <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
       </U>
-      <U V="15">
+      <U V="3">
         <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
       </U>
-      <U V="8">
+      <U V="3">
         <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+    </UC>
+    <BC>
+      <U V="20">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
       <U V="5">
-        <T ID="134623" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_elevator.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Residence7">
-        <T ID="22379" />
-        <A>
-          <U V="75">
-            <T ID="15000004" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
-          </U>
-        </A>
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="163059" />
-    <M>
-      <MC>
-        <U V="1900 / 950">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="601890" RV="Update 12" RT="Common">
-    <N>residence_tier04_level03</N>
-    <T ID="601890" I="data/ui/2kimages/main/3dicons/icon_dlc_high_life_128.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="1500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="50">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="20">
         <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
       </U>
-      <U V="34">
+      <U V="4">
         <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
       </U>
-      <U V="17">
+      <U V="2">
         <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-      <U V="15">
-        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
-      </U>
-      <U V="6">
-        <T ID="134623" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_elevator.png" />
       </U>
     </BC>
     <GU>
       <U V="" C="Residence7">
         <T ID="22379" />
         <A>
-          <U V="100">
+          <U V="40">
             <T ID="15000003" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
           </U>
         </A>
@@ -142,13 +50,125 @@
     <TP />
     <HF />
     <I ID="163059" />
-    <M>
-      <MC>
-        <U V="1200 / 600">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-      </MC>
-    </M>
+    <M />
+    <UT ID="1622432022" />
+  </Asset>
+  <Asset ID="1010345" RV="Update 11" RT="Common">
+    <N>residence_tier03</N>
+    <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <UC>
+      <U V="8">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="3">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="2">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="2">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+    </UC>
+    <BC>
+      <U V="12">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="2">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="2">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Residence7">
+        <T ID="22379" />
+        <A>
+          <U V="30">
+            <T ID="15000002" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="163059" />
+    <M />
+    <UT ID="2133113045" />
+  </Asset>
+  <Asset ID="1010344" RV="Update 11" RT="Common">
+    <N>residence_tier02</N>
+    <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <UC>
+      <U V="6">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="2">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="2">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </UC>
+    <BC>
+      <U V="6">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Residence7">
+        <T ID="22379" />
+        <A>
+          <U V="20">
+            <T ID="15000001" I="data/ui/2kimages/main/3dicons/resident/icon_resident_worker.png" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="163059" />
+    <M />
+    <UT ID="-1470897392" />
+  </Asset>
+  <Asset ID="1010343" RV="Update 11" RT="Common">
+    <N>residence_tier01</N>
+    <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <UC>
+      <U V="4">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </UC>
+    <BC>
+      <U V="2">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Residence7">
+        <T ID="22379" />
+        <A>
+          <U V="10">
+            <T ID="15000000" I="data/ui/2kimages/main/3dicons/resident/icon_resident_farmer.png" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="163059" />
+    <M />
+    <UT ID="10898076" />
   </Asset>
   <Asset ID="601889" RV="Update 12" RT="Common">
     <N>residence_tier04_level02</N>
@@ -438,48 +458,140 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="1010346" RV="Update 11" RT="Common">
-    <N>residence_tier04</N>
-    <T ID="1010346" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+  <Asset ID="601883" RV="Update 12" RT="Common">
+    <N>residence_tier05_level02</N>
+    <T ID="601883" I="data/ui/2kimages/main/3dicons/icon_dlc_high_life_128.png" />
     <R ID="118002" />
     <IT>Building</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <UC>
-      <U V="10">
+    <BC>
+      <U V="2000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="50">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
-      <U V="4">
+      <U V="19">
         <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
       </U>
-      <U V="3">
+      <U V="37">
         <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
       </U>
-      <U V="3">
+      <U V="25">
         <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
       </U>
-      <U V="3">
+      <U V="13">
         <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
       </U>
-    </UC>
-    <BC>
-      <U V="20">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="5">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="4">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="2">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      <U V="10">
+        <T ID="134623" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_elevator.png" />
       </U>
     </BC>
     <GU>
       <U V="" C="Residence7">
         <T ID="22379" />
         <A>
-          <U V="40">
+          <U V="100">
+            <T ID="15000004" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="163059" />
+    <M>
+      <MC>
+        <U V="2700 / 1350">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="601882" RV="Update 12" RT="Common">
+    <N>residence_tier05_level01</N>
+    <T ID="601882" I="data/ui/2kimages/main/3dicons/icon_dlc_high_life_128.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="1000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="40">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="14">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="22">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="15">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="8">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+      <U V="5">
+        <T ID="134623" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_elevator.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Residence7">
+        <T ID="22379" />
+        <A>
+          <U V="75">
+            <T ID="15000004" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
+          </U>
+        </A>
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="163059" />
+    <M>
+      <MC>
+        <U V="1900 / 950">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="601890" RV="Update 12" RT="Common">
+    <N>residence_tier04_level03</N>
+    <T ID="601890" I="data/ui/2kimages/main/3dicons/icon_dlc_high_life_128.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="1500">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="50">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="20">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="34">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+      <U V="17">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
+      </U>
+      <U V="15">
+        <T ID="1010202" I="data/ui/2kimages/main/3dicons/icon_reinforced_concrete.png" />
+      </U>
+      <U V="6">
+        <T ID="134623" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_elevator.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Residence7">
+        <T ID="22379" />
+        <A>
+          <U V="100">
             <T ID="15000003" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
           </U>
         </A>
@@ -488,124 +600,12 @@
     <TP />
     <HF />
     <I ID="163059" />
-    <M />
-    <UT ID="1622432022" />
-  </Asset>
-  <Asset ID="1010345" RV="Update 11" RT="Common">
-    <N>residence_tier03</N>
-    <T ID="1010345" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <UC>
-      <U V="8">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="3">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="2">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-      <U V="2">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
-      </U>
-    </UC>
-    <BC>
-      <U V="12">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="2">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="2">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Residence7">
-        <T ID="22379" />
-        <A>
-          <U V="30">
-            <T ID="15000002" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
-          </U>
-        </A>
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="163059" />
-    <M />
-    <UT ID="2133113045" />
-  </Asset>
-  <Asset ID="1010344" RV="Update 11" RT="Common">
-    <N>residence_tier02</N>
-    <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <UC>
-      <U V="6">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="2">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="2">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-    </UC>
-    <BC>
-      <U V="6">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Residence7">
-        <T ID="22379" />
-        <A>
-          <U V="20">
-            <T ID="15000001" I="data/ui/2kimages/main/3dicons/resident/icon_resident_worker.png" />
-          </U>
-        </A>
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="163059" />
-    <M />
-    <UT ID="-1470897392" />
-  </Asset>
-  <Asset ID="1010343" RV="Update 11" RT="Common">
-    <N>residence_tier01</N>
-    <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <UC>
-      <U V="4">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </UC>
-    <BC>
-      <U V="2">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Residence7">
-        <T ID="22379" />
-        <A>
-          <U V="10">
-            <T ID="15000000" I="data/ui/2kimages/main/3dicons/resident/icon_resident_farmer.png" />
-          </U>
-        </A>
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="163059" />
-    <M />
-    <UT ID="10898076" />
+    <M>
+      <MC>
+        <U V="1200 / 600">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+      </MC>
+    </M>
   </Asset>
 </ResidenceBuilding>

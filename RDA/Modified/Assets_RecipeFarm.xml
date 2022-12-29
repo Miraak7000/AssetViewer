@@ -1,5 +1,371 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <RecipeFarm>
+  <Asset ID="25128" RV="Update 14" RT="Common" IP="true">
+    <N>Hacienda universal farm Grain</N>
+    <T ID="25128" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="3000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="4">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Motorizable">
+        <T ID="269841" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FO>
+        <U V="1 / 2">
+          <T ID="-774067498" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="10 / 5">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="10">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
+        </U>
+      </MC>
+    </M>
+    <Mo L="64">
+      <PM>
+        <M ID="1010270" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+      </PM>
+    </Mo>
+  </Asset>
+  <Asset ID="25020" RV="Update 14" RT="Common" IP="true">
+    <N>Hacienda universal farm Spices</N>
+    <T ID="25020" I="data/ui/2kimages/main/3dicons/goods_africa/icon_spices.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="3000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="4">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Motorizable">
+        <T ID="269841" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FO>
+        <U V="1 / 2">
+          <T ID="114369" I="data/ui/2kimages/main/3dicons/goods_africa/icon_spices.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="25 / 13">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="10">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
+        </U>
+      </MC>
+    </M>
+    <Mo L="64">
+      <PM>
+        <M ID="114495" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+      </PM>
+    </Mo>
+  </Asset>
+  <Asset ID="25019" RV="Update 14" RT="Common" IP="true">
+    <N>Hacienda universal farm Potatoes</N>
+    <T ID="25019" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="3000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="4">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Motorizable">
+        <T ID="269841" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FO>
+        <U V="1 / 4">
+          <T ID="-539228491" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="20 / 10">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="10">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
+        </U>
+      </MC>
+    </M>
+    <Mo L="64">
+      <PM>
+        <M ID="1010273" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+      </PM>
+    </Mo>
+  </Asset>
+  <Asset ID="25009" RV="Update 14" RT="Common" IP="true">
+    <N>Hacienda universal farm Cocoa</N>
+    <T ID="25009" I="data/ui/2kimages/main/3dicons/icon_cocoa.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="3000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="4">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Motorizable">
+        <T ID="269841" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FO>
+        <U V="1 / 2">
+          <T ID="-786393969" I="data/ui/2kimages/main/3dicons/icon_cocoa.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="5 / 3">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="10">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
+        </U>
+      </MC>
+    </M>
+    <Mo L="64">
+      <PM>
+        <M ID="1010337" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+      </PM>
+    </Mo>
+  </Asset>
+  <Asset ID="25020 (Pride_and_Peddlers)" RV="Update 14" RT="Common" IP="true">
+    <N>Hacienda universal farm Spices</N>
+    <T ID="25020" I="data/ui/2kimages/main/3dicons/goods_africa/icon_spices.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="3000">
+        <T ID="6063" I="data/ui/2kimages/main/icons/icon_resource_money_1.png" />
+      </U>
+      <U V="4">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Motorizable">
+        <T ID="269841" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FO>
+        <U V="1 / 2">
+          <T ID="114369" I="data/ui/2kimages/main/3dicons/goods_africa/icon_spices.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="25 / 13">
+          <T ID="6063" I="data/ui/2kimages/main/icons/icon_resource_money_1.png" />
+        </U>
+        <U V="10">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
+        </U>
+      </MC>
+    </M>
+    <Mo L="64">
+      <PM>
+        <M ID="114495" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+      </PM>
+    </Mo>
+  </Asset>
+  <Asset ID="25019 (Pride_and_Peddlers)" RV="Update 14" RT="Common" IP="true">
+    <N>Hacienda universal farm Potatoes</N>
+    <T ID="25019" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="3000">
+        <T ID="6063" I="data/ui/2kimages/main/icons/icon_resource_money_1.png" />
+      </U>
+      <U V="4">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Motorizable">
+        <T ID="269841" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB>
+      <FO>
+        <U V="1 / 4">
+          <T ID="-539228491" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="20 / 10">
+          <T ID="6063" I="data/ui/2kimages/main/icons/icon_resource_money_1.png" />
+        </U>
+        <U V="10">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
+        </U>
+      </MC>
+    </M>
+    <Mo L="64">
+      <PM>
+        <M ID="1010273" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+      </PM>
+    </Mo>
+  </Asset>
+  <Asset ID="25128 (Seasons_of_Silver)" RV="Update 14" RT="Common" IP="true">
+    <N>Hacienda universal farm Grain</N>
+    <T ID="25128" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="950">
+        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="5">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Motorizable">
+        <T ID="269841" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FO>
+        <U V="1 / 2">
+          <T ID="-774067498" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="10 / 5">
+          <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
+        </U>
+        <U V="15">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
+        </U>
+      </MC>
+    </M>
+    <Mo L="100">
+      <PM>
+        <M ID="1010270" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+      </PM>
+    </Mo>
+  </Asset>
+  <Asset ID="25020 (Seasons_of_Silver)" RV="Update 14" RT="Common" IP="true">
+    <N>Hacienda universal farm Spices</N>
+    <T ID="25020" I="data/ui/2kimages/main/3dicons/goods_africa/icon_spices.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="950">
+        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
+      </U>
+      <U V="10">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="5">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="" C="Motorizable">
+        <T ID="269841" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FO>
+        <U V="1 / 2">
+          <T ID="114369" I="data/ui/2kimages/main/3dicons/goods_africa/icon_spices.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="25 / 13">
+          <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
+        </U>
+        <U V="15">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
+        </U>
+      </MC>
+    </M>
+    <Mo L="100">
+      <PM>
+        <M ID="114495" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
+      </PM>
+    </Mo>
+  </Asset>
   <Asset ID="25006" RV="Update 14" RT="Common" IP="true">
     <N>Hacienda universal farm Caoutchouc</N>
     <T ID="25006" I="data/ui/2kimages/main/3dicons/icon_caoutchouc.png" />
@@ -384,372 +750,6 @@
     <Mo L="100">
       <PM>
         <M ID="1010334" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
-      </PM>
-    </Mo>
-  </Asset>
-  <Asset ID="25020 (Pride_and_Peddlers)" RV="Update 14" RT="Common" IP="true">
-    <N>Hacienda universal farm Spices</N>
-    <T ID="25020" I="data/ui/2kimages/main/3dicons/goods_africa/icon_spices.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="3000">
-        <T ID="6063" I="data/ui/2kimages/main/icons/icon_resource_money_1.png" />
-      </U>
-      <U V="4">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Motorizable">
-        <T ID="269841" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="60">
-      <FO>
-        <U V="1 / 2">
-          <T ID="114369" I="data/ui/2kimages/main/3dicons/goods_africa/icon_spices.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="25 / 13">
-          <T ID="6063" I="data/ui/2kimages/main/icons/icon_resource_money_1.png" />
-        </U>
-        <U V="10">
-          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
-        </U>
-      </MC>
-    </M>
-    <Mo L="64">
-      <PM>
-        <M ID="114495" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
-      </PM>
-    </Mo>
-  </Asset>
-  <Asset ID="25019 (Pride_and_Peddlers)" RV="Update 14" RT="Common" IP="true">
-    <N>Hacienda universal farm Potatoes</N>
-    <T ID="25019" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="3000">
-        <T ID="6063" I="data/ui/2kimages/main/icons/icon_resource_money_1.png" />
-      </U>
-      <U V="4">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Motorizable">
-        <T ID="269841" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB>
-      <FO>
-        <U V="1 / 4">
-          <T ID="-539228491" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="20 / 10">
-          <T ID="6063" I="data/ui/2kimages/main/icons/icon_resource_money_1.png" />
-        </U>
-        <U V="10">
-          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
-        </U>
-      </MC>
-    </M>
-    <Mo L="64">
-      <PM>
-        <M ID="1010273" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
-      </PM>
-    </Mo>
-  </Asset>
-  <Asset ID="25128 (Seasons_of_Silver)" RV="Update 14" RT="Common" IP="true">
-    <N>Hacienda universal farm Grain</N>
-    <T ID="25128" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="22146" />
-    <BC>
-      <U V="950">
-        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="5">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Motorizable">
-        <T ID="269841" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="60">
-      <FO>
-        <U V="1 / 2">
-          <T ID="-774067498" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="10 / 5">
-          <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
-        </U>
-        <U V="15">
-          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
-        </U>
-      </MC>
-    </M>
-    <Mo L="100">
-      <PM>
-        <M ID="1010270" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
-      </PM>
-    </Mo>
-  </Asset>
-  <Asset ID="25020 (Seasons_of_Silver)" RV="Update 14" RT="Common" IP="true">
-    <N>Hacienda universal farm Spices</N>
-    <T ID="25020" I="data/ui/2kimages/main/3dicons/goods_africa/icon_spices.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="22146" />
-    <BC>
-      <U V="950">
-        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
-      </U>
-      <U V="10">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="5">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Motorizable">
-        <T ID="269841" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="60">
-      <FO>
-        <U V="1 / 2">
-          <T ID="114369" I="data/ui/2kimages/main/3dicons/goods_africa/icon_spices.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="25 / 13">
-          <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
-        </U>
-        <U V="15">
-          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
-        </U>
-      </MC>
-    </M>
-    <Mo L="100">
-      <PM>
-        <M ID="114495" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
-      </PM>
-    </Mo>
-  </Asset>
-  <Asset ID="25128" RV="Update 14" RT="Common" IP="true">
-    <N>Hacienda universal farm Grain</N>
-    <T ID="25128" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="3000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="4">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Motorizable">
-        <T ID="269841" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="60">
-      <FO>
-        <U V="1 / 2">
-          <T ID="-774067498" I="data/ui/2kimages/main/3dicons/icon_cereals_2.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="10 / 5">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="10">
-          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
-        </U>
-      </MC>
-    </M>
-    <Mo L="64">
-      <PM>
-        <M ID="1010270" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
-      </PM>
-    </Mo>
-  </Asset>
-  <Asset ID="25020" RV="Update 14" RT="Common" IP="true">
-    <N>Hacienda universal farm Spices</N>
-    <T ID="25020" I="data/ui/2kimages/main/3dicons/goods_africa/icon_spices.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="3000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="4">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Motorizable">
-        <T ID="269841" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="60">
-      <FO>
-        <U V="1 / 2">
-          <T ID="114369" I="data/ui/2kimages/main/3dicons/goods_africa/icon_spices.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="25 / 13">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="10">
-          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
-        </U>
-      </MC>
-    </M>
-    <Mo L="64">
-      <PM>
-        <M ID="114495" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
-      </PM>
-    </Mo>
-  </Asset>
-  <Asset ID="25019" RV="Update 14" RT="Common" IP="true">
-    <N>Hacienda universal farm Potatoes</N>
-    <T ID="25019" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="3000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="4">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Motorizable">
-        <T ID="269841" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB>
-      <FO>
-        <U V="1 / 4">
-          <T ID="-539228491" I="data/ui/2kimages/main/3dicons/icon_potatoes.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="20 / 10">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="10">
-          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
-        </U>
-      </MC>
-    </M>
-    <Mo L="64">
-      <PM>
-        <M ID="1010273" I="data/ui/2kimages/main/3dicons/icon_farmfield_module.png" />
-      </PM>
-    </Mo>
-  </Asset>
-  <Asset ID="25009" RV="Update 14" RT="Common" IP="true">
-    <N>Hacienda universal farm Cocoa</N>
-    <T ID="25009" I="data/ui/2kimages/main/3dicons/icon_cocoa.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="3000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="4">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="" C="Motorizable">
-        <T ID="269841" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="60">
-      <FO>
-        <U V="1 / 2">
-          <T ID="-786393969" I="data/ui/2kimages/main/3dicons/icon_cocoa.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="5 / 3">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="10">
-          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
-        </U>
-      </MC>
-    </M>
-    <Mo L="64">
-      <PM>
-        <M ID="1010337" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
       </PM>
     </Mo>
   </Asset>

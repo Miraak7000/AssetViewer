@@ -20,7 +20,7 @@ namespace RDA.Data {
     #region Public Constructors
 
     public ThirdParty(XElement asset) {
-      ID = asset.XPathSelectElement("Values/Standard/GUID").Value;
+      ID = asset.XPathSelectElement("Values/Standard/AVGUID")?.Value ?? asset.XPathSelectElement("Values/Standard/GUID").Value;
       Name = asset.XPathSelectElement("Values/Standard/Name").Value;
       Text = new Description(asset);
       OfferingItems = new List<OfferingItems>();
