@@ -145,6 +145,7 @@
     <Content Include="Original\assets14.3.xml" />
     <Content Include="Original\assets14.xml" />
     <Content Include="Original\assets15.xml" />
+    <Content Include="Original\assets16.xml" />
     <Content Include="Original\Eden Burning\assets.xml" />
     <Content Include="Original\Eden Burning\assets13.xml" />
     <Content Include="Original\Eden Burning\templates.xml" />
@@ -300,7 +301,7 @@
     <Content Include="Original\texts_taiwanese.xml" />
   </ItemGroup>
   <ItemGroup>
-	  <Content Include="Resources\**" />
+    <Content Include="Resources\**" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

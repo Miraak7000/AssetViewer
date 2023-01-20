@@ -131,15 +131,15 @@ namespace RDA {
       var depth = 0;
       var search = ele.Element("BaseAssetGUID")?.Value ?? ele.Element("ScenarioBaseAssetGUID")?.Value;
       while (search != null) {
+        if (search == "2281") {
+          return depth;
+        }
         var found = Assets.All.Descendants("Asset").FirstOrDefault(a=> a.XPathSelectElement("Values/Standard/GUID")?.Value == search);
         if (found != null) {
           depth++;
           search = found.Element("BaseAssetGUID")?.Value ?? found.Element("ScenarioBaseAssetGUID")?.Value;
         }
         else {
-          if (search == "2281") {
-            break;
-          }
           throw new NotImplementedException($"Parent asset not found with id {search}");
         }
       }

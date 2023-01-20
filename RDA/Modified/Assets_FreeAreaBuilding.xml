@@ -116,84 +116,7 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="101260" RV="Release" RT="Common" IP="true">
-    <N>agriculture_colony01_06 (Timber Yard)</N>
-    <T ID="1010266" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="500">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="9 / 80%">
-        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="15">
-      <FO>
-        <U V="1 / 8">
-          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="10 / 5">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="10">
-          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="1010558" RV="Release" RT="Common" IP="true">
-    <N>agriculture_09 (Hunter's Cabin)</N>
-    <T ID="1010558" I="data/ui/2kimages/main/3dicons/icon_fur.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="2000">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-      </U>
-      <U V="6">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="11">
-        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="60">
-      <FO>
-        <U V="1 / 4">
-          <T ID="1010209" I="data/ui/2kimages/main/3dicons/icon_fur.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="50 / 25">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
-        </U>
-        <U V="10">
-          <T ID="1010052" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_farmer.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="1010266" RV="Release" RT="Common" IP="true">
+  <Asset ID="1010266 (Pride_and_Peddlers)" RV="Release" RT="Common" IP="true">
     <N>agriculture_05 (Timber Yard)</N>
     <T ID="1010266" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
     <R ID="118002" />
@@ -201,7 +124,7 @@
     <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
     <BC>
       <U V="100">
-        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        <T ID="6063" I="data/ui/2kimages/main/icons/icon_resource_money_1.png" />
       </U>
     </BC>
     <GU>
@@ -222,10 +145,47 @@
     <M>
       <MC>
         <U V="10 / 5">
-          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+          <T ID="6063" I="data/ui/2kimages/main/icons/icon_resource_money_1.png" />
         </U>
         <U V="5">
           <T ID="1010052" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_farmer.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="101260 (Pride_and_Peddlers)" RV="Release" RT="Common" IP="true">
+    <N>agriculture_colony01_06 (Timber Yard)</N>
+    <T ID="1010266" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="500">
+        <T ID="6063" I="data/ui/2kimages/main/icons/icon_resource_money_1.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="9 / 80%">
+        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="15">
+      <FO>
+        <U V="1 / 8">
+          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="10 / 5">
+          <T ID="6063" I="data/ui/2kimages/main/icons/icon_resource_money_1.png" />
+        </U>
+        <U V="10">
+          <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
         </U>
       </MC>
     </M>
@@ -347,44 +307,7 @@
       </MC>
     </M>
   </Asset>
-  <Asset ID="1010266 (Pride_and_Peddlers)" RV="Release" RT="Common" IP="true">
-    <N>agriculture_05 (Timber Yard)</N>
-    <T ID="1010266" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
-    <BC>
-      <U V="100">
-        <T ID="6063" I="data/ui/2kimages/main/icons/icon_resource_money_1.png" />
-      </U>
-    </BC>
-    <GU>
-      <U V="9 / 80%">
-        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <I ID="11143" />
-    <FB CT="15">
-      <FO>
-        <U V="1 / 8">
-          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
-        </U>
-      </FO>
-    </FB>
-    <M>
-      <MC>
-        <U V="10 / 5">
-          <T ID="6063" I="data/ui/2kimages/main/icons/icon_resource_money_1.png" />
-        </U>
-        <U V="5">
-          <T ID="1010052" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_farmer.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="101260 (Pride_and_Peddlers)" RV="Release" RT="Common" IP="true">
+  <Asset ID="101260" RV="Release" RT="Common" IP="true">
     <N>agriculture_colony01_06 (Timber Yard)</N>
     <T ID="1010266" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
     <R ID="118002" />
@@ -392,7 +315,7 @@
     <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
     <BC>
       <U V="500">
-        <T ID="6063" I="data/ui/2kimages/main/icons/icon_resource_money_1.png" />
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
     </BC>
     <GU>
@@ -413,10 +336,87 @@
     <M>
       <MC>
         <U V="10 / 5">
-          <T ID="6063" I="data/ui/2kimages/main/icons/icon_resource_money_1.png" />
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
         </U>
         <U V="10">
           <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="1010558" RV="Release" RT="Common" IP="true">
+    <N>agriculture_09 (Hunter's Cabin)</N>
+    <T ID="1010558" I="data/ui/2kimages/main/3dicons/icon_fur.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="2000">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+      <U V="6">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="11">
+        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="60">
+      <FO>
+        <U V="1 / 4">
+          <T ID="1010209" I="data/ui/2kimages/main/3dicons/icon_fur.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="50 / 25">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="10">
+          <T ID="1010052" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_farmer.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
+  <Asset ID="1010266" RV="Release" RT="Common" IP="true">
+    <N>agriculture_05 (Timber Yard)</N>
+    <T ID="1010266" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <BC>
+      <U V="100">
+        <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+      </U>
+    </BC>
+    <GU>
+      <U V="9 / 80%">
+        <T ID="12504" I="data/ui/2kimages/main/icons/icon_warning_2.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <I ID="11143" />
+    <FB CT="15">
+      <FO>
+        <U V="1 / 8">
+          <T ID="120008" I="data/ui/2kimages/main/3dicons/icon_wood_log.png" />
+        </U>
+      </FO>
+    </FB>
+    <M>
+      <MC>
+        <U V="10 / 5">
+          <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
+        </U>
+        <U V="5">
+          <T ID="1010052" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_farmer.png" />
         </U>
       </MC>
     </M>

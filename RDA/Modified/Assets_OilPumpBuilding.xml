@@ -1,5 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <OilPumpBuilding>
+  <Asset ID="100524 (Pride_and_Peddlers)" RV="Release" RT="Common">
+    <N>heavy_colony01_01_field (Oil Pump)</N>
+    <T ID="101332" I="data/ui/2kimages/main/3dicons/icon_oil_rig.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="4000">
+        <T ID="6063" I="data/ui/2kimages/main/icons/icon_resource_money_1.png" />
+      </U>
+      <U V="6">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="10">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="0">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="12658" />
+  </Asset>
   <Asset ID="100524" RV="Release" RT="Common">
     <N>heavy_colony01_01_field (Oil Pump)</N>
     <T ID="101332" I="data/ui/2kimages/main/3dicons/icon_oil_rig.png" />
@@ -42,81 +67,6 @@
         <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
       </U>
       <U V="8">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="12658" />
-  </Asset>
-  <Asset ID="100524 (Pride_and_Peddlers)" RV="Release" RT="Common">
-    <N>heavy_colony01_01_field (Oil Pump)</N>
-    <T ID="101332" I="data/ui/2kimages/main/3dicons/icon_oil_rig.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="4000">
-        <T ID="6063" I="data/ui/2kimages/main/icons/icon_resource_money_1.png" />
-      </U>
-      <U V="6">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="10">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="0">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="12658" />
-  </Asset>
-  <Asset ID="101332 (Seasons_of_Silver)" RV="Release" RT="Common">
-    <N>heavy_10_field (Oil Pump)</N>
-    <T ID="101332" I="data/ui/2kimages/main/3dicons/icon_oil_rig.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="22146" />
-    <BC>
-      <U V="5500">
-        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
-      </U>
-      <U V="15">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="15">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="0">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="12658" />
-  </Asset>
-  <Asset ID="100524 (Seasons_of_Silver)" RV="Release" RT="Common">
-    <N>heavy_colony01_01_field (Oil Pump)</N>
-    <T ID="101332" I="data/ui/2kimages/main/3dicons/icon_oil_rig.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="22146" />
-    <BC>
-      <U V="150">
-        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
-      </U>
-      <U V="6">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="10">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="0">
         <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
       </U>
     </BC>
@@ -171,5 +121,55 @@
     <TP />
     <HF />
     <I ID="114289" />
+  </Asset>
+  <Asset ID="101332 (Seasons_of_Silver)" RV="Release" RT="Common">
+    <N>heavy_10_field (Oil Pump)</N>
+    <T ID="101332" I="data/ui/2kimages/main/3dicons/icon_oil_rig.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="5500">
+        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
+      </U>
+      <U V="15">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="15">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="0">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="12658" />
+  </Asset>
+  <Asset ID="100524 (Seasons_of_Silver)" RV="Release" RT="Common">
+    <N>heavy_colony01_01_field (Oil Pump)</N>
+    <T ID="101332" I="data/ui/2kimages/main/3dicons/icon_oil_rig.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="22146" />
+    <BC>
+      <U V="150">
+        <T ID="24835" I="data/ui/2kimages/main/icons/icon_resource_money_3.png" />
+      </U>
+      <U V="6">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="10">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="0">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="12658" />
   </Asset>
 </OilPumpBuilding>
