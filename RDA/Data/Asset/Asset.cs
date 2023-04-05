@@ -197,6 +197,8 @@ namespace RDA.Data {
           case "CityInstitutionBuildingHeated":
           case "CityInstitutionBuildingAdvanced":
           case "MonumentColony":
+          case "OrnamentalNotes":
+          case "OrnamentalBuildingRuin":
             ItemType = "Building";
             break;
 
@@ -346,6 +348,7 @@ namespace RDA.Data {
           case "MetaItemStorageAccess": 
           case "Postbox": 
           case "MusicInfluencer": 
+          case "Notes": 
             break;
 
           case "Standard":

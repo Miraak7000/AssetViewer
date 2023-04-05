@@ -1,20 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <AirshipPlatformPostModule>
-  <Asset ID="2276" RV="Update 15" RT="Common">
-    <N>platform module post colony01</N>
-    <T ID="4259" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_post.png" />
+  <Asset ID="966 (A_Clash_of_Couriers)" RV="Update 15" RT="Common">
+    <N>platform module post</N>
+    <T ID="2276" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_post.png" />
     <R ID="118002" />
     <IT>Module</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
     <BC>
-      <U V="500">
+      <U V="5000">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
-      <U V="20">
+      <U V="30">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
       <U V="15">
         <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+      <U V="10">
+        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams_1.png" />
+      </U>
+      <U V="5">
+        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
       </U>
     </BC>
     <GU>
@@ -28,7 +34,7 @@
   </Asset>
   <Asset ID="4259" RV="Update 15" RT="Common">
     <N>platform module post Passage</N>
-    <T ID="4259" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_post.png" />
+    <T ID="2276" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_post.png" />
     <R ID="118002" />
     <IT>Module</IT>
     <AR ID="160001" I="data/ui/2kimages/main/icons/icon_session_passage.png" />
@@ -54,7 +60,7 @@
   </Asset>
   <Asset ID="966" RV="Update 15" RT="Common">
     <N>platform module post</N>
-    <T ID="4259" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_post.png" />
+    <T ID="2276" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_post.png" />
     <R ID="118002" />
     <IT>Module</IT>
     <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
@@ -84,27 +90,21 @@
     <HF />
     <I ID="1442" />
   </Asset>
-  <Asset ID="966 (A_Clash_of_Couriers)" RV="Update 15" RT="Common">
-    <N>platform module post</N>
-    <T ID="4259" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_post.png" />
+  <Asset ID="2276" RV="Update 15" RT="Common">
+    <N>platform module post colony01</N>
+    <T ID="2276" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_post.png" />
     <R ID="118002" />
     <IT>Module</IT>
-    <AR ID="5000000" I="data/ui/2kimages/main/icons/icon_session_moderate.png" />
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
     <BC>
-      <U V="5000">
+      <U V="500">
         <T ID="1010017" I="data/ui/2kimages/main/icons/icon_resource_money_4.png" />
       </U>
-      <U V="30">
+      <U V="20">
         <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
       </U>
       <U V="15">
         <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-      <U V="10">
-        <T ID="2114762617" I="data/ui/2kimages/main/3dicons/icon_beams_1.png" />
-      </U>
-      <U V="5">
-        <T ID="1010207" I="data/ui/2kimages/main/3dicons/icon_glass_window_3.png" />
       </U>
     </BC>
     <GU>

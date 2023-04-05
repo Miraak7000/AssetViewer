@@ -1896,6 +1896,22 @@
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc09\icon_square_tower.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc09\icon_statue_woman.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc09\icon_town_gatehouse.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_bamboo_lanterns.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_bell_01.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_dragon.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_garden.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_gong_01.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_lamp_post.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_lion.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_lucky_coins.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_pagoda.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_small_lantern.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_stall.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_street_lanterns_01.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_wall_gate.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_wall_straight_01.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_wish_tree_01.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_wish_wall.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cultural_props_1x1_02.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cultural_props_1x1_03.png" />
     <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cultural_props_1x1_04.png" />
@@ -3112,22 +3128,36 @@
     <EmbeddedResource Include="Resources\Assets\PublicServiceBuildingWithMusicInfluencer.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_bamboo_lanterns.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_bell_01.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_dragon.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_garden.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_gong_01.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_lamp_post.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_lion.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_lucky_coins.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_pagoda.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_small_lantern.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_stall.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_street_lanterns_01.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_wall_gate.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_wall_straight_01.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_wish_tree_01.png" />
-    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\cosmetic_dlc10\icon_wish_wall.png" />
+    <EmbeddedResource Include="Resources\Assets\OrnamentalBuildingRuin.xml" />
+    <EmbeddedResource Include="Resources\Assets\OrnamentalNotes.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\achievement\icon_achievement_africa_copper.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\achievement\icon_achievement_attractions_bronce.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\achievement\icon_achievement_palace_silver.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_elk.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_gorilla_3.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\animals\icon_white_tiger.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\drop_goods\icon_dropgood_bomb_c_ori.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\hacienda\icon_hacienda_module.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_25annoversary.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_elephant.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_sheep.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\icon_zebra.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\museum\icon_celtic_stonehenge.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\jubilee\celebration_ornament_annoversary.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\jubilee\icon_firework_ornament_25_red.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\jubilee\icon_firework_ornament_9_red.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\jubilee\icon_firework_ornament_anno_red.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ornaments\jubilee\icon_firework_ornament_ship_red.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\palace\icon_palace_module.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\scenario\goods\icon_fish_pond_module.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\ships\icon_ship_great_eastern.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_artillerist_101.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_forester_814.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_travelagent_516.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_treasure_hunter_800.png" />
+    <Resource Include="Resources\data\ui\2kimages\main\3dicons\specialists\systemic\icon_uniform_807.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
