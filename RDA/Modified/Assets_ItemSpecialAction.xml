@@ -194,6 +194,7 @@
           <T ID="7919" I="data/ui/2kimages/main/3dicons/production_goods/icon_squid.png" />
           <T ID="1308" I="data/ui/2kimages/main/3dicons/icon_bauxit.png" />
           <T ID="1353" I="data/ui/2kimages/main/3dicons/icon_helium.png" />
+          <T ID="835" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
         </B>
       </ET>
     </ET>
@@ -297,6 +298,9 @@
           </D>
           <D W="1,66">
             <T ID="152559" />
+          </D>
+          <D W="1,66">
+            <T ID="152561" />
           </D>
           <D W="1,66">
             <T ID="152561" />
@@ -2976,6 +2980,7 @@
           <T ID="7919" I="data/ui/2kimages/main/3dicons/production_goods/icon_squid.png" />
           <T ID="1308" I="data/ui/2kimages/main/3dicons/icon_bauxit.png" />
           <T ID="1353" I="data/ui/2kimages/main/3dicons/icon_helium.png" />
+          <T ID="835" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
         </B>
       </ET>
     </ET>
@@ -3734,6 +3739,7 @@
           <T ID="7919" I="data/ui/2kimages/main/3dicons/production_goods/icon_squid.png" />
           <T ID="1308" I="data/ui/2kimages/main/3dicons/icon_bauxit.png" />
           <T ID="1353" I="data/ui/2kimages/main/3dicons/icon_helium.png" />
+          <T ID="835" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
         </B>
       </ET>
     </ET>
@@ -4479,6 +4485,7 @@
           <T ID="7919" I="data/ui/2kimages/main/3dicons/production_goods/icon_squid.png" />
           <T ID="1308" I="data/ui/2kimages/main/3dicons/icon_bauxit.png" />
           <T ID="1353" I="data/ui/2kimages/main/3dicons/icon_helium.png" />
+          <T ID="835" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
         </B>
       </ET>
     </ET>
@@ -6189,6 +6196,9 @@
           </D>
           <D W="1,66">
             <T ID="152559" />
+          </D>
+          <D W="1,66">
+            <T ID="152561" />
           </D>
           <D W="1,66">
             <T ID="152561" />
@@ -14109,6 +14119,14 @@
           </D>
         </DL>
       </S>
+      <S ID="11137" N="1 Pirate Pack">
+        <T ID="11137" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_1.png" />
+        <DL>
+          <D W="7,14">
+            <T ID="11137" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_1.png" />
+          </D>
+        </DL>
+      </S>
       <S ID="220" N="Second_ai_11 (Hugo Mercier)">
         <T ID="1149536045" I="data/ui/2kimages/main/profiles/ai_11.png" />
         <DL>
@@ -14913,7 +14931,7 @@
       <U V="-250%" C="IncidentInfectableUpgrade">
         <T ID="12227" I="data/ui/2kimages/main/icons/icon_riot.png" />
       </U>
-      <U V="02:00:00">
+      <U V="00:30:00">
         <T ID="2423" I="data/ui/2kimages/main/3dicons/icon_time.png" FS="16" />
       </U>
       <U V="">
@@ -14998,17 +15016,17 @@
       <S ID="45" N="Third_party_02 (Archibald Blake)">
         <T ID="-360802622" I="data/ui/2kimages/main/profiles/3rd_party_02.png" />
         <DL>
-          <D W="1,041">
+          <D W="0,58">
             <T ID="-9">
               <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
             </T>
           </D>
-          <D W="1">
+          <D W="0,68">
             <T ID="-10">
               <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
             </T>
           </D>
-          <D W="0,96">
+          <D W="0,54">
             <T ID="-11">
               <AI ID="-910786917" />
             </T>
@@ -15068,17 +15086,17 @@
       <S ID="45" N="Third_party_02 (Archibald Blake)">
         <T ID="-360802622" I="data/ui/2kimages/main/profiles/3rd_party_02.png" />
         <DL>
-          <D W="1,041">
+          <D W="0,58">
             <T ID="-9">
               <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
             </T>
           </D>
-          <D W="1">
+          <D W="0,68">
             <T ID="-10">
               <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
             </T>
           </D>
-          <D W="0,96">
+          <D W="0,54">
             <T ID="-11">
               <AI ID="-910786917" />
             </T>
@@ -21624,7 +21642,6 @@
           <T ID="100443" I="data/ui/2kimages/main/3dicons/ships/icon_ship_monitor.png" />
           <T ID="1010062" I="data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png" />
           <T ID="100853" I="data/ui/2kimages/main/3dicons/ships/icon_ship_oil_tanker.png" />
-          <T ID="101236" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_real_great_eastern.png" />
           <T ID="720" I="data/ui/2kimages/main/3dicons/ships/icon_ship_flak_monitor.png" />
           <T ID="1537" I="data/ui/2kimages/main/3dicons/ships/icon_ship_fire_monitor_blue.png" />
@@ -26929,6 +26946,14 @@
     <HF>30000</HF>
     <I ID="19592" />
     <S>
+      <S ID="11140" N="4 Seasons of Silver Pack">
+        <T ID="11140" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_4.png" />
+        <DL>
+          <D W="16,66">
+            <T ID="11140" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_4.png" />
+          </D>
+        </DL>
+      </S>
       <S ID="800103" N="Archeological Expedition Easy">
         <T ID="11629" I="data/ui/2kimages/main/3dicons/icon_skull.png" />
         <DL>
@@ -27104,17 +27129,17 @@
               <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
             </T>
           </D>
-          <D W="2,083">
+          <D W="2,34">
             <T ID="-9">
               <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
             </T>
           </D>
-          <D W="2,66">
+          <D W="3,044">
             <T ID="-10">
               <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
             </T>
           </D>
-          <D W="3,2">
+          <D W="3,61">
             <T ID="-11">
               <AI ID="-910786917" />
             </T>
@@ -27205,19 +27230,19 @@
           <D W="0,1">
             <T ID="152581" />
           </D>
-          <D W="0,2">
+          <D W="0,21">
             <T ID="150190" />
           </D>
-          <D W="0,2">
+          <D W="0,21">
             <T ID="150192" />
           </D>
-          <D W="0,2">
+          <D W="0,21">
             <T ID="269855" />
           </D>
-          <D W="0,2">
+          <D W="0,21">
             <T ID="269856" />
           </D>
-          <D W="0,2">
+          <D W="0,21">
             <T ID="269857" />
           </D>
         </DL>
@@ -27502,17 +27527,17 @@
               <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
             </T>
           </D>
-          <D W="2,77">
+          <D W="3,12">
             <T ID="-9">
               <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
             </T>
           </D>
-          <D W="2">
+          <D W="2,28">
             <T ID="-10">
               <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
             </T>
           </D>
-          <D W="1,28">
+          <D W="1,44">
             <T ID="-11">
               <AI ID="-910786917" />
             </T>
@@ -27761,17 +27786,17 @@
               <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
             </T>
           </D>
-          <D W="1,73">
+          <D W="1,95">
             <T ID="-9">
               <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
             </T>
           </D>
-          <D W="1,33">
+          <D W="1,52">
             <T ID="-10">
               <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
             </T>
           </D>
-          <D W="0,96">
+          <D W="1,084">
             <T ID="-11">
               <AI ID="-910786917" />
             </T>
@@ -31324,6 +31349,9 @@
             <T ID="152561" />
           </D>
           <D W="1,11">
+            <T ID="152561" />
+          </D>
+          <D W="1,11">
             <T ID="152563" />
           </D>
           <D W="1,11">
@@ -33965,6 +33993,14 @@
     <HF>10000</HF>
     <I ID="19583" />
     <S>
+      <S ID="11140" N="4 Seasons of Silver Pack">
+        <T ID="11140" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_4.png" />
+        <DL>
+          <D W="16,66">
+            <T ID="11140" I="data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_4.png" />
+          </D>
+        </DL>
+      </S>
       <S ID="80" N="Second_ai_03 (Willie Wibblesock)">
         <T ID="2050890057" I="data/ui/2kimages/main/profiles/ai_03.png" />
         <DL>
@@ -34047,6 +34083,9 @@
           </D>
           <D W="0,62">
             <T ID="152559" />
+          </D>
+          <D W="0,62">
+            <T ID="152561" />
           </D>
           <D W="0,62">
             <T ID="152561" />
@@ -34437,17 +34476,17 @@
               <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
             </T>
           </D>
-          <D W="2,083">
+          <D W="2,34">
             <T ID="-9">
               <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
             </T>
           </D>
-          <D W="2,66">
+          <D W="3,044">
             <T ID="-10">
               <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
             </T>
           </D>
-          <D W="3,2">
+          <D W="3,61">
             <T ID="-11">
               <AI ID="-910786917" />
             </T>
@@ -34472,17 +34511,17 @@
               <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
             </T>
           </D>
-          <D W="2,56">
+          <D W="2,77">
             <T ID="-9">
               <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
             </T>
           </D>
-          <D W="3,22">
+          <D W="3,54">
             <T ID="-10">
               <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
             </T>
           </D>
-          <D W="3,78">
+          <D W="4,41">
             <T ID="-11">
               <AI ID="-910786917" />
             </T>
@@ -34543,19 +34582,19 @@
           <D W="0,1">
             <T ID="152581" />
           </D>
-          <D W="0,2">
+          <D W="0,21">
             <T ID="150190" />
           </D>
-          <D W="0,2">
+          <D W="0,21">
             <T ID="150192" />
           </D>
-          <D W="0,2">
+          <D W="0,21">
             <T ID="269855" />
           </D>
-          <D W="0,2">
+          <D W="0,21">
             <T ID="269856" />
           </D>
-          <D W="0,2">
+          <D W="0,21">
             <T ID="269857" />
           </D>
         </DL>
@@ -34951,17 +34990,17 @@
               <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
             </T>
           </D>
-          <D W="2,77">
+          <D W="3,12">
             <T ID="-9">
               <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
             </T>
           </D>
-          <D W="2">
+          <D W="2,28">
             <T ID="-10">
               <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
             </T>
           </D>
-          <D W="1,28">
+          <D W="1,44">
             <T ID="-11">
               <AI ID="-910786917" />
             </T>
@@ -34986,17 +35025,17 @@
               <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
             </T>
           </D>
-          <D W="2,27">
+          <D W="2,46">
             <T ID="-9">
               <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
             </T>
           </D>
-          <D W="1,61">
+          <D W="1,77">
             <T ID="-10">
               <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
             </T>
           </D>
-          <D W="1,01">
+          <D W="1,17">
             <T ID="-11">
               <AI ID="-910786917" />
             </T>
@@ -35499,17 +35538,17 @@
               <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
             </T>
           </D>
-          <D W="2,083">
+          <D W="2,34">
             <T ID="-9">
               <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
             </T>
           </D>
-          <D W="2,66">
+          <D W="3,044">
             <T ID="-10">
               <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
             </T>
           </D>
-          <D W="3,2">
+          <D W="3,61">
             <T ID="-11">
               <AI ID="-910786917" />
             </T>
@@ -35570,19 +35609,19 @@
           <D W="0,1">
             <T ID="152581" />
           </D>
-          <D W="0,2">
+          <D W="0,21">
             <T ID="150190" />
           </D>
-          <D W="0,2">
+          <D W="0,21">
             <T ID="150192" />
           </D>
-          <D W="0,2">
+          <D W="0,21">
             <T ID="269855" />
           </D>
-          <D W="0,2">
+          <D W="0,21">
             <T ID="269856" />
           </D>
-          <D W="0,2">
+          <D W="0,21">
             <T ID="269857" />
           </D>
         </DL>
@@ -35919,17 +35958,17 @@
               <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
             </T>
           </D>
-          <D W="2,77">
+          <D W="3,12">
             <T ID="-9">
               <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
             </T>
           </D>
-          <D W="2">
+          <D W="2,28">
             <T ID="-10">
               <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
             </T>
           </D>
-          <D W="1,28">
+          <D W="1,44">
             <T ID="-11">
               <AI ID="-910786917" />
             </T>
@@ -36317,17 +36356,17 @@
               <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
             </T>
           </D>
-          <D W="2,27">
+          <D W="2,46">
             <T ID="-9">
               <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
             </T>
           </D>
-          <D W="1,61">
+          <D W="1,77">
             <T ID="-10">
               <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
             </T>
           </D>
-          <D W="1,01">
+          <D W="1,17">
             <T ID="-11">
               <AI ID="-910786917" />
             </T>
@@ -36920,17 +36959,17 @@
               <AI ID="-105542539" I="data/ui/2kimages/main/3dicons/resident/icon_resident_artisan.png" />
             </T>
           </D>
-          <D W="1,42">
+          <D W="1,54">
             <T ID="-9">
               <AI ID="262583778" I="data/ui/2kimages/main/3dicons/resident/icon_resident_engineer.png" />
             </T>
           </D>
-          <D W="1,075">
+          <D W="1,18">
             <T ID="-10">
               <AI ID="1655175964" I="data/ui/2kimages/main/3dicons/resident/icon_resident_investor.png" />
             </T>
           </D>
-          <D W="0,75">
+          <D W="0,88">
             <T ID="-11">
               <AI ID="-910786917" />
             </T>
@@ -45805,6 +45844,7 @@
           <T ID="7919" I="data/ui/2kimages/main/3dicons/production_goods/icon_squid.png" />
           <T ID="1308" I="data/ui/2kimages/main/3dicons/icon_bauxit.png" />
           <T ID="1353" I="data/ui/2kimages/main/3dicons/icon_helium.png" />
+          <T ID="835" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
         </B>
       </ET>
     </ET>
@@ -45940,6 +45980,9 @@
           </D>
           <D W="0,62">
             <T ID="152559" />
+          </D>
+          <D W="0,62">
+            <T ID="152561" />
           </D>
           <D W="0,62">
             <T ID="152561" />
@@ -46819,6 +46862,7 @@
           <T ID="7919" I="data/ui/2kimages/main/3dicons/production_goods/icon_squid.png" />
           <T ID="1308" I="data/ui/2kimages/main/3dicons/icon_bauxit.png" />
           <T ID="1353" I="data/ui/2kimages/main/3dicons/icon_helium.png" />
+          <T ID="835" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
         </B>
       </ET>
     </ET>
@@ -46945,6 +46989,9 @@
           </D>
           <D W="1,11">
             <T ID="152559" />
+          </D>
+          <D W="1,11">
+            <T ID="152561" />
           </D>
           <D W="1,11">
             <T ID="152561" />

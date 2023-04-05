@@ -1,5 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BuffFactory>
+  <Asset ID="5840 (Pride_and_Peddlers)" RV="Update 16" RT="Common" IP="true">
+    <N>DLC12 Samba School</N>
+    <T ID="5840" I="data/ui/2kimages/main/3dicons/public_building/icon_samba_school.png" />
+    <R ID="118002" />
+    <IT>Building</IT>
+    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
+    <BC>
+      <U V="5600">
+        <T ID="6063" I="data/ui/2kimages/main/icons/icon_resource_money_1.png" />
+      </U>
+      <U V="20">
+        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
+      </U>
+      <U V="25">
+        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
+      </U>
+    </BC>
+    <GU />
+    <TP />
+    <HF />
+    <I ID="11144" />
+    <FB CT="120">
+      <FI>
+        <U V="1 / 6">
+          <T ID="5389" I="data/ui/2kimages/main/3dicons/production_goods/icon_costumes.png" />
+        </U>
+      </FI>
+    </FB>
+    <M>
+      <MC>
+        <U V="100">
+          <T ID="6063" I="data/ui/2kimages/main/icons/icon_resource_money_1.png" />
+        </U>
+        <U V="15">
+          <T ID="5406" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_artista.png" />
+        </U>
+      </MC>
+    </M>
+  </Asset>
   <Asset ID="6018 (Pride_and_Peddlers)" RV="Update 16" RT="Common" IP="true">
     <N>DLC12 Cinema</N>
     <T ID="6018" I="data/ui/2kimages/main/3dicons/public_building/icon_cinema.png" />
@@ -134,6 +173,7 @@
     <GU />
     <TP />
     <HF />
+    <I ID="11396" />
     <FB>
       <FI>
         <U V="1 / 5">
@@ -148,45 +188,6 @@
         </U>
         <U V="15">
           <T ID="1010366" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_jornalero.png" />
-        </U>
-      </MC>
-    </M>
-  </Asset>
-  <Asset ID="5840 (Pride_and_Peddlers)" RV="Update 16" RT="Common" IP="true">
-    <N>DLC12 Samba School</N>
-    <T ID="5840" I="data/ui/2kimages/main/3dicons/public_building/icon_samba_school.png" />
-    <R ID="118002" />
-    <IT>Building</IT>
-    <AR ID="5000001" I="data/ui/2kimages/main/icons/icon_session_southamerica.png" />
-    <BC>
-      <U V="5600">
-        <T ID="6063" I="data/ui/2kimages/main/icons/icon_resource_money_1.png" />
-      </U>
-      <U V="20">
-        <T ID="1010196" I="data/ui/2kimages/main/3dicons/icon_wooden_planks.png" />
-      </U>
-      <U V="25">
-        <T ID="1010205" I="data/ui/2kimages/main/3dicons/icon_bricks.png" />
-      </U>
-    </BC>
-    <GU />
-    <TP />
-    <HF />
-    <I ID="11144" />
-    <FB CT="120">
-      <FI>
-        <U V="1 / 6">
-          <T ID="5389" I="data/ui/2kimages/main/3dicons/production_goods/icon_costumes.png" />
-        </U>
-      </FI>
-    </FB>
-    <M>
-      <MC>
-        <U V="100">
-          <T ID="6063" I="data/ui/2kimages/main/icons/icon_resource_money_1.png" />
-        </U>
-        <U V="15">
-          <T ID="5406" I="data/ui/2kimages/main/icons/workforce/icon_workforce_2.5d_artista.png" />
         </U>
       </MC>
     </M>

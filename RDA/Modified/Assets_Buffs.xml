@@ -91,6 +91,7 @@
           <T ID="6594" I="data/ui/2kimages/main/3dicons/production_goods/icon_mezcal.png" />
           <T ID="25350" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
           <T ID="25126" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_atole.png" />
+          <T ID="135418" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_cognac.png" />
         </B>
       </ET>
     </ET>
@@ -335,10 +336,10 @@
           <T ID="1010300" I="data/ui/2kimages/main/3dicons/icon_dynamite.png" />
           <T ID="1010299" I="data/ui/2kimages/main/3dicons/icon_weapons.png" />
           <T ID="1010301" I="data/ui/2kimages/main/3dicons/icon_advanced_weaponry.png" />
-          <T ID="906" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_bomb_b.png" />
-          <T ID="907" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_seamines.png" />
-          <T ID="907" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_seamines.png" />
-          <T ID="906" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_bomb_b.png" />
+          <T ID="924" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_bomb_b.png" />
+          <T ID="934" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_seamines.png" />
+          <T ID="934" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_seamines.png" />
+          <T ID="924" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_bomb_b.png" />
           <T ID="6630" I="data/ui/2kimages/main/3dicons/recipes/icon_police_equipment.png" />
         </B>
       </ET>
@@ -724,6 +725,7 @@
     </GU>
     <TP />
     <HF />
+    <I ID="105914" />
     <ET>
       <ET>
         <T ID="193666" I="data/ui/2kimages/main/icons/icon_attractiveness.png" />
@@ -1390,6 +1392,7 @@
           <T ID="7919" I="data/ui/2kimages/main/3dicons/production_goods/icon_squid.png" />
           <T ID="1308" I="data/ui/2kimages/main/3dicons/icon_bauxit.png" />
           <T ID="1353" I="data/ui/2kimages/main/3dicons/icon_helium.png" />
+          <T ID="835" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
         </B>
       </ET>
     </ET>
@@ -1569,6 +1572,7 @@
           <T ID="7919" I="data/ui/2kimages/main/3dicons/production_goods/icon_squid.png" />
           <T ID="1308" I="data/ui/2kimages/main/3dicons/icon_bauxit.png" />
           <T ID="1353" I="data/ui/2kimages/main/3dicons/icon_helium.png" />
+          <T ID="835" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
         </B>
       </ET>
     </ET>
@@ -1748,6 +1752,7 @@
           <T ID="7919" I="data/ui/2kimages/main/3dicons/production_goods/icon_squid.png" />
           <T ID="1308" I="data/ui/2kimages/main/3dicons/icon_bauxit.png" />
           <T ID="1353" I="data/ui/2kimages/main/3dicons/icon_helium.png" />
+          <T ID="835" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
         </B>
       </ET>
     </ET>
@@ -2035,6 +2040,7 @@
           <T ID="7919" I="data/ui/2kimages/main/3dicons/production_goods/icon_squid.png" />
           <T ID="1308" I="data/ui/2kimages/main/3dicons/icon_bauxit.png" />
           <T ID="1353" I="data/ui/2kimages/main/3dicons/icon_helium.png" />
+          <T ID="835" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
         </B>
       </ET>
     </ET>
@@ -2214,6 +2220,7 @@
           <T ID="7919" I="data/ui/2kimages/main/3dicons/production_goods/icon_squid.png" />
           <T ID="1308" I="data/ui/2kimages/main/3dicons/icon_bauxit.png" />
           <T ID="1353" I="data/ui/2kimages/main/3dicons/icon_helium.png" />
+          <T ID="835" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
         </B>
       </ET>
     </ET>
@@ -2396,6 +2403,7 @@
           <T ID="7919" I="data/ui/2kimages/main/3dicons/production_goods/icon_squid.png" />
           <T ID="1308" I="data/ui/2kimages/main/3dicons/icon_bauxit.png" />
           <T ID="1353" I="data/ui/2kimages/main/3dicons/icon_helium.png" />
+          <T ID="835" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
         </B>
       </ET>
     </ET>
@@ -4624,9 +4632,6 @@
       <U V="-10%" C="IncidentInfectableUpgrade">
         <T ID="12227" I="data/ui/2kimages/main/icons/icon_riot.png" />
       </U>
-      <U V="-10%" C="IncidentInfectableUpgrade">
-        <T ID="21489" I="data/ui/2kimages/main/icons/icon_bomb.png" />
-      </U>
     </GU>
     <TP />
     <HF />
@@ -5862,46 +5867,7 @@
     <R ID="118002" />
     <IT />
     <AU>
-      <U V="-50%">
-        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
-      </U>
-    </AU>
-    <GU>
-      <U V="-75%" C="VehicleUpgrade">
-        <T ID="2339" I="data/ui/2kimages/main/icons/icon_forward.png" />
-      </U>
-    </GU>
-    <TP />
-    <HF />
-    <ET>
-      <ET>
-        <T ID="1404" I="data/ui/2kimages/main/icons/icon_steamersymbol.png" />
-        <B>
-          <T ID="100442" I="data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png" />
-          <T ID="100443" I="data/ui/2kimages/main/3dicons/ships/icon_ship_monitor.png" />
-          <T ID="968" I="data/ui/2kimages/main/3dicons/ships/icon_ship_fire_monitor_red.png" />
-          <T ID="1010062" I="data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png" />
-          <T ID="100853" I="data/ui/2kimages/main/3dicons/ships/icon_ship_oil_tanker.png" />
-          <T ID="102432" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png" />
-          <T ID="102422" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png" />
-          <T ID="102423" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_ship_monitor.png" />
-          <T ID="102425" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_battlecruiser.png" />
-          <T ID="102428" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_warship.png" />
-          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_anno_union.png" />
-          <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_real_great_eastern.png" />
-          <T ID="132404" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_white.png" />
-          <T ID="1537" I="data/ui/2kimages/main/3dicons/ships/icon_ship_fire_monitor_blue.png" />
-        </B>
-      </ET>
-    </ET>
-  </Asset>
-  <Asset ID="1408" RV="Update 15" RT="Common">
-    <N>FlameWeaponEffect_Phase02_(Steel)</N>
-    <T ID="1402" I="data/ui/2kimages/main/icons/dlc_11/icon_ship_fire_armed_red.png" />
-    <R ID="118002" />
-    <IT />
-    <AU>
-      <U V="-50%">
+      <U V="-45%">
         <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
       </U>
     </AU>
@@ -5921,12 +5887,12 @@
           <T ID="968" I="data/ui/2kimages/main/3dicons/ships/icon_ship_fire_monitor_red.png" />
           <T ID="1010062" I="data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png" />
           <T ID="100853" I="data/ui/2kimages/main/3dicons/ships/icon_ship_oil_tanker.png" />
-          <T ID="102432" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png" />
+          <T ID="102422" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png" />
           <T ID="102422" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png" />
           <T ID="102423" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_ship_monitor.png" />
           <T ID="102425" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_battlecruiser.png" />
           <T ID="102428" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_warship.png" />
-          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_anno_union.png" />
+          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_eastern.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_real_great_eastern.png" />
           <T ID="132404" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_white.png" />
           <T ID="1537" I="data/ui/2kimages/main/3dicons/ships/icon_ship_fire_monitor_blue.png" />
@@ -5934,9 +5900,9 @@
       </ET>
     </ET>
   </Asset>
-  <Asset ID="1409" RV="Update 15" RT="Common">
-    <N>FlameWeaponEffect_Phase03_(Steel)</N>
-    <T ID="1403" I="data/ui/2kimages/main/icons/dlc_11/icon_ship_fire_armed_red.png" />
+  <Asset ID="1408" RV="Update 15" RT="Common">
+    <N>FlameWeaponEffect_Phase02_(Steel)</N>
+    <T ID="1402" I="data/ui/2kimages/main/icons/dlc_11/icon_ship_fire_armed_red.png" />
     <R ID="118002" />
     <IT />
     <AU>
@@ -5945,7 +5911,7 @@
       </U>
     </AU>
     <GU>
-      <U V="-15%" C="VehicleUpgrade">
+      <U V="-35%" C="VehicleUpgrade">
         <T ID="2339" I="data/ui/2kimages/main/icons/icon_forward.png" />
       </U>
     </GU>
@@ -5960,12 +5926,51 @@
           <T ID="968" I="data/ui/2kimages/main/3dicons/ships/icon_ship_fire_monitor_red.png" />
           <T ID="1010062" I="data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png" />
           <T ID="100853" I="data/ui/2kimages/main/3dicons/ships/icon_ship_oil_tanker.png" />
-          <T ID="102432" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png" />
+          <T ID="102422" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png" />
           <T ID="102422" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png" />
           <T ID="102423" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_ship_monitor.png" />
           <T ID="102425" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_battlecruiser.png" />
           <T ID="102428" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_warship.png" />
-          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_anno_union.png" />
+          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_eastern.png" />
+          <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_real_great_eastern.png" />
+          <T ID="132404" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_white.png" />
+          <T ID="1537" I="data/ui/2kimages/main/3dicons/ships/icon_ship_fire_monitor_blue.png" />
+        </B>
+      </ET>
+    </ET>
+  </Asset>
+  <Asset ID="1409" RV="Update 15" RT="Common">
+    <N>FlameWeaponEffect_Phase03_(Steel)</N>
+    <T ID="1403" I="data/ui/2kimages/main/icons/dlc_11/icon_ship_fire_armed_red.png" />
+    <R ID="118002" />
+    <IT />
+    <AU>
+      <U V="-10%">
+        <T ID="17230" I="data/ui/2kimages/main/icons/icon_timer.png" />
+      </U>
+    </AU>
+    <GU>
+      <U V="-10%" C="VehicleUpgrade">
+        <T ID="2339" I="data/ui/2kimages/main/icons/icon_forward.png" />
+      </U>
+    </GU>
+    <TP />
+    <HF />
+    <ET>
+      <ET>
+        <T ID="1404" I="data/ui/2kimages/main/icons/icon_steamersymbol.png" />
+        <B>
+          <T ID="100442" I="data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png" />
+          <T ID="100443" I="data/ui/2kimages/main/3dicons/ships/icon_ship_monitor.png" />
+          <T ID="968" I="data/ui/2kimages/main/3dicons/ships/icon_ship_fire_monitor_red.png" />
+          <T ID="1010062" I="data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png" />
+          <T ID="100853" I="data/ui/2kimages/main/3dicons/ships/icon_ship_oil_tanker.png" />
+          <T ID="102422" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png" />
+          <T ID="102422" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png" />
+          <T ID="102423" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_ship_monitor.png" />
+          <T ID="102425" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_battlecruiser.png" />
+          <T ID="102428" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_warship.png" />
+          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_eastern.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_real_great_eastern.png" />
           <T ID="132404" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_white.png" />
           <T ID="1537" I="data/ui/2kimages/main/3dicons/ships/icon_ship_fire_monitor_blue.png" />
@@ -6169,12 +6174,12 @@
           <T ID="968" I="data/ui/2kimages/main/3dicons/ships/icon_ship_fire_monitor_red.png" />
           <T ID="1010062" I="data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png" />
           <T ID="100853" I="data/ui/2kimages/main/3dicons/ships/icon_ship_oil_tanker.png" />
-          <T ID="102432" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png" />
+          <T ID="102422" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png" />
           <T ID="102422" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png" />
           <T ID="102423" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_ship_monitor.png" />
           <T ID="102425" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_battlecruiser.png" />
           <T ID="102428" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_warship.png" />
-          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_anno_union.png" />
+          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_eastern.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_real_great_eastern.png" />
           <T ID="132404" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_white.png" />
           <T ID="1537" I="data/ui/2kimages/main/3dicons/ships/icon_ship_fire_monitor_blue.png" />
@@ -6213,12 +6218,12 @@
           <T ID="968" I="data/ui/2kimages/main/3dicons/ships/icon_ship_fire_monitor_red.png" />
           <T ID="1010062" I="data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png" />
           <T ID="100853" I="data/ui/2kimages/main/3dicons/ships/icon_ship_oil_tanker.png" />
-          <T ID="102432" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png" />
+          <T ID="102422" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png" />
           <T ID="102422" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png" />
           <T ID="102423" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_ship_monitor.png" />
           <T ID="102425" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_battlecruiser.png" />
           <T ID="102428" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_warship.png" />
-          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_anno_union.png" />
+          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_eastern.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_real_great_eastern.png" />
           <T ID="132404" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_white.png" />
           <T ID="1537" I="data/ui/2kimages/main/3dicons/ships/icon_ship_fire_monitor_blue.png" />
@@ -6257,12 +6262,12 @@
           <T ID="968" I="data/ui/2kimages/main/3dicons/ships/icon_ship_fire_monitor_red.png" />
           <T ID="1010062" I="data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png" />
           <T ID="100853" I="data/ui/2kimages/main/3dicons/ships/icon_ship_oil_tanker.png" />
-          <T ID="102432" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png" />
+          <T ID="102422" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png" />
           <T ID="102422" I="data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png" />
           <T ID="102423" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_ship_monitor.png" />
           <T ID="102425" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_battlecruiser.png" />
           <T ID="102428" I="data/ui/2kimages/main/3dicons/ships/icon_pyphorian_warship.png" />
-          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_anno_union.png" />
+          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_eastern.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_real_great_eastern.png" />
           <T ID="132404" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_white.png" />
           <T ID="1537" I="data/ui/2kimages/main/3dicons/ships/icon_ship_fire_monitor_blue.png" />
@@ -6706,7 +6711,7 @@
           <T ID="1010062" I="data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png" />
           <T ID="101121" I="data/ui/2kimages/main/3dicons/ships/icon_ship_commandship.png" />
           <T ID="100853" I="data/ui/2kimages/main/3dicons/ships/icon_ship_oil_tanker.png" />
-          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_anno_union.png" />
+          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_eastern.png" />
           <T ID="102437" I="data/ui/2kimages/main/3dicons/ships/icon_ship_commandship_variation.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_real_great_eastern.png" />
         </B>
@@ -6734,7 +6739,7 @@
           <T ID="1010062" I="data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png" />
           <T ID="101121" I="data/ui/2kimages/main/3dicons/ships/icon_ship_commandship.png" />
           <T ID="100853" I="data/ui/2kimages/main/3dicons/ships/icon_ship_oil_tanker.png" />
-          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_anno_union.png" />
+          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_eastern.png" />
           <T ID="102437" I="data/ui/2kimages/main/3dicons/ships/icon_ship_commandship_variation.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_real_great_eastern.png" />
         </B>
@@ -6762,7 +6767,7 @@
           <T ID="1010062" I="data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png" />
           <T ID="101121" I="data/ui/2kimages/main/3dicons/ships/icon_ship_commandship.png" />
           <T ID="100853" I="data/ui/2kimages/main/3dicons/ships/icon_ship_oil_tanker.png" />
-          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_anno_union.png" />
+          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_eastern.png" />
           <T ID="102437" I="data/ui/2kimages/main/3dicons/ships/icon_ship_commandship_variation.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_real_great_eastern.png" />
         </B>
@@ -6793,7 +6798,7 @@
           <T ID="1010062" I="data/ui/2kimages/main/3dicons/ships/icon_ship_collier_variation.png" />
           <T ID="100853" I="data/ui/2kimages/main/3dicons/ships/icon_ship_oil_tanker.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_real_great_eastern.png" />
-          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_anno_union.png" />
+          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_eastern.png" />
           <T ID="114166" I="data/ui/2kimages/main/3dicons/ships/icon_airship_artic.png" />
           <T ID="101121" I="data/ui/2kimages/main/3dicons/ships/icon_ship_commandship.png" />
           <T ID="101121" I="data/ui/2kimages/main/3dicons/ships/icon_ship_commandship_variation.png" />
@@ -6827,7 +6832,7 @@
           <T ID="1010062" I="data/ui/2kimages/main/3dicons/ships/icon_ship_collier_variation.png" />
           <T ID="100853" I="data/ui/2kimages/main/3dicons/ships/icon_ship_oil_tanker.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_real_great_eastern.png" />
-          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_anno_union.png" />
+          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_eastern.png" />
           <T ID="114166" I="data/ui/2kimages/main/3dicons/ships/icon_airship_artic.png" />
           <T ID="101121" I="data/ui/2kimages/main/3dicons/ships/icon_ship_commandship.png" />
           <T ID="101121" I="data/ui/2kimages/main/3dicons/ships/icon_ship_commandship_variation.png" />
@@ -6861,7 +6866,7 @@
           <T ID="1010062" I="data/ui/2kimages/main/3dicons/ships/icon_ship_collier_variation.png" />
           <T ID="100853" I="data/ui/2kimages/main/3dicons/ships/icon_ship_oil_tanker.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_real_great_eastern.png" />
-          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_anno_union.png" />
+          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_eastern.png" />
           <T ID="114166" I="data/ui/2kimages/main/3dicons/ships/icon_airship_artic.png" />
           <T ID="101121" I="data/ui/2kimages/main/3dicons/ships/icon_ship_commandship.png" />
           <T ID="101121" I="data/ui/2kimages/main/3dicons/ships/icon_ship_commandship_variation.png" />
@@ -6902,7 +6907,7 @@
           <T ID="100853" I="data/ui/2kimages/main/3dicons/ships/icon_ship_oil_tanker.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_real_great_eastern.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_big_colony_variation.png" />
-          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_anno_union.png" />
+          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_eastern.png" />
           <T ID="114166" I="data/ui/2kimages/main/3dicons/ships/icon_airship_artic.png" />
           <T ID="132404" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_white.png" />
         </B>
@@ -6940,7 +6945,7 @@
           <T ID="100853" I="data/ui/2kimages/main/3dicons/ships/icon_ship_oil_tanker.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_real_great_eastern.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_big_colony_variation.png" />
-          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_anno_union.png" />
+          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_eastern.png" />
           <T ID="114166" I="data/ui/2kimages/main/3dicons/ships/icon_airship_artic.png" />
           <T ID="132404" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_white.png" />
         </B>
@@ -6978,7 +6983,7 @@
           <T ID="100853" I="data/ui/2kimages/main/3dicons/ships/icon_ship_oil_tanker.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_real_great_eastern.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_big_colony_variation.png" />
-          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_anno_union.png" />
+          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_eastern.png" />
           <T ID="114166" I="data/ui/2kimages/main/3dicons/ships/icon_airship_artic.png" />
           <T ID="132404" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_white.png" />
         </B>
@@ -7016,7 +7021,7 @@
           <T ID="100853" I="data/ui/2kimages/main/3dicons/ships/icon_ship_oil_tanker.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_real_great_eastern.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_big_colony_variation.png" />
-          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_anno_union.png" />
+          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_eastern.png" />
           <T ID="114166" I="data/ui/2kimages/main/3dicons/ships/icon_airship_artic.png" />
           <T ID="132404" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_white.png" />
         </B>
@@ -7070,7 +7075,7 @@
           <T ID="100853" I="data/ui/2kimages/main/3dicons/ships/icon_ship_oil_tanker.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_real_great_eastern.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_big_colony_variation.png" />
-          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_anno_union.png" />
+          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_eastern.png" />
           <T ID="114166" I="data/ui/2kimages/main/3dicons/ships/icon_airship_artic.png" />
           <T ID="132404" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_white.png" />
         </B>
@@ -7124,7 +7129,7 @@
           <T ID="100853" I="data/ui/2kimages/main/3dicons/ships/icon_ship_oil_tanker.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_real_great_eastern.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_big_colony_variation.png" />
-          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_anno_union.png" />
+          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_eastern.png" />
           <T ID="114166" I="data/ui/2kimages/main/3dicons/ships/icon_airship_artic.png" />
           <T ID="132404" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_white.png" />
         </B>
@@ -7178,7 +7183,7 @@
           <T ID="100853" I="data/ui/2kimages/main/3dicons/ships/icon_ship_oil_tanker.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_real_great_eastern.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_big_colony_variation.png" />
-          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_anno_union.png" />
+          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_eastern.png" />
           <T ID="114166" I="data/ui/2kimages/main/3dicons/ships/icon_airship_artic.png" />
           <T ID="132404" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_white.png" />
         </B>
@@ -7232,7 +7237,7 @@
           <T ID="100853" I="data/ui/2kimages/main/3dicons/ships/icon_ship_oil_tanker.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_real_great_eastern.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_big_colony_variation.png" />
-          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_anno_union.png" />
+          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_eastern.png" />
           <T ID="114166" I="data/ui/2kimages/main/3dicons/ships/icon_airship_artic.png" />
           <T ID="132404" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_white.png" />
         </B>
@@ -7286,7 +7291,7 @@
           <T ID="100853" I="data/ui/2kimages/main/3dicons/ships/icon_ship_oil_tanker.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_real_great_eastern.png" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_big_colony_variation.png" />
-          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_anno_union.png" />
+          <T ID="102455" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_eastern.png" />
           <T ID="114166" I="data/ui/2kimages/main/3dicons/ships/icon_airship_artic.png" />
           <T ID="132404" I="data/ui/2kimages/main/3dicons/ships/icon_ship_great_white.png" />
         </B>
@@ -7491,7 +7496,7 @@
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -7535,7 +7540,7 @@
           <T ID="4260" I="data/ui/2kimages/main/3dicons/icon_post_office.png" />
           <T ID="112669" I="data/ui/2kimages/main/3dicons/city_institution/icon_ranger_station.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="112689" I="data/ui/2kimages/main/3dicons/icon_airship_hangar.png" />
           <T ID="114751" I="data/ui/2kimages/main/3dicons/icon_heating_center.png" />
@@ -7658,7 +7663,7 @@
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -7702,7 +7707,7 @@
           <T ID="4260" I="data/ui/2kimages/main/3dicons/icon_post_office.png" />
           <T ID="112669" I="data/ui/2kimages/main/3dicons/city_institution/icon_ranger_station.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="112689" I="data/ui/2kimages/main/3dicons/icon_airship_hangar.png" />
           <T ID="114751" I="data/ui/2kimages/main/3dicons/icon_heating_center.png" />
@@ -7825,7 +7830,7 @@
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -7869,7 +7874,7 @@
           <T ID="4260" I="data/ui/2kimages/main/3dicons/icon_post_office.png" />
           <T ID="112669" I="data/ui/2kimages/main/3dicons/city_institution/icon_ranger_station.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="112689" I="data/ui/2kimages/main/3dicons/icon_airship_hangar.png" />
           <T ID="114751" I="data/ui/2kimages/main/3dicons/icon_heating_center.png" />
@@ -7992,7 +7997,7 @@
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -8027,7 +8032,7 @@
           <T ID="4260" I="data/ui/2kimages/main/3dicons/icon_post_office.png" />
           <T ID="112669" I="data/ui/2kimages/main/3dicons/city_institution/icon_ranger_station.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="112689" I="data/ui/2kimages/main/3dicons/icon_airship_hangar.png" />
           <T ID="114751" I="data/ui/2kimages/main/3dicons/icon_heating_center.png" />
@@ -8067,7 +8072,7 @@
           <T ID="1010463" I="data/ui/2kimages/main/3dicons/city_institution/icon_fire_brigade.png" />
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -8094,7 +8099,7 @@
           <T ID="119259" I="data/ui/2kimages/main/3dicons/icon_oil_habour_01.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_bazaar.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="114544" I="data/ui/2kimages/main/3dicons/icon_water_pump.png" />
           <T ID="122963" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
@@ -8299,7 +8304,7 @@
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -8334,7 +8339,7 @@
           <T ID="4260" I="data/ui/2kimages/main/3dicons/icon_post_office.png" />
           <T ID="112669" I="data/ui/2kimages/main/3dicons/city_institution/icon_ranger_station.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="112689" I="data/ui/2kimages/main/3dicons/icon_airship_hangar.png" />
           <T ID="114751" I="data/ui/2kimages/main/3dicons/icon_heating_center.png" />
@@ -8374,7 +8379,7 @@
           <T ID="1010463" I="data/ui/2kimages/main/3dicons/city_institution/icon_fire_brigade.png" />
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -8401,7 +8406,7 @@
           <T ID="119259" I="data/ui/2kimages/main/3dicons/icon_oil_habour_01.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_bazaar.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="114544" I="data/ui/2kimages/main/3dicons/icon_water_pump.png" />
           <T ID="122963" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
@@ -8606,7 +8611,7 @@
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -8641,7 +8646,7 @@
           <T ID="4260" I="data/ui/2kimages/main/3dicons/icon_post_office.png" />
           <T ID="112669" I="data/ui/2kimages/main/3dicons/city_institution/icon_ranger_station.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="112689" I="data/ui/2kimages/main/3dicons/icon_airship_hangar.png" />
           <T ID="114751" I="data/ui/2kimages/main/3dicons/icon_heating_center.png" />
@@ -8681,7 +8686,7 @@
           <T ID="1010463" I="data/ui/2kimages/main/3dicons/city_institution/icon_fire_brigade.png" />
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -8708,7 +8713,7 @@
           <T ID="119259" I="data/ui/2kimages/main/3dicons/icon_oil_habour_01.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_bazaar.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="114544" I="data/ui/2kimages/main/3dicons/icon_water_pump.png" />
           <T ID="122963" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
@@ -8913,7 +8918,7 @@
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -8948,7 +8953,7 @@
           <T ID="4260" I="data/ui/2kimages/main/3dicons/icon_post_office.png" />
           <T ID="112669" I="data/ui/2kimages/main/3dicons/city_institution/icon_ranger_station.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="112689" I="data/ui/2kimages/main/3dicons/icon_airship_hangar.png" />
           <T ID="114751" I="data/ui/2kimages/main/3dicons/icon_heating_center.png" />
@@ -8988,7 +8993,7 @@
           <T ID="1010463" I="data/ui/2kimages/main/3dicons/city_institution/icon_fire_brigade.png" />
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -9015,7 +9020,7 @@
           <T ID="119259" I="data/ui/2kimages/main/3dicons/icon_oil_habour_01.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_bazaar.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="114544" I="data/ui/2kimages/main/3dicons/icon_water_pump.png" />
           <T ID="122963" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
@@ -9220,7 +9225,7 @@
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -9255,7 +9260,7 @@
           <T ID="4260" I="data/ui/2kimages/main/3dicons/icon_post_office.png" />
           <T ID="112669" I="data/ui/2kimages/main/3dicons/city_institution/icon_ranger_station.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="112689" I="data/ui/2kimages/main/3dicons/icon_airship_hangar.png" />
           <T ID="114751" I="data/ui/2kimages/main/3dicons/icon_heating_center.png" />
@@ -9295,7 +9300,7 @@
           <T ID="1010463" I="data/ui/2kimages/main/3dicons/city_institution/icon_fire_brigade.png" />
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -9322,7 +9327,7 @@
           <T ID="119259" I="data/ui/2kimages/main/3dicons/icon_oil_habour_01.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_bazaar.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="114544" I="data/ui/2kimages/main/3dicons/icon_water_pump.png" />
           <T ID="122963" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
@@ -9527,7 +9532,7 @@
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -9562,7 +9567,7 @@
           <T ID="4260" I="data/ui/2kimages/main/3dicons/icon_post_office.png" />
           <T ID="112669" I="data/ui/2kimages/main/3dicons/city_institution/icon_ranger_station.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="112689" I="data/ui/2kimages/main/3dicons/icon_airship_hangar.png" />
           <T ID="114751" I="data/ui/2kimages/main/3dicons/icon_heating_center.png" />
@@ -9602,7 +9607,7 @@
           <T ID="1010463" I="data/ui/2kimages/main/3dicons/city_institution/icon_fire_brigade.png" />
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -9629,7 +9634,7 @@
           <T ID="119259" I="data/ui/2kimages/main/3dicons/icon_oil_habour_01.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_bazaar.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="114544" I="data/ui/2kimages/main/3dicons/icon_water_pump.png" />
           <T ID="122963" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
@@ -9834,7 +9839,7 @@
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -9869,7 +9874,7 @@
           <T ID="4260" I="data/ui/2kimages/main/3dicons/icon_post_office.png" />
           <T ID="112669" I="data/ui/2kimages/main/3dicons/city_institution/icon_ranger_station.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="112689" I="data/ui/2kimages/main/3dicons/icon_airship_hangar.png" />
           <T ID="114751" I="data/ui/2kimages/main/3dicons/icon_heating_center.png" />
@@ -9909,7 +9914,7 @@
           <T ID="1010463" I="data/ui/2kimages/main/3dicons/city_institution/icon_fire_brigade.png" />
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -9936,7 +9941,7 @@
           <T ID="119259" I="data/ui/2kimages/main/3dicons/icon_oil_habour_01.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_bazaar.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="114544" I="data/ui/2kimages/main/3dicons/icon_water_pump.png" />
           <T ID="122963" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
@@ -10040,10 +10045,10 @@
           <T ID="24805" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_fertiliser.png" />
           <T ID="24775" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_storage.png" />
           <T ID="24805" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_fertiliser.png" />
-          <T ID="648" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
-          <T ID="649" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
-          <T ID="651" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
-          <T ID="636" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="692" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="693" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="695" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="635" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
           <T ID="191443" I="data/ui/2kimages/main/icons/achievement/icon_achievement_category_military.png" />
           <T ID="4260" I="data/ui/2kimages/main/3dicons/mail/icon_post_office_dlc11.png" />
           <T ID="4260" I="data/ui/2kimages/main/3dicons/mail/icon_post_office_dlc11.png" />
@@ -10167,7 +10172,7 @@
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -10202,7 +10207,7 @@
           <T ID="4260" I="data/ui/2kimages/main/3dicons/icon_post_office.png" />
           <T ID="112669" I="data/ui/2kimages/main/3dicons/city_institution/icon_ranger_station.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="112689" I="data/ui/2kimages/main/3dicons/icon_airship_hangar.png" />
           <T ID="114751" I="data/ui/2kimages/main/3dicons/icon_heating_center.png" />
@@ -10242,7 +10247,7 @@
           <T ID="1010463" I="data/ui/2kimages/main/3dicons/city_institution/icon_fire_brigade.png" />
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -10269,7 +10274,7 @@
           <T ID="119259" I="data/ui/2kimages/main/3dicons/icon_oil_habour_01.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_bazaar.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="114544" I="data/ui/2kimages/main/3dicons/icon_water_pump.png" />
           <T ID="122963" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
@@ -10373,10 +10378,10 @@
           <T ID="24805" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_fertiliser.png" />
           <T ID="24775" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_storage.png" />
           <T ID="24805" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_fertiliser.png" />
-          <T ID="648" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
-          <T ID="649" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
-          <T ID="651" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
-          <T ID="636" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="692" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="693" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="695" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="635" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
           <T ID="191443" I="data/ui/2kimages/main/icons/achievement/icon_achievement_category_military.png" />
           <T ID="4260" I="data/ui/2kimages/main/3dicons/mail/icon_post_office_dlc11.png" />
           <T ID="4260" I="data/ui/2kimages/main/3dicons/mail/icon_post_office_dlc11.png" />
@@ -10500,7 +10505,7 @@
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -10535,7 +10540,7 @@
           <T ID="4260" I="data/ui/2kimages/main/3dicons/icon_post_office.png" />
           <T ID="112669" I="data/ui/2kimages/main/3dicons/city_institution/icon_ranger_station.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="112689" I="data/ui/2kimages/main/3dicons/icon_airship_hangar.png" />
           <T ID="114751" I="data/ui/2kimages/main/3dicons/icon_heating_center.png" />
@@ -10575,7 +10580,7 @@
           <T ID="1010463" I="data/ui/2kimages/main/3dicons/city_institution/icon_fire_brigade.png" />
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -10602,7 +10607,7 @@
           <T ID="119259" I="data/ui/2kimages/main/3dicons/icon_oil_habour_01.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_bazaar.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="114544" I="data/ui/2kimages/main/3dicons/icon_water_pump.png" />
           <T ID="122963" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
@@ -10706,10 +10711,10 @@
           <T ID="24805" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_fertiliser.png" />
           <T ID="24775" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_storage.png" />
           <T ID="24805" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_fertiliser.png" />
-          <T ID="648" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
-          <T ID="649" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
-          <T ID="651" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
-          <T ID="636" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="692" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="693" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="695" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="635" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
           <T ID="191443" I="data/ui/2kimages/main/icons/achievement/icon_achievement_category_military.png" />
           <T ID="4260" I="data/ui/2kimages/main/3dicons/mail/icon_post_office_dlc11.png" />
           <T ID="4260" I="data/ui/2kimages/main/3dicons/mail/icon_post_office_dlc11.png" />
@@ -10926,7 +10931,6 @@
           <T ID="100443" I="data/ui/2kimages/main/3dicons/ships/icon_ship_monitor.png" />
           <T ID="1010062" I="data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png" />
           <T ID="100853" I="data/ui/2kimages/main/3dicons/ships/icon_ship_oil_tanker.png" />
-          <T ID="101236" />
           <T ID="118718" I="data/ui/2kimages/main/3dicons/ships/icon_ship_real_great_eastern.png" />
           <T ID="720" I="data/ui/2kimages/main/3dicons/ships/icon_ship_flak_monitor.png" />
           <T ID="1537" I="data/ui/2kimages/main/3dicons/ships/icon_ship_fire_monitor_blue.png" />
@@ -20263,7 +20267,7 @@
             <T ID="1010217" I="data/ui/2kimages/main/3dicons/icon_canned_goulash.png" />
           </U>
           <U V="-30%">
-            <T ID="135186" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_bubble_gum.png" />
+            <T ID="24824" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_bubble_gum.png" />
           </U>
         </A>
       </U>
@@ -20299,7 +20303,7 @@
             <T ID="1010258" I="data/ui/2kimages/main/3dicons/icon_chocolate.png" />
           </U>
           <U V="-30%">
-            <T ID="135186" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_bubble_gum.png" />
+            <T ID="24824" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_bubble_gum.png" />
           </U>
           <U V="-30%">
             <T ID="135229" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_cookie.png" />
@@ -20403,7 +20407,7 @@
             <T ID="114410" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wat_stew.png" />
           </U>
           <U V="-30%">
-            <T ID="135186" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_bubble_gum.png" />
+            <T ID="24824" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_bubble_gum.png" />
           </U>
           <U V="-30%">
             <T ID="135229" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_cookie.png" />
@@ -21727,6 +21731,7 @@
           <T ID="7919" I="data/ui/2kimages/main/3dicons/production_goods/icon_squid.png" />
           <T ID="1308" I="data/ui/2kimages/main/3dicons/icon_bauxit.png" />
           <T ID="1353" I="data/ui/2kimages/main/3dicons/icon_helium.png" />
+          <T ID="835" I="data/ui/2kimages/main/3dicons/icon_aluminium.png" />
         </B>
       </ET>
       <ET>
@@ -22558,6 +22563,12 @@
         <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
         <B>
           <T ID="1010343" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
+        <B>
+          <T ID="1010344" I="data/ui/2kimages/main/3dicons/icon_resident.png" />
         </B>
       </ET>
     </ET>
@@ -23877,6 +23888,17 @@
     <R ID="118002" />
     <IT />
     <GU>
+      <U V="+25%" C="FactoryUpgrade">
+        <T ID="118000" I="data/ui/2kimages/main/icons/icon_options.png" />
+      </U>
+      <U V="" C="FactoryUpgrade">
+        <T ID="20074" I="data/ui/2kimages/fpp/icons/icon_plus.png" />
+        <AO>
+          <AO V="1 / 3">
+            <T ID="849355765" I="data/ui/2kimages/main/icons/icon_options.png" />
+          </AO>
+        </AO>
+      </U>
       <U V="-25%" C="ModuleOwnerUpgrade">
         <T ID="12075" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
       </U>
@@ -23896,6 +23918,20 @@
         <T ID="101272" I="data/ui/2kimages/main/3dicons/icon_alpaca_wool.png" />
         <B>
           <T ID="101272" I="data/ui/2kimages/main/3dicons/icon_alpaca_wool.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="8389" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+        <B>
+          <T ID="8026" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+          <T ID="8026" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+          <T ID="8026" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+        </B>
+      </ET>
+      <ET>
+        <T ID="5457" I="data/ui/2kimages/main/3dicons/production_goods/icon_nandu_leather.png" />
+        <B>
+          <T ID="5457" I="data/ui/2kimages/main/3dicons/production_goods/icon_nandu_leather.png" />
         </B>
       </ET>
     </ET>
@@ -25518,7 +25554,7 @@
   </Asset>
   <Asset ID="133898" RV="Update 11" RT="Common">
     <N>Buff_BlackMuscovy_70</N>
-    <T ID="6144" I="data/ui/2kimages/main/3dicons/recipes/icon_black_muscovy.png" />
+    <T ID="133898" I="data/ui/2kimages/main/3dicons/recipes/icon_black_muscovy.png" />
     <R ID="118002" />
     <IT />
     <GU>
@@ -25558,7 +25594,7 @@
   </Asset>
   <Asset ID="133899" RV="Update 11" RT="Common">
     <N>Buff_BlackMuscovy_30</N>
-    <T ID="6144" I="data/ui/2kimages/main/3dicons/recipes/icon_black_muscovy.png" />
+    <T ID="133898" I="data/ui/2kimages/main/3dicons/recipes/icon_black_muscovy.png" />
     <R ID="118002" />
     <IT />
     <GU>
@@ -28378,7 +28414,7 @@
             <T ID="5382" I="data/ui/2kimages/main/3dicons/production_goods/icon_icecream_cone.png" />
           </U>
           <U V="+4">
-            <T ID="800031" I="data/ui/2kimages/main/3dicons/recipes/icon_medicine.png" />
+            <T ID="800031" I="data/ui/2kimages/main/3dicons/production_goods/icon_medicine.png" />
           </U>
           <U V="+2">
             <T ID="6600" I="data/ui/2kimages/main/3dicons/production_goods/icon_mezcal.png" />
@@ -28440,7 +28476,7 @@
             <T ID="5382" I="data/ui/2kimages/main/3dicons/production_goods/icon_icecream_cone.png" />
           </U>
           <U V="+5">
-            <T ID="800031" I="data/ui/2kimages/main/3dicons/recipes/icon_medicine.png" />
+            <T ID="800031" I="data/ui/2kimages/main/3dicons/production_goods/icon_medicine.png" />
           </U>
           <U V="+3">
             <T ID="6600" I="data/ui/2kimages/main/3dicons/production_goods/icon_mezcal.png" />
@@ -28502,7 +28538,7 @@
             <T ID="5382" I="data/ui/2kimages/main/3dicons/production_goods/icon_icecream_cone.png" />
           </U>
           <U V="+6">
-            <T ID="800031" I="data/ui/2kimages/main/3dicons/recipes/icon_medicine.png" />
+            <T ID="800031" I="data/ui/2kimages/main/3dicons/production_goods/icon_medicine.png" />
           </U>
           <U V="+4">
             <T ID="6600" I="data/ui/2kimages/main/3dicons/production_goods/icon_mezcal.png" />
@@ -28564,7 +28600,7 @@
             <T ID="5382" I="data/ui/2kimages/main/3dicons/production_goods/icon_icecream_cone.png" />
           </U>
           <U V="+7">
-            <T ID="800031" I="data/ui/2kimages/main/3dicons/recipes/icon_medicine.png" />
+            <T ID="800031" I="data/ui/2kimages/main/3dicons/production_goods/icon_medicine.png" />
           </U>
           <U V="+5">
             <T ID="6600" I="data/ui/2kimages/main/3dicons/production_goods/icon_mezcal.png" />
@@ -28626,7 +28662,7 @@
             <T ID="5382" I="data/ui/2kimages/main/3dicons/production_goods/icon_icecream_cone.png" />
           </U>
           <U V="+8">
-            <T ID="800031" I="data/ui/2kimages/main/3dicons/recipes/icon_medicine.png" />
+            <T ID="800031" I="data/ui/2kimages/main/3dicons/production_goods/icon_medicine.png" />
           </U>
           <U V="+6">
             <T ID="6600" I="data/ui/2kimages/main/3dicons/production_goods/icon_mezcal.png" />
@@ -28998,7 +29034,7 @@
             <T ID="6600" I="data/ui/2kimages/main/3dicons/production_goods/icon_mezcal.png" />
           </U>
           <U V="+3">
-            <T ID="800031" I="data/ui/2kimages/main/3dicons/recipes/icon_medicine.png" />
+            <T ID="800031" I="data/ui/2kimages/main/3dicons/production_goods/icon_medicine.png" />
           </U>
         </A>
       </U>
@@ -29020,7 +29056,7 @@
             <T ID="135100" I="data/ui/2kimages/main/3dicons/icon_mall.png" />
           </U>
           <U V="+5">
-            <T ID="135186" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_bubble_gum.png" />
+            <T ID="24824" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_bubble_gum.png" />
           </U>
           <U V="+5">
             <T ID="135099" I="data/ui/2kimages/main/3dicons/icon_furnitures.png" />
@@ -29047,7 +29083,7 @@
             <T ID="5382" I="data/ui/2kimages/main/3dicons/production_goods/icon_icecream_cone.png" />
           </U>
           <U V="+4">
-            <T ID="800031" I="data/ui/2kimages/main/3dicons/recipes/icon_medicine.png" />
+            <T ID="800031" I="data/ui/2kimages/main/3dicons/production_goods/icon_medicine.png" />
           </U>
           <U V="+2">
             <T ID="6600" I="data/ui/2kimages/main/3dicons/production_goods/icon_mezcal.png" />
@@ -29072,7 +29108,7 @@
             <T ID="135100" I="data/ui/2kimages/main/3dicons/icon_mall.png" />
           </U>
           <U V="+5">
-            <T ID="135186" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_bubble_gum.png" />
+            <T ID="24824" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_bubble_gum.png" />
           </U>
           <U V="+5">
             <T ID="135099" I="data/ui/2kimages/main/3dicons/icon_furnitures.png" />
@@ -29108,7 +29144,7 @@
             <T ID="5382" I="data/ui/2kimages/main/3dicons/production_goods/icon_icecream_cone.png" />
           </U>
           <U V="+4">
-            <T ID="800031" I="data/ui/2kimages/main/3dicons/recipes/icon_medicine.png" />
+            <T ID="800031" I="data/ui/2kimages/main/3dicons/production_goods/icon_medicine.png" />
           </U>
           <U V="+3">
             <T ID="6600" I="data/ui/2kimages/main/3dicons/production_goods/icon_mezcal.png" />
@@ -29179,7 +29215,7 @@
             <T ID="135100" I="data/ui/2kimages/main/3dicons/icon_mall.png" />
           </U>
           <U V="+9">
-            <T ID="135186" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_bubble_gum.png" />
+            <T ID="24824" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_bubble_gum.png" />
           </U>
           <U V="+14">
             <T ID="135229" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_cookie.png" />
@@ -29231,7 +29267,7 @@
             <T ID="135100" I="data/ui/2kimages/main/3dicons/icon_mall.png" />
           </U>
           <U V="+9">
-            <T ID="135186" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_bubble_gum.png" />
+            <T ID="24824" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_bubble_gum.png" />
           </U>
           <U V="+14">
             <T ID="135229" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_cookie.png" />
@@ -29289,7 +29325,7 @@
             <T ID="135100" I="data/ui/2kimages/main/3dicons/icon_mall.png" />
           </U>
           <U V="+9">
-            <T ID="135186" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_bubble_gum.png" />
+            <T ID="24824" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_bubble_gum.png" />
           </U>
           <U V="+14">
             <T ID="135229" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_cookie.png" />
@@ -29353,7 +29389,7 @@
             <T ID="135100" I="data/ui/2kimages/main/3dicons/icon_mall.png" />
           </U>
           <U V="+9">
-            <T ID="135186" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_bubble_gum.png" />
+            <T ID="24824" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_bubble_gum.png" />
           </U>
           <U V="+14">
             <T ID="135229" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_cookie.png" />
@@ -30520,7 +30556,7 @@
         <T ID="21386" I="data/ui/2kimages/main/icons/icon_patrol.png" />
         <A>
           <U V="-25%">
-            <T ID="135186" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_bubble_gum.png" />
+            <T ID="24824" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_bubble_gum.png" />
           </U>
         </A>
       </U>
@@ -30621,7 +30657,7 @@
         <T ID="21386" I="data/ui/2kimages/main/icons/icon_patrol.png" />
         <A>
           <U V="-50%">
-            <T ID="135186" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_bubble_gum.png" />
+            <T ID="24824" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_bubble_gum.png" />
           </U>
         </A>
       </U>
@@ -31923,7 +31959,7 @@
       </ET>
     </ET>
   </Asset>
-  <Asset ID="25743 (Seasons_of_Silver)" RV="Update 16.1" RT="Common">
+  <Asset ID="25743 (Seasons_of_Silver)" RV="Update 17" RT="Common">
     <N>HacienadaModulePopBuff_Civ2</N>
     <T ID="25743" />
     <R ID="118002" />
@@ -31945,7 +31981,7 @@
             <T ID="120032" I="data/ui/2kimages/main/3dicons/icon_coffe_cup.png" />
           </U>
           <U V="+2">
-            <T ID="135186" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_bubble_gum.png" />
+            <T ID="24824" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_bubble_gum.png" />
           </U>
           <U V="+2">
             <T ID="120035" I="data/ui/2kimages/main/3dicons/icon_burrito.png" />
@@ -32004,7 +32040,7 @@
       </ET>
     </ET>
   </Asset>
-  <Asset ID="24806 (Seasons_of_Silver)" RV="Update 16.1" RT="Common">
+  <Asset ID="24806 (Seasons_of_Silver)" RV="Update 17" RT="Common">
     <N>Dung_Buff</N>
     <T ID="24806" I="data/ui/2kimages/main/3dicons/icon_dung.png" />
     <R ID="118002" />
@@ -32144,6 +32180,12 @@
           </U>
           <U V="-30%">
             <T ID="120035" I="data/ui/2kimages/main/3dicons/icon_burrito.png" />
+          </U>
+          <U V="-30%">
+            <T ID="5381" I="data/ui/2kimages/main/3dicons/production_goods/icon_jalea.png" />
+          </U>
+          <U V="-30%">
+            <T ID="5382" I="data/ui/2kimages/main/3dicons/production_goods/icon_icecream_cone.png" />
           </U>
         </A>
       </U>
@@ -33979,7 +34021,7 @@
           <T ID="101271" I="data/ui/2kimages/main/3dicons/icon_burrito.png" />
           <T ID="4260" I="data/ui/2kimages/main/3dicons/mail/icon_post_office_dlc11.png" />
           <T ID="3661" I="data/ui/2kimages/main/3dicons/mail/icon_postbox_b.png" />
-          <T ID="906" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_bomb_b.png" />
+          <T ID="924" I="data/ui/2kimages/main/3dicons/drop_goods/icon_dropgood_bomb_b.png" />
         </B>
       </ET>
     </ET>
@@ -34317,7 +34359,7 @@
       <ET>
         <T ID="103504" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
         <B>
-          <T ID="636" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="635" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
         </B>
       </ET>
     </ET>
@@ -34518,7 +34560,7 @@
       <ET>
         <T ID="103501" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
         <B>
-          <T ID="4259" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_post.png" />
+          <T ID="2276" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_post.png" />
           <T ID="114626" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
           <T ID="114627" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
           <T ID="114628" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
@@ -34586,7 +34628,7 @@
       <ET>
         <T ID="103501" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
         <B>
-          <T ID="4259" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_post.png" />
+          <T ID="2276" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_post.png" />
           <T ID="114626" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
           <T ID="114627" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
           <T ID="114628" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
@@ -34935,7 +34977,7 @@
       <ET>
         <T ID="103501" I="data/ui/2kimages/main/icons/icon_arrowpoint_right.png" />
         <B>
-          <T ID="4259" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_post.png" />
+          <T ID="2276" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_post.png" />
           <T ID="114626" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
           <T ID="114627" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
           <T ID="114628" I="data/ui/2kimages/main/3dicons/icon_kontor_main.png" />
@@ -35410,7 +35452,7 @@
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -35445,7 +35487,7 @@
           <T ID="4260" I="data/ui/2kimages/main/3dicons/icon_post_office.png" />
           <T ID="112669" I="data/ui/2kimages/main/3dicons/city_institution/icon_ranger_station.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="112689" I="data/ui/2kimages/main/3dicons/icon_airship_hangar.png" />
           <T ID="114751" I="data/ui/2kimages/main/3dicons/icon_heating_center.png" />
@@ -35485,7 +35527,7 @@
           <T ID="1010463" I="data/ui/2kimages/main/3dicons/city_institution/icon_fire_brigade.png" />
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -35512,7 +35554,7 @@
           <T ID="119259" I="data/ui/2kimages/main/3dicons/icon_oil_habour_01.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_bazaar.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="114544" I="data/ui/2kimages/main/3dicons/icon_water_pump.png" />
           <T ID="122963" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
@@ -35616,10 +35658,10 @@
           <T ID="24805" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_fertiliser.png" />
           <T ID="24775" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_storage.png" />
           <T ID="24805" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_fertiliser.png" />
-          <T ID="648" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
-          <T ID="649" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
-          <T ID="651" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
-          <T ID="636" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="692" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="693" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="695" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="635" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
           <T ID="191443" I="data/ui/2kimages/main/icons/achievement/icon_achievement_category_military.png" />
           <T ID="4260" I="data/ui/2kimages/main/3dicons/mail/icon_post_office_dlc11.png" />
           <T ID="4260" I="data/ui/2kimages/main/3dicons/mail/icon_post_office_dlc11.png" />
@@ -35744,7 +35786,7 @@
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -35779,7 +35821,7 @@
           <T ID="4260" I="data/ui/2kimages/main/3dicons/icon_post_office.png" />
           <T ID="112669" I="data/ui/2kimages/main/3dicons/city_institution/icon_ranger_station.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="112689" I="data/ui/2kimages/main/3dicons/icon_airship_hangar.png" />
           <T ID="114751" I="data/ui/2kimages/main/3dicons/icon_heating_center.png" />
@@ -35819,7 +35861,7 @@
           <T ID="1010463" I="data/ui/2kimages/main/3dicons/city_institution/icon_fire_brigade.png" />
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -35846,7 +35888,7 @@
           <T ID="119259" I="data/ui/2kimages/main/3dicons/icon_oil_habour_01.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_bazaar.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="114544" I="data/ui/2kimages/main/3dicons/icon_water_pump.png" />
           <T ID="122963" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
@@ -35950,10 +35992,10 @@
           <T ID="24805" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_fertiliser.png" />
           <T ID="24775" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_storage.png" />
           <T ID="24805" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_fertiliser.png" />
-          <T ID="648" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
-          <T ID="649" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
-          <T ID="651" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
-          <T ID="636" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="692" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="693" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="695" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="635" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
           <T ID="191443" I="data/ui/2kimages/main/icons/achievement/icon_achievement_category_military.png" />
           <T ID="4260" I="data/ui/2kimages/main/3dicons/mail/icon_post_office_dlc11.png" />
           <T ID="4260" I="data/ui/2kimages/main/3dicons/mail/icon_post_office_dlc11.png" />
@@ -36175,7 +36217,7 @@
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -36210,7 +36252,7 @@
           <T ID="4260" I="data/ui/2kimages/main/3dicons/icon_post_office.png" />
           <T ID="112669" I="data/ui/2kimages/main/3dicons/city_institution/icon_ranger_station.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="112689" I="data/ui/2kimages/main/3dicons/icon_airship_hangar.png" />
           <T ID="114751" I="data/ui/2kimages/main/3dicons/icon_heating_center.png" />
@@ -36250,7 +36292,7 @@
           <T ID="1010463" I="data/ui/2kimages/main/3dicons/city_institution/icon_fire_brigade.png" />
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -36277,7 +36319,7 @@
           <T ID="119259" I="data/ui/2kimages/main/3dicons/icon_oil_habour_01.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_bazaar.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="114544" I="data/ui/2kimages/main/3dicons/icon_water_pump.png" />
           <T ID="122963" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
@@ -36381,10 +36423,10 @@
           <T ID="24805" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_fertiliser.png" />
           <T ID="24775" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_storage.png" />
           <T ID="24805" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_fertiliser.png" />
-          <T ID="648" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
-          <T ID="649" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
-          <T ID="651" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
-          <T ID="636" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="692" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="693" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="695" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="635" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
           <T ID="191443" I="data/ui/2kimages/main/icons/achievement/icon_achievement_category_military.png" />
           <T ID="4260" I="data/ui/2kimages/main/3dicons/mail/icon_post_office_dlc11.png" />
           <T ID="4260" I="data/ui/2kimages/main/3dicons/mail/icon_post_office_dlc11.png" />
@@ -36606,7 +36648,7 @@
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_market.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -36641,7 +36683,7 @@
           <T ID="4260" I="data/ui/2kimages/main/3dicons/icon_post_office.png" />
           <T ID="112669" I="data/ui/2kimages/main/3dicons/city_institution/icon_ranger_station.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="112689" I="data/ui/2kimages/main/3dicons/icon_airship_hangar.png" />
           <T ID="114751" I="data/ui/2kimages/main/3dicons/icon_heating_center.png" />
@@ -36681,7 +36723,7 @@
           <T ID="1010463" I="data/ui/2kimages/main/3dicons/city_institution/icon_fire_brigade.png" />
           <T ID="1010464" I="data/ui/2kimages/main/3dicons/city_institution/icon_hospital.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="2349" I="data/ui/2kimages/main/3dicons/icon_zoo.png" />
           <T ID="2351" I="data/ui/2kimages/main/3dicons/icon_museum.png" />
@@ -36708,7 +36750,7 @@
           <T ID="119259" I="data/ui/2kimages/main/3dicons/icon_oil_habour_01.png" />
           <T ID="101257" I="data/ui/2kimages/main/3dicons/icon_bazaar.png" />
           <T ID="101323" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
-          <T ID="100516" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
+          <T ID="101324" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="100517" I="data/ui/2kimages/main/3dicons/icon_warehouse.png" />
           <T ID="114544" I="data/ui/2kimages/main/3dicons/icon_water_pump.png" />
           <T ID="122963" I="data/ui/2kimages/main/3dicons/goods_africa/icon_wansa_wood.png" />
@@ -36812,10 +36854,10 @@
           <T ID="24805" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_fertiliser.png" />
           <T ID="24775" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_storage.png" />
           <T ID="24805" I="data/ui/2kimages/main/3dicons/hacienda/icon_hacienda_module_fertiliser.png" />
-          <T ID="648" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
-          <T ID="649" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
-          <T ID="651" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
-          <T ID="636" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="692" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="693" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="695" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
+          <T ID="635" I="data/ui/2kimages/main/3dicons/airship_platform/icon_airship_hangar_southamerica.png" />
           <T ID="191443" I="data/ui/2kimages/main/icons/achievement/icon_achievement_category_military.png" />
           <T ID="4260" I="data/ui/2kimages/main/3dicons/mail/icon_post_office_dlc11.png" />
           <T ID="4260" I="data/ui/2kimages/main/3dicons/mail/icon_post_office_dlc11.png" />
@@ -37124,9 +37166,9 @@
     <HF />
     <ET>
       <ET>
-        <T ID="8002" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+        <T ID="8026" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
         <B>
-          <T ID="8002" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
+          <T ID="8026" I="data/ui/2kimages/main/3dicons/icon_general_module_01.png" />
         </B>
       </ET>
     </ET>
@@ -37967,7 +38009,7 @@
   </Asset>
   <Asset ID="6155" RV="Update 16" RT="Common">
     <N>Buff_Absinth_70</N>
-    <T ID="6144" I="data/ui/2kimages/main/3dicons/production_goods/icon_absinthe.png" />
+    <T ID="133898" I="data/ui/2kimages/main/3dicons/production_goods/icon_absinthe.png" />
     <R ID="118002" />
     <IT />
     <GU>
@@ -38007,7 +38049,7 @@
   </Asset>
   <Asset ID="6156" RV="Update 16" RT="Common">
     <N>Buff_Absinth_30</N>
-    <T ID="6144" I="data/ui/2kimages/main/3dicons/production_goods/icon_absinthe.png" />
+    <T ID="133898" I="data/ui/2kimages/main/3dicons/production_goods/icon_absinthe.png" />
     <R ID="118002" />
     <IT />
     <GU>
@@ -38223,6 +38265,7 @@
           <T ID="6594" I="data/ui/2kimages/main/3dicons/production_goods/icon_mezcal.png" />
           <T ID="25350" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
           <T ID="25126" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_atole.png" />
+          <T ID="135418" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_cognac.png" />
         </B>
       </ET>
     </ET>
@@ -38265,6 +38308,7 @@
           <T ID="6594" I="data/ui/2kimages/main/3dicons/production_goods/icon_mezcal.png" />
           <T ID="25350" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
           <T ID="25126" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_atole.png" />
+          <T ID="135418" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_cognac.png" />
         </B>
       </ET>
     </ET>
@@ -38307,6 +38351,7 @@
           <T ID="6594" I="data/ui/2kimages/main/3dicons/production_goods/icon_mezcal.png" />
           <T ID="25350" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
           <T ID="25126" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_atole.png" />
+          <T ID="135418" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_cognac.png" />
         </B>
       </ET>
     </ET>
@@ -38349,6 +38394,7 @@
           <T ID="6594" I="data/ui/2kimages/main/3dicons/production_goods/icon_mezcal.png" />
           <T ID="25350" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
           <T ID="25126" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_atole.png" />
+          <T ID="135418" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_cognac.png" />
         </B>
       </ET>
     </ET>
@@ -38391,6 +38437,7 @@
           <T ID="6594" I="data/ui/2kimages/main/3dicons/production_goods/icon_mezcal.png" />
           <T ID="25350" I="data/ui/2kimages/main/3dicons/icon_schnapps_4.png" />
           <T ID="25126" I="data/ui/2kimages/main/3dicons/scenario/goods/icon_atole.png" />
+          <T ID="135418" I="data/ui/2kimages/main/3dicons/goods_highlife/icon_cognac.png" />
         </B>
       </ET>
     </ET>
